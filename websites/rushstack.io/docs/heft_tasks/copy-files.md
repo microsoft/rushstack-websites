@@ -1,11 +1,9 @@
 ---
-layout: page
 title: '"copy-files" task'
-navigation_source: docs_nav
 ---
 
 This task implements the `"actionKind": "copyFiles"` action kind that is used when specifying
-`"eventActions"` in the [heft.json]({% link pages/heft_configs/heft_json.md %}) config file.
+`"eventActions"` in the [heft.json](/heft_configs/heft_json) config file.
 
 
 ## When to use it
@@ -14,7 +12,7 @@ This task is most commonly used to copy asset files such as fonts or images into
 
 Some general notes:
 - Avoid using this task to read/write files outside the project folder.  Doing so would violate Rush's
-  [principle of project isolation]({% link pages/heft_tutorials/heft_and_rush.md %}).
+  [principle of project isolation](/heft_tutorials/heft_and_rush).
 - Where possible, avoid using inefficient glob operators such as `**` that recursively traverse a directory tree.
   These disk-intensive operations will slow down the build.
 - Overly broad wildcards can sometimes include stray folders that are not tracked by Git.
@@ -27,7 +25,7 @@ None - this feature is implemented internally by Heft.
 
 ## Config files
 
-Event actions are registered in the [heft.json]({% link pages/heft_configs/heft_json.md %}) config file.  For example:
+Event actions are registered in the [heft.json](/heft_configs/heft_json) config file.  For example:
 
 **&lt;project folder&gt;/config/heft.json**
 ```js
@@ -120,4 +118,3 @@ Event actions are registered in the [heft.json]({% link pages/heft_configs/heft_
   . . .
 }
 ```
-

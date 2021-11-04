@@ -1,10 +1,8 @@
 ---
-layout: page
 title: Project roadmap
-navigation_source: docs_nav
 ---
 
-Our [News page]({% link pages/news.md %}) and Twitter feed is the best way to find out what's happening.
+Our [News page](/news) and Twitter feed is the best way to find out what's happening.
 This roadmap supplements that with more general information about future directions.
 
 ***Last update: September 2021***
@@ -59,4 +57,3 @@ The Rush Stack maintainers currently see these feature areas as the main priorit
 If there's a specific area that's important to you, let us know in the
 [Zulip chat room](https://rushstack.zulipchat.com/).
 And of course, even if a feature isn't listed on the road map, pull requests are always welcome!
-

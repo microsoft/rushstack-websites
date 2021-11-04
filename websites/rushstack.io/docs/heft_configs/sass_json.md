@@ -1,11 +1,9 @@
 ---
-layout: page
 title: sass.json
-navigation_source: docs_nav
 ---
 
 | **File path:** | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %}) | Yes |
+| [**Riggable?**](/heft/rig_packages) | Yes |
 | **Associated plugins:** | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/SassTypingsPlugin/SassTypingsPlugin.ts) |
 
 ## Template
@@ -62,4 +60,4 @@ navigation_source: docs_nav
 
 ## See also
 
-- [sass-typings]({% link pages/heft_tasks/sass-typings.md %}) task
+- [sass-typings](/heft_tasks/sass-typings) task

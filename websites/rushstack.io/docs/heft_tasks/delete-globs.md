@@ -1,11 +1,9 @@
 ---
-layout: page
 title: '"delete-globs" task'
-navigation_source: docs_nav
 ---
 
 This task implements the `"actionKind": "deleteGlobs"` action kind that is used when specifying
-`"eventActions"` in the [heft.json]({% link pages/heft_configs/heft_json.md %}) config file.
+`"eventActions"` in the [heft.json](/heft_configs/heft_json) config file.
 
 
 ## When to use it
@@ -21,7 +19,7 @@ None - this feature is implemented internally by Heft.
 
 ## Config files
 
-Event actions are registered in the [heft.json]({% link pages/heft_configs/heft_json.md %}) config file.  For example:
+Event actions are registered in the [heft.json](/heft_configs/heft_json) config file.  For example:
 
 **&lt;project folder&gt;/config/heft.json**
 ```js
@@ -67,4 +65,3 @@ Event actions are registered in the [heft.json]({% link pages/heft_configs/heft_
   . . .
 }
 ```
-

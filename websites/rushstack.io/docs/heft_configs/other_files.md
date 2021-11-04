@@ -1,44 +1,41 @@
 ---
-layout: page
 title: Other config files
-navigation_source: docs_nav
 ---
 
 Besides the configs files defined by Heft itself, a number of tool-specific config files are also
 consulted when building a project.
 
 | **Supported file path:** | **&lt;project folder&gt;/config/api-extractor.json** |
-| **Associated task:** | [api-extractor]({% link pages/heft_tasks/api-extractor.md %}) |
+| **Associated task:** | [api-extractor](/heft_tasks/api-extractor) |
 | **Description:** | Configures API reports, .d.ts rollups, and generation of API documentation |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | Yes |
+| [**Riggable?**](/heft/rig_packages)  | Yes |
 
 | **Supported file path:** | **&lt;project folder&gt;/.eslintrc.js** |
-| **Associated task:** | [eslint]({% link pages/heft_tasks/eslint.md %}) |
+| **Associated task:** | [eslint](/heft_tasks/eslint) |
 | **Description:** | Configures lint rules |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | via `"extends"` only |
+| [**Riggable?**](/heft/rig_packages)  | via `"extends"` only |
 
 | **Supported file path:** | **&lt;project folder&gt;/config/jest.config.json** |
-| **Associated task:** | [jest]({% link pages/heft_tasks/jest.md %}) |
+| **Associated task:** | [jest](/heft_tasks/jest) |
 | **Description:** | Configures how unit tests are run |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | NO via `"preset"` only |
+| [**Riggable?**](/heft/rig_packages)  | NO via `"preset"` only |
 
 | **Supported file path:** | **&lt;project folder&gt;/package.json** |
 | **Associated task:** | N/A |
 | **Description:** | Defines a project, which can optionally be published as an NPM package |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | N/A |
+| [**Riggable?**](/heft/rig_packages)  | N/A |
 
 | **Supported file path:** | **&lt;project folder&gt;/tsconfig.json** |
-| **Associated task:** | [typescript]({% link pages/heft_tasks/typescript.md %}) |
+| **Associated task:** | [typescript](/heft_tasks/typescript) |
 | **Description:** | Configures the TypeScript compiler |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | via `"extends"` only |
+| [**Riggable?**](/heft/rig_packages)  | via `"extends"` only |
 
 | **Supported file path:** | **&lt;project folder&gt;/tslint.json** |
-| **Associated task:** | [tslint]({% link pages/heft_tasks/tslint.md %}) |
+| **Associated task:** | [tslint](/heft_tasks/tslint) |
 | **Description:** | Configures lint rules |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  |  via `"extends"` only |
+| [**Riggable?**](/heft/rig_packages)  |  via `"extends"` only |
 
 | **Supported file path:** | **&lt;project folder&gt;/webpack.config.js** |
-| **Associated task:** | [webpack]({% link pages/heft_tasks/webpack.md %}) |
+| **Associated task:** | [webpack](/heft_tasks/webpack) |
 | **Description:** | Configures bundling |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %})  | via `import` only |
-
+| [**Riggable?**](/heft/rig_packages)  | via `import` only |

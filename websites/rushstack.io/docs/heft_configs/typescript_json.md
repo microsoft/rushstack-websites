@@ -1,11 +1,9 @@
 ---
-layout: page
 title: typescript.json
-navigation_source: docs_nav
 ---
 
 | **File path:** | **&lt;project folder&gt;/config/typescript.json** |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %}) | Yes |
+| [**Riggable?**](/heft/rig_packages) | Yes |
 | **Associated plugins:** | [TypeScriptPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/TypeScriptPlugin/TypeScriptPlugin.ts), [CopyStaticAssetsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/CopyStaticAssetsPlugin.ts), [JestPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/JestPlugin/JestPlugin.ts) |
 
 ## Template
@@ -98,7 +96,6 @@ navigation_source: docs_nav
 
 ## See also
 
-- [typescript]({% link pages/heft_tasks/typescript.md %}) task
-- [copy-static-assets]({% link pages/heft_tasks/copy-static-assets.md %}) task
-- [jest]({% link pages/heft_tasks/jest.md %}) task
-
+- [typescript](/heft_tasks/typescript) task
+- [copy-static-assets](/heft_tasks/copy-static-assets) task
+- [jest](/heft_tasks/jest) task

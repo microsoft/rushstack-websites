@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '"sass-typings" task'
-navigation_source: docs_nav
 ---
 
 This task generates TypeScript typings for CSS styles.  It supports three different stylesheet formats:
@@ -77,7 +75,7 @@ None - this feature is implemented internally by Heft.
 
 The `sass-typings` plugin is enabled by default and will automatically generate typings for any files under
 the `src` folder with supported file extension (`.css`, `.scss`, and `.sass`).  Its behavior can be customized using
-the [sass.json]({% link pages/heft_configs/sass_json.md %}) config file, but in most cases the default behavior
+the [sass.json](/heft_configs/sass_json) config file, but in most cases the default behavior
 is sufficient.
 
 Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setting in your compiler configuration:
@@ -92,5 +90,5 @@ Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setti
 
 ```
 
-Make sure that the [copy-static-assets]({% link pages/heft_tasks/copy-static-assets.md %}) task is configured
+Make sure that the [copy-static-assets](/heft_tasks/copy-static-assets) task is configured
 to copy CSS file extensions.

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Heft command line
-navigation_source: docs_nav
 ---
 
 ## heft
