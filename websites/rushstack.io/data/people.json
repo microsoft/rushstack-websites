@@ -1,0 +1,99 @@
+{
+  "maintainers": [
+    {
+      "name": "Apostolis Haitalis",
+      "github": "apostolisms",
+      "caption": "manages the team that hosts the Rush Stack projects"
+    },
+    {
+      "name": "Daniel Nadeau",
+      "github": "D4N14L",
+      "caption": "feature implementation, focusing on Rush workspaces and Heft"
+    },
+    {
+      "name": "David Michon",
+      "github": "dmichon-msft",
+      "caption": "feature implementation, focusing on performance and watch mode"
+    },
+    {
+      "name": "Ian Clanton-Thuon",
+      "github": "iclanton",
+      "caption": "architecture, focusing on Heft and Rush build cache"
+    },
+    {
+      "name": "Pete Gonzalez",
+      "github": "octogonz",
+      "caption": "architecture, community engagement, docs and TSDoc"
+    }
+  ],
+  "collaborators": [
+    {
+      "name": "Claudia Sun",
+      "github": "Claudiazhaoya"
+    },
+    {
+      "name": "Elliot Nelson",
+      "github": "elliot-nelson"
+    },
+    {
+      "name": "Josh Wedekind",
+      "github": "halfnibble"
+    },
+    {
+      "name": "Sachin Joseph",
+      "github": "sachinjoseph"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Nick Pape",
+      "github": "nickpape",
+      "role": "Maintainer 2016-2018",
+      "caption": "broad contributions including Rush's task scheduler and stream collator"
+    },
+    {
+      "name": "QZ",
+      "github": "qz2017",
+      "role": "Maintainer 2016-2018",
+      "caption": "broad contributions including Rush version policies and publishing features"
+    },
+    {
+      "name": "Daniel Gaeta",
+      "github": "dgaeta",
+      "role": "Collaborator 2017",
+      "caption": "implemented API Extractor and API Documenter features"
+    }
+  ],
+  "star_contributors": [
+    {
+      "name": "Yunfei",
+      "sort_month": "2021-07",
+      "github": "adventure-yunfei",
+      "caption": "recognized for major contributions to API Extractor and API Documenter"
+    },
+    {
+      "name": "William Bernting",
+      "sort_month": "2020-12",
+      "caption": "helped design Rush's multi-project watch mode feature, implemented the @telia/rush-select console",
+      "github": "wbern"
+    },
+    {
+      "name": "Ron Buckton",
+      "sort_month": "2019-09",
+      "github": "rbuckton",
+      "caption": "recognized for major contributions to API Extractor and TSDoc, including the declaration reference syntax"
+    },
+    {
+      "name": "Thomas Michon",
+      "sort_month": "2018-11",
+      "caption": "contributed the \"installation variants\" feature for Rush",
+      "github": "ThomasMichon"
+    },
+    {
+      "name": "David Zearing",
+      "sort_month": "2016-01",
+      "caption": "pioneered early components such as package-deps-hash, gulp-core-build, and load-themed-styles",
+      "github": "dzearing"
+    }
+  ]
+}
