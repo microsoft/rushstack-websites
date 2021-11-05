@@ -3,7 +3,7 @@ title: Who's involved?
 custom_edit_url: null
 ---
 
-import { PeopleGrid } from '../../components/People';
+import { PeopleGrid } from '@site/src/components/People';
 
 ## Maintainers
 

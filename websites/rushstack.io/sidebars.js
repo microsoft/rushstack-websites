@@ -149,7 +149,7 @@ const sidebars = {
     }
   ],
   apiSidebar: [
-    require('./api_nav.json')
+    require('./data/api_nav.json')
   ]
 };
 
