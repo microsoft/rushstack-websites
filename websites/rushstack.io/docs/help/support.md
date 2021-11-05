@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Getting support
-navigation_source: docs_nav
 ---
 
 The Rush Stack projects are coordinated by a team within MS Office.  Although Microsoft does not provide

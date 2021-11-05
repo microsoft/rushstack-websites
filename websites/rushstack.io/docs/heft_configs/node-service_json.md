@@ -1,11 +1,9 @@
 ---
-layout: page
 title: node-service.json
-navigation_source: docs_nav
 ---
 
 | **File path:** | **&lt;project folder&gt;/config/node-service.json** |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %}) | Yes |
+| [**Riggable?**](/heft/rig_packages) | Yes |
 | **Associated plugins:** | [NodeServicePlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/NodeServicePlugin.ts) |
 
 ## Template
@@ -71,5 +69,4 @@ navigation_source: docs_nav
 
 ## See also
 
-- [node-service]({% link pages/heft_tasks/node-service.md %}) task
-
+- [node-service](/heft_tasks/node-service) task

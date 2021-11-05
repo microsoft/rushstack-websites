@@ -1,11 +1,10 @@
 ---
-layout: page
-title:
-navigation_source: docs_nav
+title: Heft introduction
+hide_title: true
 ---
 
 <div>
-  <img src="{{ site.baseurl }}/images/heft-logo-horse.svg" alt="heft" title="heft" style="width: 380px; padding-top: 30px;" />
+  <img src="/images/heft-logo-horse.svg" alt="heft" title="heft" style={{ width: '380px', paddingTop: '30px' }} />
   <p />
 </div>
 
@@ -67,14 +66,14 @@ similar systems, Heft has some unique design goals:
 
 ## Where to begin?
 
-- The [Getting started with Heft]({% link pages/heft_tutorials/getting_started.md %}) tutorial provides a quick
+- The [Getting started with Heft](../heft_tutorials/getting_started) tutorial provides a quick
   walkthrough of the steps for setting up a project to build using Heft
 
 - The NPM package page is here: [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft)
 
-- [Interfacing with Rush]({% link pages/heft_tutorials/heft_and_rush.md %}) explains how Heft and Rush interact
+- [Interfacing with Rush](../heft_tutorials/heft_and_rush) explains how Heft and Rush interact
 
-- The [Heft architecture]({% link pages/heft/architecture.md %}) article provides more detail about the
+- The [Heft architecture](architecture) article provides more detail about the
   build system's design
 
 

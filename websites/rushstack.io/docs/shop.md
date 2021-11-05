@@ -1,13 +1,12 @@
 ---
-layout: page
 title: Swag Shop
 ---
 
-<div style="padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: row;">
-  <div style="text-align: center;">
+<div style={{ paddingTop: "20px", paddingBottom: "20px", display: "flex", flexDirection: "row" }}>
+  <div style={{ textAlign: "center" }}>
     <a class="no-external-link-icon" target="_blank" href="https://rushstack.myspreadshop.com/"><img
-    src="{{ site.baseurl }}/images/swagshop.jpg" alt="swag shop" title="swag shop"
-    style="width: 380px; border-style: solid; border-width: 2px; border-color: #c0c0c0;" /></a>
+    src="/images/swagshop.jpg" alt="swag shop" title="swag shop"
+    style={{ width: "380px", borderStyle: "solid", borderWidth: "2px", borderColor: "#c0c0c0" }}/></a>
     <br/>
     <a target="_blank" href="https://rushstack.myspreadshop.com/">rushstack.myspreadshop.com</a>
   </div>

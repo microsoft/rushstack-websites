@@ -1,10 +1,8 @@
 ---
-layout: page
 title: Everyday Heft commands
-navigation_source: docs_nav
 ---
 
-The [Getting started with Heft]({% link pages/heft_tutorials/getting_started.md %}) tutorial introduced the `heft build` and `heft test` command-line actions.  In this section, we'll call out a few everyday commands that are particularly useful to know about.  Refer to the [Heft command line]({% link pages/heft/cli.md %}) reference for a full listing of actions and parameters.
+The [Getting started with Heft](../getting_started) tutorial introduced the `heft build` and `heft test` command-line actions.  In this section, we'll call out a few everyday commands that are particularly useful to know about.  Refer to the [Heft command line](../heft/cli) reference for a full listing of actions and parameters.
 
 
 ## Investigating problems
@@ -47,6 +45,3 @@ Watch Usage
 ```
 
 Whenever you save a change to a source file, Heft will automatically recompile the project, and then Jest will rerun any affected tests, updating the report.
-
-
-#### Next up: [Interfacing with Rush]({% link pages/heft_tutorials/heft_and_rush.md %})

@@ -1,11 +1,9 @@
 ---
-layout: page
 title: rig.json
-navigation_source: docs_nav
 ---
 
 | **File path:** | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**]({% link pages/heft/rig_packages.md %}) | No |
+| [**Riggable?**](/heft/rig_packages) | No |
 | **Associated plugins:** | |
 
 ## Template
@@ -32,5 +30,5 @@ navigation_source: docs_nav
 
 ## See also
 
-- [Using rig packages]({% link pages/heft/rig_packages.md %}) with Heft
+- [Using rig packages](/heft/rig_packages) with Heft
 - [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) documentation

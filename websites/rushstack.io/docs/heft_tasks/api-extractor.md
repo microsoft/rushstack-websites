@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '"api-extractor" task'
-navigation_source: docs_nav
 ---
 
 This task invokes the [API Extractor](https://api-extractor.com/) tool which reads TypeScript declarations (.d.ts files)
@@ -34,13 +32,11 @@ You will need to add the `@microsoft/api-extractor` package to your project:
 $ rush add --package @microsoft/api-extractor --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages]({% link pages/heft/rig_packages.md %}) article.
+Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](/heft/rig_packages) article.
 
 
 ## Configuration
 
-Heft looks for API Extractor's config file [config/api-extractor.json](https://api-extractor.com/pages/commands/config_file/). This file can be created by invoking the [api-extractor init](https://api-extractor.com/pages/commands/api-extractor_init/) command.  This file is [riggable]({% link pages/heft/rig_packages.md %}).
+Heft looks for API Extractor's config file [config/api-extractor.json](https://api-extractor.com/pages/commands/config_file/). This file can be created by invoking the [api-extractor init](https://api-extractor.com/pages/commands/api-extractor_init/) command.  This file is [riggable](../heft/rig_packages).
 
-For advanced scenarios, the optional [api-extractor-task.json]({% link pages/heft_configs/api-extractor-task_json.md %}) config file provides some additional Heft-specific settings.
-
-
+For advanced scenarios, the optional [api-extractor-task.json](../heft_configs/api-extractor-task_json) config file provides some additional Heft-specific settings.

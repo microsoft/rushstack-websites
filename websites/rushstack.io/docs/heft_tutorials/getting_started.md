@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Getting started with Heft
-navigation_source: docs_nav
 ---
 
 This walkthrough will get you started with Heft by creating a basic Node.js console project.
@@ -11,7 +9,7 @@ This walkthrough will get you started with Heft by creating a basic Node.js cons
 > and [heft-webpack-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-webpack-basic-tutorial)
 > folders illustrate a fully worked out example of a simple project that builds using Heft.
 
-We'll begin by creating a simple standalone project without Rush.  (Later, the [Interfacing with Rush]({% link pages/heft_tutorials/heft_and_rush.md %}) tutorial will examine what's different when using Heft in a monorepo.)
+We'll begin by creating a simple standalone project without Rush.  (Later, the [Interfacing with Rush](/heft_tutorials/heft_and_rush) tutorial will examine what's different when using Heft in a monorepo.)
 
 1. We'll use the [PNPM package manager](https://pnpm.js.org/) for this demo.  (Its command line is very similar to NPM, so you can substitute `npm` for `pnpm` in these steps.)  There are [various ways](https://pnpm.js.org/en/installation.html) to install PNPM, but the simplest is like this:
 
@@ -89,7 +87,7 @@ We'll begin by creating a simple standalone project without Rush.  (Later, the [
     because Node.js is a global environment, so its typings must be loaded globally.  Most other `@types` packages
     can be loaded via `import` statements in your source code.
 
-    See the [typescript task]({% link pages/heft_tasks/typescript.md %}) documentation for more background about
+    See the [typescript task](/heft_tasks/typescript) documentation for more background about
     TypeScript configuration with Heft.
 
 6.  You can invoke Heft using `./node_modules/.bin/heft`, but it's more convenient to install it globally
@@ -106,7 +104,7 @@ We'll begin by creating a simple standalone project without Rush.  (Later, the [
     > discover your local `node_modules` folder and invoke `./node_modules/.bin/heft`, ensuring
     > that the correct version is used.
 
-7. Let's try manually invoking Heft's [command line]({% link pages/heft/cli.md %}) to build our project.
+7. Let's try manually invoking Heft's [command line](/heft/cli) to build our project.
 
     ```shell
     # For Windows, use backslashes for all these commands
@@ -142,7 +140,7 @@ We'll begin by creating a simple standalone project without Rush.  (Later, the [
     Node version: v12.17.0
     ```
 
-    > Some terminology:  When we invoke the `heft build` command from the shell, the "build" verb is called an **action**.  Actions are user interface concepts, sort of like macros.  The action causes Heft to invoke multiple **tasks** such as `[typescript]` or `[copy-static-assets]`.  These tasks often run in parallel.  The tasks are grouped into **stages** such as "Compile" and "Bundle" in the above log.  Stages represent major steps of the overall operation.  These concepts are explained in more depth in the [Heft architecture]({% link pages/heft/architecture.md %}) article.
+    > Some terminology:  When we invoke the `heft build` command from the shell, the "build" verb is called an **action**.  Actions are user interface concepts, sort of like macros.  The action causes Heft to invoke multiple **tasks** such as `[typescript]` or `[copy-static-assets]`.  These tasks often run in parallel.  The tasks are grouped into **stages** such as "Compile" and "Bundle" in the above log.  Stages represent major steps of the overall operation.  These concepts are explained in more depth in the [Heft architecture](/heft/architecture) article.
 
     After the build finishes, confirm that it produced several output files in your `lib` folder:
     - **start.js** - the compiled JavaScript code
@@ -243,6 +241,3 @@ We'll begin by creating a simple standalone project without Rush.  (Later, the [
       ]
     }
     ```
-
-
-#### Next up: [Adding more tasks]({% link pages/heft_tutorials/adding_tasks.md %})
