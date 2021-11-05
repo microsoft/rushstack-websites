@@ -32,7 +32,7 @@ You will need to add the `@microsoft/api-extractor` package to your project:
 $ rush add --package @microsoft/api-extractor --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](/heft/rig_packages) article.
+Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](../heft/rig_packages) article.
 
 
 ## Configuration

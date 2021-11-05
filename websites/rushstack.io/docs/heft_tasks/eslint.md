@@ -11,13 +11,13 @@ ESLint fits together with several other tools as part of Rush Stack's recommende
 
 - [Prettier](https://rushjs.io/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build.  Instead, Prettier reformats the code automatically via a `git commit` hook.  To se this up, see the [Enabling Prettier](https://rushjs.io/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
 
-- [TypeScript](/heft_tasks/typescript): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
+- [TypeScript](../heft_tasks/typescript): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
 
 - **ESLint**: The lint rules supplement the compiler's checks with additional stylistic rules that are more subjective and highly customizable.  Whereas TypeScript might detect that *"This function parameter is a string but was declared as a number"*, the linter might detect an issue such as *"This class name should use PascalCase instead of camelCase."*  Unlike Prettier issues, fixing an ESLint issue may involve a significant code change, and may even break an API contract.
 
-- [API Extractor](/heft_tasks/api-extractor): This is an additional validation check for library packages only.  It ensures their API contracts are well-formed and properly documented.
+- [API Extractor](../heft_tasks/api-extractor): This is an additional validation check for library packages only.  It ensures their API contracts are well-formed and properly documented.
 
-Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach.  Each of these components is optional, and other configurations are possible.  For example, older code bases may need to use [TSLint](/heft_tasks/tslint) instead of ESLint.
+Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach.  Each of these components is optional, and other configurations are possible.  For example, older code bases may need to use [TSLint](../heft_tasks/tslint) instead of ESLint.
 
 
 ## package.json dependencies
@@ -28,7 +28,7 @@ You will need to add the `eslint` package to your project:
 $ rush add --package eslint --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](/heft_tutorials/heft_and_rush) article.  However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it may still be useful to add ESLint to your **package.json** file.  (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
+Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../heft_tutorials/heft_and_rush) article.  However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it may still be useful to add ESLint to your **package.json** file.  (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
 
 
 ## Config files

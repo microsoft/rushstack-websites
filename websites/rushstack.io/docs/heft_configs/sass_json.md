@@ -3,7 +3,7 @@ title: sass.json
 ---
 
 | **File path:** | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**](/heft/rig_packages) | Yes |
+| [**Riggable?**](../heft/rig_packages) | Yes |
 | **Associated plugins:** | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/SassTypingsPlugin/SassTypingsPlugin.ts) |
 
 ## Template
@@ -60,4 +60,4 @@ title: sass.json
 
 ## See also
 
-- [sass-typings](/heft_tasks/sass-typings) task
+- [sass-typings](../heft_tasks/sass-typings) task
