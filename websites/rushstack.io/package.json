@@ -1,15 +1,12 @@
 {
   "name": "rushstack.io",
   "version": "1.0.0",
+  "private": true,
   "description": "Source for the rushstack.io documentation website",
   "repository": {
     "type": "git",
     "url": "https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io"
   },
-  "engines": {
-    "node": ">=12.17.0"
-  },
-  "engineStrict": true,
   "homepage": "https://rushstack.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
