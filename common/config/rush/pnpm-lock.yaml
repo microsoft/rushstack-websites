@@ -1,0 +1,15 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@rush-temp/rushstack.io': file:./projects/rushstack.io.tgz
+
+dependencies:
+  '@rush-temp/rushstack.io': file:projects/rushstack.io.tgz
+
+packages:
+
+  file:projects/rushstack.io.tgz:
+    resolution: {integrity: sha512-3AMquvIMV8ftZjdsoTxf6RBmjR3PF3TOf9J9831b0uAA5zHV3nPyBk1avdTRbg/F07xdxJLPeEpY0vejRySPPA==, tarball: file:projects/rushstack.io.tgz}
+    name: '@rush-temp/rushstack.io'
+    version: 0.0.0
+    dev: false
