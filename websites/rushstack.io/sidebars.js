@@ -11,6 +11,8 @@
 
 // @ts-check
 
+const { SKIP_API_DOCS } = require('./custom.config.js');
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
@@ -148,9 +150,7 @@ const sidebars = {
       ]
     }
   ],
-  apiSidebar: [
-    require('./data/api_nav.json')
-  ]
+  apiSidebar: SKIP_API_DOCS ? [] : [require('./data/api_nav.json')]
 };
 
 module.exports = sidebars;
