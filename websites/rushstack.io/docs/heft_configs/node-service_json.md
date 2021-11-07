@@ -2,6 +2,8 @@
 title: node-service.json
 ---
 
+| | |
+| --- | --- |
 | **File path:** | **&lt;project folder&gt;/config/node-service.json** |
 | [**Riggable?**](../heft/rig_packages) | Yes |
 | **Associated plugins:** | [NodeServicePlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/NodeServicePlugin.ts) |

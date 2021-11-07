@@ -2,6 +2,8 @@
 title: rig.json
 ---
 
+| | |
+| --- | --- |
 | **File path:** | **&lt;project folder&gt;/config/rig.json** |
 | [**Riggable?**](../heft/rig_packages) | No |
 | **Associated plugins:** | |
