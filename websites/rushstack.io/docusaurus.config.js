@@ -34,6 +34,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack.io-website/',
+          rehypePlugins: [
+            require('./src/rehype/rehype-headerless-table-plugin')
+          ],
           ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
