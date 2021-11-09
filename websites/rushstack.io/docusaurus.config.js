@@ -5,6 +5,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const { SKIP_API_DOCS } = require('./custom.config.js');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rush Stack',
@@ -32,6 +34,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack.io-website/',
+          rehypePlugins: [
+            require('./src/rehype/rehype-headerless-table-plugin')
+          ],
+          ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
           showReadingTime: true,
@@ -62,12 +68,14 @@ const config = {
             position: 'right',
             label: 'Docs',
           },
-          {
-            type: 'doc',
-            docId: 'api/index',
-            position: 'right',
-            label: 'API',
-          },
+          ...(SKIP_API_DOCS ? [] : [
+            {
+              type: 'doc',
+              docId: 'api/index',
+              position: 'right',
+              label: 'API',
+            }
+          ]),
           {
             type: 'doc',
             docId: 'shop',

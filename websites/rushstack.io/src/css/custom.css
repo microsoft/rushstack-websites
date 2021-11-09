@@ -26,3 +26,78 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+:root {
+  /*
+   * Rush Stack Customization - Infima style overrides
+   */
+  --ifm-navbar-background-color: rgb(240, 240, 240);
+  --ifm-navbar-height: 4rem;
+  --docsearch-searchbox-background: rgb(255, 0, 255);
+
+  /*
+   * Generated using https://docusaurus.io/docs/styling-layout, with the Primary Color
+   * set to rushstack orange (bc5835).
+   */
+  --ifm-color-primary: #bc5835;
+  --ifm-color-primary-dark: #a94f30;
+  --ifm-color-primary-darker: #a04b2d;
+  --ifm-color-primary-darkest: #843e25;
+  --ifm-color-primary-light: #c96440;
+  --ifm-color-primary-lighter: #cc6b49;
+  --ifm-color-primary-lightest: #d48266;
+}
+
+/*
+ * The rushstack orange is a bit dark on a dark background, so this alternate
+ * set was created using the same tool, with the Primary Color set to the
+ * the "lighter" version of rushstack orange above (cc6b49).
+ */
+html[data-theme='dark'] {
+  --ifm-color-primary: #cc6b49;
+  --ifm-color-primary-dark: #c35b37;
+  --ifm-color-primary-darker: #b85634;
+  --ifm-color-primary-darkest: #97472a;
+  --ifm-color-primary-light: #d27d5f;
+  --ifm-color-primary-lighter: #d58569;
+  --ifm-color-primary-lightest: #dea08a;
+}
+
+/*
+ * Rush Stack Customization - Search bar
+ */
+.DocSearch-Button {
+  border-radius: 2px;
+}
+
+/*
+ * Rush Stack Customization - Sidebars
+ */
+ul.theme-doc-sidebar-menu {
+  font-size: 0.8em;
+}
+li.theme-doc-sidebar-item-category {
+  margin-top: 0.7rem;
+}
+li.theme-doc-sidebar-item-category > a {
+  font-weight: 700;
+}
+
+/*
+ * Rush Stack Customization - Main article
+ */
+main {
+  font-size: 0.9em;
+}
+
+/*
+ * Rush Stack -  People grid
+ */
+.people-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, max(250px, 100%/3)));
+}
+.people-item {
+  text-align: center;
+  padding: 16px;
+}

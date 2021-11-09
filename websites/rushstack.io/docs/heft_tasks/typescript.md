@@ -27,7 +27,7 @@ You will need to add the `typescript` package to your project:
 $ rush add --package typescript --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](/heft_tutorials/heft_and_rush) article.
+Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../heft_tutorials/heft_and_rush) article.
 
 If your **tsconfig.json** enables `"importHelpers": true` for more efficient transpiler output, you may also need a dependency on **tslib**:
 
@@ -40,4 +40,4 @@ $ rush add --package tslib
 
 The primary configuration comes from TypeScript's [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file.
 
-For advanced scenarios, Heft also provides an optional [typescript.json](/heft_configs/typescript_json) config file that can be used to configure toolchain features such as multiple emit targets for the TypeScript compiler.
+For advanced scenarios, Heft also provides an optional [typescript.json](../heft_configs/typescript_json) config file that can be used to configure toolchain features such as multiple emit targets for the TypeScript compiler.

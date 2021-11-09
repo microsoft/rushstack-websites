@@ -2,7 +2,7 @@
 title: What's new
 ---
 
-For general planning updates, please see the [Project roadmap](/overview/roadmap).
+For general planning updates, please see the [Project roadmap](./overview/roadmap).
 
 To find out about recent updates for individual projects, check out their published CHANGELOG.md file.
 Here's the most common ones:
