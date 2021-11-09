@@ -33,11 +33,11 @@ module.exports = function () {
 
         if (theadIndex >= 0) {
           const thead = element.children[theadIndex];
-          let empty = false;
+          let empty = true;
 
           visit(thead, 'element', element2 => {
-            if (element2.tagName === 'th' && element2.children.length === 0) {
-              empty = true;
+            if (element2.tagName === 'th' && element2.children.length > 0) {
+              empty = false;
             }
           });
 
