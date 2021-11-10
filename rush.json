@@ -389,9 +389,16 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
+    // Websites
     {
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
+    },
+
+    // Tools
+    {
+      "packageName": "api-documenter-docusaurus-plugin",
+      "projectFolder": "tools/api-documenter-docusaurus-plugin"
     }
     // {
     //   /**
