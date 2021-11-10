@@ -1,33 +1,63 @@
-# Website
+# rushstack.io
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## Local development
+
+To build dependencies and then start the local dev server:
 
 ```
-$ yarn
+rush build --to-except .
+rushx start
 ```
 
-### Local Development
+For ease of iteration, you can also start the local dev server without the API Docs:
 
 ```
-$ yarn start
+SKIP_API_DOCS=1 rushx start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Building a production build
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
+To produce the static site in the `build` directory:
 
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+rushx build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+You can serve this production build locally to test it:
+
+```
+rushx serve
+```
+
+## Deployment
+
+To build the production site and then push it to the `gh-pages` branch of the target repo:
+
+```
+$ GIT_USER=<Your GitHub username> USE_SSH=true rushx deploy
+```
+
+(Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials
+necessary to write to the `rushstack.io-website` GitHub repo.)
+
+## Updating API docs
+
+To update the API docs using latest APIs extracted from the Rush Stack repo, first navigate
+to your local clone of the https://github.com/microsoft/rushstack repo:
+
+```
+rush install
+rush build
+```
+
+Then, in this folder:
+
+```
+rush build --to-except .
+rushx update-api-docs <path-to-local-rushstack>
+mv docs/api_nav.json data
+```
+
+Check in the resulting `docs/api` and `data` folder changes and include it in your PR.

@@ -12,7 +12,7 @@ In your `api-documenter.json`, add the plugin:
 
   "plugins": [
     {
-      "packageName": "doc-plugin-docusaurus",
+      "packageName": "api-documenter-docusaurus-plugin",
       "enabledFeatureNames": ["docusaurus-markdown-documenter"]
     }
   ]
