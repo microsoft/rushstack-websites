@@ -29,6 +29,7 @@ importers:
       '@docusaurus/core': 2.0.0-beta.9
       '@docusaurus/preset-classic': 2.0.0-beta.9
       '@mdx-js/react': ^1.6.21
+      '@microsoft/api-documenter': ~7.13.68
       '@svgr/webpack': ^5.5.0
       api-documenter-docusaurus-plugin: workspace:*
       clsx: ^1.1.1
@@ -49,6 +50,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       url-loader: 4.1.1_file-loader@6.2.0
     devDependencies:
+      '@microsoft/api-documenter': 7.13.68
       api-documenter-docusaurus-plugin: link:../../tools/api-documenter-docusaurus-plugin
 
 packages:
@@ -2468,7 +2470,6 @@ packages:
       colors: 1.2.5
       js-yaml: 3.13.1
       resolve: 1.17.0
-    dev: false
 
   /@microsoft/api-extractor-model/7.13.16:
     resolution: {integrity: sha512-ttdxVXsTWL5dd26W1YNLe3LgDsE0EE273aZlcLe58W0opymBybCYU1Mn+OHQM8BuErrdvdN8LdpWAAbkiOEN/Q==}
@@ -7131,7 +7132,6 @@ packages:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
-    dev: false
 
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}

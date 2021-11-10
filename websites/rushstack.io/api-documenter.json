@@ -1,0 +1,9 @@
+{
+  "outputTarget": "markdown",
+  "plugins": [
+    {
+      "packageName": "api-documenter-docusaurus-plugin",
+      "enabledFeatureNames": ["docusaurus-markdown-documenter"]
+    }
+  ]
+}

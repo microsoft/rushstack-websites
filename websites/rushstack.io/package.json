@@ -17,7 +17,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "update-api-docs": "node scripts/update-api-docs.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -33,6 +34,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "api-documenter-docusaurus-plugin": "workspace:*"
+    "api-documenter-docusaurus-plugin": "workspace:*",
+    "@microsoft/api-documenter": "~7.13.68"
   }
 }
