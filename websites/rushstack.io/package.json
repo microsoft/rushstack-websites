@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "api-documenter-docusaurus-plugin": "workspace:*",
+    "site-config": "workspace:*",
     "@microsoft/api-documenter": "~7.13.68"
   }
 }

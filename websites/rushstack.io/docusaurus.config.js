@@ -1,11 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const { SKIP_API_DOCS } = require('./custom.config.js');
+
+const { getSiteConfig } = require('site-config');
+const siteConfig = getSiteConfig(require('./package.json').name);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -21,8 +23,11 @@ const config = {
   onBrokenMarkdownLinks: 'log', //'warn',
 
   favicon: 'images/favicon.ico',
-  organizationName: 'microsoft', // Usually your GitHub org/user name.
-  projectName: 'rushstack.io-website', // Usually your repo name.
+  organizationName: 'microsoft',
+  projectName: 'rushstack.io-website',
+
+  // Deployment settings above can be overriden based on the TARGET determined at runtime
+  ...siteConfig.configOverrides,
 
   presets: [
     [
