@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-documenter.schema.json",
+  "outputTarget": "markdown",
+  "plugins": [
+    {
+      "packageName": "api-documenter-docusaurus-plugin",
+      "enabledFeatureNames": ["docusaurus-markdown-documenter"]
+    }
+  ]
+}
