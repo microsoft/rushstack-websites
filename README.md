@@ -5,6 +5,58 @@
 This is an experiment to migrate the [Rush Stack](https://rushstack.io/) websites into a monorepo
 built using Docusaurus.  It has not been officially launched yet.
 
+## Targets
+
+The Docusaurus websites in this monorepo support a concept called "target", which describes the environment
+sites are being built for. There are 3 possible targets:
+
+### "local"
+
+The `local` target is intended for use when a Docusaurus development server is running locally. This
+target will automatically be selected if you run `rushx start` in any of the website projects.
+
+You can also force this target by setting the environment variable `TARGET=local`.
+
+### "fork"
+
+The `fork` target is intended for use when you are building static Docusaurus sites for deployment,
+but you'll be deploying them to GitHub Pages on your fork of the `rushstack-websites` project. This is
+useful for deploying demo sites to share with others, to test on phones and tablets, etc. This target
+will automatically be selected if you run a production build (`rushx build`) of a website project and
+you have cloned a _fork_ of the `rushstack-websites` project.
+
+You can also force this target by setting the environment variable `TARGET=fork`.
+
+### "prod"
+
+The `prod` target is intended for use when you will be deploying a website project to GitHub Pages
+in its live production repo. Typically this target is only used by a CI pipeline, and it is automatically
+selected if you run a production build on a clone of the `microsoft/rushstack-websites` repo.
+
+You can also force this target by setting the environment variable `TARGET=prod`.
+
+## Deploying a fork
+
+To facilitate testing of multi-site changes, you can opt to build and deploy all of the website projects
+at once from a fork of `rushstack-websites`. To do so, first make sure you've forked the project
+and cloned your fork locally, and then run:
+
+```console
+rush install
+rush build
+GIT_USER=<your-git-username> rush deploy-fork
+```
+
+The commands above will automatically build all of the supported websites with `TARGET=fork`, then deploy
+them in a group to the `gh-pages` branch of your forked repo. You can then access these sites via individual
+site paths, for example:
+
+```text
+https://<your-git-username>.github.io/rushstack-websites/rushstack.io/
+```
+
+Cross-site links between the different sites will automatically be linked up to navigate to your deployed
+versions of those sites.
 
 # Contributing
 
