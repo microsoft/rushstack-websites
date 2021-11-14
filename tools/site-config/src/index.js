@@ -1,5 +1,3 @@
-// Halp!
-
 const { spawnSync } = require('child_process');
 
 function getGitHubOrg() {
