@@ -399,6 +399,14 @@
     {
       "packageName": "api-documenter-docusaurus-plugin",
       "projectFolder": "tools/api-documenter-docusaurus-plugin"
+    },
+    {
+      "packageName": "deploy-fork",
+      "projectFolder": "tools/deploy-fork"
+    },
+    {
+      "packageName": "site-config",
+      "projectFolder": "tools/site-config"
     }
     // {
     //   /**
