@@ -31,9 +31,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   /*
    * Rush Stack Customization - Infima style overrides
    */
-  --ifm-navbar-background-color: rgb(240, 240, 240);
   --ifm-navbar-height: 4rem;
-  --docsearch-searchbox-background: rgb(255, 0, 255);
 
   /*
    * Generated using https://docusaurus.io/docs/styling-layout, with the Primary Color
@@ -54,20 +52,36 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
  * the "lighter" version of rushstack orange above (cc6b49).
  */
 html[data-theme='dark'] {
-  --ifm-color-primary: #cc6b49;
-  --ifm-color-primary-dark: #c35b37;
-  --ifm-color-primary-darker: #b85634;
-  --ifm-color-primary-darkest: #97472a;
-  --ifm-color-primary-light: #d27d5f;
-  --ifm-color-primary-lighter: #d58569;
-  --ifm-color-primary-lightest: #dea08a;
+  --ifm-color-primary: #d58569;
+  --ifm-color-primary-dark: #ce7150;
+  --ifm-color-primary-darker: #cb6744;
+  --ifm-color-primary-darkest: #ae5131;
+  --ifm-color-primary-light: #dc9982;
+  --ifm-color-primary-lighter: #dfa38e;
+  --ifm-color-primary-lightest: #eac2b4;
 }
 
 /*
- * Rush Stack Customization - Search bar
+ * Top Nav
  */
-.DocSearch-Button {
-  border-radius: 2px;
+nav.navbar {
+  background: rgb(240, 240, 240);
+}
+html[data-theme='dark'] nav.navbar {
+  background: rgb(48, 48, 48);
+}
+
+/*
+ * Rush Stack Customization - Search button
+ */
+button.DocSearch-Button {
+  border-radius: 4px;
+  border: 1px solid #c0c0c0;
+  background: #ffffff;
+}
+html[data-theme='dark'] button.DocSearch-Button {
+  background: rgb(25, 25, 25);
+  border: 1px solid rgb(64, 64, 64);
 }
 
 /*
