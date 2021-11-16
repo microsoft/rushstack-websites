@@ -74,10 +74,10 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
+            to: 'pages/index',
             position: 'right',
             label: 'Docs',
+            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
           },
           ...(SKIP_API_DOCS ? [] : [
             {
@@ -100,16 +100,16 @@ const config = {
             label: 'News',
           },
           {
-            type: 'doc',
-            docId: 'contributing/get_started',
+            to: 'pages/contributing/get_started',
             position: 'right',
             label: 'GitHub',
+            activeBasePath: 'pages/contributing/get_started'
           },
           {
-            type: 'doc',
-            docId: 'help/support',
+            to: 'pages/help/support',
             position: 'right',
             label: 'Help',
+            activeBasePath: 'pages/help/support'
           }
         ],
       },
