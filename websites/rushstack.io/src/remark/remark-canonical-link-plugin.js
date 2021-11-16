@@ -26,7 +26,7 @@ module.exports = (options) => {
   }
 
   const transformer = async (ast, file) => {
-    if (file.history && file.history[0].match(/docs\/(.+)\.md/)) {
+    if (file.history && file.history[0] && file.history[0].match(/docs\/(.+)\.md/)) {
       const page = RegExp.$1;
       const canonicalUrl = `${prefix}pages/${page}/`;
       ast.children.unshift({
