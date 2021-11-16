@@ -32,6 +32,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
    * Rush Stack Customization - Infima style overrides
    */
   --ifm-navbar-height: 4rem;
+  --ifm-heading-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   /*
    * Generated using https://docusaurus.io/docs/styling-layout, with the Primary Color
@@ -44,6 +45,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-color-primary-light: #c96440;
   --ifm-color-primary-lighter: #cc6b49;
   --ifm-color-primary-lightest: #d48266;
+
+  --ifm-menu-color: #333;
 }
 
 /*
@@ -59,6 +62,8 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #dc9982;
   --ifm-color-primary-lighter: #dfa38e;
   --ifm-color-primary-lightest: #eac2b4;
+
+  --ifm-menu-color: #e0e0e0;
 }
 
 /*
@@ -88,9 +93,10 @@ html[data-theme='dark'] button.DocSearch-Button {
  * Rush Stack Customization - Sidebars
  */
 ul.theme-doc-sidebar-menu {
-  font-size: 0.8em;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
 }
-li.theme-doc-sidebar-item-category {
+li.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1 {
   margin-top: 0.7rem;
 }
 li.theme-doc-sidebar-item-category > a {
@@ -101,6 +107,7 @@ li.theme-doc-sidebar-item-category > a {
  * Rush Stack Customization - Main article
  */
 main {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.9em;
 }
 
