@@ -122,3 +122,26 @@ main {
   text-align: center;
   padding: 16px;
 }
+
+/*
+ * Rush Stack - Multi-purpose Blockquote
+ */
+blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-color: #c95228;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 6pt;
+  border-radius: 4pt;
+  background-color: rgb(248, 248, 248);
+}
+html[data-theme='dark'] blockquote {
+  background-color: rgb(32, 32, 32);
+}
