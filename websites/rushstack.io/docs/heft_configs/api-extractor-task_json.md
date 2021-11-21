@@ -43,4 +43,4 @@ title: api-extractor-task.json
 ## See also
 
 - [api-extractor](../heft_tasks/api-extractor) task
-- [API Extractor](https://api-extractor.com/) website
+- [API Extractor](@api-extractor/) website

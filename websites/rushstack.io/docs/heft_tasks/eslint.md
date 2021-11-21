@@ -9,7 +9,7 @@ This task invokes the [ESLint](https://eslint.org/) tool which reports errors ab
 
 ESLint fits together with several other tools as part of Rush Stack's recommended strategy for code validation:
 
-- [Prettier](https://rushjs.io/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build.  Instead, Prettier reformats the code automatically via a `git commit` hook.  To se this up, see the [Enabling Prettier](https://rushjs.io/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
+- [Prettier](@rushjs/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build.  Instead, Prettier reformats the code automatically via a `git commit` hook.  To se this up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
 
 - [TypeScript](../heft_tasks/typescript): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
 

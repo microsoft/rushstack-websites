@@ -2,7 +2,7 @@
 title: '"api-extractor" task'
 ---
 
-This task invokes the [API Extractor](https://api-extractor.com/) tool which reads TypeScript declarations (.d.ts files)
+This task invokes the [API Extractor](@api-extractor/) tool which reads TypeScript declarations (.d.ts files)
 as inputs and produces three types of outputs:
 
 **1. API Report** - API Extractor can trace all exports from your project's main entry point and generate
@@ -16,7 +16,7 @@ JSON file contains the extracted type signatures and doc comments.  The **api-do
 can use these files to generate an API reference website, or you can use them as inputs for a custom documentation
 pipeline.
 
-See the [API Extractor documentation](https://api-extractor.com/pages/overview/intro/) for details about how it works.
+See the [API Extractor documentation](@api-extractor/pages/overview/intro/) for details about how it works.
 
 
 ## When to use it
@@ -37,6 +37,6 @@ Alternatively, you can avoid this dependency by loading it from a rig, as descri
 
 ## Configuration
 
-Heft looks for API Extractor's config file [config/api-extractor.json](https://api-extractor.com/pages/commands/config_file/). This file can be created by invoking the [api-extractor init](https://api-extractor.com/pages/commands/api-extractor_init/) command.  This file is [riggable](../heft/rig_packages).
+Heft looks for API Extractor's config file [config/api-extractor.json](@api-extractor/pages/commands/config_file/). This file can be created by invoking the [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) command.  This file is [riggable](../heft/rig_packages).
 
 For advanced scenarios, the optional [api-extractor-task.json](../heft_configs/api-extractor-task_json) config file provides some additional Heft-specific settings.
