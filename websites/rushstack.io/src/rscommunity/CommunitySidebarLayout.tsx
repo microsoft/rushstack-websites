@@ -37,6 +37,7 @@ function MenuItem(props: IMenuItemProps): JSX.Element {
 export interface ICommunitySidebarLayoutProps {
   context: CommunityContext;
   currentPage?: "events" | "past-events" | "profile";
+  style?: React.CSSProperties;
 }
 
 export function CommunitySidebarLayout(
@@ -56,9 +57,9 @@ export function CommunitySidebarLayout(
       >
         <div
           style={{
-            paddingTop: "70px",
+            paddingTop: "100px",
             paddingLeft: "50px",
-            paddingRight: "30px",
+            paddingRight: "50px",
             flexGrow: 0,
           }}
         >
@@ -80,7 +81,7 @@ export function CommunitySidebarLayout(
           />
           <MenuItem title="Sign out" linkOnClick={signOut_onClick} />
         </div>
-        <div style={{ flexGrow: 1 }}>{props.children}</div>
+        <div style={{ flexGrow: 1, ...props.style }}>{props.children}</div>
       </div>
     </Layout>
   );
