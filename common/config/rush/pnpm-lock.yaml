@@ -54,6 +54,7 @@ importers:
       '@types/react-dom': 17.0.11
       api-documenter-docusaurus-plugin: workspace:*
       clsx: ^1.1.1
+      dayjs: ~1.10.7
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
       prism-react-renderer: ^1.2.1
@@ -67,6 +68,7 @@ importers:
       '@mdx-js/react': 1.6.22_react@17.0.2
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
+      dayjs: 1.10.7
       file-loader: 6.2.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.2.1_react@17.0.2
@@ -4662,6 +4664,10 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 7.1.0
     dev: true
+
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
