@@ -9,13 +9,6 @@ export interface ICommunitySigninPageProps {
 export function CommunitySignInPage(
   props: ICommunitySigninPageProps
 ): JSX.Element | undefined {
-  // After logging in, return to the current page
-  Cookies.set("rscommunity-login-return-path", document.location.pathname, {
-    sameSite: "Strict",
-    domain: document.location.hostname,
-    path: "/",
-  });
-
   const containerStyle: React.CSSProperties = {
     paddingTop: "100px",
     paddingLeft: "100px",
@@ -50,9 +43,8 @@ export function CommunitySignInPage(
   };
 
   const signInWithGitHub_onClick = React.useCallback(() => {
-    console.log("Logging in");
-    document.location.href = props.context.serviceUrl + "/login-github";
-  }, [props.context.serviceUrl]);
+    props.context.navigateToSignIn();
+  }, [props.context.serviceUrl, document.location.href]);
 
   return (
     <Layout>

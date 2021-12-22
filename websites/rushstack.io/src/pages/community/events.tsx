@@ -37,7 +37,7 @@ function EventsPage(): JSX.Element {
   }, [context.serviceUrl]);
 
   return (
-    <CommunitySidebarLayout context={context}>
+    <CommunitySidebarLayout context={context} currentPage="events">
       <div>You are logged in as {context.loggedInUser}</div>
       <div>
         <button onClick={testButton_onClick}>TEST</button>
