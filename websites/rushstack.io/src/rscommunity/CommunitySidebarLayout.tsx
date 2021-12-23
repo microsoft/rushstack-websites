@@ -81,7 +81,9 @@ export function CommunitySidebarLayout(
           />
           <MenuItem title="Sign out" linkOnClick={signOut_onClick} />
         </div>
-        <div style={{ flexGrow: 1, ...props.style }}>{props.children}</div>
+        <div style={{ flexGrow: 1, ...props.style, paddingBottom: "100px" }}>
+          {props.children}
+        </div>
       </div>
     </Layout>
   );

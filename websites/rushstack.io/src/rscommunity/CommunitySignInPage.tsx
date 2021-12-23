@@ -1,7 +1,9 @@
 import Layout from "@theme/Layout";
 import React from "react";
-import Cookies from "js-cookie";
+import styles from "./CommunitySignInPage.module.css";
+
 import { CommunityContext } from "./CommunityContext";
+import { DecoratedButton } from "./DecoratedButton";
 
 export interface ICommunitySigninPageProps {
   context: CommunityContext;
@@ -9,47 +11,14 @@ export interface ICommunitySigninPageProps {
 export function CommunitySignInPage(
   props: ICommunitySigninPageProps
 ): JSX.Element | undefined {
-  const containerStyle: React.CSSProperties = {
-    paddingTop: "100px",
-    paddingLeft: "100px",
-    paddingRight: "100px",
-  };
-  const boxStyle: React.CSSProperties = {
-    marginLeft: "auto",
-    marginRight: "auto",
-    padding: "40px",
-    backgroundColor: "#f0f0f0",
-    borderRadius: "6px",
-    maxWidth: "600px",
-  };
-  const buttonOuterStyle: React.CSSProperties = {
-    display: "block",
-    marginTop: "40px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    backgroundColor: "#ffffff",
-    borderRadius: "4px",
-    borderStyle: "solid",
-    borderWidth: "3px",
-    borderColor: "#c0c0c0",
-    cursor: "pointer",
-  };
-  const buttonInnerStyle: React.CSSProperties = {
-    display: "flex",
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    margin: "10px",
-  };
-
   const signInWithGitHub_onClick = React.useCallback(() => {
     props.context.navigateToSignIn();
   }, [props.context.serviceUrl, document.location.href]);
 
   return (
     <Layout>
-      <div style={containerStyle}>
-        <div style={boxStyle}>
+      <div className={styles.dialogContainer}>
+        <div className={styles.dialogBox}>
           <h2>Join the Rush Stack Community!</h2>
           Signing in enables you to:
           <ul>
@@ -65,13 +34,16 @@ export function CommunitySignInPage(
             create one
           </a>
           .
-          <div>
-            <button onClick={signInWithGitHub_onClick} style={buttonOuterStyle}>
-              <div style={buttonInnerStyle}>
-                <img src="/images/github-button.svg" width={"24px"}></img>
-                <div style={{ paddingLeft: "10px" }}>Sign in with GitHub</div>
-              </div>
-            </button>
+          <div
+            style={{
+              textAlign: "center",
+              paddingTop: "40px",
+            }}
+          >
+            <DecoratedButton onClick={signInWithGitHub_onClick} theme="white">
+              <img src="/images/github-button.svg" width={"24px"}></img>
+              <div style={{ paddingLeft: "10px" }}>Sign in with GitHub</div>
+            </DecoratedButton>
           </div>
         </div>
       </div>

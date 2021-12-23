@@ -1,0 +1,46 @@
+.buttonOuter {
+  display: inline-block;
+}
+
+.buttonBorder {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.buttonBorder:active {
+  outline-style: solid !important;
+  outline-color: #e0e0e0;
+}
+.buttonBorder:hover {
+  outline-style: solid !important;
+  outline-color: #e0e0e0;
+}
+
+.buttonInner {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonInnerActiveLighten:active {
+  background-color: #ffffff18;
+}
+
+.buttonInnerActiveDarken:active {
+  background-color: #0000000c;
+}

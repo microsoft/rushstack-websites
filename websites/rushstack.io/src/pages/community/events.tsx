@@ -7,6 +7,7 @@ import React from "react";
 import { CommunityContext } from "../../rscommunity/CommunityContext";
 import { CommunitySidebarLayout } from "../../rscommunity/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/CommunitySignInPage";
+import { DecoratedButton } from "../../rscommunity/DecoratedButton";
 
 dayjs.extend(dayjsUtc);
 dayjs.extend(dayjsTimezone);
@@ -48,7 +49,7 @@ const eventsJson: ICurrentEventJson[] = [
       "Meet other people from the Rush community, get answers from the maintainers." +
       " This month we'll be discussing the build cache, plugins, and Bazel integration",
     spotsLeftNotice: ">5",
-    userIsSignedUp: false,
+    userIsSignedUp: true,
   },
   {
     eventId: 1003,
@@ -136,6 +137,21 @@ function EventCard(props: { eventJson: ICurrentEventJson }): JSX.Element {
       {agendaDiv}
       <div style={{ paddingTop: "20px" }}>
         Spots left: {eventJson.spotsLeftNotice}
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          paddingRight: "20px",
+          paddingBottom: "10px",
+        }}
+      >
+        {eventJson.userIsSignedUp ? (
+          <DecoratedButton>Reserve a spot - I will attend</DecoratedButton>
+        ) : (
+          <DecoratedButton theme="notice">Edit Reservation</DecoratedButton>
+        )}
       </div>
     </div>
   );
