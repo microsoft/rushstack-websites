@@ -61,6 +61,7 @@ export function CommunitySidebarLayout(
             paddingLeft: "50px",
             paddingRight: "50px",
             flexGrow: 0,
+            whiteSpace: "nowrap",
           }}
         >
           <div style={{ fontWeight: "bold" }}>Member Actions</div>

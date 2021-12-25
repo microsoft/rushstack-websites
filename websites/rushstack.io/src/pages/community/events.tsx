@@ -1,107 +1,70 @@
+import React from "react";
 import dayjs from "dayjs";
 import dayjsUtc from "dayjs/plugin/utc";
 import dayjsTimezone from "dayjs/plugin/timezone";
 import dayjsAdvancedFormat from "dayjs/plugin/advancedFormat";
 
-import React from "react";
 import { CommunityContext } from "../../rscommunity/CommunityContext";
 import { CommunitySidebarLayout } from "../../rscommunity/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/CommunitySignInPage";
 import { DecoratedButton } from "../../rscommunity/DecoratedButton";
+import { IApiEvent } from "../../rscommunity/ApiInterfaces";
 
 dayjs.extend(dayjsUtc);
 dayjs.extend(dayjsTimezone);
 dayjs.extend(dayjsAdvancedFormat);
 
-interface ICurrentEventJson {
-  eventId: number;
-  eventTitle: string;
-  startTime: Date;
-  endTime: Date;
-  hostedBy: string;
-  hostedByUrl: string;
-  agenda: string;
-  spotsLeftNotice: string;
-  userIsSignedUp: boolean;
-}
-const eventsJson: ICurrentEventJson[] = [
-  {
-    eventId: 1001,
-    eventTitle: "Rush Hour January (monthly meet up)",
-    startTime: new Date("2021-12-22 11:30"),
-    endTime: new Date("2021-12-22 12:00"),
-    hostedBy: "Pete Gonzalez",
-    hostedByUrl: "https://github.com/octogonz/",
-    agenda:
-      "Meet other people from the Rush community, get answers from the maintainers." +
-      " This month we'll be discussing:\n - the build cache\n - plugins\n - Bazel integration",
-    spotsLeftNotice: ">5",
-    userIsSignedUp: false,
-  },
-  {
-    eventId: 1002,
-    eventTitle: "Rush Hour February (monthly meet up)",
-    startTime: new Date("2021-12-22 11:30"),
-    endTime: new Date("2021-12-22 12:00"),
-    hostedBy: "Pete Gonzalez",
-    hostedByUrl: "https://github.com/octogonz/",
-    agenda:
-      "Meet other people from the Rush community, get answers from the maintainers." +
-      " This month we'll be discussing the build cache, plugins, and Bazel integration",
-    spotsLeftNotice: ">5",
-    userIsSignedUp: true,
-  },
-  {
-    eventId: 1003,
-    eventTitle: "Rush Hour March (monthly meet up)",
-    startTime: new Date("2021-12-22 11:30"),
-    endTime: new Date("2021-12-22 12:00"),
-    hostedBy: "Pete Gonzalez",
-    hostedByUrl: "https://github.com/octogonz/",
-    agenda: "",
-    spotsLeftNotice: ">5",
-    userIsSignedUp: false,
-  },
-];
-
-async function testAsync(context: CommunityContext): Promise<void> {
-  console.log("Testing a REST request...");
-  try {
-    const data: Response = await fetch(context.serviceUrl + "/api/profile", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-    });
-
-    if (!data.ok) {
-      throw new Error("Server Error: " + data.statusText);
-    }
-
-    const json: unknown = await data.json();
-
-    console.log("Request successful:");
-    console.log(JSON.stringify(json));
-  } catch (error) {
-    console.error("REST request failed: " + error.toString());
+function calculateEndTime(eventJson: IApiEvent): Date | undefined {
+  if (eventJson.startTime === undefined || eventJson.duration === undefined) {
+    return undefined;
   }
+  if (eventJson.durationUnits !== "minutes") {
+    return undefined;
+  }
+
+  return dayjs(eventJson.startTime).add(eventJson.duration, "minute").toDate();
 }
 
-function EventCard(props: { eventJson: ICurrentEventJson }): JSX.Element {
-  const eventJson: ICurrentEventJson = props.eventJson;
+function EventCard(props: { apiEvent: IApiEvent }): JSX.Element {
+  const apiEvent: IApiEvent = props.apiEvent;
+  const endTime: Date | undefined = calculateEndTime(apiEvent);
 
-  const startTime: string = dayjs(eventJson.startTime).format(
-    "dddd MMM D, YYYY h:mma"
-  );
-  const endTime: string = dayjs(eventJson.endTime).format("h:mma");
-  const timeZoneLine: string = dayjs(eventJson.startTime).format(
-    "zzz ([UTC]Z)"
-  );
+  const formattedStartDate: string = apiEvent.startTime
+    ? dayjs(apiEvent.startTime).format("dddd MMM D, YYYY")
+    : "(event date is unspecified)";
 
-  let agendaDiv: JSX.Element;
-  if (eventJson.agenda.trim() === "") {
-    agendaDiv = <></>;
-  } else {
-    let agendaParagraphs: string[] = eventJson.agenda.split(/[\r\n]+/);
+  let formattedTime: string = "";
+  if (apiEvent.startTime) {
+    formattedTime += dayjs(apiEvent.startTime).format("h:mma");
+    if (endTime) {
+      formattedTime += "-" + dayjs(endTime).format("h:mma");
+    }
+  }
+
+  const timeZoneLine: string = apiEvent.startTime
+    ? dayjs(apiEvent.startTime).format("zzz ([UTC]Z)")
+    : "";
+
+  let hostedByDiv: JSX.Element | undefined = undefined;
+  if (apiEvent.hostedBy) {
+    let innerContent: JSX.Element;
+    if (apiEvent.hostedByUrl) {
+      innerContent = (
+        <a href={apiEvent.hostedByUrl} target="_blank">
+          {apiEvent.hostedBy}
+        </a>
+      );
+    } else {
+      innerContent = <>{apiEvent.hostedBy}</>;
+    }
+    hostedByDiv = (
+      <div style={{ paddingTop: "10px" }}>Hosted by: {innerContent}</div>
+    );
+  }
+
+  let agendaDiv: JSX.Element | undefined = undefined;
+  if (apiEvent.agenda.trim() !== "") {
+    let agendaParagraphs: string[] = apiEvent.agenda.split(/[\r\n]+/);
 
     agendaParagraphs[0] = "Agenda: " + agendaParagraphs[0];
 
@@ -124,62 +87,123 @@ function EventCard(props: { eventJson: ICurrentEventJson }): JSX.Element {
         marginTop: "20px",
         marginRight: "50px",
         padding: "10px",
+        paddingRight: "20px",
       }}
     >
       <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-        {eventJson.eventTitle}
+        {apiEvent.eventTitle}
       </div>
-      <div style={{ fontWeight: "bold" }}>
-        {startTime}-{endTime}
+      <div
+        style={{ display: "flex", flexDirection: "row", paddingTop: "10px" }}
+      >
+        <div style={{ whiteSpace: "nowrap", fontWeight: "bold" }}>
+          {formattedStartDate}
+          <br />
+          {formattedTime}
+        </div>
+        <div style={{ flexGrow: 1, textAlign: "right", fontStyle: "italic" }}>
+          {timeZoneLine}
+        </div>
       </div>
-      <div>{timeZoneLine}</div>
-      <div>Hosted by: {eventJson.hostedBy}</div>
+
+      {hostedByDiv}
       {agendaDiv}
       <div style={{ paddingTop: "20px" }}>
-        Spots left: {eventJson.spotsLeftNotice}
+        Spots left: {apiEvent.spotsLeftNotice}
       </div>
 
       <div
         style={{
           display: "flex",
           justifyContent: "flex-end",
-          paddingRight: "20px",
           paddingBottom: "10px",
         }}
       >
-        {eventJson.userIsSignedUp ? (
-          <DecoratedButton>Reserve a spot - I will attend</DecoratedButton>
-        ) : (
+        {apiEvent.userIsSignedUp ? (
           <DecoratedButton theme="notice">Edit Reservation</DecoratedButton>
+        ) : (
+          <DecoratedButton>Reserve a spot - I will attend</DecoratedButton>
         )}
       </div>
     </div>
   );
 }
 
-function EventsPage(): JSX.Element {
-  const context: CommunityContext = new CommunityContext();
-  if (!context.loggedInUser) {
-    return <CommunitySignInPage context={context} />;
+class EventsPage extends React.Component {
+  private _context!: CommunityContext;
+  private _apiEvents: IApiEvent[] | undefined = undefined;
+  private _fetchError: Error | undefined = undefined;
+
+  public constructor(props: {}) {
+    super(props);
+    this._context = new CommunityContext();
   }
 
-  const testButton_onClick = React.useCallback(() => {
-    console.log("Performing test");
-    testAsync(context);
-  }, [context.serviceUrl]);
+  public componentDidMount(): void {
+    if (this._context.loggedInUser) {
+      this._fetchData().catch((error) => {
+        this._fetchError = new Error("Request failed: " + error.message);
+        this.forceUpdate();
+      });
+    }
+  }
 
-  return (
-    <CommunitySidebarLayout
-      context={context}
-      currentPage="events"
-      style={{ paddingTop: "100px" }}
-    >
-      <h2>Upcoming Events</h2>
-      {eventsJson.map((eventJson) => (
-        <EventCard eventJson={eventJson} key={eventJson.eventId} />
-      ))}
-    </CommunitySidebarLayout>
-  );
+  private async _fetchData(): Promise<void> {
+    console.log("Fetching events...");
+    const data: Response = await fetch(
+      this._context.serviceUrl + "/api/events",
+      {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+      }
+    );
+
+    if (!data.ok) {
+      throw new Error("Server Error: " + data.statusText);
+    }
+
+    this._apiEvents = await data.json();
+    this.forceUpdate();
+  }
+
+  public render(): JSX.Element {
+    if (!this._context.loggedInUser) {
+      return <CommunitySignInPage context={this._context} />;
+    }
+
+    if (this._fetchError) {
+      return <div>ERROR: {this._fetchError.message}</div>;
+    }
+
+    if (!this._apiEvents) {
+      return (
+        <CommunitySidebarLayout
+          context={this._context}
+          currentPage="events"
+          style={{ paddingTop: "100px" }}
+        >
+          <h2>Upcoming Events</h2>
+          <div style={{ maxWidth: "800px" }}>. . .</div>
+        </CommunitySidebarLayout>
+      );
+    }
+
+    return (
+      <CommunitySidebarLayout
+        context={this._context}
+        currentPage="events"
+        style={{ paddingTop: "100px" }}
+      >
+        <h2>Upcoming Events</h2>
+        <div style={{ maxWidth: "800px" }}>
+          {this._apiEvents.map((eventJson) => (
+            <EventCard apiEvent={eventJson} key={eventJson.dbEventId} />
+          ))}
+        </div>
+      </CommunitySidebarLayout>
+    );
+  }
 }
 
 export default EventsPage;
