@@ -2,19 +2,15 @@ import Layout from "@theme/Layout";
 import React from "react";
 import styles from "./CommunitySignInPage.module.css";
 
-import { CommunityContext } from "./CommunityContext";
+import { SessionModel } from "./SessionModel";
 import { DecoratedButton } from "./DecoratedButton";
 
 export interface ICommunitySigninPageProps {
-  context: CommunityContext;
+  sessionModel: SessionModel;
 }
 export function CommunitySignInPage(
   props: ICommunitySigninPageProps
-): JSX.Element | undefined {
-  const signInWithGitHub_onClick = React.useCallback(() => {
-    props.context.navigateToSignIn();
-  }, [props.context.serviceUrl, document.location.href]);
-
+): JSX.Element {
   return (
     <Layout>
       <div className={styles.dialogContainer}>
@@ -40,7 +36,10 @@ export function CommunitySignInPage(
               paddingTop: "40px",
             }}
           >
-            <DecoratedButton onClick={signInWithGitHub_onClick} theme="white">
+            <DecoratedButton
+              onClick={props.sessionModel.onNavigateToSignIn}
+              theme="white"
+            >
               <img src="/images/github-button.svg" width={"24px"}></img>
               <div style={{ paddingLeft: "10px" }}>Sign in with GitHub</div>
             </DecoratedButton>

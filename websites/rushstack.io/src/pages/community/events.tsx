@@ -4,11 +4,12 @@ import dayjsUtc from "dayjs/plugin/utc";
 import dayjsTimezone from "dayjs/plugin/timezone";
 import dayjsAdvancedFormat from "dayjs/plugin/advancedFormat";
 
-import { CommunityContext } from "../../rscommunity/CommunityContext";
+import { SessionModel } from "../../rscommunity/SessionModel";
 import { CommunitySidebarLayout } from "../../rscommunity/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/CommunitySignInPage";
 import { DecoratedButton } from "../../rscommunity/DecoratedButton";
 import { IApiEvent } from "../../rscommunity/ApiInterfaces";
+import { EventModel, EventsPageModel } from "../../rscommunity/EventsPageModel";
 
 dayjs.extend(dayjsUtc);
 dayjs.extend(dayjsTimezone);
@@ -25,8 +26,8 @@ function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   return dayjs(eventJson.startTime).add(eventJson.duration, "minute").toDate();
 }
 
-function EventCard(props: { apiEvent: IApiEvent }): JSX.Element {
-  const apiEvent: IApiEvent = props.apiEvent;
+function EventCard(props: { eventModel: EventModel }): JSX.Element {
+  const apiEvent: IApiEvent = props.eventModel.apiEvent;
   const endTime: Date | undefined = calculateEndTime(apiEvent);
 
   const formattedStartDate: string = apiEvent.startTime
@@ -122,7 +123,9 @@ function EventCard(props: { apiEvent: IApiEvent }): JSX.Element {
         {apiEvent.userIsSignedUp ? (
           <DecoratedButton theme="notice">Edit Reservation</DecoratedButton>
         ) : (
-          <DecoratedButton>Reserve a spot - I will attend</DecoratedButton>
+          <DecoratedButton onClick={props.eventModel.onReserveSpot}>
+            Reserve a spot - I will attend
+          </DecoratedButton>
         )}
       </div>
     </div>
@@ -130,75 +133,43 @@ function EventCard(props: { apiEvent: IApiEvent }): JSX.Element {
 }
 
 class EventsPage extends React.Component {
-  private _context!: CommunityContext;
-  private _apiEvents: IApiEvent[] | undefined = undefined;
-  private _fetchError: Error | undefined = undefined;
+  private _eventsPageModel: EventsPageModel;
 
   public constructor(props: {}) {
     super(props);
-    this._context = new CommunityContext();
+    this._eventsPageModel = new EventsPageModel(this.forceUpdate.bind(this));
+  }
+
+  public get sessionModel(): SessionModel {
+    return this._eventsPageModel.sessionModel;
   }
 
   public componentDidMount(): void {
-    if (this._context.loggedInUser) {
-      this._fetchData().catch((error) => {
-        this._fetchError = new Error("Request failed: " + error.message);
-        this.forceUpdate();
-      });
-    }
-  }
-
-  private async _fetchData(): Promise<void> {
-    console.log("Fetching events...");
-    const data: Response = await fetch(
-      this._context.serviceUrl + "/api/events",
-      {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-      }
-    );
-
-    if (!data.ok) {
-      throw new Error("Server Error: " + data.statusText);
-    }
-
-    this._apiEvents = await data.json();
-    this.forceUpdate();
+    this._eventsPageModel.refresh();
   }
 
   public render(): JSX.Element {
-    if (!this._context.loggedInUser) {
-      return <CommunitySignInPage context={this._context} />;
+    if (!this.sessionModel.loggedInUser) {
+      return <CommunitySignInPage sessionModel={this.sessionModel} />;
     }
 
-    if (this._fetchError) {
-      return <div>ERROR: {this._fetchError.message}</div>;
-    }
-
-    if (!this._apiEvents) {
-      return (
-        <CommunitySidebarLayout
-          context={this._context}
-          currentPage="events"
-          style={{ paddingTop: "100px" }}
-        >
-          <h2>Upcoming Events</h2>
-          <div style={{ maxWidth: "800px" }}>. . .</div>
-        </CommunitySidebarLayout>
-      );
+    if (this._eventsPageModel.fetchError) {
+      return <div>ERROR: {this._eventsPageModel.fetchError.message}</div>;
     }
 
     return (
       <CommunitySidebarLayout
-        context={this._context}
+        context={this.sessionModel}
         currentPage="events"
         style={{ paddingTop: "100px" }}
       >
         <h2>Upcoming Events</h2>
         <div style={{ maxWidth: "800px" }}>
-          {this._apiEvents.map((eventJson) => (
-            <EventCard apiEvent={eventJson} key={eventJson.dbEventId} />
+          {this._eventsPageModel.eventModels.map((eventModel) => (
+            <EventCard
+              eventModel={eventModel}
+              key={eventModel.apiEvent.dbEventId}
+            />
           ))}
         </div>
       </CommunitySidebarLayout>

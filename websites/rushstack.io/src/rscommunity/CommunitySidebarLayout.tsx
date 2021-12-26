@@ -1,6 +1,6 @@
 import Layout from "@theme/Layout";
 import React from "react";
-import { CommunityContext } from "./CommunityContext";
+import { SessionModel } from "./SessionModel";
 
 interface IMenuItemProps {
   title: string;
@@ -35,7 +35,7 @@ function MenuItem(props: IMenuItemProps): JSX.Element {
 }
 
 export interface ICommunitySidebarLayoutProps {
-  context: CommunityContext;
+  context: SessionModel;
   currentPage?: "events" | "past-events" | "profile";
   style?: React.CSSProperties;
 }
@@ -43,10 +43,6 @@ export interface ICommunitySidebarLayoutProps {
 export function CommunitySidebarLayout(
   props: React.PropsWithChildren<ICommunitySidebarLayoutProps>
 ): JSX.Element {
-  const signOut_onClick = React.useCallback(() => {
-    props.context.navigateToSignOut();
-  }, [props.context.serviceUrl]);
-
   return (
     <Layout>
       <div
@@ -80,7 +76,10 @@ export function CommunitySidebarLayout(
             focused={props.currentPage === "profile"}
             linkUrl="/community/profile"
           />
-          <MenuItem title="Sign out" linkOnClick={signOut_onClick} />
+          <MenuItem
+            title="Sign out"
+            linkOnClick={props.context.onNavigateToSignOut}
+          />
         </div>
         <div style={{ flexGrow: 1, ...props.style, paddingBottom: "100px" }}>
           {props.children}

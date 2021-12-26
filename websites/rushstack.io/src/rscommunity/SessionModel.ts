@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
 
-export class CommunityContext {
+export class SessionModel {
   public serviceUrl: string;
   public loggedInUser: string | undefined;
 
@@ -13,7 +13,7 @@ export class CommunityContext {
         : "https://service.rushstack.io";
   }
 
-  public navigateToSignIn(): void {
+  public onNavigateToSignIn = (): void => {
     console.log("Signing in");
 
     // After logging in, return to the current page
@@ -24,9 +24,9 @@ export class CommunityContext {
     });
 
     document.location.href = this.serviceUrl + "/login-github";
-  }
+  };
 
-  public navigateToSignOut(): void {
+  public onNavigateToSignOut = (): void => {
     console.log("Signing out");
 
     // The "Sign Out" command should return us to the site homepage
@@ -37,5 +37,5 @@ export class CommunityContext {
     });
 
     document.location.href = this.serviceUrl + "/logout";
-  }
+  };
 }

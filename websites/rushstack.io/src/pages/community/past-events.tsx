@@ -1,12 +1,12 @@
 import React from "react";
-import { CommunityContext } from "../../rscommunity/CommunityContext";
+import { SessionModel } from "../../rscommunity/SessionModel";
 import { CommunitySidebarLayout } from "../../rscommunity/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/CommunitySignInPage";
 
 function PastEventsPage(): JSX.Element {
-  const context: CommunityContext = new CommunityContext();
+  const context: SessionModel = new SessionModel();
   if (!context.loggedInUser) {
-    return <CommunitySignInPage context={context} />;
+    return <CommunitySignInPage sessionModel={context} />;
   }
 
   return (

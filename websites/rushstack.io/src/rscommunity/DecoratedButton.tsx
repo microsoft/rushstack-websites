@@ -8,7 +8,7 @@ export interface IDecoratedButtonProps {
 }
 export function DecoratedButton(
   props: React.PropsWithChildren<IDecoratedButtonProps>
-): JSX.Element | undefined {
+): JSX.Element {
   let textColor: string;
   let backgroundColor: string;
   let borderColor: string;
