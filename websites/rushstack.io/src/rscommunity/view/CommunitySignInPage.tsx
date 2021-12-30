@@ -2,11 +2,11 @@ import Layout from "@theme/Layout";
 import React from "react";
 import styles from "./CommunitySignInPage.module.css";
 
-import { SessionModel } from "./SessionModel";
+import { AppSession } from "../model/AppSession";
 import { DecoratedButton } from "./DecoratedButton";
 
 export interface ICommunitySigninPageProps {
-  sessionModel: SessionModel;
+  appSession: AppSession;
 }
 export function CommunitySignInPage(
   props: ICommunitySigninPageProps
@@ -37,7 +37,7 @@ export function CommunitySignInPage(
             }}
           >
             <DecoratedButton
-              onClick={props.sessionModel.onNavigateToSignIn}
+              onClick={props.appSession.onNavigateToSignIn}
               theme="white"
             >
               <img src="/images/github-button.svg" width={"24px"}></img>

@@ -1,6 +1,6 @@
 import Layout from "@theme/Layout";
 import React from "react";
-import { SessionModel } from "./SessionModel";
+import { AppSession } from "../model/AppSession";
 
 interface IMenuItemProps {
   title: string;
@@ -35,8 +35,8 @@ function MenuItem(props: IMenuItemProps): JSX.Element {
 }
 
 export interface ICommunitySidebarLayoutProps {
-  context: SessionModel;
-  currentPage?: "events" | "past-events" | "profile";
+  appSession: AppSession;
+  navItem?: "events" | "past-events" | "profile";
   style?: React.CSSProperties;
 }
 
@@ -63,22 +63,22 @@ export function CommunitySidebarLayout(
           <div style={{ fontWeight: "bold" }}>Member Actions</div>
           <MenuItem
             title="Upcoming events"
-            focused={props.currentPage === "events"}
+            focused={props.navItem === "events"}
             linkUrl="/community/events"
           />
           <MenuItem
             title="Past events"
-            focused={props.currentPage === "past-events"}
+            focused={props.navItem === "past-events"}
             linkUrl="/community/past-events"
           />
           <MenuItem
             title="Your profile"
-            focused={props.currentPage === "profile"}
+            focused={props.navItem === "profile"}
             linkUrl="/community/profile"
           />
           <MenuItem
             title="Sign out"
-            linkOnClick={props.context.onNavigateToSignOut}
+            linkOnClick={props.appSession.onNavigateToSignOut}
           />
         </div>
         <div style={{ flexGrow: 1, ...props.style, paddingBottom: "100px" }}>
