@@ -66,7 +66,9 @@ export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
     agendaDiv = (
       <div style={{ paddingTop: "20px" }}>
         {agendaParagraphs.map((x) => (
-          <div key={(key++).toString()}>{x}</div>
+          <div key={(key++).toString()} style={{ paddingBottom: "10px" }}>
+            {x}
+          </div>
         ))}
       </div>
     );
