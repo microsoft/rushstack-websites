@@ -43,6 +43,7 @@ class EventsPage extends React.Component {
         <div style={{ maxWidth: "800px" }}>
           {this._appSession.apiDataService.eventModels.map((eventModel) => (
             <EventCard
+              cardType="summary"
               eventModel={eventModel}
               key={eventModel.apiEvent.dbEventId}
             />

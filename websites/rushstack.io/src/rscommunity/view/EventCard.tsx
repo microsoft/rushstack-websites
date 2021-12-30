@@ -1,10 +1,12 @@
 import React from "react";
 import dayjs from "dayjs";
-import "../../rscommunity/dayjsExtensions";
+import "../dayjsExtensions";
+
+import styles from "./EventCard.module.css";
 
 import { EventModel } from "../model/ApiDataService";
 import { DecoratedButton } from "../view/DecoratedButton";
-import { IApiEvent } from "../../rscommunity/ApiInterfaces";
+import { IApiEvent } from "../ApiInterfaces";
 
 function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   if (eventJson.startTime === undefined || eventJson.duration === undefined) {
@@ -17,7 +19,7 @@ function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   return dayjs(eventJson.startTime).add(eventJson.duration, "minute").toDate();
 }
 
-export function EventCard(props: { eventModel: EventModel }): JSX.Element {
+export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
   const apiEvent: IApiEvent = props.eventModel.apiEvent;
   const endTime: Date | undefined = calculateEndTime(apiEvent);
 
@@ -71,22 +73,8 @@ export function EventCard(props: { eventModel: EventModel }): JSX.Element {
   }
 
   return (
-    <div
-      style={{
-        borderStyle: "solid",
-        borderWidth: "3px",
-        borderColor: "#c0c0c0",
-        marginTop: "20px",
-        marginRight: "50px",
-        paddingTop: "10px",
-        paddingBottom: "10px",
-        paddingLeft: "20px",
-        paddingRight: "20px",
-      }}
-    >
-      <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-        {apiEvent.eventTitle}
-      </div>
+    <>
+      <div className={styles.eventCardHeader}>{apiEvent.eventTitle}</div>
       <div
         style={{ display: "flex", flexDirection: "row", paddingTop: "10px" }}
       >
@@ -102,9 +90,74 @@ export function EventCard(props: { eventModel: EventModel }): JSX.Element {
 
       {hostedByDiv}
       {agendaDiv}
+    </>
+  );
+}
+
+export function EventCard(props: {
+  eventModel: EventModel;
+  cardType: "summary" | "detail";
+}): JSX.Element {
+  const apiEvent: IApiEvent = props.eventModel.apiEvent;
+
+  let actionButton: JSX.Element;
+  let spotsLeftDiv: JSX.Element | undefined;
+
+  if (apiEvent.userIsSignedUp) {
+    if (props.cardType === "summary") {
+      actionButton = (
+        <DecoratedButton
+          theme="notice"
+          onClick={props.eventModel.onNavigateToEventDetailPage}
+        >
+          Edit Reservation
+        </DecoratedButton>
+      );
+    } else {
+      actionButton = (
+        <DecoratedButton
+          theme="notice"
+          onClick={props.eventModel.onRemoveReservation}
+        >
+          Cancel your reservation
+        </DecoratedButton>
+      );
+    }
+  } else {
+    actionButton = (
+      <DecoratedButton onClick={props.eventModel.onAddReservation}>
+        Reserve a spot - I will attend
+      </DecoratedButton>
+    );
+    spotsLeftDiv = (
       <div style={{ paddingTop: "20px" }}>
         Spots left: {apiEvent.spotsLeftNotice}
       </div>
+    );
+  }
+
+  let joinTheVideoCall: JSX.Element | undefined;
+
+  if (props.cardType === "detail") {
+    if (apiEvent.userIsSignedUp) {
+      joinTheVideoCall = (
+        <div className={styles.joinTheCallBox}>
+          <div className={styles.eventCardHeader}>Join the video call</div>
+          <div style={{ paddingTop: "20px" }}>
+            On the day of this event, the MS Teams URL will be sent to your
+            member email address.
+          </div>
+        </div>
+      );
+    }
+  }
+
+  return (
+    <div className={styles.eventCardBorder}>
+      <EventCardBody eventModel={props.eventModel} />
+      {spotsLeftDiv}
+
+      {joinTheVideoCall}
 
       <div
         style={{
@@ -113,30 +166,20 @@ export function EventCard(props: { eventModel: EventModel }): JSX.Element {
           paddingBottom: "10px",
         }}
       >
-        {apiEvent.userIsSignedUp ? (
-          <>
-            <div
-              style={{
-                flexGrow: 1,
-                alignSelf: "flex-end",
-                fontWeight: "bold",
-                color: "#c95228",
-              }}
-            >
-              You are attending this event
-            </div>
-            <DecoratedButton
-              theme="notice"
-              onClick={props.eventModel.onNavigateToEventDetailPage}
-            >
-              Edit Reservation
-            </DecoratedButton>
-          </>
-        ) : (
-          <DecoratedButton onClick={props.eventModel.onAddReservation}>
-            Reserve a spot - I will attend
-          </DecoratedButton>
-        )}
+        <div
+          style={{
+            flexGrow: 1,
+            alignSelf: "flex-end",
+            fontWeight: "bold",
+            color: "#c95228",
+          }}
+        >
+          {apiEvent.userIsSignedUp ? (
+            <>You are attending this event</>
+          ) : undefined}
+        </div>
+
+        {actionButton}
       </div>
     </div>
   );

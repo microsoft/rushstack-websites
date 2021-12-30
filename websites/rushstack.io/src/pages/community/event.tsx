@@ -36,6 +36,7 @@ class EventPage extends React.Component {
   }
 
   public render(): JSX.Element {
+    console.log("EventPage render");
     if (!this._appSession.loggedInUser) {
       return <CommunitySignInPage appSession={this._appSession} />;
     }
@@ -43,7 +44,6 @@ class EventPage extends React.Component {
     if (this._eventId === undefined) {
       return <div>ERROR: Missing event id</div>;
     }
-    debugger;
 
     if (this._appSession.apiDataService.fetchError) {
       return (
@@ -54,20 +54,32 @@ class EventPage extends React.Component {
     const eventModel: EventModel | undefined =
       this._appSession.apiDataService.getEvent(this._eventId);
 
+    console.log(
+      "GOT:" + eventModel ? JSON.stringify(eventModel?.apiEvent) : "undefined"
+    );
+
     return (
       <CommunitySidebarLayout
         appSession={this._appSession}
         navItem="events"
         style={{ paddingTop: "100px" }}
       >
-        <h2>Upcoming Events</h2>
+        <div>
+          &lt;&lt; <a href={"/community/events"}>Upcoming Events</a>
+        </div>
+
         <div style={{ maxWidth: "800px" }}>
           {eventModel ? (
             <EventCard
+              cardType="detail"
               eventModel={eventModel}
               key={eventModel.apiEvent.dbEventId}
             />
           ) : undefined}
+        </div>
+
+        <div style={{ paddingTop: "20px" }}>
+          &lt;&lt; <a href={"/community/events"}>Upcoming Events</a>
         </div>
       </CommunitySidebarLayout>
     );

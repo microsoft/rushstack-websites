@@ -11,7 +11,7 @@ export class EventModel {
   }
 
   public onNavigateToEventDetailPage = (): void => {
-    this.appSession.navigateToEventDetailPage(this.apiEvent.dbEventId);
+    this.appSession.onNavigateToEventDetailPage(this.apiEvent.dbEventId);
   };
 
   public onAddReservation = (): void => {
@@ -45,10 +45,11 @@ export class ApiDataService {
   }
 
   public unsubscribe(component: React.Component): void {
-    this._subscribedComponents.add(component);
+    this._subscribedComponents.delete(component);
   }
 
   private _forceUpdate(): void {
+    console.log("forceUpdate() " + new Date().toString());
     for (const component of Array.from(this._subscribedComponents)) {
       try {
         component.forceUpdate();
@@ -125,10 +126,8 @@ export class ApiDataService {
       }
 
       const apiEvent: IApiEvent = await data.json();
-      this._eventModelById.set(
-        dbEventId,
-        new EventModel(apiEvent, this.appSession)
-      );
+      const eventModel: EventModel = new EventModel(apiEvent, this.appSession);
+      this._eventModelById.set(dbEventId, eventModel);
     } finally {
       this._forceUpdate();
     }
@@ -155,6 +154,7 @@ export class ApiDataService {
       this._forceUpdate();
     }
 
+    await this.fetchEvent(eventModel.apiEvent.dbEventId);
     await this.fetchAllEvents();
   }
 
@@ -172,6 +172,8 @@ export class ApiDataService {
         }
       );
 
+      this._eventModelById.delete(eventModel.apiEvent.dbEventId);
+
       if (!data.ok) {
         throw new Error("Server Error: " + data.statusText);
       }
@@ -179,6 +181,7 @@ export class ApiDataService {
       this._forceUpdate();
     }
 
+    await this.fetchEvent(eventModel.apiEvent.dbEventId);
     await this.fetchAllEvents();
   }
 }
