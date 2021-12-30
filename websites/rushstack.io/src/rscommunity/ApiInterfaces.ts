@@ -6,7 +6,8 @@ export interface IApiEvent {
   durationUnits: string | undefined;
   hostedBy: string | undefined;
   hostedByUrl: string | undefined;
-  agenda: string;
+  agendaHtml: string;
+  notesHtml: string | undefined;
   spotsLeftNotice: string | undefined;
   isCompleted: boolean;
   isArchived: boolean;

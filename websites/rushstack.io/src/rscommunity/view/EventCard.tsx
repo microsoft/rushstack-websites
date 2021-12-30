@@ -57,20 +57,15 @@ export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
   }
 
   let agendaDiv: JSX.Element | undefined = undefined;
-  if (apiEvent.agenda.trim() !== "") {
-    let agendaParagraphs: string[] = apiEvent.agenda.split(/[\r\n]+/);
-
-    agendaParagraphs[0] = "Agenda: " + agendaParagraphs[0];
-
-    let key: number = 0;
+  if (apiEvent.agendaHtml.trim() !== "") {
     agendaDiv = (
-      <div style={{ paddingTop: "20px" }}>
-        {agendaParagraphs.map((x) => (
-          <div key={(key++).toString()} style={{ paddingBottom: "10px" }}>
-            {x}
-          </div>
-        ))}
-      </div>
+      <div
+        style={{ paddingTop: "20px" }}
+        // The server scrubs this text to ensure it is safe HTML
+        dangerouslySetInnerHTML={{
+          __html: apiEvent.agendaHtml.replace(/^\<p\>/, "<p>Agenda: "),
+        }}
+      ></div>
     );
   }
 
