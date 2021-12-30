@@ -46,9 +46,9 @@ export class AppSession {
     document.location.href = this.serviceUrl + "/logout";
   };
 
-  public onNavigateToEventDetailPage = (eventId: number): void => {
+  public navigateToEventDetailPage(eventId: number): void {
     document.location.href = `/community/event?id=${eventId}`;
-  };
+  }
 
   public static get instance(): AppSession {
     if (AppSession._instance === undefined) {

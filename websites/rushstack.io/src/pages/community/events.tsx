@@ -4,6 +4,11 @@ import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarL
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/model/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
+import {
+  EventModel,
+  ApiTask,
+  ApiTaskStatus,
+} from "../../rscommunity/model/ApiDataService";
 
 class EventsPage extends React.Component {
   private _appSession: AppSession;
@@ -14,9 +19,6 @@ class EventsPage extends React.Component {
 
   public componentDidMount(): void {
     this._appSession.apiDataService.subscribe(this);
-    this._appSession.apiDataService.startAsync(() =>
-      this._appSession.apiDataService.fetchAllEvents()
-    );
   }
   public componentWillUnmount(): void {
     this._appSession.apiDataService.unsubscribe(this);
@@ -27,11 +29,16 @@ class EventsPage extends React.Component {
       return <CommunitySignInPage appSession={this._appSession} />;
     }
 
-    if (this._appSession.apiDataService.fetchError) {
-      return (
-        <div>ERROR: {this._appSession.apiDataService.fetchError.message}</div>
-      );
+    const apiTask: ApiTask<EventModel[]> =
+      this._appSession.apiDataService.initiateGetEvents(this, "current");
+
+    if (apiTask.status === ApiTaskStatus.Error) {
+      return <div>ERROR: {apiTask.error.message}</div>;
     }
+    if (apiTask.status === ApiTaskStatus.Pending) {
+      return <></>;
+    }
+    const eventModels: EventModel[] = apiTask.result;
 
     return (
       <CommunitySidebarLayout
@@ -41,7 +48,7 @@ class EventsPage extends React.Component {
       >
         <h2>Upcoming Events</h2>
         <div style={{ maxWidth: "800px" }}>
-          {this._appSession.apiDataService.eventModels.map((eventModel) => (
+          {eventModels.map((eventModel) => (
             <EventCard
               cardType="summary"
               eventModel={eventModel}

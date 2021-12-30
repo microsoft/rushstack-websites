@@ -4,7 +4,11 @@ import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarL
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/model/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
-import { EventModel } from "../../rscommunity/model/ApiDataService";
+import {
+  EventModel,
+  ApiTask,
+  ApiTaskStatus,
+} from "../../rscommunity/model/ApiDataService";
 
 class EventPage extends React.Component {
   private _appSession: AppSession;
@@ -25,10 +29,7 @@ class EventPage extends React.Component {
     const eventId: number = parseInt(queryParams.get("id") ?? "");
     if (isFinite(eventId)) {
       this._eventId = eventId;
-
-      this._appSession.apiDataService.startAsync(() =>
-        this._appSession.apiDataService.fetchEvent(eventId)
-      );
+      this.forceUpdate();
     }
   }
   public componentWillUnmount(): void {
@@ -45,14 +46,16 @@ class EventPage extends React.Component {
       return <div>ERROR: Missing event id</div>;
     }
 
-    if (this._appSession.apiDataService.fetchError) {
-      return (
-        <div>ERROR: {this._appSession.apiDataService.fetchError.message}</div>
-      );
-    }
+    const apiTask: ApiTask<EventModel> =
+      this._appSession.apiDataService.initiateGetEvent(this, this._eventId);
 
-    const eventModel: EventModel | undefined =
-      this._appSession.apiDataService.getEvent(this._eventId);
+    if (apiTask.status === ApiTaskStatus.Error) {
+      return <div>ERROR: {apiTask.error.message}</div>;
+    }
+    if (apiTask.status === ApiTaskStatus.Pending) {
+      return <></>;
+    }
+    const eventModel: EventModel = apiTask.result;
 
     console.log(
       "GOT:" + eventModel ? JSON.stringify(eventModel?.apiEvent) : "undefined"
