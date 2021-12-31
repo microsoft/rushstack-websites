@@ -46,7 +46,7 @@ class PastEventsPage extends React.Component {
         navItem="past-events"
         style={{ paddingTop: "100px" }}
       >
-        <h2>Past Events</h2>
+        <h1>Past Events</h1>
         <div style={{ maxWidth: "800px" }}>
           {eventModels.map((eventModel) => (
             <EventCard

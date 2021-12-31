@@ -46,7 +46,7 @@ class EventsPage extends React.Component {
         navItem="events"
         style={{ paddingTop: "100px" }}
       >
-        <h2>Upcoming Events</h2>
+        <h1>Upcoming Events</h1>
         <div style={{ maxWidth: "800px" }}>
           {eventModels.map((eventModel) => (
             <EventCard

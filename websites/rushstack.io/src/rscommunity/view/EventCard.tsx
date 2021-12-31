@@ -65,13 +65,13 @@ export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
         dangerouslySetInnerHTML={{
           __html: apiEvent.agendaHtml.replace(/^\<p\>/, "<p>Agenda: "),
         }}
-      ></div>
+      />
     );
   }
 
   return (
     <>
-      <div className={styles.eventCardHeader}>{apiEvent.eventTitle}</div>
+      <h2>{apiEvent.eventTitle}</h2>
       <div
         style={{ display: "flex", flexDirection: "row", paddingTop: "10px" }}
       >
@@ -97,87 +97,135 @@ export function EventCard(props: {
 }): JSX.Element {
   const apiEvent: IApiEvent = props.eventModel.apiEvent;
 
-  let actionButton: JSX.Element;
+  let footnote: JSX.Element | undefined;
+  let actionButton: JSX.Element | undefined;
   let spotsLeftDiv: JSX.Element | undefined;
 
-  if (apiEvent.userIsSignedUp) {
-    if (props.cardType === "summary") {
-      actionButton = (
-        <DecoratedButton
-          theme="notice"
-          onClick={props.eventModel.onNavigateToEventDetailPage}
-        >
-          Edit Reservation
-        </DecoratedButton>
-      );
+  if (!apiEvent.isCompleted) {
+    // UPCOMING EVENT
+    if (apiEvent.userIsSignedUp) {
+      footnote = <>You are attending this event</>;
+
+      if (props.cardType === "summary") {
+        actionButton = (
+          <DecoratedButton
+            theme="notice"
+            onClick={props.eventModel.onNavigateToEventDetailPage}
+          >
+            Edit Reservation
+          </DecoratedButton>
+        );
+      } else {
+        actionButton = (
+          <DecoratedButton
+            theme="notice"
+            onClick={props.eventModel.onRemoveReservation}
+          >
+            Cancel your reservation
+          </DecoratedButton>
+        );
+      }
     } else {
       actionButton = (
-        <DecoratedButton
-          theme="notice"
-          onClick={props.eventModel.onRemoveReservation}
-        >
-          Cancel your reservation
+        <DecoratedButton onClick={props.eventModel.onAddReservation}>
+          Reserve a spot - I will attend
         </DecoratedButton>
+      );
+      spotsLeftDiv = (
+        <div style={{ paddingTop: "20px" }}>
+          Spots left: {apiEvent.spotsLeftNotice}
+        </div>
       );
     }
   } else {
-    actionButton = (
-      <DecoratedButton onClick={props.eventModel.onAddReservation}>
-        Reserve a spot - I will attend
-      </DecoratedButton>
-    );
-    spotsLeftDiv = (
-      <div style={{ paddingTop: "20px" }}>
-        Spots left: {apiEvent.spotsLeftNotice}
-      </div>
-    );
+    // PAST EVENT
+    if (apiEvent.userIsSignedUp) {
+      footnote = <>You signed up for this event</>;
+    }
+    if (props.cardType === "summary") {
+      actionButton = (
+        <DecoratedButton
+          theme="default"
+          onClick={props.eventModel.onNavigateToEventDetailPage}
+        >
+          {apiEvent.notesHtml ? "Meeting Notes" : "Details"}
+        </DecoratedButton>
+      );
+    }
   }
 
-  let joinTheVideoCall: JSX.Element | undefined;
+  let detailBox: JSX.Element | undefined;
 
   if (props.cardType === "detail") {
-    if (apiEvent.userIsSignedUp) {
-      joinTheVideoCall = (
-        <div className={styles.joinTheCallBox}>
-          <div className={styles.eventCardHeader}>Join the video call</div>
-          <div style={{ paddingTop: "20px" }}>
-            On the day of this event, the MS Teams URL will be sent to your
-            member email address.
+    if (!apiEvent.isCompleted) {
+      // UPCOMING EVENT
+      if (apiEvent.userIsSignedUp) {
+        detailBox = (
+          <div className={styles.detailBox}>
+            <h2>Join the video call</h2>
+            <div style={{ paddingTop: "20px" }}>
+              On the day of this event, the MS Teams URL will be sent to your
+              member email address.
+            </div>
           </div>
-        </div>
-      );
+        );
+      }
+    } else {
+      // PAST EVENT
+      if (apiEvent.notesHtml) {
+        detailBox = (
+          <div className={styles.detailBox}>
+            <h2>Meeting Notes</h2>
+            <div
+              style={{ paddingTop: "20px" }}
+              // The server scrubs this text to ensure it is safe HTML
+              dangerouslySetInnerHTML={{
+                __html: apiEvent.notesHtml,
+              }}
+            />
+          </div>
+        );
+      } else {
+        detailBox = (
+          <div className={styles.detailBox}>
+            <h2>Meeting Notes</h2>
+            <div style={{ paddingTop: "20px" }}>
+              <i>No notes were posted for this meeting.</i>
+            </div>
+          </div>
+        );
+      }
     }
   }
 
   return (
-    <div className={styles.eventCardBorder}>
-      <EventCardBody eventModel={props.eventModel} />
-      {spotsLeftDiv}
+    <>
+      <div className={styles.eventCardBorder}>
+        <EventCardBody eventModel={props.eventModel} />
+        {spotsLeftDiv}
 
-      {joinTheVideoCall}
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          paddingBottom: "10px",
-        }}
-      >
         <div
           style={{
-            flexGrow: 1,
-            alignSelf: "flex-end",
-            fontWeight: "bold",
-            color: "#c95228",
+            display: "flex",
+            justifyContent: "flex-end",
+            paddingBottom: "10px",
           }}
         >
-          {apiEvent.userIsSignedUp ? (
-            <>You are attending this event</>
-          ) : undefined}
-        </div>
+          <div
+            style={{
+              flexGrow: 1,
+              alignSelf: "flex-end",
+              fontWeight: "bold",
+              color: "#c95228",
+            }}
+          >
+            {footnote}
+          </div>
 
-        {actionButton}
+          {actionButton}
+        </div>
       </div>
-    </div>
+      {detailBox}
+    </>
   );
 }

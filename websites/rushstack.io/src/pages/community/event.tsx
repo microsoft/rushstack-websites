@@ -61,17 +61,26 @@ class EventPage extends React.Component {
       "GOT:" + eventModel ? JSON.stringify(eventModel?.apiEvent) : "undefined"
     );
 
+    let breadcrumb: JSX.Element = (
+      <div>
+        &lt;&lt;{" "}
+        {eventModel.apiEvent.isCompleted ? (
+          <a href={"/community/past-events"}>Past Events</a>
+        ) : (
+          <a href={"/community/events"}>Upcoming Events</a>
+        )}
+      </div>
+    );
+
     return (
       <CommunitySidebarLayout
         appSession={this._appSession}
-        navItem="events"
+        navItem={eventModel.apiEvent.isCompleted ? "past-events" : "events"}
         style={{ paddingTop: "100px" }}
       >
-        <div>
-          &lt;&lt; <a href={"/community/events"}>Upcoming Events</a>
-        </div>
+        {breadcrumb}
 
-        <div style={{ maxWidth: "800px" }}>
+        <div style={{ maxWidth: "800px", paddingBottom: "20px" }}>
           {eventModel ? (
             <EventCard
               cardType="detail"
@@ -81,9 +90,7 @@ class EventPage extends React.Component {
           ) : undefined}
         </div>
 
-        <div style={{ paddingTop: "20px" }}>
-          &lt;&lt; <a href={"/community/events"}>Upcoming Events</a>
-        </div>
+        {breadcrumb}
       </CommunitySidebarLayout>
     );
   }
