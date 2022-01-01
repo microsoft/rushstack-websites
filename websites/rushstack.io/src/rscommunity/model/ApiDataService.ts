@@ -1,5 +1,6 @@
 import React from "react";
-import { IApiEvent } from "../ApiInterfaces";
+import { IApiEvent, IApiUser } from "../ApiInterfaces";
+import { ObjectEvent } from "../library/ObjectEvent";
 import { AppSession } from "./AppSession";
 
 export class EventModel {
@@ -28,6 +29,16 @@ export class EventModel {
         console.error((error as Error).toString());
       });
   };
+}
+
+export class UserModel {
+  public readonly apiUser: IApiUser;
+  public readonly appSession: AppSession;
+
+  public constructor(apiUser: IApiUser, appSession: AppSession) {
+    this.apiUser = apiUser;
+    this.appSession = appSession;
+  }
 }
 
 export enum ApiTaskStatus {
@@ -61,21 +72,43 @@ interface ICacheEntry {
 }
 
 export class ApiDataService {
-  private _subscribedComponents: Set<React.Component> = new Set();
-  private _cache: Map<string, ICacheEntry> = new Map();
+  public readonly updated: ObjectEvent = new ObjectEvent(this);
 
+  private _cache: Map<string, ICacheEntry> = new Map();
   public readonly appSession: AppSession;
 
   public constructor(appSession: AppSession) {
     this.appSession = appSession;
   }
 
-  public subscribe(component: React.Component): void {
-    this._subscribedComponents.add(component);
-  }
+  public initiateGetUser(
+    component: React.Component,
+    includeEmails: boolean
+  ): ApiTask<UserModel> {
+    const apiTaskKey: string = `profile:${includeEmails}`;
 
-  public unsubscribe(component: React.Component): void {
-    this._subscribedComponents.delete(component);
+    return this._startApiTask<UserModel>(apiTaskKey, component, async () => {
+      console.log("Fetching profile...");
+
+      const query: string = includeEmails ? "?emails=1" : "";
+
+      const data: Response = await fetch(
+        `${this.appSession.serviceUrl}/api/profile${query}`,
+        {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
+
+      if (!data.ok) {
+        throw new Error("Server Error: " + data.statusText);
+      }
+
+      const apiUser: IApiUser = await data.json();
+      const userModel: UserModel = new UserModel(apiUser, this.appSession);
+      return userModel;
+    });
   }
 
   public initiateGetEvent(
@@ -153,7 +186,7 @@ export class ApiDataService {
         throw new Error("Server Error: " + data.statusText);
       }
     } finally {
-      this._forceUpdate();
+      this._invalidate();
     }
   }
 
@@ -175,20 +208,14 @@ export class ApiDataService {
         throw new Error("Server Error: " + data.statusText);
       }
     } finally {
-      this._forceUpdate();
+      this._invalidate();
     }
   }
 
-  private _forceUpdate(): void {
+  private _invalidate(): void {
     console.log("forceUpdate() " + new Date().toString());
     this._cache.clear();
-    for (const component of Array.from(this._subscribedComponents)) {
-      try {
-        component.forceUpdate();
-      } catch (error) {
-        console.error("forceUpdate() failed: " + (error as Error).toString());
-      }
-    }
+    this.updated.fire({});
   }
 
   private _startApiTask<TResult>(
@@ -209,32 +236,22 @@ export class ApiDataService {
       const cacheEntry2: ICacheEntry = cacheEntry;
       cacheEntry2.components.add(component);
 
-      action()
-        .then((result) => {
+      (async () => {
+        try {
+          const result = await action();
           cacheEntry2.task = {
             status: ApiTaskStatus.Success,
             result,
           };
-        })
-        .catch((error) => {
+        } catch (error) {
           cacheEntry2.task = {
             status: ApiTaskStatus.Error,
-            error,
+            error: error as Error,
           };
-        })
-        .finally(() => {
-          for (const component of Array.from(cacheEntry2.components)) {
-            if (this._subscribedComponents.has(component)) {
-              try {
-                component.forceUpdate();
-              } catch (error) {
-                console.error(
-                  "Uncaught exception: " + (error as Error).toString()
-                );
-              }
-            }
-          }
-        });
+        } finally {
+          this.updated.fire({});
+        }
+      })();
     }
 
     return cacheEntry.task as ApiTask<TResult>;

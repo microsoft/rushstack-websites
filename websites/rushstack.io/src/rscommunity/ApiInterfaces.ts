@@ -3,15 +3,16 @@ export interface IApiEvent {
   eventTitle: string;
   startTime: Date | undefined;
   duration: number | undefined;
-  durationUnits: string | undefined;
-  hostedBy: string | undefined;
-  hostedByUrl: string | undefined;
-  agendaHtml: string;
-  notesHtml: string | undefined;
-  spotsLeftNotice: string | undefined;
+  durationUnits: string;
+  hostedBy: string;
+  hostedByUrl: string;
   isCompleted: boolean;
   isArchived: boolean;
 
+  agendaHtml: string;
+  notesHtml: string;
+
+  spotsLeftNotice: string;
   userIsSignedUp: boolean;
 }
 
@@ -19,10 +20,10 @@ export interface IApiHistory {
   dbHistoryId: number;
   timestamp: Date;
   dbUserId: number | undefined;
-  username: string | undefined;
+  username: string;
   dbEventId: number | undefined;
-  operation: string | undefined;
-  message: string | undefined;
+  operation: string;
+  message: string;
 }
 
 export interface IApiUser {
@@ -30,11 +31,31 @@ export interface IApiUser {
   isAdministrator: boolean;
 
   oauthUserKey: string;
+  verifiedEmail: string;
 
   gitHubUserId: number;
   gitHubUsername: string;
-  gitHubDisplayName: string | undefined;
+  gitHubDisplayName: string;
 
-  companyName: string | undefined;
-  twitterAlias: string | undefined;
+  fullName: string;
+  nickName: string;
+
+  companyName: string;
+  companyUrl: string;
+  twitterAlias: string;
+
+  verifiedEmailChoices: string[] | undefined;
+}
+
+export interface IApiUserUpdate {
+  dbUserId: number;
+
+  verifiedEmail: string;
+
+  fullName: string;
+  nickName: string;
+
+  companyName: string;
+  companyUrl: string;
+  twitterAlias: string;
 }

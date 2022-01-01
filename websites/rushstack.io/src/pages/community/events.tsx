@@ -9,6 +9,7 @@ import {
   ApiTask,
   ApiTaskStatus,
 } from "../../rscommunity/model/ApiDataService";
+import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 
 class EventsPage extends React.Component {
   private _appSession: AppSession;
@@ -18,10 +19,12 @@ class EventsPage extends React.Component {
   }
 
   public componentDidMount(): void {
-    this._appSession.apiDataService.subscribe(this);
+    this._appSession.apiDataService.updated.subscribe(this, () =>
+      this.forceUpdate()
+    );
   }
   public componentWillUnmount(): void {
-    this._appSession.apiDataService.unsubscribe(this);
+    ObjectEvent.disposeSubscriptionsInvolving(this);
   }
 
   public render(): JSX.Element {
