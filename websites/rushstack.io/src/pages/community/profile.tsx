@@ -10,6 +10,7 @@ import {
 } from "../../rscommunity/model/ApiDataService";
 import { IApiUser } from "../../rscommunity/ApiInterfaces";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
+import { DecoratedButton } from "../../rscommunity/view/DecoratedButton";
 
 class FormTextField {
   public readonly updated: ObjectEvent = new ObjectEvent(this);
@@ -38,19 +39,66 @@ class FormTextField {
   };
 }
 
-export function FormTextInput(props: { field: FormTextField }): JSX.Element {
+export function FormTextBox(props: { field: FormTextField }): JSX.Element {
   return <input value={props.field.value} onChange={props.field.onChange} />;
+}
+
+class FormComboField {
+  public readonly updated: ObjectEvent = new ObjectEvent(this);
+
+  private _value: string = "";
+
+  public constructor(component?: React.Component) {
+    if (component) {
+      this.updated.subscribe(component, () => component.forceUpdate());
+    }
+  }
+
+  public get value(): string {
+    return this._value;
+  }
+
+  public set value(value: string) {
+    if (this._value !== value) {
+      this._value = value;
+      this.updated.fire({});
+    }
+  }
+
+  public choices: string[] = [];
+
+  public onChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
+    this.value = event.target.value;
+  };
+}
+
+export function FormComboBox(props: { field: FormComboField }): JSX.Element {
+  let optionKey: number = 0;
+  const openElements: JSX.Element[] = props.field.choices.map((x) => (
+    <option key={optionKey++} value={x}>
+      {x}
+    </option>
+  ));
+
+  return (
+    <select value={props.field.value} onChange={props.field.onChange}>
+      {openElements}
+    </select>
+  );
 }
 
 class ProfilePage extends React.Component {
   private _appSession: AppSession;
 
   private _formInitialized: boolean = false;
-  private readonly _fullName: FormTextField = new FormTextField(this);
-  private readonly _nickName: FormTextField = new FormTextField(this);
-  private readonly _companyName: FormTextField = new FormTextField(this);
-  private readonly _companyUrl: FormTextField = new FormTextField(this);
-  private readonly _twitterAlias: FormTextField = new FormTextField(this);
+  private readonly _fullNameField: FormTextField = new FormTextField(this);
+  private readonly _nickNameField: FormTextField = new FormTextField(this);
+  private readonly _verifiedEmailField: FormComboField = new FormComboField(
+    this
+  );
+  private readonly _companyNameField: FormTextField = new FormTextField(this);
+  private readonly _companyUrlField: FormTextField = new FormTextField(this);
+  private readonly _twitterAliasField: FormTextField = new FormTextField(this);
 
   public constructor(props: {}) {
     super(props);
@@ -70,23 +118,39 @@ class ProfilePage extends React.Component {
 
   private _apiDataService_updated = (): void => {
     if (!this._formInitialized) {
-      const apiTask: ApiTask<UserModel> =
-        this._appSession.apiDataService.initiateGetUser(this, true);
-
-      if (apiTask.status === ApiTaskStatus.Success) {
-        const apiUser: IApiUser = apiTask.result.apiUser;
-
-        this._fullName.value = apiUser.fullName;
-        this._nickName.value = apiUser.nickName;
-        this._companyName.value = apiUser.companyName;
-        this._companyUrl.value = apiUser.companyUrl;
-        this._twitterAlias.value = apiUser.twitterAlias;
-        this._formInitialized = true;
-      }
+      this._assignFields();
+      this._formInitialized = false;
     }
 
     this.forceUpdate();
   };
+
+  private _assignFields(): void {
+    const apiTask: ApiTask<UserModel> =
+      this._appSession.apiDataService.initiateGetProfile(this, true);
+
+    if (apiTask.status === ApiTaskStatus.Success) {
+      const apiUser: IApiUser = apiTask.result.apiUser;
+
+      this._fullNameField.value = apiUser.fullName;
+      this._nickNameField.value = apiUser.nickName;
+      this._verifiedEmailField.value = apiUser.verifiedEmail;
+
+      const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
+      if (apiUser.verifiedEmail) {
+        if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
+          emailChoices.push(apiUser.verifiedEmail);
+        }
+      }
+      emailChoices.sort();
+      this._verifiedEmailField.choices = emailChoices;
+
+      this._companyNameField.value = apiUser.companyName;
+      this._companyUrlField.value = apiUser.companyUrl;
+      this._twitterAliasField.value = apiUser.twitterAlias;
+      this._formInitialized = true;
+    }
+  }
 
   public render(): JSX.Element {
     console.log("ProfilePage render");
@@ -95,7 +159,7 @@ class ProfilePage extends React.Component {
     }
 
     const apiTask: ApiTask<UserModel> =
-      this._appSession.apiDataService.initiateGetUser(this, true);
+      this._appSession.apiDataService.initiateGetProfile(this, true);
 
     if (apiTask.status === ApiTaskStatus.Error) {
       return <div>ERROR: {apiTask.error.message}</div>;
@@ -103,23 +167,6 @@ class ProfilePage extends React.Component {
     if (apiTask.status === ApiTaskStatus.Pending) {
       return <></>;
     }
-
-    const apiUser: IApiUser = apiTask.result.apiUser;
-
-    const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
-    if (apiUser.verifiedEmail) {
-      if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
-        emailChoices.push(apiUser.verifiedEmail);
-      }
-    }
-    emailChoices.sort();
-
-    let optionKey: number = 0;
-    const emailOptionElements: JSX.Element[] = emailChoices.map((x) => (
-      <option key={optionKey++} value={x}>
-        {x}
-      </option>
-    ));
 
     return (
       <CommunitySidebarLayout
@@ -130,27 +177,69 @@ class ProfilePage extends React.Component {
         <h1>Your Profile</h1>
 
         <div>Full Name</div>
-        <FormTextInput field={this._fullName} />
+        <FormTextBox field={this._fullNameField} />
 
         <div>Nick Name</div>
-        <FormTextInput field={this._nickName} />
+        <FormTextBox field={this._nickNameField} />
 
         <div>Email for Notifications</div>
-        <select defaultValue={apiUser.verifiedEmail}>
-          {emailOptionElements}
-        </select>
+        <FormComboBox field={this._verifiedEmailField} />
 
         <div>Company Name</div>
-        <FormTextInput field={this._companyName} />
+        <FormTextBox field={this._companyNameField} />
 
         <div>Company URL</div>
-        <FormTextInput field={this._companyUrl} />
+        <FormTextBox field={this._companyUrlField} />
 
         <div>Twitter Alias</div>
-        <FormTextInput field={this._twitterAlias} />
+        <FormTextBox field={this._twitterAliasField} />
+
+        <div>
+          <DecoratedButton
+            style={{ paddingTop: "20px", paddingRight: "20px" }}
+            theme="default"
+            onClick={this._saveButton_onClick}
+          >
+            Save
+          </DecoratedButton>
+          <DecoratedButton theme="notice" onClick={this._cancelButton_onClick}>
+            Cancel
+          </DecoratedButton>
+        </div>
       </CommunitySidebarLayout>
     );
   }
+
+  private _saveButton_onClick = (): void => {
+    const apiTask: ApiTask<UserModel> =
+      this._appSession.apiDataService.initiateGetProfile(this, true);
+
+    if (apiTask.status !== ApiTaskStatus.Success) {
+      return;
+    }
+
+    const apiUser: IApiUser = apiTask.result.apiUser;
+
+    this._appSession.apiDataService
+      .updateProfileAsync({
+        dbUserId: apiUser.dbUserId,
+        verifiedEmail: this._verifiedEmailField.value,
+
+        fullName: this._fullNameField.value,
+        nickName: this._nickNameField.value,
+
+        companyName: this._companyNameField.value,
+        companyUrl: this._companyUrlField.value,
+        twitterAlias: this._twitterAliasField.value,
+      })
+      .catch((error) => {
+        console.error((error as Error).toString());
+      });
+  };
+
+  private _cancelButton_onClick = (): void => {
+    this._assignFields();
+  };
 }
 
 export default ProfilePage;

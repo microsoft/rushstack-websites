@@ -1,5 +1,5 @@
 import React from "react";
-import { IApiEvent, IApiUser } from "../ApiInterfaces";
+import { IApiEvent, IApiUser, IApiUserUpdate } from "../ApiInterfaces";
 import { ObjectEvent } from "../library/ObjectEvent";
 import { AppSession } from "./AppSession";
 
@@ -81,7 +81,7 @@ export class ApiDataService {
     this.appSession = appSession;
   }
 
-  public initiateGetUser(
+  public initiateGetProfile(
     component: React.Component,
     includeEmails: boolean
   ): ApiTask<UserModel> {
@@ -109,6 +109,31 @@ export class ApiDataService {
       const userModel: UserModel = new UserModel(apiUser, this.appSession);
       return userModel;
     });
+  }
+
+  public async updateProfileAsync(
+    apiUserUpdate: IApiUserUpdate
+  ): Promise<void> {
+    try {
+      this._requireLoggedIn();
+
+      console.log("Posting profile update...");
+      const data: Response = await fetch(
+        `${this.appSession.serviceUrl}/api/profile`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify(apiUserUpdate),
+        }
+      );
+
+      if (!data.ok) {
+        throw new Error("Server Error: " + data.statusText);
+      }
+    } finally {
+      this._invalidate();
+    }
   }
 
   public initiateGetEvent(
