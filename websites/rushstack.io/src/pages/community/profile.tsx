@@ -11,94 +11,36 @@ import {
 import { IApiUser } from "../../rscommunity/ApiInterfaces";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { DecoratedButton } from "../../rscommunity/view/DecoratedButton";
-
-class FormTextField {
-  public readonly updated: ObjectEvent = new ObjectEvent(this);
-
-  private _value: string = "";
-
-  public constructor(component?: React.Component) {
-    if (component) {
-      this.updated.subscribe(component, () => component.forceUpdate());
-    }
-  }
-
-  public get value(): string {
-    return this._value;
-  }
-
-  public set value(value: string) {
-    if (this._value !== value) {
-      this._value = value;
-      this.updated.fire({});
-    }
-  }
-
-  public onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    this.value = event.target.value;
-  };
-}
-
-export function FormTextBox(props: { field: FormTextField }): JSX.Element {
-  return <input value={props.field.value} onChange={props.field.onChange} />;
-}
-
-class FormComboField {
-  public readonly updated: ObjectEvent = new ObjectEvent(this);
-
-  private _value: string = "";
-
-  public constructor(component?: React.Component) {
-    if (component) {
-      this.updated.subscribe(component, () => component.forceUpdate());
-    }
-  }
-
-  public get value(): string {
-    return this._value;
-  }
-
-  public set value(value: string) {
-    if (this._value !== value) {
-      this._value = value;
-      this.updated.fire({});
-    }
-  }
-
-  public choices: string[] = [];
-
-  public onChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
-    this.value = event.target.value;
-  };
-}
-
-export function FormComboBox(props: { field: FormComboField }): JSX.Element {
-  let optionKey: number = 0;
-  const openElements: JSX.Element[] = props.field.choices.map((x) => (
-    <option key={optionKey++} value={x}>
-      {x}
-    </option>
-  ));
-
-  return (
-    <select value={props.field.value} onChange={props.field.onChange}>
-      {openElements}
-    </select>
-  );
-}
+import { FormFieldSet } from "../../rscommunity/form/FormFieldSet";
+import { FormTextBox, FormTextField } from "../../rscommunity/form/FormTextBox";
+import {
+  FormComboBox,
+  FormComboField,
+} from "../../rscommunity/form/FormComboBox";
 
 class ProfilePage extends React.Component {
   private _appSession: AppSession;
 
-  private _formInitialized: boolean = false;
-  private readonly _fullNameField: FormTextField = new FormTextField(this);
-  private readonly _nickNameField: FormTextField = new FormTextField(this);
-  private readonly _verifiedEmailField: FormComboField = new FormComboField(
-    this
+  private readonly _formFieldSet: FormFieldSet = new FormFieldSet(this);
+
+  private readonly _fullNameField: FormTextField = new FormTextField(
+    this._formFieldSet
   );
-  private readonly _companyNameField: FormTextField = new FormTextField(this);
-  private readonly _companyUrlField: FormTextField = new FormTextField(this);
-  private readonly _twitterAliasField: FormTextField = new FormTextField(this);
+  private readonly _nickNameField: FormTextField = new FormTextField(
+    this._formFieldSet
+  );
+  private readonly _verifiedEmailField: FormComboField = new FormComboField(
+    this._formFieldSet
+  );
+  private readonly _companyNameField: FormTextField = new FormTextField(
+    this._formFieldSet
+  );
+  private readonly _companyUrlField: FormTextField = new FormTextField(
+    this._formFieldSet
+  );
+  private readonly _twitterAliasField: FormTextField = new FormTextField(
+    this._formFieldSet
+  );
 
   public constructor(props: {}) {
     super(props);
@@ -110,45 +52,46 @@ class ProfilePage extends React.Component {
       this,
       this._apiDataService_updated
     );
-    this._formInitialized = false;
+    this._formFieldSet.updated.subscribe(this, () => {
+      this.forceUpdate();
+    });
   }
+
   public componentWillUnmount(): void {
     ObjectEvent.disposeSubscriptionsInvolving(this);
   }
 
   private _apiDataService_updated = (): void => {
-    if (!this._formInitialized) {
-      this._assignFields();
-      this._formInitialized = false;
+    if (!this._formFieldSet.modified) {
+      this._resetFields();
     }
-
-    this.forceUpdate();
   };
 
-  private _assignFields(): void {
+  private _resetFields(): void {
     const apiTask: ApiTask<UserModel> =
       this._appSession.apiDataService.initiateGetProfile(this, true);
 
     if (apiTask.status === ApiTaskStatus.Success) {
       const apiUser: IApiUser = apiTask.result.apiUser;
 
-      this._fullNameField.value = apiUser.fullName;
-      this._nickNameField.value = apiUser.nickName;
-      this._verifiedEmailField.value = apiUser.verifiedEmail;
+      this._formFieldSet.resetFields(() => {
+        this._fullNameField.value = apiUser.fullName;
+        this._nickNameField.value = apiUser.nickName;
+        this._verifiedEmailField.value = apiUser.verifiedEmail;
 
-      const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
-      if (apiUser.verifiedEmail) {
-        if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
-          emailChoices.push(apiUser.verifiedEmail);
+        const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
+        if (apiUser.verifiedEmail) {
+          if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
+            emailChoices.push(apiUser.verifiedEmail);
+          }
         }
-      }
-      emailChoices.sort();
-      this._verifiedEmailField.choices = emailChoices;
+        emailChoices.sort();
+        this._verifiedEmailField.choices = emailChoices;
 
-      this._companyNameField.value = apiUser.companyName;
-      this._companyUrlField.value = apiUser.companyUrl;
-      this._twitterAliasField.value = apiUser.twitterAlias;
-      this._formInitialized = true;
+        this._companyNameField.value = apiUser.companyName;
+        this._companyUrlField.value = apiUser.companyUrl;
+        this._twitterAliasField.value = apiUser.twitterAlias;
+      });
     }
   }
 
@@ -198,11 +141,16 @@ class ProfilePage extends React.Component {
           <DecoratedButton
             style={{ paddingTop: "20px", paddingRight: "20px" }}
             theme="default"
+            disabled={!this._formFieldSet.modified}
             onClick={this._saveButton_onClick}
           >
             Save
           </DecoratedButton>
-          <DecoratedButton theme="notice" onClick={this._cancelButton_onClick}>
+          <DecoratedButton
+            theme="notice"
+            disabled={!this._formFieldSet.modified}
+            onClick={this._cancelButton_onClick}
+          >
             Cancel
           </DecoratedButton>
         </div>
@@ -219,6 +167,8 @@ class ProfilePage extends React.Component {
     }
 
     const apiUser: IApiUser = apiTask.result.apiUser;
+
+    this._formFieldSet.resetFields(() => {});
 
     this._appSession.apiDataService
       .updateProfileAsync({
@@ -238,7 +188,7 @@ class ProfilePage extends React.Component {
   };
 
   private _cancelButton_onClick = (): void => {
-    this._assignFields();
+    this._resetFields();
   };
 }
 
