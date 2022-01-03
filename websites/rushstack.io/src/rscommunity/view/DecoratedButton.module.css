@@ -7,17 +7,18 @@
   border-style: solid;
   border-width: 2px;
 
-  cursor: pointer;
   white-space: nowrap;
   user-select: none;
   box-sizing: border-box;
 }
 
-.buttonBorder:active {
+.buttonBorderEffect:active {
+  cursor: pointer;
   outline-style: solid !important;
   outline-color: #e0e0e0;
 }
-.buttonBorder:hover {
+.buttonBorderEffect:hover {
+  cursor: pointer;
   outline-style: solid !important;
   outline-color: #e0e0e0;
 }
@@ -37,10 +38,10 @@
   align-items: center;
 }
 
-.buttonInnerActiveLighten:active {
-  background-color: #ffffff18;
+.buttonInnerWhiteEffect:active {
+  background-color: #0000000c;
 }
 
-.buttonInnerActiveDarken:active {
-  background-color: #0000000c;
+.buttonInnerRegularEffect:active {
+  background-color: #ffffff18;
 }

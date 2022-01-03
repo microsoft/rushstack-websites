@@ -5,6 +5,7 @@ export interface IDecoratedButtonProps {
   onClick?: () => void;
   style?: React.CSSProperties;
   theme?: "default" | "notice" | "white";
+  disabled?: boolean;
 }
 export function DecoratedButton(
   props: React.PropsWithChildren<IDecoratedButtonProps>
@@ -12,30 +13,40 @@ export function DecoratedButton(
   let textColor: string;
   let backgroundColor: string;
   let borderColor: string;
-  switch (props.theme) {
-    case "notice":
-      textColor = "#ffffff";
-      backgroundColor = "#c95228";
-      borderColor = backgroundColor;
-      break;
-    case "white":
-      textColor = "#000000";
-      backgroundColor = "#ffffff";
-      borderColor = "#c0c0c0";
-      break;
-    default:
-      textColor = "#ffffff";
-      backgroundColor = "#108938";
-      borderColor = backgroundColor;
-      break;
-  }
 
+  const borderStyles: string[] = [styles.buttonBorder];
   const innerStyles: string[] = [styles.buttonInner];
-  innerStyles.push(
-    props.theme === "white"
-      ? styles.buttonInnerActiveDarken
-      : styles.buttonInnerActiveLighten
-  );
+
+  if (props.disabled) {
+    textColor = "#ffffff";
+    backgroundColor = "#c0c0c0";
+    borderColor = backgroundColor;
+  } else {
+    switch (props.theme) {
+      case "notice":
+        textColor = "#ffffff";
+        backgroundColor = "#c95228";
+        borderColor = backgroundColor;
+        break;
+      case "white":
+        textColor = "#000000";
+        backgroundColor = "#ffffff";
+        borderColor = "#c0c0c0";
+        break;
+      default:
+        textColor = "#ffffff";
+        backgroundColor = "#108938";
+        borderColor = backgroundColor;
+        break;
+    }
+
+    borderStyles.push(styles.buttonBorderEffect);
+    innerStyles.push(
+      props.theme === "white"
+        ? styles.buttonInnerWhiteEffect
+        : styles.buttonInnerRegularEffect
+    );
+  }
 
   return (
     <div
@@ -45,13 +56,13 @@ export function DecoratedButton(
       style={props.style}
     >
       <div
-        className={styles.buttonBorder}
+        className={borderStyles.join(" ")}
         style={{
           color: textColor,
           backgroundColor: backgroundColor,
           borderColor: borderColor,
         }}
-        onClick={props.onClick}
+        onClick={props.disabled ? undefined : props.onClick}
       >
         <div className={innerStyles.join(" ")}>{props.children}</div>
       </div>
