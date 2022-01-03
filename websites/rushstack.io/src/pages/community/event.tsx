@@ -4,12 +4,9 @@ import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarL
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
-import {
-  EventModel,
-  ApiTask,
-  ApiTaskStatus,
-} from "../../rscommunity/api/ApiDataService";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
+import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
+import { EventModel } from "../../rscommunity/api/models";
 
 class EventPage extends React.Component {
   private _appSession: AppSession;

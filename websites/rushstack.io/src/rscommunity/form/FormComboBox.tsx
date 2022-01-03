@@ -1,6 +1,5 @@
 import React from "react";
 
-import { FormField, FormFieldSet } from "./FormFieldSet";
 import { FormTextField } from "./FormTextBox";
 
 export class FormComboField extends FormTextField {

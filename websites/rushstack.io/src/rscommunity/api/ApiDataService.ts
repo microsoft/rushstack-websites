@@ -2,70 +2,14 @@ import React from "react";
 import { IApiEvent, IApiUser, IApiUserUpdate } from "./ApiInterfaces";
 import { ObjectEvent } from "../library/ObjectEvent";
 import { AppSession } from "./AppSession";
-
-export class EventModel {
-  public readonly apiEvent: IApiEvent;
-  public readonly appSession: AppSession;
-
-  public constructor(apiEvent: IApiEvent, appSession: AppSession) {
-    this.apiEvent = apiEvent;
-    this.appSession = appSession;
-  }
-
-  public onNavigateToEventDetailPage = (): void => {
-    this.appSession.navigateToEventDetailPage(this.apiEvent.dbEventId);
-  };
-
-  public onAddReservation = (): void => {
-    this.appSession.apiDataService.addReservationAsync(this).catch((error) => {
-      console.error((error as Error).toString());
-    });
-  };
-
-  public onRemoveReservation = (): void => {
-    this.appSession.apiDataService
-      .removeReservationAsync(this)
-      .catch((error) => {
-        console.error((error as Error).toString());
-      });
-  };
-}
-
-export class UserModel {
-  public readonly apiUser: IApiUser;
-  public readonly appSession: AppSession;
-
-  public constructor(apiUser: IApiUser, appSession: AppSession) {
-    this.apiUser = apiUser;
-    this.appSession = appSession;
-  }
-}
-
-export enum ApiTaskStatus {
-  Error,
-  Pending,
-  Success,
-}
-
-export interface ApiTaskError {
-  status: ApiTaskStatus.Error;
-  error: Error;
-}
-export interface ApiTaskPending {
-  status: ApiTaskStatus.Pending;
-}
-export interface ApiTaskSuccess<TResult> {
-  status: ApiTaskStatus.Success;
-  result: TResult;
-}
-
-export type ApiTask<TItem> =
-  | ApiTaskError
-  | ApiTaskPending
-  | ApiTaskSuccess<TItem>;
+import { ApiTask, ApiTaskStatus } from "./ApiTask";
+import { EventModel, UserModel } from "./models";
 
 interface ICacheEntry {
   key: string;
+  /**
+   * Based on `Date.now()`
+   */
   timestamp: number;
   task: ApiTask<unknown>;
   components: Set<React.Component>;
@@ -132,7 +76,7 @@ export class ApiDataService {
         throw new Error("Server Error: " + data.statusText);
       }
     } finally {
-      this._invalidate();
+      this._invalidateCache();
     }
   }
 
@@ -211,7 +155,7 @@ export class ApiDataService {
         throw new Error("Server Error: " + data.statusText);
       }
     } finally {
-      this._invalidate();
+      this._invalidateCache();
     }
   }
 
@@ -233,11 +177,11 @@ export class ApiDataService {
         throw new Error("Server Error: " + data.statusText);
       }
     } finally {
-      this._invalidate();
+      this._invalidateCache();
     }
   }
 
-  private _invalidate(): void {
+  private _invalidateCache(): void {
     console.log("forceUpdate() " + new Date().toString());
     this._cache.clear();
     this.updated.fire({});
@@ -249,10 +193,21 @@ export class ApiDataService {
     action: () => Promise<TResult>
   ): ApiTask<TResult> {
     let cacheEntry: ICacheEntry | undefined = this._cache.get(apiTaskKey);
+
+    if (cacheEntry !== undefined) {
+      const THREE_MINUTES_IN_MS = 3 * 60 * 1000;
+      if (Math.abs(Date.now() - cacheEntry.timestamp) > THREE_MINUTES_IN_MS) {
+        // Flush cache entries after a few minutes
+        // _invalidateCache() will also flush the cache whenever a change is saved
+        cacheEntry = undefined;
+        this._cache.delete(apiTaskKey);
+      }
+    }
+
     if (cacheEntry === undefined) {
       cacheEntry = {
         key: apiTaskKey,
-        timestamp: performance.now(),
+        timestamp: Date.now(),
         task: { status: ApiTaskStatus.Pending },
         components: new Set<React.Component>(),
       };

@@ -3,11 +3,6 @@ import React from "react";
 import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
-import {
-  ApiTask,
-  ApiTaskStatus,
-  UserModel,
-} from "../../rscommunity/api/ApiDataService";
 import { IApiUser } from "../../rscommunity/api/ApiInterfaces";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { DecoratedButton } from "../../rscommunity/view/DecoratedButton";
@@ -17,6 +12,8 @@ import {
   FormComboBox,
   FormComboField,
 } from "../../rscommunity/form/FormComboBox";
+import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
+import { UserModel } from "../../rscommunity/api/models";
 
 class ProfilePage extends React.Component {
   private _appSession: AppSession;
