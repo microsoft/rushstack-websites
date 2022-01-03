@@ -156,14 +156,14 @@ class ProfilePage extends React.Component {
   }
 
   private _saveButton_onClick = (): void => {
-    const apiTask: ApiTask<UserModel> =
+    const userTask: ApiTask<UserModel> =
       this._appSession.apiDataService.initiateGetProfile(this, true);
 
-    if (apiTask.status !== ApiTaskStatus.Success) {
+    if (userTask.status !== ApiTaskStatus.Success) {
       return;
     }
 
-    const apiUser: IApiUser = apiTask.result.apiUser;
+    const apiUser: IApiUser = userTask.result.apiUser;
 
     this._formFieldSet.resetFields(() => {});
 

@@ -6,7 +6,7 @@ import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
-import { EventModel } from "../../rscommunity/api/models";
+import { EventModel, UserModel } from "../../rscommunity/api/models";
 
 class EventPage extends React.Component {
   private _appSession: AppSession;
@@ -46,16 +46,17 @@ class EventPage extends React.Component {
       return <div>ERROR: Missing event id</div>;
     }
 
-    const apiTask: ApiTask<EventModel> =
+    const eventTask: ApiTask<EventModel> =
       this._appSession.apiDataService.initiateGetEvent(this, this._eventId);
 
-    if (apiTask.status === ApiTaskStatus.Error) {
-      return <div>ERROR: {apiTask.error.message}</div>;
+    if (eventTask.status === ApiTaskStatus.Error) {
+      return <div>ERROR: {eventTask.error.message}</div>;
     }
-    if (apiTask.status === ApiTaskStatus.Pending) {
+
+    if (eventTask.status === ApiTaskStatus.Pending) {
       return <></>;
     }
-    const eventModel: EventModel = apiTask.result;
+    const eventModel: EventModel = eventTask.result;
 
     let breadcrumb: JSX.Element = (
       <div>
@@ -81,6 +82,7 @@ class EventPage extends React.Component {
             <EventCard
               cardType="detail"
               eventModel={eventModel}
+              apiDataService={this._appSession.apiDataService}
               key={eventModel.apiEvent.dbEventId}
             />
           ) : undefined}

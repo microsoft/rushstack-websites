@@ -52,6 +52,7 @@ class EventsPage extends React.Component {
             <EventCard
               cardType="summary"
               eventModel={eventModel}
+              apiDataService={this._appSession.apiDataService}
               key={eventModel.apiEvent.dbEventId}
             />
           ))}
