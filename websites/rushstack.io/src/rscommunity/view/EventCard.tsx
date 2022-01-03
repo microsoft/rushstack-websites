@@ -4,9 +4,9 @@ import "../dayjsExtensions";
 
 import styles from "./EventCard.module.css";
 
-import { EventModel } from "../model/ApiDataService";
+import { EventModel } from "../api/ApiDataService";
 import { DecoratedButton } from "../view/DecoratedButton";
-import { IApiEvent } from "../ApiInterfaces";
+import { IApiEvent } from "../api/ApiInterfaces";
 
 function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   if (eventJson.startTime === undefined || eventJson.duration === undefined) {

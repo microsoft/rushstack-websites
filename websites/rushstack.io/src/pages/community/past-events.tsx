@@ -2,13 +2,13 @@ import React from "react";
 
 import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
-import { AppSession } from "../../rscommunity/model/AppSession";
+import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import {
   EventModel,
   ApiTask,
   ApiTaskStatus,
-} from "../../rscommunity/model/ApiDataService";
+} from "../../rscommunity/api/ApiDataService";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 
 class PastEventsPage extends React.Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import { IApiEvent, IApiUser, IApiUserUpdate } from "../ApiInterfaces";
+import { IApiEvent, IApiUser, IApiUserUpdate } from "./ApiInterfaces";
 import { ObjectEvent } from "../library/ObjectEvent";
 import { AppSession } from "./AppSession";
 

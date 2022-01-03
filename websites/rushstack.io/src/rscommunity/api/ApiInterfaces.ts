@@ -1,3 +1,8 @@
+// * * * DO NOT MODIFY THIS FILE * * *
+//
+// This file was copied from the https://github.com/microsoft/rushstack.io-service repository.
+// It should be kept in sync with the original file.
+
 export interface IApiEvent {
   dbEventId: number;
   eventTitle: string;

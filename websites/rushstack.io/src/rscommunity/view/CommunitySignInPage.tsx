@@ -2,7 +2,7 @@ import Layout from "@theme/Layout";
 import React from "react";
 import styles from "./CommunitySignInPage.module.css";
 
-import { AppSession } from "../model/AppSession";
+import { AppSession } from "../api/AppSession";
 import { DecoratedButton } from "./DecoratedButton";
 
 export interface ICommunitySigninPageProps {
