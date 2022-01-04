@@ -177,8 +177,8 @@ export class EventCard extends React.Component<IEventCardProps> {
                 <div className={styles.detailBox}>
                   <h2>Join the video call</h2>
                   <div style={{ paddingTop: "20px" }}>
-                    On the day of this event, the MS Teams URL will be sent to
-                    your member email address:
+                    On the day before this event, the MS Teams video call URL
+                    will be sent to the email address from your profile:
                   </div>
                   <div
                     style={{

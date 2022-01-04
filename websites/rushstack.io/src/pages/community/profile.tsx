@@ -15,6 +15,10 @@ import {
 } from "../../rscommunity/form/FormComboBox";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { UserModel } from "../../rscommunity/api/models";
+import {
+  FormCheckBox,
+  FormCheckField,
+} from "../../rscommunity/form/FormCheckBox";
 
 class ProfilePage extends React.Component {
   private _appSession: AppSession;
@@ -30,6 +34,7 @@ class ProfilePage extends React.Component {
   private readonly _verifiedEmailField: FormComboField = new FormComboField(
     this._formFieldSet
   );
+
   private readonly _organizationNameField: FormTextField = new FormTextField(
     this._formFieldSet
   );
@@ -37,6 +42,19 @@ class ProfilePage extends React.Component {
     this._formFieldSet
   );
   private readonly _twitterAliasField: FormTextField = new FormTextField(
+    this._formFieldSet
+  );
+
+  private readonly _optOutOfAllEmails: FormCheckField = new FormCheckField(
+    this._formFieldSet
+  );
+  private readonly _notifyAboutNewEvents: FormCheckField = new FormCheckField(
+    this._formFieldSet
+  );
+  private readonly _discloseOrganization: FormCheckField = new FormCheckField(
+    this._formFieldSet
+  );
+  private readonly _allowUseOfLogo: FormCheckField = new FormCheckField(
     this._formFieldSet
   );
 
@@ -78,17 +96,21 @@ class ProfilePage extends React.Component {
         this._verifiedEmailField.value = apiUser.verifiedEmail;
 
         const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
-        if (apiUser.verifiedEmail) {
-          if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
-            emailChoices.push(apiUser.verifiedEmail);
-          }
+        if (emailChoices.indexOf(apiUser.verifiedEmail) < 0) {
+          emailChoices.push(apiUser.verifiedEmail);
         }
+
         emailChoices.sort();
         this._verifiedEmailField.choices = emailChoices;
 
         this._organizationNameField.value = apiUser.organizationName;
         this._organizationUrlField.value = apiUser.organizationUrl;
         this._twitterAliasField.value = apiUser.twitterAlias;
+
+        this._optOutOfAllEmails.checked = apiUser.optOutOfAllEmails;
+        this._notifyAboutNewEvents.checked = apiUser.notifyAboutNewEvents;
+        this._discloseOrganization.checked = apiUser.discloseOrganization;
+        this._allowUseOfLogo.checked = apiUser.allowUseOfLogo;
       });
     }
   }
@@ -118,7 +140,9 @@ class ProfilePage extends React.Component {
         <h1>Your Profile</h1>
 
         <div className={styles.formHeading}>Full Name</div>
-        <FormTextBox field={this._fullNameField} />
+        <div>
+          <FormTextBox field={this._fullNameField} />
+        </div>
         <p>
           <i>Example: "Cameron Codesmith"</i>
         </p>
@@ -127,42 +151,89 @@ class ProfilePage extends React.Component {
         <div>
           What name should we use to address you in a meeting or discussion?
         </div>
-        <FormTextBox field={this._nickNameField} />
+        <div>
+          <FormTextBox field={this._nickNameField} />
+        </div>
         <div>
           <i>Example: "Cam"</i>
         </div>
 
-        <div className={styles.formHeading}>Email for Notifications</div>
-        <FormComboBox field={this._verifiedEmailField} />
-        <p>
-          The Rush Stack website relies on GitHub to verify your email address.
-          The choices in this box are obtained from your{" "}
+        <div className={styles.formHeading}>Email Notifications</div>
+        <div>
+          What email address should be used for notifications such as video call
+          links?
+        </div>
+        <div>
+          <FormComboBox
+            field={this._verifiedEmailField}
+            emptyStringMessage="(unspecified)"
+          />
+        </div>
+
+        <div>
+          <label>
+            <FormCheckBox field={this._optOutOfAllEmails} />
+            Unsubscribe me from all Rush Stack email communications
+          </label>
+        </div>
+        <div>
+          <label>
+            <FormCheckBox
+              field={this._notifyAboutNewEvents}
+              disabled={this._optOutOfAllEmails.checked}
+            />
+            Send me email notifications when new Rush Stack events are posted
+          </label>
+        </div>
+        <p style={{ paddingTop: "20px" }}>
+          This website relies on GitHub to verify your email address. The
+          choices above are obtained from your{" "}
           <a href="https://github.com/settings/emails" target="_blank">
-            GitHub emails list
+            GitHub profile emails
           </a>
-          . After adding a new email address to your GitHub profile, you must
+          . After adding a new email address to your GitHub account, you must
           sign out from the Rush Stack website to refresh the choices. This is
           necessary because our database does not store a GitHub API token.
         </p>
         <p>
-          <b>Email privacy:</b> Your email address is only intended to be used
-          for notifications and reminders related to the website and community
-          events. These notifications should be infrequent and limited to topics
-          that you expressed interest in. The website does not display your
-          email address to other users. This service is operated by community
-          volunteers who make a best effort to prevent your email address from
-          being disclosed to other parties such as advertisers or spammers.
+          <b>Email privacy:</b> The website does not display your email address
+          to other users, and we make a best effort to avoid disclosing it to
+          other parties such as advertisers or spammers. We intend for email
+          notifications to be infrequent and relevant to topics that you
+          expressed interest in. If you have feedback regarding this service,
+          please{" "}
+          <a
+            href="https://github.com/microsoft/rushstack.io-website/issues"
+            target="_blank"
+          >
+            create a GitHub issue.
+          </a>
         </p>
-
         <div className={styles.formHeading}>Company/Organization Name</div>
-        <FormTextBox field={this._organizationNameField} />
-
+        <div>
+          <FormTextBox field={this._organizationNameField} />
+        </div>
         <div className={styles.formHeading}>Company/Organization URL</div>
-        <FormTextBox field={this._organizationUrlField} />
-
+        <div>
+          <FormTextBox field={this._organizationUrlField} />
+        </div>
+        <div>
+          <label>
+            <FormCheckBox field={this._discloseOrganization} />I want people to
+            know that I'm affiliated with my company/organization.
+          </label>
+        </div>
+        <div>
+          <label>
+            <FormCheckBox field={this._allowUseOfLogo} />
+            My company/organization would like to support Rush Stack by having
+            our logo displayed on the website for the components that we use.
+          </label>
+        </div>
         <div className={styles.formHeading}>Twitter Alias</div>
-        <FormTextBox field={this._twitterAliasField} />
-
+        <div>
+          <FormTextBox field={this._twitterAliasField} />
+        </div>
         <div>
           <DecoratedButton
             style={{ paddingTop: "20px", paddingRight: "20px" }}
@@ -179,6 +250,31 @@ class ProfilePage extends React.Component {
           >
             Cancel
           </DecoratedButton>
+        </div>
+        <div className={styles.privacyNoticeBox}>
+          <p>
+            <b>Privacy notice:</b> Sharing your personal information is
+            optional. We value your privacy. Our intent is to implement
+            effective security practices and to protect your private data from
+            being disclosed without your consent. However, be aware that the
+            Rush Stack events, website, and associated software are operated by
+            community volunteers and without any guarantees. Mistakes can happen
+            sometimes.
+          </p>
+          <p>
+            <b>Disclaimer:</b> Use this Service AT YOUR OWN RISK. It is provided
+            "as is", without warranty of any kind, express or implied. In no
+            event shall any Operators of this Service be liable for any special,
+            direct, indirect, consequential, or incidental damages or any
+            damages whatsoever, whether in an action of contract, negligence or
+            other tort, arising out of or in connection with the use of the
+            Service or the contents of the Service. For details consult the
+            GitHub repository{" "}
+            <a href="https://github.com/microsoft/rushstack.io-website">
+              legal notices
+            </a>{" "}
+            .
+          </p>
         </div>
       </CommunitySidebarLayout>
     );
@@ -207,6 +303,11 @@ class ProfilePage extends React.Component {
         organizationName: this._organizationNameField.value,
         organizationUrl: this._organizationUrlField.value,
         twitterAlias: this._twitterAliasField.value,
+
+        optOutOfAllEmails: this._optOutOfAllEmails.checked,
+        notifyAboutNewEvents: this._notifyAboutNewEvents.checked,
+        discloseOrganization: this._discloseOrganization.checked,
+        allowUseOfLogo: this._allowUseOfLogo.checked,
       })
       .catch((error) => {
         console.error((error as Error).toString());

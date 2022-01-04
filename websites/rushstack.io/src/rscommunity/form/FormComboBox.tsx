@@ -15,11 +15,14 @@ export class FormComboField extends FormTextField {
   }
 }
 
-export function FormComboBox(props: { field: FormComboField }): JSX.Element {
+export function FormComboBox(props: {
+  field: FormComboField;
+  emptyStringMessage?: string;
+}): JSX.Element {
   let optionKey: number = 0;
   const openElements: JSX.Element[] = props.field.choices.map((x) => (
     <option key={optionKey++} value={x}>
-      {x}
+      {x === "" ? props.emptyStringMessage ?? x : x}
     </option>
   ));
 

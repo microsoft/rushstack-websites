@@ -2,3 +2,14 @@
   font-weight: bold;
   margin-top: 20px;
 }
+
+.privacyNoticeBox {
+
+  padding: 20px;
+
+  margin-top: 75px;
+  margin-right: 50px;
+
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
