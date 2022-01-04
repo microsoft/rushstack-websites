@@ -29,16 +29,16 @@ class EventsPage extends React.Component {
       return <CommunitySignInPage appSession={this._appSession} />;
     }
 
-    const apiTask: ApiTask<EventModel[]> =
+    const eventTask: ApiTask<EventModel[]> =
       this._appSession.apiDataService.initiateGetEvents(this, "current");
 
-    if (apiTask.status === ApiTaskStatus.Error) {
-      return <div>ERROR: {apiTask.error.message}</div>;
+    if (eventTask.status === ApiTaskStatus.Error) {
+      return <div>ERROR: {eventTask.error.message}</div>;
     }
-    if (apiTask.status === ApiTaskStatus.Pending) {
+    if (eventTask.status === ApiTaskStatus.Pending) {
       return <></>;
     }
-    const eventModels: EventModel[] = apiTask.result;
+    const eventModels: EventModel[] = eventTask.result;
 
     return (
       <CommunitySidebarLayout

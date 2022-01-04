@@ -45,22 +45,32 @@ export interface IApiUser {
   fullName: string;
   nickName: string;
 
-  companyName: string;
-  companyUrl: string;
+  organizationName: string;
+  organizationUrl: string;
   twitterAlias: string;
 
   verifiedEmailChoices: string[] | undefined;
+
+  optOutOfAllEmails: boolean;
+  notifyAboutNewEvents: boolean;
+  discloseOrganization: boolean;
+  allowUseOfLogo: boolean;
 }
 
 export interface IApiUserUpdate {
   dbUserId: number;
 
-  verifiedEmail: string;
+  verifiedEmail?: string;
 
-  fullName: string;
-  nickName: string;
+  fullName?: string;
+  nickName?: string;
 
-  companyName: string;
-  companyUrl: string;
-  twitterAlias: string;
+  organizationName?: string;
+  organizationUrl?: string;
+  twitterAlias?: string;
+
+  optOutOfAllEmails?: boolean;
+  notifyAboutNewEvents?: boolean;
+  discloseOrganization?: boolean;
+  allowUseOfLogo?: boolean;
 }

@@ -20,7 +20,7 @@ export function CommunitySignInPage(
           <ul>
             <li>Join our monthly "Rush Hour" meetings</li>
             <li>Sign up for technical breakout sessions and other events</li>
-            <li>Request to add your company logo to our website</li>
+            <li>Request to add your organization logo to our website</li>
             <li>Participate in occasional giveaways such as free T-shirts</li>
           </ul>
           <h2>This feature requires a GitHub account</h2>

@@ -24,7 +24,11 @@ export function FormComboBox(props: { field: FormComboField }): JSX.Element {
   ));
 
   return (
-    <select value={props.field.value} onChange={props.field.onChange}>
+    <select
+      style={{ width: "20em" }}
+      value={props.field.value}
+      onChange={props.field.onChange}
+    >
       {openElements}
     </select>
   );

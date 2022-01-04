@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./profile.module.css";
 
 import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
@@ -29,10 +30,10 @@ class ProfilePage extends React.Component {
   private readonly _verifiedEmailField: FormComboField = new FormComboField(
     this._formFieldSet
   );
-  private readonly _companyNameField: FormTextField = new FormTextField(
+  private readonly _organizationNameField: FormTextField = new FormTextField(
     this._formFieldSet
   );
-  private readonly _companyUrlField: FormTextField = new FormTextField(
+  private readonly _organizationUrlField: FormTextField = new FormTextField(
     this._formFieldSet
   );
   private readonly _twitterAliasField: FormTextField = new FormTextField(
@@ -85,8 +86,8 @@ class ProfilePage extends React.Component {
         emailChoices.sort();
         this._verifiedEmailField.choices = emailChoices;
 
-        this._companyNameField.value = apiUser.companyName;
-        this._companyUrlField.value = apiUser.companyUrl;
+        this._organizationNameField.value = apiUser.organizationName;
+        this._organizationUrlField.value = apiUser.organizationUrl;
         this._twitterAliasField.value = apiUser.twitterAlias;
       });
     }
@@ -112,26 +113,54 @@ class ProfilePage extends React.Component {
       <CommunitySidebarLayout
         appSession={this._appSession}
         navItem={"profile"}
-        style={{ paddingTop: "100px" }}
+        style={{ paddingTop: "100px", maxWidth: "600px" }}
       >
         <h1>Your Profile</h1>
 
-        <div>Full Name</div>
+        <div className={styles.formHeading}>Full Name</div>
         <FormTextBox field={this._fullNameField} />
+        <p>
+          <i>Example: "Cameron Codesmith"</i>
+        </p>
 
-        <div>Nick Name</div>
+        <div className={styles.formHeading}>Nick Name</div>
+        <div>
+          What name should we use to address you in a meeting or discussion?
+        </div>
         <FormTextBox field={this._nickNameField} />
+        <div>
+          <i>Example: "Cam"</i>
+        </div>
 
-        <div>Email for Notifications</div>
+        <div className={styles.formHeading}>Email for Notifications</div>
         <FormComboBox field={this._verifiedEmailField} />
+        <p>
+          The Rush Stack website relies on GitHub to verify your email address.
+          The choices in this box are obtained from your{" "}
+          <a href="https://github.com/settings/emails" target="_blank">
+            GitHub emails list
+          </a>
+          . After adding a new email address to your GitHub profile, you must
+          sign out from the Rush Stack website to refresh the choices. This is
+          necessary because our database does not store a GitHub API token.
+        </p>
+        <p>
+          <b>Email privacy:</b> Your email address is only intended to be used
+          for notifications and reminders related to the website and community
+          events. These notifications should be infrequent and limited to topics
+          that you expressed interest in. The website does not display your
+          email address to other users. This service is operated by community
+          volunteers who make a best effort to prevent your email address from
+          being disclosed to other parties such as advertisers or spammers.
+        </p>
 
-        <div>Company Name</div>
-        <FormTextBox field={this._companyNameField} />
+        <div className={styles.formHeading}>Company/Organization Name</div>
+        <FormTextBox field={this._organizationNameField} />
 
-        <div>Company URL</div>
-        <FormTextBox field={this._companyUrlField} />
+        <div className={styles.formHeading}>Company/Organization URL</div>
+        <FormTextBox field={this._organizationUrlField} />
 
-        <div>Twitter Alias</div>
+        <div className={styles.formHeading}>Twitter Alias</div>
         <FormTextBox field={this._twitterAliasField} />
 
         <div>
@@ -175,8 +204,8 @@ class ProfilePage extends React.Component {
         fullName: this._fullNameField.value,
         nickName: this._nickNameField.value,
 
-        companyName: this._companyNameField.value,
-        companyUrl: this._companyUrlField.value,
+        organizationName: this._organizationNameField.value,
+        organizationUrl: this._organizationUrlField.value,
         twitterAlias: this._twitterAliasField.value,
       })
       .catch((error) => {

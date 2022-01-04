@@ -32,5 +32,11 @@ export class FormTextField extends FormField {
 }
 
 export function FormTextBox(props: { field: FormTextField }): JSX.Element {
-  return <input value={props.field.value} onChange={props.field.onChange} />;
+  return (
+    <input
+      style={{ width: "20em" }}
+      value={props.field.value}
+      onChange={props.field.onChange}
+    />
+  );
 }

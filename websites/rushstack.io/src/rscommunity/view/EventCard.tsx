@@ -169,30 +169,43 @@ export class EventCard extends React.Component<IEventCardProps> {
         if (apiEvent.userIsSignedUp) {
           const userTask: ApiTask<UserModel> =
             this.props.apiDataService.initiateGetProfile(this, true);
+          if (userTask.status === ApiTaskStatus.Success) {
+            const verifiedEmail: string = userTask.result.apiUser.verifiedEmail;
 
-          const verifiedEmail: string =
-            userTask.status === ApiTaskStatus.Success
-              ? userTask.result.apiUser.verifiedEmail
-              : "";
-
-          detailBox = (
-            <div className={styles.detailBox}>
-              <h2>Join the video call</h2>
-              <div style={{ paddingTop: "20px" }}>
-                On the day of this event, the MS Teams URL will be sent to your
-                member email address:
-              </div>
-              <div
-                style={{
-                  paddingTop: "20px",
-                  paddingLeft: "50px",
-                  paddingBottom: "50px",
-                }}
-              >
-                <code>{verifiedEmail}</code>
-              </div>
-            </div>
-          );
+            if (verifiedEmail) {
+              detailBox = (
+                <div className={styles.detailBox}>
+                  <h2>Join the video call</h2>
+                  <div style={{ paddingTop: "20px" }}>
+                    On the day of this event, the MS Teams URL will be sent to
+                    your member email address:
+                  </div>
+                  <div
+                    style={{
+                      paddingTop: "20px",
+                      paddingLeft: "50px",
+                      paddingBottom: "50px",
+                    }}
+                  >
+                    <code>{verifiedEmail}</code>
+                  </div>
+                </div>
+              );
+            } else {
+              detailBox = (
+                <div className={styles.detailBox}>
+                  <h2 style={{ color: "#c95228" }}>* * * Problem! * * *</h2>
+                  <div style={{ paddingTop: "20px" }}>
+                    We cannot notify you about this event because you have not
+                    specified an email address.
+                  </div>
+                  <div style={{ paddingTop: "20px" }}>
+                    Please <a href="/community/profile">update your profile</a>.
+                  </div>
+                </div>
+              );
+            }
+          }
         }
       } else {
         // PAST EVENT
