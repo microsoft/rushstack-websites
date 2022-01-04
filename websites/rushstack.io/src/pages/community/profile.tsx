@@ -203,7 +203,7 @@ class ProfilePage extends React.Component {
           expressed interest in. If you have feedback regarding this service,
           please{" "}
           <a
-            href="https://github.com/microsoft/rushstack.io-website/issues"
+            href="https://github.com/microsoft/rushstack-websites/issues"
             target="_blank"
           >
             create a GitHub issue.
@@ -270,7 +270,7 @@ class ProfilePage extends React.Component {
             other tort, arising out of or in connection with the use of the
             Service or the contents of the Service. For details consult the
             GitHub repository{" "}
-            <a href="https://github.com/microsoft/rushstack.io-website">
+            <a href="https://github.com/microsoft/rushstack-websites/">
               legal notices
             </a>{" "}
             .

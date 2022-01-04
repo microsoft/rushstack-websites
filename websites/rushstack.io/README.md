@@ -40,7 +40,7 @@ $ GIT_USER=<Your GitHub username> USE_SSH=true rushx deploy
 ```
 
 (Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials
-necessary to write to the `rushstack.io-website` GitHub repo.)
+necessary to write to the `rushstack-websites` GitHub repo.)
 
 ## Updating API docs
 
