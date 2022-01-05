@@ -19,8 +19,9 @@ import {
   FormCheckBox,
   FormCheckField,
 } from "../../rscommunity/form/FormCheckBox";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class ProfilePage extends React.Component {
+class ProfilePageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   private readonly _formFieldSet: FormFieldSet = new FormFieldSet(this);
@@ -316,6 +317,14 @@ class ProfilePage extends React.Component {
   private _cancelButton_onClick = (): void => {
     this._resetFields();
   };
+}
+
+export function ProfilePage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <ProfilePageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default ProfilePage;

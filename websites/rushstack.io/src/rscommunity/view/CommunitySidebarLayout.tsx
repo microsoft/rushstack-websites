@@ -45,7 +45,7 @@ export function CommunitySidebarLayout(
   props: React.PropsWithChildren<ICommunitySidebarLayoutProps>
 ): JSX.Element {
   return (
-    <Layout>
+    <>
       <div
         style={{
           display: "flex",
@@ -86,6 +86,6 @@ export function CommunitySidebarLayout(
           {props.children}
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

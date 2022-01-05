@@ -7,8 +7,9 @@ import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class EventPage extends React.Component {
+class EventPageBody extends React.Component {
   private readonly _appSession: AppSession;
   private _eventId: number | undefined;
 
@@ -92,6 +93,14 @@ class EventPage extends React.Component {
       </CommunitySidebarLayout>
     );
   }
+}
+
+export function EventPage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <EventPageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default EventPage;

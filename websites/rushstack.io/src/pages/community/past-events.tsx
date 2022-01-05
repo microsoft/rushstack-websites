@@ -7,8 +7,9 @@ import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class PastEventsPage extends React.Component {
+class PastEventsPageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   public constructor(props: {}) {
@@ -68,6 +69,14 @@ class PastEventsPage extends React.Component {
       </CommunitySidebarLayout>
     );
   }
+}
+
+export function PastEventsPage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <PastEventsPageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default PastEventsPage;
