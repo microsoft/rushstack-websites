@@ -9,7 +9,7 @@ export function BrowserOnlyLayout(
 ): JSX.Element {
   return (
     <Layout>
-      <BrowserOnly>{props.children}</BrowserOnly>
+      <BrowserOnly>{() => <>{props.children}</>}</BrowserOnly>
     </Layout>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./profile.module.css";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { IApiUser } from "../../rscommunity/api/ApiInterfaces";
@@ -132,7 +132,7 @@ class ProfilePageBody extends React.Component {
     }
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem={"profile"}
         style={{ paddingTop: "100px", maxWidth: "600px" }}
@@ -276,7 +276,7 @@ class ProfilePageBody extends React.Component {
             .
           </p>
         </div>
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
 

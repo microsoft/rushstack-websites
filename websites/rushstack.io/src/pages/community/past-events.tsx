@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
@@ -59,14 +59,14 @@ class PastEventsPageBody extends React.Component {
     }
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem="past-events"
         style={{ paddingTop: "100px" }}
       >
         <h1>Past Events</h1>
         <div style={{ maxWidth: "800px" }}>{content}</div>
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
 }

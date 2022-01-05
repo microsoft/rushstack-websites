@@ -35,14 +35,14 @@ function MenuItem(props: IMenuItemProps): JSX.Element {
   return result;
 }
 
-export interface ICommunitySidebarLayoutProps {
+export interface ICommunitySidebarProps {
   appSession: AppSession;
   navItem?: "events" | "past-events" | "profile";
   style?: React.CSSProperties;
 }
 
-export function CommunitySidebarLayout(
-  props: React.PropsWithChildren<ICommunitySidebarLayoutProps>
+export function CommunitySidebar(
+  props: React.PropsWithChildren<ICommunitySidebarProps>
 ): JSX.Element {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
@@ -71,7 +71,7 @@ class EventPageBody extends React.Component {
     );
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem={eventModel.apiEvent.isCompleted ? "past-events" : "events"}
         style={{ paddingTop: "100px" }}
@@ -90,7 +90,7 @@ class EventPageBody extends React.Component {
         </div>
 
         {breadcrumb}
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
 }
