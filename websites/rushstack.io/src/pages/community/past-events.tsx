@@ -40,14 +40,10 @@ class PastEventsPage extends React.Component {
     }
     const eventModels: EventModel[] = eventTask.result;
 
-    return (
-      <CommunitySidebarLayout
-        appSession={this._appSession}
-        navItem="past-events"
-        style={{ paddingTop: "100px" }}
-      >
-        <h1>Past Events</h1>
-        <div style={{ maxWidth: "800px" }}>
+    let content: JSX.Element = <i>No events found.</i>;
+    if (eventModels.length > 0) {
+      content = (
+        <>
           {eventModels.map((eventModel) => (
             <EventCard
               cardType="summary"
@@ -56,7 +52,18 @@ class PastEventsPage extends React.Component {
               key={eventModel.apiEvent.dbEventId}
             />
           ))}
-        </div>
+        </>
+      );
+    }
+
+    return (
+      <CommunitySidebarLayout
+        appSession={this._appSession}
+        navItem="past-events"
+        style={{ paddingTop: "100px" }}
+      >
+        <h1>Past Events</h1>
+        <div style={{ maxWidth: "800px" }}>{content}</div>
       </CommunitySidebarLayout>
     );
   }
