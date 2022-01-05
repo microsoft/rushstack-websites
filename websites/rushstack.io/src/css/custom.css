@@ -27,6 +27,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+input, select {
+  font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
+}
+
 :root {
   /*
    * Rush Stack Customization - Infima style overrides

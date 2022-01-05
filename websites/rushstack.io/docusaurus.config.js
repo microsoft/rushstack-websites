@@ -38,7 +38,7 @@ const config = {
           routeBasePath: 'pages',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack.io-website/',
+          editUrl: 'https://github.com/microsoft/rushstack-websites/',
           remarkPlugins: [
             [
               require('./src/remark/remark-canonical-link-plugin'),
