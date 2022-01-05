@@ -11,8 +11,9 @@ Continuing our tutorial, let's enable the two most common tasks: [Jest](../heft_
 and [ESlint](../heft_tasks/eslint).
 
 ## Adding unit tests to your project
+1
+1. First, we need to install the TypeScript typings for Jest.  These steps continue the **my-app** project from the [Getting started with Heft](../heft_tutorials/getting_started) article.  Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
 
-1. First, we need to install the TypeScript typings for Jest.  These steps continue the **my-app** project from the [Getting started with Heft](../heft_tutorials/getting_started) article.  Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](https://rushjs.io/pages/commands/rush_add/)):
 
     ```shell
     $ cd my-app
@@ -165,7 +166,7 @@ That's it for setting up Jest!  Further information, including instructions for 
     ```
 
 4.  The `@rushstack/eslint-config` ruleset is designed to work together with the Prettier code formatter.
-    To set that up, see the [Enabling Prettier](https://rushjs.io/pages/maintainer/enabling_prettier/) article
+    To set that up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) article
     on the Rush website.
 
 That's it for ESLint!  More detail can be found in the [eslint task](../heft_tasks/eslint) reference.

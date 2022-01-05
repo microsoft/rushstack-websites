@@ -64,16 +64,24 @@ function getTargetOrg() {
 function getSiteConfig(packageName) {
     const target = getTargetOrg();
 
+    const sitePrefixes = {
+        '@api-extractor': 'https://api-extractor.com',
+        '@rushjs': 'https://rushjs.io',
+        '@tsdoc': 'https://tsdoc.org'
+    };
+
     switch (target.target) {
         case 'local':
             return {
                 ...target,
+                sitePrefixes,
                 configOverrides: {
                 }
             };
         case 'fork':
             return {
                 ...target,
+                sitePrefixes,
                 configOverrides: {
                     baseUrl: `/rushstack-websites/${packageName}/`,
                     organizationName: target.org
@@ -82,6 +90,7 @@ function getSiteConfig(packageName) {
         case 'prod':
             return {
                 ...target,
+                sitePrefixes,
                 configOverrides: {
                 }
             };

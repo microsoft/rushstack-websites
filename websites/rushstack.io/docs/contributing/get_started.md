@@ -9,8 +9,8 @@ The Rush Stack projects are all developed in the **rushstack** monorepo on GitHu
 For documentation fixes, each website has its own GitHub repo:
 
 - Rush Stack website: [https://github.com/microsoft/rushstack.io-website](https://github.com/microsoft/rushstack.io-website)
-- [Rush](https://rushjs.io/) website: [https://github.com/microsoft/rushjs.io-website](https://github.com/microsoft/rushjs.io-website)
-- [API Extractor](https://api-extractor.com/) website: [https://github.com/microsoft/api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website)
+- [Rush](@rushjs/) website: [https://github.com/microsoft/rushjs.io-website](https://github.com/microsoft/rushjs.io-website)
+- [API Extractor](@api-extractor/) website: [https://github.com/microsoft/api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website)
 
 
 ## Setting up your machine
@@ -52,7 +52,7 @@ C:\Repos\rushstack\libraries\rush-core-library>rushx build
 ```
 
 **Important**: You generally should **not** use commands like `npm install` in a Rush repo.  See the
-[Rush documentation](https://rushjs.io/pages/developer/new_developer/) for more information about this tool.
+[Rush documentation](@rushjs/pages/developer/new_developer/) for more information about this tool.
 
 ## Submitting a Pull Request
 
@@ -62,7 +62,7 @@ We welcome contributions!  To submit a feature for one of the **rushstack** proj
 2. Create a Git branch and commit your changes.
 3. If you modified any package.json files, run `rush update` to make sure your **package-lock.json** file is up to date.
    Commit any changes made to that file.
-4. Before creating your PR, run `rush change`; if prompted, [enter a change log message](https://rushjs.io/pages/best_practices/change_logs/), and commit the files that get created.
+4. Before creating your PR, run `rush change`; if prompted, [enter a change log message](@rushjs/pages/best_practices/change_logs/), and commit the files that get created.
 5. Create a [pull request](https://help.github.com/articles/creating-a-pull-request/)
 6. If your PR primarily affects a single project, add the project name as a prefix to your PR title.  For example: "**[api-extractor] Added a new API feature**" or "**[node-core-libary] Fixed a bug in the library**".
 
