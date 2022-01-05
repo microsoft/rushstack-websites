@@ -92,7 +92,7 @@ const config = {
           ...(SKIP_API_DOCS ? [] : [
             {
               type: 'doc',
-              docId: 'api/',
+              docId: 'api/index',
               position: 'right',
               label: 'API',
             }
