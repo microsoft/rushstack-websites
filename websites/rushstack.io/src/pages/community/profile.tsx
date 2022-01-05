@@ -21,7 +21,7 @@ import {
 } from "../../rscommunity/form/FormCheckBox";
 
 class ProfilePage extends React.Component {
-  private _appSession: AppSession;
+  private readonly _appSession: AppSession;
 
   private readonly _formFieldSet: FormFieldSet = new FormFieldSet(this);
 

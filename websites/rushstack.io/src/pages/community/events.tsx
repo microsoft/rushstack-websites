@@ -9,7 +9,8 @@ import { EventModel } from "../../rscommunity/api/models";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 
 class EventsPage extends React.Component {
-  private _appSession: AppSession;
+  private readonly _appSession: AppSession;
+
   public constructor(props: {}) {
     super(props);
     this._appSession = AppSession.instance;
@@ -20,6 +21,7 @@ class EventsPage extends React.Component {
       this.forceUpdate()
     );
   }
+
   public componentWillUnmount(): void {
     ObjectEvent.disposeSubscriptionsInvolving(this);
   }

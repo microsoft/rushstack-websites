@@ -1,11 +1,12 @@
 import Cookies from "js-cookie";
+
 import { ApiDataService } from "./ApiDataService";
 
 export class AppSession {
-  public serviceUrl: string;
+  public readonly serviceUrl: string;
   public loggedInUser: string | undefined;
 
-  public apiDataService: ApiDataService;
+  public readonly apiDataService: ApiDataService;
 
   private static _instance: AppSession | undefined;
 

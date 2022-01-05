@@ -3,7 +3,7 @@ import React from "react";
 import { FormField, FormFieldSet } from "./FormFieldSet";
 
 export class FormTextField extends FormField {
-  protected formFieldSet: FormFieldSet;
+  protected readonly formFieldSet: FormFieldSet;
 
   private _value: string = "";
 

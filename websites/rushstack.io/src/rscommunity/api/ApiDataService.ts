@@ -1,4 +1,5 @@
 import React from "react";
+
 import { IApiEvent, IApiUser, IApiUserUpdate } from "./ApiInterfaces";
 import { ObjectEvent } from "../library/ObjectEvent";
 import { AppSession } from "./AppSession";
@@ -8,7 +9,7 @@ import { EventModel, UserModel } from "./models";
 interface ICacheEntry {
   key: string;
   /**
-   * Based on `Date.now()`
+   * Unix Epoch when the cache entry was created, obtained using `Date.now()`
    */
   timestamp: number;
   task: ApiTask<unknown>;
@@ -18,7 +19,7 @@ interface ICacheEntry {
 export class ApiDataService {
   public readonly updated: ObjectEvent = new ObjectEvent(this);
 
-  private _cache: Map<string, ICacheEntry> = new Map();
+  private readonly _cache: Map<string, ICacheEntry> = new Map();
   public readonly appSession: AppSession;
 
   public constructor(appSession: AppSession) {

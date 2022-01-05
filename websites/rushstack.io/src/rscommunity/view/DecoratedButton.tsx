@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./DecoratedButton.module.css";
 
 export interface IDecoratedButtonProps {
@@ -7,6 +8,7 @@ export interface IDecoratedButtonProps {
   theme?: "default" | "notice" | "white";
   disabled?: boolean;
 }
+
 export function DecoratedButton(
   props: React.PropsWithChildren<IDecoratedButtonProps>
 ): JSX.Element {

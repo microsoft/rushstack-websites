@@ -2,13 +2,12 @@ import React from "react";
 import dayjs from "dayjs";
 import "../dayjsExtensions";
 
-import styles from "./EventCard.module.css";
-
 import { DecoratedButton } from "../view/DecoratedButton";
 import { IApiEvent } from "../api/ApiInterfaces";
 import { EventModel, UserModel } from "../api/models";
 import { ApiDataService } from "../api/ApiDataService";
 import { ApiTask, ApiTaskStatus } from "../api/ApiTask";
+import styles from "./EventCard.module.css";
 
 function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   if (eventJson.startTime === undefined || eventJson.duration === undefined) {

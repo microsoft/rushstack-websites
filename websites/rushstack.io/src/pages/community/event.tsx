@@ -9,7 +9,7 @@ import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
 
 class EventPage extends React.Component {
-  private _appSession: AppSession;
+  private readonly _appSession: AppSession;
   private _eventId: number | undefined;
 
   public constructor(props: {}) {
@@ -60,7 +60,7 @@ class EventPage extends React.Component {
 
     let breadcrumb: JSX.Element = (
       <div>
-        &lt;&lt;{" "}
+        &lt;&lt;&nbsp;
         {eventModel.apiEvent.isCompleted ? (
           <a href={"/community/past-events"}>Past Events</a>
         ) : (

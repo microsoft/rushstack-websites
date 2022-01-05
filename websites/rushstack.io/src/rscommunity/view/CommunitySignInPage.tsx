@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
 import React from "react";
-import styles from "./CommunitySignInPage.module.css";
 
 import { AppSession } from "../api/AppSession";
 import { DecoratedButton } from "./DecoratedButton";
+import styles from "./CommunitySignInPage.module.css";
 
 export interface ICommunitySigninPageProps {
   appSession: AppSession;

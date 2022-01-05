@@ -9,7 +9,8 @@ import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
 
 class PastEventsPage extends React.Component {
-  private _appSession: AppSession;
+  private readonly _appSession: AppSession;
+
   public constructor(props: {}) {
     super(props);
     this._appSession = AppSession.instance;
