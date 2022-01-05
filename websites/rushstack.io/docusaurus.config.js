@@ -16,6 +16,8 @@ const config = {
   url: 'https://rushstack.io',
   baseUrl: '/',
 
+  trailingSlash: true,
+
   // TOOD: Discover and fix all broken links before we deploy.
   // TODO: Decide if we want broken links to actually fail deployment
   // (potentially long turn-around time?).
