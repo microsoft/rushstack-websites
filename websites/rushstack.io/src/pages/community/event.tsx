@@ -38,7 +38,6 @@ class EventPage extends React.Component {
   }
 
   public render(): JSX.Element {
-    console.log("EventPage render");
     if (!this._appSession.loggedInUser) {
       return <CommunitySignInPage appSession={this._appSession} />;
     }

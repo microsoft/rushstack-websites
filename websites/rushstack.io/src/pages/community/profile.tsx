@@ -116,7 +116,6 @@ class ProfilePage extends React.Component {
   }
 
   public render(): JSX.Element {
-    console.log("ProfilePage render");
     if (!this._appSession.loggedInUser) {
       return <CommunitySignInPage appSession={this._appSession} />;
     }

@@ -182,7 +182,6 @@ export class ApiDataService {
   }
 
   private _invalidateCache(): void {
-    console.log("forceUpdate() " + new Date().toString());
     this._cache.clear();
     this.updated.fire({});
   }
