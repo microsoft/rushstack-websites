@@ -13,7 +13,7 @@
     "site-config": "workspace:*"
   },
   "devDependencies": {
-    "@rushstack/node-core-library": "~3.43.2",
-    "@docusaurus/core": "2.0.0-beta.9"
+    "@rushstack/node-core-library": "~3.44.3",
+    "@docusaurus/core": "2.0.0-beta.14"
   }
 }
