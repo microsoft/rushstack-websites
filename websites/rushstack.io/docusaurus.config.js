@@ -37,7 +37,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: 'pages',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack-websites/',
@@ -92,20 +92,20 @@ const config = {
           ...(SKIP_API_DOCS ? [] : [
             {
               type: 'doc',
-              docId: 'api/index',
+              docId: 'pages/api/index',
               position: 'right',
               label: 'API',
             }
           ]),
           {
             type: 'doc',
-            docId: 'shop',
+            docId: 'pages/shop',
             position: 'right',
             label: 'Shop',
           },
           {
             type: 'doc',
-            docId: 'news',
+            docId: 'pages/news',
             position: 'right',
             label: 'News',
           },
