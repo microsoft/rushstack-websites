@@ -6,7 +6,7 @@ import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
-import { EventModel, UserModel } from "../../rscommunity/api/models";
+import { EventModel } from "../../rscommunity/api/models";
 
 class EventPage extends React.Component {
   private _appSession: AppSession;
@@ -27,11 +27,12 @@ class EventPage extends React.Component {
       window.location.search
     );
     const eventId: number = parseInt(queryParams.get("id") ?? "");
-    if (isFinite(eventId)) {
+    if (!isNaN(eventId)) {
       this._eventId = eventId;
       this.forceUpdate();
     }
   }
+
   public componentWillUnmount(): void {
     ObjectEvent.disposeSubscriptionsInvolving(this);
   }
