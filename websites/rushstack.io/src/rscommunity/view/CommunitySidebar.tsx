@@ -35,17 +35,17 @@ function MenuItem(props: IMenuItemProps): JSX.Element {
   return result;
 }
 
-export interface ICommunitySidebarLayoutProps {
+export interface ICommunitySidebarProps {
   appSession: AppSession;
   navItem?: "events" | "past-events" | "profile";
   style?: React.CSSProperties;
 }
 
-export function CommunitySidebarLayout(
-  props: React.PropsWithChildren<ICommunitySidebarLayoutProps>
+export function CommunitySidebar(
+  props: React.PropsWithChildren<ICommunitySidebarProps>
 ): JSX.Element {
   return (
-    <Layout>
+    <>
       <div
         style={{
           display: "flex",
@@ -84,8 +84,26 @@ export function CommunitySidebarLayout(
         </div>
         <div style={{ flexGrow: 1, ...props.style, paddingBottom: "100px" }}>
           {props.children}
+
+          <div
+            style={{
+              paddingTop: "50px",
+            }}
+          >
+            ⚠{" "}
+            <i>
+              This feature is experimental. Please{" "}
+              <a
+                href="https://github.com/microsoft/rushstack-websites/issues"
+                target="_blank"
+              >
+                let us know
+              </a>{" "}
+              if anything is broken.
+            </i>
+          </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

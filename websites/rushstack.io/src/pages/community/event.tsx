@@ -1,14 +1,15 @@
 import React from "react";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class EventPage extends React.Component {
+class EventPageBody extends React.Component {
   private readonly _appSession: AppSession;
   private _eventId: number | undefined;
 
@@ -70,7 +71,7 @@ class EventPage extends React.Component {
     );
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem={eventModel.apiEvent.isCompleted ? "past-events" : "events"}
         style={{ paddingTop: "100px" }}
@@ -89,9 +90,17 @@ class EventPage extends React.Component {
         </div>
 
         {breadcrumb}
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
+}
+
+export function EventPage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <EventPageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default EventPage;

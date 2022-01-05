@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./profile.module.css";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { IApiUser } from "../../rscommunity/api/ApiInterfaces";
@@ -19,8 +19,9 @@ import {
   FormCheckBox,
   FormCheckField,
 } from "../../rscommunity/form/FormCheckBox";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class ProfilePage extends React.Component {
+class ProfilePageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   private readonly _formFieldSet: FormFieldSet = new FormFieldSet(this);
@@ -131,7 +132,7 @@ class ProfilePage extends React.Component {
     }
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem={"profile"}
         style={{ paddingTop: "100px", maxWidth: "600px" }}
@@ -275,7 +276,7 @@ class ProfilePage extends React.Component {
             .
           </p>
         </div>
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
 
@@ -316,6 +317,14 @@ class ProfilePage extends React.Component {
   private _cancelButton_onClick = (): void => {
     this._resetFields();
   };
+}
+
+export function ProfilePage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <ProfilePageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default ProfilePage;

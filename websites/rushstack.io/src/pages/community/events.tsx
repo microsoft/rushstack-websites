@@ -1,14 +1,15 @@
 import React from "react";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { EventModel } from "../../rscommunity/api/models";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class EventsPage extends React.Component {
+class EventsPageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   public constructor(props: {}) {
@@ -59,16 +60,24 @@ class EventsPage extends React.Component {
     }
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem="events"
         style={{ paddingTop: "100px" }}
       >
         <h1>Upcoming Events</h1>
         <div style={{ maxWidth: "800px" }}>{content}</div>
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
+}
+
+export function EventsPage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <EventsPageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default EventsPage;

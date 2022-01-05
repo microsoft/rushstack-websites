@@ -66,6 +66,12 @@
   ],
   "star_contributors": [
     {
+      "name": "Cheng",
+      "sort_month": "2021-12",
+      "github": "chengcyber",
+      "caption": "designed and implemented the plugin system for Rush"
+    },
+    {
       "name": "Yunfei",
       "sort_month": "2021-07",
       "github": "adventure-yunfei",

@@ -1,14 +1,15 @@
 import React from "react";
 
-import { CommunitySidebarLayout } from "../../rscommunity/view/CommunitySidebarLayout";
+import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
 import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
 import { AppSession } from "../../rscommunity/api/AppSession";
 import { EventCard } from "../../rscommunity/view/EventCard";
 import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
 import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
 import { EventModel } from "../../rscommunity/api/models";
+import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
 
-class PastEventsPage extends React.Component {
+class PastEventsPageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   public constructor(props: {}) {
@@ -58,16 +59,24 @@ class PastEventsPage extends React.Component {
     }
 
     return (
-      <CommunitySidebarLayout
+      <CommunitySidebar
         appSession={this._appSession}
         navItem="past-events"
         style={{ paddingTop: "100px" }}
       >
         <h1>Past Events</h1>
         <div style={{ maxWidth: "800px" }}>{content}</div>
-      </CommunitySidebarLayout>
+      </CommunitySidebar>
     );
   }
+}
+
+export function PastEventsPage(props: {}): JSX.Element {
+  return (
+    <BrowserOnlyLayout>
+      <PastEventsPageBody />
+    </BrowserOnlyLayout>
+  );
 }
 
 export default PastEventsPage;

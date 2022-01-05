@@ -16,6 +16,8 @@ const config = {
   url: 'https://rushstack.io',
   baseUrl: '/',
 
+  trailingSlash: true,
+
   // TOOD: Discover and fix all broken links before we deploy.
   // TODO: Decide if we want broken links to actually fail deployment
   // (potentially long turn-around time?).
@@ -82,7 +84,7 @@ const config = {
         },
         items: [
           {
-            to: 'pages/index',
+            to: '/',
             position: 'right',
             label: 'Docs',
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
@@ -106,6 +108,11 @@ const config = {
             docId: 'news',
             position: 'right',
             label: 'News',
+          },
+          {
+            to: '/community/events',
+            position: 'right',
+            label: 'Events',
           },
           {
             to: 'pages/contributing/get_started',
