@@ -18,9 +18,9 @@ These milestones were completed recently:
 - Optimize Rush startup time, adding a new tool [@rushstack/rundown](https://www.npmjs.com/package/@rushstack/rundown)
 - Redesign the "rush build" collator, based around a new [@rushstack/terminal](https://www.npmjs.com/package/@rushstack/terminal) model
 - Introduce a model for [rig packages](https://www.npmjs.com/package/@rushstack/rig-package)
-- Move the TSDoc project documentation to a dedicated website [https://tsdoc.org/](https://tsdoc.org/)
-- Get the Rush [build cache](https://rushjs.io/pages/maintainer/build_cache/) feature released and documented
-- [Artifactory integration](https://rushjs.io/pages/maintainer/npm_registry_auth/)  for Rush
+- Move the TSDoc project documentation to a dedicated website [https://tsdoc.org/](@tsdoc/)
+- Get the Rush [build cache](@rushjs/pages/maintainer/build_cache/) feature released and documented
+- [Artifactory integration](@rushjs/pages/maintainer/npm_registry_auth/)  for Rush
 - Merge API Extractor to support `import * as ___ from "___";` namespaces ([issue #1029](https://github.com/microsoft/rushstack/issues/1029))
 - Merge API Extractor to support `import()` type expressions ([issue #1050](https://github.com/microsoft/rushstack/issues/1050))
 - Start a new [@rushstack/eslint-plugin-security](https://www.npmjs.com/package/@rushstack/eslint-plugin-security) package
@@ -40,7 +40,7 @@ a particular feature will get implemented.  That said, here's some areas which p
 - Set up a [rushstack-samples](https://github.com/microsoft/rushstack-samples/) repo with fully worked out projects
   illustrating realistic usage patterns
 - Share samples for using ReactNative with Rush+PNPM
-- [Multi-project watch mode](https://rushjs.io/pages/advanced/watch_mode/) for Rush
+- [Multi-project watch mode](@rushjs/pages/advanced/watch_mode/) for Rush
 - Working towards a 1.0 release of Heft, to stabilize the config file and plugin API contracts
 
 

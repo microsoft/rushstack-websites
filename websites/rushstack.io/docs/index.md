@@ -18,10 +18,10 @@ Although various pieces of this work have been underway for years, we're now bri
 
 These major tools are developed under the **Rush Stack** umbrella:
 
-- [Rush](https://rushjs.io/): the scalable monorepo build orchestrator
+- [Rush](@rushjs/): the scalable monorepo build orchestrator
 - [Heft](heft/overview): an extensible build system that interfaces with Rush
-- [API Extractor](https://api-extractor.com/): coordinates API reviews for library packages, and generates .d.ts rollups
-- [API Documenter](https://api-extractor.com/pages/setup/generating_docs/): generates your API documentation website
+- [API Extractor](@api-extractor/): coordinates API reviews for library packages, and generates .d.ts rollups
+- [API Documenter](@api-extractor/pages/setup/generating_docs/): generates your API documentation website
 - [@<!---->rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): our standardized
   ESLint rule set, specifically designed for large scale TypeScript monorepos
 - [@<!---->rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
@@ -44,7 +44,7 @@ The projects are built on a common framework of reusable library packages, which
 
 ## What's the relationship to Rush?
 
-The "Rush Stack" components are optional extras that you can use with [Rush](https://rushjs.io/).
+The "Rush Stack" components are optional extras that you can use with [Rush](@rushjs/).
 
 As a **build orchestrator,** Rush's job is to:
 - Ensure deterministic and reliable package installations (using Yarn, PNPM, or NPM)

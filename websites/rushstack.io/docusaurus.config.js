@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const { SKIP_API_DOCS } = require('./custom.config.js');
+const { SKIP_API_DOCS, SITE_PREFIXES } = require('./custom.config.js');
 
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
@@ -41,8 +41,16 @@ const config = {
           editUrl: 'https://github.com/microsoft/rushstack-websites/',
           remarkPlugins: [
             [
+              require('./src/remark/remark-cross-site-link-plugin'),
+              {
+                prefixes: siteConfig.sitePrefixes
+              }
+            ],
+            [
               require('./src/remark/remark-canonical-link-plugin'),
-              { prefix: 'https://rushstack.io/' }
+              {
+                prefix: 'https://rushstack.io/'
+              }
             ]
           ],
           rehypePlugins: [
