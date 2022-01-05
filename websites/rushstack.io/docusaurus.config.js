@@ -84,7 +84,7 @@ const config = {
         },
         items: [
           {
-            to: 'pages/index',
+            to: '/',
             position: 'right',
             label: 'Docs',
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
@@ -92,7 +92,7 @@ const config = {
           ...(SKIP_API_DOCS ? [] : [
             {
               type: 'doc',
-              docId: 'api/index',
+              docId: 'api/',
               position: 'right',
               label: 'API',
             }
