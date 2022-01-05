@@ -110,6 +110,11 @@ const config = {
             label: 'News',
           },
           {
+            to: '/community/events',
+            position: 'right',
+            label: 'Events',
+          },
+          {
             to: 'pages/contributing/get_started',
             position: 'right',
             label: 'GitHub',
