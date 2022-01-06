@@ -1,5 +1,5 @@
-import { IApiEvent, IApiUser } from "./ApiInterfaces";
-import { AppSession } from "./AppSession";
+import { IApiEvent, IApiUser } from './ApiInterfaces';
+import { AppSession } from './AppSession';
 
 export class EventModel {
   public readonly apiEvent: IApiEvent;
@@ -21,11 +21,9 @@ export class EventModel {
   };
 
   public onRemoveReservation = (): void => {
-    this.appSession.apiDataService
-      .removeReservationAsync(this)
-      .catch((error) => {
-        console.error((error as Error).toString());
-      });
+    this.appSession.apiDataService.removeReservationAsync(this).catch((error) => {
+      console.error((error as Error).toString());
+    });
   };
 }
 

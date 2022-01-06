@@ -4,10 +4,9 @@ title: '"typescript" task'
 
 This task invokes the compiler for the [TypeScript](https://www.typescriptlang.org/) programming language.
 
-
 ## When to use it
 
-TypeScript is the standard programming language for Rush Stack.  There are many benefits to having one "lingua franca" across all coding investments, rather than having to maintain different expertise and libraries for different languages.
+TypeScript is the standard programming language for Rush Stack. There are many benefits to having one "lingua franca" across all coding investments, rather than having to maintain different expertise and libraries for different languages.
 
 We recommend TypeScript for:
 
@@ -16,8 +15,7 @@ We recommend TypeScript for:
 - **Device apps:** Where possible, TypeScript can also be used for native development via runtime hosts such as [React Native](https://reactnative.dev/).
 - **Desktop apps:** There are also runtime hosts such as [Electron](https://www.electronjs.org/) for making desktop apps.
 
-Obviously certain components may inevitably require Java, C++, Swift, etc.  But ideally developers should not be required to install native SDKs unless they're working on those components.  The [Expo client](https://expo.io/features) takes this concept to an extreme, enabling you to compile and run a phone app without installing native tools at all.  This ideal isn't always feasible in practice, of course.  It's a mentality, not a dogma.  The main point is that there are significant benefits to normalizing the code base so that any engineer can easily contribute to any project, and any project can load any library.
-
+Obviously certain components may inevitably require Java, C++, Swift, etc. But ideally developers should not be required to install native SDKs unless they're working on those components. The [Expo client](https://expo.io/features) takes this concept to an extreme, enabling you to compile and run a phone app without installing native tools at all. This ideal isn't always feasible in practice, of course. It's a mentality, not a dogma. The main point is that there are significant benefits to normalizing the code base so that any engineer can easily contribute to any project, and any project can load any library.
 
 ## package.json dependencies
 
@@ -34,7 +32,6 @@ If your **tsconfig.json** enables `"importHelpers": true` for more efficient tra
 ```bash
 $ rush add --package tslib
 ```
-
 
 ## Config files
 

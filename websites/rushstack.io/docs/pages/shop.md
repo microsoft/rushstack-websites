@@ -20,4 +20,4 @@ You can help promote your favorite Rush Stack projects with fun merchandise such
 - water bottles
 - and more!
 
-Items are sold at cost.  International shipping available!
+Items are sold at cost. International shipping available!

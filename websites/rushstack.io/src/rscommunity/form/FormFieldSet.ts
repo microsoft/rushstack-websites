@@ -1,4 +1,4 @@
-import { ObjectEvent } from "../library/ObjectEvent";
+import { ObjectEvent } from '../library/ObjectEvent';
 
 export abstract class FormField {}
 
@@ -33,7 +33,7 @@ export class FormFieldSet {
 
   public resetFields(action: () => void): void {
     if (this._resetting) {
-      throw new Error("assignFields() cannot be nested");
+      throw new Error('assignFields() cannot be nested');
     }
     try {
       this._resetting = true;

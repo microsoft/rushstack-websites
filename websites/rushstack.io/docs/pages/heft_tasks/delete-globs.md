@@ -5,23 +5,21 @@ title: '"delete-globs" task'
 This task implements the `"actionKind": "deleteGlobs"` action kind that is used when specifying
 `"eventActions"` in the [heft.json](../heft_configs/heft_json.md) config file.
 
-
 ## When to use it
 
 The most common usage is to implement the `heft clean` action that deletes build output folders
 such as `lib`, `temp`, and `dist`.
 
-
 ## package.json dependencies
 
 None - this feature is implemented internally by Heft.
 
-
 ## Config files
 
-Event actions are registered in the [heft.json](../heft_configs/heft_json.md) config file.  For example:
+Event actions are registered in the [heft.json](../heft_configs/heft_json.md) config file. For example:
 
 **&lt;project folder&gt;/config/heft.json**
+
 ```js
 {
   . . .

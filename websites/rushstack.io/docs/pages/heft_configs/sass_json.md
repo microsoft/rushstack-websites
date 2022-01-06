@@ -2,11 +2,11 @@
 title: sass.json
 ---
 
-| | |
-| --- | --- |
-| **File path:** | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**](../heft/rig_packages.md) | Yes |
-| **Associated plugins:** | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/master/heft-plugins/heft-sass-plugin/src/SassTypingsPlugin.ts) |
+|                                          |                                                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **File path:**                           | **&lt;project folder&gt;/config/rig.json**                                                                                     |
+| [**Riggable?**](../heft/rig_packages.md) | Yes                                                                                                                            |
+| **Associated plugins:**                  | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/master/heft-plugins/heft-sass-plugin/src/SassTypingsPlugin.ts) |
 
 ## Template
 

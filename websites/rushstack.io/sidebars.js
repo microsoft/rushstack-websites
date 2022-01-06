@@ -20,11 +20,7 @@ const sidebars = {
       type: 'category',
       label: 'Overview',
       collapsible: false,
-      items: [
-        'index',
-        'pages/overview/people',
-        'pages/overview/roadmap'
-      ]
+      items: ['index', 'pages/overview/people', 'pages/overview/roadmap']
     },
     {
       type: 'category',
@@ -65,7 +61,7 @@ const sidebars = {
         {
           type: 'doc',
           label: 'api-extractor',
-          id: 'pages/heft_tasks/api-extractor',
+          id: 'pages/heft_tasks/api-extractor'
         },
         {
           type: 'doc',
@@ -116,7 +112,7 @@ const sidebars = {
           type: 'doc',
           label: 'webpack',
           id: 'pages/heft_tasks/webpack'
-        },
+        }
       ]
     },
     {
@@ -137,17 +133,13 @@ const sidebars = {
       type: 'category',
       label: 'Contributing',
       collapsible: false,
-      items: [
-        'pages/contributing/get_started'
-      ]
+      items: ['pages/contributing/get_started']
     },
     {
       type: 'category',
       label: 'Help',
       collapsible: false,
-      items: [
-        'pages/help/support'
-      ]
+      items: ['pages/help/support']
     }
   ],
   apiSidebar: SKIP_API_DOCS ? [] : [require('./data/api_nav.json')]

@@ -18,7 +18,21 @@
       "description": "Deploy all local websites from your fork of rushstack-websites up to GitHub Pages for testing",
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "cd tools/deploy-fork && rushx deploy"
+    },
+
+    {
+      "name": "prettier",
+      "commandKind": "global",
+      "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
+
+      "autoinstallerName": "rush-prettier",
+
+      // This will invoke common/autoinstall/rush-prettier/node_modules/.bin/pretty-quick
+      "shellCommand": "pretty-quick --staged",
+
+      "safeForSimultaneousRushProcesses": true
     }
+
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
