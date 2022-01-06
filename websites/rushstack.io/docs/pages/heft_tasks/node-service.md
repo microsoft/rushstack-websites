@@ -4,7 +4,7 @@ title: '"node-service" task (experimental)'
 
 This task supports development of Node.js services using Heft.  It enables `heft start` to launch your service on a **localhost** port.  The service will automatically restart whenever you save a change to your source code.
 
-This functionality is similar to standalone launchers such as [nodemon](https://nodemon.io/) or [node-dev](https://www.npmjs.com/package/node-dev).  They can also be used with Heft, however the `node-service` task has the benefit of being [riggable](../heft/rig_packages) and better integrated with Heft's workflow.
+This functionality is similar to standalone launchers such as [nodemon](https://nodemon.io/) or [node-dev](https://www.npmjs.com/package/node-dev).  They can also be used with Heft, however the `node-service` task has the benefit of being [riggable](../heft/rig_packages.md) and better integrated with Heft's workflow.
 
 
 ## When to use it
@@ -32,7 +32,7 @@ None - this feature is implemented internally by Heft.
 ## Configuration
 
 1. The `node-service` plugin is enabled by adding a
-  [node-service.json](../heft_configs/node-service_json) config file
+  [node-service.json](../heft_configs/node-service_json.md) config file
    to your project or rig.  The defaults work for most cases, so the file may be mostly empty.
 
 2. Add a script to your **package.json** file containing the command to launch the service.  The default name

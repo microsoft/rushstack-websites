@@ -2,7 +2,7 @@
 title: Project roadmap
 ---
 
-Our [News page](./news) and Twitter feed is the best way to find out what's happening.
+Our [News page](./pages/news.md) and Twitter feed is the best way to find out what's happening.
 This roadmap supplements that with more general information about future directions.
 
 ***Last update: September 2021***

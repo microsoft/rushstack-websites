@@ -42,11 +42,11 @@ file can add custom settings such as `"types"` as needed.
 
 The following config files all support a field such as `"extends"` that enables settings to be inherited from another NPM package:
 
-- **.eslintrc.js** for the [eslint task](../heft_tasks/eslint), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
-- **config/api-extractor.json** for the [api-extractor task](../heft_tasks/api-extractor)
-- **config/jest.config.json** for the [jest task](../heft_tasks/jest)
-- **tsconfig.json** for the [typescript task](../heft_tasks/typescript)
-- **tslint.json** for the [tslint task](../heft_tasks/tslint)
+- **.eslintrc.js** for the [eslint task](../heft_tasks/eslint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
+- **config/api-extractor.json** for the [api-extractor task](../heft_tasks/api-extractor.md)
+- **config/jest.config.json** for the [jest task](../heft_tasks/jest.md)
+- **tsconfig.json** for the [typescript task](../heft_tasks/typescript.md)
+- **tslint.json** for the [tslint task](../heft_tasks/tslint.md)
 - **webpack.config.js** does not explicitly support inheritance, but being a JavaScript module, it can call `require()` to load shared settings.
 
 
