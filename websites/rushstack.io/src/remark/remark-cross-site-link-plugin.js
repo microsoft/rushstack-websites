@@ -62,7 +62,11 @@ module.exports = (options) => {
         }
 
         if (!found) {
-          throw new Error(`Link with url '${node.url}' has unknown prefix (expected one of ${JSON.stringify(Object.keys(prefixes))})`);
+          throw new Error(
+            `Link with url '${node.url}' has unknown prefix (expected one of ${JSON.stringify(
+              Object.keys(prefixes)
+            )})`
+          );
         }
       }
     });

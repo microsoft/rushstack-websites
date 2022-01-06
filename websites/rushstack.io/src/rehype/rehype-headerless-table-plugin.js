@@ -27,15 +27,15 @@ const visit = require('unist-util-visit');
  */
 module.exports = function () {
   return (tree, file) => {
-    visit(tree, 'element', element => {
+    visit(tree, 'element', (element) => {
       if (element.tagName === 'table') {
-        const theadIndex = element.children.findIndex(child => child.tagName === 'thead');
+        const theadIndex = element.children.findIndex((child) => child.tagName === 'thead');
 
         if (theadIndex >= 0) {
           const thead = element.children[theadIndex];
           let empty = true;
 
-          visit(thead, 'element', element2 => {
+          visit(thead, 'element', (element2) => {
             if (element2.tagName === 'th' && element2.children.length > 0) {
               empty = false;
             }

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { FormTextField } from "./FormTextBox";
+import { FormTextField } from './FormTextBox';
 
 export class FormComboField extends FormTextField {
   private _choices: string[] = [];
@@ -15,23 +15,16 @@ export class FormComboField extends FormTextField {
   }
 }
 
-export function FormComboBox(props: {
-  field: FormComboField;
-  emptyStringMessage?: string;
-}): JSX.Element {
+export function FormComboBox(props: { field: FormComboField; emptyStringMessage?: string }): JSX.Element {
   let optionKey: number = 0;
   const openElements: JSX.Element[] = props.field.choices.map((x) => (
     <option key={optionKey++} value={x}>
-      {x === "" ? props.emptyStringMessage ?? x : x}
+      {x === '' ? props.emptyStringMessage ?? x : x}
     </option>
   ));
 
   return (
-    <select
-      style={{ width: "20em" }}
-      value={props.field.value}
-      onChange={props.field.onChange}
-    >
+    <select style={{ width: '20em' }} value={props.field.value} onChange={props.field.onChange}>
       {openElements}
     </select>
   );

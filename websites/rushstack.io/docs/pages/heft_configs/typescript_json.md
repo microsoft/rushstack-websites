@@ -2,11 +2,11 @@
 title: typescript.json
 ---
 
-| | |
-| --- | --- |
-| **File path:** | **&lt;project folder&gt;/config/typescript.json** |
-| [**Riggable?**](../heft/rig_packages.md) | Yes |
-| **Associated plugins:** | [TypeScriptPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/TypeScriptPlugin/TypeScriptPlugin.ts), [CopyStaticAssetsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/CopyStaticAssetsPlugin.ts), [JestPlugin](https://github.com/microsoft/rushstack/blob/master/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **File path:**                           | **&lt;project folder&gt;/config/typescript.json**                                                                                                                                                                                                                                                                                                                                 |
+| [**Riggable?**](../heft/rig_packages.md) | Yes                                                                                                                                                                                                                                                                                                                                                                               |
+| **Associated plugins:**                  | [TypeScriptPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/TypeScriptPlugin/TypeScriptPlugin.ts), [CopyStaticAssetsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/CopyStaticAssetsPlugin.ts), [JestPlugin](https://github.com/microsoft/rushstack/blob/master/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
 
 ## Template
 

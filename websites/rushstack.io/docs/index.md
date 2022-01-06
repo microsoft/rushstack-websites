@@ -12,7 +12,7 @@ hide_title: true
 - **Specific strategy** that integrates popular tools like Node.js, TypeScript, ESLint, Prettier, Webpack, Jest, etc.
 - **Family of projects** that fill in the gaps for this strategy
 
-Although various pieces of this work have been underway for years, we're now bringing them together under a common charter as **Rush Stack**.  Track our progress on the [News](pages/news.md) page and [Roadmap](pages/overview/roadmap.md).
+Although various pieces of this work have been underway for years, we're now bringing them together under a common charter as **Rush Stack**. Track our progress on the [News](pages/news.md) page and [Roadmap](pages/overview/roadmap.md).
 
 ## What's in the stack?
 
@@ -29,6 +29,7 @@ These major tools are developed under the **Rush Stack** umbrella:
 - [Rundown](https://www.npmjs.com/package/@rushstack/rundown): a tool for optimizing Node.js process startup times
 
 The projects are built on a common framework of reusable library packages, which includes:
+
 - [ts-command-line](https://www.npmjs.com/package/@rushstack/ts-command-line): a strict command-line parser
   whose options/docs can be augmented by toolchain packages with built-in support for tab-completion on PowerShell and Bash
 - [node-core-library](https://www.npmjs.com/package/@rushstack/node-core-library): the core framework
@@ -41,27 +42,27 @@ The projects are built on a common framework of reusable library packages, which
 - [tree-pattern](https://www.npmjs.com/package/@rushstack/tree-pattern): a pattern matcher for JavaScript tree structures, used by our lint rules
 - [a family of webpack plugins](https://github.com/microsoft/rushstack/tree/master/webpack) useful for building web applications
 
-
 ## What's the relationship to Rush?
 
 The "Rush Stack" components are optional extras that you can use with [Rush](@rushjs/).
 
 As a **build orchestrator,** Rush's job is to:
+
 - Ensure deterministic and reliable package installations (using Yarn, PNPM, or NPM)
 - Build your projects in the right order, as fast as possible
 - Apply policies to keep your monorepo running smoothly
 - Manage your publishing workflows
 - Establish a standard repo layout and familiar CLI, to facilitate developers who contribute to many different monorepos
 
-Beyond this role, Rush leaves the rest up to you.  Individual projects can build with any tool chain you like.
+Beyond this role, Rush leaves the rest up to you. Individual projects can build with any tool chain you like.
 This is very flexible!
 
-But flexibility has its downsides.  Node.js tooling is notorious for its bewildering array of options:
-Choose your compiler.  Choose your linter.  Choose your bundler, your package manager, your task engine,
-test runner, test assertion library, and so on.  Once you've placed your bets, integrating all these pieces
-turns out to be a software project of its own.  As you scale up, these costs can add up fast!
+But flexibility has its downsides. Node.js tooling is notorious for its bewildering array of options:
+Choose your compiler. Choose your linter. Choose your bundler, your package manager, your task engine,
+test runner, test assertion library, and so on. Once you've placed your bets, integrating all these pieces
+turns out to be a software project of its own. As you scale up, these costs can add up fast!
 
-In summer of 2019, we launched **Rush Stack** with the aim to provide a reusable solution for this broader set of problems.  You can still use Rush by itself, of course.  But if you're tired of going it alone, we invite you to:
+In summer of 2019, we launched **Rush Stack** with the aim to provide a reusable solution for this broader set of problems. You can still use Rush by itself, of course. But if you're tired of going it alone, we invite you to:
 
 - Trade your flexibility for an opinionated approach backed by tooling experts who run huge monorepos
 - Join forces with the open community that's investing in this approach

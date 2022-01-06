@@ -1,4 +1,3 @@
-
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 

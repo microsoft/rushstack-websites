@@ -2,11 +2,11 @@
 title: rig.json
 ---
 
-| | |
-| --- | --- |
-| **File path:** | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**](../heft/rig_packages.md) | No |
-| **Associated plugins:** | |
+|                                          |                                            |
+| ---------------------------------------- | ------------------------------------------ |
+| **File path:**                           | **&lt;project folder&gt;/config/rig.json** |
+| [**Riggable?**](../heft/rig_packages.md) | No                                         |
+| **Associated plugins:**                  |                                            |
 
 ## Template
 

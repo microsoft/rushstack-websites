@@ -8,6 +8,7 @@ To find out about recent updates for individual projects, check out their publis
 Here's the most common ones:
 
 Changelogs:
+
 - [API Documenter](https://github.com/microsoft/rushstack/blob/master/apps/api-documenter/CHANGELOG.md)
 - [API Extractor](https://github.com/microsoft/rushstack/blob/master/apps/api-extractor/CHANGELOG.md)
 - [@rushstack/eslint-config](https://github.com/microsoft/rushstack/blob/master/eslint/eslint-config/CHANGELOG.md)

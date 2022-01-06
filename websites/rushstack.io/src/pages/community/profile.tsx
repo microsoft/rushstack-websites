@@ -1,63 +1,37 @@
-import React from "react";
-import styles from "./profile.module.css";
+import React from 'react';
+import styles from './profile.module.css';
 
-import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
-import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
-import { AppSession } from "../../rscommunity/api/AppSession";
-import { IApiUser } from "../../rscommunity/api/ApiInterfaces";
-import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
-import { DecoratedButton } from "../../rscommunity/view/DecoratedButton";
-import { FormFieldSet } from "../../rscommunity/form/FormFieldSet";
-import { FormTextBox, FormTextField } from "../../rscommunity/form/FormTextBox";
-import {
-  FormComboBox,
-  FormComboField,
-} from "../../rscommunity/form/FormComboBox";
-import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
-import { UserModel } from "../../rscommunity/api/models";
-import {
-  FormCheckBox,
-  FormCheckField,
-} from "../../rscommunity/form/FormCheckBox";
-import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
+import { CommunitySidebar } from '../../rscommunity/view/CommunitySidebar';
+import { CommunitySignInPage } from '../../rscommunity/view/CommunitySignInPage';
+import { AppSession } from '../../rscommunity/api/AppSession';
+import { IApiUser } from '../../rscommunity/api/ApiInterfaces';
+import { ObjectEvent } from '../../rscommunity/library/ObjectEvent';
+import { DecoratedButton } from '../../rscommunity/view/DecoratedButton';
+import { FormFieldSet } from '../../rscommunity/form/FormFieldSet';
+import { FormTextBox, FormTextField } from '../../rscommunity/form/FormTextBox';
+import { FormComboBox, FormComboField } from '../../rscommunity/form/FormComboBox';
+import { ApiTask, ApiTaskStatus } from '../../rscommunity/api/ApiTask';
+import { UserModel } from '../../rscommunity/api/models';
+import { FormCheckBox, FormCheckField } from '../../rscommunity/form/FormCheckBox';
+import { BrowserOnlyLayout } from '../../rscommunity/view/BrowserOnlyLayout';
 
 class ProfilePageBody extends React.Component {
   private readonly _appSession: AppSession;
 
   private readonly _formFieldSet: FormFieldSet = new FormFieldSet(this);
 
-  private readonly _fullNameField: FormTextField = new FormTextField(
-    this._formFieldSet
-  );
-  private readonly _nickNameField: FormTextField = new FormTextField(
-    this._formFieldSet
-  );
-  private readonly _verifiedEmailField: FormComboField = new FormComboField(
-    this._formFieldSet
-  );
+  private readonly _fullNameField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _nickNameField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _verifiedEmailField: FormComboField = new FormComboField(this._formFieldSet);
 
-  private readonly _organizationNameField: FormTextField = new FormTextField(
-    this._formFieldSet
-  );
-  private readonly _organizationUrlField: FormTextField = new FormTextField(
-    this._formFieldSet
-  );
-  private readonly _twitterAliasField: FormTextField = new FormTextField(
-    this._formFieldSet
-  );
+  private readonly _organizationNameField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _organizationUrlField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _twitterAliasField: FormTextField = new FormTextField(this._formFieldSet);
 
-  private readonly _optOutOfAllEmails: FormCheckField = new FormCheckField(
-    this._formFieldSet
-  );
-  private readonly _notifyAboutNewEvents: FormCheckField = new FormCheckField(
-    this._formFieldSet
-  );
-  private readonly _discloseOrganization: FormCheckField = new FormCheckField(
-    this._formFieldSet
-  );
-  private readonly _allowUseOfLogo: FormCheckField = new FormCheckField(
-    this._formFieldSet
-  );
+  private readonly _optOutOfAllEmails: FormCheckField = new FormCheckField(this._formFieldSet);
+  private readonly _notifyAboutNewEvents: FormCheckField = new FormCheckField(this._formFieldSet);
+  private readonly _discloseOrganization: FormCheckField = new FormCheckField(this._formFieldSet);
+  private readonly _allowUseOfLogo: FormCheckField = new FormCheckField(this._formFieldSet);
 
   public constructor(props: {}) {
     super(props);
@@ -65,10 +39,7 @@ class ProfilePageBody extends React.Component {
   }
 
   public componentDidMount(): void {
-    this._appSession.apiDataService.updated.subscribe(
-      this,
-      this._apiDataService_updated
-    );
+    this._appSession.apiDataService.updated.subscribe(this, this._apiDataService_updated);
     this._formFieldSet.updated.subscribe(this, () => {
       this.forceUpdate();
     });
@@ -85,8 +56,7 @@ class ProfilePageBody extends React.Component {
   };
 
   private _resetFields(): void {
-    const apiTask: ApiTask<UserModel> =
-      this._appSession.apiDataService.initiateGetProfile(this, true);
+    const apiTask: ApiTask<UserModel> = this._appSession.apiDataService.initiateGetProfile(this, true);
 
     if (apiTask.status === ApiTaskStatus.Success) {
       const apiUser: IApiUser = apiTask.result.apiUser;
@@ -121,8 +91,7 @@ class ProfilePageBody extends React.Component {
       return <CommunitySignInPage appSession={this._appSession} />;
     }
 
-    const apiTask: ApiTask<UserModel> =
-      this._appSession.apiDataService.initiateGetProfile(this, true);
+    const apiTask: ApiTask<UserModel> = this._appSession.apiDataService.initiateGetProfile(this, true);
 
     if (apiTask.status === ApiTaskStatus.Error) {
       return <div>ERROR: {apiTask.error.message}</div>;
@@ -134,8 +103,8 @@ class ProfilePageBody extends React.Component {
     return (
       <CommunitySidebar
         appSession={this._appSession}
-        navItem={"profile"}
-        style={{ paddingTop: "100px", maxWidth: "600px" }}
+        navItem={'profile'}
+        style={{ paddingTop: '100px', maxWidth: '600px' }}
       >
         <h1>Your Profile</h1>
 
@@ -148,9 +117,7 @@ class ProfilePageBody extends React.Component {
         </p>
 
         <div className={styles.formHeading}>Nick Name</div>
-        <div>
-          What name should we use to address you in a meeting or discussion?
-        </div>
+        <div>What name should we use to address you in a meeting or discussion?</div>
         <div>
           <FormTextBox field={this._nickNameField} />
         </div>
@@ -159,15 +126,9 @@ class ProfilePageBody extends React.Component {
         </div>
 
         <div className={styles.formHeading}>Email Notifications</div>
+        <div>What email address should be used for notifications such as video call links?</div>
         <div>
-          What email address should be used for notifications such as video call
-          links?
-        </div>
-        <div>
-          <FormComboBox
-            field={this._verifiedEmailField}
-            emptyStringMessage="(unspecified)"
-          />
+          <FormComboBox field={this._verifiedEmailField} emptyStringMessage="(unspecified)" />
         </div>
 
         <div>
@@ -178,34 +139,25 @@ class ProfilePageBody extends React.Component {
         </div>
         <div>
           <label>
-            <FormCheckBox
-              field={this._notifyAboutNewEvents}
-              disabled={this._optOutOfAllEmails.checked}
-            />
+            <FormCheckBox field={this._notifyAboutNewEvents} disabled={this._optOutOfAllEmails.checked} />
             Send me email notifications when new Rush Stack events are posted
           </label>
         </div>
-        <p style={{ paddingTop: "20px" }}>
-          This website relies on GitHub to verify your email address. The
-          choices above are obtained from your{" "}
+        <p style={{ paddingTop: '20px' }}>
+          This website relies on GitHub to verify your email address. The choices above are obtained from your{' '}
           <a href="https://github.com/settings/emails" target="_blank">
             GitHub profile emails
           </a>
-          . After adding a new email address to your GitHub account, you must
-          sign out from the Rush Stack website to refresh the choices. This is
-          necessary because our database does not store a GitHub API token.
+          . After adding a new email address to your GitHub account, you must sign out from the Rush Stack
+          website to refresh the choices. This is necessary because our database does not store a GitHub API
+          token.
         </p>
         <p>
-          <b>Email privacy:</b> The website does not display your email address
-          to other users, and we make a best effort to avoid disclosing it to
-          other parties such as advertisers or spammers. We intend for email
-          notifications to be infrequent and relevant to topics that you
-          expressed interest in. If you have feedback regarding this service,
-          please{" "}
-          <a
-            href="https://github.com/microsoft/rushstack-websites/issues"
-            target="_blank"
-          >
+          <b>Email privacy:</b> The website does not display your email address to other users, and we make a
+          best effort to avoid disclosing it to other parties such as advertisers or spammers. We intend for
+          email notifications to be infrequent and relevant to topics that you expressed interest in. If you
+          have feedback regarding this service, please{' '}
+          <a href="https://github.com/microsoft/rushstack-websites/issues" target="_blank">
             create a GitHub issue.
           </a>
         </p>
@@ -219,15 +171,15 @@ class ProfilePageBody extends React.Component {
         </div>
         <div>
           <label>
-            <FormCheckBox field={this._discloseOrganization} />I want people to
-            know that I'm affiliated with my company/organization.
+            <FormCheckBox field={this._discloseOrganization} />I want people to know that I'm affiliated with
+            my company/organization.
           </label>
         </div>
         <div>
           <label>
             <FormCheckBox field={this._allowUseOfLogo} />
-            My company/organization would like to support Rush Stack by having
-            our logo displayed on the website for the components that we use.
+            My company/organization would like to support Rush Stack by having our logo displayed on the
+            website for the components that we use.
           </label>
         </div>
         <div className={styles.formHeading}>Twitter Alias</div>
@@ -236,7 +188,7 @@ class ProfilePageBody extends React.Component {
         </div>
         <div>
           <DecoratedButton
-            style={{ paddingTop: "20px", paddingRight: "20px" }}
+            style={{ paddingTop: '20px', paddingRight: '20px' }}
             theme="default"
             disabled={!this._formFieldSet.modified}
             onClick={this._saveButton_onClick}
@@ -253,27 +205,19 @@ class ProfilePageBody extends React.Component {
         </div>
         <div className={styles.privacyNoticeBox}>
           <p>
-            <b>Privacy notice:</b> Sharing your personal information is
-            optional. We value your privacy. Our intent is to implement
-            effective security practices and to protect your private data from
-            being disclosed without your consent. However, be aware that the
-            Rush Stack events, website, and associated software are operated by
-            community volunteers and without any guarantees. Mistakes can happen
-            sometimes.
+            <b>Privacy notice:</b> Sharing your personal information is optional. We value your privacy. Our
+            intent is to implement effective security practices and to protect your private data from being
+            disclosed without your consent. However, be aware that the Rush Stack events, website, and
+            associated software are operated by community volunteers and without any guarantees. Mistakes can
+            happen sometimes.
           </p>
           <p>
-            <b>Disclaimer:</b> Use this Service AT YOUR OWN RISK. It is provided
-            "as is", without warranty of any kind, express or implied. In no
-            event shall any Operators of this Service be liable for any special,
-            direct, indirect, consequential, or incidental damages or any
-            damages whatsoever, whether in an action of contract, negligence or
-            other tort, arising out of or in connection with the use of the
-            Service or the contents of the Service. For details consult the
-            GitHub repository{" "}
-            <a href="https://github.com/microsoft/rushstack-websites/">
-              legal notices
-            </a>{" "}
-            .
+            <b>Disclaimer:</b> Use this Service AT YOUR OWN RISK. It is provided "as is", without warranty of
+            any kind, express or implied. In no event shall any Operators of this Service be liable for any
+            special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether
+            in an action of contract, negligence or other tort, arising out of or in connection with the use
+            of the Service or the contents of the Service. For details consult the GitHub repository{' '}
+            <a href="https://github.com/microsoft/rushstack-websites/">legal notices</a> .
           </p>
         </div>
       </CommunitySidebar>
@@ -281,8 +225,7 @@ class ProfilePageBody extends React.Component {
   }
 
   private _saveButton_onClick = (): void => {
-    const userTask: ApiTask<UserModel> =
-      this._appSession.apiDataService.initiateGetProfile(this, true);
+    const userTask: ApiTask<UserModel> = this._appSession.apiDataService.initiateGetProfile(this, true);
 
     if (userTask.status !== ApiTaskStatus.Success) {
       return;
@@ -307,7 +250,7 @@ class ProfilePageBody extends React.Component {
         optOutOfAllEmails: this._optOutOfAllEmails.checked,
         notifyAboutNewEvents: this._notifyAboutNewEvents.checked,
         discloseOrganization: this._discloseOrganization.checked,
-        allowUseOfLogo: this._allowUseOfLogo.checked,
+        allowUseOfLogo: this._allowUseOfLogo.checked
       })
       .catch((error) => {
         console.error((error as Error).toString());

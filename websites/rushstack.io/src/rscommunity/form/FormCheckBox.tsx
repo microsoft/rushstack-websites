@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { FormField, FormFieldSet } from "./FormFieldSet";
+import { FormField, FormFieldSet } from './FormFieldSet';
 
 export class FormCheckField extends FormField {
   protected formFieldSet: FormFieldSet;
@@ -29,10 +29,7 @@ export class FormCheckField extends FormField {
   };
 }
 
-export function FormCheckBox(props: {
-  field: FormCheckField;
-  disabled?: boolean;
-}): JSX.Element {
+export function FormCheckBox(props: { field: FormCheckField; disabled?: boolean }): JSX.Element {
   return (
     <input
       type="checkbox"

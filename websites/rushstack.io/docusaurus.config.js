@@ -55,22 +55,19 @@ const config = {
               }
             ]
           ],
-          rehypePlugins: [
-            require('./src/rehype/rehype-headerless-table-plugin')
-          ],
+          rehypePlugins: [require('./src/rehype/rehype-headerless-table-plugin')],
           ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      })
+    ]
   ],
 
   themeConfig:
@@ -80,7 +77,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Rush Stack',
-          src: 'images/rushstack.svg',
+          src: 'images/rushstack.svg'
         },
         items: [
           {
@@ -89,30 +86,32 @@ const config = {
             label: 'Docs',
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
           },
-          ...(SKIP_API_DOCS ? [] : [
-            {
-              type: 'doc',
-              docId: 'pages/api/index',
-              position: 'right',
-              label: 'API',
-            }
-          ]),
+          ...(SKIP_API_DOCS
+            ? []
+            : [
+                {
+                  type: 'doc',
+                  docId: 'pages/api/index',
+                  position: 'right',
+                  label: 'API'
+                }
+              ]),
           {
             type: 'doc',
             docId: 'pages/shop',
             position: 'right',
-            label: 'Shop',
+            label: 'Shop'
           },
           {
             type: 'doc',
             docId: 'pages/news',
             position: 'right',
-            label: 'News',
+            label: 'News'
           },
           {
             to: '/community/events',
             position: 'right',
-            label: 'Events',
+            label: 'Events'
           },
           {
             to: 'pages/contributing/get_started',
@@ -126,7 +125,7 @@ const config = {
             label: 'Help',
             activeBasePath: 'pages/help/support'
           }
-        ],
+        ]
       },
       footer: {
         style: 'dark',
@@ -174,19 +173,17 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        darkTheme: darkCodeTheme
       },
       algolia: {
         appId: 'W2G1E3U5T0',
         apiKey: 'a0ab6dfc3db0c301b0ca8e725af85641',
         indexName: 'rushstack.io',
         searchParameters: {
-          exclusionPatterns: [
-            'pages/api/*'
-          ]
+          exclusionPatterns: ['pages/api/*']
         }
       }
-    }),
+    })
 };
 
 module.exports = config;

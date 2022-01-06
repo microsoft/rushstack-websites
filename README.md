@@ -3,7 +3,7 @@
 ### 🚧 UNDER DEVELOPMENT 🚧
 
 This is an experiment to migrate the [Rush Stack](https://rushstack.io/) websites into a monorepo
-built using Docusaurus.  It has not been officially launched yet.
+built using Docusaurus. It has not been officially launched yet.
 
 ## Targets
 
@@ -60,7 +60,7 @@ versions of those sites.
 
 # Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
 

@@ -5,14 +5,14 @@ title: Project roadmap
 Our [News page](./pages/news.md) and Twitter feed is the best way to find out what's happening.
 This roadmap supplements that with more general information about future directions.
 
-***Last update: September 2021***
-
+**_Last update: September 2021_**
 
 ## Recently Completed
 
 These milestones were completed recently:
 
 <!-- latest events go on the bottom -->
+
 - Shell tab completion for Rush
 - Rush integration with [BuildXL](https://github.com/microsoft/BuildXL) for sharded builds
 - Optimize Rush startup time, adding a new tool [@rushstack/rundown](https://www.npmjs.com/package/@rushstack/rundown)
@@ -20,17 +20,16 @@ These milestones were completed recently:
 - Introduce a model for [rig packages](https://www.npmjs.com/package/@rushstack/rig-package)
 - Move the TSDoc project documentation to a dedicated website [https://tsdoc.org/](@tsdoc/)
 - Get the Rush [build cache](@rushjs/pages/maintainer/build_cache/) feature released and documented
-- [Artifactory integration](@rushjs/pages/maintainer/npm_registry_auth/)  for Rush
+- [Artifactory integration](@rushjs/pages/maintainer/npm_registry_auth/) for Rush
 - Merge API Extractor to support `import * as ___ from "___";` namespaces ([issue #1029](https://github.com/microsoft/rushstack/issues/1029))
 - Merge API Extractor to support `import()` type expressions ([issue #1050](https://github.com/microsoft/rushstack/issues/1050))
 - Start a new [@rushstack/eslint-plugin-security](https://www.npmjs.com/package/@rushstack/eslint-plugin-security) package
 - Improve Heft support for developing [Node.js services](https://rushstack.io/pages/heft_tasks/node-service/)
 
-
 ## In progress
 
 Contributor availability is difficult to predict, so we try not to make commitments about when (or whether)
-a particular feature will get implemented.  That said, here's some areas which people are actively working on:
+a particular feature will get implemented. That said, here's some areas which people are actively working on:
 
 <!-- things we expect to get to sooner go at the top -->
 
@@ -43,7 +42,6 @@ a particular feature will get implemented.  That said, here's some areas which p
 - [Multi-project watch mode](@rushjs/pages/advanced/watch_mode/) for Rush
 - Working towards a 1.0 release of Heft, to stabilize the config file and plugin API contracts
 
-
 ## Soon, hopefully
 
 The Rush Stack maintainers currently see these feature areas as the main priorities for upcoming investments:
@@ -52,7 +50,6 @@ The Rush Stack maintainers currently see these feature areas as the main priorit
 
 - Multiphase builds for Rush
 - Improve the design of Rush publishing (`rush publish`, `rush version`, `rush change`)
-
 
 If there's a specific area that's important to you, let us know in the
 [Zulip chat room](https://rushstack.zulipchat.com/).
