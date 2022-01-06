@@ -58,7 +58,7 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
         {
           type: 'doc',
           label: '(members)',
-          id: 'api/index'
+          id: 'pages/api/index'
         }
       ]
     };
@@ -68,7 +68,9 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
     const navFilePath: string = path.join(this.context.outputFolder, '..', 'api_nav.json');
     const navFileContent: string = JSON.stringify(navigationFile, undefined, 2);
 
-    FileSystem.writeFile(navFilePath, navFileContent, { ensureFolderExists: true });
+    FileSystem.writeFile(navFilePath, navFileContent, {
+      ensureFolderExists: true
+    });
   }
 
   private _buildNavigation(parentNodes: INavigationNode[], parentApiItem: ApiItem): void {
@@ -76,7 +78,7 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
       if (this._apiItemsWithPages.has(apiItem)) {
         const label = apiItem.displayName;
         const id = path.posix
-          .join('api/', this.context.documenter.getLinkForApiItem(apiItem)!)
+          .join('pages/api/', this.context.documenter.getLinkForApiItem(apiItem)!)
           .replace(/\.md$/, '')
           .replace(/\/$/, '/index');
         const children: INavigationNode[] = [];
