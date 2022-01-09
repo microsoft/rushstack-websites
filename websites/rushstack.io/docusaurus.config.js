@@ -43,19 +43,19 @@ const config = {
           editUrl: 'https://github.com/microsoft/rushstack-websites/',
           remarkPlugins: [
             [
-              require('./src/remark/remark-cross-site-link-plugin'),
+              require('remark-cross-site-link-plugin'),
               {
                 prefixes: siteConfig.sitePrefixes
               }
             ],
             [
-              require('./src/remark/remark-canonical-link-plugin'),
+              require('remark-canonical-link-plugin'),
               {
                 prefix: 'https://rushstack.io/'
               }
             ]
           ],
-          rehypePlugins: [require('./src/rehype/rehype-headerless-table-plugin')],
+          rehypePlugins: [require('rehype-headerless-table-plugin')],
           ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
