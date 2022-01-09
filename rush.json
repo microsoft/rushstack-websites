@@ -392,6 +392,22 @@
       "projectFolder": "websites/rushstack.io"
     },
 
+    // Upcoming websites
+    /*
+    {
+      "packageName": "rushjs.io",
+      "projectFolder": "websites/rushjs.io"
+    },
+    {
+      "packageName": "api-extractor.com",
+      "projectFolder": "websites/api-extractor.com"
+    },
+    {
+      "packageName": "tsdoc.org",
+      "projectFolder": "websites/tsdoc.org"
+    },
+    */
+
     // Tools
     {
       "packageName": "api-documenter-docusaurus-plugin",
@@ -404,7 +420,22 @@
     {
       "packageName": "site-config",
       "projectFolder": "tools/site-config"
+    },
+
+    // Plugins
+    {
+      "packageName": "remark-canonical-link-plugin",
+      "projectFolder": "plugins/remark-canonical-link-plugin"
+    },
+    {
+      "packageName": "remark-cross-site-link-plugin",
+      "projectFolder": "plugins/remark-cross-site-link-plugin"
+    },
+    {
+      "packageName": "rehype-headerless-table-plugin",
+      "projectFolder": "plugins/rehype-headerless-table-plugin"
     }
+
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)
