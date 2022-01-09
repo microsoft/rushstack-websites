@@ -21,7 +21,7 @@ export class AppSession {
 
   public onNavigateToSignIn = (): void => {
     // After logging in, return to the current page
-    Cookies.set('rscommunity-login-return-path', document.location.pathname, {
+    Cookies.set('rscommunity-login-return-url', document.location.href, {
       sameSite: 'Strict',
       domain: document.location.hostname,
       path: '/'
@@ -32,7 +32,9 @@ export class AppSession {
 
   public onNavigateToSignOut = (): void => {
     // The "Sign Out" command should return us to the site homepage
-    Cookies.set('rscommunity-login-return-path', '/', {
+    const siteRootUrl: string = new URL('/', document.location.href).href;
+
+    Cookies.set('rscommunity-login-return-url', siteRootUrl, {
       sameSite: 'Strict',
       domain: document.location.hostname,
       path: '/'
