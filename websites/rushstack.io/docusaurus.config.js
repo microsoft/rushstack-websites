@@ -9,6 +9,10 @@ const { SKIP_API_DOCS, SITE_PREFIXES } = require('./custom.config.js');
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
+const { plugin: remarkCanonicalLinkPlugin } = require('remark-canonical-link-plugin');
+const { plugin: remarkCrossSiteLinkPlugin } = require('remark-cross-site-link-plugin');
+const { plugin: rehypeHeaderlessTablePlugin } = require('rehype-headerless-table-plugin');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rush Stack',
@@ -43,19 +47,19 @@ const config = {
           editUrl: 'https://github.com/microsoft/rushstack-websites/',
           remarkPlugins: [
             [
-              require('remark-cross-site-link-plugin'),
+              remarkCrossSiteLinkPlugin,
               {
                 prefixes: siteConfig.sitePrefixes
               }
             ],
             [
-              require('remark-canonical-link-plugin'),
+              remarkCanonicalLinkPlugin,
               {
                 prefix: 'https://rushstack.io/'
               }
             ]
           ],
-          rehypePlugins: [require('rehype-headerless-table-plugin')],
+          rehypePlugins: [rehypeHeaderlessTablePlugin],
           ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
