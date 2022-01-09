@@ -5,6 +5,63 @@ importers:
   .:
     specifiers: {}
 
+  ../../plugins/rehype-headerless-table-plugin:
+    specifiers:
+      '@rushstack/heft': ~0.44.1
+      '@rushstack/heft-node-rig': ~1.5.1
+      '@types/heft-jest': ~1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': ~2.0.6
+      typescript: ~4.5.4
+      unist-util-visit: ~2.0.3
+    dependencies:
+      unist-util-visit: 2.0.3
+    devDependencies:
+      '@rushstack/heft': 0.44.1
+      '@rushstack/heft-node-rig': 1.5.1_@rushstack+heft@0.44.1
+      '@types/heft-jest': 1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': 2.0.6
+      typescript: 4.5.4
+
+  ../../plugins/remark-canonical-link-plugin:
+    specifiers:
+      '@rushstack/heft': ~0.44.1
+      '@rushstack/heft-node-rig': ~1.5.1
+      '@types/heft-jest': ~1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': ~2.0.6
+      typescript: ~4.5.4
+      unist-util-visit: ~2.0.3
+    dependencies:
+      unist-util-visit: 2.0.3
+    devDependencies:
+      '@rushstack/heft': 0.44.1
+      '@rushstack/heft-node-rig': 1.5.1_@rushstack+heft@0.44.1
+      '@types/heft-jest': 1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': 2.0.6
+      typescript: 4.5.4
+
+  ../../plugins/remark-cross-site-link-plugin:
+    specifiers:
+      '@rushstack/heft': ~0.44.1
+      '@rushstack/heft-node-rig': ~1.5.1
+      '@types/heft-jest': ~1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': ~2.0.6
+      typescript: ~4.5.4
+      unist-util-visit: ~2.0.3
+    dependencies:
+      unist-util-visit: 2.0.3
+    devDependencies:
+      '@rushstack/heft': 0.44.1
+      '@rushstack/heft-node-rig': 1.5.1_@rushstack+heft@0.44.1
+      '@types/heft-jest': 1.0.2
+      '@types/node': 12.20.24
+      '@types/unist': 2.0.6
+      typescript: 4.5.4
+
   ../../tools/api-documenter-docusaurus-plugin:
     specifiers:
       '@microsoft/api-documenter': ~7.14.0
@@ -60,6 +117,9 @@ importers:
       prism-react-renderer: ^1.2.1
       react: ^17.0.1
       react-dom: ^17.0.1
+      rehype-headerless-table-plugin: workspace:*
+      remark-canonical-link-plugin: workspace:*
+      remark-cross-site-link-plugin: workspace:*
       site-config: workspace:*
       url-loader: ^4.1.1
     dependencies:
@@ -81,6 +141,9 @@ importers:
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       api-documenter-docusaurus-plugin: link:../../tools/api-documenter-docusaurus-plugin
+      rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
+      remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
+      remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
       site-config: link:../../tools/site-config
 
 packages:
@@ -3362,6 +3425,12 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
 
+  /@types/heft-jest/1.0.2:
+    resolution: {integrity: sha512-HabX0JO8Pk+a3gTm2DQwTMrfZjqP6VxDnn8kIXAP6uZbmy4bkKuFRi9T9BV9K6LhwHrmcgq5kk2YikYHy4LJeg==}
+    dependencies:
+      '@types/jest': 27.4.0
+    dev: true
+
   /@types/html-minifier-terser/6.1.0:
     resolution: {integrity: sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg==}
 
@@ -3384,6 +3453,13 @@ packages:
     resolution: {integrity: sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
+    dev: true
+
+  /@types/jest/27.4.0:
+    resolution: {integrity: sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==}
+    dependencies:
+      jest-diff: 27.4.6
+      pretty-format: 27.4.6
     dev: true
 
   /@types/js-cookie/3.0.1:
