@@ -9,7 +9,7 @@ To speed things up, Rush provides a set of command-line parameters for selecting
 
 Suppose we're working with the following collection of Rush projects:
 
-<img src="/images/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
+<img src="/images/docs/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
 
 In the above illustration, the circles represent local projects, not external NPM dependencies.
 The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C` must be built before
@@ -30,7 +30,7 @@ $ rush build --to B
 
 The projects selected by this command are `A`, `B`, and `E`:
 
-<img src="/images/selection-to.svg" alt="rush build --to B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-to.svg" alt="rush build --to B" style={{ height: "150px" }} />
 
 ## -<!---->-to-except
 
@@ -48,7 +48,7 @@ $ heft test --watch
 
 The projects selected by this command are `A` and `E`:
 
-<img src="/images/selection-to-except.svg" alt="rush build --to-except B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-to-except.svg" alt="rush build --to-except B" style={{ height: "150px" }} />
 
 ## -<!---->-from
 
@@ -65,7 +65,7 @@ $ rush build --from B
 
 This command selects everything except for `F`:
 
-<img src="/images/selection-from.svg" alt="rush build --from B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-from.svg" alt="rush build --from B" style={{ height: "150px" }} />
 
 > **Compatibility note:** If the `rushVersion` setting in your **rush.json** is older than 5.38.0,
 > then `--from` will instead behave like `--impacted-by`. The meaning was changed in Rush 5.38.0 because
@@ -89,7 +89,7 @@ $ rush build --impacted-by B
 
 The projects selected by this command are `B`, `C`, and `D`:
 
-<img src="/images/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
 
 ## -<!---->-impacted-by-except (unsafe)
 
@@ -103,7 +103,7 @@ $ rush build --impacted-by-except B
 
 The projects selected by this command are `C` and `D`:
 
-<img src="/images/selection-impact-except.svg" alt="rush build --impacted-by-except B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-impact-except.svg" alt="rush build --impacted-by-except B" style={{ height: "150px" }} />
 
 ## -<!---->-only (unsafe)
 
@@ -115,7 +115,7 @@ ignoring dependencies.
 $ rush build --only B
 ```
 
-<img src="/images/selection-only.svg" alt="rush build --only B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-only.svg" alt="rush build --only B" style={{ height: "150px" }} />
 
 The `--only` parameter is most useful when combined with other parameters. For example, in our narrative above
 when we did `rush build --impacted-by B`, maybe we had not actually built `G` yet. We can include it by
@@ -144,7 +144,7 @@ $ rush build --only A --impacted-by-except B --to F
 
 The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:
 
-<img src="/images/selection-multi.svg" alt="rush build --only A --impacted-by-except B --to F" style={{ height: "150px" }} />
+<img src="/images/docs/selection-multi.svg" alt="rush build --only A --impacted-by-except B --to F" style={{ height: "150px" }} />
 
 ## See also
 

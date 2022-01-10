@@ -59,7 +59,7 @@ file can provide some insight into what the algorithm is doing.
 
 Suppose hypothetically that our monorepo has the following projects:
 
-<img src="/images/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
+<img src="/images/docs/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
 
 In the above illustration, the circles represent local projects, not external NPM dependencies.
 The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C` must be built before
@@ -68,7 +68,7 @@ The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C`
 Suppose that after rebuilding everything, we make a change to a source file under project `B`.
 Projects `C` and `D` depend on `B`, so they need to be built as well:
 
-<img src="/images/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
 
 We might invoke:
 
@@ -82,7 +82,7 @@ color of a button control, or some text in an error message.
 
 The `--changed-projects-only` flag tells Rush to build only those projects where a file was changed:
 
-<img src="/images/selection-only.svg" alt="rush build --only B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-only.svg" alt="rush build --only B" style={{ height: "150px" }} />
 
 We'd invoke it like this:
 

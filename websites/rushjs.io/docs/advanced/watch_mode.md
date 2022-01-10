@@ -16,7 +16,7 @@ that can monitor **_multiple projects at once._**
 
 Suppose hypothetically that our monorepo has the following projects:
 
-<img src="/images/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
+<img src="/images/docs/selection-intro.svg" alt="a sample monorepo" style={{ height: "150px" }} />
 
 In the above illustration, the circles represent local projects, not external NPM dependencies.
 The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C` must be built before
@@ -24,7 +24,7 @@ The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C`
 
 Suppose that you save a change to project `B`:
 
-<img src="/images/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
+<img src="/images/docs/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
 
 For a multi-project "watch mode", we'd expect the following things to happen in order:
 
