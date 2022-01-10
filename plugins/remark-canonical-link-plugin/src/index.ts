@@ -7,7 +7,16 @@ interface Element extends Parent {
   tagName: string;
 }
 
-export function plugin(options: any) {
+export interface IOptions {
+  /**
+   * The canonical URL prefix for the website, ending with a slash (/).
+   *
+   * Example: `https://rushstack.io/`
+   */
+  prefix: string;
+}
+
+export function plugin(options: IOptions) {
   const prefix = options.prefix;
 
   if (!prefix || !prefix.endsWith('/')) {

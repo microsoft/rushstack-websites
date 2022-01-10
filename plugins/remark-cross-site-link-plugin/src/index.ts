@@ -12,21 +12,36 @@ interface LinkElement extends Element {
   url: string;
 }
 
-export function plugin(options: any) {
+export interface IOptions {
+  /**
+   * An object containing a key for each supported site prefix, with the associated
+   * replacement URL as the value.
+   *
+   * Example:
+   *   {
+   *     '@rushjs': 'https://rushjs.io'
+   *   }
+   */
+  prefixes: Record<string, string>;
+}
+
+export function plugin(options: IOptions) {
   const prefixes = options.prefixes;
 
   const transformer = async (ast: Element) => {
     visit(ast, 'link', (node: LinkElement) => {
       if (node.url && node.url.startsWith('@')) {
+        const prefix: string = node.url.match(/^(.+?)(\/|$)/)![1];
+
         // "@site" is a Docusaurus built-in, so we won't touch it
-        if (node.url.startsWith('@site')) return;
+        if (prefix === '@site') return;
 
         let found = false;
 
-        for (let prefix of Object.keys(prefixes)) {
-          if (node.url.startsWith(prefix)) {
+        for (let prefixKey of Object.keys(prefixes)) {
+          if (prefix === prefixKey) {
             found = true;
-            node.url = prefixes[prefix] + node.url.slice(prefix.length);
+            node.url = prefixes[prefixKey] + node.url.slice(prefix.length);
             break;
           }
         }
