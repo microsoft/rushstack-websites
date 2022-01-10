@@ -391,13 +391,13 @@
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
     },
-
-    // Upcoming websites
-    /*
     {
       "packageName": "rushjs.io",
       "projectFolder": "websites/rushjs.io"
     },
+
+    // Upcoming websites
+    /*
     {
       "packageName": "api-extractor.com",
       "projectFolder": "websites/api-extractor.com"
