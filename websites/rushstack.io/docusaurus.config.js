@@ -90,7 +90,7 @@ const config = {
             to: '/',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
+            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)(?!api)'
           },
           ...(SKIP_API_DOCS
             ? []
