@@ -20,11 +20,7 @@ const sidebars = {
       type: 'category',
       label: 'Overview',
       collapsible: false,
-      items: [
-        'index',
-        'overview/people',
-        'overview/roadmap'
-      ]
+      items: ['index', 'pages/overview/people', 'pages/overview/roadmap']
     },
     {
       type: 'category',
@@ -34,16 +30,16 @@ const sidebars = {
         {
           type: 'doc',
           label: 'Introduction',
-          id: 'heft/overview'
+          id: 'pages/heft/overview'
         },
         {
           type: 'doc',
           label: 'Architecture',
-          id: 'heft/architecture'
+          id: 'pages/heft/architecture'
         },
-        'heft/core_plugins',
-        'heft/rig_packages',
-        'heft/cli'
+        'pages/heft/core_plugins',
+        'pages/heft/rig_packages',
+        'pages/heft/cli'
       ]
     },
     {
@@ -51,10 +47,10 @@ const sidebars = {
       label: 'Heft tutorials',
       collapsible: false,
       items: [
-        'heft_tutorials/getting_started',
-        'heft_tutorials/adding_tasks',
-        'heft_tutorials/everyday_commands',
-        'heft_tutorials/heft_and_rush'
+        'pages/heft_tutorials/getting_started',
+        'pages/heft_tutorials/adding_tasks',
+        'pages/heft_tutorials/everyday_commands',
+        'pages/heft_tutorials/heft_and_rush'
       ]
     },
     {
@@ -65,58 +61,58 @@ const sidebars = {
         {
           type: 'doc',
           label: 'api-extractor',
-          id: 'heft_tasks/api-extractor',
+          id: 'pages/heft_tasks/api-extractor'
         },
         {
           type: 'doc',
           label: 'copy-files',
-          id: 'heft_tasks/copy-files'
+          id: 'pages/heft_tasks/copy-files'
         },
         {
           type: 'doc',
           label: 'copy-static-assets',
-          id: 'heft_tasks/copy-static-assets'
+          id: 'pages/heft_tasks/copy-static-assets'
         },
         {
           type: 'doc',
           label: 'delete-globs',
-          id: 'heft_tasks/delete-globs'
+          id: 'pages/heft_tasks/delete-globs'
         },
         {
           type: 'doc',
           label: 'eslint',
-          id: 'heft_tasks/eslint'
+          id: 'pages/heft_tasks/eslint'
         },
         {
           type: 'doc',
           label: 'jest',
-          id: 'heft_tasks/jest'
+          id: 'pages/heft_tasks/jest'
         },
         {
           type: 'doc',
           label: 'node-service',
-          id: 'heft_tasks/node-service'
+          id: 'pages/heft_tasks/node-service'
         },
         {
           type: 'doc',
           label: 'sass-typings',
-          id: 'heft_tasks/sass-typings'
+          id: 'pages/heft_tasks/sass-typings'
         },
         {
           type: 'doc',
           label: 'tslint',
-          id: 'heft_tasks/tslint'
+          id: 'pages/heft_tasks/tslint'
         },
         {
           type: 'doc',
           label: 'typescript',
-          id: 'heft_tasks/typescript'
+          id: 'pages/heft_tasks/typescript'
         },
         {
           type: 'doc',
           label: 'webpack',
-          id: 'heft_tasks/webpack'
-        },
+          id: 'pages/heft_tasks/webpack'
+        }
       ]
     },
     {
@@ -124,30 +120,26 @@ const sidebars = {
       label: 'Heft config files',
       collapsible: false,
       items: [
-        'heft_configs/api-extractor-task_json',
-        'heft_configs/heft_json',
-        'heft_configs/node-service_json',
-        'heft_configs/rig_json',
-        'heft_configs/sass_json',
-        'heft_configs/typescript_json',
-        'heft_configs/other_files'
+        'pages/heft_configs/api-extractor-task_json',
+        'pages/heft_configs/heft_json',
+        'pages/heft_configs/node-service_json',
+        'pages/heft_configs/rig_json',
+        'pages/heft_configs/sass_json',
+        'pages/heft_configs/typescript_json',
+        'pages/heft_configs/other_files'
       ]
     },
     {
       type: 'category',
       label: 'Contributing',
       collapsible: false,
-      items: [
-        'contributing/get_started'
-      ]
+      items: ['pages/contributing/get_started']
     },
     {
       type: 'category',
       label: 'Help',
       collapsible: false,
-      items: [
-        'help/support'
-      ]
+      items: ['pages/help/support']
     }
   ],
   apiSidebar: SKIP_API_DOCS ? [] : [require('./data/api_nav.json')]

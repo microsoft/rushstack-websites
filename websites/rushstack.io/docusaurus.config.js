@@ -9,6 +9,10 @@ const { SKIP_API_DOCS, SITE_PREFIXES } = require('./custom.config.js');
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
+const { plugin: remarkCanonicalLinkPlugin } = require('remark-canonical-link-plugin');
+const { plugin: remarkCrossSiteLinkPlugin } = require('remark-cross-site-link-plugin');
+const { plugin: rehypeHeaderlessTablePlugin } = require('rehype-headerless-table-plugin');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rush Stack',
@@ -41,40 +45,37 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: 'pages',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack-websites/',
           remarkPlugins: [
             [
-              require('./src/remark/remark-cross-site-link-plugin'),
+              remarkCrossSiteLinkPlugin,
               {
                 prefixes: siteConfig.sitePrefixes
               }
             ],
             [
-              require('./src/remark/remark-canonical-link-plugin'),
+              remarkCanonicalLinkPlugin,
               {
                 prefix: 'https://rushstack.io/'
               }
             ]
           ],
-          rehypePlugins: [
-            require('./src/rehype/rehype-headerless-table-plugin')
-          ],
+          rehypePlugins: [rehypeHeaderlessTablePlugin],
           ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      })
+    ]
   ],
 
   themeConfig:
@@ -84,7 +85,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Rush Stack',
-          src: 'images/rushstack.svg',
+          src: 'images/rushstack.svg'
         },
         items: [
           {
@@ -97,30 +98,32 @@ const config = {
             label: 'Docs',
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
           },
-          ...(SKIP_API_DOCS ? [] : [
-            {
-              type: 'doc',
-              docId: 'api/index',
-              position: 'right',
-              label: 'API',
-            }
-          ]),
+          ...(SKIP_API_DOCS
+            ? []
+            : [
+                {
+                  type: 'doc',
+                  docId: 'pages/api/index',
+                  position: 'right',
+                  label: 'API'
+                }
+              ]),
           {
             type: 'doc',
-            docId: 'shop',
+            docId: 'pages/shop',
             position: 'right',
-            label: 'Shop',
+            label: 'Shop'
           },
           {
             type: 'doc',
-            docId: 'news',
+            docId: 'pages/news',
             position: 'right',
-            label: 'News',
+            label: 'News'
           },
           {
             to: '/community/events',
             position: 'right',
-            label: 'Events',
+            label: 'Events'
           },
           {
             to: 'pages/contributing/get_started',
@@ -134,7 +137,7 @@ const config = {
             label: 'Help',
             activeBasePath: 'pages/help/support'
           }
-        ],
+        ]
       },
       footer: {
         style: 'dark',
@@ -182,19 +185,17 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        darkTheme: darkCodeTheme
       },
       algolia: {
         appId: 'W2G1E3U5T0',
         apiKey: 'a0ab6dfc3db0c301b0ca8e725af85641',
         indexName: 'rushstack.io',
         searchParameters: {
-          exclusionPatterns: [
-            'pages/api/*'
-          ]
+          exclusionPatterns: ['pages/api/*']
         }
       }
-    }),
+    })
 };
 
 module.exports = config;

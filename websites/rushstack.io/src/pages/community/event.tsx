@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { CommunitySidebar } from "../../rscommunity/view/CommunitySidebar";
-import { CommunitySignInPage } from "../../rscommunity/view/CommunitySignInPage";
-import { AppSession } from "../../rscommunity/api/AppSession";
-import { EventCard } from "../../rscommunity/view/EventCard";
-import { ObjectEvent } from "../../rscommunity/library/ObjectEvent";
-import { ApiTask, ApiTaskStatus } from "../../rscommunity/api/ApiTask";
-import { EventModel } from "../../rscommunity/api/models";
-import { BrowserOnlyLayout } from "../../rscommunity/view/BrowserOnlyLayout";
+import { CommunitySidebar } from '../../rscommunity/view/CommunitySidebar';
+import { CommunitySignInPage } from '../../rscommunity/view/CommunitySignInPage';
+import { AppSession } from '../../rscommunity/api/AppSession';
+import { EventCard } from '../../rscommunity/view/EventCard';
+import { ObjectEvent } from '../../rscommunity/library/ObjectEvent';
+import { ApiTask, ApiTaskStatus } from '../../rscommunity/api/ApiTask';
+import { EventModel } from '../../rscommunity/api/models';
+import { BrowserOnlyLayout } from '../../rscommunity/view/BrowserOnlyLayout';
 
 class EventPageBody extends React.Component {
   private readonly _appSession: AppSession;
@@ -19,15 +19,11 @@ class EventPageBody extends React.Component {
   }
 
   public componentDidMount(): void {
-    this._appSession.apiDataService.updated.subscribe(this, () =>
-      this.forceUpdate()
-    );
+    this._appSession.apiDataService.updated.subscribe(this, () => this.forceUpdate());
 
     this._eventId = undefined;
-    const queryParams: URLSearchParams = new URLSearchParams(
-      window.location.search
-    );
-    const eventId: number = parseInt(queryParams.get("id") ?? "");
+    const queryParams: URLSearchParams = new URLSearchParams(window.location.search);
+    const eventId: number = parseInt(queryParams.get('id') ?? '');
     if (!isNaN(eventId)) {
       this._eventId = eventId;
       this.forceUpdate();
@@ -47,8 +43,10 @@ class EventPageBody extends React.Component {
       return <div>ERROR: Missing event id</div>;
     }
 
-    const eventTask: ApiTask<EventModel> =
-      this._appSession.apiDataService.initiateGetEvent(this, this._eventId);
+    const eventTask: ApiTask<EventModel> = this._appSession.apiDataService.initiateGetEvent(
+      this,
+      this._eventId
+    );
 
     if (eventTask.status === ApiTaskStatus.Error) {
       return <div>ERROR: {eventTask.error.message}</div>;
@@ -63,9 +61,9 @@ class EventPageBody extends React.Component {
       <div>
         &lt;&lt;&nbsp;
         {eventModel.apiEvent.isCompleted ? (
-          <a href={"/community/past-events"}>Past Events</a>
+          <a href={'/community/past-events'}>Past Events</a>
         ) : (
-          <a href={"/community/events"}>Upcoming Events</a>
+          <a href={'/community/events'}>Upcoming Events</a>
         )}
       </div>
     );
@@ -73,12 +71,12 @@ class EventPageBody extends React.Component {
     return (
       <CommunitySidebar
         appSession={this._appSession}
-        navItem={eventModel.apiEvent.isCompleted ? "past-events" : "events"}
-        style={{ paddingTop: "100px" }}
+        navItem={eventModel.apiEvent.isCompleted ? 'past-events' : 'events'}
+        style={{ paddingTop: '100px' }}
       >
         {breadcrumb}
 
-        <div style={{ maxWidth: "800px", paddingBottom: "20px" }}>
+        <div style={{ maxWidth: '800px', paddingBottom: '20px' }}>
           {eventModel ? (
             <EventCard
               cardType="detail"

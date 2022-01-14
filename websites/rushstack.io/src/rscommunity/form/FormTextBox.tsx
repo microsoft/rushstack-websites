@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import { FormField, FormFieldSet } from "./FormFieldSet";
+import { FormField, FormFieldSet } from './FormFieldSet';
 
 export class FormTextField extends FormField {
   protected readonly formFieldSet: FormFieldSet;
 
-  private _value: string = "";
+  private _value: string = '';
 
   public constructor(formFieldSet: FormFieldSet) {
     super();
@@ -24,20 +24,13 @@ export class FormTextField extends FormField {
     }
   }
 
-  public onChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ): void => {
+  public onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void => {
     this.value = event.target.value;
   };
 }
 
 export function FormTextBox(props: { field: FormTextField }): JSX.Element {
   return (
-    <input
-      type="text"
-      style={{ width: "20em" }}
-      value={props.field.value}
-      onChange={props.field.onChange}
-    />
+    <input type="text" style={{ width: '20em' }} value={props.field.value} onChange={props.field.onChange} />
   );
 }

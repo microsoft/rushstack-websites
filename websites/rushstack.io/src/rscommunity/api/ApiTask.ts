@@ -1,7 +1,7 @@
 export enum ApiTaskStatus {
   Error,
   Pending,
-  Success,
+  Success
 }
 
 export interface ApiTaskError {
@@ -16,7 +16,4 @@ export interface ApiTaskSuccess<TResult> {
   result: TResult;
 }
 
-export type ApiTask<TItem> =
-  | ApiTaskError
-  | ApiTaskPending
-  | ApiTaskSuccess<TItem>;
+export type ApiTask<TItem> = ApiTaskError | ApiTaskPending | ApiTaskSuccess<TItem>;

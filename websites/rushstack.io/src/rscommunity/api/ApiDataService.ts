@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { IApiEvent, IApiUser, IApiUserUpdate } from "./ApiInterfaces";
-import { ObjectEvent } from "../library/ObjectEvent";
-import { AppSession } from "./AppSession";
-import { ApiTask, ApiTaskStatus } from "./ApiTask";
-import { EventModel, UserModel } from "./models";
+import { IApiEvent, IApiUser, IApiUserUpdate } from './ApiInterfaces';
+import { ObjectEvent } from '../library/ObjectEvent';
+import { AppSession } from './AppSession';
+import { ApiTask, ApiTaskStatus } from './ApiTask';
+import { EventModel, UserModel } from './models';
 
 interface ICacheEntry {
   key: string;
@@ -26,28 +26,22 @@ export class ApiDataService {
     this.appSession = appSession;
   }
 
-  public initiateGetProfile(
-    component: React.Component,
-    includeEmails: boolean
-  ): ApiTask<UserModel> {
+  public initiateGetProfile(component: React.Component, includeEmails: boolean): ApiTask<UserModel> {
     const apiTaskKey: string = `profile:${includeEmails}`;
 
     return this._startApiTask<UserModel>(apiTaskKey, component, async () => {
-      console.log("Fetching profile...");
+      console.log('Fetching profile...');
 
-      const query: string = includeEmails ? "?emails=1" : "";
+      const query: string = includeEmails ? '?emails=1' : '';
 
-      const data: Response = await fetch(
-        `${this.appSession.serviceUrl}/api/profile${query}`,
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-        }
-      );
+      const data: Response = await fetch(`${this.appSession.serviceUrl}/api/profile${query}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
 
       const apiUser: IApiUser = await data.json();
@@ -56,50 +50,39 @@ export class ApiDataService {
     });
   }
 
-  public async updateProfileAsync(
-    apiUserUpdate: IApiUserUpdate
-  ): Promise<void> {
+  public async updateProfileAsync(apiUserUpdate: IApiUserUpdate): Promise<void> {
     try {
       this._requireLoggedIn();
 
-      console.log("Posting profile update...");
-      const data: Response = await fetch(
-        `${this.appSession.serviceUrl}/api/profile`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-          body: JSON.stringify(apiUserUpdate),
-        }
-      );
+      console.log('Posting profile update...');
+      const data: Response = await fetch(`${this.appSession.serviceUrl}/api/profile`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(apiUserUpdate)
+      });
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
     } finally {
       this._invalidateCache();
     }
   }
 
-  public initiateGetEvent(
-    component: React.Component,
-    eventId: number
-  ): ApiTask<EventModel> {
+  public initiateGetEvent(component: React.Component, eventId: number): ApiTask<EventModel> {
     const apiTaskKey: string = `event:${eventId}`;
 
     return this._startApiTask<EventModel>(apiTaskKey, component, async () => {
-      console.log("Fetching event...");
-      const data: Response = await fetch(
-        `${this.appSession.serviceUrl}/api/event/${eventId.toString()}`,
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-        }
-      );
+      console.log('Fetching event...');
+      const data: Response = await fetch(`${this.appSession.serviceUrl}/api/event/${eventId.toString()}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
 
       const apiEvent: IApiEvent = await data.json();
@@ -108,32 +91,24 @@ export class ApiDataService {
     });
   }
 
-  public initiateGetEvents(
-    component: React.Component,
-    filter: "past" | "current"
-  ): ApiTask<EventModel[]> {
+  public initiateGetEvents(component: React.Component, filter: 'past' | 'current'): ApiTask<EventModel[]> {
     const apiTaskKey: string = `events:${filter}`;
     return this._startApiTask(apiTaskKey, component, async () => {
       this._requireLoggedIn();
-      console.log("Fetching events...");
+      console.log('Fetching events...');
 
-      const data: Response = await fetch(
-        `${this.appSession.serviceUrl}/api/events?filter=${filter}`,
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-        }
-      );
+      const data: Response = await fetch(`${this.appSession.serviceUrl}/api/events?filter=${filter}`, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
 
       const apiEvents: IApiEvent[] = await data.json();
-      const eventModels: EventModel[] = apiEvents.map(
-        (x) => new EventModel(x, this.appSession)
-      );
+      const eventModels: EventModel[] = apiEvents.map((x) => new EventModel(x, this.appSession));
       return eventModels;
     });
   }
@@ -142,18 +117,18 @@ export class ApiDataService {
     try {
       this._requireLoggedIn();
 
-      console.log("Posting reservation...");
+      console.log('Posting reservation...');
       const data: Response = await fetch(
         `${this.appSession.serviceUrl}/api/event-reservation/${eventModel.apiEvent.dbEventId}`,
         {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include'
         }
       );
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
     } finally {
       this._invalidateCache();
@@ -164,18 +139,18 @@ export class ApiDataService {
     try {
       this._requireLoggedIn();
 
-      console.log("Deleting reservation...");
+      console.log('Deleting reservation...');
       const data: Response = await fetch(
         `${this.appSession.serviceUrl}/api/event-reservation/${eventModel.apiEvent.dbEventId}`,
         {
-          method: "DELETE",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
+          method: 'DELETE',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include'
         }
       );
 
       if (!data.ok) {
-        throw new Error("Server Error: " + data.statusText);
+        throw new Error('Server Error: ' + data.statusText);
       }
     } finally {
       this._invalidateCache();
@@ -209,7 +184,7 @@ export class ApiDataService {
         key: apiTaskKey,
         timestamp: Date.now(),
         task: { status: ApiTaskStatus.Pending },
-        components: new Set<React.Component>(),
+        components: new Set<React.Component>()
       };
       this._cache.set(apiTaskKey, cacheEntry);
 
@@ -221,12 +196,12 @@ export class ApiDataService {
           const result = await action();
           cacheEntry2.task = {
             status: ApiTaskStatus.Success,
-            result,
+            result
           };
         } catch (error) {
           cacheEntry2.task = {
             status: ApiTaskStatus.Error,
-            error: error as Error,
+            error: error as Error
           };
         } finally {
           this.updated.fire({});
@@ -239,7 +214,7 @@ export class ApiDataService {
 
   private _requireLoggedIn(): void {
     if (!this.appSession.loggedInUser) {
-      throw new Error("Not signed in");
+      throw new Error('Not signed in');
     }
   }
 }

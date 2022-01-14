@@ -1,6 +1,6 @@
-import Cookies from "js-cookie";
+import Cookies from 'js-cookie';
 
-import { ApiDataService } from "./ApiDataService";
+import { ApiDataService } from './ApiDataService';
 
 export class AppSession {
   public readonly serviceUrl: string;
@@ -11,36 +11,36 @@ export class AppSession {
   private static _instance: AppSession | undefined;
 
   public constructor() {
-    this.loggedInUser = Cookies.get("rscommunity-logged-in-user");
+    this.loggedInUser = Cookies.get('rscommunity-logged-in-user');
 
     this.serviceUrl =
-      document.location.hostname === "localhost"
-        ? "http://localhost:8000"
-        : "https://service.rushstack.io";
+      document.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://service.rushstack.io';
 
     this.apiDataService = new ApiDataService(this);
   }
 
   public onNavigateToSignIn = (): void => {
     // After logging in, return to the current page
-    Cookies.set("rscommunity-login-return-path", document.location.pathname, {
-      sameSite: "Strict",
+    Cookies.set('rscommunity-login-return-url', document.location.href, {
+      sameSite: 'Strict',
       domain: document.location.hostname,
-      path: "/",
+      path: '/'
     });
 
-    document.location.href = this.serviceUrl + "/login-github";
+    document.location.href = this.serviceUrl + '/login-github';
   };
 
   public onNavigateToSignOut = (): void => {
     // The "Sign Out" command should return us to the site homepage
-    Cookies.set("rscommunity-login-return-path", "/", {
-      sameSite: "Strict",
+    const siteRootUrl: string = new URL('/', document.location.href).href;
+
+    Cookies.set('rscommunity-login-return-url', siteRootUrl, {
+      sameSite: 'Strict',
       domain: document.location.hostname,
-      path: "/",
+      path: '/'
     });
 
-    document.location.href = this.serviceUrl + "/logout";
+    document.location.href = this.serviceUrl + '/logout';
   };
 
   public navigateToEventDetailPage(eventId: number): void {

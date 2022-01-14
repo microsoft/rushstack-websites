@@ -24,34 +24,25 @@ export type ObjectEventParticipant = any;
 
 export interface IObjectEventArgs {}
 
-export type ObjectEventHandler<TArgs extends IObjectEventArgs> = (
-  args?: TArgs
-) => void;
+export type ObjectEventHandler<TArgs extends IObjectEventArgs> = (args?: TArgs) => void;
 
 export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
   private readonly _eventOwner: ObjectEventParticipant;
 
-  private readonly _subscriptionsByHandler: Map<
-    ObjectEventHandler<AnyArgs>,
-    ITrackedSubscription
-  > = new Map();
+  private readonly _subscriptionsByHandler: Map<ObjectEventHandler<AnyArgs>, ITrackedSubscription> =
+    new Map();
 
-  private _cachedHandlers: ObjectEventHandler<AnyArgs>[] | undefined =
-    undefined;
+  private _cachedHandlers: ObjectEventHandler<AnyArgs>[] | undefined = undefined;
 
-  private static _participantsByObject: WeakMap<
-    ObjectEventParticipant,
-    ITrackedParticipant
-  > = new WeakMap();
+  private static _participantsByObject: WeakMap<ObjectEventParticipant, ITrackedParticipant> = new WeakMap();
 
   public constructor(eventOwner: ObjectEventParticipant) {
     if (eventOwner === undefined) {
-      throw new Error("eventOwner is undefined");
+      throw new Error('eventOwner is undefined');
     }
     this._eventOwner = eventOwner;
 
-    const participant: ITrackedParticipant =
-      ObjectEvent._fetchTrackedParticipant(this._eventOwner);
+    const participant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(this._eventOwner);
     participant.ownedEvents.add(this);
   }
 
@@ -62,31 +53,27 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
    *   with {@link ObjectEvent.disposeSubscriptionsInvolving}
    * @param handler - the callback function to be invoked when the event is fired
    */
-  public subscribe(
-    handlerOwner: ObjectEventParticipant,
-    handler: ObjectEventHandler<TArgs>
-  ): void {
+  public subscribe(handlerOwner: ObjectEventParticipant, handler: ObjectEventHandler<TArgs>): void {
     if (handlerOwner === undefined) {
-      throw new Error("handlerOwner is undefined");
+      throw new Error('handlerOwner is undefined');
     }
     if (handler === undefined) {
-      throw new Error("handlerOwner is undefined");
+      throw new Error('handlerOwner is undefined');
     }
 
     if (this._subscriptionsByHandler.has(handler)) {
-      throw new Error("Event handler has already been subscribed");
+      throw new Error('Event handler has already been subscribed');
     }
 
     const subscription: ITrackedSubscription = {
       event: this,
       handlerOwner,
-      handler,
+      handler
     };
     this._subscriptionsByHandler.set(handler, subscription);
     this._cachedHandlers = undefined;
 
-    const handlerOwnerParticipant: ITrackedParticipant =
-      ObjectEvent._fetchTrackedParticipant(handlerOwner);
+    const handlerOwnerParticipant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(handlerOwner);
     handlerOwnerParticipant.subscriptions.add(subscription);
   }
 
@@ -94,14 +81,14 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
    * Removes a "handler" callback function that was added by {@link ObjectEvent.subscribe}.
    */
   public unsubscribe(handler: ObjectEventHandler<TArgs>): void {
-    const subscription: ITrackedSubscription | undefined =
-      this._subscriptionsByHandler.get(handler);
+    const subscription: ITrackedSubscription | undefined = this._subscriptionsByHandler.get(handler);
     if (subscription !== undefined) {
       this._subscriptionsByHandler.delete(handler);
       this._cachedHandlers = undefined;
 
-      const handlerOwnerParticipant: ITrackedParticipant =
-        ObjectEvent._fetchTrackedParticipant(subscription.handlerOwner);
+      const handlerOwnerParticipant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(
+        subscription.handlerOwner
+      );
       handlerOwnerParticipant.subscriptions.delete(subscription);
     }
   }
@@ -110,11 +97,10 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
    * Removes all "handler" callback functions that were added by {@link ObjectEvent.subscribe}.
    */
   public unsubscribeAll(): void {
-    for (const subscription of Array.from(
-      this._subscriptionsByHandler.values()
-    )) {
-      const handlerOwnerParticipant: ITrackedParticipant =
-        ObjectEvent._fetchTrackedParticipant(subscription.handlerOwner);
+    for (const subscription of Array.from(this._subscriptionsByHandler.values())) {
+      const handlerOwnerParticipant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(
+        subscription.handlerOwner
+      );
       handlerOwnerParticipant.subscriptions.delete(subscription);
     }
 
@@ -129,15 +115,13 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
    */
   public fire(eventArgs: TArgs): void {
     if (eventArgs === undefined) {
-      throw new Error("eventArgs is undefined");
+      throw new Error('eventArgs is undefined');
     }
 
     if (this._cachedHandlers === undefined) {
       this._cachedHandlers = [];
       if (this._subscriptionsByHandler.size > 0) {
-        for (const subscription of Array.from(
-          this._subscriptionsByHandler.values()
-        )) {
+        for (const subscription of Array.from(this._subscriptionsByHandler.values())) {
           this._cachedHandlers.push(subscription.handler);
         }
       }
@@ -154,15 +138,12 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
    * Unsubscribes any event handlers belonging to `eventParticipant`, and also calls
    * {@link ObjectEvent.unsubscribeAll} for any events owned by `eventParticipant`.
    */
-  public static disposeSubscriptionsInvolving(
-    participant: ObjectEventParticipant
-  ): void {
+  public static disposeSubscriptionsInvolving(participant: ObjectEventParticipant): void {
     if (participant === undefined) {
-      throw new Error("eventOwner is undefined");
+      throw new Error('eventOwner is undefined');
     }
 
-    const trackedParticipant: ITrackedParticipant =
-      ObjectEvent._fetchTrackedParticipant(participant);
+    const trackedParticipant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(participant);
 
     // Unsubscribe any handlers attached to any owned events
     for (const event of Array.from(trackedParticipant.ownedEvents)) {
@@ -170,31 +151,27 @@ export class ObjectEvent<TArgs extends IObjectEventArgs = {}> {
     }
 
     // Unsubscribe any handlers belonging to this object
-    for (const subscription of Array.from(
-      trackedParticipant.subscriptions.values()
-    )) {
+    for (const subscription of Array.from(trackedParticipant.subscriptions.values())) {
       // INLINE: subscription.event.unsubscribe(subscription.handler);
       const event: ObjectEvent = subscription.event;
       event._subscriptionsByHandler.delete(subscription.handler);
       event._cachedHandlers = undefined;
 
-      const handlerOwnerParticipant: ITrackedParticipant =
-        ObjectEvent._fetchTrackedParticipant(subscription.handlerOwner);
+      const handlerOwnerParticipant: ITrackedParticipant = ObjectEvent._fetchTrackedParticipant(
+        subscription.handlerOwner
+      );
       handlerOwnerParticipant.subscriptions.delete(subscription);
     }
   }
 
-  private static _fetchTrackedParticipant(
-    participant: ObjectEventParticipant
-  ): ITrackedParticipant {
-    let trackedParticipant: ITrackedParticipant | undefined =
-      this._participantsByObject.get(participant);
+  private static _fetchTrackedParticipant(participant: ObjectEventParticipant): ITrackedParticipant {
+    let trackedParticipant: ITrackedParticipant | undefined = this._participantsByObject.get(participant);
 
     if (trackedParticipant === undefined) {
       trackedParticipant = {
         participant: participant,
         ownedEvents: new Set(),
-        subscriptions: new Set(),
+        subscriptions: new Set()
       };
       this._participantsByObject.set(participant, trackedParticipant);
     }

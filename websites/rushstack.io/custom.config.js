@@ -12,5 +12,5 @@
 const SKIP_API_DOCS = process.env.SKIP_API_DOCS === '1';
 
 module.exports = {
-    SKIP_API_DOCS
+  SKIP_API_DOCS
 };
