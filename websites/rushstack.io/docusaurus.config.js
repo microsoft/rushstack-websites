@@ -46,7 +46,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/',
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/',
           remarkPlugins: [
             [
               remarkCrossSiteLinkPlugin,
@@ -67,7 +67,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/'
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/blog/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
