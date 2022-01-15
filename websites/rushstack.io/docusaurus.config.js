@@ -197,11 +197,9 @@ const config = {
         },
 
         // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.html#arguments
-        typesenseSearchParameters: {}
+        typesenseSearchParameters: {},
 
-        // TODO: This feature is temporarily disabled as a workaround for this problem:
-        // https://github.com/typesense/docusaurus-theme-search-typesense/pull/7
-        //contextualSearch: true
+        contextualSearch: true
       }
     }
 };
