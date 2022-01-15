@@ -188,7 +188,7 @@ const config = {
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'rscommunity.octogonz.com',
+              host: 'search.rushstack.io',
               port: 443,
               protocol: 'https'
             }
