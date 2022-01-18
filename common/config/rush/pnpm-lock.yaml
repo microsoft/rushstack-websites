@@ -112,7 +112,7 @@ importers:
       api-documenter-docusaurus-plugin: workspace:*
       clsx: ^1.1.1
       dayjs: ~1.10.7
-      docusaurus-theme-search-typesense: ~0.2.0
+      docusaurus-theme-search-typesense: 0.3.0-0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
       prism-react-renderer: ^1.2.1
@@ -142,7 +142,7 @@ importers:
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       api-documenter-docusaurus-plugin: link:../../tools/api-documenter-docusaurus-plugin
-      docusaurus-theme-search-typesense: 0.2.0_a9782a83b7daad1a97bf91cabc1c578c
+      docusaurus-theme-search-typesense: 0.3.0-0_a9782a83b7daad1a97bf91cabc1c578c
       rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
@@ -5204,8 +5204,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /docusaurus-theme-search-typesense/0.2.0_a9782a83b7daad1a97bf91cabc1c578c:
-    resolution: {integrity: sha512-ah05gTACQ+Yt450KqyPzrMKecK5/WnxqKQirbTAlFzOGLhfzcZZrb/rE366ENWLIIc1J14GRVzUTheyx2rM8Jw==}
+  /docusaurus-theme-search-typesense/0.3.0-0_a9782a83b7daad1a97bf91cabc1c578c:
+    resolution: {integrity: sha512-ZRKngQbire3Xjnwtp/2bDW07UzeBI+u5Px/BEK+4Y7m6bgp749SJIGK+g6vTkAcYe1fwv2mWbt43QEiGHuk1Og==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
