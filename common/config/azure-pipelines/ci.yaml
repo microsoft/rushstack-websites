@@ -1,0 +1,12 @@
+pool:
+  vmImage: 'ubuntu-latest'
+variables:
+  FORCE_COLOR: 1
+jobs:
+  - job: PRBuild
+    displayName: PR Build
+    variables:
+      NodeVersion: 14
+    steps:
+      - checkout: self
+      - template: templates/build.yaml
