@@ -35,6 +35,8 @@ const config = {
   // Deployment settings above can be overriden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
 
+  themes: ['docusaurus-theme-search-typesense'],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -44,7 +46,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/',
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/',
           remarkPlugins: [
             [
               remarkCrossSiteLinkPlugin,
@@ -65,7 +67,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/'
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/blog/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
@@ -76,7 +78,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: '',
         logo: {
@@ -88,7 +90,7 @@ const config = {
             to: '/',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
+            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)(?!api)'
           },
           ...(SKIP_API_DOCS
             ? []
@@ -179,15 +181,27 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme
       },
-      algolia: {
-        appId: 'W2G1E3U5T0',
-        apiKey: 'a0ab6dfc3db0c301b0ca8e725af85641',
-        indexName: 'rushstack.io',
-        searchParameters: {
-          exclusionPatterns: ['pages/api/*']
-        }
+      typesense: {
+        // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+        typesenseCollectionName: 'rushstack.io',
+
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'search.rushstack.io',
+              port: 443,
+              protocol: 'https'
+            }
+          ],
+          apiKey: 'sT4V46j9PmFlJ5MP7IAofccKSpJlOxfF'
+        },
+
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.html#arguments
+        typesenseSearchParameters: {},
+
+        contextualSearch: true
       }
-    })
+    }
 };
 
 module.exports = config;
