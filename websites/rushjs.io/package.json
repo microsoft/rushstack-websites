@@ -1,0 +1,50 @@
+{
+  "name": "rushjs.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source for the rushjs.io documentation website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io"
+  },
+  "homepage": "https://rushjs.io",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "update-api-docs": "node scripts/update-api-docs.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.14",
+    "@docusaurus/preset-classic": "2.0.0-beta.14",
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "dayjs": "~1.10.7",
+    "file-loader": "^6.2.0",
+    "js-cookie": "~3.0.1",
+    "prism-react-renderer": "^1.2.1",
+    "react-dom": "^17.0.1",
+    "react": "^17.0.1",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@microsoft/api-documenter": "~7.14.0",
+    "@types/js-cookie": "3.0.1",
+    "@types/react-dom": "17.0.11",
+    "@types/react": "17.0.37",
+    "api-documenter-docusaurus-plugin": "workspace:*",
+    "docusaurus-theme-search-typesense": "0.3.0-0",
+    "rehype-headerless-table-plugin": "workspace:*",
+    "remark-canonical-link-plugin": "workspace:*",
+    "remark-cross-site-link-plugin": "workspace:*",
+    "site-config": "workspace:*"
+  }
+}

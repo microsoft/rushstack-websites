@@ -1,3 +1,13 @@
+---
+title: rush.json
+---
+
+This is the template that [rush init](../../commands/rush_init)
+generates for **rush.json** (in the repo root folder):
+
+**&lt;repo root&gt;rush.json**
+
+```js
 /**
  * This is the main configuration file for Rush.
  * For full documentation, please see https://rushjs.io
@@ -16,7 +26,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.56.0",
+  "rushVersion": "5.40.0",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,9 +36,9 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "6.7.1",
+  "pnpmVersion": "5.15.2",
 
-  // "npmVersion": "6.14.15",
+  // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
 
   /**
@@ -110,7 +120,7 @@
      *
      * This option is experimental. The default value is false.
      */
-    "useWorkspaces": true
+    // "useWorkspaces": true
   },
 
   /**
@@ -124,7 +134,7 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -150,7 +160,7 @@
    * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
    * section of the common-versions.json.
    */
-  "ensureConsistentVersions": true,
+  // "ensureConsistentVersions": true,
 
   /**
    * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -175,8 +185,8 @@
    * To remove these restrictions, you could set projectFolderMinDepth=1
    * and set projectFolderMaxDepth to a large number.
    */
-  "projectFolderMinDepth": 2,
-  "projectFolderMaxDepth": 2,
+  // "projectFolderMinDepth": 2,
+  // "projectFolderMaxDepth": 2,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -247,12 +257,14 @@
     //   "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
     // ],
+
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
     // "sampleEmail": "mrexample@users.noreply.github.com",
+
     /**
      * The commit message to use when committing changes during 'rush publish'.
      *
@@ -260,7 +272,8 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "versionBumpCommitMessage": "Bump versions [skip ci]",
+    // "versionBumpCommitMessage": "Applying package updates. [skip-ci]",
+
     /**
      * The commit message to use when committing changes during 'rush version'.
      *
@@ -268,7 +281,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
+    // "changeLogUpdateCommitMessage": "Applying package updates. [skip-ci]"
   },
 
   "repository": {
@@ -287,13 +300,13 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    "url": "https://github.com/microsoft/rushstack-websites.git",
+    // "url": "https://github.com/microsoft/rush-example",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
-    "defaultBranch": "main"
+    // "defaultBranch": "master",
 
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
@@ -386,56 +399,6 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
-    // Websites
-    {
-      "packageName": "rushstack.io",
-      "projectFolder": "websites/rushstack.io"
-    },
-    {
-      "packageName": "rushjs.io",
-      "projectFolder": "websites/rushjs.io"
-    },
-
-    // Upcoming websites
-    /*
-    {
-      "packageName": "api-extractor.com",
-      "projectFolder": "websites/api-extractor.com"
-    },
-    {
-      "packageName": "tsdoc.org",
-      "projectFolder": "websites/tsdoc.org"
-    },
-    */
-
-    // Tools
-    {
-      "packageName": "api-documenter-docusaurus-plugin",
-      "projectFolder": "tools/api-documenter-docusaurus-plugin"
-    },
-    {
-      "packageName": "deploy-fork",
-      "projectFolder": "tools/deploy-fork"
-    },
-    {
-      "packageName": "site-config",
-      "projectFolder": "tools/site-config"
-    },
-
-    // Plugins
-    {
-      "packageName": "remark-canonical-link-plugin",
-      "projectFolder": "plugins/remark-canonical-link-plugin"
-    },
-    {
-      "packageName": "remark-cross-site-link-plugin",
-      "projectFolder": "plugins/remark-cross-site-link-plugin"
-    },
-    {
-      "packageName": "rehype-headerless-table-plugin",
-      "projectFolder": "plugins/rehype-headerless-table-plugin"
-    }
-
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)
@@ -506,3 +469,4 @@
     // }
   ]
 }
+```
