@@ -33,6 +33,8 @@ const config = {
   // Deployment settings above can be overriden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
 
+  themes: ['docusaurus-theme-search-typesense'],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -161,13 +163,25 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme
       },
-      algolia: {
-        appId: 'W2G1E3U5T0',
-        apiKey: 'a0ab6dfc3db0c301b0ca8e725af85641',
-        indexName: 'rushjs.io',
-        searchParameters: {
-          exclusionPatterns: ['pages/api/*']
-        }
+      typesense: {
+        // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+        typesenseCollectionName: 'rushjs.io',
+
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'search.rushstack.io',
+              port: 443,
+              protocol: 'https'
+            }
+          ],
+          apiKey: 'sT4V46j9PmFlJ5MP7IAofccKSpJlOxfF'
+        },
+
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.html#arguments
+        typesenseSearchParameters: {},
+
+        contextualSearch: true
       }
     })
 };
