@@ -28,7 +28,7 @@
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "存档",
+    "message": "归档",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
