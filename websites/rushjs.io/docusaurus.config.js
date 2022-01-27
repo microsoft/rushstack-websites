@@ -39,12 +39,12 @@ const config = {
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          routeBasePath: 'pages',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/',
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io/',
           remarkPlugins: [
             [
               remarkCrossSiteLinkPlugin,
@@ -64,18 +64,18 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/'
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io/blog/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
-      })
+      }
     ]
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: '',
         logo: {
@@ -91,7 +91,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'news',
+            docId: 'pages/news',
             position: 'right',
             label: 'News'
           },
@@ -183,7 +183,7 @@ const config = {
 
         contextualSearch: true
       }
-    })
+    }
 };
 
 module.exports = config;

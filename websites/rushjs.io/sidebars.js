@@ -18,19 +18,19 @@ const sidebars = {
       type: 'category',
       label: 'Introduction',
       collapsible: false,
-      items: ['intro/welcome', 'intro/why_mono', 'intro/get_started']
+      items: ['pages/intro/welcome', 'pages/intro/why_mono', 'pages/intro/get_started']
     },
     {
       type: 'category',
       label: 'Developer tutorials',
       collapsible: false,
       items: [
-        'developer/new_developer',
-        'developer/everyday_commands',
-        'developer/modifying_package_json',
-        'developer/other_commands',
-        'developer/tab_completion',
-        'developer/selecting_subsets'
+        'pages/developer/new_developer',
+        'pages/developer/everyday_commands',
+        'pages/developer/modifying_package_json',
+        'pages/developer/other_commands',
+        'pages/developer/tab_completion',
+        'pages/developer/selecting_subsets'
       ]
     },
     {
@@ -38,40 +38,40 @@ const sidebars = {
       label: 'Maintainer tutorials',
       collapsible: false,
       items: [
-        'maintainer/setup_new_repo',
-        'maintainer/add_to_repo',
-        'maintainer/enabling_ci_builds',
-        'maintainer/recommended_settings',
-        'maintainer/package_managers',
-        'maintainer/setup_policies',
-        'maintainer/git_hooks',
-        'maintainer/enabling_prettier',
-        'maintainer/custom_commands',
-        'maintainer/publishing',
-        'maintainer/deploying',
-        'maintainer/build_cache',
-        'maintainer/npm_registry_auth'
+        'pages/maintainer/setup_new_repo',
+        'pages/maintainer/add_to_repo',
+        'pages/maintainer/enabling_ci_builds',
+        'pages/maintainer/recommended_settings',
+        'pages/maintainer/package_managers',
+        'pages/maintainer/setup_policies',
+        'pages/maintainer/git_hooks',
+        'pages/maintainer/enabling_prettier',
+        'pages/maintainer/custom_commands',
+        'pages/maintainer/publishing',
+        'pages/maintainer/deploying',
+        'pages/maintainer/build_cache',
+        'pages/maintainer/npm_registry_auth'
       ]
     },
     {
       type: 'category',
       label: 'Best practices',
       collapsible: false,
-      items: ['best_practices/change_logs']
+      items: ['pages/best_practices/change_logs']
     },
     {
       type: 'category',
       label: 'Advanced topics',
       collapsible: false,
       items: [
-        'advanced/config_files',
-        'advanced/phantom_deps',
-        'advanced/npm_doppelgangers',
-        'advanced/preferred_versions',
-        'advanced/incremental_builds',
-        'advanced/watch_mode',
-        'advanced/installation_variants',
-        'advanced/api'
+        'pages/advanced/config_files',
+        'pages/advanced/phantom_deps',
+        'pages/advanced/npm_doppelgangers',
+        'pages/advanced/preferred_versions',
+        'pages/advanced/incremental_builds',
+        'pages/advanced/watch_mode',
+        'pages/advanced/installation_variants',
+        'pages/advanced/api'
       ]
     },
     {
@@ -79,29 +79,29 @@ const sidebars = {
       label: 'Command reference',
       collapsible: false,
       items: [
-        'commands/rush_add',
-        'commands/rush_build',
-        'commands/rush_change',
-        'commands/rush_check',
-        'commands/rush_deploy',
-        'commands/rush_init',
-        'commands/rush_init-autoinstaller',
-        'commands/rush_init-deploy',
-        'commands/rush_install',
-        'commands/rush_link',
-        'commands/rush_list',
-        'commands/rush_publish',
-        'commands/rush_purge',
-        'commands/rush_rebuild',
-        'commands/rush_scan',
-        'commands/rush_setup',
-        'commands/rush_tab-complete',
-        'commands/rush_unlink',
-        'commands/rush_update',
-        'commands/rush_update-autoinstaller',
-        'commands/rush_update-cloud-credentials',
-        'commands/rush_version',
-        'commands/rush_write-build-cache'
+        'pages/commands/rush_add',
+        'pages/commands/rush_build',
+        'pages/commands/rush_change',
+        'pages/commands/rush_check',
+        'pages/commands/rush_deploy',
+        'pages/commands/rush_init',
+        'pages/commands/rush_init-autoinstaller',
+        'pages/commands/rush_init-deploy',
+        'pages/commands/rush_install',
+        'pages/commands/rush_link',
+        'pages/commands/rush_list',
+        'pages/commands/rush_publish',
+        'pages/commands/rush_purge',
+        'pages/commands/rush_rebuild',
+        'pages/commands/rush_scan',
+        'pages/commands/rush_setup',
+        'pages/commands/rush_tab-complete',
+        'pages/commands/rush_unlink',
+        'pages/commands/rush_update',
+        'pages/commands/rush_update-autoinstaller',
+        'pages/commands/rush_update-cloud-credentials',
+        'pages/commands/rush_version',
+        'pages/commands/rush_write-build-cache'
       ]
     },
     {
@@ -109,29 +109,29 @@ const sidebars = {
       label: 'Config reference',
       collapsible: false,
       items: [
-        'configs/environment_vars',
-        'configs/npmrc',
-        'configs/npmrc-publish',
-        'configs/artifactory_json',
-        'configs/build-cache_json',
-        'configs/command-line_json',
-        'configs/common-versions_json',
-        'configs/deploy_json',
-        'configs/experiments_json',
+        'pages/configs/environment_vars',
+        'pages/configs/npmrc',
+        'pages/configs/npmrc-publish',
+        'pages/configs/artifactory_json',
+        'pages/configs/build-cache_json',
+        'pages/configs/command-line_json',
+        'pages/configs/common-versions_json',
+        'pages/configs/deploy_json',
+        'pages/configs/experiments_json',
         /*
           TODO - 404 on existing site
-          'configs/pnpmfile_js',
+          'pages/configs/pnpmfile_js',
         */
-        'configs/rush_json',
-        'configs/rush-project_json',
-        'configs/version-policies_json'
+        'pages/configs/rush_json',
+        'pages/configs/rush-project_json',
+        'pages/configs/version-policies_json'
       ]
     },
     {
       type: 'category',
       label: 'Help',
       collapsible: false,
-      items: ['help/support', 'help/faq']
+      items: ['pages/help/support', 'pages/help/faq']
     }
   ]
 };
