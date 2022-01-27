@@ -4,7 +4,7 @@ title: Getting started
 
 ## 3 minute demo
 
-Want to see Rush in action? The only prerequisite you need is [NodeJS](https://github.com/nodejs/node).
+Want to see Rush in action? The only prerequisite you need is [NodeJS](https://nodejs.org/en/download/).
 
 **From your shell, install Rush like this:**
 

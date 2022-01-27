@@ -16,7 +16,6 @@ The relevant monorepo project folders are:
 
 - [apps/rush](https://github.com/microsoft/rushstack/tree/master/apps/rush) - the command line interface front end
 - [apps/rush-lib](https://github.com/microsoft/rushstack/tree/master/apps/rush-lib) - the automation API and "engine" where all the logic is implemented
-- [apps/rush-buildxl](https://github.com/microsoft/rushstack/tree/master/apps/rush-buildxl) - adapter for integrating with the [BuildXL](https://github.com/Microsoft/BuildXL) distributed build system
 
 ## Testing Rush builds
 

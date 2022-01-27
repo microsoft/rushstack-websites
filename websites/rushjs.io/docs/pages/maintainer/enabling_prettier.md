@@ -29,7 +29,7 @@ which formats files automatically whenever you save.
 
 Before we get to the Git hook, first we need to configure Prettier, and get your existing files prettified.
 
-1.  Since Prettier will run for all files, its [config file](https://prettier.io/en/configuration.html) goes
+1.  Since Prettier will run for all files, its [config file](https://prettier.io/docs/en/configuration.html) goes
     at the root of the repo. Prettier allows many different names for this config file, but despite all that
     flexibility its JSON parser rejects code comments. Therefore it's recommended to use the `.js` file extension.
 

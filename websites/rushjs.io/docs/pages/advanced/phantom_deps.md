@@ -20,7 +20,7 @@ a "**diamond dependency**" between these four packages. Conventionally the progr
 For historical reasons, NodeJS and NPM took a different approach by representing this graph physically on disk:
 NPM models the graph vertexes using actual package folder copies, and the graph edges are implied by the
 subfolder relationships. But a folder tree's branches cannot rejoin to make diamonds.
-To handle this, NodeJS added a [special resolution rule](https://nodejs.org/api/modules.html#modules_all_together)
+To handle this, NodeJS added a [special resolution rule](https://nodejs.org/api/modules.html#all-together)
 whose effect is to introduce extra graph edges (pointing to the immediate children of all parent folders).
 From a computer science perspective, this rule relaxes the file system's
 [tree data structure](<https://en.wikipedia.org/wiki/Tree_(data_structure)>) in two ways:

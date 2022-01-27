@@ -154,10 +154,10 @@ Currently the `cacheProvider` setting provides three choices:
 - `"azure-blob-storage"`: Microsoft Azure [blob storage container](https://docs.microsoft.com/en-us/azure/storage/blobs/)
 - `"amazon-s3"`: Amazon [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
 
-Other options may be implemented in the future. (Consider contributing one by implementing a subclass of
-[CloudBuildCacheProviderBase](https://github.com/microsoft/rushstack/blob/master/apps/rush-lib/src/logic/buildCache/CloudBuildCacheProviderBase.ts).)
+(The above providers are [modeled as Rush plugins](https://github.com/microsoft/rushstack/tree/master/rush-plugins).
+Custom build cache storage providers can be implemented in the same way.)
 
-For example, here's how we would configure an Azure blob container:
+As one example, here's how to configure an Azure blob container:
 
 **common/config/rush/build-cache.json**
 
