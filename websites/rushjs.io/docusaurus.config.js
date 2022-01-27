@@ -39,7 +39,7 @@ const config = {
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -69,7 +69,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
-      })
+      }
     ]
   ],
 
@@ -91,7 +91,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'news',
+            docId: 'pages/news',
             position: 'right',
             label: 'News'
           },
