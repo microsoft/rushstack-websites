@@ -35,6 +35,13 @@ const config = {
   // Deployment settings above can be overriden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
 
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic',
+      type: 'text/css'
+    }
+  ],
+
   themes: ['docusaurus-theme-search-typesense'],
 
   presets: [

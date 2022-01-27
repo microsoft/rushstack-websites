@@ -5,16 +5,6 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
-}
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -50,6 +40,14 @@ select {
   --ifm-color-primary-light: #c96440;
   --ifm-color-primary-lighter: #cc6b49;
   --ifm-color-primary-lightest: #d48266;
+
+  --ifm-color-secondary: #868e96;
+  --ifm-color-secondary-dark: #778089;
+  --ifm-color-secondary-darker: #707981;
+  --ifm-color-secondary-darkest: #5c636a;
+  --ifm-color-secondary-light: #959ca3;
+  --ifm-color-secondary-lighter: #9da3aa;
+  --ifm-color-secondary-lightest: #b4b9be;
 
   --ifm-menu-color: #333;
 }
@@ -113,7 +111,8 @@ li.theme-doc-sidebar-item-category > a {
  */
 main {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /*
