@@ -26,7 +26,7 @@ select {
   /*
    * Rush Stack Customization - Infima style overrides
    */
-  --ifm-navbar-height: 4rem;
+  --ifm-navbar-height: 100px;
   --ifm-heading-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   /*
@@ -50,6 +50,10 @@ select {
   --ifm-color-secondary-lightest: #b4b9be;
 
   --ifm-menu-color: #333;
+}
+
+.navbar__logo {
+  height: 40px;
 }
 
 /*
