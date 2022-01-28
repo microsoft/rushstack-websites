@@ -69,7 +69,7 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
                 url="https://rushstack.io/pages/help/support/"
               />
               <PopupMenuItem
-                title="Rush hour"
+                title="Rush Hour"
                 iconPath="/images/suitenav/calendar-icon.svg"
                 url="https://rushstack.io/community/events/"
               />
