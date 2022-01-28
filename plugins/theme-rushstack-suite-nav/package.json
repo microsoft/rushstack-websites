@@ -1,0 +1,27 @@
+{
+  "name": "theme-rushstack-suite-nav",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Suite nav for the RushStack websites",
+  "license": "MIT",
+  "main": "node/index.js",
+  "scripts": {
+    "build": "heft test --clean"
+  },
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.14",
+    "@docusaurus/theme-classic": "2.0.0-beta.14",
+    "react-dom": "^17.0.1",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@docusaurus/types": "2.0.0-beta.14",
+    "@rushstack/heft-web-rig": "~0.8.1",
+    "@rushstack/heft": "~0.44.1",
+    "@types/heft-jest": "~1.0.2",
+    "@types/node": "12.20.24",
+    "@types/react-dom": "17.0.11",
+    "@types/react": "17.0.37",
+    "typescript": "~4.5.4"
+  }
+}

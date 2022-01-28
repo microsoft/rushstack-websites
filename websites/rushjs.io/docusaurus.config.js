@@ -40,7 +40,7 @@ const config = {
     }
   ],
 
-  themes: ['docusaurus-theme-search-typesense'],
+  themes: ['docusaurus-theme-search-typesense', 'theme-rushstack-suite-nav'],
 
   presets: [
     [
