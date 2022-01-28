@@ -33,6 +33,7 @@
     "prism-react-renderer": "^1.2.1",
     "react-dom": "^17.0.1",
     "react": "^17.0.1",
+    "tslib": "^2.3.1",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
@@ -45,6 +46,7 @@
     "rehype-headerless-table-plugin": "workspace:*",
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
-    "site-config": "workspace:*"
+    "site-config": "workspace:*",
+    "theme-rushstack-suite-nav": "workspace:*"
   }
 }
