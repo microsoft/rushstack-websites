@@ -81,8 +81,12 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
 
     return (
       <>
-        <div className={styles.suiteNavBar} onClick={this._onOpenPopup}>
-          <div role="button" className={[styles.hamburger, styles.hamburgerInteraction].join(' ')}>
+        <div className={styles.suiteNavBar}>
+          <div
+            role="button"
+            className={[styles.hamburger, styles.hamburgerInteraction].join(' ')}
+            onClick={this._onOpenPopup}
+          >
             <img src={'/images/suitenav/rs-hamburger.svg'} />
           </div>
           <div className={styles.hamburgerDivider} />
