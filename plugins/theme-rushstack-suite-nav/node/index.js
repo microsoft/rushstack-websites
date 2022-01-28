@@ -11,12 +11,10 @@ function theme(context) {
     name: 'theme-rushstack-suite-nav',
 
     getPathsToWatch() {
-      console.log('getPathsToWatch =-============================');
       return [path.resolve(__dirname, '../lib/theme')];
     },
 
     getThemePath() {
-      console.log('getThemePath =-============================');
       return path.resolve(__dirname, '../lib/theme');
     }
   };
