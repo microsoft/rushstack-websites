@@ -10,11 +10,9 @@ interface IPopupMenuItemProps {
 
 function PopupMenuItem(props: IPopupMenuItemProps): JSX.Element {
   return (
-    <a href={props.url}>
-      <div role="button" className={styles.popupNavItem}>
-        <img src={props.iconPath} />
-        <div className={styles.popupNavItemLabel}>{props.title}</div>
-      </div>
+    <a href={props.url} role="button" className={styles.popupNavItem}>
+      <img src={props.iconPath} />
+      <div className={styles.popupNavItemLabel}>{props.title}</div>
     </a>
   );
 }
@@ -62,7 +60,7 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
                 url="https://tsdoc.org/"
               />
 
-              <h2 className={styles.popupSubhead}>Got questions?</h2>
+              <h2 className={styles.popupSubhead}>Have questions?</h2>
               <PopupMenuItem
                 title="Chat room"
                 iconPath="/images/suitenav/chat-icon.svg"

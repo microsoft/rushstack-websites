@@ -54,7 +54,7 @@
 .popupPane {
   position: fixed;
   background-color: #ffffff;
-  width: 320px;
+  width: 260px;
   height: 100vh;
   z-index: 100001;
   box-shadow: #00000038 0px 25.6px 57.6px 0px, #00000038 0px 4.8px 14.4px 0px;
@@ -63,7 +63,7 @@
 .popupHeader {
   position: fixed;
   background-color: #eeeeee;
-  width: 320px;
+  width: 260px;
   height: 48px;
 }
 
@@ -71,31 +71,39 @@
   position: fixed;
 
   top: 48px;
-  width: 320px;
+  width: 260px;
   padding-top: 2rem;
 }
 
 .popupNavItem {
   display: flex;
 
-  height: 4rem;
+  height: 54px;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
-  padding-left: 2rem;
+  padding-left: 32px;
 
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .popupNavItemLabel {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.popupNavItem,
+.popupNavItem:hover,
+.popupNavItem:active {
+  color: #212529 !important;
+  text-decoration-color: #212529 !important;
 }
 
 .popupNavItem img {
   padding-right: 1rem;
+  width: 48px;
 }
 
 .popupNavItem:hover,
@@ -105,6 +113,8 @@
 }
 
 .popupSubhead {
-  padding-top: 3rem;
-  padding-left: 2rem;
+  padding-top: 32px;
+  padding-left: 32px;
+  margin-bottom: 4px;
+  font-size: 18px;
 }
