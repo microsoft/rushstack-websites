@@ -36,7 +36,29 @@
     /**
      * File extensions that should be copied from the src folder to the destination folder(s).
      */
-    "fileExtensions": [".json"]
+    "fileExtensions": [
+      ".aac",
+      ".css",
+      ".eot",
+      ".gif",
+      ".jpeg",
+      ".jpg",
+      ".json",
+      ".m4a",
+      ".mp3",
+      ".mp4",
+      ".oga",
+      ".otf",
+      ".png",
+      ".scss",
+      ".svg",
+      ".ttf",
+      ".wav",
+      ".webm",
+      ".webp",
+      ".woff",
+      ".woff2"
+    ]
 
     /**
      * Glob patterns that should be explicitly included.

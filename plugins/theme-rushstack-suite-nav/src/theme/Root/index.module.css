@@ -1,0 +1,44 @@
+.suiteNavBar {
+  height: 48px;
+  background: #555555;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hamburger {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 4px;
+
+  user-select: none;
+}
+
+.hamburger:active,
+.hamburger:hover {
+  cursor: pointer;
+  background-color: #808080;
+  border-radius: 4px;
+}
+
+.hamburger img {
+  height: 20px;
+}
+
+.hamburgerDivider {
+  width: 2px;
+  height: 80%;
+  background: #808080;
+}
+
+.suitNavItem {
+  padding-left: 32px;
+  color: #ffffff !important;
+}
