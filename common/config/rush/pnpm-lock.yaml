@@ -206,6 +206,7 @@ importers:
       remark-canonical-link-plugin: workspace:*
       remark-cross-site-link-plugin: workspace:*
       site-config: workspace:*
+      theme-rushstack-suite-nav: workspace:*
       url-loader: ^4.1.1
     dependencies:
       '@docusaurus/core': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
@@ -231,6 +232,7 @@ importers:
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
       site-config: link:../../tools/site-config
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
 
 packages:
 

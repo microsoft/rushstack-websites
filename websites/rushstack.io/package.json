@@ -45,6 +45,7 @@
     "rehype-headerless-table-plugin": "workspace:*",
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
-    "site-config": "workspace:*"
+    "site-config": "workspace:*",
+    "theme-rushstack-suite-nav": "workspace:*"
   }
 }
