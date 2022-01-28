@@ -24,7 +24,10 @@ The **"one repo per package"** model makes sense for isolated projects that are 
 
 The emergent principle becomes **"one Git repo per team"**, or even better **"as few Git repos as possible to get the job done"**.
 
-![My helpful screenshot]({{ "/images/home/mono-concept-h.svg" | absolute_url }}){:style={{ width: "50rem" }}}
+<div>
+  <img src="/images/home/mono-concept-h.svg" alt="monorepo block diagram" style={{ width: '50rem' }} />
+  <p />
+</div>
 
 [Lots](https://danluu.com/monorepo/) [of](https://medium.com/@bebraw/the-case-for-monorepos-907c1361708a) [people](http://blog.shippable.com/our-journey-to-microservices-and-a-mono-repository) who build large scale business software seem to end up with all their code in one big "monorepo". JavaScript is just the last guy to join the party.
 

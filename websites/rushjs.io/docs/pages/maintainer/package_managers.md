@@ -38,8 +38,6 @@ The answer depends on your needs. The Rush developers don't endorse a particular
 
 - Yarn installs faster than NPM (although somewhat slower than PNPM).
 
-- Yarn's "resolutions" feature is not yet compatible with Rush. (See [Rush issue #831](https://github.com/microsoft/rushstack/issues/831).)
-
 - Yarn's "workspaces" are not used in a Rush repo, since they rely on an installation model that doesn't protect against phantom dependencies. Rush's linking strategy is mostly equivalent to workspaces, however.
 
 ## Specifying your package manager

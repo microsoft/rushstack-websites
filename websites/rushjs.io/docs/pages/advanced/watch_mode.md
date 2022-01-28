@@ -3,7 +3,7 @@
 title: Using watch mode
 ---
 
-Popular tools like [Webpack](https://webpack.js.org/configuration/watch/) and [Jest](https://jestjs.io/en/cli.html)
+Popular tools like [Webpack](https://webpack.js.org/configuration/watch/) and [Jest](https://jestjs.io/docs/cli)
 provide a "watch mode" feature: After the task is completed, the tool enters a loop where it watches the file system
 for changes to your source files. Whenever a change is detected, the task runs again to update its output.
 This speeds up development because (1) rebuilding happens automatically whenever you save a file, and (2) the task

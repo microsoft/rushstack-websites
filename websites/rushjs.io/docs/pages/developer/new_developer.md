@@ -20,7 +20,7 @@ To see Rush's command line help, you can type:
 $ rush -h
 ```
 
-The command-line help is also published online in the [Command Reference](../../commands/rush_change).
+The command-line help is also published online in the [Command Reference](../../commands/rush_add).
 
 ## A couple caveats
 

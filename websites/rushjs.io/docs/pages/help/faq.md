@@ -86,7 +86,7 @@ code comments. Recently JSON has gained popularity as a human-edited config file
 comments. As such, most serious JSON libraries can handle comments without any trouble. (A notable exception
 is `JSON.parse()`; don't use that -- it cannot validate schemas and has poor error reporting.)
 
-VS Code highlights JSON comments as errors by default, but it provides an optional "[JSON with comments](https://code.visualstudio.com/languages/identifiers)" mode. To enable this, add this line to
+VS Code highlights JSON comments as errors by default, but it provides an optional "[JSON with comments](https://code.visualstudio.com/docs/languages/json#_json-with-comments)" mode. To enable this, add this line to
 your **settings.json** in VS Code:
 
 ```json
@@ -108,6 +108,6 @@ _For a discussion of some other possibilities, see
 
 Generally it's recommended to perform all monorepo management using Rush. The symlinks that Rush creates under the project `node_modules` folders may confuse other tools such as NPM or Yarn, causing them to malfunction because they expect a different installation model. Sometimes this is unavoidable, however. For example, when migrating an existing repo to use Rush however, the CI system may need to reuse an existing working folder to build different branches that use different installation models. To prevent interference, your CI job will first need to invoke a command that deletes the old files from the previous installation model.
 
-For Yarn or NPM, a command like `git clean -dfx` is generally sufficient. (THIS DELETES FILES -- [read the manual](https://git-scm.com/git-clean) before invoking!)
+For Yarn or NPM, a command like `git clean -dfx` is generally sufficient. (THIS DELETES FILES -- [read the manual](https://git-scm.com/docs/git-clean) before invoking!)
 
 For cleaning up a Rush installation, `git clean` is NOT recommended because it does not handle symlinks reliably. Instead, use the [rush purge](../../commands/rush_purge) command to delete the `node_modules` folders created by Rush.
