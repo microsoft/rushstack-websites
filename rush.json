@@ -434,6 +434,10 @@
     {
       "packageName": "rehype-headerless-table-plugin",
       "projectFolder": "plugins/rehype-headerless-table-plugin"
+    },
+    {
+      "packageName": "theme-rushstack-suite-nav",
+      "projectFolder": "plugins/theme-rushstack-suite-nav"
     }
 
     // {
