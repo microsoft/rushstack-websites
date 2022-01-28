@@ -1,5 +1,5 @@
 {
-  "index_name": "rushstack.io",
+  "index_name": "rushjs.io",
   "start_urls": ["https://rushjs.io/"],
   "sitemap_urls": ["https://rushjs.io/sitemap.xml"],
   "sitemap_alternate_links": true,
