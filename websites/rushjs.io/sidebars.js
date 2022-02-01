@@ -48,6 +48,7 @@ const sidebars = {
         'pages/maintainer/git_hooks',
         'pages/maintainer/enabling_prettier',
         'pages/maintainer/custom_commands',
+        'pages/maintainer/autoinstallers',
         'pages/maintainer/publishing',
         'pages/maintainer/deploying',
         'pages/maintainer/build_cache',
@@ -74,6 +75,7 @@ const sidebars = {
         'pages/advanced/incremental_builds',
         'pages/advanced/watch_mode',
         'pages/advanced/installation_variants',
+        'pages/advanced/creating_plugins',
         'pages/advanced/api'
       ]
     },
