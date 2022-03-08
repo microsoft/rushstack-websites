@@ -7,6 +7,7 @@ import { IApiEvent } from '../api/ApiInterfaces';
 import { EventModel, UserModel } from '../api/models';
 import { ApiDataService } from '../api/ApiDataService';
 import { ApiTask, ApiTaskStatus } from '../api/ApiTask';
+import { AppSession } from '../api/AppSession';
 import styles from './EventCard.module.css';
 
 function calculateEndTime(eventJson: IApiEvent): Date | undefined {
@@ -20,7 +21,11 @@ function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   return dayjs(eventJson.startTime).add(eventJson.duration, 'minute').toDate();
 }
 
-export function EventCardBody(props: { eventModel: EventModel; titleSuffix?: string }): JSX.Element {
+export function EventCardBody(props: {
+  eventModel: EventModel;
+  titleSuffix?: string;
+  titleUrl?: string;
+}): JSX.Element {
   const apiEvent: IApiEvent = props.eventModel.apiEvent;
   const endTime: Date | undefined = calculateEndTime(apiEvent);
 
@@ -70,9 +75,17 @@ export function EventCardBody(props: { eventModel: EventModel; titleSuffix?: str
     ? `${apiEvent.eventTitle} ${props.titleSuffix}`
     : apiEvent.eventTitle;
 
+  const titleElement: JSX.Element = props.titleUrl ? (
+    <a className={styles.titleUrlLink} href={props.titleUrl}>
+      {titleWithSuffix}
+    </a>
+  ) : (
+    <>{titleWithSuffix}</>
+  );
+
   return (
     <>
-      <h2>{titleWithSuffix}</h2>
+      <h2>{titleElement}</h2>
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '10px' }}>
         <div style={{ whiteSpace: 'nowrap', fontWeight: 'bold' }}>
           {formattedStartDate}
@@ -252,10 +265,16 @@ export class EventCard extends React.Component<IEventCardProps> {
       }
     }
 
+    // In the summary view, clicking on the event title takes you to the detail page
+    const titleUrl: string | undefined =
+      this.props.cardType === 'summary'
+        ? AppSession.instance.getEventDetailPageUrl(apiEvent.dbEventId)
+        : undefined;
+
     return (
       <>
         <div className={styles.eventCardBorder}>
-          <EventCardBody eventModel={eventModel} />
+          <EventCardBody eventModel={eventModel} titleUrl={titleUrl} />
           {spotsLeftDiv}
 
           <div
