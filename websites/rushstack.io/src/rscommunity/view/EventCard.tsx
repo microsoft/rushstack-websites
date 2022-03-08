@@ -20,7 +20,7 @@ function calculateEndTime(eventJson: IApiEvent): Date | undefined {
   return dayjs(eventJson.startTime).add(eventJson.duration, 'minute').toDate();
 }
 
-export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
+export function EventCardBody(props: { eventModel: EventModel; titleSuffix?: string }): JSX.Element {
   const apiEvent: IApiEvent = props.eventModel.apiEvent;
   const endTime: Date | undefined = calculateEndTime(apiEvent);
 
@@ -66,9 +66,13 @@ export function EventCardBody(props: { eventModel: EventModel }): JSX.Element {
     );
   }
 
+  const titleWithSuffix: string = props.titleSuffix
+    ? `${apiEvent.eventTitle} ${props.titleSuffix}`
+    : apiEvent.eventTitle;
+
   return (
     <>
-      <h2>{apiEvent.eventTitle}</h2>
+      <h2>{titleWithSuffix}</h2>
       <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '10px' }}>
         <div style={{ whiteSpace: 'nowrap', fontWeight: 'bold' }}>
           {formattedStartDate}
@@ -94,6 +98,43 @@ export class EventCard extends React.Component<IEventCardProps> {
   public render(): JSX.Element {
     const eventModel: EventModel = this.props.eventModel;
     const apiEvent: IApiEvent = eventModel.apiEvent;
+
+    if (apiEvent.status === 'CANCELLED' || apiEvent.status === 'RESCHEDULED') {
+      // Special rendering for canceled events
+
+      const titleSuffix: string = apiEvent.status === 'CANCELLED' ? '(cancelled)' : '(old listing)';
+      const notice: string =
+        apiEvent.status === 'CANCELLED'
+          ? 'THIS EVENT WAS CANCELLED.'
+          : 'THIS EVENT WAS RESCHEDULED. PLEASE REFER TO THE NEW LISTING.';
+
+      return (
+        <>
+          <div className={[styles.eventCardBorder, styles.eventCardBorderDefunct].join(' ')}>
+            <EventCardBody eventModel={eventModel} titleSuffix={titleSuffix} />
+
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                paddingBottom: '10px'
+              }}
+            >
+              <div
+                style={{
+                  flexGrow: 1,
+                  alignSelf: 'flex-end',
+                  fontWeight: 'bold',
+                  color: '#c95228'
+                }}
+              >
+                {notice}
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    }
 
     let footnote: JSX.Element | undefined;
     let actionButton: JSX.Element | undefined;

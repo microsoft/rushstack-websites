@@ -10,6 +10,10 @@
   border-radius: 5px;
 }
 
+.eventCardBorderDefunct {
+  background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #f0f0f0 10px, #f0f0f0 20px);
+}
+
 .detailBox {
   padding: 20px;
 
