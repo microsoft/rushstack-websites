@@ -22,10 +22,13 @@ class ProfilePageBody extends React.Component {
 
   private readonly _fullNameField: FormTextField = new FormTextField(this._formFieldSet);
   private readonly _nickNameField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _pronounsField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _locationField: FormTextField = new FormTextField(this._formFieldSet);
   private readonly _verifiedEmailField: FormComboField = new FormComboField(this._formFieldSet);
 
   private readonly _organizationNameField: FormTextField = new FormTextField(this._formFieldSet);
   private readonly _organizationUrlField: FormTextField = new FormTextField(this._formFieldSet);
+  private readonly _gitHubUsernameField: FormTextField = new FormTextField(this._formFieldSet);
   private readonly _twitterAliasField: FormTextField = new FormTextField(this._formFieldSet);
 
   private readonly _optOutOfAllEmails: FormCheckField = new FormCheckField(this._formFieldSet);
@@ -64,6 +67,9 @@ class ProfilePageBody extends React.Component {
       this._formFieldSet.resetFields(() => {
         this._fullNameField.value = apiUser.fullName;
         this._nickNameField.value = apiUser.nickName;
+        this._pronounsField.value = apiUser.pronouns;
+        this._locationField.value = apiUser.location;
+
         this._verifiedEmailField.value = apiUser.verifiedEmail;
 
         const emailChoices: string[] = apiUser.verifiedEmailChoices || [];
@@ -76,6 +82,7 @@ class ProfilePageBody extends React.Component {
 
         this._organizationNameField.value = apiUser.organizationName;
         this._organizationUrlField.value = apiUser.organizationUrl;
+        this._gitHubUsernameField.value = apiUser.gitHubUsername;
         this._twitterAliasField.value = apiUser.twitterAlias;
 
         this._optOutOfAllEmails.checked = apiUser.optOutOfAllEmails;
@@ -182,10 +189,28 @@ class ProfilePageBody extends React.Component {
             website for the components that we use.
           </label>
         </div>
+        <div className={styles.formHeading}>GitHub Alias</div>
+        <div>
+          <FormTextBox field={this._gitHubUsernameField} readOnly={true} />
+        </div>
         <div className={styles.formHeading}>Twitter Alias</div>
         <div>
           <FormTextBox field={this._twitterAliasField} />
         </div>
+
+        <div className={styles.formHeading}>Pronouns</div>
+        <div>
+          <FormTextBox field={this._pronounsField} />
+        </div>
+
+        <div className={styles.formHeading}>Location</div>
+        <div>
+          <FormTextBox field={this._locationField} />
+        </div>
+        <div>
+          <i>Example: "New York, USA"</i>
+        </div>
+
         <div>
           <DecoratedButton
             style={{ paddingTop: '20px', paddingRight: '20px' }}
@@ -217,7 +242,7 @@ class ProfilePageBody extends React.Component {
             special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether
             in an action of contract, negligence or other tort, arising out of or in connection with the use
             of the Service or the contents of the Service. For details consult the GitHub repository{' '}
-            <a href="https://github.com/microsoft/rushstack-websites/">legal notices</a> .
+            <a href="https://github.com/microsoft/rushstack-websites/">legal notices</a>.
           </p>
         </div>
       </CommunitySidebar>
@@ -242,6 +267,8 @@ class ProfilePageBody extends React.Component {
 
         fullName: this._fullNameField.value,
         nickName: this._nickNameField.value,
+        pronouns: this._pronounsField.value,
+        location: this._locationField.value,
 
         organizationName: this._organizationNameField.value,
         organizationUrl: this._organizationUrlField.value,

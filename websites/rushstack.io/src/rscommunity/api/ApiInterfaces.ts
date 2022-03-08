@@ -52,6 +52,8 @@ export type IApiTableUser = {
 
   fullName: string;
   nickName: string;
+  pronouns: string;
+  location: string;
 
   organizationName: string;
   organizationUrl: string;
@@ -86,6 +88,8 @@ export type IApiUser = AssertType<
 
     fullName: string;
     nickName: string;
+    pronouns: string;
+    location: string;
 
     organizationName: string;
     organizationUrl: string;
@@ -111,6 +115,8 @@ export interface IApiUserUpdate {
 
   fullName?: string;
   nickName?: string;
+  pronouns?: string;
+  location?: string;
 
   organizationName?: string;
   organizationUrl?: string;
