@@ -7,7 +7,6 @@ import { IApiEvent } from '../api/ApiInterfaces';
 import { EventModel, UserModel } from '../api/models';
 import { ApiDataService } from '../api/ApiDataService';
 import { ApiTask, ApiTaskStatus } from '../api/ApiTask';
-import { AppSession } from '../api/AppSession';
 import styles from './EventCard.module.css';
 
 function calculateEndTime(eventJson: IApiEvent): Date | undefined {
@@ -173,7 +172,13 @@ export class EventCard extends React.Component<IEventCardProps> {
         }
       } else {
         actionButton = (
-          <DecoratedButton onClick={eventModel.onAddReservation}>
+          <DecoratedButton
+            onClick={
+              this.props.cardType === 'summary'
+                ? eventModel.onAddReservationAndNavigate
+                : eventModel.onAddReservation // already on the detail page
+            }
+          >
             Reserve a spot - I will attend
           </DecoratedButton>
         );
@@ -219,6 +224,10 @@ export class EventCard extends React.Component<IEventCardProps> {
                     }}
                   >
                     <code>{verifiedEmail}</code>
+
+                    <a style={{ paddingLeft: '20px' }} href="/community/profile">
+                      Update email
+                    </a>
                   </div>
                 </div>
               );
@@ -268,7 +277,7 @@ export class EventCard extends React.Component<IEventCardProps> {
     // In the summary view, clicking on the event title takes you to the detail page
     const titleUrl: string | undefined =
       this.props.cardType === 'summary'
-        ? AppSession.instance.getEventDetailPageUrl(apiEvent.dbEventId)
+        ? eventModel.appSession.getEventDetailPageUrl(apiEvent.dbEventId)
         : undefined;
 
     return (

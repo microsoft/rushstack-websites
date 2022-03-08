@@ -20,6 +20,17 @@ export class EventModel {
     });
   };
 
+  public onAddReservationAndNavigate = (): void => {
+    (async () => {
+      await this.appSession.apiDataService.addReservationAsync(this);
+
+      // After successfully adding the reservation, navigate to the event detail page
+      await this.onNavigateToEventDetailPage();
+    })().catch((error) => {
+      console.error((error as Error).toString());
+    });
+  };
+
   public onRemoveReservation = (): void => {
     this.appSession.apiDataService.removeReservationAsync(this).catch((error) => {
       console.error((error as Error).toString());
