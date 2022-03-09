@@ -43,8 +43,12 @@ export class AppSession {
     document.location.href = this.serviceUrl + '/logout';
   };
 
+  public getEventDetailPageUrl(eventId: number): string {
+    return `/community/event?id=${eventId}`;
+  }
+
   public navigateToEventDetailPage(eventId: number): void {
-    document.location.href = `/community/event?id=${eventId}`;
+    document.location.href = this.getEventDetailPageUrl(eventId);
   }
 
   public static get instance(): AppSession {

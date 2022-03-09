@@ -22,8 +22,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.14",
-    "@docusaurus/preset-classic": "2.0.0-beta.14",
+    "@docusaurus/core": "2.0.0-beta.17",
+    "@docusaurus/preset-classic": "2.0.0-beta.17",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
@@ -31,20 +31,27 @@
     "file-loader": "^6.2.0",
     "js-cookie": "~3.0.1",
     "prism-react-renderer": "^1.2.1",
-    "react-dom": "^17.0.1",
-    "react": "^17.0.1",
+    "react-dom": "^16.13.1",
+    "react": "^16.13.1",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "@algolia/client-search": "^4.12.2",
+    "@babel/core": "^7.17.5",
+    "@babel/runtime": "^7.17.2",
     "@microsoft/api-documenter": "~7.14.0",
     "@types/js-cookie": "3.0.1",
     "@types/react-dom": "17.0.11",
     "@types/react": "17.0.37",
+    "algoliasearch": "^4.12.2",
     "api-documenter-docusaurus-plugin": "workspace:*",
-    "docusaurus-theme-search-typesense": "0.3.0-0",
+    "docusaurus-theme-search-typesense": "^0.3.0",
     "rehype-headerless-table-plugin": "workspace:*",
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
-    "site-config": "workspace:*"
+    "site-config": "workspace:*",
+    "theme-rushstack-suite-nav": "workspace:*",
+    "typescript": "~4.5.4",
+    "webpack": "^5.70.0"
   }
 }

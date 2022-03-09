@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.56.0",
+  "rushVersion": "5.62.4",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "6.7.1",
+  "pnpmVersion": "6.32.3",
 
   // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
@@ -391,13 +391,13 @@
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
     },
-
-    // Upcoming websites
-    /*
     {
       "packageName": "rushjs.io",
       "projectFolder": "websites/rushjs.io"
     },
+
+    // Upcoming websites
+    /*
     {
       "packageName": "api-extractor.com",
       "projectFolder": "websites/api-extractor.com"
@@ -434,6 +434,10 @@
     {
       "packageName": "rehype-headerless-table-plugin",
       "projectFolder": "plugins/rehype-headerless-table-plugin"
+    },
+    {
+      "packageName": "theme-rushstack-suite-nav",
+      "projectFolder": "plugins/theme-rushstack-suite-nav"
     }
 
     // {

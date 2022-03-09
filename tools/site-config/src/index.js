@@ -64,9 +64,19 @@ function getTargetOrg() {
 function getSiteConfig(packageName) {
   const target = getTargetOrg();
 
+  // Default URLs for each site prefix
   const sitePrefixes = {
     '@api-extractor': 'https://api-extractor.com',
     '@rushjs': 'https://rushjs.io',
+    '@rushstack': 'https://rushstack.io',
+    '@tsdoc': 'https://tsdoc.org'
+  };
+
+  // When deploying a fork, the supported websites can link between each other
+  const forkedSitePrefixes = {
+    '@api-extractor': 'https://api-extractor.com',
+    '@rushjs': '/rushstack-websites/rushjs.io',
+    '@rushstack': '/rushstack-websites/rushstack.io',
     '@tsdoc': 'https://tsdoc.org'
   };
 
@@ -80,7 +90,7 @@ function getSiteConfig(packageName) {
     case 'fork':
       return {
         ...target,
-        sitePrefixes,
+        sitePrefixes: forkedSitePrefixes,
         configOverrides: {
           baseUrl: `/rushstack-websites/${packageName}/`,
           organizationName: target.org

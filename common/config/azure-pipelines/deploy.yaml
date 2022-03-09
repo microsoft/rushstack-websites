@@ -1,0 +1,20 @@
+pr: none
+trigger: main
+pool:
+  vmImage: 'ubuntu-latest'
+variables:
+  FORCE_COLOR: 1
+jobs:
+  - job: Deploy
+    displayName: Deploy
+    variables:
+      NodeVersion: 14
+    steps:
+      - checkout: self
+      - template: templates/build.yaml
+      - script: 'GITHUB_USER=[user] rushx deploy'
+        displayName: Deploy rushjs.io
+        workingDirectory: websites/rushjs.io
+      - script: 'GITHUB_USER=[user] rushx deploy'
+        displayName: Deploy rushstack.io
+        workingDirectory: websites/rushstack.io

@@ -9,11 +9,15 @@
     "deploy": "docusaurus deploy --skip-build"
   },
   "dependencies": {
+    "rushjs.io": "workspace:*",
     "rushstack.io": "workspace:*",
     "site-config": "workspace:*"
   },
   "devDependencies": {
     "@rushstack/node-core-library": "~3.44.3",
-    "@docusaurus/core": "2.0.0-beta.14"
+    "@docusaurus/core": "2.0.0-beta.17",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "~4.5.4"
   }
 }
