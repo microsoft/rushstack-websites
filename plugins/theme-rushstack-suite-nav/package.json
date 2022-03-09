@@ -9,13 +9,13 @@
     "build": "heft test --clean"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.14",
-    "react-dom": "^17.0.1",
-    "react": "^17.0.1",
+    "@docusaurus/core": "2.0.0-beta.17",
+    "react-dom": "^16.13.1",
+    "react": "^16.13.1",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@docusaurus/types": "2.0.0-beta.14",
+    "@docusaurus/types": "2.0.0-beta.17",
     "@rushstack/heft-web-rig": "~0.8.1",
     "@rushstack/heft": "~0.44.1",
     "@types/heft-jest": "~1.0.2",

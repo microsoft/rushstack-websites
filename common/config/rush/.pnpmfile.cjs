@@ -33,5 +33,29 @@ function readPackage(packageJson, context) {
   //  packageJson.dependencies['log4js'] = '0.6.38';
   // }
 
+  if (packageJson.dependencies) {
+    // The docusaurus-theme-search-typesense project does not keep u with latest Docusaurus releases.
+    if (packageJson.name === 'docusaurus-theme-search-typesense') {
+      const docusaurusPackageNames = [
+        '@docusaurus/core',
+        '@docusaurus/theme-common',
+        '@docusaurus/utils',
+        '@docusaurus/utils-validation'
+      ];
+      for (const docusaurusPackageName of docusaurusPackageNames) {
+        if (packageJson.dependencies[docusaurusPackageName]) {
+          console.log('PATCH: ' + docusaurusPackageName);
+          packageJson.dependencies[docusaurusPackageName] = '2.0.0-beta.17';
+        }
+      }
+    }
+
+    // Temporary workaround for this issue:
+    // https://github.com/typesense/docusaurus-theme-search-typesense/issues/11
+    if (packageJson.dependencies['typesense-instantsearch-adapter']) {
+      packageJson.dependencies['typesense-instantsearch-adapter'] = '2.3.0';
+    }
+  }
+
   return packageJson;
 }
