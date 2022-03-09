@@ -29,8 +29,25 @@ export class FormTextField extends FormField {
   };
 }
 
-export function FormTextBox(props: { field: FormTextField }): JSX.Element {
-  return (
-    <input type="text" style={{ width: '20em' }} value={props.field.value} onChange={props.field.onChange} />
-  );
+export function FormTextBox(props: { field: FormTextField; readOnly?: boolean }): JSX.Element {
+  if (props.readOnly) {
+    return (
+      <input
+        type="text"
+        style={{ width: '20em' }}
+        value={props.field.value}
+        readOnly={true}
+        disabled={true}
+      />
+    );
+  } else {
+    return (
+      <input
+        type="text"
+        style={{ width: '20em' }}
+        value={props.field.value}
+        onChange={props.field.onChange}
+      />
+    );
+  }
 }
