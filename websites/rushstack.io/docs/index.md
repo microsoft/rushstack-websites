@@ -21,7 +21,7 @@ These major tools are developed under the **Rush Stack** umbrella:
 - [Rush](@rushjs/): the scalable monorepo build orchestrator
 - [Heft](./pages/heft/overview.md): an extensible build system that interfaces with Rush
 - [API Extractor](@api-extractor/): coordinates API reviews for library packages, and generates .d.ts rollups
-- [API Documenter](@api-extractor/pages/setup/generating_docs.md): generates your API documentation website
+- [API Documenter](@api-extractor/pages/setup/generating_docs): generates your API documentation website
 - [@<!---->rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): our standardized
   ESLint rule set, specifically designed for large scale TypeScript monorepos
 - [@<!---->rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
