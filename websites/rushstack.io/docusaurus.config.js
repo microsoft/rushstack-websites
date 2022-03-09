@@ -19,6 +19,10 @@ const config = {
   // tagline: 'Dinosaurs are cool',
   url: 'https://rushstack.io',
   baseUrl: '/',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-cn'],
+  },
 
   trailingSlash: true,
 
@@ -93,6 +97,10 @@ const config = {
           src: 'images/rushstack.svg'
         },
         items: [
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
           {
             to: '/',
             position: 'right',

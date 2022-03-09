@@ -1,0 +1,1394 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Overview": {
+    "message": "概述",
+    "description": "The label for category Overview in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft": {
+    "message": "Heft",
+    "description": "The label for category Heft in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft tutorials": {
+    "message": "Heft 教程",
+    "description": "The label for category Heft tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft tasks": {
+    "message": "Heft 任务",
+    "description": "The label for category Heft tasks in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft config files": {
+    "message": "Heft 配置文件",
+    "description": "The label for category Heft config files in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Contributing": {
+    "message": "贡献",
+    "description": "The label for category Contributing in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Help": {
+    "message": "帮助",
+    "description": "The label for category Help in sidebar docsSidebar"
+  },
+  "sidebar.apiSidebar.category.API Reference": {
+    "message": "API 参考手册",
+    "description": "The label for category API Reference in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@microsoft/api-documenter": {
+    "message": "@microsoft/api-documenter",
+    "description": "The label for category @microsoft/api-documenter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiDocumenterPluginManifest": {
+    "message": "IApiDocumenterPluginManifest",
+    "description": "The label for category IApiDocumenterPluginManifest in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFeatureDefinition": {
+    "message": "IFeatureDefinition",
+    "description": "The label for category IFeatureDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IMarkdownDocumenterFeatureOnBeforeWritePageArgs": {
+    "message": "IMarkdownDocumenterFeatureOnBeforeWritePageArgs",
+    "description": "The label for category IMarkdownDocumenterFeatureOnBeforeWritePageArgs in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MarkdownDocumenterAccessor": {
+    "message": "MarkdownDocumenterAccessor",
+    "description": "The label for category MarkdownDocumenterAccessor in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MarkdownDocumenterFeature": {
+    "message": "MarkdownDocumenterFeature",
+    "description": "The label for category MarkdownDocumenterFeature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MarkdownDocumenterFeatureContext": {
+    "message": "MarkdownDocumenterFeatureContext",
+    "description": "The label for category MarkdownDocumenterFeatureContext in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PluginFeature": {
+    "message": "PluginFeature",
+    "description": "The label for category PluginFeature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@microsoft/api-extractor": {
+    "message": "@microsoft/api-extractor",
+    "description": "The label for category @microsoft/api-extractor in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CompilerState": {
+    "message": "CompilerState",
+    "description": "The label for category CompilerState in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Extractor": {
+    "message": "Extractor",
+    "description": "The label for category Extractor in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ExtractorConfig": {
+    "message": "ExtractorConfig",
+    "description": "The label for category ExtractorConfig in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ExtractorMessage": {
+    "message": "ExtractorMessage",
+    "description": "The label for category ExtractorMessage in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ExtractorResult": {
+    "message": "ExtractorResult",
+    "description": "The label for category ExtractorResult in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICompilerStateCreateOptions": {
+    "message": "ICompilerStateCreateOptions",
+    "description": "The label for category ICompilerStateCreateOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigApiReport": {
+    "message": "IConfigApiReport",
+    "description": "The label for category IConfigApiReport in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigCompiler": {
+    "message": "IConfigCompiler",
+    "description": "The label for category IConfigCompiler in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigDocModel": {
+    "message": "IConfigDocModel",
+    "description": "The label for category IConfigDocModel in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigDtsRollup": {
+    "message": "IConfigDtsRollup",
+    "description": "The label for category IConfigDtsRollup in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigFile": {
+    "message": "IConfigFile",
+    "description": "The label for category IConfigFile in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigMessageReportingRule": {
+    "message": "IConfigMessageReportingRule",
+    "description": "The label for category IConfigMessageReportingRule in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigTsdocMetadata": {
+    "message": "IConfigTsdocMetadata",
+    "description": "The label for category IConfigTsdocMetadata in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtractorConfigLoadForFolderOptions": {
+    "message": "IExtractorConfigLoadForFolderOptions",
+    "description": "The label for category IExtractorConfigLoadForFolderOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtractorConfigPrepareOptions": {
+    "message": "IExtractorConfigPrepareOptions",
+    "description": "The label for category IExtractorConfigPrepareOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtractorInvokeOptions": {
+    "message": "IExtractorInvokeOptions",
+    "description": "The label for category IExtractorInvokeOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtractorMessageProperties": {
+    "message": "IExtractorMessageProperties",
+    "description": "The label for category IExtractorMessageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtractorMessagesConfig": {
+    "message": "IExtractorMessagesConfig",
+    "description": "The label for category IExtractorMessagesConfig in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@microsoft/api-extractor-model": {
+    "message": "@microsoft/api-extractor-model",
+    "description": "The label for category @microsoft/api-extractor-model in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiCallSignature": {
+    "message": "ApiCallSignature",
+    "description": "The label for category ApiCallSignature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiClass": {
+    "message": "ApiClass",
+    "description": "The label for category ApiClass in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiConstructor": {
+    "message": "ApiConstructor",
+    "description": "The label for category ApiConstructor in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiConstructSignature": {
+    "message": "ApiConstructSignature",
+    "description": "The label for category ApiConstructSignature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiDeclaredItem": {
+    "message": "ApiDeclaredItem",
+    "description": "The label for category ApiDeclaredItem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiDocumentedItem": {
+    "message": "ApiDocumentedItem",
+    "description": "The label for category ApiDocumentedItem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiEntryPoint": {
+    "message": "ApiEntryPoint",
+    "description": "The label for category ApiEntryPoint in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiEnum": {
+    "message": "ApiEnum",
+    "description": "The label for category ApiEnum in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiEnumMember": {
+    "message": "ApiEnumMember",
+    "description": "The label for category ApiEnumMember in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiFunction": {
+    "message": "ApiFunction",
+    "description": "The label for category ApiFunction in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiIndexSignature": {
+    "message": "ApiIndexSignature",
+    "description": "The label for category ApiIndexSignature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiInterface": {
+    "message": "ApiInterface",
+    "description": "The label for category ApiInterface in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiItem": {
+    "message": "ApiItem",
+    "description": "The label for category ApiItem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiItemContainerMixin": {
+    "message": "ApiItemContainerMixin",
+    "description": "The label for category ApiItemContainerMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiMethod": {
+    "message": "ApiMethod",
+    "description": "The label for category ApiMethod in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiMethodSignature": {
+    "message": "ApiMethodSignature",
+    "description": "The label for category ApiMethodSignature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiModel": {
+    "message": "ApiModel",
+    "description": "The label for category ApiModel in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiNameMixin": {
+    "message": "ApiNameMixin",
+    "description": "The label for category ApiNameMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiNamespace": {
+    "message": "ApiNamespace",
+    "description": "The label for category ApiNamespace in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiOptionalMixin": {
+    "message": "ApiOptionalMixin",
+    "description": "The label for category ApiOptionalMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiPackage": {
+    "message": "ApiPackage",
+    "description": "The label for category ApiPackage in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiParameterListMixin": {
+    "message": "ApiParameterListMixin",
+    "description": "The label for category ApiParameterListMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiProperty": {
+    "message": "ApiProperty",
+    "description": "The label for category ApiProperty in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiPropertyItem": {
+    "message": "ApiPropertyItem",
+    "description": "The label for category ApiPropertyItem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiPropertySignature": {
+    "message": "ApiPropertySignature",
+    "description": "The label for category ApiPropertySignature in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiReleaseTagMixin": {
+    "message": "ApiReleaseTagMixin",
+    "description": "The label for category ApiReleaseTagMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiReturnTypeMixin": {
+    "message": "ApiReturnTypeMixin",
+    "description": "The label for category ApiReturnTypeMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiStaticMixin": {
+    "message": "ApiStaticMixin",
+    "description": "The label for category ApiStaticMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiTypeAlias": {
+    "message": "ApiTypeAlias",
+    "description": "The label for category ApiTypeAlias in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiTypeParameterListMixin": {
+    "message": "ApiTypeParameterListMixin",
+    "description": "The label for category ApiTypeParameterListMixin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApiVariable": {
+    "message": "ApiVariable",
+    "description": "The label for category ApiVariable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Excerpt": {
+    "message": "Excerpt",
+    "description": "The label for category Excerpt in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ExcerptToken": {
+    "message": "ExcerptToken",
+    "description": "The label for category ExcerptToken in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.HeritageType": {
+    "message": "HeritageType",
+    "description": "The label for category HeritageType in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiClassOptions": {
+    "message": "IApiClassOptions",
+    "description": "The label for category IApiClassOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiDeclaredItemOptions": {
+    "message": "IApiDeclaredItemOptions",
+    "description": "The label for category IApiDeclaredItemOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiDocumentedItemOptions": {
+    "message": "IApiDocumentedItemOptions",
+    "description": "The label for category IApiDocumentedItemOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiEnumMemberOptions": {
+    "message": "IApiEnumMemberOptions",
+    "description": "The label for category IApiEnumMemberOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiInterfaceOptions": {
+    "message": "IApiInterfaceOptions",
+    "description": "The label for category IApiInterfaceOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiItemContainerMixinOptions": {
+    "message": "IApiItemContainerMixinOptions",
+    "description": "The label for category IApiItemContainerMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiNameMixinOptions": {
+    "message": "IApiNameMixinOptions",
+    "description": "The label for category IApiNameMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiOptionalMixinOptions": {
+    "message": "IApiOptionalMixinOptions",
+    "description": "The label for category IApiOptionalMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiPackageOptions": {
+    "message": "IApiPackageOptions",
+    "description": "The label for category IApiPackageOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiPackageSaveOptions": {
+    "message": "IApiPackageSaveOptions",
+    "description": "The label for category IApiPackageSaveOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiParameterListMixinOptions": {
+    "message": "IApiParameterListMixinOptions",
+    "description": "The label for category IApiParameterListMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiParameterOptions": {
+    "message": "IApiParameterOptions",
+    "description": "The label for category IApiParameterOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiPropertyItemOptions": {
+    "message": "IApiPropertyItemOptions",
+    "description": "The label for category IApiPropertyItemOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiReleaseTagMixinOptions": {
+    "message": "IApiReleaseTagMixinOptions",
+    "description": "The label for category IApiReleaseTagMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiReturnTypeMixinOptions": {
+    "message": "IApiReturnTypeMixinOptions",
+    "description": "The label for category IApiReturnTypeMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiStaticMixinOptions": {
+    "message": "IApiStaticMixinOptions",
+    "description": "The label for category IApiStaticMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiTypeAliasOptions": {
+    "message": "IApiTypeAliasOptions",
+    "description": "The label for category IApiTypeAliasOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiTypeParameterListMixinOptions": {
+    "message": "IApiTypeParameterListMixinOptions",
+    "description": "The label for category IApiTypeParameterListMixinOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiTypeParameterOptions": {
+    "message": "IApiTypeParameterOptions",
+    "description": "The label for category IApiTypeParameterOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IApiVariableOptions": {
+    "message": "IApiVariableOptions",
+    "description": "The label for category IApiVariableOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExcerptToken": {
+    "message": "IExcerptToken",
+    "description": "The label for category IExcerptToken in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExcerptTokenRange": {
+    "message": "IExcerptTokenRange",
+    "description": "The label for category IExcerptTokenRange in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IParameterOptions": {
+    "message": "IParameterOptions",
+    "description": "The label for category IParameterOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IResolveDeclarationReferenceResult": {
+    "message": "IResolveDeclarationReferenceResult",
+    "description": "The label for category IResolveDeclarationReferenceResult in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITypeParameterOptions": {
+    "message": "ITypeParameterOptions",
+    "description": "The label for category ITypeParameterOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Parameter": {
+    "message": "Parameter",
+    "description": "The label for category Parameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ReleaseTag": {
+    "message": "ReleaseTag",
+    "description": "The label for category ReleaseTag in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TypeParameter": {
+    "message": "TypeParameter",
+    "description": "The label for category TypeParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@microsoft/rush-lib": {
+    "message": "@microsoft/rush-lib",
+    "description": "The label for category @microsoft/rush-lib in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApprovedPackagesConfiguration": {
+    "message": "ApprovedPackagesConfiguration",
+    "description": "The label for category ApprovedPackagesConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApprovedPackagesItem": {
+    "message": "ApprovedPackagesItem",
+    "description": "The label for category ApprovedPackagesItem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ApprovedPackagesPolicy": {
+    "message": "ApprovedPackagesPolicy",
+    "description": "The label for category ApprovedPackagesPolicy in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ChangeManager": {
+    "message": "ChangeManager",
+    "description": "The label for category ChangeManager in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommonVersionsConfiguration": {
+    "message": "CommonVersionsConfiguration",
+    "description": "The label for category CommonVersionsConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.EventHooks": {
+    "message": "EventHooks",
+    "description": "The label for category EventHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ExperimentsConfiguration": {
+    "message": "ExperimentsConfiguration",
+    "description": "The label for category ExperimentsConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigurationEnvironmentVariable": {
+    "message": "IConfigurationEnvironmentVariable",
+    "description": "The label for category IConfigurationEnvironmentVariable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExperimentsJson": {
+    "message": "IExperimentsJson",
+    "description": "The label for category IExperimentsJson in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IGetChangedProjectsOptions": {
+    "message": "IGetChangedProjectsOptions",
+    "description": "The label for category IGetChangedProjectsOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILaunchOptions": {
+    "message": "ILaunchOptions",
+    "description": "The label for category ILaunchOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IndividualVersionPolicy": {
+    "message": "IndividualVersionPolicy",
+    "description": "The label for category IndividualVersionPolicy in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPackageManagerOptionsJsonBase": {
+    "message": "IPackageManagerOptionsJsonBase",
+    "description": "The label for category IPackageManagerOptionsJsonBase in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITryFindRushJsonLocationOptions": {
+    "message": "ITryFindRushJsonLocationOptions",
+    "description": "The label for category ITryFindRushJsonLocationOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.LockStepVersionPolicy": {
+    "message": "LockStepVersionPolicy",
+    "description": "The label for category LockStepVersionPolicy in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageJsonDependency": {
+    "message": "PackageJsonDependency",
+    "description": "The label for category PackageJsonDependency in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageJsonEditor": {
+    "message": "PackageJsonEditor",
+    "description": "The label for category PackageJsonEditor in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageManager": {
+    "message": "PackageManager",
+    "description": "The label for category PackageManager in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageManagerOptionsConfigurationBase": {
+    "message": "PackageManagerOptionsConfigurationBase",
+    "description": "The label for category PackageManagerOptionsConfigurationBase in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PnpmOptionsConfiguration": {
+    "message": "PnpmOptionsConfiguration",
+    "description": "The label for category PnpmOptionsConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ProjectChangeAnalyzer": {
+    "message": "ProjectChangeAnalyzer",
+    "description": "The label for category ProjectChangeAnalyzer in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.RepoStateFile": {
+    "message": "RepoStateFile",
+    "description": "The label for category RepoStateFile in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Rush": {
+    "message": "Rush",
+    "description": "The label for category Rush in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.RushConfiguration": {
+    "message": "RushConfiguration",
+    "description": "The label for category RushConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.RushConfigurationProject": {
+    "message": "RushConfigurationProject",
+    "description": "The label for category RushConfigurationProject in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.VersionPolicy": {
+    "message": "VersionPolicy",
+    "description": "The label for category VersionPolicy in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.VersionPolicyConfiguration": {
+    "message": "VersionPolicyConfiguration",
+    "description": "The label for category VersionPolicyConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.YarnOptionsConfiguration": {
+    "message": "YarnOptionsConfiguration",
+    "description": "The label for category YarnOptionsConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/debug-certificate-manager": {
+    "message": "@rushstack/debug-certificate-manager",
+    "description": "The label for category @rushstack/debug-certificate-manager in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CertificateManager": {
+    "message": "CertificateManager",
+    "description": "The label for category CertificateManager in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CertificateStore": {
+    "message": "CertificateStore",
+    "description": "The label for category CertificateStore in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICertificate": {
+    "message": "ICertificate",
+    "description": "The label for category ICertificate in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/heft": {
+    "message": "@rushstack/heft",
+    "description": "The label for category @rushstack/heft in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.BuildStageHooks": {
+    "message": "BuildStageHooks",
+    "description": "The label for category BuildStageHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.BuildSubstageHooksBase": {
+    "message": "BuildSubstageHooksBase",
+    "description": "The label for category BuildSubstageHooksBase in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.BundleSubstageHooks": {
+    "message": "BundleSubstageHooks",
+    "description": "The label for category BundleSubstageHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CleanStageHooks": {
+    "message": "CleanStageHooks",
+    "description": "The label for category CleanStageHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CompileSubstageHooks": {
+    "message": "CompileSubstageHooks",
+    "description": "The label for category CompileSubstageHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.HeftCommandLine": {
+    "message": "HeftCommandLine",
+    "description": "The label for category HeftCommandLine in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.HeftConfiguration": {
+    "message": "HeftConfiguration",
+    "description": "The label for category HeftConfiguration in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.HeftSession": {
+    "message": "HeftSession",
+    "description": "The label for category HeftSession in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IBuildStageProperties": {
+    "message": "IBuildStageProperties",
+    "description": "The label for category IBuildStageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IBuildSubstage": {
+    "message": "IBuildSubstage",
+    "description": "The label for category IBuildSubstage in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IBundleSubstageProperties": {
+    "message": "IBundleSubstageProperties",
+    "description": "The label for category IBundleSubstageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICleanStageProperties": {
+    "message": "ICleanStageProperties",
+    "description": "The label for category ICleanStageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICompileSubstageProperties": {
+    "message": "ICompileSubstageProperties",
+    "description": "The label for category ICompileSubstageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionOptions": {
+    "message": "ICustomActionOptions",
+    "description": "The label for category ICustomActionOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionParameterBase": {
+    "message": "ICustomActionParameterBase",
+    "description": "The label for category ICustomActionParameterBase in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionParameterFlag": {
+    "message": "ICustomActionParameterFlag",
+    "description": "The label for category ICustomActionParameterFlag in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionParameterInteger": {
+    "message": "ICustomActionParameterInteger",
+    "description": "The label for category ICustomActionParameterInteger in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionParameterString": {
+    "message": "ICustomActionParameterString",
+    "description": "The label for category ICustomActionParameterString in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomActionParameterStringList": {
+    "message": "ICustomActionParameterStringList",
+    "description": "The label for category ICustomActionParameterStringList in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IHeftActionConfigurationOptions": {
+    "message": "IHeftActionConfigurationOptions",
+    "description": "The label for category IHeftActionConfigurationOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IHeftBaseParameter": {
+    "message": "IHeftBaseParameter",
+    "description": "The label for category IHeftBaseParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IHeftPlugin": {
+    "message": "IHeftPlugin",
+    "description": "The label for category IHeftPlugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IHeftSessionHooks": {
+    "message": "IHeftSessionHooks",
+    "description": "The label for category IHeftSessionHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IMetricsData": {
+    "message": "IMetricsData",
+    "description": "The label for category IMetricsData in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IParameterAssociatedActionNames": {
+    "message": "IParameterAssociatedActionNames",
+    "description": "The label for category IParameterAssociatedActionNames in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IRunScriptOptions": {
+    "message": "IRunScriptOptions",
+    "description": "The label for category IRunScriptOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IScopedLogger": {
+    "message": "IScopedLogger",
+    "description": "The label for category IScopedLogger in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStageContext": {
+    "message": "IStageContext",
+    "description": "The label for category IStageContext in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITestStageProperties": {
+    "message": "ITestStageProperties",
+    "description": "The label for category ITestStageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MetricsCollectorHooks": {
+    "message": "MetricsCollectorHooks",
+    "description": "The label for category MetricsCollectorHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ScopedLogger": {
+    "message": "ScopedLogger",
+    "description": "The label for category ScopedLogger in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StageHooksBase": {
+    "message": "StageHooksBase",
+    "description": "The label for category StageHooksBase in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TestStageHooks": {
+    "message": "TestStageHooks",
+    "description": "The label for category TestStageHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/heft-config-file": {
+    "message": "@rushstack/heft-config-file",
+    "description": "The label for category @rushstack/heft-config-file in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ConfigurationFile": {
+    "message": "ConfigurationFile",
+    "description": "The label for category ConfigurationFile in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConfigurationFileOptions": {
+    "message": "IConfigurationFileOptions",
+    "description": "The label for category IConfigurationFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICustomPropertyInheritance": {
+    "message": "ICustomPropertyInheritance",
+    "description": "The label for category ICustomPropertyInheritance in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonPathMetadata": {
+    "message": "IJsonPathMetadata",
+    "description": "The label for category IJsonPathMetadata in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IOriginalValueOptions": {
+    "message": "IOriginalValueOptions",
+    "description": "The label for category IOriginalValueOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPropertyInheritance": {
+    "message": "IPropertyInheritance",
+    "description": "The label for category IPropertyInheritance in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/heft-webpack4-plugin": {
+    "message": "@rushstack/heft-webpack4-plugin",
+    "description": "The label for category @rushstack/heft-webpack4-plugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IWebpackBuildStageProperties": {
+    "message": "IWebpackBuildStageProperties",
+    "description": "The label for category IWebpackBuildStageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IWebpackBundleSubstageProperties": {
+    "message": "IWebpackBundleSubstageProperties",
+    "description": "The label for category IWebpackBundleSubstageProperties in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IWebpackConfigurationWithDevServer": {
+    "message": "IWebpackConfigurationWithDevServer",
+    "description": "The label for category IWebpackConfigurationWithDevServer in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/heft-webpack5-plugin": {
+    "message": "@rushstack/heft-webpack5-plugin",
+    "description": "The label for category @rushstack/heft-webpack5-plugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/localization-plugin": {
+    "message": "@rushstack/localization-plugin",
+    "description": "The label for category @rushstack/localization-plugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IDefaultLocaleOptions": {
+    "message": "IDefaultLocaleOptions",
+    "description": "The label for category IDefaultLocaleOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizationPluginOptions": {
+    "message": "ILocalizationPluginOptions",
+    "description": "The label for category ILocalizationPluginOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizationStats": {
+    "message": "ILocalizationStats",
+    "description": "The label for category ILocalizationStats in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizationStatsChunkGroup": {
+    "message": "ILocalizationStatsChunkGroup",
+    "description": "The label for category ILocalizationStatsChunkGroup in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizationStatsEntrypoint": {
+    "message": "ILocalizationStatsEntrypoint",
+    "description": "The label for category ILocalizationStatsEntrypoint in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizationStatsOptions": {
+    "message": "ILocalizationStatsOptions",
+    "description": "The label for category ILocalizationStatsOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizedData": {
+    "message": "ILocalizedData",
+    "description": "The label for category ILocalizedData in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILocalizedWebpackChunk": {
+    "message": "ILocalizedWebpackChunk",
+    "description": "The label for category ILocalizedWebpackChunk in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPassthroughLocaleOptions": {
+    "message": "IPassthroughLocaleOptions",
+    "description": "The label for category IPassthroughLocaleOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPseudolocaleOptions": {
+    "message": "IPseudolocaleOptions",
+    "description": "The label for category IPseudolocaleOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITypingsGenerationOptions": {
+    "message": "ITypingsGenerationOptions",
+    "description": "The label for category ITypingsGenerationOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITypingsGeneratorOptions": {
+    "message": "ITypingsGeneratorOptions",
+    "description": "The label for category ITypingsGeneratorOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.LocalizationPlugin": {
+    "message": "LocalizationPlugin",
+    "description": "The label for category LocalizationPlugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TypingsGenerator": {
+    "message": "TypingsGenerator",
+    "description": "The label for category TypingsGenerator in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/module-minifier-plugin": {
+    "message": "@rushstack/module-minifier-plugin",
+    "description": "The label for category @rushstack/module-minifier-plugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IAssetInfo": {
+    "message": "IAssetInfo",
+    "description": "The label for category IAssetInfo in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IDehydratedAssets": {
+    "message": "IDehydratedAssets",
+    "description": "The label for category IDehydratedAssets in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExtendedModule": {
+    "message": "IExtendedModule",
+    "description": "The label for category IExtendedModule in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleInfo": {
+    "message": "IModuleInfo",
+    "description": "The label for category IModuleInfo in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinificationErrorResult": {
+    "message": "IModuleMinificationErrorResult",
+    "description": "The label for category IModuleMinificationErrorResult in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinificationRequest": {
+    "message": "IModuleMinificationRequest",
+    "description": "The label for category IModuleMinificationRequest in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinificationSuccessResult": {
+    "message": "IModuleMinificationSuccessResult",
+    "description": "The label for category IModuleMinificationSuccessResult in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinifier": {
+    "message": "IModuleMinifier",
+    "description": "The label for category IModuleMinifier in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinifierPluginHooks": {
+    "message": "IModuleMinifierPluginHooks",
+    "description": "The label for category IModuleMinifierPluginHooks in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IModuleMinifierPluginOptions": {
+    "message": "IModuleMinifierPluginOptions",
+    "description": "The label for category IModuleMinifierPluginOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ISynchronousMinifierOptions": {
+    "message": "ISynchronousMinifierOptions",
+    "description": "The label for category ISynchronousMinifierOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IWorkerPoolMinifierOptions": {
+    "message": "IWorkerPoolMinifierOptions",
+    "description": "The label for category IWorkerPoolMinifierOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ModuleMinifierPlugin": {
+    "message": "ModuleMinifierPlugin",
+    "description": "The label for category ModuleMinifierPlugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.NoopMinifier": {
+    "message": "NoopMinifier",
+    "description": "The label for category NoopMinifier in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PortableMinifierModuleIdsPlugin": {
+    "message": "PortableMinifierModuleIdsPlugin",
+    "description": "The label for category PortableMinifierModuleIdsPlugin in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.SynchronousMinifier": {
+    "message": "SynchronousMinifier",
+    "description": "The label for category SynchronousMinifier in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.WorkerPoolMinifier": {
+    "message": "WorkerPoolMinifier",
+    "description": "The label for category WorkerPoolMinifier in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/node-core-library": {
+    "message": "@rushstack/node-core-library",
+    "description": "The label for category @rushstack/node-core-library in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AlreadyReportedError": {
+    "message": "AlreadyReportedError",
+    "description": "The label for category AlreadyReportedError in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.AnsiEscape": {
+    "message": "AnsiEscape",
+    "description": "The label for category AnsiEscape in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Async": {
+    "message": "Async",
+    "description": "The label for category Async in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Colors": {
+    "message": "Colors",
+    "description": "The label for category Colors in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ConsoleTerminalProvider": {
+    "message": "ConsoleTerminalProvider",
+    "description": "The label for category ConsoleTerminalProvider in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Enum": {
+    "message": "Enum",
+    "description": "The label for category Enum in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.EnvironmentMap": {
+    "message": "EnvironmentMap",
+    "description": "The label for category EnvironmentMap in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Executable": {
+    "message": "Executable",
+    "description": "The label for category Executable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.FileSystem": {
+    "message": "FileSystem",
+    "description": "The label for category FileSystem in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.FileWriter": {
+    "message": "FileWriter",
+    "description": "The label for category FileWriter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IAnsiEscapeConvertForTestsOptions": {
+    "message": "IAnsiEscapeConvertForTestsOptions",
+    "description": "The label for category IAnsiEscapeConvertForTestsOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IAsyncParallelismOptions": {
+    "message": "IAsyncParallelismOptions",
+    "description": "The label for category IAsyncParallelismOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IColorableSequence": {
+    "message": "IColorableSequence",
+    "description": "The label for category IColorableSequence in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IConsoleTerminalProviderOptions": {
+    "message": "IConsoleTerminalProviderOptions",
+    "description": "The label for category IConsoleTerminalProviderOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IEnvironmentEntry": {
+    "message": "IEnvironmentEntry",
+    "description": "The label for category IEnvironmentEntry in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExecutableResolveOptions": {
+    "message": "IExecutableResolveOptions",
+    "description": "The label for category IExecutableResolveOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExecutableSpawnOptions": {
+    "message": "IExecutableSpawnOptions",
+    "description": "The label for category IExecutableSpawnOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IExecutableSpawnSyncOptions": {
+    "message": "IExecutableSpawnSyncOptions",
+    "description": "The label for category IExecutableSpawnSyncOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemCopyFileBaseOptions": {
+    "message": "IFileSystemCopyFileBaseOptions",
+    "description": "The label for category IFileSystemCopyFileBaseOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemCopyFileOptions": {
+    "message": "IFileSystemCopyFileOptions",
+    "description": "The label for category IFileSystemCopyFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemCopyFilesAsyncOptions": {
+    "message": "IFileSystemCopyFilesAsyncOptions",
+    "description": "The label for category IFileSystemCopyFilesAsyncOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemCopyFilesOptions": {
+    "message": "IFileSystemCopyFilesOptions",
+    "description": "The label for category IFileSystemCopyFilesOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemCreateLinkOptions": {
+    "message": "IFileSystemCreateLinkOptions",
+    "description": "The label for category IFileSystemCreateLinkOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemDeleteFileOptions": {
+    "message": "IFileSystemDeleteFileOptions",
+    "description": "The label for category IFileSystemDeleteFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemMoveOptions": {
+    "message": "IFileSystemMoveOptions",
+    "description": "The label for category IFileSystemMoveOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemReadFileOptions": {
+    "message": "IFileSystemReadFileOptions",
+    "description": "The label for category IFileSystemReadFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemReadFolderOptions": {
+    "message": "IFileSystemReadFolderOptions",
+    "description": "The label for category IFileSystemReadFolderOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemUpdateTimeParameters": {
+    "message": "IFileSystemUpdateTimeParameters",
+    "description": "The label for category IFileSystemUpdateTimeParameters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileSystemWriteFileOptions": {
+    "message": "IFileSystemWriteFileOptions",
+    "description": "The label for category IFileSystemWriteFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IFileWriterFlags": {
+    "message": "IFileWriterFlags",
+    "description": "The label for category IFileWriterFlags in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IImportResolveModuleOptions": {
+    "message": "IImportResolveModuleOptions",
+    "description": "The label for category IImportResolveModuleOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IImportResolveOptions": {
+    "message": "IImportResolveOptions",
+    "description": "The label for category IImportResolveOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IImportResolvePackageOptions": {
+    "message": "IImportResolvePackageOptions",
+    "description": "The label for category IImportResolvePackageOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonFileSaveOptions": {
+    "message": "IJsonFileSaveOptions",
+    "description": "The label for category IJsonFileSaveOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonFileStringifyOptions": {
+    "message": "IJsonFileStringifyOptions",
+    "description": "The label for category IJsonFileStringifyOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonSchemaErrorInfo": {
+    "message": "IJsonSchemaErrorInfo",
+    "description": "The label for category IJsonSchemaErrorInfo in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonSchemaFromFileOptions": {
+    "message": "IJsonSchemaFromFileOptions",
+    "description": "The label for category IJsonSchemaFromFileOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IJsonSchemaValidateOptions": {
+    "message": "IJsonSchemaValidateOptions",
+    "description": "The label for category IJsonSchemaValidateOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Import": {
+    "message": "Import",
+    "description": "The label for category Import in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.INodePackageJson": {
+    "message": "INodePackageJson",
+    "description": "The label for category INodePackageJson in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.InternalError": {
+    "message": "InternalError",
+    "description": "The label for category InternalError in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPackageJson": {
+    "message": "IPackageJson",
+    "description": "The label for category IPackageJson in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPackageJsonLookupParameters": {
+    "message": "IPackageJsonLookupParameters",
+    "description": "The label for category IPackageJsonLookupParameters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPackageJsonRepository": {
+    "message": "IPackageJsonRepository",
+    "description": "The label for category IPackageJsonRepository in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPackageNameParserOptions": {
+    "message": "IPackageNameParserOptions",
+    "description": "The label for category IPackageNameParserOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IParsedPackageName": {
+    "message": "IParsedPackageName",
+    "description": "The label for category IParsedPackageName in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IParsedPackageNameOrError": {
+    "message": "IParsedPackageNameOrError",
+    "description": "The label for category IParsedPackageNameOrError in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IPathFormatConciselyOptions": {
+    "message": "IPathFormatConciselyOptions",
+    "description": "The label for category IPathFormatConciselyOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IProtectableMapParameters": {
+    "message": "IProtectableMapParameters",
+    "description": "The label for category IProtectableMapParameters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStringBufferOutputOptions": {
+    "message": "IStringBufferOutputOptions",
+    "description": "The label for category IStringBufferOutputOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStringBuilder": {
+    "message": "IStringBuilder",
+    "description": "The label for category IStringBuilder in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITerminal": {
+    "message": "ITerminal",
+    "description": "The label for category ITerminal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITerminalProvider": {
+    "message": "ITerminalProvider",
+    "description": "The label for category ITerminalProvider in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.JsonFile": {
+    "message": "JsonFile",
+    "description": "The label for category JsonFile in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.JsonSchema": {
+    "message": "JsonSchema",
+    "description": "The label for category JsonSchema in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.LegacyAdapters": {
+    "message": "LegacyAdapters",
+    "description": "The label for category LegacyAdapters in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.LockFile": {
+    "message": "LockFile",
+    "description": "The label for category LockFile in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MapExtensions": {
+    "message": "MapExtensions",
+    "description": "The label for category MapExtensions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageJsonLookup": {
+    "message": "PackageJsonLookup",
+    "description": "The label for category PackageJsonLookup in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageName": {
+    "message": "PackageName",
+    "description": "The label for category PackageName in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PackageNameParser": {
+    "message": "PackageNameParser",
+    "description": "The label for category PackageNameParser in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Path": {
+    "message": "Path",
+    "description": "The label for category Path in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ProtectableMap": {
+    "message": "ProtectableMap",
+    "description": "The label for category ProtectableMap in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Sort": {
+    "message": "Sort",
+    "description": "The label for category Sort in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StringBufferTerminalProvider": {
+    "message": "StringBufferTerminalProvider",
+    "description": "The label for category StringBufferTerminalProvider in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StringBuilder": {
+    "message": "StringBuilder",
+    "description": "The label for category StringBuilder in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Terminal": {
+    "message": "Terminal",
+    "description": "The label for category Terminal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Text": {
+    "message": "Text",
+    "description": "The label for category Text in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TypeUuid": {
+    "message": "TypeUuid",
+    "description": "The label for category TypeUuid in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/package-deps-hash": {
+    "message": "@rushstack/package-deps-hash",
+    "description": "The label for category @rushstack/package-deps-hash in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/rig-package": {
+    "message": "@rushstack/rig-package",
+    "description": "The label for category @rushstack/rig-package in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ILoadForProjectFolderOptions": {
+    "message": "ILoadForProjectFolderOptions",
+    "description": "The label for category ILoadForProjectFolderOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IRigConfigJson": {
+    "message": "IRigConfigJson",
+    "description": "The label for category IRigConfigJson in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.RigConfig": {
+    "message": "RigConfig",
+    "description": "The label for category RigConfig in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/stream-collator": {
+    "message": "@rushstack/stream-collator",
+    "description": "The label for category @rushstack/stream-collator in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CollatedTerminal": {
+    "message": "CollatedTerminal",
+    "description": "The label for category CollatedTerminal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CollatedWriter": {
+    "message": "CollatedWriter",
+    "description": "The label for category CollatedWriter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStreamCollatorOptions": {
+    "message": "IStreamCollatorOptions",
+    "description": "The label for category IStreamCollatorOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StreamCollator": {
+    "message": "StreamCollator",
+    "description": "The label for category StreamCollator in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/terminal": {
+    "message": "@rushstack/terminal",
+    "description": "The label for category @rushstack/terminal in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CallbackWritable": {
+    "message": "CallbackWritable",
+    "description": "The label for category CallbackWritable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.DiscardStdoutTransform": {
+    "message": "DiscardStdoutTransform",
+    "description": "The label for category DiscardStdoutTransform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICallbackWritableOptions": {
+    "message": "ICallbackWritableOptions",
+    "description": "The label for category ICallbackWritableOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.INormalizeNewlinesTextRewriterOptions": {
+    "message": "INormalizeNewlinesTextRewriterOptions",
+    "description": "The label for category INormalizeNewlinesTextRewriterOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ISplitterTransformOptions": {
+    "message": "ISplitterTransformOptions",
+    "description": "The label for category ISplitterTransformOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStdioLineTransformOptions": {
+    "message": "IStdioLineTransformOptions",
+    "description": "The label for category IStdioLineTransformOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStdioSummarizerOptions": {
+    "message": "IStdioSummarizerOptions",
+    "description": "The label for category IStdioSummarizerOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITerminalChunk": {
+    "message": "ITerminalChunk",
+    "description": "The label for category ITerminalChunk in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITerminalTransformOptions": {
+    "message": "ITerminalTransformOptions",
+    "description": "The label for category ITerminalTransformOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITerminalWritableOptions": {
+    "message": "ITerminalWritableOptions",
+    "description": "The label for category ITerminalWritableOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ITextRewriterTransformOptions": {
+    "message": "ITextRewriterTransformOptions",
+    "description": "The label for category ITextRewriterTransformOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.MockWritable": {
+    "message": "MockWritable",
+    "description": "The label for category MockWritable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.NormalizeNewlinesTextRewriter": {
+    "message": "NormalizeNewlinesTextRewriter",
+    "description": "The label for category NormalizeNewlinesTextRewriter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.PrintUtilities": {
+    "message": "PrintUtilities",
+    "description": "The label for category PrintUtilities in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.RemoveColorsTextRewriter": {
+    "message": "RemoveColorsTextRewriter",
+    "description": "The label for category RemoveColorsTextRewriter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.SplitterTransform": {
+    "message": "SplitterTransform",
+    "description": "The label for category SplitterTransform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StderrLineTransform": {
+    "message": "StderrLineTransform",
+    "description": "The label for category StderrLineTransform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StdioSummarizer": {
+    "message": "StdioSummarizer",
+    "description": "The label for category StdioSummarizer in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StdioWritable": {
+    "message": "StdioWritable",
+    "description": "The label for category StdioWritable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TerminalTransform": {
+    "message": "TerminalTransform",
+    "description": "The label for category TerminalTransform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TerminalWritable": {
+    "message": "TerminalWritable",
+    "description": "The label for category TerminalWritable in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TextRewriter": {
+    "message": "TextRewriter",
+    "description": "The label for category TextRewriter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TextRewriterTransform": {
+    "message": "TextRewriterTransform",
+    "description": "The label for category TextRewriterTransform in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/tree-pattern": {
+    "message": "@rushstack/tree-pattern",
+    "description": "The label for category @rushstack/tree-pattern in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.TreePattern": {
+    "message": "TreePattern",
+    "description": "The label for category TreePattern in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/ts-command-line": {
+    "message": "@rushstack/ts-command-line",
+    "description": "The label for category @rushstack/ts-command-line in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineAction": {
+    "message": "CommandLineAction",
+    "description": "The label for category CommandLineAction in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineChoiceListParameter": {
+    "message": "CommandLineChoiceListParameter",
+    "description": "The label for category CommandLineChoiceListParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineChoiceParameter": {
+    "message": "CommandLineChoiceParameter",
+    "description": "The label for category CommandLineChoiceParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineFlagParameter": {
+    "message": "CommandLineFlagParameter",
+    "description": "The label for category CommandLineFlagParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineHelper": {
+    "message": "CommandLineHelper",
+    "description": "The label for category CommandLineHelper in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineIntegerListParameter": {
+    "message": "CommandLineIntegerListParameter",
+    "description": "The label for category CommandLineIntegerListParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineIntegerParameter": {
+    "message": "CommandLineIntegerParameter",
+    "description": "The label for category CommandLineIntegerParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineParameter": {
+    "message": "CommandLineParameter",
+    "description": "The label for category CommandLineParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineParameterProvider": {
+    "message": "CommandLineParameterProvider",
+    "description": "The label for category CommandLineParameterProvider in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineParameterWithArgument": {
+    "message": "CommandLineParameterWithArgument",
+    "description": "The label for category CommandLineParameterWithArgument in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineParser": {
+    "message": "CommandLineParser",
+    "description": "The label for category CommandLineParser in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineRemainder": {
+    "message": "CommandLineRemainder",
+    "description": "The label for category CommandLineRemainder in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineStringListParameter": {
+    "message": "CommandLineStringListParameter",
+    "description": "The label for category CommandLineStringListParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.CommandLineStringParameter": {
+    "message": "CommandLineStringParameter",
+    "description": "The label for category CommandLineStringParameter in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.DynamicCommandLineAction": {
+    "message": "DynamicCommandLineAction",
+    "description": "The label for category DynamicCommandLineAction in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.DynamicCommandLineParser": {
+    "message": "DynamicCommandLineParser",
+    "description": "The label for category DynamicCommandLineParser in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IBaseCommandLineDefinition": {
+    "message": "IBaseCommandLineDefinition",
+    "description": "The label for category IBaseCommandLineDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IBaseCommandLineDefinitionWithArgument": {
+    "message": "IBaseCommandLineDefinitionWithArgument",
+    "description": "The label for category IBaseCommandLineDefinitionWithArgument in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineActionOptions": {
+    "message": "ICommandLineActionOptions",
+    "description": "The label for category ICommandLineActionOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineChoiceDefinition": {
+    "message": "ICommandLineChoiceDefinition",
+    "description": "The label for category ICommandLineChoiceDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineChoiceListDefinition": {
+    "message": "ICommandLineChoiceListDefinition",
+    "description": "The label for category ICommandLineChoiceListDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineIntegerDefinition": {
+    "message": "ICommandLineIntegerDefinition",
+    "description": "The label for category ICommandLineIntegerDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineParserOptions": {
+    "message": "ICommandLineParserOptions",
+    "description": "The label for category ICommandLineParserOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineRemainderDefinition": {
+    "message": "ICommandLineRemainderDefinition",
+    "description": "The label for category ICommandLineRemainderDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.ICommandLineStringDefinition": {
+    "message": "ICommandLineStringDefinition",
+    "description": "The label for category ICommandLineStringDefinition in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.@rushstack/typings-generator": {
+    "message": "@rushstack/typings-generator",
+    "description": "The label for category @rushstack/typings-generator in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStringValuesTypingsGeneratorOptions": {
+    "message": "IStringValuesTypingsGeneratorOptions",
+    "description": "The label for category IStringValuesTypingsGeneratorOptions in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStringValueTyping": {
+    "message": "IStringValueTyping",
+    "description": "The label for category IStringValueTyping in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.IStringValueTypings": {
+    "message": "IStringValueTypings",
+    "description": "The label for category IStringValueTypings in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.StringValuesTypingsGenerator": {
+    "message": "StringValuesTypingsGenerator",
+    "description": "The label for category StringValuesTypingsGenerator in sidebar apiSidebar"
+  }
+}
