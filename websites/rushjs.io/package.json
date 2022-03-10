@@ -24,6 +24,7 @@
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.17",
     "@docusaurus/preset-classic": "2.0.0-beta.17",
+    "@docusaurus/theme-common": "2.0.0-beta.17",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
@@ -46,7 +47,7 @@
     "@types/react": "17.0.37",
     "algoliasearch": "^4.12.2",
     "api-documenter-docusaurus-plugin": "workspace:*",
-    "docusaurus-theme-search-typesense": "^0.3.0",
+    "docusaurus-theme-search-typesense": "0.4.0-1",
     "rehype-headerless-table-plugin": "workspace:*",
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
