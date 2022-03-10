@@ -4,8 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const { SKIP_API_DOCS, SITE_PREFIXES } = require('./custom.config.js');
-
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
@@ -21,7 +19,7 @@ const config = {
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-cn'],
+    locales: ['en', 'zh-cn']
   },
 
   trailingSlash: true,
@@ -72,8 +70,7 @@ const config = {
               }
             ]
           ],
-          rehypePlugins: [rehypeHeaderlessTablePlugin],
-          ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
+          rehypePlugins: [rehypeHeaderlessTablePlugin]
         },
         blog: {
           showReadingTime: true,
@@ -99,24 +96,19 @@ const config = {
         items: [
           {
             type: 'localeDropdown',
-            position: 'left',
+            position: 'left'
           },
           {
             to: '/',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)(?!api)'
+            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
           },
-          ...(SKIP_API_DOCS
-            ? []
-            : [
-                {
-                  type: 'doc',
-                  docId: 'pages/api/index',
-                  position: 'right',
-                  label: 'API'
-                }
-              ]),
+          {
+            href: 'https://api.rushstack.io/',
+            position: 'right',
+            label: 'API'
+          },
           {
             type: 'doc',
             docId: 'pages/shop',
