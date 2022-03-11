@@ -98,7 +98,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'pages/api/index',
+            docId: 'pages/index',
             position: 'right',
             label: 'API'
           },

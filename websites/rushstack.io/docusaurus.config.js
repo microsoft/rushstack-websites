@@ -105,7 +105,7 @@ const config = {
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)'
           },
           {
-            href: 'https://api.rushstack.io/',
+            href: 'https://api.rushstack.io/pages/',
             position: 'right',
             label: 'API'
           },
