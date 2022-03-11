@@ -175,35 +175,35 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
+      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       url-loader: 4.1.1_file-loader@6.2.0+webpack@5.70.0
     devDependencies:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@microsoft/api-documenter': 7.14.2
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       algoliasearch: 4.12.2
       api-documenter-docusaurus-plugin: link:../../tools/api-documenter-docusaurus-plugin
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
       site-config: link:../../tools/site-config
-      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       typescript: 4.5.5
       webpack: 5.70.0
 
@@ -243,36 +243,36 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
+      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       tslib: 2.3.1
       url-loader: 4.1.1_file-loader@6.2.0+webpack@5.70.0
     devDependencies:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@microsoft/api-documenter': 7.14.2
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       algoliasearch: 4.12.2
       api-documenter-docusaurus-plugin: link:../../tools/api-documenter-docusaurus-plugin
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
       site-config: link:../../tools/site-config
-      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       typescript: 4.5.5
       webpack: 5.70.0
 
@@ -309,33 +309,33 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
+      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       url-loader: 4.1.1_file-loader@6.2.0+webpack@5.70.0
     devDependencies:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       algoliasearch: 4.12.2
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
       rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
       site-config: link:../../tools/site-config
-      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
       typescript: 4.5.5
       webpack: 5.70.0
 
@@ -345,7 +345,7 @@ packages:
     resolution: {integrity: sha512-/SLS6636Wpl7eFiX7eEy0E3wBo60sUm1qRYybJBDt1fs8reiJ1+OSy+dZgrLBfLL4mSFqRIIUHXbVp25QdZ+iw==}
     dependencies:
       '@algolia/autocomplete-shared': 1.2.1
-    dev: true
+    dev: false
 
   /@algolia/autocomplete-core/1.5.2:
     resolution: {integrity: sha512-DY0bhyczFSS1b/CqJlTE/nQRtnTAHl6IemIkBy0nEWnhDzRDdtdx4p5Uuk3vwAFxwEEgi1WqKwgSSMx6DpNL4A==}
@@ -362,7 +362,7 @@ packages:
       '@algolia/autocomplete-shared': 1.2.1
       '@algolia/client-search': 4.12.2
       algoliasearch: 4.12.2
-    dev: true
+    dev: false
 
   /@algolia/autocomplete-preset-algolia/1.5.2_14692054139f70b780ac93b62be8ffd8:
     resolution: {integrity: sha512-3MRYnYQFJyovANzSX2CToS6/5cfVjbLLqFsZTKcvF3abhQzxbqwwaMBlJtt620uBUOeMzhdfasKhCc40+RHiZw==}
@@ -377,7 +377,7 @@ packages:
 
   /@algolia/autocomplete-shared/1.2.1:
     resolution: {integrity: sha512-RHCwcXAYFwDXTlomstjWRFIzOfyxtQ9KmViacPE5P5hxUSSjkmG3dAb77xdydift1PaZNbho5TNTCi5UZe0RpA==}
-    dev: true
+    dev: false
 
   /@algolia/autocomplete-shared/1.5.2:
     resolution: {integrity: sha512-ylQAYv5H0YKMfHgVWX0j0NmL8XBcAeeeVQUmppnnMtzDbDnca6CzhKj3Q8eF9cHCgcdTDdb5K+3aKyGWA0obug==}
@@ -433,6 +433,7 @@ packages:
 
   /@algolia/events/4.0.1:
     resolution: {integrity: sha512-FQzvOCgoFXAbf5Y6mYozw2aj5KCJoA3m4heImceldzPSMbdyS4atVjJzXKMsfX3wnZTFYwkkt8/z8UesLHlSBQ==}
+    dev: false
 
   /@algolia/logger-common/4.12.2:
     resolution: {integrity: sha512-iOiJAymLjq137G7+8EQuUEkrgta0cZGMg6scp8s4hJ+X6k+6By4nyptdkCWYwKLsW/Xy927QcIhGlkWV78vQIQ==}
@@ -1713,7 +1714,7 @@ packages:
 
   /@docsearch/css/3.0.0-alpha.39:
     resolution: {integrity: sha512-lr10MFTgcR3NRea/FtJ7uNtIpQz0XVwYxbpO5wxykgfHu1sxZTr6zwkuPquRgFYXnccxsTvfoIiK3rMH0fLr/w==}
-    dev: true
+    dev: false
 
   /@docsearch/react/3.0.0_75f81618b9b7b627711b12145b06d3d0:
     resolution: {integrity: sha512-yhMacqS6TVQYoBh/o603zszIb5Bl8MIXuOc6Vy617I74pirisDzzcNh0NEaYQt50fVVR3khUbeEhUEWEWipESg==}
@@ -1929,7 +1930,7 @@ packages:
       - utf-8-validate
       - vue-template-compiler
       - webpack-cli
-    dev: false
+    dev: true
 
   /@docusaurus/plugin-content-blog/2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b:
     resolution: {integrity: sha512-gcX4UR+WKT4bhF8FICBQHy+ESS9iRMeaglSboTZbA/YHGax/3EuZtcPU3dU4E/HFJeZ866wgUdbLKpIpsZOidg==}
@@ -4160,6 +4161,7 @@ packages:
     dependencies:
       '@algolia/events': 4.0.1
       algoliasearch: 4.12.2
+    dev: false
 
   /algoliasearch/4.12.2:
     resolution: {integrity: sha512-bn1P9+V415zeDQJtXn+1SwuwedEAv9/LJAxt8XwR6ygH/sMwaHSm2hpkz8wIbCBt/tKQ43TL672Kyxzv5PwGgQ==}
@@ -4459,7 +4461,7 @@ packages:
       follow-redirects: 1.14.9
     transitivePeerDependencies:
       - debug
-    dev: true
+    dev: false
 
   /axios/0.25.0:
     resolution: {integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==}
@@ -5197,6 +5199,7 @@ packages:
   /clsx/1.1.1:
     resolution: {integrity: sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==}
     engines: {node: '>=6'}
+    dev: false
 
   /co/4.6.0:
     resolution: {integrity: sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=}
@@ -6085,7 +6088,7 @@ packages:
       - supports-color
       - uglify-js
       - webpack-cli
-    dev: true
+    dev: false
 
   /dom-converter/0.2.0:
     resolution: {integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==}
@@ -9243,7 +9246,6 @@ packages:
   /loglevel/1.8.0:
     resolution: {integrity: sha512-G6A/nJLRgWOuuwdNuA6koovfEV1YpqqAG4pRUlFaz3jj2QNZ8M4vBqnVA+HBTmU/AMNUtlOsMmSpF6NyOjztbA==}
     engines: {node: '>= 0.6.0'}
-    dev: true
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -12811,7 +12813,7 @@ packages:
       - '@babel/runtime'
       - algoliasearch
       - debug
-    dev: true
+    dev: false
 
   /typesense-instantsearch-adapter/2.4.0_@babel+runtime@7.17.2:
     resolution: {integrity: sha512-zJCfrF7j/jgQnyqUoyshSj84IMMaMVYzZyfEnCM/6YQyPPmObbr/EzxL49u4lcl50SW4EjgBie4SRvjR/r8ttA==}
@@ -12823,7 +12825,7 @@ packages:
       typesense: 1.2.2_@babel+runtime@7.17.2
     transitivePeerDependencies:
       - debug
-    dev: true
+    dev: false
 
   /typesense/0.14.0_@babel+runtime@7.17.2:
     resolution: {integrity: sha512-9ZLkjwhCYXCZuYmvS6En5hJm3AMhFZMbZ7hRMVFJlyK3essNqd8MSWEt2bpAvbvTN+1FgGLBQPJnpYdsbkVsKg==}
@@ -12835,7 +12837,7 @@ packages:
       loglevel: 1.8.0
     transitivePeerDependencies:
       - debug
-    dev: true
+    dev: false
 
   /typesense/1.2.2_@babel+runtime@7.17.2:
     resolution: {integrity: sha512-MOKAIGTXbL0RkbHOvpr8RHP7it7UhCc0x4KJ8+p5lwh6Q9bSht6pJqMn6bXybomYA7CHVzIm4+IWVz6dHdUBow==}
@@ -12847,7 +12849,7 @@ packages:
       loglevel: 1.8.0
     transitivePeerDependencies:
       - debug
-    dev: true
+    dev: false
 
   /ua-parser-js/0.7.31:
     resolution: {integrity: sha512-qLK/Xe9E2uzmYI3qLeOmI0tEOt+TBBQyUIAh4aAgU05FVYzeZrKUdkAZfBNVGRaHVgV0TDkdEngJSw/SyQchkQ==}
