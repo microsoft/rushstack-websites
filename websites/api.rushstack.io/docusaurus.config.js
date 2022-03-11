@@ -4,8 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const { SKIP_API_DOCS, SITE_PREFIXES } = require('./custom.config.js');
-
 const { getSiteConfig } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
@@ -17,12 +15,8 @@ const { plugin: rehypeHeaderlessTablePlugin } = require('rehype-headerless-table
 const config = {
   title: 'Rush Stack',
   // tagline: 'Dinosaurs are cool',
-  url: 'https://rushstack.io',
+  url: 'https://api.rushstack.io',
   baseUrl: '/',
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh-cn']
-  },
 
   trailingSlash: true,
 
@@ -34,7 +28,7 @@ const config = {
 
   favicon: 'images/favicon.ico',
   organizationName: 'microsoft',
-  projectName: 'rushstack.io-website',
+  projectName: 'api.rushstack.io-website',
 
   // Deployment settings above can be overriden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
@@ -68,12 +62,11 @@ const config = {
             [
               remarkCanonicalLinkPlugin,
               {
-                prefix: 'https://rushstack.io/'
+                prefix: 'https://api.rushstack.io/'
               }
             ]
           ],
-          rehypePlugins: [rehypeHeaderlessTablePlugin],
-          ...(SKIP_API_DOCS ? { exclude: ['api/**/*.md'] } : {})
+          rehypePlugins: [rehypeHeaderlessTablePlugin]
         },
         blog: {
           showReadingTime: true,
@@ -98,50 +91,40 @@ const config = {
         },
         items: [
           {
-            type: 'localeDropdown',
-            position: 'left'
-          },
-          {
-            to: '/',
+            href: 'https://rushstack.io' + '/',
             position: 'right',
             label: 'Docs',
             activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)(?!api)'
           },
-          ...(SKIP_API_DOCS
-            ? []
-            : [
-                {
-                  type: 'doc',
-                  docId: 'pages/api/index',
-                  position: 'right',
-                  label: 'API'
-                }
-              ]),
           {
             type: 'doc',
-            docId: 'pages/shop',
+            docId: 'pages/api/index',
+            position: 'right',
+            label: 'API'
+          },
+          {
+            href: 'https://rushstack.io' + 'pages/shop',
             position: 'right',
             label: 'Shop'
           },
           {
-            type: 'doc',
-            docId: 'pages/news',
+            href: 'https://rushstack.io' + 'pages/news',
             position: 'right',
             label: 'News'
           },
           {
-            to: '/community/events',
+            href: 'https://rushstack.io' + '/community/events',
             position: 'right',
             label: 'Events'
           },
           {
-            to: 'pages/contributing/get_started',
+            href: 'https://rushstack.io' + 'pages/contributing/get_started',
             position: 'right',
             label: 'GitHub',
             activeBasePath: 'pages/contributing/get_started'
           },
           {
-            to: 'pages/help/support',
+            href: 'https://rushstack.io' + 'pages/help/support',
             position: 'right',
             label: 'Help',
             activeBasePath: 'pages/help/support'
