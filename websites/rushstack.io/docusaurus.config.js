@@ -19,7 +19,7 @@ const config = {
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-cn']
+    locales: ['en', 'es', 'zh']
   },
 
   trailingSlash: true,
