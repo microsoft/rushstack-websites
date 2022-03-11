@@ -146,6 +146,7 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -174,6 +175,7 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
@@ -211,6 +213,7 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -240,6 +243,7 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
@@ -278,6 +282,7 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -304,6 +309,7 @@ importers:
       webpack: ^5.70.0
     dependencies:
       '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
+      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@docusaurus/preset-classic': 2.0.0-beta.17_36480ae545f8a96f8f37993c8fa4b09a
       '@docusaurus/theme-common': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@mdx-js/react': 1.6.22_react@16.14.0
@@ -1888,6 +1894,40 @@ packages:
       - '@swc/core'
       - esbuild
       - uglify-js
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/plugin-client-redirects/2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b:
+    resolution: {integrity: sha512-PfITCVgENyB0j1ErwSOQ3d1dvxbBEcZxiJrlu41v5Q6GiZWWJ4wSJRpOzqZiVUotfhnBn4NmpgVfGnmGkGPK4A==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
+      '@docusaurus/logger': 2.0.0-beta.17
+      '@docusaurus/utils': 2.0.0-beta.17
+      '@docusaurus/utils-common': 2.0.0-beta.17
+      '@docusaurus/utils-validation': 2.0.0-beta.17
+      eta: 1.12.3
+      fs-extra: 10.0.1
+      lodash: 4.17.21
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+      tslib: 2.3.1
+    transitivePeerDependencies:
+      - '@parcel/css'
+      - '@swc/core'
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
       - webpack-cli
     dev: false
 
