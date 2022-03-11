@@ -159,7 +159,7 @@ importers:
       api-documenter-docusaurus-plugin: workspace:*
       clsx: ^1.1.1
       dayjs: ~1.10.7
-      docusaurus-theme-search-typesense: 0.4.0-1
+      docusaurus-theme-search-typesense: 0.4.0-2
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
       prism-react-renderer: ^1.2.1
@@ -181,7 +181,7 @@ importers:
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
+      docusaurus-theme-search-typesense: 0.4.0-2_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
@@ -226,7 +226,7 @@ importers:
       api-documenter-docusaurus-plugin: workspace:*
       clsx: ^1.1.1
       dayjs: ~1.10.7
-      docusaurus-theme-search-typesense: 0.4.0-1
+      docusaurus-theme-search-typesense: 0.4.0-2
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
       prism-react-renderer: ^1.2.1
@@ -249,7 +249,7 @@ importers:
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
+      docusaurus-theme-search-typesense: 0.4.0-2_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
@@ -293,7 +293,7 @@ importers:
       algoliasearch: ^4.12.2
       clsx: ^1.1.1
       dayjs: ~1.10.7
-      docusaurus-theme-search-typesense: 0.4.0-1
+      docusaurus-theme-search-typesense: 0.4.0-2
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
       prism-react-renderer: ^1.2.1
@@ -315,7 +315,7 @@ importers:
       '@svgr/webpack': 5.5.0
       clsx: 1.1.1
       dayjs: 1.10.8
-      docusaurus-theme-search-typesense: 0.4.0-1_6e725cc349786a3881201e89c5ae6c72
+      docusaurus-theme-search-typesense: 0.4.0-2_6e725cc349786a3881201e89c5ae6c72
       file-loader: 6.2.0_webpack@5.70.0
       js-cookie: 3.0.1
       prism-react-renderer: 1.3.1_react@16.14.0
@@ -6055,8 +6055,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /docusaurus-theme-search-typesense/0.4.0-1_6e725cc349786a3881201e89c5ae6c72:
-    resolution: {integrity: sha512-LjoCicu1YFr8YF9Lumqp+XO3S+6k2EIeTScbtbCNHgW/giTQQZHrI+hJo3ErVSX95lDCGDuVX6oYWhzG5+kgBw==}
+  /docusaurus-theme-search-typesense/0.4.0-2_6e725cc349786a3881201e89c5ae6c72:
+    resolution: {integrity: sha512-a1IAsEYJblmEkhW2lREe/IY0gmv+ciUwec5mYC8aTVukV769Avb5Eq8/6m6eV2/QOpfE6PUvht5RLxh0xFEtGA==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       '@docusaurus/core': 2.0.0-beta.17
