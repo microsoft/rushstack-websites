@@ -93,8 +93,7 @@ const config = {
           {
             href: 'https://rushstack.io' + '/',
             position: 'right',
-            label: 'Docs',
-            activeBaseRegex: 'pages/(?!help/support)(?!contributing/get_started)(?!news)(?!shop)(?!api)'
+            label: 'Docs'
           },
           {
             type: 'doc',
@@ -103,12 +102,12 @@ const config = {
             label: 'API'
           },
           {
-            href: 'https://rushstack.io' + 'pages/shop',
+            href: 'https://rushstack.io' + '/pages/shop',
             position: 'right',
             label: 'Shop'
           },
           {
-            href: 'https://rushstack.io' + 'pages/news',
+            href: 'https://rushstack.io' + '/pages/news',
             position: 'right',
             label: 'News'
           },
@@ -118,16 +117,14 @@ const config = {
             label: 'Events'
           },
           {
-            href: 'https://rushstack.io' + 'pages/contributing/get_started',
+            href: 'https://rushstack.io' + '/pages/contributing/get_started',
             position: 'right',
-            label: 'GitHub',
-            activeBasePath: 'pages/contributing/get_started'
+            label: 'GitHub'
           },
           {
-            href: 'https://rushstack.io' + 'pages/help/support',
+            href: 'https://rushstack.io' + '/pages/help/support',
             position: 'right',
-            label: 'Help',
-            activeBasePath: 'pages/help/support'
+            label: 'Help'
           }
         ]
       },
