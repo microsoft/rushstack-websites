@@ -17,6 +17,10 @@ const config = {
   // tagline: 'Dinosaurs are cool',
   url: 'https://rushjs.io',
   baseUrl: '/',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-cn']
+  },
 
   trailingSlash: true,
 
@@ -90,6 +94,10 @@ const config = {
           src: 'images/rush-horiz.svg'
         },
         items: [
+          {
+            type: 'localeDropdown',
+            position: 'left'
+          },
           {
             to: 'pages/intro/welcome',
             position: 'right',

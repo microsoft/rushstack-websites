@@ -1,0 +1,30 @@
+{
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.Shop": {
+    "message": "商店",
+    "description": "Navbar item with label Shop"
+  },
+  "item.label.News": {
+    "message": "新闻",
+    "description": "Navbar item with label News"
+  },
+  "item.label.Events": {
+    "message": "活动",
+    "description": "Navbar item with label Events"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Help": {
+    "message": "帮助",
+    "description": "Navbar item with label Help"
+  }
+}
