@@ -388,6 +388,10 @@
   "projects": [
     // Websites
     {
+      "packageName": "api.rushstack.io",
+      "projectFolder": "websites/api.rushstack.io"
+    },
+    {
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
     },

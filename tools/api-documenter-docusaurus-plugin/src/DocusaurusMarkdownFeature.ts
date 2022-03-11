@@ -58,7 +58,7 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
         {
           type: 'doc',
           label: '(members)',
-          id: 'pages/api/index'
+          id: 'pages/index'
         }
       ]
     };
@@ -78,7 +78,7 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
       if (this._apiItemsWithPages.has(apiItem)) {
         const label = apiItem.displayName;
         const id = path.posix
-          .join('pages/api/', this.context.documenter.getLinkForApiItem(apiItem)!)
+          .join('pages/', this.context.documenter.getLinkForApiItem(apiItem)!)
           .replace(/\.md$/, '')
           .replace(/\/$/, '/index');
         const children: INavigationNode[] = [];

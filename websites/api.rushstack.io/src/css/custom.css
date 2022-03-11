@@ -1,0 +1,155 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+input,
+select {
+  font: var(--ifm-font-size-base) / var(--ifm-line-height-base) var(--ifm-font-family-base);
+}
+
+:root {
+  /*
+   * Rush Stack Customization - Infima style overrides
+   */
+  --ifm-navbar-height: 100px;
+  --ifm-heading-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /*
+   * Generated using https://docusaurus.io/docs/styling-layout, with the Primary Color
+   * set to rushstack orange (bc5835).
+   */
+  --ifm-color-primary: #bc5835;
+  --ifm-color-primary-dark: #a94f30;
+  --ifm-color-primary-darker: #a04b2d;
+  --ifm-color-primary-darkest: #843e25;
+  --ifm-color-primary-light: #c96440;
+  --ifm-color-primary-lighter: #cc6b49;
+  --ifm-color-primary-lightest: #d48266;
+
+  --ifm-color-secondary: #868e96;
+  --ifm-color-secondary-dark: #778089;
+  --ifm-color-secondary-darker: #707981;
+  --ifm-color-secondary-darkest: #5c636a;
+  --ifm-color-secondary-light: #959ca3;
+  --ifm-color-secondary-lighter: #9da3aa;
+  --ifm-color-secondary-lightest: #b4b9be;
+
+  --ifm-menu-color: #333;
+}
+
+.navbar__logo {
+  height: 40px;
+}
+
+/*
+ * The rushstack orange is a bit dark on a dark background, so this alternate
+ * set was created using the same tool, with the Primary Color set to the
+ * the "lighter" version of rushstack orange above (cc6b49).
+ */
+html[data-theme='dark'] {
+  --ifm-color-primary: #d58569;
+  --ifm-color-primary-dark: #ce7150;
+  --ifm-color-primary-darker: #cb6744;
+  --ifm-color-primary-darkest: #ae5131;
+  --ifm-color-primary-light: #dc9982;
+  --ifm-color-primary-lighter: #dfa38e;
+  --ifm-color-primary-lightest: #eac2b4;
+
+  --ifm-menu-color: #e0e0e0;
+}
+
+/*
+ * Top Nav
+ */
+nav.navbar {
+  background: rgb(240, 240, 240);
+}
+html[data-theme='dark'] nav.navbar {
+  background: rgb(48, 48, 48);
+}
+
+/*
+ * Rush Stack Customization - Search button
+ */
+button.DocSearch-Button {
+  border-radius: 4px;
+  border: 1px solid #c0c0c0;
+  background: #ffffff;
+}
+html[data-theme='dark'] button.DocSearch-Button {
+  background: rgb(25, 25, 25);
+  border: 1px solid rgb(64, 64, 64);
+}
+
+/*
+ * Rush Stack Customization - Sidebars
+ */
+ul.theme-doc-sidebar-menu {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+li.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1 {
+  margin-top: 0.7rem;
+}
+li.theme-doc-sidebar-item-category > a {
+  font-weight: 700;
+}
+
+/*
+ * Rush Stack Customization - Main article
+ */
+main {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*
+ * Rush Stack -  People grid
+ */
+.people-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, max(250px, 100%/3)));
+}
+.people-item {
+  text-align: center;
+  padding: 16px;
+}
+
+/*
+ * Rush Stack - Multi-purpose Blockquote
+ */
+blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-color: #c95228;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 6pt;
+  border-radius: 4pt;
+  background-color: rgb(253, 248, 247);
+}
+html[data-theme='dark'] blockquote {
+  background-color: rgb(37, 32, 31);
+}
