@@ -1,7 +1,7 @@
 {
-  "index_name": "rushstack.io",
-  "start_urls": ["https://rushstack.io/"],
-  "sitemap_urls": ["https://rushstack.io/sitemap.xml"],
+  "index_name": "api.rushstack.io",
+  "start_urls": ["https://api.rushstack.io/"],
+  "sitemap_urls": ["https://api.rushstack.io/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
