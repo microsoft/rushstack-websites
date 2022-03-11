@@ -181,7 +181,7 @@ const config = {
       },
       typesense: {
         // Replace with your own doc site's name. Should match the collection name in the scraper settings.
-        typesenseCollectionName: 'rushstack.io',
+        typesenseCollectionName: 'api.rushstack.io',
 
         typesenseServerConfig: {
           nodes: [
