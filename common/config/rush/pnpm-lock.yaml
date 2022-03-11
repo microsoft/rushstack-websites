@@ -146,7 +146,6 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -193,7 +192,6 @@ importers:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@microsoft/api-documenter': 7.14.2
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
@@ -213,7 +211,6 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -262,7 +259,6 @@ importers:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@microsoft/api-documenter': 7.14.2
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
@@ -282,7 +278,6 @@ importers:
       '@babel/core': ^7.17.5
       '@babel/runtime': ^7.17.2
       '@docusaurus/core': 2.0.0-beta.17
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17
       '@docusaurus/preset-classic': 2.0.0-beta.17
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
@@ -327,7 +322,6 @@ importers:
       '@algolia/client-search': 4.12.2
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
-      '@docusaurus/plugin-client-redirects': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
@@ -1897,40 +1891,6 @@ packages:
       - uglify-js
       - webpack-cli
     dev: false
-
-  /@docusaurus/plugin-client-redirects/2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b:
-    resolution: {integrity: sha512-PfITCVgENyB0j1ErwSOQ3d1dvxbBEcZxiJrlu41v5Q6GiZWWJ4wSJRpOzqZiVUotfhnBn4NmpgVfGnmGkGPK4A==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      react: ^16.8.4 || ^17.0.0
-      react-dom: ^16.8.4 || ^17.0.0
-    dependencies:
-      '@docusaurus/core': 2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b
-      '@docusaurus/logger': 2.0.0-beta.17
-      '@docusaurus/utils': 2.0.0-beta.17
-      '@docusaurus/utils-common': 2.0.0-beta.17
-      '@docusaurus/utils-validation': 2.0.0-beta.17
-      eta: 1.12.3
-      fs-extra: 10.0.1
-      lodash: 4.17.21
-      react: 16.14.0
-      react-dom: 16.14.0_react@16.14.0
-      tslib: 2.3.1
-    transitivePeerDependencies:
-      - '@parcel/css'
-      - '@swc/core'
-      - bufferutil
-      - csso
-      - debug
-      - esbuild
-      - eslint
-      - supports-color
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-    dev: true
 
   /@docusaurus/plugin-content-blog/2.0.0-beta.17_384ca7a83f5c3de93b04cec7e267f51b:
     resolution: {integrity: sha512-gcX4UR+WKT4bhF8FICBQHy+ESS9iRMeaglSboTZbA/YHGax/3EuZtcPU3dU4E/HFJeZ866wgUdbLKpIpsZOidg==}
