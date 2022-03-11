@@ -120,6 +120,7 @@ importers:
     specifiers:
       '@docusaurus/core': 2.0.0-beta.17
       '@rushstack/node-core-library': ~3.44.3
+      api.rushstack.io: workspace:*
       react: ^16.13.1
       react-dom: ^16.13.1
       rushjs.io: workspace:*
@@ -127,6 +128,7 @@ importers:
       site-config: workspace:*
       typescript: ~4.5.4
     dependencies:
+      api.rushstack.io: link:../../websites/api.rushstack.io
       rushjs.io: link:../../websites/rushjs.io
       rushstack.io: link:../../websites/rushstack.io
       site-config: link:../site-config
