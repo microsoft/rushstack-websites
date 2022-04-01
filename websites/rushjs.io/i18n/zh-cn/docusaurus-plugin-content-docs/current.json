@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Introduction": {
+    "message": "介绍",
+    "description": "The label for category Introduction in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Developer tutorials": {
+    "message": "开发者教程",
+    "description": "The label for category Developer tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Maintainer tutorials": {
+    "message": "维护者教程",
+    "description": "The label for category Maintainer tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Best practices": {
+    "message": "最佳实践",
+    "description": "The label for category Best practices in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced topics": {
+    "message": "高级特性",
+    "description": "The label for category Advanced topics in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Command reference": {
+    "message": "命令索引",
+    "description": "The label for category Command reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Config reference": {
+    "message": "配置索引",
+    "description": "The label for category Config reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Help": {
+    "message": "帮助",
+    "description": "The label for category Help in sidebar docsSidebar"
+  }
+}
