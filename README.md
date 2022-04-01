@@ -1,9 +1,12 @@
 # Rush Stack Websites
 
-### 🚧 UNDER DEVELOPMENT 🚧
+The following websites are maintained in this monorepo:
 
-This is an experiment to migrate the [Rush Stack](https://rushstack.io/) websites into a monorepo
-built using Docusaurus. It has not been officially launched yet.
+- https://rushjs.io
+- https://rushstack.io
+- https://api.rushstack.io
+- Coming soon: https://api-extractor.com
+- Coming soon: https://tsdoc.org
 
 ## Targets
 
