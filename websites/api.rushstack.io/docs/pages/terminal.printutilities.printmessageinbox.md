@@ -21,11 +21,11 @@ static printMessageInBox(message: string, terminal: ITerminal, boxWidth?: number
 
 ## Parameters
 
-| Parameter | Type                                          | Description                                                  |
-| --------- | --------------------------------------------- | ------------------------------------------------------------ |
-| message   | string                                        |                                                              |
-| terminal  | [ITerminal](./node-core-library.iterminal.md) |                                                              |
-| boxWidth  | number                                        | The width of the box, defaults to half of the console width. |
+| Parameter | Type                                          | Description                                                                    |
+| --------- | --------------------------------------------- | ------------------------------------------------------------------------------ |
+| message   | string                                        |                                                                                |
+| terminal  | [ITerminal](./node-core-library.iterminal.md) |                                                                                |
+| boxWidth  | number                                        | <i>(Optional)</i> The width of the box, defaults to half of the console width. |
 
 <b>Returns:</b>
 

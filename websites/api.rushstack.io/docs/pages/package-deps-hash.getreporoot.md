@@ -26,7 +26,7 @@ export declare function getRepoRoot(currentWorkingDirectory: string, gitPath?: s
 | Parameter               | Type   | Description                                              |
 | ----------------------- | ------ | -------------------------------------------------------- |
 | currentWorkingDirectory | string | The working directory for which to locate the repository |
-| gitPath                 | string | The path to the Git executable                           |
+| gitPath                 | string | <i>(Optional)</i> The path to the Git executable         |
 
 <b>Returns:</b>
 

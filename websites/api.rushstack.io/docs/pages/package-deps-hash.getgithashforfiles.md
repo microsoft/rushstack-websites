@@ -25,11 +25,11 @@ export declare function getGitHashForFiles(
 
 ## Parameters
 
-| Parameter   | Type       | Description |
-| ----------- | ---------- | ----------- |
-| filesToHash | string\[\] |             |
-| packagePath | string     |             |
-| gitPath     | string     |             |
+| Parameter   | Type       | Description       |
+| ----------- | ---------- | ----------------- |
+| filesToHash | string\[\] |                   |
+| packagePath | string     |                   |
+| gitPath     | string     | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

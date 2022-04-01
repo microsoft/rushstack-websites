@@ -25,7 +25,7 @@ update(versionPolicyName: string, newVersion: string, shouldCommit?: boolean): v
 | ----------------- | ------- | ------------------- |
 | versionPolicyName | string  | version policy name |
 | newVersion        | string  | new version         |
-| shouldCommit      | boolean |                     |
+| shouldCommit      | boolean | <i>(Optional)</i>   |
 
 <b>Returns:</b>
 

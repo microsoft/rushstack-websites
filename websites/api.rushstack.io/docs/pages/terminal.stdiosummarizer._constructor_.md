@@ -23,6 +23,6 @@ constructor(options?: IStdioSummarizerOptions);
 
 ## Parameters
 
-| Parameter | Type                                                             | Description |
-| --------- | ---------------------------------------------------------------- | ----------- |
-| options   | [IStdioSummarizerOptions](./terminal.istdiosummarizeroptions.md) |             |
+| Parameter | Type                                                             | Description       |
+| --------- | ---------------------------------------------------------------- | ----------------- |
+| options   | [IStdioSummarizerOptions](./terminal.istdiosummarizeroptions.md) | <i>(Optional)</i> |

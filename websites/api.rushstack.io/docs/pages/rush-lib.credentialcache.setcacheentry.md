@@ -21,11 +21,11 @@ setCacheEntry(cacheId: string, credential: string, expires?: Date): void;
 
 ## Parameters
 
-| Parameter  | Type   | Description |
-| ---------- | ------ | ----------- |
-| cacheId    | string |             |
-| credential | string |             |
-| expires    | Date   |             |
+| Parameter  | Type   | Description       |
+| ---------- | ------ | ----------------- |
+| cacheId    | string |                   |
+| credential | string |                   |
+| expires    | Date   | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

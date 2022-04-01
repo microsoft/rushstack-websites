@@ -26,7 +26,7 @@ export declare function getRepoState(currentWorkingDirectory: string, gitPath?: 
 | Parameter               | Type   | Description                                                   |
 | ----------------------- | ------ | ------------------------------------------------------------- |
 | currentWorkingDirectory | string | The working directory. Only used to find the repository root. |
-| gitPath                 | string | The path to the Git executable                                |
+| gitPath                 | string | <i>(Optional)</i> The path to the Git executable              |
 
 <b>Returns:</b>
 

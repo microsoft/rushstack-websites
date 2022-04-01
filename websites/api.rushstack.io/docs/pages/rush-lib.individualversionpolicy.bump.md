@@ -21,10 +21,10 @@ bump(bumpType?: BumpType, identifier?: string): void;
 
 ## Parameters
 
-| Parameter  | Type                               | Description   |
-| ---------- | ---------------------------------- | ------------- |
-| bumpType   | [BumpType](./rush-lib.bumptype.md) | bump type     |
-| identifier | string                             | prerelease id |
+| Parameter  | Type                               | Description                     |
+| ---------- | ---------------------------------- | ------------------------------- |
+| bumpType   | [BumpType](./rush-lib.bumptype.md) | <i>(Optional)</i> bump type     |
+| identifier | string                             | <i>(Optional)</i> prerelease id |
 
 <b>Returns:</b>
 

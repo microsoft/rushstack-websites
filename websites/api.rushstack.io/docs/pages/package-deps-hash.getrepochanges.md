@@ -27,11 +27,11 @@ export declare function getRepoChanges(
 
 ## Parameters
 
-| Parameter               | Type   | Description                                                                                                                                                                                                                    |
-| ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| currentWorkingDirectory | string | The working directory. Only used to find the repository root.                                                                                                                                                                  |
-| revision                | string | The Git revision specifier to detect changes relative to. Defaults to HEAD (i.e. will compare staged vs. committed) If comparing against a different branch, call <code>git merge-base</code> first to find the target commit. |
-| gitPath                 | string | The path to the Git executable                                                                                                                                                                                                 |
+| Parameter               | Type   | Description                                                                                                                                                                                                                                      |
+| ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| currentWorkingDirectory | string | The working directory. Only used to find the repository root.                                                                                                                                                                                    |
+| revision                | string | <i>(Optional)</i> The Git revision specifier to detect changes relative to. Defaults to HEAD (i.e. will compare staged vs. committed) If comparing against a different branch, call <code>git merge-base</code> first to find the target commit. |
+| gitPath                 | string | <i>(Optional)</i> The path to the Git executable                                                                                                                                                                                                 |
 
 <b>Returns:</b>
 

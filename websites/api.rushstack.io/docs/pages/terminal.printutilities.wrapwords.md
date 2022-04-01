@@ -21,11 +21,11 @@ static wrapWords(text: string, maxLineLength?: number, indent?: number): string;
 
 ## Parameters
 
-| Parameter     | Type   | Description |
-| ------------- | ------ | ----------- |
-| text          | string |             |
-| maxLineLength | number |             |
-| indent        | number |             |
+| Parameter     | Type   | Description       |
+| ------------- | ------ | ----------------- |
+| text          | string |                   |
+| maxLineLength | number | <i>(Optional)</i> |
+| indent        | number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 
