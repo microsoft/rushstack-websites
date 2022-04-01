@@ -25,11 +25,11 @@ export declare function getPackageDeps(
 
 ## Parameters
 
-| Parameter     | Type       | Description                                                                                                                                                                    |
-| ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| packagePath   | string     | The folder path to derive the package dependencies from. This is typically the folder containing package.json. If omitted, the default value is the current working directory. |
-| excludedPaths | string\[\] | An optional array of file path exclusions. If a file should be omitted from the list of dependencies, use this to exclude it.                                                  |
-| gitPath       | string     |                                                                                                                                                                                |
+| Parameter     | Type       | Description                                                                                                                                                                                      |
+| ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| packagePath   | string     | <i>(Optional)</i> The folder path to derive the package dependencies from. This is typically the folder containing package.json. If omitted, the default value is the current working directory. |
+| excludedPaths | string\[\] | <i>(Optional)</i> An optional array of file path exclusions. If a file should be omitted from the list of dependencies, use this to exclude it.                                                  |
+| gitPath       | string     | <i>(Optional)</i>                                                                                                                                                                                |
 
 <b>Returns:</b>
 

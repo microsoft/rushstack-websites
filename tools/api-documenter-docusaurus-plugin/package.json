@@ -10,8 +10,8 @@
     "build": "heft build --clean"
   },
   "dependencies": {
-    "@microsoft/api-documenter": "~7.14.0",
-    "@microsoft/api-extractor-model": "~7.15.2",
+    "@microsoft/api-documenter": "~7.17.0",
+    "@microsoft/api-extractor-model": "~7.16.0",
     "@microsoft/tsdoc": "~0.13.2",
     "@rushstack/node-core-library": "~3.44.3"
   },

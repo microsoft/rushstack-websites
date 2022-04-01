@@ -19,11 +19,11 @@ apply(heftSession: HeftSession, heftConfiguration: HeftConfiguration, options?: 
 
 ## Parameters
 
-| Parameter         | Type                                             | Description |
-| ----------------- | ------------------------------------------------ | ----------- |
-| heftSession       | [HeftSession](./heft.heftsession.md)             |             |
-| heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) |             |
-| options           | TOptions                                         |             |
+| Parameter         | Type                                             | Description       |
+| ----------------- | ------------------------------------------------ | ----------------- |
+| heftSession       | [HeftSession](./heft.heftsession.md)             |                   |
+| heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) |                   |
+| options           | TOptions                                         | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

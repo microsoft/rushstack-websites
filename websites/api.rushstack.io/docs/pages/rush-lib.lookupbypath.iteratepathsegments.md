@@ -23,10 +23,10 @@ static iteratePathSegments(serializedPath: string, delimiter?: string): Iterable
 
 ## Parameters
 
-| Parameter      | Type   | Description |
-| -------------- | ------ | ----------- |
-| serializedPath | string |             |
-| delimiter      | string |             |
+| Parameter      | Type   | Description       |
+| -------------- | ------ | ----------------- |
+| serializedPath | string |                   |
+| delimiter      | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

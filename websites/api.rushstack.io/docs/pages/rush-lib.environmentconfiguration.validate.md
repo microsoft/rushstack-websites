@@ -23,9 +23,9 @@ static validate(options?: IEnvironmentConfigurationInitializeOptions): void;
 
 ## Parameters
 
-| Parameter | Type                                                                                                   | Description |
-| --------- | ------------------------------------------------------------------------------------------------------ | ----------- |
-| options   | [IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md) |             |
+| Parameter | Type                                                                                                   | Description       |
+| --------- | ------------------------------------------------------------------------------------------------------ | ----------------- |
+| options   | [IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

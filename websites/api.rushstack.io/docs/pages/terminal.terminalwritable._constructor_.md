@@ -21,6 +21,6 @@ constructor(options?: ITerminalWritableOptions);
 
 ## Parameters
 
-| Parameter | Type                                                               | Description |
-| --------- | ------------------------------------------------------------------ | ----------- |
-| options   | [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md) |             |
+| Parameter | Type                                                               | Description       |
+| --------- | ------------------------------------------------------------------ | ----------------- |
+| options   | [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md) | <i>(Optional)</i> |

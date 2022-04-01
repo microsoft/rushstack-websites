@@ -21,9 +21,9 @@ export declare function ensureGitMinimumVersion(gitPath?: string): void;
 
 ## Parameters
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| gitPath   | string |             |
+| Parameter | Type   | Description       |
+| --------- | ------ | ----------------- |
+| gitPath   | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

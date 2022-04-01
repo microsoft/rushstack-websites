@@ -23,7 +23,7 @@ constructor(entries?: Iterable<[string, TItem]>, delimiter?: string);
 
 ## Parameters
 
-| Parameter | Type                              | Description                                    |
-| --------- | --------------------------------- | ---------------------------------------------- |
-| entries   | Iterable&lt;\[string, TItem\]&gt; | Initial path-value pairs to populate the tree. |
-| delimiter | string                            |                                                |
+| Parameter | Type                              | Description                                                      |
+| --------- | --------------------------------- | ---------------------------------------------------------------- |
+| entries   | Iterable&lt;\[string, TItem\]&gt; | <i>(Optional)</i> Initial path-value pairs to populate the tree. |
+| delimiter | string                            | <i>(Optional)</i>                                                |
