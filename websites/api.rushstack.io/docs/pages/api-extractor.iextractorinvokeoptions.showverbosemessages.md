@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExtractorInvokeOptions.showVerboseMessages property
 
-If true, API Extractor will include [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.verbose.md) messages in its output.
+If true, API Extractor will include [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) messages in its output.
 
 <b>Signature:</b>
 

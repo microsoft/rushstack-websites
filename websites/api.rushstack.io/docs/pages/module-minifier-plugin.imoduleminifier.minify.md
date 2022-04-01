@@ -11,6 +11,8 @@ pagination_next: null
 
 ## IModuleMinifier.minify property
 
+Asynchronously minify a module
+
 <b>Signature:</b>
 
 ```typescript

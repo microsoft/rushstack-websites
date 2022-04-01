@@ -15,10 +15,10 @@ pagination_next: null
 
 | Class                                                                                          | Description                                                                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [LocalMinifier](./module-minifier-plugin.localminifier.md)                                     | Minifier implementation that minifies code on the main thread.                                                                                                                                                                                                                                              |
 | [ModuleMinifierPlugin](./module-minifier-plugin.moduleminifierplugin.md)                       | Webpack plugin that minifies code on a per-module basis rather than per-asset. The actual minification is handled by the input <code>minifier</code> object.                                                                                                                                                |
 | [NoopMinifier](./module-minifier-plugin.noopminifier.md)                                       | Minifier implementation that does not actually transform the code, for debugging.                                                                                                                                                                                                                           |
 | [PortableMinifierModuleIdsPlugin](./module-minifier-plugin.portableminifiermoduleidsplugin.md) | Plugin responsible for converting the Webpack module ids (of whatever variety) to stable ids before code is handed to the minifier, then back again. Uses the node module identity of the target module. Will emit an error if it encounters multiple versions of the same package in the same compilation. |
-| [SynchronousMinifier](./module-minifier-plugin.synchronousminifier.md)                         | Minifier implementation that synchronously minifies code on the main thread.                                                                                                                                                                                                                                |
 | [WorkerPoolMinifier](./module-minifier-plugin.workerpoolminifier.md)                           | Minifier implementation that uses a thread pool for minification.                                                                                                                                                                                                                                           |
 
 ## Functions
@@ -26,6 +26,7 @@ pagination_next: null
 | Function                                                                                                                    | Description                                                                                                                                          |
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [generateLicenseFileForAsset(compilation, asset, minifiedModules)](./module-minifier-plugin.generatelicensefileforasset.md) | Generates a companion asset containing all extracted comments. If it is non-empty, returns a banner comment directing users to said companion asset. |
+| [getIdentifier(ordinal)](./module-minifier-plugin.getidentifier.md)                                                         | Gets a base54 string suitable for use as a JavaScript identifier, omitting those that are valid ECMAScript keywords                                  |
 | [rehydrateAsset(asset, moduleMap, banner)](./module-minifier-plugin.rehydrateasset.md)                                      | Rehydrates an asset with minified modules.                                                                                                           |
 
 ## Interfaces
@@ -35,6 +36,8 @@ pagination_next: null
 | [IAssetInfo](./module-minifier-plugin.iassetinfo.md)                                             | Information about a dehydrated webpack ECMAScript asset                           |
 | [IDehydratedAssets](./module-minifier-plugin.idehydratedassets.md)                               | The set of data remaining to rehydrate in the current compilation                 |
 | [IExtendedModule](./module-minifier-plugin.iextendedmodule.md)                                   | Extension of the webpack Module typings with members that are used by this Plugin |
+| [ILocalMinifierOptions](./module-minifier-plugin.ilocalminifieroptions.md)                       | Options for configuring the LocalMinifier                                         |
+| [IMinifierConnection](./module-minifier-plugin.iminifierconnection.md)                           | Metadata from the minifier for the plugin                                         |
 | [IModuleInfo](./module-minifier-plugin.imoduleinfo.md)                                           | Information about a minified module                                               |
 | [IModuleMinificationCallback](./module-minifier-plugin.imoduleminificationcallback.md)           | Callback passed to a minifier function                                            |
 | [IModuleMinificationErrorResult](./module-minifier-plugin.imoduleminificationerrorresult.md)     | Result from the minifier function when an error is encountered.                   |
@@ -44,7 +47,7 @@ pagination_next: null
 | [IModuleMinifierFunction](./module-minifier-plugin.imoduleminifierfunction.md)                   | An async function called to minify a module (or dehydrated chunk)                 |
 | [IModuleMinifierPluginHooks](./module-minifier-plugin.imoduleminifierpluginhooks.md)             | Hooks provided by the ModuleMinifierPlugin                                        |
 | [IModuleMinifierPluginOptions](./module-minifier-plugin.imoduleminifierpluginoptions.md)         | Options to the ModuleMinifierPlugin constructor                                   |
-| [ISynchronousMinifierOptions](./module-minifier-plugin.isynchronousminifieroptions.md)           | Options for configuring the SynchronousMinifier                                   |
+| [IPostProcessFragmentContext](./module-minifier-plugin.ipostprocessfragmentcontext.md)           | Argument to the postProcessCodeFragment hook for the current execution context    |
 | [IWorkerPoolMinifierOptions](./module-minifier-plugin.iworkerpoolminifieroptions.md)             | Options for configuring the WorkerPoolMinifier                                    |
 
 ## Variables

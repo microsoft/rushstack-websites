@@ -13,10 +13,11 @@ pagination_next: null
 
 ## Classes
 
-| Class                                                             | Description                                                                     |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [LocalizationPlugin](./localization-plugin.localizationplugin.md) | This plugin facilitates localization in webpack.                                |
-| [TypingsGenerator](./localization-plugin.typingsgenerator.md)     | This is a simple tool that generates .d.ts files for .loc.json and .resx files. |
+| Class                                                             | Description                                                                                  |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [LocalizationPlugin](./localization-plugin.localizationplugin.md) | This plugin facilitates localization in webpack.                                             |
+| [ResxReader](./localization-plugin.resxreader.md)                 |                                                                                              |
+| [TypingsGenerator](./localization-plugin.typingsgenerator.md)     | This is a simple tool that generates .d.ts files for .loc.json, .resx.json, and .resx files. |
 
 ## Interfaces
 
@@ -26,17 +27,20 @@ pagination_next: null
 | [ILocaleData](./localization-plugin.ilocaledata.md)                                   |                                                             |
 | [ILocaleElementMap](./localization-plugin.ilocaleelementmap.md)                       |                                                             |
 | [ILocaleFileData](./localization-plugin.ilocalefiledata.md)                           |                                                             |
+| [ILocalizationFile](./localization-plugin.ilocalizationfile.md)                       |                                                             |
 | [ILocalizationPluginOptions](./localization-plugin.ilocalizationpluginoptions.md)     | The options for localization.                               |
 | [ILocalizationStats](./localization-plugin.ilocalizationstats.md)                     |                                                             |
 | [ILocalizationStatsChunkGroup](./localization-plugin.ilocalizationstatschunkgroup.md) |                                                             |
 | [ILocalizationStatsEntrypoint](./localization-plugin.ilocalizationstatsentrypoint.md) |                                                             |
 | [ILocalizationStatsOptions](./localization-plugin.ilocalizationstatsoptions.md)       | Options for how localization stats data should be produced. |
 | [ILocalizedData](./localization-plugin.ilocalizeddata.md)                             |                                                             |
+| [ILocalizedString](./localization-plugin.ilocalizedstring.md)                         |                                                             |
 | [ILocalizedStrings](./localization-plugin.ilocalizedstrings.md)                       |                                                             |
 | [ILocalizedWebpackChunk](./localization-plugin.ilocalizedwebpackchunk.md)             |                                                             |
 | [IPassthroughLocaleOptions](./localization-plugin.ipassthroughlocaleoptions.md)       | Options for the passthrough locale.                         |
 | [IPseudolocaleOptions](./localization-plugin.ipseudolocaleoptions.md)                 | Options for the pseudolocale library.                       |
 | [IPseudolocalesOptions](./localization-plugin.ipseudolocalesoptions.md)               | Options for generated pseudolocales.                        |
 | [IResolvedMissingTranslations](./localization-plugin.iresolvedmissingtranslations.md) |                                                             |
+| [IResxReaderOptions](./localization-plugin.iresxreaderoptions.md)                     |                                                             |
 | [ITypingsGenerationOptions](./localization-plugin.itypingsgenerationoptions.md)       | Options for typing generation.                              |
 | [ITypingsGeneratorOptions](./localization-plugin.itypingsgeneratoroptions.md)         |                                                             |

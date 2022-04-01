@@ -11,8 +11,6 @@ pagination_next: null
 
 ## PackageManager class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn.
 
 <b>Signature:</b>
@@ -27,9 +25,9 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                   | Description                                                                                   |
-| ------------------------------------------------------------------------ | --------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| [\_shrinkwrapFilename](./rush-lib.packagemanager._shrinkwrapfilename.md) |           | string                                                 | <b><i>(BETA)</i></b>                                                                          |
-| [packageManager](./rush-lib.packagemanager.packagemanager.md)            |           | [PackageManagerName](./rush-lib.packagemanagername.md) | <b><i>(BETA)</i></b> The package manager.                                                     |
-| [shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md)    |           | string                                                 | <b><i>(BETA)</i></b> The filename of the shrinkwrap file that is used by the package manager. |
-| [version](./rush-lib.packagemanager.version.md)                          |           | string                                                 | <b><i>(BETA)</i></b> The SemVer version of the package manager.                               |
+| Property                                                                 | Modifiers | Type                                                   | Description                                                              |
+| ------------------------------------------------------------------------ | --------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
+| [\_shrinkwrapFilename](./rush-lib.packagemanager._shrinkwrapfilename.md) |           | string                                                 |                                                                          |
+| [packageManager](./rush-lib.packagemanager.packagemanager.md)            |           | [PackageManagerName](./rush-lib.packagemanagername.md) | The package manager.                                                     |
+| [shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md)    |           | string                                                 | The filename of the shrinkwrap file that is used by the package manager. |
+| [version](./rush-lib.packagemanager.version.md)                          |           | string                                                 | The SemVer version of the package manager.                               |

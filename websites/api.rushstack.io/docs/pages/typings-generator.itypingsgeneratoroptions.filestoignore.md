@@ -11,6 +11,10 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.filesToIgnore property
 
+> Warning: This API is now obsolete.
+>
+> TODO: Remove when version 1.0.0 is released.
+
 <b>Signature:</b>
 
 ```typescript

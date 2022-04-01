@@ -11,8 +11,6 @@ pagination_next: null
 
 ## PackageJsonEditor.saveToObject() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Get the normalized package.json that represents the current state of the PackageJsonEditor. This method does not save any changes that were made to the package.json, but instead returns the object representation of what would be saved if saveIfModified() is called.
 
 <b>Signature:</b>

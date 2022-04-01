@@ -19,11 +19,13 @@ export interface ITypingsGeneratorOptions<TTypingsResult = string | undefined>
 
 ## Properties
 
-| Property                                                                                           | Type                                                                                           | Description       |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------- |
-| [fileExtensions](./typings-generator.itypingsgeneratoroptions.fileextensions.md)                   | string\[\]                                                                                     |                   |
-| [filesToIgnore?](./typings-generator.itypingsgeneratoroptions.filestoignore.md)                    | string\[\]                                                                                     | <i>(Optional)</i> |
-| [generatedTsFolder](./typings-generator.itypingsgeneratoroptions.generatedtsfolder.md)             | string                                                                                         |                   |
-| [parseAndGenerateTypings](./typings-generator.itypingsgeneratoroptions.parseandgeneratetypings.md) | (fileContents: string, filePath: string) =&gt; TTypingsResult \| Promise&lt;TTypingsResult&gt; |                   |
-| [srcFolder](./typings-generator.itypingsgeneratoroptions.srcfolder.md)                             | string                                                                                         |                   |
-| [terminal?](./typings-generator.itypingsgeneratoroptions.terminal.md)                              | [ITerminal](./node-core-library.iterminal.md)                                                  | <i>(Optional)</i> |
+| Property                                                                                              | Type                                                                                                                 | Description       |
+| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [fileExtensions](./typings-generator.itypingsgeneratoroptions.fileextensions.md)                      | string\[\]                                                                                                           |                   |
+| [filesToIgnore?](./typings-generator.itypingsgeneratoroptions.filestoignore.md)                       | string\[\]                                                                                                           | <i>(Optional)</i> |
+| [generatedTsFolder](./typings-generator.itypingsgeneratoroptions.generatedtsfolder.md)                | string                                                                                                               |                   |
+| [getAdditionalOutputFiles?](./typings-generator.itypingsgeneratoroptions.getadditionaloutputfiles.md) | (relativePath: string) =&gt; string\[\]                                                                              | <i>(Optional)</i> |
+| [globsToIgnore?](./typings-generator.itypingsgeneratoroptions.globstoignore.md)                       | string\[\]                                                                                                           | <i>(Optional)</i> |
+| [parseAndGenerateTypings](./typings-generator.itypingsgeneratoroptions.parseandgeneratetypings.md)    | (fileContents: string, filePath: string, relativePath: string) =&gt; TTypingsResult \| Promise&lt;TTypingsResult&gt; |                   |
+| [srcFolder](./typings-generator.itypingsgeneratoroptions.srcfolder.md)                                | string                                                                                                               |                   |
+| [terminal?](./typings-generator.itypingsgeneratoroptions.terminal.md)                                 | [ITerminal](./node-core-library.iterminal.md)                                                                        | <i>(Optional)</i> |

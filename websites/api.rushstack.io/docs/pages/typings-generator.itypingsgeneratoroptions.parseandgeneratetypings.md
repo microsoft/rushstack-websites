@@ -14,5 +14,5 @@ pagination_next: null
 <b>Signature:</b>
 
 ```typescript
-parseAndGenerateTypings: (fileContents: string, filePath: string) => TTypingsResult | Promise<TTypingsResult>;
+parseAndGenerateTypings: (fileContents: string, filePath: string, relativePath: string) => TTypingsResult | Promise<TTypingsResult>;
 ```

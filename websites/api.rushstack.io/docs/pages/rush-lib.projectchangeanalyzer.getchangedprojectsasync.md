@@ -13,12 +13,12 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Gets a list of projects that have changed in the current state of the repo when compared to the specified branch.
+Gets a list of projects that have changed in the current state of the repo when compared to the specified branch, optionally taking the shrinkwrap and settings in the rush-project.json file into consideration.
 
 <b>Signature:</b>
 
 ```typescript
-getChangedProjectsAsync(options: IGetChangedProjectsOptions): AsyncIterable<RushConfigurationProject>;
+getChangedProjectsAsync(options: IGetChangedProjectsOptions): Promise<Set<RushConfigurationProject>>;
 ```
 
 ## Parameters
@@ -29,4 +29,4 @@ getChangedProjectsAsync(options: IGetChangedProjectsOptions): AsyncIterable<Rush
 
 <b>Returns:</b>
 
-AsyncIterable&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md) &gt;
+Promise&lt;Set&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md) &gt;&gt;

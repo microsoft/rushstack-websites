@@ -11,7 +11,9 @@ pagination_next: null
 
 ## FileSystem.readFolder() method
 
-Reads the contents of the folder, not including "." or "..". Behind the scenes it uses `fs.readdirSync()` .
+> Warning: This API is now obsolete.
+>
+> Use [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md) instead.
 
 <b>Signature:</b>
 
@@ -21,10 +23,10 @@ static readFolder(folderPath: string, options?: IFileSystemReadFolderOptions): s
 
 ## Parameters
 
-| Parameter  | Type                                                                                | Description                                                                           |
-| ---------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| folderPath | string                                                                              | The absolute or relative path to the folder which should be read.                     |
-| options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | Optional settings that can change the behavior. Type: <code>IReadFolderOptions</code> |
+| Parameter  | Type                                                                                | Description |
+| ---------- | ----------------------------------------------------------------------------------- | ----------- |
+| folderPath | string                                                                              |             |
+| options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) |             |
 
 <b>Returns:</b>
 

@@ -11,7 +11,9 @@ pagination_next: null
 
 ## FileSystem.readFolderAsync() method
 
-An async version of [FileSystem.readFolder()](./node-core-library.filesystem.readfolder.md) .
+> Warning: This API is now obsolete.
+>
+> Use [FileSystem.readFolderItemNamesAsync()](./node-core-library.filesystem.readfolderitemnamesasync.md) instead.
 
 <b>Signature:</b>
 

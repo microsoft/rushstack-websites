@@ -16,7 +16,7 @@ An integer value used to specify file permissions for POSIX-like operating syste
 <b>Signature:</b>
 
 ```typescript
-export declare const enum PosixModeBits
+export declare enum PosixModeBits
 ```
 
 ## Enumeration Members

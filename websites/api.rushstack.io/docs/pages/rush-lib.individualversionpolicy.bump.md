@@ -11,8 +11,6 @@ pagination_next: null
 
 ## IndividualVersionPolicy.bump() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything.
 
 <b>Signature:</b>

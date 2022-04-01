@@ -11,8 +11,6 @@ pagination_next: null
 
 ## PackageJsonEditor.dependencyList property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 The list of dependencies of type DependencyType.Regular, DependencyType.Optional, or DependencyType.Peer.
 
 <b>Signature:</b>

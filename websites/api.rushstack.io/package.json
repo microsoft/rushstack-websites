@@ -43,6 +43,7 @@
     "@babel/core": "^7.17.5",
     "@babel/runtime": "^7.17.2",
     "@microsoft/api-documenter": "~7.14.0",
+    "@rushstack/node-core-library": "~3.44.3",
     "@types/js-cookie": "3.0.1",
     "@types/react-dom": "17.0.11",
     "@types/react": "17.0.37",

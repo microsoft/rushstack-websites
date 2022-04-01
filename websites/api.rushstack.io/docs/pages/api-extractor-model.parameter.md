@@ -41,6 +41,7 @@ export function add(x: number, y: number): number {
 
 | Property                                                                        | Modifiers | Type                                        | Description                                                                              |
 | ------------------------------------------------------------------------------- | --------- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [isOptional](./api-extractor-model.parameter.isoptional.md)                     |           | boolean                                     | Whether the parameter is optional.                                                       |
 | [name](./api-extractor-model.parameter.name.md)                                 |           | string                                      | The parameter name.                                                                      |
 | [parameterTypeExcerpt](./api-extractor-model.parameter.parametertypeexcerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the parameter. |
 | [tsdocParamBlock](./api-extractor-model.parameter.tsdocparamblock.md)           |           | tsdoc.DocParamBlock \| undefined            | Returns the <code>@param</code> documentation for this parameter, if present.            |

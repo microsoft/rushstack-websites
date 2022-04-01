@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicyDefinitionName enum
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Version policy base type names
 
 <b>Signature:</b>
@@ -23,7 +21,7 @@ export declare enum VersionPolicyDefinitionName
 
 ## Enumeration Members
 
-| Member            | Value          | Description          |
-| ----------------- | -------------- | -------------------- |
-| individualVersion | <code>1</code> | <b><i>(BETA)</i></b> |
-| lockStepVersion   | <code>0</code> | <b><i>(BETA)</i></b> |
+| Member            | Value          | Description |
+| ----------------- | -------------- | ----------- |
+| individualVersion | <code>1</code> |             |
+| lockStepVersion   | <code>0</code> |             |

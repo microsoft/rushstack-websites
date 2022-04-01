@@ -16,7 +16,7 @@ The allowed types of encodings, as supported by Node.js
 <b>Signature:</b>
 
 ```typescript
-export declare const enum Encoding
+export declare enum Encoding
 ```
 
 ## Enumeration Members

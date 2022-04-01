@@ -19,7 +19,17 @@ For more info, please see the package [README](https://www.npmjs.com/package/@ru
 
 ## Functions
 
-| Function                                                                                           | Description                                                                                           |
-| -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [getGitHashForFiles(filesToHash, packagePath, gitPath)](./package-deps-hash.getgithashforfiles.md) | Takes a list of files and returns the current git hashes for them                                     |
-| [getPackageDeps(packagePath, excludedPaths, gitPath)](./package-deps-hash.getpackagedeps.md)       | Builds an object containing hashes for the files under the specified <code>packagePath</code> folder. |
+| Function                                                                                            | Description                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ensureGitMinimumVersion(gitPath)](./package-deps-hash.ensuregitminimumversion.md)                  | Checks the git version and throws an error if it is less than the minimum required version.                                                                         |
+| [getGitHashForFiles(filesToHash, packagePath, gitPath)](./package-deps-hash.getgithashforfiles.md)  | Takes a list of files and returns the current git hashes for them                                                                                                   |
+| [getPackageDeps(packagePath, excludedPaths, gitPath)](./package-deps-hash.getpackagedeps.md)        | Builds an object containing hashes for the files under the specified <code>packagePath</code> folder.                                                               |
+| [getRepoChanges(currentWorkingDirectory, revision, gitPath)](./package-deps-hash.getrepochanges.md) | <b><i>(BETA)</i></b> Find all changed files tracked by Git, their current hashes, and the nature of the change. Only useful if all changes are staged or committed. |
+| [getRepoRoot(currentWorkingDirectory, gitPath)](./package-deps-hash.getreporoot.md)                 | <b><i>(BETA)</i></b> Finds the root of the current Git repository                                                                                                   |
+| [getRepoState(currentWorkingDirectory, gitPath)](./package-deps-hash.getrepostate.md)               | <b><i>(BETA)</i></b> Gets the object hashes for all files in the Git repo, combining the current commit with working tree state.                                    |
+
+## Interfaces
+
+| Interface                                                 | Description                                                   |
+| --------------------------------------------------------- | ------------------------------------------------------------- |
+| [IFileDiffStatus](./package-deps-hash.ifilediffstatus.md) | <b><i>(BETA)</i></b> Information about the changes to a file. |

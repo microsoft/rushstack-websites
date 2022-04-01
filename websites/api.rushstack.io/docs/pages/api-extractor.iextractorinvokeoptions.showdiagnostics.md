@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExtractorInvokeOptions.showDiagnostics property
 
-If true, API Extractor will print diagnostic information used for troubleshooting problems. These messages will be included as [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.verbose.md) output.
+If true, API Extractor will print diagnostic information used for troubleshooting problems. These messages will be included as [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) output.
 
 <b>Signature:</b>
 

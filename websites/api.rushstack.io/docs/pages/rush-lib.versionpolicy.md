@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicy class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 This is the base class for version policy which controls how versions get bumped.
 
 <b>Signature:</b>
@@ -27,20 +25,20 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                         | Modifiers | Type                                                                     | Description                                                                              |
-| -------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| [definitionName](./rush-lib.versionpolicy.definitionname.md)                     |           | [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | <b><i>(BETA)</i></b> Version policy definition name                                      |
-| [exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md)         |           | boolean                                                                  | <b><i>(BETA)</i></b> Determines if a version policy wants to opt out of changelog files. |
-| [includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md) |           | boolean                                                                  | <b><i>(BETA)</i></b> Determines if a version policy wants to opt in to including email.  |
-| [isLockstepped](./rush-lib.versionpolicy.islockstepped.md)                       |           | boolean                                                                  | <b><i>(BETA)</i></b> Whether it is a lockstepped version policy                          |
-| [policyName](./rush-lib.versionpolicy.policyname.md)                             |           | string                                                                   | <b><i>(BETA)</i></b> Version policy name                                                 |
+| Property                                                                         | Modifiers | Type                                                                     | Description                                                         |
+| -------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| [definitionName](./rush-lib.versionpolicy.definitionname.md)                     |           | [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy definition name                                      |
+| [exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md)         |           | boolean                                                                  | Determines if a version policy wants to opt out of changelog files. |
+| [includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md) |           | boolean                                                                  | Determines if a version policy wants to opt in to including email.  |
+| [isLockstepped](./rush-lib.versionpolicy.islockstepped.md)                       |           | boolean                                                                  | Whether it is a lockstepped version policy                          |
+| [policyName](./rush-lib.versionpolicy.policyname.md)                             |           | string                                                                   | Version policy name                                                 |
 
 ## Methods
 
-| Method                                                                                                               | Modifiers | Description                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [bump(bumpType, identifier)](./rush-lib.versionpolicy.bump.md)                                                       |           | <b><i>(BETA)</i></b> Bumps version based on the policy                                                                               |
-| [ensure(project, force)](./rush-lib.versionpolicy.ensure.md)                                                         |           | <b><i>(BETA)</i></b> Returns an updated package json that satisfies the policy.                                                      |
-| [setDependenciesBeforeCommit(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforecommit.md)   |           | <b><i>(BETA)</i></b> Tells the version policy to modify any dependencies in the target package to values used for checked-in source. |
-| [setDependenciesBeforePublish(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublish.md) |           | <b><i>(BETA)</i></b> Tells the version policy to modify any dependencies in the target package to values used for publishing.        |
-| [validate(versionString, packageName)](./rush-lib.versionpolicy.validate.md)                                         |           | <b><i>(BETA)</i></b> Validates the specified version and throws if the version does not satisfy the policy.                          |
+| Method                                                                                                               | Modifiers | Description                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------- |
+| [bump(bumpType, identifier)](./rush-lib.versionpolicy.bump.md)                                                       |           | Bumps version based on the policy                                                                               |
+| [ensure(project, force)](./rush-lib.versionpolicy.ensure.md)                                                         |           | Returns an updated package json that satisfies the policy.                                                      |
+| [setDependenciesBeforeCommit(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforecommit.md)   |           | Tells the version policy to modify any dependencies in the target package to values used for checked-in source. |
+| [setDependenciesBeforePublish(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublish.md) |           | Tells the version policy to modify any dependencies in the target package to values used for publishing.        |
+| [validate(versionString, packageName)](./rush-lib.versionpolicy.validate.md)                                         |           | Validates the specified version and throws if the version does not satisfy the policy.                          |

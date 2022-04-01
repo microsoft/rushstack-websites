@@ -25,4 +25,5 @@ export declare class NoopMinifier implements IModuleMinifier
 
 | Method                                                                       | Modifiers | Description           |
 | ---------------------------------------------------------------------------- | --------- | --------------------- |
+| [connect()](./module-minifier-plugin.noopminifier.connect.md)                |           |                       |
 | [minify(request, callback)](./module-minifier-plugin.noopminifier.minify.md) |           | No-op code transform. |

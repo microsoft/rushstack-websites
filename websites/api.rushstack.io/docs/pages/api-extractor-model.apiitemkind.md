@@ -16,7 +16,7 @@ The type returned by the [ApiItem.kind](./api-extractor-model.apiitem.kind.md) p
 <b>Signature:</b>
 
 ```typescript
-export declare const enum ApiItemKind
+export declare enum ApiItemKind
 ```
 
 ## Enumeration Members

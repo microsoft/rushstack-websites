@@ -21,12 +21,12 @@ export interface IModuleMinifier
 
 ## Properties
 
-| Property                                                     | Type                                                                           | Description |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------ | ----------- |
-| [minify](./module-minifier-plugin.imoduleminifier.minify.md) | [IModuleMinifierFunction](./module-minifier-plugin.imoduleminifierfunction.md) |             |
+| Property                                                     | Type                                                                           | Description                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------ |
+| [minify](./module-minifier-plugin.imoduleminifier.minify.md) | [IModuleMinifierFunction](./module-minifier-plugin.imoduleminifierfunction.md) | Asynchronously minify a module |
 
 ## Methods
 
-| Method                                                    | Description                                                                                                                                                                                                                                                                 |
-| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ref()?](./module-minifier-plugin.imoduleminifier.ref.md) | <i>(Optional)</i> Prevents the minifier from shutting down until the returned callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup |
+| Method                                                           | Description                                                                                                                                                                                                                                                                         |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [connect()](./module-minifier-plugin.imoduleminifier.connect.md) | Prevents the minifier from shutting down until the returned <code>disconnect()</code> callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup |

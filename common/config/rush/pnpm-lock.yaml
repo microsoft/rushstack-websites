@@ -152,6 +152,7 @@ importers:
       '@docusaurus/theme-common': 2.0.0-beta.17
       '@mdx-js/react': ^1.6.21
       '@microsoft/api-documenter': ~7.14.0
+      '@rushstack/node-core-library': ~3.44.3
       '@svgr/webpack': ^5.5.0
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
@@ -195,6 +196,7 @@ importers:
       '@babel/core': 7.17.5
       '@babel/runtime': 7.17.2
       '@microsoft/api-documenter': 7.14.2
+      '@rushstack/node-core-library': 3.44.3
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11

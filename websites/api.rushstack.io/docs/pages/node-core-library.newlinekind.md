@@ -16,7 +16,7 @@ Enumeration controlling conversion of newline characters.
 <b>Signature:</b>
 
 ```typescript
-export declare const enum NewlineKind
+export declare enum NewlineKind
 ```
 
 ## Enumeration Members

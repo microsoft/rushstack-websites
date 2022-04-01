@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TypingsGenerator class
 
-This is a simple tool that generates .d.ts files for .loc.json and .resx files.
+This is a simple tool that generates .d.ts files for .loc.json, .resx.json, and .resx files.
 
 <b>Signature:</b>
 

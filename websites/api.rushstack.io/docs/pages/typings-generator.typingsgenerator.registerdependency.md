@@ -11,20 +11,20 @@ pagination_next: null
 
 ## TypingsGenerator.registerDependency() method
 
-Register file dependencies that may effect the typings of a target file. Note: This feature is only useful in watch mode. The registerDependency method must be called in the body of parseAndGenerateTypings every time because the registry for a file is cleared at the beginning of processing.
+Register file dependencies that may effect the typings of a consumer file. Note: This feature is only useful in watch mode. The registerDependency method must be called in the body of parseAndGenerateTypings every time because the registry for a file is cleared at the beginning of processing.
 
 <b>Signature:</b>
 
 ```typescript
-registerDependency(target: string, dependency: string): void;
+registerDependency(consumer: string, rawDependency: string): void;
 ```
 
 ## Parameters
 
-| Parameter  | Type   | Description |
-| ---------- | ------ | ----------- |
-| target     | string |             |
-| dependency | string |             |
+| Parameter     | Type   | Description |
+| ------------- | ------ | ----------- |
+| consumer      | string |             |
+| rawDependency | string |             |
 
 <b>Returns:</b>
 

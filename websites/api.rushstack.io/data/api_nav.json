@@ -2732,6 +2732,11 @@
             },
             {
               "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.iapiparameteroptions.isoptional"
+            },
+            {
+              "type": "doc",
               "label": "parameterName",
               "id": "pages/api-extractor-model.iapiparameteroptions.parametername"
             },
@@ -2948,6 +2953,11 @@
             },
             {
               "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.iparameteroptions.isoptional"
+            },
+            {
+              "type": "doc",
               "label": "name",
               "id": "pages/api-extractor-model.iparameteroptions.name"
             },
@@ -3028,6 +3038,11 @@
               "type": "doc",
               "label": "(constructor)",
               "id": "pages/api-extractor-model.parameter._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.parameter.isoptional"
             },
             {
               "type": "doc",
@@ -3233,6 +3248,57 @@
           ]
         },
         {
+          "type": "category",
+          "label": "BuildCacheConfiguration",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.buildcacheconfiguration"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheEnabled",
+              "id": "pages/rush-lib.buildcacheconfiguration.buildcacheenabled"
+            },
+            {
+              "type": "doc",
+              "label": "cacheWriteEnabled",
+              "id": "pages/rush-lib.buildcacheconfiguration.cachewriteenabled"
+            },
+            {
+              "type": "doc",
+              "label": "cloudCacheProvider",
+              "id": "pages/rush-lib.buildcacheconfiguration.cloudcacheprovider"
+            },
+            {
+              "type": "doc",
+              "label": "getBuildCacheConfigFilePath",
+              "id": "pages/rush-lib.buildcacheconfiguration.getbuildcacheconfigfilepath"
+            },
+            {
+              "type": "doc",
+              "label": "getCacheEntryId",
+              "id": "pages/rush-lib.buildcacheconfiguration.getcacheentryid"
+            },
+            {
+              "type": "doc",
+              "label": "loadAndRequireEnabledAsync",
+              "id": "pages/rush-lib.buildcacheconfiguration.loadandrequireenabledasync"
+            },
+            {
+              "type": "doc",
+              "label": "localCacheProvider",
+              "id": "pages/rush-lib.buildcacheconfiguration.localcacheprovider"
+            },
+            {
+              "type": "doc",
+              "label": "tryLoadAsync",
+              "id": "pages/rush-lib.buildcacheconfiguration.tryloadasync"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "label": "BumpType",
           "id": "pages/rush-lib.bumptype"
@@ -3252,6 +3318,11 @@
               "id": "pages/rush-lib.changemanager.createemptychangefiles"
             }
           ]
+        },
+        {
+          "type": "doc",
+          "label": "CloudBuildCacheProviderFactory",
+          "id": "pages/rush-lib.cloudbuildcacheproviderfactory"
         },
         {
           "type": "category",
@@ -3310,9 +3381,141 @@
           ]
         },
         {
+          "type": "category",
+          "label": "CredentialCache",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.credentialcache"
+            },
+            {
+              "type": "doc",
+              "label": "deleteCacheEntry",
+              "id": "pages/rush-lib.credentialcache.deletecacheentry"
+            },
+            {
+              "type": "doc",
+              "label": "dispose",
+              "id": "pages/rush-lib.credentialcache.dispose"
+            },
+            {
+              "type": "doc",
+              "label": "initializeAsync",
+              "id": "pages/rush-lib.credentialcache.initializeasync"
+            },
+            {
+              "type": "doc",
+              "label": "saveIfModifiedAsync",
+              "id": "pages/rush-lib.credentialcache.saveifmodifiedasync"
+            },
+            {
+              "type": "doc",
+              "label": "setCacheEntry",
+              "id": "pages/rush-lib.credentialcache.setcacheentry"
+            },
+            {
+              "type": "doc",
+              "label": "trimExpiredEntries",
+              "id": "pages/rush-lib.credentialcache.trimexpiredentries"
+            },
+            {
+              "type": "doc",
+              "label": "tryGetCacheEntry",
+              "id": "pages/rush-lib.credentialcache.trygetcacheentry"
+            },
+            {
+              "type": "doc",
+              "label": "usingAsync",
+              "id": "pages/rush-lib.credentialcache.usingasync"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "label": "DependencyType",
           "id": "pages/rush-lib.dependencytype"
+        },
+        {
+          "type": "category",
+          "label": "EnvironmentConfiguration",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.environmentconfiguration"
+            },
+            {
+              "type": "doc",
+              "label": "absoluteSymlinks",
+              "id": "pages/rush-lib.environmentconfiguration.absolutesymlinks"
+            },
+            {
+              "type": "doc",
+              "label": "allowUnsupportedNodeVersion",
+              "id": "pages/rush-lib.environmentconfiguration.allowunsupportednodeversion"
+            },
+            {
+              "type": "doc",
+              "label": "allowWarningsInSuccessfulBuild",
+              "id": "pages/rush-lib.environmentconfiguration.allowwarningsinsuccessfulbuild"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheCredential",
+              "id": "pages/rush-lib.environmentconfiguration.buildcachecredential"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheEnabled",
+              "id": "pages/rush-lib.environmentconfiguration.buildcacheenabled"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheWriteAllowed",
+              "id": "pages/rush-lib.environmentconfiguration.buildcachewriteallowed"
+            },
+            {
+              "type": "doc",
+              "label": "gitBinaryPath",
+              "id": "pages/rush-lib.environmentconfiguration.gitbinarypath"
+            },
+            {
+              "type": "doc",
+              "label": "parseBooleanEnvironmentVariable",
+              "id": "pages/rush-lib.environmentconfiguration.parsebooleanenvironmentvariable"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmStorePathOverride",
+              "id": "pages/rush-lib.environmentconfiguration.pnpmstorepathoverride"
+            },
+            {
+              "type": "doc",
+              "label": "reset",
+              "id": "pages/rush-lib.environmentconfiguration.reset"
+            },
+            {
+              "type": "doc",
+              "label": "rushGlobalFolderOverride",
+              "id": "pages/rush-lib.environmentconfiguration.rushglobalfolderoverride"
+            },
+            {
+              "type": "doc",
+              "label": "rushTempFolderOverride",
+              "id": "pages/rush-lib.environmentconfiguration.rushtempfolderoverride"
+            },
+            {
+              "type": "doc",
+              "label": "tarBinaryPath",
+              "id": "pages/rush-lib.environmentconfiguration.tarbinarypath"
+            },
+            {
+              "type": "doc",
+              "label": "validate",
+              "id": "pages/rush-lib.environmentconfiguration.validate"
+            }
+          ]
         },
         {
           "type": "doc",
@@ -3357,6 +3560,83 @@
           ]
         },
         {
+          "type": "category",
+          "label": "FileSystemBuildCacheProvider",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.filesystembuildcacheprovider"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/rush-lib.filesystembuildcacheprovider._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "getCacheEntryPath",
+              "id": "pages/rush-lib.filesystembuildcacheprovider.getcacheentrypath"
+            },
+            {
+              "type": "doc",
+              "label": "tryGetCacheEntryPathByIdAsync",
+              "id": "pages/rush-lib.filesystembuildcacheprovider.trygetcacheentrypathbyidasync"
+            },
+            {
+              "type": "doc",
+              "label": "trySetCacheEntryBufferAsync",
+              "id": "pages/rush-lib.filesystembuildcacheprovider.trysetcacheentrybufferasync"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "GetCacheEntryIdFunction",
+          "id": "pages/rush-lib.getcacheentryidfunction"
+        },
+        {
+          "type": "category",
+          "label": "ICloudBuildCacheProvider",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.icloudbuildcacheprovider"
+            },
+            {
+              "type": "doc",
+              "label": "deleteCachedCredentialsAsync",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.deletecachedcredentialsasync"
+            },
+            {
+              "type": "doc",
+              "label": "isCacheWriteAllowed",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.iscachewriteallowed"
+            },
+            {
+              "type": "doc",
+              "label": "tryGetCacheEntryBufferByIdAsync",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.trygetcacheentrybufferbyidasync"
+            },
+            {
+              "type": "doc",
+              "label": "trySetCacheEntryBufferAsync",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.trysetcacheentrybufferasync"
+            },
+            {
+              "type": "doc",
+              "label": "updateCachedCredentialAsync",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.updatecachedcredentialasync"
+            },
+            {
+              "type": "doc",
+              "label": "updateCachedCredentialInteractiveAsync",
+              "id": "pages/rush-lib.icloudbuildcacheprovider.updatecachedcredentialinteractiveasync"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "label": "IConfigurationEnvironment",
           "id": "pages/rush-lib.iconfigurationenvironment"
@@ -3384,17 +3664,65 @@
         },
         {
           "type": "category",
+          "label": "ICredentialCacheEntry",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.icredentialcacheentry"
+            },
+            {
+              "type": "doc",
+              "label": "credential",
+              "id": "pages/rush-lib.icredentialcacheentry.credential"
+            },
+            {
+              "type": "doc",
+              "label": "expires",
+              "id": "pages/rush-lib.icredentialcacheentry.expires"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ICredentialCacheOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.icredentialcacheoptions"
+            },
+            {
+              "type": "doc",
+              "label": "supportEditing",
+              "id": "pages/rush-lib.icredentialcacheoptions.supportediting"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IEnvironmentConfigurationInitializeOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.ienvironmentconfigurationinitializeoptions"
+            },
+            {
+              "type": "doc",
+              "label": "doNotNormalizePaths",
+              "id": "pages/rush-lib.ienvironmentconfigurationinitializeoptions.donotnormalizepaths"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IExperimentsJson",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.iexperimentsjson"
-            },
-            {
-              "type": "doc",
-              "label": "_multiPhaseCommands",
-              "id": "pages/rush-lib.iexperimentsjson._multiphasecommands"
             },
             {
               "type": "doc",
@@ -3413,6 +3741,11 @@
             },
             {
               "type": "doc",
+              "label": "phasedCommands",
+              "id": "pages/rush-lib.iexperimentsjson.phasedcommands"
+            },
+            {
+              "type": "doc",
               "label": "usePnpmFrozenLockfileForRushInstall",
               "id": "pages/rush-lib.iexperimentsjson.usepnpmfrozenlockfileforrushinstall"
             },
@@ -3425,12 +3758,69 @@
         },
         {
           "type": "category",
+          "label": "IFileSystemBuildCacheProviderOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.ifilesystembuildcacheprovideroptions"
+            },
+            {
+              "type": "doc",
+              "label": "rushConfiguration",
+              "id": "pages/rush-lib.ifilesystembuildcacheprovideroptions.rushconfiguration"
+            },
+            {
+              "type": "doc",
+              "label": "rushUserConfiguration",
+              "id": "pages/rush-lib.ifilesystembuildcacheprovideroptions.rushuserconfiguration"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IGenerateCacheEntryIdOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.igeneratecacheentryidoptions"
+            },
+            {
+              "type": "doc",
+              "label": "phaseName",
+              "id": "pages/rush-lib.igeneratecacheentryidoptions.phasename"
+            },
+            {
+              "type": "doc",
+              "label": "projectName",
+              "id": "pages/rush-lib.igeneratecacheentryidoptions.projectname"
+            },
+            {
+              "type": "doc",
+              "label": "projectStateHash",
+              "id": "pages/rush-lib.igeneratecacheentryidoptions.projectstatehash"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IGetChangedProjectsOptions",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.igetchangedprojectsoptions"
+            },
+            {
+              "type": "doc",
+              "label": "enableFiltering",
+              "id": "pages/rush-lib.igetchangedprojectsoptions.enablefiltering"
+            },
+            {
+              "type": "doc",
+              "label": "includeExternalDependencies",
+              "id": "pages/rush-lib.igetchangedprojectsoptions.includeexternaldependencies"
             },
             {
               "type": "doc",
@@ -3450,6 +3840,11 @@
           ]
         },
         {
+          "type": "doc",
+          "label": "IGlobalCommand",
+          "id": "pages/rush-lib.iglobalcommand"
+        },
+        {
           "type": "category",
           "label": "ILaunchOptions",
           "items": [
@@ -3467,6 +3862,32 @@
               "type": "doc",
               "label": "isManaged",
               "id": "pages/rush-lib.ilaunchoptions.ismanaged"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILogger",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.ilogger"
+            },
+            {
+              "type": "doc",
+              "label": "emitError",
+              "id": "pages/rush-lib.ilogger.emiterror"
+            },
+            {
+              "type": "doc",
+              "label": "emitWarning",
+              "id": "pages/rush-lib.ilogger.emitwarning"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/rush-lib.ilogger.terminal"
             }
           ]
         },
@@ -3503,6 +3924,83 @@
         },
         {
           "type": "category",
+          "label": "IOperationRunner",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.ioperationrunner"
+            },
+            {
+              "type": "doc",
+              "label": "executeAsync",
+              "id": "pages/rush-lib.ioperationrunner.executeasync"
+            },
+            {
+              "type": "doc",
+              "label": "isCacheWriteAllowed",
+              "id": "pages/rush-lib.ioperationrunner.iscachewriteallowed"
+            },
+            {
+              "type": "doc",
+              "label": "isSkipAllowed",
+              "id": "pages/rush-lib.ioperationrunner.isskipallowed"
+            },
+            {
+              "type": "doc",
+              "label": "name",
+              "id": "pages/rush-lib.ioperationrunner.name"
+            },
+            {
+              "type": "doc",
+              "label": "reportTiming",
+              "id": "pages/rush-lib.ioperationrunner.reporttiming"
+            },
+            {
+              "type": "doc",
+              "label": "silent",
+              "id": "pages/rush-lib.ioperationrunner.silent"
+            },
+            {
+              "type": "doc",
+              "label": "warningsAreAllowed",
+              "id": "pages/rush-lib.ioperationrunner.warningsareallowed"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IOperationRunnerContext",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.ioperationrunnercontext"
+            },
+            {
+              "type": "doc",
+              "label": "collatedWriter",
+              "id": "pages/rush-lib.ioperationrunnercontext.collatedwriter"
+            },
+            {
+              "type": "doc",
+              "label": "debugMode",
+              "id": "pages/rush-lib.ioperationrunnercontext.debugmode"
+            },
+            {
+              "type": "doc",
+              "label": "quietMode",
+              "id": "pages/rush-lib.ioperationrunnercontext.quietmode"
+            },
+            {
+              "type": "doc",
+              "label": "stdioSummarizer",
+              "id": "pages/rush-lib.ioperationrunnercontext.stdiosummarizer"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IPackageManagerOptionsJsonBase",
           "items": [
             {
@@ -3514,6 +4012,64 @@
               "type": "doc",
               "label": "environmentVariables",
               "id": "pages/rush-lib.ipackagemanageroptionsjsonbase.environmentvariables"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IPhasedCommand",
+          "id": "pages/rush-lib.iphasedcommand"
+        },
+        {
+          "type": "category",
+          "label": "IRushCommand",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.irushcommand"
+            },
+            {
+              "type": "doc",
+              "label": "actionName",
+              "id": "pages/rush-lib.irushcommand.actionname"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IRushPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.irushplugin"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/rush-lib.irushplugin.apply"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IRushSessionOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.irushsessionoptions"
+            },
+            {
+              "type": "doc",
+              "label": "getIsDebugMode",
+              "id": "pages/rush-lib.irushsessionoptions.getisdebugmode"
+            },
+            {
+              "type": "doc",
+              "label": "terminalProvider",
+              "id": "pages/rush-lib.irushsessionoptions.terminalprovider"
             }
           ]
         },
@@ -3585,9 +4141,60 @@
           ]
         },
         {
+          "type": "category",
+          "label": "LookupByPath",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.lookupbypath"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/rush-lib.lookupbypath._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "delimiter",
+              "id": "pages/rush-lib.lookupbypath.delimiter"
+            },
+            {
+              "type": "doc",
+              "label": "findChildPath",
+              "id": "pages/rush-lib.lookupbypath.findchildpath"
+            },
+            {
+              "type": "doc",
+              "label": "findChildPathFromSegments",
+              "id": "pages/rush-lib.lookupbypath.findchildpathfromsegments"
+            },
+            {
+              "type": "doc",
+              "label": "iteratePathSegments",
+              "id": "pages/rush-lib.lookupbypath.iteratepathsegments"
+            },
+            {
+              "type": "doc",
+              "label": "setItem",
+              "id": "pages/rush-lib.lookupbypath.setitem"
+            },
+            {
+              "type": "doc",
+              "label": "setItemFromSegments",
+              "id": "pages/rush-lib.lookupbypath.setitemfromsegments"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "label": "NpmOptionsConfiguration",
           "id": "pages/rush-lib.npmoptionsconfiguration"
+        },
+        {
+          "type": "doc",
+          "label": "OperationStatus",
+          "id": "pages/rush-lib.operationstatus"
         },
         {
           "type": "category",
@@ -3805,6 +4412,11 @@
             },
             {
               "type": "doc",
+              "label": "_filterProjectDataAsync",
+              "id": "pages/rush-lib.projectchangeanalyzer._filterprojectdataasync"
+            },
+            {
+              "type": "doc",
               "label": "(constructor)",
               "id": "pages/rush-lib.projectchangeanalyzer._constructor_"
             },
@@ -3978,11 +4590,6 @@
             },
             {
               "type": "doc",
-              "label": "findProjectForPosixRelativePath",
-              "id": "pages/rush-lib.rushconfiguration.findprojectforposixrelativepath"
-            },
-            {
-              "type": "doc",
               "label": "getCommittedShrinkwrapFilename",
               "id": "pages/rush-lib.rushconfiguration.getcommittedshrinkwrapfilename"
             },
@@ -4010,6 +4617,11 @@
               "type": "doc",
               "label": "getProjectByName",
               "id": "pages/rush-lib.rushconfiguration.getprojectbyname"
+            },
+            {
+              "type": "doc",
+              "label": "getProjectLookupForRoot",
+              "id": "pages/rush-lib.rushconfiguration.getprojectlookupforroot"
             },
             {
               "type": "doc",
@@ -4148,8 +4760,8 @@
             },
             {
               "type": "doc",
-              "label": "repositoryUrl",
-              "id": "pages/rush-lib.rushconfiguration.repositoryurl"
+              "label": "repositoryUrls",
+              "id": "pages/rush-lib.rushconfiguration.repositoryurls"
             },
             {
               "type": "doc",
@@ -4165,6 +4777,11 @@
               "type": "doc",
               "label": "rushLinkJsonFilename",
               "id": "pages/rush-lib.rushconfiguration.rushlinkjsonfilename"
+            },
+            {
+              "type": "doc",
+              "label": "rushPluginOptionsFolder",
+              "id": "pages/rush-lib.rushconfiguration.rushpluginoptionsfolder"
             },
             {
               "type": "doc",
@@ -4346,6 +4963,330 @@
               "type": "doc",
               "label": "versionPolicyName",
               "id": "pages/rush-lib.rushconfigurationproject.versionpolicyname"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "RushConstants",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.rushconstants"
+            },
+            {
+              "type": "doc",
+              "label": "artifactoryFilename",
+              "id": "pages/rush-lib.rushconstants.artifactoryfilename"
+            },
+            {
+              "type": "doc",
+              "label": "browserApprovedPackagesFilename",
+              "id": "pages/rush-lib.rushconstants.browserapprovedpackagesfilename"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheFilename",
+              "id": "pages/rush-lib.rushconstants.buildcachefilename"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheVersion",
+              "id": "pages/rush-lib.rushconstants.buildcacheversion"
+            },
+            {
+              "type": "doc",
+              "label": "buildCommandName",
+              "id": "pages/rush-lib.rushconstants.buildcommandname"
+            },
+            {
+              "type": "doc",
+              "label": "bulkCommandKind",
+              "id": "pages/rush-lib.rushconstants.bulkcommandkind"
+            },
+            {
+              "type": "doc",
+              "label": "changeFilesFolderName",
+              "id": "pages/rush-lib.rushconstants.changefilesfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "commandLineFilename",
+              "id": "pages/rush-lib.rushconstants.commandlinefilename"
+            },
+            {
+              "type": "doc",
+              "label": "commonFolderName",
+              "id": "pages/rush-lib.rushconstants.commonfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "commonVersionsFilename",
+              "id": "pages/rush-lib.rushconstants.commonversionsfilename"
+            },
+            {
+              "type": "doc",
+              "label": "defaultMaxInstallAttempts",
+              "id": "pages/rush-lib.rushconstants.defaultmaxinstallattempts"
+            },
+            {
+              "type": "doc",
+              "label": "experimentsFilename",
+              "id": "pages/rush-lib.rushconstants.experimentsfilename"
+            },
+            {
+              "type": "doc",
+              "label": "globalCommandKind",
+              "id": "pages/rush-lib.rushconstants.globalcommandkind"
+            },
+            {
+              "type": "doc",
+              "label": "hashDelimiter",
+              "id": "pages/rush-lib.rushconstants.hashdelimiter"
+            },
+            {
+              "type": "doc",
+              "label": "nodeModulesFolderName",
+              "id": "pages/rush-lib.rushconstants.nodemodulesfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "nonbrowserApprovedPackagesFilename",
+              "id": "pages/rush-lib.rushconstants.nonbrowserapprovedpackagesfilename"
+            },
+            {
+              "type": "doc",
+              "label": "npmShrinkwrapFilename",
+              "id": "pages/rush-lib.rushconstants.npmshrinkwrapfilename"
+            },
+            {
+              "type": "doc",
+              "label": "phasedCommandKind",
+              "id": "pages/rush-lib.rushconstants.phasedcommandkind"
+            },
+            {
+              "type": "doc",
+              "label": "phaseNamePrefix",
+              "id": "pages/rush-lib.rushconstants.phasenameprefix"
+            },
+            {
+              "type": "doc",
+              "label": "pinnedVersionsFilename",
+              "id": "pages/rush-lib.rushconstants.pinnedversionsfilename"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmfileV1Filename",
+              "id": "pages/rush-lib.rushconstants.pnpmfilev1filename"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmfileV6Filename",
+              "id": "pages/rush-lib.rushconstants.pnpmfilev6filename"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmV3ShrinkwrapFilename",
+              "id": "pages/rush-lib.rushconstants.pnpmv3shrinkwrapfilename"
+            },
+            {
+              "type": "doc",
+              "label": "projectRushFolderName",
+              "id": "pages/rush-lib.rushconstants.projectrushfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "projectShrinkwrapFilename",
+              "id": "pages/rush-lib.rushconstants.projectshrinkwrapfilename"
+            },
+            {
+              "type": "doc",
+              "label": "rebuildCommandName",
+              "id": "pages/rush-lib.rushconstants.rebuildcommandname"
+            },
+            {
+              "type": "doc",
+              "label": "repoStateFilename",
+              "id": "pages/rush-lib.rushconstants.repostatefilename"
+            },
+            {
+              "type": "doc",
+              "label": "rushLogsFolderName",
+              "id": "pages/rush-lib.rushconstants.rushlogsfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushPackageName",
+              "id": "pages/rush-lib.rushconstants.rushpackagename"
+            },
+            {
+              "type": "doc",
+              "label": "rushPluginManifestFilename",
+              "id": "pages/rush-lib.rushconstants.rushpluginmanifestfilename"
+            },
+            {
+              "type": "doc",
+              "label": "rushPluginsConfigFilename",
+              "id": "pages/rush-lib.rushconstants.rushpluginsconfigfilename"
+            },
+            {
+              "type": "doc",
+              "label": "rushProjectConfigFilename",
+              "id": "pages/rush-lib.rushconstants.rushprojectconfigfilename"
+            },
+            {
+              "type": "doc",
+              "label": "rushRecyclerFolderName",
+              "id": "pages/rush-lib.rushconstants.rushrecyclerfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushTempFolderName",
+              "id": "pages/rush-lib.rushconstants.rushtempfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushTempNpmScope",
+              "id": "pages/rush-lib.rushconstants.rushtempnpmscope"
+            },
+            {
+              "type": "doc",
+              "label": "rushTempProjectsFolderName",
+              "id": "pages/rush-lib.rushconstants.rushtempprojectsfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushUserConfigurationFolderName",
+              "id": "pages/rush-lib.rushconstants.rushuserconfigurationfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushVariantsFolderName",
+              "id": "pages/rush-lib.rushconstants.rushvariantsfoldername"
+            },
+            {
+              "type": "doc",
+              "label": "rushWebSiteUrl",
+              "id": "pages/rush-lib.rushconstants.rushwebsiteurl"
+            },
+            {
+              "type": "doc",
+              "label": "updateCloudCredentialsCommandName",
+              "id": "pages/rush-lib.rushconstants.updatecloudcredentialscommandname"
+            },
+            {
+              "type": "doc",
+              "label": "versionPoliciesFilename",
+              "id": "pages/rush-lib.rushconstants.versionpoliciesfilename"
+            },
+            {
+              "type": "doc",
+              "label": "yarnShrinkwrapFilename",
+              "id": "pages/rush-lib.rushconstants.yarnshrinkwrapfilename"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "RushLifecycleHooks",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.rushlifecyclehooks"
+            },
+            {
+              "type": "doc",
+              "label": "initialize",
+              "id": "pages/rush-lib.rushlifecyclehooks.initialize"
+            },
+            {
+              "type": "doc",
+              "label": "runAnyGlobalCustomCommand",
+              "id": "pages/rush-lib.rushlifecyclehooks.runanyglobalcustomcommand"
+            },
+            {
+              "type": "doc",
+              "label": "runAnyPhasedCommand",
+              "id": "pages/rush-lib.rushlifecyclehooks.runanyphasedcommand"
+            },
+            {
+              "type": "doc",
+              "label": "runGlobalCustomCommand",
+              "id": "pages/rush-lib.rushlifecyclehooks.runglobalcustomcommand"
+            },
+            {
+              "type": "doc",
+              "label": "runPhasedCommand",
+              "id": "pages/rush-lib.rushlifecyclehooks.runphasedcommand"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "RushSession",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.rushsession"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/rush-lib.rushsession._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "getCloudBuildCacheProviderFactory",
+              "id": "pages/rush-lib.rushsession.getcloudbuildcacheproviderfactory"
+            },
+            {
+              "type": "doc",
+              "label": "getLogger",
+              "id": "pages/rush-lib.rushsession.getlogger"
+            },
+            {
+              "type": "doc",
+              "label": "hooks",
+              "id": "pages/rush-lib.rushsession.hooks"
+            },
+            {
+              "type": "doc",
+              "label": "registerCloudBuildCacheProviderFactory",
+              "id": "pages/rush-lib.rushsession.registercloudbuildcacheproviderfactory"
+            },
+            {
+              "type": "doc",
+              "label": "terminalProvider",
+              "id": "pages/rush-lib.rushsession.terminalprovider"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "RushUserConfiguration",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.rushuserconfiguration"
+            },
+            {
+              "type": "doc",
+              "label": "buildCacheFolder",
+              "id": "pages/rush-lib.rushuserconfiguration.buildcachefolder"
+            },
+            {
+              "type": "doc",
+              "label": "getRushUserFolderPath",
+              "id": "pages/rush-lib.rushuserconfiguration.getrushuserfolderpath"
+            },
+            {
+              "type": "doc",
+              "label": "initializeAsync",
+              "id": "pages/rush-lib.rushuserconfiguration.initializeasync"
             }
           ]
         },
@@ -5436,56 +6377,6 @@
             },
             {
               "type": "doc",
-              "label": "debugHeftReporter",
-              "id": "pages/heft.iteststageproperties.debugheftreporter"
-            },
-            {
-              "type": "doc",
-              "label": "detectOpenHandles",
-              "id": "pages/heft.iteststageproperties.detectopenhandles"
-            },
-            {
-              "type": "doc",
-              "label": "findRelatedTests",
-              "id": "pages/heft.iteststageproperties.findrelatedtests"
-            },
-            {
-              "type": "doc",
-              "label": "maxWorkers",
-              "id": "pages/heft.iteststageproperties.maxworkers"
-            },
-            {
-              "type": "doc",
-              "label": "passWithNoTests",
-              "id": "pages/heft.iteststageproperties.passwithnotests"
-            },
-            {
-              "type": "doc",
-              "label": "silent",
-              "id": "pages/heft.iteststageproperties.silent"
-            },
-            {
-              "type": "doc",
-              "label": "testNamePattern",
-              "id": "pages/heft.iteststageproperties.testnamepattern"
-            },
-            {
-              "type": "doc",
-              "label": "testPathPattern",
-              "id": "pages/heft.iteststageproperties.testpathpattern"
-            },
-            {
-              "type": "doc",
-              "label": "testTimeout",
-              "id": "pages/heft.iteststageproperties.testtimeout"
-            },
-            {
-              "type": "doc",
-              "label": "updateSnapshots",
-              "id": "pages/heft.iteststageproperties.updatesnapshots"
-            },
-            {
-              "type": "doc",
               "label": "watchMode",
               "id": "pages/heft.iteststageproperties.watchmode"
             }
@@ -5806,144 +6697,6 @@
     },
     {
       "type": "category",
-      "label": "@rushstack/heft-webpack4-plugin",
-      "items": [
-        {
-          "type": "doc",
-          "label": "(members)",
-          "id": "pages/heft-webpack4-plugin"
-        },
-        {
-          "type": "doc",
-          "label": "_default",
-          "id": "pages/heft-webpack4-plugin._default"
-        },
-        {
-          "type": "category",
-          "label": "IWebpackBuildStageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack4-plugin.iwebpackbuildstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "webpackStats",
-              "id": "pages/heft-webpack4-plugin.iwebpackbuildstageproperties.webpackstats"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IWebpackBundleSubstageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack4-plugin.iwebpackbundlesubstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "webpackConfiguration",
-              "id": "pages/heft-webpack4-plugin.iwebpackbundlesubstageproperties.webpackconfiguration"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IWebpackConfiguration",
-          "id": "pages/heft-webpack4-plugin.iwebpackconfiguration"
-        },
-        {
-          "type": "category",
-          "label": "IWebpackConfigurationWithDevServer",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack4-plugin.iwebpackconfigurationwithdevserver"
-            },
-            {
-              "type": "doc",
-              "label": "devServer",
-              "id": "pages/heft-webpack4-plugin.iwebpackconfigurationwithdevserver.devserver"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "@rushstack/heft-webpack5-plugin",
-      "items": [
-        {
-          "type": "doc",
-          "label": "(members)",
-          "id": "pages/heft-webpack5-plugin"
-        },
-        {
-          "type": "doc",
-          "label": "_default",
-          "id": "pages/heft-webpack5-plugin._default"
-        },
-        {
-          "type": "category",
-          "label": "IWebpackBuildStageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack5-plugin.iwebpackbuildstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "webpackStats",
-              "id": "pages/heft-webpack5-plugin.iwebpackbuildstageproperties.webpackstats"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IWebpackBundleSubstageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack5-plugin.iwebpackbundlesubstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "webpackConfiguration",
-              "id": "pages/heft-webpack5-plugin.iwebpackbundlesubstageproperties.webpackconfiguration"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IWebpackConfiguration",
-          "id": "pages/heft-webpack5-plugin.iwebpackconfiguration"
-        },
-        {
-          "type": "category",
-          "label": "IWebpackConfigurationWithDevServer",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-webpack5-plugin.iwebpackconfigurationwithdevserver"
-            },
-            {
-              "type": "doc",
-              "label": "devServer",
-              "id": "pages/heft-webpack5-plugin.iwebpackconfigurationwithdevserver.devserver"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "category",
       "label": "@rushstack/localization-plugin",
       "items": [
         {
@@ -5988,6 +6741,11 @@
           "id": "pages/localization-plugin.ilocalefiledata"
         },
         {
+          "type": "doc",
+          "label": "ILocalizationFile",
+          "id": "pages/localization-plugin.ilocalizationfile"
+        },
+        {
           "type": "category",
           "label": "ILocalizationPluginOptions",
           "items": [
@@ -6000,6 +6758,11 @@
               "type": "doc",
               "label": "filesToIgnore",
               "id": "pages/localization-plugin.ilocalizationpluginoptions.filestoignore"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/localization-plugin.ilocalizationpluginoptions.globstoignore"
             },
             {
               "type": "doc",
@@ -6113,6 +6876,11 @@
             },
             {
               "type": "doc",
+              "label": "ignoreMissingResxComments",
+              "id": "pages/localization-plugin.ilocalizeddata.ignoremissingresxcomments"
+            },
+            {
+              "type": "doc",
               "label": "normalizeResxNewlines",
               "id": "pages/localization-plugin.ilocalizeddata.normalizeresxnewlines"
             },
@@ -6135,6 +6903,27 @@
               "type": "doc",
               "label": "translatedStrings",
               "id": "pages/localization-plugin.ilocalizeddata.translatedstrings"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizedString",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-plugin.ilocalizedstring"
+            },
+            {
+              "type": "doc",
+              "label": "comment",
+              "id": "pages/localization-plugin.ilocalizedstring.comment"
+            },
+            {
+              "type": "doc",
+              "label": "value",
+              "id": "pages/localization-plugin.ilocalizedstring.value"
             }
           ]
         },
@@ -6238,6 +7027,37 @@
         },
         {
           "type": "category",
+          "label": "IResxReaderOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-plugin.iresxreaderoptions"
+            },
+            {
+              "type": "doc",
+              "label": "newlineNormalization",
+              "id": "pages/localization-plugin.iresxreaderoptions.newlinenormalization"
+            },
+            {
+              "type": "doc",
+              "label": "resxFilePath",
+              "id": "pages/localization-plugin.iresxreaderoptions.resxfilepath"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/localization-plugin.iresxreaderoptions.terminal"
+            },
+            {
+              "type": "doc",
+              "label": "warnOnMissingComment",
+              "id": "pages/localization-plugin.iresxreaderoptions.warnonmissingcomment"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ITypingsGenerationOptions",
           "items": [
             {
@@ -6278,13 +7098,18 @@
             },
             {
               "type": "doc",
-              "label": "filesToIgnore",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.filestoignore"
+              "label": "generatedTsFolder",
+              "id": "pages/localization-plugin.itypingsgeneratoroptions.generatedtsfolder"
             },
             {
               "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.generatedtsfolder"
+              "label": "globsToIgnore",
+              "id": "pages/localization-plugin.itypingsgeneratoroptions.globstoignore"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreMissingResxComments",
+              "id": "pages/localization-plugin.itypingsgeneratoroptions.ignoremissingresxcomments"
             },
             {
               "type": "doc",
@@ -6326,6 +7151,27 @@
         },
         {
           "type": "category",
+          "label": "ResxReader",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-plugin.resxreader"
+            },
+            {
+              "type": "doc",
+              "label": "readResxAsLocFile",
+              "id": "pages/localization-plugin.resxreader.readresxaslocfile"
+            },
+            {
+              "type": "doc",
+              "label": "readResxFileAsLocFile",
+              "id": "pages/localization-plugin.resxreader.readresxfileaslocfile"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "TypingsGenerator",
           "items": [
             {
@@ -6360,6 +7206,11 @@
           "type": "doc",
           "label": "generateLicenseFileForAsset",
           "id": "pages/module-minifier-plugin.generatelicensefileforasset"
+        },
+        {
+          "type": "doc",
+          "label": "getIdentifier",
+          "id": "pages/module-minifier-plugin.getidentifier"
         },
         {
           "type": "category",
@@ -6449,6 +7300,11 @@
             },
             {
               "type": "doc",
+              "label": "hasDependencies",
+              "id": "pages/module-minifier-plugin.iextendedmodule.hasdependencies"
+            },
+            {
+              "type": "doc",
               "label": "id",
               "id": "pages/module-minifier-plugin.iextendedmodule.id"
             },
@@ -6471,6 +7327,43 @@
               "type": "doc",
               "label": "resource",
               "id": "pages/module-minifier-plugin.iextendedmodule.resource"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalMinifierOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/module-minifier-plugin.ilocalminifieroptions"
+            },
+            {
+              "type": "doc",
+              "label": "terserOptions",
+              "id": "pages/module-minifier-plugin.ilocalminifieroptions.terseroptions"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IMinifierConnection",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/module-minifier-plugin.iminifierconnection"
+            },
+            {
+              "type": "doc",
+              "label": "configHash",
+              "id": "pages/module-minifier-plugin.iminifierconnection.confighash"
+            },
+            {
+              "type": "doc",
+              "label": "disconnect",
+              "id": "pages/module-minifier-plugin.iminifierconnection.disconnect"
             }
           ]
         },
@@ -6614,13 +7507,13 @@
             },
             {
               "type": "doc",
-              "label": "minify",
-              "id": "pages/module-minifier-plugin.imoduleminifier.minify"
+              "label": "connect",
+              "id": "pages/module-minifier-plugin.imoduleminifier.connect"
             },
             {
               "type": "doc",
-              "label": "ref",
-              "id": "pages/module-minifier-plugin.imoduleminifier.ref"
+              "label": "minify",
+              "id": "pages/module-minifier-plugin.imoduleminifier.minify"
             }
           ]
         },
@@ -6666,6 +7559,11 @@
             },
             {
               "type": "doc",
+              "label": "compressAsyncImports",
+              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.compressasyncimports"
+            },
+            {
+              "type": "doc",
               "label": "minifier",
               "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.minifier"
             },
@@ -6683,17 +7581,27 @@
         },
         {
           "type": "category",
-          "label": "ISynchronousMinifierOptions",
+          "label": "IPostProcessFragmentContext",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.isynchronousminifieroptions"
+              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext"
             },
             {
               "type": "doc",
-              "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.isynchronousminifieroptions.terseroptions"
+              "label": "compilation",
+              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.compilation"
+            },
+            {
+              "type": "doc",
+              "label": "loggingName",
+              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.loggingname"
+            },
+            {
+              "type": "doc",
+              "label": "module",
+              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.module"
             }
           ]
         },
@@ -6720,6 +7628,32 @@
               "type": "doc",
               "label": "verbose",
               "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.verbose"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "LocalMinifier",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/module-minifier-plugin.localminifier"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/module-minifier-plugin.localminifier._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "connect",
+              "id": "pages/module-minifier-plugin.localminifier.connect"
+            },
+            {
+              "type": "doc",
+              "label": "minify",
+              "id": "pages/module-minifier-plugin.localminifier.minify"
             }
           ]
         },
@@ -6775,6 +7709,11 @@
             },
             {
               "type": "doc",
+              "label": "connect",
+              "id": "pages/module-minifier-plugin.noopminifier.connect"
+            },
+            {
+              "type": "doc",
               "label": "minify",
               "id": "pages/module-minifier-plugin.noopminifier.minify"
             }
@@ -6818,32 +7757,6 @@
         },
         {
           "type": "category",
-          "label": "SynchronousMinifier",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.synchronousminifier"
-            },
-            {
-              "type": "doc",
-              "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.synchronousminifier._constructor_"
-            },
-            {
-              "type": "doc",
-              "label": "minify",
-              "id": "pages/module-minifier-plugin.synchronousminifier.minify"
-            },
-            {
-              "type": "doc",
-              "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.synchronousminifier.terseroptions"
-            }
-          ]
-        },
-        {
-          "type": "category",
           "label": "WorkerPoolMinifier",
           "items": [
             {
@@ -6858,6 +7771,11 @@
             },
             {
               "type": "doc",
+              "label": "connect",
+              "id": "pages/module-minifier-plugin.workerpoolminifier.connect"
+            },
+            {
+              "type": "doc",
               "label": "maxThreads",
               "id": "pages/module-minifier-plugin.workerpoolminifier.maxthreads"
             },
@@ -6865,11 +7783,6 @@
               "type": "doc",
               "label": "minify",
               "id": "pages/module-minifier-plugin.workerpoolminifier.minify"
-            },
-            {
-              "type": "doc",
-              "label": "ref",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.ref"
             }
           ]
         }
@@ -7538,6 +8451,26 @@
             },
             {
               "type": "doc",
+              "label": "readFolderItemNames",
+              "id": "pages/node-core-library.filesystem.readfolderitemnames"
+            },
+            {
+              "type": "doc",
+              "label": "readFolderItemNamesAsync",
+              "id": "pages/node-core-library.filesystem.readfolderitemnamesasync"
+            },
+            {
+              "type": "doc",
+              "label": "readFolderItems",
+              "id": "pages/node-core-library.filesystem.readfolderitems"
+            },
+            {
+              "type": "doc",
+              "label": "readFolderItemsAsync",
+              "id": "pages/node-core-library.filesystem.readfolderitemsasync"
+            },
+            {
+              "type": "doc",
               "label": "readLink",
               "id": "pages/node-core-library.filesystem.readlink"
             },
@@ -7618,6 +8551,11 @@
           "type": "doc",
           "label": "FolderConstants",
           "id": "pages/node-core-library.folderconstants"
+        },
+        {
+          "type": "doc",
+          "label": "FolderItem",
+          "id": "pages/node-core-library.folderitem"
         },
         {
           "type": "category",
@@ -9511,6 +10449,11 @@
         },
         {
           "type": "doc",
+          "label": "ensureGitMinimumVersion",
+          "id": "pages/package-deps-hash.ensuregitminimumversion"
+        },
+        {
+          "type": "doc",
           "label": "getGitHashForFiles",
           "id": "pages/package-deps-hash.getgithashforfiles"
         },
@@ -9518,6 +10461,52 @@
           "type": "doc",
           "label": "getPackageDeps",
           "id": "pages/package-deps-hash.getpackagedeps"
+        },
+        {
+          "type": "doc",
+          "label": "getRepoChanges",
+          "id": "pages/package-deps-hash.getrepochanges"
+        },
+        {
+          "type": "doc",
+          "label": "getRepoRoot",
+          "id": "pages/package-deps-hash.getreporoot"
+        },
+        {
+          "type": "doc",
+          "label": "getRepoState",
+          "id": "pages/package-deps-hash.getrepostate"
+        },
+        {
+          "type": "category",
+          "label": "IFileDiffStatus",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-deps-hash.ifilediffstatus"
+            },
+            {
+              "type": "doc",
+              "label": "mode",
+              "id": "pages/package-deps-hash.ifilediffstatus.mode"
+            },
+            {
+              "type": "doc",
+              "label": "newhash",
+              "id": "pages/package-deps-hash.ifilediffstatus.newhash"
+            },
+            {
+              "type": "doc",
+              "label": "oldhash",
+              "id": "pages/package-deps-hash.ifilediffstatus.oldhash"
+            },
+            {
+              "type": "doc",
+              "label": "status",
+              "id": "pages/package-deps-hash.ifilediffstatus.status"
+            }
+          ]
         }
       ]
     },
@@ -11435,6 +12424,16 @@
             },
             {
               "type": "doc",
+              "label": "getAdditionalOutputFiles",
+              "id": "pages/typings-generator.itypingsgeneratoroptions.getadditionaloutputfiles"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/typings-generator.itypingsgeneratoroptions.globstoignore"
+            },
+            {
+              "type": "doc",
               "label": "parseAndGenerateTypings",
               "id": "pages/typings-generator.itypingsgeneratoroptions.parseandgeneratetypings"
             },
@@ -11489,6 +12488,11 @@
               "type": "doc",
               "label": "generateTypingsAsync",
               "id": "pages/typings-generator.typingsgenerator.generatetypingsasync"
+            },
+            {
+              "type": "doc",
+              "label": "getOutputFilePaths",
+              "id": "pages/typings-generator.typingsgenerator.getoutputfilepaths"
             },
             {
               "type": "doc",

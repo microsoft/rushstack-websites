@@ -11,12 +11,10 @@ pagination_next: null
 
 ## LockStepVersionPolicy.nextBump property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 The type of bump for next bump.
 
 <b>Signature:</b>
 
 ```typescript
-get nextBump(): BumpType;
+get nextBump(): BumpType | undefined;
 ```
