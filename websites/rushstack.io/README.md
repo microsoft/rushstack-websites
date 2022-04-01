@@ -11,12 +11,6 @@ rush build --to-except .
 rushx start
 ```
 
-For ease of iteration, you can also start the local dev server without the API Docs:
-
-```
-SKIP_API_DOCS=1 rushx start
-```
-
 ## Building a production build
 
 To produce the static site in the `build` directory:
@@ -59,23 +53,3 @@ Common commands:
 - `rushx start --locale zh-cn` - launch the localhost dev server in the specified language.
 
 - `rushx write-translations --locale zh-cn` - Update the `i8an/*.json` files with any new strings.
-
-## Updating API docs
-
-To update the API docs using latest APIs extracted from the Rush Stack repo, first navigate
-to your local clone of the https://github.com/microsoft/rushstack repo:
-
-```
-rush install
-rush build
-```
-
-Then, in this folder:
-
-```
-rush build --to-except .
-rushx update-api-docs <path-to-local-rushstack>
-mv docs/api_nav.json data
-```
-
-Check in the resulting `docs/api` and `data` folder changes and include it in your PR.

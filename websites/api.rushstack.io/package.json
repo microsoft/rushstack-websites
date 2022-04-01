@@ -1,0 +1,59 @@
+{
+  "name": "api.rushstack.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source for api.rushstack.io, the API reference section of the rushstack.io website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/rushstack-websites/tree/main/websites/api.rushstack.io"
+  },
+  "homepage": "https://rushstack.io",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "update-api-docs": "node scripts/update-api-docs.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.17",
+    "@docusaurus/preset-classic": "2.0.0-beta.17",
+    "@docusaurus/theme-common": "2.0.0-beta.17",
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "dayjs": "~1.10.7",
+    "docusaurus-theme-search-typesense": "0.4.0-2",
+    "file-loader": "^6.2.0",
+    "js-cookie": "~3.0.1",
+    "prism-react-renderer": "^1.2.1",
+    "react-dom": "^16.13.1",
+    "react": "^16.13.1",
+    "theme-rushstack-suite-nav": "workspace:*",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@algolia/client-search": "^4.12.2",
+    "@babel/core": "^7.17.5",
+    "@babel/runtime": "^7.17.2",
+    "@microsoft/api-documenter": "~7.14.0",
+    "@rushstack/node-core-library": "~3.44.3",
+    "@types/js-cookie": "3.0.1",
+    "@types/react-dom": "17.0.11",
+    "@types/react": "17.0.37",
+    "algoliasearch": "^4.12.2",
+    "api-documenter-docusaurus-plugin": "workspace:*",
+    "rehype-headerless-table-plugin": "workspace:*",
+    "remark-canonical-link-plugin": "workspace:*",
+    "remark-cross-site-link-plugin": "workspace:*",
+    "site-config": "workspace:*",
+    "typescript": "~4.5.4",
+    "webpack": "^5.70.0"
+  }
+}
