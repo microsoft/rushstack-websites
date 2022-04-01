@@ -11,7 +11,9 @@ pagination_next: null
 
 ## ILocalizationPluginOptions.filesToIgnore property
 
-This option is used to specify `.resx` and `.loc.json` files that should not be processed by this plugin.
+> Warning: This API is now obsolete.
+>
+> TODO: Remove when version 1.0.0 is released.
 
 <b>Signature:</b>
 

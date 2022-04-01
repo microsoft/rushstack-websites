@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicy.isLockstepped property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Whether it is a lockstepped version policy
 
 <b>Signature:</b>

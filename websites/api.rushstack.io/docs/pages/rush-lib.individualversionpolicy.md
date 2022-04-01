@@ -11,8 +11,6 @@ pagination_next: null
 
 ## IndividualVersionPolicy class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 This policy indicates all related projects get version bump driven by their own changes.
 
 <b>Signature:</b>
@@ -29,14 +27,14 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                         | Modifiers | Type                | Description                                                 |
-| ---------------------------------------------------------------- | --------- | ------------------- | ----------------------------------------------------------- |
-| [lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md) |           | number \| undefined | <b><i>(BETA)</i></b> The major version that has been locked |
+| Property                                                         | Modifiers | Type                | Description                            |
+| ---------------------------------------------------------------- | --------- | ------------------- | -------------------------------------- |
+| [lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md) |           | number \| undefined | The major version that has been locked |
 
 ## Methods
 
-| Method                                                                                 | Modifiers | Description                                                                                                                                     |
-| -------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| [bump(bumpType, identifier)](./rush-lib.individualversionpolicy.bump.md)               |           | <b><i>(BETA)</i></b> Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything. |
-| [ensure(project, force)](./rush-lib.individualversionpolicy.ensure.md)                 |           | <b><i>(BETA)</i></b> Returns an updated package json that satisfies the version policy.                                                         |
-| [validate(versionString, packageName)](./rush-lib.individualversionpolicy.validate.md) |           | <b><i>(BETA)</i></b> Validates the specified version and throws if the version does not satisfy the policy.                                     |
+| Method                                                                                 | Modifiers | Description                                                                                                                |
+| -------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [bump(bumpType, identifier)](./rush-lib.individualversionpolicy.bump.md)               |           | Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything. |
+| [ensure(project, force)](./rush-lib.individualversionpolicy.ensure.md)                 |           | Returns an updated package json that satisfies the version policy.                                                         |
+| [validate(versionString, packageName)](./rush-lib.individualversionpolicy.validate.md) |           | Validates the specified version and throws if the version does not satisfy the policy.                                     |

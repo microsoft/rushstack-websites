@@ -11,8 +11,6 @@ pagination_next: null
 
 ## LockStepVersionPolicy.update() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Updates the version of the policy directly with a new value
 
 <b>Signature:</b>

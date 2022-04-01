@@ -16,5 +16,5 @@ pagination_next: null
 <b>Signature:</b>
 
 ```typescript
-parentObject: TParentProperty;
+parentObject: Partial<TParentProperty>;
 ```

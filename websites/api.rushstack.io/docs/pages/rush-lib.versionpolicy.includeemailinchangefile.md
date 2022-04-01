@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicy.includeEmailInChangeFile property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Determines if a version policy wants to opt in to including email.
 
 <b>Signature:</b>

@@ -34,5 +34,6 @@ export interface IExtendedModule extends webpack.compilation.Module
 
 | Method                                                                                                 | Description                                   |
 | ------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| [hasDependencies(callback)](./module-minifier-plugin.iextendedmodule.hasdependencies.md)               | Recursively scan the dependencies of a module |
 | [identifier()](./module-minifier-plugin.iextendedmodule.identifier.md)                                 | Gets a descriptive identifier for the module. |
 | [readableIdentifier(requestShortener)](./module-minifier-plugin.iextendedmodule.readableidentifier.md) | Gets a friendly identifier for the module.    |

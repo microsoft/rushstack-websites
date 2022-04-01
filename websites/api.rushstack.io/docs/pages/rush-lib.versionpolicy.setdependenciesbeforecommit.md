@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicy.setDependenciesBeforeCommit() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Tells the version policy to modify any dependencies in the target package to values used for checked-in source.
 
 <b>Signature:</b>

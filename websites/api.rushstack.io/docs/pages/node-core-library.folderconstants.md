@@ -16,7 +16,7 @@ String constants for common folder names.
 <b>Signature:</b>
 
 ```typescript
-export declare const enum FolderConstants
+export declare enum FolderConstants
 ```
 
 ## Enumeration Members

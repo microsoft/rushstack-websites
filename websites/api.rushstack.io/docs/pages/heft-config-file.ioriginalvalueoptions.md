@@ -21,7 +21,7 @@ export interface IOriginalValueOptions<TParentProperty>
 
 ## Properties
 
-| Property                                                                 | Type                  | Description          |
-| ------------------------------------------------------------------------ | --------------------- | -------------------- |
-| [parentObject](./heft-config-file.ioriginalvalueoptions.parentobject.md) | TParentProperty       | <b><i>(BETA)</i></b> |
-| [propertyName](./heft-config-file.ioriginalvalueoptions.propertyname.md) | keyof TParentProperty | <b><i>(BETA)</i></b> |
+| Property                                                                 | Type                           | Description          |
+| ------------------------------------------------------------------------ | ------------------------------ | -------------------- |
+| [parentObject](./heft-config-file.ioriginalvalueoptions.parentobject.md) | Partial&lt;TParentProperty&gt; | <b><i>(BETA)</i></b> |
+| [propertyName](./heft-config-file.ioriginalvalueoptions.propertyname.md) | keyof TParentProperty          | <b><i>(BETA)</i></b> |

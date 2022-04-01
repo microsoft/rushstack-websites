@@ -11,22 +11,21 @@ pagination_next: null
 
 ## VersionPolicyConfiguration.update() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Updates the version directly for the specified version policy
 
 <b>Signature:</b>
 
 ```typescript
-update(versionPolicyName: string, newVersion: string): void;
+update(versionPolicyName: string, newVersion: string, shouldCommit?: boolean): void;
 ```
 
 ## Parameters
 
-| Parameter         | Type   | Description         |
-| ----------------- | ------ | ------------------- |
-| versionPolicyName | string | version policy name |
-| newVersion        | string | new version         |
+| Parameter         | Type    | Description         |
+| ----------------- | ------- | ------------------- |
+| versionPolicyName | string  | version policy name |
+| newVersion        | string  | new version         |
+| shouldCommit      | boolean |                     |
 
 <b>Returns:</b>
 

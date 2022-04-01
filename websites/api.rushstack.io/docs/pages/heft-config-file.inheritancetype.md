@@ -21,8 +21,9 @@ export declare enum InheritanceType
 
 ## Enumeration Members
 
-| Member  | Value                            | Description                                                                                    |
-| ------- | -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| append  | <code>&quot;append&quot;</code>  | <b><i>(BETA)</i></b> Append additional elements after elements from the parent file's property |
-| custom  | <code>&quot;custom&quot;</code>  | <b><i>(BETA)</i></b> Custom inheritance functionality                                          |
-| replace | <code>&quot;replace&quot;</code> | <b><i>(BETA)</i></b> Discard elements from the parent file's property                          |
+| Member  | Value                            | Description                                                                                                                                      |
+| ------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| append  | <code>&quot;append&quot;</code>  | <b><i>(BETA)</i></b> Append additional elements after elements from the parent file's property. Only applicable for arrays.                      |
+| custom  | <code>&quot;custom&quot;</code>  | <b><i>(BETA)</i></b> Custom inheritance functionality                                                                                            |
+| merge   | <code>&quot;merge&quot;</code>   | <b><i>(BETA)</i></b> Perform a shallow merge of additional elements after elements from the parent file's property. Only applicable for objects. |
+| replace | <code>&quot;replace&quot;</code> | <b><i>(BETA)</i></b> Discard elements from the parent file's property                                                                            |

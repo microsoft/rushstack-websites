@@ -11,8 +11,6 @@ pagination_next: null
 
 ## PackageJsonDependency class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 <b>Signature:</b>
 
 ```typescript
@@ -21,20 +19,20 @@ export declare class PackageJsonDependency
 
 ## Constructors
 
-| Constructor                                                                                       | Modifiers | Description                                                                                    |
-| ------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
-| [(constructor)(name, version, type, onChange)](./rush-lib.packagejsondependency._constructor_.md) |           | <b><i>(BETA)</i></b> Constructs a new instance of the <code>PackageJsonDependency</code> class |
+| Constructor                                                                                       | Modifiers | Description                                                               |
+| ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- |
+| [(constructor)(name, version, type, onChange)](./rush-lib.packagejsondependency._constructor_.md) |           | Constructs a new instance of the <code>PackageJsonDependency</code> class |
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                                           | Description          |
-| -------------------------------------------------------------------- | --------- | ---------------------------------------------- | -------------------- |
-| [dependencyType](./rush-lib.packagejsondependency.dependencytype.md) |           | [DependencyType](./rush-lib.dependencytype.md) | <b><i>(BETA)</i></b> |
-| [name](./rush-lib.packagejsondependency.name.md)                     |           | string                                         | <b><i>(BETA)</i></b> |
-| [version](./rush-lib.packagejsondependency.version.md)               |           | string                                         | <b><i>(BETA)</i></b> |
+| Property                                                             | Modifiers | Type                                           | Description |
+| -------------------------------------------------------------------- | --------- | ---------------------------------------------- | ----------- |
+| [dependencyType](./rush-lib.packagejsondependency.dependencytype.md) |           | [DependencyType](./rush-lib.dependencytype.md) |             |
+| [name](./rush-lib.packagejsondependency.name.md)                     |           | string                                         |             |
+| [version](./rush-lib.packagejsondependency.version.md)               |           | string                                         |             |
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description          |
-| ------------------------------------------------------------------------ | --------- | -------------------- |
-| [setVersion(newVersion)](./rush-lib.packagejsondependency.setversion.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                   | Modifiers | Description |
+| ------------------------------------------------------------------------ | --------- | ----------- |
+| [setVersion(newVersion)](./rush-lib.packagejsondependency.setversion.md) |           |             |

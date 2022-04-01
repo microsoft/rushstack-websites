@@ -11,8 +11,6 @@ pagination_next: null
 
 ## VersionPolicy.validate() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Validates the specified version and throws if the version does not satisfy the policy.
 
 <b>Signature:</b>

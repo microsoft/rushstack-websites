@@ -16,7 +16,7 @@ String constants for common filenames and parts of filenames.
 <b>Signature:</b>
 
 ```typescript
-export declare const enum FileConstants
+export declare enum FileConstants
 ```
 
 ## Enumeration Members

@@ -11,8 +11,6 @@ pagination_next: null
 
 ## BumpType enum
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
 Type of version bumps
 
 <b>Signature:</b>
@@ -23,11 +21,11 @@ export declare enum BumpType
 
 ## Enumeration Members
 
-| Member     | Value          | Description          |
-| ---------- | -------------- | -------------------- |
-| major      | <code>5</code> | <b><i>(BETA)</i></b> |
-| minor      | <code>4</code> | <b><i>(BETA)</i></b> |
-| none       | <code>0</code> | <b><i>(BETA)</i></b> |
-| patch      | <code>2</code> | <b><i>(BETA)</i></b> |
-| preminor   | <code>3</code> | <b><i>(BETA)</i></b> |
-| prerelease | <code>1</code> | <b><i>(BETA)</i></b> |
+| Member     | Value          | Description |
+| ---------- | -------------- | ----------- |
+| major      | <code>5</code> |             |
+| minor      | <code>4</code> |             |
+| none       | <code>0</code> |             |
+| patch      | <code>2</code> |             |
+| preminor   | <code>3</code> |             |
+| prerelease | <code>1</code> |             |

@@ -16,7 +16,7 @@ Specifies the behavior of APIs such as [FileSystem.copyFile()](./node-core-libra
 <b>Signature:</b>
 
 ```typescript
-export declare const enum AlreadyExistsBehavior
+export declare enum AlreadyExistsBehavior
 ```
 
 ## Enumeration Members

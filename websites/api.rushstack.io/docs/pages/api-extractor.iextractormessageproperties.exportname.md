@@ -21,4 +21,4 @@ readonly exportName?: string;
 
 ## Remarks
 
-Used by [ExtractorMessageId.InternalMissingUnderscore](./api-extractor.extractormessageid.internalmissingunderscore.md) .
+Used by [ExtractorMessageId.InternalMissingUnderscore](./api-extractor.extractormessageid.md) .

@@ -37,5 +37,5 @@ export declare class WorkerPoolMinifier implements IModuleMinifier
 
 | Method                                                                             | Modifiers | Description                                        |
 | ---------------------------------------------------------------------------------- | --------- | -------------------------------------------------- |
+| [connect()](./module-minifier-plugin.workerpoolminifier.connect.md)                |           |                                                    |
 | [minify(request, callback)](./module-minifier-plugin.workerpoolminifier.minify.md) |           | Transform code by farming it out to a worker pool. |
-| [ref()](./module-minifier-plugin.workerpoolminifier.ref.md)                        |           |                                                    |

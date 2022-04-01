@@ -16,5 +16,5 @@ Hook invoked on code after it has been returned from the minifier.
 <b>Signature:</b>
 
 ```typescript
-postProcessCodeFragment: SyncWaterfallHook<ReplaceSource, string>;
+postProcessCodeFragment: SyncWaterfallHook<ReplaceSource, IPostProcessFragmentContext>;
 ```

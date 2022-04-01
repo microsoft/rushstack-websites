@@ -16,5 +16,5 @@ Hook invoked on a module id to get the final rendered id.
 <b>Signature:</b>
 
 ```typescript
-finalModuleId: SyncWaterfallHook<string | number | undefined>;
+finalModuleId: SyncWaterfallHook<string | number | undefined, webpack.compilation.Compilation>;
 ```

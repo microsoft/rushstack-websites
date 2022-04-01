@@ -38,4 +38,4 @@ export declare const enum ConsoleMessageId
 
 ## Remarks
 
-These strings are possible values for the [ExtractorMessage.messageId](./api-extractor.extractormessage.messageid.md) property when the `ExtractorMessage.category` is [ExtractorMessageCategory.Console](./api-extractor.extractormessagecategory.console.md) .
+These strings are possible values for the [ExtractorMessage.messageId](./api-extractor.extractormessage.messageid.md) property when the `ExtractorMessage.category` is [ExtractorMessageCategory.Console](./api-extractor.extractormessagecategory.md) .

@@ -19,7 +19,7 @@ pagination_next: null
 export interface ICustomPropertyInheritance<TObject> extends IPropertyInheritance<InheritanceType.custom>
 ```
 
-<b>Extends:</b> [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) &lt;[InheritanceType.custom](./heft-config-file.inheritancetype.custom.md) &gt;
+<b>Extends:</b> [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) &lt;[InheritanceType.custom](./heft-config-file.inheritancetype.md) &gt;
 
 ## Properties
 

@@ -27,7 +27,7 @@ export declare class CertificateManager
 
 ## Methods
 
-| Method                                                                                                                                  | Modifiers | Description                                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [ensureCertificateAsync(canGenerateNewCertificate, terminal)](./debug-certificate-manager.certificatemanager.ensurecertificateasync.md) |           | Get a dev certificate from the store, or optionally, generate a new one and trust it if one doesn't exist in the store. |
-| [untrustCertificateAsync(terminal)](./debug-certificate-manager.certificatemanager.untrustcertificateasync.md)                          |           | Attempt to locate a previously generated debug certificate and untrust it.                                              |
+| Method                                                                                                                                  | Modifiers | Description                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [ensureCertificateAsync(canGenerateNewCertificate, terminal)](./debug-certificate-manager.certificatemanager.ensurecertificateasync.md) |           | Get a development certificate from the store, or optionally, generate a new one and trust it if one doesn't exist in the store. |
+| [untrustCertificateAsync(terminal)](./debug-certificate-manager.certificatemanager.untrustcertificateasync.md)                          |           | Attempt to locate a previously generated debug certificate and untrust it.                                                      |
