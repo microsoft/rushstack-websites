@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 const path = require('path');
-const { spawnSync } = require('child_process');
+const { Executable } = require('@rushstack/node-core-library');
 
 const rushstackPath = process.argv[2];
 
@@ -14,16 +14,16 @@ if (!rushstackPath) {
   process.exit(1);
 }
 
-const result = spawnSync(
-  './node_modules/.bin/api-documenter',
+const result = Executable.spawnSync(
+  './node_modules/.bin/api-documenter.cmd',
   [
     'generate',
     '--input-folder',
     path.join(rushstackPath, 'common', 'temp', 'api'),
     '--output-folder',
-    './docs/api'
+    './docs/pages'
   ],
-  { shell: true, stdio: 'inherit' }
+  { stdio: 'inherit' }
 );
 
 process.exitCode = result.status;
