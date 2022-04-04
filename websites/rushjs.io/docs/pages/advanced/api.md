@@ -4,7 +4,7 @@ title: The "rush-lib" API
 
 Rush provides an API for use by automation scripts. It is documented in the integrated API reference for all Rush Stack projects:
 
-&nbsp;&nbsp;&nbsp;&nbsp; [API Reference: @microsoft/rush-lib package](https://rushstack.io/pages/api/rush-lib/)
+&nbsp;&nbsp;&nbsp;&nbsp; [API Reference: @microsoft/rush-lib package](https://api.rushstack.io/pages/rush-lib/)
 
 Below are some usage examples.
 
@@ -12,7 +12,7 @@ Below are some usage examples.
 
 ## Reading the rush.json configuration
 
-Rather than trying to load **rush.json** as a JSON file, it is recommended to use the [RushConfiguration](https://rushstack.io/pages/api/rush-lib.rushconfiguration/) class which provides a richer set of data views.
+Rather than trying to load **rush.json** as a JSON file, it is recommended to use the [RushConfiguration](https://api.rushstack.io/pages/rush-lib.rushconfiguration/) class which provides a richer set of data views.
 
 For example, this script will show all the Rush projects and their folders:
 
@@ -33,7 +33,7 @@ for (const project of rushConfiguration.projects) {
 
 ## Modifying package.json files
 
-If you want to modify a **package.json** file, the [PackageJsonEditor](https://rushstack.io/pages/api/rush-lib.packagejsoneditor/) class provides helpful validation and normalization:
+If you want to modify a **package.json** file, the [PackageJsonEditor](https://api.rushstack.io/pages/rush-lib.packagejsoneditor/) class provides helpful validation and normalization:
 
 ```ts
 const rushLib = require('@microsoft/rush-lib');
