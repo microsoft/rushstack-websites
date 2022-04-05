@@ -126,6 +126,46 @@ doing `rush build --impacted-by B --only G`.
 > about what really needs to be built. If that assumption is incorrect, you can always do `rush build` to get back
 > to a good state.
 
+## Selector formats
+
+When you specify one of the parameters above, you can use a variety of formats to specify what projects you're interested in.
+
+### Project name
+
+The most direct way to specify a project is to provide its full name (as listed in your `rush.json` file).
+
+Examples:
+
+```console
+rush build --to my-project-name
+
+rush build --from my-project-name
+
+rush list --impacted-by my-project-name
+```
+
+### Using `.` (current directory)
+
+If you are inside a project directory, you can use `.` to indicate the current project.
+
+Examples:
+
+```console
+rush build --to .
+
+rush list --to-except .
+```
+
+### Projects changed since commit
+
+By providing a git reference (branch, tag, or commit hash), you can specify all projects modified since the provided git reference. This type of query uses the same change tracking logic that `rush change` does.
+
+```console
+rush build --to git:origin/main
+
+rush list --impacted-by git:release/v3.0.0
+```
+
 ## Combining parameters
 
 - You can combine any of the selection parameters on a single command line. The result is always the union of each
