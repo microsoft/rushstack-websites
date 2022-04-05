@@ -1,3 +1,6 @@
+# Check out CRLF on Windows, LF on Mac.
+* text=auto
+
 # Don't allow people to merge changes to these generated files, because the result
 # may be invalid.  You need to run "rush update" again.
 pnpm-lock.yaml               merge=binary
