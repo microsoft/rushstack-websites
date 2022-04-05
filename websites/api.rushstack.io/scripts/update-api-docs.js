@@ -14,8 +14,10 @@ if (!rushstackPath) {
   process.exit(1);
 }
 
+const binSuffix = process.platform === 'win32' ? '.cmd' : '';
+
 const result = Executable.spawnSync(
-  './node_modules/.bin/api-documenter.cmd',
+  `./node_modules/.bin/api-documenter${binSuffix}`,
   [
     'generate',
     '--input-folder',
@@ -23,7 +25,7 @@ const result = Executable.spawnSync(
     '--output-folder',
     './docs/pages'
   ],
-  { stdio: 'inherit' }
+  { stdio: 'inherit', shell: true }
 );
 
 process.exitCode = result.status;

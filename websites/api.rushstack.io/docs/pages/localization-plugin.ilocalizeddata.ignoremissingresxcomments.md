@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizedData.ignoreMissingResxComments property
 
-If set to true, do not warn on missing RESX <data> element comments.
+If set to true, do not warn on missing RESX `<data>` element comments.
 
 <b>Signature:</b>
 
