@@ -4,7 +4,7 @@ title: 使用 Rush 库的 API
 
 Rush 通过 API 提供了自动化脚本使用的接口。它在 Rush 工程中的竭诚 API 可以参考以下文档：
 
-&nbsp;&nbsp;&nbsp;&nbsp; [接口手册： @microsoft/rush-lib package](https://rushstack.io/pages/api/rush-lib/)
+&nbsp;&nbsp;&nbsp;&nbsp; [接口手册： @microsoft/rush-lib package](https://api.rushstack.io/pages/rush-lib/)
 
 下面是一些用法示例：
 
@@ -12,7 +12,7 @@ Rush 通过 API 提供了自动化脚本使用的接口。它在 Rush 工程中�
 
 ## 读取 rush.json 配置
 
-建议使用提供了很多数据信息的 [RushConfiguration](https://rushstack.io/pages/api/rush-lib.rushconfiguration/) 类来读取 rush.json, 而不是直接读取 rush.json 文件。
+建议使用提供了很多数据信息的 [RushConfiguration](https://api.rushstack.io/pages/rush-lib.rushconfiguration/) 类来读取 rush.json, 而不是直接读取 rush.json 文件。
 
 例如，以下脚本展示了 Rush 内所有的项目和它们的文件夹：
 
@@ -32,7 +32,7 @@ for (const project of rushConfiguration.projects) {
 
 ## 修改 package.json 文件
 
-如果你想修改 **package.json** 文件，[PackageJsonEditor](https://rushstack.io/pages/api/rush-lib.packagejsoneditor/) 类提供了一些有用的校验和标准化方法：
+如果你想修改 **package.json** 文件，[PackageJsonEditor](https://api.rushstack.io/pages/rush-lib.packagejsoneditor/) 类提供了一些有用的校验和标准化方法：
 
 ```ts
 const rushLib = require('@microsoft/rush-lib');
