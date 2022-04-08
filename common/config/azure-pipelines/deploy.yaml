@@ -1,5 +1,10 @@
 pr: none
 trigger: main
+parameters:
+  - name: sites
+    type: object
+    displayName: 'Sites to include'
+    default: ['rushjs.io', 'rushstack.io', 'api.rushstack.io']
 pool:
   vmImage: 'ubuntu-latest'
 variables:
@@ -12,9 +17,9 @@ jobs:
     steps:
       - checkout: self
       - template: templates/build.yaml
-      - script: 'GITHUB_USER=[user] rushx deploy'
-        displayName: Deploy rushjs.io
-        workingDirectory: websites/rushjs.io
-      - script: 'GITHUB_USER=[user] rushx deploy'
-        displayName: Deploy rushstack.io
-        workingDirectory: websites/rushstack.io
+      - ${{ each site in parameters.sites }}:
+          - script: 'node ../../common/scripts/install-run-rushx.js deploy'
+            displayName: 'Deploy ${{ site }}'
+            workingDirectory: 'websites/${{ site }}'
+            env:
+              GITHUB_USER: insert-bot-user-here
