@@ -23,4 +23,5 @@ jobs:
             displayName: 'Deploy ${{ site }}'
             workingDirectory: 'websites/${{ site }}'
             env:
-              GITHUB_USER: rushbot
+              TARGET: prod
+              GIT_USER: rushbot
