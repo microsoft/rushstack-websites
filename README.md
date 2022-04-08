@@ -1,6 +1,6 @@
 # Rush Stack Websites
 
-[![Main CI](https://dev.azure.com/RushStack/GitHubProjects/_apis/build/status/rushstack-websites/RushStack%20Websites%20Deploy?branchName=main)](https://dev.azure.com/RushStack/GitHubProjects/_build/latest?definitionId=27&branchName=main) [![Latest Deployment](https://dev.azure.com/RushStack/GitHubProjects/_apis/build/status/rushstack-websites/RushStack%20Websites%20Deploy?branchName=main)](https://dev.azure.com/RushStack/GitHubProjects/_build/latest?definitionId=28&branchName=main)
+Main CI [![Main CI](https://dev.azure.com/RushStack/GitHubProjects/_apis/build/status/rushstack-websites/RushStack%20Websites%20Deploy?branchName=main)](https://dev.azure.com/RushStack/GitHubProjects/_build/latest?definitionId=27&branchName=main) Latest Deployment [![Latest Deployment](https://dev.azure.com/RushStack/GitHubProjects/_apis/build/status/rushstack-websites/RushStack%20Websites%20Deploy?branchName=main)](https://dev.azure.com/RushStack/GitHubProjects/_build/latest?definitionId=28&branchName=main)
 
 The following websites are maintained in this monorepo:
 
