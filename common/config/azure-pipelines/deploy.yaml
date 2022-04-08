@@ -16,10 +16,11 @@ jobs:
       NodeVersion: 14
     steps:
       - checkout: self
+        persistCredentials: true
       - template: templates/build.yaml
       - ${{ each site in parameters.sites }}:
           - script: 'node ../../common/scripts/install-run-rushx.js deploy'
             displayName: 'Deploy ${{ site }}'
             workingDirectory: 'websites/${{ site }}'
             env:
-              GITHUB_USER: insert-bot-user-here
+              GITHUB_USER: rushbot
