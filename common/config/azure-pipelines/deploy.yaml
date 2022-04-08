@@ -1,5 +1,5 @@
 pr: none
-trigger: main
+trigger: none
 parameters:
   - name: sites
     type: object
