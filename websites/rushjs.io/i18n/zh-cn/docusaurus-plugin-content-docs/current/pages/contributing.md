@@ -13,7 +13,7 @@ Rush 是在 [Rush Stack](https://rushstack.io/) 项目下进行开发：
 相关的仓库目录是：
 
 - [apps/rush](https://github.com/microsoft/rushstack/tree/master/apps/rush) - 前端命令行交互
-- [apps/rush-lib](https://github.com/microsoft/rushstack/tree/master/apps/rush-lib) - 实现自动化 API 和引擎的逻辑。
+- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/master/libraries/rush-lib) - 实现自动化 API 和引擎的逻辑。
 
 ## 测试 Rush 构建
 
@@ -22,7 +22,7 @@ Rush 是在 [Rush Stack](https://rushstack.io/) 项目下进行开发：
 Rush 有一个**版本选择器**功能，它读取从 **rush.json** 中读取了 `rushVersion`, 之后自动下载并调用指定的引擎版本。因此如果我们启用你构建的 `@microsoft/rush`, 它将并不会执行你的代码。为了跳过这个版本选择器，我们需要直接调用 `@microsoft/rush-lib` 引擎：
 
 ```shell
-$ cd rushstack/apps/rush-lib
+$ cd rushstack/libraries/rush-lib
 $ node ./lib/start.js --help
 ```
 
@@ -32,7 +32,7 @@ $ node ./lib/start.js --help
 
 ```shell
 # 用自己构建的rush-lib的完整路径来代替。
-alias testrush="node ~/git/rushstack/apps/rush-lib/lib/start.js"
+alias testrush="node ~/git/rushstack/libraries/rush-lib/lib/start.js"
 ```
 
 对于 Windows, 可以创建一个 `testrush.cmd` 并将其加到系统路径 `PATH`:
@@ -47,7 +47,7 @@ node "C:\Git\rushstack\apps\rush-lib\lib\start.js" %*
 
 使用 VS Code 的调试器来调试 Rush 也是如此。创建一个如下的配置文件：
 
-**rushstack/apps/rush-lib/.vscode/launch.json**
+**rushstack/libraries/rush-lib/.vscode/launch.json**
 
 ```js
 {
@@ -80,6 +80,6 @@ $ rush build --to rush-lib --verbose
 
 # "rush-lib" 快速构建，没有单元测试。
 $ npm install -g gulp
-$ cd rushstack/apps/rush-lib
+$ cd rushstack/libraries/rush-lib
 $ gulp build
 ```

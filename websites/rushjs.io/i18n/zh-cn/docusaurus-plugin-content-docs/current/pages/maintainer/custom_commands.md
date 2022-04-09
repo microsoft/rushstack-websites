@@ -6,7 +6,7 @@ title: 自定义指令
 
 ## 自定义指令和参数
 
-**common/config/rush/command-line.json** 下有一个配置文件用于自定义指令和参数，你的配置文件应该满足 [command-line.schema.json](https://github.com/microsoft/rushstack/blob/master/apps/rush-lib/src/schemas/command-line.schema.json) 范式，考虑以下示例：
+**common/config/rush/command-line.json** 下有一个配置文件用于自定义指令和参数，你的配置文件应该满足 [command-line.schema.json](https://github.com/microsoft/rushstack/blob/master/libraries/rush-lib/src/schemas/command-line.schema.json) 范式，考虑以下示例：
 
 ```javascript
 {

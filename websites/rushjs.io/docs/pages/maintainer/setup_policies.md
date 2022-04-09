@@ -2,7 +2,7 @@
 title: Enabling policies
 ---
 
-The [rush-schema.json](https://github.com/microsoft/rushstack/blob/master/apps/rush-lib/src/schemas/rush.schema.json) JSON schema defines some additional settings you can specify in **rush.json**.
+The [rush-schema.json](https://github.com/microsoft/rushstack/blob/master/libraries/rush-lib/src/schemas/rush.schema.json) JSON schema defines some additional settings you can specify in **rush.json**.
 
 ## projectFolderMinDepth: Controlling folder size
 

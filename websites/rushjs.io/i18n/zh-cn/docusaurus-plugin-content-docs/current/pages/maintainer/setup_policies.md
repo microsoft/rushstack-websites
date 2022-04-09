@@ -2,7 +2,7 @@
 title: 启用一些策略
 ---
 
-[rush-schema.json](https://github.com/microsoft/rushstack/blob/master/apps/rush-lib/src/schemas/rush.schema.json) 是可以给 **rush.json** 中定义了一些额外配置项的 JSON 文件。
+[rush-schema.json](https://github.com/microsoft/rushstack/blob/master/libraries/rush-lib/src/schemas/rush.schema.json) 是可以给 **rush.json** 中定义了一些额外配置项的 JSON 文件。
 
 ## projectFolderMinDepth: 控制文件夹大小
 

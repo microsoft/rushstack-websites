@@ -15,7 +15,7 @@ monorepo.
 The relevant monorepo project folders are:
 
 - [apps/rush](https://github.com/microsoft/rushstack/tree/master/apps/rush) - the command line interface front end
-- [apps/rush-lib](https://github.com/microsoft/rushstack/tree/master/apps/rush-lib) - the automation API and "engine" where all the logic is implemented
+- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/master/libraries/rush-lib) - the automation API and "engine" where all the logic is implemented
 
 ## Testing Rush builds
 
@@ -24,7 +24,7 @@ Once you have coded your fix and built your branch (as described in the general 
 Rush features a mechanism called the **version selector**, which reads `rushVersion` from **rush.json** and then automatically installs and invokes that specific version of the engine. Thus if we launch your build of `@microsoft/rush`, it will not actually run your modified code. To bypass the version selector, we need to invoke the `@microsoft/rush-lib` engine directly:
 
 ```shell
-$ cd rushstack/apps/rush-lib
+$ cd rushstack/libraries/rush-lib
 $ node ./lib/start.js --help
 ```
 
@@ -34,7 +34,7 @@ For Bash on Mac OS or Linux:
 
 ```shell
 # Substitute the full path to your own build of rush-lib:
-alias testrush="node ~/git/rushstack/apps/rush-lib/lib/start.js"
+alias testrush="node ~/git/rushstack/libraries/rush-lib/lib/start.js"
 ```
 
 For Windows, we might create `testrush.cmd` and add it to our system `PATH`:
@@ -49,7 +49,7 @@ node "C:\Git\rushstack\apps\rush-lib\lib\start.js" %*
 
 The same approach is used to debug Rush using the VS Code debugger. Create a debugger configuration file like this:
 
-**rushstack/apps/rush-lib/.vscode/launch.json**
+**rushstack/libraries/rush-lib/.vscode/launch.json**
 
 ```js
 {
@@ -82,6 +82,6 @@ $ rush build --to rush-lib --verbose
 
 # Do a quick build of "rush-lib" only without unit tests
 $ npm install -g gulp
-$ cd rushstack/apps/rush-lib
+$ cd rushstack/libraries/rush-lib
 $ gulp build
 ```
