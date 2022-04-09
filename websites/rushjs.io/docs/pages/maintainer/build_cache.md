@@ -21,7 +21,7 @@ The build cache archives are stored in two places:
 
 - **In a cloud-hosted storage container. (Optional)** In a typical setup, the CI system would be configured to write
   to cloud storage, and individual users are granted read-only access. For example, each time a PR is merged into
-  the `master` branch, the CI system builds that baseline and uploads it to cloud storage. Even for a user who
+  the `main` branch, the CI system builds that baseline and uploads it to cloud storage. Even for a user who
   is doing `git clone` for the first time, their `rush build` will be very fast.
 
 > Build caching is considered a replacement for build skipping, so once enabled, commands that support
@@ -154,7 +154,7 @@ Currently the `cacheProvider` setting provides three choices:
 - `"azure-blob-storage"`: Microsoft Azure [blob storage container](https://docs.microsoft.com/en-us/azure/storage/blobs/)
 - `"amazon-s3"`: Amazon [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
 
-(The above providers are [modeled as Rush plugins](https://github.com/microsoft/rushstack/tree/master/rush-plugins).
+(The above providers are [modeled as Rush plugins](https://github.com/microsoft/rushstack/tree/main/rush-plugins).
 Custom build cache storage providers can be implemented in the same way.)
 
 As one example, here's how to configure an Azure blob container:
@@ -236,7 +236,7 @@ The credentials are stored in the user's home directory under `~/.rush-user/cred
 ## CI setup
 
 In a typical configuration, users have read-only access and the cache is populated by an automation account;
-for example, a CI job that builds your `master` branch after each PR is merged. In our example above, the
+for example, a CI job that builds your `main` branch after each PR is merged. In our example above, the
 `"isCacheWriteAllowed": false` setting is what prevents users from writing to the cache. The CI job can
 override this by setting the [RUSH_BUILD_CACHE_WRITE_ALLOWED](../../configs/environment_vars)
 environment variable, and by providing credentials for the CI environment in the

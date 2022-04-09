@@ -2,7 +2,7 @@
 title: 编写变更日志
 ---
 
-当发布一个 NPM 包时，最普遍的做法是带上一个 [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/master/libraries/node-core-library/CHANGELOG.md) 文件，该文件记录了问题修复、新功能、功能变动或移除。Rush 中可以使用 [rush change](../../commands/rush_change) 来自动完成这些功能。当你准备提交 PR 时，并将变动 commit 到相应的分支上后，需要执行这个命令，它会分析当前分支中的变动，并在必要时让你对其变动进行描述。
+当发布一个 NPM 包时，最普遍的做法是带上一个 [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/libraries/node-core-library/CHANGELOG.md) 文件，该文件记录了问题修复、新功能、功能变动或移除。Rush 中可以使用 [rush change](../../commands/rush_change) 来自动完成这些功能。当你准备提交 PR 时，并将变动 commit 到相应的分支上后，需要执行这个命令，它会分析当前分支中的变动，并在必要时让你对其变动进行描述。
 
 如何组织你的描述是很重要的：不能太具体，也不能太复杂，不能暴露隐私，同时要让描述信息更友好。我们建议在可读性上做文章，问问你自己：
 

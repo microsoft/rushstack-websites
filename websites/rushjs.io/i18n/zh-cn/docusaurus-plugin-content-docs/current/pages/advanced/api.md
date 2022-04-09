@@ -53,4 +53,4 @@ project.packageJsonEditor.saveIfModified();
 
 ## 生成 README.md 摘要
 
-作为一个更实际的例子，[repo-toolbox/src/ReadmeAction.ts](https://github.com/microsoft/rushstack/blob/master/repo-scripts/repo-toolbox/src/ReadmeAction.ts) 展示了如何使用这些 API 来生成 Rush Stack 库的 [README.md](https://github.com/microsoft/rushstack/blob/master/README.md#published-packages).
+作为一个更实际的例子，[repo-toolbox/src/ReadmeAction.ts](https://github.com/microsoft/rushstack/blob/main/repo-scripts/repo-toolbox/src/ReadmeAction.ts) 展示了如何使用这些 API 来生成 Rush Stack 库的 [README.md](https://github.com/microsoft/rushstack/blob/main/README.md#published-packages).

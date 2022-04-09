@@ -74,9 +74,9 @@ Version policy is a new concept introduced into Rush to solve the problem of how
 
 ### What is a version policy?
 
-A version policy is set of rules that define how the version should be increased. It is defined in common/config/rush/version-policies.json. An example can be found in [here](https://github.com/microsoft/rushstack/blob/master/common/config/rush/version-policies.json). A public package specifies what version policy it is associated with by providing versionPolicyName in rush.json. An example can be found in the [project configuration for rush and rush-lib](https://github.com/microsoft/rushstack/blob/7d05f64c3275da074825bb98d3e49ea920fcfa8f/rush.json#L482). Multiple packages can use one version policy if they all follow the same rules. When a package is associated with a version policy, it becomes public and can be published when ‘rush publish’ runs.
+A version policy is set of rules that define how the version should be increased. It is defined in common/config/rush/version-policies.json. An example can be found in [here](https://github.com/microsoft/rushstack/blob/main/common/config/rush/version-policies.json). A public package specifies what version policy it is associated with by providing versionPolicyName in rush.json. An example can be found in the [project configuration for rush and rush-lib](https://github.com/microsoft/rushstack/blob/7d05f64c3275da074825bb98d3e49ea920fcfa8f/rush.json#L482). Multiple packages can use one version policy if they all follow the same rules. When a package is associated with a version policy, it becomes public and can be published when ‘rush publish’ runs.
 
-The schema of version-policies.json is defined [here](https://github.com/microsoft/rushstack/blob/master/libraries/rush-lib/src/schemas/version-policies.schema.json).
+The schema of version-policies.json is defined [here](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/schemas/version-policies.schema.json).
 
 ### Two types of version policies
 

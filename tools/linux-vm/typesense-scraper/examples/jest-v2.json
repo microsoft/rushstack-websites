@@ -1,4 +1,4 @@
-// Downloaded from:  https://github.com/algolia/docsearch-configs/blob/master/configs/jest-v2.json
+// Downloaded from:  https://github.com/algolia/docsearch-configs/blob/main/configs/jest-v2.json
 {
   "index_name": "jest-v2",
   "start_urls": ["https://jestjs.io"],

@@ -77,9 +77,9 @@ similar systems, Heft has some unique design goals:
 
 ## Links
 
-- [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/master/apps/heft/CHANGELOG.md) - Find
+- [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/heft/CHANGELOG.md) - Find
   out what's new in the latest version
-- [UPGRADING.md](https://github.com/microsoft/rushstack/blob/master/apps/heft/UPGRADING.md) - Instructions
+- [UPGRADING.md](https://github.com/microsoft/rushstack/blob/main/apps/heft/UPGRADING.md) - Instructions
   for migrating existing projects to use a newer version of Heft
 - [API Reference](https://api.rushstack.io/pages/heft/)
 

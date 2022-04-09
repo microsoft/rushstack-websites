@@ -14,8 +14,8 @@ monorepo.
 
 The relevant monorepo project folders are:
 
-- [apps/rush](https://github.com/microsoft/rushstack/tree/master/apps/rush) - the command line interface front end
-- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/master/libraries/rush-lib) - the automation API and "engine" where all the logic is implemented
+- [apps/rush](https://github.com/microsoft/rushstack/tree/main/apps/rush) - the command line interface front end
+- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/main/libraries/rush-lib) - the automation API and "engine" where all the logic is implemented
 
 ## Testing Rush builds
 

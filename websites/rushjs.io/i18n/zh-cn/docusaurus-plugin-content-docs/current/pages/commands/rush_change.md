@@ -23,7 +23,7 @@ title: rush change
   --no-fetch            在执行 "git diff" 检测之前，跳过获取基准分支
   -b BRANCH, --target-branch BRANCH
                         一旦指定改参数，会比较当前分支和目标分支的差异。如果没有指定该
-                        参数，则默认比较 "master" 分支
+                        参数，则默认比较 "main" 分支
   --overwrite           如果某个变更日志存在，将在没有提示的情况下对该文件进行覆盖（当
                         --bulk 参数存在时会导致失败）
   --email EMAIL         邮箱地址用于变更文件中和，如果没有提供该参数，那么会在交互模式下

@@ -51,7 +51,7 @@ fi
 
 The sample file shown above is a template that `rush init` generates when setting up a new repo.
 You can probably find a copy as
-[common/git-hooks/commit-msg.sample](https://github.com/microsoft/rush-example/blob/master/common/git-hooks/commit-msg.sample)
+[common/git-hooks/commit-msg.sample](https://github.com/microsoft/rush-example/blob/main/common/git-hooks/commit-msg.sample)
 in your own repo.
 
 You would use it as follows:

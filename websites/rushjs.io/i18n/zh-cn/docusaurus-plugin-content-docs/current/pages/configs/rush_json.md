@@ -271,9 +271,9 @@ title: rush.json
 
     /**
      * 默认分支名，它告知 "rush change" 要与远程按个分支进行比较。
-     * 默认值为 "master".
+     * 默认值为 "main".
      */
-    // "defaultBranch": "master",
+    // "defaultBranch": "main",
 
     /**
      * 默认的远端。当 URL 没提供时候，

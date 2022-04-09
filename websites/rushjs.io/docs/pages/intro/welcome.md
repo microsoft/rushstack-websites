@@ -20,7 +20,7 @@ title: Welcome to Rush!
 
 - **Bulk publishing:** When it's time to do a release, Rush can detect which packages have changes, automatically bump all the appropriate version numbers, and run `npm publish` in each folder. If you like, configure your server to automatically run `rush publish` every hour.
 
-- **Changelog tracking:** Whenever a PR is created, you can require developers to provide a major/minor/patch log entry for the affected projects. During publishing, these changes will be automatically aggregated into a nicely formatted [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/master/libraries/node-core-library/CHANGELOG.md) file.
+- **Changelog tracking:** Whenever a PR is created, you can require developers to provide a major/minor/patch log entry for the affected projects. During publishing, these changes will be automatically aggregated into a nicely formatted [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/libraries/node-core-library/CHANGELOG.md) file.
 
 - **Enterprise policies:** Want to review new libraries before developers add them to package.json, but avoid hassling people about already approved cases? Want to enforce that all your projects depend on the same library version numbers? Are unprofessional personal e-mail addresses accidentally showing up in your company's Git history? Rush can help maintain a consistent ecosystem when you've got many developers and many projects in the mix.
 

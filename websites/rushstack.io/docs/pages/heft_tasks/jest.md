@@ -64,7 +64,7 @@ The Heft plugin that you installed above needs to be loaded using the [heft.json
 
 Heft looks for [Jest's config file](https://jestjs.io/docs/en/configuration) in the standard path **config/jest.config.json**. Although Jest itself supports other config file names and even embedding settings in your **package.json** file, Heft requires the name `jest.config.json`. Using one standard filename makes it easy to search for these files, perform bulk edits, and copy configuration recipes between projects.
 
-For a simple setup, your Jest configuration should extend Heft's [jest-shared.config.json](https://github.com/microsoft/rushstack/blob/master/heft-plugins/heft-jest-plugin/includes/jest-shared.config.json) like this:
+For a simple setup, your Jest configuration should extend Heft's [jest-shared.config.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/includes/jest-shared.config.json) like this:
 
 **&lt;project folder&gt;/config/jest.config.json**
 
