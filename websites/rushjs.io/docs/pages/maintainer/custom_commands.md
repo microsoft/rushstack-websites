@@ -6,7 +6,7 @@ If your toolchain has special modes or features, you can expose these as custom 
 
 ## Defining custom commands and parameters
 
-These are defined in the config file **common/config/rush/command-line.json**. Your config file should conform to the [command-line.schema.json](https://github.com/microsoft/rushstack/blob/master/libraries/rush-lib/src/schemas/command-line.schema.json) schema. Consider this sample:
+These are defined in the config file **common/config/rush/command-line.json**. Your config file should conform to the [command-line.schema.json](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/schemas/command-line.schema.json) schema. Consider this sample:
 
 ```javascript
 {

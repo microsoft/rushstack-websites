@@ -37,7 +37,7 @@ if [ `cat $1 | wc -w` -lt 3 ]; then
 fi
 ```
 
-`rush init` 后生成的示例文件中含有上述事例，你可能需要将 [common/git-hooks/commit-msg.sample](https://github.com/microsoft/rush-example/blob/master/common/git-hooks/commit-msg.sample) 拷贝到自己的仓库。
+`rush init` 后生成的示例文件中含有上述事例，你可能需要将 [common/git-hooks/commit-msg.sample](https://github.com/microsoft/rush-example/blob/main/common/git-hooks/commit-msg.sample) 拷贝到自己的仓库。
 
 你可以按照如下方式使用它。
 

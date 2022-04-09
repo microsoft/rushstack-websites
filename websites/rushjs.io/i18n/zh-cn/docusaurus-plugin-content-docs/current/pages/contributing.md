@@ -12,8 +12,8 @@ Rush 是在 [Rush Stack](https://rushstack.io/) 项目下进行开发：
 
 相关的仓库目录是：
 
-- [apps/rush](https://github.com/microsoft/rushstack/tree/master/apps/rush) - 前端命令行交互
-- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/master/libraries/rush-lib) - 实现自动化 API 和引擎的逻辑。
+- [apps/rush](https://github.com/microsoft/rushstack/tree/main/apps/rush) - 前端命令行交互
+- [libraries/rush-lib](https://github.com/microsoft/rushstack/tree/main/libraries/rush-lib) - 实现自动化 API 和引擎的逻辑。
 
 ## 测试 Rush 构建
 

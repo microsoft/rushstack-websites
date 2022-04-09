@@ -54,4 +54,4 @@ project.packageJsonEditor.saveIfModified();
 
 ## Generating a README.md summary
 
-For a more realistic example, the [repo-toolbox/src/ReadmeAction.ts](https://github.com/microsoft/rushstack/blob/master/repo-scripts/repo-toolbox/src/ReadmeAction.ts) tool uses these APIs to generate the [README.md](https://github.com/microsoft/rushstack/blob/master/README.md#published-packages) inventory for the Rush Stack monorepo.
+For a more realistic example, the [repo-toolbox/src/ReadmeAction.ts](https://github.com/microsoft/rushstack/blob/main/repo-scripts/repo-toolbox/src/ReadmeAction.ts) tool uses these APIs to generate the [README.md](https://github.com/microsoft/rushstack/blob/main/README.md#published-packages) inventory for the Rush Stack monorepo.

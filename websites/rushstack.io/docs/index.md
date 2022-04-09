@@ -40,7 +40,7 @@ The projects are built on a common framework of reusable library packages, which
 - [stream-collator](https://www.npmjs.com/package/@rushstack/stream-collator): the magic behind how Rush can
   display real-time log output from concurrent tasks, without ugly interleaving of the output
 - [tree-pattern](https://www.npmjs.com/package/@rushstack/tree-pattern): a pattern matcher for JavaScript tree structures, used by our lint rules
-- [a family of webpack plugins](https://github.com/microsoft/rushstack/tree/master/webpack) useful for building web applications
+- [a family of webpack plugins](https://github.com/microsoft/rushstack/tree/main/webpack) useful for building web applications
 
 ## What's the relationship to Rush?
 

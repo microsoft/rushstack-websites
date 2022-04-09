@@ -67,7 +67,7 @@ None - this feature is implemented internally by Heft.
 
 ## Config files
 
-> The [build-tests/heft-sass-test](https://github.com/microsoft/rushstack/tree/master/build-tests/heft-sass-test)
+> The [build-tests/heft-sass-test](https://github.com/microsoft/rushstack/tree/main/build-tests/heft-sass-test)
 > project provides examples of `.css`, `.scss`, and `.sass` imports.
 
 The `sass-typings` plugin is enabled by default and will automatically generate typings for any files under

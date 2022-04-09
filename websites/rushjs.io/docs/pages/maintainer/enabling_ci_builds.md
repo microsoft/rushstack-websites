@@ -7,8 +7,8 @@ When you set up a PR build definition for continuous integration, the automated 
 If we were invoking these commands manually, it might look something like this:
 
 ```sh
-# Fetch the master branch
-$ git fetch origin master:refs/remotes/origin/master -a
+# Fetch the main branch
+$ git fetch origin main:refs/remotes/origin/main -a
 
 # (optional) Fail if the developer didn't create a required change log.
 # By "fail", we mean that the script will stop because Rush returned
@@ -96,7 +96,7 @@ script:
   - set -e
 
   - echo 'Checking for missing change logs...' && echo -en 'travis_fold:start:change\\r'
-  - git fetch origin master:refs/remotes/origin/master -a
+  - git fetch origin main:refs/remotes/origin/main -a
   - node common/scripts/install-run-rush.js change -v
   - echo -en 'travis_fold:end:change\\r'
 
@@ -110,5 +110,5 @@ script:
 ```
 
 For an example of an equivalent setup using an Azuze DevOps build pipeline, take a look at the
-[build.yaml file](https://github.com/microsoft/rushstack/blob/master/common/config/azure-pipelines/templates/build.yaml),
+[build.yaml file](https://github.com/microsoft/rushstack/blob/main/common/config/azure-pipelines/templates/build.yaml),
 in the monorepo where Rush is developed.

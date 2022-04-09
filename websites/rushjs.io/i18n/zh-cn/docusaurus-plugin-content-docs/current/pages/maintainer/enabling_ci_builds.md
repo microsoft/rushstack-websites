@@ -8,7 +8,7 @@ title: 启用 CI
 
 ```sh
 # 获取主分支代码
-$ git fetch origin master:refs/remotes/origin/master -a
+$ git fetch origin main:refs/remotes/origin/main -a
 
 # （可选）如果开发者没有创建更新日志则失败。
 # 这意味着脚本因为 Rush 返回非零状态码而终止。
@@ -77,7 +77,7 @@ script:
   - set -e
 
   - echo 'Checking for missing change logs...' && echo -en 'travis_fold:start:change\\r'
-  - git fetch origin master:refs/remotes/origin/master -a
+  - git fetch origin main:refs/remotes/origin/main -a
   - node common/scripts/install-run-rush.js change -v
   - echo -en 'travis_fold:end:change\\r'
 
@@ -90,4 +90,4 @@ script:
   - echo -en 'travis_fold:end:build\\r'
 ```
 
-关于使用 Azure Devops 构建的示例，你可以参考用于部署 Rush 的 [build.yaml 文件](https://github.com/microsoft/rushstack/blob/master/common/config/azure-pipelines/templates/build.yaml).
+关于使用 Azure Devops 构建的示例，你可以参考用于部署 Rush 的 [build.yaml 文件](https://github.com/microsoft/rushstack/blob/main/common/config/azure-pipelines/templates/build.yaml).

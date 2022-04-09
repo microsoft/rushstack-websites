@@ -6,7 +6,7 @@ title: api-extractor-task.json
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | **File path:**                           | **&lt;project folder&gt;/config/api-extractor-task.json**                                                                               |
 | [**Riggable?**](../heft/rig_packages.md) | Yes                                                                                                                                     |
-| **Associated plugins:**                  | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
+| **Associated plugins:**                  | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
 
 ## Template
 

@@ -1,4 +1,4 @@
-// Downloaded from:  https://github.com/algolia/docsearch-configs/blob/master/configs/docusaurus-2.json
+// Downloaded from:  https://github.com/algolia/docsearch-configs/blob/main/configs/docusaurus-2.json
 {
   "index_name": "docusaurus-2",
   "start_urls": ["https://docusaurus.io/"],

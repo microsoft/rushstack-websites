@@ -2,7 +2,7 @@
 title: Authoring change logs
 ---
 
-When publishing an NPM package, it is common practice to include a [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/master/libraries/node-core-library/CHANGELOG.md) file to inform your consumers about bug fixes, new features, and changed or removed functionality. Rush automates this using the [rush change](../../commands/rush_change) command. This command should be run once you are ready to merge your PR, after all your changes have been committed to the branch. It analyzes the changes in your branch and (when necessary) prompts you to write human-readable descriptions of your changes.
+When publishing an NPM package, it is common practice to include a [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/libraries/node-core-library/CHANGELOG.md) file to inform your consumers about bug fixes, new features, and changed or removed functionality. Rush automates this using the [rush change](../../commands/rush_change) command. This command should be run once you are ready to merge your PR, after all your changes have been committed to the branch. It analyzes the changes in your branch and (when necessary) prompts you to write human-readable descriptions of your changes.
 
 The way in which you phrase your description is important. You don't want to be overly concise or specific, you don't want to reveal private information, and you want the description to be as helpful as possible. We recommend to err on the side of readability. Ask yourself:
 
