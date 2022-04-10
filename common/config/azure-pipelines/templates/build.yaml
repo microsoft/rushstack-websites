@@ -4,9 +4,11 @@ steps:
     inputs:
       versionSpec: '$(NodeVersion).x'
       checkLatest: true
-  - script: 'git config --local user.email rushbot@users.noreply.github.com'
+    # TODO: "--global" is unsafe for multi-agent CI machines.  We're using it here as a temporary workaround
+    # for a limitation of "docusaurus deploy".  Revert this to "--local" as soon as Docusaurus is fixed.
+  - script: 'git config --global user.email rushbot@users.noreply.github.com'
     displayName: 'git config email'
-  - script: 'git config --local user.name Rushbot'
+  - script: 'git config --global user.name Rushbot'
     displayName: 'git config name'
   - script: 'node common/scripts/install-run-rush.js change --verify'
     displayName: 'Verify Change Logs'
