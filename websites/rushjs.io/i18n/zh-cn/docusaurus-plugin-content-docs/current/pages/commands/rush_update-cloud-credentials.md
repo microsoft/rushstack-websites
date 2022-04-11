@@ -6,7 +6,7 @@ title: rush update-cloud-credentials (experimental)
 用法： rush update-cloud-credentials [-h] [-i]
                                      [--credential CREDENTIAL_STRING] [-d]
 
-（实验性）如果配置了构建缓存狗能，那么该指令可以可以方便的更新基于云服务商的凭证。
+（实验性）如果配置了构建缓存功能，那么该指令可以可以方便的更新基于云服务商的凭证。
 
 可选参数：
   -h, --help            展示帮助信息并退出
