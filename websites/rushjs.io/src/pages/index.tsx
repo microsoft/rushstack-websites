@@ -11,6 +11,7 @@ interface IAdvocate {
 }
 
 const advocates: IAdvocate[] = [
+  { image: 'azure.png', title: 'Azure SDK' },
   { image: 'onedrive.png', title: 'OneDrive' },
   { image: 'sharepoint.png', title: 'SharePoint' },
   { image: 'o365.png', title: 'Office 365 Small Business' },
