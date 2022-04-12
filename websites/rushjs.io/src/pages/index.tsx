@@ -28,7 +28,7 @@ function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
     return (
       <div className={styles.advocateCard}>
         <Link to={advocate.url}>
-          <img src={`/images/${advocate.image}`} alt={`${advocate.title} logo`} />
+          <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
           <div>{advocate.title}</div>
         </Link>
       </div>
@@ -36,7 +36,7 @@ function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   } else {
     return (
       <div className={styles.advocateCard}>
-        <img src={`/images/${advocate.image}`} alt={`${advocate.title} logo`} />
+        <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
         <div>{advocate.title}</div>
       </div>
     );
