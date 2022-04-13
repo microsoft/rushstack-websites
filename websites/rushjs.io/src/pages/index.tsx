@@ -11,8 +11,8 @@ interface IAdvocate {
 }
 
 const advocates: IAdvocate[] = [
-  { image: 'azure.png', title: 'Azure SDK' },
-  { image: 'hbomax.png', title: 'HBO Max' },
+  { image: 'azure.png', title: 'Azure SDK', url: 'https://github.com/azure/azure-sdk-for-js' },
+  { image: 'hbomax.png', title: 'HBO Max', url: 'https://www.hbomax.com/' },
   { image: 'onedrive.png', title: 'OneDrive' },
   { image: 'sharepoint.png', title: 'SharePoint' },
   { image: 'o365.png', title: 'Office 365 Small Business' },
@@ -20,6 +20,7 @@ const advocates: IAdvocate[] = [
   { image: 'o365.png', title: 'Office Web Apps' },
   { image: 'simplrjs.png', title: 'SimplrJS react-forms', url: 'https://github.com/SimplrJS/react-forms' },
   { image: 'telia.png', title: 'Telia Company', url: 'https://www.telia.se/' },
+  { image: 'welbi.png', title: 'Welbi', url: 'https://www.welbi.co/' },
   { image: 'wix.png', title: 'Wix', url: 'https://www.wix.com/' }
 ];
 
