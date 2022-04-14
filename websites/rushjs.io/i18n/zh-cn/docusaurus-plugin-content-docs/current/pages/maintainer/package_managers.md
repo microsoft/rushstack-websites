@@ -4,7 +4,7 @@ title: NPM vs PNPM vs Yarn
 
 当你安装 JavaScript 库之前，你需要选择一个包管理工具（由于 JavaScript 社区非常自由活跃，因此包管理工具不止一个）。Rush 支持目前最流行的三种包管理工具，按照时间顺序依次为：
 
-- [NPM](https://docs.npmjs.com/getting-started/what-is-npm): 它是当今最广泛的 JavaScript 包管理工具，它开创了包管理标准，起开发者还维护了世界上最多人使用的分布式开源 JavaScript 包管理网站 npmjs.com.
+- [NPM](https://docs.npmjs.com/getting-started/what-is-npm): 它是当今最广泛的 JavaScript 包管理工具，它开创了包管理标准，其开发者还维护了世界上最多人使用的分布式开源 JavaScript 包管理网站 npmjs.com.
 
 - [Yarn](https://yarnpkg.com/en/): 它重新实现了 NPM, 与之相比，Yarn 具有相同的管理方式，但是安装速度更快，稳定性更好，而且提供了一些新特性（例如 Yarn workspaces），用于大型开发。
 
