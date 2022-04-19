@@ -4,7 +4,7 @@ title: The "rush-lib" API
 
 Rush provides an API for use by automation scripts. It is documented in the integrated API reference for all Rush Stack projects:
 
-&nbsp;&nbsp;&nbsp;&nbsp; [API Reference: @microsoft/rush-lib package](https://api.rushstack.io/pages/rush-lib/)
+&nbsp;&nbsp;&nbsp;&nbsp; [API Reference: @microsoft/rush-lib package](https://api.rushstack.io/pages/)
 
 Below are some usage examples.
 
