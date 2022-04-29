@@ -28,9 +28,14 @@ function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   const advocate: IAdvocate = props.advocate;
 
   if (advocate.url) {
+    const linkStyle = {
+      color: '#000000',
+      textDecorationColor: '#000000'
+    };
+
     return (
       <div className={styles.advocateCard}>
-        <Link to={advocate.url}>
+        <Link style={linkStyle} to={advocate.url}>
           <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
           <div>{advocate.title}</div>
         </Link>
