@@ -44,9 +44,18 @@ function readPackage(packageJson, context) {
       ];
       for (const docusaurusPackageName of docusaurusPackageNames) {
         if (packageJson.dependencies[docusaurusPackageName]) {
-          packageJson.dependencies[docusaurusPackageName] = '2.0.0-beta.17';
+          packageJson.dependencies[docusaurusPackageName] = '2.0.0-beta.18';
+        }
+        if (packageJson.peerDependencies[docusaurusPackageName]) {
+          packageJson.peerDependencies[docusaurusPackageName] = '2.0.0-beta.18';
         }
       }
+    }
+
+    if (packageJson.dependencies['trim'] == '0.0.1') {
+      // remark-parse@8.0.3 still depends on "trim" with the CVE-2020-7753 vulnerability
+      // https://github.com/facebook/docusaurus/issues/7275
+      packageJson.dependencies['trim'] = '^1.0.0';
     }
   }
 
