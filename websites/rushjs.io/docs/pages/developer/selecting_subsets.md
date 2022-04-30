@@ -186,6 +186,10 @@ The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:
 
 <img src="/images/docs/selection-multi.svg" alt="rush build --only A --impacted-by-except B --to F" style={{ height: "150px" }} />
 
+## Git targets
+
+In addition to project names, it is also possible to use git commit-ish like `git:HEAD~1`. This can be used to e.g. only build projects in a Pull Request that have changed in comparison to the main branch with help of `rush build --to git:origin/main`.
+
 ## See also
 
 - [Incremental builds](../../advanced/incremental_builds)
