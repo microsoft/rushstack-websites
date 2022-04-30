@@ -11,6 +11,8 @@ interface IAdvocate {
 }
 
 const advocates: IAdvocate[] = [
+  { image: 'azure.png', title: 'Azure SDK', url: 'https://github.com/azure/azure-sdk-for-js' },
+  { image: 'hbomax.png', title: 'HBO Max', url: 'https://www.hbomax.com/' },
   { image: 'onedrive.png', title: 'OneDrive' },
   { image: 'sharepoint.png', title: 'SharePoint' },
   { image: 'o365.png', title: 'Office 365 Small Business' },
@@ -18,6 +20,7 @@ const advocates: IAdvocate[] = [
   { image: 'o365.png', title: 'Office Web Apps' },
   { image: 'simplrjs.png', title: 'SimplrJS react-forms', url: 'https://github.com/SimplrJS/react-forms' },
   { image: 'telia.png', title: 'Telia Company', url: 'https://www.telia.se/' },
+  { image: 'welbi.png', title: 'Welbi', url: 'https://www.welbi.co/' },
   { image: 'wix.png', title: 'Wix', url: 'https://www.wix.com/' }
 ];
 
@@ -25,10 +28,15 @@ function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   const advocate: IAdvocate = props.advocate;
 
   if (advocate.url) {
+    const linkStyle = {
+      color: '#000000',
+      textDecorationColor: '#000000'
+    };
+
     return (
       <div className={styles.advocateCard}>
-        <Link to={advocate.url}>
-          <img src={`/images/${advocate.image}`} alt={`${advocate.title} logo`} />
+        <Link style={linkStyle} to={advocate.url}>
+          <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
           <div>{advocate.title}</div>
         </Link>
       </div>
@@ -36,7 +44,7 @@ function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   } else {
     return (
       <div className={styles.advocateCard}>
-        <img src={`/images/${advocate.image}`} alt={`${advocate.title} logo`} />
+        <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
         <div>{advocate.title}</div>
       </div>
     );
