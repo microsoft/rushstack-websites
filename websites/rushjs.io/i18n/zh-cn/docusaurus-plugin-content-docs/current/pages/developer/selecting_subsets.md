@@ -102,6 +102,46 @@ $ rush build --only B
 > **“不安全”参数：** 如果所需的依赖没有被构建，那么诸如 `--only`, `--impacted-by` 和 `--impacted-by-except ` 等命令可能执行失败
 > 当你比 Rush 更了解哪些项目需要构建时，可以通过上述三个参数来节省时间。如果该前提不存在，则可以使用 `rush build`.
 
+## 选择器格式
+
+当你指定上述参数之一时，你可以使用各种不同的格式来指定你需要的项目。
+
+### 项目名
+
+最直接的方式是使用项目名（在 `rush.json` 文件中所列）。
+
+示例：
+
+```console
+rush build --to my-project-name
+
+rush build --from my-project-name
+
+rush list --impacted-by my-project-name
+```
+
+### 在当前项目下使用 `.`
+
+如果你的的终端位于某个项目目录下，可以使用 `.`来表示当前项目。
+
+示例：
+
+```console
+rush build --to .
+
+rush list --to-except .
+```
+
+### commit 之后发生变动的项目
+
+你通过提供一个 git （分支、标签或 commit 哈希）来指定该节点以来所有修改过的项目。这种查询的类型与 `rush change` 使用了相同的逻辑来记录变化。
+
+```console
+rush build --to git:origin/main
+
+rush list --impacted-by git:release/v3.0.0
+```
+
 ## 组合参数
 
 - 你可以在指令中组合任何参数，其结果是所有参数的并集。
