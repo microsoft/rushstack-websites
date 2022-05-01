@@ -15,8 +15,8 @@
     "site-config": "workspace:*"
   },
   "devDependencies": {
-    "@rushstack/node-core-library": "~3.44.3",
-    "@docusaurus/core": "2.0.0-beta.17",
+    "@rushstack/node-core-library": "~3.45.4",
+    "@docusaurus/core": "2.0.0-beta.18",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "~4.5.4"
