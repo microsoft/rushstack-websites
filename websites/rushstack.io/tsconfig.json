@@ -36,7 +36,12 @@
 
     /* Use tslib */
     "importHelpers": true,
-    "noEmitHelpers": true
+    "noEmitHelpers": true,
+
+    "outDir": "temp/",
+    "paths": {
+      "@docusaurus/*": ["./node_modules/@docusaurus/core/lib/client/exports/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
