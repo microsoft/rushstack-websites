@@ -54,6 +54,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          breadcrumbs: false,
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io/',
           remarkPlugins: [

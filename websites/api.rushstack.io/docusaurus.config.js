@@ -50,6 +50,12 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+
+          // TODO: We should replace API Extractor's breadcrumb links with the native
+          // Docusaurus breadcrumbs.  This work involves updating the API Documenter template
+          // and swizzling @theme/IconHome to remove the house art that clashes with our theme.
+          breadcrumbs: false,
+
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/',
           remarkPlugins: [
