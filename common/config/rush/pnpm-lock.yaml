@@ -282,9 +282,11 @@ importers:
       '@docusaurus/theme-common': 2.0.0-beta.18
       '@mdx-js/react': ^1.6.21
       '@svgr/webpack': ^5.5.0
+      '@types/history': ^4.7.11
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
+      '@types/react-router-dom': ^5.3.3
       algoliasearch: ^4.12.2
       clsx: ^1.1.1
       dayjs: ~1.10.7
@@ -322,9 +324,11 @@ importers:
       '@algolia/client-search': 4.13.0
       '@babel/core': 7.17.10
       '@babel/runtime': 7.17.9
+      '@types/history': 4.7.11
       '@types/js-cookie': 3.0.1
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
+      '@types/react-router-dom': 5.3.3
       algoliasearch: 4.13.0
       rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
       remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
@@ -3430,7 +3434,6 @@ packages:
 
   /@types/history/4.7.11:
     resolution: {integrity: sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==}
-    dev: false
 
   /@types/html-minifier-terser/6.1.0:
     resolution: {integrity: sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg==}
@@ -3536,14 +3539,12 @@ packages:
       '@types/history': 4.7.11
       '@types/react': 17.0.37
       '@types/react-router': 5.1.18
-    dev: false
 
   /@types/react-router/5.1.18:
     resolution: {integrity: sha512-YYknwy0D0iOwKQgz9v8nOzt2J6l4gouBmDnWqUUznltOTaon+r8US8ky8HvN0tXvc38U9m6z/t2RsVsnd1zM0g==}
     dependencies:
       '@types/history': 4.7.11
       '@types/react': 17.0.37
-    dev: false
 
   /@types/react/17.0.37:
     resolution: {integrity: sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==}
