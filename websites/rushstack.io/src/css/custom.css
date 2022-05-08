@@ -159,12 +159,8 @@ html[data-theme='dark'] blockquote {
  * We only do this inside an <article> element.
  * An "external" page has "://" in its URL and does not include a recognized DNS name.
  */
-article a[href*="://"]/*
-  */:not([href*="api-extractor.com"])/*
-  */:not([href*="rushstack.io"])/*
-  */:not([href*="rushjs.io"])/*
-  */:not([href*="tsdoc.org"])/*
-  */:not([href*="localhost"]) {
+article a[href*="://"]:not([href*="api-extractor.com"]):not([href*="rushstack.io"]):not([href*="rushjs.io"]):not([href*="tsdoc.org"]):not([href*="localhost"])
+{
   background-position: center right;
   background-repeat: no-repeat;
   padding-right: 13px;
