@@ -24,20 +24,17 @@
       "name": "Pete Gonzalez",
       "github": "octogonz",
       "caption": "architecture, community engagement, docs and TSDoc"
+    },
+    {
+      "name": "Sean Larkin",
+      "github": "TheLarkInn",
+      "caption": "Webpack integration, community engagement; Sean is also a maintainer for Webpack and angular-cli"
     }
   ],
   "collaborators": [
     {
-      "name": "Claudia Sun",
-      "github": "Claudiazhaoya"
-    },
-    {
       "name": "Elliot Nelson",
       "github": "elliot-nelson"
-    },
-    {
-      "name": "Josh Wedekind",
-      "github": "halfnibble"
     },
     {
       "name": "Sachin Joseph",
@@ -45,6 +42,18 @@
     }
   ],
   "alumni": [
+    {
+      "name": "Claudia Sun",
+      "github": "Claudiazhaoya",
+      "role": "Maintainer 2019-2022",
+      "caption": "contributed fixes and enhancements while migrating many projects to build using Heft"
+    },
+    {
+      "name": "Josh Wedekind",
+      "github": "halfnibble",
+      "role": "Maintainer 2019-2021",
+      "caption": "contributed the sass-typings-generator, heft-dev-cert-plugin, and the Heft APIs for custom actions/parameters"
+    },
     {
       "name": "Nick Pape",
       "github": "nickpape",
