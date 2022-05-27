@@ -65,7 +65,7 @@ $ rush build
 $ rush build --changed-projects-only
 ```
 
-`--changed-projects-only` 参数是不安全的，因为当下游项目重新构建时可能遇到错误。假设你比 Rush 更了解那些需要重新构建，那么这个参数可以节省时间。如果你不知道，那么可以调用 `rush build` 来保证正确性。
+`--changed-projects-only` 参数是不安全的，因为当下游项目重新构建时可能遇到错误。假设你比 Rush 更了解哪些需要重新构建，那么这个参数可以节省时间。如果你不知道，那么可以调用 `rush build` 来保证正确性。
 
 参考
 
