@@ -24,7 +24,7 @@ Heft 通常由 **package.json** 中的 `"build"` 脚本调用。Heft 被设计�
 
 - **完整的**： Rush Stack 希望为 TypeScript 项目创建一个完全可行的解决方案。毫无主见的抽象往往与该目标背道相驰：优化和支持（包括文档）每一个可能的技术栈非常耗时耗力，最好的优化和集成对所有可能的任务进行了许多假设，Heft 是有主见，我们的目标是在工具链上达成一致，这些工具链在大多数场景下可以良好工作，然后深度投入，最终来带良好的体验。
 
-- **可扩展的**： 大多数项目至少需要一些诸如前置处理、后置处理或者加载等任务。Heft 由一系列基于 [tapable](https://www.npmjs.com/package/tapable) 的插件组成（与 Webpack 类似），边写自己的插件很容易。不同于 Grunt 或 Gulp 的松散架构，Heft 提供了一个预定义的“阶段”来注册自定义任务，有了这么一个标准化的起点，就可以在自定义 rigs 得到更轻松的技术支持。
+- **可扩展的**： 大多数项目至少需要一些诸如前置处理、后置处理或者加载等任务。Heft 由一系列基于 [tapable](https://www.npmjs.com/package/tapable) 的插件组成（与 Webpack 类似），编写自己的插件很容易。不同于 Grunt 或 Gulp 的松散架构，Heft 提供了一个预定义的“阶段”来注册自定义任务，有了这么一个标准化的起点，就可以在自定义 rigs 得到更轻松的技术支持。
 
 - **熟悉的**：与 Rush 类似，Heft 是一个 Node.js 应用 —— 开发者不需要下载任何诸如 Python, MSYS2, 或 .NET 框架等前置。由于是 100% 的 TypeScript 项目，因此 Heft 的源代码很容易理解和调。当然，写成编译形项目也是有可能的。
 
@@ -47,7 +47,7 @@ Heft 通常由 **package.json** 中的 `"build"` 脚本调用。Heft 被设计�
 ## 链接
 
 - [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/master/apps/heft/CHANGELOG.md) - 查看最新版本有什么变化
-- [UPGRADING.md](https://github.com/microsoft/rushstack/blob/master/apps/heft/UPGRADING.md) - 将现有羡慕迁移到较新的 Heft 的说明
+- [UPGRADING.md](https://github.com/microsoft/rushstack/blob/master/apps/heft/UPGRADING.md) - 将现有项目迁移到较新的 Heft 的说明
 - [API 索引](https://api.rushstack.io/pages/heft/)
 
 ## 工程示例
