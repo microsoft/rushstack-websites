@@ -13,6 +13,6 @@ title: 配置文件参考
 | common/temp/npm-tmp/...       | NPM 安装时候创建的临时文件。                                                                                                |
 | common/temp/projects/...      | **common/temp/package.json** 引用的合成项目。                                                                               |
 | common/temp/rush-recycler/... | 用于加速递归删除。                                                                                                          |
-| common/temp/last-install.flag | 不必关系该文件，它追踪了上次 `rush install` 成功的时间戳。                                                                  |
+| common/temp/last-install.flag | 不必关心该文件，它追踪了上次 `rush install` 成功的时间戳。                                                                  |
 | common/temp/package.json      | 公共文件的定义。                                                                                                            |
-| common/temp/rush-link.json    | 不必关系该文件，当你执行 `rush link` 是它会创建，并被诸如 "rush build" 等命令读取。                                         |
+| common/temp/rush-link.json    | 不必关心该文件，当你执行 `rush link` 是它会创建，并被诸如 "rush build" 等命令读取。                                         |
