@@ -3,8 +3,8 @@ title: rush build
 ---
 
 ```
-usage: rush build [-h] [-p COUNT] [-t PROJECT] [-T PROJECT] [-f PROJECT]
-                  [-o PROJECT] [-i PROJECT] [-I PROJECT]
+usage: rush build [-h] [-p COUNT] [--timeline] [-t PROJECT] [-T PROJECT]
+                  [-f PROJECT] [-o PROJECT] [-i PROJECT] [-I PROJECT]
                   [--to-version-policy VERSION_POLICY_NAME]
                   [--from-version-policy VERSION_POLICY_NAME] [-v] [-c]
                   [--ignore-hooks]
@@ -27,12 +27,17 @@ Optional arguments:
   -p COUNT, --parallelism COUNT
                         Specifies the maximum number of concurrent processes
                         to launch during a build. The COUNT should be a
-                        positive integer or else the word "max" to specify a
-                        count that is equal to the number of CPU cores. If
-                        this parameter is omitted, then the default value
-                        depends on the operating system and number of CPU
-                        cores. This parameter may alternatively be specified
-                        via the RUSH_PARALLELISM environment variable.
+                        positive integer, a percentage value (eg. "50%") or
+                        the word "max" to specify a count that is equal to
+                        the number of CPU cores. If this parameter is omitted,
+                         then the default value depends on the operating
+                        system and number of CPU cores. This parameter may
+                        alternatively be specified via the RUSH_PARALLELISM
+                        environment variable.
+  --timeline            After the build is complete, print additional
+                        statistics and CPU usage information, including an
+                        ASCII chart of the start and stop times for each
+                        operation.
   -t PROJECT, --to PROJECT
                         Normally all projects in the monorepo will be
                         processed; adding this parameter will instead select

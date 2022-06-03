@@ -14,7 +14,7 @@ title: rush install
 "rush install" 命令会基于 "rush update' 创建/更新的 shrinkwrap 文件来给仓库内的所有项
 目安装依赖（"shrinkwrap" 文件存储了仓库内项目的所有依赖和版本关系）。如果 shrinkwrap 文件
 缺失或过时后（例如，由于项目的 package.json 文件改变），"rush install" 命令会执行失败，
-并告诉你需要执行 "rush update" 来替代。其主要特性是只读：持续集中中应该使用 "rush install"
+并告诉你需要执行 "rush update" 来替代。其主要特性是只读：持续集成中应该使用 "rush install"
 而不是 "rush update" 来获取那些忘记在 commit 中更新 shrinkwrap 的开发者。如果想要避免
 shrinkwrap 文件偶然更新，那么这些谨慎的人可以使用 "rush install"
 
