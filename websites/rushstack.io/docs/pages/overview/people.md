@@ -3,7 +3,7 @@ title: Who's involved?
 custom_edit_url: null
 ---
 
-import { PeopleGrid } from '@site/src/components/People';
+import { PeopleGrid } from '@site/src/components/PeopleGrid';
 
 ## Maintainers
 
@@ -27,4 +27,4 @@ When a Maintainer or Collaborator is no longer actively involved, they become Al
 
 This list recognizes individuals who are not formally affiliated with Rush Stack, but who nonetheless made major contributions that the maintainers would like to acknowledge. If you'd like to nominate someone, let us know. In reverse chronological order:
 
-<PeopleGrid category="star_contributors" />
+<PeopleGrid category="starContributors" />
