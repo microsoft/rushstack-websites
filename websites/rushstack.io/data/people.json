@@ -1,114 +1,126 @@
 {
+  "//": "Alphabetical by first name",
   "maintainers": [
     {
       "name": "Apostolis Haitalis",
-      "github": "apostolisms",
+      "githubAlias": "apostolisms",
       "caption": "manages the team that hosts the Rush Stack projects"
     },
     {
       "name": "Daniel Nadeau",
-      "github": "D4N14L",
+      "githubAlias": "D4N14L",
       "caption": "feature implementation, focusing on Rush workspaces and Heft"
     },
     {
       "name": "David Michon",
-      "github": "dmichon-msft",
+      "githubAlias": "dmichon-msft",
       "caption": "feature implementation, focusing on performance and watch mode"
     },
     {
       "name": "Ian Clanton-Thuon",
-      "github": "iclanton",
+      "githubAlias": "iclanton",
       "caption": "architecture, focusing on Heft and Rush build cache"
     },
     {
       "name": "Pete Gonzalez",
-      "github": "octogonz",
+      "githubAlias": "octogonz",
       "caption": "architecture, community engagement, docs and TSDoc"
     },
     {
       "name": "Sean Larkin",
-      "github": "TheLarkInn",
+      "githubAlias": "TheLarkInn",
       "caption": "Webpack integration, community engagement; Sean is also a maintainer for Webpack and angular-cli"
     }
   ],
+  "//": "Alphabetical by first name",
   "collaborators": [
     {
       "name": "Elliot Nelson",
-      "github": "elliot-nelson"
+      "githubAlias": "elliot-nelson",
+      "caption": "facilitating: Rush, Heft, Docusaurus"
     },
     {
       "name": "Sachin Joseph",
-      "github": "sachinjoseph"
+      "githubAlias": "sachinjoseph",
+      "caption": "facilitating: Rush"
+    },
+    {
+      "name": "Zack Elliott",
+      "githubAlias": "zelliott",
+      "caption": "facilitating: API Extractor"
     }
   ],
+  "//": "Chronological order by end date, newest goes at the top",
   "alumni": [
     {
       "name": "Claudia Sun",
-      "github": "Claudiazhaoya",
+      "githubAlias": "Claudiazhaoya",
       "role": "Maintainer 2019-2022",
       "caption": "contributed fixes and enhancements while migrating many projects to build using Heft"
     },
     {
       "name": "Josh Wedekind",
-      "github": "halfnibble",
+      "githubAlias": "halfnibble",
       "role": "Maintainer 2019-2021",
       "caption": "contributed the sass-typings-generator, heft-dev-cert-plugin, and the Heft APIs for custom actions/parameters"
     },
     {
       "name": "Nick Pape",
-      "github": "nickpape",
+      "githubAlias": "nickpape",
       "role": "Maintainer 2016-2018",
       "caption": "broad contributions including Rush's task scheduler and stream collator"
     },
     {
       "name": "QZ",
-      "github": "qz2017",
+      "githubAlias": "qz2017",
       "role": "Maintainer 2016-2018",
       "caption": "broad contributions including Rush version policies and publishing features"
     },
     {
       "name": "Daniel Gaeta",
-      "github": "dgaeta",
+      "githubAlias": "dgaeta",
       "role": "Collaborator 2017",
       "caption": "implemented API Extractor and API Documenter features"
     }
   ],
-  "star_contributors": [
+  "//": "Newest additions go at the top",
+  "//": "Include the month when they were added in YYYY-MM format",
+  "starContributors": [
     {
+      "//": "month when added: 2021-12",
       "name": "Cheng",
-      "sort_month": "2021-12",
-      "github": "chengcyber",
+      "githubAlias": "chengcyber",
       "caption": "designed and implemented the plugin system for Rush"
     },
     {
+      "//": "month when added: 2021-07",
       "name": "Yunfei",
-      "sort_month": "2021-07",
-      "github": "adventure-yunfei",
+      "githubAlias": "adventure-yunfei",
       "caption": "recognized for major contributions to API Extractor and API Documenter"
     },
     {
+      "//": "month when added: 2020-12",
       "name": "William Bernting",
-      "sort_month": "2020-12",
       "caption": "helped design Rush's multi-project watch mode feature, implemented the @telia/rush-select console",
-      "github": "wbern"
+      "githubAlias": "wbern"
     },
     {
+      "//": "month when added: 2019-09",
       "name": "Ron Buckton",
-      "sort_month": "2019-09",
-      "github": "rbuckton",
+      "githubAlias": "rbuckton",
       "caption": "recognized for major contributions to API Extractor and TSDoc, including the declaration reference syntax"
     },
     {
+      "//": "month when added: 2018-11",
       "name": "Thomas Michon",
-      "sort_month": "2018-11",
       "caption": "contributed the \"installation variants\" feature for Rush",
-      "github": "ThomasMichon"
+      "githubAlias": "ThomasMichon"
     },
     {
+      "//": "month when added: 2016-01",
       "name": "David Zearing",
-      "sort_month": "2016-01",
       "caption": "pioneered early components such as package-deps-hash, gulp-core-build, and load-themed-styles",
-      "github": "dzearing"
+      "githubAlias": "dzearing"
     }
   ]
 }

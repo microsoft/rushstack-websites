@@ -3,7 +3,7 @@ title: 谁参与其中？
 custom_edit_url: null
 ---
 
-import { PeopleGrid } from '@site/src/components/People';
+import { PeopleGrid } from '@site/src/components/PeopleGrid';
 
 ## 维护者
 
@@ -27,4 +27,4 @@ import { PeopleGrid } from '@site/src/components/People';
 
 下面列出了没有加入到 Rush Stack 的开发者，但是他们也为项目做出了巨大的贡献，维护者对其深表感谢。如果你想提名某人，请告诉我们。按照时间倒序顺序：
 
-<PeopleGrid category="star_contributors" />
+<PeopleGrid category="starContributors" />
