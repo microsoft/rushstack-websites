@@ -31,9 +31,9 @@ title: build-cache.json（实验性）
   /**
    * 设定该值覆盖缓存入口 ID.
    * 如果设定该值，那么它必须包含一个 [hash] 占位符，
-   * 它也可以包含 [projectName], [projectName:normalized]
+   * 它也可以包含 [projectName], [projectName:normalize], [phaseName], [phaseName:normalize], [phaseName:trimPrefix]
    */
-  // "cacheEntryNamePattern": "[projectName:normalized]-[hash]"
+  // "cacheEntryNamePattern": "[projectName:normalize]-[hash]"
 
   /**
    * 该配置项用于配置 "cacheProvider"="azure-blob-storage"

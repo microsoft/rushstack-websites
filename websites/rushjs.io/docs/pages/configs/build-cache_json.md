@@ -30,10 +30,16 @@ generates for **build-cache.json**:
   "cacheProvider": "local-only",
 
   /**
-   * Setting this property overrides the cache entry ID.  If this property is set, it must contain
-   * a [hash] token. It may also contain a [projectName] or a [projectName:normalized] token.
+   * Setting this property overrides the cache entry ID. If this property is set, it must contain
+   * a [hash] token. 
+   * Other available tokens: 
+   *  - [projectName]
+   *  - [projectName:normalize]
+   *  - [phaseName]
+   *  - [phaseName:normalize]
+   *  - [phaseName:trimPrefix]
    */
-  // "cacheEntryNamePattern": "[projectName:normalized]-[hash]"
+  // "cacheEntryNamePattern": "[projectName:normalize]-[hash]"
 
   /**
    * Use this configuration with "cacheProvider"="azure-blob-storage"
@@ -77,9 +83,9 @@ generates for **build-cache.json**:
     // "s3Region": "us-east-1",
 
     /**
-     * The name of the bucket in Amazon S3 to use for build cache.
+     * (Required) The name of the bucket in Amazon S3 to use for build cache.
      */
-    // (Required) "s3Bucket": "my-bucket",
+    // "s3Bucket": "my-bucket",
 
     /**
      * An optional prefix ("folder") for cache items.
