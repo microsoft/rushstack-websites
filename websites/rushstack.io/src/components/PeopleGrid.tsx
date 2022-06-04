@@ -8,7 +8,7 @@ interface IGitHubCardProps {
 function GitHubCard(props: IGitHubCardProps) {
   return (
     <div className="people-item" style={{ marginBottom: '20px' }}>
-      <a href={`https://github.com/${props.person.githubAlias}`}>
+      <a href={`https://github.com/${props.person.githubAlias}`} className="no-external-link-icon">
         <img
           src={`https://github.com/${props.person.githubAlias}.png?s=100`}
           width="100"
@@ -16,7 +16,9 @@ function GitHubCard(props: IGitHubCardProps) {
         />
       </a>
       <div>
-        <a href={`https://github.com/${props.person.githubAlias}`}>{props.person.name}</a>
+        <a href={`https://github.com/${props.person.githubAlias}`} className="no-external-link-icon">
+          {props.person.name}
+        </a>
       </div>
       <div style={{ paddingBottom: '12px' }}>
         <b>@{props.person.githubAlias}</b>
