@@ -36,15 +36,18 @@
   "collaborators": [
     {
       "name": "Elliot Nelson",
-      "githubAlias": "elliot-nelson"
+      "githubAlias": "elliot-nelson",
+      "caption": "facilitating: Rush, Heft, Docusaurus"
     },
     {
       "name": "Sachin Joseph",
-      "githubAlias": "sachinjoseph"
+      "githubAlias": "sachinjoseph",
+      "caption": "facilitating: Rush"
     },
     {
       "name": "Zack Elliott",
-      "githubAlias": "zelliott"
+      "githubAlias": "zelliott",
+      "caption": "facilitating: API Extractor"
     }
   ],
   "//": "Chronological order by end date, newest goes at the top",
