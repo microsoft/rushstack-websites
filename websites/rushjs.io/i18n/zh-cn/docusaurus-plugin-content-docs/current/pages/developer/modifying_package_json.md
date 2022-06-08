@@ -52,4 +52,4 @@ title: 修改 package.json
 
 [npm-check-update](https://www.npmjs.com/package/npm-check-updates) 会升级 Rush 仓库中的单个项目下 package.json 内版本，记得随后执行 `rush update`（而不是 `npm install`)
 
-_注意：PNPM workspace [即将推出](https://github.com/microsoft/rushstack/pull/1938), 该功能实现后，可以使用 [pnpm update](https://pnpm.js.org/en/cli/update) 指令进行全局更新。_
+_注意：PNPM workspace [已经推出](https://github.com/microsoft/rushstack/pull/1938), 启用此功能后，可以使用 [pnpm update](https://pnpm.js.org/en/cli/update) 指令进行批量更新。_

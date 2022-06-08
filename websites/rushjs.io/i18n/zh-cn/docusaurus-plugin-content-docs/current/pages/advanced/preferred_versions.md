@@ -21,7 +21,7 @@ Rush 通过在公共文件夹下创建了一个虚假的 **rush-common** 项目�
 }
 ```
 
-包管理器认为每个以 "**@rush-temp**" 命名的项目都是 **rush-common** 项目的直接依赖。通常而言，NPM 会首先安装项目的直接依赖（在 **node_modules** 树的根目录），然后再下载间接依赖。但是，由于你的项目的直接依赖现在已经见解依赖 **rush-common** 项目了，所以 `npm install` 的行为可能有些不同。
+包管理器认为每个以 "**@rush-temp**" 命名的项目都是 **rush-common** 项目的直接依赖。通常而言，NPM 会首先安装项目的直接依赖（在 **node_modules** 树的根目录），然后再下载间接依赖。但是，由于你的项目的直接依赖现在已经间接依赖 **rush-common** 项目了，所以 `npm install` 的行为可能有些不同。
 
 假如 **project-1/package.json** 如下：
 
@@ -127,6 +127,6 @@ _注意：如果你发布一个包，当你添加优先版本时候应当非常�
 }
 ```
 
-对于某个依赖而言，除了在不同的项目中指定不同的版本范围外，Rush 会自动将所有的直接依赖添加到 **common/temp/package.json** 中。在上述事例中，Rush 不知道哪个版本应当被认为是隐性的优先。例如，如果 **project1** 和 **project2** 指定了不同的 **library-b** 版本，之后你可能需要使用 **common-version.json** 来解决问题。
+对于某个依赖而言，除了在不同的项目中指定不同的版本范围外，Rush 会自动将所有的直接依赖添加到 **common/temp/package.json** 中。在上述示例中，Rush 不知道哪个版本应当被认为是隐性的优先。例如，如果 **project1** 和 **project2** 指定了不同的 **library-b** 版本，之后你可能需要使用 **common-version.json** 来解决问题。
 
 对于较老的包管理器，自动添加这个这些条目会减少间接依赖的重复。然而，隐性的优先版本可能会导致某些不兼容 `peerDependencies` 范围的依赖出现问题。如果你遇到了同级依赖而导致的安装错误，建议通过设定 [common/config/rush/common-version.json] 中的 `implicitlyPreferredVersions` 为 `false` 来禁用这个行为。
