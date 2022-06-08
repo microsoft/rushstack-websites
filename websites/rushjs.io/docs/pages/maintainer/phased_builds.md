@@ -2,9 +2,8 @@
 title: Enabling phased builds (experimental)
 ---
 
-By default, Rush builds each project by running `npm run build` separately in each project folder, running projects
-in parallel when the dependency graph allows. From Rush's perspective, everything that happens inside that build
-command is atomic.
+By default, Rush builds each project by running a build script (similar to `npm run build`) separately in each project folder, processing projects in parallel when the dependency graph allows. From Rush's perspective, everything that happens inside that build
+script is a single operation.
 
 _Phased builds_ are a way to increase parallelism, by defining individual operations as _phases_ that can be
 executed on a project. As an example, if project B depends on project A, we could first build project A, and then
