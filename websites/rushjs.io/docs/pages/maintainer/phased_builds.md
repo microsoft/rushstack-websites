@@ -94,7 +94,44 @@ In `common/config/rush/command-line.json`, in the `"commands"` section, redefine
 
 This command definition shows off another useful feature of phased builds: we can create our "phase" building blocks and then build commands out of them. Instead of `rush build` running builds and tests for all projects, we can define `rush build` to mean "build everything without tests", and `rush test` to mean "build everything and run tests".
 
-## Add phase scripts to your projects
+## Assign parameters to phases
+
+If you have defined any custom parameters for your build command in `command-line.json`, you'll now need to associate them to phases, so Rush knows which phases can accept your parameter.
+
+Here are some examples:
+
+```json
+{
+  "parameters": [
+    {
+      "longName": "--production",
+      "parameterKind": "flag",
+      "description": "Perform a production build, including minification and localization steps",
+      "associatedCommands": ["build", "rebuild", "test", "retest"],
+      "associatedPhases": ["_phase:build"]
+    },
+    {
+      "longName": "--update-snapshots",
+      "parameterKind": "flag",
+      "description": "Update unit test snapshots for all projects",
+      "associatedCommands": ["test", "retest"],
+      "associatedPhases": ["_phase:test"]
+    }
+  ]
+}
+```
+
+Here, we've defined one flag (`--production`) that can be specified on all 4 variations of our build command, but it will only be passed to the _build_ phase. And, we've defined anothe flag (`--update-snapshots`) that can be specified only on the `test` and `retest` commands, and is only passed to the `test` phase.
+
+So, if we were to execute this command:
+
+```console
+rush test --production --update-snapshots
+```
+
+Rush will pass the `--production` parameter to the `_phase:build` script for each project, and then pass the `--update-snapshots` parameter to the `_phase:test` script for each project.
+
+## Add the phase scripts to your projects
 
 Within the `package.json` file for every project in your monorepo, add the new `_phase:` scripts:
 
