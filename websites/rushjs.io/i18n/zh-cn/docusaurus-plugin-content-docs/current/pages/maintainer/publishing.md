@@ -74,7 +74,7 @@ Rush 的发布流程中包含两个阶段：第一阶段是在开发期间，开
 
 ### 版本策略是什么
 
-版本策略是一系列定义版本如何被变更的规则，它被定义在 common/config/rush/version-policies.json 内，可以参考示例 [here](https://github.com/microsoft/rushstack/blob/main/common/config/rush/version-policies.json). 一个公开的仓库可以通过在 rush.json 中指定 versionPolicyName 来指定版本策略，示例可以参考示例 [rush 和 rush-lib 的工程配置](https://github.com/microsoft/rushstack/blob/7d05f64c3275da074825bb98d3e49ea920fcfa8f/rush.json#L482)。如果多个仓库遵循相同的规则，则可以使用一个版本策略。当你个库被指定版本策略后，它就是变成公开残酷，并可以被 "rush publish" 发布。
+版本策略是一系列定义版本如何被变更的规则，它被定义在 common/config/rush/version-policies.json 内，可以参考示例 [here](https://github.com/microsoft/rushstack/blob/main/common/config/rush/version-policies.json). 一个公开的仓库可以通过在 rush.json 中指定 versionPolicyName 来指定版本策略，示例可以参考示例 [rush 和 rush-lib 的工程配置](https://github.com/microsoft/rushstack/blob/7d05f64c3275da074825bb98d3e49ea920fcfa8f/rush.json#L482)。如果多个仓库遵循相同的规则，则可以使用一个版本策略。当你个库被指定版本策略后，它就是变成公开仓库，并可以被 "rush publish" 发布。
 
 version-policies.json 的范式定义在 [here](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/schemas/version-policies.schema.json).
 
