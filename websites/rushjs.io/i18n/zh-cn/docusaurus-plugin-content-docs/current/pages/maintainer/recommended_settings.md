@@ -30,7 +30,7 @@ title: 推荐设定
 
 在某些特殊情况下不同版本可能更适用些，例如，你可能希望逐步更新项目内的 TypeScript 版本，而不是一次性的，在此期间，你需要使用两个不同的 `typescript` 版本。对于该情况，你可以在 **common-versions.json** 中添加一个 `allowedAlternativeVersions` 字段。
 
-> NOTE: 注意：在早起的 Rush 版本中，CI 脚本示例将 `rush check` 视为一个单独的构建步骤；如果开启 `ensureConsistentVersions`，那么你可以将 `rush check` 从 CI 构建步骤中删除。
+> NOTE: 注意：在早期的 Rush 版本中，CI 脚本示例将 `rush check` 视为一个单独的构建步骤；如果开启 `ensureConsistentVersions`，那么你可以将 `rush check` 从 CI 构建步骤中删除。
 
 ## strictPeerDependencies
 
