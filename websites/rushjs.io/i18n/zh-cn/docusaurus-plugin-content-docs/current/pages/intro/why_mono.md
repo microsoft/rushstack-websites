@@ -28,6 +28,7 @@ _开源的 NPM 包看起来是在许多小的 GitHub 仓库中开发的。听起
   <img src="/images/home/mono-concept-h.svg" alt="monorepo block diagram" style={{ width: '50rem' }} />
   <p />
 </div>
+
 [Lots](https://danluu.com/monorepo/) [of](https://medium.com/@bebraw/the-case-for-monorepos-907c1361708a) [people](http://blog.shippable.com/our-journey-to-microservices-and-a-mono-repository) 许多开发大型业务软件的人，似乎最终都把所有代码放在一个大的 "monorepo" 中。JavaScript 是最后一个这么做的语言。
 
 monorepo 策略下最大的担忧是显著的**_构建耗时_**。JavaScript 工具链明显比编译型语言慢，如果一个工程构建需要花费一分钟，那么假如你有 75 个工程，理论上构建将花费75 分钟。这看起来很吓人，但有了工业级的工具链，在构建耗时成为问题之前，你可以进行非常大的扩展。我们对Rush和**gulp-core-build**的大部分路线图都集中在构建耗时上，而且我们乐观的认为这里仍然有很大的优化空间。使用**子集构建**或**增量构建**，理论上可以避免重建所有的东西，除非一个变化真的影响到所有的东西 ，—— 对于那种变化，为了能尽早发现故障而需要等待更长的构建时间，到底值不值得，这很难说。
