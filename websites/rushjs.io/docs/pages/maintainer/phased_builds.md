@@ -29,11 +29,26 @@ In `common/config/rush/command-line.json`, add a section `"phases"`, as follows:
 {
   "phases": [
     {
+      /**
+       * The name of the phase. Note that this value must start with the \"_phase:\" prefix.
+       */
       "name": "_phase:build",
+
+      /**
+       * The dependencies of this phase.
+       */
       "dependencies": {
         "upstream": ["_phase:build"]
       },
+
+      /**
+       * Normally Rush requires that each project's package.json has a \"scripts\" entry matching the phase name. To disable this check, set \"ignoreMissingScript\" to true.
+       */
       "ignoreMissingScript": true,
+
+      /**
+       * By default, Rush returns a nonzero exit code if errors or warnings occur during a command. If this option is set to \"true\", Rush will return a zero exit code if warnings occur during the execution of this phase.
+       */
       "allowWarningsOnSuccess": false
     },
     {
