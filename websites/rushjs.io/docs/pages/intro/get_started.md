@@ -12,6 +12,12 @@ Want to see Rush in action? The only prerequisite you need is [NodeJS](https://n
 $ npm install -g @microsoft/rush
 ```
 
+or for npm versions >= 8.12
+
+```sh
+$ npm install --location=global @microsoft/rush
+```
+
 (Don't type the **"$"** of course.) :-)
 
 **For command-line help, do this:**
