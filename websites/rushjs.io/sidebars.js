@@ -50,6 +50,7 @@ const sidebars = {
         'pages/maintainer/publishing',
         'pages/maintainer/deploying',
         'pages/maintainer/build_cache',
+        'pages/maintainer/phased_builds',
         'pages/maintainer/npm_registry_auth'
       ]
     },
