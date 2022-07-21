@@ -42,6 +42,8 @@ export class Vector {
 
 Compare with [ApiConstructSignature](./api-extractor-model.apiconstructsignature.md) , which describes the construct signature for a class constructor.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                     | Modifiers | Description                                                        |

@@ -25,6 +25,8 @@ export declare class ApiPackage extends ApiPackage_base
 
 This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of classes, which are serializable representations of API declarations.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                 | Modifiers | Description                                                    |

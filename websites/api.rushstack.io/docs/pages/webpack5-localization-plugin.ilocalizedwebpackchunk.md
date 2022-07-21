@@ -19,6 +19,8 @@ export interface ILocalizedWebpackChunk extends Chunk
 
 <b>Extends:</b> Chunk
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Properties
 
 | Property                                                                                   | Modifiers | Type                            | Description       |

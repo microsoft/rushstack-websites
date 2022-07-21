@@ -18,3 +18,10 @@ export interface IBundleSubstage extends IBuildSubstage<BundleSubstageHooks, IBu
 ```
 
 <b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BundleSubstageHooks](./heft.bundlesubstagehooks.md) , [IBundleSubstageProperties](./heft.ibundlesubstageproperties.md)
+
+## Properties
+
+| Property                                          | Modifiers | Type                     | Description                                                  |
+| ------------------------------------------------- | --------- | ------------------------ | ------------------------------------------------------------ |
+| [hooks](./heft.ibuildsubstage.hooks.md)           |           | TBuildSubstageHooks      | (Inherited from [IBuildSubstage](./heft.ibuildsubstage.md) ) |
+| [properties](./heft.ibuildsubstage.properties.md) |           | TBuildSubstageProperties | (Inherited from [IBuildSubstage](./heft.ibuildsubstage.md) ) |

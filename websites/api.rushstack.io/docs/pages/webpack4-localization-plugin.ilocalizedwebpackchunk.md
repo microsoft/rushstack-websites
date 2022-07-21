@@ -19,6 +19,8 @@ export interface ILocalizedWebpackChunk extends webpack.compilation.Chunk
 
 <b>Extends:</b> webpack.compilation.Chunk
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Properties
 
 | Property                                                                                   | Modifiers | Type                            | Description       |

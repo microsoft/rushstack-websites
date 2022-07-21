@@ -43,6 +43,8 @@ function chooseFirst<T>(x: T, y: T): T {
 let chooser: IChooser = chooseFirst;
 ```
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                       | Modifiers | Description                                                          |

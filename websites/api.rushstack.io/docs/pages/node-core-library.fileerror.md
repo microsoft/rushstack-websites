@@ -25,6 +25,8 @@ export declare class FileError extends Error
 
 The file path provided to the FileError constructor is expected to exist on disk. FileError should not be used for reporting errors that are not in reference to an existing file.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                       | Modifiers | Description                                                                           |

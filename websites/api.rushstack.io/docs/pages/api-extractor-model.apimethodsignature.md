@@ -35,6 +35,8 @@ export interface IWidget {
 
 Compare with [ApiMethod](./api-extractor-model.apimethod.md) , which represents a method belonging to a class. For example, a class method can be `static` but an interface method cannot.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                         | Modifiers | Description                                                            |

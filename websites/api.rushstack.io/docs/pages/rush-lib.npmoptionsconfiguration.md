@@ -26,3 +26,9 @@ export declare class NpmOptionsConfiguration extends PackageManagerOptionsConfig
 It is valid to define these options in rush.json even if the NPM package manager is not being used.
 
 The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `NpmOptionsConfiguration` class.
+
+## Properties
+
+| Property                                                                                           | Modifiers             | Type                                                                 | Description                                                                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [environmentVariables?](./rush-lib.packagemanageroptionsconfigurationbase.environmentvariables.md) | <code>readonly</code> | [IConfigurationEnvironment](./rush-lib.iconfigurationenvironment.md) | <p><i>(Optional)</i> Environment variables for the package manager</p><p>(Inherited from [PackageManagerOptionsConfigurationBase](./rush-lib.packagemanageroptionsconfigurationbase.md) )</p> |

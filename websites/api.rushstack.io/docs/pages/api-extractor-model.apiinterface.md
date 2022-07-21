@@ -31,6 +31,8 @@ This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of c
 export interface X extends Y {}
 ```
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                   | Modifiers | Description                                                      |

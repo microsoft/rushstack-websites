@@ -25,14 +25,25 @@ export declare class StdioWritable extends TerminalWritable
 
 This is the standard output target for a process. You normally do not need to construct this class; the [StdioWritable.instance](./terminal.stdiowritable.instance.md) singleton can be used instead.
 
+## Constructors
+
+| Constructor                                                            | Modifiers | Description                                                                                                                                            |
+| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [(constructor)(options)](./terminal.terminalwritable._constructor_.md) |           | <p>Constructs a new instance of the <code>TerminalWritable</code> class</p><p>(Inherited from [TerminalWritable](./terminal.terminalwritable.md) )</p> |
+
 ## Properties
 
-| Property                                         | Modifiers           | Type                                         | Description |
-| ------------------------------------------------ | ------------------- | -------------------------------------------- | ----------- |
-| [instance](./terminal.stdiowritable.instance.md) | <code>static</code> | [StdioWritable](./terminal.stdiowritable.md) |             |
+| Property                                                            | Modifiers             | Type                                         | Description                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------- | --------------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [instance](./terminal.stdiowritable.instance.md)                    | <code>static</code>   | [StdioWritable](./terminal.stdiowritable.md) |                                                                                                                                                                                                                                    |
+| [isOpen](./terminal.terminalwritable.isopen.md)                     | <code>readonly</code> | boolean                                      | <p>This property is initially <code>true</code> when the object is constructed, and becomes <code>false</code> when <code>close()</code> is called.</p><p>(Inherited from [TerminalWritable](./terminal.terminalwritable.md) )</p> |
+| [preventAutoclose](./terminal.terminalwritable.preventautoclose.md) | <code>readonly</code> | boolean                                      | (Inherited from [TerminalWritable](./terminal.terminalwritable.md) )                                                                                                                                                               |
 
 ## Methods
 
-| Method                                                          | Modifiers              | Description |
-| --------------------------------------------------------------- | ---------------------- | ----------- |
-| [onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md) | <code>protected</code> |             |
+| Method                                                          | Modifiers              | Description                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [close()](./terminal.terminalwritable.close.md)                 |                        | <p>Calling this method flushes any remaining outputs and permanently transitions the <code>TerminalWritable</code> to a "closed" state, where no further chunks can be written.</p><p>(Inherited from [TerminalWritable](./terminal.terminalwritable.md) )</p> |
+| [onClose()](./terminal.terminalwritable.onclose.md)             | <code>protected</code> | <p>Subclasses can override this empty method to perform additional operations such as closing a file handle.</p><p>(Inherited from [TerminalWritable](./terminal.terminalwritable.md) )</p>                                                                    |
+| [onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md) | <code>protected</code> |                                                                                                                                                                                                                                                                |
+| [writeChunk(chunk)](./terminal.terminalwritable.writechunk.md)  |                        | <p>Upstream objects call this method to provide inputs to this object.</p><p>(Inherited from [TerminalWritable](./terminal.terminalwritable.md) )</p>                                                                                                          |

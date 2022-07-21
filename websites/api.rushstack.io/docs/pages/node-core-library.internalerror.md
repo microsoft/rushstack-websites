@@ -25,6 +25,8 @@ export declare class InternalError extends Error
 
 Do not use this class unless you intend to solicit bug reports from end users.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                  | Modifiers | Description                                                                                   |

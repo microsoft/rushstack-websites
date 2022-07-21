@@ -18,3 +18,10 @@ export interface ICompileSubstage extends IBuildSubstage<CompileSubstageHooks, I
 ```
 
 <b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[CompileSubstageHooks](./heft.compilesubstagehooks.md) , [ICompileSubstageProperties](./heft.icompilesubstageproperties.md)
+
+## Properties
+
+| Property                                          | Modifiers | Type                     | Description                                                  |
+| ------------------------------------------------- | --------- | ------------------------ | ------------------------------------------------------------ |
+| [hooks](./heft.ibuildsubstage.hooks.md)           |           | TBuildSubstageHooks      | (Inherited from [IBuildSubstage](./heft.ibuildsubstage.md) ) |
+| [properties](./heft.ibuildsubstage.properties.md) |           | TBuildSubstageProperties | (Inherited from [IBuildSubstage](./heft.ibuildsubstage.md) ) |

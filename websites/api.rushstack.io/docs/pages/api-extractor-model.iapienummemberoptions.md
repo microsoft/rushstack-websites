@@ -20,3 +20,13 @@ export interface IApiEnumMemberOptions extends IApiNameMixinOptions, IApiRelease
 ```
 
 <b>Extends:</b> [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) , [IApiInitializerMixinOptions](./api-extractor-model.iapiinitializermixinoptions.md)
+
+## Properties
+
+| Property                                                                                             | Modifiers | Type                                                              | Description                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [docComment](./api-extractor-model.iapidocumenteditemoptions.doccomment.md)                          |           | tsdoc.DocComment \| undefined                                     | (Inherited from [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md) )                                    |
+| [excerptTokens](./api-extractor-model.iapideclareditemoptions.excerpttokens.md)                      |           | [IExcerptToken](./api-extractor-model.iexcerpttoken.md) \[\]      | (Inherited from [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) )                                        |
+| [initializerTokenRange?](./api-extractor-model.iapiinitializermixinoptions.initializertokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) | <p><i>(Optional)</i></p><p>(Inherited from [IApiInitializerMixinOptions](./api-extractor-model.iapiinitializermixinoptions.md) )</p> |
+| [name](./api-extractor-model.iapinamemixinoptions.name.md)                                           |           | string                                                            | (Inherited from [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) )                                              |
+| [releaseTag](./api-extractor-model.iapireleasetagmixinoptions.releasetag.md)                         |           | [ReleaseTag](./api-extractor-model.releasetag.md)                 | (Inherited from [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) )                                  |

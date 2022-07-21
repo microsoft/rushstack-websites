@@ -40,6 +40,8 @@ export type BoxedArray<T> = { array: T[] };
 export type Boxed<T> = T extends any[] ? BoxedArray<T[number]> : BoxedValue<T>;
 ```
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                   | Modifiers | Description                                                      |

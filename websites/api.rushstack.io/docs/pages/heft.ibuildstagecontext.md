@@ -18,3 +18,10 @@ export interface IBuildStageContext extends IStageContext<BuildStageHooks, IBuil
 ```
 
 <b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[BuildStageHooks](./heft.buildstagehooks.md) , [IBuildStageProperties](./heft.ibuildstageproperties.md)
+
+## Properties
+
+| Property                                         | Modifiers | Type             | Description                                                |
+| ------------------------------------------------ | --------- | ---------------- | ---------------------------------------------------------- |
+| [hooks](./heft.istagecontext.hooks.md)           |           | TStageHooks      | (Inherited from [IStageContext](./heft.istagecontext.md) ) |
+| [properties](./heft.istagecontext.properties.md) |           | TStageProperties | (Inherited from [IStageContext](./heft.istagecontext.md) ) |

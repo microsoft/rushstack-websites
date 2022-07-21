@@ -21,6 +21,8 @@ export declare class ApiPropertyItem extends ApiPropertyItem_base
 
 <b>Extends:</b> ApiPropertyItem_base
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                      | Modifiers | Description                                                         |

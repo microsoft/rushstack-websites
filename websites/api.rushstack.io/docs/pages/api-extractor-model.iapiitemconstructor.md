@@ -20,3 +20,5 @@ export interface IApiItemConstructor extends Constructor<ApiItem>, PropertiesOf<
 ```
 
 <b>Extends:</b> [Constructor](./api-extractor-model.constructor.md) &lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;, [PropertiesOf](./api-extractor-model.propertiesof.md) &lt;typeof [ApiItem](./api-extractor-model.apiitem.md)
+
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>

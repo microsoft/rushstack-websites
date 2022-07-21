@@ -36,6 +36,8 @@ export interface IWidget {
 
 Compare with [ApiProperty](./api-extractor-model.apiproperty.md) , which represents a property belonging to a class. For example, a class property can be `static` but an interface property cannot.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                           | Modifiers | Description                                                              |
@@ -44,14 +46,18 @@ Compare with [ApiProperty](./api-extractor-model.apiproperty.md) , which represe
 
 ## Properties
 
-| Property                                                                   | Modifiers             | Type                                                | Description |
-| -------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apipropertysignature.containerkey.md) | <code>readonly</code> | string                                              |             |
-| [kind](./api-extractor-model.apipropertysignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                                            | Modifiers             | Type                                                | Description                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [containerKey](./api-extractor-model.apipropertysignature.containerkey.md)          | <code>readonly</code> | string                                              |                                                                                                                                                                                    |
+| [isEventProperty](./api-extractor-model.apipropertyitem.iseventproperty.md)         | <code>readonly</code> | boolean                                             | <p>Returns true if this property should be documented as an event.</p><p>(Inherited from [ApiPropertyItem](./api-extractor-model.apipropertyitem.md) )</p>                         |
+| [kind](./api-extractor-model.apipropertysignature.kind.md)                          | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                                                                                                                    |
+| [propertyTypeExcerpt](./api-extractor-model.apipropertyitem.propertytypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md)         | <p>An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the property.</p><p>(Inherited from [ApiPropertyItem](./api-extractor-model.apipropertyitem.md) )</p> |
 
 ## Methods
 
-| Method                                                                                             | Modifiers           | Description          |
-| -------------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
-| [buildCanonicalReference()](./api-extractor-model.apipropertysignature.buildcanonicalreference.md) |                     | <b><i>(BETA)</i></b> |
-| [getContainerKey(name)](./api-extractor-model.apipropertysignature.getcontainerkey.md)             | <code>static</code> |                      |
+| Method                                                                                                        | Modifiers           | Description                                                                          |
+| ------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------ |
+| [buildCanonicalReference()](./api-extractor-model.apipropertysignature.buildcanonicalreference.md)            |                     | <b><i>(BETA)</i></b>                                                                 |
+| [getContainerKey(name)](./api-extractor-model.apipropertysignature.getcontainerkey.md)                        | <code>static</code> |                                                                                      |
+| [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apipropertyitem.ondeserializeinto.md) | <code>static</code> | <p>(Inherited from [ApiPropertyItem](./api-extractor-model.apipropertyitem.md) )</p> |
+| [serializeInto(jsonObject)](./api-extractor-model.apipropertyitem.serializeinto.md)                           |                     | <p>(Inherited from [ApiPropertyItem](./api-extractor-model.apipropertyitem.md) )</p> |

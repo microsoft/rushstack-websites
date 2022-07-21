@@ -23,6 +23,8 @@ export interface ICustomActionParameterStringList extends ICustomActionParameter
 
 ## Properties
 
-| Property                                                | Modifiers | Type         | Description          |
-| ------------------------------------------------------- | --------- | ------------ | -------------------- |
-| [kind](./heft.icustomactionparameterstringlist.kind.md) |           | 'stringList' | <b><i>(BETA)</i></b> |
+| Property                                                                    | Modifiers | Type         | Description                                                                                                            |
+| --------------------------------------------------------------------------- | --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| [description](./heft.icustomactionparameterbase.description.md)             |           | string       | <p><b><i>(BETA)</i></b></p><p>(Inherited from [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) )</p> |
+| [kind](./heft.icustomactionparameterstringlist.kind.md)                     |           | 'stringList' | <b><i>(BETA)</i></b>                                                                                                   |
+| [parameterLongName](./heft.icustomactionparameterbase.parameterlongname.md) |           | string       | <p><b><i>(BETA)</i></b></p><p>(Inherited from [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) )</p> |

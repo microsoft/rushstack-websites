@@ -18,3 +18,10 @@ export interface ICleanStageContext extends IStageContext<CleanStageHooks, IClea
 ```
 
 <b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[CleanStageHooks](./heft.cleanstagehooks.md) , [ICleanStageProperties](./heft.icleanstageproperties.md)
+
+## Properties
+
+| Property                                         | Modifiers | Type             | Description                                                |
+| ------------------------------------------------ | --------- | ---------------- | ---------------------------------------------------------- |
+| [hooks](./heft.istagecontext.hooks.md)           |           | TStageHooks      | (Inherited from [IStageContext](./heft.istagecontext.md) ) |
+| [properties](./heft.istagecontext.properties.md) |           | TStageProperties | (Inherited from [IStageContext](./heft.istagecontext.md) ) |

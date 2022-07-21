@@ -35,6 +35,8 @@ export function getAverage(x: number, y: number): number {
 
 Functions are exported by an entry point module or by a namespace. Compare with [ApiMethod](./api-extractor-model.apimethod.md) , which represents a function that is a member of a class.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                  | Modifiers | Description                                                     |

@@ -22,3 +22,9 @@ export interface IPhasedCommand extends IRushCommand
 ```
 
 <b>Extends:</b> [IRushCommand](./rush-lib.irushcommand.md)
+
+## Properties
+
+| Property                                            | Modifiers             | Type   | Description                                                                                                                                          |
+| --------------------------------------------------- | --------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [actionName](./rush-lib.irushcommand.actionname.md) | <code>readonly</code> | string | <p><b><i>(BETA)</i></b> The name of this command, as seen on the command line</p><p>(Inherited from [IRushCommand](./rush-lib.irushcommand.md) )</p> |

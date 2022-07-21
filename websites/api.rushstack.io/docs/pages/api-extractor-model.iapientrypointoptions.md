@@ -20,3 +20,11 @@ export interface IApiEntryPointOptions extends IApiItemContainerMixinOptions, IA
 ```
 
 <b>Extends:</b> [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) , [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md)
+
+## Properties
+
+| Property                                                                                           | Modifiers | Type                                             | Description                                                                                                                              |
+| -------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [members?](./api-extractor-model.iapiitemcontainermixinoptions.members.md)                         |           | [ApiItem](./api-extractor-model.apiitem.md) \[\] | <p><i>(Optional)</i></p><p>(Inherited from [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) )</p> |
+| [name](./api-extractor-model.iapinamemixinoptions.name.md)                                         |           | string                                           | (Inherited from [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) )                                                  |
+| [preserveMemberOrder?](./api-extractor-model.iapiitemcontainermixinoptions.preservememberorder.md) |           | boolean                                          | <p><i>(Optional)</i></p><p>(Inherited from [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) )</p> |

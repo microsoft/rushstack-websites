@@ -35,6 +35,8 @@ export enum FontSizes {
 }
 ```
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                    | Modifiers | Description                                                       |

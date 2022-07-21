@@ -40,6 +40,8 @@ For example, suppose the package.json file looks like this:
 
 In this example, the `ApiEntryPoint` would represent the TypeScript module for `./lib/index.js` .
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                    | Modifiers | Description                                                       |

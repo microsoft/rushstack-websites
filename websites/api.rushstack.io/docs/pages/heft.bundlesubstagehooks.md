@@ -21,7 +21,8 @@ export declare class BundleSubstageHooks extends BuildSubstageHooksBase
 
 ## Properties
 
-| Property                                                                     | Modifiers             | Type                                    | Description |
-| ---------------------------------------------------------------------------- | --------------------- | --------------------------------------- | ----------- |
-| [afterConfigureWebpack](./heft.bundlesubstagehooks.afterconfigurewebpack.md) | <code>readonly</code> | AsyncSeriesHook                         |             |
-| [configureWebpack](./heft.bundlesubstagehooks.configurewebpack.md)           | <code>readonly</code> | AsyncSeriesWaterfallHook&lt;unknown&gt; |             |
+| Property                                                                     | Modifiers             | Type                                    | Description                                                                  |
+| ---------------------------------------------------------------------------- | --------------------- | --------------------------------------- | ---------------------------------------------------------------------------- |
+| [afterConfigureWebpack](./heft.bundlesubstagehooks.afterconfigurewebpack.md) | <code>readonly</code> | AsyncSeriesHook                         |                                                                              |
+| [configureWebpack](./heft.bundlesubstagehooks.configurewebpack.md)           | <code>readonly</code> | AsyncSeriesWaterfallHook&lt;unknown&gt; |                                                                              |
+| [run](./heft.buildsubstagehooksbase.run.md)                                  | <code>readonly</code> | AsyncParallelHook                       | (Inherited from [BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md) ) |

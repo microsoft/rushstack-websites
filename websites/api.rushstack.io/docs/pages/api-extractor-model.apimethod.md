@@ -35,6 +35,8 @@ export class Widget {
 
 Compare with [ApiMethodSignature](./api-extractor-model.apimethodsignature.md) , which represents a method belonging to an interface. For example, a class method can be `static` but an interface method cannot.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                | Modifiers | Description                                                   |

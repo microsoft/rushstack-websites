@@ -18,3 +18,10 @@ export interface ITestStageContext extends IStageContext<TestStageHooks, ITestSt
 ```
 
 <b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[TestStageHooks](./heft.teststagehooks.md) , [ITestStageProperties](./heft.iteststageproperties.md)
+
+## Properties
+
+| Property                                         | Modifiers | Type             | Description                                                |
+| ------------------------------------------------ | --------- | ---------------- | ---------------------------------------------------------- |
+| [hooks](./heft.istagecontext.hooks.md)           |           | TStageHooks      | (Inherited from [IStageContext](./heft.istagecontext.md) ) |
+| [properties](./heft.istagecontext.properties.md) |           | TStageProperties | (Inherited from [IStageContext](./heft.istagecontext.md) ) |

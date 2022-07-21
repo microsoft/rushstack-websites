@@ -20,3 +20,14 @@ export interface IApiConstructorOptions extends IApiParameterListMixinOptions, I
 ```
 
 <b>Extends:</b> [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiProtectedMixinOptions](./api-extractor-model.iapiprotectedmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+
+## Properties
+
+| Property                                                                              | Modifiers | Type                                                                       | Description                                                                                               |
+| ------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| [docComment](./api-extractor-model.iapidocumenteditemoptions.doccomment.md)           |           | tsdoc.DocComment \| undefined                                              | (Inherited from [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md) )         |
+| [excerptTokens](./api-extractor-model.iapideclareditemoptions.excerpttokens.md)       |           | [IExcerptToken](./api-extractor-model.iexcerpttoken.md) \[\]               | (Inherited from [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) )             |
+| [isProtected](./api-extractor-model.iapiprotectedmixinoptions.isprotected.md)         |           | boolean                                                                    | (Inherited from [IApiProtectedMixinOptions](./api-extractor-model.iapiprotectedmixinoptions.md) )         |
+| [overloadIndex](./api-extractor-model.iapiparameterlistmixinoptions.overloadindex.md) |           | number                                                                     | (Inherited from [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) ) |
+| [parameters](./api-extractor-model.iapiparameterlistmixinoptions.parameters.md)       |           | [IApiParameterOptions](./api-extractor-model.iapiparameteroptions.md) \[\] | (Inherited from [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) ) |
+| [releaseTag](./api-extractor-model.iapireleasetagmixinoptions.releasetag.md)          |           | [ReleaseTag](./api-extractor-model.releasetag.md)                          | (Inherited from [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) )       |

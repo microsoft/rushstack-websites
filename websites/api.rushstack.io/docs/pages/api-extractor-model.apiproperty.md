@@ -47,6 +47,8 @@ If the property has both a getter function and setter function, they will be rep
 
 Compare with [ApiPropertySignature](./api-extractor-model.apipropertysignature.md) , which represents a property belonging to an interface. For example, a class property can be `static` but an interface property cannot.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                  | Modifiers | Description                                                     |

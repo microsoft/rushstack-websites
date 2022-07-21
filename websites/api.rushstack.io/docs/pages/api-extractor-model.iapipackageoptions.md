@@ -23,6 +23,10 @@ export interface IApiPackageOptions extends IApiItemContainerMixinOptions, IApiN
 
 ## Properties
 
-| Property                                                                             | Modifiers | Type               | Description |
-| ------------------------------------------------------------------------------------ | --------- | ------------------ | ----------- |
-| [tsdocConfiguration](./api-extractor-model.iapipackageoptions.tsdocconfiguration.md) |           | TSDocConfiguration |             |
+| Property                                                                                           | Modifiers | Type                                             | Description                                                                                                                              |
+| -------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [docComment](./api-extractor-model.iapidocumenteditemoptions.doccomment.md)                        |           | tsdoc.DocComment \| undefined                    | (Inherited from [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md) )                                        |
+| [members?](./api-extractor-model.iapiitemcontainermixinoptions.members.md)                         |           | [ApiItem](./api-extractor-model.apiitem.md) \[\] | <p><i>(Optional)</i></p><p>(Inherited from [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) )</p> |
+| [name](./api-extractor-model.iapinamemixinoptions.name.md)                                         |           | string                                           | (Inherited from [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) )                                                  |
+| [preserveMemberOrder?](./api-extractor-model.iapiitemcontainermixinoptions.preservememberorder.md) |           | boolean                                          | <p><i>(Optional)</i></p><p>(Inherited from [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) )</p> |
+| [tsdocConfiguration](./api-extractor-model.iapipackageoptions.tsdocconfiguration.md)               |           | TSDocConfiguration                               |                                                                                                                                          |

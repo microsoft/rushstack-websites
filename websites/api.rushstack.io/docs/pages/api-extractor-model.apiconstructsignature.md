@@ -56,6 +56,8 @@ let vector: Vector = createVector(Vector, 1, 2);
 
 Compare with [ApiConstructor](./api-extractor-model.apiconstructor.md) , which describes the class constructor itself.
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Constructors
 
 | Constructor                                                                            | Modifiers | Description                                                               |

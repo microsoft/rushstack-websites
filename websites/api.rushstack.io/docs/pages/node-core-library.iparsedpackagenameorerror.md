@@ -23,6 +23,8 @@ export interface IParsedPackageNameOrError extends IParsedPackageName
 
 ## Properties
 
-| Property                                                        | Modifiers | Type   | Description                                                                                                                            |
-| --------------------------------------------------------------- | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [error](./node-core-library.iparsedpackagenameorerror.error.md) |           | string | If the input string could not be parsed, then this string will contain a nonempty error message. Otherwise it will be an empty string. |
+| Property                                                               | Modifiers | Type   | Description                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [error](./node-core-library.iparsedpackagenameorerror.error.md)        |           | string | If the input string could not be parsed, then this string will contain a nonempty error message. Otherwise it will be an empty string.                                                                          |
+| [scope](./node-core-library.iparsedpackagename.scope.md)               |           | string | <p>The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign.</p><p>(Inherited from [IParsedPackageName](./node-core-library.iparsedpackagename.md) )</p> |
+| [unscopedName](./node-core-library.iparsedpackagename.unscopedname.md) |           | string | <p>The parsed NPM package name without the scope.</p><p>(Inherited from [IParsedPackageName](./node-core-library.iparsedpackagename.md) )</p>                                                                   |

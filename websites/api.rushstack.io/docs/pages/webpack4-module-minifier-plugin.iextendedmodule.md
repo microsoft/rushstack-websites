@@ -21,6 +21,8 @@ export interface IExtendedModule extends webpack.compilation.Module
 
 <b>Extends:</b> webpack.compilation.Module
 
+<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+
 ## Properties
 
 | Property                                                                   | Modifiers | Type                                                                         | Description                                                        |
