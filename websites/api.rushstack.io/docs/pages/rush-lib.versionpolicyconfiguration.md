@@ -25,9 +25,9 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                    | Modifiers | Type                                                             | Description                   |
-| --------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ----------------------------- |
-| [versionPolicies](./rush-lib.versionpolicyconfiguration.versionpolicies.md) |           | Map&lt;string, [VersionPolicy](./rush-lib.versionpolicy.md) &gt; | Gets all the version policies |
+| Property                                                                    | Modifiers             | Type                                                             | Description                   |
+| --------------------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------- | ----------------------------- |
+| [versionPolicies](./rush-lib.versionpolicyconfiguration.versionpolicies.md) | <code>readonly</code> | Map&lt;string, [VersionPolicy](./rush-lib.versionpolicy.md) &gt; | Gets all the version policies |
 
 ## Methods
 

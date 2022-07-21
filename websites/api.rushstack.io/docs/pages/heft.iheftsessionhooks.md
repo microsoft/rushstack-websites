@@ -19,9 +19,9 @@ export interface IHeftSessionHooks
 
 ## Properties
 
-| Property                                                         | Type                                                                | Description |
-| ---------------------------------------------------------------- | ------------------------------------------------------------------- | ----------- |
-| [build](./heft.iheftsessionhooks.build.md)                       | SyncHook&lt;[IBuildStageContext](./heft.ibuildstagecontext.md) &gt; |             |
-| [clean](./heft.iheftsessionhooks.clean.md)                       | SyncHook&lt;[ICleanStageContext](./heft.icleanstagecontext.md) &gt; |             |
-| [metricsCollector](./heft.iheftsessionhooks.metricscollector.md) | [MetricsCollectorHooks](./heft.metricscollectorhooks.md)            |             |
-| [test](./heft.iheftsessionhooks.test.md)                         | SyncHook&lt;[ITestStageContext](./heft.iteststagecontext.md) &gt;   |             |
+| Property                                                         | Modifiers | Type                                                                | Description |
+| ---------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ----------- |
+| [build](./heft.iheftsessionhooks.build.md)                       |           | SyncHook&lt;[IBuildStageContext](./heft.ibuildstagecontext.md) &gt; |             |
+| [clean](./heft.iheftsessionhooks.clean.md)                       |           | SyncHook&lt;[ICleanStageContext](./heft.icleanstagecontext.md) &gt; |             |
+| [metricsCollector](./heft.iheftsessionhooks.metricscollector.md) |           | [MetricsCollectorHooks](./heft.metricscollectorhooks.md)            |             |
+| [test](./heft.iheftsessionhooks.test.md)                         |           | SyncHook&lt;[ITestStageContext](./heft.iteststagecontext.md) &gt;   |             |

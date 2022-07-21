@@ -27,10 +27,10 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                              | Modifiers | Type                                                                      | Description                                                                                        |
-| --------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [kind](./ts-command-line.commandlineintegerlistparameter.kind.md)     |           | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                                   |
-| [values](./ts-command-line.commandlineintegerlistparameter.values.md) |           | ReadonlyArray&lt;number&gt;                                               | Returns the integer arguments for an integer list parameter that was parsed from the command line. |
+| Property                                                              | Modifiers             | Type                                                                      | Description                                                                                        |
+| --------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [kind](./ts-command-line.commandlineintegerlistparameter.kind.md)     | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                                   |
+| [values](./ts-command-line.commandlineintegerlistparameter.values.md) | <code>readonly</code> | ReadonlyArray&lt;number&gt;                                               | Returns the integer arguments for an integer list parameter that was parsed from the command line. |
 
 ## Methods
 

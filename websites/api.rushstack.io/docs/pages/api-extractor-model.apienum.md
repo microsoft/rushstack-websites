@@ -43,11 +43,11 @@ export enum FontSizes {
 
 ## Properties
 
-| Property                                                      | Modifiers | Type                                                                          | Description |
-| ------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apienum.containerkey.md) |           | string                                                                        |             |
-| [kind](./api-extractor-model.apienum.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md)                           |             |
-| [members](./api-extractor-model.apienum.members.md)           |           | ReadonlyArray&lt;[ApiEnumMember](./api-extractor-model.apienummember.md) &gt; |             |
+| Property                                                      | Modifiers             | Type                                                                          | Description |
+| ------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apienum.containerkey.md) | <code>readonly</code> | string                                                                        |             |
+| [kind](./api-extractor-model.apienum.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md)                           |             |
+| [members](./api-extractor-model.apienum.members.md)           | <code>readonly</code> | ReadonlyArray&lt;[ApiEnumMember](./api-extractor-model.apienummember.md) &gt; |             |
 
 ## Methods
 

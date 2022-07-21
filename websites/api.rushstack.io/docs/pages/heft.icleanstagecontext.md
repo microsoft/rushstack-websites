@@ -17,4 +17,4 @@ pagination_next: null
 export interface ICleanStageContext extends IStageContext<CleanStageHooks, ICleanStageProperties>
 ```
 
-<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[CleanStageHooks](./heft.cleanstagehooks.md) , [ICleanStageProperties](./heft.icleanstageproperties.md) &gt;
+<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[CleanStageHooks](./heft.cleanstagehooks.md) , [ICleanStageProperties](./heft.icleanstageproperties.md)

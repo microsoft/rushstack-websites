@@ -50,10 +50,10 @@ Compare with [ApiConstructSignature](./api-extractor-model.apiconstructsignature
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                                                | Description |
-| -------------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apiconstructor.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apiconstructor.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                             | Modifiers             | Type                                                | Description |
+| -------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apiconstructor.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apiconstructor.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

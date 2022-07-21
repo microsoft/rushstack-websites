@@ -43,11 +43,11 @@ export const canvas: IWidget = createCanvas();
 
 ## Properties
 
-| Property                                                                        | Modifiers | Type                                                | Description                                                                             |
-| ------------------------------------------------------------------------------- | --------- | --------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [containerKey](./api-extractor-model.apivariable.containerkey.md)               |           | string                                              |                                                                                         |
-| [kind](./api-extractor-model.apivariable.kind.md)                               |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                         |
-| [variableTypeExcerpt](./api-extractor-model.apivariable.variabletypeexcerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md)         | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the variable. |
+| Property                                                                        | Modifiers             | Type                                                | Description                                                                             |
+| ------------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [containerKey](./api-extractor-model.apivariable.containerkey.md)               | <code>readonly</code> | string                                              |                                                                                         |
+| [kind](./api-extractor-model.apivariable.kind.md)                               | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                         |
+| [variableTypeExcerpt](./api-extractor-model.apivariable.variabletypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md)         | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the variable. |
 
 ## Methods
 

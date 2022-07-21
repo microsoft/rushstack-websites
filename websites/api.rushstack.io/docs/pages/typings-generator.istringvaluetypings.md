@@ -19,6 +19,6 @@ export interface IStringValueTypings
 
 ## Properties
 
-| Property                                                      | Type                                                                 | Description |
-| ------------------------------------------------------------- | -------------------------------------------------------------------- | ----------- |
-| [typings](./typings-generator.istringvaluetypings.typings.md) | [IStringValueTyping](./typings-generator.istringvaluetyping.md) \[\] |             |
+| Property                                                      | Modifiers | Type                                                                 | Description |
+| ------------------------------------------------------------- | --------- | -------------------------------------------------------------------- | ----------- |
+| [typings](./typings-generator.istringvaluetypings.typings.md) |           | [IStringValueTyping](./typings-generator.istringvaluetyping.md) \[\] |             |

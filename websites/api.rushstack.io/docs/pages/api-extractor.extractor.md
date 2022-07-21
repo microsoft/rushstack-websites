@@ -21,10 +21,10 @@ export declare class Extractor
 
 ## Properties
 
-| Property                                                | Modifiers           | Type   | Description                                                  |
-| ------------------------------------------------------- | ------------------- | ------ | ------------------------------------------------------------ |
-| [packageName](./api-extractor.extractor.packagename.md) | <code>static</code> | string | Returns the package name of the API Extractor NPM package.   |
-| [version](./api-extractor.extractor.version.md)         | <code>static</code> | string | Returns the version number of the API Extractor NPM package. |
+| Property                                                | Modifiers                                              | Type   | Description                                                  |
+| ------------------------------------------------------- | ------------------------------------------------------ | ------ | ------------------------------------------------------------ |
+| [packageName](./api-extractor.extractor.packagename.md) | <p><code>readonly</code></p><p><code>static</code></p> | string | Returns the package name of the API Extractor NPM package.   |
+| [version](./api-extractor.extractor.version.md)         | <p><code>readonly</code></p><p><code>static</code></p> | string | Returns the version number of the API Extractor NPM package. |
 
 ## Methods
 

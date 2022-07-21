@@ -21,13 +21,14 @@ export declare class Rush
 
 ## Properties
 
-| Property                              | Modifiers           | Type   | Description                                                                                                            |
-| ------------------------------------- | ------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
-| [version](./rush-lib.rush.version.md) | <code>static</code> | string | The currently executing version of the "rush-lib" library. This is the same as the Rush tool version for that release. |
+| Property                              | Modifiers                                              | Type   | Description                                                                                                            |
+| ------------------------------------- | ------------------------------------------------------ | ------ | ---------------------------------------------------------------------------------------------------------------------- |
+| [version](./rush-lib.rush.version.md) | <p><code>readonly</code></p><p><code>static</code></p> | string | The currently executing version of the "rush-lib" library. This is the same as the Rush tool version for that release. |
 
 ## Methods
 
-| Method                                                                  | Modifiers           | Description                                                                                                                                                                                                                    |
-| ----------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [launch(launcherVersion, arg)](./rush-lib.rush.launch.md)               | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rush" command-line. Third-party tools should not use this API. Instead, they should execute the "rush" binary and start a new Node.js process.   |
-| [launchRushX(launcherVersion, options)](./rush-lib.rush.launchrushx.md) | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rushx" command-line. Third-party tools should not use this API. Instead, they should execute the "rushx" binary and start a new Node.js process. |
+| Method                                                                        | Modifiers           | Description                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [launch(launcherVersion, arg)](./rush-lib.rush.launch.md)                     | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rush" command-line. Third-party tools should not use this API. Instead, they should execute the "rush" binary and start a new Node.js process.           |
+| [launchRushPnpm(launcherVersion, options)](./rush-lib.rush.launchrushpnpm.md) | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rush-pnpm" command-line. Third-party tools should not use this API. Instead, they should execute the "rush-pnpm" binary and start a new Node.js process. |
+| [launchRushX(launcherVersion, options)](./rush-lib.rush.launchrushx.md)       | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rushx" command-line. Third-party tools should not use this API. Instead, they should execute the "rushx" binary and start a new Node.js process.         |

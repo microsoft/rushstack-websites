@@ -16,13 +16,13 @@ Constructor options for [ApiVariable](./api-extractor-model.apivariable.md) .
 <b>Signature:</b>
 
 ```typescript
-export interface IApiVariableOptions extends IApiNameMixinOptions, IApiReleaseTagMixinOptions, IApiDeclaredItemOptions
+export interface IApiVariableOptions extends IApiNameMixinOptions, IApiReleaseTagMixinOptions, IApiReadonlyMixinOptions, IApiDeclaredItemOptions, IApiInitializerMixinOptions
 ```
 
-<b>Extends:</b> [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+<b>Extends:</b> [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiReadonlyMixinOptions](./api-extractor-model.iapireadonlymixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) , [IApiInitializerMixinOptions](./api-extractor-model.iapiinitializermixinoptions.md)
 
 ## Properties
 
-| Property                                                                                      | Type                                                              | Description |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------- |
-| [variableTypeTokenRange](./api-extractor-model.iapivariableoptions.variabletypetokenrange.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| Property                                                                                      | Modifiers | Type                                                              | Description |
+| --------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------- | ----------- |
+| [variableTypeTokenRange](./api-extractor-model.iapivariableoptions.variabletypetokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |

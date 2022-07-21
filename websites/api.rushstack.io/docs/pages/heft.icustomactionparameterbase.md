@@ -21,8 +21,8 @@ export interface ICustomActionParameterBase<CustomActionParameterType>
 
 ## Properties
 
-| Property                                                                    | Type                                            | Description          |
-| --------------------------------------------------------------------------- | ----------------------------------------------- | -------------------- |
-| [description](./heft.icustomactionparameterbase.description.md)             | string                                          | <b><i>(BETA)</i></b> |
-| [kind](./heft.icustomactionparameterbase.kind.md)                           | 'flag' \| 'integer' \| 'string' \| 'stringList' | <b><i>(BETA)</i></b> |
-| [parameterLongName](./heft.icustomactionparameterbase.parameterlongname.md) | string                                          | <b><i>(BETA)</i></b> |
+| Property                                                                    | Modifiers | Type                                            | Description          |
+| --------------------------------------------------------------------------- | --------- | ----------------------------------------------- | -------------------- |
+| [description](./heft.icustomactionparameterbase.description.md)             |           | string                                          | <b><i>(BETA)</i></b> |
+| [kind](./heft.icustomactionparameterbase.kind.md)                           |           | 'flag' \| 'integer' \| 'string' \| 'stringList' | <b><i>(BETA)</i></b> |
+| [parameterLongName](./heft.icustomactionparameterbase.parameterlongname.md) |           | string                                          | <b><i>(BETA)</i></b> |

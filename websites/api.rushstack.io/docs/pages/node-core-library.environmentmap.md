@@ -27,9 +27,9 @@ export declare class EnvironmentMap
 
 ## Properties
 
-| Property                                                             | Modifiers | Type    | Description                                                |
-| -------------------------------------------------------------------- | --------- | ------- | ---------------------------------------------------------- |
-| [caseSensitive](./node-core-library.environmentmap.casesensitive.md) |           | boolean | Whether the environment variable names are case-sensitive. |
+| Property                                                             | Modifiers             | Type    | Description                                                |
+| -------------------------------------------------------------------- | --------------------- | ------- | ---------------------------------------------------------- |
+| [caseSensitive](./node-core-library.environmentmap.casesensitive.md) | <code>readonly</code> | boolean | Whether the environment variable names are case-sensitive. |
 
 ## Methods
 

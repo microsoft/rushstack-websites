@@ -23,14 +23,14 @@ export interface IOperationRunner
 
 ## Properties
 
-| Property                                                                  | Type    | Description                                                                                              |
-| ------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
-| [isCacheWriteAllowed](./rush-lib.ioperationrunner.iscachewriteallowed.md) | boolean | <b><i>(BETA)</i></b> Indicates if the output of this operation may be written to the cache               |
-| [isSkipAllowed](./rush-lib.ioperationrunner.isskipallowed.md)             | boolean | <b><i>(BETA)</i></b> This flag determines if the operation is allowed to be skipped if up to date.       |
-| [name](./rush-lib.ioperationrunner.name.md)                               | string  | <b><i>(BETA)</i></b> Name of the operation, for logging.                                                 |
-| [reportTiming](./rush-lib.ioperationrunner.reporttiming.md)               | boolean | <b><i>(BETA)</i></b> Indicates that this runner's duration has meaning.                                  |
-| [silent](./rush-lib.ioperationrunner.silent.md)                           | boolean | <b><i>(BETA)</i></b> Indicates that this runner is architectural and should not be reported on.          |
-| [warningsAreAllowed](./rush-lib.ioperationrunner.warningsareallowed.md)   | boolean | <b><i>(BETA)</i></b> If set to true, a warning result should not make Rush exit with a nonzero exit code |
+| Property                                                                  | Modifiers             | Type    | Description                                                                                              |
+| ------------------------------------------------------------------------- | --------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| [isCacheWriteAllowed](./rush-lib.ioperationrunner.iscachewriteallowed.md) |                       | boolean | <b><i>(BETA)</i></b> Indicates if the output of this operation may be written to the cache               |
+| [isSkipAllowed](./rush-lib.ioperationrunner.isskipallowed.md)             |                       | boolean | <b><i>(BETA)</i></b> This flag determines if the operation is allowed to be skipped if up to date.       |
+| [name](./rush-lib.ioperationrunner.name.md)                               | <code>readonly</code> | string  | <b><i>(BETA)</i></b> Name of the operation, for logging.                                                 |
+| [reportTiming](./rush-lib.ioperationrunner.reporttiming.md)               |                       | boolean | <b><i>(BETA)</i></b> Indicates that this runner's duration has meaning.                                  |
+| [silent](./rush-lib.ioperationrunner.silent.md)                           |                       | boolean | <b><i>(BETA)</i></b> Indicates that this runner is architectural and should not be reported on.          |
+| [warningsAreAllowed](./rush-lib.ioperationrunner.warningsareallowed.md)   |                       | boolean | <b><i>(BETA)</i></b> If set to true, a warning result should not make Rush exit with a nonzero exit code |
 
 ## Methods
 

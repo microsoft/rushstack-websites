@@ -23,6 +23,6 @@ export interface IRushCommand
 
 ## Properties
 
-| Property                                            | Type   | Description                                                                |
-| --------------------------------------------------- | ------ | -------------------------------------------------------------------------- |
-| [actionName](./rush-lib.irushcommand.actionname.md) | string | <b><i>(BETA)</i></b> The name of this command, as seen on the command line |
+| Property                                            | Modifiers             | Type   | Description                                                                |
+| --------------------------------------------------- | --------------------- | ------ | -------------------------------------------------------------------------- |
+| [actionName](./rush-lib.irushcommand.actionname.md) | <code>readonly</code> | string | <b><i>(BETA)</i></b> The name of this command, as seen on the command line |

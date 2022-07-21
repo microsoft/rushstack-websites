@@ -21,7 +21,7 @@ export interface ITryFindRushJsonLocationOptions
 
 ## Properties
 
-| Property                                                                        | Type    | Description                                                                                               |
-| ------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------- |
-| [showVerbose?](./rush-lib.itryfindrushjsonlocationoptions.showverbose.md)       | boolean | <i>(Optional)</i> Whether to show verbose console messages. Defaults to false.                            |
-| [startingFolder?](./rush-lib.itryfindrushjsonlocationoptions.startingfolder.md) | string  | <i>(Optional)</i> The folder path where the search will start. Defaults tot he current working directory. |
+| Property                                                                        | Modifiers | Type    | Description                                                                                               |
+| ------------------------------------------------------------------------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------- |
+| [showVerbose?](./rush-lib.itryfindrushjsonlocationoptions.showverbose.md)       |           | boolean | <i>(Optional)</i> Whether to show verbose console messages. Defaults to false.                            |
+| [startingFolder?](./rush-lib.itryfindrushjsonlocationoptions.startingfolder.md) |           | string  | <i>(Optional)</i> The folder path where the search will start. Defaults tot he current working directory. |

@@ -43,10 +43,10 @@ Functions are exported by an entry point module or by a namespace. Compare with 
 
 ## Properties
 
-| Property                                                          | Modifiers | Type                                                | Description |
-| ----------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apifunction.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apifunction.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                          | Modifiers             | Type                                                | Description |
+| ----------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apifunction.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apifunction.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

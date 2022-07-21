@@ -23,6 +23,6 @@ export interface IApiOptionalMixinOptions extends IApiItemOptions
 
 ## Properties
 
-| Property                                                                   | Type    | Description |
-| -------------------------------------------------------------------------- | ------- | ----------- |
-| [isOptional](./api-extractor-model.iapioptionalmixinoptions.isoptional.md) | boolean |             |
+| Property                                                                   | Modifiers | Type    | Description |
+| -------------------------------------------------------------------------- | --------- | ------- | ----------- |
+| [isOptional](./api-extractor-model.iapioptionalmixinoptions.isoptional.md) |           | boolean |             |

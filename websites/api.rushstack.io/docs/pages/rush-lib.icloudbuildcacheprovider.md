@@ -21,9 +21,9 @@ export interface ICloudBuildCacheProvider
 
 ## Properties
 
-| Property                                                                          | Type    | Description          |
-| --------------------------------------------------------------------------------- | ------- | -------------------- |
-| [isCacheWriteAllowed](./rush-lib.icloudbuildcacheprovider.iscachewriteallowed.md) | boolean | <b><i>(BETA)</i></b> |
+| Property                                                                          | Modifiers             | Type    | Description          |
+| --------------------------------------------------------------------------------- | --------------------- | ------- | -------------------- |
+| [isCacheWriteAllowed](./rush-lib.icloudbuildcacheprovider.iscachewriteallowed.md) | <code>readonly</code> | boolean | <b><i>(BETA)</i></b> |
 
 ## Methods
 

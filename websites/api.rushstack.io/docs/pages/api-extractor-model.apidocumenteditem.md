@@ -33,9 +33,9 @@ This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of c
 
 ## Properties
 
-| Property                                                                | Modifiers | Type                          | Description |
-| ----------------------------------------------------------------------- | --------- | ----------------------------- | ----------- |
-| [tsdocComment](./api-extractor-model.apidocumenteditem.tsdoccomment.md) |           | tsdoc.DocComment \| undefined |             |
+| Property                                                                | Modifiers             | Type                          | Description |
+| ----------------------------------------------------------------------- | --------------------- | ----------------------------- | ----------- |
+| [tsdocComment](./api-extractor-model.apidocumenteditem.tsdoccomment.md) | <code>readonly</code> | tsdoc.DocComment \| undefined |             |
 
 ## Methods
 

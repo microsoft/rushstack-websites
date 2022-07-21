@@ -21,6 +21,6 @@ constructor(environmentObject?: Record<string, string | undefined>);
 
 ## Parameters
 
-| Parameter         | Type                                      | Description |
-| ----------------- | ----------------------------------------- | ----------- |
-| environmentObject | Record&lt;string, string \| undefined&gt; |             |
+| Parameter         | Type                                      | Description       |
+| ----------------- | ----------------------------------------- | ----------------- |
+| environmentObject | Record&lt;string, string \| undefined&gt; | <i>(Optional)</i> |

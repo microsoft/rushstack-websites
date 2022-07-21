@@ -25,10 +25,10 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                        | Description                                                                                                      |
-| -------------------------------------------------------------------- | --------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [description](./ts-command-line.commandlineremainder.description.md) |           | string                      | Documentation for the parameter that will be shown when invoking the tool with "--help"                          |
-| [values](./ts-command-line.commandlineremainder.values.md)           |           | ReadonlyArray&lt;string&gt; | Returns any remaining command line arguments after the recognized portion that was parsed from the command line. |
+| Property                                                             | Modifiers             | Type                        | Description                                                                                                      |
+| -------------------------------------------------------------------- | --------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [description](./ts-command-line.commandlineremainder.description.md) | <code>readonly</code> | string                      | Documentation for the parameter that will be shown when invoking the tool with "--help"                          |
+| [values](./ts-command-line.commandlineremainder.values.md)           | <code>readonly</code> | ReadonlyArray&lt;string&gt; | Returns any remaining command line arguments after the recognized portion that was parsed from the command line. |
 
 ## Methods
 

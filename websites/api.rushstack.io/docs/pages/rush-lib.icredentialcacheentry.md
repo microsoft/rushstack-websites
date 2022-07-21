@@ -21,7 +21,7 @@ export interface ICredentialCacheEntry
 
 ## Properties
 
-| Property                                                     | Type   | Description                            |
-| ------------------------------------------------------------ | ------ | -------------------------------------- |
-| [credential](./rush-lib.icredentialcacheentry.credential.md) | string | <b><i>(BETA)</i></b>                   |
-| [expires?](./rush-lib.icredentialcacheentry.expires.md)      | Date   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                     | Modifiers | Type   | Description                            |
+| ------------------------------------------------------------ | --------- | ------ | -------------------------------------- |
+| [credential](./rush-lib.icredentialcacheentry.credential.md) |           | string | <b><i>(BETA)</i></b>                   |
+| [expires?](./rush-lib.icredentialcacheentry.expires.md)      |           | Date   | <b><i>(BETA)</i></b> <i>(Optional)</i> |

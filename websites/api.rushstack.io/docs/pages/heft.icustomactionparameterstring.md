@@ -19,10 +19,10 @@ pagination_next: null
 export interface ICustomActionParameterString extends ICustomActionParameterBase<string>
 ```
 
-<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) &lt;string&gt;
+<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md)
 
 ## Properties
 
-| Property                                            | Type     | Description          |
-| --------------------------------------------------- | -------- | -------------------- |
-| [kind](./heft.icustomactionparameterstring.kind.md) | 'string' | <b><i>(BETA)</i></b> |
+| Property                                            | Modifiers | Type     | Description          |
+| --------------------------------------------------- | --------- | -------- | -------------------- |
+| [kind](./heft.icustomactionparameterstring.kind.md) |           | 'string' | <b><i>(BETA)</i></b> |

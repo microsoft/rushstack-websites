@@ -21,11 +21,11 @@ static save(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFileSav
 
 ## Parameters
 
-| Parameter    | Type                                                                | Description                                       |
-| ------------ | ------------------------------------------------------------------- | ------------------------------------------------- |
-| jsonObject   | [JsonObject](./node-core-library.jsonobject.md)                     | the object to be saved                            |
-| jsonFilename | string                                                              | the file path to write                            |
-| options      | [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | other settings that control how the file is saved |
+| Parameter    | Type                                                                | Description                                                         |
+| ------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| jsonObject   | [JsonObject](./node-core-library.jsonobject.md)                     | the object to be saved                                              |
+| jsonFilename | string                                                              | the file path to write                                              |
+| options      | [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | <i>(Optional)</i> other settings that control how the file is saved |
 
 <b>Returns:</b>
 

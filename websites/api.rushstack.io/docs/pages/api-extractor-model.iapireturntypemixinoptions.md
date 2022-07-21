@@ -23,6 +23,6 @@ export interface IApiReturnTypeMixinOptions extends IApiItemOptions
 
 ## Properties
 
-| Property                                                                                         | Type                                                              | Description |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------- |
-| [returnTypeTokenRange](./api-extractor-model.iapireturntypemixinoptions.returntypetokenrange.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| Property                                                                                         | Modifiers | Type                                                              | Description |
+| ------------------------------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------- | ----------- |
+| [returnTypeTokenRange](./api-extractor-model.iapireturntypemixinoptions.returntypetokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |

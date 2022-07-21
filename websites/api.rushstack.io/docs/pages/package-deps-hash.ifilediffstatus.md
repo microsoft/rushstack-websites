@@ -23,9 +23,9 @@ export interface IFileDiffStatus
 
 ## Properties
 
-| Property                                                  | Type              | Description          |
-| --------------------------------------------------------- | ----------------- | -------------------- |
-| [mode](./package-deps-hash.ifilediffstatus.mode.md)       | string            | <b><i>(BETA)</i></b> |
-| [newhash](./package-deps-hash.ifilediffstatus.newhash.md) | string            | <b><i>(BETA)</i></b> |
-| [oldhash](./package-deps-hash.ifilediffstatus.oldhash.md) | string            | <b><i>(BETA)</i></b> |
-| [status](./package-deps-hash.ifilediffstatus.status.md)   | 'A' \| 'D' \| 'M' | <b><i>(BETA)</i></b> |
+| Property                                                  | Modifiers | Type              | Description          |
+| --------------------------------------------------------- | --------- | ----------------- | -------------------- |
+| [mode](./package-deps-hash.ifilediffstatus.mode.md)       |           | string            | <b><i>(BETA)</i></b> |
+| [newhash](./package-deps-hash.ifilediffstatus.newhash.md) |           | string            | <b><i>(BETA)</i></b> |
+| [oldhash](./package-deps-hash.ifilediffstatus.oldhash.md) |           | string            | <b><i>(BETA)</i></b> |
+| [status](./package-deps-hash.ifilediffstatus.status.md)   |           | 'A' \| 'D' \| 'M' | <b><i>(BETA)</i></b> |

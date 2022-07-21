@@ -23,10 +23,10 @@ export interface IRunScriptOptions<TStageProperties>
 
 ## Properties
 
-| Property                                                           | Type                                             | Description          |
-| ------------------------------------------------------------------ | ------------------------------------------------ | -------------------- |
-| [debugMode](./heft.irunscriptoptions.debugmode.md)                 | boolean                                          | <b><i>(BETA)</i></b> |
-| [heftConfiguration](./heft.irunscriptoptions.heftconfiguration.md) | [HeftConfiguration](./heft.heftconfiguration.md) | <b><i>(BETA)</i></b> |
-| [properties](./heft.irunscriptoptions.properties.md)               | TStageProperties                                 | <b><i>(BETA)</i></b> |
-| [scopedLogger](./heft.irunscriptoptions.scopedlogger.md)           | [ScopedLogger](./heft.scopedlogger.md)           | <b><i>(BETA)</i></b> |
-| [scriptOptions](./heft.irunscriptoptions.scriptoptions.md)         | Record&lt;string, any&gt;                        | <b><i>(BETA)</i></b> |
+| Property                                                           | Modifiers | Type                                             | Description          |
+| ------------------------------------------------------------------ | --------- | ------------------------------------------------ | -------------------- |
+| [debugMode](./heft.irunscriptoptions.debugmode.md)                 |           | boolean                                          | <b><i>(BETA)</i></b> |
+| [heftConfiguration](./heft.irunscriptoptions.heftconfiguration.md) |           | [HeftConfiguration](./heft.heftconfiguration.md) | <b><i>(BETA)</i></b> |
+| [properties](./heft.irunscriptoptions.properties.md)               |           | TStageProperties                                 | <b><i>(BETA)</i></b> |
+| [scopedLogger](./heft.irunscriptoptions.scopedlogger.md)           |           | [ScopedLogger](./heft.scopedlogger.md)           | <b><i>(BETA)</i></b> |
+| [scriptOptions](./heft.irunscriptoptions.scriptoptions.md)         |           | Record&lt;string, any&gt;                        | <b><i>(BETA)</i></b> |

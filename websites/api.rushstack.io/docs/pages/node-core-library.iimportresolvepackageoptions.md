@@ -23,6 +23,6 @@ export interface IImportResolvePackageOptions extends IImportResolveOptions
 
 ## Properties
 
-| Property                                                                       | Type   | Description                                                               |
-| ------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------- |
-| [packageName](./node-core-library.iimportresolvepackageoptions.packagename.md) | string | The package name to resolve. For example " @ rushstack/node-core-library" |
+| Property                                                                       | Modifiers | Type   | Description                                                               |
+| ------------------------------------------------------------------------------ | --------- | ------ | ------------------------------------------------------------------------- |
+| [packageName](./node-core-library.iimportresolvepackageoptions.packagename.md) |           | string | The package name to resolve. For example " @ rushstack/node-core-library" |

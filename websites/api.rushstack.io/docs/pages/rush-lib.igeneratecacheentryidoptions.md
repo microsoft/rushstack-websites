@@ -23,8 +23,8 @@ export interface IGenerateCacheEntryIdOptions
 
 ## Properties
 
-| Property                                                                        | Type   | Description                                    |
-| ------------------------------------------------------------------------------- | ------ | ---------------------------------------------- |
-| [phaseName](./rush-lib.igeneratecacheentryidoptions.phasename.md)               | string | <b><i>(BETA)</i></b> The name of the phase     |
-| [projectName](./rush-lib.igeneratecacheentryidoptions.projectname.md)           | string | <b><i>(BETA)</i></b> The name of the project   |
-| [projectStateHash](./rush-lib.igeneratecacheentryidoptions.projectstatehash.md) | string | <b><i>(BETA)</i></b> A hash of the input files |
+| Property                                                                        | Modifiers | Type   | Description                                    |
+| ------------------------------------------------------------------------------- | --------- | ------ | ---------------------------------------------- |
+| [phaseName](./rush-lib.igeneratecacheentryidoptions.phasename.md)               |           | string | <b><i>(BETA)</i></b> The name of the phase     |
+| [projectName](./rush-lib.igeneratecacheentryidoptions.projectname.md)           |           | string | <b><i>(BETA)</i></b> The name of the project   |
+| [projectStateHash](./rush-lib.igeneratecacheentryidoptions.projectstatehash.md) |           | string | <b><i>(BETA)</i></b> A hash of the input files |

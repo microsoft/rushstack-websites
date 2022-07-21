@@ -25,9 +25,9 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                   | Description                                                              |
-| ------------------------------------------------------------------------ | --------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
-| [\_shrinkwrapFilename](./rush-lib.packagemanager._shrinkwrapfilename.md) |           | string                                                 |                                                                          |
-| [packageManager](./rush-lib.packagemanager.packagemanager.md)            |           | [PackageManagerName](./rush-lib.packagemanagername.md) | The package manager.                                                     |
-| [shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md)    |           | string                                                 | The filename of the shrinkwrap file that is used by the package manager. |
-| [version](./rush-lib.packagemanager.version.md)                          |           | string                                                 | The SemVer version of the package manager.                               |
+| Property                                                                 | Modifiers              | Type                                                   | Description                                                              |
+| ------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
+| [\_shrinkwrapFilename](./rush-lib.packagemanager._shrinkwrapfilename.md) | <code>protected</code> | string                                                 |                                                                          |
+| [packageManager](./rush-lib.packagemanager.packagemanager.md)            | <code>readonly</code>  | [PackageManagerName](./rush-lib.packagemanagername.md) | The package manager.                                                     |
+| [shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md)    | <code>readonly</code>  | string                                                 | The filename of the shrinkwrap file that is used by the package manager. |
+| [version](./rush-lib.packagemanager.version.md)                          | <code>readonly</code>  | string                                                 | The SemVer version of the package manager.                               |

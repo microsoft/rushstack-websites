@@ -17,4 +17,4 @@ pagination_next: null
 export interface ITestStageContext extends IStageContext<TestStageHooks, ITestStageProperties>
 ```
 
-<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[TestStageHooks](./heft.teststagehooks.md) , [ITestStageProperties](./heft.iteststageproperties.md) &gt;
+<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[TestStageHooks](./heft.teststagehooks.md) , [ITestStageProperties](./heft.iteststageproperties.md)

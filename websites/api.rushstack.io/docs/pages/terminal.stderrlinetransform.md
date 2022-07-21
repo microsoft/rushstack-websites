@@ -70,13 +70,13 @@ The process completed with errors
 
 ## Properties
 
-| Property                                             | Modifiers | Type   | Description          |
-| ---------------------------------------------------- | --------- | ------ | -------------------- |
-| [newline](./terminal.stderrlinetransform.newline.md) |           | string | <b><i>(BETA)</i></b> |
+| Property                                             | Modifiers             | Type   | Description          |
+| ---------------------------------------------------- | --------------------- | ------ | -------------------- |
+| [newline](./terminal.stderrlinetransform.newline.md) | <code>readonly</code> | string | <b><i>(BETA)</i></b> |
 
 ## Methods
 
-| Method                                                                | Modifiers | Description          |
-| --------------------------------------------------------------------- | --------- | -------------------- |
-| [onClose()](./terminal.stderrlinetransform.onclose.md)                |           | <b><i>(BETA)</i></b> |
-| [onWriteChunk(chunk)](./terminal.stderrlinetransform.onwritechunk.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                | Modifiers              | Description          |
+| --------------------------------------------------------------------- | ---------------------- | -------------------- |
+| [onClose()](./terminal.stderrlinetransform.onclose.md)                | <code>protected</code> | <b><i>(BETA)</i></b> |
+| [onWriteChunk(chunk)](./terminal.stderrlinetransform.onwritechunk.md) | <code>protected</code> | <b><i>(BETA)</i></b> |

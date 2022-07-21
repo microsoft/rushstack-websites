@@ -21,7 +21,7 @@ export declare class DynamicCommandLineAction extends CommandLineAction
 
 ## Methods
 
-| Method                                                                                   | Modifiers | Description |
-| ---------------------------------------------------------------------------------------- | --------- | ----------- |
-| [onDefineParameters()](./ts-command-line.dynamiccommandlineaction.ondefineparameters.md) |           |             |
-| [onExecute()](./ts-command-line.dynamiccommandlineaction.onexecute.md)                   |           |             |
+| Method                                                                                   | Modifiers              | Description |
+| ---------------------------------------------------------------------------------------- | ---------------------- | ----------- |
+| [onDefineParameters()](./ts-command-line.dynamiccommandlineaction.ondefineparameters.md) | <code>protected</code> |             |
+| [onExecute()](./ts-command-line.dynamiccommandlineaction.onexecute.md)                   | <code>protected</code> |             |

@@ -31,10 +31,10 @@ export declare class StringBufferTerminalProvider implements ITerminalProvider
 
 ## Properties
 
-| Property                                                                           | Modifiers | Type    | Description                                                                                                            |
-| ---------------------------------------------------------------------------------- | --------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [eolCharacter](./node-core-library.stringbufferterminalprovider.eolcharacter.md)   |           | string  | <b><i>(BETA)</i></b> This property should return the newline character the terminal provider expects.                  |
-| [supportsColor](./node-core-library.stringbufferterminalprovider.supportscolor.md) |           | boolean | <b><i>(BETA)</i></b> This property should return true only if the terminal provider supports rendering console colors. |
+| Property                                                                           | Modifiers             | Type    | Description                                                                                                            |
+| ---------------------------------------------------------------------------------- | --------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [eolCharacter](./node-core-library.stringbufferterminalprovider.eolcharacter.md)   | <code>readonly</code> | string  | <b><i>(BETA)</i></b> This property should return the newline character the terminal provider expects.                  |
+| [supportsColor](./node-core-library.stringbufferterminalprovider.supportscolor.md) | <code>readonly</code> | boolean | <b><i>(BETA)</i></b> This property should return true only if the terminal provider supports rendering console colors. |
 
 ## Methods
 

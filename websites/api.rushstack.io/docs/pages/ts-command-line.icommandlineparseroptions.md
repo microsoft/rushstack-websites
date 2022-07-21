@@ -21,8 +21,9 @@ export interface ICommandLineParserOptions
 
 ## Properties
 
-| Property                                                                                               | Type    | Description                                                                             |
-| ------------------------------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------------------- |
-| [enableTabCompletionAction?](./ts-command-line.icommandlineparseroptions.enabletabcompletionaction.md) | boolean | <i>(Optional)</i> Set to true to auto-define a tab completion action. False by default. |
-| [toolDescription](./ts-command-line.icommandlineparseroptions.tooldescription.md)                      | string  | General documentation that is included in the "--help" main page                        |
-| [toolFilename](./ts-command-line.icommandlineparseroptions.toolfilename.md)                            | string  | The name of your tool when invoked from the command line                                |
+| Property                                                                                               | Modifiers | Type    | Description                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------ | --------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [enableTabCompletionAction?](./ts-command-line.icommandlineparseroptions.enabletabcompletionaction.md) |           | boolean | <i>(Optional)</i> Set to true to auto-define a tab completion action. False by default.                                                                                    |
+| [toolDescription](./ts-command-line.icommandlineparseroptions.tooldescription.md)                      |           | string  | General documentation that is included in the "--help" main page                                                                                                           |
+| [toolEpilog?](./ts-command-line.icommandlineparseroptions.toolepilog.md)                               |           | string  | <i>(Optional)</i> An optional string to append at the end of the "--help" main page. If not provided, an epilog will be automatically generated based on the toolFilename. |
+| [toolFilename](./ts-command-line.icommandlineparseroptions.toolfilename.md)                            |           | string  | The name of your tool when invoked from the command line                                                                                                                   |

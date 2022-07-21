@@ -19,7 +19,7 @@ export interface IFileSystemCopyFileBaseOptions
 
 ## Properties
 
-| Property                                                                                              | Type                                                                  | Description                                                                         |
-| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilebaseoptions.alreadyexistsbehavior.md) | [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | <i>(Optional)</i> Specifies what to do if the destination path already exists.      |
-| [sourcePath](./node-core-library.ifilesystemcopyfilebaseoptions.sourcepath.md)                        | string                                                                | The path of the existing object to be copied. The path may be absolute or relative. |
+| Property                                                                                              | Modifiers | Type                                                                  | Description                                                                         |
+| ----------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilebaseoptions.alreadyexistsbehavior.md) |           | [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | <i>(Optional)</i> Specifies what to do if the destination path already exists.      |
+| [sourcePath](./node-core-library.ifilesystemcopyfilebaseoptions.sourcepath.md)                        |           | string                                                                | The path of the existing object to be copied. The path may be absolute or relative. |

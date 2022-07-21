@@ -25,4 +25,5 @@ pagination_next: null
 | [IStringValuesTypingsGeneratorOptions](./typings-generator.istringvaluestypingsgeneratoroptions.md) |             |
 | [IStringValueTyping](./typings-generator.istringvaluetyping.md)                                     |             |
 | [IStringValueTypings](./typings-generator.istringvaluetypings.md)                                   |             |
+| [ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md)                 |             |
 | [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md)                         |             |

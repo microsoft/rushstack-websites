@@ -43,10 +43,10 @@ Compare with [ApiMethod](./api-extractor-model.apimethod.md) , which represents 
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                | Description |
-| ------------------------------------------------------------------------ | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apimethodsignature.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apimethodsignature.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                                 | Modifiers             | Type                                                | Description |
+| ------------------------------------------------------------------------ | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apimethodsignature.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apimethodsignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

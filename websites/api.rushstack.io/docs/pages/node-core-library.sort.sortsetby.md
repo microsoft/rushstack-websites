@@ -21,11 +21,11 @@ static sortSetBy<T>(set: Set<T>, keySelector: (element: T) => any, keyComparer?:
 
 ## Parameters
 
-| Parameter   | Type                      | Description |
-| ----------- | ------------------------- | ----------- |
-| set         | Set&lt;T&gt;              |             |
-| keySelector | (element: T) =&gt; any    |             |
-| keyComparer | (x: T, y: T) =&gt; number |             |
+| Parameter   | Type                      | Description       |
+| ----------- | ------------------------- | ----------------- |
+| set         | Set&lt;T&gt;              |                   |
+| keySelector | (element: T) =&gt; any    |                   |
+| keyComparer | (x: T, y: T) =&gt; number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

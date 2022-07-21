@@ -21,11 +21,11 @@ static appendToFile(filePath: string, contents: string | Buffer, options?: IFile
 
 ## Parameters
 
-| Parameter | Type                                                                              | Description                                                                          |
-| --------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| filePath  | string                                                                            | The absolute or relative path of the file.                                           |
-| contents  | string \| Buffer                                                                  | The text that should be written to the file.                                         |
-| options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | Optional settings that can change the behavior. Type: <code>IWriteFileOptions</code> |
+| Parameter | Type                                                                              | Description                                                                                            |
+| --------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| filePath  | string                                                                            | The absolute or relative path of the file.                                                             |
+| contents  | string \| Buffer                                                                  | The text that should be written to the file.                                                           |
+| options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IWriteFileOptions</code> |
 
 <b>Returns:</b>
 

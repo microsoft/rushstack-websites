@@ -282,6 +282,11 @@
             },
             {
               "type": "doc",
+              "label": "alphaTrimmedFilePath",
+              "id": "pages/api-extractor.extractorconfig.alphatrimmedfilepath"
+            },
+            {
+              "type": "doc",
               "label": "apiJsonFilePath",
               "id": "pages/api-extractor.extractorconfig.apijsonfilepath"
             },
@@ -304,6 +309,11 @@
               "type": "doc",
               "label": "docModelEnabled",
               "id": "pages/api-extractor.extractorconfig.docmodelenabled"
+            },
+            {
+              "type": "doc",
+              "label": "enumMemberOrder",
+              "id": "pages/api-extractor.extractorconfig.enummemberorder"
             },
             {
               "type": "doc",
@@ -679,6 +689,11 @@
             },
             {
               "type": "doc",
+              "label": "alphaTrimmedFilePath",
+              "id": "pages/api-extractor.iconfigdtsrollup.alphatrimmedfilepath"
+            },
+            {
+              "type": "doc",
               "label": "betaTrimmedFilePath",
               "id": "pages/api-extractor.iconfigdtsrollup.betatrimmedfilepath"
             },
@@ -737,6 +752,11 @@
               "type": "doc",
               "label": "dtsRollup",
               "id": "pages/api-extractor.iconfigfile.dtsrollup"
+            },
+            {
+              "type": "doc",
+              "label": "enumMemberOrder",
+              "id": "pages/api-extractor.iconfigfile.enummemberorder"
             },
             {
               "type": "doc",
@@ -866,6 +886,11 @@
               "type": "doc",
               "label": "configObjectFullPath",
               "id": "pages/api-extractor.iextractorconfigprepareoptions.configobjectfullpath"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreMissingEntryPoint",
+              "id": "pages/api-extractor.iextractorconfigprepareoptions.ignoremissingentrypoint"
             },
             {
               "type": "doc",
@@ -1337,23 +1362,8 @@
             },
             {
               "type": "doc",
-              "label": "initializerExcerpt",
-              "id": "pages/api-extractor-model.apienummember.initializerexcerpt"
-            },
-            {
-              "type": "doc",
               "label": "kind",
               "id": "pages/api-extractor-model.apienummember.kind"
-            },
-            {
-              "type": "doc",
-              "label": "onDeserializeInto",
-              "id": "pages/api-extractor-model.apienummember.ondeserializeinto"
-            },
-            {
-              "type": "doc",
-              "label": "serializeInto",
-              "id": "pages/api-extractor-model.apienummember.serializeinto"
             }
           ]
         },
@@ -1426,6 +1436,48 @@
               "type": "doc",
               "label": "kind",
               "id": "pages/api-extractor-model.apiindexsignature.kind"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiInitializerMixin",
+          "id": "pages/api-extractor-model.apiinitializermixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiInitializerMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiinitializermixin"
+            },
+            {
+              "type": "doc",
+              "label": "initializerExcerpt",
+              "id": "pages/api-extractor-model.apiinitializermixin.initializerexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apiinitializermixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiInitializerMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiinitializermixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiinitializermixin.isbaseclassof"
             }
           ]
         },
@@ -1521,6 +1573,11 @@
             },
             {
               "type": "doc",
+              "label": "getAssociatedModel",
+              "id": "pages/api-extractor-model.apiitem.getassociatedmodel"
+            },
+            {
+              "type": "doc",
               "label": "getAssociatedPackage",
               "id": "pages/api-extractor-model.apiitem.getassociatedpackage"
             },
@@ -1594,6 +1651,16 @@
               "type": "doc",
               "label": "findMembersByName",
               "id": "pages/api-extractor-model.apiitemcontainermixin.findmembersbyname"
+            },
+            {
+              "type": "doc",
+              "label": "findMembersWithInheritance",
+              "id": "pages/api-extractor-model.apiitemcontainermixin.findmemberswithinheritance"
+            },
+            {
+              "type": "doc",
+              "label": "preserveMemberOrder",
+              "id": "pages/api-extractor-model.apiitemcontainermixin.preservememberorder"
             },
             {
               "type": "doc",
@@ -2094,6 +2161,90 @@
         },
         {
           "type": "doc",
+          "label": "ApiProtectedMixin",
+          "id": "pages/api-extractor-model.apiprotectedmixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiProtectedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiprotectedmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isProtected",
+              "id": "pages/api-extractor-model.apiprotectedmixin.isprotected"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apiprotectedmixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiProtectedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiprotectedmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiprotectedmixin.isbaseclassof"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiReadonlyMixin",
+          "id": "pages/api-extractor-model.apireadonlymixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiReadonlyMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apireadonlymixin"
+            },
+            {
+              "type": "doc",
+              "label": "isReadonly",
+              "id": "pages/api-extractor-model.apireadonlymixin.isreadonly"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apireadonlymixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiReadonlyMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apireadonlymixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apireadonlymixin.isbaseclassof"
+            }
+          ]
+        },
+        {
+          "type": "doc",
           "label": "ApiReleaseTagMixin",
           "id": "pages/api-extractor-model.apireleasetagmixin"
         },
@@ -2368,6 +2519,11 @@
           "id": "pages/api-extractor-model.constructor"
         },
         {
+          "type": "doc",
+          "label": "EnumMemberOrder",
+          "id": "pages/api-extractor-model.enummemberorder"
+        },
+        {
           "type": "category",
           "label": "Excerpt",
           "items": [
@@ -2443,6 +2599,11 @@
           "type": "doc",
           "label": "ExcerptTokenKind",
           "id": "pages/api-extractor-model.excerpttokenkind"
+        },
+        {
+          "type": "doc",
+          "label": "FindApiItemsMessageId",
+          "id": "pages/api-extractor-model.findapiitemsmessageid"
         },
         {
           "type": "category",
@@ -2539,20 +2700,9 @@
           "id": "pages/api-extractor-model.iapientrypointoptions"
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IApiEnumMemberOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/api-extractor-model.iapienummemberoptions"
-            },
-            {
-              "type": "doc",
-              "label": "initializerTokenRange",
-              "id": "pages/api-extractor-model.iapienummemberoptions.initializertokenrange"
-            }
-          ]
+          "id": "pages/api-extractor-model.iapienummemberoptions"
         },
         {
           "type": "doc",
@@ -2568,6 +2718,22 @@
           "type": "doc",
           "label": "IApiIndexSignatureOptions",
           "id": "pages/api-extractor-model.iapiindexsignatureoptions"
+        },
+        {
+          "type": "category",
+          "label": "IApiInitializerMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiinitializermixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "initializerTokenRange",
+              "id": "pages/api-extractor-model.iapiinitializermixinoptions.initializertokenrange"
+            }
+          ]
         },
         {
           "type": "category",
@@ -2603,6 +2769,11 @@
               "type": "doc",
               "label": "members",
               "id": "pages/api-extractor-model.iapiitemcontainermixinoptions.members"
+            },
+            {
+              "type": "doc",
+              "label": "preserveMemberOrder",
+              "id": "pages/api-extractor-model.iapiitemcontainermixinoptions.preservememberorder"
             }
           ]
         },
@@ -2775,6 +2946,38 @@
         },
         {
           "type": "category",
+          "label": "IApiProtectedMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiprotectedmixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isProtected",
+              "id": "pages/api-extractor-model.iapiprotectedmixinoptions.isprotected"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IApiReadonlyMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapireadonlymixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isReadonly",
+              "id": "pages/api-extractor-model.iapireadonlymixinoptions.isreadonly"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IApiReleaseTagMixinOptions",
           "items": [
             {
@@ -2944,6 +3147,53 @@
         },
         {
           "type": "category",
+          "label": "IFindApiItemsMessage",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage"
+            },
+            {
+              "type": "doc",
+              "label": "messageId",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage.messageid"
+            },
+            {
+              "type": "doc",
+              "label": "text",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage.text"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFindApiItemsResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.ifindapiitemsresult"
+            },
+            {
+              "type": "doc",
+              "label": "items",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.items"
+            },
+            {
+              "type": "doc",
+              "label": "maybeIncompleteResult",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.maybeincompleteresult"
+            },
+            {
+              "type": "doc",
+              "label": "messages",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.messages"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IParameterOptions",
           "items": [
             {
@@ -3012,6 +3262,11 @@
               "type": "doc",
               "label": "defaultTypeExcerpt",
               "id": "pages/api-extractor-model.itypeparameteroptions.defaulttypeexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.itypeparameteroptions.isoptional"
             },
             {
               "type": "doc",
@@ -3115,6 +3370,11 @@
               "type": "doc",
               "label": "defaultTypeExcerpt",
               "id": "pages/api-extractor-model.typeparameter.defaulttypeexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.typeparameter.isoptional"
             },
             {
               "type": "doc",
@@ -3372,11 +3632,6 @@
               "type": "doc",
               "label": "save",
               "id": "pages/rush-lib.commonversionsconfiguration.save"
-            },
-            {
-              "type": "doc",
-              "label": "xstitchPreferredVersions",
-              "id": "pages/rush-lib.commonversionsconfiguration.xstitchpreferredversions"
             }
           ]
         },
@@ -3862,6 +4117,11 @@
               "type": "doc",
               "label": "isManaged",
               "id": "pages/rush-lib.ilaunchoptions.ismanaged"
+            },
+            {
+              "type": "doc",
+              "label": "terminalProvider",
+              "id": "pages/rush-lib.ilaunchoptions.terminalprovider"
             }
           ]
         },
@@ -4070,6 +4330,52 @@
               "type": "doc",
               "label": "terminalProvider",
               "id": "pages/rush-lib.irushsessionoptions.terminalprovider"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ITelemetryData",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.itelemetrydata"
+            },
+            {
+              "type": "doc",
+              "label": "durationInSeconds",
+              "id": "pages/rush-lib.itelemetrydata.durationinseconds"
+            },
+            {
+              "type": "doc",
+              "label": "extraData",
+              "id": "pages/rush-lib.itelemetrydata.extradata"
+            },
+            {
+              "type": "doc",
+              "label": "name",
+              "id": "pages/rush-lib.itelemetrydata.name"
+            },
+            {
+              "type": "doc",
+              "label": "platform",
+              "id": "pages/rush-lib.itelemetrydata.platform"
+            },
+            {
+              "type": "doc",
+              "label": "result",
+              "id": "pages/rush-lib.itelemetrydata.result"
+            },
+            {
+              "type": "doc",
+              "label": "rushVersion",
+              "id": "pages/rush-lib.itelemetrydata.rushversion"
+            },
+            {
+              "type": "doc",
+              "label": "timestamp",
+              "id": "pages/rush-lib.itelemetrydata.timestamp"
             }
           ]
         },
@@ -4484,6 +4790,11 @@
             },
             {
               "type": "doc",
+              "label": "launchRushPnpm",
+              "id": "pages/rush-lib.rush.launchrushpnpm"
+            },
+            {
+              "type": "doc",
               "label": "launchRushX",
               "id": "pages/rush-lib.rush.launchrushx"
             },
@@ -4745,6 +5056,11 @@
             },
             {
               "type": "doc",
+              "label": "projectsByTag",
+              "id": "pages/rush-lib.rushconfiguration.projectsbytag"
+            },
+            {
+              "type": "doc",
               "label": "repositoryDefaultBranch",
               "id": "pages/rush-lib.rushconfiguration.repositorydefaultbranch"
             },
@@ -4866,6 +5182,11 @@
             },
             {
               "type": "doc",
+              "label": "decoupledLocalDependencies",
+              "id": "pages/rush-lib.rushconfigurationproject.decoupledlocaldependencies"
+            },
+            {
+              "type": "doc",
               "label": "dependencyProjects",
               "id": "pages/rush-lib.rushconfigurationproject.dependencyprojects"
             },
@@ -4943,6 +5264,11 @@
               "type": "doc",
               "label": "skipRushCheck",
               "id": "pages/rush-lib.rushconfigurationproject.skiprushcheck"
+            },
+            {
+              "type": "doc",
+              "label": "tags",
+              "id": "pages/rush-lib.rushconfigurationproject.tags"
             },
             {
               "type": "doc",
@@ -5195,6 +5521,11 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.rushlifecyclehooks"
+            },
+            {
+              "type": "doc",
+              "label": "flushTelemetry",
+              "id": "pages/rush-lib.rushlifecyclehooks.flushtelemetry"
             },
             {
               "type": "doc",
@@ -5501,6 +5832,38 @@
     },
     {
       "type": "category",
+      "label": "@rushstack/hashed-folder-copy-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/hashed-folder-copy-plugin"
+        },
+        {
+          "type": "category",
+          "label": "HashedFolderCopyPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/hashed-folder-copy-plugin.hashedfoldercopyplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/hashed-folder-copy-plugin.hashedfoldercopyplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/hashed-folder-copy-plugin.hashedfoldercopyplugin.apply"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "@rushstack/heft",
       "items": [
         {
@@ -5792,8 +6155,8 @@
             },
             {
               "type": "doc",
-              "label": "locale",
-              "id": "pages/heft.ibuildstageproperties.locale"
+              "label": "locales",
+              "id": "pages/heft.ibuildstageproperties.locales"
             },
             {
               "type": "doc",
@@ -6596,6 +6959,27 @@
         },
         {
           "type": "category",
+          "label": "ICustomJsonPathMetadata",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata"
+            },
+            {
+              "type": "doc",
+              "label": "customResolver",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata.customresolver"
+            },
+            {
+              "type": "doc",
+              "label": "pathResolutionMethod",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata.pathresolutionmethod"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ICustomPropertyInheritance",
           "items": [
             {
@@ -6611,25 +6995,9 @@
           ]
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IJsonPathMetadata",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-config-file.ijsonpathmetadata"
-            },
-            {
-              "type": "doc",
-              "label": "customResolver",
-              "id": "pages/heft-config-file.ijsonpathmetadata.customresolver"
-            },
-            {
-              "type": "doc",
-              "label": "pathResolutionMethod",
-              "id": "pages/heft-config-file.ijsonpathmetadata.pathresolutionmethod"
-            }
-          ]
+          "id": "pages/heft-config-file.ijsonpathmetadata"
         },
         {
           "type": "doc",
@@ -6640,6 +7008,22 @@
           "type": "doc",
           "label": "InheritanceType",
           "id": "pages/heft-config-file.inheritancetype"
+        },
+        {
+          "type": "category",
+          "label": "INonCustomJsonPathMetadata",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.inoncustomjsonpathmetadata"
+            },
+            {
+              "type": "doc",
+              "label": "pathResolutionMethod",
+              "id": "pages/heft-config-file.inoncustomjsonpathmetadata.pathresolutionmethod"
+            }
+          ]
         },
         {
           "type": "category",
@@ -6697,214 +7081,27 @@
     },
     {
       "type": "category",
-      "label": "@rushstack/localization-plugin",
+      "label": "@rushstack/localization-utilities",
       "items": [
         {
           "type": "doc",
           "label": "(members)",
-          "id": "pages/localization-plugin"
-        },
-        {
-          "type": "category",
-          "label": "IDefaultLocaleOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.idefaultlocaleoptions"
-            },
-            {
-              "type": "doc",
-              "label": "fillMissingTranslationStrings",
-              "id": "pages/localization-plugin.idefaultlocaleoptions.fillmissingtranslationstrings"
-            },
-            {
-              "type": "doc",
-              "label": "localeName",
-              "id": "pages/localization-plugin.idefaultlocaleoptions.localename"
-            }
-          ]
+          "id": "pages/localization-utilities"
         },
         {
           "type": "doc",
-          "label": "ILocaleData",
-          "id": "pages/localization-plugin.ilocaledata"
+          "label": "getPseudolocalizer",
+          "id": "pages/localization-utilities.getpseudolocalizer"
         },
         {
           "type": "doc",
-          "label": "ILocaleElementMap",
-          "id": "pages/localization-plugin.ilocaleelementmap"
-        },
-        {
-          "type": "doc",
-          "label": "ILocaleFileData",
-          "id": "pages/localization-plugin.ilocalefiledata"
+          "label": "IgnoreStringFunction",
+          "id": "pages/localization-utilities.ignorestringfunction"
         },
         {
           "type": "doc",
           "label": "ILocalizationFile",
-          "id": "pages/localization-plugin.ilocalizationfile"
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationPluginOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions"
-            },
-            {
-              "type": "doc",
-              "label": "filesToIgnore",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.filestoignore"
-            },
-            {
-              "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.globstoignore"
-            },
-            {
-              "type": "doc",
-              "label": "localizationStats",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.localizationstats"
-            },
-            {
-              "type": "doc",
-              "label": "localizedData",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.localizeddata"
-            },
-            {
-              "type": "doc",
-              "label": "noStringsLocaleName",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.nostringslocalename"
-            },
-            {
-              "type": "doc",
-              "label": "typingsOptions",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.typingsoptions"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStats",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstats"
-            },
-            {
-              "type": "doc",
-              "label": "entrypoints",
-              "id": "pages/localization-plugin.ilocalizationstats.entrypoints"
-            },
-            {
-              "type": "doc",
-              "label": "namedChunkGroups",
-              "id": "pages/localization-plugin.ilocalizationstats.namedchunkgroups"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsChunkGroup",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatschunkgroup"
-            },
-            {
-              "type": "doc",
-              "label": "localizedAssets",
-              "id": "pages/localization-plugin.ilocalizationstatschunkgroup.localizedassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsEntrypoint",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatsentrypoint"
-            },
-            {
-              "type": "doc",
-              "label": "localizedAssets",
-              "id": "pages/localization-plugin.ilocalizationstatsentrypoint.localizedassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions"
-            },
-            {
-              "type": "doc",
-              "label": "callback",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions.callback"
-            },
-            {
-              "type": "doc",
-              "label": "dropPath",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions.droppath"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizedData",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizeddata"
-            },
-            {
-              "type": "doc",
-              "label": "defaultLocale",
-              "id": "pages/localization-plugin.ilocalizeddata.defaultlocale"
-            },
-            {
-              "type": "doc",
-              "label": "ignoreMissingResxComments",
-              "id": "pages/localization-plugin.ilocalizeddata.ignoremissingresxcomments"
-            },
-            {
-              "type": "doc",
-              "label": "normalizeResxNewlines",
-              "id": "pages/localization-plugin.ilocalizeddata.normalizeresxnewlines"
-            },
-            {
-              "type": "doc",
-              "label": "passthroughLocale",
-              "id": "pages/localization-plugin.ilocalizeddata.passthroughlocale"
-            },
-            {
-              "type": "doc",
-              "label": "pseudolocales",
-              "id": "pages/localization-plugin.ilocalizeddata.pseudolocales"
-            },
-            {
-              "type": "doc",
-              "label": "resolveMissingTranslatedStrings",
-              "id": "pages/localization-plugin.ilocalizeddata.resolvemissingtranslatedstrings"
-            },
-            {
-              "type": "doc",
-              "label": "translatedStrings",
-              "id": "pages/localization-plugin.ilocalizeddata.translatedstrings"
-            }
-          ]
+          "id": "pages/localization-utilities.ilocalizationfile"
         },
         {
           "type": "category",
@@ -6913,59 +7110,90 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizedstring"
+              "id": "pages/localization-utilities.ilocalizedstring"
             },
             {
               "type": "doc",
               "label": "comment",
-              "id": "pages/localization-plugin.ilocalizedstring.comment"
+              "id": "pages/localization-utilities.ilocalizedstring.comment"
             },
             {
               "type": "doc",
               "label": "value",
-              "id": "pages/localization-plugin.ilocalizedstring.value"
+              "id": "pages/localization-utilities.ilocalizedstring.value"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IParseFileOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-utilities.iparsefileoptions"
+            },
+            {
+              "type": "doc",
+              "label": "content",
+              "id": "pages/localization-utilities.iparsefileoptions.content"
+            },
+            {
+              "type": "doc",
+              "label": "filePath",
+              "id": "pages/localization-utilities.iparsefileoptions.filepath"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/localization-utilities.iparsefileoptions.ignorestring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IParseLocFileOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-utilities.iparselocfileoptions"
+            },
+            {
+              "type": "doc",
+              "label": "parser",
+              "id": "pages/localization-utilities.iparselocfileoptions.parser"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "ILocalizedStrings",
-          "id": "pages/localization-plugin.ilocalizedstrings"
+          "label": "IParseResxOptions",
+          "id": "pages/localization-utilities.iparseresxoptions"
         },
         {
           "type": "category",
-          "label": "ILocalizedWebpackChunk",
+          "label": "IParseResxOptionsBase",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizedwebpackchunk"
+              "id": "pages/localization-utilities.iparseresxoptionsbase"
             },
             {
               "type": "doc",
-              "label": "localizedFiles",
-              "id": "pages/localization-plugin.ilocalizedwebpackchunk.localizedfiles"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IPassthroughLocaleOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions"
+              "label": "ignoreMissingResxComments",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.ignoremissingresxcomments"
             },
             {
               "type": "doc",
-              "label": "passthroughLocaleName",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions.passthroughlocalename"
+              "label": "resxNewlineNormalization",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.resxnewlinenormalization"
             },
             {
               "type": "doc",
-              "label": "usePassthroughLocale",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions.usepassthroughlocale"
+              "label": "terminal",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.terminal"
             }
           ]
         },
@@ -6976,109 +7204,42 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ipseudolocaleoptions"
+              "id": "pages/localization-utilities.ipseudolocaleoptions"
             },
             {
               "type": "doc",
               "label": "append",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.append"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.append"
             },
             {
               "type": "doc",
               "label": "delimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.delimiter"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.delimiter"
             },
             {
               "type": "doc",
               "label": "endDelimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.enddelimiter"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.enddelimiter"
             },
             {
               "type": "doc",
               "label": "extend",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.extend"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.extend"
             },
             {
               "type": "doc",
               "label": "override",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.override"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.override"
             },
             {
               "type": "doc",
               "label": "prepend",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.prepend"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.prepend"
             },
             {
               "type": "doc",
               "label": "startDelimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.startdelimiter"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IPseudolocalesOptions",
-          "id": "pages/localization-plugin.ipseudolocalesoptions"
-        },
-        {
-          "type": "doc",
-          "label": "IResolvedMissingTranslations",
-          "id": "pages/localization-plugin.iresolvedmissingtranslations"
-        },
-        {
-          "type": "category",
-          "label": "IResxReaderOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.iresxreaderoptions"
-            },
-            {
-              "type": "doc",
-              "label": "newlineNormalization",
-              "id": "pages/localization-plugin.iresxreaderoptions.newlinenormalization"
-            },
-            {
-              "type": "doc",
-              "label": "resxFilePath",
-              "id": "pages/localization-plugin.iresxreaderoptions.resxfilepath"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/localization-plugin.iresxreaderoptions.terminal"
-            },
-            {
-              "type": "doc",
-              "label": "warnOnMissingComment",
-              "id": "pages/localization-plugin.iresxreaderoptions.warnonmissingcomment"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ITypingsGenerationOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.itypingsgenerationoptions"
-            },
-            {
-              "type": "doc",
-              "label": "exportAsDefault",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.exportasdefault"
-            },
-            {
-              "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
-              "label": "sourceRoot",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.sourceroot"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.startdelimiter"
             }
           ]
         },
@@ -7089,86 +7250,59 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions"
             },
             {
               "type": "doc",
               "label": "exportAsDefault",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.exportasdefault"
-            },
-            {
-              "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.globstoignore"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.exportasdefault"
             },
             {
               "type": "doc",
               "label": "ignoreMissingResxComments",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.ignoremissingresxcomments"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.ignoremissingresxcomments"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.ignorestring"
+            },
+            {
+              "type": "doc",
+              "label": "processComment",
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.processcomment"
             },
             {
               "type": "doc",
               "label": "resxNewlineNormalization",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.resxnewlinenormalization"
-            },
-            {
-              "type": "doc",
-              "label": "srcFolder",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.srcfolder"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.terminal"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.resxnewlinenormalization"
             }
           ]
         },
         {
-          "type": "category",
-          "label": "LocalizationPlugin",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.localizationplugin"
-            },
-            {
-              "type": "doc",
-              "label": "(constructor)",
-              "id": "pages/localization-plugin.localizationplugin._constructor_"
-            },
-            {
-              "type": "doc",
-              "label": "apply",
-              "id": "pages/localization-plugin.localizationplugin.apply"
-            }
-          ]
+          "type": "doc",
+          "label": "parseLocFile",
+          "id": "pages/localization-utilities.parselocfile"
         },
         {
-          "type": "category",
-          "label": "ResxReader",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.resxreader"
-            },
-            {
-              "type": "doc",
-              "label": "readResxAsLocFile",
-              "id": "pages/localization-plugin.resxreader.readresxaslocfile"
-            },
-            {
-              "type": "doc",
-              "label": "readResxFileAsLocFile",
-              "id": "pages/localization-plugin.resxreader.readresxfileaslocfile"
-            }
-          ]
+          "type": "doc",
+          "label": "parseLocJson",
+          "id": "pages/localization-utilities.parselocjson"
+        },
+        {
+          "type": "doc",
+          "label": "parseResJson",
+          "id": "pages/localization-utilities.parseresjson"
+        },
+        {
+          "type": "doc",
+          "label": "parseResx",
+          "id": "pages/localization-utilities.parseresx"
+        },
+        {
+          "type": "doc",
+          "label": "ParserKind",
+          "id": "pages/localization-utilities.parserkind"
         },
         {
           "type": "category",
@@ -7177,12 +7311,12 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.typingsgenerator"
+              "id": "pages/localization-utilities.typingsgenerator"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/localization-plugin.typingsgenerator._constructor_"
+              "id": "pages/localization-utilities.typingsgenerator._constructor_"
             }
           ]
         }
@@ -7190,145 +7324,17 @@
     },
     {
       "type": "category",
-      "label": "@rushstack/module-minifier-plugin",
+      "label": "@rushstack/module-minifier",
       "items": [
         {
           "type": "doc",
           "label": "(members)",
-          "id": "pages/module-minifier-plugin"
-        },
-        {
-          "type": "doc",
-          "label": "CHUNK_MODULES_TOKEN",
-          "id": "pages/module-minifier-plugin.chunk_modules_token"
-        },
-        {
-          "type": "doc",
-          "label": "generateLicenseFileForAsset",
-          "id": "pages/module-minifier-plugin.generatelicensefileforasset"
+          "id": "pages/module-minifier"
         },
         {
           "type": "doc",
           "label": "getIdentifier",
-          "id": "pages/module-minifier-plugin.getidentifier"
-        },
-        {
-          "type": "category",
-          "label": "IAssetInfo",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.iassetinfo"
-            },
-            {
-              "type": "doc",
-              "label": "chunk",
-              "id": "pages/module-minifier-plugin.iassetinfo.chunk"
-            },
-            {
-              "type": "doc",
-              "label": "externalNames",
-              "id": "pages/module-minifier-plugin.iassetinfo.externalnames"
-            },
-            {
-              "type": "doc",
-              "label": "fileName",
-              "id": "pages/module-minifier-plugin.iassetinfo.filename"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.iassetinfo.modules"
-            },
-            {
-              "type": "doc",
-              "label": "source",
-              "id": "pages/module-minifier-plugin.iassetinfo.source"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IAssetMap",
-          "id": "pages/module-minifier-plugin.iassetmap"
-        },
-        {
-          "type": "category",
-          "label": "IDehydratedAssets",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.idehydratedassets"
-            },
-            {
-              "type": "doc",
-              "label": "assets",
-              "id": "pages/module-minifier-plugin.idehydratedassets.assets"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.idehydratedassets.modules"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IDENTIFIER_LEADING_DIGITS",
-          "id": "pages/module-minifier-plugin.identifier_leading_digits"
-        },
-        {
-          "type": "doc",
-          "label": "IDENTIFIER_TRAILING_DIGITS",
-          "id": "pages/module-minifier-plugin.identifier_trailing_digits"
-        },
-        {
-          "type": "category",
-          "label": "IExtendedModule",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.iextendedmodule"
-            },
-            {
-              "type": "doc",
-              "label": "external",
-              "id": "pages/module-minifier-plugin.iextendedmodule.external"
-            },
-            {
-              "type": "doc",
-              "label": "hasDependencies",
-              "id": "pages/module-minifier-plugin.iextendedmodule.hasdependencies"
-            },
-            {
-              "type": "doc",
-              "label": "id",
-              "id": "pages/module-minifier-plugin.iextendedmodule.id"
-            },
-            {
-              "type": "doc",
-              "label": "identifier",
-              "id": "pages/module-minifier-plugin.iextendedmodule.identifier"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.iextendedmodule.modules"
-            },
-            {
-              "type": "doc",
-              "label": "readableIdentifier",
-              "id": "pages/module-minifier-plugin.iextendedmodule.readableidentifier"
-            },
-            {
-              "type": "doc",
-              "label": "resource",
-              "id": "pages/module-minifier-plugin.iextendedmodule.resource"
-            }
-          ]
+          "id": "pages/module-minifier.getidentifier"
         },
         {
           "type": "category",
@@ -7337,12 +7343,12 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.ilocalminifieroptions"
+              "id": "pages/module-minifier.ilocalminifieroptions"
             },
             {
               "type": "doc",
               "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.ilocalminifieroptions.terseroptions"
+              "id": "pages/module-minifier.ilocalminifieroptions.terseroptions"
             }
           ]
         },
@@ -7353,50 +7359,24 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.iminifierconnection"
+              "id": "pages/module-minifier.iminifierconnection"
             },
             {
               "type": "doc",
               "label": "configHash",
-              "id": "pages/module-minifier-plugin.iminifierconnection.confighash"
+              "id": "pages/module-minifier.iminifierconnection.confighash"
             },
             {
               "type": "doc",
               "label": "disconnect",
-              "id": "pages/module-minifier-plugin.iminifierconnection.disconnect"
+              "id": "pages/module-minifier.iminifierconnection.disconnect"
             }
           ]
-        },
-        {
-          "type": "category",
-          "label": "IModuleInfo",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleinfo"
-            },
-            {
-              "type": "doc",
-              "label": "module",
-              "id": "pages/module-minifier-plugin.imoduleinfo.module"
-            },
-            {
-              "type": "doc",
-              "label": "source",
-              "id": "pages/module-minifier-plugin.imoduleinfo.source"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IModuleMap",
-          "id": "pages/module-minifier-plugin.imodulemap"
         },
         {
           "type": "doc",
           "label": "IModuleMinificationCallback",
-          "id": "pages/module-minifier-plugin.imoduleminificationcallback"
+          "id": "pages/module-minifier.imoduleminificationcallback"
         },
         {
           "type": "category",
@@ -7405,27 +7385,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult"
+              "id": "pages/module-minifier.imoduleminificationerrorresult"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.code"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.code"
             },
             {
               "type": "doc",
               "label": "error",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.error"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.error"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.hash"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.hash"
             },
             {
               "type": "doc",
               "label": "map",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.map"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.map"
             }
           ]
         },
@@ -7436,34 +7416,34 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest"
+              "id": "pages/module-minifier.imoduleminificationrequest"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.code"
+              "id": "pages/module-minifier.imoduleminificationrequest.code"
             },
             {
               "type": "doc",
               "label": "externals",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.externals"
+              "id": "pages/module-minifier.imoduleminificationrequest.externals"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.hash"
+              "id": "pages/module-minifier.imoduleminificationrequest.hash"
             },
             {
               "type": "doc",
               "label": "nameForMap",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.nameformap"
+              "id": "pages/module-minifier.imoduleminificationrequest.nameformap"
             }
           ]
         },
         {
           "type": "doc",
           "label": "IModuleMinificationResult",
-          "id": "pages/module-minifier-plugin.imoduleminificationresult"
+          "id": "pages/module-minifier.imoduleminificationresult"
         },
         {
           "type": "category",
@@ -7472,27 +7452,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.code"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.code"
             },
             {
               "type": "doc",
               "label": "error",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.error"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.error"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.hash"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.hash"
             },
             {
               "type": "doc",
               "label": "map",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.map"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.map"
             }
           ]
         },
@@ -7503,107 +7483,24 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifier"
+              "id": "pages/module-minifier.imoduleminifier"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.imoduleminifier.connect"
+              "id": "pages/module-minifier.imoduleminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.imoduleminifier.minify"
+              "id": "pages/module-minifier.imoduleminifier.minify"
             }
           ]
         },
         {
           "type": "doc",
           "label": "IModuleMinifierFunction",
-          "id": "pages/module-minifier-plugin.imoduleminifierfunction"
-        },
-        {
-          "type": "category",
-          "label": "IModuleMinifierPluginHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks"
-            },
-            {
-              "type": "doc",
-              "label": "finalModuleId",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.finalmoduleid"
-            },
-            {
-              "type": "doc",
-              "label": "postProcessCodeFragment",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.postprocesscodefragment"
-            },
-            {
-              "type": "doc",
-              "label": "rehydrateAssets",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.rehydrateassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IModuleMinifierPluginOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions"
-            },
-            {
-              "type": "doc",
-              "label": "compressAsyncImports",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.compressasyncimports"
-            },
-            {
-              "type": "doc",
-              "label": "minifier",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.minifier"
-            },
-            {
-              "type": "doc",
-              "label": "sourceMap",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.sourcemap"
-            },
-            {
-              "type": "doc",
-              "label": "usePortableModules",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.useportablemodules"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IPostProcessFragmentContext",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext"
-            },
-            {
-              "type": "doc",
-              "label": "compilation",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.compilation"
-            },
-            {
-              "type": "doc",
-              "label": "loggingName",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.loggingname"
-            },
-            {
-              "type": "doc",
-              "label": "module",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.module"
-            }
-          ]
+          "id": "pages/module-minifier.imoduleminifierfunction"
         },
         {
           "type": "category",
@@ -7612,22 +7509,22 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions"
             },
             {
               "type": "doc",
               "label": "maxThreads",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.maxthreads"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.maxthreads"
             },
             {
               "type": "doc",
               "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.terseroptions"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.terseroptions"
             },
             {
               "type": "doc",
               "label": "verbose",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.verbose"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.verbose"
             }
           ]
         },
@@ -7638,63 +7535,53 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.localminifier"
+              "id": "pages/module-minifier.localminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.localminifier._constructor_"
+              "id": "pages/module-minifier.localminifier._constructor_"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.localminifier.connect"
+              "id": "pages/module-minifier.localminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.localminifier.minify"
+              "id": "pages/module-minifier.localminifier.minify"
             }
           ]
         },
         {
-          "type": "doc",
-          "label": "MODULE_WRAPPER_PREFIX",
-          "id": "pages/module-minifier-plugin.module_wrapper_prefix"
-        },
-        {
-          "type": "doc",
-          "label": "MODULE_WRAPPER_SUFFIX",
-          "id": "pages/module-minifier-plugin.module_wrapper_suffix"
-        },
-        {
           "type": "category",
-          "label": "ModuleMinifierPlugin",
+          "label": "MessagePortMinifier",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin"
+              "id": "pages/module-minifier.messageportminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin._constructor_"
+              "id": "pages/module-minifier.messageportminifier._constructor_"
             },
             {
               "type": "doc",
-              "label": "apply",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.apply"
+              "label": "connect",
+              "id": "pages/module-minifier.messageportminifier.connect"
             },
             {
               "type": "doc",
-              "label": "hooks",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.hooks"
+              "label": "minify",
+              "id": "pages/module-minifier.messageportminifier.minify"
             },
             {
               "type": "doc",
-              "label": "minifier",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.minifier"
+              "label": "port",
+              "id": "pages/module-minifier.messageportminifier.port"
             }
           ]
         },
@@ -7705,55 +7592,19 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.noopminifier"
+              "id": "pages/module-minifier.noopminifier"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.noopminifier.connect"
+              "id": "pages/module-minifier.noopminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.noopminifier.minify"
+              "id": "pages/module-minifier.noopminifier.minify"
             }
           ]
-        },
-        {
-          "type": "category",
-          "label": "PortableMinifierModuleIdsPlugin",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin"
-            },
-            {
-              "type": "doc",
-              "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin._constructor_"
-            },
-            {
-              "type": "doc",
-              "label": "apply",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin.apply"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "rehydrateAsset",
-          "id": "pages/module-minifier-plugin.rehydrateasset"
-        },
-        {
-          "type": "doc",
-          "label": "STAGE_AFTER",
-          "id": "pages/module-minifier-plugin.stage_after"
-        },
-        {
-          "type": "doc",
-          "label": "STAGE_BEFORE",
-          "id": "pages/module-minifier-plugin.stage_before"
         },
         {
           "type": "category",
@@ -7762,27 +7613,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.workerpoolminifier"
+              "id": "pages/module-minifier.workerpoolminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.workerpoolminifier._constructor_"
+              "id": "pages/module-minifier.workerpoolminifier._constructor_"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.connect"
+              "id": "pages/module-minifier.workerpoolminifier.connect"
             },
             {
               "type": "doc",
               "label": "maxThreads",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.maxthreads"
+              "id": "pages/module-minifier.workerpoolminifier.maxthreads"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.minify"
+              "id": "pages/module-minifier.workerpoolminifier.minify"
             }
           ]
         }
@@ -8197,6 +8048,62 @@
         },
         {
           "type": "category",
+          "label": "FileError",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.fileerror"
+            },
+            {
+              "type": "doc",
+              "label": "[Symbol.hasInstance]",
+              "id": "pages/node-core-library.fileerror._symbol.hasinstance_"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/node-core-library.fileerror._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "absolutePath",
+              "id": "pages/node-core-library.fileerror.absolutepath"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.fileerror.column"
+            },
+            {
+              "type": "doc",
+              "label": "getFormattedErrorMessage",
+              "id": "pages/node-core-library.fileerror.getformattederrormessage"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.fileerror.line"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolder",
+              "id": "pages/node-core-library.fileerror.projectfolder"
+            },
+            {
+              "type": "doc",
+              "label": "toString",
+              "id": "pages/node-core-library.fileerror.tostring"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "FileLocationStyle",
+          "id": "pages/node-core-library.filelocationstyle"
+        },
+        {
+          "type": "category",
           "label": "FileSystem",
           "items": [
             {
@@ -8378,6 +8285,11 @@
               "type": "doc",
               "label": "getStatisticsAsync",
               "id": "pages/node-core-library.filesystem.getstatisticsasync"
+            },
+            {
+              "type": "doc",
+              "label": "isDirectoryError",
+              "id": "pages/node-core-library.filesystem.isdirectoryerror"
             },
             {
               "type": "doc",
@@ -8737,6 +8649,53 @@
               "type": "doc",
               "label": "timeoutMs",
               "id": "pages/node-core-library.iexecutablespawnsyncoptions.timeoutms"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFileErrorFormattingOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ifileerrorformattingoptions"
+            },
+            {
+              "type": "doc",
+              "label": "format",
+              "id": "pages/node-core-library.ifileerrorformattingoptions.format"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFileErrorOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ifileerroroptions"
+            },
+            {
+              "type": "doc",
+              "label": "absolutePath",
+              "id": "pages/node-core-library.ifileerroroptions.absolutepath"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.ifileerroroptions.column"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.ifileerroroptions.line"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolder",
+              "id": "pages/node-core-library.ifileerroroptions.projectfolder"
             }
           ]
         },
@@ -9472,6 +9431,52 @@
               "type": "doc",
               "label": "pathToConvert",
               "id": "pages/node-core-library.ipathformatconciselyoptions.pathtoconvert"
+            },
+            {
+              "type": "doc",
+              "label": "trimLeadingDotSlash",
+              "id": "pages/node-core-library.ipathformatconciselyoptions.trimleadingdotslash"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPathFormatFileLocationOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions"
+            },
+            {
+              "type": "doc",
+              "label": "baseFolder",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.basefolder"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.column"
+            },
+            {
+              "type": "doc",
+              "label": "format",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.format"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.line"
+            },
+            {
+              "type": "doc",
+              "label": "message",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.message"
+            },
+            {
+              "type": "doc",
+              "label": "pathToFormat",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.pathtoformat"
             }
           ]
         },
@@ -9535,6 +9540,22 @@
               "type": "doc",
               "label": "toString",
               "id": "pages/node-core-library.istringbuilder.tostring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ISubprocessOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.isubprocessoptions"
+            },
+            {
+              "type": "doc",
+              "label": "detached",
+              "id": "pages/node-core-library.isubprocessoptions.detached"
             }
           ]
         },
@@ -10064,6 +10085,11 @@
             },
             {
               "type": "doc",
+              "label": "formatFileLocation",
+              "id": "pages/node-core-library.path.formatfilelocation"
+            },
+            {
+              "type": "doc",
               "label": "isDownwardRelative",
               "id": "pages/node-core-library.path.isdownwardrelative"
             },
@@ -10270,6 +10296,32 @@
               "type": "doc",
               "label": "toString",
               "id": "pages/node-core-library.stringbuilder.tostring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "SubprocessTerminator",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.subprocessterminator"
+            },
+            {
+              "type": "doc",
+              "label": "killProcessTree",
+              "id": "pages/node-core-library.subprocessterminator.killprocesstree"
+            },
+            {
+              "type": "doc",
+              "label": "killProcessTreeOnExit",
+              "id": "pages/node-core-library.subprocessterminator.killprocesstreeonexit"
+            },
+            {
+              "type": "doc",
+              "label": "RECOMMENDED_OPTIONS",
+              "id": "pages/node-core-library.subprocessterminator.recommended_options"
             }
           ]
         },
@@ -10649,6 +10701,43 @@
               "type": "doc",
               "label": "tryResolveConfigFilePathAsync",
               "id": "pages/rig-package.rigconfig.tryresolveconfigfilepathasync"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/rush-serve-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/rush-serve-plugin"
+        },
+        {
+          "type": "category",
+          "label": "RushServePlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-serve-plugin.rushserveplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/rush-serve-plugin.rushserveplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/rush-serve-plugin.rushserveplugin.apply"
+            },
+            {
+              "type": "doc",
+              "label": "pluginName",
+              "id": "pages/rush-serve-plugin.rushserveplugin.pluginname"
             }
           ]
         }
@@ -11762,6 +11851,16 @@
             },
             {
               "type": "doc",
+              "label": "parameterGroup",
+              "id": "pages/ts-command-line.commandlineparameter.parametergroup"
+            },
+            {
+              "type": "doc",
+              "label": "parameterScope",
+              "id": "pages/ts-command-line.commandlineparameter.parameterscope"
+            },
+            {
+              "type": "doc",
               "label": "reportInvalidData",
               "id": "pages/ts-command-line.commandlineparameter.reportinvaliddata"
             },
@@ -11769,6 +11868,11 @@
               "type": "doc",
               "label": "required",
               "id": "pages/ts-command-line.commandlineparameter.required"
+            },
+            {
+              "type": "doc",
+              "label": "scopedLongName",
+              "id": "pages/ts-command-line.commandlineparameter.scopedlongname"
             },
             {
               "type": "doc",
@@ -11898,6 +12002,11 @@
             },
             {
               "type": "doc",
+              "label": "parseScopedLongName",
+              "id": "pages/ts-command-line.commandlineparameterprovider.parsescopedlongname"
+            },
+            {
+              "type": "doc",
               "label": "remainder",
               "id": "pages/ts-command-line.commandlineparameterprovider.remainder"
             },
@@ -11905,6 +12014,11 @@
               "type": "doc",
               "label": "renderHelpText",
               "id": "pages/ts-command-line.commandlineparameterprovider.renderhelptext"
+            },
+            {
+              "type": "doc",
+              "label": "renderUsageText",
+              "id": "pages/ts-command-line.commandlineparameterprovider.renderusagetext"
             }
           ]
         },
@@ -12126,8 +12240,18 @@
             },
             {
               "type": "doc",
+              "label": "parameterGroup",
+              "id": "pages/ts-command-line.ibasecommandlinedefinition.parametergroup"
+            },
+            {
+              "type": "doc",
               "label": "parameterLongName",
               "id": "pages/ts-command-line.ibasecommandlinedefinition.parameterlongname"
+            },
+            {
+              "type": "doc",
+              "label": "parameterScope",
+              "id": "pages/ts-command-line.ibasecommandlinedefinition.parameterscope"
             },
             {
               "type": "doc",
@@ -12287,6 +12411,11 @@
             },
             {
               "type": "doc",
+              "label": "toolEpilog",
+              "id": "pages/ts-command-line.icommandlineparseroptions.toolepilog"
+            },
+            {
+              "type": "doc",
               "label": "toolFilename",
               "id": "pages/ts-command-line.icommandlineparseroptions.toolfilename"
             }
@@ -12328,6 +12457,73 @@
           "type": "doc",
           "label": "ICommandLineStringListDefinition",
           "id": "pages/ts-command-line.icommandlinestringlistdefinition"
+        },
+        {
+          "type": "category",
+          "label": "IScopedLongNameParseResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult"
+            },
+            {
+              "type": "doc",
+              "label": "longName",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult.longname"
+            },
+            {
+              "type": "doc",
+              "label": "scope",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult.scope"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ScopedCommandLineAction",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.scopedcommandlineaction"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/ts-command-line.scopedcommandlineaction._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefineparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineScopedParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefinescopedparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineUnscopedParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefineunscopedparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onExecute",
+              "id": "pages/ts-command-line.scopedcommandlineaction.onexecute"
+            },
+            {
+              "type": "doc",
+              "label": "parameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.parameters"
+            },
+            {
+              "type": "doc",
+              "label": "ScopingParameterGroup",
+              "id": "pages/ts-command-line.scopedcommandlineaction.scopingparametergroup"
+            }
+          ]
         }
       ]
     },
@@ -12400,6 +12596,42 @@
         },
         {
           "type": "category",
+          "label": "ITypingsGeneratorBaseOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions"
+            },
+            {
+              "type": "doc",
+              "label": "generatedTsFolder",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.generatedtsfolder"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.globstoignore"
+            },
+            {
+              "type": "doc",
+              "label": "secondaryGeneratedTsFolders",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.secondarygeneratedtsfolders"
+            },
+            {
+              "type": "doc",
+              "label": "srcFolder",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.srcfolder"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.terminal"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ITypingsGeneratorOptions",
           "items": [
             {
@@ -12419,33 +12651,13 @@
             },
             {
               "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
               "label": "getAdditionalOutputFiles",
               "id": "pages/typings-generator.itypingsgeneratoroptions.getadditionaloutputfiles"
             },
             {
               "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.globstoignore"
-            },
-            {
-              "type": "doc",
               "label": "parseAndGenerateTypings",
               "id": "pages/typings-generator.itypingsgeneratoroptions.parseandgeneratetypings"
-            },
-            {
-              "type": "doc",
-              "label": "srcFolder",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.srcfolder"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.terminal"
             }
           ]
         },
@@ -12507,6 +12719,1288 @@
           ]
         }
       ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/webpack-preserve-dynamic-require-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/webpack-preserve-dynamic-require-plugin"
+        },
+        {
+          "type": "category",
+          "label": "PreserveDynamicRequireWebpackPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack-preserve-dynamic-require-plugin.preservedynamicrequirewebpackplugin"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack-preserve-dynamic-require-plugin.preservedynamicrequirewebpackplugin.apply"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/webpack4-localization-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/webpack4-localization-plugin"
+        },
+        {
+          "type": "category",
+          "label": "IDefaultLocaleOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.idefaultlocaleoptions"
+            },
+            {
+              "type": "doc",
+              "label": "fillMissingTranslationStrings",
+              "id": "pages/webpack4-localization-plugin.idefaultlocaleoptions.fillmissingtranslationstrings"
+            },
+            {
+              "type": "doc",
+              "label": "localeName",
+              "id": "pages/webpack4-localization-plugin.idefaultlocaleoptions.localename"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleData",
+          "id": "pages/webpack4-localization-plugin.ilocaledata"
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleElementMap",
+          "id": "pages/webpack4-localization-plugin.ilocaleelementmap"
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleFileData",
+          "id": "pages/webpack4-localization-plugin.ilocalefiledata"
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationPluginOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions"
+            },
+            {
+              "type": "doc",
+              "label": "filesToIgnore",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.filestoignore"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.globstoignore"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.ignorestring"
+            },
+            {
+              "type": "doc",
+              "label": "localizationStats",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.localizationstats"
+            },
+            {
+              "type": "doc",
+              "label": "localizedData",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.localizeddata"
+            },
+            {
+              "type": "doc",
+              "label": "noStringsLocaleName",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.nostringslocalename"
+            },
+            {
+              "type": "doc",
+              "label": "typingsOptions",
+              "id": "pages/webpack4-localization-plugin.ilocalizationpluginoptions.typingsoptions"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStats",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstats"
+            },
+            {
+              "type": "doc",
+              "label": "entrypoints",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstats.entrypoints"
+            },
+            {
+              "type": "doc",
+              "label": "namedChunkGroups",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstats.namedchunkgroups"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsChunkGroup",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatschunkgroup"
+            },
+            {
+              "type": "doc",
+              "label": "localizedAssets",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatschunkgroup.localizedassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsEntrypoint",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatsentrypoint"
+            },
+            {
+              "type": "doc",
+              "label": "localizedAssets",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatsentrypoint.localizedassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatsoptions"
+            },
+            {
+              "type": "doc",
+              "label": "callback",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatsoptions.callback"
+            },
+            {
+              "type": "doc",
+              "label": "dropPath",
+              "id": "pages/webpack4-localization-plugin.ilocalizationstatsoptions.droppath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizedData",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata"
+            },
+            {
+              "type": "doc",
+              "label": "defaultLocale",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.defaultlocale"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreMissingResxComments",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.ignoremissingresxcomments"
+            },
+            {
+              "type": "doc",
+              "label": "normalizeResxNewlines",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.normalizeresxnewlines"
+            },
+            {
+              "type": "doc",
+              "label": "passthroughLocale",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.passthroughlocale"
+            },
+            {
+              "type": "doc",
+              "label": "pseudolocales",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.pseudolocales"
+            },
+            {
+              "type": "doc",
+              "label": "resolveMissingTranslatedStrings",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.resolvemissingtranslatedstrings"
+            },
+            {
+              "type": "doc",
+              "label": "translatedStrings",
+              "id": "pages/webpack4-localization-plugin.ilocalizeddata.translatedstrings"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ILocalizedStrings",
+          "id": "pages/webpack4-localization-plugin.ilocalizedstrings"
+        },
+        {
+          "type": "category",
+          "label": "ILocalizedWebpackChunk",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ilocalizedwebpackchunk"
+            },
+            {
+              "type": "doc",
+              "label": "localizedFiles",
+              "id": "pages/webpack4-localization-plugin.ilocalizedwebpackchunk.localizedfiles"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPassthroughLocaleOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.ipassthroughlocaleoptions"
+            },
+            {
+              "type": "doc",
+              "label": "passthroughLocaleName",
+              "id": "pages/webpack4-localization-plugin.ipassthroughlocaleoptions.passthroughlocalename"
+            },
+            {
+              "type": "doc",
+              "label": "usePassthroughLocale",
+              "id": "pages/webpack4-localization-plugin.ipassthroughlocaleoptions.usepassthroughlocale"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IPseudolocalesOptions",
+          "id": "pages/webpack4-localization-plugin.ipseudolocalesoptions"
+        },
+        {
+          "type": "doc",
+          "label": "IResolvedMissingTranslations",
+          "id": "pages/webpack4-localization-plugin.iresolvedmissingtranslations"
+        },
+        {
+          "type": "category",
+          "label": "ITypingsGenerationOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions"
+            },
+            {
+              "type": "doc",
+              "label": "exportAsDefault",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.exportasdefault"
+            },
+            {
+              "type": "doc",
+              "label": "generatedTsFolder",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.generatedtsfolder"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.ignorestring"
+            },
+            {
+              "type": "doc",
+              "label": "processComment",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.processcomment"
+            },
+            {
+              "type": "doc",
+              "label": "secondaryGeneratedTsFolders",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.secondarygeneratedtsfolders"
+            },
+            {
+              "type": "doc",
+              "label": "sourceRoot",
+              "id": "pages/webpack4-localization-plugin.itypingsgenerationoptions.sourceroot"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "LocalizationPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-localization-plugin.localizationplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/webpack4-localization-plugin.localizationplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack4-localization-plugin.localizationplugin.apply"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/webpack4-module-minifier-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/webpack4-module-minifier-plugin"
+        },
+        {
+          "type": "doc",
+          "label": "CHUNK_MODULES_TOKEN",
+          "id": "pages/webpack4-module-minifier-plugin.chunk_modules_token"
+        },
+        {
+          "type": "doc",
+          "label": "generateLicenseFileForAsset",
+          "id": "pages/webpack4-module-minifier-plugin.generatelicensefileforasset"
+        },
+        {
+          "type": "category",
+          "label": "IAssetInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo"
+            },
+            {
+              "type": "doc",
+              "label": "chunk",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo.chunk"
+            },
+            {
+              "type": "doc",
+              "label": "externalNames",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo.externalnames"
+            },
+            {
+              "type": "doc",
+              "label": "fileName",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo.filename"
+            },
+            {
+              "type": "doc",
+              "label": "modules",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo.modules"
+            },
+            {
+              "type": "doc",
+              "label": "source",
+              "id": "pages/webpack4-module-minifier-plugin.iassetinfo.source"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IAssetMap",
+          "id": "pages/webpack4-module-minifier-plugin.iassetmap"
+        },
+        {
+          "type": "category",
+          "label": "IDehydratedAssets",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.idehydratedassets"
+            },
+            {
+              "type": "doc",
+              "label": "assets",
+              "id": "pages/webpack4-module-minifier-plugin.idehydratedassets.assets"
+            },
+            {
+              "type": "doc",
+              "label": "modules",
+              "id": "pages/webpack4-module-minifier-plugin.idehydratedassets.modules"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IExtendedModule",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule"
+            },
+            {
+              "type": "doc",
+              "label": "external",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.external"
+            },
+            {
+              "type": "doc",
+              "label": "hasDependencies",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.hasdependencies"
+            },
+            {
+              "type": "doc",
+              "label": "id",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.id"
+            },
+            {
+              "type": "doc",
+              "label": "identifier",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.identifier"
+            },
+            {
+              "type": "doc",
+              "label": "modules",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.modules"
+            },
+            {
+              "type": "doc",
+              "label": "readableIdentifier",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.readableidentifier"
+            },
+            {
+              "type": "doc",
+              "label": "resource",
+              "id": "pages/webpack4-module-minifier-plugin.iextendedmodule.resource"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleinfo"
+            },
+            {
+              "type": "doc",
+              "label": "module",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleinfo.module"
+            },
+            {
+              "type": "doc",
+              "label": "source",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleinfo.source"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IModuleMap",
+          "id": "pages/webpack4-module-minifier-plugin.imodulemap"
+        },
+        {
+          "type": "category",
+          "label": "IModuleMinifierPluginHooks",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginhooks"
+            },
+            {
+              "type": "doc",
+              "label": "finalModuleId",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginhooks.finalmoduleid"
+            },
+            {
+              "type": "doc",
+              "label": "postProcessCodeFragment",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginhooks.postprocesscodefragment"
+            },
+            {
+              "type": "doc",
+              "label": "rehydrateAssets",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginhooks.rehydrateassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleMinifierPluginOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginoptions"
+            },
+            {
+              "type": "doc",
+              "label": "compressAsyncImports",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginoptions.compressasyncimports"
+            },
+            {
+              "type": "doc",
+              "label": "minifier",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginoptions.minifier"
+            },
+            {
+              "type": "doc",
+              "label": "sourceMap",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginoptions.sourcemap"
+            },
+            {
+              "type": "doc",
+              "label": "usePortableModules",
+              "id": "pages/webpack4-module-minifier-plugin.imoduleminifierpluginoptions.useportablemodules"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPostProcessFragmentContext",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.ipostprocessfragmentcontext"
+            },
+            {
+              "type": "doc",
+              "label": "compilation",
+              "id": "pages/webpack4-module-minifier-plugin.ipostprocessfragmentcontext.compilation"
+            },
+            {
+              "type": "doc",
+              "label": "loggingName",
+              "id": "pages/webpack4-module-minifier-plugin.ipostprocessfragmentcontext.loggingname"
+            },
+            {
+              "type": "doc",
+              "label": "module",
+              "id": "pages/webpack4-module-minifier-plugin.ipostprocessfragmentcontext.module"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "MODULE_WRAPPER_PREFIX",
+          "id": "pages/webpack4-module-minifier-plugin.module_wrapper_prefix"
+        },
+        {
+          "type": "doc",
+          "label": "MODULE_WRAPPER_SUFFIX",
+          "id": "pages/webpack4-module-minifier-plugin.module_wrapper_suffix"
+        },
+        {
+          "type": "category",
+          "label": "ModuleMinifierPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.moduleminifierplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/webpack4-module-minifier-plugin.moduleminifierplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack4-module-minifier-plugin.moduleminifierplugin.apply"
+            },
+            {
+              "type": "doc",
+              "label": "hooks",
+              "id": "pages/webpack4-module-minifier-plugin.moduleminifierplugin.hooks"
+            },
+            {
+              "type": "doc",
+              "label": "minifier",
+              "id": "pages/webpack4-module-minifier-plugin.moduleminifierplugin.minifier"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "PortableMinifierModuleIdsPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack4-module-minifier-plugin.portableminifiermoduleidsplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/webpack4-module-minifier-plugin.portableminifiermoduleidsplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack4-module-minifier-plugin.portableminifiermoduleidsplugin.apply"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "rehydrateAsset",
+          "id": "pages/webpack4-module-minifier-plugin.rehydrateasset"
+        },
+        {
+          "type": "doc",
+          "label": "STAGE_AFTER",
+          "id": "pages/webpack4-module-minifier-plugin.stage_after"
+        },
+        {
+          "type": "doc",
+          "label": "STAGE_BEFORE",
+          "id": "pages/webpack4-module-minifier-plugin.stage_before"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/webpack5-localization-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/webpack5-localization-plugin"
+        },
+        {
+          "type": "category",
+          "label": "_IStringPlaceholder",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder"
+            },
+            {
+              "type": "doc",
+              "label": "locFilePath",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder.locfilepath"
+            },
+            {
+              "type": "doc",
+              "label": "stringName",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder.stringname"
+            },
+            {
+              "type": "doc",
+              "label": "suffix",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder.suffix"
+            },
+            {
+              "type": "doc",
+              "label": "value",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder.value"
+            },
+            {
+              "type": "doc",
+              "label": "valuesByLocale",
+              "id": "pages/webpack5-localization-plugin._istringplaceholder.valuesbylocale"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IDefaultLocaleOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.idefaultlocaleoptions"
+            },
+            {
+              "type": "doc",
+              "label": "fillMissingTranslationStrings",
+              "id": "pages/webpack5-localization-plugin.idefaultlocaleoptions.fillmissingtranslationstrings"
+            },
+            {
+              "type": "doc",
+              "label": "localeName",
+              "id": "pages/webpack5-localization-plugin.idefaultlocaleoptions.localename"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleData",
+          "id": "pages/webpack5-localization-plugin.ilocaledata"
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleElementMap",
+          "id": "pages/webpack5-localization-plugin.ilocaleelementmap"
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleFileData",
+          "id": "pages/webpack5-localization-plugin.ilocalefiledata"
+        },
+        {
+          "type": "doc",
+          "label": "ILocaleFileObject",
+          "id": "pages/webpack5-localization-plugin.ilocalefileobject"
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationPluginOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions.globstoignore"
+            },
+            {
+              "type": "doc",
+              "label": "localizationStats",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions.localizationstats"
+            },
+            {
+              "type": "doc",
+              "label": "localizedData",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions.localizeddata"
+            },
+            {
+              "type": "doc",
+              "label": "noStringsLocaleName",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions.nostringslocalename"
+            },
+            {
+              "type": "doc",
+              "label": "runtimeLocaleExpression",
+              "id": "pages/webpack5-localization-plugin.ilocalizationpluginoptions.runtimelocaleexpression"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStats",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstats"
+            },
+            {
+              "type": "doc",
+              "label": "entrypoints",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstats.entrypoints"
+            },
+            {
+              "type": "doc",
+              "label": "namedChunkGroups",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstats.namedchunkgroups"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsChunkGroup",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatschunkgroup"
+            },
+            {
+              "type": "doc",
+              "label": "localizedAssets",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatschunkgroup.localizedassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsEntrypoint",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatsentrypoint"
+            },
+            {
+              "type": "doc",
+              "label": "localizedAssets",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatsentrypoint.localizedassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizationStatsOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatsoptions"
+            },
+            {
+              "type": "doc",
+              "label": "callback",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatsoptions.callback"
+            },
+            {
+              "type": "doc",
+              "label": "dropPath",
+              "id": "pages/webpack5-localization-plugin.ilocalizationstatsoptions.droppath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILocalizedData",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata"
+            },
+            {
+              "type": "doc",
+              "label": "defaultLocale",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata.defaultlocale"
+            },
+            {
+              "type": "doc",
+              "label": "passthroughLocale",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata.passthroughlocale"
+            },
+            {
+              "type": "doc",
+              "label": "pseudolocales",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata.pseudolocales"
+            },
+            {
+              "type": "doc",
+              "label": "resolveMissingTranslatedStrings",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata.resolvemissingtranslatedstrings"
+            },
+            {
+              "type": "doc",
+              "label": "translatedStrings",
+              "id": "pages/webpack5-localization-plugin.ilocalizeddata.translatedstrings"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ILocalizedStrings",
+          "id": "pages/webpack5-localization-plugin.ilocalizedstrings"
+        },
+        {
+          "type": "category",
+          "label": "ILocalizedWebpackChunk",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ilocalizedwebpackchunk"
+            },
+            {
+              "type": "doc",
+              "label": "localizedFiles",
+              "id": "pages/webpack5-localization-plugin.ilocalizedwebpackchunk.localizedfiles"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPassthroughLocaleOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.ipassthroughlocaleoptions"
+            },
+            {
+              "type": "doc",
+              "label": "passthroughLocaleName",
+              "id": "pages/webpack5-localization-plugin.ipassthroughlocaleoptions.passthroughlocalename"
+            },
+            {
+              "type": "doc",
+              "label": "usePassthroughLocale",
+              "id": "pages/webpack5-localization-plugin.ipassthroughlocaleoptions.usepassthroughlocale"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IPseudolocalesOptions",
+          "id": "pages/webpack5-localization-plugin.ipseudolocalesoptions"
+        },
+        {
+          "type": "doc",
+          "label": "IResolvedMissingTranslations",
+          "id": "pages/webpack5-localization-plugin.iresolvedmissingtranslations"
+        },
+        {
+          "type": "category",
+          "label": "LocalizationPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-localization-plugin.localizationplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/webpack5-localization-plugin.localizationplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "addDefaultLocFileAsync",
+              "id": "pages/webpack5-localization-plugin.localizationplugin.adddefaultlocfileasync"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack5-localization-plugin.localizationplugin.apply"
+            },
+            {
+              "type": "doc",
+              "label": "getPlaceholder",
+              "id": "pages/webpack5-localization-plugin.localizationplugin.getplaceholder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "@rushstack/webpack5-module-minifier-plugin",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/webpack5-module-minifier-plugin"
+        },
+        {
+          "type": "doc",
+          "label": "CHUNK_MODULE_REGEX",
+          "id": "pages/webpack5-module-minifier-plugin.chunk_module_regex"
+        },
+        {
+          "type": "doc",
+          "label": "CHUNK_MODULE_TOKEN",
+          "id": "pages/webpack5-module-minifier-plugin.chunk_module_token"
+        },
+        {
+          "type": "doc",
+          "label": "generateLicenseFileForAsset",
+          "id": "pages/webpack5-module-minifier-plugin.generatelicensefileforasset"
+        },
+        {
+          "type": "category",
+          "label": "IAssetInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.iassetinfo"
+            },
+            {
+              "type": "doc",
+              "label": "chunk",
+              "id": "pages/webpack5-module-minifier-plugin.iassetinfo.chunk"
+            },
+            {
+              "type": "doc",
+              "label": "fileName",
+              "id": "pages/webpack5-module-minifier-plugin.iassetinfo.filename"
+            },
+            {
+              "type": "doc",
+              "label": "source",
+              "id": "pages/webpack5-module-minifier-plugin.iassetinfo.source"
+            },
+            {
+              "type": "doc",
+              "label": "type",
+              "id": "pages/webpack5-module-minifier-plugin.iassetinfo.type"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IAssetMap",
+          "id": "pages/webpack5-module-minifier-plugin.iassetmap"
+        },
+        {
+          "type": "category",
+          "label": "IDehydratedAssets",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.idehydratedassets"
+            },
+            {
+              "type": "doc",
+              "label": "assets",
+              "id": "pages/webpack5-module-minifier-plugin.idehydratedassets.assets"
+            },
+            {
+              "type": "doc",
+              "label": "modules",
+              "id": "pages/webpack5-module-minifier-plugin.idehydratedassets.modules"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFactoryMeta",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.ifactorymeta"
+            },
+            {
+              "type": "doc",
+              "label": "comments",
+              "id": "pages/webpack5-module-minifier-plugin.ifactorymeta.comments"
+            },
+            {
+              "type": "doc",
+              "label": "skipMinification",
+              "id": "pages/webpack5-module-minifier-plugin.ifactorymeta.skipminification"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleinfo"
+            },
+            {
+              "type": "doc",
+              "label": "module",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleinfo.module"
+            },
+            {
+              "type": "doc",
+              "label": "source",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleinfo.source"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IModuleMap",
+          "id": "pages/webpack5-module-minifier-plugin.imodulemap"
+        },
+        {
+          "type": "category",
+          "label": "IModuleMinifierPluginHooks",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginhooks"
+            },
+            {
+              "type": "doc",
+              "label": "postProcessCodeFragment",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginhooks.postprocesscodefragment"
+            },
+            {
+              "type": "doc",
+              "label": "rehydrateAssets",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginhooks.rehydrateassets"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleMinifierPluginOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginoptions"
+            },
+            {
+              "type": "doc",
+              "label": "minifier",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginoptions.minifier"
+            },
+            {
+              "type": "doc",
+              "label": "sourceMap",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginoptions.sourcemap"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleMinifierPluginStats",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginstats"
+            },
+            {
+              "type": "doc",
+              "label": "metadataByModule",
+              "id": "pages/webpack5-module-minifier-plugin.imoduleminifierpluginstats.metadatabymodule"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IModuleStats",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.imodulestats"
+            },
+            {
+              "type": "doc",
+              "label": "hashByChunk",
+              "id": "pages/webpack5-module-minifier-plugin.imodulestats.hashbychunk"
+            },
+            {
+              "type": "doc",
+              "label": "sizeByHash",
+              "id": "pages/webpack5-module-minifier-plugin.imodulestats.sizebyhash"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPostProcessFragmentContext",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.ipostprocessfragmentcontext"
+            },
+            {
+              "type": "doc",
+              "label": "compilation",
+              "id": "pages/webpack5-module-minifier-plugin.ipostprocessfragmentcontext.compilation"
+            },
+            {
+              "type": "doc",
+              "label": "loggingName",
+              "id": "pages/webpack5-module-minifier-plugin.ipostprocessfragmentcontext.loggingname"
+            },
+            {
+              "type": "doc",
+              "label": "module",
+              "id": "pages/webpack5-module-minifier-plugin.ipostprocessfragmentcontext.module"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "MODULE_WRAPPER_PREFIX",
+          "id": "pages/webpack5-module-minifier-plugin.module_wrapper_prefix"
+        },
+        {
+          "type": "doc",
+          "label": "MODULE_WRAPPER_SUFFIX",
+          "id": "pages/webpack5-module-minifier-plugin.module_wrapper_suffix"
+        },
+        {
+          "type": "category",
+          "label": "ModuleMinifierPlugin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "apply",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin.apply"
+            },
+            {
+              "type": "doc",
+              "label": "getCompilationStatistics",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin.getcompilationstatistics"
+            },
+            {
+              "type": "doc",
+              "label": "hooks",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin.hooks"
+            },
+            {
+              "type": "doc",
+              "label": "minifier",
+              "id": "pages/webpack5-module-minifier-plugin.moduleminifierplugin.minifier"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "STAGE_AFTER",
+          "id": "pages/webpack5-module-minifier-plugin.stage_after"
+        },
+        {
+          "type": "doc",
+          "label": "STAGE_BEFORE",
+          "id": "pages/webpack5-module-minifier-plugin.stage_before"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "label": "@rushstack/worker-pool",
+      "id": "pages/worker-pool"
     }
   ]
 }

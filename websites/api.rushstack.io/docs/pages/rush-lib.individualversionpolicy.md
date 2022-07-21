@@ -27,9 +27,9 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                         | Modifiers | Type                | Description                            |
-| ---------------------------------------------------------------- | --------- | ------------------- | -------------------------------------- |
-| [lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md) |           | number \| undefined | The major version that has been locked |
+| Property                                                         | Modifiers             | Type                | Description                            |
+| ---------------------------------------------------------------- | --------------------- | ------------------- | -------------------------------------- |
+| [lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md) | <code>readonly</code> | number \| undefined | The major version that has been locked |
 
 ## Methods
 

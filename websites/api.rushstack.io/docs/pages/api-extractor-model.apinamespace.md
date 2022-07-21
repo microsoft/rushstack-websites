@@ -45,10 +45,10 @@ export namespace X {
 
 ## Properties
 
-| Property                                                           | Modifiers | Type                                                | Description |
-| ------------------------------------------------------------------ | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apinamespace.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apinamespace.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                           | Modifiers             | Type                                                | Description |
+| ------------------------------------------------------------------ | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apinamespace.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apinamespace.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

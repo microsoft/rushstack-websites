@@ -27,9 +27,9 @@ export declare class PackageJsonLookup
 
 ## Properties
 
-| Property                                                      | Modifiers           | Type                                                          | Description                                                                                                                                                                                          |
-| ------------------------------------------------------------- | ------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [instance](./node-core-library.packagejsonlookup.instance.md) | <code>static</code> | [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | A singleton instance of <code>PackageJsonLookup</code>, which is useful for short-lived processes that can reasonably assume that the file system will not be modified after the cache is populated. |
+| Property                                                      | Modifiers                                              | Type                                                          | Description                                                                                                                                                                                          |
+| ------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [instance](./node-core-library.packagejsonlookup.instance.md) | <p><code>readonly</code></p><p><code>static</code></p> | [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | A singleton instance of <code>PackageJsonLookup</code>, which is useful for short-lived processes that can reasonably assume that the file system will not be modified after the cache is populated. |
 
 ## Methods
 

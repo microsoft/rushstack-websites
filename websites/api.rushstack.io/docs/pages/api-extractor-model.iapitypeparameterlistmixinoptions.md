@@ -23,6 +23,6 @@ export interface IApiTypeParameterListMixinOptions extends IApiItemOptions
 
 ## Properties
 
-| Property                                                                                    | Type                                                                               | Description |
-| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------- |
-| [typeParameters](./api-extractor-model.iapitypeparameterlistmixinoptions.typeparameters.md) | [IApiTypeParameterOptions](./api-extractor-model.iapitypeparameteroptions.md) \[\] |             |
+| Property                                                                                    | Modifiers | Type                                                                               | Description |
+| ------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------- | ----------- |
+| [typeParameters](./api-extractor-model.iapitypeparameterlistmixinoptions.typeparameters.md) |           | [IApiTypeParameterOptions](./api-extractor-model.iapitypeparameteroptions.md) \[\] |             |

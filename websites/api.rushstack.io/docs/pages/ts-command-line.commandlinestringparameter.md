@@ -27,11 +27,11 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                     | Modifiers | Type                                                                      | Description                                                                              |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [defaultValue](./ts-command-line.commandlinestringparameter.defaultvalue.md) |           | string \| undefined                                                       | The default value which will be used if the parameter is omitted from the command line.  |
-| [kind](./ts-command-line.commandlinestringparameter.kind.md)                 |           | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                         |
-| [value](./ts-command-line.commandlinestringparameter.value.md)               |           | string \| undefined                                                       | Returns the argument value for a string parameter that was parsed from the command line. |
+| Property                                                                     | Modifiers             | Type                                                                      | Description                                                                              |
+| ---------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [defaultValue](./ts-command-line.commandlinestringparameter.defaultvalue.md) | <code>readonly</code> | string \| undefined                                                       | The default value which will be used if the parameter is omitted from the command line.  |
+| [kind](./ts-command-line.commandlinestringparameter.kind.md)                 | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                         |
+| [value](./ts-command-line.commandlinestringparameter.value.md)               | <code>readonly</code> | string \| undefined                                                       | Returns the argument value for a string parameter that was parsed from the command line. |
 
 ## Methods
 

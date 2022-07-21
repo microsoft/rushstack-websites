@@ -19,4 +19,4 @@ This abstraction is used by the mixin pattern. It describes a class type that in
 export interface IApiItemConstructor extends Constructor<ApiItem>, PropertiesOf<typeof ApiItem>
 ```
 
-<b>Extends:</b> [Constructor](./api-extractor-model.constructor.md) &lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;, [PropertiesOf](./api-extractor-model.propertiesof.md) &lt;typeof [ApiItem](./api-extractor-model.apiitem.md) &gt;
+<b>Extends:</b> [Constructor](./api-extractor-model.constructor.md) &lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;, [PropertiesOf](./api-extractor-model.propertiesof.md) &lt;typeof [ApiItem](./api-extractor-model.apiitem.md)

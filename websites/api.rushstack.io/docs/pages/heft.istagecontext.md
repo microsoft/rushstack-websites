@@ -19,7 +19,7 @@ export interface IStageContext<TStageHooks extends StageHooksBase<TStageProperti
 
 ## Properties
 
-| Property                                         | Type             | Description |
-| ------------------------------------------------ | ---------------- | ----------- |
-| [hooks](./heft.istagecontext.hooks.md)           | TStageHooks      |             |
-| [properties](./heft.istagecontext.properties.md) | TStageProperties |             |
+| Property                                         | Modifiers | Type             | Description |
+| ------------------------------------------------ | --------- | ---------------- | ----------- |
+| [hooks](./heft.istagecontext.hooks.md)           |           | TStageHooks      |             |
+| [properties](./heft.istagecontext.properties.md) |           | TStageProperties |             |

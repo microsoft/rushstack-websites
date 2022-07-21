@@ -51,10 +51,10 @@ let chooser: IChooser = chooseFirst;
 
 ## Properties
 
-| Property                                                               | Modifiers | Type                                                | Description |
-| ---------------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apicallsignature.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apicallsignature.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                               | Modifiers             | Type                                                | Description |
+| ---------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apicallsignature.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apicallsignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

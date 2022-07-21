@@ -16,14 +16,15 @@ Returns the CommandLineIntegerParameter with the specified long name.
 <b>Signature:</b>
 
 ```typescript
-getIntegerParameter(parameterLongName: string): CommandLineIntegerParameter;
+getIntegerParameter(parameterLongName: string, parameterScope?: string): CommandLineIntegerParameter;
 ```
 
 ## Parameters
 
-| Parameter         | Type   | Description |
-| ----------------- | ------ | ----------- |
-| parameterLongName | string |             |
+| Parameter         | Type   | Description       |
+| ----------------- | ------ | ----------------- |
+| parameterLongName | string |                   |
+| parameterScope    | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

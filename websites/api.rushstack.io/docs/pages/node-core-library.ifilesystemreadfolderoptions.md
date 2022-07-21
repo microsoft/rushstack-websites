@@ -21,6 +21,6 @@ export interface IFileSystemReadFolderOptions
 
 ## Properties
 
-| Property                                                                            | Type    | Description                                                                       |
-| ----------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------- |
-| [absolutePaths?](./node-core-library.ifilesystemreadfolderoptions.absolutepaths.md) | boolean | <i>(Optional)</i> If true, returns the absolute paths of the files in the folder. |
+| Property                                                                            | Modifiers | Type    | Description                                                                       |
+| ----------------------------------------------------------------------------------- | --------- | ------- | --------------------------------------------------------------------------------- |
+| [absolutePaths?](./node-core-library.ifilesystemreadfolderoptions.absolutepaths.md) |           | boolean | <i>(Optional)</i> If true, returns the absolute paths of the files in the folder. |

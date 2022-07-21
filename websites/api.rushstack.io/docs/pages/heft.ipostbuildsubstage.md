@@ -17,4 +17,4 @@ pagination_next: null
 export interface IPostBuildSubstage extends IBuildSubstage<BuildSubstageHooksBase, {}>
 ```
 
-<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md) , {}&gt;
+<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)

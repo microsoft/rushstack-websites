@@ -21,6 +21,6 @@ export interface IExtractorMessageProperties
 
 ## Properties
 
-| Property                                                                 | Type   | Description                                                                                                                                                                                       |
-| ------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [exportName?](./api-extractor.iextractormessageproperties.exportname.md) | string | <i>(Optional)</i> A declaration can have multiple names if it is exported more than once. If an <code>ExtractorMessage</code> applies to a specific export name, this property can indicate that. |
+| Property                                                                 | Modifiers             | Type   | Description                                                                                                                                                                                       |
+| ------------------------------------------------------------------------ | --------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [exportName?](./api-extractor.iextractormessageproperties.exportname.md) | <code>readonly</code> | string | <i>(Optional)</i> A declaration can have multiple names if it is exported more than once. If an <code>ExtractorMessage</code> applies to a specific export name, this property can indicate that. |

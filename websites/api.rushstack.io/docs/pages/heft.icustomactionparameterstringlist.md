@@ -19,10 +19,10 @@ pagination_next: null
 export interface ICustomActionParameterStringList extends ICustomActionParameterBase<ReadonlyArray<string>>
 ```
 
-<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) &lt;ReadonlyArray&lt;string&gt;&gt;
+<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) &lt;ReadonlyArray
 
 ## Properties
 
-| Property                                                | Type         | Description          |
-| ------------------------------------------------------- | ------------ | -------------------- |
-| [kind](./heft.icustomactionparameterstringlist.kind.md) | 'stringList' | <b><i>(BETA)</i></b> |
+| Property                                                | Modifiers | Type         | Description          |
+| ------------------------------------------------------- | --------- | ------------ | -------------------- |
+| [kind](./heft.icustomactionparameterstringlist.kind.md) |           | 'stringList' | <b><i>(BETA)</i></b> |

@@ -21,7 +21,8 @@ export interface IPathFormatConciselyOptions
 
 ## Properties
 
-| Property                                                                          | Type   | Description                                                                         |
-| --------------------------------------------------------------------------------- | ------ | ----------------------------------------------------------------------------------- |
-| [baseFolder](./node-core-library.ipathformatconciselyoptions.basefolder.md)       | string | The base path to use when converting <code>pathToConvert</code> to a relative path. |
-| [pathToConvert](./node-core-library.ipathformatconciselyoptions.pathtoconvert.md) | string | The path to be converted.                                                           |
+| Property                                                                                       | Modifiers | Type    | Description                                                                                                       |
+| ---------------------------------------------------------------------------------------------- | --------- | ------- | ----------------------------------------------------------------------------------------------------------------- |
+| [baseFolder](./node-core-library.ipathformatconciselyoptions.basefolder.md)                    |           | string  | The base path to use when converting <code>pathToConvert</code> to a relative path.                               |
+| [pathToConvert](./node-core-library.ipathformatconciselyoptions.pathtoconvert.md)              |           | string  | The path to be converted.                                                                                         |
+| [trimLeadingDotSlash?](./node-core-library.ipathformatconciselyoptions.trimleadingdotslash.md) |           | boolean | <i>(Optional)</i> If set to true, don't include the leading <code>./</code> if the path is under the base folder. |

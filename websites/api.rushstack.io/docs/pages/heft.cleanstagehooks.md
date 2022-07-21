@@ -17,10 +17,10 @@ pagination_next: null
 export declare class CleanStageHooks extends StageHooksBase<ICleanStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ICleanStageProperties](./heft.icleanstageproperties.md) &gt;
+<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ICleanStageProperties](./heft.icleanstageproperties.md)
 
 ## Properties
 
-| Property                             | Modifiers | Type              | Description |
-| ------------------------------------ | --------- | ----------------- | ----------- |
-| [run](./heft.cleanstagehooks.run.md) |           | AsyncParallelHook |             |
+| Property                             | Modifiers             | Type              | Description |
+| ------------------------------------ | --------------------- | ----------------- | ----------- |
+| [run](./heft.cleanstagehooks.run.md) | <code>readonly</code> | AsyncParallelHook |             |

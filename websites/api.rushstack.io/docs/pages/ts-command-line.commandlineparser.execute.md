@@ -21,9 +21,9 @@ execute(args?: string[]): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                             |
-| --------- | ---------- | --------------------------------------------------------------------------------------- |
-| args      | string\[\] | the command-line arguments to be parsed; if omitted, then the process.argv will be used |
+| Parameter | Type       | Description                                                                                               |
+| --------- | ---------- | --------------------------------------------------------------------------------------------------------- |
+| args      | string\[\] | <i>(Optional)</i> the command-line arguments to be parsed; if omitted, then the process.argv will be used |
 
 <b>Returns:</b>
 

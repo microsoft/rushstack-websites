@@ -11,6 +11,8 @@ pagination_next: null
 
 ## ApiItem.getSortKey() method
 
+A text string whose value determines the sort order that is automatically applied by the [ApiItemContainerMixin](./api-extractor-model.apiitemcontainermixin.md) class.
+
 <b>Signature:</b>
 
 ```typescript
@@ -21,3 +23,7 @@ getSortKey(): string;
 <b>Returns:</b>
 
 string
+
+## Remarks
+
+The value of this string is undocumented and may change at any time. If [ApiItemContainerMixin.preserveMemberOrder](./api-extractor-model.apiitemcontainermixin.preservememberorder.md) is enabled for the `ApiItem` 's parent, then no sorting is performed, and this key is not used.

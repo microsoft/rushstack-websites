@@ -25,6 +25,6 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                              | Modifiers | Type                                                                | Description                                             |
-| --------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| [configuration](./rush-lib.experimentsconfiguration.configuration.md) |           | Readonly&lt;[IExperimentsJson](./rush-lib.iexperimentsjson.md) &gt; | <b><i>(BETA)</i></b> Get the experiments configuration. |
+| Property                                                              | Modifiers             | Type                                                                | Description                                             |
+| --------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
+| [configuration](./rush-lib.experimentsconfiguration.configuration.md) | <code>readonly</code> | Readonly&lt;[IExperimentsJson](./rush-lib.iexperimentsjson.md) &gt; | <b><i>(BETA)</i></b> Get the experiments configuration. |

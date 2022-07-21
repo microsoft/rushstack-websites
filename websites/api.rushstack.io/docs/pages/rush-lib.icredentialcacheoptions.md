@@ -21,6 +21,6 @@ export interface ICredentialCacheOptions
 
 ## Properties
 
-| Property                                                               | Type    | Description          |
-| ---------------------------------------------------------------------- | ------- | -------------------- |
-| [supportEditing](./rush-lib.icredentialcacheoptions.supportediting.md) | boolean | <b><i>(BETA)</i></b> |
+| Property                                                               | Modifiers | Type    | Description          |
+| ---------------------------------------------------------------------- | --------- | ------- | -------------------- |
+| [supportEditing](./rush-lib.icredentialcacheoptions.supportediting.md) |           | boolean | <b><i>(BETA)</i></b> |

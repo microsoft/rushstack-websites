@@ -19,6 +19,6 @@ export interface ITestStageProperties
 
 ## Properties
 
-| Property                                              | Type    | Description |
-| ----------------------------------------------------- | ------- | ----------- |
-| [watchMode](./heft.iteststageproperties.watchmode.md) | boolean |             |
+| Property                                              | Modifiers | Type    | Description |
+| ----------------------------------------------------- | --------- | ------- | ----------- |
+| [watchMode](./heft.iteststageproperties.watchmode.md) |           | boolean |             |

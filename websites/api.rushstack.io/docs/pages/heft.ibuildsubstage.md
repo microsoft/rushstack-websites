@@ -19,7 +19,7 @@ export interface IBuildSubstage<TBuildSubstageHooks extends BuildSubstageHooksBa
 
 ## Properties
 
-| Property                                          | Type                     | Description |
-| ------------------------------------------------- | ------------------------ | ----------- |
-| [hooks](./heft.ibuildsubstage.hooks.md)           | TBuildSubstageHooks      |             |
-| [properties](./heft.ibuildsubstage.properties.md) | TBuildSubstageProperties |             |
+| Property                                          | Modifiers | Type                     | Description |
+| ------------------------------------------------- | --------- | ------------------------ | ----------- |
+| [hooks](./heft.ibuildsubstage.hooks.md)           |           | TBuildSubstageHooks      |             |
+| [properties](./heft.ibuildsubstage.properties.md) |           | TBuildSubstageProperties |             |

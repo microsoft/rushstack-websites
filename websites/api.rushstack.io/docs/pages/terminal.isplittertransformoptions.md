@@ -23,6 +23,6 @@ export interface ISplitterTransformOptions extends ITerminalWritableOptions
 
 ## Properties
 
-| Property                                                             | Type                                                    | Description                                                       |
-| -------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------- |
-| [destinations](./terminal.isplittertransformoptions.destinations.md) | [TerminalWritable](./terminal.terminalwritable.md) \[\] | Each input chunk will be passed to each destination in the array. |
+| Property                                                             | Modifiers | Type                                                    | Description                                                       |
+| -------------------------------------------------------------------- | --------- | ------------------------------------------------------- | ----------------------------------------------------------------- |
+| [destinations](./terminal.isplittertransformoptions.destinations.md) |           | [TerminalWritable](./terminal.terminalwritable.md) \[\] | Each input chunk will be passed to each destination in the array. |

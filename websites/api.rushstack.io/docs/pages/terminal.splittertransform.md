@@ -33,13 +33,13 @@ Splitting streams complicates the pipeline topology and can make debugging more 
 
 ## Properties
 
-| Property                                                     | Modifiers | Type                                                                     | Description |
-| ------------------------------------------------------------ | --------- | ------------------------------------------------------------------------ | ----------- |
-| [destinations](./terminal.splittertransform.destinations.md) |           | ReadonlyArray&lt;[TerminalWritable](./terminal.terminalwritable.md) &gt; |             |
+| Property                                                     | Modifiers             | Type                                                                     | Description |
+| ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------------------ | ----------- |
+| [destinations](./terminal.splittertransform.destinations.md) | <code>readonly</code> | ReadonlyArray&lt;[TerminalWritable](./terminal.terminalwritable.md) &gt; |             |
 
 ## Methods
 
-| Method                                                              | Modifiers | Description |
-| ------------------------------------------------------------------- | --------- | ----------- |
-| [onClose()](./terminal.splittertransform.onclose.md)                |           |             |
-| [onWriteChunk(chunk)](./terminal.splittertransform.onwritechunk.md) |           |             |
+| Method                                                              | Modifiers              | Description |
+| ------------------------------------------------------------------- | ---------------------- | ----------- |
+| [onClose()](./terminal.splittertransform.onclose.md)                | <code>protected</code> |             |
+| [onWriteChunk(chunk)](./terminal.splittertransform.onwritechunk.md) | <code>protected</code> |             |

@@ -25,11 +25,11 @@ export declare class PackageJsonDependency
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                                           | Description |
-| -------------------------------------------------------------------- | --------- | ---------------------------------------------- | ----------- |
-| [dependencyType](./rush-lib.packagejsondependency.dependencytype.md) |           | [DependencyType](./rush-lib.dependencytype.md) |             |
-| [name](./rush-lib.packagejsondependency.name.md)                     |           | string                                         |             |
-| [version](./rush-lib.packagejsondependency.version.md)               |           | string                                         |             |
+| Property                                                             | Modifiers             | Type                                           | Description |
+| -------------------------------------------------------------------- | --------------------- | ---------------------------------------------- | ----------- |
+| [dependencyType](./rush-lib.packagejsondependency.dependencytype.md) | <code>readonly</code> | [DependencyType](./rush-lib.dependencytype.md) |             |
+| [name](./rush-lib.packagejsondependency.name.md)                     | <code>readonly</code> | string                                         |             |
+| [version](./rush-lib.packagejsondependency.version.md)               | <code>readonly</code> | string                                         |             |
 
 ## Methods
 

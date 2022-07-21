@@ -21,8 +21,8 @@ constructor(kind: ExcerptTokenKind, text: string, canonicalReference?: Declarati
 
 ## Parameters
 
-| Parameter          | Type                                                          | Description |
-| ------------------ | ------------------------------------------------------------- | ----------- |
-| kind               | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) |             |
-| text               | string                                                        |             |
-| canonicalReference | DeclarationReference                                          |             |
+| Parameter          | Type                                                          | Description       |
+| ------------------ | ------------------------------------------------------------- | ----------------- |
+| kind               | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) |                   |
+| text               | string                                                        |                   |
+| canonicalReference | DeclarationReference                                          | <i>(Optional)</i> |

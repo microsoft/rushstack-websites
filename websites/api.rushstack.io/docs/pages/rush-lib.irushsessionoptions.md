@@ -21,7 +21,7 @@ export interface IRushSessionOptions
 
 ## Properties
 
-| Property                                                               | Type                                                          | Description          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------- |
-| [getIsDebugMode](./rush-lib.irushsessionoptions.getisdebugmode.md)     | () =&gt; boolean                                              | <b><i>(BETA)</i></b> |
-| [terminalProvider](./rush-lib.irushsessionoptions.terminalprovider.md) | [ITerminalProvider](./node-core-library.iterminalprovider.md) | <b><i>(BETA)</i></b> |
+| Property                                                               | Modifiers | Type                                                          | Description          |
+| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------- | -------------------- |
+| [getIsDebugMode](./rush-lib.irushsessionoptions.getisdebugmode.md)     |           | () =&gt; boolean                                              | <b><i>(BETA)</i></b> |
+| [terminalProvider](./rush-lib.irushsessionoptions.terminalprovider.md) |           | [ITerminalProvider](./node-core-library.iterminalprovider.md) | <b><i>(BETA)</i></b> |

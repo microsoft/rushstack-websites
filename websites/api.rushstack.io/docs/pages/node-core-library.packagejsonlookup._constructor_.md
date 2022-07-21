@@ -21,6 +21,6 @@ constructor(parameters?: IPackageJsonLookupParameters);
 
 ## Parameters
 
-| Parameter  | Type                                                                                | Description |
-| ---------- | ----------------------------------------------------------------------------------- | ----------- |
-| parameters | [IPackageJsonLookupParameters](./node-core-library.ipackagejsonlookupparameters.md) |             |
+| Parameter  | Type                                                                                | Description       |
+| ---------- | ----------------------------------------------------------------------------------- | ----------------- |
+| parameters | [IPackageJsonLookupParameters](./node-core-library.ipackagejsonlookupparameters.md) | <i>(Optional)</i> |

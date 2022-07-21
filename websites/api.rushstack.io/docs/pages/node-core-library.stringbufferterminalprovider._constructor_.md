@@ -23,6 +23,6 @@ constructor(supportsColor?: boolean);
 
 ## Parameters
 
-| Parameter     | Type    | Description |
-| ------------- | ------- | ----------- |
-| supportsColor | boolean |             |
+| Parameter     | Type    | Description       |
+| ------------- | ------- | ----------------- |
+| supportsColor | boolean | <i>(Optional)</i> |

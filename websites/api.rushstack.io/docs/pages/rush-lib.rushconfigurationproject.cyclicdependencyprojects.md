@@ -11,6 +11,10 @@ pagination_next: null
 
 ## RushConfigurationProject.cyclicDependencyProjects property
 
+> Warning: This API is now obsolete.
+>
+> Use `decoupledLocalDependencies` instead, as it better describes the purpose of the data.
+
 A list of local projects that appear as devDependencies for this project, but cannot be locally linked because it would create a cyclic dependency; instead, the last published version will be installed in the Common folder.
 
 These are package names that would be found by RushConfiguration.getProjectByName().

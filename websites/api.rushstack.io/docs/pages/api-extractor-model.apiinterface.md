@@ -39,11 +39,11 @@ export interface X extends Y {}
 
 ## Properties
 
-| Property                                                           | Modifiers | Type                                                                        | Description                                                                                           |
-| ------------------------------------------------------------------ | --------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [containerKey](./api-extractor-model.apiinterface.containerkey.md) |           | string                                                                      |                                                                                                       |
-| [extendsTypes](./api-extractor-model.apiinterface.extendstypes.md) |           | ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md) &gt; | The list of base interfaces that this interface inherits from using the <code>extends</code> keyword. |
-| [kind](./api-extractor-model.apiinterface.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md)                         |                                                                                                       |
+| Property                                                           | Modifiers             | Type                                                                        | Description                                                                                           |
+| ------------------------------------------------------------------ | --------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [containerKey](./api-extractor-model.apiinterface.containerkey.md) | <code>readonly</code> | string                                                                      |                                                                                                       |
+| [extendsTypes](./api-extractor-model.apiinterface.extendstypes.md) | <code>readonly</code> | ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md) &gt; | The list of base interfaces that this interface inherits from using the <code>extends</code> keyword. |
+| [kind](./api-extractor-model.apiinterface.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md)                         |                                                                                                       |
 
 ## Methods
 

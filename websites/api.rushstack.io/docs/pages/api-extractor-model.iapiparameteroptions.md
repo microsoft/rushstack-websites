@@ -21,8 +21,8 @@ export interface IApiParameterOptions
 
 ## Properties
 
-| Property                                                                                         | Type                                                              | Description |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------- |
-| [isOptional](./api-extractor-model.iapiparameteroptions.isoptional.md)                           | boolean                                                           |             |
-| [parameterName](./api-extractor-model.iapiparameteroptions.parametername.md)                     | string                                                            |             |
-| [parameterTypeTokenRange](./api-extractor-model.iapiparameteroptions.parametertypetokenrange.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| Property                                                                                         | Modifiers | Type                                                              | Description |
+| ------------------------------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------- | ----------- |
+| [isOptional](./api-extractor-model.iapiparameteroptions.isoptional.md)                           |           | boolean                                                           |             |
+| [parameterName](./api-extractor-model.iapiparameteroptions.parametername.md)                     |           | string                                                            |             |
+| [parameterTypeTokenRange](./api-extractor-model.iapiparameteroptions.parametertypetokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |

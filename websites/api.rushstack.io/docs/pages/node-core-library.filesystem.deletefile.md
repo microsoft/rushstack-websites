@@ -21,10 +21,10 @@ static deleteFile(filePath: string, options?: IFileSystemDeleteFileOptions): voi
 
 ## Parameters
 
-| Parameter | Type                                                                                | Description                                                                           |
-| --------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| filePath  | string                                                                              | The absolute or relative path to the file that should be deleted.                     |
-| options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | Optional settings that can change the behavior. Type: <code>IDeleteFileOptions</code> |
+| Parameter | Type                                                                                | Description                                                                                             |
+| --------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| filePath  | string                                                                              | The absolute or relative path to the file that should be deleted.                                       |
+| options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IDeleteFileOptions</code> |
 
 <b>Returns:</b>
 

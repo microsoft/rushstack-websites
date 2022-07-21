@@ -27,10 +27,10 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                     | Modifiers | Type                                                                      | Description                                                                          |
-| ------------------------------------------------------------ | --------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [kind](./ts-command-line.commandlineflagparameter.kind.md)   |           | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                     |
-| [value](./ts-command-line.commandlineflagparameter.value.md) |           | boolean                                                                   | Returns a boolean indicating whether the parameter was included in the command line. |
+| Property                                                     | Modifiers             | Type                                                                      | Description                                                                          |
+| ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [kind](./ts-command-line.commandlineflagparameter.kind.md)   | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                     |
+| [value](./ts-command-line.commandlineflagparameter.value.md) | <code>readonly</code> | boolean                                                                   | Returns a boolean indicating whether the parameter was included in the command line. |
 
 ## Methods
 

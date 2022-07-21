@@ -33,13 +33,13 @@ The `TextRewriter` operations are applied separately to the `stderr` and `stdout
 
 ## Properties
 
-| Property                                                           | Modifiers | Type                                                             | Description |
-| ------------------------------------------------------------------ | --------- | ---------------------------------------------------------------- | ----------- |
-| [textRewriters](./terminal.textrewritertransform.textrewriters.md) |           | ReadonlyArray&lt;[TextRewriter](./terminal.textrewriter.md) &gt; |             |
+| Property                                                           | Modifiers             | Type                                                             | Description |
+| ------------------------------------------------------------------ | --------------------- | ---------------------------------------------------------------- | ----------- |
+| [textRewriters](./terminal.textrewritertransform.textrewriters.md) | <code>readonly</code> | ReadonlyArray&lt;[TextRewriter](./terminal.textrewriter.md) &gt; |             |
 
 ## Methods
 
-| Method                                                                  | Modifiers | Description |
-| ----------------------------------------------------------------------- | --------- | ----------- |
-| [onClose()](./terminal.textrewritertransform.onclose.md)                |           |             |
-| [onWriteChunk(chunk)](./terminal.textrewritertransform.onwritechunk.md) |           |             |
+| Method                                                                  | Modifiers              | Description |
+| ----------------------------------------------------------------------- | ---------------------- | ----------- |
+| [onClose()](./terminal.textrewritertransform.onclose.md)                | <code>protected</code> |             |
+| [onWriteChunk(chunk)](./terminal.textrewritertransform.onwritechunk.md) | <code>protected</code> |             |

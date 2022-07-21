@@ -31,15 +31,15 @@ export declare abstract class CommandLineAction extends CommandLineParameterProv
 
 ## Properties
 
-| Property                                                              | Modifiers | Type   | Description                                                                                                                                               |
-| --------------------------------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [actionName](./ts-command-line.commandlineaction.actionname.md)       |           | string | The name of the action. For example, if the tool is called "example", then the "build" action might be invoked as: "example build -q --some-other-option" |
-| [documentation](./ts-command-line.commandlineaction.documentation.md) |           | string | A detailed description that is shown on the action help page, which is displayed by the command "example build --help", e.g. for actionName="build".      |
-| [summary](./ts-command-line.commandlineaction.summary.md)             |           | string | A quick summary that is shown on the main help page, which is displayed by the command "example --help"                                                   |
+| Property                                                              | Modifiers             | Type   | Description                                                                                                                                               |
+| --------------------------------------------------------------------- | --------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [actionName](./ts-command-line.commandlineaction.actionname.md)       | <code>readonly</code> | string | The name of the action. For example, if the tool is called "example", then the "build" action might be invoked as: "example build -q --some-other-option" |
+| [documentation](./ts-command-line.commandlineaction.documentation.md) | <code>readonly</code> | string | A detailed description that is shown on the action help page, which is displayed by the command "example build --help", e.g. for actionName="build".      |
+| [summary](./ts-command-line.commandlineaction.summary.md)             | <code>readonly</code> | string | A quick summary that is shown on the main help page, which is displayed by the command "example --help"                                                   |
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description                                                                                                              |
-| --------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [onDefineParameters()](./ts-command-line.commandlineaction.ondefineparameters.md) |           | The child class should implement this hook to define its command-line parameters, e.g. by calling defineFlagParameter(). |
-| [onExecute()](./ts-command-line.commandlineaction.onexecute.md)                   |           | Your subclass should implement this hook to perform the operation.                                                       |
+| Method                                                                            | Modifiers              | Description                                                                                                              |
+| --------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [onDefineParameters()](./ts-command-line.commandlineaction.ondefineparameters.md) | <code>protected</code> | The child class should implement this hook to define its command-line parameters, e.g. by calling defineFlagParameter(). |
+| [onExecute()](./ts-command-line.commandlineaction.onexecute.md)                   | <code>protected</code> | Your subclass should implement this hook to perform the operation.                                                       |

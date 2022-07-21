@@ -23,7 +23,7 @@ export interface ICommandLineChoiceListDefinition extends IBaseCommandLineDefini
 
 ## Properties
 
-| Property                                                                           | Type                               | Description                                                                                       |
-| ---------------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [alternatives](./ts-command-line.icommandlinechoicelistdefinition.alternatives.md) | string\[\]                         | A list of strings (which contain no spaces), of possible options which can be selected            |
-| [completions?](./ts-command-line.icommandlinechoicelistdefinition.completions.md)  | () =&gt; Promise&lt;string\[\]&gt; | <i>(Optional)</i> An optional callback that provides a list of custom choices for tab completion. |
+| Property                                                                           | Modifiers | Type                               | Description                                                                                       |
+| ---------------------------------------------------------------------------------- | --------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [alternatives](./ts-command-line.icommandlinechoicelistdefinition.alternatives.md) |           | string\[\]                         | A list of strings (which contain no spaces), of possible options which can be selected            |
+| [completions?](./ts-command-line.icommandlinechoicelistdefinition.completions.md)  |           | () =&gt; Promise&lt;string\[\]&gt; | <i>(Optional)</i> An optional callback that provides a list of custom choices for tab completion. |

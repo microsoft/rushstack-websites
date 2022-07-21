@@ -19,15 +19,15 @@ export interface IBuildStageProperties
 
 ## Properties
 
-| Property                                                                          | Type                      | Description                            |
-| --------------------------------------------------------------------------------- | ------------------------- | -------------------------------------- |
-| [emitExtensionForTests?](./heft.ibuildstageproperties.emitextensionfortests.md)   | '.js' \| '.cjs' \| '.mjs' | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [emitFolderNameForTests?](./heft.ibuildstageproperties.emitfoldernamefortests.md) | string                    | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [isTypeScriptProject?](./heft.ibuildstageproperties.istypescriptproject.md)       | boolean                   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
-| [lite](./heft.ibuildstageproperties.lite.md)                                      | boolean                   |                                        |
-| [locale?](./heft.ibuildstageproperties.locale.md)                                 | string                    | <i>(Optional)</i>                      |
-| [maxOldSpaceSize?](./heft.ibuildstageproperties.maxoldspacesize.md)               | string                    | <i>(Optional)</i>                      |
-| [production](./heft.ibuildstageproperties.production.md)                          | boolean                   |                                        |
-| [serveMode](./heft.ibuildstageproperties.servemode.md)                            | boolean                   |                                        |
-| [watchMode](./heft.ibuildstageproperties.watchmode.md)                            | boolean                   |                                        |
-| [webpackStats?](./heft.ibuildstageproperties.webpackstats.md)                     | unknown                   | <i>(Optional)</i>                      |
+| Property                                                                          | Modifiers | Type                        | Description                            |
+| --------------------------------------------------------------------------------- | --------- | --------------------------- | -------------------------------------- |
+| [emitExtensionForTests?](./heft.ibuildstageproperties.emitextensionfortests.md)   |           | '.js' \| '.cjs' \| '.mjs'   | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [emitFolderNameForTests?](./heft.ibuildstageproperties.emitfoldernamefortests.md) |           | string                      | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [isTypeScriptProject?](./heft.ibuildstageproperties.istypescriptproject.md)       |           | boolean                     | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| [lite](./heft.ibuildstageproperties.lite.md)                                      |           | boolean                     |                                        |
+| [locales?](./heft.ibuildstageproperties.locales.md)                               |           | ReadonlyArray&lt;string&gt; | <i>(Optional)</i>                      |
+| [maxOldSpaceSize?](./heft.ibuildstageproperties.maxoldspacesize.md)               |           | string                      | <i>(Optional)</i>                      |
+| [production](./heft.ibuildstageproperties.production.md)                          |           | boolean                     |                                        |
+| [serveMode](./heft.ibuildstageproperties.servemode.md)                            |           | boolean                     |                                        |
+| [watchMode](./heft.ibuildstageproperties.watchmode.md)                            |           | boolean                     |                                        |
+| [webpackStats?](./heft.ibuildstageproperties.webpackstats.md)                     |           | unknown                     | <i>(Optional)</i>                      |

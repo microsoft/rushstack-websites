@@ -42,9 +42,9 @@ tree.getNearestAncestor('bar/foo/bar'); returns 2
 
 ## Properties
 
-| Property                                          | Modifiers | Type   | Description                                            |
-| ------------------------------------------------- | --------- | ------ | ------------------------------------------------------ |
-| [delimiter](./rush-lib.lookupbypath.delimiter.md) |           | string | <b><i>(BETA)</i></b> The delimiter used to split paths |
+| Property                                          | Modifiers             | Type   | Description                                            |
+| ------------------------------------------------- | --------------------- | ------ | ------------------------------------------------------ |
+| [delimiter](./rush-lib.lookupbypath.delimiter.md) | <code>readonly</code> | string | <b><i>(BETA)</i></b> The delimiter used to split paths |
 
 ## Methods
 

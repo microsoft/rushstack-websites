@@ -16,14 +16,15 @@ Returns the CommandLineFlagParameter with the specified long name.
 <b>Signature:</b>
 
 ```typescript
-getFlagParameter(parameterLongName: string): CommandLineFlagParameter;
+getFlagParameter(parameterLongName: string, parameterScope?: string): CommandLineFlagParameter;
 ```
 
 ## Parameters
 
-| Parameter         | Type   | Description |
-| ----------------- | ------ | ----------- |
-| parameterLongName | string |             |
+| Parameter         | Type   | Description       |
+| ----------------- | ------ | ----------------- |
+| parameterLongName | string |                   |
+| parameterScope    | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -64,10 +64,10 @@ Compare with [ApiConstructor](./api-extractor-model.apiconstructor.md) , which d
 
 ## Properties
 
-| Property                                                                    | Modifiers | Type                                                | Description |
-| --------------------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apiconstructsignature.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apiconstructsignature.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                                    | Modifiers             | Type                                                | Description |
+| --------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apiconstructsignature.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apiconstructsignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

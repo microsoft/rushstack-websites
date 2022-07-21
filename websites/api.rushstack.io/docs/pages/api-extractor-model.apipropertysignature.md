@@ -44,10 +44,10 @@ Compare with [ApiProperty](./api-extractor-model.apiproperty.md) , which represe
 
 ## Properties
 
-| Property                                                                   | Modifiers | Type                                                | Description |
-| -------------------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apipropertysignature.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apipropertysignature.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                                   | Modifiers             | Type                                                | Description |
+| -------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apipropertysignature.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apipropertysignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

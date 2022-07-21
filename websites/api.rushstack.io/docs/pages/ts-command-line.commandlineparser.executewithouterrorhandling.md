@@ -21,9 +21,9 @@ executeWithoutErrorHandling(args?: string[]): Promise<void>;
 
 ## Parameters
 
-| Parameter | Type       | Description |
-| --------- | ---------- | ----------- |
-| args      | string\[\] |             |
+| Parameter | Type       | Description       |
+| --------- | ---------- | ----------------- |
+| args      | string\[\] | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

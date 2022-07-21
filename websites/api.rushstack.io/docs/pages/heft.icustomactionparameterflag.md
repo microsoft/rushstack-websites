@@ -19,10 +19,10 @@ pagination_next: null
 export interface ICustomActionParameterFlag extends ICustomActionParameterBase<boolean>
 ```
 
-<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) &lt;boolean&gt;
+<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md)
 
 ## Properties
 
-| Property                                          | Type   | Description          |
-| ------------------------------------------------- | ------ | -------------------- |
-| [kind](./heft.icustomactionparameterflag.kind.md) | 'flag' | <b><i>(BETA)</i></b> |
+| Property                                          | Modifiers | Type   | Description          |
+| ------------------------------------------------- | --------- | ------ | -------------------- |
+| [kind](./heft.icustomactionparameterflag.kind.md) |           | 'flag' | <b><i>(BETA)</i></b> |

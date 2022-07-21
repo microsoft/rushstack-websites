@@ -23,6 +23,6 @@ export interface IApiInterfaceOptions extends IApiItemContainerMixinOptions, IAp
 
 ## Properties
 
-| Property                                                                               | Type                                                                   | Description |
-| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------- |
-| [extendsTokenRanges](./api-extractor-model.iapiinterfaceoptions.extendstokenranges.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) \[\] |             |
+| Property                                                                               | Modifiers | Type                                                                   | Description |
+| -------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ----------- |
+| [extendsTokenRanges](./api-extractor-model.iapiinterfaceoptions.extendstokenranges.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) \[\] |             |

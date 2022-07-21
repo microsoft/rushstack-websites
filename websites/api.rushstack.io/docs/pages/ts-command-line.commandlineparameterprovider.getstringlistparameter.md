@@ -16,14 +16,15 @@ Returns the CommandLineStringListParameter with the specified long name.
 <b>Signature:</b>
 
 ```typescript
-getStringListParameter(parameterLongName: string): CommandLineStringListParameter;
+getStringListParameter(parameterLongName: string, parameterScope?: string): CommandLineStringListParameter;
 ```
 
 ## Parameters
 
-| Parameter         | Type   | Description |
-| ----------------- | ------ | ----------- |
-| parameterLongName | string |             |
+| Parameter         | Type   | Description       |
+| ----------------- | ------ | ----------------- |
+| parameterLongName | string |                   |
+| parameterScope    | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

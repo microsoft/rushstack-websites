@@ -21,10 +21,10 @@ static readFileAsync(filePath: string, options?: IFileSystemReadFileOptions): Pr
 
 ## Parameters
 
-| Parameter | Type                                                                            | Description |
-| --------- | ------------------------------------------------------------------------------- | ----------- |
-| filePath  | string                                                                          |             |
-| options   | [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) |             |
+| Parameter | Type                                                                            | Description       |
+| --------- | ------------------------------------------------------------------------------- | ----------------- |
+| filePath  | string                                                                          |                   |
+| options   | [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

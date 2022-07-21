@@ -23,6 +23,6 @@ constructor(options?: Partial<IConsoleTerminalProviderOptions>);
 
 ## Parameters
 
-| Parameter | Type                                                                                                      | Description |
-| --------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | Partial&lt;[IConsoleTerminalProviderOptions](./node-core-library.iconsoleterminalprovideroptions.md) &gt; |             |
+| Parameter | Type                                                                                                      | Description       |
+| --------- | --------------------------------------------------------------------------------------------------------- | ----------------- |
+| options   | Partial&lt;[IConsoleTerminalProviderOptions](./node-core-library.iconsoleterminalprovideroptions.md) &gt; | <i>(Optional)</i> |

@@ -19,6 +19,6 @@ export interface ICompileSubstageProperties
 
 ## Properties
 
-| Property                                                                                            | Type                | Description |
-| --------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
-| [typescriptMaxWriteParallelism](./heft.icompilesubstageproperties.typescriptmaxwriteparallelism.md) | number \| undefined |             |
+| Property                                                                                            | Modifiers | Type                | Description |
+| --------------------------------------------------------------------------------------------------- | --------- | ------------------- | ----------- |
+| [typescriptMaxWriteParallelism](./heft.icompilesubstageproperties.typescriptmaxwriteparallelism.md) |           | number \| undefined |             |

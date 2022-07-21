@@ -21,9 +21,10 @@ export declare enum PathResolutionMethod
 
 ## Enumeration Members
 
-| Member                                 | Value          | Description                                                                                                                                |
-| -------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| custom                                 | <code>3</code> | <b><i>(BETA)</i></b> Resolve the property using a custom resolver.                                                                         |
-| NodeResolve                            | <code>2</code> | <b><i>(BETA)</i></b> Treat the property as a NodeJS-style require/import reference and resolve using standard NodeJS filesystem resolution |
-| resolvePathRelativeToConfigurationFile | <code>0</code> | <b><i>(BETA)</i></b> Resolve a path relative to the configuration file                                                                     |
-| resolvePathRelativeToProjectRoot       | <code>1</code> | <b><i>(BETA)</i></b> Resolve a path relative to the root of the project containing the configuration file                                  |
+| Member                                 | Value                                                           | Description                                                                                                                                |
+| -------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| custom                                 | <code>&quot;custom&quot;</code>                                 | <b><i>(BETA)</i></b> Resolve the property using a custom resolver.                                                                         |
+| nodeResolve                            | <code>&quot;nodeResolve&quot;</code>                            | <b><i>(BETA)</i></b> Treat the property as a NodeJS-style require/import reference and resolve using standard NodeJS filesystem resolution |
+| NodeResolve                            | <code>&quot;NodeResolve&quot;</code>                            | <b><i>(BETA)</i></b> Treat the property as a NodeJS-style require/import reference and resolve using standard NodeJS filesystem resolution |
+| resolvePathRelativeToConfigurationFile | <code>&quot;resolvePathRelativeToConfigurationFile&quot;</code> | <b><i>(BETA)</i></b> Resolve a path relative to the configuration file                                                                     |
+| resolvePathRelativeToProjectRoot       | <code>&quot;resolvePathRelativeToProjectRoot&quot;</code>       | <b><i>(BETA)</i></b> Resolve a path relative to the root of the project containing the configuration file                                  |

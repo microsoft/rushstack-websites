@@ -21,6 +21,6 @@ export interface IEnvironmentConfigurationInitializeOptions
 
 ## Properties
 
-| Property                                                                                             | Type    | Description                            |
-| ---------------------------------------------------------------------------------------------------- | ------- | -------------------------------------- |
-| [doNotNormalizePaths?](./rush-lib.ienvironmentconfigurationinitializeoptions.donotnormalizepaths.md) | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> |
+| Property                                                                                             | Modifiers | Type    | Description                            |
+| ---------------------------------------------------------------------------------------------------- | --------- | ------- | -------------------------------------- |
+| [doNotNormalizePaths?](./rush-lib.ienvironmentconfigurationinitializeoptions.donotnormalizepaths.md) |           | boolean | <b><i>(BETA)</i></b> <i>(Optional)</i> |

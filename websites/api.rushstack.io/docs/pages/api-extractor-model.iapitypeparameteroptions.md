@@ -21,8 +21,8 @@ export interface IApiTypeParameterOptions
 
 ## Properties
 
-| Property                                                                                         | Type                                                              | Description |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------- |
-| [constraintTokenRange](./api-extractor-model.iapitypeparameteroptions.constrainttokenrange.md)   | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
-| [defaultTypeTokenRange](./api-extractor-model.iapitypeparameteroptions.defaulttypetokenrange.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
-| [typeParameterName](./api-extractor-model.iapitypeparameteroptions.typeparametername.md)         | string                                                            |             |
+| Property                                                                                         | Modifiers | Type                                                              | Description |
+| ------------------------------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------- | ----------- |
+| [constraintTokenRange](./api-extractor-model.iapitypeparameteroptions.constrainttokenrange.md)   |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| [defaultTypeTokenRange](./api-extractor-model.iapitypeparameteroptions.defaulttypetokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| [typeParameterName](./api-extractor-model.iapitypeparameteroptions.typeparametername.md)         |           | string                                                            |             |

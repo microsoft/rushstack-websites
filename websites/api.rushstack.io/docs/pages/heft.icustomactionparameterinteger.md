@@ -19,10 +19,10 @@ pagination_next: null
 export interface ICustomActionParameterInteger extends ICustomActionParameterBase<number>
 ```
 
-<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) &lt;number&gt;
+<b>Extends:</b> [ICustomActionParameterBase](./heft.icustomactionparameterbase.md)
 
 ## Properties
 
-| Property                                             | Type      | Description          |
-| ---------------------------------------------------- | --------- | -------------------- |
-| [kind](./heft.icustomactionparameterinteger.kind.md) | 'integer' | <b><i>(BETA)</i></b> |
+| Property                                             | Modifiers | Type      | Description          |
+| ---------------------------------------------------- | --------- | --------- | -------------------- |
+| [kind](./heft.icustomactionparameterinteger.kind.md) |           | 'integer' | <b><i>(BETA)</i></b> |

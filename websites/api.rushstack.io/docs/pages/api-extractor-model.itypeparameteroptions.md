@@ -21,9 +21,10 @@ export interface ITypeParameterOptions
 
 ## Properties
 
-| Property                                                                                | Type                                                                            | Description |
-| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------- |
-| [constraintExcerpt](./api-extractor-model.itypeparameteroptions.constraintexcerpt.md)   | [Excerpt](./api-extractor-model.excerpt.md)                                     |             |
-| [defaultTypeExcerpt](./api-extractor-model.itypeparameteroptions.defaulttypeexcerpt.md) | [Excerpt](./api-extractor-model.excerpt.md)                                     |             |
-| [name](./api-extractor-model.itypeparameteroptions.name.md)                             | string                                                                          |             |
-| [parent](./api-extractor-model.itypeparameteroptions.parent.md)                         | [ApiTypeParameterListMixin](./api-extractor-model.apitypeparameterlistmixin.md) |             |
+| Property                                                                                | Modifiers | Type                                                                            | Description |
+| --------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------- | ----------- |
+| [constraintExcerpt](./api-extractor-model.itypeparameteroptions.constraintexcerpt.md)   |           | [Excerpt](./api-extractor-model.excerpt.md)                                     |             |
+| [defaultTypeExcerpt](./api-extractor-model.itypeparameteroptions.defaulttypeexcerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md)                                     |             |
+| [isOptional](./api-extractor-model.itypeparameteroptions.isoptional.md)                 |           | boolean                                                                         |             |
+| [name](./api-extractor-model.itypeparameteroptions.name.md)                             |           | string                                                                          |             |
+| [parent](./api-extractor-model.itypeparameteroptions.parent.md)                         |           | [ApiTypeParameterListMixin](./api-extractor-model.apitypeparameterlistmixin.md) |             |

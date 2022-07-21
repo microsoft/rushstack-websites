@@ -27,7 +27,7 @@ An argument is an accompanying command-line token, such as "123" in the example 
 
 ## Properties
 
-| Property                                                                                 | Type                               | Description                                                                                       |
-| ---------------------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [argumentName](./ts-command-line.ibasecommandlinedefinitionwithargument.argumentname.md) | string                             | The name of the argument, which will be shown in the command-line help.                           |
-| [completions?](./ts-command-line.ibasecommandlinedefinitionwithargument.completions.md)  | () =&gt; Promise&lt;string\[\]&gt; | <i>(Optional)</i> An optional callback that provides a list of custom choices for tab completion. |
+| Property                                                                                 | Modifiers | Type                               | Description                                                                                       |
+| ---------------------------------------------------------------------------------------- | --------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [argumentName](./ts-command-line.ibasecommandlinedefinitionwithargument.argumentname.md) |           | string                             | The name of the argument, which will be shown in the command-line help.                           |
+| [completions?](./ts-command-line.ibasecommandlinedefinitionwithargument.completions.md)  |           | () =&gt; Promise&lt;string\[\]&gt; | <i>(Optional)</i> An optional callback that provides a list of custom choices for tab completion. |

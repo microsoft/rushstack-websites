@@ -55,10 +55,10 @@ Compare with [ApiPropertySignature](./api-extractor-model.apipropertysignature.m
 
 ## Properties
 
-| Property                                                          | Modifiers | Type                                                | Description |
-| ----------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apiproperty.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apiproperty.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                          | Modifiers             | Type                                                | Description |
+| ----------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apiproperty.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apiproperty.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

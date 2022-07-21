@@ -23,7 +23,7 @@ export interface IFileSystemBuildCacheProviderOptions
 
 ## Properties
 
-| Property                                                                                          | Type                                                         | Description                                           |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------- |
-| [rushConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushconfiguration.md)         | [RushConfiguration](./rush-lib.rushconfiguration.md)         | <b><i>(BETA)</i></b> The workspace Rush configuration |
-| [rushUserConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushuserconfiguration.md) | [RushUserConfiguration](./rush-lib.rushuserconfiguration.md) | <b><i>(BETA)</i></b> The user Rush configuration      |
+| Property                                                                                          | Modifiers | Type                                                         | Description                                           |
+| ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ----------------------------------------------------- |
+| [rushConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushconfiguration.md)         |           | [RushConfiguration](./rush-lib.rushconfiguration.md)         | <b><i>(BETA)</i></b> The workspace Rush configuration |
+| [rushUserConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushuserconfiguration.md) |           | [RushUserConfiguration](./rush-lib.rushuserconfiguration.md) | <b><i>(BETA)</i></b> The user Rush configuration      |

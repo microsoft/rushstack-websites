@@ -24,7 +24,7 @@ static open(filePath: string, flags?: IFileWriterFlags): FileWriter;
 | Parameter | Type                                                        | Description                                                             |
 | --------- | ----------------------------------------------------------- | ----------------------------------------------------------------------- |
 | filePath  | string                                                      | The absolute or relative path to the file handle that should be opened. |
-| flags     | [IFileWriterFlags](./node-core-library.ifilewriterflags.md) | The flags for opening the handle                                        |
+| flags     | [IFileWriterFlags](./node-core-library.ifilewriterflags.md) | <i>(Optional)</i> The flags for opening the handle                      |
 
 <b>Returns:</b>
 

@@ -27,9 +27,9 @@ export declare class ConfigurationFile<TConfigurationFile>
 
 ## Properties
 
-| Property                                                                                   | Modifiers | Type   | Description                                                                                        |
-| ------------------------------------------------------------------------------------------ | --------- | ------ | -------------------------------------------------------------------------------------------------- |
-| [projectRelativeFilePath](./heft-config-file.configurationfile.projectrelativefilepath.md) |           | string | <b><i>(BETA)</i></b> A project root-relative path to the configuration file that should be loaded. |
+| Property                                                                                   | Modifiers             | Type   | Description                                                                                        |
+| ------------------------------------------------------------------------------------------ | --------------------- | ------ | -------------------------------------------------------------------------------------------------- |
+| [projectRelativeFilePath](./heft-config-file.configurationfile.projectrelativefilepath.md) | <code>readonly</code> | string | <b><i>(BETA)</i></b> A project root-relative path to the configuration file that should be loaded. |
 
 ## Methods
 

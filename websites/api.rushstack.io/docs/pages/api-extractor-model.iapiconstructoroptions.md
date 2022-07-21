@@ -16,7 +16,7 @@ Constructor options for [ApiConstructor](./api-extractor-model.apiconstructor.md
 <b>Signature:</b>
 
 ```typescript
-export interface IApiConstructorOptions extends IApiParameterListMixinOptions, IApiReleaseTagMixinOptions, IApiDeclaredItemOptions
+export interface IApiConstructorOptions extends IApiParameterListMixinOptions, IApiProtectedMixinOptions, IApiReleaseTagMixinOptions, IApiDeclaredItemOptions
 ```
 
-<b>Extends:</b> [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+<b>Extends:</b> [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiProtectedMixinOptions](./api-extractor-model.iapiprotectedmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)

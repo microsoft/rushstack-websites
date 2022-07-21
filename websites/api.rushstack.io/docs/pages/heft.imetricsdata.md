@@ -19,14 +19,14 @@ export interface IMetricsData
 
 ## Properties
 
-| Property                                                            | Type                         | Description                                                      |
-| ------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------- |
-| [command](./heft.imetricsdata.command.md)                           | string                       | The command that was executed.                                   |
-| [commandParameters](./heft.imetricsdata.commandparameters.md)       | Record&lt;string, string&gt; | A map of commandline parameter names to their effective values   |
-| [encounteredError?](./heft.imetricsdata.encounterederror.md)        | boolean                      | <i>(Optional)</i> Whether or not the command ran into errors     |
-| [machineArch](./heft.imetricsdata.machinearch.md)                   | string                       | The processor's architecture.                                    |
-| [machineCores](./heft.imetricsdata.machinecores.md)                 | number                       | The number of processor cores.                                   |
-| [machineOs](./heft.imetricsdata.machineos.md)                       | string                       | The name of the operating system provided by NodeJS.             |
-| [machineProcessor](./heft.imetricsdata.machineprocessor.md)         | string                       | The processor's model name.                                      |
-| [machineTotalMemoryMB](./heft.imetricsdata.machinetotalmemorymb.md) | number                       | The total amount of memory the machine has, in megabytes.        |
-| [taskTotalExecutionMs](./heft.imetricsdata.tasktotalexecutionms.md) | number                       | The amount of time the command took to execute, in milliseconds. |
+| Property                                                            | Modifiers | Type                         | Description                                                      |
+| ------------------------------------------------------------------- | --------- | ---------------------------- | ---------------------------------------------------------------- |
+| [command](./heft.imetricsdata.command.md)                           |           | string                       | The command that was executed.                                   |
+| [commandParameters](./heft.imetricsdata.commandparameters.md)       |           | Record&lt;string, string&gt; | A map of commandline parameter names to their effective values   |
+| [encounteredError?](./heft.imetricsdata.encounterederror.md)        |           | boolean                      | <i>(Optional)</i> Whether or not the command ran into errors     |
+| [machineArch](./heft.imetricsdata.machinearch.md)                   |           | string                       | The processor's architecture.                                    |
+| [machineCores](./heft.imetricsdata.machinecores.md)                 |           | number                       | The number of processor cores.                                   |
+| [machineOs](./heft.imetricsdata.machineos.md)                       |           | string                       | The name of the operating system provided by NodeJS.             |
+| [machineProcessor](./heft.imetricsdata.machineprocessor.md)         |           | string                       | The processor's model name.                                      |
+| [machineTotalMemoryMB](./heft.imetricsdata.machinetotalmemorymb.md) |           | number                       | The total amount of memory the machine has, in megabytes.        |
+| [taskTotalExecutionMs](./heft.imetricsdata.tasktotalexecutionms.md) |           | number                       | The amount of time the command took to execute, in milliseconds. |

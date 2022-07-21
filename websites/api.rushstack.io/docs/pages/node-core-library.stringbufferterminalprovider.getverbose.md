@@ -23,9 +23,9 @@ getVerbose(options?: IStringBufferOutputOptions): string;
 
 ## Parameters
 
-| Parameter | Type                                                                            | Description |
-| --------- | ------------------------------------------------------------------------------- | ----------- |
-| options   | [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) |             |
+| Parameter | Type                                                                            | Description       |
+| --------- | ------------------------------------------------------------------------------- | ----------------- |
+| options   | [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

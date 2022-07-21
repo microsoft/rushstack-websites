@@ -43,17 +43,14 @@ export enum FontSizes {
 
 ## Properties
 
-| Property                                                                        | Modifiers | Type                                                | Description                                                                                 |
-| ------------------------------------------------------------------------------- | --------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [containerKey](./api-extractor-model.apienummember.containerkey.md)             |           | string                                              |                                                                                             |
-| [initializerExcerpt](./api-extractor-model.apienummember.initializerexcerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md)         | An [Excerpt](./api-extractor-model.excerpt.md) that describes the value of the enum member. |
-| [kind](./api-extractor-model.apienummember.kind.md)                             |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                             |
+| Property                                                            | Modifiers             | Type                                                | Description |
+| ------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apienummember.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apienummember.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 
-| Method                                                                                                      | Modifiers           | Description          |
-| ----------------------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
-| [buildCanonicalReference()](./api-extractor-model.apienummember.buildcanonicalreference.md)                 |                     | <b><i>(BETA)</i></b> |
-| [getContainerKey(name)](./api-extractor-model.apienummember.getcontainerkey.md)                             | <code>static</code> |                      |
-| [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apienummember.ondeserializeinto.md) | <code>static</code> |                      |
-| [serializeInto(jsonObject)](./api-extractor-model.apienummember.serializeinto.md)                           |                     |                      |
+| Method                                                                                      | Modifiers           | Description          |
+| ------------------------------------------------------------------------------------------- | ------------------- | -------------------- |
+| [buildCanonicalReference()](./api-extractor-model.apienummember.buildcanonicalreference.md) |                     | <b><i>(BETA)</i></b> |
+| [getContainerKey(name)](./api-extractor-model.apienummember.getcontainerkey.md)             | <code>static</code> |                      |

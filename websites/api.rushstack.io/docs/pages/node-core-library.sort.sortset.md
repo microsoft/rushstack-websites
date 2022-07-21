@@ -21,10 +21,10 @@ static sortSet<T>(set: Set<T>, comparer?: (x: T, y: T) => number): void;
 
 ## Parameters
 
-| Parameter | Type                      | Description |
-| --------- | ------------------------- | ----------- |
-| set       | Set&lt;T&gt;              |             |
-| comparer  | (x: T, y: T) =&gt; number |             |
+| Parameter | Type                      | Description       |
+| --------- | ------------------------- | ----------------- |
+| set       | Set&lt;T&gt;              |                   |
+| comparer  | (x: T, y: T) =&gt; number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

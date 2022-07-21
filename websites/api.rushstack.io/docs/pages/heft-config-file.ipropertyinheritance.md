@@ -21,6 +21,6 @@ export interface IPropertyInheritance<TInheritanceType extends InheritanceType>
 
 ## Properties
 
-| Property                                                                      | Type             | Description          |
-| ----------------------------------------------------------------------------- | ---------------- | -------------------- |
-| [inheritanceType](./heft-config-file.ipropertyinheritance.inheritancetype.md) | TInheritanceType | <b><i>(BETA)</i></b> |
+| Property                                                                      | Modifiers | Type             | Description          |
+| ----------------------------------------------------------------------------- | --------- | ---------------- | -------------------- |
+| [inheritanceType](./heft-config-file.ipropertyinheritance.inheritancetype.md) |           | TInheritanceType | <b><i>(BETA)</i></b> |

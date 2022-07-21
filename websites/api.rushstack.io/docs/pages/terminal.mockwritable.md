@@ -25,15 +25,15 @@ export declare class MockWritable extends TerminalWritable
 
 ## Properties
 
-| Property                                    | Modifiers | Type                                                | Description          |
-| ------------------------------------------- | --------- | --------------------------------------------------- | -------------------- |
-| [chunks](./terminal.mockwritable.chunks.md) |           | [ITerminalChunk](./terminal.iterminalchunk.md) \[\] | <b><i>(BETA)</i></b> |
+| Property                                    | Modifiers             | Type                                                | Description          |
+| ------------------------------------------- | --------------------- | --------------------------------------------------- | -------------------- |
+| [chunks](./terminal.mockwritable.chunks.md) | <code>readonly</code> | [ITerminalChunk](./terminal.iterminalchunk.md) \[\] | <b><i>(BETA)</i></b> |
 
 ## Methods
 
-| Method                                                                | Modifiers | Description          |
-| --------------------------------------------------------------------- | --------- | -------------------- |
-| [getAllOutput()](./terminal.mockwritable.getalloutput.md)             |           | <b><i>(BETA)</i></b> |
-| [getFormattedChunks()](./terminal.mockwritable.getformattedchunks.md) |           | <b><i>(BETA)</i></b> |
-| [onWriteChunk(chunk)](./terminal.mockwritable.onwritechunk.md)        |           | <b><i>(BETA)</i></b> |
-| [reset()](./terminal.mockwritable.reset.md)                           |           | <b><i>(BETA)</i></b> |
+| Method                                                                | Modifiers              | Description          |
+| --------------------------------------------------------------------- | ---------------------- | -------------------- |
+| [getAllOutput()](./terminal.mockwritable.getalloutput.md)             |                        | <b><i>(BETA)</i></b> |
+| [getFormattedChunks()](./terminal.mockwritable.getformattedchunks.md) |                        | <b><i>(BETA)</i></b> |
+| [onWriteChunk(chunk)](./terminal.mockwritable.onwritechunk.md)        | <code>protected</code> | <b><i>(BETA)</i></b> |
+| [reset()](./terminal.mockwritable.reset.md)                           |                        | <b><i>(BETA)</i></b> |

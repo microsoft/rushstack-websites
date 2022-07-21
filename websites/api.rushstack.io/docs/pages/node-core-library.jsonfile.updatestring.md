@@ -21,11 +21,11 @@ static updateString(previousJson: string, newJsonObject: JsonObject, options?: I
 
 ## Parameters
 
-| Parameter     | Type                                                                          | Description                               |
-| ------------- | ----------------------------------------------------------------------------- | ----------------------------------------- |
-| previousJson  | string                                                                        |                                           |
-| newJsonObject | [JsonObject](./node-core-library.jsonobject.md)                               |                                           |
-| options       | [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | other settings that control serialization |
+| Parameter     | Type                                                                          | Description                                                 |
+| ------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| previousJson  | string                                                                        |                                                             |
+| newJsonObject | [JsonObject](./node-core-library.jsonobject.md)                               |                                                             |
+| options       | [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | <i>(Optional)</i> other settings that control serialization |
 
 <b>Returns:</b>
 

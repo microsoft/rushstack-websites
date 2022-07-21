@@ -21,9 +21,9 @@ export interface IFileSystemMoveOptions
 
 ## Properties
 
-| Property                                                                                | Type    | Description                                                                           |
-| --------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------------- |
-| [destinationPath](./node-core-library.ifilesystemmoveoptions.destinationpath.md)        | string  | The new path for the object. The path may be absolute or relative.                    |
-| [ensureFolderExists?](./node-core-library.ifilesystemmoveoptions.ensurefolderexists.md) | boolean | <i>(Optional)</i> If true, will ensure the folder is created before writing the file. |
-| [overwrite?](./node-core-library.ifilesystemmoveoptions.overwrite.md)                   | boolean | <i>(Optional)</i> If true, will overwrite the file if it already exists.              |
-| [sourcePath](./node-core-library.ifilesystemmoveoptions.sourcepath.md)                  | string  | The path of the existing object to be moved. The path may be absolute or relative.    |
+| Property                                                                                | Modifiers | Type    | Description                                                                           |
+| --------------------------------------------------------------------------------------- | --------- | ------- | ------------------------------------------------------------------------------------- |
+| [destinationPath](./node-core-library.ifilesystemmoveoptions.destinationpath.md)        |           | string  | The new path for the object. The path may be absolute or relative.                    |
+| [ensureFolderExists?](./node-core-library.ifilesystemmoveoptions.ensurefolderexists.md) |           | boolean | <i>(Optional)</i> If true, will ensure the folder is created before writing the file. |
+| [overwrite?](./node-core-library.ifilesystemmoveoptions.overwrite.md)                   |           | boolean | <i>(Optional)</i> If true, will overwrite the file if it already exists.              |
+| [sourcePath](./node-core-library.ifilesystemmoveoptions.sourcepath.md)                  |           | string  | The path of the existing object to be moved. The path may be absolute or relative.    |

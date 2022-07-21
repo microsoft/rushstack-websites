@@ -21,10 +21,10 @@ static sortMapKeys<K, V>(map: Map<K, V>, keyComparer?: (x: K, y: K) => number): 
 
 ## Parameters
 
-| Parameter   | Type                      | Description |
-| ----------- | ------------------------- | ----------- |
-| map         | Map&lt;K, V&gt;           |             |
-| keyComparer | (x: K, y: K) =&gt; number |             |
+| Parameter   | Type                      | Description       |
+| ----------- | ------------------------- | ----------------- |
+| map         | Map&lt;K, V&gt;           |                   |
+| keyComparer | (x: K, y: K) =&gt; number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

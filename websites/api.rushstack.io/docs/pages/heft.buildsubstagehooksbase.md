@@ -19,6 +19,6 @@ export declare class BuildSubstageHooksBase
 
 ## Properties
 
-| Property                                    | Modifiers | Type              | Description |
-| ------------------------------------------- | --------- | ----------------- | ----------- |
-| [run](./heft.buildsubstagehooksbase.run.md) |           | AsyncParallelHook |             |
+| Property                                    | Modifiers             | Type              | Description |
+| ------------------------------------------- | --------------------- | ----------------- | ----------- |
+| [run](./heft.buildsubstagehooksbase.run.md) | <code>readonly</code> | AsyncParallelHook |             |

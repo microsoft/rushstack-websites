@@ -17,11 +17,11 @@ pagination_next: null
 export declare class TestStageHooks extends StageHooksBase<ITestStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ITestStageProperties](./heft.iteststageproperties.md) &gt;
+<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ITestStageProperties](./heft.iteststageproperties.md)
 
 ## Properties
 
-| Property                                                | Modifiers | Type              | Description |
-| ------------------------------------------------------- | --------- | ----------------- | ----------- |
-| [configureTest](./heft.teststagehooks.configuretest.md) |           | AsyncSeriesHook   |             |
-| [run](./heft.teststagehooks.run.md)                     |           | AsyncParallelHook |             |
+| Property                                                | Modifiers             | Type              | Description |
+| ------------------------------------------------------- | --------------------- | ----------------- | ----------- |
+| [configureTest](./heft.teststagehooks.configuretest.md) | <code>readonly</code> | AsyncSeriesHook   |             |
+| [run](./heft.teststagehooks.run.md)                     | <code>readonly</code> | AsyncParallelHook |             |

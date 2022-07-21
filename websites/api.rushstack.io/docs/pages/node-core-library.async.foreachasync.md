@@ -27,7 +27,7 @@ static forEachAsync<TEntry>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, 
 | --------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | iterable  | Iterable&lt;TEntry&gt; \| AsyncIterable&lt;TEntry&gt;                                    | the array of inputs for the callback function                                |
 | callback  | (entry: TEntry, arrayIndex: number) =&gt; Promise&lt;void&gt;                            | a function that starts an asynchronous promise for an element from the array |
-| options   | [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) \| undefined | options for customizing the control flow                                     |
+| options   | [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) \| undefined | <i>(Optional)</i> options for customizing the control flow                   |
 
 <b>Returns:</b>
 

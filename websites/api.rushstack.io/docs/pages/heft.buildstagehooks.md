@@ -17,13 +17,13 @@ pagination_next: null
 export declare class BuildStageHooks extends StageHooksBase<IBuildStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[IBuildStageProperties](./heft.ibuildstageproperties.md) &gt;
+<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[IBuildStageProperties](./heft.ibuildstageproperties.md)
 
 ## Properties
 
-| Property                                           | Modifiers | Type                                                                  | Description |
-| -------------------------------------------------- | --------- | --------------------------------------------------------------------- | ----------- |
-| [bundle](./heft.buildstagehooks.bundle.md)         |           | SyncHook&lt;[IBundleSubstage](./heft.ibundlesubstage.md) &gt;         |             |
-| [compile](./heft.buildstagehooks.compile.md)       |           | SyncHook&lt;[ICompileSubstage](./heft.icompilesubstage.md) &gt;       |             |
-| [postBuild](./heft.buildstagehooks.postbuild.md)   |           | SyncHook&lt;[IPostBuildSubstage](./heft.ipostbuildsubstage.md) &gt;   |             |
-| [preCompile](./heft.buildstagehooks.precompile.md) |           | SyncHook&lt;[IPreCompileSubstage](./heft.iprecompilesubstage.md) &gt; |             |
+| Property                                           | Modifiers             | Type                                                                  | Description |
+| -------------------------------------------------- | --------------------- | --------------------------------------------------------------------- | ----------- |
+| [bundle](./heft.buildstagehooks.bundle.md)         | <code>readonly</code> | SyncHook&lt;[IBundleSubstage](./heft.ibundlesubstage.md) &gt;         |             |
+| [compile](./heft.buildstagehooks.compile.md)       | <code>readonly</code> | SyncHook&lt;[ICompileSubstage](./heft.icompilesubstage.md) &gt;       |             |
+| [postBuild](./heft.buildstagehooks.postbuild.md)   | <code>readonly</code> | SyncHook&lt;[IPostBuildSubstage](./heft.ipostbuildsubstage.md) &gt;   |             |
+| [preCompile](./heft.buildstagehooks.precompile.md) | <code>readonly</code> | SyncHook&lt;[IPreCompileSubstage](./heft.iprecompilesubstage.md) &gt; |             |

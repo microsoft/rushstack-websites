@@ -21,9 +21,9 @@ export declare class FileWriter
 
 ## Properties
 
-| Property                                               | Modifiers | Type   | Description                                                                                                |
-| ------------------------------------------------------ | --------- | ------ | ---------------------------------------------------------------------------------------------------------- |
-| [filePath](./node-core-library.filewriter.filepath.md) |           | string | The <code>filePath</code> that was passed to [FileWriter.open()](./node-core-library.filewriter.open.md) . |
+| Property                                               | Modifiers             | Type   | Description                                                                                                |
+| ------------------------------------------------------ | --------------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| [filePath](./node-core-library.filewriter.filepath.md) | <code>readonly</code> | string | The <code>filePath</code> that was passed to [FileWriter.open()](./node-core-library.filewriter.open.md) . |
 
 ## Methods
 

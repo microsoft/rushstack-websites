@@ -21,9 +21,9 @@ export interface ILogger
 
 ## Properties
 
-| Property                                   | Type                                        | Description          |
-| ------------------------------------------ | ------------------------------------------- | -------------------- |
-| [terminal](./rush-lib.ilogger.terminal.md) | [Terminal](./node-core-library.terminal.md) | <b><i>(BETA)</i></b> |
+| Property                                   | Modifiers             | Type                                        | Description          |
+| ------------------------------------------ | --------------------- | ------------------------------------------- | -------------------- |
+| [terminal](./rush-lib.ilogger.terminal.md) | <code>readonly</code> | [Terminal](./node-core-library.terminal.md) | <b><i>(BETA)</i></b> |
 
 ## Methods
 

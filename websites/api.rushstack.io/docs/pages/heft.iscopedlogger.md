@@ -19,9 +19,9 @@ export interface IScopedLogger
 
 ## Properties
 
-| Property                                     | Type                                        | Description |
-| -------------------------------------------- | ------------------------------------------- | ----------- |
-| [terminal](./heft.iscopedlogger.terminal.md) | [Terminal](./node-core-library.terminal.md) |             |
+| Property                                     | Modifiers             | Type                                        | Description |
+| -------------------------------------------- | --------------------- | ------------------------------------------- | ----------- |
+| [terminal](./heft.iscopedlogger.terminal.md) | <code>readonly</code> | [Terminal](./node-core-library.terminal.md) |             |
 
 ## Methods
 

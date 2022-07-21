@@ -19,7 +19,7 @@ export interface ICleanStageProperties
 
 ## Properties
 
-| Property                                                       | Type              | Description |
-| -------------------------------------------------------------- | ----------------- | ----------- |
-| [deleteCache](./heft.icleanstageproperties.deletecache.md)     | boolean           |             |
-| [pathsToDelete](./heft.icleanstageproperties.pathstodelete.md) | Set&lt;string&gt; |             |
+| Property                                                       | Modifiers | Type              | Description |
+| -------------------------------------------------------------- | --------- | ----------------- | ----------- |
+| [deleteCache](./heft.icleanstageproperties.deletecache.md)     |           | boolean           |             |
+| [pathsToDelete](./heft.icleanstageproperties.pathstodelete.md) |           | Set&lt;string&gt; |             |

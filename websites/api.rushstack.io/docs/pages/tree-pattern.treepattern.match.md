@@ -21,10 +21,10 @@ match(root: TreeNode, captures?: ITreePatternCaptureSet): boolean;
 
 ## Parameters
 
-| Parameter | Type                                                               | Description                                                                                                               |
-| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| root      | [TreeNode](./tree-pattern.treenode.md)                             | the input tree to be matched                                                                                              |
-| captures  | [ITreePatternCaptureSet](./tree-pattern.itreepatterncaptureset.md) | an optional object to receive any subtrees that were matched using [TreePattern.tag()](./tree-pattern.treepattern.tag.md) |
+| Parameter | Type                                                               | Description                                                                                                                                 |
+| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| root      | [TreeNode](./tree-pattern.treenode.md)                             | the input tree to be matched                                                                                                                |
+| captures  | [ITreePatternCaptureSet](./tree-pattern.itreepatterncaptureset.md) | <i>(Optional)</i> an optional object to receive any subtrees that were matched using [TreePattern.tag()](./tree-pattern.treepattern.tag.md) |
 
 <b>Returns:</b>
 

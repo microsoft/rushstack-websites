@@ -21,10 +21,10 @@ static stringify(jsonObject: JsonObject, options?: IJsonFileStringifyOptions): s
 
 ## Parameters
 
-| Parameter  | Type                                                                          | Description                               |
-| ---------- | ----------------------------------------------------------------------------- | ----------------------------------------- |
-| jsonObject | [JsonObject](./node-core-library.jsonobject.md)                               | the object to be serialized               |
-| options    | [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | other settings that control serialization |
+| Parameter  | Type                                                                          | Description                                                 |
+| ---------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| jsonObject | [JsonObject](./node-core-library.jsonobject.md)                               | the object to be serialized                                 |
+| options    | [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | <i>(Optional)</i> other settings that control serialization |
 
 <b>Returns:</b>
 

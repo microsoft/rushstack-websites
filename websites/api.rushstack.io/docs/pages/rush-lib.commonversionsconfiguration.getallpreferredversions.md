@@ -11,7 +11,7 @@ pagination_next: null
 
 ## CommonVersionsConfiguration.getAllPreferredVersions() method
 
-Returns the union of preferredVersions and xstitchPreferredVersions.
+Returns preferredVersions.
 
 <b>Signature:</b>
 

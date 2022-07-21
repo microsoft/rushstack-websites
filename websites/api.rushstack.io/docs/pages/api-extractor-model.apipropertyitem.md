@@ -29,10 +29,10 @@ export declare class ApiPropertyItem extends ApiPropertyItem_base
 
 ## Properties
 
-| Property                                                                            | Modifiers | Type                                        | Description                                                                             |
-| ----------------------------------------------------------------------------------- | --------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [isEventProperty](./api-extractor-model.apipropertyitem.iseventproperty.md)         |           | boolean                                     | Returns true if this property should be documented as an event.                         |
-| [propertyTypeExcerpt](./api-extractor-model.apipropertyitem.propertytypeexcerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the property. |
+| Property                                                                            | Modifiers             | Type                                        | Description                                                                             |
+| ----------------------------------------------------------------------------------- | --------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [isEventProperty](./api-extractor-model.apipropertyitem.iseventproperty.md)         | <code>readonly</code> | boolean                                     | Returns true if this property should be documented as an event.                         |
+| [propertyTypeExcerpt](./api-extractor-model.apipropertyitem.propertytypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the property. |
 
 ## Methods
 

@@ -48,11 +48,11 @@ export type Boxed<T> = T extends any[] ? BoxedArray<T[number]> : BoxedValue<T>;
 
 ## Properties
 
-| Property                                                           | Modifiers | Type                                                | Description                                                                          |
-| ------------------------------------------------------------------ | --------- | --------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [containerKey](./api-extractor-model.apitypealias.containerkey.md) |           | string                                              |                                                                                      |
-| [kind](./api-extractor-model.apitypealias.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                      |
-| [typeExcerpt](./api-extractor-model.apitypealias.typeexcerpt.md)   |           | [Excerpt](./api-extractor-model.excerpt.md)         | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the alias. |
+| Property                                                           | Modifiers             | Type                                                | Description                                                                          |
+| ------------------------------------------------------------------ | --------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [containerKey](./api-extractor-model.apitypealias.containerkey.md) | <code>readonly</code> | string                                              |                                                                                      |
+| [kind](./api-extractor-model.apitypealias.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |                                                                                      |
+| [typeExcerpt](./api-extractor-model.apitypealias.typeexcerpt.md)   | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md)         | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the alias. |
 
 ## Methods
 

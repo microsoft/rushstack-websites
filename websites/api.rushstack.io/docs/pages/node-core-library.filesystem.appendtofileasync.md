@@ -21,11 +21,11 @@ static appendToFileAsync(filePath: string, contents: string | Buffer, options?: 
 
 ## Parameters
 
-| Parameter | Type                                                                              | Description |
-| --------- | --------------------------------------------------------------------------------- | ----------- |
-| filePath  | string                                                                            |             |
-| contents  | string \| Buffer                                                                  |             |
-| options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) |             |
+| Parameter | Type                                                                              | Description       |
+| --------- | --------------------------------------------------------------------------------- | ----------------- |
+| filePath  | string                                                                            |                   |
+| contents  | string \| Buffer                                                                  |                   |
+| options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

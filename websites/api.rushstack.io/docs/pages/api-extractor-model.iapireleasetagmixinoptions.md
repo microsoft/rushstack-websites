@@ -23,6 +23,6 @@ export interface IApiReleaseTagMixinOptions extends IApiItemOptions
 
 ## Properties
 
-| Property                                                                     | Type                                              | Description |
-| ---------------------------------------------------------------------------- | ------------------------------------------------- | ----------- |
-| [releaseTag](./api-extractor-model.iapireleasetagmixinoptions.releasetag.md) | [ReleaseTag](./api-extractor-model.releasetag.md) |             |
+| Property                                                                     | Modifiers | Type                                              | Description |
+| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------- | ----------- |
+| [releaseTag](./api-extractor-model.iapireleasetagmixinoptions.releasetag.md) |           | [ReleaseTag](./api-extractor-model.releasetag.md) |             |

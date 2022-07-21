@@ -45,10 +45,10 @@ export interface INumberTable {
 
 ## Properties
 
-| Property                                                                | Modifiers | Type                                                | Description |
-| ----------------------------------------------------------------------- | --------- | --------------------------------------------------- | ----------- |
-| [containerKey](./api-extractor-model.apiindexsignature.containerkey.md) |           | string                                              |             |
-| [kind](./api-extractor-model.apiindexsignature.kind.md)                 |           | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
+| Property                                                                | Modifiers             | Type                                                | Description |
+| ----------------------------------------------------------------------- | --------------------- | --------------------------------------------------- | ----------- |
+| [containerKey](./api-extractor-model.apiindexsignature.containerkey.md) | <code>readonly</code> | string                                              |             |
+| [kind](./api-extractor-model.apiindexsignature.kind.md)                 | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |             |
 
 ## Methods
 

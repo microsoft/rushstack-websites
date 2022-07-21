@@ -19,11 +19,11 @@ export interface IHeftPlugin<TOptions = void>
 
 ## Properties
 
-| Property                                              | Type                                            | Description       |
-| ----------------------------------------------------- | ----------------------------------------------- | ----------------- |
-| [accessor?](./heft.iheftplugin.accessor.md)           | object                                          | <i>(Optional)</i> |
-| [optionsSchema?](./heft.iheftplugin.optionsschema.md) | [JsonSchema](./node-core-library.jsonschema.md) | <i>(Optional)</i> |
-| [pluginName](./heft.iheftplugin.pluginname.md)        | string                                          |                   |
+| Property                                              | Modifiers             | Type                                            | Description       |
+| ----------------------------------------------------- | --------------------- | ----------------------------------------------- | ----------------- |
+| [accessor?](./heft.iheftplugin.accessor.md)           | <code>readonly</code> | object                                          | <i>(Optional)</i> |
+| [optionsSchema?](./heft.iheftplugin.optionsschema.md) | <code>readonly</code> | [JsonSchema](./node-core-library.jsonschema.md) | <i>(Optional)</i> |
+| [pluginName](./heft.iheftplugin.pluginname.md)        | <code>readonly</code> | string                                          |                   |
 
 ## Methods
 

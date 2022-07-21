@@ -17,4 +17,4 @@ pagination_next: null
 export interface IBuildStageContext extends IStageContext<BuildStageHooks, IBuildStageProperties>
 ```
 
-<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[BuildStageHooks](./heft.buildstagehooks.md) , [IBuildStageProperties](./heft.ibuildstageproperties.md) &gt;
+<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[BuildStageHooks](./heft.buildstagehooks.md) , [IBuildStageProperties](./heft.ibuildstageproperties.md)

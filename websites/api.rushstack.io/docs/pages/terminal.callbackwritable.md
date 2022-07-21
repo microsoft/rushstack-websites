@@ -33,6 +33,6 @@ export declare class CallbackWritable extends TerminalWritable
 
 ## Methods
 
-| Method                                                             | Modifiers | Description |
-| ------------------------------------------------------------------ | --------- | ----------- |
-| [onWriteChunk(chunk)](./terminal.callbackwritable.onwritechunk.md) |           |             |
+| Method                                                             | Modifiers              | Description |
+| ------------------------------------------------------------------ | ---------------------- | ----------- |
+| [onWriteChunk(chunk)](./terminal.callbackwritable.onwritechunk.md) | <code>protected</code> |             |

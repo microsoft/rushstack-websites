@@ -21,10 +21,10 @@ static deleteFileAsync(filePath: string, options?: IFileSystemDeleteFileOptions)
 
 ## Parameters
 
-| Parameter | Type                                                                                | Description |
-| --------- | ----------------------------------------------------------------------------------- | ----------- |
-| filePath  | string                                                                              |             |
-| options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) |             |
+| Parameter | Type                                                                                | Description       |
+| --------- | ----------------------------------------------------------------------------------- | ----------------- |
+| filePath  | string                                                                              |                   |
+| options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

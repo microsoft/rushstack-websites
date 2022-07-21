@@ -25,7 +25,7 @@ static acquire(resourceFolder: string, resourceName: string, maxWaitMs?: number)
 | -------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | resourceFolder | string | The folder where the lock file will be created                                                                                                 |
 | resourceName   | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
-| maxWaitMs      | number | The maximum number of milliseconds to wait for the lock before reporting an error                                                              |
+| maxWaitMs      | number | <i>(Optional)</i> The maximum number of milliseconds to wait for the lock before reporting an error                                            |
 
 <b>Returns:</b>
 

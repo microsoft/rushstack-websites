@@ -25,7 +25,7 @@ static spawn(filename: string, args: string[], options?: IExecutableSpawnOptions
 | --------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | filename  | string                                                                    | The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched. |
 | args      | string\[\]                                                                | The command-line arguments to be passed to the process.                                                                                                                                 |
-| options   | [IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md) | Additional options                                                                                                                                                                      |
+| options   | [IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md) | <i>(Optional)</i> Additional options                                                                                                                                                    |
 
 <b>Returns:</b>
 

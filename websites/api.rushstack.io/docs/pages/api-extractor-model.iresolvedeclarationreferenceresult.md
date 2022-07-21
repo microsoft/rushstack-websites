@@ -21,7 +21,7 @@ export interface IResolveDeclarationReferenceResult
 
 ## Properties
 
-| Property                                                                                       | Type                                                     | Description                                                                                                           |
-| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [errorMessage](./api-extractor-model.iresolvedeclarationreferenceresult.errormessage.md)       | string \| undefined                                      | If resolvedApiItem is undefined, then this will always contain an error message explaining why the resolution failed. |
-| [resolvedApiItem](./api-extractor-model.iresolvedeclarationreferenceresult.resolvedapiitem.md) | [ApiItem](./api-extractor-model.apiitem.md) \| undefined | The referenced ApiItem, if the declaration reference could be resolved.                                               |
+| Property                                                                                       | Modifiers | Type                                                     | Description                                                                                                           |
+| ---------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [errorMessage](./api-extractor-model.iresolvedeclarationreferenceresult.errormessage.md)       |           | string \| undefined                                      | If resolvedApiItem is undefined, then this will always contain an error message explaining why the resolution failed. |
+| [resolvedApiItem](./api-extractor-model.iresolvedeclarationreferenceresult.resolvedapiitem.md) |           | [ApiItem](./api-extractor-model.apiitem.md) \| undefined | The referenced ApiItem, if the declaration reference could be resolved.                                               |

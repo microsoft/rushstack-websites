@@ -29,6 +29,6 @@ More fields may be added to this interface in the future. For documentation abou
 
 ## Properties
 
-| Property                                               | Type   | Description                                                               |
-| ------------------------------------------------------ | ------ | ------------------------------------------------------------------------- |
-| [version](./node-core-library.ipackagejson.version.md) | string | A version number conforming to the Semantic Versioning (SemVer) standard. |
+| Property                                               | Modifiers | Type   | Description                                                               |
+| ------------------------------------------------------ | --------- | ------ | ------------------------------------------------------------------------- |
+| [version](./node-core-library.ipackagejson.version.md) |           | string | A version number conforming to the Semantic Versioning (SemVer) standard. |

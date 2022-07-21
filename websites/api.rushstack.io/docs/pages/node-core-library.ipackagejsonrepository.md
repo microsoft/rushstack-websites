@@ -21,8 +21,8 @@ export interface IPackageJsonRepository
 
 ## Properties
 
-| Property                                                              | Type   | Description                                                                                                |
-| --------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
-| [directory?](./node-core-library.ipackagejsonrepository.directory.md) | string | <i>(Optional)</i> If the project does not exist at the root of the repository, its path is specified here. |
-| [type](./node-core-library.ipackagejsonrepository.type.md)            | string | The source control type for the repository that hosts the project. This is typically "git".                |
-| [url](./node-core-library.ipackagejsonrepository.url.md)              | string | The URL of the repository that hosts the project.                                                          |
+| Property                                                              | Modifiers | Type   | Description                                                                                                |
+| --------------------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| [directory?](./node-core-library.ipackagejsonrepository.directory.md) |           | string | <i>(Optional)</i> If the project does not exist at the root of the repository, its path is specified here. |
+| [type](./node-core-library.ipackagejsonrepository.type.md)            |           | string | The source control type for the repository that hosts the project. This is typically "git".                |
+| [url](./node-core-library.ipackagejsonrepository.url.md)              |           | string | The URL of the repository that hosts the project.                                                          |

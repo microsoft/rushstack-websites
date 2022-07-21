@@ -21,9 +21,9 @@ export declare class CompilerState
 
 ## Properties
 
-| Property                                            | Modifiers | Type    | Description                                                                                           |
-| --------------------------------------------------- | --------- | ------- | ----------------------------------------------------------------------------------------------------- |
-| [program](./api-extractor.compilerstate.program.md) |           | unknown | The TypeScript compiler's <code>Program</code> object, which represents a complete scope of analysis. |
+| Property                                            | Modifiers             | Type    | Description                                                                                           |
+| --------------------------------------------------- | --------------------- | ------- | ----------------------------------------------------------------------------------------------------- |
+| [program](./api-extractor.compilerstate.program.md) | <code>readonly</code> | unknown | The TypeScript compiler's <code>Program</code> object, which represents a complete scope of analysis. |
 
 ## Methods
 

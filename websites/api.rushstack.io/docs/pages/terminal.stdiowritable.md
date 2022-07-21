@@ -33,6 +33,6 @@ This is the standard output target for a process. You normally do not need to co
 
 ## Methods
 
-| Method                                                          | Modifiers | Description |
-| --------------------------------------------------------------- | --------- | ----------- |
-| [onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md) |           |             |
+| Method                                                          | Modifiers              | Description |
+| --------------------------------------------------------------- | ---------------------- | ----------- |
+| [onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md) | <code>protected</code> |             |

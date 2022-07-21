@@ -21,6 +21,6 @@ constructor(options?: IPackageNameParserOptions);
 
 ## Parameters
 
-| Parameter | Type                                                                          | Description |
-| --------- | ----------------------------------------------------------------------------- | ----------- |
-| options   | [IPackageNameParserOptions](./node-core-library.ipackagenameparseroptions.md) |             |
+| Parameter | Type                                                                          | Description       |
+| --------- | ----------------------------------------------------------------------------- | ----------------- |
+| options   | [IPackageNameParserOptions](./node-core-library.ipackagenameparseroptions.md) | <i>(Optional)</i> |

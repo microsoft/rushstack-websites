@@ -11,7 +11,7 @@ pagination_next: null
 
 ## HeritageType class
 
-Represents a type referenced via an "extends" or "implements" heritage clause for a TypeScript class.
+Represents a type referenced via an "extends" or "implements" heritage clause for a TypeScript class or interface.
 
 <b>Signature:</b>
 
@@ -39,6 +39,6 @@ The heritage types are `Controls.WidgetBase` , `Controls.IWidget` , and `IDispos
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                        | Description                                      |
-| -------------------------------------------------------- | --------- | ------------------------------------------- | ------------------------------------------------ |
-| [excerpt](./api-extractor-model.heritagetype.excerpt.md) |           | [Excerpt](./api-extractor-model.excerpt.md) | An excerpt corresponding to the referenced type. |
+| Property                                                 | Modifiers             | Type                                        | Description                                      |
+| -------------------------------------------------------- | --------------------- | ------------------------------------------- | ------------------------------------------------ |
+| [excerpt](./api-extractor-model.heritagetype.excerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An excerpt corresponding to the referenced type. |

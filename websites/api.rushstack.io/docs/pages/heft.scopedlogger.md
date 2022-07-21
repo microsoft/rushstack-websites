@@ -25,13 +25,13 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                          | Description |
-| ----------------------------------------------------------- | --------- | ------------------------------------------------------------- | ----------- |
-| [errors](./heft.scopedlogger.errors.md)                     |           | ReadonlyArray&lt;Error&gt;                                    |             |
-| [loggerName](./heft.scopedlogger.loggername.md)             |           | string                                                        |             |
-| [terminal](./heft.scopedlogger.terminal.md)                 |           | [Terminal](./node-core-library.terminal.md)                   |             |
-| [terminalProvider](./heft.scopedlogger.terminalprovider.md) |           | [ITerminalProvider](./node-core-library.iterminalprovider.md) |             |
-| [warnings](./heft.scopedlogger.warnings.md)                 |           | ReadonlyArray&lt;Error&gt;                                    |             |
+| Property                                                    | Modifiers             | Type                                                          | Description |
+| ----------------------------------------------------------- | --------------------- | ------------------------------------------------------------- | ----------- |
+| [errors](./heft.scopedlogger.errors.md)                     | <code>readonly</code> | ReadonlyArray&lt;Error&gt;                                    |             |
+| [loggerName](./heft.scopedlogger.loggername.md)             | <code>readonly</code> | string                                                        |             |
+| [terminal](./heft.scopedlogger.terminal.md)                 | <code>readonly</code> | [Terminal](./node-core-library.terminal.md)                   |             |
+| [terminalProvider](./heft.scopedlogger.terminalprovider.md) | <code>readonly</code> | [ITerminalProvider](./node-core-library.iterminalprovider.md) |             |
+| [warnings](./heft.scopedlogger.warnings.md)                 | <code>readonly</code> | ReadonlyArray&lt;Error&gt;                                    |             |
 
 ## Methods
 

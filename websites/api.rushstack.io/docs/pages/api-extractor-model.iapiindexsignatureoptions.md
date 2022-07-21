@@ -16,7 +16,7 @@ Constructor options for [ApiIndexSignature](./api-extractor-model.apiindexsignat
 <b>Signature:</b>
 
 ```typescript
-export interface IApiIndexSignatureOptions extends IApiParameterListMixinOptions, IApiReleaseTagMixinOptions, IApiReturnTypeMixinOptions, IApiDeclaredItemOptions
+export interface IApiIndexSignatureOptions extends IApiParameterListMixinOptions, IApiReleaseTagMixinOptions, IApiReturnTypeMixinOptions, IApiReadonlyMixinOptions, IApiDeclaredItemOptions
 ```
 
-<b>Extends:</b> [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiReturnTypeMixinOptions](./api-extractor-model.iapireturntypemixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+<b>Extends:</b> [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiReturnTypeMixinOptions](./api-extractor-model.iapireturntypemixinoptions.md) , [IApiReadonlyMixinOptions](./api-extractor-model.iapireadonlymixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)

@@ -33,10 +33,10 @@ Do not use this class unless you intend to solicit bug reports from end users.
 
 ## Properties
 
-| Property                                                                      | Modifiers           | Type    | Description                                                                                                                          |
-| ----------------------------------------------------------------------------- | ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [breakInDebugger](./node-core-library.internalerror.breakindebugger.md)       | <code>static</code> | boolean | If true, a JavScript <code>debugger;</code> statement will be invoked whenever the <code>InternalError</code> constructor is called. |
-| [unformattedMessage](./node-core-library.internalerror.unformattedmessage.md) |                     | string  | The underlying error message, without the additional boilerplate for an <code>InternalError</code>.                                  |
+| Property                                                                      | Modifiers             | Type    | Description                                                                                                                          |
+| ----------------------------------------------------------------------------- | --------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [breakInDebugger](./node-core-library.internalerror.breakindebugger.md)       | <code>static</code>   | boolean | If true, a JavScript <code>debugger;</code> statement will be invoked whenever the <code>InternalError</code> constructor is called. |
+| [unformattedMessage](./node-core-library.internalerror.unformattedmessage.md) | <code>readonly</code> | string  | The underlying error message, without the additional boilerplate for an <code>InternalError</code>.                                  |
 
 ## Methods
 

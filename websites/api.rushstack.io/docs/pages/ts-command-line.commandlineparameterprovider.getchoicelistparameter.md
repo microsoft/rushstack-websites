@@ -16,14 +16,15 @@ Returns the CommandLineChoiceListParameter with the specified long name.
 <b>Signature:</b>
 
 ```typescript
-getChoiceListParameter(parameterLongName: string): CommandLineChoiceListParameter;
+getChoiceListParameter(parameterLongName: string, parameterScope?: string): CommandLineChoiceListParameter;
 ```
 
 ## Parameters
 
-| Parameter         | Type   | Description |
-| ----------------- | ------ | ----------- |
-| parameterLongName | string |             |
+| Parameter         | Type   | Description       |
+| ----------------- | ------ | ----------------- |
+| parameterLongName | string |                   |
+| parameterScope    | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

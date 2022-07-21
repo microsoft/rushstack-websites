@@ -23,6 +23,6 @@ export interface IParameterAssociatedActionNames
 
 ## Properties
 
-| Property                                                                                 | Type       | Description                                                                                     |
-| ---------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| [associatedActionNames](./heft.iparameterassociatedactionnames.associatedactionnames.md) | string\[\] | <b><i>(BETA)</i></b> A string list of one or more action names to associate the parameter with. |
+| Property                                                                                 | Modifiers | Type       | Description                                                                                     |
+| ---------------------------------------------------------------------------------------- | --------- | ---------- | ----------------------------------------------------------------------------------------------- |
+| [associatedActionNames](./heft.iparameterassociatedactionnames.associatedactionnames.md) |           | string\[\] | <b><i>(BETA)</i></b> A string list of one or more action names to associate the parameter with. |

@@ -25,7 +25,7 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-| Property                                                               | Type    | Description                                                                                         |
-| ---------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------- |
-| [apiJsonFilePath?](./api-extractor.iconfigdocmodel.apijsonfilepath.md) | string  | <i>(Optional)</i> The output path for the doc model file. The file extension should be ".api.json". |
-| [enabled](./api-extractor.iconfigdocmodel.enabled.md)                  | boolean | Whether to generate a doc model file.                                                               |
+| Property                                                               | Modifiers | Type    | Description                                                                                         |
+| ---------------------------------------------------------------------- | --------- | ------- | --------------------------------------------------------------------------------------------------- |
+| [apiJsonFilePath?](./api-extractor.iconfigdocmodel.apijsonfilepath.md) |           | string  | <i>(Optional)</i> The output path for the doc model file. The file extension should be ".api.json". |
+| [enabled](./api-extractor.iconfigdocmodel.enabled.md)                  |           | boolean | Whether to generate a doc model file.                                                               |

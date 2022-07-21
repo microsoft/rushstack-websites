@@ -29,11 +29,11 @@ export declare class NormalizeNewlinesTextRewriter extends TextRewriter
 
 ## Properties
 
-| Property                                                                             | Modifiers | Type                                              | Description                                                                                                                                           |
-| ------------------------------------------------------------------------------------ | --------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ensureNewlineAtEnd](./terminal.normalizenewlinestextrewriter.ensurenewlineatend.md) |           | boolean                                           | If <code>true</code>, then <code>NormalizeNewlinesTextRewriter.close()</code> will append a newline to the output if it ends with an incomplete line. |
-| [newline](./terminal.normalizenewlinestextrewriter.newline.md)                       |           | string                                            | The specific character sequence that will be used when appending newlines.                                                                            |
-| [newlineKind](./terminal.normalizenewlinestextrewriter.newlinekind.md)               |           | [NewlineKind](./node-core-library.newlinekind.md) | Specifies how newlines should be represented in the output stream.                                                                                    |
+| Property                                                                             | Modifiers             | Type                                              | Description                                                                                                                                           |
+| ------------------------------------------------------------------------------------ | --------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ensureNewlineAtEnd](./terminal.normalizenewlinestextrewriter.ensurenewlineatend.md) | <code>readonly</code> | boolean                                           | If <code>true</code>, then <code>NormalizeNewlinesTextRewriter.close()</code> will append a newline to the output if it ends with an incomplete line. |
+| [newline](./terminal.normalizenewlinestextrewriter.newline.md)                       | <code>readonly</code> | string                                            | The specific character sequence that will be used when appending newlines.                                                                            |
+| [newlineKind](./terminal.normalizenewlinestextrewriter.newlinekind.md)               | <code>readonly</code> | [NewlineKind](./node-core-library.newlinekind.md) | Specifies how newlines should be represented in the output stream.                                                                                    |
 
 ## Methods
 

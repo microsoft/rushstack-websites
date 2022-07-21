@@ -27,10 +27,10 @@ export declare class RushSession
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                          | Description          |
-| -------------------------------------------------------------- | --------- | ------------------------------------------------------------- | -------------------- |
-| [hooks](./rush-lib.rushsession.hooks.md)                       |           | [RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md)        | <b><i>(BETA)</i></b> |
-| [terminalProvider](./rush-lib.rushsession.terminalprovider.md) |           | [ITerminalProvider](./node-core-library.iterminalprovider.md) | <b><i>(BETA)</i></b> |
+| Property                                                       | Modifiers             | Type                                                          | Description          |
+| -------------------------------------------------------------- | --------------------- | ------------------------------------------------------------- | -------------------- |
+| [hooks](./rush-lib.rushsession.hooks.md)                       | <code>readonly</code> | [RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md)        | <b><i>(BETA)</i></b> |
+| [terminalProvider](./rush-lib.rushsession.terminalprovider.md) | <code>readonly</code> | [ITerminalProvider](./node-core-library.iterminalprovider.md) | <b><i>(BETA)</i></b> |
 
 ## Methods
 

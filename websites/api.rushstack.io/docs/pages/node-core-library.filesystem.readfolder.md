@@ -23,10 +23,10 @@ static readFolder(folderPath: string, options?: IFileSystemReadFolderOptions): s
 
 ## Parameters
 
-| Parameter  | Type                                                                                | Description |
-| ---------- | ----------------------------------------------------------------------------------- | ----------- |
-| folderPath | string                                                                              |             |
-| options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) |             |
+| Parameter  | Type                                                                                | Description       |
+| ---------- | ----------------------------------------------------------------------------------- | ----------------- |
+| folderPath | string                                                                              |                   |
+| options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

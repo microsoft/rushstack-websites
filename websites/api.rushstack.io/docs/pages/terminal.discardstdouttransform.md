@@ -64,6 +64,6 @@ The process completed with errors
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description          |
-| ------------------------------------------------------------------------ | --------- | -------------------- |
-| [onWriteChunk(chunk)](./terminal.discardstdouttransform.onwritechunk.md) |           | <b><i>(BETA)</i></b> |
+| Method                                                                   | Modifiers              | Description          |
+| ------------------------------------------------------------------------ | ---------------------- | -------------------- |
+| [onWriteChunk(chunk)](./terminal.discardstdouttransform.onwritechunk.md) | <code>protected</code> | <b><i>(BETA)</i></b> |

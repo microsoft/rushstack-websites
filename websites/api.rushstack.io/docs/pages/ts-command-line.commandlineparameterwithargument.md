@@ -29,7 +29,7 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                           | Modifiers | Type                                              | Description                                                                     |
-| ---------------------------------------------------------------------------------- | --------- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [argumentName](./ts-command-line.commandlineparameterwithargument.argumentname.md) |           | string                                            | The name of the argument, which will be shown in the command-line help.         |
-| [completions](./ts-command-line.commandlineparameterwithargument.completions.md)   |           | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined | An optional callback that provides a list of custom choices for tab completion. |
+| Property                                                                           | Modifiers             | Type                                              | Description                                                                     |
+| ---------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [argumentName](./ts-command-line.commandlineparameterwithargument.argumentname.md) | <code>readonly</code> | string                                            | The name of the argument, which will be shown in the command-line help.         |
+| [completions](./ts-command-line.commandlineparameterwithargument.completions.md)   | <code>readonly</code> | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined | An optional callback that provides a list of custom choices for tab completion. |

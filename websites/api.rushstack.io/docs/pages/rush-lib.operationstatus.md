@@ -29,6 +29,7 @@ export declare enum OperationStatus
 | Executing          | <code>&quot;EXECUTING&quot;</code>             | <b><i>(BETA)</i></b> The Operation is currently executing                                                  |
 | Failure            | <code>&quot;FAILURE&quot;</code>               | <b><i>(BETA)</i></b> The Operation failed                                                                  |
 | FromCache          | <code>&quot;FROM CACHE&quot;</code>            | <b><i>(BETA)</i></b> The Operation had its outputs restored from the build cache                           |
+| NoOp               | <code>&quot;NO OP&quot;</code>                 | <b><i>(BETA)</i></b> The Operation was a no-op (for example, it had an empty script)                       |
 | Ready              | <code>&quot;READY&quot;</code>                 | <b><i>(BETA)</i></b> The Operation is on the queue, ready to execute (but may be waiting for dependencies) |
 | Skipped            | <code>&quot;SKIPPED&quot;</code>               | <b><i>(BETA)</i></b> The Operation was skipped via the legacy incremental build logic                      |
 | Success            | <code>&quot;SUCCESS&quot;</code>               | <b><i>(BETA)</i></b> The Operation completed successfully and did not write to standard output             |

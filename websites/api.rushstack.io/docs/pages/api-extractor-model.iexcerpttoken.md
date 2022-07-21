@@ -19,8 +19,8 @@ export interface IExcerptToken
 
 ## Properties
 
-| Property                                                                         | Type                                                          | Description       |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------- |
-| [canonicalReference?](./api-extractor-model.iexcerpttoken.canonicalreference.md) | string                                                        | <i>(Optional)</i> |
-| [kind](./api-extractor-model.iexcerpttoken.kind.md)                              | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) |                   |
-| [text](./api-extractor-model.iexcerpttoken.text.md)                              | string                                                        |                   |
+| Property                                                                         | Modifiers             | Type                                                          | Description       |
+| -------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------- | ----------------- |
+| [canonicalReference?](./api-extractor-model.iexcerpttoken.canonicalreference.md) |                       | string                                                        | <i>(Optional)</i> |
+| [kind](./api-extractor-model.iexcerpttoken.kind.md)                              | <code>readonly</code> | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) |                   |
+| [text](./api-extractor-model.iexcerpttoken.text.md)                              |                       | string                                                        |                   |

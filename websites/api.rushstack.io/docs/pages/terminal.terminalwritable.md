@@ -55,16 +55,16 @@ The stream of messages are [ITerminalChunk](./terminal.iterminalchunk.md) object
 
 ## Properties
 
-| Property                                                            | Modifiers | Type    | Description                                                                                                                                      |
-| ------------------------------------------------------------------- | --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [isOpen](./terminal.terminalwritable.isopen.md)                     |           | boolean | This property is initially <code>true</code> when the object is constructed, and becomes <code>false</code> when <code>close()</code> is called. |
-| [preventAutoclose](./terminal.terminalwritable.preventautoclose.md) |           | boolean |                                                                                                                                                  |
+| Property                                                            | Modifiers             | Type    | Description                                                                                                                                      |
+| ------------------------------------------------------------------- | --------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [isOpen](./terminal.terminalwritable.isopen.md)                     | <code>readonly</code> | boolean | This property is initially <code>true</code> when the object is constructed, and becomes <code>false</code> when <code>close()</code> is called. |
+| [preventAutoclose](./terminal.terminalwritable.preventautoclose.md) | <code>readonly</code> | boolean |                                                                                                                                                  |
 
 ## Methods
 
-| Method                                                             | Modifiers | Description                                                                                                                                                                  |
-| ------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [close()](./terminal.terminalwritable.close.md)                    |           | Calling this method flushes any remaining outputs and permanently transitions the <code>TerminalWritable</code> to a "closed" state, where no further chunks can be written. |
-| [onClose()](./terminal.terminalwritable.onclose.md)                |           | Subclasses can override this empty method to perform additional operations such as closing a file handle.                                                                    |
-| [onWriteChunk(chunk)](./terminal.terminalwritable.onwritechunk.md) |           | Subclasses should implement this <code>abstract</code> method to process the chunk.                                                                                          |
-| [writeChunk(chunk)](./terminal.terminalwritable.writechunk.md)     |           | Upstream objects call this method to provide inputs to this object.                                                                                                          |
+| Method                                                             | Modifiers              | Description                                                                                                                                                                  |
+| ------------------------------------------------------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [close()](./terminal.terminalwritable.close.md)                    |                        | Calling this method flushes any remaining outputs and permanently transitions the <code>TerminalWritable</code> to a "closed" state, where no further chunks can be written. |
+| [onClose()](./terminal.terminalwritable.onclose.md)                | <code>protected</code> | Subclasses can override this empty method to perform additional operations such as closing a file handle.                                                                    |
+| [onWriteChunk(chunk)](./terminal.terminalwritable.onwritechunk.md) | <code>protected</code> | Subclasses should implement this <code>abstract</code> method to process the chunk.                                                                                          |
+| [writeChunk(chunk)](./terminal.terminalwritable.writechunk.md)     |                        | Upstream objects call this method to provide inputs to this object.                                                                                                          |

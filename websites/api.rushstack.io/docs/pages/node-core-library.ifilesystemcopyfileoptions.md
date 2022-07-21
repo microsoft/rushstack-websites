@@ -23,6 +23,6 @@ export interface IFileSystemCopyFileOptions extends IFileSystemCopyFileBaseOptio
 
 ## Properties
 
-| Property                                                                             | Type   | Description                                                                       |
-| ------------------------------------------------------------------------------------ | ------ | --------------------------------------------------------------------------------- |
-| [destinationPath](./node-core-library.ifilesystemcopyfileoptions.destinationpath.md) | string | The path that the object will be copied to. The path may be absolute or relative. |
+| Property                                                                             | Modifiers | Type   | Description                                                                       |
+| ------------------------------------------------------------------------------------ | --------- | ------ | --------------------------------------------------------------------------------- |
+| [destinationPath](./node-core-library.ifilesystemcopyfileoptions.destinationpath.md) |           | string | The path that the object will be copied to. The path may be absolute or relative. |

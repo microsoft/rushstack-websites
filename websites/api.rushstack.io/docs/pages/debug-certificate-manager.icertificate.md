@@ -21,7 +21,7 @@ export interface ICertificate
 
 ## Properties
 
-| Property                                                                     | Type                | Description                                  |
-| ---------------------------------------------------------------------------- | ------------------- | -------------------------------------------- |
-| [pemCertificate](./debug-certificate-manager.icertificate.pemcertificate.md) | string \| undefined | Generated pem certificate contents           |
-| [pemKey](./debug-certificate-manager.icertificate.pemkey.md)                 | string \| undefined | Private key used to sign the pem certificate |
+| Property                                                                     | Modifiers | Type                | Description                                  |
+| ---------------------------------------------------------------------------- | --------- | ------------------- | -------------------------------------------- |
+| [pemCertificate](./debug-certificate-manager.icertificate.pemcertificate.md) |           | string \| undefined | Generated pem certificate contents           |
+| [pemKey](./debug-certificate-manager.icertificate.pemkey.md)                 |           | string \| undefined | Private key used to sign the pem certificate |

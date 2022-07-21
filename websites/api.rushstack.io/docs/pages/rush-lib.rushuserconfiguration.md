@@ -23,9 +23,9 @@ export declare class RushUserConfiguration
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                | Description                                                                                            |
-| ------------------------------------------------------------------------ | --------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
-| [buildCacheFolder](./rush-lib.rushuserconfiguration.buildcachefolder.md) |           | string \| undefined | <b><i>(BETA)</i></b> If provided, store build cache in the specified folder. Must be an absolute path. |
+| Property                                                                 | Modifiers             | Type                | Description                                                                                            |
+| ------------------------------------------------------------------------ | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| [buildCacheFolder](./rush-lib.rushuserconfiguration.buildcachefolder.md) | <code>readonly</code> | string \| undefined | <b><i>(BETA)</i></b> If provided, store build cache in the specified folder. Must be an absolute path. |
 
 ## Methods
 

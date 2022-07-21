@@ -27,8 +27,8 @@ export declare class CertificateStore
 
 ## Properties
 
-| Property                                                                           | Modifiers | Type                | Description                                 |
-| ---------------------------------------------------------------------------------- | --------- | ------------------- | ------------------------------------------- |
-| [certificateData](./debug-certificate-manager.certificatestore.certificatedata.md) |           | string \| undefined | Debug certificate pem file contents.        |
-| [certificatePath](./debug-certificate-manager.certificatestore.certificatepath.md) |           | string              | Path to the saved debug certificate         |
-| [keyData](./debug-certificate-manager.certificatestore.keydata.md)                 |           | string \| undefined | Key used to sign the debug pem certificate. |
+| Property                                                                           | Modifiers             | Type                | Description                                 |
+| ---------------------------------------------------------------------------------- | --------------------- | ------------------- | ------------------------------------------- |
+| [certificateData](./debug-certificate-manager.certificatestore.certificatedata.md) |                       | string \| undefined | Debug certificate pem file contents.        |
+| [certificatePath](./debug-certificate-manager.certificatestore.certificatepath.md) | <code>readonly</code> | string              | Path to the saved debug certificate         |
+| [keyData](./debug-certificate-manager.certificatestore.keydata.md)                 |                       | string \| undefined | Key used to sign the debug pem certificate. |

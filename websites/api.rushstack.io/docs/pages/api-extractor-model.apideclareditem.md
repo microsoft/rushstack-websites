@@ -35,10 +35,10 @@ Most `ApiItem` subclasses have declarations and thus extend `ApiDeclaredItem` . 
 
 ## Properties
 
-| Property                                                                | Modifiers | Type                                                                        | Description                                                       |
-| ----------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [excerpt](./api-extractor-model.apideclareditem.excerpt.md)             |           | [Excerpt](./api-extractor-model.excerpt.md)                                 | The source code excerpt where the API item is declared.           |
-| [excerptTokens](./api-extractor-model.apideclareditem.excerpttokens.md) |           | ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md) &gt; | The individual source code tokens that comprise the main excerpt. |
+| Property                                                                | Modifiers             | Type                                                                        | Description                                                       |
+| ----------------------------------------------------------------------- | --------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [excerpt](./api-extractor-model.apideclareditem.excerpt.md)             | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md)                                 | The source code excerpt where the API item is declared.           |
+| [excerptTokens](./api-extractor-model.apideclareditem.excerpttokens.md) | <code>readonly</code> | ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md) &gt; | The individual source code tokens that comprise the main excerpt. |
 
 ## Methods
 

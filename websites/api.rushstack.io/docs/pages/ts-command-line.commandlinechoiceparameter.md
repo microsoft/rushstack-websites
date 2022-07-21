@@ -27,13 +27,13 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                     | Modifiers | Type                                                                      | Description                                                                              |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [alternatives](./ts-command-line.commandlinechoiceparameter.alternatives.md) |           | ReadonlyArray&lt;string&gt;                                               | A list of strings (which contain no spaces), of possible options which can be selected   |
-| [completions](./ts-command-line.commandlinechoiceparameter.completions.md)   |           | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined                         | An optional callback that provides a list of custom choices for tab completion.          |
-| [defaultValue](./ts-command-line.commandlinechoiceparameter.defaultvalue.md) |           | string \| undefined                                                       | The default value which will be used if the parameter is omitted from the command line.  |
-| [kind](./ts-command-line.commandlinechoiceparameter.kind.md)                 |           | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                         |
-| [value](./ts-command-line.commandlinechoiceparameter.value.md)               |           | string \| undefined                                                       | Returns the argument value for a choice parameter that was parsed from the command line. |
+| Property                                                                     | Modifiers             | Type                                                                      | Description                                                                              |
+| ---------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [alternatives](./ts-command-line.commandlinechoiceparameter.alternatives.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt;                                               | A list of strings (which contain no spaces), of possible options which can be selected   |
+| [completions](./ts-command-line.commandlinechoiceparameter.completions.md)   | <code>readonly</code> | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined                         | An optional callback that provides a list of custom choices for tab completion.          |
+| [defaultValue](./ts-command-line.commandlinechoiceparameter.defaultvalue.md) | <code>readonly</code> | string \| undefined                                                       | The default value which will be used if the parameter is omitted from the command line.  |
+| [kind](./ts-command-line.commandlinechoiceparameter.kind.md)                 | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter.                                                         |
+| [value](./ts-command-line.commandlinechoiceparameter.value.md)               | <code>readonly</code> | string \| undefined                                                       | Returns the argument value for a choice parameter that was parsed from the command line. |
 
 ## Methods
 

@@ -25,9 +25,9 @@ The schema itself is normally loaded and compiled later, only if it is actually 
 
 ## Properties
 
-| Property                                                 | Modifiers | Type   | Description                                                      |
-| -------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------- |
-| [shortName](./node-core-library.jsonschema.shortname.md) |           | string | Returns a short name for this schema, for use in error messages. |
+| Property                                                 | Modifiers             | Type   | Description                                                      |
+| -------------------------------------------------------- | --------------------- | ------ | ---------------------------------------------------------------- |
+| [shortName](./node-core-library.jsonschema.shortname.md) | <code>readonly</code> | string | Returns a short name for this schema, for use in error messages. |
 
 ## Methods
 

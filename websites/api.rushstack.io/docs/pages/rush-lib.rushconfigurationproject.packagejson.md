@@ -11,10 +11,6 @@ pagination_next: null
 
 ## RushConfigurationProject.packageJson property
 
-> Warning: This API is now obsolete.
->
-> Use packageJsonEditor instead
-
 The parsed NPM "package.json" file from projectFolder.
 
 <b>Signature:</b>

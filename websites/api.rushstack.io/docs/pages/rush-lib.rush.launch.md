@@ -21,10 +21,10 @@ static launch(launcherVersion: string, arg: ILaunchOptions): void;
 
 ## Parameters
 
-| Parameter       | Type                                           | Description                                                                          |
-| --------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------ |
-| launcherVersion | string                                         | The version of the <code>@microsoft/rush</code> wrapper used to call invoke the CLI. |
-| arg             | [ILaunchOptions](./rush-lib.ilaunchoptions.md) |                                                                                      |
+| Parameter       | Type                                           | Description |
+| --------------- | ---------------------------------------------- | ----------- |
+| launcherVersion | string                                         |             |
+| arg             | [ILaunchOptions](./rush-lib.ilaunchoptions.md) |             |
 
 <b>Returns:</b>
 

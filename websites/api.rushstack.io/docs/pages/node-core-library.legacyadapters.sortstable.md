@@ -21,10 +21,10 @@ static sortStable<T>(array: T[], compare?: (a: T, b: T) => number): void;
 
 ## Parameters
 
-| Parameter | Type                      | Description |
-| --------- | ------------------------- | ----------- |
-| array     | T\[\]                     |             |
-| compare   | (a: T, b: T) =&gt; number |             |
+| Parameter | Type                      | Description       |
+| --------- | ------------------------- | ----------------- |
+| array     | T\[\]                     |                   |
+| compare   | (a: T, b: T) =&gt; number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

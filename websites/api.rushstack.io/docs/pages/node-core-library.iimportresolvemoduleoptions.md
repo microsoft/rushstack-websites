@@ -23,6 +23,6 @@ export interface IImportResolveModuleOptions extends IImportResolveOptions
 
 ## Properties
 
-| Property                                                                    | Type   | Description                                                                                                                     |
-| --------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| [modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md) | string | The module identifier to resolve. For example " @ rushstack/node-core-library" or " @ rushstack/node-core-library/lib/index.js" |
+| Property                                                                    | Modifiers | Type   | Description                                                                                                                     |
+| --------------------------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| [modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md) |           | string | The module identifier to resolve. For example " @ rushstack/node-core-library" or " @ rushstack/node-core-library/lib/index.js" |

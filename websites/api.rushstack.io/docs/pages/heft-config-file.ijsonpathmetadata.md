@@ -9,21 +9,14 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/heft-config-file](./heft-config-file.md) &gt; [IJsonPathMetadata](./heft-config-file.ijsonpathmetadata.md)
 
-## IJsonPathMetadata interface
+## IJsonPathMetadata type
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-
-Used to specify how node(s) in a JSON object should be processed after being loaded.
 
 <b>Signature:</b>
 
 ```typescript
-export interface IJsonPathMetadata
+export declare type IJsonPathMetadata = ICustomJsonPathMetadata | INonCustomJsonPathMetadata;
 ```
 
-## Properties
-
-| Property                                                                              | Type                                                                                      | Description                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [customResolver?](./heft-config-file.ijsonpathmetadata.customresolver.md)             | (configurationFilePath: string, propertyName: string, propertyValue: string) =&gt; string | <b><i>(BETA)</i></b> <i>(Optional)</i> If <code>IJsonPathMetadata.pathResolutionMethod</code> is set to <code>PathResolutionMethod.custom</code>, this property be used to resolve the path. |
-| [pathResolutionMethod?](./heft-config-file.ijsonpathmetadata.pathresolutionmethod.md) | [PathResolutionMethod](./heft-config-file.pathresolutionmethod.md)                        | <b><i>(BETA)</i></b> <i>(Optional)</i> If this property describes a filesystem path, use this property to describe how the path should be resolved.                                          |
+<b>References:</b> [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md) , [INonCustomJsonPathMetadata](./heft-config-file.inoncustomjsonpathmetadata.md)

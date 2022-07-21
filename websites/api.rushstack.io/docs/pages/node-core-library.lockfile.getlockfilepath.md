@@ -25,7 +25,7 @@ static getLockFilePath(resourceFolder: string, resourceName: string, pid?: numbe
 | -------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | resourceFolder | string | The folder where the lock file will be created                                                                                                 |
 | resourceName   | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
-| pid            | number | The PID for the current Node.js process (<code>process.pid</code>), which is used by the locking algorithm.                                    |
+| pid            | number | <i>(Optional)</i> The PID for the current Node.js process (<code>process.pid</code>), which is used by the locking algorithm.                  |
 
 <b>Returns:</b>
 

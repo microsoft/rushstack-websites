@@ -21,6 +21,6 @@ export interface ICommandLineRemainderDefinition
 
 ## Properties
 
-| Property                                                                        | Type   | Description                                                                                                          |
-| ------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------- |
-| [description](./ts-command-line.icommandlineremainderdefinition.description.md) | string | Documentation for how the remaining arguments will be used. This will be shown when invoking the tool with "--help". |
+| Property                                                                        | Modifiers | Type   | Description                                                                                                          |
+| ------------------------------------------------------------------------------- | --------- | ------ | -------------------------------------------------------------------------------------------------------------------- |
+| [description](./ts-command-line.icommandlineremainderdefinition.description.md) |           | string | Documentation for how the remaining arguments will be used. This will be shown when invoking the tool with "--help". |

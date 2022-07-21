@@ -25,13 +25,13 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-| Property                                                                         | Modifiers | Type                                                                     | Description                                                         |
-| -------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| [definitionName](./rush-lib.versionpolicy.definitionname.md)                     |           | [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy definition name                                      |
-| [exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md)         |           | boolean                                                                  | Determines if a version policy wants to opt out of changelog files. |
-| [includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md) |           | boolean                                                                  | Determines if a version policy wants to opt in to including email.  |
-| [isLockstepped](./rush-lib.versionpolicy.islockstepped.md)                       |           | boolean                                                                  | Whether it is a lockstepped version policy                          |
-| [policyName](./rush-lib.versionpolicy.policyname.md)                             |           | string                                                                   | Version policy name                                                 |
+| Property                                                                         | Modifiers             | Type                                                                     | Description                                                         |
+| -------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| [definitionName](./rush-lib.versionpolicy.definitionname.md)                     | <code>readonly</code> | [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy definition name                                      |
+| [exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md)         | <code>readonly</code> | boolean                                                                  | Determines if a version policy wants to opt out of changelog files. |
+| [includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md) | <code>readonly</code> | boolean                                                                  | Determines if a version policy wants to opt in to including email.  |
+| [isLockstepped](./rush-lib.versionpolicy.islockstepped.md)                       | <code>readonly</code> | boolean                                                                  | Whether it is a lockstepped version policy                          |
+| [policyName](./rush-lib.versionpolicy.policyname.md)                             | <code>readonly</code> | string                                                                   | Version policy name                                                 |
 
 ## Methods
 

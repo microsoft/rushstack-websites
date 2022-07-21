@@ -21,10 +21,10 @@ static tag(tagName: string, subtree?: TreeNode): TreeNode;
 
 ## Parameters
 
-| Parameter | Type                                   | Description |
-| --------- | -------------------------------------- | ----------- |
-| tagName   | string                                 |             |
-| subtree   | [TreeNode](./tree-pattern.treenode.md) |             |
+| Parameter | Type                                   | Description       |
+| --------- | -------------------------------------- | ----------------- |
+| tagName   | string                                 |                   |
+| subtree   | [TreeNode](./tree-pattern.treenode.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

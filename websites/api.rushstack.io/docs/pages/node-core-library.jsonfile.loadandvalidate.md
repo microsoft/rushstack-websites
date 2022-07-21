@@ -21,11 +21,11 @@ static loadAndValidate(jsonFilename: string, jsonSchema: JsonSchema, options?: I
 
 ## Parameters
 
-| Parameter    | Type                                                                            | Description |
-| ------------ | ------------------------------------------------------------------------------- | ----------- |
-| jsonFilename | string                                                                          |             |
-| jsonSchema   | [JsonSchema](./node-core-library.jsonschema.md)                                 |             |
-| options      | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) |             |
+| Parameter    | Type                                                                            | Description       |
+| ------------ | ------------------------------------------------------------------------------- | ----------------- |
+| jsonFilename | string                                                                          |                   |
+| jsonSchema   | [JsonSchema](./node-core-library.jsonschema.md)                                 |                   |
+| options      | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

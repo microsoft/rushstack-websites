@@ -31,6 +31,6 @@ string
 
 ## Remarks
 
-If `pathToConvert` is under the `baseFolder` , then it will be converted to a relative with the `./` prefix. Otherwise, it will be converted to an absolute path.
+If `pathToConvert` is under the `baseFolder` , then it will be converted to a relative with the `./` prefix unless the [IPathFormatConciselyOptions.trimLeadingDotSlash](./node-core-library.ipathformatconciselyoptions.trimleadingdotslash.md) option is set to `true` . Otherwise, it will be converted to an absolute path.
 
 Backslashes will be converted to slashes, unless the path starts with an OS-specific string like `C:\` .

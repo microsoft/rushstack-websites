@@ -25,11 +25,11 @@ The implementation works on Windows, Mac, and Linux without requiring any native
 
 ## Properties
 
-| Property                                                               | Modifiers | Type    | Description                                                                                                                             |
-| ---------------------------------------------------------------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [dirtyWhenAcquired](./node-core-library.lockfile.dirtywhenacquired.md) |           | boolean | Returns the initial state of the lock. This can be used to detect if the previous process was terminated before releasing the resource. |
-| [filePath](./node-core-library.lockfile.filepath.md)                   |           | string  | Returns the absolute path to the lockfile                                                                                               |
-| [isReleased](./node-core-library.lockfile.isreleased.md)               |           | boolean | Returns true if this lock is currently being held.                                                                                      |
+| Property                                                               | Modifiers             | Type    | Description                                                                                                                             |
+| ---------------------------------------------------------------------- | --------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [dirtyWhenAcquired](./node-core-library.lockfile.dirtywhenacquired.md) | <code>readonly</code> | boolean | Returns the initial state of the lock. This can be used to detect if the previous process was terminated before releasing the resource. |
+| [filePath](./node-core-library.lockfile.filepath.md)                   | <code>readonly</code> | string  | Returns the absolute path to the lockfile                                                                                               |
+| [isReleased](./node-core-library.lockfile.isreleased.md)               | <code>readonly</code> | boolean | Returns true if this lock is currently being held.                                                                                      |
 
 ## Methods
 

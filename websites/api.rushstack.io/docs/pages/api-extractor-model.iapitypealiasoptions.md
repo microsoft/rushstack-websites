@@ -23,6 +23,6 @@ export interface IApiTypeAliasOptions extends IApiNameMixinOptions, IApiReleaseT
 
 ## Properties
 
-| Property                                                                       | Type                                                              | Description |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------- |
-| [typeTokenRange](./api-extractor-model.iapitypealiasoptions.typetokenrange.md) | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
+| Property                                                                       | Modifiers | Type                                                              | Description |
+| ------------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------- | ----------- |
+| [typeTokenRange](./api-extractor-model.iapitypealiasoptions.typetokenrange.md) |           | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |

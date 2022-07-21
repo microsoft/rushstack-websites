@@ -21,10 +21,10 @@ static formatForTests(text: string, options?: IAnsiEscapeConvertForTestsOptions)
 
 ## Parameters
 
-| Parameter | Type                                                                                          | Description |
-| --------- | --------------------------------------------------------------------------------------------- | ----------- |
-| text      | string                                                                                        |             |
-| options   | [IAnsiEscapeConvertForTestsOptions](./node-core-library.iansiescapeconvertfortestsoptions.md) |             |
+| Parameter | Type                                                                                          | Description       |
+| --------- | --------------------------------------------------------------------------------------------- | ----------------- |
+| text      | string                                                                                        |                   |
+| options   | [IAnsiEscapeConvertForTestsOptions](./node-core-library.iansiescapeconvertfortestsoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

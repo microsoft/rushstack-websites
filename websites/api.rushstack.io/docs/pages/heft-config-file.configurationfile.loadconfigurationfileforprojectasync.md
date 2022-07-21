@@ -23,11 +23,11 @@ loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, r
 
 ## Parameters
 
-| Parameter   | Type                                          | Description |
-| ----------- | --------------------------------------------- | ----------- |
-| terminal    | [ITerminal](./node-core-library.iterminal.md) |             |
-| projectPath | string                                        |             |
-| rigConfig   | [RigConfig](./rig-package.rigconfig.md)       |             |
+| Parameter   | Type                                          | Description       |
+| ----------- | --------------------------------------------- | ----------------- |
+| terminal    | [ITerminal](./node-core-library.iterminal.md) |                   |
+| projectPath | string                                        |                   |
+| rigConfig   | [RigConfig](./rig-package.rigconfig.md)       | <i>(Optional)</i> |
 
 <b>Returns:</b>
 
