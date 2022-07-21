@@ -15,7 +15,7 @@ The unique name for the temporary project that will be generated in the Common f
 
 Example: `@rush-temp/MyProject-2`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tempProjectName(): string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates the kind of token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get kind(): ExcerptTokenKind;

@@ -13,7 +13,7 @@ pagination_next: null
 
 This event occurs before each markdown file is written. It provides an opportunity to customize the content of the file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
@@ -26,6 +26,6 @@ onBeforeWritePage(eventArgs: IMarkdownDocumenterFeatureOnBeforeWritePageArgs): v
 | --------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
 | eventArgs | [IMarkdownDocumenterFeatureOnBeforeWritePageArgs](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

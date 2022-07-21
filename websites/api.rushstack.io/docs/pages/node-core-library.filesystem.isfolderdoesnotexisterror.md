@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the error object indicates the folder does not exist (`ENOTDIR` ).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isFolderDoesNotExistError(error: Error): boolean;
@@ -25,6 +25,6 @@ static isFolderDoesNotExistError(error: Error): boolean;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for localization.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizationPluginOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 Hook invoked on a module id to get the final rendered id.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 finalModuleId: SyncWaterfallHook<string | number | undefined, webpack.compilation.Compilation>;

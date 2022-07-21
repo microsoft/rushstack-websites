@@ -13,7 +13,7 @@ pagination_next: null
 
 Normalizes an object into an `Error` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static scrubError(error: Error | string | any): Error;
@@ -25,6 +25,6 @@ static scrubError(error: Error | string | any): Error;
 | --------- | ---------------------- | ----------- |
 | error     | Error \| string \| any |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Error

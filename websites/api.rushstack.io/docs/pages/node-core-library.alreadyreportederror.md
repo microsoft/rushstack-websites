@@ -13,13 +13,13 @@ pagination_next: null
 
 This exception can be thrown to indicate that an operation failed and an error message has already been reported appropriately. Thus, the catch handler does not have responsibility for reporting the error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AlreadyReportedError extends Error
 ```
 
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Remarks
 
@@ -42,7 +42,7 @@ catch (error) {
 }
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Creates the folder recursively using FileSystem.ensureFolder() Defaults to false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ensureFolderExists?: boolean;

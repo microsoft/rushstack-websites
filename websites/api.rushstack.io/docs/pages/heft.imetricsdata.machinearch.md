@@ -13,7 +13,7 @@ pagination_next: null
 
 The processor's architecture.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 machineArch: string;

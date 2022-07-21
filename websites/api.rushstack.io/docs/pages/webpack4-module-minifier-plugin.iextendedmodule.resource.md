@@ -13,7 +13,7 @@ pagination_next: null
 
 Path to the physical file this module represents
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resource?: string;

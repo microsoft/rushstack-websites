@@ -15,7 +15,7 @@ pagination_next: null
 
 Find and return a configuration file for the specified project, automatically resolving `extends` properties and handling rigged configuration files. Will throw an error if a configuration file cannot be found in the rig or project config folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: RigConfig): Promise<TConfigurationFile>;
@@ -29,6 +29,6 @@ loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, r
 | projectPath | string                                        |                   |
 | rigConfig   | [RigConfig](./rig-package.rigconfig.md)       | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TConfigurationFile&gt;

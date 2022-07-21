@@ -13,7 +13,7 @@ pagination_next: null
 
 Options around including a passthrough locale.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 passthroughLocale?: IPassthroughLocaleOptions;

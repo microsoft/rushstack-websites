@@ -13,7 +13,7 @@ pagination_next: null
 
 Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bump(bumpType?: BumpType, identifier?: string): void;
@@ -26,6 +26,6 @@ bump(bumpType?: BumpType, identifier?: string): void;
 | bumpType   | [BumpType](./rush-lib.bumptype.md) | <i>(Optional)</i> bump type     |
 | identifier | string                             | <i>(Optional)</i> prerelease id |
 
-<b>Returns:</b>
+**Returns:**
 
 void

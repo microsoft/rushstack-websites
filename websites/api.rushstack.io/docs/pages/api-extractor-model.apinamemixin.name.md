@@ -13,7 +13,7 @@ pagination_next: null
 
 The exported name of this API item.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name: string;

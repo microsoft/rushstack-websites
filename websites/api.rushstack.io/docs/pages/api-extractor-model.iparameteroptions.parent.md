@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParameterOptions.parent property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parent: ApiParameterListMixin;

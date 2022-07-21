@@ -13,7 +13,7 @@ pagination_next: null
 
 An async variant of [RigConfig.tryResolveConfigFilePath()](./rig-package.rigconfig.tryresolveconfigfilepath.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryResolveConfigFilePathAsync(configFileRelativePath: string): Promise<string | undefined>;
@@ -25,6 +25,6 @@ tryResolveConfigFilePathAsync(configFileRelativePath: string): Promise<string | 
 | ---------------------- | ------ | ----------- |
 | configFileRelativePath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string \| undefined&gt;

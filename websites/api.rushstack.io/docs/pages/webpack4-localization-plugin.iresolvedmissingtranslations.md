@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IResolvedMissingTranslations interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IResolvedMissingTranslations

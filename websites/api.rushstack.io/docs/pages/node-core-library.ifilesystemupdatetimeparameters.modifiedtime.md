@@ -13,7 +13,7 @@ pagination_next: null
 
 The POSIX epoch time or Date when this was last modified
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modifiedTime: number | Date;

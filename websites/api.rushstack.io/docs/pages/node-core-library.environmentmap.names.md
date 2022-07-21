@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns the map keys, which are environment variable names.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 names(): IterableIterator<string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 IterableIterator&lt;string&gt;

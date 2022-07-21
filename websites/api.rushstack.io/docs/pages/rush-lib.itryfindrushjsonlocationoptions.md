@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for `RushConfiguration.tryFindRushJsonLocation` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITryFindRushJsonLocationOptions

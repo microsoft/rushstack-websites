@@ -15,7 +15,7 @@ pagination_next: null
 
 The hook to run before executing any global Rush CLI Command (defined in command-line.json).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runAnyGlobalCustomCommand: AsyncSeriesHook<IGlobalCommand>;

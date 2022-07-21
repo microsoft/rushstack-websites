@@ -13,7 +13,7 @@ pagination_next: null
 
 Normalize newlines in RESX files to either CRLF (Windows-style) or LF ('nix style)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 normalizeResxNewlines?: 'lf' | 'crlf';

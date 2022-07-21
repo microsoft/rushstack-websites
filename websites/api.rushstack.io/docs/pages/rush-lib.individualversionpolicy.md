@@ -13,13 +13,13 @@ pagination_next: null
 
 This policy indicates all related projects get version bump driven by their own changes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class IndividualVersionPolicy extends VersionPolicy
 ```
 
-<b>Extends:</b> [VersionPolicy](./rush-lib.versionpolicy.md)
+**Extends:** [VersionPolicy](./rush-lib.versionpolicy.md)
 
 ## Remarks
 

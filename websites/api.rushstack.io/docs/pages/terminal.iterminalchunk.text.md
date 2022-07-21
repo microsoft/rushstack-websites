@@ -13,7 +13,7 @@ pagination_next: null
 
 The next chunk of text from the `stderr` or `stdout` stream.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 text: string;

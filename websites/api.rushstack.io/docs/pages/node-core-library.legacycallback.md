@@ -13,7 +13,7 @@ pagination_next: null
 
 Callback used by [LegacyAdapters](./node-core-library.legacyadapters.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type LegacyCallback<TResult, TError> = (

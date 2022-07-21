@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for the [CommandLineParser](./ts-command-line.commandlineparser.md) constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineParserOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 Optionally specifies another JSON config file that this file extends from. This provides a way for standard settings to be shared across multiple projects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 extends?: string;

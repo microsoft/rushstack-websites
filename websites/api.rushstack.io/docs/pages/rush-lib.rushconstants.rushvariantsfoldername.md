@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("variants") under which named variant configurations for alternate dependency sets may be found. Example: `C:\MyRepo\common\config\rush\variants`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushVariantsFolderName: string;

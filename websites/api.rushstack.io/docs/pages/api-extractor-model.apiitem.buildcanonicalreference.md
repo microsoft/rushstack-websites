@@ -13,13 +13,13 @@ pagination_next: null
 
 Builds the cached object used by the `canonicalReference` property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
 protected buildCanonicalReference(): DeclarationReference;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 DeclarationReference

@@ -13,7 +13,7 @@ pagination_next: null
 
 The Heft tool's package.json
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get heftPackageJson(): IPackageJson;

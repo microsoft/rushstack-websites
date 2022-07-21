@@ -13,7 +13,7 @@ pagination_next: null
 
 The default remote. This tells "rush change" which remote to compare against if the remote URL is not set or if a remote matching the provided remote URL is not found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get repositoryDefaultRemote(): string;

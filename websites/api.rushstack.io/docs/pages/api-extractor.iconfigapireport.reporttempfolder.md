@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the folder where the temporary report file is written. The file name portion is determined by the `reportFileName` setting.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reportTempFolder?: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Path to the saved debug certificate
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get certificatePath(): string;

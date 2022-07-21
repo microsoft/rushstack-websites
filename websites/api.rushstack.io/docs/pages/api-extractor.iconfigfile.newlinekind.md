@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies what type of newlines API Extractor should use when writing output files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 newlineKind?: 'crlf' | 'lf' | 'os';

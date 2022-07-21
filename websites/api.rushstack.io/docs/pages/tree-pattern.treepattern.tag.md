@@ -13,7 +13,7 @@ pagination_next: null
 
 Labels a subtree within the search pattern, so that the matching object can be retrieved.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tag(tagName: string, subtree?: TreeNode): TreeNode;
@@ -26,7 +26,7 @@ static tag(tagName: string, subtree?: TreeNode): TreeNode;
 | tagName   | string                                 |                   |
 | subtree   | [TreeNode](./tree-pattern.treenode.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [TreeNode](./tree-pattern.treenode.md)
 

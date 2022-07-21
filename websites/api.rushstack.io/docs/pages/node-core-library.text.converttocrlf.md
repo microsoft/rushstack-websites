@@ -13,7 +13,7 @@ pagination_next: null
 
 Converts all newlines in the provided string to use Windows-style CRLF end of line characters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertToCrLf(input: string): string;
@@ -25,6 +25,6 @@ static convertToCrLf(input: string): string;
 | --------- | ------ | ----------- |
 | input     | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

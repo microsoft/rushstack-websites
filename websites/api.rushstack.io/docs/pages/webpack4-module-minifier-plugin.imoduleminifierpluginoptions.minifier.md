@@ -13,7 +13,7 @@ pagination_next: null
 
 Minifier implementation to use. Required.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 minifier: IModuleMinifier;

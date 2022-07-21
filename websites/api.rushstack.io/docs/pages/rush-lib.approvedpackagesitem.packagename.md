@@ -13,7 +13,7 @@ pagination_next: null
 
 The NPM package name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 packageName: string;

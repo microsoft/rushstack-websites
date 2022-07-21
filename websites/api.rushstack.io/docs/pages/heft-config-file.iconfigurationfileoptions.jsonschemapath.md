@@ -15,7 +15,7 @@ pagination_next: null
 
 The path to the schema for the configuration file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 jsonSchemaPath: string;

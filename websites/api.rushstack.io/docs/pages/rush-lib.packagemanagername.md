@@ -13,7 +13,7 @@ pagination_next: null
 
 This represents the available Package Manager tools as a string
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type PackageManagerName = 'pnpm' | 'npm' | 'yarn';

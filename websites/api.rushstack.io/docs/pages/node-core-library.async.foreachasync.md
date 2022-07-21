@@ -15,7 +15,7 @@ pagination_next: null
 
 Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static forEachAsync<TEntry>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, callback: (entry: TEntry, arrayIndex: number) => Promise<void>, options?: IAsyncParallelismOptions | undefined): Promise<void>;
@@ -29,7 +29,7 @@ static forEachAsync<TEntry>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, 
 | callback  | (entry: TEntry, arrayIndex: number) =&gt; Promise&lt;void&gt;                            | a function that starts an asynchronous promise for an element from the array |
 | options   | [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) \| undefined | <i>(Optional)</i> options for customizing the control flow                   |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

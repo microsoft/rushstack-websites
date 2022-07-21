@@ -13,7 +13,7 @@ pagination_next: null
 
 The starting path of the file or folder to be copied. The path may be absolute or relative.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sourcePath: string;

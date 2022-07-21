@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for customizing the sort order of [ApiEnum](./api-extractor-model.apienum.md) members.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum EnumMemberOrder

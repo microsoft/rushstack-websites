@@ -13,7 +13,7 @@ pagination_next: null
 
 Asynchronously minify a module
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 minify: IModuleMinifierFunction;

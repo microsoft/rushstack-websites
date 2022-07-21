@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the asset, used to index into compilation.assets
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fileName: string;

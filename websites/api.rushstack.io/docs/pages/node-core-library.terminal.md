@@ -15,13 +15,13 @@ pagination_next: null
 
 This class facilitates writing to a console.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Terminal implements ITerminal
 ```
 
-<b>Implements:</b> [ITerminal](./node-core-library.iterminal.md)
+**Implements:** [ITerminal](./node-core-library.iterminal.md)
 
 ## Constructors
 

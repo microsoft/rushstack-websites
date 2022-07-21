@@ -13,7 +13,7 @@ pagination_next: null
 
 The URL of the project's repository.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 repository?: string | IPackageJsonRepository;

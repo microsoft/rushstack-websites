@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides options for the output message of a file error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileErrorFormattingOptions

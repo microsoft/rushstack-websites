@@ -15,7 +15,7 @@ pagination_next: null
 
 Use this class to load and save the "common/config/rush/build-cache.json" config file. This file provides configuration options for cached project build output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BuildCacheConfiguration

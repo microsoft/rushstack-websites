@@ -15,7 +15,7 @@ pagination_next: null
 
 If this property describes a filesystem path, use this property to describe how the path should be resolved.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pathResolutionMethod?: PathResolutionMethod.custom;

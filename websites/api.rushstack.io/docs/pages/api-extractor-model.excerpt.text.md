@@ -13,7 +13,7 @@ pagination_next: null
 
 The excerpted text, formed by concatenating the text of the `spannedTokens` strings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get text(): string;

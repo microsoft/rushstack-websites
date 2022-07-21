@@ -13,13 +13,13 @@ pagination_next: null
 
 The abstract base class for [TerminalWritable](./terminal.terminalwritable.md) objects that receive an input, transform it somehow, and then write the output to another `TerminalWritable` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class TerminalTransform extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Remarks
 

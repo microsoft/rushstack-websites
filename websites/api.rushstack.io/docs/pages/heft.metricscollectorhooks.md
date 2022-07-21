@@ -13,7 +13,7 @@ pagination_next: null
 
 Tap these hooks to record build metrics, to a file, for example.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MetricsCollectorHooks

@@ -15,7 +15,7 @@ pagination_next: null
 
 The set of tags applied to this project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tags(): ReadonlySet<string>;

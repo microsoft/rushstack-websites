@@ -11,7 +11,7 @@ pagination_next: null
 
 ## DependencyType enum
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum DependencyType

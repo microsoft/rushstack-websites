@@ -13,7 +13,7 @@ pagination_next: null
 
 If set to true, do not warn on missing RESX `<data>` element comments.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreMissingResxComments?: boolean;

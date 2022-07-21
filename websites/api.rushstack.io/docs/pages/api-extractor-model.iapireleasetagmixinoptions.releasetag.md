@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiReleaseTagMixinOptions.releaseTag property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 releaseTag: ReleaseTag;

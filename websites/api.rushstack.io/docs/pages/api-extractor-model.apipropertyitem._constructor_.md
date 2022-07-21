@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `ApiPropertyItem` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: IApiPropertyItemOptions);

@@ -15,7 +15,7 @@ pagination_next: null
 
 Returns the currently active `CollatedWriter` , or `undefined` if no writer is active yet.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get activeWriter(): CollatedWriter | undefined;

@@ -15,7 +15,7 @@ The main project for the version policy.
 
 If the value is provided, change logs will only be generated in that project. If the value is not provided, change logs will be hosted in each project associated with the policy.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get mainProject(): string | undefined;

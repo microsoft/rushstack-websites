@@ -13,7 +13,7 @@ pagination_next: null
 
 If [IPassthroughLocaleOptions.usePassthroughLocale](./webpack5-localization-plugin.ipassthroughlocaleoptions.usepassthroughlocale.md) is set, use this name for the passthrough locale. Defaults to "passthrough"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 passthroughLocaleName?: string;

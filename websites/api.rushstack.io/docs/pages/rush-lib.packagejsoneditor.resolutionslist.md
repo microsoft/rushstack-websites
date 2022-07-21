@@ -13,7 +13,7 @@ pagination_next: null
 
 This field is a Yarn-specific feature that allows overriding of package resolution.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get resolutionsList(): ReadonlyArray<PackageJsonDependency>;

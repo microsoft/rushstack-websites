@@ -13,7 +13,7 @@ pagination_next: null
 
 The project folder path that was passed to [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md) , which maybe an absolute or relative path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly projectFolderOriginalPath: string;

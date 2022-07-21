@@ -15,13 +15,13 @@ pagination_next: null
 
 Constructor options for [DiscardStdoutTransform](./terminal.discardstdouttransform.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDiscardStdoutTransformOptions extends ITerminalTransformOptions
 ```
 
-<b>Extends:</b> [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
+**Extends:** [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
 
 ## Properties
 

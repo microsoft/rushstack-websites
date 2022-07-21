@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiDeclaredItemOptions.excerptTokens property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 excerptTokens: IExcerptToken[];

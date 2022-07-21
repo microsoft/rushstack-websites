@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("npm-shrinkwrap.json") used to store an installation plan for the NPM package manger.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly npmShrinkwrapFilename: string;

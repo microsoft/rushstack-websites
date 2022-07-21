@@ -13,7 +13,7 @@ pagination_next: null
 
 Load the api-extractor.json config file from the specified path, and then invoke API Extractor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadConfigAndInvoke(configFilePath: string, options?: IExtractorInvokeOptions): ExtractorResult;
@@ -26,6 +26,6 @@ static loadConfigAndInvoke(configFilePath: string, options?: IExtractorInvokeOpt
 | configFilePath | string                                                                |                   |
 | options        | [IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [ExtractorResult](./api-extractor.extractorresult.md)

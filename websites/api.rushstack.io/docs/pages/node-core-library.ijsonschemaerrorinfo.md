@@ -13,7 +13,7 @@ pagination_next: null
 
 Callback function arguments for JsonSchema.validateObjectWithCallback();
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonSchemaErrorInfo

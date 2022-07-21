@@ -13,7 +13,7 @@ pagination_next: null
 
 Exposes various services that can be used by a plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 context: MarkdownDocumenterFeatureContext;

@@ -13,13 +13,13 @@ pagination_next: null
 
 A [TerminalTransform](./terminal.terminaltransform.md) subclass that performs one or more [TextRewriter](./terminal.textrewriter.md) operations. The most common operations are [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) and [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TextRewriterTransform extends TerminalTransform
 ```
 
-<b>Extends:</b> [TerminalTransform](./terminal.terminaltransform.md)
+**Extends:** [TerminalTransform](./terminal.terminaltransform.md)
 
 ## Remarks
 

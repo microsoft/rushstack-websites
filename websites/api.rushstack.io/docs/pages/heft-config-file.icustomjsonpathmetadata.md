@@ -15,7 +15,7 @@ pagination_next: null
 
 Used to specify how node(s) in a JSON object should be processed after being loaded.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICustomJsonPathMetadata

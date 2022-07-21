@@ -13,7 +13,7 @@ pagination_next: null
 
 A quick summary that is shown on the main help page, which is displayed by the command "example --help"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly summary: string;

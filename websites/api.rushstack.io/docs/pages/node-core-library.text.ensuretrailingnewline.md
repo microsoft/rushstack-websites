@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the input string with a trailing `\n` character appended, if not already present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static ensureTrailingNewline(s: string, newlineKind?: NewlineKind): string;
@@ -26,6 +26,6 @@ static ensureTrailingNewline(s: string, newlineKind?: NewlineKind): string;
 | s           | string                                            |                   |
 | newlineKind | [NewlineKind](./node-core-library.newlinekind.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

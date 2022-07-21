@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the argument value for an integer parameter that was parsed from the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get value(): number | undefined;

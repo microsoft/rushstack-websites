@@ -13,7 +13,7 @@ pagination_next: null
 
 The set of data remaining to rehydrate in the current compilation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDehydratedAssets

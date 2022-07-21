@@ -13,7 +13,7 @@ pagination_next: null
 
 Performs only the first half of [ExtractorConfig.loadFileAndPrepare()](./api-extractor.extractorconfig.loadfileandprepare.md) , providing an opportunity to modify the object before it is passed to [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFile(jsonFilePath: string): IConfigFile;
@@ -25,7 +25,7 @@ static loadFile(jsonFilePath: string): IConfigFile;
 | ------------ | ------ | ----------- |
 | jsonFilePath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IConfigFile](./api-extractor.iconfigfile.md)
 

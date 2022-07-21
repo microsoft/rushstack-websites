@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for pseudo-localization.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pseudolocales?: IPseudolocalesOptions;

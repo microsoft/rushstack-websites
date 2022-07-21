@@ -13,7 +13,7 @@ pagination_next: null
 
 The required group name to apply to all scoping parameters. At least one parameter must be defined with this group name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly ScopingParameterGroup: typeof SCOPING_PARAMETER_GROUP;

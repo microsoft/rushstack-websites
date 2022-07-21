@@ -13,7 +13,7 @@ pagination_next: null
 
 A collection of utilities for printing messages to the console.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PrintUtilities

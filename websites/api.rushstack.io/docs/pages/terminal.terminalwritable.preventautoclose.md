@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TerminalWritable.preventAutoclose property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly preventAutoclose: boolean;

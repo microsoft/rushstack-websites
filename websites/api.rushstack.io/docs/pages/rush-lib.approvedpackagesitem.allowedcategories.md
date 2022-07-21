@@ -13,7 +13,7 @@ pagination_next: null
 
 The project categories that are allowed to use this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowedCategories: Set<string>;

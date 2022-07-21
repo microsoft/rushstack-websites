@@ -15,7 +15,7 @@ pagination_next: null
 
 Provides Rush-specific environment variable data. All Rush environment variables must start with "RUSH\_". This class is designed to be used by RushConfiguration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class EnvironmentConfiguration

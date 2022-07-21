@@ -13,7 +13,7 @@ pagination_next: null
 
 Creates a change file that has a 'none' type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createEmptyChangeFiles(rushConfiguration: RushConfiguration, projectName: string, emailAddress: string): string | undefined;
@@ -27,7 +27,7 @@ static createEmptyChangeFiles(rushConfiguration: RushConfiguration, projectName:
 | projectName       | string                                               | The name of the project for which to create a change file     |
 | emailAddress      | string                                               | The email address which should be associated with this change |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

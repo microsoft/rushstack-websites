@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path of the file that the `configObject` object was loaded from. This is used for error messages and when probing for `tsconfig.json` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configObjectFullPath: string | undefined;

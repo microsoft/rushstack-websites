@@ -13,7 +13,7 @@ pagination_next: null
 
 The rush hooks. It allows customized scripts to run at the specified point.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageNameParser(): PackageNameParser;

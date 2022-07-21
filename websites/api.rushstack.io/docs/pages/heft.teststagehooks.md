@@ -11,13 +11,13 @@ pagination_next: null
 
 ## TestStageHooks class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TestStageHooks extends StageHooksBase<ITestStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ITestStageProperties](./heft.iteststageproperties.md)
+**Extends:** [StageHooksBase](./heft.stagehooksbase.md) &lt;[ITestStageProperties](./heft.iteststageproperties.md)
 
 ## Properties
 

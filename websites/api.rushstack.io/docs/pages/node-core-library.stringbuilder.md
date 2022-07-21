@@ -13,13 +13,13 @@ pagination_next: null
 
 This class allows a large text string to be constructed incrementally by appending small chunks. The final string can be obtained by calling StringBuilder.toString().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StringBuilder implements IStringBuilder
 ```
 
-<b>Implements:</b> [IStringBuilder](./node-core-library.istringbuilder.md)
+**Implements:** [IStringBuilder](./node-core-library.istringbuilder.md)
 
 ## Remarks
 

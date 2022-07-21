@@ -13,7 +13,7 @@ pagination_next: null
 
 Is this module external?
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 external?: boolean;

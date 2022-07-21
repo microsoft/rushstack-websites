@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "gitPolicy" feature.\] The commit message to use when committing change log files 'rush version'
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get gitChangeLogUpdateCommitMessage(): string | undefined;

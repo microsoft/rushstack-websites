@@ -13,7 +13,7 @@ pagination_next: null
 
 The index of the last member of the span, plus one.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 endIndex: number;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Version policy definition name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get definitionName(): VersionPolicyDefinitionName;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Metadata from the minifier for the plugin
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMinifierConnection

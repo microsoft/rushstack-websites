@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [TextRewriterTransform](./terminal.textrewritertransform.md) , this rewriter converts all newlines to a standard format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class NormalizeNewlinesTextRewriter extends TextRewriter
 ```
 
-<b>Extends:</b> [TextRewriter](./terminal.textrewriter.md)
+**Extends:** [TextRewriter](./terminal.textrewriter.md)
 
 ## Constructors
 

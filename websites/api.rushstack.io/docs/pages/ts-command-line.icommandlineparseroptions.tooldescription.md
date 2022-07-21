@@ -13,7 +13,7 @@ pagination_next: null
 
 General documentation that is included in the "--help" main page
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toolDescription: string;

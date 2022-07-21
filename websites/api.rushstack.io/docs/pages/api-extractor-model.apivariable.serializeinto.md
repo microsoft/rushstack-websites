@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiVariable.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ serializeInto(jsonObject: Partial<IApiVariableJson>): void;
 | ---------- | ------------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiVariableJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

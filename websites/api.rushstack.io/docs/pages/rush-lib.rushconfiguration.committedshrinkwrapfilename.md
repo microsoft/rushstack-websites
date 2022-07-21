@@ -17,7 +17,7 @@ pagination_next: null
 
 The full path of the shrinkwrap file that is tracked by Git. (The "rush install" command uses a temporary copy, whose path is tempShrinkwrapFilename.)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get committedShrinkwrapFilename(): string;

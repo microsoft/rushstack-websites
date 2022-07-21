@@ -15,7 +15,7 @@ pagination_next: null
 
 Get everything that has been written at debug-level severity.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDebugOutput(options?: IStringBufferOutputOptions): string;
@@ -27,6 +27,6 @@ getDebugOutput(options?: IStringBufferOutputOptions): string;
 | --------- | ------------------------------------------------------------------------------- | ----------------- |
 | options   | [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

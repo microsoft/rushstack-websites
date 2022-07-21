@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the operating system provided by NodeJS.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 machineOs: string;

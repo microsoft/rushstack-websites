@@ -13,7 +13,7 @@ pagination_next: null
 
 The environment variables for the child process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 environment?: NodeJS.ProcessEnv;

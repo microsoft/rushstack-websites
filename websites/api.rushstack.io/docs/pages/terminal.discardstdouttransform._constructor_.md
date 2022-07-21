@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructs a new instance of the `DiscardStdoutTransform` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: IDiscardStdoutTransformOptions);

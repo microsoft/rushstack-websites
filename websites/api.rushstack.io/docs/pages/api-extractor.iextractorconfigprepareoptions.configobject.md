@@ -13,7 +13,7 @@ pagination_next: null
 
 A configuration object as returned by [ExtractorConfig.loadFile()](./api-extractor.extractorconfig.loadfile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configObject: IConfigFile;

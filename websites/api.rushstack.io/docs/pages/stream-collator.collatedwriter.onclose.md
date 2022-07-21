@@ -15,13 +15,13 @@ pagination_next: null
 
 Subclasses can override this empty method to perform additional operations such as closing a file handle.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onClose(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

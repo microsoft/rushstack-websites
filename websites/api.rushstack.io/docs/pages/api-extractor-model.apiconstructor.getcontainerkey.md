@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiConstructor.getContainerKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getContainerKey(overloadIndex: number): string;
@@ -23,6 +23,6 @@ static getContainerKey(overloadIndex: number): string;
 | ------------- | ------ | ----------- |
 | overloadIndex | number |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

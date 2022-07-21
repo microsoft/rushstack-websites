@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a rule that captures any remaining command line arguments after the recognized portion.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineCommandLineRemainder(definition: ICommandLineRemainderDefinition): CommandLineRemainder;
@@ -25,7 +25,7 @@ defineCommandLineRemainder(definition: ICommandLineRemainderDefinition): Command
 | ---------- | --------------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineRemainderDefinition](./ts-command-line.icommandlineremainderdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineRemainder](./ts-command-line.commandlineremainder.md)
 

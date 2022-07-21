@@ -19,7 +19,7 @@ The filename of the build dependency data file. By default this is called 'rush-
 
 Example: `C:\MyRepo\common\temp\rush-link.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rushLinkJsonFilename(): string;

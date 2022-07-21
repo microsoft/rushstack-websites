@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [Path.formatConcisely()](./node-core-library.path.formatconcisely.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPathFormatConciselyOptions

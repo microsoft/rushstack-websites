@@ -13,13 +13,13 @@ pagination_next: null
 
 An interface for accessing common fields from a package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackageJson extends INodePackageJson
 ```
 
-<b>Extends:</b> [INodePackageJson](./node-core-library.inodepackagejson.md)
+**Extends:** [INodePackageJson](./node-core-library.inodepackagejson.md)
 
 ## Remarks
 

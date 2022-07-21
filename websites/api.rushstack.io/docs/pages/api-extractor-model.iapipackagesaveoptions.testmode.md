@@ -13,7 +13,7 @@ pagination_next: null
 
 Set to true only when invoking API Extractor's test harness.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 testMode?: boolean;

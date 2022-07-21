@@ -11,7 +11,7 @@ pagination_next: null
 
 ## StdioWritable.onWriteChunk() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onWriteChunk(chunk: ITerminalChunk): void;
@@ -23,6 +23,6 @@ protected onWriteChunk(chunk: ITerminalChunk): void;
 | --------- | ---------------------------------------------- | ----------- |
 | chunk     | [ITerminalChunk](./terminal.iterminalchunk.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 Optional members for [ApiOptionalMixin](./api-extractor-model.apioptionalmixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiOptionalMixin

@@ -13,7 +13,7 @@ pagination_next: null
 
 The (minified) boilerplate code for the asset. Will contain a token to be replaced by the minified modules.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 source: sources.Source;

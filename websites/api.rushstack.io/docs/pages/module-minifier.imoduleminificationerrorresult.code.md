@@ -13,7 +13,7 @@ pagination_next: null
 
 Marker property to always return the same result shape.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code?: undefined;

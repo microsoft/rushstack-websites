@@ -11,12 +11,12 @@ pagination_next: null
 
 ## TypingsGenerator.runWatcherAsync() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runWatcherAsync(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

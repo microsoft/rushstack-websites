@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies an alternate folder path to be used when loading the TypeScript system typings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typescriptCompilerFolder?: string;

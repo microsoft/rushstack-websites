@@ -13,7 +13,7 @@ pagination_next: null
 
 This API is used by the `@microsoft/rush` front end to launch the "rush-pnpm" command-line. Third-party tools should not use this API. Instead, they should execute the "rush-pnpm" binary and start a new Node.js process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static launchRushPnpm(launcherVersion: string, options: ILaunchOptions): void;
@@ -26,6 +26,6 @@ static launchRushPnpm(launcherVersion: string, options: ILaunchOptions): void;
 | launcherVersion | string                                         |             |
 | options         | [ILaunchOptions](./rush-lib.ilaunchoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 If true then `\n` will be replaced by `[n]` , and `\r` will be replaced by `[r]` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 encodeNewlines?: boolean;

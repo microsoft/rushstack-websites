@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorBaseOptions.globsToIgnore property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 globsToIgnore?: string[];

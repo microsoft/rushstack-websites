@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the specified key belongs to the map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 has(key: K): boolean;
@@ -25,6 +25,6 @@ has(key: K): boolean;
 | --------- | ---- | ----------- |
 | key       | K    |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

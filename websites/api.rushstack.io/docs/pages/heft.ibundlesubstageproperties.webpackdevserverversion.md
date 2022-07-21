@@ -13,7 +13,7 @@ pagination_next: null
 
 If webpack is used, this will be set to the version of the webpack-dev-server package
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 webpackDevServerVersion?: string | undefined;

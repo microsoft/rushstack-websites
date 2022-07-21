@@ -13,7 +13,7 @@ pagination_next: null
 
 Bumps version based on the policy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract bump(bumpType?: BumpType, identifier?: string): void;
@@ -26,6 +26,6 @@ abstract bump(bumpType?: BumpType, identifier?: string): void;
 | bumpType   | [BumpType](./rush-lib.bumptype.md) | <i>(Optional)</i> (optional) override bump type     |
 | identifier | string                             | <i>(Optional)</i> (optional) override prerelease Id |
 
-<b>Returns:</b>
+**Returns:**
 
 void

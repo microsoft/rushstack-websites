@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStageContext interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStageContext<TStageHooks extends StageHooksBase<TStageProperties>, TStageProperties extends object>

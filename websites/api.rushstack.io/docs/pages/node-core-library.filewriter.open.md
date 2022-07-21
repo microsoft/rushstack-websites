@@ -13,7 +13,7 @@ pagination_next: null
 
 Opens a new file handle to the file at the specified path and given mode. Behind the scenes it uses `fs.openSync()` . The behaviour of this function is platform specific. See: https://nodejs.org/docs/latest-v8.x/api/fs.html\#fs\_fs\_open\_path\_flags\_mode\_callback
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static open(filePath: string, flags?: IFileWriterFlags): FileWriter;
@@ -26,6 +26,6 @@ static open(filePath: string, flags?: IFileWriterFlags): FileWriter;
 | filePath  | string                                                      | The absolute or relative path to the file handle that should be opened. |
 | flags     | [IFileWriterFlags](./node-core-library.ifilewriterflags.md) | <i>(Optional)</i> The flags for opening the handle                      |
 
-<b>Returns:</b>
+**Returns:**
 
 [FileWriter](./node-core-library.filewriter.md)

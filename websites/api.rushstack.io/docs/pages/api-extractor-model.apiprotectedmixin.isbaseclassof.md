@@ -13,7 +13,7 @@ pagination_next: null
 
 A type guard that tests whether the specified `ApiItem` subclass extends the `ApiProtectedMixin` mixin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function isBaseClassOf(apiItem: ApiItem): apiItem is ApiProtectedMixin;
@@ -25,7 +25,7 @@ function isBaseClassOf(apiItem: ApiItem): apiItem is ApiProtectedMixin;
 | --------- | ------------------------------------------- | ----------- |
 | apiItem   | [ApiItem](./api-extractor-model.apiitem.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 apiItem is [ApiProtectedMixin](./api-extractor-model.apiprotectedmixin.md)
 

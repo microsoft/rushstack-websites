@@ -15,7 +15,7 @@ pagination_next: null
 
 Return a promise that resolves after the specified number of milliseconds.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sleep(ms: number): Promise<void>;
@@ -27,6 +27,6 @@ static sleep(ms: number): Promise<void>;
 | --------- | ------ | ----------- |
 | ms        | number |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

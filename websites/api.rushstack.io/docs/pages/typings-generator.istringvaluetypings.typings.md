@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStringValueTypings.typings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typings: IStringValueTyping[];

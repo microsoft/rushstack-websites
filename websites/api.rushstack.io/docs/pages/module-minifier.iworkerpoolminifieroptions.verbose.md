@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, log to the console about the minification results.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verbose?: boolean;

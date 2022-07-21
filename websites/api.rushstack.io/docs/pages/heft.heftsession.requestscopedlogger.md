@@ -13,7 +13,7 @@ pagination_next: null
 
 Call this function to request a logger with the specified name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 requestScopedLogger(loggerName: string): ScopedLogger;
@@ -25,6 +25,6 @@ requestScopedLogger(loggerName: string): ScopedLogger;
 | ---------- | ------ | ----------- |
 | loggerName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ScopedLogger](./heft.scopedlogger.md)

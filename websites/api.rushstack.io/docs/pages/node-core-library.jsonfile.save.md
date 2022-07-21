@@ -13,7 +13,7 @@ pagination_next: null
 
 Saves the file to disk. Returns false if nothing was written due to options.onlyIfChanged.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static save(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFileSaveOptions): boolean;
@@ -27,7 +27,7 @@ static save(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFileSav
 | jsonFilename | string                                                              | the file path to write                                              |
 | options      | [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | <i>(Optional)</i> other settings that control how the file is saved |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

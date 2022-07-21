@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then consistent version specifiers for dependencies will be enforced. I.e. "rush check" is run before some commands.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get ensureConsistentVersions(): boolean;

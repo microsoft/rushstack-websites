@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("common") where Rush's common data will be stored.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly commonFolderName: string;

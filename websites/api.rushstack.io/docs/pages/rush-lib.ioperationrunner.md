@@ -15,7 +15,7 @@ pagination_next: null
 
 The `Operation` class is a node in the dependency graph of work that needs to be scheduled by the `OperationExecutionManager` . Each `Operation` has a `runner` member of type `IOperationRunner` , whose implementation manages the actual process for running a single operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IOperationRunner

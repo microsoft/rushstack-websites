@@ -13,7 +13,7 @@ pagination_next: null
 
 Sets a value for the specified key. This operation does NOT invoke the ProtectableMap onSet() hook.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 set(key: K, value: V): this;
@@ -26,6 +26,6 @@ set(key: K, value: V): this;
 | key       | K    |             |
 | value     | V    |             |
 
-<b>Returns:</b>
+**Returns:**
 
 this

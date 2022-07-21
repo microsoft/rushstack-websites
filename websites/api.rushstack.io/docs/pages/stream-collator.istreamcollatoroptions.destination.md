@@ -15,7 +15,7 @@ pagination_next: null
 
 The target [TerminalWritable](./terminal.terminalwritable.md) object that the [StreamCollator](./stream-collator.streamcollator.md) will write its output to.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 destination: TerminalWritable;

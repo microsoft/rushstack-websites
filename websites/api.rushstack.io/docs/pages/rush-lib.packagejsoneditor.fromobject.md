@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonEditor.fromObject() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static fromObject(object: IPackageJson, filename: string): PackageJsonEditor;
@@ -24,6 +24,6 @@ static fromObject(object: IPackageJson, filename: string): PackageJsonEditor;
 | object    | [IPackageJson](./node-core-library.ipackagejson.md) |             |
 | filename  | string                                              |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [PackageJsonEditor](./rush-lib.packagejsoneditor.md)

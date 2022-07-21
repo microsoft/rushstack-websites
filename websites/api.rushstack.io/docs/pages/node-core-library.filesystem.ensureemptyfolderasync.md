@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.ensureEmptyFolder()](./node-core-library.filesystem.ensureemptyfolder.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static ensureEmptyFolderAsync(folderPath: string): Promise<void>;
@@ -25,6 +25,6 @@ static ensureEmptyFolderAsync(folderPath: string): Promise<void>;
 | ---------- | ------ | ----------- |
 | folderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

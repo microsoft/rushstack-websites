@@ -15,7 +15,7 @@ Given a filename, this determines the absolute path of the executable file that 
 
 - If the filename is missing a path, then the shell's default PATH will be searched. - If the filename is missing a file extension, then Windows default file extensions will be searched.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryResolve(filename: string, options?: IExecutableResolveOptions): string | undefined;
@@ -28,7 +28,7 @@ static tryResolve(filename: string, options?: IExecutableResolveOptions): string
 | filename  | string                                                                        | The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched. |
 | options   | [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md) | <i>(Optional)</i> optional other parameters                                                                                                                                             |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

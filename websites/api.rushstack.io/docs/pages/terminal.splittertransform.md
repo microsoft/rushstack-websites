@@ -13,13 +13,13 @@ pagination_next: null
 
 Use this instead of [TerminalTransform](./terminal.terminaltransform.md) if you need to output `ITerminalChunk` data to more than one destination.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SplitterTransform extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Remarks
 

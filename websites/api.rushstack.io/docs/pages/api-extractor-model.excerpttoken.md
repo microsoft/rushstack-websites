@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a fragment of text belonging to an [Excerpt](./api-extractor-model.excerpt.md) object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExcerptToken

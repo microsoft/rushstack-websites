@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiReturnTypeMixinOptions.returnTypeTokenRange property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 returnTypeTokenRange: IExcerptTokenRange;

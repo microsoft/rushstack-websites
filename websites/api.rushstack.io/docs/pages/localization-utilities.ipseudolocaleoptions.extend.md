@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IPseudolocaleOptions.extend property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 extend?: number;

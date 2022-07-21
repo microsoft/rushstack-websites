@@ -13,7 +13,7 @@ pagination_next: null
 
 Performs an operation for each (key, value) entries in the map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 forEach(callbackfn: (value: V, key: K, map: Map<K, V>) => void, thisArg?: any): void;
@@ -26,6 +26,6 @@ forEach(callbackfn: (value: V, key: K, map: Map<K, V>) => void, thisArg?: any): 
 | callbackfn | (value: V, key: K, map: Map&lt;K, V&gt;) =&gt; void |                   |
 | thisArg    | any                                                 | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

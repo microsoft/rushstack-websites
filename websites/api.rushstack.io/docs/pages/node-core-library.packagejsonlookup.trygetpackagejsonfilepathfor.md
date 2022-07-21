@@ -13,7 +13,7 @@ pagination_next: null
 
 If the specified file or folder is part of a package, this returns the absolute path to the associated package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetPackageJsonFilePathFor(fileOrFolderPath: string): string | undefined;
@@ -25,7 +25,7 @@ tryGetPackageJsonFilePathFor(fileOrFolderPath: string): string | undefined;
 | ---------------- | ------ | ------------------------------------------------------------------------------------ |
 | fileOrFolderPath | string | a relative or absolute path to a source file or folder that may be part of a package |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

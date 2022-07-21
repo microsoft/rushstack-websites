@@ -13,7 +13,7 @@ pagination_next: null
 
 Converts all newlines in the provided string to use the specified newline type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertTo(input: string, newlineKind: NewlineKind): string;
@@ -26,6 +26,6 @@ static convertTo(input: string, newlineKind: NewlineKind): string;
 | input       | string                                            |             |
 | newlineKind | [NewlineKind](./node-core-library.newlinekind.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

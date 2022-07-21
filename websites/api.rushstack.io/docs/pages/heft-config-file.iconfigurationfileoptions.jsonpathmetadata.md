@@ -15,7 +15,7 @@ pagination_next: null
 
 Use this property to specify how JSON nodes are postprocessed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 jsonPathMetadata?: IJsonPathsMetadata;

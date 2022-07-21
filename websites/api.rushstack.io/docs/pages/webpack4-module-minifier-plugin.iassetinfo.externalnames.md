@@ -13,7 +13,7 @@ pagination_next: null
 
 The set of external names to postprocess
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 externalNames: Map<string, string>;

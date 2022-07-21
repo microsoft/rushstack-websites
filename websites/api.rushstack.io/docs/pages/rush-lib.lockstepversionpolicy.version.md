@@ -13,7 +13,7 @@ pagination_next: null
 
 The value of the lockstep version
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get version(): string;

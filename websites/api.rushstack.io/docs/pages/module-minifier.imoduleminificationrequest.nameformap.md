@@ -13,7 +13,7 @@ pagination_next: null
 
 File name to show for the source code in the source map
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 nameForMap: string | undefined;

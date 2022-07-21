@@ -13,7 +13,7 @@ pagination_next: null
 
 The set of modules to use for rehydrating assets.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modules: IModuleMap;

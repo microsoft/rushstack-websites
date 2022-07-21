@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IHeftSessionHooks.test property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 test: SyncHook<ITestStageContext>;

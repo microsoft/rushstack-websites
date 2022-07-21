@@ -13,7 +13,7 @@ pagination_next: null
 
 The format that the FileError message should conform to. The supported formats are: - Unix: `<path>:<line>:<column> - <message>` - VisualStudio: `<path>(<line>,<column>) - <message>`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type FileLocationStyle = 'Unix' | 'VisualStudio';

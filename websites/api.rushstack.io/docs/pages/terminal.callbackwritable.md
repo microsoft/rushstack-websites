@@ -13,13 +13,13 @@ pagination_next: null
 
 This class enables very basic [TerminalWritable.onWriteChunk()](./terminal.terminalwritable.onwritechunk.md) operations to be implemented as a callback function, avoiding the need to define a subclass of `TerminalWritable` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CallbackWritable extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Remarks
 

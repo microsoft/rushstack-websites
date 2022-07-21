@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path of the folder that contains rush.json for this project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rushJsonFolder(): string;

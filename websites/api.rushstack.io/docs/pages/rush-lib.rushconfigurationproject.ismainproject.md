@@ -17,7 +17,7 @@ Indicate whether this project is the main project for the related version policy
 
 False if the project is not for publishing. True if the project is individually versioned or if its lockstep version policy does not specify main project. False if the project is lockstepped and is not the main project for its version policy.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isMainProject(): boolean;

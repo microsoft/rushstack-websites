@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ICleanStageProperties interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICleanStageProperties

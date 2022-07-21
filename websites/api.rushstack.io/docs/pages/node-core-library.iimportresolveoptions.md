@@ -13,7 +13,7 @@ pagination_next: null
 
 Common options shared by [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) and [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IImportResolveOptions

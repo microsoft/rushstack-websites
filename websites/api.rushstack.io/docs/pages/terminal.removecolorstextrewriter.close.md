@@ -11,7 +11,7 @@ pagination_next: null
 
 ## RemoveColorsTextRewriter.close() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 close(unknownState: TextRewriterState): string;
@@ -23,6 +23,6 @@ close(unknownState: TextRewriterState): string;
 | ------------ | ---------------------------------------------------- | ----------- |
 | unknownState | [TextRewriterState](./terminal.textrewriterstate.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

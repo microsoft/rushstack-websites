@@ -13,7 +13,7 @@ pagination_next: null
 
 Sorts the entries in a Set object. The result is guaranteed to be a stable sort.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sortSet<T>(set: Set<T>, comparer?: (x: T, y: T) => number): void;
@@ -26,7 +26,7 @@ static sortSet<T>(set: Set<T>, comparer?: (x: T, y: T) => number): void;
 | set       | Set&lt;T&gt;              |                   |
 | comparer  | (x: T, y: T) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

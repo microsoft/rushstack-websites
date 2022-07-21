@@ -15,7 +15,7 @@ pagination_next: null
 
 Get everything that has been written at log-level severity.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getOutput(options?: IStringBufferOutputOptions): string;
@@ -27,6 +27,6 @@ getOutput(options?: IStringBufferOutputOptions): string;
 | --------- | ------------------------------------------------------------------------------- | ----------------- |
 | options   | [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

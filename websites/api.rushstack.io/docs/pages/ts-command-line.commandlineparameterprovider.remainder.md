@@ -13,7 +13,7 @@ pagination_next: null
 
 If [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md) was called, this object captures any remaining command line arguments after the recognized portion.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get remainder(): CommandLineRemainder | undefined;

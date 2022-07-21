@@ -13,7 +13,7 @@ pagination_next: null
 
 An alias for the Node.js `fs.Stats` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type FileSystemStats = fs.Stats;

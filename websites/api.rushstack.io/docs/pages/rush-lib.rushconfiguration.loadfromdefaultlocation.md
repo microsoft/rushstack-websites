@@ -11,7 +11,7 @@ pagination_next: null
 
 ## RushConfiguration.loadFromDefaultLocation() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFromDefaultLocation(options?: ITryFindRushJsonLocationOptions): RushConfiguration;
@@ -23,6 +23,6 @@ static loadFromDefaultLocation(options?: ITryFindRushJsonLocationOptions): RushC
 | --------- | -------------------------------------------------------------------------------- | ----------------- |
 | options   | [ITryFindRushJsonLocationOptions](./rush-lib.itryfindrushjsonlocationoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [RushConfiguration](./rush-lib.rushconfiguration.md)

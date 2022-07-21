@@ -15,7 +15,7 @@ The folder where Rush's additional config files are stored. This folder is alway
 
 Example: `C:\MyRepo\common\config\rush`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonRushConfigFolder(): string;

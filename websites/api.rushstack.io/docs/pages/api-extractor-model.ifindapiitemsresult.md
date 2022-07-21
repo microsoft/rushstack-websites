@@ -13,7 +13,7 @@ pagination_next: null
 
 Generic result object for finding API items used by different kinds of find operations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFindApiItemsResult

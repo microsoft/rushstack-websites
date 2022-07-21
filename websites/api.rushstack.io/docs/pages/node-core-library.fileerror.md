@@ -13,19 +13,19 @@ pagination_next: null
 
 An `Error` subclass that should be thrown to report an unexpected state that specifically references a location in a file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FileError extends Error
 ```
 
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Remarks
 
 The file path provided to the FileError constructor is expected to exist on disk. FileError should not be used for reporting errors that are not in reference to an existing file.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

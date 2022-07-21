@@ -13,7 +13,7 @@ pagination_next: null
 
 An array of dependencies that must be installed by a consumer of this package, but which will not be automatically installed by this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 peerDependencies?: IPackageJsonDependencyTable;

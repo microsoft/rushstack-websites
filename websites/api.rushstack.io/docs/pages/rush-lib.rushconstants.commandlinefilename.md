@@ -15,7 +15,7 @@ pagination_next: null
 
 Custom command line configuration file, which is used by rush for implementing custom command and options.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly commandLineFilename: string;

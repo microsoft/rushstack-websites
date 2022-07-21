@@ -13,7 +13,7 @@ pagination_next: null
 
 The tsdoc.json configuration that will be used when parsing doc comments.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tsdocConfigFile: TSDocConfigFile;

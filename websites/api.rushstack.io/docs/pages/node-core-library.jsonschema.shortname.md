@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a short name for this schema, for use in error messages.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get shortName(): string;

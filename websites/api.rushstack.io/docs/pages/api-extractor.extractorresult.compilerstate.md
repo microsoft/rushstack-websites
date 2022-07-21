@@ -13,7 +13,7 @@ pagination_next: null
 
 The TypeScript compiler state that was used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly compilerState: CompilerState;

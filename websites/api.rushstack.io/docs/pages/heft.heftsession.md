@@ -11,7 +11,7 @@ pagination_next: null
 
 ## HeftSession class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HeftSession

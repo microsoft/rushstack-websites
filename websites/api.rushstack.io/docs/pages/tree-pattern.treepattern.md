@@ -13,7 +13,7 @@ pagination_next: null
 
 A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TreePattern

@@ -15,7 +15,7 @@ pagination_next: null
 
 Get the experiments configuration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get configuration(): Readonly<IExperimentsJson>;

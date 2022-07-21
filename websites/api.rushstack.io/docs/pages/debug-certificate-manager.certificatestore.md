@@ -13,7 +13,7 @@ pagination_next: null
 
 Store to retrieve and save debug certificate data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CertificateStore

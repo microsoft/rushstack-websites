@@ -13,7 +13,7 @@ pagination_next: null
 
 Sorts the entries in a Set object according to the specified keys. The result is guaranteed to be a stable sort.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sortSetBy<T>(set: Set<T>, keySelector: (element: T) => any, keyComparer?: (x: T, y: T) => number): void;
@@ -27,7 +27,7 @@ static sortSetBy<T>(set: Set<T>, keySelector: (element: T) => any, keyComparer?:
 | keySelector | (element: T) =&gt; any    |                   |
 | keyComparer | (x: T, y: T) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

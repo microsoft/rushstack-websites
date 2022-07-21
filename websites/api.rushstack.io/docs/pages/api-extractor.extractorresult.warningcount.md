@@ -13,7 +13,7 @@ pagination_next: null
 
 Reports the number of warnings encountered during analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly warningCount: number;

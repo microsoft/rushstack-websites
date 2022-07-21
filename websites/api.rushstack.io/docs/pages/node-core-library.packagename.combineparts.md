@@ -13,7 +13,7 @@ pagination_next: null
 
 Combines an optional package scope with an unscoped root name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static combineParts(scope: string, unscopedName: string): string;
@@ -26,7 +26,7 @@ static combineParts(scope: string, unscopedName: string): string;
 | scope        | string | Must be either an empty string, or a scope name such as " @ example" |
 | unscopedName | string | Must be a nonempty package name that does not contain a scope        |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 The path to the project's "config" folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectConfigFolder(): string;

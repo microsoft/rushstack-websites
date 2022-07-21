@@ -13,7 +13,7 @@ pagination_next: null
 
 Updates the accessed and modified timestamps of the filesystem object referenced by path. Behind the scenes it uses `fs.utimesSync()` . The caller should specify both times in the `times` parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static updateTimes(path: string, times: IFileSystemUpdateTimeParameters): void;
@@ -26,6 +26,6 @@ static updateTimes(path: string, times: IFileSystemUpdateTimeParameters): void;
 | path      | string                                                                                    | The path of the file that should be modified.           |
 | times     | [IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md) | The times that the object should be updated to reflect. |
 
-<b>Returns:</b>
+**Returns:**
 
 void

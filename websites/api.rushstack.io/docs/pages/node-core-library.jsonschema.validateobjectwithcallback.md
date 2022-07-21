@@ -13,7 +13,7 @@ pagination_next: null
 
 Validates the specified JSON object against this JSON schema. If the validation fails, a callback is called for each validation error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validateObjectWithCallback(jsonObject: JsonObject, errorCallback: (errorInfo: IJsonSchemaErrorInfo) => void): void;
@@ -26,6 +26,6 @@ validateObjectWithCallback(jsonObject: JsonObject, errorCallback: (errorInfo: IJ
 | jsonObject    | [JsonObject](./node-core-library.jsonobject.md)                                              |             |
 | errorCallback | (errorInfo: [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md) ) =&gt; void |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

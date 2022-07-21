@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the specified path is a relative path and does not use `..` to walk upwards.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isDownwardRelative(inputPath: string): boolean;
@@ -25,7 +25,7 @@ static isDownwardRelative(inputPath: string): boolean;
 | --------- | ------ | ----------- |
 | inputPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

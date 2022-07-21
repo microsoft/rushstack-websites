@@ -13,12 +13,12 @@ pagination_next: null
 
 Writes the "common-versions.json" file to disk, using the filename that was passed to loadFromFile().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save(): boolean;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

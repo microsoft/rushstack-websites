@@ -13,7 +13,7 @@ pagination_next: null
 
 This object is used to report an error or warning that occurred during API Extractor's analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExtractorMessage

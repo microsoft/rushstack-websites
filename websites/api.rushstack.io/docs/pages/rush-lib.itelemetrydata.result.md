@@ -15,7 +15,7 @@ pagination_next: null
 
 The result of the command
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly result: 'Succeeded' | 'Failed';

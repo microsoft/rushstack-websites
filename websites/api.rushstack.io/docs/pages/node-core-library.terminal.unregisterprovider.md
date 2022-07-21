@@ -15,7 +15,7 @@ pagination_next: null
 
 Unsubscribe a terminal provider. If the provider isn't subscribed, this function does nothing.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unregisterProvider(provider: ITerminalProvider): void;
@@ -27,6 +27,6 @@ unregisterProvider(provider: ITerminalProvider): void;
 | --------- | ------------------------------------------------------------- | ----------- |
 | provider  | [ITerminalProvider](./node-core-library.iterminalprovider.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

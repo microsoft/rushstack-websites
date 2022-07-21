@@ -15,7 +15,7 @@ pagination_next: null
 
 Utilities for parallel asynchronous operations, for use with the system `Promise` APIs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Async

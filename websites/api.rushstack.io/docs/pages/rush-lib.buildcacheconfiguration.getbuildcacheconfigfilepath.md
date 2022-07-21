@@ -15,7 +15,7 @@ pagination_next: null
 
 Gets the absolute path to the build-cache.json file in the specified rush workspace.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getBuildCacheConfigFilePath(rushConfiguration: RushConfiguration): string;
@@ -27,6 +27,6 @@ static getBuildCacheConfigFilePath(rushConfiguration: RushConfiguration): string
 | ----------------- | ---------------------------------------------------- | ----------- |
 | rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

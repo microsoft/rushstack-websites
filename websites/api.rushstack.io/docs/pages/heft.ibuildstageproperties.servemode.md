@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties.serveMode property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serveMode: boolean;

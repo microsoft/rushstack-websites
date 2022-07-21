@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, will overwrite the file if it already exists.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 overwrite?: boolean;

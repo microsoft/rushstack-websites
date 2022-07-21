@@ -13,7 +13,7 @@ pagination_next: null
 
 This abstraction is used by the mixin pattern. It describes the "static side" of a class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type PropertiesOf<T> = {

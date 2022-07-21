@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ScopedLogger.terminalProvider property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly terminalProvider: ITerminalProvider;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IPseudolocaleOptions.append property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 append?: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates the tree-like data structure that [TreePattern](./tree-pattern.treepattern.md) will traverse.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type TreeNode = any;

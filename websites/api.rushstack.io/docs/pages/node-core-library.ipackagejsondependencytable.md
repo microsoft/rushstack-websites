@@ -13,7 +13,7 @@ pagination_next: null
 
 This interface is part of the IPackageJson file format. It is used for the "dependencies", "optionalDependencies", and "devDependencies" fields.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackageJsonDependencyTable

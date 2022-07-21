@@ -13,7 +13,7 @@ pagination_next: null
 
 Determines how the TypeScript compiler engine will be invoked by API Extractor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigCompiler

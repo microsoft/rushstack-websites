@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStageContext.hooks property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hooks: TStageHooks;

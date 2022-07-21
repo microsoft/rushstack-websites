@@ -13,12 +13,12 @@ pagination_next: null
 
 Generates the command-line usage text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 renderUsageText(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

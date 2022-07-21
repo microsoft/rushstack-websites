@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for [FileSystem.move()](./node-core-library.filesystem.move.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemMoveOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 Get the absolute file path of the repo-state.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get filePath(): string;

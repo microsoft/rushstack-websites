@@ -15,7 +15,7 @@ pagination_next: null
 
 A build cache provider using the local file system. Required by all cloud cache providers.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FileSystemBuildCacheProvider

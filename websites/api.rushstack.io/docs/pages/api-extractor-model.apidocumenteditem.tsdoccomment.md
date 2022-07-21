@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiDocumentedItem.tsdocComment property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tsdocComment(): tsdoc.DocComment | undefined;

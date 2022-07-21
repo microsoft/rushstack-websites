@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `CallbackWritable` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: ICallbackWritableOptions);

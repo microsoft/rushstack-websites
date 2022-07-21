@@ -13,7 +13,7 @@ pagination_next: null
 
 The maximum time the process is allowed to run before it will be terminated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 timeoutMs?: number;

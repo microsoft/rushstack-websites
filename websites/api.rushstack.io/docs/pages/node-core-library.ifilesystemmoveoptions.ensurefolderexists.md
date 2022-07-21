@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, will ensure the folder is created before writing the file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ensureFolderExists?: boolean;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.getAdditionalOutputFiles property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getAdditionalOutputFiles?: (relativePath: string) => string[];

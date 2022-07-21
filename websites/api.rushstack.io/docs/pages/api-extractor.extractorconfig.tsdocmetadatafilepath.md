@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies where the TSDoc metadata file should be written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tsdocMetadataFilePath: string;

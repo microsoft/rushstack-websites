@@ -15,7 +15,7 @@ pagination_next: null
 
 Details about how the `child_process.ChildProcess` was created.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ISubprocessOptions

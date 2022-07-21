@@ -13,7 +13,7 @@ pagination_next: null
 
 This optional property overrides the compiler context for discovery of localization files for which typings should be generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sourceRoot?: string;

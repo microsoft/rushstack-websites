@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the project for which the specified path is underneath that project's folder. If the path is not under any project's folder, returns undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetProjectForPath(currentFolderPath: string): RushConfigurationProject | undefined;
@@ -25,6 +25,6 @@ tryGetProjectForPath(currentFolderPath: string): RushConfigurationProject | unde
 | ----------------- | ------ | ----------- |
 | currentFolderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [RushConfigurationProject](./rush-lib.rushconfigurationproject.md) \| undefined

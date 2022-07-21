@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateCachedCredentialAsync(terminal: ITerminal, credential: string): Promise<void>;
@@ -26,6 +26,6 @@ updateCachedCredentialAsync(terminal: ITerminal, credential: string): Promise<vo
 | terminal   | [ITerminal](./node-core-library.iterminal.md) |             |
 | credential | string                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

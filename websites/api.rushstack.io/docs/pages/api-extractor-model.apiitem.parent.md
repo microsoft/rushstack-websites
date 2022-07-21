@@ -13,7 +13,7 @@ pagination_next: null
 
 If this item was added to a ApiItemContainerMixin item, then this returns the container item. If this is an Parameter that was added to a method or function, then this returns the function item. Otherwise, it returns undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */

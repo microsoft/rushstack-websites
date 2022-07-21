@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the settings from the common-versions.json config file for a specific variant.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getCommonVersions(variant?: string | undefined): CommonVersionsConfiguration;
@@ -25,6 +25,6 @@ getCommonVersions(variant?: string | undefined): CommonVersionsConfiguration;
 | --------- | ------------------- | ------------------------------------------------------------------------------- |
 | variant   | string \| undefined | <i>(Optional)</i> The name of the current variant in use by the active command. |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md)

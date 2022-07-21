@@ -15,7 +15,7 @@ pagination_next: null
 
 Rush plugins configuration file name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushPluginsConfigFilename: string;

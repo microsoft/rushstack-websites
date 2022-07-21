@@ -17,7 +17,7 @@ If set to true, special characters like \\ n, \\ r, and the \\ u001b character i
 
 This option defaults to `true`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 normalizeSpecialCharacters: boolean;

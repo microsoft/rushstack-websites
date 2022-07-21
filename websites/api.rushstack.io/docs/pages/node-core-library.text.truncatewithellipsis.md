@@ -13,7 +13,7 @@ pagination_next: null
 
 If the string is longer than maximumLength characters, truncate it to that length using "..." to indicate the truncation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static truncateWithEllipsis(s: string, maximumLength: number): string;
@@ -26,7 +26,7 @@ static truncateWithEllipsis(s: string, maximumLength: number): string;
 | s             | string |             |
 | maximumLength | number |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

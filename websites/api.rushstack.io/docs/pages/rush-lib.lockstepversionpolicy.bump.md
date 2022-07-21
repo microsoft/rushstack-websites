@@ -13,7 +13,7 @@ pagination_next: null
 
 Bumps the version of the lockstep policy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bump(bumpType?: BumpType, identifier?: string): void;
@@ -26,6 +26,6 @@ bump(bumpType?: BumpType, identifier?: string): void;
 | bumpType   | [BumpType](./rush-lib.bumptype.md) | <i>(Optional)</i> Overwrite bump type in version-policy.json with the provided value. |
 | identifier | string                             | <i>(Optional)</i> Prerelease identifier if bump type is prerelease.                   |
 
-<b>Returns:</b>
+**Returns:**
 
 void

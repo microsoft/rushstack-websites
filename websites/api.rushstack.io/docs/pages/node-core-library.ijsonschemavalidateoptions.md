@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for JsonSchema.validateObject()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonSchemaValidateOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 The long name parsed from the scoped long name, e.g. "--my-scope:my-parameter" - &gt; "--my-parameter"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 longName: string;

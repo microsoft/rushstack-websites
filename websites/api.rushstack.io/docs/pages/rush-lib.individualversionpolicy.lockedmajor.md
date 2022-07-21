@@ -13,7 +13,7 @@ pagination_next: null
 
 The major version that has been locked
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get lockedMajor(): number | undefined;

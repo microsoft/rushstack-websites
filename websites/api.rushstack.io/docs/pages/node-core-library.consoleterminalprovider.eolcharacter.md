@@ -15,7 +15,7 @@ pagination_next: null
 
 This property should return the newline character the terminal provider expects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get eolCharacter(): string;

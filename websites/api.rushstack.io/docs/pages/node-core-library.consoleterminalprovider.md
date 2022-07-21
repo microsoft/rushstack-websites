@@ -15,13 +15,13 @@ pagination_next: null
 
 Terminal provider that prints to STDOUT (for log- and verbose-level messages) and STDERR (for warning- and error-level messsages).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ConsoleTerminalProvider implements ITerminalProvider
 ```
 
-<b>Implements:</b> [ITerminalProvider](./node-core-library.iterminalprovider.md)
+**Implements:** [ITerminalProvider](./node-core-library.iterminalprovider.md)
 
 ## Constructors
 

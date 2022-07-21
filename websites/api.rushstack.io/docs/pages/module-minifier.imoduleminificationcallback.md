@@ -13,7 +13,7 @@ pagination_next: null
 
 Callback passed to a minifier function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinificationCallback

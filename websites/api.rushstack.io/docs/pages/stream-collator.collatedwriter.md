@@ -15,13 +15,13 @@ pagination_next: null
 
 An writable interface for managing output of simultaneous processes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CollatedWriter extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Constructors
 

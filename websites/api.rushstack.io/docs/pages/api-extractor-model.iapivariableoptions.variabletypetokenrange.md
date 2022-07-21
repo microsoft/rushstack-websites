@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiVariableOptions.variableTypeTokenRange property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 variableTypeTokenRange: IExcerptTokenRange;

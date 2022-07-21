@@ -13,7 +13,7 @@ pagination_next: null
 
 If this option is set to `true` , strings that are missing from `localizedData.translatedStrings` will be provided by the default locale
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fillMissingTranslationStrings?: boolean;

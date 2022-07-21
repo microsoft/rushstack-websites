@@ -13,7 +13,7 @@ pagination_next: null
 
 Rewrite the next sequence of characters from the input stream, returning the modified output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract process(state: TextRewriterState, input: string): string;
@@ -26,6 +26,6 @@ abstract process(state: TextRewriterState, input: string): string;
 | state     | [TextRewriterState](./terminal.textrewriterstate.md) |             |
 | input     | string                                               |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

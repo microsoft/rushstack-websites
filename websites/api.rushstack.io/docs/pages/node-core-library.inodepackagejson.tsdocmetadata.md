@@ -15,7 +15,7 @@ pagination_next: null
 
 The path to the TSDoc metadata file. This is still being standardized: https://github.com/microsoft/tsdoc/issues/7\#issuecomment-442271815
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tsdocMetadata?: string;

@@ -15,7 +15,7 @@ pagination_next: null
 
 If set to `true` apply the `incrementalBuildIgnoredGlobs` property in a project's `rush-project.json` and exclude matched files from change detection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 enableFiltering: boolean;

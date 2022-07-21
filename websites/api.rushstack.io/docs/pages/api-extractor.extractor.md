@@ -13,7 +13,7 @@ pagination_next: null
 
 The starting point for invoking the API Extractor tool.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Extractor

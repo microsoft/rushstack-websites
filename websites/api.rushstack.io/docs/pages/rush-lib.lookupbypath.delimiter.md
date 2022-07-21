@@ -15,7 +15,7 @@ pagination_next: null
 
 The delimiter used to split paths
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly delimiter: string;

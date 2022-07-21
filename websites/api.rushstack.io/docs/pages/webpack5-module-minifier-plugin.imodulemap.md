@@ -13,10 +13,10 @@ pagination_next: null
 
 A map from module ids to minified modules
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IModuleMap = Map<string | number, IModuleInfo>;
 ```
 
-<b>References:</b> [IModuleInfo](./webpack5-module-minifier-plugin.imoduleinfo.md)
+**References:** [IModuleInfo](./webpack5-module-minifier-plugin.imoduleinfo.md)

@@ -15,7 +15,7 @@ pagination_next: null
 
 Call this function to receive a callback with the plugin if and after the specified plugin has been applied. This is used to tap hooks on another plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly requestAccessToPluginByName: RequestAccessToPluginByNameCallback;

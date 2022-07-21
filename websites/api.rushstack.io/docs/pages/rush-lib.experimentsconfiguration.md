@@ -13,7 +13,7 @@ pagination_next: null
 
 Use this class to load the "common/config/rush/experiments.json" config file. This file allows repo maintainers to enable and disable experimental Rush features.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExperimentsConfiguration

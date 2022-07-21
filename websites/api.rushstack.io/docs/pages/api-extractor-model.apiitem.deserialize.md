@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiItem.deserialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static deserialize(jsonObject: IApiItemJson, context: DeserializerContext): ApiItem;
@@ -24,6 +24,6 @@ static deserialize(jsonObject: IApiItemJson, context: DeserializerContext): ApiI
 | jsonObject | IApiItemJson        |             |
 | context    | DeserializerContext |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ApiItem](./api-extractor-model.apiitem.md)

@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line parameter whose argument is an integer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineIntegerParameter(definition: ICommandLineIntegerDefinition): CommandLineIntegerParameter;
@@ -25,7 +25,7 @@ defineIntegerParameter(definition: ICommandLineIntegerDefinition): CommandLineIn
 | ---------- | ----------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineIntegerParameter](./ts-command-line.commandlineintegerparameter.md)
 

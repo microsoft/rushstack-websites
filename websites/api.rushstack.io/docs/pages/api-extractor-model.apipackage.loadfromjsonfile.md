@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPackage.loadFromJsonFile() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFromJsonFile(apiJsonFilename: string): ApiPackage;
@@ -23,6 +23,6 @@ static loadFromJsonFile(apiJsonFilename: string): ApiPackage;
 | --------------- | ------ | ----------- |
 | apiJsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ApiPackage](./api-extractor-model.apipackage.md)

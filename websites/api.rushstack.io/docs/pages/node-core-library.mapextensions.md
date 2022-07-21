@@ -13,7 +13,7 @@ pagination_next: null
 
 Helper functions for working with the `Map<K, V>` data type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MapExtensions

@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns the map entries.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 entries(): IterableIterator<IEnvironmentEntry>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 IterableIterator&lt;[IEnvironmentEntry](./node-core-library.ienvironmententry.md) &gt;

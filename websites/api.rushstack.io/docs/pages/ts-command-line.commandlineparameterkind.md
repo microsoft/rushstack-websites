@@ -13,7 +13,7 @@ pagination_next: null
 
 Identifies the kind of a CommandLineParameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum CommandLineParameterKind

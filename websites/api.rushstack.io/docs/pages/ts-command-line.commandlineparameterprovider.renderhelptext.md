@@ -13,12 +13,12 @@ pagination_next: null
 
 Generates the command-line help text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 renderHelpText(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

@@ -15,7 +15,7 @@ When set to true, for all projects in the repo, all dependencies will be automat
 
 If the value is `undefined` , then the default value is `true` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get implicitlyPreferredVersions(): boolean | undefined;

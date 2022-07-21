@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "gitPolicy" feature.\] A list of regular expressions describing allowable email patterns for Git commits. They are case-insensitive anchored JavaScript RegExps. Example: `".*@example\.com"` This array will never be undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get gitAllowedEmailRegExps(): string[];

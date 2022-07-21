@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type CloudBuildCacheProviderFactory = (
@@ -21,4 +21,4 @@ export declare type CloudBuildCacheProviderFactory = (
 ) => ICloudBuildCacheProvider;
 ```
 
-<b>References:</b> [ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md)
+**References:** [ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md)

@@ -13,7 +13,7 @@ pagination_next: null
 
 Removes the specified key from the map. This operation does NOT invoke the ProtectableMap onDelete() hook.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(key: K): boolean;
@@ -25,6 +25,6 @@ delete(key: K): boolean;
 | --------- | ---- | ----------- |
 | key       | K    |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

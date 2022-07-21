@@ -13,7 +13,7 @@ pagination_next: null
 
 The set of remaining assets to rehydrate. Each tap may remove some or all assets from this collection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 assets: IAssetMap;

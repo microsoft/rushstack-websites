@@ -13,7 +13,7 @@ pagination_next: null
 
 The line number where the issue occurred in the input source file. This is not used if `sourceFilePath` is undefined. The first line number is 1.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly sourceFileLine: number | undefined;

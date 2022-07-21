@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseFileOptions.filePath property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filePath: string;

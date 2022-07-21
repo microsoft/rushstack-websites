@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript construct signature that belongs to an `ApiInterface` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiConstructSignature extends ApiConstructSignature_base
 ```
 
-<b>Extends:</b> ApiConstructSignature_base
+**Extends:** ApiConstructSignature_base
 
 ## Remarks
 
@@ -56,7 +56,7 @@ let vector: Vector = createVector(Vector, 1, 2);
 
 Compare with [ApiConstructor](./api-extractor-model.apiconstructor.md) , which describes the class constructor itself.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

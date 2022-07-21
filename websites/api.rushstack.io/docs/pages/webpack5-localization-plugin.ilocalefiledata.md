@@ -13,10 +13,10 @@ pagination_next: null
 
 Accepted formats: - A string containing the path to the translations in .resjson format (keys mapped directly to values) - An object mapping keys directly to values - A map mapping keys directly to values
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type ILocaleFileData = string | ILocaleFileObject | ReadonlyMap<string, string>;
 ```
 
-<b>References:</b> [ILocaleFileObject](./webpack5-localization-plugin.ilocalefileobject.md)
+**References:** [ILocaleFileObject](./webpack5-localization-plugin.ilocalefileobject.md)

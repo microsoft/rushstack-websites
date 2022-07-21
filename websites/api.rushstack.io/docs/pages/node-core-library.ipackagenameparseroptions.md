@@ -13,7 +13,7 @@ pagination_next: null
 
 Options that configure the validation rules used by a [PackageNameParser](./node-core-library.packagenameparser.md) instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackageNameParserOptions

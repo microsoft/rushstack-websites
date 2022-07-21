@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStats.namedChunkGroups property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 namedChunkGroups: {

@@ -13,13 +13,13 @@ pagination_next: null
 
 Returns a JSON-like string representing the `ExtractorConfig` state, which can be printed to a console for diagnostic purposes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDiagnosticDump(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

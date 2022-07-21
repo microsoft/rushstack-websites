@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildSubstage interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBuildSubstage<TBuildSubstageHooks extends BuildSubstageHooksBase, TBuildSubstageProperties extends object>

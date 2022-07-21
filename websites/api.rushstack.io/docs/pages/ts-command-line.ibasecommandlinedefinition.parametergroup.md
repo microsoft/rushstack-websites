@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional parameter group name, shown when invoking the tool with "--help"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameterGroup?: string | typeof SCOPING_PARAMETER_GROUP;

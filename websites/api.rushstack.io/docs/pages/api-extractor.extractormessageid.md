@@ -13,7 +13,7 @@ pagination_next: null
 
 Unique identifiers for messages reported by API Extractor during its analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare const enum ExtractorMessageId

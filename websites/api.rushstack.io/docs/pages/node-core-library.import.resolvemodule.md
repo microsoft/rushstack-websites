@@ -13,7 +13,7 @@ pagination_next: null
 
 This resolves a module path using similar logic as the Node.js `require.resolve()` API, but supporting extra features such as specifying the base folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static resolveModule(options: IImportResolveModuleOptions): string;
@@ -25,7 +25,7 @@ static resolveModule(options: IImportResolveModuleOptions): string;
 | --------- | --------------------------------------------------------------------------------- | ----------- |
 | options   | [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

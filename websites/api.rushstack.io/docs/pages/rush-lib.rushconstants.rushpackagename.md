@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the NPM package for the Rush tool (" @ microsoft/rush").
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushPackageName: string;

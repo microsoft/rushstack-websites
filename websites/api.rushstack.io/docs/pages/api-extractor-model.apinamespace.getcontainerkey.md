@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiNamespace.getContainerKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getContainerKey(name: string): string;
@@ -23,6 +23,6 @@ static getContainerKey(name: string): string;
 | --------- | ------ | ----------- |
 | name      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

@@ -13,7 +13,7 @@ pagination_next: null
 
 Deletes a file. Can optionally throw if the file doesn't exist. Behind the scenes it uses `fs.unlinkSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static deleteFile(filePath: string, options?: IFileSystemDeleteFileOptions): void;
@@ -26,6 +26,6 @@ static deleteFile(filePath: string, options?: IFileSystemDeleteFileOptions): voi
 | filePath  | string                                                                              | The absolute or relative path to the file that should be deleted.                                       |
 | options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IDeleteFileOptions</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

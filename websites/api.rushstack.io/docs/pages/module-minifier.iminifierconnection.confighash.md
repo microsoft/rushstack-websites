@@ -13,7 +13,7 @@ pagination_next: null
 
 Hash of the configuration of this minifier, for cache busting.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configHash: string;

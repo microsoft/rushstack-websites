@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates the kind of information stored in this chunk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 kind: TerminalChunkKind;

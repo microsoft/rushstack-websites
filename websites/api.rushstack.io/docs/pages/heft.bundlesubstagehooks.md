@@ -11,13 +11,13 @@ pagination_next: null
 
 ## BundleSubstageHooks class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BundleSubstageHooks extends BuildSubstageHooksBase
 ```
 
-<b>Extends:</b> [BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
+**Extends:** [BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
 
 ## Properties
 

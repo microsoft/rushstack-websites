@@ -13,13 +13,13 @@ pagination_next: null
 
 The common base interface for parameter types that accept an argument.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBaseCommandLineDefinitionWithArgument extends IBaseCommandLineDefinition
 ```
 
-<b>Extends:</b> [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
+**Extends:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
 
 ## Remarks
 

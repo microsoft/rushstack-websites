@@ -13,7 +13,7 @@ pagination_next: null
 
 The abstract base class for operations that can be applied by [TextRewriterTransform](./terminal.textrewritertransform.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class TextRewriter

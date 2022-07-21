@@ -13,7 +13,7 @@ pagination_next: null
 
 If `normalizeNewlines` or `ensureNewlineAtEnd` is specified, a [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) will be appended to the list of rewriters with the specified settings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 normalizeNewlines?: NewlineKind;

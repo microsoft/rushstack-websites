@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [TerminalTransform](./terminal.terminaltransform.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITerminalTransformOptions extends ITerminalWritableOptions
 ```
 
-<b>Extends:</b> [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
+**Extends:** [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
 
 ## Properties
 

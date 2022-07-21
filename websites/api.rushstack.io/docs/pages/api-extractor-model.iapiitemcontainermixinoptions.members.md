@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiItemContainerMixinOptions.members property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 members?: ApiItem[];

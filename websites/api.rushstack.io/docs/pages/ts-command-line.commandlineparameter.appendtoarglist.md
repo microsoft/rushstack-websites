@@ -13,7 +13,7 @@ pagination_next: null
 
 Append the parsed values to the provided string array.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract appendToArgList(argList: string[]): void;
@@ -25,7 +25,7 @@ abstract appendToArgList(argList: string[]): void;
 | --------- | ---------- | -------------------------------------------------------- |
 | argList   | string\[\] | the parsed strings will be appended to this string array |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

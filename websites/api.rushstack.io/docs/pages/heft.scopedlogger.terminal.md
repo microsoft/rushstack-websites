@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ScopedLogger.terminal property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly terminal: Terminal;

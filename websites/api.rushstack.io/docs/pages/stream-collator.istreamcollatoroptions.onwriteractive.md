@@ -15,7 +15,7 @@ pagination_next: null
 
 An event handler that is called when a [CollatedWriter](./stream-collator.collatedwriter.md) becomes output, before any of its chunks have been written to the destination.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onWriterActive?: (writer: CollatedWriter) => void;

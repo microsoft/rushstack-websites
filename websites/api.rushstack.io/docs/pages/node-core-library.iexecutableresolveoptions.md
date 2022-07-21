@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for Executable.tryResolve().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExecutableResolveOptions

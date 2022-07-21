@@ -13,7 +13,7 @@ pagination_next: null
 
 Terminal instance to facilitate logging.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get globalTerminal(): Terminal;

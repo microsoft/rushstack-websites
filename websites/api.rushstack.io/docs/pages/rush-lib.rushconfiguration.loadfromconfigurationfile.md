@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads the configuration data from an Rush.json configuration file and returns an RushConfiguration object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFromConfigurationFile(rushJsonFilename: string): RushConfiguration;
@@ -25,6 +25,6 @@ static loadFromConfigurationFile(rushJsonFilename: string): RushConfiguration;
 | ---------------- | ------ | ----------- |
 | rushJsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [RushConfiguration](./rush-lib.rushconfiguration.md)

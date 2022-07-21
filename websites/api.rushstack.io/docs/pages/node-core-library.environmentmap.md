@@ -13,7 +13,7 @@ pagination_next: null
 
 A map data structure that stores process environment variables. On Windows operating system, the variable names are case-insensitive.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class EnvironmentMap

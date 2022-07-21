@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a 10-character string representation of a PosixModeBits value similar to what would be displayed by a command such as "ls -l" on a POSIX-like operating system.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static formatPosixModeBits(modeBits: PosixModeBits): string;
@@ -25,7 +25,7 @@ static formatPosixModeBits(modeBits: PosixModeBits): string;
 | --------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | modeBits  | [PosixModeBits](./node-core-library.posixmodebits.md) | POSIX-style file mode bits specified using the [PosixModeBits](./node-core-library.posixmodebits.md) enum |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

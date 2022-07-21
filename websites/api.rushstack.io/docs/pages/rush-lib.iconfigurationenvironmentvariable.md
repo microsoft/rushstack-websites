@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents the value of an environment variable, and if the value should be overridden if the variable is set in the parent environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigurationEnvironmentVariable

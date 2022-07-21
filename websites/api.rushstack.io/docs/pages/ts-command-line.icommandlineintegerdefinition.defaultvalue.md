@@ -13,7 +13,7 @@ pagination_next: null
 
 The default value which will be used if the parameter is omitted from the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue?: number;

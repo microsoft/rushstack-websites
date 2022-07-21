@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a string key that can be used to efficiently retrieve an `ApiItem` from an `ApiItemContainerMixin` . The key is unique within the container. Its format is undocumented and may change at any time.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */

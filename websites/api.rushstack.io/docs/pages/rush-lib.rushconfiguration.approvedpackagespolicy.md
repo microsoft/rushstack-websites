@@ -13,7 +13,7 @@ pagination_next: null
 
 The "approvedPackagesPolicy" settings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get approvedPackagesPolicy(): ApprovedPackagesPolicy;

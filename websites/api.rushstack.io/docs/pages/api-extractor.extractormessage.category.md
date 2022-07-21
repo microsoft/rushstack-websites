@@ -13,7 +13,7 @@ pagination_next: null
 
 The category of issue.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly category: ExtractorMessageCategory;

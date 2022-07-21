@@ -11,13 +11,13 @@ pagination_next: null
 
 ## ScopedLogger class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ScopedLogger implements IScopedLogger
 ```
 
-<b>Implements:</b> [IScopedLogger](./heft.iscopedlogger.md)
+**Implements:** [IScopedLogger](./heft.iscopedlogger.md)
 
 ## Remarks
 

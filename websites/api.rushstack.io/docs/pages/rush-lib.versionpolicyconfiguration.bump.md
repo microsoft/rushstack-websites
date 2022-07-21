@@ -13,7 +13,7 @@ pagination_next: null
 
 Bumps up versions for the specified version policy or all version policies
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bump(versionPolicyName?: string, bumpType?: BumpType, identifier?: string, shouldCommit?: boolean): void;
@@ -28,6 +28,6 @@ bump(versionPolicyName?: string, bumpType?: BumpType, identifier?: string, shoul
 | identifier        | string                             | <i>(Optional)</i> prerelease identifier to override what policy has defined. |
 | shouldCommit      | boolean                            | <i>(Optional)</i> should save to disk                                        |
 
-<b>Returns:</b>
+**Returns:**
 
 void

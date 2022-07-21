@@ -13,7 +13,7 @@ pagination_next: null
 
 Used to specify terminal how to write a message
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 terminalProvider?: ITerminalProvider;

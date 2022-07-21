@@ -13,7 +13,7 @@ pagination_next: null
 
 The largest amount of bytes allowed on stdout or stderr for this synchronous operation. If exceeded, the child process will be terminated. The default is 200 \* 1024.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 maxBuffer?: number;

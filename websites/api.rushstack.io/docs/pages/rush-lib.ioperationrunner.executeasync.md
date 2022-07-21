@@ -15,7 +15,7 @@ pagination_next: null
 
 Method to be executed for the operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 executeAsync(context: IOperationRunnerContext): Promise<OperationStatus>;
@@ -27,6 +27,6 @@ executeAsync(context: IOperationRunnerContext): Promise<OperationStatus>;
 | --------- | ---------------------------------------------------------------- | ----------- |
 | context   | [IOperationRunnerContext](./rush-lib.ioperationrunnercontext.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OperationStatus](./rush-lib.operationstatus.md) &gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The relative path to the rig profile specified by `rig.json` , or `""` if the file was not found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly relativeProfileFolderPath: string;

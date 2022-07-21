@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.copyFiles()](./node-core-library.filesystem.copyfiles.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static copyFilesAsync(options: IFileSystemCopyFilesOptions): Promise<void>;
@@ -25,6 +25,6 @@ static copyFilesAsync(options: IFileSystemCopyFilesOptions): Promise<void>;
 | --------- | --------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The abstract base class for objects that can present, route, or process text output for a console application. This output is typically prepared using the [Terminal](./node-core-library.terminal.md) API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class TerminalWritable

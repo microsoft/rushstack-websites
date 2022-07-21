@@ -13,15 +13,15 @@ pagination_next: null
 
 Extension of the webpack Module typings with members that are used by this Plugin
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtendedModule extends webpack.compilation.Module
 ```
 
-<b>Extends:</b> webpack.compilation.Module
+**Extends:** webpack.compilation.Module
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Properties
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Generated pem certificate contents
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pemCertificate: string | undefined;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("rush-recycler") where Rush moves large folder trees before asynchronously deleting them.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushRecyclerFolderName: string;

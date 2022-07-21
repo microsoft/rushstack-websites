@@ -13,13 +13,13 @@ pagination_next: null
 
 This plugin facilitates localization in webpack.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LocalizationPlugin implements Webpack.Plugin
 ```
 
-<b>Implements:</b> Webpack.Plugin
+**Implements:** Webpack.Plugin
 
 ## Constructors
 

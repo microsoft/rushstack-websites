@@ -13,7 +13,7 @@ pagination_next: null
 
 The full path of the folder that will get published by Rush.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get publishFolder(): string;

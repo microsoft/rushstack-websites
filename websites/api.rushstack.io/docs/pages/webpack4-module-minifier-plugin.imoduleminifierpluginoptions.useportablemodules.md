@@ -13,7 +13,7 @@ pagination_next: null
 
 Instructs the plugin to alter the code of modules to maximize portability across compilations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 usePortableModules?: boolean;

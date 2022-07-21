@@ -15,13 +15,13 @@ pagination_next: null
 
 Information about the currently executing phased script command (as defined in command-line.json, or default "build" or "rebuild") provided to plugins.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPhasedCommand extends IRushCommand
 ```
 
-<b>Extends:</b> [IRushCommand](./rush-lib.irushcommand.md)
+**Extends:** [IRushCommand](./rush-lib.irushcommand.md)
 
 ## Properties
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 The individual source code tokens that comprise the main excerpt.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get excerptTokens(): ReadonlyArray<ExcerptToken>;

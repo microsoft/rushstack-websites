@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [CompilerState.create()](./api-extractor.compilerstate.create.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICompilerStateCreateOptions

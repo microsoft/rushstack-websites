@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("shrinkwrap.yaml") used to store state for pnpm
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly yarnShrinkwrapFilename: string;

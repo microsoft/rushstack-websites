@@ -13,7 +13,7 @@ pagination_next: null
 
 The style of file location formatting to use.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 format: FileLocationStyle;

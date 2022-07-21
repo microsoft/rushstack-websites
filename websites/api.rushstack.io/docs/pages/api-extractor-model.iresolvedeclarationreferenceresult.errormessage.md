@@ -13,7 +13,7 @@ pagination_next: null
 
 If resolvedApiItem is undefined, then this will always contain an error message explaining why the resolution failed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 errorMessage: string | undefined;

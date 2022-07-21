@@ -13,7 +13,7 @@ pagination_next: null
 
 The main entry point for the package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bin?: string;

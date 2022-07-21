@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, allows upper-case letters in package names. This improves compatibility with some legacy private registries that still allow that.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowUpperCase?: boolean;

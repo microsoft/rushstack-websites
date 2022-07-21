@@ -15,7 +15,7 @@ pagination_next: null
 
 Reads and validates environment variables. If any are invalid, this function will throw.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static validate(options?: IEnvironmentConfigurationInitializeOptions): void;
@@ -27,6 +27,6 @@ static validate(options?: IEnvironmentConfigurationInitializeOptions): void;
 | --------- | ------------------------------------------------------------------------------------------------------ | ----------------- |
 | options   | [IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

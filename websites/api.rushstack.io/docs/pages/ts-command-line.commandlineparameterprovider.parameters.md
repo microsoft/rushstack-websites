@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a collection of the parameters that were defined for this object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get parameters(): ReadonlyArray<CommandLineParameter>;

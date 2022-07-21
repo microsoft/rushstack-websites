@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IPseudolocaleOptions.prepend property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 prepend?: string;

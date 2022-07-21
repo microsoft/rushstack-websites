@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the array is already sorted.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isSorted<T>(array: T[], comparer?: (x: any, y: any) => number): boolean;
@@ -26,6 +26,6 @@ static isSorted<T>(array: T[], comparer?: (x: any, y: any) => number): boolean;
 | array     | T\[\]                         |                   |
 | comparer  | (x: any, y: any) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

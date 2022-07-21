@@ -15,7 +15,7 @@ The path for PNPM to use as the store directory.
 
 Will be overridden by environment variable RUSH_PNPM_STORE_PATH
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pnpmStorePath: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The owner of the protectable map should return this object via its public API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get protectedView(): Map<K, V>;

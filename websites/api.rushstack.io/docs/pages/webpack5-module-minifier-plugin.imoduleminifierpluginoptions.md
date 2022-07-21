@@ -13,7 +13,7 @@ pagination_next: null
 
 Options to the ModuleMinifierPlugin constructor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinifierPluginOptions

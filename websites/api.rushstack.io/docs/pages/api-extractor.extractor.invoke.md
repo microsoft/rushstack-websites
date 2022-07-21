@@ -13,7 +13,7 @@ pagination_next: null
 
 Invoke API Extractor using an already prepared `ExtractorConfig` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static invoke(extractorConfig: ExtractorConfig, options?: IExtractorInvokeOptions): ExtractorResult;
@@ -26,6 +26,6 @@ static invoke(extractorConfig: ExtractorConfig, options?: IExtractorInvokeOption
 | extractorConfig | [ExtractorConfig](./api-extractor.extractorconfig.md)                 |                   |
 | options         | [IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [ExtractorResult](./api-extractor.extractorresult.md)

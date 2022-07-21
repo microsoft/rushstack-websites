@@ -13,7 +13,7 @@ pagination_next: null
 
 The starting index of the span.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 startIndex: number;

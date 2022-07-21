@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, print debug logging messages. Note that "verbose" and "debug" are considered separate message filters; if you want debug to imply verbose, it is up to your application code to enforce that.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 debugEnabled: boolean;

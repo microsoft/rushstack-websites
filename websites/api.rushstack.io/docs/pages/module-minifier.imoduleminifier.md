@@ -13,7 +13,7 @@ pagination_next: null
 
 Object that can be invoked to minify code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinifier

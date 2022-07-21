@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPackage.entryPoints property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get entryPoints(): ReadonlyArray<ApiEntryPoint>;

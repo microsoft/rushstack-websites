@@ -13,7 +13,7 @@ pagination_next: null
 
 Environment variables for the package manager
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 environmentVariables?: IConfigurationEnvironment;

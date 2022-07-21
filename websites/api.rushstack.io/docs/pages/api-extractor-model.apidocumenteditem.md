@@ -13,13 +13,13 @@ pagination_next: null
 
 An abstract base class for API declarations that can have an associated TSDoc comment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiDocumentedItem extends ApiItem
 ```
 
-<b>Extends:</b> [ApiItem](./api-extractor-model.apiitem.md)
+**Extends:** [ApiItem](./api-extractor-model.apiitem.md)
 
 ## Remarks
 

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiModel.packages property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packages(): ReadonlyArray<ApiPackage>;

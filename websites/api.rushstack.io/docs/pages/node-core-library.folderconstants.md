@@ -13,7 +13,7 @@ pagination_next: null
 
 String constants for common folder names.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum FolderConstants

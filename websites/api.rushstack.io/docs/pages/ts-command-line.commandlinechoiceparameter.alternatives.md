@@ -13,7 +13,7 @@ pagination_next: null
 
 A list of strings (which contain no spaces), of possible options which can be selected
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly alternatives: ReadonlyArray<string>;

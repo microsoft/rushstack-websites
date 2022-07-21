@@ -15,7 +15,7 @@ pagination_next: null
 >
 > Use [ILocalizationPluginOptions.ignoreString](./webpack4-localization-plugin.ilocalizationpluginoptions.ignorestring.md) instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreString?: (resxFilePath: string, stringName: string) => boolean;

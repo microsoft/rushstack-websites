@@ -13,7 +13,7 @@ pagination_next: null
 
 Optionally, provide a function that will process string comments. The returned value will become the TSDoc comment for the string in the typings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 processComment?: (comment: string | undefined, resxFilePath: string, stringName: string) => string | undefined;

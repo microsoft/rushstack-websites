@@ -13,7 +13,7 @@ pagination_next: null
 
 The number of processor cores.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 machineCores: number;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns an English phrase such as "shrinkwrap file" that can be used in logging messages to refer to the shrinkwrap file using appropriate terminology for the currently selected package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get shrinkwrapFilePhrase(): string;

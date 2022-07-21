@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemDeleteFileOptions

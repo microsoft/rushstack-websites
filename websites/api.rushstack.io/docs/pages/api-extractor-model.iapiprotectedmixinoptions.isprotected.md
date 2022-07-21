@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiProtectedMixinOptions.isProtected property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isProtected: boolean;

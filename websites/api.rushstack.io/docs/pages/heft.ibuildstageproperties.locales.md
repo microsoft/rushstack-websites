@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties.locales property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 locales?: ReadonlyArray<string>;

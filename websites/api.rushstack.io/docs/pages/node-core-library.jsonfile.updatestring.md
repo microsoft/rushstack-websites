@@ -13,7 +13,7 @@ pagination_next: null
 
 Serializes the specified JSON object to a string buffer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static updateString(previousJson: string, newJsonObject: JsonObject, options?: IJsonFileStringifyOptions): string;
@@ -27,7 +27,7 @@ static updateString(previousJson: string, newJsonObject: JsonObject, options?: I
 | newJsonObject | [JsonObject](./node-core-library.jsonobject.md)                               |                                                             |
 | options       | [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | <i>(Optional)</i> other settings that control serialization |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Retrieves the permissions (i.e. file mode bits) for a filesystem object. Behind the scenes it uses `fs.chmodSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getPosixModeBits(path: string): PosixModeBits;
@@ -25,7 +25,7 @@ static getPosixModeBits(path: string): PosixModeBits;
 | --------- | ------ | ------------------------------------------------------------------- |
 | path      | string | The absolute or relative path to the object that should be updated. |
 
-<b>Returns:</b>
+**Returns:**
 
 [PosixModeBits](./node-core-library.posixmodebits.md)
 

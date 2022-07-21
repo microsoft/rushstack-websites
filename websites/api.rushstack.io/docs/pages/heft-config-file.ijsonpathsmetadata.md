@@ -15,7 +15,7 @@ pagination_next: null
 
 Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/) , and values are objects that describe how node(s) selected by the JSONPath are processed after loading.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonPathsMetadata

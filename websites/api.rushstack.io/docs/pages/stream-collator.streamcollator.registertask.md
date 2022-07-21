@@ -15,7 +15,7 @@ pagination_next: null
 
 Registers a new task to be collated, and constructs a [CollatedWriter](./stream-collator.collatedwriter.md) object to receive its input.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerTask(taskName: string): CollatedWriter;
@@ -27,6 +27,6 @@ registerTask(taskName: string): CollatedWriter;
 | --------- | ------ | ----------- |
 | taskName  | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CollatedWriter](./stream-collator.collatedwriter.md)

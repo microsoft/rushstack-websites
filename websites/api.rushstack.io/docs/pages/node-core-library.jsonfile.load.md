@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads a JSON file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static load(jsonFilename: string): JsonObject;
@@ -25,6 +25,6 @@ static load(jsonFilename: string): JsonObject;
 | ------------ | ------ | ----------- |
 | jsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonObject](./node-core-library.jsonobject.md)

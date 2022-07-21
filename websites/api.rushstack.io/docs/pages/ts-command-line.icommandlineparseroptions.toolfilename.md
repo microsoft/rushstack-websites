@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of your tool when invoked from the command line
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toolFilename: string;

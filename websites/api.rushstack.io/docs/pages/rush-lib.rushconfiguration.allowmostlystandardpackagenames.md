@@ -15,7 +15,7 @@ Today the npmjs.com registry enforces fairly strict naming rules for packages, b
 
 The default value is false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get allowMostlyStandardPackageNames(): boolean;

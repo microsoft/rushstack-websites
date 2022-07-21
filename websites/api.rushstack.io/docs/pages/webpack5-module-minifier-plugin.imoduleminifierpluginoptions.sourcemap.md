@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether to enable source map processing. If not provided, will attempt to guess based on `mode` and `devtool` in the webpack config. Set to `false` for faster builds at the expense of debuggability.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sourceMap?: boolean;

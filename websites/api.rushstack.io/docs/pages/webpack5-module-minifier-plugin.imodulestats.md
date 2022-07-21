@@ -13,7 +13,7 @@ pagination_next: null
 
 Module size data as a function of the target chunk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleStats

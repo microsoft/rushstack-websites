@@ -13,7 +13,7 @@ pagination_next: null
 
 An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the function's return value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly returnTypeExcerpt: Excerpt;

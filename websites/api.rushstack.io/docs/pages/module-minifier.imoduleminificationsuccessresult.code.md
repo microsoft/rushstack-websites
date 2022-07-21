@@ -13,7 +13,7 @@ pagination_next: null
 
 The minified code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.exists()](./node-core-library.filesystem.exists.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static existsAsync(path: string): Promise<boolean>;
@@ -25,6 +25,6 @@ static existsAsync(path: string): Promise<boolean>;
 | --------- | ------ | ----------- |
 | path      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

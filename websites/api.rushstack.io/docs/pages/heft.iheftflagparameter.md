@@ -15,10 +15,10 @@ pagination_next: null
 
 The object returned when registering a flag type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftFlagParameter = IHeftBaseParameter<boolean, ICommandLineFlagDefinition>;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md)

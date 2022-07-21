@@ -13,7 +13,7 @@ pagination_next: null
 
 The current module being processed, or `undefined` if not in a module (e.g. the bootstrapper)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 module: webpack.compilation.Module | undefined;

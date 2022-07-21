@@ -15,7 +15,7 @@ pagination_next: null
 
 If Rush was invoked with `--debug`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 debugMode: boolean;

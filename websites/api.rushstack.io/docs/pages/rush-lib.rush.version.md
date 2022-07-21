@@ -13,7 +13,7 @@ pagination_next: null
 
 The currently executing version of the "rush-lib" library. This is the same as the Rush tool version for that release.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get version(): string;

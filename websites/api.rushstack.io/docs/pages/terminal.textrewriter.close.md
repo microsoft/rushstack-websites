@@ -13,7 +13,7 @@ pagination_next: null
 
 Close the `TextRewriterState` object and return any buffered output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract close(state: TextRewriterState): string;
@@ -25,6 +25,6 @@ abstract close(state: TextRewriterState): string;
 | --------- | ---------------------------------------------------- | ----------- |
 | state     | [TextRewriterState](./terminal.textrewriterstate.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

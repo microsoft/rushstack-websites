@@ -11,13 +11,13 @@ pagination_next: null
 
 ## DynamicCommandLineAction class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DynamicCommandLineAction extends CommandLineAction
 ```
 
-<b>Extends:</b> [CommandLineAction](./ts-command-line.commandlineaction.md)
+**Extends:** [CommandLineAction](./ts-command-line.commandlineaction.md)
 
 ## Constructors
 

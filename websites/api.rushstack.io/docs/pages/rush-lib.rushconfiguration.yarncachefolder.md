@@ -15,7 +15,7 @@ The local folder that will store the Yarn package cache.
 
 Example: `C:\MyRepo\common\temp\yarn-cache`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get yarnCacheFolder(): string;

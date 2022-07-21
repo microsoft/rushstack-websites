@@ -13,7 +13,7 @@ pagination_next: null
 
 Result from the minifier on a successful minification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinificationSuccessResult

@@ -13,7 +13,7 @@ pagination_next: null
 
 The (minified) code of this module. Will be a function expression.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 source: Source;

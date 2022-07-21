@@ -15,13 +15,13 @@ pagination_next: null
 
 `DiscardStdoutTransform` discards `stdout` chunks while fixing up malformed `stderr` lines.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DiscardStdoutTransform extends TerminalTransform
 ```
 
-<b>Extends:</b> [TerminalTransform](./terminal.terminaltransform.md)
+**Extends:** [TerminalTransform](./terminal.terminaltransform.md)
 
 ## Remarks
 

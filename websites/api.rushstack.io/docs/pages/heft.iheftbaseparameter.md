@@ -15,7 +15,7 @@ pagination_next: null
 
 The base set of utility values provided in every object returned when registering a parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IHeftBaseParameter<TValue, TCommandLineDefinition extends IBaseCommandLineDefinition>

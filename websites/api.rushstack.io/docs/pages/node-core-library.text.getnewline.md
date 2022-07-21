@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the newline character sequence for the specified `NewlineKind` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getNewline(newlineKind: NewlineKind): string;
@@ -25,6 +25,6 @@ static getNewline(newlineKind: NewlineKind): string;
 | ----------- | ------------------------------------------------- | ----------- |
 | newlineKind | [NewlineKind](./node-core-library.newlinekind.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

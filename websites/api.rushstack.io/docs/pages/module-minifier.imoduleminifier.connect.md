@@ -13,12 +13,12 @@ pagination_next: null
 
 Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 connect(): Promise<IMinifierConnection>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IMinifierConnection](./module-minifier.iminifierconnection.md) &gt;

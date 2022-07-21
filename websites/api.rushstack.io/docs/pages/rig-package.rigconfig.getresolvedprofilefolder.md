@@ -13,13 +13,13 @@ pagination_next: null
 
 Performs Node.js module resolution to locate the rig package folder, then returns the absolute path of the rig profile folder specified by `rig.json` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getResolvedProfileFolder(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

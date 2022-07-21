@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a "feature" that is provided by an API Documenter plugin. A feature is a user-defined module that customizes the behavior of API Documenter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFeatureDefinition

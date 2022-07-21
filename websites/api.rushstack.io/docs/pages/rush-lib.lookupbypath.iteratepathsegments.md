@@ -15,7 +15,7 @@ pagination_next: null
 
 Iterates over the segments of a serialized path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static iteratePathSegments(serializedPath: string, delimiter?: string): Iterable<string>;
@@ -28,7 +28,7 @@ static iteratePathSegments(serializedPath: string, delimiter?: string): Iterable
 | serializedPath | string |                   |
 | delimiter      | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Iterable&lt;string&gt;
 

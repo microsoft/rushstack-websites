@@ -13,7 +13,7 @@ pagination_next: null
 
 The base path to use when converting `pathToFormat` to a relative path. If not specified, `pathToFormat` will be used as-is.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 baseFolder?: string;

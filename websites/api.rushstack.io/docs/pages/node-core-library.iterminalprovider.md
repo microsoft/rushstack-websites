@@ -15,7 +15,7 @@ pagination_next: null
 
 Implement the interface to create a terminal provider. Terminal providers can be registered to a [Terminal](./node-core-library.terminal.md) instance to receive messages.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITerminalProvider

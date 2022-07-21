@@ -13,7 +13,7 @@ pagination_next: null
 
 Get a development certificate from the store, or optionally, generate a new one and trust it if one doesn't exist in the store.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ensureCertificateAsync(canGenerateNewCertificate: boolean, terminal: ITerminal): Promise<ICertificate>;
@@ -26,6 +26,6 @@ ensureCertificateAsync(canGenerateNewCertificate: boolean, terminal: ITerminal):
 | canGenerateNewCertificate | boolean                                       |             |
 | terminal                  | [ITerminal](./node-core-library.iterminal.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ICertificate](./debug-certificate-manager.icertificate.md) &gt;

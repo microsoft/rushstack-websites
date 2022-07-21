@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line parameter whose argument is a single text string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineStringParameter(definition: ICommandLineStringDefinition): CommandLineStringParameter;
@@ -25,7 +25,7 @@ defineStringParameter(definition: ICommandLineStringDefinition): CommandLineStri
 | ---------- | --------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineStringParameter](./ts-command-line.commandlinestringparameter.md)
 

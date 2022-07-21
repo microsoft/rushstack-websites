@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IApiMethodSignatureOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiMethodSignatureOptions extends IApiNameMixinOptions, IApiTypeParameterListMixinOptions, IApiParameterListMixinOptions, IApiReleaseTagMixinOptions, IApiReturnTypeMixinOptions, IApiOptionalMixinOptions, IApiDeclaredItemOptions
 ```
 
-<b>Extends:</b> [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiTypeParameterListMixinOptions](./api-extractor-model.iapitypeparameterlistmixinoptions.md) , [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiReturnTypeMixinOptions](./api-extractor-model.iapireturntypemixinoptions.md) , [IApiOptionalMixinOptions](./api-extractor-model.iapioptionalmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+**Extends:** [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiTypeParameterListMixinOptions](./api-extractor-model.iapitypeparameterlistmixinoptions.md) , [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiReturnTypeMixinOptions](./api-extractor-model.iapireturntypemixinoptions.md) , [IApiOptionalMixinOptions](./api-extractor-model.iapioptionalmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
 
 ## Properties
 

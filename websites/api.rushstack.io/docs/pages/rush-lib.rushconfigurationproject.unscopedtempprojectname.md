@@ -15,7 +15,7 @@ The unscoped temporary project name
 
 Example: `my-project-2`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get unscopedTempProjectName(): string;

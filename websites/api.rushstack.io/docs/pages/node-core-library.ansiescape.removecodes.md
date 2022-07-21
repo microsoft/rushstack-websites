@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the input text with all ANSI escape codes removed. For example, this is useful when saving colorized console output to a log file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static removeCodes(text: string): string;
@@ -25,6 +25,6 @@ static removeCodes(text: string): string;
 | --------- | ------ | ----------- |
 | text      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

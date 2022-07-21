@@ -15,7 +15,7 @@ The relative path of the folder that contains the project to be built by Rush.
 
 Example: `libraries/my-project`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectRelativeFolder(): string;

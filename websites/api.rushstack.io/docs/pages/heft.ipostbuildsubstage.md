@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IPostBuildSubstage interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPostBuildSubstage extends IBuildSubstage<BuildSubstageHooksBase, {}>
 ```
 
-<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
+**Extends:** [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
 
 ## Properties
 

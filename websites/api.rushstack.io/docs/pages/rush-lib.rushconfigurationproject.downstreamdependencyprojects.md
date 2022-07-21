@@ -17,7 +17,7 @@ pagination_next: null
 
 An array of projects within the Rush configuration which directly depend on this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get downstreamDependencyProjects(): string[];

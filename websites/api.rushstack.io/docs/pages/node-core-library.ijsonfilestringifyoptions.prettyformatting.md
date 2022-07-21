@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then the "jju" library will be used to improve the text formatting. Note that this is slightly slower than the native JSON.stringify() implementation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 prettyFormatting?: boolean;

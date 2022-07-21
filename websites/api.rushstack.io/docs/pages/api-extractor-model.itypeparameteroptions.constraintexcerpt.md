@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypeParameterOptions.constraintExcerpt property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constraintExcerpt: Excerpt;

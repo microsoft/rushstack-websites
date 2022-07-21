@@ -13,13 +13,13 @@ pagination_next: null
 
 This is a simple tool that generates .d.ts files for .loc.json, .resx.json, .resjson, and .resx files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypingsGenerator extends StringValuesTypingsGenerator
 ```
 
-<b>Extends:</b> [StringValuesTypingsGenerator](./typings-generator.stringvaluestypingsgenerator.md)
+**Extends:** [StringValuesTypingsGenerator](./typings-generator.stringvaluestypingsgenerator.md)
 
 ## Constructors
 

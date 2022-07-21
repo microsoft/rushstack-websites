@@ -13,7 +13,7 @@ pagination_next: null
 
 Common operations for manipulating file and directory paths.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Path

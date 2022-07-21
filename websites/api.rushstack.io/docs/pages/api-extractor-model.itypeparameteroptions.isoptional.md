@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypeParameterOptions.isOptional property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isOptional: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Identifies the subclass of the `ApiItem` base class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */

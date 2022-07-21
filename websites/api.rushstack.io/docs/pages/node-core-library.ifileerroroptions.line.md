@@ -13,7 +13,7 @@ pagination_next: null
 
 The line number of the error in the target file. Minimum value is 1.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 line?: number;

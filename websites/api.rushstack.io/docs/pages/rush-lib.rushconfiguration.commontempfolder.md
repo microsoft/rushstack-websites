@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder where temporary files will be stored. This is always a subfolder called "temp" under the common folder. Example: `C:\MyRepo\common\temp`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonTempFolder(): string;

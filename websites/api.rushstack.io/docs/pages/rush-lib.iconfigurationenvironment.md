@@ -13,7 +13,7 @@ pagination_next: null
 
 A collection of environment variables
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigurationEnvironment

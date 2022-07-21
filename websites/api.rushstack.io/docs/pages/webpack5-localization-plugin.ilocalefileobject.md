@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocaleFileObject interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocaleFileObject

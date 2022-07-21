@@ -13,13 +13,13 @@ pagination_next: null
 
 The "argparse" library is a relatively advanced command-line parser with features such as word-wrapping and intelligible error messages (that are lacking in other similar libraries such as commander, yargs, and nomnom). Unfortunately, its ruby-inspired API is awkward to use. The abstract base classes CommandLineParser and CommandLineAction provide a wrapper for "argparse" that makes defining and consuming arguments quick and simple, and enforces that appropriate documentation is provided for each parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class CommandLineParser extends CommandLineParameterProvider
 ```
 
-<b>Extends:</b> [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
+**Extends:** [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
 
 ## Constructors
 

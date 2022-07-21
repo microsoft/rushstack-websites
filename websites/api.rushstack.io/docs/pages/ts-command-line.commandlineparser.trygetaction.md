@@ -13,7 +13,7 @@ pagination_next: null
 
 Retrieves the action with the specified name. If no matching action is found, undefined is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetAction(actionName: string): CommandLineAction | undefined;
@@ -25,6 +25,6 @@ tryGetAction(actionName: string): CommandLineAction | undefined;
 | ---------- | ------ | ----------- |
 | actionName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineAction](./ts-command-line.commandlineaction.md) \| undefined

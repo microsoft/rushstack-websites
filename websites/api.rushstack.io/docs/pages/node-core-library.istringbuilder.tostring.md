@@ -13,13 +13,13 @@ pagination_next: null
 
 Returns a single string containing all the text that was appended to the buffer so far.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toString(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

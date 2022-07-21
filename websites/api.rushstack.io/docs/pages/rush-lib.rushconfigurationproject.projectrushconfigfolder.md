@@ -15,7 +15,7 @@ The project-specific Rush configuration folder.
 
 Example: `C:\MyRepo\libraries\my-project\config\rush`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectRushConfigFolder(): string;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## AlreadyReportedError.\[Symbol.hasInstance\]() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static [Symbol.hasInstance](instance: object): boolean;
@@ -23,6 +23,6 @@ static [Symbol.hasInstance](instance: object): boolean;
 | --------- | ------ | ----------- |
 | instance  | object |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

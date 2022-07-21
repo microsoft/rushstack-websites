@@ -13,7 +13,7 @@ pagination_next: null
 
 This is the base class for version policy which controls how versions get bumped.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class VersionPolicy

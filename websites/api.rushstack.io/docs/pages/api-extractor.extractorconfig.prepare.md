@@ -13,7 +13,7 @@ pagination_next: null
 
 Prepares an `ExtractorConfig` object using a configuration that is provided as a runtime object, rather than reading it from disk. This allows configurations to be constructed programmatically, loaded from an alternate source, and/or customized after loading.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static prepare(options: IExtractorConfigPrepareOptions): ExtractorConfig;
@@ -25,6 +25,6 @@ static prepare(options: IExtractorConfigPrepareOptions): ExtractorConfig;
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ExtractorConfig](./api-extractor.extractorconfig.md)

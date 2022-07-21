@@ -15,7 +15,7 @@ pagination_next: null
 
 The static functions on this class are used to produce colored text for use with the node-core-library terminal.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Colors

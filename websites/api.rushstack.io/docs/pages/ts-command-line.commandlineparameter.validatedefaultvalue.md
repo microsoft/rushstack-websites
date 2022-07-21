@@ -11,7 +11,7 @@ pagination_next: null
 
 ## CommandLineParameter.validateDefaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected validateDefaultValue(hasDefaultValue: boolean): void;
@@ -23,6 +23,6 @@ protected validateDefaultValue(hasDefaultValue: boolean): void;
 | --------------- | ------- | ----------- |
 | hasDefaultValue | boolean |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

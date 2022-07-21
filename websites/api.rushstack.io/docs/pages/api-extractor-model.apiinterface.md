@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript class declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiInterface extends ApiInterface_base
 ```
 
-<b>Extends:</b> ApiInterface_base
+**Extends:** ApiInterface_base
 
 ## Remarks
 
@@ -31,7 +31,7 @@ This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of c
 export interface X extends Y {}
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

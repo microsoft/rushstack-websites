@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IModuleMinifierPluginStats.metadataByModule property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metadataByModule: WeakMap<Module, IModuleStats>;

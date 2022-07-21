@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPackage.saveToJsonFile() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 saveToJsonFile(apiJsonFilename: string, options?: IApiPackageSaveOptions): void;
@@ -24,6 +24,6 @@ saveToJsonFile(apiJsonFilename: string, options?: IApiPackageSaveOptions): void;
 | apiJsonFilename | string                                                                    |                   |
 | options         | [IApiPackageSaveOptions](./api-extractor-model.iapipackagesaveoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

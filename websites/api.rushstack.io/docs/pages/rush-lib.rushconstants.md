@@ -15,7 +15,7 @@ pagination_next: null
 
 Constants used by the Rush tool.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RushConstants

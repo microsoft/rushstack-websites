@@ -13,7 +13,7 @@ pagination_next: null
 
 If provided, the specified newline type will be used instead of the default `\r\n` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 newlineConversion?: NewlineKind;

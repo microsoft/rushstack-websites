@@ -15,7 +15,7 @@ pagination_next: null
 
 Loads the build-cache.json data from the standard file path `common/config/rush/build-cache.json` . If the file has not been created yet, or if the feature is not enabled, then an error is reported.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAndRequireEnabledAsync(terminal: ITerminal, rushConfiguration: RushConfiguration, rushSession: RushSession): Promise<BuildCacheConfiguration>;
@@ -29,6 +29,6 @@ static loadAndRequireEnabledAsync(terminal: ITerminal, rushConfiguration: RushCo
 | rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |             |
 | rushSession       | [RushSession](./rush-lib.rushsession.md)             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[BuildCacheConfiguration](./rush-lib.buildcacheconfiguration.md) &gt;

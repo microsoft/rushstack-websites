@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties.watchMode property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 watchMode: boolean;

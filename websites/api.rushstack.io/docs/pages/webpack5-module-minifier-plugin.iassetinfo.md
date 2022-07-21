@@ -13,7 +13,7 @@ pagination_next: null
 
 Information about a dehydrated webpack ECMAScript asset
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAssetInfo

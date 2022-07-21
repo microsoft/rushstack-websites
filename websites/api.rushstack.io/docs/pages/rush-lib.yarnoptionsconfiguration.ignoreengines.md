@@ -15,7 +15,7 @@ If true, then Rush will add the "--ignore-engines" option when invoking Yarn. Th
 
 The default value is false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly ignoreEngines: boolean;

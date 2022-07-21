@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `ExcerptToken` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(kind: ExcerptTokenKind, text: string, canonicalReference?: DeclarationReference);

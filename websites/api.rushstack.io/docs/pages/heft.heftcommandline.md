@@ -15,7 +15,7 @@ pagination_next: null
 
 Command line utilities provided for Heft plugin developers.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HeftCommandLine

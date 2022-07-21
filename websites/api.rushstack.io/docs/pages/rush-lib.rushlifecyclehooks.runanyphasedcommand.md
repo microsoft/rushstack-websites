@@ -15,7 +15,7 @@ pagination_next: null
 
 The hook to run before executing any phased Rush CLI Command (defined in command-line.json, or the default "build" or "rebuild").
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runAnyPhasedCommand: AsyncSeriesHook<IPhasedCommand>;

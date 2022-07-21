@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns the keys as a plain JavaScript object similar to the object returned by the `process.env` API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toObject(): Record<string, string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Record&lt;string, string&gt;

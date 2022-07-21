@@ -17,7 +17,7 @@ This class is used to associate POSIX relative paths, such as those returned by 
 
 It is optimized for efficiently locating the nearest ancestor path with an associated value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LookupByPath<TItem>

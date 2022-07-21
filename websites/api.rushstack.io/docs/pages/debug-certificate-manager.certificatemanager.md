@@ -13,7 +13,7 @@ pagination_next: null
 
 A utility class to handle generating, trusting, and untrustring a debug certificate. Contains two public methods to `ensureCertificate` and `untrustCertificate` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CertificateManager

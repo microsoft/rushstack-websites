@@ -13,7 +13,7 @@ pagination_next: null
 
 A class that helps with programmatically interacting with Rush's change files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ChangeManager

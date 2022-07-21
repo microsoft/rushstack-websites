@@ -13,7 +13,7 @@ pagination_next: null
 
 Reads the contents of a file into a buffer. Behind the scenes is uses `fs.readFileSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFileToBuffer(filePath: string): Buffer;
@@ -25,6 +25,6 @@ static readFileToBuffer(filePath: string): Buffer;
 | --------- | ------ | ------------------------------------------------------------------------ |
 | filePath  | string | The relative or absolute path to the file whose contents should be read. |
 
-<b>Returns:</b>
+**Returns:**
 
 Buffer

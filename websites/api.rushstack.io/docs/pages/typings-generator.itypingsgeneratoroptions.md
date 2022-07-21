@@ -11,13 +11,13 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITypingsGeneratorOptions<TTypingsResult = string | undefined> extends ITypingsGeneratorBaseOptions
 ```
 
-<b>Extends:</b> [ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md)
+**Extends:** [ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md)
 
 ## Properties
 

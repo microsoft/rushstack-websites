@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the API report was found to have changed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly apiReportChanged: boolean;

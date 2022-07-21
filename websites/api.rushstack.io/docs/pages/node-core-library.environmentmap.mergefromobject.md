@@ -13,7 +13,7 @@ pagination_next: null
 
 Merges entries from a plain JavaScript object, such as would be used with the `process.env` API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mergeFromObject(environmentObject?: Record<string, string | undefined>): void;
@@ -25,6 +25,6 @@ mergeFromObject(environmentObject?: Record<string, string | undefined>): void;
 | ----------------- | ----------------------------------------- | ----------------- |
 | environmentObject | Record&lt;string, string \| undefined&gt; | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

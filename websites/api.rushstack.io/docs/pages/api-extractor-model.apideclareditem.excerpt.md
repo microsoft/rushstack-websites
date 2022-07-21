@@ -13,7 +13,7 @@ pagination_next: null
 
 The source code excerpt where the API item is declared.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get excerpt(): Excerpt;

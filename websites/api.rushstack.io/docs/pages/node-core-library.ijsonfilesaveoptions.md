@@ -13,13 +13,13 @@ pagination_next: null
 
 Options for JsonFile.saveJsonFile()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonFileSaveOptions extends IJsonFileStringifyOptions
 ```
 
-<b>Extends:</b> [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md)
+**Extends:** [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md)
 
 ## Properties
 

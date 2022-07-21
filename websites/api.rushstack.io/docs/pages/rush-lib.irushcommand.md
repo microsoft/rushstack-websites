@@ -15,7 +15,7 @@ pagination_next: null
 
 Information about the currently executing command provided to plugins.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IRushCommand

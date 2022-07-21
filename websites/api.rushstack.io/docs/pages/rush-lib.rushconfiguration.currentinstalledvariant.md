@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the currently-installed variant, if an installation has occurred. For Rush operations which do not take a --variant parameter, this method determines which variant, if any, was last specified when performing "rush install" or "rush update".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get currentInstalledVariant(): string | undefined;

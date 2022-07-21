@@ -13,7 +13,7 @@ pagination_next: null
 
 Operations for sorting collections.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Sort

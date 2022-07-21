@@ -13,7 +13,7 @@ pagination_next: null
 
 If `true` , then `NormalizeNewlinesTextRewriter.close()` will append a newline to the output if it ends with an incomplete line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ensureNewlineAtEnd?: boolean;

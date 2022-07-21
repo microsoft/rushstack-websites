@@ -15,7 +15,7 @@ pagination_next: null
 
 The NPM scope (" @ rush-temp") that is used for Rush's temporary projects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushTempNpmScope: string;

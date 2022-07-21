@@ -11,13 +11,13 @@ pagination_next: null
 
 ## BuildStageHooks class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BuildStageHooks extends StageHooksBase<IBuildStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[IBuildStageProperties](./heft.ibuildstageproperties.md)
+**Extends:** [StageHooksBase](./heft.stagehooksbase.md) &lt;[IBuildStageProperties](./heft.ibuildstageproperties.md)
 
 ## Properties
 

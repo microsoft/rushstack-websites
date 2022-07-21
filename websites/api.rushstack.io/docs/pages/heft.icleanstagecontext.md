@@ -11,13 +11,13 @@ pagination_next: null
 
 ## ICleanStageContext interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICleanStageContext extends IStageContext<CleanStageHooks, ICleanStageProperties>
 ```
 
-<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[CleanStageHooks](./heft.cleanstagehooks.md) , [ICleanStageProperties](./heft.icleanstageproperties.md)
+**Extends:** [IStageContext](./heft.istagecontext.md) &lt;[CleanStageHooks](./heft.cleanstagehooks.md) , [ICleanStageProperties](./heft.icleanstageproperties.md)
 
 ## Properties
 

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizedWebpackChunk.localizedFiles property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 localizedFiles?: {

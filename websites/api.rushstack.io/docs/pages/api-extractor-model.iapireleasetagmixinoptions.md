@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [ApiReleaseTagMixin](./api-extractor-model.apireleasetagmixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiReleaseTagMixinOptions extends IApiItemOptions
 ```
 
-<b>Extends:</b> [IApiItemOptions](./api-extractor-model.iapiitemoptions.md)
+**Extends:** [IApiItemOptions](./api-extractor-model.iapiitemoptions.md)
 
 ## Properties
 

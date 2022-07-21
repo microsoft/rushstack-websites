@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the specified package name is valid, or false otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isValidName(packageName: string): boolean;
@@ -25,7 +25,7 @@ isValidName(packageName: string): boolean;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

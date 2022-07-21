@@ -13,7 +13,7 @@ pagination_next: null
 
 Concatenated modules
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modules?: IExtendedModule[];

@@ -13,7 +13,7 @@ pagination_next: null
 
 This function is similar to [PackageJsonLookup.loadPackageJson()](./node-core-library.packagejsonlookup.loadpackagejson.md) , except that it does not report an error if the `version` field is missing from the package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadNodePackageJson(jsonFilename: string): INodePackageJson;
@@ -25,6 +25,6 @@ loadNodePackageJson(jsonFilename: string): INodePackageJson;
 | ------------ | ------ | ----------- |
 | jsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [INodePackageJson](./node-core-library.inodepackagejson.md)

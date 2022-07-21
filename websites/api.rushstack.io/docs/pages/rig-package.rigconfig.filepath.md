@@ -13,7 +13,7 @@ pagination_next: null
 
 The full path to the `rig.json` file that was found, or `""` if none was found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly filePath: string;

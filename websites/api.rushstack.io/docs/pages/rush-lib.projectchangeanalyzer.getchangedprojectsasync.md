@@ -15,7 +15,7 @@ pagination_next: null
 
 Gets a list of projects that have changed in the current state of the repo when compared to the specified branch, optionally taking the shrinkwrap and settings in the rush-project.json file into consideration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getChangedProjectsAsync(options: IGetChangedProjectsOptions): Promise<Set<RushConfigurationProject>>;
@@ -27,6 +27,6 @@ getChangedProjectsAsync(options: IGetChangedProjectsOptions): Promise<Set<RushCo
 | --------- | ---------------------------------------------------------------------- | ----------- |
 | options   | [IGetChangedProjectsOptions](./rush-lib.igetchangedprojectsoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Set&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md) &gt;&gt;

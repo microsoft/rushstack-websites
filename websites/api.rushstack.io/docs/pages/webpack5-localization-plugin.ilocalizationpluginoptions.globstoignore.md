@@ -13,7 +13,7 @@ pagination_next: null
 
 This option is used to specify `.resx` , `.resx.json` , and `.loc.json` files that should not be processed by this plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 globsToIgnore?: string[];

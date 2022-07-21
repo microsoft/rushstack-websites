@@ -11,12 +11,12 @@ pagination_next: null
 
 ## TextRewriterTransform.onClose() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onClose(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

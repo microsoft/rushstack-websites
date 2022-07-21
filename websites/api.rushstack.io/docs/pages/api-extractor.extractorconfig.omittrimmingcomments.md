@@ -13,7 +13,7 @@ pagination_next: null
 
 When a declaration is trimmed, by default it will be replaced by a code comment such as "Excluded from this release type: exampleMember". Set "omitTrimmingComments" to true to remove the declaration completely.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly omitTrimmingComments: boolean;

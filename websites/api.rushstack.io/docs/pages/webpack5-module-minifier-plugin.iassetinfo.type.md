@@ -13,7 +13,7 @@ pagination_next: null
 
 The type of the asset
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string;

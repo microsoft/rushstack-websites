@@ -15,7 +15,7 @@ pagination_next: null
 
 Rush per-user configuration data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RushUserConfiguration

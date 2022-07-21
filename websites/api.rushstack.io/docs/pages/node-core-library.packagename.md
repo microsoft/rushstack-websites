@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides basic operations for validating and manipulating NPM package names such as `my-package` or `@scope/my-package` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PackageName

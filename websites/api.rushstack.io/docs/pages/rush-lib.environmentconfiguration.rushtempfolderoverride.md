@@ -15,7 +15,7 @@ pagination_next: null
 
 An override for the common/temp folder path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get rushTempFolderOverride(): string | undefined;

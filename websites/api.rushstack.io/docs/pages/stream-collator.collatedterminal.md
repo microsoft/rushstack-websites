@@ -19,7 +19,7 @@ pagination_next: null
 
 This API was introduced as a temporary measure.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CollatedTerminal

@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("pnpm-lock.yaml") used to store an installation plan for the PNPM package manger (PNPM version 3.x and later).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly pnpmV3ShrinkwrapFilename: string;

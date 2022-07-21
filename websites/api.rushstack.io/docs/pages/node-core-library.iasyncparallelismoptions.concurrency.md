@@ -15,7 +15,7 @@ pagination_next: null
 
 Optionally used with the [Async.mapAsync()](./node-core-library.async.mapasync.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md) to limit the maximum number of concurrent promises to the specified number.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 concurrency?: number;

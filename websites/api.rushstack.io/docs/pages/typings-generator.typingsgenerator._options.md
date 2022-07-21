@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TypingsGenerator.\_options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _options: ITypingsGeneratorOptions;

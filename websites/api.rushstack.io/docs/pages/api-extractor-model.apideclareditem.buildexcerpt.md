@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new [Excerpt](./api-extractor-model.excerpt.md) corresponding to the provided token range.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 buildExcerpt(tokenRange: IExcerptTokenRange): Excerpt;
@@ -25,6 +25,6 @@ buildExcerpt(tokenRange: IExcerptTokenRange): Excerpt;
 | ---------- | ----------------------------------------------------------------- | ----------- |
 | tokenRange | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [Excerpt](./api-extractor-model.excerpt.md)

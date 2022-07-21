@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional callback that provides a list of custom choices for tab completion.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly completions: (() => Promise<string[]>) | undefined;

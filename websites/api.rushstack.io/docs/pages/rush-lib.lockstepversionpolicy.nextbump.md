@@ -13,7 +13,7 @@ pagination_next: null
 
 The type of bump for next bump.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get nextBump(): BumpType | undefined;

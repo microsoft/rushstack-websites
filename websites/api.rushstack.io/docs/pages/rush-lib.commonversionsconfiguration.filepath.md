@@ -13,7 +13,7 @@ pagination_next: null
 
 Get the absolute file path of the common-versions.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get filePath(): string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the initial state of the lock. This can be used to detect if the previous process was terminated before releasing the resource.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get dirtyWhenAcquired(): boolean;

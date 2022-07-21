@@ -13,7 +13,7 @@ pagination_next: null
 
 This file is used to track the state of various Rush-related features. It is generated and updated by Rush.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RepoStateFile

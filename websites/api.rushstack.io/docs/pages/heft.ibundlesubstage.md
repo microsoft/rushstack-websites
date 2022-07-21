@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IBundleSubstage interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBundleSubstage extends IBuildSubstage<BundleSubstageHooks, IBundleSubstageProperties>
 ```
 
-<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BundleSubstageHooks](./heft.bundlesubstagehooks.md) , [IBundleSubstageProperties](./heft.ibundlesubstageproperties.md)
+**Extends:** [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BundleSubstageHooks](./heft.bundlesubstagehooks.md) , [IBundleSubstageProperties](./heft.ibundlesubstageproperties.md)
 
 ## Properties
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the kind of data represented by a [ITerminalChunk](./terminal.iterminalchunk.md) object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare const enum TerminalChunkKind

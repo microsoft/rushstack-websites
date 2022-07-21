@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional callback function that will be called for each `ExtractorMessage` before it is displayed by API Extractor. The callback can customize the message, handle it, or discard it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 messageCallback?: (message: ExtractorMessage) => void;

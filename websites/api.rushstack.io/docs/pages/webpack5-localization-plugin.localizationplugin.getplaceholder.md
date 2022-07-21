@@ -11,7 +11,7 @@ pagination_next: null
 
 ## LocalizationPlugin.getPlaceholder() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getPlaceholder(localizedFileKey: string, stringName: string): IStringPlaceholder | undefined;
@@ -24,6 +24,6 @@ getPlaceholder(localizedFileKey: string, stringName: string): IStringPlaceholder
 | localizedFileKey | string |             |
 | stringName       | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 IStringPlaceholder \| undefined

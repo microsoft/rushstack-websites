@@ -13,7 +13,7 @@ pagination_next: null
 
 When `addToApiReportFile` is true: If API Extractor is configured to write an API report file (.api.md), then the message will be written inside that file; otherwise, the message is instead logged according to the `logLevel` option.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addToApiReportFile?: boolean;

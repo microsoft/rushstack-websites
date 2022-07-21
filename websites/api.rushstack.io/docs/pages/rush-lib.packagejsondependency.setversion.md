@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonDependency.setVersion() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setVersion(newVersion: string): void;
@@ -23,6 +23,6 @@ setVersion(newVersion: string): void;
 | ---------- | ------ | ----------- |
 | newVersion | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

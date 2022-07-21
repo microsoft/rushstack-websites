@@ -13,7 +13,7 @@ pagination_next: null
 
 Append characters to the end of a string to ensure the result has a minimum length.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static padEnd(s: string, minimumLength: number, paddingCharacter?: string): string;
@@ -27,7 +27,7 @@ static padEnd(s: string, minimumLength: number, paddingCharacter?: string): stri
 | minimumLength    | number |                   |
 | paddingCharacter | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -15,7 +15,7 @@ pagination_next: null
 
 Warning: This API is used internally by API extractor but is not yet ready for general usage.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get canonicalReference(): DeclarationReference;

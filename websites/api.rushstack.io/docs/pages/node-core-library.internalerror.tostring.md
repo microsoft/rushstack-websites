@@ -11,13 +11,13 @@ pagination_next: null
 
 ## InternalError.toString() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
 toString(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

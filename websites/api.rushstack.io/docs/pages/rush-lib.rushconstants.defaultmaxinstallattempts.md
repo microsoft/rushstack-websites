@@ -15,7 +15,7 @@ pagination_next: null
 
 Number of installation attempts
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly defaultMaxInstallAttempts: number;

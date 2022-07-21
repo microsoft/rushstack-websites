@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures handling of messages reported by API Extractor during its analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 extractorMessageReporting?: IConfigMessageReportingTable;

@@ -13,7 +13,7 @@ pagination_next: null
 
 This is the common base class for CommandLineAction and CommandLineParser that provides functionality for defining command-line parameters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class CommandLineParameterProvider

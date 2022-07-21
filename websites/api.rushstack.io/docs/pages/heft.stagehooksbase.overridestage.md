@@ -15,7 +15,7 @@ pagination_next: null
 
 This hook allows the stage's execution to be completely overridden. Only the last-registered plugin with an override hook provided applies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly overrideStage: AsyncSeriesBailHook<TStageProperties>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a name for this object that can be used in diagnostic messages, for example.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */

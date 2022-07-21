@@ -13,7 +13,7 @@ pagination_next: null
 
 Removes the key from the map, if present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unset(name: string): void;
@@ -25,6 +25,6 @@ unset(name: string): void;
 | --------- | ------ | ----------- |
 | name      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

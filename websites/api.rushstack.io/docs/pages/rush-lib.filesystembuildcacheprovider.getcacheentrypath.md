@@ -15,7 +15,7 @@ pagination_next: null
 
 Returns the absolute disk path for the specified cache id.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getCacheEntryPath(cacheId: string): string;
@@ -27,6 +27,6 @@ getCacheEntryPath(cacheId: string): string;
 | --------- | ------ | ----------- |
 | cacheId   | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

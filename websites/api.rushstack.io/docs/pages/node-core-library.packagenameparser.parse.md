@@ -13,7 +13,7 @@ pagination_next: null
 
 Same as [PackageName.tryParse()](./node-core-library.packagename.tryparse.md) , except this throws an exception if the input cannot be parsed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parse(packageName: string): IParsedPackageName;
@@ -25,7 +25,7 @@ parse(packageName: string): IParsedPackageName;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IParsedPackageName](./node-core-library.iparsedpackagename.md)
 

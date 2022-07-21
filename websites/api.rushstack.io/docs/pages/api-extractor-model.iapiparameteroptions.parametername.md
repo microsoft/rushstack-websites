@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiParameterOptions.parameterName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameterName: string;

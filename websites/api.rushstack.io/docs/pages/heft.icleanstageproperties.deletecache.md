@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ICleanStageProperties.deleteCache property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteCache: boolean;

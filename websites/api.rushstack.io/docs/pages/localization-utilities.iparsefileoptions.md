@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseFileOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParseFileOptions

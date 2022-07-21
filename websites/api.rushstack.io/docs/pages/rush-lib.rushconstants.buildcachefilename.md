@@ -15,7 +15,7 @@ pagination_next: null
 
 Build cache configuration file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly buildCacheFilename: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The raw code fragment
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

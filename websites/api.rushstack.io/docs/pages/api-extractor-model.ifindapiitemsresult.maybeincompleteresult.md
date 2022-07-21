@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates whether the result is potentially incomplete due to errors during the find operation. If true, the `messages` explain the errors in more detail.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 maybeIncompleteResult: boolean;

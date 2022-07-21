@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns a object which maps the long name of each parameter in this.parameters to the stringified form of its value. This is useful for logging telemetry, but it is not the proper way of accessing parameters or their values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getParameterStringMap(): Record<string, string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Record&lt;string, string&gt;

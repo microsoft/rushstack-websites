@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the version policy by its name. Throws error if the version policy is not found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getVersionPolicy(policyName: string): VersionPolicy;
@@ -25,6 +25,6 @@ getVersionPolicy(policyName: string): VersionPolicy;
 | ---------- | ------ | -------------------------- |
 | policyName | string | Name of the version policy |
 
-<b>Returns:</b>
+**Returns:**
 
 [VersionPolicy](./rush-lib.versionpolicy.md)

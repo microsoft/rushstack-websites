@@ -15,7 +15,7 @@ pagination_next: null
 
 The writer into which this `IOperationRunner` should write its logs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 collatedWriter: CollatedWriter;

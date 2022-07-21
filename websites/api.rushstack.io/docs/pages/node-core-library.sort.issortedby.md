@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the array is already sorted by the specified key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isSortedBy<T>(array: T[], keySelector: (element: T) => any, comparer?: (x: any, y: any) => number): boolean;
@@ -27,7 +27,7 @@ static isSortedBy<T>(array: T[], keySelector: (element: T) => any, comparer?: (x
 | keySelector | (element: T) =&gt; any        |                   |
 | comparer    | (x: any, y: any) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

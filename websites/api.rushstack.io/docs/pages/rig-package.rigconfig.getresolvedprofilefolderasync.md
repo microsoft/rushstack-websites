@@ -13,12 +13,12 @@ pagination_next: null
 
 An async variant of [RigConfig.getResolvedProfileFolder()](./rig-package.rigconfig.getresolvedprofilefolder.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getResolvedProfileFolderAsync(): Promise<string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

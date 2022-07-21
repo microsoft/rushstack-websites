@@ -13,13 +13,13 @@ pagination_next: null
 
 The common base class for parameters types that receive an argument.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class CommandLineParameterWithArgument extends CommandLineParameter
 ```
 
-<b>Extends:</b> [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
 
 ## Remarks
 

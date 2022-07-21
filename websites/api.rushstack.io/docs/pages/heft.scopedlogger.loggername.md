@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ScopedLogger.loggerName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly loggerName: string;

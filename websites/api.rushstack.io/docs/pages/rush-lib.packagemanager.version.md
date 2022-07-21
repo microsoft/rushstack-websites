@@ -13,7 +13,7 @@ pagination_next: null
 
 The SemVer version of the package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly version: string;

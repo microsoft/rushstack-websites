@@ -13,7 +13,7 @@ pagination_next: null
 
 Event arguments for MarkdownDocumenterFeature.onBeforeWritePage()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IMarkdownDocumenterFeatureOnBeforeWritePageArgs

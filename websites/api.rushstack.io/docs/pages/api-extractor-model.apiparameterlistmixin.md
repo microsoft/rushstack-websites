@@ -13,7 +13,7 @@ pagination_next: null
 
 Static members for [ApiParameterListMixin](./api-extractor-model.apiparameterlistmixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiParameterListMixin

@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies whether the message should be written to the the tool's output log.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 logLevel: ExtractorLogLevel;

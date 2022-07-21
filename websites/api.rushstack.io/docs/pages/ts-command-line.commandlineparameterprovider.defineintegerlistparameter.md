@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line parameter whose argument is an integer. The parameter can be specified multiple times to build a list.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineIntegerListParameter(definition: ICommandLineIntegerListDefinition): CommandLineIntegerListParameter;
@@ -25,7 +25,7 @@ defineIntegerListParameter(definition: ICommandLineIntegerListDefinition): Comma
 | ---------- | ------------------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineIntegerListDefinition](./ts-command-line.icommandlineintegerlistdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineIntegerListParameter](./ts-command-line.commandlineintegerlistparameter.md)
 

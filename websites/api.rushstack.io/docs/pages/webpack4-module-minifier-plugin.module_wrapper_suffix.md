@@ -13,7 +13,7 @@ pagination_next: null
 
 Suffix to wrap `function (module, __webpack_exports__, __webpack_require__) { ... }` so that the minifier doesn't delete it. Public because alternate Minifier implementations may wish to know about it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MODULE_WRAPPER_SUFFIX: ');';

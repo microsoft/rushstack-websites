@@ -15,7 +15,7 @@ pagination_next: null
 
 Returns true if this is the active writer for its associated [StreamCollator](./stream-collator.streamcollator.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isActive(): boolean;

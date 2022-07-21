@@ -13,14 +13,14 @@ pagination_next: null
 
 Calling this method flushes any remaining outputs and permanently transitions the `TerminalWritable` to a "closed" state, where no further chunks can be written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @sealed */
 close(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

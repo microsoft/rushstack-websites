@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the error object indicates the file does not exist (`ENOENT` ).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isFileDoesNotExistError(error: Error): boolean;
@@ -25,6 +25,6 @@ static isFileDoesNotExistError(error: Error): boolean;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

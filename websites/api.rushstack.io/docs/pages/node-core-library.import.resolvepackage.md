@@ -13,7 +13,7 @@ pagination_next: null
 
 Performs module resolution to determine the folder where a package is installed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static resolvePackage(options: IImportResolvePackageOptions): string;
@@ -25,7 +25,7 @@ static resolvePackage(options: IImportResolvePackageOptions): string;
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

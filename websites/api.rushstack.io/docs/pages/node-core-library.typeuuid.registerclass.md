@@ -13,7 +13,7 @@ pagination_next: null
 
 Registers a JavaScript class as having a type identified by the specified UUID.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static registerClass(targetClass: any, typeUuid: string): void;
@@ -26,6 +26,6 @@ static registerClass(targetClass: any, typeUuid: string): void;
 | targetClass | any    |             |
 | typeUuid    | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

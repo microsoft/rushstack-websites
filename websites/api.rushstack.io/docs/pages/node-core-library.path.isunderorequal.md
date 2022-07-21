@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if "childPath" is equal to "parentFolderPath", or if it is inside that folder or one of its children. The "childPath" can refer to any type of file system object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isUnderOrEqual(childPath: string, parentFolderPath: string): boolean;
@@ -26,7 +26,7 @@ static isUnderOrEqual(childPath: string, parentFolderPath: string): boolean;
 | childPath        | string |             |
 | parentFolderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

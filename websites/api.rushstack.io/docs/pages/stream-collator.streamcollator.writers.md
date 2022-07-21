@@ -15,7 +15,7 @@ pagination_next: null
 
 The list of writers that have been registered by calling [StreamCollator.registerTask()](./stream-collator.streamcollator.registertask.md) , in the order that they were registered.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get writers(): ReadonlySet<CollatedWriter>;

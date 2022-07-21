@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether to generate an API report.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 enabled: boolean;

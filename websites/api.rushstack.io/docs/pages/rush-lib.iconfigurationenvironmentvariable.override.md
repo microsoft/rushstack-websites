@@ -13,7 +13,7 @@ pagination_next: null
 
 Set to true to override the environment variable even if it is set in the parent environment. The default value is false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 override?: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Project build folder. This is the folder containing the project's package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get buildFolder(): string;

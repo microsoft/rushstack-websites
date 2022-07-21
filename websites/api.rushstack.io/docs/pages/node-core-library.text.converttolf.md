@@ -15,7 +15,7 @@ Converts all newlines in the provided string to use POSIX-style LF end of line c
 
 POSIX is a registered trademark of the Institute of Electrical and Electronic Engineers, Inc.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertToLf(input: string): string;
@@ -27,6 +27,6 @@ static convertToLf(input: string): string;
 | --------- | ------ | ----------- |
 | input     | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

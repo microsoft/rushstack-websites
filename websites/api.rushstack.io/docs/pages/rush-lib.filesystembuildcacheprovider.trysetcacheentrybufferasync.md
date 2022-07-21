@@ -15,7 +15,7 @@ pagination_next: null
 
 Writes the specified buffer to the corresponding file system path for the cache id.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 trySetCacheEntryBufferAsync(terminal: ITerminal, cacheId: string, entryBuffer: Buffer): Promise<string>;
@@ -29,6 +29,6 @@ trySetCacheEntryBufferAsync(terminal: ITerminal, cacheId: string, entryBuffer: B
 | cacheId     | string                                        |             |
 | entryBuffer | Buffer                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

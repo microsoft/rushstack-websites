@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypeParameterOptions.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

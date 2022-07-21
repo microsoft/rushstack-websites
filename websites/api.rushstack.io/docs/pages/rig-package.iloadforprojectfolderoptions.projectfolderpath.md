@@ -13,7 +13,7 @@ pagination_next: null
 
 The path to the folder of the project to be analyzed. This folder should contain a `package.json` file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 projectFolderPath: string;

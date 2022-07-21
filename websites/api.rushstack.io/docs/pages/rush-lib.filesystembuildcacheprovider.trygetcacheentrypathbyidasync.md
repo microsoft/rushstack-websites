@@ -15,7 +15,7 @@ pagination_next: null
 
 Validates that the specified cache id exists on disk, and returns the path if it does.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetCacheEntryPathByIdAsync(terminal: ITerminal, cacheId: string): Promise<string | undefined>;
@@ -28,6 +28,6 @@ tryGetCacheEntryPathByIdAsync(terminal: ITerminal, cacheId: string): Promise<str
 | terminal  | [ITerminal](./node-core-library.iterminal.md) |             |
 | cacheId   | string                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string \| undefined&gt;

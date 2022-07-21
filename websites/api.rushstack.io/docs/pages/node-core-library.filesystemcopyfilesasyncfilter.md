@@ -13,7 +13,7 @@ pagination_next: null
 
 Callback function type for [IFileSystemCopyFilesAsyncOptions.filter](./node-core-library.ifilesystemcopyfilesasyncoptions.filter.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type FileSystemCopyFilesAsyncFilter = (

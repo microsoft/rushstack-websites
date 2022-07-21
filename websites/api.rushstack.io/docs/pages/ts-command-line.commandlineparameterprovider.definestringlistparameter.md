@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line parameter whose argument is a single text string. The parameter can be specified multiple times to build a list.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineStringListParameter(definition: ICommandLineStringListDefinition): CommandLineStringListParameter;
@@ -25,7 +25,7 @@ defineStringListParameter(definition: ICommandLineStringListDefinition): Command
 | ---------- | ----------------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineStringListParameter](./ts-command-line.commandlinestringlistparameter.md)
 

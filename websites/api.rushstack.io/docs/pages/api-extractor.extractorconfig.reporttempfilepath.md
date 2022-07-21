@@ -13,7 +13,7 @@ pagination_next: null
 
 The `reportTempFolder` path combined with the `reportFileName` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly reportTempFilePath: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The `afterRecompile` event is only used in watch mode. It fires whenever the compiler's outputs have been rebuilt. The initial compilation fires the `afterCompile` event only, and then all subsequent iterations fire the `afterRecompile` event only. Heft does not wait for the `afterRecompile` promises to resolve.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly afterRecompile: AsyncParallelHook;

@@ -15,7 +15,7 @@ pagination_next: null
 
 An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageManagerWrapper(): PackageManager;

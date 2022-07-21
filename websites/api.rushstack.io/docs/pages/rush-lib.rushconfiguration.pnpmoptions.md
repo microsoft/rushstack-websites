@@ -13,7 +13,7 @@ pagination_next: null
 
 Options that are only used when the PNPM package manager is selected.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get pnpmOptions(): PnpmOptionsConfiguration;

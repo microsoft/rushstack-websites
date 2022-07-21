@@ -13,7 +13,7 @@ pagination_next: null
 
 A list of category names that are valid for usage as the RushConfigurationProject.reviewCategory field. This array will never be undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get reviewCategories(): Set<string>;

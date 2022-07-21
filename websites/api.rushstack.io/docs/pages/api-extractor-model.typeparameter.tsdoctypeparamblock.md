@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the `@typeParam` documentation for this parameter, if present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tsdocTypeParamBlock(): tsdoc.DocParamBlock | undefined;

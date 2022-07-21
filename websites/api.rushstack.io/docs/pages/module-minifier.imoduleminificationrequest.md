@@ -13,7 +13,7 @@ pagination_next: null
 
 Request to the minifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinificationRequest

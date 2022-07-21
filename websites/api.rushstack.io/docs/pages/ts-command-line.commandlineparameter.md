@@ -13,7 +13,7 @@ pagination_next: null
 
 The base class for the various command-line parameter types.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class CommandLineParameter

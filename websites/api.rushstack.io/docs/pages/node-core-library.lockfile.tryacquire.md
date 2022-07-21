@@ -13,7 +13,7 @@ pagination_next: null
 
 Attempts to create a lockfile with the given filePath.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryAcquire(resourceFolder: string, resourceName: string): LockFile | undefined;
@@ -26,7 +26,7 @@ static tryAcquire(resourceFolder: string, resourceName: string): LockFile | unde
 | resourceFolder | string | The folder where the lock file will be created                                                                                                 |
 | resourceName   | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
 
-<b>Returns:</b>
+**Returns:**
 
 [LockFile](./node-core-library.lockfile.md) \| undefined
 

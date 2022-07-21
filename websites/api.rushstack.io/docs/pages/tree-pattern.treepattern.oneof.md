@@ -13,7 +13,7 @@ pagination_next: null
 
 Used to specify alternative possible subtrees in the search pattern.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static oneOf(possibleSubtrees: TreeNode[]): TreeNode;
@@ -25,7 +25,7 @@ static oneOf(possibleSubtrees: TreeNode[]): TreeNode;
 | ---------------- | ------------------------------------------- | ----------- |
 | possibleSubtrees | [TreeNode](./tree-pattern.treenode.md) \[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [TreeNode](./tree-pattern.treenode.md)
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-library.ifilesystemcopyfilesoptions.filter.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type FileSystemCopyFilesFilter = (sourcePath: string, destinationPath: string) => boolean;

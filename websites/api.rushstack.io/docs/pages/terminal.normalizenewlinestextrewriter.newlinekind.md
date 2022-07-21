@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies how newlines should be represented in the output stream.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly newlineKind: NewlineKind;

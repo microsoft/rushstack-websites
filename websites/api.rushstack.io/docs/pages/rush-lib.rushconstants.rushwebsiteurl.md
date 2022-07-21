@@ -15,7 +15,7 @@ pagination_next: null
 
 The URL ("http://rushjs.io") for the Rush web site.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushWebSiteUrl: string;

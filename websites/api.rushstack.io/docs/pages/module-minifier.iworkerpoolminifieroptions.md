@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for configuring the WorkerPoolMinifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IWorkerPoolMinifierOptions

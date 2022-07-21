@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [ApiDeclaredItem](./api-extractor-model.apideclareditem.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiDeclaredItemOptions extends IApiDocumentedItemOptions
 ```
 
-<b>Extends:</b> [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md)
+**Extends:** [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md)
 
 ## Properties
 

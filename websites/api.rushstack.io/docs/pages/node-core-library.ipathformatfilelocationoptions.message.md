@@ -13,7 +13,7 @@ pagination_next: null
 
 The message related to the file location.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 message: string;

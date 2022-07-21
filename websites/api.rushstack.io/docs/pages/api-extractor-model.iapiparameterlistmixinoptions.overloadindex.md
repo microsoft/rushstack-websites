@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiParameterListMixinOptions.overloadIndex property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 overloadIndex: number;

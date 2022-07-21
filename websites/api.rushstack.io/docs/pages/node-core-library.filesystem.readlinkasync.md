@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.readLink()](./node-core-library.filesystem.readlink.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readLinkAsync(path: string): Promise<string>;
@@ -25,6 +25,6 @@ static readLinkAsync(path: string): Promise<string>;
 | --------- | ------ | ----------- |
 | path      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

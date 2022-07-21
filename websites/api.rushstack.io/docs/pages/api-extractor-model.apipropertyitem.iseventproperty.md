@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if this property should be documented as an event.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isEventProperty(): boolean;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Events happen during Rush runs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum Event

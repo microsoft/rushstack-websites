@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for how localization stats data should be produced.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizationStatsOptions

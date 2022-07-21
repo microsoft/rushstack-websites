@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures how the tsdoc-metadata.json file will be generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigTsdocMetadata

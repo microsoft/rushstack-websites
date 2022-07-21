@@ -13,7 +13,7 @@ pagination_next: null
 
 The manifest version number. For now, this must always be `1000` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 manifestVersion: 1000;

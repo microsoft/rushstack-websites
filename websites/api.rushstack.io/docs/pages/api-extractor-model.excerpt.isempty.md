@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the excerpt is an empty range.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isEmpty(): boolean;

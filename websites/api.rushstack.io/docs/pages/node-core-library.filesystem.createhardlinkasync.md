@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.createHardLink()](./node-core-library.filesystem.createhardlink.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createHardLinkAsync(options: IFileSystemCreateLinkOptions): Promise<void>;
@@ -25,6 +25,6 @@ static createHardLinkAsync(options: IFileSystemCreateLinkOptions): Promise<void>
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

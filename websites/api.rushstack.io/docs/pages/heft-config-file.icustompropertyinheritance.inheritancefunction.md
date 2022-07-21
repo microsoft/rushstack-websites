@@ -15,7 +15,7 @@ pagination_next: null
 
 Provides a custom inheritance function. This function takes two arguments: the first is the child file's object, and the second is the parent file's object. The function should return the resulting combined object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inheritanceFunction: PropertyInheritanceCustomFunction<TObject>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Exposes functionality of the documenter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly documenter: MarkdownDocumenterAccessor;

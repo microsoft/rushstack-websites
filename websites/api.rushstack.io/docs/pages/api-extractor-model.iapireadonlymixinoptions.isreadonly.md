@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiReadonlyMixinOptions.isReadonly property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isReadonly: boolean;

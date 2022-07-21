@@ -13,7 +13,7 @@ pagination_next: null
 
 Hook invoked at the start of optimizeChunkAssets to rehydrate the minified boilerplate and runtime into chunk assets.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rehydrateAssets: AsyncSeriesWaterfallHook<IDehydratedAssets, webpack.compilation.Compilation>;

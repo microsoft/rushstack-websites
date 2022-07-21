@@ -13,7 +13,7 @@ pagination_next: null
 
 Validate the version policy configuration against the rush config
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validate(projectsByName: Map<string, RushConfigurationProject>): void;
@@ -25,6 +25,6 @@ validate(projectsByName: Map<string, RushConfigurationProject>): void;
 | -------------- | -------------------------------------------------------------------------------------- | ----------- |
 | projectsByName | Map&lt;string, [RushConfigurationProject](./rush-lib.rushconfigurationproject.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

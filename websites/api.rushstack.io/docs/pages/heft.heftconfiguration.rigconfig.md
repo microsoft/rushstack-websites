@@ -13,7 +13,7 @@ pagination_next: null
 
 The rig.json configuration for this project, if present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rigConfig(): RigConfig;

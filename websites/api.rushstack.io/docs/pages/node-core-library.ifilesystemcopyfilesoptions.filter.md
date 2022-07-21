@@ -13,7 +13,7 @@ pagination_next: null
 
 A callback that will be invoked for each path that is copied. The callback can return `false` to cause the object to be excluded from the operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filter?: FileSystemCopyFilesFilter;

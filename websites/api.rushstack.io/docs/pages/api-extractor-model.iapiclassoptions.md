@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [ApiClass](./api-extractor-model.apiclass.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiClassOptions extends IApiItemContainerMixinOptions, IApiNameMixinOptions, IApiReleaseTagMixinOptions, IApiDeclaredItemOptions, IApiTypeParameterListMixinOptions
 ```
 
-<b>Extends:</b> [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) , [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) , [IApiTypeParameterListMixinOptions](./api-extractor-model.iapitypeparameterlistmixinoptions.md)
+**Extends:** [IApiItemContainerMixinOptions](./api-extractor-model.iapiitemcontainermixinoptions.md) , [IApiNameMixinOptions](./api-extractor-model.iapinamemixinoptions.md) , [IApiReleaseTagMixinOptions](./api-extractor-model.iapireleasetagmixinoptions.md) , [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) , [IApiTypeParameterListMixinOptions](./api-extractor-model.iapitypeparameterlistmixinoptions.md)
 
 ## Properties
 

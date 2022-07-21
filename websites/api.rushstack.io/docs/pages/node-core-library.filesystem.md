@@ -13,7 +13,7 @@ pagination_next: null
 
 The FileSystem API provides a complete set of recommended operations for interacting with the file system.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FileSystem

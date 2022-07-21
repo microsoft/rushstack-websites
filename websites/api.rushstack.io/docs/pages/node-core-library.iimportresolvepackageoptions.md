@@ -13,13 +13,13 @@ pagination_next: null
 
 Options for [Import.resolvePackage()](./node-core-library.import.resolvepackage.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IImportResolvePackageOptions extends IImportResolveOptions
 ```
 
-<b>Extends:</b> [IImportResolveOptions](./node-core-library.iimportresolveoptions.md)
+**Extends:** [IImportResolveOptions](./node-core-library.iimportresolveoptions.md)
 
 ## Properties
 

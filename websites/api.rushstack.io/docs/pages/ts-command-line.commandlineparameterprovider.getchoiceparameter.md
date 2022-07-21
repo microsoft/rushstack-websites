@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the CommandLineChoiceParameter with the specified long name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getChoiceParameter(parameterLongName: string, parameterScope?: string): CommandLineChoiceParameter;
@@ -26,7 +26,7 @@ getChoiceParameter(parameterLongName: string, parameterScope?: string): CommandL
 | parameterLongName | string |                   |
 | parameterScope    | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md)
 

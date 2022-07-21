@@ -13,7 +13,7 @@ pagination_next: null
 
 The parsed NPM "package.json" file from projectFolder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageJson(): IPackageJson;

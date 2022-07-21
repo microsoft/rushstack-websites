@@ -13,7 +13,7 @@ pagination_next: null
 
 Reports the number of errors encountered during analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly errorCount: number;

@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript enum declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiEnum extends ApiEnum_base
 ```
 
-<b>Extends:</b> ApiEnum_base
+**Extends:** ApiEnum_base
 
 ## Remarks
 
@@ -35,7 +35,7 @@ export enum FontSizes {
 }
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

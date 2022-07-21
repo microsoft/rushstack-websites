@@ -13,7 +13,7 @@ pagination_next: null
 
 A package name that has been separated into its scope and unscoped name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParsedPackageName

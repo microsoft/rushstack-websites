@@ -13,7 +13,7 @@ pagination_next: null
 
 Register file dependencies that may effect the typings of a consumer file. Note: This feature is only useful in watch mode. The registerDependency method must be called in the body of parseAndGenerateTypings every time because the registry for a file is cleared at the beginning of processing.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerDependency(consumer: string, rawDependency: string): void;
@@ -26,6 +26,6 @@ registerDependency(consumer: string, rawDependency: string): void;
 | consumer      | string |             |
 | rawDependency | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

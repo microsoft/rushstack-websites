@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the contents from the repo-state.json file for a specific variant.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getRepoState(variant?: string | undefined): RepoStateFile;
@@ -25,6 +25,6 @@ getRepoState(variant?: string | undefined): RepoStateFile;
 | --------- | ------------------- | ------------------------------------------------------------------------------- |
 | variant   | string \| undefined | <i>(Optional)</i> The name of the current variant in use by the active command. |
 
-<b>Returns:</b>
+**Returns:**
 
 [RepoStateFile](./rush-lib.repostatefile.md)

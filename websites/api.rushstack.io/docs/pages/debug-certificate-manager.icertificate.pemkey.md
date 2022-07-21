@@ -13,7 +13,7 @@ pagination_next: null
 
 Private key used to sign the pem certificate
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pemKey: string | undefined;

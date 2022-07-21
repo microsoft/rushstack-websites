@@ -13,7 +13,7 @@ pagination_next: null
 
 The identifier for this particular placeholder, for lookup.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 suffix: string;

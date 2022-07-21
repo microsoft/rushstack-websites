@@ -15,7 +15,7 @@ pagination_next: null
 
 Hooks into the lifecycle of the Rush process invocation that plugins may tap into.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RushLifecycleHooks

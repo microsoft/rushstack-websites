@@ -13,7 +13,7 @@ pagination_next: null
 
 This API is used by the `@microsoft/rush` front end to launch the "rush" command-line. Third-party tools should not use this API. Instead, they should execute the "rush" binary and start a new Node.js process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static launch(launcherVersion: string, arg: ILaunchOptions): void;
@@ -26,7 +26,7 @@ static launch(launcherVersion: string, arg: ILaunchOptions): void;
 | launcherVersion | string                                         |             |
 | arg             | [ILaunchOptions](./rush-lib.ilaunchoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

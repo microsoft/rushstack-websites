@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the excerpt's range within the `tokens` array.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tokenRange: Readonly<IExcerptTokenRange>;

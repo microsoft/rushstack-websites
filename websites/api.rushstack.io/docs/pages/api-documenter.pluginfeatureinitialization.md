@@ -13,7 +13,7 @@ pagination_next: null
 
 This is an internal part of the plugin infrastructure.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PluginFeatureInitialization

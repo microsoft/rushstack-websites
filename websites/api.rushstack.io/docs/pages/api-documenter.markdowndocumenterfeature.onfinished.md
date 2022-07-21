@@ -13,7 +13,7 @@ pagination_next: null
 
 This event occurs after all output files have been written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
@@ -26,6 +26,6 @@ onFinished(eventArgs: IMarkdownDocumenterFeatureOnFinishedArgs): void;
 | --------- | -------------------------------------------------------------------------------------------------------- | ----------- |
 | eventArgs | [IMarkdownDocumenterFeatureOnFinishedArgs](./api-documenter.imarkdowndocumenterfeatureonfinishedargs.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

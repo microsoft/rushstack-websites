@@ -13,7 +13,7 @@ pagination_next: null
 
 The allowed types of encodings, as supported by Node.js
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum Encoding

@@ -13,7 +13,7 @@ pagination_next: null
 
 Call this function to emit an warning to the heft runtime.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emitWarning(warning: Error): void;
@@ -25,6 +25,6 @@ emitWarning(warning: Error): void;
 | --------- | ----- | ----------- |
 | warning   | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

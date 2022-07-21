@@ -15,7 +15,7 @@ The name of the NPM package. An error is reported if this name is not identical 
 
 Example: `@scope/MyProject`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageName(): string;

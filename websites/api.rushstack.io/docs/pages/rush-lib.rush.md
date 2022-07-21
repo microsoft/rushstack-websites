@@ -13,7 +13,7 @@ pagination_next: null
 
 General operations for the Rush engine.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Rush

@@ -15,7 +15,7 @@ pagination_next: null
 
 Write an error message to the console with red text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeError(...messageParts: (string | IColorableSequence)[]): void;
@@ -27,7 +27,7 @@ writeError(...messageParts: (string | IColorableSequence)[]): void;
 | ------------ | -------------------------------------------------------------------------------- | ----------- |
 | messageParts | (string \| [IColorableSequence](./node-core-library.icolorablesequence.md) )\[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

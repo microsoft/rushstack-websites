@@ -13,7 +13,7 @@ pagination_next: null
 
 Call this function to emit an error to the heft runtime.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emitError(error: Error): void;
@@ -25,6 +25,6 @@ emitError(error: Error): void;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

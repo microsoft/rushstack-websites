@@ -13,7 +13,7 @@ pagination_next: null
 
 A table of package version resolutions. This feature is only implemented by the Yarn package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolutions?: Record<string, string>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The Rush configuration for the monorepo that the project belongs to.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rushConfiguration(): RushConfiguration;

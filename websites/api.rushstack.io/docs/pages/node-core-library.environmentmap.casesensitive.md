@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the environment variable names are case-sensitive.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly caseSensitive: boolean;

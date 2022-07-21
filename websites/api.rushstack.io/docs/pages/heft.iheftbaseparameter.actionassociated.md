@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, then the user has invoked Heft with a command line action that supports this parameter (as defined by the [IParameterAssociatedActionNames.associatedActionNames](./heft.iparameterassociatedactionnames.associatedactionnames.md) option).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly actionAssociated: boolean;

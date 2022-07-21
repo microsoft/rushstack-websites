@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ScopedLogger.errors property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get errors(): ReadonlyArray<Error>;

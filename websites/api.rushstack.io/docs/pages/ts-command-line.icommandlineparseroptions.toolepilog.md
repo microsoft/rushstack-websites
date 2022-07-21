@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional string to append at the end of the "--help" main page. If not provided, an epilog will be automatically generated based on the toolFilename.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toolEpilog?: string;

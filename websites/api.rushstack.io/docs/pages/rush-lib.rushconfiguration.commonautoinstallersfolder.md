@@ -13,7 +13,7 @@ pagination_next: null
 
 The fully resolved path for the "autoinstallers" folder. Example: `C:\MyRepo\common\autoinstallers`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonAutoinstallersFolder(): string;

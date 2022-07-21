@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder where automation scripts are stored. This is always a subfolder called "scripts" under the common folder. Example: `C:\MyRepo\common\scripts`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonScriptsFolder(): string;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizedString interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizedString

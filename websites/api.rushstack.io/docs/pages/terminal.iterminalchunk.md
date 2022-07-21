@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a chunk of output that will ultimately be written to a [TerminalWritable](./terminal.terminalwritable.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITerminalChunk

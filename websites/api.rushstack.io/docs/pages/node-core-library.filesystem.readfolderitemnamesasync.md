@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFolderItemNamesAsync(folderPath: string, options?: IFileSystemReadFolderOptions): Promise<string[]>;
@@ -26,6 +26,6 @@ static readFolderItemNamesAsync(folderPath: string, options?: IFileSystemReadFol
 | folderPath | string                                                                              |                   |
 | options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string\[\]&gt;

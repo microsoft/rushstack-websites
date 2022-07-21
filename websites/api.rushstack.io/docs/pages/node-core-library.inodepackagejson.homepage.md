@@ -13,7 +13,7 @@ pagination_next: null
 
 The URL to the project's web page.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 homepage?: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Debug certificate pem file contents.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get certificateData(): string | undefined;

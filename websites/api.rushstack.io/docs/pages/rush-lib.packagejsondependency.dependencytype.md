@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonDependency.dependencyType property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get dependencyType(): DependencyType;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The `LockFile` implements a file-based mutex for synchronizing access to a shared resource between multiple Node.js processes. It is not recommended for synchronization solely within a single Node.js process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LockFile

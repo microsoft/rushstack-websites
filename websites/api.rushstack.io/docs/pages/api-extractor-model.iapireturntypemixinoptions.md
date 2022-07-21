@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [ApiReturnTypeMixin](./api-extractor-model.apireturntypemixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiReturnTypeMixinOptions extends IApiItemOptions
 ```
 
-<b>Extends:</b> [IApiItemOptions](./api-extractor-model.iapiitemoptions.md)
+**Extends:** [IApiItemOptions](./api-extractor-model.iapiitemoptions.md)
 
 ## Properties
 

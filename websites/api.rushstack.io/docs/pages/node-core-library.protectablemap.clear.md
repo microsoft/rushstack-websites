@@ -13,12 +13,12 @@ pagination_next: null
 
 Removes all entries from the map. This operation does NOT invoke the ProtectableMap onClear() hook.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 clear(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

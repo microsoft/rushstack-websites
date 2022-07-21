@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a JSON schema that can be used to validate JSON data files loaded by the JsonFile class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JsonSchema

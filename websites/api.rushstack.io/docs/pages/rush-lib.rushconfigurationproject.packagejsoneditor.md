@@ -15,7 +15,7 @@ pagination_next: null
 
 A useful wrapper around the package.json file for making modifications
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageJsonEditor(): PackageJsonEditor;

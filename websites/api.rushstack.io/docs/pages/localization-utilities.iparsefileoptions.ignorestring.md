@@ -13,7 +13,7 @@ pagination_next: null
 
 Optionally, provide a function that will be called for each string. If the function returns `true` the string will not be included.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreString?: IgnoreStringFunction;

@@ -13,7 +13,7 @@ pagination_next: null
 
 If `path` refers to a symbolic link, this returns the path of the link target, which may be an absolute or relative path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readLink(path: string): string;
@@ -25,7 +25,7 @@ static readLink(path: string): string;
 | --------- | ------ | --------------------------------------------------- |
 | path      | string | The absolute or relative path to the symbolic link. |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

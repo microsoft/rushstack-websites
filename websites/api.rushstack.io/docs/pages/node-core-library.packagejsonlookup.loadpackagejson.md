@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads the specified package.json file, if it is not already present in the cache.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadPackageJson(jsonFilename: string): IPackageJson;
@@ -25,7 +25,7 @@ loadPackageJson(jsonFilename: string): IPackageJson;
 | ------------ | ------ | -------------------------------------------------- |
 | jsonFilename | string | a relative or absolute path to a package.json file |
 
-<b>Returns:</b>
+**Returns:**
 
 [IPackageJson](./node-core-library.ipackagejson.md)
 

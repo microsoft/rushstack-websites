@@ -15,7 +15,7 @@ pagination_next: null
 
 The object returned when registering a stringList type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftStringListParameter = IHeftBaseParameter<
@@ -24,4 +24,4 @@ export declare type IHeftStringListParameter = IHeftBaseParameter<
 >;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md)

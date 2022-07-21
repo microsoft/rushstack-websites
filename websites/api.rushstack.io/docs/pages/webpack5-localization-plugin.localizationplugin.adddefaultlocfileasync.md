@@ -11,7 +11,7 @@ pagination_next: null
 
 ## LocalizationPlugin.addDefaultLocFileAsync() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addDefaultLocFileAsync(context: LoaderContext<{}>, localizedFileKey: string, localizedResourceData: ILocalizationFile): Promise<Record<string, string>>;
@@ -25,7 +25,7 @@ addDefaultLocFileAsync(context: LoaderContext<{}>, localizedFileKey: string, loc
 | localizedFileKey      | string                                                             |             |
 | localizedResourceData | [ILocalizationFile](./localization-utilities.ilocalizationfile.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Record&lt;string, string&gt;&gt;
 

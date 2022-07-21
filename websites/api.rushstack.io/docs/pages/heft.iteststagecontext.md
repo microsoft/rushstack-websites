@@ -11,13 +11,13 @@ pagination_next: null
 
 ## ITestStageContext interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITestStageContext extends IStageContext<TestStageHooks, ITestStageProperties>
 ```
 
-<b>Extends:</b> [IStageContext](./heft.istagecontext.md) &lt;[TestStageHooks](./heft.teststagehooks.md) , [ITestStageProperties](./heft.iteststageproperties.md)
+**Extends:** [IStageContext](./heft.istagecontext.md) &lt;[TestStageHooks](./heft.teststagehooks.md) , [ITestStageProperties](./heft.iteststageproperties.md)
 
 ## Properties
 

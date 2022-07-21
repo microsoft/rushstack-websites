@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the [FileError](./node-core-library.fileerror.md) class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(message: string, options: IFileErrorOptions);

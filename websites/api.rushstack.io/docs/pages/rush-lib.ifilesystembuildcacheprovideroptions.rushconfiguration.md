@@ -15,7 +15,7 @@ pagination_next: null
 
 The workspace Rush configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rushConfiguration: RushConfiguration;

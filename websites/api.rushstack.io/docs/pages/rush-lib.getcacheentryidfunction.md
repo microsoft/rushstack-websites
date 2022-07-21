@@ -15,10 +15,10 @@ pagination_next: null
 
 Calculates the cache entry id string for an operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type GetCacheEntryIdFunction = (options: IGenerateCacheEntryIdOptions) => string;
 ```
 
-<b>References:</b> [IGenerateCacheEntryIdOptions](./rush-lib.igeneratecacheentryidoptions.md)
+**References:** [IGenerateCacheEntryIdOptions](./rush-lib.igeneratecacheentryidoptions.md)

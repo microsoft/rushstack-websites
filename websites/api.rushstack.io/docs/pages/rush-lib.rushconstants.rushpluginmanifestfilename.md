@@ -15,7 +15,7 @@ pagination_next: null
 
 Rush plugin manifest file name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushPluginManifestFilename: string;

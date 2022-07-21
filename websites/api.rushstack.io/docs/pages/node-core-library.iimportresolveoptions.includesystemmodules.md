@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, if the package name matches a Node.js system module, then the return value will be the package name without any path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 includeSystemModules?: boolean;

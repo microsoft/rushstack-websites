@@ -15,7 +15,7 @@ pagination_next: null
 
 The provider for interacting with the cloud build cache, if configured.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly cloudCacheProvider: ICloudBuildCacheProvider | undefined;

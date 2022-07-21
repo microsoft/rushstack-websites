@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ScopedLogger.warnings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get warnings(): ReadonlyArray<Error>;

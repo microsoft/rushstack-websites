@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonEditor.load() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static load(filePath: string): PackageJsonEditor;
@@ -23,6 +23,6 @@ static load(filePath: string): PackageJsonEditor;
 | --------- | ------ | ----------- |
 | filePath  | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [PackageJsonEditor](./rush-lib.packagejsoneditor.md)

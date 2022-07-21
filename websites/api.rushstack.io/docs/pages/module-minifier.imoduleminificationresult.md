@@ -13,7 +13,7 @@ pagination_next: null
 
 Result from the minifier.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IModuleMinificationResult =
@@ -21,4 +21,4 @@ export declare type IModuleMinificationResult =
   | IModuleMinificationSuccessResult;
 ```
 
-<b>References:</b> [IModuleMinificationErrorResult](./module-minifier.imoduleminificationerrorresult.md) , [IModuleMinificationSuccessResult](./module-minifier.imoduleminificationsuccessresult.md)
+**References:** [IModuleMinificationErrorResult](./module-minifier.imoduleminificationerrorresult.md) , [IModuleMinificationSuccessResult](./module-minifier.imoduleminificationsuccessresult.md)

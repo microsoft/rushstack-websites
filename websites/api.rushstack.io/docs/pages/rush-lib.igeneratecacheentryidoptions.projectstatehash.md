@@ -15,7 +15,7 @@ pagination_next: null
 
 A hash of the input files
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 projectStateHash: string;

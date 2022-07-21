@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a boolean indicating whether the parameter was included in the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get value(): boolean;

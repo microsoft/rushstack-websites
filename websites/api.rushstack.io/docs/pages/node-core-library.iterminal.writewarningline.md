@@ -15,7 +15,7 @@ pagination_next: null
 
 Write a warning message to the console with yellow text, followed by a newline.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeWarningLine(...messageParts: (string | IColorableSequence)[]): void;
@@ -27,7 +27,7 @@ writeWarningLine(...messageParts: (string | IColorableSequence)[]): void;
 | ------------ | -------------------------------------------------------------------------------- | ----------- |
 | messageParts | (string \| [IColorableSequence](./node-core-library.icolorablesequence.md) )\[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

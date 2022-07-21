@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IPreCompileSubstage interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPreCompileSubstage extends IBuildSubstage<BuildSubstageHooksBase, {}>
 ```
 
-<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
+**Extends:** [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md)
 
 ## Properties
 

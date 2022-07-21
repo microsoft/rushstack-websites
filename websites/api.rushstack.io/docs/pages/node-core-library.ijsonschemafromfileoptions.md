@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for JsonSchema.fromFile()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonSchemaFromFileOptions

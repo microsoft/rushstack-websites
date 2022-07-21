@@ -13,7 +13,7 @@ pagination_next: null
 
 Maximum number of worker threads to use. Will never use more than there are modules to process. Defaults to os.cpus().length
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 maxThreads?: number;

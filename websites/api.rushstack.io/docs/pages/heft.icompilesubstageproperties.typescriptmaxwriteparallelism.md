@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ICompileSubstageProperties.typescriptMaxWriteParallelism property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typescriptMaxWriteParallelism: number | undefined;

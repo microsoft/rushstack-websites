@@ -13,7 +13,7 @@ pagination_next: null
 
 Registers a JsonSchema that will be loaded from a file on disk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static fromLoadedObject(schemaObject: JsonObject): JsonSchema;
@@ -25,7 +25,7 @@ static fromLoadedObject(schemaObject: JsonObject): JsonSchema;
 | ------------ | ----------------------------------------------- | ----------- |
 | schemaObject | [JsonObject](./node-core-library.jsonobject.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonSchema](./node-core-library.jsonschema.md)
 

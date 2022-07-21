@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the committed shrinkwrap file name for a specific variant.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getCommittedShrinkwrapFilename(variant?: string | undefined): string;
@@ -25,6 +25,6 @@ getCommittedShrinkwrapFilename(variant?: string | undefined): string;
 | --------- | ------------------- | ------------------------------------------------------------------------------- |
 | variant   | string \| undefined | <i>(Optional)</i> The name of the current variant in use by the active command. |
 
-<b>Returns:</b>
+**Returns:**
 
 string

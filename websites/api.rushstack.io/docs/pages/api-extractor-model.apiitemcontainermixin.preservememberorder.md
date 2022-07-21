@@ -13,7 +13,7 @@ pagination_next: null
 
 Disables automatic sorting of [ApiItem.members](./api-extractor-model.apiitem.members.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly preserveMemberOrder: boolean;

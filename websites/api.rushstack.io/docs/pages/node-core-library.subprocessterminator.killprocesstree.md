@@ -15,7 +15,7 @@ pagination_next: null
 
 Terminate the child process and all of its children.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static killProcessTree(subprocess: child_process.ChildProcess, subprocessOptions: ISubprocessOptions): void;
@@ -28,6 +28,6 @@ static killProcessTree(subprocess: child_process.ChildProcess, subprocessOptions
 | subprocess        | child_process.ChildProcess                                      |             |
 | subprocessOptions | [ISubprocessOptions](./node-core-library.isubprocessoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

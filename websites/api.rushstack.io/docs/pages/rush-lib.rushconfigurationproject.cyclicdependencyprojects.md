@@ -19,7 +19,7 @@ A list of local projects that appear as devDependencies for this project, but ca
 
 These are package names that would be found by RushConfiguration.getProjectByName().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get cyclicDependencyProjects(): Set<string>;

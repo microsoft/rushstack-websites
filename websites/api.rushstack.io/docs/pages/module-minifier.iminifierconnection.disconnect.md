@@ -13,12 +13,12 @@ pagination_next: null
 
 Callback to be invoked when done with the minifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 disconnect(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

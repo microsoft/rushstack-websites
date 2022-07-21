@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonEditor.addOrUpdateDependency() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addOrUpdateDependency(packageName: string, newVersion: string, dependencyType: DependencyType): void;
@@ -25,6 +25,6 @@ addOrUpdateDependency(packageName: string, newVersion: string, dependencyType: D
 | newVersion     | string                                         |             |
 | dependencyType | [DependencyType](./rush-lib.dependencytype.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

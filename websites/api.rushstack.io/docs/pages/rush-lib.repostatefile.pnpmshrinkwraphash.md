@@ -13,7 +13,7 @@ pagination_next: null
 
 The hash of the pnpm shrinkwrap file at the end of the last update.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get pnpmShrinkwrapHash(): string | undefined;

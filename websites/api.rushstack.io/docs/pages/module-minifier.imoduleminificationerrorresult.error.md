@@ -13,7 +13,7 @@ pagination_next: null
 
 The error encountered, to be added to the current compilation's error collection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 error: Error;

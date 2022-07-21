@@ -11,7 +11,7 @@ pagination_next: null
 
 ## parseLocJson() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseLocJson({
@@ -27,6 +27,6 @@ export declare function parseLocJson({
 | ----------------------------------- | ------------------------------------------------------------------ | ----------- |
 | { content, filePath, ignoreString } | [IParseFileOptions](./localization-utilities.iparsefileoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ILocalizationFile](./localization-utilities.ilocalizationfile.md)

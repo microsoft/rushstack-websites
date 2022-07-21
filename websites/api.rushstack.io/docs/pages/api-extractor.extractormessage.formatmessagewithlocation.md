@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the message formatted with its identifier and file position.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 formatMessageWithLocation(workingPackageFolderPath: string | undefined): string;
@@ -25,7 +25,7 @@ formatMessageWithLocation(workingPackageFolderPath: string | undefined): string;
 | ------------------------ | ------------------- | ----------- |
 | workingPackageFolderPath | string \| undefined |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

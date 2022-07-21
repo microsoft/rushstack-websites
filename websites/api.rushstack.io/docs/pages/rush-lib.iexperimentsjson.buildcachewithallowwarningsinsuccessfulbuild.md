@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, build caching will respect the allowWarningsInSuccessfulBuild flag and cache builds with warnings. This will not replay warnings from the cached build.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 buildCacheWithAllowWarningsInSuccessfulBuild?: boolean;

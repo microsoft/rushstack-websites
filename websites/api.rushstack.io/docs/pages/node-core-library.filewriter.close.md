@@ -13,13 +13,13 @@ pagination_next: null
 
 Closes the file handle permanently. No operations can be made on this file handle after calling this. Behind the scenes it uses `fs.closeSync()` and releases the file descriptor to be re-used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 close(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

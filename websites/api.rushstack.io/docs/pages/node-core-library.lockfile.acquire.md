@@ -13,7 +13,7 @@ pagination_next: null
 
 Attempts to create the lockfile. Will continue to loop at every 100ms until the lock becomes available or the maxWaitMs is surpassed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static acquire(resourceFolder: string, resourceName: string, maxWaitMs?: number): Promise<LockFile>;
@@ -27,7 +27,7 @@ static acquire(resourceFolder: string, resourceName: string, maxWaitMs?: number)
 | resourceName   | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
 | maxWaitMs      | number | <i>(Optional)</i> The maximum number of milliseconds to wait for the lock before reporting an error                                            |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[LockFile](./node-core-library.lockfile.md) &gt;
 

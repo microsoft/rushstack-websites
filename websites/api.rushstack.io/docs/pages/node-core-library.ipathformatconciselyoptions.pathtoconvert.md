@@ -13,7 +13,7 @@ pagination_next: null
 
 The path to be converted.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pathToConvert: string;

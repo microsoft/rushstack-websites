@@ -13,7 +13,7 @@ pagination_next: null
 
 The package name to resolve. For example " @ rushstack/node-core-library"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 packageName: string;

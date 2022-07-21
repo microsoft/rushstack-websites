@@ -13,10 +13,10 @@ pagination_next: null
 
 A map from file names to dehydrated assets
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IAssetMap = Map<string, IAssetInfo>;
 ```
 
-<b>References:</b> [IAssetInfo](./webpack5-module-minifier-plugin.iassetinfo.md)
+**References:** [IAssetInfo](./webpack5-module-minifier-plugin.iassetinfo.md)

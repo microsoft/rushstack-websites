@@ -15,7 +15,7 @@ pagination_next: null
 
 Name of the version policy used by this project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get versionPolicyName(): string | undefined;

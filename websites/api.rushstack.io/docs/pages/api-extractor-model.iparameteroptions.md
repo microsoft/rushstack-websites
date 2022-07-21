@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor options for [Parameter](./api-extractor-model.parameter.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParameterOptions

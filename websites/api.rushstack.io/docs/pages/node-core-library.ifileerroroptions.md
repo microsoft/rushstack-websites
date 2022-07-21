@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides options for the creation of a FileError.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileErrorOptions

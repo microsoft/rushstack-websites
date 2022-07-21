@@ -13,7 +13,7 @@ pagination_next: null
 
 Generates a companion asset containing all extracted comments. If it is non-empty, returns a banner comment directing users to said companion asset.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function generateLicenseFileForAsset(compilation: Compilation, asset: IAssetInfo): string;
@@ -26,6 +26,6 @@ export declare function generateLicenseFileForAsset(compilation: Compilation, as
 | compilation | Compilation                                                   | The webpack compilation |
 | asset       | [IAssetInfo](./webpack5-module-minifier-plugin.iassetinfo.md) | The asset to process    |
 
-<b>Returns:</b>
+**Returns:**
 
 string

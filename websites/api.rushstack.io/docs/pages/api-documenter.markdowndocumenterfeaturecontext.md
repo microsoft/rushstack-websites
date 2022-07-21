@@ -13,7 +13,7 @@ pagination_next: null
 
 Context object for [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md) . Exposes various services that can be used by a plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MarkdownDocumenterFeatureContext

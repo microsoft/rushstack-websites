@@ -13,7 +13,7 @@ pagination_next: null
 
 Enumeration controlling conversion of newline characters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum NewlineKind

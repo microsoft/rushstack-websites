@@ -13,14 +13,14 @@ pagination_next: null
 
 A text string whose value determines the sort order that is automatically applied by the [ApiItemContainerMixin](./api-extractor-model.apiitemcontainermixin.md) class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
 getSortKey(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

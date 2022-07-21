@@ -15,13 +15,13 @@ pagination_next: null
 
 Returns the summary report.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getReport(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Used by [Excerpt](./api-extractor-model.excerpt.md) to indicate a range of indexes within an array of `ExcerptToken` objects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExcerptTokenRange

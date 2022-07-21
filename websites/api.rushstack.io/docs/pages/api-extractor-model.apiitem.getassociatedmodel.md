@@ -13,12 +13,12 @@ pagination_next: null
 
 If this item is an ApiModel or has an ApiModel as one of its parents, then that object is returned. Otherwise undefined is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getAssociatedModel(): ApiModel | undefined;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [ApiModel](./api-extractor-model.apimodel.md) \| undefined

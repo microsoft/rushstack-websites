@@ -13,7 +13,7 @@ pagination_next: null
 
 The path of the existing object to be moved. The path may be absolute or relative.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sourcePath: string;

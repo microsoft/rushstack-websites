@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IPseudolocaleOptions.override property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 override?: string;

@@ -13,13 +13,13 @@ pagination_next: null
 
 Plugin responsible for converting the Webpack module ids (of whatever variety) to stable ids before code is handed to the minifier, then back again. Uses the node module identity of the target module. Will emit an error if it encounters multiple versions of the same package in the same compilation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PortableMinifierModuleIdsPlugin implements Plugin
 ```
 
-<b>Implements:</b> Plugin
+**Implements:** Plugin
 
 ## Constructors
 

@@ -13,13 +13,13 @@ pagination_next: null
 
 If not already done, this loads the schema from disk and compiles it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ensureCompiled(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -15,7 +15,7 @@ pagination_next: null
 
 The hook to run before executing any Rush CLI Command.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 initialize: AsyncSeriesHook<IRushCommand>;

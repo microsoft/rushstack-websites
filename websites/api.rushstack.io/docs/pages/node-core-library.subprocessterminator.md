@@ -15,7 +15,7 @@ pagination_next: null
 
 When a child process is created, registering it with the SubprocessTerminator will ensure that the child gets terminated when the current process terminates.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SubprocessTerminator

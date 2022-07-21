@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiVariable.onDeserializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -26,6 +26,6 @@ static onDeserializeInto(options: Partial<IApiVariableOptions>, context: Deseria
 | context    | DeserializerContext                                                                 |             |
 | jsonObject | IApiVariableJson                                                                    |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then this project will be ignored by the "rush check" command. The default value is false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get skipRushCheck(): boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 This API is similar to [Enum.tryGetKeyByNumber()](./node-core-library.enum.trygetkeybynumber.md) , except that it throws an exception if the key is undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getKeyByNumber<TEnumValue, TEnumObject extends {
@@ -28,6 +28,6 @@ static getKeyByNumber<TEnumValue, TEnumObject extends {
 | enumObject | TEnumObject |             |
 | value      | number      |             |
 
-<b>Returns:</b>
+**Returns:**
 
 keyof typeof enumObject

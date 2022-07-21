@@ -15,7 +15,7 @@ pagination_next: null
 
 The value of the "commandKind" property for a bulk command in command-line.json
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly bulkCommandKind: 'bulk';

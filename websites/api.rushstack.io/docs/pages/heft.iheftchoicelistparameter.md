@@ -15,7 +15,7 @@ pagination_next: null
 
 The object returned when registering a choiceList type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftChoiceListParameter = IHeftBaseParameter<
@@ -24,4 +24,4 @@ export declare type IHeftChoiceListParameter = IHeftBaseParameter<
 >;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md)

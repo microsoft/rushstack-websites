@@ -13,7 +13,7 @@ pagination_next: null
 
 The current working directory. If omitted, process.cwd() will be used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 currentWorkingDirectory?: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the absolute path of the `rig.schema.json` JSON schema file for `config/rig.json` , which is bundled with this NPM package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static jsonSchemaPath: string;

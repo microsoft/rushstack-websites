@@ -13,7 +13,7 @@ pagination_next: null
 
 Deletes the content of a folder, but not the folder itself. Also ensures the folder exists. Behind the scenes it uses `fs-extra.emptyDirSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static ensureEmptyFolder(folderPath: string): void;
@@ -25,7 +25,7 @@ static ensureEmptyFolder(folderPath: string): void;
 | ---------- | ------ | ----------------------------------------------------------------------------------- |
 | folderPath | string | The absolute or relative path to the folder which should have its contents deleted. |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

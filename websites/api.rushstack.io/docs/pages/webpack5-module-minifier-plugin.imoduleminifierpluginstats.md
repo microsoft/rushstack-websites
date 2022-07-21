@@ -13,7 +13,7 @@ pagination_next: null
 
 Statistics from the plugin. Namely module sizes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinifierPluginStats

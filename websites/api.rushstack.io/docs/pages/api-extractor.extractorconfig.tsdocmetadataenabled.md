@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether to generate the tsdoc-metadata.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tsdocMetadataEnabled: boolean;

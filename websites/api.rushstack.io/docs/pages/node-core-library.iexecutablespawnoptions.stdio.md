@@ -15,7 +15,7 @@ The stdio mappings for the child process.
 
 NOTE: If IExecutableSpawnSyncOptions.input is provided, it will take precedence over the stdin mapping (stdio\[0\]).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stdio?: ExecutableStdioMapping;

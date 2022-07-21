@@ -13,7 +13,7 @@ pagination_next: null
 
 Detects if the provided error object is a `NodeJS.ErrnoException`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isErrnoException(error: Error): error is NodeJS.ErrnoException;
@@ -25,6 +25,6 @@ static isErrnoException(error: Error): error is NodeJS.ErrnoException;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 error is NodeJS.ErrnoException

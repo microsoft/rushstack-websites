@@ -13,7 +13,7 @@ pagination_next: null
 
 Writes a text string to a file on disk, overwriting the file if it already exists. Behind the scenes it uses `fs.writeFileSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static writeFile(filePath: string, contents: string | Buffer, options?: IFileSystemWriteFileOptions): void;
@@ -27,7 +27,7 @@ static writeFile(filePath: string, contents: string | Buffer, options?: IFileSys
 | contents  | string \| Buffer                                                                  | The text that should be written to the file.                                                           |
 | options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IWriteFileOptions</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

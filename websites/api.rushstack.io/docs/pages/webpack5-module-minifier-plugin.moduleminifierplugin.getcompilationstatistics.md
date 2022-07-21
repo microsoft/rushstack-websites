@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ModuleMinifierPlugin.getCompilationStatistics() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getCompilationStatistics(compilation: Compilation): IModuleMinifierPluginStats | undefined;
@@ -23,6 +23,6 @@ static getCompilationStatistics(compilation: Compilation): IModuleMinifierPlugin
 | ----------- | ----------- | ----------- |
 | compilation | Compilation |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IModuleMinifierPluginStats](./webpack5-module-minifier-plugin.imoduleminifierpluginstats.md) \| undefined

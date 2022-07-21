@@ -13,7 +13,7 @@ pagination_next: null
 
 If set to true, the build is running with the --debug flag
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get debugMode(): boolean;

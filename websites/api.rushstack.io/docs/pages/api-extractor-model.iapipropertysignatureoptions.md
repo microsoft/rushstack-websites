@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [ApiPropertySignature](./api-extractor-model.apipropertysignature.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiPropertySignatureOptions extends IApiPropertyItemOptions
 ```
 
-<b>Extends:</b> [IApiPropertyItemOptions](./api-extractor-model.iapipropertyitemoptions.md)
+**Extends:** [IApiPropertyItemOptions](./api-extractor-model.iapipropertyitemoptions.md)
 
 ## Properties
 

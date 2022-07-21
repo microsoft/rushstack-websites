@@ -15,7 +15,7 @@ pagination_next: null
 
 The expected prefix for phase names in "common/config/rush/command-line.json"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly phaseNamePrefix: '_phase:';

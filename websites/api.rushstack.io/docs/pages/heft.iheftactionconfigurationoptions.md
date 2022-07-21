@@ -13,7 +13,7 @@ pagination_next: null
 
 Options to be used when retrieving the action configuration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IHeftActionConfigurationOptions

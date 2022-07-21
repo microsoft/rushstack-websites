@@ -15,13 +15,13 @@ Represents a sub-command that is part of the CommandLineParser command line. App
 
 The action name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class CommandLineAction extends CommandLineParameterProvider
 ```
 
-<b>Extends:</b> [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
+**Extends:** [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
 
 ## Constructors
 

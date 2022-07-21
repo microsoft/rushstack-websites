@@ -15,7 +15,7 @@ The project-specific Rush temp folder. This folder is used to store Rush-specifi
 
 Example: `C:\MyRepo\libraries\my-project\.rush\temp`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectRushTempFolder(): string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Allow customization of the tsdoc.json config file. If omitted, this file will be loaded from its default location. If the file does not exist, then the standard definitions will be used from `@microsoft/api-extractor/extends/tsdoc-base.json` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tsdocConfigFile?: TSDocConfigFile;

@@ -13,12 +13,12 @@ pagination_next: null
 
 Get a sha1 hash of the preferred versions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getPreferredVersionsHash(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

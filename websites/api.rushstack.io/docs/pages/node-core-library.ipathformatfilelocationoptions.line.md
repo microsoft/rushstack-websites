@@ -13,7 +13,7 @@ pagination_next: null
 
 The optional line number. If not specified, the line number will not be included in the formatted string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 line?: number;

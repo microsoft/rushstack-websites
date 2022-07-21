@@ -11,7 +11,7 @@ pagination_next: null
 
 ## RushConfiguration.projectsByName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectsByName(): Map<string, RushConfigurationProject>;

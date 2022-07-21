@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures handling of diagnostic messages generating the TypeScript compiler while analyzing the input .d.ts files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 compilerMessageReporting?: IConfigMessageReportingTable;

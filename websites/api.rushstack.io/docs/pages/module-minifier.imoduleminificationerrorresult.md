@@ -13,7 +13,7 @@ pagination_next: null
 
 Result from the minifier function when an error is encountered.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinificationErrorResult

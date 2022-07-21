@@ -13,7 +13,7 @@ pagination_next: null
 
 An [Excerpt](./api-extractor-model.excerpt.md) that describes the default type of the type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly defaultTypeExcerpt: Excerpt;

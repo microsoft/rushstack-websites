@@ -13,13 +13,13 @@ pagination_next: null
 
 Clears the internal file cache.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 clearCache(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

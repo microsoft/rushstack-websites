@@ -13,7 +13,7 @@ pagination_next: null
 
 An already constructed `PackageJsonLookup` cache object to use. If omitted, a temporary one will be constructed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 packageJsonLookup?: PackageJsonLookup;

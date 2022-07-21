@@ -15,7 +15,7 @@ pagination_next: null
 
 The platform the command was executed on, reads from process.platform
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly platform?: string;

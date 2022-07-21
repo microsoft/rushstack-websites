@@ -11,7 +11,7 @@ pagination_next: null
 
 ## MessagePortMinifier.port property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly port: MessagePort;

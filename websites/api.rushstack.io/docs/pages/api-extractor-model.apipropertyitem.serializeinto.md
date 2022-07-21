@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPropertyItem.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ serializeInto(jsonObject: Partial<IApiPropertyItemJson>): void;
 | ---------- | ----------------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiPropertyItemJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 Packages approved for usage in a web browser. This is the stricter of the two types, so by default all new packages are added to this file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get browserApprovedPackages(): ApprovedPackagesConfiguration;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The method used to resolve the store used by PNPM.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pnpmStore: PnpmStoreOptions;

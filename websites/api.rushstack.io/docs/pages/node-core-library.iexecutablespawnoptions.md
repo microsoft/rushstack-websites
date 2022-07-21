@@ -13,13 +13,13 @@ pagination_next: null
 
 Options for [Executable.spawn()](./node-core-library.executable.spawn.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExecutableSpawnOptions extends IExecutableResolveOptions
 ```
 
-<b>Extends:</b> [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md)
+**Extends:** [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md)
 
 ## Properties
 

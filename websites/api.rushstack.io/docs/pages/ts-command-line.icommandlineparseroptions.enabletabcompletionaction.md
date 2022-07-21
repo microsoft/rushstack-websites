@@ -13,7 +13,7 @@ pagination_next: null
 
 Set to true to auto-define a tab completion action. False by default.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 enableTabCompletionAction?: boolean;

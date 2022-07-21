@@ -13,7 +13,7 @@ pagination_next: null
 
 The key used to identify the source file containing the string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 locFilePath: string;

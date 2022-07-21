@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TestStageHooks.configureTest property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly configureTest: AsyncSeriesHook;

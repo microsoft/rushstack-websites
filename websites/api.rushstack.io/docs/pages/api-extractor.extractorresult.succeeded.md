@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the invocation of API Extractor was successful. For example, if `succeeded` is false, then the build task would normally return a nonzero process exit code, indicating that the operation failed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly succeeded: boolean;

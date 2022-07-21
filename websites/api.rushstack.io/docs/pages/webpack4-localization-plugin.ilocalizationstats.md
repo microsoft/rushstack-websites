@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStats interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizationStats

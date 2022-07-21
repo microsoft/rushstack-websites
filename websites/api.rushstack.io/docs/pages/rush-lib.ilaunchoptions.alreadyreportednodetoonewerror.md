@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, the wrapper process already printed a warning that the version of Node.js hasn't been tested with this version of Rush, so we shouldn't print a similar error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alreadyReportedNodeTooNewError?: boolean;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the file to drop in project-folder/.rush/temp/ containing a listing of the project's direct and indirect dependencies. This is used to detect if a project's dependencies have changed since the last build.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly projectShrinkwrapFilename: string;

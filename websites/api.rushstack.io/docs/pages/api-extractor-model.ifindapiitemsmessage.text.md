@@ -13,7 +13,7 @@ pagination_next: null
 
 Text description of the message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 text: string;

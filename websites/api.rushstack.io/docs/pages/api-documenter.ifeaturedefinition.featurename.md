@@ -15,7 +15,7 @@ The name of this feature, as it will appear in the config file.
 
 The name should consist of one or more words separated by hyphens. Each word should consist of lower case letters and numbers. Example: `my-feature`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 featureName: string;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("node_modules") where NPM installs its packages.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly nodeModulesFolderName: string;

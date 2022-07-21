@@ -13,7 +13,7 @@ pagination_next: null
 
 The abstract base class for all API Documenter plugin features.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class PluginFeature

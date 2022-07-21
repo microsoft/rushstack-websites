@@ -13,7 +13,7 @@ pagination_next: null
 
 Start a child process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static spawn(filename: string, args: string[], options?: IExecutableSpawnOptions): child_process.ChildProcess;
@@ -27,7 +27,7 @@ static spawn(filename: string, args: string[], options?: IExecutableSpawnOptions
 | args      | string\[\]                                                                | The command-line arguments to be passed to the process.                                                                                                                                 |
 | options   | [IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md) | <i>(Optional)</i> Additional options                                                                                                                                                    |
 
-<b>Returns:</b>
+**Returns:**
 
 child_process.ChildProcess
 

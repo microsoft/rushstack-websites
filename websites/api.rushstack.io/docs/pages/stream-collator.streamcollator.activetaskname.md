@@ -15,7 +15,7 @@ pagination_next: null
 
 For diagnostic purposes, returns the [CollatedWriter.taskName](./stream-collator.collatedwriter.taskname.md) for the currently active writer, or an empty string if no writer is active.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get activeTaskName(): string;

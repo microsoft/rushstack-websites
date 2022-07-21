@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiProperty.getContainerKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getContainerKey(name: string, isStatic: boolean): string;
@@ -24,6 +24,6 @@ static getContainerKey(name: string, isStatic: boolean): string;
 | name      | string  |             |
 | isStatic  | boolean |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

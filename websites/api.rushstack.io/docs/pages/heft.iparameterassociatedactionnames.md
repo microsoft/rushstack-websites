@@ -15,7 +15,7 @@ pagination_next: null
 
 The configuration interface for associating a parameter definition with a Heft command line action in [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParameterAssociatedActionNames

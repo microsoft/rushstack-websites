@@ -13,7 +13,7 @@ pagination_next: null
 
 An [Excerpt](./api-extractor-model.excerpt.md) that describes the item's initializer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly initializerExcerpt?: Excerpt;

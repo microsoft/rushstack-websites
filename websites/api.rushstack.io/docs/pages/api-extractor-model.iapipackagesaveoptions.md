@@ -13,13 +13,13 @@ pagination_next: null
 
 Options for [ApiPackage.saveToJsonFile()](./api-extractor-model.apipackage.savetojsonfile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiPackageSaveOptions extends IJsonFileSaveOptions
 ```
 
-<b>Extends:</b> [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md)
+**Extends:** [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md)
 
 ## Properties
 

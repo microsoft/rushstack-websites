@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns any remaining command line arguments after the recognized portion that was parsed from the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get values(): ReadonlyArray<string>;

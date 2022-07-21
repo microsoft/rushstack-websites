@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExcerptToken.canonicalReference property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 canonicalReference?: string;

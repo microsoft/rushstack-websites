@@ -15,7 +15,7 @@ pagination_next: null
 
 Options provided to scripts that are run using the RunScriptPlugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IRunScriptOptions<TStageProperties>

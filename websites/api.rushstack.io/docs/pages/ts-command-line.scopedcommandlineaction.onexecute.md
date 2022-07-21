@@ -13,12 +13,12 @@ pagination_next: null
 
 Your subclass should implement this hook to perform the operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected abstract onExecute(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

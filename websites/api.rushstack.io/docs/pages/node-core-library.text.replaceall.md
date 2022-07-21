@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the same thing as targetString.replace(searchValue, replaceValue), except that all matches are replaced, rather than just the first match.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static replaceAll(input: string, searchValue: string, replaceValue: string): string;
@@ -27,6 +27,6 @@ static replaceAll(input: string, searchValue: string, replaceValue: string): str
 | searchValue  | string | The value to search for   |
 | replaceValue | string | The replacement text      |
 
-<b>Returns:</b>
+**Returns:**
 
 string

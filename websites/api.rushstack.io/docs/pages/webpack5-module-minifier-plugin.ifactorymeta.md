@@ -13,7 +13,7 @@ pagination_next: null
 
 Properties surfaced via the `factoryMeta` property on webpack modules
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFactoryMeta

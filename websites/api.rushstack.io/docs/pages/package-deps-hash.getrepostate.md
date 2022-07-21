@@ -15,7 +15,7 @@ pagination_next: null
 
 Gets the object hashes for all files in the Git repo, combining the current commit with working tree state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getRepoState(currentWorkingDirectory: string, gitPath?: string): Map<string, string>;
@@ -28,6 +28,6 @@ export declare function getRepoState(currentWorkingDirectory: string, gitPath?: 
 | currentWorkingDirectory | string | The working directory. Only used to find the repository root. |
 | gitPath                 | string | <i>(Optional)</i> The path to the Git executable              |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, string&gt;

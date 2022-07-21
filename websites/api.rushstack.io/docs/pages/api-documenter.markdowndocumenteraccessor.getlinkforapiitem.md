@@ -13,7 +13,7 @@ pagination_next: null
 
 For a given `ApiItem` , return its markdown hyperlink.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getLinkForApiItem(apiItem: ApiItem): string | undefined;
@@ -25,7 +25,7 @@ getLinkForApiItem(apiItem: ApiItem): string | undefined;
 | --------- | ------------------------------------------- | ----------- |
 | apiItem   | [ApiItem](./api-extractor-model.apiitem.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

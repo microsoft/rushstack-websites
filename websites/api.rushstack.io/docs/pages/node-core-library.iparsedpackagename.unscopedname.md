@@ -13,7 +13,7 @@ pagination_next: null
 
 The parsed NPM package name without the scope.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unscopedName: string;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ExcerptTokenKind enum
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum ExcerptTokenKind

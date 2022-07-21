@@ -15,7 +15,7 @@ pagination_next: null
 
 Attempts to load the build-cache.json data from the standard file path `common/config/rush/build-cache.json` . If the file has not been created yet, then undefined is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryLoadAsync(terminal: ITerminal, rushConfiguration: RushConfiguration, rushSession: RushSession): Promise<BuildCacheConfiguration | undefined>;
@@ -29,6 +29,6 @@ static tryLoadAsync(terminal: ITerminal, rushConfiguration: RushConfiguration, r
 | rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |             |
 | rushSession       | [RushSession](./rush-lib.rushsession.md)             |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[BuildCacheConfiguration](./rush-lib.buildcacheconfiguration.md) \| undefined&gt;

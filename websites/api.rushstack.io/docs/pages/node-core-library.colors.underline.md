@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static underline(text: string | IColorableSequence): IColorableSequence;
@@ -25,6 +25,6 @@ static underline(text: string | IColorableSequence): IColorableSequence;
 | --------- | ------------------------------------------------------------------------- | ----------- |
 | text      | string \| [IColorableSequence](./node-core-library.icolorablesequence.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IColorableSequence](./node-core-library.icolorablesequence.md)

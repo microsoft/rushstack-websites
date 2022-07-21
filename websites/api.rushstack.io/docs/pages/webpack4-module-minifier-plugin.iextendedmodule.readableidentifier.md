@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets a friendly identifier for the module.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readableIdentifier(requestShortener: unknown): string;
@@ -25,6 +25,6 @@ readableIdentifier(requestShortener: unknown): string;
 | ---------------- | ------- | ----------- |
 | requestShortener | unknown |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

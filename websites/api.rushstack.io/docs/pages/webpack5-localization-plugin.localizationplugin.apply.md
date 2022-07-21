@@ -13,7 +13,7 @@ pagination_next: null
 
 Apply this plugin to the specified webpack compiler.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(compiler: Compiler): void;
@@ -25,6 +25,6 @@ apply(compiler: Compiler): void;
 | --------- | -------- | ----------- |
 | compiler  | Compiler |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

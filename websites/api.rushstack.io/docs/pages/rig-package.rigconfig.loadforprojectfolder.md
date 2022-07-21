@@ -13,7 +13,7 @@ pagination_next: null
 
 Use this method to load the `config/rig.json` file for a given project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadForProjectFolder(options: ILoadForProjectFolderOptions): RigConfig;
@@ -25,7 +25,7 @@ static loadForProjectFolder(options: ILoadForProjectFolderOptions): RigConfig;
 | --------- | ----------------------------------------------------------------------------- | ----------- |
 | options   | [ILoadForProjectFolderOptions](./rig-package.iloadforprojectfolderoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [RigConfig](./rig-package.rigconfig.md)
 

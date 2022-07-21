@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether or not the command ran into errors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 encounteredError?: boolean;

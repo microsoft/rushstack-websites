@@ -15,7 +15,7 @@ pagination_next: null
 
 The artifactory.json configuration file name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly artifactoryFilename: string;

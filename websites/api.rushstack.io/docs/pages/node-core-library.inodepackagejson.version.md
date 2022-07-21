@@ -13,7 +13,7 @@ pagination_next: null
 
 A version number conforming to the Semantic Versioning (SemVer) standard.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 version?: string;

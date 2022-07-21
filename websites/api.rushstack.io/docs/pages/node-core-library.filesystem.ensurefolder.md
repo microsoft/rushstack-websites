@@ -13,7 +13,7 @@ pagination_next: null
 
 Recursively creates a folder at a given path. Behind the scenes is uses `fs-extra.ensureDirSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static ensureFolder(folderPath: string): void;
@@ -25,7 +25,7 @@ static ensureFolder(folderPath: string): void;
 | ---------- | ------ | -------------------------------------------------------------------- |
 | folderPath | string | The absolute or relative path of the folder which should be created. |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

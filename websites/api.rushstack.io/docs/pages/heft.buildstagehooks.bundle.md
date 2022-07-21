@@ -11,7 +11,7 @@ pagination_next: null
 
 ## BuildStageHooks.bundle property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly bundle: SyncHook<IBundleSubstage>;

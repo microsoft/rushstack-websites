@@ -13,7 +13,7 @@ pagination_next: null
 
 The amount of time the command took to execute, in milliseconds.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 taskTotalExecutionMs: number;

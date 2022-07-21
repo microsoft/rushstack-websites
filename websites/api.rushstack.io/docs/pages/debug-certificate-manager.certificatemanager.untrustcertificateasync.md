@@ -13,7 +13,7 @@ pagination_next: null
 
 Attempt to locate a previously generated debug certificate and untrust it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 untrustCertificateAsync(terminal: ITerminal): Promise<boolean>;
@@ -25,6 +25,6 @@ untrustCertificateAsync(terminal: ITerminal): Promise<boolean>;
 | --------- | --------------------------------------------- | ----------- |
 | terminal  | [ITerminal](./node-core-library.iterminal.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

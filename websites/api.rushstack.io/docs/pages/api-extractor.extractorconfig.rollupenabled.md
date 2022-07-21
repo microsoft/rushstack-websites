@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether to generate the .d.ts rollup file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly rollupEnabled: boolean;

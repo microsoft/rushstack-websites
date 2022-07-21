@@ -11,7 +11,7 @@ pagination_next: null
 
 ## parseResJson() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseResJson({
@@ -27,6 +27,6 @@ export declare function parseResJson({
 | ----------------------------------- | ------------------------------------------------------------------ | ----------- |
 | { content, ignoreString, filePath } | [IParseFileOptions](./localization-utilities.iparsefileoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ILocalizationFile](./localization-utilities.ilocalizationfile.md)

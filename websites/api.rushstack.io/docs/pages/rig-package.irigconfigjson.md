@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents the literal contents of the `config/rig.json` file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IRigConfigJson

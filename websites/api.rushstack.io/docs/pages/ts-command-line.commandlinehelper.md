@@ -13,7 +13,7 @@ pagination_next: null
 
 Helpers for working with the ts-command-line API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CommandLineHelper

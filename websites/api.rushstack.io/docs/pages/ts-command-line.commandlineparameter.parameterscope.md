@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional parameter scope name, used to add a scope-prefixed parameter synonym, e.g. "--scope:do-something". Scopes provide additional flexibility for parameters in conflict resolution since when a scope is specified, parameters that have conflicting long names will be defined using only the scope-prefixed name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly parameterScope: string | undefined;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides access to the documenter that is generating the output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MarkdownDocumenterAccessor

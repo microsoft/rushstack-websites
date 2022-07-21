@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiItem.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
@@ -24,6 +24,6 @@ serializeInto(jsonObject: Partial<IApiItemJson>): void;
 | ---------- | --------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiItemJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

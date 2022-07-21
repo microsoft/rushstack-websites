@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for [FileSystem.copyFilesAsync()](./node-core-library.filesystem.copyfilesasync.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemCopyFilesAsyncOptions

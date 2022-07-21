@@ -15,7 +15,7 @@ pagination_next: null
 
 If set, enables or disables writing to the cloud build cache. See [EnvironmentVariableNames.RUSH_BUILD_CACHE_WRITE_ALLOWED](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get buildCacheWriteAllowed(): boolean | undefined;

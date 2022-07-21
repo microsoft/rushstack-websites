@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TextRewriterTransform.textRewriters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly textRewriters: ReadonlyArray<TextRewriter>;

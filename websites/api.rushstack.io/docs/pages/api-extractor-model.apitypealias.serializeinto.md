@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiTypeAlias.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ serializeInto(jsonObject: Partial<IApiTypeAliasJson>): void;
 | ---------- | -------------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiTypeAliasJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

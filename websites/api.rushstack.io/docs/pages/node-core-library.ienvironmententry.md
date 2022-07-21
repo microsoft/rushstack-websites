@@ -13,7 +13,7 @@ pagination_next: null
 
 A process environment variable name and its value. Used by [EnvironmentMap](./node-core-library.environmentmap.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IEnvironmentEntry

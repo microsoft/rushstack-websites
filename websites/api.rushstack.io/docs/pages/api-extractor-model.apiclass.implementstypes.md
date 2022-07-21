@@ -13,7 +13,7 @@ pagination_next: null
 
 The list of interfaces that this class implements using the `implements` keyword.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get implementsTypes(): ReadonlyArray<HeritageType>;

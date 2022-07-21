@@ -13,7 +13,7 @@ pagination_next: null
 
 This option is used to designate a path at which a JSON file describing the localized assets produced should be written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dropPath?: string;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The options [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) used to create and register the parameter with a Heft command line action.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly definition: IHeftRegisterParameterOptions<TCommandLineDefinition>;

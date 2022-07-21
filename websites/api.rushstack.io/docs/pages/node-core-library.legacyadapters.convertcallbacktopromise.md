@@ -13,7 +13,7 @@ pagination_next: null
 
 This function wraps a function with a callback in a promise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertCallbackToPromise<TResult, TError>(fn: (cb: LegacyCallback<TResult, TError>) => void): Promise<TResult>;
@@ -25,6 +25,6 @@ static convertCallbackToPromise<TResult, TError>(fn: (cb: LegacyCallback<TResult
 | --------- | ------------------------------------------------------------------------------------------------ | ----------- |
 | fn        | (cb: [LegacyCallback](./node-core-library.legacycallback.md) &lt;TResult, TError&gt;) =&gt; void |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TResult&gt;

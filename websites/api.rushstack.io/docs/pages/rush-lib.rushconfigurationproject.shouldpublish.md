@@ -13,7 +13,7 @@ pagination_next: null
 
 A flag which indicates whether changes to this project should be published. This controls whether or not the project would show up when running `rush change` , and whether or not it should be published during `rush publish` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get shouldPublish(): boolean;

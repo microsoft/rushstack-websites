@@ -15,7 +15,7 @@ pagination_next: null
 >
 > Use [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md) instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFolder(folderPath: string, options?: IFileSystemReadFolderOptions): string[];
@@ -28,6 +28,6 @@ static readFolder(folderPath: string, options?: IFileSystemReadFolderOptions): s
 | folderPath | string                                                                              |                   |
 | options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]

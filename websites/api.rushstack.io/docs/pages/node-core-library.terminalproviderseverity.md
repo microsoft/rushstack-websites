@@ -19,7 +19,7 @@ Terminal providers may choose to suppress certain messages based on their severi
 
 Severity \| Purpose \-\-\-\-\-\-\-\-\- \| \-\-\-\-\-\-- error \| Build errors and fatal issues warning \| Not necessarily fatal, but indicate a problem the user should fix log \| Informational messages verbose \| Additional information that may not always be necessary debug \| Highest detail level, best used for troubleshooting information
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum TerminalProviderSeverity

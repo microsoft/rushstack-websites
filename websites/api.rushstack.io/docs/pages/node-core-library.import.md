@@ -13,7 +13,7 @@ pagination_next: null
 
 Helpers for resolving and importing Node.js modules.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Import

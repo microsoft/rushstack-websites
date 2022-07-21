@@ -11,13 +11,13 @@ pagination_next: null
 
 ## RushServePlugin class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RushServePlugin implements IRushPlugin
 ```
 
-<b>Implements:</b> IRushPlugin
+**Implements:** IRushPlugin
 
 ## Constructors
 

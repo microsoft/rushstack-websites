@@ -13,7 +13,7 @@ pagination_next: null
 
 A helper for looking up TypeScript `enum` keys/values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Enum

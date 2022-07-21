@@ -11,7 +11,7 @@ pagination_next: null
 
 ## BuildStageHooks.compile property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly compile: SyncHook<ICompileSubstage>;

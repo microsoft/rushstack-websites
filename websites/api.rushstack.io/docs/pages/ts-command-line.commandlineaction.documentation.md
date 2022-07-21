@@ -13,7 +13,7 @@ pagination_next: null
 
 A detailed description that is shown on the action help page, which is displayed by the command "example build --help", e.g. for actionName="build".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly documentation: string;

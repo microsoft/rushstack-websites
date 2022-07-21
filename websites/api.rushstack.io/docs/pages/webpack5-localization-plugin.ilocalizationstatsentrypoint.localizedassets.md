@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStatsEntrypoint.localizedAssets property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 localizedAssets: ILocaleElementMap;

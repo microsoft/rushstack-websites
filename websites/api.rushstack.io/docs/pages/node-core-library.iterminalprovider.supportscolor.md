@@ -15,7 +15,7 @@ pagination_next: null
 
 This property should return true only if the terminal provider supports rendering console colors.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 supportsColor: boolean;

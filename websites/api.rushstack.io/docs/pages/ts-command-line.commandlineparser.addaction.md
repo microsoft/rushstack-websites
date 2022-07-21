@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a new action that can be used with the CommandLineParser instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addAction(action: CommandLineAction): void;
@@ -25,6 +25,6 @@ addAction(action: CommandLineAction): void;
 | --------- | ----------------------------------------------------------- | ----------- |
 | action    | [CommandLineAction](./ts-command-line.commandlineaction.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

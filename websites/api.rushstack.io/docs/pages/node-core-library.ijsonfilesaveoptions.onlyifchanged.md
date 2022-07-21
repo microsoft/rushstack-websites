@@ -13,7 +13,7 @@ pagination_next: null
 
 If there is an existing file, and the contents have not changed, then don't write anything; this preserves the old timestamp.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onlyIfChanged?: boolean;

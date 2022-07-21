@@ -13,7 +13,7 @@ pagination_next: null
 
 An interface for accessing common fields from a package.json file whose version field may be missing.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface INodePackageJson

@@ -13,13 +13,13 @@ pagination_next: null
 
 This event function is called after the feature is initialized, but before any processing occurs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */
 onInitialized(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

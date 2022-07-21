@@ -13,7 +13,7 @@ pagination_next: null
 
 When `exportAsDefault` is true, this optional setting determines the interface name for the default wrapped export. Ignored when `exportAsDefault` is false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportAsDefaultInterfaceName?: string;

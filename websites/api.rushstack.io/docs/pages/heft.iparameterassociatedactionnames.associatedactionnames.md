@@ -15,7 +15,7 @@ pagination_next: null
 
 A string list of one or more action names to associate the parameter with.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 associatedActionNames: string[];

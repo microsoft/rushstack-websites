@@ -13,7 +13,7 @@ pagination_next: null
 
 This hook is called when collected metrics should be flushed and no more metrics will be collected.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 flushAndTeardown: AsyncParallelHook;

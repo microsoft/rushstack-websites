@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md) , this interface defines a command line parameter whose argument is a string value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineStringDefinition extends IBaseCommandLineDefinitionWithArgument
 ```
 
-<b>Extends:</b> [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md)
+**Extends:** [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md)
 
 ## Properties
 

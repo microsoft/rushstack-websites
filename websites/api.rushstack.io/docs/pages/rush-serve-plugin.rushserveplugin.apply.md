@@ -11,7 +11,7 @@ pagination_next: null
 
 ## RushServePlugin.apply() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(rushSession: RushSession, rushConfiguration: RushConfiguration): void;
@@ -24,6 +24,6 @@ apply(rushSession: RushSession, rushConfiguration: RushConfiguration): void;
 | rushSession       | RushSession       |             |
 | rushConfiguration | RushConfiguration |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

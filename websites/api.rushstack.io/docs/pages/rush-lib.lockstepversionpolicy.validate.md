@@ -13,7 +13,7 @@ pagination_next: null
 
 Validates the specified version and throws if the version does not satisfy lockstep version.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validate(versionString: string, packageName: string): void;
@@ -26,6 +26,6 @@ validate(versionString: string, packageName: string): void;
 | versionString | string | version string |
 | packageName   | string | package name   |
 
-<b>Returns:</b>
+**Returns:**
 
 void

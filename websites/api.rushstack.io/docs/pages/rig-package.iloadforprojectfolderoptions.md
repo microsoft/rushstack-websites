@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILoadForProjectFolderOptions

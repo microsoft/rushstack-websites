@@ -13,7 +13,7 @@ pagination_next: null
 
 This attempts to parse a package name that may include a scope component. The packageName must not be an empty string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryParse(packageName: string): IParsedPackageNameOrError;
@@ -25,7 +25,7 @@ tryParse(packageName: string): IParsedPackageNameOrError;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IParsedPackageNameOrError](./node-core-library.iparsedpackagenameorerror.md)
 

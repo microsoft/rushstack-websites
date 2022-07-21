@@ -13,7 +13,7 @@ pagination_next: null
 
 Hook invoked on code after it has been returned from the minifier.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 postProcessCodeFragment: SyncWaterfallHook<[sources.ReplaceSource, IPostProcessFragmentContext]>;

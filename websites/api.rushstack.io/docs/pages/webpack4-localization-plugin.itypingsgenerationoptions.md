@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for typing generation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITypingsGenerationOptions

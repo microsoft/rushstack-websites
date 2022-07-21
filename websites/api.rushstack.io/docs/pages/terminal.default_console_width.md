@@ -13,7 +13,7 @@ pagination_next: null
 
 A sensible fallback column width for consoles.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_CONSOLE_WIDTH: number;

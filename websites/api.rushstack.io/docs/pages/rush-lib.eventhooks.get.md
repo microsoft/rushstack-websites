@@ -15,7 +15,7 @@ pagination_next: null
 
 Return all the scripts associated with the specified event.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(event: Event): string[];
@@ -27,6 +27,6 @@ get(event: Event): string[];
 | --------- | ---------------------------- | ----------- |
 | event     | [Event](./rush-lib.event.md) | Rush event  |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]

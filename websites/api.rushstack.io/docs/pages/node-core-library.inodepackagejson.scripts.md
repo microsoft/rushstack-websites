@@ -13,7 +13,7 @@ pagination_next: null
 
 A table of script hooks that a package manager or build tool may invoke.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scripts?: IPackageJsonScriptTable;

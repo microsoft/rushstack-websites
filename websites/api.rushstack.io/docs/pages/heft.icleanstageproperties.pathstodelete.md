@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ICleanStageProperties.pathsToDelete property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pathsToDelete: Set<string>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the specified file path has the ".d.ts" file extension.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static hasDtsFileExtension(filePath: string): boolean;
@@ -25,6 +25,6 @@ static hasDtsFileExtension(filePath: string): boolean;
 | --------- | ------ | ----------- |
 | filePath  | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

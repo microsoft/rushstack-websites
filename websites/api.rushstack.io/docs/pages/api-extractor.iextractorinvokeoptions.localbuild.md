@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates that API Extractor is running as part of a local build, e.g. on developer's machine.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 localBuild?: boolean;

@@ -15,7 +15,7 @@ pagination_next: null
 
 This function is identical to [ConfigurationFile.loadConfigurationFileForProjectAsync()](./heft-config-file.configurationfile.loadconfigurationfileforprojectasync.md) , except that it returns `undefined` instead of throwing an error if the configuration file cannot be found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryLoadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: RigConfig): Promise<TConfigurationFile | undefined>;
@@ -29,6 +29,6 @@ tryLoadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string
 | projectPath | string                                        |                   |
 | rigConfig   | [RigConfig](./rig-package.rigconfig.md)       | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TConfigurationFile \| undefined&gt;

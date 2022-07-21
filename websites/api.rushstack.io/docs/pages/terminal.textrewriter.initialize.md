@@ -13,12 +13,12 @@ pagination_next: null
 
 Create a new `TextRewriterState` object that can be used to process a stream of characters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract initialize(): TextRewriterState;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [TextRewriterState](./terminal.textrewriterstate.md)

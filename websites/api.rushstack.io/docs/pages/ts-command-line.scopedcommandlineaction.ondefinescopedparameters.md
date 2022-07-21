@@ -13,7 +13,7 @@ pagination_next: null
 
 The child class should implement this hook to define its scoped command-line parameters, e.g. by calling scopedParameterProvider.defineFlagParameter(). These parameters will only be available if the action is invoked with a scope.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected abstract onDefineScopedParameters(scopedParameterProvider: CommandLineParameterProvider): void;
@@ -25,7 +25,7 @@ protected abstract onDefineScopedParameters(scopedParameterProvider: CommandLine
 | ----------------------- | --------------------------------------------------------------------------------- | ----------- |
 | scopedParameterProvider | [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -13,12 +13,12 @@ pagination_next: null
 
 The child class should implement this hook to define its unscoped command-line parameters, e.g. by calling defineFlagParameter(). At least one scoping parameter must be defined. Scoping parameters are defined by setting the parameterGroupName to ScopedCommandLineAction.ScopingParameterGroupName.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected abstract onDefineUnscopedParameters(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

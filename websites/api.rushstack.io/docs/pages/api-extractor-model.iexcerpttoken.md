@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExcerptToken interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExcerptToken

@@ -15,7 +15,7 @@ pagination_next: null
 
 This function gets called on every terminal provider upon every message function call on the terminal instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 write(data: string, severity: TerminalProviderSeverity): void;
@@ -28,6 +28,6 @@ write(data: string, severity: TerminalProviderSeverity): void;
 | data      | string                                                                      | The terminal message.                                                                                                                                   |
 | severity  | [TerminalProviderSeverity](./node-core-library.terminalproviderseverity.md) | The message severity. Terminal providers can route different kinds of messages to different streams and may choose to ignore verbose or debug messages. |
 
-<b>Returns:</b>
+**Returns:**
 
 void

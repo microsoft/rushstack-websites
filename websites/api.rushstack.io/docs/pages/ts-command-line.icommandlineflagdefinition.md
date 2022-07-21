@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md) , this interface defines a command line parameter that is a boolean flag.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineFlagDefinition extends IBaseCommandLineDefinition
 ```
 
-<b>Extends:</b> [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
+**Extends:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
 
 ## Properties
 

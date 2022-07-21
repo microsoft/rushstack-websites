@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiItemContainerMixinOptions.preserveMemberOrder property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 preserveMemberOrder?: boolean;

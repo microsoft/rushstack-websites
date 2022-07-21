@@ -13,7 +13,7 @@ pagination_next: null
 
 Updates the version directly for the specified version policy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 update(versionPolicyName: string, newVersion: string, shouldCommit?: boolean): void;
@@ -27,6 +27,6 @@ update(versionPolicyName: string, newVersion: string, shouldCommit?: boolean): v
 | newVersion        | string  | new version         |
 | shouldCommit      | boolean | <i>(Optional)</i>   |
 
-<b>Returns:</b>
+**Returns:**
 
 void

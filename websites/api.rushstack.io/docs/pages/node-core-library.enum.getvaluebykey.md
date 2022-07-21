@@ -13,7 +13,7 @@ pagination_next: null
 
 This API is similar to [Enum.tryGetValueByKey()](./node-core-library.enum.trygetvaluebykey.md) , except that it throws an exception if the key is undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getValueByKey<TEnumValue>(enumObject: {
@@ -29,6 +29,6 @@ static getValueByKey<TEnumValue>(enumObject: {
 | enumObject | { \[key: string\]: TEnumValue \| string; \[key: number\]: TEnumValue \| string; } |             |
 | key        | string                                                                            |             |
 
-<b>Returns:</b>
+**Returns:**
 
 TEnumValue

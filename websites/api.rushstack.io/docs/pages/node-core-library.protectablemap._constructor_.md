@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `ProtectableMap` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parameters: IProtectableMapParameters<K, V>);

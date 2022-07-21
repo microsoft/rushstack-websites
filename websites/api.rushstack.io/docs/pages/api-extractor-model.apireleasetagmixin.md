@@ -13,7 +13,7 @@ pagination_next: null
 
 Static members for [ApiReleaseTagMixin](./api-extractor-model.apireleasetagmixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiReleaseTagMixin

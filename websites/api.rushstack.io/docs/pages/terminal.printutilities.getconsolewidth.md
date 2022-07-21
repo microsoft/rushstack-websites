@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns the width of the console, measured in columns
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getConsoleWidth(): number | undefined;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 number \| undefined

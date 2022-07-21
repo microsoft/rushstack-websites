@@ -13,7 +13,7 @@ pagination_next: null
 
 Diagnostic messages regarding the find operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 messages: IFindApiItemsMessage[];

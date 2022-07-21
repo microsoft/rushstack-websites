@@ -13,7 +13,7 @@ pagination_next: null
 
 String constants for command line processing.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare const enum CommandLineConstants

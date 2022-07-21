@@ -13,7 +13,7 @@ pagination_next: null
 
 An integer value used to specify file permissions for POSIX-like operating systems.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum PosixModeBits

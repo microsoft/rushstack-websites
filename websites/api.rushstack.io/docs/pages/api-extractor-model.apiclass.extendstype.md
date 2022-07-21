@@ -13,7 +13,7 @@ pagination_next: null
 
 The base class that this class inherits from (using the `extends` keyword), or undefined if there is no base class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly extendsType: HeritageType | undefined;

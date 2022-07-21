@@ -13,7 +13,7 @@ pagination_next: null
 
 The current webpack compilation, for error reporting
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 compilation: Compilation;

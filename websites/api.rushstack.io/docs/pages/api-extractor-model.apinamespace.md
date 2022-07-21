@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript namespace declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiNamespace extends ApiNamespace_base
 ```
 
-<b>Extends:</b> ApiNamespace_base
+**Extends:** ApiNamespace_base
 
 ## Remarks
 
@@ -37,7 +37,7 @@ export namespace X {
 }
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

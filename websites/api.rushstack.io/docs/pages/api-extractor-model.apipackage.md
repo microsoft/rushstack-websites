@@ -13,19 +13,19 @@ pagination_next: null
 
 Represents an NPM package containing API declarations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiPackage extends ApiPackage_base
 ```
 
-<b>Extends:</b> ApiPackage_base
+**Extends:** ApiPackage_base
 
 ## Remarks
 
 This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of classes, which are serializable representations of API declarations.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

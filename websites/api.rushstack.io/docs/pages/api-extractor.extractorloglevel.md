@@ -13,7 +13,7 @@ pagination_next: null
 
 Used with [IConfigMessageReportingRule.logLevel](./api-extractor.iconfigmessagereportingrule.loglevel.md) and [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare const enum ExtractorLogLevel

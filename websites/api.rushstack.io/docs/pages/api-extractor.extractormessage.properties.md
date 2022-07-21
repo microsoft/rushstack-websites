@@ -13,7 +13,7 @@ pagination_next: null
 
 Additional contextual information about the message that may be useful when reporting errors. All properties are optional.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly properties: IExtractorMessageProperties;

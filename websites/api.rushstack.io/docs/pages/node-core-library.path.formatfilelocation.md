@@ -13,7 +13,7 @@ pagination_next: null
 
 Formats a file location to look nice for reporting purposes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static formatFileLocation(options: IPathFormatFileLocationOptions): string;
@@ -25,7 +25,7 @@ static formatFileLocation(options: IPathFormatFileLocationOptions): string;
 | --------- | --------------------------------------------------------------------------------------- | ----------- |
 | options   | [IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

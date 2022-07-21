@@ -13,7 +13,7 @@ pagination_next: null
 
 The text fragment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get text(): string;

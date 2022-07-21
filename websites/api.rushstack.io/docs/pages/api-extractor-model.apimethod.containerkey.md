@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiMethod.containerKey property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */

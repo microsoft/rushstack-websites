@@ -15,7 +15,7 @@ pagination_next: null
 
 Enumeration defining potential states of an operation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum OperationStatus

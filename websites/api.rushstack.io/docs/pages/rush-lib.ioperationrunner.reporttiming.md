@@ -15,7 +15,7 @@ pagination_next: null
 
 Indicates that this runner's duration has meaning.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reportTiming: boolean;

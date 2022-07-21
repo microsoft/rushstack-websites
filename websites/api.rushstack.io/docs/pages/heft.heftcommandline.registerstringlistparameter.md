@@ -15,7 +15,7 @@ pagination_next: null
 
 Utility method used by Heft plugins to register a stringList type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerStringListParameter(options: IHeftRegisterParameterOptions<ICommandLineStringListDefinition>): IHeftStringListParameter;
@@ -27,6 +27,6 @@ registerStringListParameter(options: IHeftRegisterParameterOptions<ICommandLineS
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) &lt;[ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IHeftStringListParameter](./heft.iheftstringlistparameter.md)

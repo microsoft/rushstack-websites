@@ -13,7 +13,7 @@ pagination_next: null
 
 Hooks provided by the ModuleMinifierPlugin
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinifierPluginHooks

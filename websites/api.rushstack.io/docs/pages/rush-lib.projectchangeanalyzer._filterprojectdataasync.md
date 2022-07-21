@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 _filterProjectDataAsync<T>(project: RushConfigurationProject, unfilteredProjectData: Map<string, T>, rootDir: string, terminal: ITerminal): Promise<Map<string, T>>;
@@ -28,6 +28,6 @@ _filterProjectDataAsync<T>(project: RushConfigurationProject, unfilteredProjectD
 | rootDir               | string                                                             |             |
 | terminal              | [ITerminal](./node-core-library.iterminal.md)                      |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Map&lt;string, T&gt;&gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Packages approved for usage everywhere \*except\* in a web browser.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get nonbrowserApprovedPackages(): ApprovedPackagesConfiguration;

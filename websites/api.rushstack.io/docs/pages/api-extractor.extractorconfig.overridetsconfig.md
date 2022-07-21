@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly overrideTsconfig: {} | undefined;

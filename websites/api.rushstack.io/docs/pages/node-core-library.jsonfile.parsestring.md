@@ -13,7 +13,7 @@ pagination_next: null
 
 Parses a JSON file's contents.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static parseString(jsonContents: string): JsonObject;
@@ -25,6 +25,6 @@ static parseString(jsonContents: string): JsonObject;
 | ------------ | ------ | ----------- |
 | jsonContents | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonObject](./node-core-library.jsonobject.md)

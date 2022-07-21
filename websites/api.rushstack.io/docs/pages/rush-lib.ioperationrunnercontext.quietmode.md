@@ -15,7 +15,7 @@ pagination_next: null
 
 Defaults to `true` . Will be `false` if Rush was invoked with `--verbose` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 quietMode: boolean;

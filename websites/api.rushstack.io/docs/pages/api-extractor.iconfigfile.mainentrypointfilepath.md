@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported by this module.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mainEntryPointFilePath: string;

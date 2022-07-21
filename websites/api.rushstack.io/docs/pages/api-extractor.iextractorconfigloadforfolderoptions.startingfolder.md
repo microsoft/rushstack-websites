@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder path to start from when searching for api-extractor.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 startingFolder: string;

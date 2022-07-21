@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.ignoreString property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreString?: IgnoreStringFunction;

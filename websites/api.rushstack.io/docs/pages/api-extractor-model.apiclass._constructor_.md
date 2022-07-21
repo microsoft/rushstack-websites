@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `ApiClass` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: IApiClassOptions);

@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript variable declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiVariable extends ApiVariable_base
 ```
 
-<b>Extends:</b> ApiVariable_base
+**Extends:** ApiVariable_base
 
 ## Remarks
 
@@ -35,7 +35,7 @@ export let verboseLogging: boolean;
 export const canvas: IWidget = createCanvas();
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

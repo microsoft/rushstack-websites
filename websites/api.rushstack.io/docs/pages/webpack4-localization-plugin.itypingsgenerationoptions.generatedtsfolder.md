@@ -13,7 +13,7 @@ pagination_next: null
 
 This property specifies the folder in which `.d.ts` files for loc files should be dropped.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generatedTsFolder: string;

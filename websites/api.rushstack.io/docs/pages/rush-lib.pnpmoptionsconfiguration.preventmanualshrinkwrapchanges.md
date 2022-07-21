@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then `rush install` will report an error if manual modifications were made to the PNPM shrinkwrap file without running `rush update` afterwards.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly preventManualShrinkwrapChanges: boolean;

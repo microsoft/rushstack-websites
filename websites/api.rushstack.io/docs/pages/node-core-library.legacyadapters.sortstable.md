@@ -13,7 +13,7 @@ pagination_next: null
 
 Prior to Node 11.x, the `Array.sort()` algorithm is not guaranteed to be stable. If you need a stable sort, you can use `sortStable()` as a workaround.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sortStable<T>(array: T[], compare?: (a: T, b: T) => number): void;
@@ -26,7 +26,7 @@ static sortStable<T>(array: T[], compare?: (a: T, b: T) => number): void;
 | array     | T\[\]                     |                   |
 | compare   | (a: T, b: T) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

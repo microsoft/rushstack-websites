@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStats.entrypoints property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 entrypoints: {

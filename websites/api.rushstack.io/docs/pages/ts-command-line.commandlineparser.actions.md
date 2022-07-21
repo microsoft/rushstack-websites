@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the list of actions that were defined for this CommandLineParser object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get actions(): ReadonlyArray<CommandLineAction>;

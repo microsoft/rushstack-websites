@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the current command line action is tab-complete.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isTabCompletionActionRequest(argv: string[]): boolean;
@@ -25,6 +25,6 @@ static isTabCompletionActionRequest(argv: string[]): boolean;
 | --------- | ---------- | ----------- |
 | argv      | string\[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

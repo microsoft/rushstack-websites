@@ -15,7 +15,7 @@ pagination_next: null
 
 Specifies the maximum number of trailing lines to include in the summary.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 trailingLines?: number;

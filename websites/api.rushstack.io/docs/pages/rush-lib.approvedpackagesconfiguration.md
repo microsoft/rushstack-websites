@@ -13,7 +13,7 @@ pagination_next: null
 
 This represents the JSON file specified via the "approvedPackagesFile" option in rush.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApprovedPackagesConfiguration

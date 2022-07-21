@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiNameMixinOptions.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

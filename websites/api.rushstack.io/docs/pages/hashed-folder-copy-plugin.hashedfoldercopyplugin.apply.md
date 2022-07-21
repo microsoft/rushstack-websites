@@ -11,7 +11,7 @@ pagination_next: null
 
 ## HashedFolderCopyPlugin.apply() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(compiler: webpack.Compiler): void;
@@ -23,6 +23,6 @@ apply(compiler: webpack.Compiler): void;
 | --------- | ---------------- | ----------- |
 | compiler  | webpack.Compiler |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

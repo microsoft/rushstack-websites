@@ -13,7 +13,7 @@ pagination_next: null
 
 The version of the locally installed NPM tool. (Example: "1.2.3")
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageManagerToolVersion(): string;

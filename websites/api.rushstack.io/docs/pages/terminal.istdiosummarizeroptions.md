@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructor options for [StdioSummarizer](./terminal.stdiosummarizer.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStdioSummarizerOptions

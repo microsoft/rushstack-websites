@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for the CommandLineAction constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineActionOptions

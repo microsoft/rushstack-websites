@@ -13,7 +13,7 @@ pagination_next: null
 
 Upstream objects call this method to provide inputs to this object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @sealed */
@@ -26,7 +26,7 @@ writeChunk(chunk: ITerminalChunk): void;
 | --------- | ---------------------------------------------- | ----------- |
 | chunk     | [ITerminalChunk](./terminal.iterminalchunk.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

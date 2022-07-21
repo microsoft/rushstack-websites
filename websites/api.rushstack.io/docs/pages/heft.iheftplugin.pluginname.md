@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IHeftPlugin.pluginName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pluginName: string;

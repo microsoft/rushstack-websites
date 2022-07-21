@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, will normalize line endings to the specified style of newline.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 convertLineEndings?: NewlineKind;

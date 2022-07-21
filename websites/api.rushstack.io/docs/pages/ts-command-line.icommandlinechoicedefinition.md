@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md) , this interface defines a command line parameter which is constrained to a list of possible options.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineChoiceDefinition extends IBaseCommandLineDefinition
 ```
 
-<b>Extends:</b> [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
+**Extends:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
 
 ## Properties
 

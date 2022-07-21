@@ -15,12 +15,12 @@ pagination_next: null
 
 Resets EnvironmentConfiguration into an un-initialized state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static reset(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

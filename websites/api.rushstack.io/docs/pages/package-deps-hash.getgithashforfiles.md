@@ -13,7 +13,7 @@ pagination_next: null
 
 Takes a list of files and returns the current git hashes for them
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getGitHashForFiles(
@@ -31,6 +31,6 @@ export declare function getGitHashForFiles(
 | packagePath | string     |                   |
 | gitPath     | string     | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, string&gt;

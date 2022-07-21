@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IModuleStats.sizeByHash property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sizeByHash: Map<string, number>;

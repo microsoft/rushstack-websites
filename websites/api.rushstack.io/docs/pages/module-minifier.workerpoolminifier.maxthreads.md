@@ -11,7 +11,7 @@ pagination_next: null
 
 ## WorkerPoolMinifier.maxThreads property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get maxThreads(): number;

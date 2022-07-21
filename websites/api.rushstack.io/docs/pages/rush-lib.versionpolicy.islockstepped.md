@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether it is a lockstepped version policy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isLockstepped(): boolean;

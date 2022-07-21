@@ -13,7 +13,7 @@ pagination_next: null
 
 Runtime options for Extractor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtractorInvokeOptions

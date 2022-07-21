@@ -13,7 +13,7 @@ pagination_next: null
 
 Typings for one of the streams inside IExecutableSpawnSyncOptions.stdio.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type ExecutableStdioStreamMapping =

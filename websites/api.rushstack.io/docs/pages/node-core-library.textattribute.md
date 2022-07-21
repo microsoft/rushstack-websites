@@ -15,7 +15,7 @@ pagination_next: null
 
 Text styles used with [IColorableSequence](./node-core-library.icolorablesequence.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum TextAttribute

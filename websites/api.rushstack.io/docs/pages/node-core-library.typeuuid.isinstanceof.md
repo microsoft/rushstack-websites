@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the `targetObject` is an instance of a JavaScript class that was previously registered using the specified `typeUuid` . Base classes are also considered.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isInstanceOf(targetObject: unknown, typeUuid: string): boolean;
@@ -26,6 +26,6 @@ static isInstanceOf(targetObject: unknown, typeUuid: string): boolean;
 | targetObject | unknown |             |
 | typeUuid     | string  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

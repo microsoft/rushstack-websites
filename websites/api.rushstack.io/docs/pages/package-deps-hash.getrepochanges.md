@@ -15,7 +15,7 @@ pagination_next: null
 
 Find all changed files tracked by Git, their current hashes, and the nature of the change. Only useful if all changes are staged or committed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getRepoChanges(
@@ -33,7 +33,7 @@ export declare function getRepoChanges(
 | revision                | string | <i>(Optional)</i> The Git revision specifier to detect changes relative to. Defaults to HEAD (i.e. will compare staged vs. committed) If comparing against a different branch, call <code>git merge-base</code> first to find the target commit. |
 | gitPath                 | string | <i>(Optional)</i> The path to the Git executable                                                                                                                                                                                                 |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, [IFileDiffStatus](./package-deps-hash.ifilediffstatus.md) &gt;
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 A map of commandline parameter names to their effective values
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 commandParameters: Record<string, string>;

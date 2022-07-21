@@ -11,7 +11,7 @@ pagination_next: null
 
 ## SplitterTransform.destinations property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly destinations: ReadonlyArray<TerminalWritable>;

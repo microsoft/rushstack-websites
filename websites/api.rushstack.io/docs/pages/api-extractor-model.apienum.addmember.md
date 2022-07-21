@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiEnum.addMember() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ addMember(member: ApiEnumMember): void;
 | --------- | ------------------------------------------------------- | ----------- |
 | member    | [ApiEnumMember](./api-extractor-model.apienummember.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

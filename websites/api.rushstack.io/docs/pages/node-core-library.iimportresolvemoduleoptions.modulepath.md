@@ -13,7 +13,7 @@ pagination_next: null
 
 The module identifier to resolve. For example " @ rushstack/node-core-library" or " @ rushstack/node-core-library/lib/index.js"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modulePath: string;

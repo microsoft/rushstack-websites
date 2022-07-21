@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBundleSubstageProperties interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBundleSubstageProperties

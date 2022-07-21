@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStringValueTyping.comment property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 comment?: string;

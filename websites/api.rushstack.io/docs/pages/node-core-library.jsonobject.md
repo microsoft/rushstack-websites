@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a JSON-serializable object whose type has not been determined yet.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type JsonObject = any;

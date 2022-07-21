@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if `path1` and `path2` refer to the same underlying path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isEqual(path1: string, path2: string): boolean;
@@ -26,7 +26,7 @@ static isEqual(path1: string, path2: string): boolean;
 | path1     | string |             |
 | path2     | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

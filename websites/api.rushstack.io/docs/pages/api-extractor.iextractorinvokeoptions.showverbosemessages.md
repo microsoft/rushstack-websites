@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, API Extractor will include [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) messages in its output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 showVerboseMessages?: boolean;

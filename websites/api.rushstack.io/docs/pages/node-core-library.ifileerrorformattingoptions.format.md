@@ -13,7 +13,7 @@ pagination_next: null
 
 The format for the error message. If no format is provided, format 'Unix' is used by default.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 format?: FileLocationStyle;

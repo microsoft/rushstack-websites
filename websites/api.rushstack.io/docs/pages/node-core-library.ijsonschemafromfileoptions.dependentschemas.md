@@ -13,7 +13,7 @@ pagination_next: null
 
 Other schemas that this schema references, e.g. via the "$ref" directive.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dependentSchemas?: JsonSchema[];

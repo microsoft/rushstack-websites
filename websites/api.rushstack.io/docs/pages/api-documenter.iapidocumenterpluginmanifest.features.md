@@ -13,7 +13,7 @@ pagination_next: null
 
 The list of features provided by this plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 features: IFeatureDefinition[];

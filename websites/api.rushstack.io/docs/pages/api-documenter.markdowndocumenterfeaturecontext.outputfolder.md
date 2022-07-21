@@ -13,7 +13,7 @@ pagination_next: null
 
 The full path to the output folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly outputFolder: string;

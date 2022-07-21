@@ -15,7 +15,7 @@ pagination_next: null
 
 Registers a child process so that it will be terminated automatically if the current process is terminated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static killProcessTreeOnExit(subprocess: child_process.ChildProcess, subprocessOptions: ISubprocessOptions): void;
@@ -28,6 +28,6 @@ static killProcessTreeOnExit(subprocess: child_process.ChildProcess, subprocessO
 | subprocess        | child_process.ChildProcess                                      |             |
 | subprocessOptions | [ISubprocessOptions](./node-core-library.isubprocessoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -15,7 +15,7 @@ pagination_next: null
 
 Indicates if the output of this operation may be written to the cache
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isCacheWriteAllowed: boolean;

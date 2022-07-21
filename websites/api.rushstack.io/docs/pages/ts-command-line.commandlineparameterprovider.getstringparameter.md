@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the CommandLineStringParameter with the specified long name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getStringParameter(parameterLongName: string, parameterScope?: string): CommandLineStringParameter;
@@ -26,7 +26,7 @@ getStringParameter(parameterLongName: string, parameterScope?: string): CommandL
 | parameterLongName | string |                   |
 | parameterScope    | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineStringParameter](./ts-command-line.commandlinestringparameter.md)
 

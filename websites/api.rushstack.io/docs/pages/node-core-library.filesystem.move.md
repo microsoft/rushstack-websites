@@ -13,7 +13,7 @@ pagination_next: null
 
 Moves a file. The folder must exist, unless the `ensureFolderExists` option is provided. Behind the scenes it uses `fs-extra.moveSync()`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static move(options: IFileSystemMoveOptions): void;
@@ -25,6 +25,6 @@ static move(options: IFileSystemMoveOptions): void;
 | --------- | ----------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemMoveOptions](./node-core-library.ifilesystemmoveoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

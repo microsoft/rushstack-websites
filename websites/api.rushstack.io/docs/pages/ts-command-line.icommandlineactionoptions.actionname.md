@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the action. For example, if the tool is called "example", then the "build" action might be invoked as: "example build -q --some-other-option"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 actionName: string;

@@ -13,13 +13,13 @@ pagination_next: null
 
 Options that all package managers share.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class PackageManagerOptionsConfigurationBase implements IPackageManagerOptionsJsonBase
 ```
 
-<b>Implements:</b> [IPackageManagerOptionsJsonBase](./rush-lib.ipackagemanageroptionsjsonbase.md)
+**Implements:** [IPackageManagerOptionsJsonBase](./rush-lib.ipackagemanageroptionsjsonbase.md)
 
 ## Remarks
 

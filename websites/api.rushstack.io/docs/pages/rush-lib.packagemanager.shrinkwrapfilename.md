@@ -13,7 +13,7 @@ pagination_next: null
 
 The filename of the shrinkwrap file that is used by the package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get shrinkwrapFilename(): string;

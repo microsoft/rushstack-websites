@@ -13,7 +13,7 @@ pagination_next: null
 
 Version policy base type names
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum VersionPolicyDefinitionName

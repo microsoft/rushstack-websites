@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.parseAndGenerateTypings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parseAndGenerateTypings: (fileContents: string, filePath: string, relativePath: string) => TTypingsResult | Promise<TTypingsResult>;

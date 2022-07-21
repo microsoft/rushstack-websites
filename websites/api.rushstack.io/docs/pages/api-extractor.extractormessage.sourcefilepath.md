@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path to the affected input source file, if there is one.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly sourceFilePath: string | undefined;

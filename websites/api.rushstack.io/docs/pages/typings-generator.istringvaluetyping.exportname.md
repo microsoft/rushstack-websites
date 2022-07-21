@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStringValueTyping.exportName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportName: string;

@@ -15,7 +15,7 @@ pagination_next: null
 >
 > TODO: Remove when version 1.0.0 is released.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filesToIgnore?: string[];

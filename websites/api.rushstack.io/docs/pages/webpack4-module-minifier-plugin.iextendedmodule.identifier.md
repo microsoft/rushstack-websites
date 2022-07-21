@@ -13,12 +13,12 @@ pagination_next: null
 
 Gets a descriptive identifier for the module.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 identifier(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

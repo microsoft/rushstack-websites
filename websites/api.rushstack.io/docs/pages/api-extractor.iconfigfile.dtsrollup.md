@@ -15,7 +15,7 @@ pagination_next: null
 
 Configures how the .d.ts rollup file will be generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dtsRollup?: IConfigDtsRollup;

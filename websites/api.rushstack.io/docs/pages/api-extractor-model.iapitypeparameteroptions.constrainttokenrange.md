@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiTypeParameterOptions.constraintTokenRange property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constraintTokenRange: IExcerptTokenRange;

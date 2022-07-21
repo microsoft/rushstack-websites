@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the TSDoc tag name for a `ReleaseTag` value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function getTagName(releaseTag: ReleaseTag): string;
@@ -25,7 +25,7 @@ function getTagName(releaseTag: ReleaseTag): string;
 | ---------- | ------------------------------------------------- | ----------- |
 | releaseTag | [ReleaseTag](./api-extractor-model.releasetag.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

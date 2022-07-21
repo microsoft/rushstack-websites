@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns the chain of ancestors, starting from the root of the tree, and ending with the this item.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getHierarchy(): ReadonlyArray<ApiItem>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 ReadonlyArray&lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;

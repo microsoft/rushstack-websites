@@ -13,7 +13,7 @@ pagination_next: null
 
 If the file exists, calls loadFromFile().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryLoadFromFile(approvedPackagesPolicyEnabled: boolean): boolean;
@@ -25,6 +25,6 @@ tryLoadFromFile(approvedPackagesPolicyEnabled: boolean): boolean;
 | ----------------------------- | ------- | ----------- |
 | approvedPackagesPolicyEnabled | boolean |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

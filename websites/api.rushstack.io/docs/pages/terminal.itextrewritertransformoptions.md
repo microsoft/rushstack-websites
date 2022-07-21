@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [TextRewriterTransform](./terminal.textrewritertransform.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITextRewriterTransformOptions extends ITerminalTransformOptions
 ```
 
-<b>Extends:</b> [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
+**Extends:** [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
 
 ## Properties
 

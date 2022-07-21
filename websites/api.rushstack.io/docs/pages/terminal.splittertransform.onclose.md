@@ -11,12 +11,12 @@ pagination_next: null
 
 ## SplitterTransform.onClose() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onClose(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -15,7 +15,7 @@ pagination_next: null
 >
 > Use [FileSystem.readFolderItemNamesAsync()](./node-core-library.filesystem.readfolderitemnamesasync.md) instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFolderAsync(folderPath: string, options?: IFileSystemReadFolderOptions): Promise<string[]>;
@@ -28,6 +28,6 @@ static readFolderAsync(folderPath: string, options?: IFileSystemReadFolderOption
 | folderPath | string                                                                              |                   |
 | options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string\[\]&gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 A "branded type" is a primitive type with a compile-type key that makes it incompatible with other aliases for the primitive type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type Brand<T, BrandTag extends string> = T & {

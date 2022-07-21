@@ -11,13 +11,13 @@ pagination_next: null
 
 ## HashedFolderCopyPlugin class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HashedFolderCopyPlugin implements webpack.Plugin
 ```
 
-<b>Implements:</b> webpack.Plugin
+**Implements:** webpack.Plugin
 
 ## Constructors
 

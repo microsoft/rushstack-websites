@@ -13,7 +13,7 @@ pagination_next: null
 
 An item returned by ApprovedPackagesConfiguration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApprovedPackagesItem

@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, instead of loading the `config/rig.json` from disk, this object will be substituted instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 overrideRigJsonObject?: IRigConfigJson;

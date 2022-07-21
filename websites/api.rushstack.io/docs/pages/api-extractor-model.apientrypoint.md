@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents the entry point for an NPM package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiEntryPoint extends ApiEntryPoint_base
 ```
 
-<b>Extends:</b> ApiEntryPoint_base
+**Extends:** ApiEntryPoint_base
 
 ## Remarks
 
@@ -40,7 +40,7 @@ For example, suppose the package.json file looks like this:
 
 In this example, the `ApiEntryPoint` would represent the TypeScript module for `./lib/index.js` .
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

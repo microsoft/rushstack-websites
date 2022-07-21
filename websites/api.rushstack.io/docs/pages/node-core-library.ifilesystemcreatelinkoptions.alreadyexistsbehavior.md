@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies what to do if the path to create already exists. The default is `AlreadyExistsBehavior.Error` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alreadyExistsBehavior?: AlreadyExistsBehavior;

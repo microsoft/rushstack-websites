@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonEditor.filePath property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get filePath(): string;

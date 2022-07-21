@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads the api-extractor.json config file from the specified file path, and prepares an `ExtractorConfig` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFileAndPrepare(configJsonFilePath: string): ExtractorConfig;
@@ -25,7 +25,7 @@ static loadFileAndPrepare(configJsonFilePath: string): ExtractorConfig;
 | ------------------ | ------ | ----------- |
 | configJsonFilePath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ExtractorConfig](./api-extractor.extractorconfig.md)
 

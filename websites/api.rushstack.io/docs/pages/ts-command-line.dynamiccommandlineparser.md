@@ -11,13 +11,13 @@ pagination_next: null
 
 ## DynamicCommandLineParser class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DynamicCommandLineParser extends CommandLineParser
 ```
 
-<b>Extends:</b> [CommandLineParser](./ts-command-line.commandlineparser.md)
+**Extends:** [CommandLineParser](./ts-command-line.commandlineparser.md)
 
 ## Constructors
 

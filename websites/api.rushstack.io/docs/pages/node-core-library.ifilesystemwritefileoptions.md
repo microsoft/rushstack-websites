@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemWriteFileOptions

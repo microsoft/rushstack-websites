@@ -13,7 +13,7 @@ pagination_next: null
 
 The full path of a backup copy of tempShrinkwrapFilename. This backup copy is made before installation begins, and can be compared to determine how the package manager modified tempShrinkwrapFilename.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tempShrinkwrapPreinstallFilename(): string;

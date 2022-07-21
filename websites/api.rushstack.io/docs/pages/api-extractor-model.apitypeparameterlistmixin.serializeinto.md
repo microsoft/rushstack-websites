@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiTypeParameterListMixin.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serializeInto(jsonObject: Partial<IApiItemJson>): void;
@@ -23,6 +23,6 @@ serializeInto(jsonObject: Partial<IApiItemJson>): void;
 | ---------- | --------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiItemJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 The root folder for the project that the error is in relation to.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly projectFolder: string;

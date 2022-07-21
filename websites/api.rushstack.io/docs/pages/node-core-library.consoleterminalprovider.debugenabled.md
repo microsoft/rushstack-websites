@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, debug-level messages should be written to the console.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 debugEnabled: boolean;

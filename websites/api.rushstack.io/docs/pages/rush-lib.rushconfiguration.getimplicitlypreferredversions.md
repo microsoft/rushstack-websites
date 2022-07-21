@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a map of all direct dependencies that only have a single semantic version specifier.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getImplicitlyPreferredVersions(variant?: string | undefined): Map<string, string>;
@@ -25,7 +25,7 @@ getImplicitlyPreferredVersions(variant?: string | undefined): Map<string, string
 | --------- | ------------------- | ------------------------------------------------------------------------------- |
 | variant   | string \| undefined | <i>(Optional)</i> The name of the current variant in use by the active command. |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, string&gt;
 

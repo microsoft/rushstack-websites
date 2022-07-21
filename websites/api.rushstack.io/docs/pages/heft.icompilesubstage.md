@@ -11,13 +11,13 @@ pagination_next: null
 
 ## ICompileSubstage interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICompileSubstage extends IBuildSubstage<CompileSubstageHooks, ICompileSubstageProperties>
 ```
 
-<b>Extends:</b> [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[CompileSubstageHooks](./heft.compilesubstagehooks.md) , [ICompileSubstageProperties](./heft.icompilesubstageproperties.md)
+**Extends:** [IBuildSubstage](./heft.ibuildsubstage.md) &lt;[CompileSubstageHooks](./heft.compilesubstagehooks.md) , [ICompileSubstageProperties](./heft.icompilesubstageproperties.md)
 
 ## Properties
 

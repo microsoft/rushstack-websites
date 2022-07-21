@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IFactoryMeta.skipMinification property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skipMinification?: boolean;

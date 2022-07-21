@@ -13,12 +13,12 @@ pagination_next: null
 
 Returns preferredVersions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getAllPreferredVersions(): Map<string, string>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, string&gt;

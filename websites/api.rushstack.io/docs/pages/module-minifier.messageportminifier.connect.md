@@ -11,12 +11,12 @@ pagination_next: null
 
 ## MessagePortMinifier.connect() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 connect(): Promise<IMinifierConnection>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IMinifierConnection](./module-minifier.iminifierconnection.md) &gt;

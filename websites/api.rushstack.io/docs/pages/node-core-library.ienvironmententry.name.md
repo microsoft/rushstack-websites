@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the environment variable.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

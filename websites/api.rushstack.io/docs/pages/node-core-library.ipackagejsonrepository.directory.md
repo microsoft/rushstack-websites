@@ -13,7 +13,7 @@ pagination_next: null
 
 If the project does not exist at the root of the repository, its path is specified here.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 directory?: string;

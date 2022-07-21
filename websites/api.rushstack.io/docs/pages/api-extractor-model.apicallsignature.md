@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript function call signature.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiCallSignature extends ApiCallSignature_base
 ```
 
-<b>Extends:</b> ApiCallSignature_base
+**Extends:** ApiCallSignature_base
 
 ## Remarks
 
@@ -43,7 +43,7 @@ function chooseFirst<T>(x: T, y: T): T {
 let chooser: IChooser = chooseFirst;
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

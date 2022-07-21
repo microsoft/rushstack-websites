@@ -13,7 +13,7 @@ pagination_next: null
 
 RegExp for replacing chunk module placeholders
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CHUNK_MODULE_REGEX: RegExp;

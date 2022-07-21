@@ -13,13 +13,13 @@ pagination_next: null
 
 A serializable representation of a collection of API declarations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiModel extends ApiModel_base
 ```
 
-<b>Extends:</b> ApiModel_base
+**Extends:** ApiModel_base
 
 ## Remarks
 
@@ -48,7 +48,7 @@ Things that can contain other things:
 
 Normally, API Extractor writes an .api.json file to disk for each project that it builds. Then, a tool like API Documenter can load the various `ApiPackage` objects into a single `ApiModel` and process them as a group. This is useful because compilation generally occurs separately (e.g. because projects may reside in different Git repos, or because they build with different TypeScript compiler configurations that may be incompatible), whereas API Documenter cannot detect broken hyperlinks without seeing the entire documentation set.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

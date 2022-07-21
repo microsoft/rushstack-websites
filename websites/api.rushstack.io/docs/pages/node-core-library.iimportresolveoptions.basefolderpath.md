@@ -13,7 +13,7 @@ pagination_next: null
 
 The path from which [IImportResolveModuleOptions.modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md) or [IImportResolvePackageOptions.packageName](./node-core-library.iimportresolvepackageoptions.packagename.md) should be resolved.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 baseFolderPath: string;

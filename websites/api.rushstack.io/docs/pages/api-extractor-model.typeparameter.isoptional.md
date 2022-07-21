@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the type parameter is optional. True IFF there exists a `defaultTypeExcerpt` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isOptional: boolean;

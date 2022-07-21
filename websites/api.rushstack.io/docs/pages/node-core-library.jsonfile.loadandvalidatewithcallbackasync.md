@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [JsonFile.loadAndValidateWithCallback()](./node-core-library.jsonfile.loadandvalidatewithcallback.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAndValidateWithCallbackAsync(jsonFilename: string, jsonSchema: JsonSchema, errorCallback: (errorInfo: IJsonSchemaErrorInfo) => void): Promise<JsonObject>;
@@ -27,6 +27,6 @@ static loadAndValidateWithCallbackAsync(jsonFilename: string, jsonSchema: JsonSc
 | jsonSchema    | [JsonSchema](./node-core-library.jsonschema.md)                                              |             |
 | errorCallback | (errorInfo: [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md) ) =&gt; void |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[JsonObject](./node-core-library.jsonobject.md) &gt;

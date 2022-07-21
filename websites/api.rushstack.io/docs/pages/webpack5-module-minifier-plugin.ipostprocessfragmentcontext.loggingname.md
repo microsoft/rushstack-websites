@@ -13,7 +13,7 @@ pagination_next: null
 
 A name to use for logging
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loggingName: string;

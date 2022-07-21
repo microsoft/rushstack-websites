@@ -15,13 +15,13 @@ pagination_next: null
 
 Terminal provider that stores written data in buffers separated by severity. This terminal provider is designed to be used when code that prints to a terminal is being unit tested.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StringBufferTerminalProvider implements ITerminalProvider
 ```
 
-<b>Implements:</b> [ITerminalProvider](./node-core-library.iterminalprovider.md)
+**Implements:** [ITerminalProvider](./node-core-library.iterminalprovider.md)
 
 ## Constructors
 

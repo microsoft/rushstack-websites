@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "gitPolicy" feature.\] The commit message to use when committing changes during 'rush publish'
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get gitVersionBumpCommitMessage(): string | undefined;

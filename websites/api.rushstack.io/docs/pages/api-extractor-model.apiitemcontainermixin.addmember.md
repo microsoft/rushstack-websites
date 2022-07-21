@@ -13,7 +13,7 @@ pagination_next: null
 
 Adds a new member to the container.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addMember(member: ApiItem): void;
@@ -25,7 +25,7 @@ addMember(member: ApiItem): void;
 | --------- | ------------------------------------------- | ----------- |
 | member    | [ApiItem](./api-extractor-model.apiitem.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

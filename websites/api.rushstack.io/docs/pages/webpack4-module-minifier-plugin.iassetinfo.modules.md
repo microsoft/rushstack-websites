@@ -13,7 +13,7 @@ pagination_next: null
 
 The ids of the modules that are part of the chunk corresponding to this asset
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modules: (string | number)[];

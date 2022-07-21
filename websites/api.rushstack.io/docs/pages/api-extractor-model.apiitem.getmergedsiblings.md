@@ -13,13 +13,13 @@ pagination_next: null
 
 If this item has a name (i.e. extends `ApiNameMixin` ), then return all items that have the same parent and the same name. Otherwise, return all items that have the same parent and the same `ApiItemKind` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getMergedSiblings(): ReadonlyArray<ApiItem>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 ReadonlyArray&lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;
 

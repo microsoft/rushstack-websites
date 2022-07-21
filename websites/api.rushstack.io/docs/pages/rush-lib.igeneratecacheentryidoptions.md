@@ -15,7 +15,7 @@ pagination_next: null
 
 Options for generating the cache id for an operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IGenerateCacheEntryIdOptions

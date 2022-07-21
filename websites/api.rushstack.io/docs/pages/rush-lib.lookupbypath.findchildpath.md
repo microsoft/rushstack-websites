@@ -15,7 +15,7 @@ pagination_next: null
 
 Searches for the item associated with `childPath` , or the nearest ancestor of that path that has an associated item.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findChildPath(childPath: string): TItem | undefined;
@@ -27,7 +27,7 @@ findChildPath(childPath: string): TItem | undefined;
 | --------- | ------ | ----------- |
 | childPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 TItem \| undefined
 

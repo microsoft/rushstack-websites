@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures how the API report files (\*.api.md) will be generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiReport?: IConfigApiReport;

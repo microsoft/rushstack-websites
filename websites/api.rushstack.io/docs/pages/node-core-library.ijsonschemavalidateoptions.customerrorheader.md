@@ -13,7 +13,7 @@ pagination_next: null
 
 A custom header that will be used to report schema errors.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 customErrorHeader?: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Optionally specifies a value for the "toolPackage" field in the output .api.json data file; otherwise, the value will be "api-extractor-model".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toolPackage?: string;

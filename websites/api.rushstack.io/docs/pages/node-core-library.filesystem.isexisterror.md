@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the error object indicates the file or folder already exists (`EEXIST` ).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isExistError(error: Error): boolean;
@@ -25,6 +25,6 @@ static isExistError(error: Error): boolean;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

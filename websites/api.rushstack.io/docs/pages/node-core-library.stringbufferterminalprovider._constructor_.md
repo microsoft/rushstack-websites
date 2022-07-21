@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructs a new instance of the `StringBufferTerminalProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(supportsColor?: boolean);

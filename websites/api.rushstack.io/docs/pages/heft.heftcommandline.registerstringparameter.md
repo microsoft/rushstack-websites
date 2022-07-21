@@ -15,7 +15,7 @@ pagination_next: null
 
 Utility method used by Heft plugins to register a string type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerStringParameter(options: IHeftRegisterParameterOptions<ICommandLineStringDefinition>): IHeftStringParameter;
@@ -27,6 +27,6 @@ registerStringParameter(options: IHeftRegisterParameterOptions<ICommandLineStrin
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) &lt;[ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IHeftStringParameter](./heft.iheftstringparameter.md)

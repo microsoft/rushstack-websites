@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the absolute path to the lockfile
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get filePath(): string;

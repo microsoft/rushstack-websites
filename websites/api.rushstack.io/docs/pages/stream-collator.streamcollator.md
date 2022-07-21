@@ -15,7 +15,7 @@ pagination_next: null
 
 A static class which manages the output of multiple threads.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StreamCollator

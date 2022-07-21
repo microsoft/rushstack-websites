@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ModuleMinifierPlugin.hooks property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly hooks: IModuleMinifierPluginHooks;

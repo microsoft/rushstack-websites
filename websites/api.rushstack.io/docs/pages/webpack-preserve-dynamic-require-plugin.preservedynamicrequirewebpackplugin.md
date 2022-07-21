@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PreserveDynamicRequireWebpackPlugin class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PreserveDynamicRequireWebpackPlugin

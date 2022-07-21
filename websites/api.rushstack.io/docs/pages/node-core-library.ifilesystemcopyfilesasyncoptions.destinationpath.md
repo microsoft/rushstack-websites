@@ -13,7 +13,7 @@ pagination_next: null
 
 The path that the files will be copied to. The path may be absolute or relative.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 destinationPath: string;

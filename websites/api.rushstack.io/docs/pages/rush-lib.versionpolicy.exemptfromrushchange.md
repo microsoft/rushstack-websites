@@ -13,7 +13,7 @@ pagination_next: null
 
 Determines if a version policy wants to opt out of changelog files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get exemptFromRushChange(): boolean;

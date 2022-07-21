@@ -13,19 +13,19 @@ pagination_next: null
 
 An `Error` subclass that should be thrown to report an unexpected state that may indicate a software defect. An application may handle this error by instructing the end user to report an issue to the application maintainers.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InternalError extends Error
 ```
 
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Remarks
 
 Do not use this class unless you intend to solicit bug reports from end users.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

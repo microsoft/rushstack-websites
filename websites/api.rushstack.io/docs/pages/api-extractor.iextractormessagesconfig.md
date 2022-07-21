@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures how API Extractor reports error and warning messages produced during analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtractorMessagesConfig

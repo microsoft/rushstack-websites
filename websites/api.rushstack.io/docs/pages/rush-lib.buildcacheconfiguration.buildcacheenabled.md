@@ -15,7 +15,7 @@ pagination_next: null
 
 Indicates whether the build cache feature is enabled. Typically it is enabled in the build-cache.json config file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly buildCacheEnabled: boolean;

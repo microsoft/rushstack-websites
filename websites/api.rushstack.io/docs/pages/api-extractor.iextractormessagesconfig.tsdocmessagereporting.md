@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures handling of messages reported by the TSDoc parser when analyzing code comments.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tsdocMessageReporting?: IConfigMessageReportingTable;

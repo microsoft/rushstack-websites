@@ -13,13 +13,13 @@ pagination_next: null
 
 This is a simple tool that generates .d.ts files for non-TS files that can be represented as a simple set of named string exports.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StringValuesTypingsGenerator extends TypingsGenerator
 ```
 
-<b>Extends:</b> [TypingsGenerator](./typings-generator.typingsgenerator.md)
+**Extends:** [TypingsGenerator](./typings-generator.typingsgenerator.md)
 
 ## Constructors
 

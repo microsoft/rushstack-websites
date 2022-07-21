@@ -13,7 +13,7 @@ pagination_next: null
 
 Used to validate a data structure before writing. Reports an error if there are any undefined members.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static validateNoUndefinedMembers(jsonObject: JsonObject): void;
@@ -25,6 +25,6 @@ static validateNoUndefinedMembers(jsonObject: JsonObject): void;
 | ---------- | ----------------------------------------------- | ----------- |
 | jsonObject | [JsonObject](./node-core-library.jsonobject.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

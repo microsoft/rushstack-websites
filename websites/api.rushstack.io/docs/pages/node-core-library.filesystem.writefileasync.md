@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static writeFileAsync(filePath: string, contents: string | Buffer, options?: IFileSystemWriteFileOptions): Promise<void>;
@@ -27,6 +27,6 @@ static writeFileAsync(filePath: string, contents: string | Buffer, options?: IFi
 | contents  | string \| Buffer                                                                  |                   |
 | options   | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

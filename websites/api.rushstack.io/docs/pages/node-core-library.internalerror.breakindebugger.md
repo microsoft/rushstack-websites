@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, a JavScript `debugger;` statement will be invoked whenever the `InternalError` constructor is called.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static breakInDebugger: boolean;

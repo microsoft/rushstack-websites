@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the rig package to use.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rigPackageName: string;

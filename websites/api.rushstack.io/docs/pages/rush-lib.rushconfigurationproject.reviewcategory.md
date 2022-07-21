@@ -13,7 +13,7 @@ pagination_next: null
 
 The review category name, or undefined if no category was assigned. This name must be one of the valid choices listed in RushConfiguration.reviewCategories.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get reviewCategory(): string | undefined;

@@ -13,7 +13,7 @@ pagination_next: null
 
 If this option is set to `true` , loc modules typings will be exported wrapped in a `default` property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportAsDefault?: boolean;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## \_IStringPlaceholder interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStringPlaceholder

@@ -13,7 +13,7 @@ pagination_next: null
 
 This class represents the TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CompilerState

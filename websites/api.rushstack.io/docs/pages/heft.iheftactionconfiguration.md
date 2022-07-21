@@ -13,7 +13,7 @@ pagination_next: null
 
 The base action configuration that all custom action configuration files should inherit from.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IHeftActionConfiguration

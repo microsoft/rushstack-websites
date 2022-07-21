@@ -13,7 +13,7 @@ pagination_next: null
 
 Your subclass that extends from the base class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subclass: {

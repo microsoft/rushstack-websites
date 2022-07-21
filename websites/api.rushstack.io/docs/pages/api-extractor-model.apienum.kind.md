@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiEnum.kind property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */

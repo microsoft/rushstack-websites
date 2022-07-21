@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiInitializerMixinOptions.initializerTokenRange property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 initializerTokenRange?: IExcerptTokenRange;

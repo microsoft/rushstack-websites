@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExcerptToken.kind property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly kind: ExcerptTokenKind;

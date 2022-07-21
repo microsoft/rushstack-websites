@@ -13,7 +13,7 @@ pagination_next: null
 
 Token preceding a module id in the emitted asset so the minifier can operate on the Webpack runtime or chunk boilerplate in isolation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CHUNK_MODULE_TOKEN: '__WEBPACK_CHUNK_MODULE__';

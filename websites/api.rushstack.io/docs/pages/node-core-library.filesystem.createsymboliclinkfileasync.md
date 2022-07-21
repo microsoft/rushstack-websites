@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createSymbolicLinkFileAsync(options: IFileSystemCreateLinkOptions): Promise<void>;
@@ -25,6 +25,6 @@ static createSymbolicLinkFileAsync(options: IFileSystemCreateLinkOptions): Promi
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

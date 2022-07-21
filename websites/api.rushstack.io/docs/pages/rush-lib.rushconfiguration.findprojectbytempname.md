@@ -13,7 +13,7 @@ pagination_next: null
 
 Looks up a project by its RushConfigurationProject.tempProjectName field.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findProjectByTempName(tempProjectName: string): RushConfigurationProject | undefined;
@@ -25,7 +25,7 @@ findProjectByTempName(tempProjectName: string): RushConfigurationProject | undef
 | --------------- | ------ | ----------- |
 | tempProjectName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [RushConfigurationProject](./rush-lib.rushconfigurationproject.md) \| undefined
 

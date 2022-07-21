@@ -13,7 +13,7 @@ pagination_next: null
 
 Operations for working with text strings that contain [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) . The most commonly used escape codes set the foreground/background color for console output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AnsiEscape

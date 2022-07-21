@@ -15,7 +15,7 @@ pagination_next: null
 
 This flag determines if the operation is allowed to be skipped if up to date.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isSkipAllowed: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 This property supports a visitor pattern for walking the tree. For items with ApiItemContainerMixin, it returns the contained items, sorted alphabetically. Otherwise it returns an empty array.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @virtual */

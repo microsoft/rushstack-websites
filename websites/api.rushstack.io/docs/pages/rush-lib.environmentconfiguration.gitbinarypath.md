@@ -15,7 +15,7 @@ pagination_next: null
 
 Allows the git binary path to be explicitly provided. See [EnvironmentVariableNames.RUSH_GIT_BINARY_PATH](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get gitBinaryPath(): string | undefined;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Call this function to emit a warning to the Rush runtime.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emitWarning(warning: Error): void;
@@ -27,6 +27,6 @@ emitWarning(warning: Error): void;
 | --------- | ----- | ----------- |
 | warning   | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

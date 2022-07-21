@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IDefaultLocaleOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IDefaultLocaleOptions

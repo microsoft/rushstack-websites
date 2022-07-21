@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IHeftSessionHooks.clean property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 clean: SyncHook<ICleanStageContext>;

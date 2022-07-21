@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor options for [CallbackWritable](./terminal.callbackwritable.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICallbackWritableOptions

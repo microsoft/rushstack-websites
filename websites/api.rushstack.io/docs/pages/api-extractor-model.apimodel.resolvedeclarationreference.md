@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiModel.resolveDeclarationReference() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolveDeclarationReference(declarationReference: DocDeclarationReference | DeclarationReference, contextApiItem: ApiItem | undefined): IResolveDeclarationReferenceResult;
@@ -24,6 +24,6 @@ resolveDeclarationReference(declarationReference: DocDeclarationReference | Decl
 | declarationReference | DocDeclarationReference \| DeclarationReference          |             |
 | contextApiItem       | [ApiItem](./api-extractor-model.apiitem.md) \| undefined |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IResolveDeclarationReferenceResult](./api-extractor-model.iresolvedeclarationreferenceresult.md)

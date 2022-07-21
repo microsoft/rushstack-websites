@@ -15,7 +15,7 @@ pagination_next: null
 
 Obtains the mapping from custom tags to projects.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectsByTag(): ReadonlyMap<string, ReadonlySet<RushConfigurationProject>>;

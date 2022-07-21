@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.processComment property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 processComment?: (comment: string | undefined, resxFilePath: string, stringName: string) => string | undefined;

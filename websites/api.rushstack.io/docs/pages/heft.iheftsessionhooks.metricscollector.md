@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IHeftSessionHooks.metricsCollector property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metricsCollector: MetricsCollectorHooks;

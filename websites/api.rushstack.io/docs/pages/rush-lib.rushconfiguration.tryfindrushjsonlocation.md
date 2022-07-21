@@ -13,7 +13,7 @@ pagination_next: null
 
 Find the rush.json location and return the path, or undefined if a rush.json can't be found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryFindRushJsonLocation(options?: ITryFindRushJsonLocationOptions): string | undefined;
@@ -25,6 +25,6 @@ static tryFindRushJsonLocation(options?: ITryFindRushJsonLocationOptions): strin
 | --------- | -------------------------------------------------------------------------------- | ----------------- |
 | options   | [ITryFindRushJsonLocationOptions](./rush-lib.itryfindrushjsonlocationoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined

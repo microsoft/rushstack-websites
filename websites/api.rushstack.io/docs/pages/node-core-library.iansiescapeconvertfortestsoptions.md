@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [AnsiEscape.formatForTests()](./node-core-library.ansiescape.formatfortests.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAnsiEscapeConvertForTestsOptions

@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the non-incremental build command.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rebuildCommandName: string;

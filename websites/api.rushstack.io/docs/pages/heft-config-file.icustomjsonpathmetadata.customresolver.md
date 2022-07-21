@@ -15,7 +15,7 @@ pagination_next: null
 
 If `ICustomJsonPathMetadata.pathResolutionMethod` is set to `PathResolutionMethod.custom` , this property be used to resolve the path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 customResolver?: (configurationFilePath: string, propertyName: string, propertyValue: string) => string;

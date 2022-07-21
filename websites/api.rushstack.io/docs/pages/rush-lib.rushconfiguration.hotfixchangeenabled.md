@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "hotfixChange" feature.\] Enables creating hotfix changes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get hotfixChangeEnabled(): boolean;

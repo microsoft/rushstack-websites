@@ -13,7 +13,7 @@ pagination_next: null
 
 Formats a path to look nice for reporting purposes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static formatConcisely(options: IPathFormatConciselyOptions): string;
@@ -25,7 +25,7 @@ static formatConcisely(options: IPathFormatConciselyOptions): string;
 | --------- | --------------------------------------------------------------------------------- | ----------- |
 | options   | [IPathFormatConciselyOptions](./node-core-library.ipathformatconciselyoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

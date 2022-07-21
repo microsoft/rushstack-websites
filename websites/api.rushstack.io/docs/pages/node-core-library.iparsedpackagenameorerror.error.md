@@ -13,7 +13,7 @@ pagination_next: null
 
 If the input string could not be parsed, then this string will contain a nonempty error message. Otherwise it will be an empty string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 error: string;

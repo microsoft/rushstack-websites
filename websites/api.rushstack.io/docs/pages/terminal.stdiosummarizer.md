@@ -15,13 +15,13 @@ pagination_next: null
 
 Summarizes the results of a failed build task by returning a subset of `stderr` output not to exceed a specified maximum number of lines.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StdioSummarizer extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Remarks
 

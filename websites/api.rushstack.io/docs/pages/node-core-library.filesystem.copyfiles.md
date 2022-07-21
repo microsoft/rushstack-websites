@@ -13,7 +13,7 @@ pagination_next: null
 
 Copies a file or folder from one location to another, recursively copying any folder contents. By default, destinationPath is overwritten if it already exists.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static copyFiles(options: IFileSystemCopyFilesOptions): void;
@@ -25,7 +25,7 @@ static copyFiles(options: IFileSystemCopyFilesOptions): void;
 | --------- | --------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -11,15 +11,15 @@ pagination_next: null
 
 ## ILocalizedWebpackChunk interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizedWebpackChunk extends webpack.compilation.Chunk
 ```
 
-<b>Extends:</b> webpack.compilation.Chunk
+**Extends:** webpack.compilation.Chunk
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Properties
 

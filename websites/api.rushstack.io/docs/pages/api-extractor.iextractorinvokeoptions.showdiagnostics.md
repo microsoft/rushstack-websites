@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, API Extractor will print diagnostic information used for troubleshooting problems. These messages will be included as [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 showDiagnostics?: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The program entry point will call this method to begin parsing command-line arguments and executing the corresponding action.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(args?: string[]): Promise<boolean>;
@@ -25,7 +25,7 @@ execute(args?: string[]): Promise<boolean>;
 | --------- | ---------- | --------------------------------------------------------------------------------------------------------- |
 | args      | string\[\] | <i>(Optional)</i> the command-line arguments to be parsed; if omitted, then the process.argv will be used |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

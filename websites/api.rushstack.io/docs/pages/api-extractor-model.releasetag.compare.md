@@ -13,7 +13,7 @@ pagination_next: null
 
 Compares two `ReleaseTag` values. Their values must not be `ReleaseTag.None` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function compare(a: ReleaseTag, b: ReleaseTag): number;
@@ -26,7 +26,7 @@ function compare(a: ReleaseTag, b: ReleaseTag): number;
 | a         | [ReleaseTag](./api-extractor-model.releasetag.md) |             |
 | b         | [ReleaseTag](./api-extractor-model.releasetag.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

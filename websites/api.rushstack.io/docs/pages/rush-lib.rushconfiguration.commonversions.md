@@ -17,7 +17,7 @@ pagination_next: null
 
 Settings from the common-versions.json config file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonVersions(): CommonVersionsConfiguration;

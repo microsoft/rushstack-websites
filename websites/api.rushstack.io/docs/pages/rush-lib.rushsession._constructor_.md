@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructs a new instance of the `RushSession` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: IRushSessionOptions);

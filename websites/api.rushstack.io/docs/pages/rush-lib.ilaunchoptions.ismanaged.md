@@ -13,7 +13,7 @@ pagination_next: null
 
 True if the tool was invoked from within a project with a rush.json file, otherwise false. We consider a project without a rush.json to be "unmanaged" and we'll print that to the command line when the tool is executed. This is mainly used for debugging purposes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isManaged: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 An async variant of [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadForProjectFolderAsync(options: ILoadForProjectFolderOptions): Promise<RigConfig>;
@@ -25,6 +25,6 @@ static loadForProjectFolderAsync(options: ILoadForProjectFolderOptions): Promise
 | --------- | ----------------------------------------------------------------------------- | ----------- |
 | options   | [ILoadForProjectFolderOptions](./rig-package.iloadforprojectfolderoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RigConfig](./rig-package.rigconfig.md) &gt;

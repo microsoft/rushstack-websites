@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies what type of newlines API Extractor should use when writing output files. By default, the output files will be written with Windows-style newlines.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly newlineKind: NewlineKind;

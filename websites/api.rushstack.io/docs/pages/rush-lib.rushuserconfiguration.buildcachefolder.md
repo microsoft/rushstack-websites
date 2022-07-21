@@ -15,7 +15,7 @@ pagination_next: null
 
 If provided, store build cache in the specified folder. Must be an absolute path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly buildCacheFolder: string | undefined;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Subscribe a new terminal provider.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerProvider(provider: ITerminalProvider): void;
@@ -27,6 +27,6 @@ registerProvider(provider: ITerminalProvider): void;
 | --------- | ------------------------------------------------------------- | ----------- |
 | provider  | [ITerminalProvider](./node-core-library.iterminalprovider.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

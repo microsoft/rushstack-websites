@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiParameterListMixinOptions.parameters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameters: IApiParameterOptions[];

@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, a [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md) will be appended to the list of rewriters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 removeColors?: boolean;

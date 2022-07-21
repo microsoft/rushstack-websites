@@ -13,7 +13,7 @@ pagination_next: null
 
 Optionally specifies a value for the "toolVersion" field in the output .api.json data file; otherwise, the value will be the current version of the api-extractor-model package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toolVersion?: string;

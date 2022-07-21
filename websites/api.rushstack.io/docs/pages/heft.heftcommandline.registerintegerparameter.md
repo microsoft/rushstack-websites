@@ -15,7 +15,7 @@ pagination_next: null
 
 Utility method used by Heft plugins to register an integer type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerIntegerParameter(options: IHeftRegisterParameterOptions<ICommandLineIntegerDefinition>): IHeftIntegerParameter;
@@ -27,6 +27,6 @@ registerIntegerParameter(options: IHeftRegisterParameterOptions<ICommandLineInte
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) &lt;[ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IHeftIntegerParameter](./heft.iheftintegerparameter.md)

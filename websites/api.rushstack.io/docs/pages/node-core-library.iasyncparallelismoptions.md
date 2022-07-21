@@ -15,7 +15,7 @@ pagination_next: null
 
 Options for controlling the parallelism of asynchronous operations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IAsyncParallelismOptions

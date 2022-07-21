@@ -13,7 +13,7 @@ pagination_next: null
 
 Refresh the data contained in repo-state.json using the current state of the Rush repo, and save the file if changes were made.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refreshState(rushConfiguration: RushConfiguration): boolean;
@@ -25,7 +25,7 @@ refreshState(rushConfiguration: RushConfiguration): boolean;
 | ----------------- | ---------------------------------------------------- | ------------------------------------ |
 | rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) | The Rush configuration for the repo. |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 The abstract base class for all members of an `ApiModel` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiItem

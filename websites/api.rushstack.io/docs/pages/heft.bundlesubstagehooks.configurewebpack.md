@@ -11,7 +11,7 @@ pagination_next: null
 
 ## BundleSubstageHooks.configureWebpack property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly configureWebpack: AsyncSeriesWaterfallHook<unknown>;

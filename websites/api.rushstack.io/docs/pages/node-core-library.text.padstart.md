@@ -13,7 +13,7 @@ pagination_next: null
 
 Append characters to the start of a string to ensure the result has a minimum length.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static padStart(s: string, minimumLength: number, paddingCharacter?: string): string;
@@ -27,7 +27,7 @@ static padStart(s: string, minimumLength: number, paddingCharacter?: string): st
 | minimumLength    | number |                   |
 | paddingCharacter | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

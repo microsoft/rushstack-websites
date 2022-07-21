@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("pnpmfile.js") used to add custom configuration to PNPM (PNPM version 1.x and later).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly pnpmfileV1Filename: string;

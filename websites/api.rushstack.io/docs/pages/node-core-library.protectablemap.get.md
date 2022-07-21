@@ -13,7 +13,7 @@ pagination_next: null
 
 Retrieves the value for the specified key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(key: K): V | undefined;
@@ -25,7 +25,7 @@ get(key: K): V | undefined;
 | --------- | ---- | ----------- |
 | key       | K    |             |
 
-<b>Returns:</b>
+**Returns:**
 
 V \| undefined
 

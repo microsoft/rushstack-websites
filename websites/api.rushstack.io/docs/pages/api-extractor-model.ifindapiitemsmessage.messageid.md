@@ -15,7 +15,7 @@ pagination_next: null
 
 Unique identifier for the message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 messageId: FindApiItemsMessageId;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the incremental build command.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly buildCommandName: string;

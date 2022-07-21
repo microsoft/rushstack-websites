@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static initializeAsync(options: ICredentialCacheOptions): Promise<CredentialCache>;
@@ -25,6 +25,6 @@ static initializeAsync(options: ICredentialCacheOptions): Promise<CredentialCach
 | --------- | ---------------------------------------------------------------- | ----------- |
 | options   | [ICredentialCacheOptions](./rush-lib.icredentialcacheoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[CredentialCache](./rush-lib.credentialcache.md) &gt;

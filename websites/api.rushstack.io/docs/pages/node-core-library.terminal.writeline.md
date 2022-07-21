@@ -15,7 +15,7 @@ pagination_next: null
 
 Write a generic message to the terminal, followed by a newline
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeLine(...messageParts: (string | IColorableSequence)[]): void;
@@ -27,6 +27,6 @@ writeLine(...messageParts: (string | IColorableSequence)[]): void;
 | ------------ | -------------------------------------------------------------------------------- | ----------- |
 | messageParts | (string \| [IColorableSequence](./node-core-library.icolorablesequence.md) )\[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

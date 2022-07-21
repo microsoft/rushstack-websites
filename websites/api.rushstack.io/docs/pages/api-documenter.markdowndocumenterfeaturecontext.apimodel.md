@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides access to the `ApiModel` for the documentation being generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly apiModel: ApiModel;

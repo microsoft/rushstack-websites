@@ -13,7 +13,7 @@ pagination_next: null
 
 This is a helper object for RushConfiguration. It exposes the "approvedPackagesPolicy" feature from rush.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApprovedPackagesPolicy

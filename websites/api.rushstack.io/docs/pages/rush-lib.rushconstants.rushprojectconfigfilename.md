@@ -15,7 +15,7 @@ pagination_next: null
 
 Per-project configuration filename.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushProjectConfigFilename: string;

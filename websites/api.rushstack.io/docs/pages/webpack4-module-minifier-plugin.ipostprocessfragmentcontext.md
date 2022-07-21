@@ -13,7 +13,7 @@ pagination_next: null
 
 Argument to the postProcessCodeFragment hook for the current execution context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPostProcessFragmentContext

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalMinifierOptions.terserOptions property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 terserOptions?: MinifyOptions;

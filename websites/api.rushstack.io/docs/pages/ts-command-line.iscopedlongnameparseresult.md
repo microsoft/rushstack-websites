@@ -13,7 +13,7 @@ pagination_next: null
 
 The result containing the parsed paramter long name and scope. Returned when calling [CommandLineParameterProvider.parseScopedLongName()](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IScopedLongNameParseResult

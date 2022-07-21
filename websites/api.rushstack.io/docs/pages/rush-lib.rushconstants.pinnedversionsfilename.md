@@ -19,7 +19,7 @@ pagination_next: null
 
 The filename ("pinned-versions.json") for an old configuration file that that is no longer supported.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly pinnedVersionsFilename: string;

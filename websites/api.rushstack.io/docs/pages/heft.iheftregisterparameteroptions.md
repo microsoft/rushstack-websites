@@ -15,11 +15,11 @@ pagination_next: null
 
 The options object provided to the command line parser when registering a parameter in addition to the action names used to associate the parameter with.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftRegisterParameterOptions<TCommandLineDefinition extends IBaseCommandLineDefinition> =
   TCommandLineDefinition & IParameterAssociatedActionNames;
 ```
 
-<b>References:</b> [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md) , [IParameterAssociatedActionNames](./heft.iparameterassociatedactionnames.md)
+**References:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md) , [IParameterAssociatedActionNames](./heft.iparameterassociatedactionnames.md)

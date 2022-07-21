@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `EnvironmentMap` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(environmentObject?: Record<string, string | undefined>);

@@ -13,7 +13,7 @@ pagination_next: null
 
 The config file name "api-extractor.json".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly FILENAME: string;

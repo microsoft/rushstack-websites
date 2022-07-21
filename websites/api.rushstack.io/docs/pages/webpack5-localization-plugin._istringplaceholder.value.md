@@ -13,7 +13,7 @@ pagination_next: null
 
 The literal string that will be injected for later replacement.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value: string;

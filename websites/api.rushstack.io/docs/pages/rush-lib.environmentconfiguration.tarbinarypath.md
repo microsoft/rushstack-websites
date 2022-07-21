@@ -15,7 +15,7 @@ pagination_next: null
 
 Allows the tar binary path to be explicitly provided. See [EnvironmentVariableNames.RUSH_TAR_BINARY_PATH](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get tarBinaryPath(): string | undefined;

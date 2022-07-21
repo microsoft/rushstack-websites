@@ -13,7 +13,7 @@ pagination_next: null
 
 If set to true, don't include the leading `./` if the path is under the base folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 trimLeadingDotSlash?: boolean;

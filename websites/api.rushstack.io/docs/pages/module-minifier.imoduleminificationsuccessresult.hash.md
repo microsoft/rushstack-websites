@@ -13,7 +13,7 @@ pagination_next: null
 
 Identity of the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hash: string;

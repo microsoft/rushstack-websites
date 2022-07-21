@@ -13,7 +13,7 @@ pagination_next: null
 
 The processor's model name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 machineProcessor: string;

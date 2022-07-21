@@ -13,13 +13,13 @@ pagination_next: null
 
 The data type returned by [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CommandLineChoiceParameter extends CommandLineParameter
 ```
 
-<b>Extends:</b> [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
 
 ## Remarks
 

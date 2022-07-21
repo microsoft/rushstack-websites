@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional hook that will be invoked before Map.delete() is performed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onDelete?: (source: ProtectableMap<K, V>, key: K) => void;

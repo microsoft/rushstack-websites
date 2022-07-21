@@ -13,7 +13,7 @@ pagination_next: null
 
 The set of projects within the Rush configuration which this project declares as dependencies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get dependencyProjects(): ReadonlySet<RushConfigurationProject>;

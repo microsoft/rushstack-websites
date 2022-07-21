@@ -13,7 +13,7 @@ pagination_next: null
 
 The package.json of the project being built
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get projectPackageJson(): IPackageJson;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Use this property to control how root-level properties are handled between parent and child configuration files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 propertyInheritance?: IPropertiesInheritance<TConfigurationFile>;

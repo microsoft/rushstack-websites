@@ -13,7 +13,7 @@ pagination_next: null
 
 The `filePath` that was passed to [FileWriter.open()](./node-core-library.filewriter.open.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly filePath: string;

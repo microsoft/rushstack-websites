@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then resolvePath is allowed to refer to the package.json of the active project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowSelfReference?: boolean;

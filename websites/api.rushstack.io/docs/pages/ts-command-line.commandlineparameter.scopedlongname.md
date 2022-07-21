@@ -13,7 +13,7 @@ pagination_next: null
 
 If a parameterScope is provided, returns the scope-prefixed long name of the flag, including double dashes, eg. "--scope:do-something". Otherwise undefined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly scopedLongName: string | undefined;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## RushServePlugin.pluginName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pluginName: 'RushServePlugin';

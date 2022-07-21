@@ -13,7 +13,7 @@ pagination_next: null
 
 A chunk of javascript to use to get the current locale at runtime. If specified, allows the runtime chunk to be non-localized even if it has async localized chunks, as long as it does not directly contain strings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runtimeLocaleExpression?: string;

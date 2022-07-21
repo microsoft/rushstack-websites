@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStringValueTyping interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStringValueTyping

@@ -15,7 +15,7 @@ pagination_next: null
 
 Associates the value with the specified path. If a value is already associated, will overwrite.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setItemFromSegments(pathSegments: Iterable<string>, value: TItem): this;
@@ -28,7 +28,7 @@ setItemFromSegments(pathSegments: Iterable<string>, value: TItem): this;
 | pathSegments | Iterable&lt;string&gt; |             |
 | value        | TItem                  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

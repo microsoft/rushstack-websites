@@ -13,7 +13,7 @@ pagination_next: null
 
 Operations for working with strings that contain text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Text

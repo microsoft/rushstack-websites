@@ -13,7 +13,7 @@ pagination_next: null
 
 Helper functions for working with the `ReleaseTag` enum.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ReleaseTag

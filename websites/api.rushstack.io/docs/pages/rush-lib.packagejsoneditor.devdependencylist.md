@@ -13,7 +13,7 @@ pagination_next: null
 
 The list of dependencies of type DependencyType.Dev.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get devDependencyList(): ReadonlyArray<PackageJsonDependency>;

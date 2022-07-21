@@ -13,7 +13,7 @@ pagination_next: null
 
 The path to the TypeScript \*.d.ts file describing the module file that will act as the main entry point.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 types?: string;

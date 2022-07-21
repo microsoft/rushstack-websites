@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor parameters for [ProtectableMap](./node-core-library.protectablemap.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IProtectableMapParameters<K, V>

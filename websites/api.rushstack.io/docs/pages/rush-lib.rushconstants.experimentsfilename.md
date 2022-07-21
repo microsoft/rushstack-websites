@@ -15,7 +15,7 @@ pagination_next: null
 
 Experiments configuration file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly experimentsFilename: string;

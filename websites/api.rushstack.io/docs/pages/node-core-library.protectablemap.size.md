@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the number of (key, value) entries in the map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get size(): number;

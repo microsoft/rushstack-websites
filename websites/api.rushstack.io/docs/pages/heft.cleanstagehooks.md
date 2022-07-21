@@ -11,13 +11,13 @@ pagination_next: null
 
 ## CleanStageHooks class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CleanStageHooks extends StageHooksBase<ICleanStageProperties>
 ```
 
-<b>Extends:</b> [StageHooksBase](./heft.stagehooksbase.md) &lt;[ICleanStageProperties](./heft.icleanstageproperties.md)
+**Extends:** [StageHooksBase](./heft.stagehooksbase.md) &lt;[ICleanStageProperties](./heft.icleanstageproperties.md)
 
 ## Properties
 

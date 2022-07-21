@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns an object with the parsed scope (if present) and the long name of the parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parseScopedLongName(scopedLongName: string): IScopedLongNameParseResult;
@@ -25,6 +25,6 @@ parseScopedLongName(scopedLongName: string): IScopedLongNameParseResult;
 | -------------- | ------ | ----------- |
 | scopedLongName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IScopedLongNameParseResult](./ts-command-line.iscopedlongnameparseresult.md)

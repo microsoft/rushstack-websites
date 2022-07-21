@@ -13,7 +13,7 @@ pagination_next: null
 
 The TSDoc configuration that was used when analyzing the API for this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tsdocConfiguration(): TSDocConfiguration;

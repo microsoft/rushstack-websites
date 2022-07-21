@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns a list of members with the specified name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findMembersByName(name: string): ReadonlyArray<ApiItem>;
@@ -25,6 +25,6 @@ findMembersByName(name: string): ReadonlyArray<ApiItem>;
 | --------- | ------ | ----------- |
 | name      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 ReadonlyArray&lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Validates the specified version and throws if the version does not satisfy the policy.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract validate(versionString: string, packageName: string): void;
@@ -26,6 +26,6 @@ abstract validate(versionString: string, packageName: string): void;
 | versionString | string | version string |
 | packageName   | string | package name   |
 
-<b>Returns:</b>
+**Returns:**
 
 void

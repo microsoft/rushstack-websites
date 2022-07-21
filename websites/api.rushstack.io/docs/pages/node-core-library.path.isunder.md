@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if "childPath" is located inside the "parentFolderPath" folder or one of its child folders. Note that "parentFolderPath" is not considered to be under itself. The "childPath" can refer to any type of file system object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isUnder(childPath: string, parentFolderPath: string): boolean;
@@ -26,7 +26,7 @@ static isUnder(childPath: string, parentFolderPath: string): boolean;
 | childPath        | string |             |
 | parentFolderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

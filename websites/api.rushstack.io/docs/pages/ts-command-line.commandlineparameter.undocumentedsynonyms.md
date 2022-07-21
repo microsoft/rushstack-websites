@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies additional names for this parameter that are accepted but not displayed in the command line help.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly undocumentedSynonyms: string[] | undefined;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies how API Extractor sorts members of an enum when generating api.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly enumMemberOrder: EnumMemberOrder;

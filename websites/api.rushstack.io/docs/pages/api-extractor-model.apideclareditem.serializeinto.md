@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiDeclaredItem.serializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ serializeInto(jsonObject: Partial<IApiDeclaredItemJson>): void;
 | ---------- | ----------------------------------- | ----------- |
 | jsonObject | Partial&lt;IApiDeclaredItemJson&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

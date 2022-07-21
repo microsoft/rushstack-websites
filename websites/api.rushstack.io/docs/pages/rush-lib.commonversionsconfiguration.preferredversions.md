@@ -13,7 +13,7 @@ pagination_next: null
 
 A table that specifies a "preferred version" for a given NPM package. This feature is typically used to hold back an indirect dependency to a specific older version, or to reduce duplication of indirect dependencies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get preferredVersions(): Map<string, string>;

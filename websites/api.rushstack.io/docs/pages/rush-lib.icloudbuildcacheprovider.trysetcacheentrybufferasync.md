@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 trySetCacheEntryBufferAsync(terminal: ITerminal, cacheId: string, entryBuffer: Buffer): Promise<boolean>;
@@ -27,6 +27,6 @@ trySetCacheEntryBufferAsync(terminal: ITerminal, cacheId: string, entryBuffer: B
 | cacheId     | string                                        |             |
 | entryBuffer | Buffer                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

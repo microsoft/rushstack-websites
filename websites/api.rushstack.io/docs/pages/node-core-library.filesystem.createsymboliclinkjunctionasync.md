@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createSymbolicLinkJunctionAsync(options: IFileSystemCreateLinkOptions): Promise<void>;
@@ -25,6 +25,6 @@ static createSymbolicLinkJunctionAsync(options: IFileSystemCreateLinkOptions): P
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

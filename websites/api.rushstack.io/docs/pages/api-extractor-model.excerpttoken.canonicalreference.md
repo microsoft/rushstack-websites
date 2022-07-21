@@ -13,7 +13,7 @@ pagination_next: null
 
 The hyperlink target for a token whose type is `ExcerptTokenKind.Reference` . For other token types, this property will be `undefined` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get canonicalReference(): DeclarationReference | undefined;

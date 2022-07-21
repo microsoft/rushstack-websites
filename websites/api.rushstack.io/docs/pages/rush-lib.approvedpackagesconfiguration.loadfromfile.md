@@ -13,12 +13,12 @@ pagination_next: null
 
 Loads the configuration data from the filename that was passed to the constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadFromFile(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

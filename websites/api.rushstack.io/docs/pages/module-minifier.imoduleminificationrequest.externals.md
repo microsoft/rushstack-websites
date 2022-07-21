@@ -13,7 +13,7 @@ pagination_next: null
 
 Reserved variable names, e.g. \_\_WEBPACK_EXTERNAL_MODULE_1\_\_
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 externals: string[] | undefined;

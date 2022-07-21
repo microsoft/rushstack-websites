@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets all the version policies
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get versionPolicies(): Map<string, VersionPolicy>;

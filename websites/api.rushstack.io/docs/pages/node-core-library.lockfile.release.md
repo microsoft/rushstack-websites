@@ -13,12 +13,12 @@ pagination_next: null
 
 Unlocks a file and removes it from disk. This can only be called once.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 release(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor options for [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface INormalizeNewlinesTextRewriterOptions

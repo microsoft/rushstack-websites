@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IStageContext.properties property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 properties: TStageProperties;

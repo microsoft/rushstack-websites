@@ -13,7 +13,7 @@ pagination_next: null
 
 The source control type for the repository that hosts the project. This is typically "git".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Reads the names of folder entries, not including "." or "..". Behind the scenes it uses `fs.readdirSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFolderItemNames(folderPath: string, options?: IFileSystemReadFolderOptions): string[];
@@ -26,6 +26,6 @@ static readFolderItemNames(folderPath: string, options?: IFileSystemReadFolderOp
 | folderPath | string                                                                              | The absolute or relative path to the folder which should be read.                                       |
 | options    | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IReadFolderOptions</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]

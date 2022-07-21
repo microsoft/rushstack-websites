@@ -13,7 +13,7 @@ pagination_next: null
 
 A singleton instance of `PackageJsonLookup` , which is useful for short-lived processes that can reasonably assume that the file system will not be modified after the cache is populated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get instance(): PackageJsonLookup;

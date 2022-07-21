@@ -15,13 +15,13 @@ pagination_next: null
 
 Constructor options for [StderrLineTransform](./terminal.stderrlinetransform.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStdioLineTransformOptions extends ITerminalTransformOptions
 ```
 
-<b>Extends:</b> [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
+**Extends:** [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
 
 ## Properties
 

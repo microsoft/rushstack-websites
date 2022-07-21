@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStatsChunkGroup interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizationStatsChunkGroup

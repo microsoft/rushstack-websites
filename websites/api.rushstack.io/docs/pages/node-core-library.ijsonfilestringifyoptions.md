@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for JsonFile.stringify()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IJsonFileStringifyOptions

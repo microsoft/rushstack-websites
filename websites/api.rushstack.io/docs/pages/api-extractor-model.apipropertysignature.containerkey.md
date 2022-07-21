@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPropertySignature.containerKey property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */

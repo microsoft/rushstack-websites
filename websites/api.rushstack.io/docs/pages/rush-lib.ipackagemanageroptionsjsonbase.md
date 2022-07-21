@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for the package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackageManagerOptionsJsonBase

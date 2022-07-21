@@ -13,7 +13,7 @@ pagination_next: null
 
 Static members for [ApiInitializerMixin](./api-extractor-model.apiinitializermixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiInitializerMixin

@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static updateTimesAsync(path: string, times: IFileSystemUpdateTimeParameters): Promise<void>;
@@ -26,6 +26,6 @@ static updateTimesAsync(path: string, times: IFileSystemUpdateTimeParameters): P
 | path      | string                                                                                    |             |
 | times     | [IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

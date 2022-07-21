@@ -13,7 +13,7 @@ pagination_next: null
 
 If this is set to `true` , a passthrough locale will be included in the output
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 usePassthroughLocale?: boolean;

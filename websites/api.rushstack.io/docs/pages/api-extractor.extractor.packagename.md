@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the package name of the API Extractor NPM package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get packageName(): string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Builds an object containing hashes for the files under the specified `packagePath` folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPackageDeps(
@@ -31,7 +31,7 @@ export declare function getPackageDeps(
 | excludedPaths | string\[\] | <i>(Optional)</i> An optional array of file path exclusions. If a file should be omitted from the list of dependencies, use this to exclude it.                                                  |
 | gitPath       | string     | <i>(Optional)</i>                                                                                                                                                                                |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, string&gt;
 

@@ -15,13 +15,13 @@ pagination_next: null
 
 A [TerminalWritable](./terminal.terminalwritable.md) subclass for use by unit tests.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MockWritable extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Constructors
 

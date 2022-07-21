@@ -11,7 +11,7 @@ pagination_next: null
 
 ## StageHooksBase.loadStageConfiguration property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly loadStageConfiguration: AsyncSeriesHook;

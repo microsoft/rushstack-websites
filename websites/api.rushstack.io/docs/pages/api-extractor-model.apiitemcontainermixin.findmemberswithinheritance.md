@@ -13,13 +13,13 @@ pagination_next: null
 
 Finds all of the ApiItem's immediate and inherited members by walking up the inheritance tree.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findMembersWithInheritance(): IFindApiItemsResult;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [IFindApiItemsResult](./api-extractor-model.ifindapiitemsresult.md)
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Use this class to load and save the "common/config/rush/common-versions.json" config file. This config file stores dependency version information that affects all projects in the repo.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CommonVersionsConfiguration

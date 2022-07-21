@@ -11,7 +11,7 @@ pagination_next: null
 
 ## StdioWritable.instance property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static instance: StdioWritable;

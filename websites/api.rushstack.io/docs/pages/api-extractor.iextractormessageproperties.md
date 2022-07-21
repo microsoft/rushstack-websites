@@ -13,7 +13,7 @@ pagination_next: null
 
 Used by [ExtractorMessage.properties](./api-extractor.extractormessage.properties.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtractorMessageProperties

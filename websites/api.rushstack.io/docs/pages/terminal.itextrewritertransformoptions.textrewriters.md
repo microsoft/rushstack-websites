@@ -13,7 +13,7 @@ pagination_next: null
 
 A list of rewriters to be applied. More items may be appended to the list, for example if [ITextRewriterTransformOptions.removeColors](./terminal.itextrewritertransformoptions.removecolors.md) is specified.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 textRewriters?: TextRewriter[];

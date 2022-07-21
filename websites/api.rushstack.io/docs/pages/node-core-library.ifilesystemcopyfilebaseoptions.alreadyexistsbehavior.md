@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies what to do if the destination path already exists.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 alreadyExistsBehavior?: AlreadyExistsBehavior;

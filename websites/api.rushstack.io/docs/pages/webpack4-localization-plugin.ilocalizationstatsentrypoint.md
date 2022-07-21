@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocalizationStatsEntrypoint interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalizationStatsEntrypoint

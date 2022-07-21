@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for the locale used in the source localized data files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultLocale: IDefaultLocaleOptions;

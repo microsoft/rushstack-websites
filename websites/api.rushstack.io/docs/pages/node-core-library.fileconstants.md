@@ -13,7 +13,7 @@ pagination_next: null
 
 String constants for common filenames and parts of filenames.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum FileConstants

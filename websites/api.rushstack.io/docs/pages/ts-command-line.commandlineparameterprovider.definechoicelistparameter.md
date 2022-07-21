@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum). The parameter can be specified multiple times to build a list.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineChoiceListParameter(definition: ICommandLineChoiceListDefinition): CommandLineChoiceListParameter;
@@ -25,7 +25,7 @@ defineChoiceListParameter(definition: ICommandLineChoiceListDefinition): Command
 | ---------- | ----------------------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md)
 

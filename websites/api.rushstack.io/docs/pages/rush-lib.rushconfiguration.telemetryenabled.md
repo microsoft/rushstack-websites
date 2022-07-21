@@ -15,7 +15,7 @@ pagination_next: null
 
 Indicates whether telemetry collection is enabled for Rush runs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get telemetryEnabled(): boolean;

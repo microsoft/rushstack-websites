@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns `true` if `config/rig.json` was found, or `false` otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly rigFound: boolean;

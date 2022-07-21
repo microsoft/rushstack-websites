@@ -13,7 +13,7 @@ pagination_next: null
 
 Follows a link to its destination and returns the absolute path to the final target of the link. Behind the scenes it uses `fs.realpathSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getRealPath(linkPath: string): string;
@@ -25,6 +25,6 @@ static getRealPath(linkPath: string): string;
 | --------- | ------ | --------------------- |
 | linkPath  | string | The path to the link. |
 
-<b>Returns:</b>
+**Returns:**
 
 string

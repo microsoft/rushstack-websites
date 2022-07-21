@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides a version-independent implementation of the JavaScript `instanceof` operator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypeUuid

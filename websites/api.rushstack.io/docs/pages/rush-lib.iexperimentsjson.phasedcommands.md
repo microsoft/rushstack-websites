@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, the phased commands feature is enabled. To use this feature, create a "phased" command in common/config/rush/command-line.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 phasedCommands?: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The manifest for an API Documenter plugin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiDocumenterPluginManifest

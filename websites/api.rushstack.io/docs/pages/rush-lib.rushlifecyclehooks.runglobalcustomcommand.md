@@ -15,7 +15,7 @@ pagination_next: null
 
 A hook map to allow plugins to hook specific named global commands (defined in command-line.json) before execution.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runGlobalCustomCommand: HookMap<AsyncSeriesHook<IGlobalCommand>>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Synchronously create a child process and optionally capture its output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static spawnSync(filename: string, args: string[], options?: IExecutableSpawnSyncOptions): child_process.SpawnSyncReturns<string>;
@@ -27,7 +27,7 @@ static spawnSync(filename: string, args: string[], options?: IExecutableSpawnSyn
 | args      | string\[\]                                                                        | The command-line arguments to be passed to the process.                                                                                                                                 |
 | options   | [IExecutableSpawnSyncOptions](./node-core-library.iexecutablespawnsyncoptions.md) | <i>(Optional)</i> Additional options                                                                                                                                                    |
 
-<b>Returns:</b>
+**Returns:**
 
 child_process.SpawnSyncReturns&lt;string&gt;
 

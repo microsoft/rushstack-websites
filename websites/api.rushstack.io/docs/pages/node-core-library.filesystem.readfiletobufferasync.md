@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.readFileToBuffer()](./node-core-library.filesystem.readfiletobuffer.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFileToBufferAsync(filePath: string): Promise<Buffer>;
@@ -25,6 +25,6 @@ static readFileToBufferAsync(filePath: string): Promise<Buffer>;
 | --------- | ------ | ----------- |
 | filePath  | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Buffer&gt;

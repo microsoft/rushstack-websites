@@ -13,7 +13,7 @@ pagination_next: null
 
 This required property specifies the name of the locale used in the `.resx` , `.loc.json` , and `.resjson` files in the source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 localeName: string;

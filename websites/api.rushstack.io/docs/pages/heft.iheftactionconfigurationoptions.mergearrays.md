@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether or not arrays should be merged across Heft action configuration files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mergeArrays?: boolean;

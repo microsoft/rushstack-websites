@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.getRealPath()](./node-core-library.filesystem.getrealpath.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getRealPathAsync(linkPath: string): Promise<string>;
@@ -25,6 +25,6 @@ static getRealPathAsync(linkPath: string): Promise<string>;
 | --------- | ------ | ----------- |
 | linkPath  | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

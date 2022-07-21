@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [JsonFile.load()](./node-core-library.jsonfile.load.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAsync(jsonFilename: string): Promise<JsonObject>;
@@ -25,6 +25,6 @@ static loadAsync(jsonFilename: string): Promise<JsonObject>;
 | ------------ | ------ | ----------- |
 | jsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[JsonObject](./node-core-library.jsonobject.md) &gt;

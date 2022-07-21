@@ -13,7 +13,7 @@ pagination_next: null
 
 Determines if a version policy wants to opt in to including email.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get includeEmailInChangeFile(): boolean;

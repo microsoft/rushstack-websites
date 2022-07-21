@@ -13,7 +13,7 @@ pagination_next: null
 
 Efficiently finds a package by the NPM package name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetPackageByName(packageName: string): ApiPackage | undefined;
@@ -25,7 +25,7 @@ tryGetPackageByName(packageName: string): ApiPackage | undefined;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ApiPackage](./api-extractor-model.apipackage.md) \| undefined
 

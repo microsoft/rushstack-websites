@@ -13,7 +13,7 @@ pagination_next: null
 
 The filename for the API report files. It will be combined with `reportFolder` or `reportTempFolder` to produce a full output filename.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reportFileName?: string;

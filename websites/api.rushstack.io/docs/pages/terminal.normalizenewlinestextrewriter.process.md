@@ -11,7 +11,7 @@ pagination_next: null
 
 ## NormalizeNewlinesTextRewriter.process() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 process(unknownState: TextRewriterState, text: string): string;
@@ -24,6 +24,6 @@ process(unknownState: TextRewriterState, text: string): string;
 | unknownState | [TextRewriterState](./terminal.textrewriterstate.md) |             |
 | text         | string                                               |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string

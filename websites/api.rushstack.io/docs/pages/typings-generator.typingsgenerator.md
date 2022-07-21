@@ -13,7 +13,7 @@ pagination_next: null
 
 This is a simple tool that generates .d.ts files for non-TS files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypingsGenerator

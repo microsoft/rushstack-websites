@@ -15,7 +15,7 @@ pagination_next: null
 
 If set to true, a warning result should not make Rush exit with a nonzero exit code
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 warningsAreAllowed: boolean;

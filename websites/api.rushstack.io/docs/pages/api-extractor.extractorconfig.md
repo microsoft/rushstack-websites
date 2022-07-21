@@ -13,7 +13,7 @@ pagination_next: null
 
 The `ExtractorConfig` class loads, validates, interprets, and represents the api-extractor.json config file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExtractorConfig

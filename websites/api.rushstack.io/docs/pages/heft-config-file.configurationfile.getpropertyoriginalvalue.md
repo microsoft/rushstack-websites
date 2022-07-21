@@ -15,7 +15,7 @@ pagination_next: null
 
 Get the value of the specified property on the specified object that was originally loaded from a configuration file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getPropertyOriginalValue<TParentProperty extends object, TValue>(options: IOriginalValueOptions<TParentProperty>): TValue | undefined;
@@ -27,6 +27,6 @@ getPropertyOriginalValue<TParentProperty extends object, TValue>(options: IOrigi
 | --------- | -------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IOriginalValueOptions](./heft-config-file.ioriginalvalueoptions.md) &lt;TParentProperty&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 TValue \| undefined

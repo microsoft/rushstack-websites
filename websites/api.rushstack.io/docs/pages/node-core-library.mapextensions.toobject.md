@@ -13,7 +13,7 @@ pagination_next: null
 
 Converts a string-keyed map to an object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static toObject<TValue>(map: Map<string, TValue>): {
@@ -27,7 +27,7 @@ static toObject<TValue>(map: Map<string, TValue>): {
 | --------- | ------------------------- | ------------------------------------------------------- |
 | map       | Map&lt;string, TValue&gt; | The map that the object properties will be sourced from |
 
-<b>Returns:</b>
+**Returns:**
 
 { \[key: string\]: TValue; }
 

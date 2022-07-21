@@ -13,13 +13,13 @@ pagination_next: null
 
 Result object returned by [PackageName.tryParse()](./node-core-library.packagename.tryparse.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParsedPackageNameOrError extends IParsedPackageName
 ```
 
-<b>Extends:</b> [IParsedPackageName](./node-core-library.iparsedpackagename.md)
+**Extends:** [IParsedPackageName](./node-core-library.iparsedpackagename.md)
 
 ## Properties
 

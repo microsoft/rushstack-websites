@@ -13,7 +13,7 @@ pagination_next: null
 
 The list of dependencies of type DependencyType.Regular, DependencyType.Optional, or DependencyType.Peer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get dependencyList(): ReadonlyArray<PackageJsonDependency>;

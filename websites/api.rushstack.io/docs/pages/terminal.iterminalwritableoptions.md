@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor options for [TerminalWritable](./terminal.terminalwritable.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ITerminalWritableOptions

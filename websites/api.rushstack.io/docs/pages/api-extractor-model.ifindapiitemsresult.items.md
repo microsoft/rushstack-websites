@@ -13,7 +13,7 @@ pagination_next: null
 
 The API items that were found. Not guaranteed to be complete, see `maybeIncompleteResult` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 items: ApiItem[];

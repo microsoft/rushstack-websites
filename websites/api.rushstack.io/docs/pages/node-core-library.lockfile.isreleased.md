@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if this lock is currently being held.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isReleased(): boolean;

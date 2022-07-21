@@ -13,7 +13,7 @@ pagination_next: null
 
 The JSON Schema for API Extractor config file (api-extractor.schema.json).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly jsonSchema: JsonSchema;

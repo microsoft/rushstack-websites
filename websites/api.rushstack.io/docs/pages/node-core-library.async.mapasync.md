@@ -15,7 +15,7 @@ pagination_next: null
 
 Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array. Returns an array containing the results.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static mapAsync<TEntry, TRetVal>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, callback: (entry: TEntry, arrayIndex: number) => Promise<TRetVal>, options?: IAsyncParallelismOptions | undefined): Promise<TRetVal[]>;
@@ -29,7 +29,7 @@ static mapAsync<TEntry, TRetVal>(iterable: Iterable<TEntry> | AsyncIterable<TEnt
 | callback  | (entry: TEntry, arrayIndex: number) =&gt; Promise&lt;TRetVal&gt;                         | a function that starts an asynchronous promise for an element from the array |
 | options   | [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) \| undefined | <i>(Optional)</i> options for customizing the control flow                   |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TRetVal\[\]&gt;
 

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseLocFileOptions.parser property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parser?: ParserKind;

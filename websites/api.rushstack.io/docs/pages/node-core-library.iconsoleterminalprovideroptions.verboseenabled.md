@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, print verbose logging messages.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verboseEnabled: boolean;

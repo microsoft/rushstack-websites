@@ -15,7 +15,7 @@ pagination_next: null
 
 Name of the operation, for logging.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name: string;

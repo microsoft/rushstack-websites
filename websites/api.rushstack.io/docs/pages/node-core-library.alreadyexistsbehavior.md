@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the behavior of APIs such as [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md) or [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md) when the output file path already exists.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum AlreadyExistsBehavior

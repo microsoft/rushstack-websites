@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the project `rush-logs` folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushLogsFolderName: string;

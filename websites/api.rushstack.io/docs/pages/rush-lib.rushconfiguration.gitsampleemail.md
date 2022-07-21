@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "gitPolicy" feature.\] An example valid email address that conforms to one of the allowedEmailRegExps. Example: `"foxtrot@example\.com"` This will never be undefined, and will always be nonempty if gitAllowedEmailRegExps is used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get gitSampleEmail(): string;

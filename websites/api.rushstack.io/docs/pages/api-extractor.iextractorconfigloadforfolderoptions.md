@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [ExtractorConfig.tryLoadForFolder()](./api-extractor.extractorconfig.tryloadforfolder.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtractorConfigLoadForFolderOptions

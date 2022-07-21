@@ -13,7 +13,7 @@ pagination_next: null
 
 Attempts to retrieve a member using its containerKey, or returns `undefined` if no matching member was found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetMemberByKey(containerKey: string): ApiItem | undefined;
@@ -25,7 +25,7 @@ tryGetMemberByKey(containerKey: string): ApiItem | undefined;
 | ------------ | ------ | ----------- |
 | containerKey | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ApiItem](./api-extractor-model.apiitem.md) \| undefined
 

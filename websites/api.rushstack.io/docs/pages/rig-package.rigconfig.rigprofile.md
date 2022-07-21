@@ -13,7 +13,7 @@ pagination_next: null
 
 The `"rigProfile"` value that was loaded from `rig.json` , or `""` if the file was not found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly rigProfile: string;

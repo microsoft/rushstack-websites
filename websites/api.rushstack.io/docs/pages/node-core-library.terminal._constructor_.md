@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructs a new instance of the `Terminal` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(provider: ITerminalProvider);

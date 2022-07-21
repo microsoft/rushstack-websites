@@ -13,7 +13,7 @@ pagination_next: null
 
 Compares `x` and `y` using the JavaScript `>` and `<` operators. This function is suitable for usage as the callback for `array.sort()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static compareByValue(x: any, y: any): number;
@@ -26,7 +26,7 @@ static compareByValue(x: any, y: any): number;
 | x         | any  |             |
 | y         | any  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

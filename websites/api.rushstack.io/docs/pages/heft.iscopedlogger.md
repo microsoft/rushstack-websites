@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IScopedLogger interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IScopedLogger

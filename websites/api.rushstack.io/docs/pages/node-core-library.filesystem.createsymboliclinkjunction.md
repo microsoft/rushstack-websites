@@ -13,7 +13,7 @@ pagination_next: null
 
 Creates an NTFS "directory junction" on Windows operating systems; for other operating systems, it creates a regular symbolic link. The link target must be a folder, not a file. Behind the scenes it uses `fs.symlinkSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createSymbolicLinkJunction(options: IFileSystemCreateLinkOptions): void;
@@ -25,7 +25,7 @@ static createSymbolicLinkJunction(options: IFileSystemCreateLinkOptions): void;
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

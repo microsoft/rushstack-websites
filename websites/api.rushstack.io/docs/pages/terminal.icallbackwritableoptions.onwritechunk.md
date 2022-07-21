@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ICallbackWritableOptions.onWriteChunk property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onWriteChunk: (chunk: ITerminalChunk) => void;

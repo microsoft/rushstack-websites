@@ -13,7 +13,7 @@ pagination_next: null
 
 The API item corresponding to this page.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly apiItem: ApiItem;

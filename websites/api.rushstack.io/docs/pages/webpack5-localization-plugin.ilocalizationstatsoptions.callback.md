@@ -13,7 +13,7 @@ pagination_next: null
 
 This option is used to specify a callback to be called with the stats data that would be dropped at `localizationStats.dropPath` after compilation completes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 callback?: (stats: ILocalizationStats) => void;

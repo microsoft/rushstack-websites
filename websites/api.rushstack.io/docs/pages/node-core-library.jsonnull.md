@@ -13,7 +13,7 @@ pagination_next: null
 
 The Rush Stack lint rules discourage usage of `null` . However, JSON parsers always return JavaScript's `null` to keep the two syntaxes consistent. When creating interfaces that describe JSON structures, use `JsonNull` to avoid triggering the lint rule. Do not use `JsonNull` for any other purpose.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type JsonNull = null;

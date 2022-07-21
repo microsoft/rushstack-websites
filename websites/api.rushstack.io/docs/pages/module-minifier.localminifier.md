@@ -13,13 +13,13 @@ pagination_next: null
 
 Minifier implementation that minifies code on the main thread.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LocalMinifier implements IModuleMinifier
 ```
 
-<b>Implements:</b> [IModuleMinifier](./module-minifier.imoduleminifier.md)
+**Implements:** [IModuleMinifier](./module-minifier.imoduleminifier.md)
 
 ## Constructors
 

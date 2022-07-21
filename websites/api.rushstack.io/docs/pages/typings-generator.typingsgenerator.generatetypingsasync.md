@@ -11,12 +11,12 @@ pagination_next: null
 
 ## TypingsGenerator.generateTypingsAsync() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generateTypingsAsync(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

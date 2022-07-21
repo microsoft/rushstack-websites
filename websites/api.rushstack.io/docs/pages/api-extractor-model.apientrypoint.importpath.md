@@ -13,7 +13,7 @@ pagination_next: null
 
 The module path for this entry point, relative to the parent `ApiPackage` . In the current implementation, this is always the empty string, indicating the default entry point.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get importPath(): string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then an error occurs if the parameter was not included on the command-line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 required?: boolean;

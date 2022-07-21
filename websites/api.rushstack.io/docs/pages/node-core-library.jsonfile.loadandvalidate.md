@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads a JSON file and validate its schema.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAndValidate(jsonFilename: string, jsonSchema: JsonSchema, options?: IJsonSchemaValidateOptions): JsonObject;
@@ -27,6 +27,6 @@ static loadAndValidate(jsonFilename: string, jsonSchema: JsonSchema, options?: I
 | jsonSchema   | [JsonSchema](./node-core-library.jsonschema.md)                                 |                   |
 | options      | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonObject](./node-core-library.jsonobject.md)

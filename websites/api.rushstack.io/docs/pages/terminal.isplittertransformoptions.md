@@ -13,13 +13,13 @@ pagination_next: null
 
 Constructor options for [SplitterTransform](./terminal.splittertransform.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ISplitterTransformOptions extends ITerminalWritableOptions
 ```
 
-<b>Extends:</b> [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
+**Extends:** [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
 
 ## Properties
 

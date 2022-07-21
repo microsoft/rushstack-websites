@@ -13,7 +13,7 @@ pagination_next: null
 
 The function parameters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly parameters: ReadonlyArray<Parameter>;

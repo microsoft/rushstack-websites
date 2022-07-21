@@ -13,7 +13,7 @@ pagination_next: null
 
 The URL of the repository that hosts the project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 url: string;

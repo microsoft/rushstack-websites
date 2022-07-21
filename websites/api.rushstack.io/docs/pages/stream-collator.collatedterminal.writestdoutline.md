@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeStdoutLine(message: string): void;
@@ -25,6 +25,6 @@ writeStdoutLine(message: string): void;
 | --------- | ------ | ----------- |
 | message   | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

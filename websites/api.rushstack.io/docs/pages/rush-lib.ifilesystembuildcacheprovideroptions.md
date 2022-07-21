@@ -15,7 +15,7 @@ pagination_next: null
 
 Options for creating a file system build cache provider.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemBuildCacheProviderOptions

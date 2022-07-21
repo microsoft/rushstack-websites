@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the path exists on disk. Behind the scenes it uses `fs.existsSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static exists(path: string): boolean;
@@ -25,7 +25,7 @@ static exists(path: string): boolean;
 | --------- | ------ | ------------------------------------------------------- |
 | path      | string | The absolute or relative path to the filesystem object. |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

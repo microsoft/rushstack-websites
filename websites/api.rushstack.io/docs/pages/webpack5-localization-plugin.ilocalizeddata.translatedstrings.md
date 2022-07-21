@@ -13,7 +13,7 @@ pagination_next: null
 
 Use this parameter to specify the translated data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 translatedStrings: ILocalizedStrings;

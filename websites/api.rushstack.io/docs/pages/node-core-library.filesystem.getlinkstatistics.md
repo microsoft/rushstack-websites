@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the statistics of a filesystem object. Does NOT follow the link to its target. Behind the scenes it uses `fs.lstatSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getLinkStatistics(path: string): FileSystemStats;
@@ -25,6 +25,6 @@ static getLinkStatistics(path: string): FileSystemStats;
 | --------- | ------ | ------------------------------------------------------- |
 | path      | string | The absolute or relative path to the filesystem object. |
 
-<b>Returns:</b>
+**Returns:**
 
 [FileSystemStats](./node-core-library.filesystemstats.md)

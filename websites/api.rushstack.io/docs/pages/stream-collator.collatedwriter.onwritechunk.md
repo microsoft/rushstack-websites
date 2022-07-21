@@ -15,7 +15,7 @@ pagination_next: null
 
 Subclasses should implement this `abstract` method to process the chunk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onWriteChunk(chunk: ITerminalChunk): void;
@@ -27,6 +27,6 @@ onWriteChunk(chunk: ITerminalChunk): void;
 | --------- | ---------------------------------------------- | ----------- |
 | chunk     | [ITerminalChunk](./terminal.iterminalchunk.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

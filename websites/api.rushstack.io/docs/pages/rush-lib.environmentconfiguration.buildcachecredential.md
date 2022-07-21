@@ -15,7 +15,7 @@ pagination_next: null
 
 Provides a credential for reading from and writing to a remote build cache, if configured. See [EnvironmentVariableNames.RUSH_BUILD_CACHE_CREDENTIAL](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get buildCacheCredential(): string | undefined;

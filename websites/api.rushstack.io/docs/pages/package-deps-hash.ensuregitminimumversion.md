@@ -13,7 +13,7 @@ pagination_next: null
 
 Checks the git version and throws an error if it is less than the minimum required version.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function ensureGitMinimumVersion(gitPath?: string): void;
@@ -25,6 +25,6 @@ export declare function ensureGitMinimumVersion(gitPath?: string): void;
 | --------- | ------ | ----------------- |
 | gitPath   | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

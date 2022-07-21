@@ -15,7 +15,7 @@ pagination_next: null
 
 Utility method used by Heft plugins to register a flag type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerFlagParameter(options: IHeftRegisterParameterOptions<ICommandLineFlagDefinition>): IHeftFlagParameter;
@@ -27,6 +27,6 @@ registerFlagParameter(options: IHeftRegisterParameterOptions<ICommandLineFlagDef
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) &lt;[ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IHeftFlagParameter](./heft.iheftflagparameter.md)

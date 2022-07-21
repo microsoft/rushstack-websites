@@ -13,7 +13,7 @@ pagination_next: null
 
 The error property being `undefined` indicates success.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 error: undefined;

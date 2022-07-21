@@ -11,12 +11,12 @@ pagination_next: null
 
 ## NormalizeNewlinesTextRewriter.initialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 initialize(): TextRewriterState;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [TextRewriterState](./terminal.textrewriterstate.md)

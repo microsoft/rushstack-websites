@@ -13,7 +13,7 @@ pagination_next: null
 
 An array of optional dependencies that may be installed for this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 optionalDependencies?: IPackageJsonDependencyTable;

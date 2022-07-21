@@ -13,7 +13,7 @@ pagination_next: null
 
 An excerpt corresponding to the referenced type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly excerpt: Excerpt;

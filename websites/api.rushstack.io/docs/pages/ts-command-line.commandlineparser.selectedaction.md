@@ -13,7 +13,7 @@ pagination_next: null
 
 Reports which CommandLineAction was specified on the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 selectedAction: CommandLineAction | undefined;

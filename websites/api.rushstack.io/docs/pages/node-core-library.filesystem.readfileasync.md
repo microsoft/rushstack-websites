@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.readFile()](./node-core-library.filesystem.readfile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFileAsync(filePath: string, options?: IFileSystemReadFileOptions): Promise<string>;
@@ -26,6 +26,6 @@ static readFileAsync(filePath: string, options?: IFileSystemReadFileOptions): Pr
 | filePath  | string                                                                          |                   |
 | options   | [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 This option causes the compiler to be invoked with the `--skipLibCheck` option.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skipLibCheck?: boolean;

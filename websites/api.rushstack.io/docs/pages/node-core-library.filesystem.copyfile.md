@@ -13,7 +13,7 @@ pagination_next: null
 
 Copies a single file from one location to another. By default, destinationPath is overwritten if it already exists.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static copyFile(options: IFileSystemCopyFileOptions): void;
@@ -25,7 +25,7 @@ static copyFile(options: IFileSystemCopyFileOptions): void;
 | --------- | ------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCopyFileOptions](./node-core-library.ifilesystemcopyfileoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

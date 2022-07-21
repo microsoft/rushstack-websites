@@ -13,12 +13,12 @@ pagination_next: null
 
 Get the normalized package.json that represents the current state of the PackageJsonEditor. This method does not save any changes that were made to the package.json, but instead returns the object representation of what would be saved if saveIfModified() is called.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 saveToObject(): IPackageJson;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 [IPackageJson](./node-core-library.ipackagejson.md)

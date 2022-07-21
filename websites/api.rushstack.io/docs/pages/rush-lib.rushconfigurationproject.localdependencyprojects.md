@@ -17,7 +17,7 @@ pagination_next: null
 
 An array of projects within the Rush configuration which this project declares as dependencies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get localDependencyProjects(): ReadonlyArray<RushConfigurationProject>;

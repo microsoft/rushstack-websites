@@ -13,13 +13,13 @@ pagination_next: null
 
 A [TerminalWritable](./terminal.terminalwritable.md) subclass that writes its output directly to the process `stdout` and `stderr` streams.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StdioWritable extends TerminalWritable
 ```
 
-<b>Extends:</b> [TerminalWritable](./terminal.terminalwritable.md)
+**Extends:** [TerminalWritable](./terminal.terminalwritable.md)
 
 ## Remarks
 

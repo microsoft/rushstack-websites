@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the path of the lockfile that will be created when a lock is successfully acquired.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getLockFilePath(resourceFolder: string, resourceName: string, pid?: number): string;
@@ -27,6 +27,6 @@ static getLockFilePath(resourceFolder: string, resourceName: string, pid?: numbe
 | resourceName   | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
 | pid            | number | <i>(Optional)</i> The PID for the current Node.js process (<code>process.pid</code>), which is used by the locking algorithm.                  |
 
-<b>Returns:</b>
+**Returns:**
 
 string

@@ -13,7 +13,7 @@ pagination_next: null
 
 The referenced ApiItem, if the declaration reference could be resolved.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolvedApiItem: ApiItem | undefined;

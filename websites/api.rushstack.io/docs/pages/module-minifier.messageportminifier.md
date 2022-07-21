@@ -13,13 +13,13 @@ pagination_next: null
 
 Minifier implementation that outsources requests to the other side of a MessagePort
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MessagePortMinifier implements IModuleMinifier
 ```
 
-<b>Implements:</b> [IModuleMinifier](./module-minifier.imoduleminifier.md)
+**Implements:** [IModuleMinifier](./module-minifier.imoduleminifier.md)
 
 ## Constructors
 

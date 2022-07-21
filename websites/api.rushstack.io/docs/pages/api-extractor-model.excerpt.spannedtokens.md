@@ -13,7 +13,7 @@ pagination_next: null
 
 The tokens spanned by this excerpt. It is the range of the `tokens` array as specified by the `tokenRange` property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly spannedTokens: ReadonlyArray<ExcerptToken>;

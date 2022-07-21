@@ -13,7 +13,7 @@ pagination_next: null
 
 The `Excerpt` class is used by [ApiDeclaredItem](./api-extractor-model.apideclareditem.md) to represent a TypeScript code fragment that may be annotated with hyperlinks to declared types (and in the future, source code locations).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Excerpt

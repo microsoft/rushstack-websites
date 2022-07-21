@@ -13,10 +13,10 @@ pagination_next: null
 
 Types for [IExecutableSpawnSyncOptions.stdio](./node-core-library.iexecutablespawnsyncoptions.stdio.md) and [IExecutableSpawnOptions.stdio](./node-core-library.iexecutablespawnoptions.stdio.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type ExecutableStdioMapping = 'pipe' | 'ignore' | 'inherit' | ExecutableStdioStreamMapping[];
 ```
 
-<b>References:</b> [ExecutableStdioStreamMapping](./node-core-library.executablestdiostreammapping.md)
+**References:** [ExecutableStdioStreamMapping](./node-core-library.executablestdiostreammapping.md)

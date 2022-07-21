@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ParserKind type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type ParserKind = 'resx' | 'loc.json' | 'resjson';

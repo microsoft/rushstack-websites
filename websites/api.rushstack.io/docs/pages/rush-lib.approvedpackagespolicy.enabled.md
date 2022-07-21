@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the feature is enabled. The feature is enabled if the "approvedPackagesPolicy" field is assigned in rush.json.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get enabled(): boolean;

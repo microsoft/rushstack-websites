@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript type alias declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiTypeAlias extends ApiTypeAlias_base
 ```
 
-<b>Extends:</b> ApiTypeAlias_base
+**Extends:** ApiTypeAlias_base
 
 ## Remarks
 
@@ -40,7 +40,7 @@ export type BoxedArray<T> = { array: T[] };
 export type Boxed<T> = T extends any[] ? BoxedArray<T[number]> : BoxedValue<T>;
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

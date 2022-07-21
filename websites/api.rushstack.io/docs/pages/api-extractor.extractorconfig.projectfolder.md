@@ -13,7 +13,7 @@ pagination_next: null
 
 Determines the `<projectFolder>` token that can be used with other config file settings. The project folder typically contains the tsconfig.json and package.json config files, but the path is user-defined.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly projectFolder: string;

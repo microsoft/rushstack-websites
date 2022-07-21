@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAndValidateAsync(jsonFilename: string, jsonSchema: JsonSchema, options?: IJsonSchemaValidateOptions): Promise<JsonObject>;
@@ -27,6 +27,6 @@ static loadAndValidateAsync(jsonFilename: string, jsonSchema: JsonSchema, option
 | jsonSchema   | [JsonSchema](./node-core-library.jsonschema.md)                                 |                   |
 | options      | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[JsonObject](./node-core-library.jsonobject.md) &gt;

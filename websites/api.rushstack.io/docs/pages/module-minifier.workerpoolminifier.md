@@ -13,13 +13,13 @@ pagination_next: null
 
 Minifier implementation that uses a thread pool for minification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class WorkerPoolMinifier implements IModuleMinifier
 ```
 
-<b>Implements:</b> [IModuleMinifier](./module-minifier.imoduleminifier.md)
+**Implements:** [IModuleMinifier](./module-minifier.imoduleminifier.md)
 
 ## Constructors
 

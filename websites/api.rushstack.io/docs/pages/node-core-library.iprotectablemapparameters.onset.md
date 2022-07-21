@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional hook that will be invoked before Map.set() is performed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onSet?: (source: ProtectableMap<K, V>, key: K, value: V) => V;

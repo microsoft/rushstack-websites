@@ -13,7 +13,7 @@ pagination_next: null
 
 Create a compiler state for use with the specified `IExtractorInvokeOptions` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static create(extractorConfig: ExtractorConfig, options?: ICompilerStateCreateOptions): CompilerState;
@@ -26,6 +26,6 @@ static create(extractorConfig: ExtractorConfig, options?: ICompilerStateCreateOp
 | extractorConfig | [ExtractorConfig](./api-extractor.extractorconfig.md)                         |                   |
 | options         | [ICompilerStateCreateOptions](./api-extractor.icompilerstatecreateoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [CompilerState](./api-extractor.compilerstate.md)

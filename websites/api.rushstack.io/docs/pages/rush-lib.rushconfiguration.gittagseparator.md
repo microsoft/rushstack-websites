@@ -13,7 +13,7 @@ pagination_next: null
 
 \[Part of the "gitPolicy" feature.\] The separator between package name and version in git tag.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get gitTagSeparator(): string | undefined;

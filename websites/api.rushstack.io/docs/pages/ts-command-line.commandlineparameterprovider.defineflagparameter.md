@@ -13,7 +13,7 @@ pagination_next: null
 
 Defines a command-line switch whose boolean value is true if the switch is provided, and false otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineFlagParameter(definition: ICommandLineFlagDefinition): CommandLineFlagParameter;
@@ -25,7 +25,7 @@ defineFlagParameter(definition: ICommandLineFlagDefinition): CommandLineFlagPara
 | ---------- | ----------------------------------------------------------------------------- | ----------- |
 | definition | [ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md)
 

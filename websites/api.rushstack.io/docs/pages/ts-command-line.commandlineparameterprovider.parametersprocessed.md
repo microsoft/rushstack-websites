@@ -13,7 +13,7 @@ pagination_next: null
 
 Informs the caller if the argparse data has been processed into parameters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get parametersProcessed(): boolean;

@@ -15,7 +15,7 @@ pagination_next: null
 
 If "1", create symlinks with absolute paths instead of relative paths. See [EnvironmentVariableNames.RUSH_ABSOLUTE_SYMLINKS](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get absoluteSymlinks(): boolean;

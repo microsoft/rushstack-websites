@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript member function declaration that belongs to an `ApiClass` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiMethod extends ApiMethod_base
 ```
 
-<b>Extends:</b> ApiMethod_base
+**Extends:** ApiMethod_base
 
 ## Remarks
 
@@ -35,7 +35,7 @@ export class Widget {
 
 Compare with [ApiMethodSignature](./api-extractor-model.apimethodsignature.md) , which represents a method belonging to an interface. For example, a class method can be `static` but an interface method cannot.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

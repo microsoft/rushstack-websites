@@ -15,7 +15,7 @@ pagination_next: null
 
 Information about the changes to a file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileDiffStatus

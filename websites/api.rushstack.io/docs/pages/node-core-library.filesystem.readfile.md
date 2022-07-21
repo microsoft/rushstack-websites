@@ -13,7 +13,7 @@ pagination_next: null
 
 Reads the contents of a file into a string. Behind the scenes it uses `fs.readFileSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readFile(filePath: string, options?: IFileSystemReadFileOptions): string;
@@ -26,6 +26,6 @@ static readFile(filePath: string, options?: IFileSystemReadFileOptions): string;
 | filePath  | string                                                                          | The relative or absolute path to the file whose contents should be read.                              |
 | options   | [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) | <i>(Optional)</i> Optional settings that can change the behavior. Type: <code>IReadFileOptions</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

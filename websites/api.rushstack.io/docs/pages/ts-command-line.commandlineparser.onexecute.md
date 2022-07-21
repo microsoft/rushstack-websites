@@ -13,12 +13,12 @@ pagination_next: null
 
 This hook allows the subclass to perform additional operations before or after the chosen action is executed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onExecute(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

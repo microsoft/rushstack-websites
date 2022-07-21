@@ -13,12 +13,12 @@ pagination_next: null
 
 If the API item has certain important modifier tags such as `@sealed` , `@virtual` , or `@override` , this prepends them as a doc comment above the excerpt.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getExcerptWithModifiers(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

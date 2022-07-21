@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseResxOptionsBase.resxNewlineNormalization property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resxNewlineNormalization: NewlineKind | undefined;

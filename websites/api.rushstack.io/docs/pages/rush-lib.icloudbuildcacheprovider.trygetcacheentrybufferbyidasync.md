@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetCacheEntryBufferByIdAsync(terminal: ITerminal, cacheId: string): Promise<Buffer | undefined>;
@@ -26,6 +26,6 @@ tryGetCacheEntryBufferByIdAsync(terminal: ITerminal, cacheId: string): Promise<B
 | terminal  | [ITerminal](./node-core-library.iterminal.md) |             |
 | cacheId   | string                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Buffer \| undefined&gt;

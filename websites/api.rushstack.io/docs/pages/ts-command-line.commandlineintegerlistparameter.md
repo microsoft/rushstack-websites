@@ -13,13 +13,13 @@ pagination_next: null
 
 The data type returned by [CommandLineParameterProvider.defineIntegerListParameter()](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CommandLineIntegerListParameter extends CommandLineParameterWithArgument
 ```
 
-<b>Extends:</b> [CommandLineParameterWithArgument](./ts-command-line.commandlineparameterwithargument.md)
+**Extends:** [CommandLineParameterWithArgument](./ts-command-line.commandlineparameterwithargument.md)
 
 ## Remarks
 

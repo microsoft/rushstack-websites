@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the phase
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 phaseName: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies a table of reporting rules for different message identifiers, and also the default rule used for identifiers that do not appear in the table.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigMessageReportingTable

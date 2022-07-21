@@ -13,7 +13,7 @@ pagination_next: null
 
 Key used to sign the debug pem certificate.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get keyData(): string | undefined;

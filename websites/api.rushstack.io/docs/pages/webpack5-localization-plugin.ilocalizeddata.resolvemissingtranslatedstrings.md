@@ -13,7 +13,7 @@ pagination_next: null
 
 Use this parameter to specify a function used to load translations missing from the [ILocalizedData.translatedStrings](./webpack5-localization-plugin.ilocalizeddata.translatedstrings.md) parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolveMissingTranslatedStrings?: (locales: string[], localizedFileKey: string, loaderContext: LoaderContext<{}>) => Promise<IResolvedMissingTranslations> | IResolvedMissingTranslations;

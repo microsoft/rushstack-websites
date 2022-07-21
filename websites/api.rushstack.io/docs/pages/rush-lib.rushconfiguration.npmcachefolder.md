@@ -15,7 +15,7 @@ The local folder that will store the NPM package cache. Rush does not rely on th
 
 Example: `C:\MyRepo\common\temp\npm-cache`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get npmCacheFolder(): string;

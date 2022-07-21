@@ -13,7 +13,7 @@ pagination_next: null
 
 The API Extractor configuration that was used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly extractorConfig: ExtractorConfig;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApprovedPackagesConfiguration.getItemByName() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getItemByName(packageName: string): ApprovedPackagesItem | undefined;
@@ -23,6 +23,6 @@ getItemByName(packageName: string): ApprovedPackagesItem | undefined;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ApprovedPackagesItem](./rush-lib.approvedpackagesitem.md) \| undefined

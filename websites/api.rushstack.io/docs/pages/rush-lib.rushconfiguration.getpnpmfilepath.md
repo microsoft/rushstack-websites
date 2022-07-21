@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets the absolute path for "pnpmfile.js" for a specific variant.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getPnpmfilePath(variant?: string | undefined): string;
@@ -25,7 +25,7 @@ getPnpmfilePath(variant?: string | undefined): string;
 | --------- | ------------------- | ------------------------------------------------------------------------------- |
 | variant   | string \| undefined | <i>(Optional)</i> The name of the current variant in use by the active command. |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

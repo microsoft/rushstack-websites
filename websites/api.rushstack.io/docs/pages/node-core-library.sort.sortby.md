@@ -13,7 +13,7 @@ pagination_next: null
 
 Sorts the array according to a key which is obtained from the array elements. The result is guaranteed to be a stable sort.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sortBy<T>(array: T[], keySelector: (element: T) => any, comparer?: (x: any, y: any) => number): void;
@@ -27,7 +27,7 @@ static sortBy<T>(array: T[], keySelector: (element: T) => any, comparer?: (x: an
 | keySelector | (element: T) =&gt; any        |                   |
 | comparer    | (x: any, y: any) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

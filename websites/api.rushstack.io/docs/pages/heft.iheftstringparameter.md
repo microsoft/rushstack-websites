@@ -15,10 +15,10 @@ pagination_next: null
 
 The object returned when registering a string type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftStringParameter = IHeftBaseParameter<string, ICommandLineStringDefinition>;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md)

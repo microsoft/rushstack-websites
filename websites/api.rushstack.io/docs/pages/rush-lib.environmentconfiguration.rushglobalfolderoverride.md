@@ -15,7 +15,7 @@ pagination_next: null
 
 Overrides the location of the `~/.rush` global folder where Rush stores temporary files. See [EnvironmentVariableNames.RUSH_GLOBAL_FOLDER](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get rushGlobalFolderOverride(): string | undefined;

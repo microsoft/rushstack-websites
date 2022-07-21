@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional short name for the flag including the dash, e.g. "-d"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameterShortName?: string;

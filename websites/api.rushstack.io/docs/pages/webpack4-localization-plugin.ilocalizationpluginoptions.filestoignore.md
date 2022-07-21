@@ -15,7 +15,7 @@ pagination_next: null
 >
 > Use [ILocalizationPluginOptions.globsToIgnore](./webpack4-localization-plugin.ilocalizationpluginoptions.globstoignore.md) instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filesToIgnore?: string[];

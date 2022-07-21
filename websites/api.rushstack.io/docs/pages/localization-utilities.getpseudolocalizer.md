@@ -13,7 +13,7 @@ pagination_next: null
 
 Get a function that pseudolocalizes a string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPseudolocalizer(options: IPseudolocaleOptions): (str: string) => string;
@@ -25,6 +25,6 @@ export declare function getPseudolocalizer(options: IPseudolocaleOptions): (str:
 | --------- | ------------------------------------------------------------------------ | ----------- |
 | options   | [IPseudolocaleOptions](./localization-utilities.ipseudolocaleoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 (str: string) =&gt; string

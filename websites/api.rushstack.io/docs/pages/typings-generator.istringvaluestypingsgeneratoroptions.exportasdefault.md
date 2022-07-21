@@ -13,7 +13,7 @@ pagination_next: null
 
 Setting this option wraps the typings export in a default property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportAsDefault?: boolean;

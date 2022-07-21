@@ -13,13 +13,13 @@ pagination_next: null
 
 Inherit from this base class to implement an API Documenter plugin feature that customizes the generation of markdown output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MarkdownDocumenterFeature extends PluginFeature
 ```
 
-<b>Extends:</b> [PluginFeature](./api-documenter.pluginfeature.md)
+**Extends:** [PluginFeature](./api-documenter.pluginfeature.md)
 
 ## Properties
 

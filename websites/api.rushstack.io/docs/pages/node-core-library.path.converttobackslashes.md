@@ -13,7 +13,7 @@ pagination_next: null
 
 Replaces POSIX-style slashes with Windows-style backslashes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertToBackslashes(inputPath: string): string;
@@ -25,7 +25,7 @@ static convertToBackslashes(inputPath: string): string;
 | --------- | ------ | ----------- |
 | inputPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

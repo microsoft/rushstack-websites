@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.getPosixModeBits()](./node-core-library.filesystem.getposixmodebits.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getPosixModeBitsAsync(path: string): Promise<PosixModeBits>;
@@ -25,6 +25,6 @@ static getPosixModeBitsAsync(path: string): Promise<PosixModeBits>;
 | --------- | ------ | ----------- |
 | path      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[PosixModeBits](./node-core-library.posixmodebits.md) &gt;

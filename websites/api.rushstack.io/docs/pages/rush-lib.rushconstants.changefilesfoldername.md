@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("changes") where change files will be stored.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly changeFilesFolderName: string;

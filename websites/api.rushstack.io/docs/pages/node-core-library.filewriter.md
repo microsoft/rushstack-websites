@@ -13,7 +13,7 @@ pagination_next: null
 
 API for interacting with file handles.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FileWriter

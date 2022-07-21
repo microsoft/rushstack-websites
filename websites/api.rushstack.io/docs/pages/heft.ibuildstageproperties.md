@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBuildStageProperties

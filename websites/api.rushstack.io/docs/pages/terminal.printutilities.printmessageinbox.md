@@ -13,7 +13,7 @@ pagination_next: null
 
 Displays a message in the console wrapped in a box UI.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static printMessageInBox(message: string, terminal: ITerminal, boxWidth?: number): void;
@@ -27,6 +27,6 @@ static printMessageInBox(message: string, terminal: ITerminal, boxWidth?: number
 | terminal  | [ITerminal](./node-core-library.iterminal.md) |                                                                                |
 | boxWidth  | number                                        | <i>(Optional)</i> The width of the box, defaults to half of the console width. |
 
-<b>Returns:</b>
+**Returns:**
 
 void

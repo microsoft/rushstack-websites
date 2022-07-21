@@ -13,7 +13,7 @@ pagination_next: null
 
 This is similar to [CommandLineParser.execute()](./ts-command-line.commandlineparser.execute.md) , except that execution errors simply cause the promise to reject. It is the caller's responsibility to trap
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 executeWithoutErrorHandling(args?: string[]): Promise<void>;
@@ -25,6 +25,6 @@ executeWithoutErrorHandling(args?: string[]): Promise<void>;
 | --------- | ---------- | ----------------- |
 | args      | string\[\] | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

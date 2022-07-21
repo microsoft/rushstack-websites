@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then the target object will be assigned "last modification" and "last access" timestamps that are the same as the source. Otherwise, the OS default timestamps are assigned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 preserveTimestamps?: boolean;

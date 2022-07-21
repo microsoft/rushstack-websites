@@ -13,7 +13,7 @@ pagination_next: null
 
 The parameter name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The list of base interfaces that this interface inherits from using the `extends` keyword.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get extendsTypes(): ReadonlyArray<HeritageType>;

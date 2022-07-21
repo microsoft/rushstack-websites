@@ -15,7 +15,7 @@ pagination_next: null
 
 The user Rush configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rushUserConfiguration: RushUserConfiguration;

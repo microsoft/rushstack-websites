@@ -13,7 +13,7 @@ pagination_next: null
 
 The specific character sequence that will be used when appending newlines.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly newline: string;

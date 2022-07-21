@@ -13,7 +13,7 @@ pagination_next: null
 
 Documentation for how the remaining arguments will be used. This will be shown when invoking the tool with "--help".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description: string;

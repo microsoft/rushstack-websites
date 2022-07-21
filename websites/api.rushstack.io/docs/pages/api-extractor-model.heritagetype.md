@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a type referenced via an "extends" or "implements" heritage clause for a TypeScript class or interface.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HeritageType

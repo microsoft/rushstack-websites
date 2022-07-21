@@ -15,7 +15,7 @@ pagination_next: null
 
 An override for the PNPM store path, if `pnpmStore` configuration is set to 'path' See [EnvironmentVariableNames.RUSH_PNPM_STORE_PATH](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get pnpmStorePathOverride(): string | undefined;

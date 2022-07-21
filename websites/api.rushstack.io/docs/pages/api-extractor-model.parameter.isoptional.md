@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the parameter is optional.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isOptional: boolean;

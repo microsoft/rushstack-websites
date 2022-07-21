@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder that contains all change files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get changesFolder(): string;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiModel.addMember() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -24,6 +24,6 @@ addMember(member: ApiPackage): void;
 | --------- | ------------------------------------------------- | ----------- |
 | member    | [ApiPackage](./api-extractor-model.apipackage.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

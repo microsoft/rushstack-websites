@@ -13,13 +13,13 @@ pagination_next: null
 
 The data type returned by [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CommandLineFlagParameter extends CommandLineParameter
 ```
 
-<b>Extends:</b> [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
 
 ## Remarks
 

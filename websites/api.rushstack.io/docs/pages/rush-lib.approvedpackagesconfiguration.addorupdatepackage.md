@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApprovedPackagesConfiguration.addOrUpdatePackage() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addOrUpdatePackage(packageName: string, reviewCategory: string): boolean;
@@ -24,6 +24,6 @@ addOrUpdatePackage(packageName: string, reviewCategory: string): boolean;
 | packageName    | string |             |
 | reviewCategory | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

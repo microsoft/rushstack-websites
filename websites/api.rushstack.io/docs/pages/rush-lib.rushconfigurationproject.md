@@ -13,7 +13,7 @@ pagination_next: null
 
 This represents the configuration of a project that is built by Rush, based on the Rush.json configuration file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RushConfigurationProject

@@ -15,7 +15,7 @@ pagination_next: null
 
 Method to calculate the cache entry id for a project, phase, and project state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly getCacheEntryId: GetCacheEntryIdFunction;

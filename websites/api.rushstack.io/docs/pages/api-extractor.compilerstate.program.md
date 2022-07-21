@@ -13,7 +13,7 @@ pagination_next: null
 
 The TypeScript compiler's `Program` object, which represents a complete scope of analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly program: unknown;

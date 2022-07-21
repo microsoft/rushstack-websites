@@ -13,15 +13,15 @@ pagination_next: null
 
 The abstract base class for [ApiProperty](./api-extractor-model.apiproperty.md) and [ApiPropertySignature](./api-extractor-model.apipropertysignature.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiPropertyItem extends ApiPropertyItem_base
 ```
 
-<b>Extends:</b> ApiPropertyItem_base
+**Extends:** ApiPropertyItem_base
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

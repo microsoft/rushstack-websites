@@ -13,7 +13,7 @@ pagination_next: null
 
 An interface for a builder object that allows a large text string to be constructed incrementally by appending small chunks.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStringBuilder

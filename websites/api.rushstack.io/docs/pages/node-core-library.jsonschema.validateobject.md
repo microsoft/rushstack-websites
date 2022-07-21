@@ -13,7 +13,7 @@ pagination_next: null
 
 Validates the specified JSON object against this JSON schema. If the validation fails, an exception will be thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validateObject(jsonObject: JsonObject, filenameForErrors: string, options?: IJsonSchemaValidateOptions): void;
@@ -27,6 +27,6 @@ validateObject(jsonObject: JsonObject, filenameForErrors: string, options?: IJso
 | filenameForErrors | string                                                                          | The filename that the JSON data was available, or an empty string if not applicable |
 | options           | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | <i>(Optional)</i> Other options that control the validation                         |
 
-<b>Returns:</b>
+**Returns:**
 
 void

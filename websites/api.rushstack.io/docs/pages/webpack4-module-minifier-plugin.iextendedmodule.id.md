@@ -13,7 +13,7 @@ pagination_next: null
 
 Id for the module
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id: string | number | null;

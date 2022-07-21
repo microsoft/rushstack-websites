@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates the type of parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get kind(): CommandLineParameterKind;

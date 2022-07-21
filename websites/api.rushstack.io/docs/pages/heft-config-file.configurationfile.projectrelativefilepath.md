@@ -15,7 +15,7 @@ pagination_next: null
 
 A project root-relative path to the configuration file that should be loaded.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly projectRelativeFilePath: string;

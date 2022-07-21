@@ -13,7 +13,7 @@ pagination_next: null
 
 Append the specified text to the buffer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 append(text: string): void;
@@ -25,6 +25,6 @@ append(text: string): void;
 | --------- | ------ | ----------- |
 | text      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

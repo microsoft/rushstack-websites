@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents a named parameter for a function-like declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Parameter

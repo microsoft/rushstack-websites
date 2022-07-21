@@ -13,7 +13,7 @@ pagination_next: null
 
 Adds all the (key, value) pairs from the source map into the target map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static mergeFromMap<K, V>(targetMap: Map<K, V>, sourceMap: ReadonlyMap<K, V>): void;
@@ -26,7 +26,7 @@ static mergeFromMap<K, V>(targetMap: Map<K, V>, sourceMap: ReadonlyMap<K, V>): v
 | targetMap | Map&lt;K, V&gt;         | The map that entries will be added to      |
 | sourceMap | ReadonlyMap&lt;K, V&gt; | The map containing the entries to be added |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

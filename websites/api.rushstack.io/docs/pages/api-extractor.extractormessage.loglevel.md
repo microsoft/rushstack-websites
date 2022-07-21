@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies how the message should be reported.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get logLevel(): ExtractorLogLevel;

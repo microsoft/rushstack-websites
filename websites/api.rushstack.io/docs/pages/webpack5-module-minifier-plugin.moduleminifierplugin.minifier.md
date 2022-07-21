@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ModuleMinifierPlugin.minifier property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 minifier: IModuleMinifier;

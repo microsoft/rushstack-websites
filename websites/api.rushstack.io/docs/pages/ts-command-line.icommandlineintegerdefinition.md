@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md) , this interface defines a command line parameter whose argument is an integer value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineIntegerDefinition extends IBaseCommandLineDefinitionWithArgument
 ```
 
-<b>Extends:</b> [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md)
+**Extends:** [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md)
 
 ## Properties
 

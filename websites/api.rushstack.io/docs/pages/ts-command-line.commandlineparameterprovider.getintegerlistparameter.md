@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the CommandLineIntegerParameter with the specified long name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getIntegerListParameter(parameterLongName: string, parameterScope?: string): CommandLineIntegerListParameter;
@@ -26,7 +26,7 @@ getIntegerListParameter(parameterLongName: string, parameterScope?: string): Com
 | parameterLongName | string |                   |
 | parameterScope    | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineIntegerListParameter](./ts-command-line.commandlineintegerlistparameter.md)
 

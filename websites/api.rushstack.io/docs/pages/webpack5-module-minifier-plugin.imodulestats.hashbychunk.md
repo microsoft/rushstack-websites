@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IModuleStats.hashByChunk property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hashByChunk: Map<Chunk, string>;

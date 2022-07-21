@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TypingsGenerator.getOutputFilePaths() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getOutputFilePaths(relativePath: string): string[];
@@ -23,6 +23,6 @@ getOutputFilePaths(relativePath: string): string[];
 | ------------ | ------ | ----------- |
 | relativePath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]

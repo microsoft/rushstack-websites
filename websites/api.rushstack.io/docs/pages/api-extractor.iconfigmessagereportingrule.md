@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures reporting for a given message identifier.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigMessageReportingRule

@@ -15,7 +15,7 @@ pagination_next: null
 
 Options to be provided to a [ConsoleTerminalProvider](./node-core-library.consoleterminalprovider.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConsoleTerminalProviderOptions

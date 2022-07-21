@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder path where the search will start. Defaults tot he current working directory.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 startingFolder?: string;

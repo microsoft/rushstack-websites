@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents the internal state of a [TextRewriter](./terminal.textrewriter.md) subclass.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type TextRewriterState = Brand<unknown, 'TextRewriterState'>;
 ```
 
-<b>References:</b> [Brand](./node-core-library.brand.md)
+**References:** [Brand](./node-core-library.brand.md)
 
 ## Remarks
 

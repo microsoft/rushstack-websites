@@ -13,7 +13,7 @@ pagination_next: null
 
 The `afterCompile` event is fired exactly once, after the "compile" stage completes its first operation. The "bundle" stage will not begin until all event handlers have resolved their promises. The behavior of this event is the same in watch mode and non-watch mode.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly afterCompile: AsyncParallelHook;

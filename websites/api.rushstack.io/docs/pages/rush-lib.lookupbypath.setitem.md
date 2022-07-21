@@ -15,7 +15,7 @@ pagination_next: null
 
 Associates the value with the specified serialized path. If a value is already associated, will overwrite.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setItem(serializedPath: string, value: TItem): this;
@@ -28,7 +28,7 @@ setItem(serializedPath: string, value: TItem): this;
 | serializedPath | string |             |
 | value          | TItem  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

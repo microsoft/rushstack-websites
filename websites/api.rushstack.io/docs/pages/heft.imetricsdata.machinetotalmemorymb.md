@@ -13,7 +13,7 @@ pagination_next: null
 
 The total amount of memory the machine has, in megabytes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 machineTotalMemoryMB: number;

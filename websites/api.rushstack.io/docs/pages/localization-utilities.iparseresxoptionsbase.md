@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseResxOptionsBase interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParseResxOptionsBase

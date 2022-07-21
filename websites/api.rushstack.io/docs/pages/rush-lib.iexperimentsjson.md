@@ -15,7 +15,7 @@ pagination_next: null
 
 This interface represents the raw experiments.json file which allows repo maintainers to enable and disable experimental Rush features.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExperimentsJson

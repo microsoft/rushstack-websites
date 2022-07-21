@@ -13,7 +13,7 @@ pagination_next: null
 
 The text description of this issue.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly text: string;

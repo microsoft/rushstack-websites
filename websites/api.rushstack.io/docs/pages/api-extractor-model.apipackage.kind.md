@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPackage.kind property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */

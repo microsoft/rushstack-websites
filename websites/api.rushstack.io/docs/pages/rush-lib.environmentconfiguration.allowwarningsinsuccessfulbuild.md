@@ -15,7 +15,7 @@ pagination_next: null
 
 Setting this environment variable overrides the value of `allowWarningsInSuccessfulBuild` in the `command-line.json` configuration file. Specify `1` to allow warnings in a successful build, or `0` to disallow them. (See the comments in the command-line.json file for more information).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get allowWarningsInSuccessfulBuild(): boolean;

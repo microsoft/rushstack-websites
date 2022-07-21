@@ -13,13 +13,13 @@ pagination_next: null
 
 This returns a scoped name such as `"Namespace1.Namespace2.MyClass.myMember()"` . It does not include the package name or entry point.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getScopedNameWithinPackage(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

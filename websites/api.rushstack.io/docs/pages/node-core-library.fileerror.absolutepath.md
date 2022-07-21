@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path to the file that contains the error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly absolutePath: string;

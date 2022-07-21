@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.move()](./node-core-library.filesystem.move.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static moveAsync(options: IFileSystemMoveOptions): Promise<void>;
@@ -25,6 +25,6 @@ static moveAsync(options: IFileSystemMoveOptions): Promise<void>;
 | --------- | ----------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemMoveOptions](./node-core-library.ifilesystemmoveoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

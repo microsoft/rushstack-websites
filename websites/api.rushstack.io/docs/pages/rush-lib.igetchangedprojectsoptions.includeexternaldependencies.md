@@ -15,7 +15,7 @@ pagination_next: null
 
 If set to `true` , consider a project's external dependency installation layout as defined in the package manager lockfile when determining if it has changed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 includeExternalDependencies: boolean;

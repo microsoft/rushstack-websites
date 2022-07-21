@@ -13,7 +13,7 @@ pagination_next: null
 
 Deletes a folder, including all of its contents. Behind the scenes is uses `fs-extra.removeSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static deleteFolder(folderPath: string): void;
@@ -25,7 +25,7 @@ static deleteFolder(folderPath: string): void;
 | ---------- | ------ | -------------------------------------------------------------------- |
 | folderPath | string | The absolute or relative path to the folder which should be deleted. |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

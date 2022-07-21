@@ -13,7 +13,7 @@ pagination_next: null
 
 The Executable class provides a safe, portable, recommended solution for tools that need to launch child processes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Executable

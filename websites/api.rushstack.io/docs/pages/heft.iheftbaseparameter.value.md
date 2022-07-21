@@ -15,7 +15,7 @@ pagination_next: null
 
 The value specified on the command line for this parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly value?: TValue;

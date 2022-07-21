@@ -15,10 +15,10 @@ pagination_next: null
 
 The object returned when registering an integer type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftIntegerParameter = IHeftBaseParameter<number, ICommandLineIntegerDefinition>;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md)

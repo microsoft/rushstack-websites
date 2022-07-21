@@ -13,7 +13,7 @@ pagination_next: null
 
 Fails if path exists. The exclusive flag ensures that path is newly created.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exclusive?: boolean;

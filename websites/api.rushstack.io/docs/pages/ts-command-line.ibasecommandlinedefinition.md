@@ -13,7 +13,7 @@ pagination_next: null
 
 For use with CommandLineParser, this interface represents a generic command-line parameter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IBaseCommandLineDefinition

@@ -13,7 +13,7 @@ pagination_next: null
 
 Looks up a project in the projectsByName map. If the project is not found, then undefined is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getProjectByName(projectName: string): RushConfigurationProject | undefined;
@@ -25,6 +25,6 @@ getProjectByName(projectName: string): RushConfigurationProject | undefined;
 | ----------- | ------ | ----------- |
 | projectName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [RushConfigurationProject](./rush-lib.rushconfigurationproject.md) \| undefined

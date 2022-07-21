@@ -13,13 +13,13 @@ pagination_next: null
 
 For use with [TextRewriterTransform](./terminal.textrewritertransform.md) , this rewriter removes ANSI escape codes including colored text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RemoveColorsTextRewriter extends TextRewriter
 ```
 
-<b>Extends:</b> [TextRewriter](./terminal.textrewriter.md)
+**Extends:** [TextRewriter](./terminal.textrewriter.md)
 
 ## Remarks
 

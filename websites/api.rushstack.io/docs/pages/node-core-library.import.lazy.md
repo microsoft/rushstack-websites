@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides a way to improve process startup times by lazy-loading imported modules.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static lazy(moduleName: string, require: (id: string) => unknown): any;
@@ -26,7 +26,7 @@ static lazy(moduleName: string, require: (id: string) => unknown): any;
 | moduleName | string                     |             |
 | require    | (id: string) =&gt; unknown |             |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

@@ -15,7 +15,7 @@ pagination_next: null
 
 The provider for interacting with the local build cache.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly localCacheProvider: FileSystemBuildCacheProvider;

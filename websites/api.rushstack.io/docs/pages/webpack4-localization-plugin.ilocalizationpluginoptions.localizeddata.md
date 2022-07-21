@@ -13,7 +13,7 @@ pagination_next: null
 
 Localization data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 localizedData: ILocalizedData;

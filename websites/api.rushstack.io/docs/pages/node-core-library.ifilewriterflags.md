@@ -13,7 +13,7 @@ pagination_next: null
 
 Interface which represents the flags about which mode the file should be opened in.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileWriterFlags

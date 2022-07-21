@@ -11,7 +11,7 @@ pagination_next: null
 
 ## parseResx() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseResx(options: IParseResxOptions): ILocalizationFile;
@@ -23,6 +23,6 @@ export declare function parseResx(options: IParseResxOptions): ILocalizationFile
 | --------- | ------------------------------------------------------------------ | ----------- |
 | options   | [IParseResxOptions](./localization-utilities.iparseresxoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ILocalizationFile](./localization-utilities.ilocalizationfile.md)

@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, force a fresh load instead of returning a cached entry, if one existed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bypassCache?: boolean;

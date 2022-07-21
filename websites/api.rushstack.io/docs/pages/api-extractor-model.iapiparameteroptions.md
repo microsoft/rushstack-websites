@@ -13,7 +13,7 @@ pagination_next: null
 
 Represents parameter information that is part of [IApiParameterListMixinOptions](./api-extractor-model.iapiparameterlistmixinoptions.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiParameterOptions

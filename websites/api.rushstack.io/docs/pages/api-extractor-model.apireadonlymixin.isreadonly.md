@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates that the API item's value cannot be assigned by an external consumer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly isReadonly: boolean;

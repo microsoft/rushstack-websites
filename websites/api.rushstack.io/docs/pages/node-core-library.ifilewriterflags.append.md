@@ -13,7 +13,7 @@ pagination_next: null
 
 Open file for appending.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 append?: boolean;

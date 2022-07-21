@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.ignoreMissingResxComments property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreMissingResxComments?: boolean | undefined;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The interface for a debug certificate instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICertificate

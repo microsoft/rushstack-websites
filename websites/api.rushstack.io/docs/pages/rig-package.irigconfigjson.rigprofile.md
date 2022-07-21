@@ -13,7 +13,7 @@ pagination_next: null
 
 Specify which rig profile to use from the rig package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rigProfile?: string;

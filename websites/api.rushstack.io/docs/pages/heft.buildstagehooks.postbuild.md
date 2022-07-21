@@ -11,7 +11,7 @@ pagination_next: null
 
 ## BuildStageHooks.postBuild property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly postBuild: SyncHook<IPostBuildSubstage>;

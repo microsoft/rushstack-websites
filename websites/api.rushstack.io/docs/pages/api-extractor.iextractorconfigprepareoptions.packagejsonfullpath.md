@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path of the file that the `packageJson` object was loaded from, or undefined if API Extractor was invoked without a package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 packageJsonFullPath: string | undefined;

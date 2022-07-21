@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then when copying symlinks, copy the target object instead of copying the link.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dereferenceSymlinks?: boolean;

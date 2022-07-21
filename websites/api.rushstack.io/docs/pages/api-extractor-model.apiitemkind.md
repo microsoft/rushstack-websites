@@ -13,7 +13,7 @@ pagination_next: null
 
 The type returned by the [ApiItem.kind](./api-extractor-model.apiitem.kind.md) property, which can be used to easily distinguish subclasses of [ApiItem](./api-extractor-model.apiitem.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum ApiItemKind

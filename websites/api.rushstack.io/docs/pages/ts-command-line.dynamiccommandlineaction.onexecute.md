@@ -11,12 +11,12 @@ pagination_next: null
 
 ## DynamicCommandLineAction.onExecute() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onExecute(): Promise<void>;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("common-versions.json") for an optional configuration file that stores dependency version information that affects all projects in the repo. This configuration file should go in the "common/config/rush" folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly commonVersionsFilename: string;

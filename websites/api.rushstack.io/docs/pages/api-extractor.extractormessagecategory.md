@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies a category of messages for use with [ExtractorMessage](./api-extractor.extractormessage.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare const enum ExtractorMessageCategory

@@ -13,7 +13,7 @@ pagination_next: null
 
 Transform code by farming it out to a worker pool.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 minify(request: IModuleMinificationRequest, callback: IModuleMinificationCallback): void;
@@ -26,6 +26,6 @@ minify(request: IModuleMinificationRequest, callback: IModuleMinificationCallbac
 | request   | [IModuleMinificationRequest](./module-minifier.imoduleminificationrequest.md)   | The request to process |
 | callback  | [IModuleMinificationCallback](./module-minifier.imoduleminificationcallback.md) | The callback to invoke |
 
-<b>Returns:</b>
+**Returns:**
 
 void

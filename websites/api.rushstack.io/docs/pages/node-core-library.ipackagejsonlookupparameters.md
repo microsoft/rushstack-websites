@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructor parameters for [PackageJsonLookup](./node-core-library.packagejsonlookup.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPackageJsonLookupParameters

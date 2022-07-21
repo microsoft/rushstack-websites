@@ -11,13 +11,13 @@ pagination_next: null
 
 ## TerminalTransform.onClose() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
 protected onClose(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

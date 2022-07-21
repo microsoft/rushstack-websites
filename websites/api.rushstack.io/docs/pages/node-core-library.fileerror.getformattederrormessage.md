@@ -13,7 +13,7 @@ pagination_next: null
 
 Get the formatted error message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getFormattedErrorMessage(options?: IFileErrorFormattingOptions): string;
@@ -25,6 +25,6 @@ getFormattedErrorMessage(options?: IFileErrorFormattingOptions): string;
 | --------- | --------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | options   | [IFileErrorFormattingOptions](./node-core-library.ifileerrorformattingoptions.md) | <i>(Optional)</i> Options for the error message format. |
 
-<b>Returns:</b>
+**Returns:**
 
 string

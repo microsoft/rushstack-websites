@@ -11,7 +11,7 @@ pagination_next: null
 
 ## LocalizationPlugin.apply() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(compiler: Webpack.Compiler): void;
@@ -23,6 +23,6 @@ apply(compiler: Webpack.Compiler): void;
 | --------- | ---------------- | ----------- |
 | compiler  | Webpack.Compiler |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

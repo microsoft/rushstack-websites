@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the CommandLineFlagParameter with the specified long name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getFlagParameter(parameterLongName: string, parameterScope?: string): CommandLineFlagParameter;
@@ -26,7 +26,7 @@ getFlagParameter(parameterLongName: string, parameterScope?: string): CommandLin
 | parameterLongName | string |                   |
 | parameterScope    | string | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md)
 

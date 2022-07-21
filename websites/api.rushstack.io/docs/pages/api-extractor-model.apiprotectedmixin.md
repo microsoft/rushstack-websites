@@ -13,7 +13,7 @@ pagination_next: null
 
 Static members for [ApiProtectedMixin](./api-extractor-model.apiprotectedmixin.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiProtectedMixin

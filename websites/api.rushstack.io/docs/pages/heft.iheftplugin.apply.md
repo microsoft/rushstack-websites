@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IHeftPlugin.apply() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(heftSession: HeftSession, heftConfiguration: HeftConfiguration, options?: TOptions): void;
@@ -25,6 +25,6 @@ apply(heftSession: HeftSession, heftConfiguration: HeftConfiguration, options?: 
 | heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) |                   |
 | options           | TOptions                                         | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void

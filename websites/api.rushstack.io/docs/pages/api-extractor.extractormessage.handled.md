@@ -13,7 +13,7 @@ pagination_next: null
 
 If the [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md) sets this property to true, it will prevent the message from being displayed by API Extractor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get handled(): boolean;

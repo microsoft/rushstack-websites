@@ -13,7 +13,7 @@ pagination_next: null
 
 The absolute path to the "rush.json" configuration file that was loaded to construct this object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rushJsonFile(): string;

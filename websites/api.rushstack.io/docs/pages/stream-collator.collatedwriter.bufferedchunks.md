@@ -15,7 +15,7 @@ pagination_next: null
 
 For diagnostic purposes, if the writer is buffering chunks because it has not become active yet, they can be inspected via this property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get bufferedChunks(): ReadonlyArray<ITerminalChunk>;

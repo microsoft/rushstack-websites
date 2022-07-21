@@ -13,7 +13,7 @@ pagination_next: null
 
 Remote URL(s) of the repository. If a value is provided, " rush change " will use one of these to find the right remote to compare against. Specifying multiple URLs is useful if a GitHub repository is renamed or for `<projectName>.visualstudio.com` versus `dev.azure.com/<projectName>` URLs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get repositoryUrls(): string[];

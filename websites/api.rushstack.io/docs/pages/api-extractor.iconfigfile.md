@@ -13,7 +13,7 @@ pagination_next: null
 
 Configuration options for the API Extractor tool. These options can be constructed programmatically or loaded from the api-extractor.json config file using the [ExtractorConfig](./api-extractor.extractorconfig.md) class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigFile

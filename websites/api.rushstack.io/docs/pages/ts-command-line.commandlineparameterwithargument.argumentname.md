@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the argument, which will be shown in the command-line help.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly argumentName: string;

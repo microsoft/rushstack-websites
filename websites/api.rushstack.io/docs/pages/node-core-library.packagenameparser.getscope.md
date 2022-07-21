@@ -13,7 +13,7 @@ pagination_next: null
 
 The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getScope(packageName: string): string;
@@ -25,7 +25,7 @@ getScope(packageName: string): string;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

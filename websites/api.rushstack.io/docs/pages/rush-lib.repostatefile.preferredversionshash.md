@@ -13,7 +13,7 @@ pagination_next: null
 
 The hash of all preferred versions at the end of the last update.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get preferredVersionsHash(): string | undefined;

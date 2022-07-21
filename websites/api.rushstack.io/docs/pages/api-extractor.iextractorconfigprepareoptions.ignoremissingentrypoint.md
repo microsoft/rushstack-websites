@@ -13,7 +13,7 @@ pagination_next: null
 
 When preparing the configuration object, folder and file paths referenced in the configuration are checked for existence, and an error is reported if they are not found. This option can be used to disable this check for the main entry point module. This may be useful when preparing a configuration file for an un-built project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreMissingEntryPoint?: boolean;

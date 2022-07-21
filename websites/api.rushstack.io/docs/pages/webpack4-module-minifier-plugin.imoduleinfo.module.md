@@ -13,7 +13,7 @@ pagination_next: null
 
 The raw module object from Webpack, in case information from it is necessary for reconstruction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 module: IExtendedModule;

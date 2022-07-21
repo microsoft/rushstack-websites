@@ -15,7 +15,7 @@ Odd-numbered major versions of Node.js are experimental. Even-numbered releases 
 
 Rush normally prints a warning if it detects a pre-LTS Node.js version. If you are testing pre-LTS versions in preparation for supporting the first LTS version, you can use this setting to disable Rush's warning.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get suppressNodeLtsWarning(): boolean;

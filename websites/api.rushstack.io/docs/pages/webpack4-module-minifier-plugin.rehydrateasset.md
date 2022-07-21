@@ -13,7 +13,7 @@ pagination_next: null
 
 Rehydrates an asset with minified modules.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function rehydrateAsset(asset: IAssetInfo, moduleMap: IModuleMap, banner: string): Source;
@@ -27,6 +27,6 @@ export declare function rehydrateAsset(asset: IAssetInfo, moduleMap: IModuleMap,
 | moduleMap | [IModuleMap](./webpack4-module-minifier-plugin.imodulemap.md) | The minified modules                       |
 | banner    | string                                                        | A banner to inject for license information |
 
-<b>Returns:</b>
+**Returns:**
 
 Source

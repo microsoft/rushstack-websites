@@ -13,7 +13,7 @@ pagination_next: null
 
 The optional column number. If not specified, the column number will not be included in the formatted string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 column?: number;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The default fully-qualified git remote branch of the repository. This helps "rush change" find the right branch to compare against.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get repositoryDefaultFullyQualifiedRemoteBranch(): string;

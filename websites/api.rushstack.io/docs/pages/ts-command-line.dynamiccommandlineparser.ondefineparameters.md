@@ -11,12 +11,12 @@ pagination_next: null
 
 ## DynamicCommandLineParser.onDefineParameters() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onDefineParameters(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -13,7 +13,7 @@ pagination_next: null
 
 Options to pass to the rush "launch" functions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILaunchOptions

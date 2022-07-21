@@ -13,13 +13,13 @@ pagination_next: null
 
 The options for [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemCopyFileOptions extends IFileSystemCopyFileBaseOptions
 ```
 
-<b>Extends:</b> [IFileSystemCopyFileBaseOptions](./node-core-library.ifilesystemcopyfilebaseoptions.md)
+**Extends:** [IFileSystemCopyFileBaseOptions](./node-core-library.ifilesystemcopyfilebaseoptions.md)
 
 ## Properties
 

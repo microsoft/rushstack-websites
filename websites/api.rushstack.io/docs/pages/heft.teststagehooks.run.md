@@ -11,7 +11,7 @@ pagination_next: null
 
 ## TestStageHooks.run property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly run: AsyncParallelHook;

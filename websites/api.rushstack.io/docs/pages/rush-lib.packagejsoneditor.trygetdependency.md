@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonEditor.tryGetDependency() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryGetDependency(packageName: string): PackageJsonDependency | undefined;
@@ -23,6 +23,6 @@ tryGetDependency(packageName: string): PackageJsonDependency | undefined;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [PackageJsonDependency](./rush-lib.packagejsondependency.md) \| undefined

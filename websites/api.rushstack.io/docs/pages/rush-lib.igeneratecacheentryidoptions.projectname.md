@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of the project
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 projectName: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The z-schema error tree, formatted as an indented text string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 details: string;

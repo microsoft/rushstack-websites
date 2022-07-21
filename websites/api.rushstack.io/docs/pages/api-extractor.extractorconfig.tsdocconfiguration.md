@@ -13,7 +13,7 @@ pagination_next: null
 
 The `TSDocConfiguration` loaded from [ExtractorConfig.tsdocConfigFile](./api-extractor.extractorconfig.tsdocconfigfile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tsdocConfiguration: TSDocConfiguration;

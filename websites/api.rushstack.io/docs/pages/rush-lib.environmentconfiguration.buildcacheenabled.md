@@ -15,7 +15,7 @@ pagination_next: null
 
 If set, enables or disables the cloud build cache feature. See [EnvironmentVariableNames.RUSH_BUILD_CACHE_ENABLED](./rush-lib.environmentvariablenames.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get buildCacheEnabled(): boolean | undefined;

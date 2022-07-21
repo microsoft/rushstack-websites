@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.exportAsDefault property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportAsDefault?: boolean;

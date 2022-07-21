@@ -13,7 +13,7 @@ pagination_next: null
 
 The folder where rush-plugin options json files are stored. Example: `C:\MyRepo\common\config\rush-plugins`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rushPluginOptionsFolder(): string;

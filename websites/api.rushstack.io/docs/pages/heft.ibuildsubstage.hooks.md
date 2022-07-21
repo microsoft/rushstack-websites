@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildSubstage.hooks property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hooks: TBuildSubstageHooks;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Indicates that this runner is architectural and should not be reported on.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 silent: boolean;

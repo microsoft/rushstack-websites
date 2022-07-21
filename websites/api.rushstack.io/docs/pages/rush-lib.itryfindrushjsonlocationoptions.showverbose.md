@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether to show verbose console messages. Defaults to false.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 showVerbose?: boolean;

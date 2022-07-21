@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, verbose-level messages should be written to the console.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verboseEnabled: boolean;

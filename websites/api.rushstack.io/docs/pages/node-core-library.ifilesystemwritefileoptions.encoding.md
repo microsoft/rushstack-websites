@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, will change the encoding of the file that will be written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 encoding?: Encoding;

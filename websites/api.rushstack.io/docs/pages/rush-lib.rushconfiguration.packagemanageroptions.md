@@ -13,7 +13,7 @@ pagination_next: null
 
 The configuration options used by the current package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageManagerOptions(): PackageManagerOptionsConfigurationBase;

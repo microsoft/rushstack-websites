@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the license.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 license?: string;

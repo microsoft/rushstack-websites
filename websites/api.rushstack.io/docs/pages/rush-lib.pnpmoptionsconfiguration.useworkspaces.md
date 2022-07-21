@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then Rush will use the workspaces feature to install and link packages when invoking PNPM.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly useWorkspaces: boolean;

@@ -11,10 +11,10 @@ pagination_next: null
 
 ## IResolvedMissingTranslations type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IResolvedMissingTranslations = ReadonlyMap<string, ILocaleFileData>;
 ```
 
-<b>References:</b> [ILocaleFileData](./webpack5-localization-plugin.ilocalefiledata.md)
+**References:** [ILocaleFileData](./webpack5-localization-plugin.ilocalefiledata.md)

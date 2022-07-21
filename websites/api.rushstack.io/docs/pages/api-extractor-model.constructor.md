@@ -13,7 +13,7 @@ pagination_next: null
 
 This abstraction is used by the mixin pattern. It describes a class constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type Constructor<T = {}> = new (...args: any[]) => T;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IParseFileOptions.content property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 content: string;

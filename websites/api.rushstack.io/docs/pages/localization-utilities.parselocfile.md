@@ -11,7 +11,7 @@ pagination_next: null
 
 ## parseLocFile() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseLocFile(options: IParseLocFileOptions): ILocalizationFile;
@@ -23,6 +23,6 @@ export declare function parseLocFile(options: IParseLocFileOptions): ILocalizati
 | --------- | ------------------------------------------------------------------------ | ----------- |
 | options   | [IParseLocFileOptions](./localization-utilities.iparselocfileoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [ILocalizationFile](./localization-utilities.ilocalizationfile.md)

@@ -15,7 +15,7 @@ pagination_next: null
 
 Get everything that has been written at verbose-level severity.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getVerbose(options?: IStringBufferOutputOptions): string;
@@ -27,6 +27,6 @@ getVerbose(options?: IStringBufferOutputOptions): string;
 | --------- | ------------------------------------------------------------------------------- | ----------------- |
 | options   | [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

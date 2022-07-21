@@ -13,12 +13,12 @@ pagination_next: null
 
 The child class should implement this hook to define its command-line parameters, e.g. by calling defineFlagParameter().
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected onDefineParameters(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

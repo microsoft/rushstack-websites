@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional hook that will be invoked before Map.clear() is performed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onClear?: (source: ProtectableMap<K, V>) => void;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Sorts the entries in a Map object according to the map keys. The result is guaranteed to be a stable sort.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static sortMapKeys<K, V>(map: Map<K, V>, keyComparer?: (x: K, y: K) => number): void;
@@ -26,7 +26,7 @@ static sortMapKeys<K, V>(map: Map<K, V>, keyComparer?: (x: K, y: K) => number): 
 | map         | Map&lt;K, V&gt;           |                   |
 | keyComparer | (x: K, y: K) =&gt; number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

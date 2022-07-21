@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.deleteFolder()](./node-core-library.filesystem.deletefolder.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static deleteFolderAsync(folderPath: string): Promise<void>;
@@ -25,6 +25,6 @@ static deleteFolderAsync(folderPath: string): Promise<void>;
 | ---------- | ------ | ----------- |
 | folderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Creates a symbolic link to a file. On Windows operating systems, this may require administrator elevation. Behind the scenes it uses `fs.symlinkSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createSymbolicLinkFile(options: IFileSystemCreateLinkOptions): void;
@@ -25,7 +25,7 @@ static createSymbolicLinkFile(options: IFileSystemCreateLinkOptions): void;
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

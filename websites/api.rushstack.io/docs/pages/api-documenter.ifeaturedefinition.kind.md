@@ -13,7 +13,7 @@ pagination_next: null
 
 Determines the kind of feature. The specified value is the name of the base class that `subclass` inherits from.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 kind: 'MarkdownDocumenterFeature';

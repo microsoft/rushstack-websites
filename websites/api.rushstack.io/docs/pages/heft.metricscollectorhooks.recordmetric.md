@@ -13,7 +13,7 @@ pagination_next: null
 
 This hook is called when a metric is recorded.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 recordMetric: SyncHook<string, IMetricsData>;

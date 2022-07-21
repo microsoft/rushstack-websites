@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IApiClassOptions.implementsTokenRanges property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 implementsTokenRanges: IExcerptTokenRange[];

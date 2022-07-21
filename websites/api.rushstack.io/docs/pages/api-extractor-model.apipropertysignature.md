@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript property declaration that belongs to an `ApiInterface` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiPropertySignature extends ApiPropertyItem
 ```
 
-<b>Extends:</b> [ApiPropertyItem](./api-extractor-model.apipropertyitem.md)
+**Extends:** [ApiPropertyItem](./api-extractor-model.apipropertyitem.md)
 
 ## Remarks
 
@@ -36,7 +36,7 @@ export interface IWidget {
 
 Compare with [ApiProperty](./api-extractor-model.apiproperty.md) , which represents a property belonging to a class. For example, a class property can be `static` but an interface property cannot.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

@@ -13,13 +13,13 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICustomPropertyInheritance<TObject> extends IPropertyInheritance<InheritanceType.custom>
 ```
 
-<b>Extends:</b> [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) &lt;[InheritanceType.custom](./heft-config-file.inheritancetype.md)
+**Extends:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) &lt;[InheritanceType.custom](./heft-config-file.inheritancetype.md)
 
 ## Properties
 

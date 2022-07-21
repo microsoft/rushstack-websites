@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static deleteFileAsync(filePath: string, options?: IFileSystemDeleteFileOptions): Promise<void>;
@@ -26,6 +26,6 @@ static deleteFileAsync(filePath: string, options?: IFileSystemDeleteFileOptions)
 | filePath  | string                                                                              |                   |
 | options   | [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

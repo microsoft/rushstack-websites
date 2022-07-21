@@ -15,7 +15,7 @@ pagination_next: null
 
 Get the path to the source file that the referenced property was originally loaded from.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getObjectSourceFilePath<TObject extends object>(obj: TObject): string | undefined;
@@ -27,6 +27,6 @@ getObjectSourceFilePath<TObject extends object>(obj: TObject): string | undefine
 | --------- | ------- | ----------- |
 | obj       | TObject |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined

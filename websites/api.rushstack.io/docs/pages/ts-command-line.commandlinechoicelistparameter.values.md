@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the string arguments for a choice list parameter that was parsed from the command line.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get values(): ReadonlyArray<string>;

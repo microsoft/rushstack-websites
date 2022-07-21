@@ -15,7 +15,7 @@ pagination_next: null
 
 Duration in seconds
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly durationInSeconds: number;

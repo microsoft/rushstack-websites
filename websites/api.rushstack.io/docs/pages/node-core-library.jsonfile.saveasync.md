@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [JsonFile.save()](./node-core-library.jsonfile.save.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static saveAsync(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFileSaveOptions): Promise<boolean>;
@@ -27,6 +27,6 @@ static saveAsync(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFi
 | jsonFilename | string                                                              |                   |
 | options      | [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;

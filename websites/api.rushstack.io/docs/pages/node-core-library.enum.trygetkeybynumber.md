@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns an enum string key, given its numeric value. Returns `undefined` if no matching value is found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryGetKeyByNumber<TEnumValue, TEnumObject extends {
@@ -28,7 +28,7 @@ static tryGetKeyByNumber<TEnumValue, TEnumObject extends {
 | enumObject | TEnumObject |             |
 | value      | number      |             |
 
-<b>Returns:</b>
+**Returns:**
 
 keyof typeof enumObject \| undefined
 

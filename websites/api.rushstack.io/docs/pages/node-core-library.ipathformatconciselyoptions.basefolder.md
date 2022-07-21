@@ -13,7 +13,7 @@ pagination_next: null
 
 The base path to use when converting `pathToConvert` to a relative path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 baseFolder: string;

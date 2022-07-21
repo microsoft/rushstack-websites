@@ -13,7 +13,7 @@ pagination_next: null
 
 This object represents the outcome of an invocation of API Extractor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExtractorResult

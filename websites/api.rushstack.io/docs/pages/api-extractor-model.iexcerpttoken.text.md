@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IExcerptToken.text property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 text: string;

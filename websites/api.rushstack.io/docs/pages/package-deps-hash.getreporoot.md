@@ -15,7 +15,7 @@ pagination_next: null
 
 Finds the root of the current Git repository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getRepoRoot(currentWorkingDirectory: string, gitPath?: string): string;
@@ -28,7 +28,7 @@ export declare function getRepoRoot(currentWorkingDirectory: string, gitPath?: s
 | currentWorkingDirectory | string | The working directory for which to locate the repository |
 | gitPath                 | string | <i>(Optional)</i> The path to the Git executable         |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

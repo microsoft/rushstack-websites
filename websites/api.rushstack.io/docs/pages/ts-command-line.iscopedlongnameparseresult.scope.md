@@ -13,7 +13,7 @@ pagination_next: null
 
 The scope parsed from the scoped long name or undefined if no scope was found, e.g. "--my-scope:my-parameter" - &gt; "my-scope"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scope: string | undefined;

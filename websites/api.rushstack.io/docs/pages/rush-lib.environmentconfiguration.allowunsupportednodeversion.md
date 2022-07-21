@@ -17,7 +17,7 @@ If this environment variable is set to "1", the Node.js version check will print
 
 See [EnvironmentVariableNames.RUSH_ALLOW_UNSUPPORTED_NODEJS](./rush-lib.environmentvariablenames.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get allowUnsupportedNodeVersion(): boolean;

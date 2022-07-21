@@ -13,7 +13,7 @@ pagination_next: null
 
 A list of NPM package names whose exports should be treated as part of this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly bundledPackages: string[];

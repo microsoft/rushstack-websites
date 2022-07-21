@@ -13,7 +13,7 @@ pagination_next: null
 
 The identifier of the string within its original source file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stringName: string;

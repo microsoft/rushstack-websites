@@ -13,7 +13,7 @@ pagination_next: null
 
 Additional .d.ts files to include in the analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 additionalEntryPoints?: string[];

@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for configuring the LocalMinifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocalMinifierOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly strictPeerDependencies: boolean;

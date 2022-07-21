@@ -13,7 +13,7 @@ pagination_next: null
 
 Registers a JsonSchema that will be loaded from a file on disk.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static fromFile(filename: string, options?: IJsonSchemaFromFileOptions): JsonSchema;
@@ -26,7 +26,7 @@ static fromFile(filename: string, options?: IJsonSchemaFromFileOptions): JsonSch
 | filename  | string                                                                          |                   |
 | options   | [IJsonSchemaFromFileOptions](./node-core-library.ijsonschemafromfileoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonSchema](./node-core-library.jsonschema.md)
 

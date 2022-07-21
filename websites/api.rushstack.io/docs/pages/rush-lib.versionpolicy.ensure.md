@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns an updated package json that satisfies the policy.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract ensure(project: IPackageJson, force?: boolean): IPackageJson | undefined;
@@ -26,6 +26,6 @@ abstract ensure(project: IPackageJson, force?: boolean): IPackageJson | undefine
 | project   | [IPackageJson](./node-core-library.ipackagejson.md) | package json                                                                                    |
 | force     | boolean                                             | <i>(Optional)</i> force update even when the project version is higher than the policy version. |
 
-<b>Returns:</b>
+**Returns:**
 
 [IPackageJson](./node-core-library.ipackagejson.md) \| undefined

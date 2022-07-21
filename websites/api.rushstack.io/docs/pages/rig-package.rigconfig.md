@@ -13,7 +13,7 @@ pagination_next: null
 
 This is the main API for loading the `config/rig.json` file format.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RigConfig

@@ -15,7 +15,7 @@ pagination_next: null
 
 Searches for the item associated with `childPathSegments` , or the nearest ancestor of that path that has an associated item.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findChildPathFromSegments(childPathSegments: Iterable<string>): TItem | undefined;
@@ -27,7 +27,7 @@ findChildPathFromSegments(childPathSegments: Iterable<string>): TItem | undefine
 | ----------------- | ---------------------- | ----------- |
 | childPathSegments | Iterable&lt;string&gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 TItem \| undefined
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 Indicates whether this package is allowed to be published or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 private?: boolean;

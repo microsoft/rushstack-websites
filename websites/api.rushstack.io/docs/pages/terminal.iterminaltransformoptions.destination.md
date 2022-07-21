@@ -13,7 +13,7 @@ pagination_next: null
 
 The target `TerminalWritable` that the `TerminalTransform` will write its output to.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 destination: TerminalWritable;

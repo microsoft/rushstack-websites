@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, will throw an exception if the file did not exist before `deleteFile()` was called.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 throwIfNotExists?: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Assigns the variable to the specified value. A previous value will be overwritten.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 set(name: string, value: string): void;
@@ -26,7 +26,7 @@ set(name: string, value: string): void;
 | name      | string |             |
 | value     | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

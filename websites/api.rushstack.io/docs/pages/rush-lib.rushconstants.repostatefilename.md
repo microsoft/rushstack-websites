@@ -15,7 +15,7 @@ pagination_next: null
 
 The filename ("repo-state.json") for a file used by Rush to store the state of various features as they stand in the repo.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly repoStateFilename: string;

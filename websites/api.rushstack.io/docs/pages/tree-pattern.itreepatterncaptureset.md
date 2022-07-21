@@ -13,7 +13,7 @@ pagination_next: null
 
 Provides additional detail about the success or failure of [TreePattern.match()](./tree-pattern.treepattern.match.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type ITreePatternCaptureSet =
@@ -25,7 +25,7 @@ export declare type ITreePatternCaptureSet =
     };
 ```
 
-<b>References:</b> [TreeNode](./tree-pattern.treenode.md)
+**References:** [TreeNode](./tree-pattern.treenode.md)
 
 ## Remarks
 

@@ -15,7 +15,7 @@ pagination_next: null
 
 If using the 'preventManualShrinkwrapChanges' option, restricts the hash to only include the layout of external dependencies. Used to allow links between workspace projects or the addition/removal of references to existing dependency versions to not cause hash changes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 omitImportersFromPreventManualShrinkwrapChanges?: boolean;

@@ -15,7 +15,7 @@ pagination_next: null
 
 Write a verbose-level message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeVerbose(...messageParts: (string | IColorableSequence)[]): void;
@@ -27,6 +27,6 @@ writeVerbose(...messageParts: (string | IColorableSequence)[]): void;
 | ------------ | -------------------------------------------------------------------------------- | ----------- |
 | messageParts | (string \| [IColorableSequence](./node-core-library.icolorablesequence.md) )\[\] |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -19,13 +19,13 @@ Scoped commands allow for different parameters to be specified for different pro
 
 Scoped arguments are specified after the "--" pseudo-argument. For example, "scoped-action --scope A -- --scopedFoo --scopedBar".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class ScopedCommandLineAction extends CommandLineAction
 ```
 
-<b>Extends:</b> [CommandLineAction](./ts-command-line.commandlineaction.md)
+**Extends:** [CommandLineAction](./ts-command-line.commandlineaction.md)
 
 ## Constructors
 

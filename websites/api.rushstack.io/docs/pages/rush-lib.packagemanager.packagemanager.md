@@ -13,7 +13,7 @@ pagination_next: null
 
 The package manager.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly packageManager: PackageManagerName;

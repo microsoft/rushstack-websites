@@ -13,7 +13,7 @@ pagination_next: null
 
 Alias for `types`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typings?: string;

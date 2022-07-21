@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.ensureFolder()](./node-core-library.filesystem.ensurefolder.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static ensureFolderAsync(folderPath: string): Promise<void>;
@@ -25,6 +25,6 @@ static ensureFolderAsync(folderPath: string): Promise<void>;
 | ---------- | ------ | ----------- |
 | folderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

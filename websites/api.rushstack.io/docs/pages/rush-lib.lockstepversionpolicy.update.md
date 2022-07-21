@@ -13,7 +13,7 @@ pagination_next: null
 
 Updates the version of the policy directly with a new value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 update(newVersionString: string): boolean;
@@ -25,6 +25,6 @@ update(newVersionString: string): boolean;
 | ---------------- | ------ | ----------- |
 | newVersionString | string | New version |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

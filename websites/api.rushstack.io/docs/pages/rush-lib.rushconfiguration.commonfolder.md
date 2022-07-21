@@ -13,7 +13,7 @@ pagination_next: null
 
 The fully resolved path for the "common" folder where Rush will store settings that affect all Rush projects. This is always a subfolder of the folder containing "rush.json". Example: `C:\MyRepo\common`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get commonFolder(): string;

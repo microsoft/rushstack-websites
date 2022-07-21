@@ -13,7 +13,7 @@ pagination_next: null
 
 Recursively scan the dependencies of a module
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hasDependencies(callback: (dep: webpack.compilation.Dependency) => boolean | void): boolean;
@@ -25,6 +25,6 @@ hasDependencies(callback: (dep: webpack.compilation.Dependency) => boolean | voi
 | --------- | ----------------------------------------------------------- | ----------- |
 | callback  | (dep: webpack.compilation.Dependency) =&gt; boolean \| void |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

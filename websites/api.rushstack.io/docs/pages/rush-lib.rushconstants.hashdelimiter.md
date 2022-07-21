@@ -15,7 +15,7 @@ pagination_next: null
 
 When a hash generated that contains multiple input segments, this character may be used to separate them to avoid issues like crypto.createHash('sha1').update('a').update('bc').digest('hex') === crypto.createHash('sha1').update('ab').update('c').digest('hex')
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly hashDelimiter: string;

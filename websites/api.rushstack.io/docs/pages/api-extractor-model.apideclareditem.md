@@ -13,13 +13,13 @@ pagination_next: null
 
 The base class for API items that have an associated source code excerpt containing a TypeScript declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiDeclaredItem extends ApiDocumentedItem
 ```
 
-<b>Extends:</b> [ApiDocumentedItem](./api-extractor-model.apidocumenteditem.md)
+**Extends:** [ApiDocumentedItem](./api-extractor-model.apidocumenteditem.md)
 
 ## Remarks
 

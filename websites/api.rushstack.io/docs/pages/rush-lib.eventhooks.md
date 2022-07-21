@@ -15,7 +15,7 @@ pagination_next: null
 
 This class represents Rush event hooks configured for this repo. Hooks are customized script actions that Rush executes when specific events occur. The actions are expressed as a command-line that is executed using the operating system shell.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class EventHooks

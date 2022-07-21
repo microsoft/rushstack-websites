@@ -13,7 +13,7 @@ pagination_next: null
 
 The path that will be used to specify the file location.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pathToFormat: string;

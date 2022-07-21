@@ -13,7 +13,7 @@ pagination_next: null
 
 An already constructed `RigConfig` object. If omitted, then a new `RigConfig` object will be constructed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rigConfig?: RigConfig;

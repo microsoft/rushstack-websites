@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, conforms to the standard behavior of JSON.stringify() when a property has the value `undefined` . Specifically, the key will be dropped from the emitted object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreUndefinedValues?: boolean;

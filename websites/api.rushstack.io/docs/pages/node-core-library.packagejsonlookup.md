@@ -13,7 +13,7 @@ pagination_next: null
 
 This class provides methods for finding the nearest "package.json" for a folder and retrieving the name of the package. The results are cached.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PackageJsonLookup

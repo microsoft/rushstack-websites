@@ -13,7 +13,7 @@ pagination_next: null
 
 Helper functions used when interacting with APIs that do not follow modern coding practices.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LegacyAdapters

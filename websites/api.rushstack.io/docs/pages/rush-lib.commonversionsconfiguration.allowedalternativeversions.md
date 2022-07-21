@@ -13,7 +13,7 @@ pagination_next: null
 
 A table that stores, for a given dependency, a list of SemVer ranges that will be accepted by "rush check" in addition to the normal version range.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get allowedAlternativeVersions(): Map<string, ReadonlyArray<string>>;

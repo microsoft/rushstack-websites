@@ -15,7 +15,7 @@ pagination_next: null
 
 The recommended options when creating a child process.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly RECOMMENDED_OPTIONS: ISubprocessOptions;

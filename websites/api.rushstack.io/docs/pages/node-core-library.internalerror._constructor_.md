@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the [InternalError](./node-core-library.internalerror.md) class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(message: string);

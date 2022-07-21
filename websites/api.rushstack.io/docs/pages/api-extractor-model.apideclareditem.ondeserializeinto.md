@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiDeclaredItem.onDeserializeInto() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
@@ -26,6 +26,6 @@ static onDeserializeInto(options: Partial<IApiDeclaredItemOptions>, context: Des
 | context    | DeserializerContext                                                                         |             |
 | jsonObject | IApiDeclaredItemJson                                                                        |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

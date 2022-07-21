@@ -15,7 +15,7 @@ pagination_next: null
 
 A hook to allow plugins to hook custom logic to process telemetry data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 flushTelemetry: AsyncParallelHook<[ReadonlyArray<ITelemetryData>]>;

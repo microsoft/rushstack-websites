@@ -11,7 +11,7 @@ pagination_next: null
 
 ## StageHooksBase class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class StageHooksBase<TStageProperties extends object>

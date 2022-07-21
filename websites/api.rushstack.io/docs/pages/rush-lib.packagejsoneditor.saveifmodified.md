@@ -11,12 +11,12 @@ pagination_next: null
 
 ## PackageJsonEditor.saveIfModified() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 saveIfModified(): boolean;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

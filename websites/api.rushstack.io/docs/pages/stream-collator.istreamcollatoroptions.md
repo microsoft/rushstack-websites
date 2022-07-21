@@ -15,7 +15,7 @@ pagination_next: null
 
 Constructor options for [StreamCollator](./stream-collator.streamcollator.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStreamCollatorOptions

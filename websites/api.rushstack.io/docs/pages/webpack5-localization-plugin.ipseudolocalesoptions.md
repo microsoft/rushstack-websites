@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for generated pseudolocales.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPseudolocalesOptions

@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the error object indicates the target is a directory (`EISDIR` ).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isDirectoryError(error: Error): boolean;
@@ -25,6 +25,6 @@ static isDirectoryError(error: Error): boolean;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

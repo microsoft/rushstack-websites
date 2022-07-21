@@ -15,7 +15,7 @@ The filename of the variant dependency data file. By default this is called 'cur
 
 Example: `C:\MyRepo\common\temp\current-variant.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get currentVariantJsonFilename(): string;

@@ -15,7 +15,7 @@ The content to be passed to the child process's stdin.
 
 NOTE: If specified, this content replaces any IExecutableSpawnSyncOptions.stdio\[0\] mapping for stdin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 input?: string;

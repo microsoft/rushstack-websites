@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ILocaleElementMap interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ILocaleElementMap

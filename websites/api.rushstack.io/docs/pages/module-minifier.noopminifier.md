@@ -13,13 +13,13 @@ pagination_next: null
 
 Minifier implementation that does not actually transform the code, for debugging.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class NoopMinifier implements IModuleMinifier
 ```
 
-<b>Implements:</b> [IModuleMinifier](./module-minifier.imoduleminifier.md)
+**Implements:** [IModuleMinifier](./module-minifier.imoduleminifier.md)
 
 ## Methods
 

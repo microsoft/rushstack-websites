@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IExtractorConfigPrepareOptions

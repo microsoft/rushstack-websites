@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of an environment variable that the parameter value will be read from, if it was omitted from the command-line. An error will be reported if the environment value cannot be parsed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly environmentVariable: string | undefined;

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypeParameterOptions.defaultTypeExcerpt property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultTypeExcerpt: Excerpt;

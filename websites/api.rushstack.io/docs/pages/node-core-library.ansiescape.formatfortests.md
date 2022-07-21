@@ -13,7 +13,7 @@ pagination_next: null
 
 Replaces ANSI escape codes with human-readable tokens. This is useful for unit tests that compare text strings in test assertions or snapshot files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static formatForTests(text: string, options?: IAnsiEscapeConvertForTestsOptions): string;
@@ -26,6 +26,6 @@ static formatForTests(text: string, options?: IAnsiEscapeConvertForTestsOptions)
 | text      | string                                                                                        |                   |
 | options   | [IAnsiEscapeConvertForTestsOptions](./node-core-library.iansiescapeconvertfortestsoptions.md) | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

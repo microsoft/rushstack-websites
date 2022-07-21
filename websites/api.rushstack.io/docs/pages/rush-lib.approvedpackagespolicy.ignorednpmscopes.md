@@ -13,7 +13,7 @@ pagination_next: null
 
 A list of NPM package scopes that will be excluded from review (e.g. `@types` )
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get ignoredNpmScopes(): Set<string>;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads the common-versions.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFromFile(jsonFilename: string): CommonVersionsConfiguration;
@@ -25,6 +25,6 @@ static loadFromFile(jsonFilename: string): CommonVersionsConfiguration;
 | ------------ | ------ | ----------- |
 | jsonFilename | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md)

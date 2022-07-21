@@ -13,7 +13,7 @@ pagination_next: null
 
 This function is similar to [PackageJsonLookup.tryLoadPackageJsonFor()](./node-core-library.packagejsonlookup.tryloadpackagejsonfor.md) , except that it does not report an error if the `version` field is missing from the package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryLoadNodePackageJsonFor(fileOrFolderPath: string): INodePackageJson | undefined;
@@ -25,6 +25,6 @@ tryLoadNodePackageJsonFor(fileOrFolderPath: string): INodePackageJson | undefine
 | ---------------- | ------ | ----------- |
 | fileOrFolderPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [INodePackageJson](./node-core-library.inodepackagejson.md) \| undefined

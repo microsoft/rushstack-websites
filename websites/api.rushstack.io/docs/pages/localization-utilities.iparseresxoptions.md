@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IParseResxOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IParseResxOptions extends IParseFileOptions, IParseResxOptionsBase
 ```
 
-<b>Extends:</b> [IParseFileOptions](./localization-utilities.iparsefileoptions.md) , [IParseResxOptionsBase](./localization-utilities.iparseresxoptionsbase.md)
+**Extends:** [IParseFileOptions](./localization-utilities.iparsefileoptions.md) , [IParseResxOptionsBase](./localization-utilities.iparseresxoptionsbase.md)
 
 ## Properties
 

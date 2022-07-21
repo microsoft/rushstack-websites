@@ -13,7 +13,7 @@ pagination_next: null
 
 The long name of the flag including double dashes, e.g. "--do-something"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameterLongName: string;

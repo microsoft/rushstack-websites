@@ -11,7 +11,7 @@ pagination_next: null
 
 ## LegacyAdapters.convertCallbackToPromise() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static convertCallbackToPromise<TResult, TError, TArg1, TArg2, TArg3>(fn: (arg1: TArg1, arg2: TArg2, arg3: TArg3, cb: LegacyCallback<TResult, TError>) => void, arg1: TArg1, arg2: TArg2, arg3: TArg3): Promise<TResult>;
@@ -26,6 +26,6 @@ static convertCallbackToPromise<TResult, TError, TArg1, TArg2, TArg3>(fn: (arg1:
 | arg2      | TArg2                                                                                                                                   |             |
 | arg3      | TArg3                                                                                                                                   |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TResult&gt;

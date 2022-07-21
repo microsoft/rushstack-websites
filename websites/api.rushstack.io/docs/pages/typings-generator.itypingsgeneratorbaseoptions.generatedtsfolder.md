@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ITypingsGeneratorBaseOptions.generatedTsFolder property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generatedTsFolder: string;

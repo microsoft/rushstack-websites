@@ -13,7 +13,7 @@ pagination_next: null
 
 If true, returns the absolute paths of the files in the folder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 absolutePaths?: boolean;

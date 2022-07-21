@@ -13,7 +13,7 @@ pagination_next: null
 
 Gets a base54 string suitable for use as a JavaScript identifier, omitting those that are valid ECMAScript keywords
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getIdentifier(ordinal: number): string;
@@ -25,6 +25,6 @@ export declare function getIdentifier(ordinal: number): string;
 | --------- | ------ | -------------------------------------------- |
 | ordinal   | number | The number to convert to a base54 identifier |
 
-<b>Returns:</b>
+**Returns:**
 
 string

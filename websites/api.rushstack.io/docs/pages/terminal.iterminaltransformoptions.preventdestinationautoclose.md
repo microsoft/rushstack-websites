@@ -13,7 +13,7 @@ pagination_next: null
 
 Prevents the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) object from being closed automatically when the transform is closed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 preventDestinationAutoclose?: boolean;

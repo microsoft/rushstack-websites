@@ -15,7 +15,7 @@ pagination_next: null
 
 If true, the chmod field in temporary project tar headers will not be normalized. This normalization can help ensure consistent tarball integrity across platforms.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 noChmodFieldInTarHeaderNormalization?: boolean;

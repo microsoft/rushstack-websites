@@ -13,7 +13,7 @@ pagination_next: null
 
 This property is initially `true` when the object is constructed, and becomes `false` when `close()` is called.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @sealed */

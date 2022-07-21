@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads the repo-state.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadFromFile(jsonFilename: string, variant: string | undefined): RepoStateFile;
@@ -26,6 +26,6 @@ static loadFromFile(jsonFilename: string, variant: string | undefined): RepoStat
 | jsonFilename | string              | The path to the repo-state.json file.     |
 | variant      | string \| undefined | The variant currently being used by Rush. |
 
-<b>Returns:</b>
+**Returns:**
 
 [RepoStateFile](./rush-lib.repostatefile.md)

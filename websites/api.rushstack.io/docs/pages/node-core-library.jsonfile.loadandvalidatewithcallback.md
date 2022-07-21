@@ -13,7 +13,7 @@ pagination_next: null
 
 Loads a JSON file and validate its schema, reporting errors using a callback
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadAndValidateWithCallback(jsonFilename: string, jsonSchema: JsonSchema, errorCallback: (errorInfo: IJsonSchemaErrorInfo) => void): JsonObject;
@@ -27,7 +27,7 @@ static loadAndValidateWithCallback(jsonFilename: string, jsonSchema: JsonSchema,
 | jsonSchema    | [JsonSchema](./node-core-library.jsonschema.md)                                              |             |
 | errorCallback | (errorInfo: [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md) ) =&gt; void |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [JsonObject](./node-core-library.jsonobject.md)
 

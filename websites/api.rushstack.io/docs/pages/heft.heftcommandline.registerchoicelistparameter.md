@@ -15,7 +15,7 @@ pagination_next: null
 
 Utility method used by Heft plugins to register a choiceList type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerChoiceListParameter(options: IHeftRegisterParameterOptions<ICommandLineChoiceListDefinition>): IHeftChoiceListParameter;
@@ -27,6 +27,6 @@ registerChoiceListParameter(options: IHeftRegisterParameterOptions<ICommandLineC
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) &lt;[ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md) &gt; |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IHeftChoiceListParameter](./heft.iheftchoicelistparameter.md)

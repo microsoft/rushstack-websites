@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("temp") under the common folder, or under the .rush folder in each project's directory where temporary files will be stored. Example: `C:\MyRepo\common\temp`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushTempFolderName: string;

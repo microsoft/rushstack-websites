@@ -13,7 +13,7 @@ pagination_next: null
 
 This option is used to specify how and if TypeScript typings should be generated for loc files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typingsOptions?: ITypingsGenerationOptions;

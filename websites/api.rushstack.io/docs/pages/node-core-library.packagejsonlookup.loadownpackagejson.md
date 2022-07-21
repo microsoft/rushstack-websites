@@ -13,7 +13,7 @@ pagination_next: null
 
 A helper for loading the caller's own package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static loadOwnPackageJson(dirnameOfCaller: string): IPackageJson;
@@ -25,7 +25,7 @@ static loadOwnPackageJson(dirnameOfCaller: string): IPackageJson;
 | --------------- | ------ | --------------------------------------------------------- |
 | dirnameOfCaller | string | The NodeJS <code>\_\_dirname</code> macro for the caller. |
 
-<b>Returns:</b>
+**Returns:**
 
 [IPackageJson](./node-core-library.ipackagejson.md)
 

@@ -13,7 +13,7 @@ pagination_next: null
 
 An optional TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 compilerState?: CompilerState;

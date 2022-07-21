@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties.webpackStats property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 webpackStats?: unknown;

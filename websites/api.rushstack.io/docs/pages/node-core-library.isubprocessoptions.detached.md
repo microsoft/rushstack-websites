@@ -15,7 +15,7 @@ pagination_next: null
 
 Whether or not the child process was started in detached mode.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 detached: boolean;

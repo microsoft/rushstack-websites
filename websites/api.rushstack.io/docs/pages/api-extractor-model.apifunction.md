@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript function declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiFunction extends ApiFunction_base
 ```
 
-<b>Extends:</b> ApiFunction_base
+**Extends:** ApiFunction_base
 
 ## Remarks
 
@@ -35,7 +35,7 @@ export function getAverage(x: number, y: number): number {
 
 Functions are exported by an entry point module or by a namespace. Compare with [ApiMethod](./api-extractor-model.apimethod.md) , which represents a function that is a member of a class.
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

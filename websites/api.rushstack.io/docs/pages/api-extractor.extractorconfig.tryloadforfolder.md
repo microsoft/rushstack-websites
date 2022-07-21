@@ -13,7 +13,7 @@ pagination_next: null
 
 Searches for the api-extractor.json config file associated with the specified starting folder, and loads the file if found. This lookup supports [rig packages](https://www.npmjs.com/package/@rushstack/rig-package) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static tryLoadForFolder(options: IExtractorConfigLoadForFolderOptions): IExtractorConfigPrepareOptions | undefined;
@@ -25,7 +25,7 @@ static tryLoadForFolder(options: IExtractorConfigLoadForFolderOptions): IExtract
 | --------- | ----------------------------------------------------------------------------------------------- | ----------- |
 | options   | [IExtractorConfigLoadForFolderOptions](./api-extractor.iextractorconfigloadforfolderoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 [IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md) \| undefined
 

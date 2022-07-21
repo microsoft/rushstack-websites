@@ -13,7 +13,7 @@ pagination_next: null
 
 An async function called to minify a chunk of code
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleMinifierFunction

@@ -13,7 +13,7 @@ pagination_next: null
 
 The output path for the doc model file. The file extension should be ".api.json".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly apiJsonFilePath: string;

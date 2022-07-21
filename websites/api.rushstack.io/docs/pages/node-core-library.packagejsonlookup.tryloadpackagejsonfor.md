@@ -13,7 +13,7 @@ pagination_next: null
 
 If the specified file or folder is part of a package, this loads and returns the associated package.json file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryLoadPackageJsonFor(fileOrFolderPath: string): IPackageJson | undefined;
@@ -25,7 +25,7 @@ tryLoadPackageJsonFor(fileOrFolderPath: string): IPackageJson | undefined;
 | ---------------- | ------ | ------------------------------------------------------------------------------------ |
 | fileOrFolderPath | string | a relative or absolute path to a source file or folder that may be part of a package |
 
-<b>Returns:</b>
+**Returns:**
 
 [IPackageJson](./node-core-library.ipackagejson.md) \| undefined
 

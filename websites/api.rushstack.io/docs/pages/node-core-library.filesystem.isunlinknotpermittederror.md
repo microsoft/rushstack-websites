@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns true if the error object indicates that the `unlink` system call failed due to a permissions issue (`EPERM` ).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isUnlinkNotPermittedError(error: Error): boolean;
@@ -25,6 +25,6 @@ static isUnlinkNotPermittedError(error: Error): boolean;
 | --------- | ----- | ----------- |
 | error     | Error |             |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean

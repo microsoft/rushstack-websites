@@ -13,7 +13,7 @@ pagination_next: null
 
 Options for [Path.formatFileLocation()](./node-core-library.path.formatfilelocation.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IPathFormatFileLocationOptions

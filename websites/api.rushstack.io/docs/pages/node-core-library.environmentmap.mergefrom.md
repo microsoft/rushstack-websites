@@ -13,7 +13,7 @@ pagination_next: null
 
 Adds each entry from `environmentMap` to this map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mergeFrom(environmentMap: EnvironmentMap): void;
@@ -25,6 +25,6 @@ mergeFrom(environmentMap: EnvironmentMap): void;
 | -------------- | ------------------------------------------------------- | ----------- |
 | environmentMap | [EnvironmentMap](./node-core-library.environmentmap.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

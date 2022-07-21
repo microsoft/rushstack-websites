@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageManager.\_shrinkwrapFilename property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _shrinkwrapFilename: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The column number where the issue occurred in the input source file. This is not used if `sourceFilePath` is undefined. The first column number is 1.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly sourceFileColumn: number | undefined;

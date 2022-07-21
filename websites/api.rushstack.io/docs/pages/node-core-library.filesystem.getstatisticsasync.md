@@ -13,7 +13,7 @@ pagination_next: null
 
 An async version of [FileSystem.getStatistics()](./node-core-library.filesystem.getstatistics.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getStatisticsAsync(path: string): Promise<FileSystemStats>;
@@ -25,6 +25,6 @@ static getStatisticsAsync(path: string): Promise<FileSystemStats>;
 | --------- | ------ | ----------- |
 | path      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[FileSystemStats](./node-core-library.filesystemstats.md) &gt;

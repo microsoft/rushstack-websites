@@ -13,7 +13,7 @@ pagination_next: null
 
 A brief description of the package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description?: string;

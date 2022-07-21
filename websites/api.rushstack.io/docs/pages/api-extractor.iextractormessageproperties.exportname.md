@@ -13,7 +13,7 @@ pagination_next: null
 
 A declaration can have multiple names if it is exported more than once. If an `ExtractorMessage` applies to a specific export name, this property can indicate that.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly exportName?: string;

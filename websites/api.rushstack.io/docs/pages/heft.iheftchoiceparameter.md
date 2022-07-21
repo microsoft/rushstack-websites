@@ -15,10 +15,10 @@ pagination_next: null
 
 The object returned when registering a choice type parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IHeftChoiceParameter = IHeftBaseParameter<string, ICommandLineChoiceDefinition>;
 ```
 
-<b>References:</b> [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md)
+**References:** [IHeftBaseParameter](./heft.iheftbaseparameter.md) , [ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md)

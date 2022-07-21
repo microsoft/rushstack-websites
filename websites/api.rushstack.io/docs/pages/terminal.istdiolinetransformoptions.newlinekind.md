@@ -15,7 +15,7 @@ pagination_next: null
 
 Specifies the kind of newline for the output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 newlineKind?: NewlineKind;

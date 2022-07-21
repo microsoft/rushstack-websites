@@ -13,7 +13,7 @@ pagination_next: null
 
 This represents the available PNPM store options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type PnpmStoreOptions = 'local' | 'global';

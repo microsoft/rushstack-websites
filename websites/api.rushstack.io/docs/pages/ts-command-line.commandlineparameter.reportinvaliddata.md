@@ -13,7 +13,7 @@ pagination_next: null
 
 Internal usage only. Used to report unexpected output from the argparse library.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected reportInvalidData(data: any): never;
@@ -25,6 +25,6 @@ protected reportInvalidData(data: any): never;
 | --------- | ---- | ----------- |
 | data      | any  |             |
 
-<b>Returns:</b>
+**Returns:**
 
 never

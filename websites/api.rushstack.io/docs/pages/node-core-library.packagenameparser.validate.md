@@ -13,7 +13,7 @@ pagination_next: null
 
 Throws an exception if the specified name is not a valid package name. The packageName must not be an empty string.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validate(packageName: string): void;
@@ -25,6 +25,6 @@ validate(packageName: string): void;
 | ----------- | ------ | ----------- |
 | packageName | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

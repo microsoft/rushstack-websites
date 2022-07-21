@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PackageJsonDependency.version property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get version(): string;

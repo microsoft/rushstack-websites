@@ -13,7 +13,7 @@ pagination_next: null
 
 The newly created symbolic link will have this path.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 newLinkPath: string;

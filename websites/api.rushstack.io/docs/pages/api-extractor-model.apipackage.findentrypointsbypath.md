@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApiPackage.findEntryPointsByPath() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findEntryPointsByPath(importPath: string): ReadonlyArray<ApiEntryPoint>;
@@ -23,6 +23,6 @@ findEntryPointsByPath(importPath: string): ReadonlyArray<ApiEntryPoint>;
 | ---------- | ------ | ----------- |
 | importPath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 ReadonlyArray&lt;[ApiEntryPoint](./api-extractor-model.apientrypoint.md) &gt;

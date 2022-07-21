@@ -11,7 +11,7 @@ pagination_next: null
 
 ## ApprovedPackagesConfiguration.items property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 items: ApprovedPackagesItem[];

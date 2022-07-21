@@ -13,7 +13,7 @@ pagination_next: null
 
 Instructs the plugin to alter the code of async import statements to compress better and be portable across compilations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 compressAsyncImports?: boolean;

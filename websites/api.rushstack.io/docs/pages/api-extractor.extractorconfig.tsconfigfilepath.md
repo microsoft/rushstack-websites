@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tsconfigFilePath: string;

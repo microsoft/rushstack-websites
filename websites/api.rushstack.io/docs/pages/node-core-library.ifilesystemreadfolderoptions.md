@@ -13,7 +13,7 @@ pagination_next: null
 
 The options for [FileSystem.readFolder()](./node-core-library.filesystem.readfolder.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFileSystemReadFolderOptions

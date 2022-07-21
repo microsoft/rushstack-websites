@@ -13,7 +13,7 @@ pagination_next: null
 
 Optional additional folders into which `.d.ts` files for loc files should be dropped.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 secondaryGeneratedTsFolders?: string[];

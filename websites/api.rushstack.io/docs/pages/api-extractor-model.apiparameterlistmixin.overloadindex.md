@@ -13,7 +13,7 @@ pagination_next: null
 
 When a function has multiple overloaded declarations, this zero-based integer index can be used to unqiuely identify them.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly overloadIndex: number;

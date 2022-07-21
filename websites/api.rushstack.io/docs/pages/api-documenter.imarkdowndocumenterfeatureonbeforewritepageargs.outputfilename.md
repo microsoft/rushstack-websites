@@ -13,7 +13,7 @@ pagination_next: null
 
 The filename where the output will be written.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly outputFilename: string;

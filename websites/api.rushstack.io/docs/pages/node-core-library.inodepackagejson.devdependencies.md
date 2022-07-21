@@ -13,7 +13,7 @@ pagination_next: null
 
 An array of dependencies that must only be installed for developers who will build this package.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 devDependencies?: IPackageJsonDependencyTable;

@@ -13,13 +13,13 @@ pagination_next: null
 
 Represents a TypeScript index signature.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiIndexSignature extends ApiIndexSignature_base
 ```
 
-<b>Extends:</b> ApiIndexSignature_base
+**Extends:** ApiIndexSignature_base
 
 ## Remarks
 
@@ -37,7 +37,7 @@ export interface INumberTable {
 }
 ```
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
 
 ## Constructors
 

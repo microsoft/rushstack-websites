@@ -13,7 +13,7 @@ pagination_next: null
 
 The options to forward to Terser. `output.comments` is currently not configurable and will always extract license comments to a separate file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 terserOptions?: MinifyOptions;

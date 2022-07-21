@@ -11,12 +11,12 @@ pagination_next: null
 
 ## ExtractorMessage.formatMessageWithoutLocation() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 formatMessageWithoutLocation(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

@@ -13,7 +13,7 @@ pagination_next: null
 
 Configures how the doc model file (\*.api.json) will be generated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IConfigDocModel

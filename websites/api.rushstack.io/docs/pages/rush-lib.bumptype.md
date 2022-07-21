@@ -13,7 +13,7 @@ pagination_next: null
 
 Type of version bumps
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum BumpType

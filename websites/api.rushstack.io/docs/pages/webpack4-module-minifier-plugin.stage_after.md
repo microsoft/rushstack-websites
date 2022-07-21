@@ -13,7 +13,7 @@ pagination_next: null
 
 Stage \# to use when this should be the last tap in the hook
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 STAGE_AFTER: 100;

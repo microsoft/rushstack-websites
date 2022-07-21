@@ -13,7 +13,7 @@ pagination_next: null
 
 The value to replace the \[locale\] token with for chunks without localized strings. Defaults to "none"
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 noStringsLocaleName?: string;

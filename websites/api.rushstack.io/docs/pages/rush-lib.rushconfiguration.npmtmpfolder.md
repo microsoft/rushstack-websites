@@ -15,7 +15,7 @@ The local folder where npm's temporary files will be written during installation
 
 Example: `C:\MyRepo\common\temp\npm-tmp`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get npmTmpFolder(): string;

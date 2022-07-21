@@ -13,7 +13,7 @@ pagination_next: null
 
 Whether the declaration has the TypeScript `static` keyword.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly isStatic: boolean;

@@ -13,7 +13,7 @@ pagination_next: null
 
 Constructs a new instance of the `MessagePortMinifier` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(port: MessagePort);

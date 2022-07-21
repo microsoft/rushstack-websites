@@ -13,7 +13,7 @@ pagination_next: null
 
 The page content. The [MarkdownDocumenterFeature.onBeforeWritePage()](./api-documenter.markdowndocumenterfeature.onbeforewritepage.md) handler can reassign this string to customize the page appearance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pageContent: string;

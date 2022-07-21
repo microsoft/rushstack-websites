@@ -15,7 +15,7 @@ pagination_next: null
 
 Information passed to the executing `IOperationRunner`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IOperationRunnerContext

@@ -13,7 +13,7 @@ pagination_next: null
 
 Applies word wrapping. If maxLineLength is unspecified, then it defaults to the console width.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static wrapWords(text: string, maxLineLength?: number, indent?: number): string;
@@ -27,6 +27,6 @@ static wrapWords(text: string, maxLineLength?: number, indent?: number): string;
 | maxLineLength | number | <i>(Optional)</i> |
 | indent        | number | <i>(Optional)</i> |
 
-<b>Returns:</b>
+**Returns:**
 
 string

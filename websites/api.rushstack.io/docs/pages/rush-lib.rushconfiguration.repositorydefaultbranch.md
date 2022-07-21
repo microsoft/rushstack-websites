@@ -13,7 +13,7 @@ pagination_next: null
 
 The default branch name. This tells "rush change" which remote branch to compare against.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get repositoryDefaultBranch(): string;

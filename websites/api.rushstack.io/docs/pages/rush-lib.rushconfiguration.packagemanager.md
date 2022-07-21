@@ -13,7 +13,7 @@ pagination_next: null
 
 The name of the package manager being used to install dependencies
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get packageManager(): PackageManagerName;

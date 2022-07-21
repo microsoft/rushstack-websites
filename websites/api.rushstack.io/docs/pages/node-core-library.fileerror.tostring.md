@@ -13,13 +13,13 @@ pagination_next: null
 
 Get the Unix-formatted the error message.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @override */
 toString(): string;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 string

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IPseudolocaleOptions.endDelimiter property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 endDelimiter?: string;

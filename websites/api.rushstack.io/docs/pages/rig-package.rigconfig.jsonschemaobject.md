@@ -13,7 +13,7 @@ pagination_next: null
 
 The JSON contents of the [RigConfig.jsonSchemaPath](./rig-package.rigconfig.jsonschemapath.md) file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get jsonSchemaObject(): object;

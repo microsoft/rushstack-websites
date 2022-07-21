@@ -15,7 +15,7 @@ pagination_next: null
 
 Command name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name: string;

@@ -13,7 +13,7 @@ pagination_next: null
 
 The underlying error message, without the additional boilerplate for an `InternalError` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly unformattedMessage: string;

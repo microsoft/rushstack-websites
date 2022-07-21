@@ -13,7 +13,7 @@ pagination_next: null
 
 This lookup first checks for the specified relative path under `projectFolderPath` ; if it does not exist there, then it checks in the resolved rig profile folder. If the file is found, its absolute path is returned. Otherwise, `undefined` is returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tryResolveConfigFilePath(configFileRelativePath: string): string | undefined;
@@ -25,7 +25,7 @@ tryResolveConfigFilePath(configFileRelativePath: string): string | undefined;
 | ---------------------- | ------ | ----------- |
 | configFileRelativePath | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

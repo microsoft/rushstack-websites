@@ -13,7 +13,7 @@ pagination_next: null
 
 Creates a hard link. The link target must be a file, not a folder. Behind the scenes it uses `fs.linkSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createHardLink(options: IFileSystemCreateLinkOptions): void;
@@ -25,7 +25,7 @@ static createHardLink(options: IFileSystemCreateLinkOptions): void;
 | --------- | ----------------------------------------------------------------------------------- | ----------- |
 | options   | [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

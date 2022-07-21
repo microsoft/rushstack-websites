@@ -13,7 +13,7 @@ pagination_next: null
 
 If false, the repo-state.json file is not valid and its values cannot be relied upon
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get isValid(): boolean;

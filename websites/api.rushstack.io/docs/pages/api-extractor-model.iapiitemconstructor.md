@@ -13,12 +13,12 @@ pagination_next: null
 
 This abstraction is used by the mixin pattern. It describes a class type that inherits from [ApiItem](./api-extractor-model.apiitem.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IApiItemConstructor extends Constructor<ApiItem>, PropertiesOf<typeof ApiItem>
 ```
 
-<b>Extends:</b> [Constructor](./api-extractor-model.constructor.md) &lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;, [PropertiesOf](./api-extractor-model.propertiesof.md) &lt;typeof [ApiItem](./api-extractor-model.apiitem.md)
+**Extends:** [Constructor](./api-extractor-model.constructor.md) &lt;[ApiItem](./api-extractor-model.apiitem.md) &gt;, [PropertiesOf](./api-extractor-model.propertiesof.md) &lt;typeof [ApiItem](./api-extractor-model.apiitem.md)
 
-<i>(Some inherited members may not be shown because they are not represented in the documentation.)</i>
+_(Some inherited members may not be shown because they are not represented in the documentation.)_

@@ -13,7 +13,7 @@ pagination_next: null
 
 Utilities for reading/writing JSON files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JsonFile

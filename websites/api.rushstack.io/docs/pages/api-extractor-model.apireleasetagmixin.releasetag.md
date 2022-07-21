@@ -13,7 +13,7 @@ pagination_next: null
 
 The effective release tag for this declaration. If it is not explicitly specified, the value may be inherited from a containing declaration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly releaseTag: ReleaseTag;

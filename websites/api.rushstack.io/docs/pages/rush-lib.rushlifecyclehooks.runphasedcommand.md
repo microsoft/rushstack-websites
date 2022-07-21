@@ -15,7 +15,7 @@ pagination_next: null
 
 A hook map to allow plugins to hook specific named phased commands (defined in command-line.json) before execution.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 runPhasedCommand: HookMap<AsyncSeriesHook<IPhasedCommand>>;

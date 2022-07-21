@@ -13,7 +13,7 @@ pagination_next: null
 
 For use with [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md) , this interface defines a rule that captures any remaining command line arguments after the recognized portion.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ICommandLineRemainderDefinition

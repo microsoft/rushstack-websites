@@ -15,7 +15,7 @@ pagination_next: null
 
 Object used to report a summary at the end of the Rush invocation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stdioSummarizer: StdioSummarizer;

@@ -15,7 +15,7 @@ pagination_next: null
 
 The folder name ("projects") where temporary projects will be stored. Example: `C:\MyRepo\common\temp\projects`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly rushTempProjectsFolderName: string;

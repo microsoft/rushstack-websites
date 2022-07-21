@@ -11,7 +11,7 @@ pagination_next: null
 
 ## PortableMinifierModuleIdsPlugin.apply() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(compiler: Compiler): void;
@@ -23,6 +23,6 @@ apply(compiler: Compiler): void;
 | --------- | -------- | ----------- |
 | compiler  | Compiler |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

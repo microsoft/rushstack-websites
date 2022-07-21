@@ -13,7 +13,7 @@ pagination_next: null
 
 Result object for [ApiModel.resolveDeclarationReference()](./api-extractor-model.apimodel.resolvedeclarationreference.md) .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IResolveDeclarationReferenceResult

@@ -13,7 +13,7 @@ pagination_next: null
 
 The values of this string in each output locale.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 valuesByLocale: Map<string, string>;

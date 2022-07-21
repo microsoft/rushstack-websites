@@ -13,7 +13,7 @@ pagination_next: null
 
 Terminal provider for the provided terminal.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get terminalProvider(): ITerminalProvider;

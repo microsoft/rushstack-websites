@@ -11,13 +11,13 @@ pagination_next: null
 
 ## IStringValuesTypingsGeneratorOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IStringValuesTypingsGeneratorOptions extends ITypingsGeneratorOptions<IStringValueTypings | undefined>
 ```
 
-<b>Extends:</b> [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md) &lt;[IStringValueTypings](./typings-generator.istringvaluetypings.md)
+**Extends:** [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md) &lt;[IStringValueTypings](./typings-generator.istringvaluetypings.md)
 
 ## Properties
 

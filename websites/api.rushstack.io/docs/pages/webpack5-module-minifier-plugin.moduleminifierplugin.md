@@ -13,13 +13,13 @@ pagination_next: null
 
 Webpack plugin that minifies code on a per-module basis rather than per-asset. The actual minification is handled by the input `minifier` object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ModuleMinifierPlugin implements WebpackPluginInstance
 ```
 
-<b>Implements:</b> WebpackPluginInstance
+**Implements:** WebpackPluginInstance
 
 ## Constructors
 

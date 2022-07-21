@@ -13,7 +13,7 @@ pagination_next: null
 
 Tells the version policy to modify any dependencies in the target package to values used for publishing.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setDependenciesBeforePublish(packageName: string, configuration: RushConfiguration): void;
@@ -26,6 +26,6 @@ setDependenciesBeforePublish(packageName: string, configuration: RushConfigurati
 | packageName   | string                                               |             |
 | configuration | [RushConfiguration](./rush-lib.rushconfiguration.md) |             |
 
-<b>Returns:</b>
+**Returns:**
 
 void

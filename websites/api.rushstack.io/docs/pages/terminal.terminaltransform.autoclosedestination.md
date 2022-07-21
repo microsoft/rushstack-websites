@@ -13,14 +13,14 @@ pagination_next: null
 
 The default implementation of [TerminalTransform.onClose()](./terminal.terminaltransform.onclose.md) calls this method, which closes the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) if appropriate.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 /** @sealed */
 protected autocloseDestination(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

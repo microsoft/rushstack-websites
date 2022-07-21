@@ -13,7 +13,7 @@ pagination_next: null
 
 The ProtectableMap provides an easy way for an API to expose a `Map<K, V>` property while intercepting and validating any write operations that are performed by consumers of the API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ProtectableMap<K, V>

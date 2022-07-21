@@ -15,7 +15,7 @@ pagination_next: null
 
 The name of this command, as seen on the command line
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly actionName: string;

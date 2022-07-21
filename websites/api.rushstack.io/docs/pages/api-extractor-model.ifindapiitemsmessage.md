@@ -13,7 +13,7 @@ pagination_next: null
 
 This object is used for messages returned as part of `IFindApiItemsResult` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IFindApiItemsMessage

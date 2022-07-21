@@ -15,7 +15,7 @@ pagination_next: null
 
 Names of environment variables used by Rush.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum EnvironmentVariableNames

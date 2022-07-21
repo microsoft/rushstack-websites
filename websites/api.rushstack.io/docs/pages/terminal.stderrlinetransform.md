@@ -15,13 +15,13 @@ pagination_next: null
 
 `StderrLineTransform` normalizes lines that mix characters from `stdout` and `stderr` , so that each output line is routed entirely to `stdout` or `stderr` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class StderrLineTransform extends TerminalTransform
 ```
 
-<b>Extends:</b> [TerminalTransform](./terminal.terminaltransform.md)
+**Extends:** [TerminalTransform](./terminal.terminaltransform.md)
 
 ## Remarks
 

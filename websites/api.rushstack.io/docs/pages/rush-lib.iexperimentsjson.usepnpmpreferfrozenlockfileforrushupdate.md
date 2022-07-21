@@ -15,7 +15,7 @@ pagination_next: null
 
 By default, 'rush update' passes --no-prefer-frozen-lockfile to 'pnpm install'. Set this option to true to pass '--prefer-frozen-lockfile' instead.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 usePnpmPreferFrozenLockfileForRushUpdate?: boolean;

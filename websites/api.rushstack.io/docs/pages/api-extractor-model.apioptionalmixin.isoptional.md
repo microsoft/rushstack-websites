@@ -13,7 +13,7 @@ pagination_next: null
 
 True if this is an optional property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly isOptional: boolean;

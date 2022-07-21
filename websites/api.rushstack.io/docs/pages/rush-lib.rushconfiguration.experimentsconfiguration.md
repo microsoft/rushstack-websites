@@ -15,7 +15,7 @@ pagination_next: null
 
 This configuration object contains settings repo maintainers have specified to enable and disable experimental Rush features.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get experimentsConfiguration(): ExperimentsConfiguration;

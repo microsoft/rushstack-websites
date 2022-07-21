@@ -13,7 +13,7 @@ pagination_next: null
 
 The command that was executed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 command: string;

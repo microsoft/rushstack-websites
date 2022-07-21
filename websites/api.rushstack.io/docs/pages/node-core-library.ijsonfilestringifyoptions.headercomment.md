@@ -13,7 +13,7 @@ pagination_next: null
 
 If specified, this header will be prepended to the start of the file. The header must consist of lines prefixed by "//" characters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 headerComment?: string;

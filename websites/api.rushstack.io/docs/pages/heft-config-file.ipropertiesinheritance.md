@@ -13,7 +13,7 @@ pagination_next: null
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type IPropertiesInheritance<TConfigurationFile> = {
@@ -23,4 +23,4 @@ export declare type IPropertiesInheritance<TConfigurationFile> = {
 };
 ```
 
-<b>References:</b> [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) , [InheritanceType.append](./heft-config-file.inheritancetype.md) , [InheritanceType.merge](./heft-config-file.inheritancetype.md) , [InheritanceType.replace](./heft-config-file.inheritancetype.md) , [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md)
+**References:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) , [InheritanceType.append](./heft-config-file.inheritancetype.md) , [InheritanceType.merge](./heft-config-file.inheritancetype.md) , [InheritanceType.replace](./heft-config-file.inheritancetype.md) , [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md)

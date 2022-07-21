@@ -13,7 +13,7 @@ pagination_next: null
 
 A text string that uniquely identifies the issue type. This identifier can be used to suppress or configure the reporting of issues, and also to search for help about an issue.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly messageId: tsdoc.TSDocMessageId | ExtractorMessageId | ConsoleMessageId | string;

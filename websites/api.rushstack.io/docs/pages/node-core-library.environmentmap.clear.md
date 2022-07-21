@@ -13,12 +13,12 @@ pagination_next: null
 
 Clears all entries, resulting in an empty map.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 clear(): void;
 ```
 
-<b>Returns:</b>
+**Returns:**
 
 void

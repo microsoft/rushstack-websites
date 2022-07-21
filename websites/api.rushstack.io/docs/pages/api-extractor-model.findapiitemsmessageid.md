@@ -13,7 +13,7 @@ pagination_next: null
 
 Unique identifiers for messages returned as part of `IFindApiItemsResult` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum FindApiItemsMessageId

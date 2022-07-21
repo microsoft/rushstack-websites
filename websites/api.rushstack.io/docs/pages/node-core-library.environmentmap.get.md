@@ -13,7 +13,7 @@ pagination_next: null
 
 Returns the value of the specified variable, or `undefined` if the map does not contain that name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(name: string): string | undefined;
@@ -25,6 +25,6 @@ get(name: string): string | undefined;
 | --------- | ------ | ----------- |
 | name      | string |             |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined

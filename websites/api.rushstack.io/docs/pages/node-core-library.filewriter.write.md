@@ -13,7 +13,7 @@ pagination_next: null
 
 Writes some text to the given file handle. Throws if the file handle has been closed. Behind the scenes it uses `fs.writeSync()` .
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 write(text: string): void;
@@ -25,6 +25,6 @@ write(text: string): void;
 | --------- | ------ | ------------------------------ |
 | text      | string | The text to write to the file. |
 
-<b>Returns:</b>
+**Returns:**
 
 void

@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IFactoryMeta.comments property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 comments?: Comment[];

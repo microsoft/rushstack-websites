@@ -13,7 +13,7 @@ pagination_next: null
 
 Specifies the output path for a .d.ts rollup file to be generated with trimming for an "alpha" release.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly alphaTrimmedFilePath: string;

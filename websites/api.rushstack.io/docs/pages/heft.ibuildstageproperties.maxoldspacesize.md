@@ -11,7 +11,7 @@ pagination_next: null
 
 ## IBuildStageProperties.maxOldSpaceSize property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 maxOldSpaceSize?: string;

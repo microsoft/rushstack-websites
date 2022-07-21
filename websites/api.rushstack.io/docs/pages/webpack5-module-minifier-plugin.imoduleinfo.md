@@ -13,7 +13,7 @@ pagination_next: null
 
 Information about a minified module
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface IModuleInfo
