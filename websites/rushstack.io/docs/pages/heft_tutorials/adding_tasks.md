@@ -12,8 +12,6 @@ and [ESlint](../heft_tasks/eslint.md).
 
 ## Adding unit tests to your project
 
-1
-
 1. First, we need to install the TypeScript typings for Jest. These steps continue the **my-app** project from the [Getting started with Heft](../heft_tutorials/getting_started.md) article. Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
 
    ```shell
