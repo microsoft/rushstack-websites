@@ -236,7 +236,7 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
 
 You're done! Whenever changes are committed to Git, they will now be automatically prettified.
 
-## Enabling prettier plugins
+## Installing prettier plugins
 
 Prettier supports [plugins](https://prettier.io/docs/en/plugins.html), which can add new languages or formatting rules. If you choose to add prettier plugins to your setup, special care must be taken to ensure that all of the tooling that might call prettier will be able to load your prettier configuration:
 
