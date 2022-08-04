@@ -235,3 +235,45 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
     that may have been modified before we installed the hook.
 
 You're done! Whenever changes are committed to Git, they will now be automatically prettified.
+
+## Enabling prettier plugins
+
+Prettier supports [plugins](https://prettier.io/docs/en/plugins.html), which can add new languages or formatting rules. If you choose to add prettier plugins to your setup, special care must be taken to ensure that all of the tooling that might call prettier will be able to load your prettier configuration:
+
+- `rush prettier` as configured in the steps above
+- Editors (VSCode, Webstorm, Sublime, etc.) that are configured to format on save
+- Jest and heft test, which use prettier to format snapshots
+
+Here's an example, using the `prettier-plugin-packagejson` plugin:
+
+1.  First, add the plugin package to your autoinstaller `package.json` file -- if configured as above,
+    this will be `common/autoinstallers/rush-prettier/package.json`.
+
+    ```json
+    {
+      "dependencies": {
+        "prettier-plugin-packagejson": "^2.2.18"
+      }
+    }
+    ```
+
+2.  Update your autoinstaller's lockfile:
+
+    ```shell
+    rush update-autoinstaller --name rush-prettier
+    ```
+
+3.  Add the _full path_ of your plugin folder to the `plugins` array in `.prettierrc.js`:
+
+    ```javascript
+    module.exports = {
+      // ... your other configuration goes here ...
+      // ,
+
+      plugins: ['./common/autoinstallers/rush-prettier/node_modules/prettier-plugin-packagejson']
+    };
+    ```
+
+4.  Commit your autoinstaller and prettierrc changes.
+
+Note that after pulling this change, local developers will need to run `rush prettier` at least once to install the updated autoinstaller -- otherwise, their format-on-save functions and jest snapshot formatting may stop working. In practice this will fix itself after they perform at least one git commit and run the git hooks, but it may be worth notifying your team any time you do update prettier plugins this way.
