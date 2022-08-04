@@ -7,7 +7,7 @@ title: rush deploy
                    [-t PATH] [--create-archive ARCHIVE_PATH]
 
 仓库构建完成后，"rush deploy" 可以将 Rush 仓库内的某些项目和依赖部署到指定的目录下，该目录可
-被上传到开发环境中。"rush deploy" 通过 "rush init-deploy" 生成的配置文件来指定该行为。
+被上传到生产服务器上。"rush deploy" 通过 "rush init-deploy" 生成的配置文件来指定该行为。
 
 可选参数：
   -h, --help            展示帮助信息并退出。
