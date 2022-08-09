@@ -38,9 +38,10 @@ C:\Repos>git clone https://github.com/microsoft/rushstack
 
 ```
 C:\Repos>cd rushstack
-(If you don't have a GitHub email configured, add the --bypass-policy option.) 
 C:\Repos\rushstack>rush install
 ```
+
+_(Note: if you don't have a GitHub email configured, add the --bypass-policy option.)_
 
 4. Rebuild all the projects in the repo:
 
