@@ -14,7 +14,7 @@ For documentation fixes, each website has its own GitHub repo:
 
 ## Setting up your machine
 
-- **Node.js 12**: We recommend to use [nvm](https://github.com/creationix/nvm) (for Mac/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (for Windows) so that you can easily switch between different Node.js engine verisons. When installing Node.js, make sure to first uninstall any previous versions and clean up their files. See [FAQ: After installing Rush, why am I stilling see the old version?](https://rushjs.io/pages/help/faq/#after-installing-rush-why-am-i-still-seeing-the-old-version) for more about this.
+- **Node.js 14 / 16**: We recommend to use [nvm](https://github.com/creationix/nvm) (for Mac/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (for Windows) so that you can easily switch between different Node.js engine verisons. When installing Node.js, make sure to first uninstall any previous versions and clean up their files. See [FAQ: After installing Rush, why am I stilling see the old version?](https://rushjs.io/pages/help/faq/#after-installing-rush-why-am-i-still-seeing-the-old-version) for more about this.
 
 - **Visual Studio Code** (recommended): You can use any editor, but we suggest [VS Code](https://code.visualstudio.com). It's great!
 
@@ -40,6 +40,8 @@ C:\Repos>git clone https://github.com/microsoft/rushstack
 C:\Repos>cd rushstack
 C:\Repos\rushstack>rush install
 ```
+
+_(Note: if you don't have a GitHub email configured, add the --bypass-policy option.)_
 
 4. Rebuild all the projects in the repo:
 
