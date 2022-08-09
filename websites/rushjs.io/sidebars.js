@@ -67,6 +67,7 @@ const sidebars = {
         'pages/advanced/config_files',
         'pages/advanced/phantom_deps',
         'pages/advanced/npm_doppelgangers',
+        'pages/advanced/compatibility_db',
         'pages/advanced/preferred_versions',
         'pages/advanced/incremental_builds',
         'pages/advanced/watch_mode',
