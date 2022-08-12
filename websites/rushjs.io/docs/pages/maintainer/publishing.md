@@ -34,13 +34,19 @@ This command should have its own build definition. So people can just trigger it
 
 ### Dry run mode
 
+`rush publish` has several flavors of dry runs that allow you to execute intermediate steps of the publish process without actually publishing to an npm registry. This can be useful for testing as well as for creating version bumps and changelogs in situations where this is no external package repository in use for publishing.
+
+    rush publish
+
+When run without any parameters, this does the whole process in a read-only mode, which means the changes are not saved to disk, not committed to the source repository, and packages are not really published. It is useful if you want to check if the version increases and change log updates look right for you.
+
     rush publish --apply
 
-It does the whole process in a dry run mode which means the changes are not committed and packages are not really published. It is useful if you want to check if the version increases and change log updates look right for you.
+In this mode the changes are added to the changelog files and the package.json files are updated with new version numbers and written to disk, but nothing is actually committed to the source repository or published. This is useful if you want to review or edit any of these files before committing to the source repository or publishing to the package repository.
 
     rush publish --apply --target-branch targetBranch
 
-The same dry run mode. The only difference between this one and the previous one is that the changes are committed to the provided target branch.
+In this mode, the changes above are actually committed to a new git branch (prefixed with `publish-`) that is based off of `targetBranch`. Running this command with `targetBranch` set to the branch specified in `repository.defaultBranch` will effectively do everything that a "live" publish would do (including commits to git source), short of actually publishing to an npm repository.
 
 ### Publish mode
 
@@ -64,19 +70,19 @@ Instead of publishing, you also have the option to pack the outputs locally into
 
     rush publish --pack --include-all --publish
 
-> Note: the `--publish` flag disables dry mode, which allows writing the file contents to the disk.
+> Note: Any command that uses the `--publish` flag will disable dry mode, which allows writing the file contents to the disk.
 >
 > You can also use this command in combination with `--release-folder` to hint where the files should be outputted.
 
 ## 3. Version Policy
 
-Version policy is a new concept introduced into Rush to solve the problem of how to notify packages to do different types of version increase when the number of packages is large. For example, rush and rush-lib are always published together and use the same version. Those two versions should always be increased together. Another example is that developers can create different branches to service different major versions. People should not be able to modify the major version in that branch. Version policy solves this kind of problems by defining different policies, one enforcing rush and rush-lib always have the same version and the other locking the major version in a branch.
+Version policy is a new concept introduced into Rush to solve the problem of how to notify packages to do different types of version increase when the number of packages is large. For example, `@microsoft/rush` and `@microsoft/rush-lib` are always published together and use the same version. Those two versions should always be increased together. Another example is that developers can create different branches to service different major versions. People should not be able to modify the major version in that branch. Version policy solves this kind of problems by defining different policies, one enforcing that `rush` and `rush-lib` always have the same version and the other locking the major version in a branch.
 
 ### What is a version policy?
 
-A version policy is set of rules that define how the version should be increased. It is defined in common/config/rush/version-policies.json. An example can be found in [here](https://github.com/microsoft/rushstack/blob/main/common/config/rush/version-policies.json). A public package specifies what version policy it is associated with by providing versionPolicyName in rush.json. An example can be found in the [project configuration for rush and rush-lib](https://github.com/microsoft/rushstack/blob/7d05f64c3275da074825bb98d3e49ea920fcfa8f/rush.json#L482). Multiple packages can use one version policy if they all follow the same rules. When a package is associated with a version policy, it becomes public and can be published when ‘rush publish’ runs.
+A version policy is set of rules that define how the version should be increased. It is defined in **common/config/rush/version-policies.json**. An example can be found in [here](https://github.com/microsoft/rushstack/blob/master/common/config/rush/version-policies.json). A public package specifies what version policy it is associated with by providing `versionPolicyName` in **rush.json**. An example can be found in [Rush and Rush-lib configuration](https://github.com/microsoft/rushstack/blob/master/rush.json#L46). Multiple packages can use one version policy if they all follow the same rules. When a package is associated with a version policy, it becomes public and can be published when `rush publish` runs.
 
-The schema of version-policies.json is defined [here](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/schemas/version-policies.schema.json).
+The schema of **version-policies.json** is defined [here](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/schemas/version-policies.schema.json).
 
 ### Two types of version policies
 
