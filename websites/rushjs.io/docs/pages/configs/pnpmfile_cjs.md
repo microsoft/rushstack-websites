@@ -1,11 +1,9 @@
 ---
-layout: page
 title: .pnpmfile.cjs
-navigation_source: docs_nav
 ---
 
-This is the template that [rush init]({% link pages/commands/rush_init.md %})
-generates for **pnpmfile.js**:
+This is the template that [rush init](../../commands/rush_init)
+generates for the monorepo **pnpmfile.js** file:
 
 **common/config/rush/.pnpmfile.cjs**
 
