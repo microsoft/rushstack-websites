@@ -13,7 +13,7 @@ jobs:
   - job: Deploy
     displayName: Deploy
     variables:
-      NodeVersion: 14
+      NodeVersion: 16
     steps:
       - checkout: self
         persistCredentials: true
