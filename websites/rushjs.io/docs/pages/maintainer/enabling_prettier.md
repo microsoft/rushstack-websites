@@ -229,9 +229,11 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
     node common/scripts/install-run-rush.js prettier || exit $?
     ```
 
-7.  To actually install the hook, run `rush install`.
+7.  Make the file executable: `chmod +x pre-commit`
 
-8.  Before finally merging your PR, you may want to run `prettier . --write` one last time to reformat any files
+8.  To actually install the hook, run `rush install`.
+
+9.  Before finally merging your PR, you may want to run `prettier . --write` one last time to reformat any files
     that may have been modified before we installed the hook.
 
 You're done! Whenever changes are committed to Git, they will now be automatically prettified.
