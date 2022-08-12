@@ -38,7 +38,10 @@ function readPackage(packageJson, context) {
     if (packageJson.name === 'docusaurus-theme-search-typesense') {
       const docusaurusPackageNames = [
         '@docusaurus/core',
+        '@docusaurus/logger',
+        '@docusaurus/plugin-content-docs',
         '@docusaurus/theme-common',
+        '@docusaurus/theme-translations',
         '@docusaurus/utils',
         '@docusaurus/utils-validation'
       ];
@@ -50,6 +53,13 @@ function readPackage(packageJson, context) {
           packageJson.peerDependencies[docusaurusPackageName] = '2.0.1';
         }
       }
+    }
+
+    // This is a workaround for what a possible PNPM bug?  Because "@docusaurus/types" is an optional
+    // peer dependency, we end up with side-by-side installs of "@docusaurus/theme-common" etc whose
+    // only difference is whether "@docusaurus/types" was included.
+    if (packageJson.name.startsWith('@docusaurus/')) {
+      packageJson.dependencies['@docusaurus/types'] = '2.0.1';
     }
 
     if (packageJson.dependencies['trim'] == '0.0.1') {
