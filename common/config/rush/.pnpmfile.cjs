@@ -44,10 +44,10 @@ function readPackage(packageJson, context) {
       ];
       for (const docusaurusPackageName of docusaurusPackageNames) {
         if (packageJson.dependencies[docusaurusPackageName]) {
-          packageJson.dependencies[docusaurusPackageName] = '2.0.0-beta.18';
+          packageJson.dependencies[docusaurusPackageName] = '2.0.1';
         }
         if (packageJson.peerDependencies[docusaurusPackageName]) {
-          packageJson.peerDependencies[docusaurusPackageName] = '2.0.0-beta.18';
+          packageJson.peerDependencies[docusaurusPackageName] = '2.0.1';
         }
       }
     }
