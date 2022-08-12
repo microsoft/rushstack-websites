@@ -113,16 +113,13 @@ const sidebars = {
         'pages/configs/environment_vars',
         'pages/configs/npmrc',
         'pages/configs/npmrc-publish',
+        'pages/configs/pnpmfile_cjs',
         'pages/configs/artifactory_json',
         'pages/configs/build-cache_json',
         'pages/configs/command-line_json',
         'pages/configs/common-versions_json',
         'pages/configs/deploy_json',
         'pages/configs/experiments_json',
-        /*
-          TODO - 404 on existing site
-          'pages/configs/pnpmfile_js',
-        */
         'pages/configs/rush_json',
         'pages/configs/rush-project_json',
         'pages/configs/version-policies_json'
