@@ -23,13 +23,13 @@ but it may eventually replace incremental builds entirely.)
 To see incremental builds in action, simply run the `rush build` command twice:
 
 ```shell
-$ rush install
+rush install
 
 # This might take several minutes...
-$ rush build
+rush build
 
 # ...but the second time it finishes in just a few seconds.
-$ rush build
+rush build
 ```
 
 The native `rush build` is hard-wired to be incremental. (And `rush rebuild` is the non-incremental variant of
@@ -74,7 +74,7 @@ We might invoke:
 
 ```shell
 # This command will rebuild B, C, and D
-$ rush build
+rush build
 ```
 
 But what if you know that your change to `C` won't affect its API contract? For example, maybe you updated the
@@ -88,7 +88,7 @@ We'd invoke it like this:
 
 ```shell
 # This command will rebuild B (but ignore the effects for C and D)
-$ rush build --changed-projects-only
+rush build --changed-projects-only
 ```
 
 The `--changed-projects-only` is "unsafe" because errors might be encountered if the downstream projects actually

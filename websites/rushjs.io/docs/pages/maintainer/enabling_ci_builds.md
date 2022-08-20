@@ -8,22 +8,22 @@ If we were invoking these commands manually, it might look something like this:
 
 ```sh
 # Fetch the main branch
-$ git fetch origin main:refs/remotes/origin/main -a
+git fetch origin main:refs/remotes/origin/main -a
 
 # (optional) Fail if the developer didn't create a required change log.
 # By "fail", we mean that the script will stop because Rush returned
 # a nonzero exit code.
-$ rush change -v
+rush change -v
 
 # Install NPM packages in the common folder, but don't automatically do "rush link"
-$ rush install --no-link
+rush install --no-link
 
 # Run "rush link" explicitly, so your CI system can measure it as a separate step
-$ rush link
+rush link
 
 # Do a full "ship" build, showing detailed logs in real time
 # (We assume "--ship" was defined in common/config/rush/command-line.json)
-$ rush rebuild --ship --verbose
+rush rebuild --ship --verbose
 ```
 
 But there's one hitch -- what if your CI environment doesn't come with Rush preinstalled?

@@ -9,39 +9,37 @@ Want to see Rush in action? The only prerequisite you need is [NodeJS](https://n
 **From your shell, install Rush like this:**
 
 ```sh
-$ npm install -g @microsoft/rush
+npm install -g @microsoft/rush
 ```
-
-(Don't type the **"$"** of course.) :-)
 
 **For command-line help, do this:**
 
 ```sh
-$ rush -h
+rush -h
 ```
 
 **To see Rush build some real projects, try running these commands:**
 
 ```sh
-$ git clone https://github.com/microsoft/rushstack
-$ cd rushstack
+git clone https://github.com/microsoft/rushstack
+cd rushstack
 
 # Install the NPM packages:
 # (If you don't have a GitHub email configured, add the "--bypass-policy" option.)
-$ rush update
+rush update
 
 # Incremental install:
-$ rush update  # <-- instantaneous!
+rush update  # <-- instantaneous!
 
 # Force all projects to be rebuilt:
-$ rush rebuild
+rush rebuild
 
 # Incremental build:
-$ rush build    # <-- instantaneous!
+rush build    # <-- instantaneous!
 
 # Use "--verbose" to view the console logs for each project as it is built.
 # Projects build in parallel processes, but their logs are collated.
-$ rush rebuild --verbose
+rush rebuild --verbose
 ```
 
 ## Let's get started!

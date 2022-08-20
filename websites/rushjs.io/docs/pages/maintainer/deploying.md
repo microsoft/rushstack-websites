@@ -33,7 +33,7 @@ Continuing our example, we can create the file using this command:
 
 ```shell
 # Create common/config/rush/deploy.json and configure it to deploy "app1"
-$ rush init-deploy --project app1
+rush init-deploy --project app1
 ```
 
 After the file **deploy.json** is created, open it in your editor and adjust the settings as appropriate. Then
@@ -45,13 +45,13 @@ To copy the files to the deployment target folder, you would use these commands:
 
 ```shell
 # Install dependencies
-$ rush install
+rush install
 
 # Build the monorepo
-$ rush build
+rush build
 
 # Copy app1 and its dependencies to the default target folder: common/deploy/
-$ rush deploy
+rush deploy
 ```
 
 This will prepare a deployment by copying `app1` and its dependencies the target folder. The copied files will be
@@ -66,10 +66,10 @@ You can test that the deployment worked correctly by executing `app1` from withi
 
 ```shell
 # Change to the app1 location under the target folder
-$ cd common/deploy/apps/app1
+cd common/deploy/apps/app1
 
 # Invoke the package.json script that starts the web service
-$ rushx start
+rushx start
 ```
 
 If the project fails to run (but worked correctly from its original location **apps/app1**), then you many

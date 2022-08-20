@@ -104,8 +104,10 @@ For example, if you want to try out a different release of Rush before upgrading
 the variable like this:
 
 ```shell
-$ set RUSH_PREVIEW_VERSION=5.0.0-dev.25
-$ rush install
+# This is Bash notation; for Windows shell, change "export" to be "set"
+export RUSH_PREVIEW_VERSION=5.0.0-dev.25
+
+rush install
 ```
 
 ## RUSH_TEMP_FOLDER

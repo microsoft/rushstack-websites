@@ -50,7 +50,7 @@ We might try an experiment like invoking `rush build --to-except D` in an endles
 ```shell
 # Build everything that D depends on (but not D itself),
 # and keep doing that in an endless loop:
-$ while true; do rush build --to-except D; done
+while true; do rush build --to-except D; done
 ```
 
 ...and then, while that is running, we invoke `heft start` (or `webpack serve`) in the folder for project `D`.

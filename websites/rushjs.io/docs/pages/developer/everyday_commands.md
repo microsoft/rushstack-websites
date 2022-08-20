@@ -62,18 +62,18 @@ Combining everything, a typical daily incantation might look like this:
 
 ```sh
 # Pull the latest changes from Git
-$ git pull
+git pull
 
 # Install NPM packages as needed
-$ rush update
+rush update
 
 # Do a clean rebuild of everything
-$ rush rebuild
+rush rebuild
 
 # Work on one project
-$ cd ./my-project
+cd ./my-project
 
 # Let's assume there is a "start" script in the package.json.
 # (To see the available commands, type "rushx" by itself.)
-$ rushx start
+rushx start
 ```

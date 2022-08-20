@@ -9,7 +9,7 @@ In order to use Rush, you will need the NodeJS engine. We recommend the latest [
 You also need to install the Rush tool itself. It's pretty easy. From your shell or command prompt, type this:
 
 ```sh
-$ npm install -g @microsoft/rush
+npm install -g @microsoft/rush
 ```
 
 _NOTE: If this command fails because your user account does not have permissions to access NPM's global folder, you may need to [fix your NPM configuration](https://docs.npmjs.com/getting-started/fixing-npm-permissions)._
@@ -17,7 +17,7 @@ _NOTE: If this command fails because your user account does not have permissions
 To see Rush's command line help, you can type:
 
 ```sh
-$ rush -h
+rush -h
 ```
 
 The command-line help is also published online in the [Command Reference](../../commands/rush_add).

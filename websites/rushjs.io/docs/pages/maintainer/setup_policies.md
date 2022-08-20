@@ -55,8 +55,11 @@ Rush can help, though. The "gitPolicy" setting in **rush.json** allows you to sp
 
 Whenever the developer runs `rush install`, Rush will check that their e-mail address follows one of the patterns. If not, it displays a warning like this:
 
+```bash
+rush install
 ```
-$ rush install
+
+```
 Rush Multi-Package Build Tool
 
 Checking Git policy for this repository.
