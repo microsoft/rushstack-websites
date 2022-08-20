@@ -102,9 +102,11 @@ to copy this file into each project folder.
 
 Now you should see projects being cached as shown in this sample log output:
 
-```shell
-$ rush rebuild --verbose
+```bash
+rush rebuild --verbose
+```
 
+```
 . . .
 
 ==[ example-project ]==============================================[ 1 of 5 ]==
@@ -124,9 +126,11 @@ Successfully set cache entry.
 
 When we run the same command a second time, Rush extracts the archive instead of invoking the build task:
 
-```shell
-$ rush rebuild --verbose
+```bash
+rush rebuild --verbose
+```
 
+```
 . . .
 
 ==[ example-project ]==============================================[ 1 of 5 ]==
@@ -214,10 +218,11 @@ A more security-conscious organization however will prefer to require authentica
 Rush provides a [rush update-cloud-credentials](../../commands/rush_update-cloud-credentials)
 command to make this easy for users to set up:
 
-```shell
-$ rush update-cloud-credentials --interactive
+```bash
+rush update-cloud-credentials --interactive
+```
 
-
+```
 Rush Multi-Project Build Tool 5.45.6 (unmanaged) - https://rushjs.io
 Node.js version is 12.20.1 (LTS)
 

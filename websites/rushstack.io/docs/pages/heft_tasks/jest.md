@@ -20,7 +20,7 @@ That said, if for some reason you need to run tests in some other runtime such a
 
 Heft has direct dependencies on the Jest packages that it needs, so you don't need to add Jest to your project's **package.json** file. Instead, you will need to install the Heft plugin package:
 
-```shell
+```bash
 $ rush add --package @rushstack/heft-jest-plugin --dev
 ```
 

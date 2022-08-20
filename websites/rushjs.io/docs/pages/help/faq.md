@@ -34,13 +34,13 @@ For more details, check out the [Rush Stack](https://rushstack.io/) website.
 This problem isn't specific to Rush, but we hear about it a lot because Rush is one of the first tools people need to invoke when starting work in a repo. The symptoms look like this:
 
 ```
-$ npm install -g @microsoft/rush
+C:\> npm install -g @microsoft/rush
 C:\Program Files\nodejs\rush -> C:\Program Files\nodejs\node_modules\@microsoft\
 rush\bin\rush
 C:\Program Files\nodejs
 `-- @microsoft/rush@3.0.1
 
-$ rush
+C:\> rush
 Rush Multi-Package Build Tool 2.5.0 - http://aka.ms/rush
 ```
 

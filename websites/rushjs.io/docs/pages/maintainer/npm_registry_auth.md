@@ -42,7 +42,7 @@ identified by their `@example` NPM scope.
 
 **common/config/rush/.npmrc**
 
-```shell
+```bash
 # Map your company's NPM scope ("@example") to the private registry URL:
 @example:registry=https://my-registry.example.com/npm-private/
 
@@ -66,7 +66,7 @@ Your setup might look like this:
 
 **common/config/rush/.npmrc**
 
-```shell
+```bash
 # Map everything to the private registry URL
 registry=https://my-registry.example.com/npm-private/
 always-auth=true

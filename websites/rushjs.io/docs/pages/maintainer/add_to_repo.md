@@ -131,7 +131,7 @@ There are a few things to keep in mind when creating a `"build"` script:
 Now let's try building your project. From anywhere under the folder containing **rush.json**, run this command (which builds all projects in the repo):
 
 ```
-$ rush build
+rush build
 ```
 
 Rush provides a lot of command-line switches for building projects. See [rush build](../../commands/rush_build) and [rush rebuild](../../commands/rush_rebuild) for details.

@@ -89,9 +89,9 @@ to your variant folder **common/config/rush/variants/old-widget-sdk**. Three con
 
 Be sure to add the copied files to Git:
 
-```shell
-$ git add .
-$ git commit -m "Creating a new variant"
+```bash
+git add .
+git commit -m "Creating a new variant"
 ```
 
 **3<!-- -->. Override the dependency versions for the variant.** For this example, we will downgrade
@@ -126,8 +126,8 @@ Note that `^2.3.9` satisfies the SemVer range `^2.3.4 || ^3.0.2` that we specifi
 **4<!-- -->. Install your variant and test it.** Let's start by running `rush update` to install the new set of
 dependency versions:
 
-```shell
-$ rush update --full --variant old-widget-sdk
+```bash
+rush update --full --variant old-widget-sdk
 ```
 
 This will update the file **common/config/rush/old-widget-sdk/shrinkwrap.yaml**, install those dependencies
@@ -136,8 +136,8 @@ supports the `--variant` option. Your CI job can use this when it builds with th
 
 Now you can build and test your variant:
 
-```shell
-$ rush rebuild
+```bash
+rush rebuild
 ```
 
 ⏵ If you get tired of typing `--variant`, you can also use the
@@ -148,9 +148,9 @@ environment variable to specify the variant name.
 state by running `rush install` without the `--variant` option. We call this the "**default variant**", because
 it's the same default behavior as a repo that didn't define any variants:
 
-```shell
+```bash
 # Restore the original state by omitting "--variant":
-$ rush install
+rush install
 ```
 
 > **Tip:** If you forget which variant is active, you can look in the **common/temp/current-variant.json** file.

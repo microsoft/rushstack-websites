@@ -25,9 +25,9 @@ on project `B`. You need to build all the things that `B` depends on, and also `
 
 Here's how to do that:
 
-```shell
+```bash
 # Build everything up to (and including) project B
-$ rush build --to B
+rush build --to B
 ```
 
 The projects selected by this command are `A`, `B`, and `E`:
@@ -40,12 +40,12 @@ The projects selected by this command are `A`, `B`, and `E`:
 will be to invoke Webpack or Jest in "watch mode" for `B`. You can use `--to-except` instead
 of `--to` to exclude `B`.
 
-```shell
+```bash
 # Build everything up to project B, but not B itself
-$ rush build --to-except B
+rush build --to-except B
 
 # Invoke Jest watch mode to build B
-$ heft test --watch
+heft test --watch
 ```
 
 The projects selected by this command are `A` and `E`:
@@ -60,9 +60,9 @@ we also need to include its dependency `G`. The `--from` command does this. It w
 since they're required by `B`. (Since `rush build` is incremental, `A` and `E` will probably get skipped assuming
 they are still up to date.)
 
-```shell
+```bash
 # Build everything downstream from B, including any implied dependencies
-$ rush build --from B
+rush build --from B
 ```
 
 This command selects everything except for `F`:
@@ -84,9 +84,9 @@ not relevant right now.
 In these situations the `--impacted-by` parameter can be handy: It means _"Select only those projects
 that might be broken by a change to B, and trust me that their dependencies are in a usable state."_
 
-```shell
+```bash
 # Build B and everything downstream from B, but don't include dependencies
-$ rush build --impacted-by B
+rush build --impacted-by B
 ```
 
 The projects selected by this command are `B`, `C`, and `D`:
@@ -98,9 +98,9 @@ The projects selected by this command are `B`, `C`, and `D`:
 **Possible scenario:** This is the same as `--impacted-by` except that it does not include `B` itself. For example
 that might make sense if you already built `B` manually while implementing the thing that we now want to test.
 
-```shell
+```bash
 # Build everything downstream from B, but don't include dependencies
-$ rush build --impacted-by-except B
+rush build --impacted-by-except B
 ```
 
 The projects selected by this command are `C` and `D`:
@@ -112,9 +112,9 @@ The projects selected by this command are `C` and `D`:
 **Possible scenario:** As its name implies, the `--only` parameter adds exactly one project to the selection,
 ignoring dependencies.
 
-```shell
+```bash
 # Build only B and nothing else
-$ rush build --only B
+rush build --only B
 ```
 
 <img src="/images/docs/selection-only.svg" alt="rush build --only B" style={{ height: "150px" }} />
@@ -248,8 +248,8 @@ rush list --only tag:frontend-team-libs --detailed
 
 Here's a more complex combined command-line:
 
-```shell
-$ rush build --only A --impacted-by-except B --to F
+```bash
+rush build --only A --impacted-by-except B --to F
 ```
 
 The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:

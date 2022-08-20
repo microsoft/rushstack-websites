@@ -6,11 +6,11 @@ title: Other helpful commands
 
 Normally `rush update` only makes the minimal incremental changes necessary to satisfy the project **package.json** files. If you want to update everything to the latest version, you would do this:
 
-```sh
+```bash
 # This effectively deletes the old shrinkwrap file and re-solves everything
 # using the latest compatible versions as specified in package.json files.
 # Note that the package.json files themselves are not modified.
-$ rush update --full
+rush update --full
 ```
 
 For everyday work, `--full` can introduce unrelated breaks in your PR branch, for example if one of the dependencies didn't perfectly follow the SemVer rules. This isn't too much of a concern for small repos. For a large monorepo, we recommended to use `rush update` for everyday work, and then run `rush update --full` periodically as a separate workflow by a CI job or designated person.
@@ -29,29 +29,29 @@ If your repo is using PNPM with the new `useWorkspaces=true` mode enabled in you
 
 For example:
 
-```sh
+```bash
 # Only install the NPM packages needed to build "my-project" and the other
 # Rush projects that it depends on:
-$ rush install --to my-project
+rush install --to my-project
 
 # Like with "rush build", you can use "." to refer to the project from your
 # shell's current working directory:
-$ cd my-project
-$ rush install --to .
+cd my-project
+rush install --to .
 
 # Here's how to install dependencies required to do "rush build --from my-project"
-$ rush install --from my-project
+rush install --from my-project
 ```
 
 ## Getting back to a clean state
 
 After working with Rush, maybe you want to get back to a clean state, e.g. so you can zip up a folder. Here's a couple commands to do that:
 
-```sh
+```bash
 # Remove all the symlinks created by Rush:
-$ rush unlink
+rush unlink
 
 # Remove all the temporary files created by Rush, including deleting all
 # the NPM packages that were installed in your common folder:
-$ rush purge
+rush purge
 ```

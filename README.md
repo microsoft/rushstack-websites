@@ -49,7 +49,7 @@ To facilitate testing of multi-site changes, you can opt to build and deploy all
 at once from a fork of `rushstack-websites`. To do so, first make sure you've forked the project
 and cloned your fork locally, and then run:
 
-```console
+```bash
 rush install
 rush build
 GIT_USER=<your-git-username> rush deploy-fork
