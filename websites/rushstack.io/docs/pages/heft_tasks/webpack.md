@@ -23,7 +23,7 @@ Webpack should be used for projects whose output is a web application bundle. We
 
 Heft has direct dependencies on the Webpack packages that it needs, so you don't normally need to add Webpack to your project's **package.json** file. Instead, you will need to install the Heft plugin package for the version of Webpack that you want to use:
 
-```shell
+```bash
 # (CHOOSE ONE)
 
 # If you want to use Webpack 5
@@ -35,7 +35,7 @@ $ rush add --package @rushstack/heft-webpack4-plugin --dev
 
 You should also add `@types/webpack-env` to your project, which provides TypeScript typings for the Webpack environment:
 
-```shell
+```bash
 $ rush add --package @types/webpack-env --exact  --dev
 ```
 

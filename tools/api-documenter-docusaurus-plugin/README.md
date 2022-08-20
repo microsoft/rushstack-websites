@@ -23,7 +23,7 @@ In your `api-documenter.json`, add the plugin:
 
 Generate your documentation into a subfolder named `api`:
 
-```console
+```bash
 api-documenter generate --input-folder ../../common/temp/api --output-folder ./dist/api
 ```
 

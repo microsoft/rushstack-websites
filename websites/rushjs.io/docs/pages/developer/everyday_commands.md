@@ -60,7 +60,7 @@ That's it! Those are all the commonly used Rush commands.
 
 Combining everything, a typical daily incantation might look like this:
 
-```sh
+```bash
 # Pull the latest changes from Git
 git pull
 

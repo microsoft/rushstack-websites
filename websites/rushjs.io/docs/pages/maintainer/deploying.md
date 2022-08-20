@@ -31,7 +31,7 @@ by `rush init`. Instead, you create the file using [rush init-deploy](../../comm
 
 Continuing our example, we can create the file using this command:
 
-```shell
+```bash
 # Create common/config/rush/deploy.json and configure it to deploy "app1"
 rush init-deploy --project app1
 ```
@@ -43,7 +43,7 @@ commit this file to Git.
 
 To copy the files to the deployment target folder, you would use these commands:
 
-```shell
+```bash
 # Install dependencies
 rush install
 
@@ -64,7 +64,7 @@ organized similarly to the monorepo's folder structure:
 
 You can test that the deployment worked correctly by executing `app1` from within the deployment target folder:
 
-```shell
+```bash
 # Change to the app1 location under the target folder
 cd common/deploy/apps/app1
 
@@ -113,9 +113,9 @@ If you specify `"linkCreation": "script"` then `rush deploy` will create the **c
 any links. After you have uploaded this folder to your server machine, you can then invoke the script
 to create the links:
 
-```shell
+```bash
 # Invoke this command on the server machine, after the files have been uploaded
-$ node create-links.js create
+node create-links.js create
 ```
 
 > NOTE: When using `"linkCreation": "script"`, the current implementation does not yet generate the
@@ -166,12 +166,12 @@ like this:
 
 When performing the deployment, the `--project` parameter selects which project to deploy. For example:
 
-```shell
+```bash
 # Copy app1 and its dependencies to /mnt/deploy/app1
-$ rush deploy --project app1 --target-folder /mnt/deploy/app1
+rush deploy --project app1 --target-folder /mnt/deploy/app1
 
 # Copy app2 and its dependencies to /mnt/deploy/app2
-$ rush deploy --project app2 --target-folder /mnt/deploy/app2
+rush deploy --project app2 --target-folder /mnt/deploy/app2
 ```
 
 The `--target-folder` parameter copies the files to a custom location instead of the **common/deploy/** default folder.
@@ -187,25 +187,25 @@ We will create two config files:
 
 Both of these files can be created using `rush init-deploy`:
 
-```shell
+```bash
 # Create common/config/rush/deploy.json
-$ rush init-deploy --project app1
+rush init-deploy --project app1
 
 # Create common/config/rush/deploy-app2-example.json
-$ rush init-deploy --project app2 --scenario app2-example
+rush init-deploy --project app2 --scenario app2-example
 ```
 
 After editing **deploy-app2-example.json** to specify `"linkCreation": "script"`, we can now use the
 `--scenario` parameter with `rush deploy`:
 
-```shell
+```bash
 # Copy app1 and its dependencies to /mnt/deploy/app1
 # Uses scenario file: common/config/rush/deploy.json
-$ rush deploy --target-folder /mnt/deploy/app1
+rush deploy --target-folder /mnt/deploy/app1
 
 # Copy app2 and its dependencies to /mnt/deploy/app2
 # Uses scenario file: common/config/rush/deploy-app2-example.json
-$ rush deploy --target-folder /mnt/deploy/app2 --scenario app2-example
+rush deploy --target-folder /mnt/deploy/app2 --scenario app2-example
 ```
 
 Note that the `--project` parameter is not needed with `rush deploy` because each config file has only one project

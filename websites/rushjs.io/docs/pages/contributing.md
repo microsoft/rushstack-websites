@@ -23,7 +23,7 @@ Once you have coded your fix and built your branch (as described in the general 
 
 Rush features a mechanism called the **version selector**, which reads `rushVersion` from **rush.json** and then automatically installs and invokes that specific version of the engine. Thus if we launch your build of `@microsoft/rush`, it will not actually run your modified code. To bypass the version selector, we need to invoke the `@microsoft/rush-lib` engine directly:
 
-```shell
+```bash
 cd rushstack/libraries/rush-lib
 
 node ./lib/start.js --help
@@ -33,7 +33,7 @@ If you want to make it easy invoke your test build from other locations, we reco
 
 For Bash on Mac OS or Linux:
 
-```shell
+```bash
 # Substitute the full path to your own build of rush-lib:
 alias testrush="node ~/git/rushstack/libraries/rush-lib/lib/start.js"
 ```
@@ -77,7 +77,7 @@ After saving this file, in VS Code click _"View" --> "Run"_ and choose your "Deb
 
 Rush currently builds using the **gulp-core-build** toolchain which by default runs unit tests, which take a long time. You can bypass them by invoking gulp directly.
 
-```shell
+```bash
 # Full incremental build of Rush and its dependencies, including unit tests
 rush build --to rush-lib --verbose
 

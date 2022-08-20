@@ -8,19 +8,19 @@ Want to see Rush in action? The only prerequisite you need is [NodeJS](https://n
 
 **From your shell, install Rush like this:**
 
-```sh
+```bash
 npm install -g @microsoft/rush
 ```
 
 **For command-line help, do this:**
 
-```sh
+```bash
 rush -h
 ```
 
 **To see Rush build some real projects, try running these commands:**
 
-```sh
+```bash
 git clone https://github.com/microsoft/rushstack
 cd rushstack
 

@@ -139,7 +139,7 @@ Here, we've defined one flag (`--production`) that can be specified on all 4 var
 
 So, if we were to execute this command:
 
-```console
+```bash
 rush test --production --update-snapshots
 ```
 

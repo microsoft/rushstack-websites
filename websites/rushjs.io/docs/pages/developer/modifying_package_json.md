@@ -4,7 +4,7 @@ title: Modifying package.json
 
 Let's say you need to add a new dependency on a library "**example-lib**". Without Rush, you would do something like this:
 
-```sh
+```bash
 # DON'T DO THIS IN A RUSH REPO:
 ~/my-repo$ cd apps/my-app
 ~/my-repo/apps/my-app$ npm install --save example-lib
@@ -12,7 +12,7 @@ Let's say you need to add a new dependency on a library "**example-lib**". Witho
 
 In a Rush repo, you should instead use the [rush add](../../commands/rush_add) command:
 
-```sh
+```bash
 ~/my-repo$ cd apps/my-app
 
 # Add "example-lib" as a dependency of "my-app", and then automatically run "rush update":
@@ -21,7 +21,7 @@ In a Rush repo, you should instead use the [rush add](../../commands/rush_add) c
 
 The `rush add` command can also be used to update the version of an existing dependency:
 
-```sh
+```bash
 # Update "my-app" to use "example-lib" version "~1.2.3":
 ~/my-repo/apps/my-app$ rush add --package example-lib@1.2.3
 

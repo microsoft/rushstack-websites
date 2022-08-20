@@ -7,7 +7,7 @@ generates for **.npmrc-publish**:
 
 **common/config/rush/.npmrc-publish**
 
-```shell
+```bash
 # This config file is very similar to common/config/rush/.npmrc, except that .npmrc-publish
 # is used by the "rush publish" command, as publishing often involves different credentials
 # and registries than other operations.

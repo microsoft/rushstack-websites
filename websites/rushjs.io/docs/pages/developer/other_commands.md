@@ -6,7 +6,7 @@ title: Other helpful commands
 
 Normally `rush update` only makes the minimal incremental changes necessary to satisfy the project **package.json** files. If you want to update everything to the latest version, you would do this:
 
-```sh
+```bash
 # This effectively deletes the old shrinkwrap file and re-solves everything
 # using the latest compatible versions as specified in package.json files.
 # Note that the package.json files themselves are not modified.
@@ -29,7 +29,7 @@ If your repo is using PNPM with the new `useWorkspaces=true` mode enabled in you
 
 For example:
 
-```sh
+```bash
 # Only install the NPM packages needed to build "my-project" and the other
 # Rush projects that it depends on:
 rush install --to my-project
@@ -47,7 +47,7 @@ rush install --from my-project
 
 After working with Rush, maybe you want to get back to a clean state, e.g. so you can zip up a folder. Here's a couple commands to do that:
 
-```sh
+```bash
 # Remove all the symlinks created by Rush:
 rush unlink
 

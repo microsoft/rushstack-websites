@@ -6,7 +6,7 @@ When you set up a PR build definition for continuous integration, the automated 
 
 If we were invoking these commands manually, it might look something like this:
 
-```sh
+```bash
 # Fetch the main branch
 git fetch origin main:refs/remotes/origin/main -a
 

@@ -47,7 +47,7 @@ How to accomplish that with Rush? Suppose our projects `B` and `C` have a simpli
 
 We might try an experiment like invoking `rush build --to-except D` in an endless loop...
 
-```shell
+```bash
 # Build everything that D depends on (but not D itself),
 # and keep doing that in an endless loop:
 while true; do rush build --to-except D; done

@@ -103,7 +103,7 @@ field from rush.json.
 For example, if you want to try out a different release of Rush before upgrading your repo, you can assign
 the variable like this:
 
-```shell
+```bash
 # This is Bash notation; for Windows shell, change "export" to be "set"
 export RUSH_PREVIEW_VERSION=5.0.0-dev.25
 

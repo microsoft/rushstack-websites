@@ -22,7 +22,7 @@ but it may eventually replace incremental builds entirely.)
 
 To see incremental builds in action, simply run the `rush build` command twice:
 
-```shell
+```bash
 rush install
 
 # This might take several minutes...
@@ -72,7 +72,7 @@ Projects `C` and `D` depend on `B`, so they need to be built as well:
 
 We might invoke:
 
-```shell
+```bash
 # This command will rebuild B, C, and D
 rush build
 ```
@@ -86,7 +86,7 @@ The `--changed-projects-only` flag tells Rush to build only those projects where
 
 We'd invoke it like this:
 
-```shell
+```bash
 # This command will rebuild B (but ignore the effects for C and D)
 rush build --changed-projects-only
 ```
