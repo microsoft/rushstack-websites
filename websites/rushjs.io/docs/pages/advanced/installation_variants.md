@@ -140,7 +140,7 @@ Now you can build and test your variant:
 rush rebuild
 ```
 
-⏵ If you get tired of typing `--variant`, you can also use the
+👉 If you get tired of typing `--variant`, you can also use the
 [RUSH_VARIANT](../../configs/environment_vars)
 environment variable to specify the variant name.
 

@@ -52,7 +52,7 @@ To write change logs, first commit any pending work to Git. Then type `rush chan
 
 Later, Rush's automated publishing workflow will inspect these files to determine which packages need to be published. It will delete the files and copy your messages into the package's CHANGELOG.md file.
 
-⏵ See [Authoring change logs](../../best_practices/change_logs) for tips about writing change logs.
+👉 See [Authoring change logs](../../best_practices/change_logs) for tips about writing change logs.
 
 # Common scenarios
 
