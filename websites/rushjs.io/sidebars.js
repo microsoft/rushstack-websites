@@ -30,7 +30,8 @@ const sidebars = {
         'pages/developer/modifying_package_json',
         'pages/developer/other_commands',
         'pages/developer/tab_completion',
-        'pages/developer/selecting_subsets'
+        'pages/developer/selecting_subsets',
+        'pages/developer/project_tags'
       ]
     },
     {
