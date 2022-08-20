@@ -16,7 +16,9 @@ The arrow from `D` to `C` indicates that `D` depends on `C`; this means that `C`
 `D` can be built. We'll use the `rush build` command in the examples given below, but these same parameters
 work for any bulk command.
 
-## -<!---->-to
+## Selection parameters
+
+### -<!---->-to
 
 **Possible scenario:** Suppose that you have just cloned your monorepo, and now you want to start working
 on project `B`. You need to build all the things that `B` depends on, and also `B` itself.
@@ -32,7 +34,7 @@ The projects selected by this command are `A`, `B`, and `E`:
 
 <img src="/images/docs/selection-to.svg" alt="rush build --to B" style={{ height: "150px" }} />
 
-## -<!---->-to-except
+### -<!---->-to-except
 
 **Possible scenario:** In many cases we do not need `rush build` to process `B`, because our next step
 will be to invoke Webpack or Jest in "watch mode" for `B`. You can use `--to-except` instead
@@ -50,7 +52,7 @@ The projects selected by this command are `A` and `E`:
 
 <img src="/images/docs/selection-to-except.svg" alt="rush build --to-except B" style={{ height: "150px" }} />
 
-## -<!---->-from
+### -<!---->-from
 
 **Possible scenario:** Now that we've finished making our changes to `B`, we want to build the downstream
 projects `C` and `D` to make sure their tests were not broken by our change. In order to build `D`,
@@ -71,7 +73,7 @@ This command selects everything except for `F`:
 > then `--from` will instead behave like `--impacted-by`. The meaning was changed in Rush 5.38.0 because
 > most users expected `--from` to include dependencies.
 
-## -<!---->-impacted-by (unsafe)
+### -<!---->-impacted-by (unsafe)
 
 **Possible scenario:** Suppose that while working on `B` we made some changes to `E`. The `rush build`
 incremental analysis assumes that any change to `E` requires all its downstream dependents to be rebuilt,
@@ -91,7 +93,7 @@ The projects selected by this command are `B`, `C`, and `D`:
 
 <img src="/images/docs/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
 
-## -<!---->-impacted-by-except (unsafe)
+### -<!---->-impacted-by-except (unsafe)
 
 **Possible scenario:** This is the same as `--impacted-by` except that it does not include `B` itself. For example
 that might make sense if you already built `B` manually while implementing the thing that we now want to test.
@@ -105,7 +107,7 @@ The projects selected by this command are `C` and `D`:
 
 <img src="/images/docs/selection-impact-except.svg" alt="rush build --impacted-by-except B" style={{ height: "150px" }} />
 
-## -<!---->-only (unsafe)
+### -<!---->-only (unsafe)
 
 **Possible scenario:** As its name implies, the `--only` parameter adds exactly one project to the selection,
 ignoring dependencies.
@@ -126,44 +128,112 @@ doing `rush build --impacted-by B --only G`.
 > about what really needs to be built. If that assumption is incorrect, you can always do `rush build` to get back
 > to a good state.
 
-## Selector formats
+## Selectors
 
-When you specify one of the parameters above, you can use a variety of formats to specify what projects you're interested in.
+When you use a **selection parameter** such as `rush build --to X`, the argument `X` is called a **selector**.
+In the discussion above, we assumed that the selector was always the name of a single Rush project.
+Rush supports a variety of other selector syntaxes, some of which can refer to more than one Rush project.
 
 ### Project name
 
-The most direct way to specify a project is to provide its full name (as listed in your `rush.json` file).
+The simplest selector is the full name of the Rush project, which is the `"name"` field from **package.json**.
 
 Examples:
 
-```console
+```bash
+rush build --to @my-company/my-project-name
+```
+
+```bash
+rush build --from @my-company/my-project-name
+```
+
+```bash
+rush list --impacted-by @my-company/my-project-name
+```
+
+If the package name includes an NPM scope such as `@my-company`, Rush allows you to omit the scope for brevity
+(as long as the unscoped name is not used by some other project in your workspace).
+
+Examples:
+
+```bash
 rush build --to my-project-name
+```
 
+```bash
 rush build --from my-project-name
+```
 
+```bash
 rush list --impacted-by my-project-name
 ```
 
-### Using `.` (current directory)
+Generally the disk folder of `@my-company/my-project-name` would also be called `my-project-name`,
+a practice which we strongly recommend to avoid confusion. It is important to understand that this selector
+is NOT matching the disk folder.
 
-If you are inside a project directory, you can use `.` to indicate the current project.
+### Current folder: `.`
+
+The folder containing a Rush project's **package.json** file is called the **project folder**. If your
+shell's current working directory is somewhere under a project folder, then the selector `.` provides
+a convenient shorthand for referring to that project.
 
 Examples:
 
-```console
+```bash
+cd my-project-name
+
+# Build "@my-company/my-project-name" whose package.json
+# is in the current working directory
 rush build --to .
 
+cd src
+
+# The "." selector can also be resolved from a subfolder
+# such as my-project-name/src
 rush list --to-except .
 ```
 
-### Projects changed since commit
+### Modified projects: `git:`
 
-By providing a git reference (branch, tag, or commit hash), you can specify all projects modified since the provided git reference. This type of query uses the same change tracking logic that `rush change` does.
+By providing a [Git reference](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection) expression
+(branch, tag, or commit hash), you can select all projects with modifications since the corresponding commit.
+This type of query uses similar logic as the `rush change` command: Rush calculates the `git diff` of the
+current working directory versus the referenced commit, then computes a list of affected file paths.
+These file paths are then matched with project folders from your **rush.json** workspace: In this way,
+the `git:` selector identifies the set of Rush projects with at least one modified file.
 
-```console
+```bash
+# Select projects whose source code has been changed according to Git,
+# using the "main" branch as the basis for comparison.
+# Build "--to" those projects and their dependencies.
 rush build --to git:origin/main
+```
 
+```bash
+# Select projects whose source code has been changed since
+# the Git tag named "release/v3.0.0".
+# List the downstream projects that would be "impacted by" these changes.
 rush list --impacted-by git:release/v3.0.0
+```
+
+### Tagged projects: `tag:`
+
+Rush [project tags](../project_tags) enable you to define arbitrary collections of projects,
+which can then be referenced using the `tag:` selector.
+
+Examples:
+
+```bash
+# Build all projects that were tagged with the "shipping" project tag.
+rush build --to tag:shipping
+```
+
+```bash
+# Print a report showing the set of projects
+# that have the "frontend-team-libs" project tag.
+rush list --only tag:frontend-team-libs --detailed
 ```
 
 ## Combining parameters
@@ -186,13 +256,10 @@ The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:
 
 <img src="/images/docs/selection-multi.svg" alt="rush build --only A --impacted-by-except B --to F" style={{ height: "150px" }} />
 
-## Git targets
-
-In addition to project names, it is also possible to use git commit-ish like `git:HEAD~1`. This can be used to e.g. only build projects in a Pull Request that have changed in comparison to the main branch with help of `rush build --to git:origin/main`.
-
 ## See also
 
 - [Incremental builds](../../advanced/incremental_builds)
 - [Using watch mode](../../advanced/watch_mode)
+- [Using project tgas](../../developer/project_tags)
 - [rush build](../../commands/rush_build)
 - [rush rebuild](../../commands/rush_rebuild)
