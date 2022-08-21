@@ -125,6 +125,7 @@ const sidebars = {
         'pages/configs/deploy_json',
         'pages/configs/experiments_json',
         'pages/configs/rush_json',
+        'pages/configs/rush-plugin-manifest_json',
         'pages/configs/rush-project_json',
         'pages/configs/version-policies_json'
       ]
