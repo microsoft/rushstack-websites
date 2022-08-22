@@ -13,7 +13,7 @@ An autoinstaller is defined as folder under **common/autoinstallers/** with a **
 and its own private shrinkwrap file. This folder is added to Git, but it is not a normal Rush project:
 It is not installed by `rush install`, nor does it contain any buildable source code for `rush build`.
 An autoinstaller is purely a container for installing NPM dependencies. Autoinstallers can be associated
-with Rush features such as [custom commands](./custom_commands.md) or [Rush plugins](../advanced/creating_plugins.md);
+with Rush features such as [custom commands](./custom_commands.md) or [Rush plugins](../extensibility/creating_plugins.md);
 when the associated feature is invoked, Rush will automatically install the dependencies.
 
 ## When to use autoinstallers
@@ -79,7 +79,7 @@ there are several possible approaches to consider:
 To associate an autoinstaller with a custom command, specify its name in the `autoinstallerName` field
 in [command-line.json](../configs/command-line_json.md).
 
-To associate an autoinstaller with a Rush plugin, see the [Creating Rush plugins](../advanced/creating_plugins.md)
+To associate an autoinstaller with a Rush plugin, see the [Creating Rush plugins](../extensibility/creating_plugins.md)
 documentation.
 
 ## Maintaining an autoinstaller
@@ -112,4 +112,4 @@ documentation.
 - [rush update-autoinstaller](../commands/rush_update-autoinstaller.md)
 - [Enabling Prettier](../../maintainer/enabling_prettier)
 - [Custom commands](./custom_commands.md)
-- [Creating Rush plugins](../advanced/creating_plugins.md)
+- [Creating Rush plugins](../extensibility/creating_plugins.md)

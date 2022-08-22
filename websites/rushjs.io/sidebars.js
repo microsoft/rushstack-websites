@@ -74,10 +74,14 @@ const sidebars = {
         'pages/advanced/preferred_versions',
         'pages/advanced/incremental_builds',
         'pages/advanced/watch_mode',
-        'pages/advanced/installation_variants',
-        'pages/advanced/creating_plugins',
-        'pages/advanced/api'
+        'pages/advanced/installation_variants'
       ]
+    },
+    {
+      type: 'category',
+      label: 'Extensibility',
+      collapsible: false,
+      items: ['pages/extensibility/creating_plugins', 'pages/extensibility/api']
     },
     {
       type: 'category',
