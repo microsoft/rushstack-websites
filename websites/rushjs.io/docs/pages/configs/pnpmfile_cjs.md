@@ -16,7 +16,7 @@ generates for the monorepo **pnpmfile.js** file:
  * functionally similar to Yarn's "resolutions".)
  *
  * For details, see the PNPM documentation:
- * https://pnpm.js.org/en/hooks.html
+ * https://pnpm.js.org/docs/en/hooks.html
  *
  * IMPORTANT: SINCE THIS FILE CONTAINS EXECUTABLE CODE, MODIFYING IT IS LIKELY TO INVALIDATE
  * ANY CACHED DEPENDENCY ANALYSIS.  After any modification to pnpmfile.js, it's recommended to run

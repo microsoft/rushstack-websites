@@ -133,7 +133,7 @@ generates for **command-line.json**:
     //    * (EXPERIMENTAL) Disable cache for this action. This may be useful if this command affects state outside of
     //    * projects' own folders.
     //    */
-    //   "disableBuildCache ": false
+    //   "disableBuildCache": false
     // },
     //
     // {

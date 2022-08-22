@@ -5,7 +5,7 @@ title: rush add
 ```
 usage: rush add [-h] -p PACKAGE [--exact] [--caret] [--dev] [-m] [-s] [--all]
 
-Adds a specified package as a dependency of the current project (as
+Adds specified package(s) to the dependencies of the current project (as
 determined by the current working directory) and then runs "rush update". If
 no version is specified, a version will be automatically detected (typically
 either the latest version or a version that won't break the
@@ -24,7 +24,9 @@ Optional arguments:
                         characters are usually interpreted by your shell, so
                         it's recommended to use quotes. For example, write
                         "rush add --package "example@^1.2.3"" instead of
-                        "rush add --package example@^1.2.3".
+                        "rush add --package example@^1.2.3". To add multiple
+                        packages, write "rush add --package foo --package
+                        bar".
   --exact               If specified, the SemVer specifier added to the
                         package.json will be an exact version (e.g. without
                         tilde or caret).

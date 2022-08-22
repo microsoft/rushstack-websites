@@ -9,7 +9,7 @@ usage: rush install [-h] [-p] [--bypass-policy] [--no-link]
                     [--variant VARIANT] [-t PROJECT] [-T PROJECT] [-f PROJECT]
                     [-o PROJECT] [-i PROJECT] [-I PROJECT]
                     [--to-version-policy VERSION_POLICY_NAME]
-                    [--from-version-policy VERSION_POLICY_NAME]
+                    [--from-version-policy VERSION_POLICY_NAME] [--check-only]
 
 
 The "rush install" command installs package dependencies for all your
@@ -46,7 +46,7 @@ Optional arguments:
                         a file when using this command.
   --max-install-attempts NUMBER
                         Overrides the default maximum number of install
-                        attempts. The default value is 3.
+                        attempts. The default value is 1.
   --ignore-hooks        Skips execution of the "eventHooks" scripts defined
                         in rush.json. Make sure you know what you are
                         skipping.
@@ -130,6 +130,8 @@ Optional arguments:
                         each of the projects belonging to VERSION_POLICY_NAME.
                          For details, refer to the website article "Selecting
                         subsets of projects".
+  --check-only          Only check the validity of the shrinkwrap file
+                        without performing an install.
 ```
 
 ## See also

@@ -15,7 +15,7 @@ This is the template for the **rush-plugins.json** file that is used to enable
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-plugins.schema.json",
   "plugins": [
     /**
-     * Each item defines a plugin to be loaded by Rush.
+     * Each item configures a plugin to be loaded by Rush.
      */
     // {
     //   /**

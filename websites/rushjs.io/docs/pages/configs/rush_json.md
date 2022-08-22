@@ -26,7 +26,7 @@ generates for **rush.json** (in the repo root folder):
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.40.0",
+  "rushVersion": "5.76.1",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -36,9 +36,9 @@ generates for **rush.json** (in the repo root folder):
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "5.15.2",
+  "pnpmVersion": "6.7.1",
 
-  // "npmVersion": "4.5.0",
+  // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
 
   /**
@@ -118,9 +118,9 @@ generates for **rush.json** (in the repo root folder):
      * range, it will be left as-is. After this, the pnpmfile.js provided in the repository (if one
      * exists) will be called to further modify package dependencies.
      *
-     * This option is experimental. The default value is false.
+     * This option is recommended. The default value is false.
      */
-    // "useWorkspaces": true
+    "useWorkspaces": true
   },
 
   /**
@@ -134,7 +134,7 @@ generates for **rush.json** (in the repo root folder):
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -272,7 +272,7 @@ generates for **rush.json** (in the repo root folder):
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "versionBumpCommitMessage": "Applying package updates. [skip-ci]",
+    // "versionBumpCommitMessage": "Bump versions [skip ci]",
 
     /**
      * The commit message to use when committing changes during 'rush version'.
@@ -281,7 +281,7 @@ generates for **rush.json** (in the repo root folder):
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "changeLogUpdateCommitMessage": "Applying package updates. [skip-ci]"
+    // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
   },
 
   "repository": {
@@ -391,6 +391,16 @@ generates for **rush.json** (in the repo root folder):
   // "hotfixChangeEnabled": false,
 
   /**
+    * This is an optional, but recommended, list of allowed tags that can be applied to Rush projects
+    * using the "tags" setting in this file.  This list is useful for preventing mistakes such as misspelling,
+    * and it also provides a centralized place to document your tags.  If "allowedProjectTags" list is
+    * not specified, then any valid tag is allowed.  A tag name must be one or more words
+    * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
+    * ".", and "@" characters.
+    */
+  // "allowedProjectTags": [ "apps", "Web", "tools" ],
+
+  /**
    * (Required) This is the inventory of projects to be managed by Rush.
    *
    * Rush does not automatically scan for projects using wildcards, for a few reasons:
@@ -418,11 +428,29 @@ generates for **rush.json** (in the repo root folder):
     //   "reviewCategory": "production",
     //
     //   /**
-    //    * A list of local projects that appear as devDependencies for this project, but cannot be
-    //    * locally linked because it would create a cyclic dependency; instead, the last published
-    //    * version will be installed in the Common folder.
+    //    * A list of Rush project names that are to be installed from NPM
+    //    * instead of linking to the local project.
+    //    *
+    //    * If a project's package.json specifies a dependency that is another Rush project
+    //    * in the monorepo workspace, normally Rush will locally link its folder instead of
+    //    * installing from NPM.  If you are using PNPM workspaces, this is indicated by
+    //    * a SemVer range such as "workspace:^1.2.3".  To prevent mistakes, Rush reports
+    //    * an error if the "workspace:" protocol is missing.
+    //    *
+    //    * Locally linking ensures that regressions are caught as early as possible and is
+    //    * a key benefit of monorepos.  However there are occasional situations where
+    //    * installing from NPM is needed.  A classic example is a cyclic dependency.
+    //    * Imagine three Rush projects: "my-toolchain" depends on "my-tester", which depends
+    //    * on "my-library".  Suppose that we add "my-toolchain" to the "devDependencies"
+    //    * of "my-library" so it can be built by our toolchain.  This cycle creates
+    //    * a problem -- Rush can't build a project using a not-yet-built dependency.
+    //    * We can solve it by adding "my-toolchain" to the "decoupledLocalDependencies"
+    //    * of "my-library", so it builds using the last published release.  Choose carefully
+    //    * which package to decouple; some choices are much easier to manage than others.
+    //    *
+    //    * (In older Rush releases, this setting was called "cyclicDependencyProjects".)
     //    */
-    //   "cyclicDependencyProjects": [
+    //   "decoupledLocalDependencies": [
     //     // "my-toolchain"
     //   ],
     //
@@ -453,19 +481,30 @@ generates for **rush.json** (in the repo root folder):
     //    * in "version-policies.json" file.  See the "rush publish" documentation for more info.
     //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
     //    */
-    //   // "versionPolicyName": ""
+    //   // "versionPolicyName": "",
+    //
+    //  /**
+    //   * An optional set of custom tags that can be used to select this project.  For example,
+    //   * adding "my-custom-tag" will allow this project to be selected by the
+    //   * command "rush list --only tag:my-custom-tag".  The tag name must be one or more words
+    //   * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
+    //   * ".", and "@" characters.
+    //   */
+    //   // "tags": ["apps", "web"]
     // },
     //
     // {
     //   "packageName": "my-controls",
     //   "projectFolder": "libraries/my-controls",
-    //   "reviewCategory": "production"
+    //   "reviewCategory": "production",
+    //   "tags": ["libraries", "web"]
     // },
     //
     // {
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
-    //   "reviewCategory": "tools"
+    //   "reviewCategory": "tools",
+    //   "tags": ["tools"]
     // }
   ]
 }
