@@ -49,6 +49,7 @@ const sidebars = {
         'pages/maintainer/enabling_prettier',
         'pages/maintainer/custom_commands',
         'pages/maintainer/autoinstallers',
+        'pages/maintainer/using_rush_plugins',
         'pages/maintainer/publishing',
         'pages/maintainer/deploying',
         'pages/maintainer/build_cache',
@@ -130,6 +131,7 @@ const sidebars = {
         'pages/configs/experiments_json',
         'pages/configs/rush_json',
         'pages/configs/rush-plugin-manifest_json',
+        'pages/configs/rush-plugins_json',
         'pages/configs/rush-project_json',
         'pages/configs/version-policies_json'
       ]

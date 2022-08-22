@@ -1,8 +1,8 @@
 ---
-title: Creating Rush plugins
+title: Creating Rush plugins (experimental)
 ---
 
-Rush plugins enable you to:
+Rush plugins enable repository maintainers to:
 
 - Share common Rush configuration across multiple monorepos
 - Extend Rush's base functionality with custom features
@@ -12,7 +12,7 @@ Rush plugins enable you to:
 
 A **plugin package** is an NPM package that provides one or more **Rush plugins**.
 The plugins are described by a **plugin manifest** file. This file is always named
-[rush-plugin-manifest.json](../../config/rush-plugin-manifest_json)
+[rush-plugin-manifest.json](../../configs/rush-plugin-manifest_json)
 and found in same folder as the **package.json** file.
 
 ## Common extensibility scenarios
@@ -172,6 +172,7 @@ setting in your plugin manifest:
 
 ## See also
 
-- [rush-plugin-manifest.json](../../config/rush-plugin-manifest_json) config file documentation
+- [Using Rush plugins](../../maintainer/using_rush_plugins)
+- [rush-plugin-manifest.json](../../configs/rush-plugin-manifest_json) config file documentation
 - [command-line.json](../../configs/command-line_json)
 - [Rush custom commands](../../maintainer/custom_commands)
