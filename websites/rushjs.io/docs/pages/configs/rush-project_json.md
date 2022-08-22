@@ -22,50 +22,50 @@ by a [rig package](https://rushstack.io/pages/heft/rig_packages/).
   // "extends": "my-rig/profiles/default/config/rush-project.json",
 
   /**
-   * Specify the folders where your toolchain writes its output files.  If enabled, the Rush build cache will
-   * restore these folders from the cache.
-   *
-   * The strings are folder names under the project root folder.  These folders should not be tracked by Git.
-   * They must not contain symlinks.
+   * The incremental analyzer can skip Rush commands for projects whose input files have not changed since
+   * the last build.  Normally, every Git-tracked file under the project folder is assumed to be an input.
+   * Use "incrementalBuildIgnoredGlobs" to ignore specific files, specified as globs relative to
+   * the project folder.  The glob syntax is based on the .gitignore file format.
    */
-  "projectOutputFolderNames": [
-    // "lib", "dist"
+  "incrementalBuildIgnoredGlobs": [
+    // "etc/api-report/*.md"
   ],
 
   /**
-   * Configuration for the build cache feature.
+   * Disable caching for this project. The project will never be restored from cache. This may be useful
+   * if this project affects state outside of its folder.
+   *
+   * Default value: false
    */
-  "buildCacheOptions":{
-    /**
-     * Selectively disables the build cache for this project.  The project will never be restored from cache.
-     *
-     * This is a useful workaround if that project's build scripts violate the assumptions of the cache,
-     * for example by writing files outside the project folder. Where possible, a better solution is to improve
-     * the build scripts to be compatible with caching.
-     */
-    // "disableBuildCache": true,
+  // "disableBuildCacheForProject": true,
 
-    /**
-     * Allows for fine-grained control of cache for individual Rush commands.
-     */
-    "optionsForCommands": [
-    //   {
-    //     /**
-    //      * The Rush command name, as defined in custom-commands.json
-    //      */
-    //     "name": "my-command",
+  /**
+   * Options for individual commands and phases.
+   */
+  "operationSettings": [
+    // {
+    //   /**
+    //    * (Required) The name of the operation.
+    //    * This should be a key in the "package.json" file's "scripts" section.
+    //    */
+    //   "operationName": "build",
     //
-    //     /**
-    //      * Selectively disables the build cache for this project.  The project will never be restored from cache.
-    //      *
-    //      * This is a useful workaround if that project's build scripts violate the assumptions of the cache,
-    //      * for example by writing files outside the project folder. Where possible, a better solution is to improve
-    //      * the build scripts to be compatible with caching.
-    //      */
-    //     "disableBuildCache": true
-    //   }
-    ]
-  }
+    //   /**
+    //    * Specify the folders where this operation writes its output files.  If enabled, the Rush build cache
+    //    * will restore these folders from the cache.  The strings are folder names under the project root folder.
+    //    * These folders should not be tracked by Git.  They must not contain symlinks.
+    //    */
+    //   "outputFolderNames": [
+    //     "lib", "dist"
+    //   ],
+    //
+    //   /**
+    //    * Disable caching for this operation.  The operation will never be restored from cache.
+    //    * This may be useful if this operation affects state outside of its folder.
+    //    */
+    //   // "disableBuildCacheForOperation": true
+    // }
+  ]
 }
 ```
 

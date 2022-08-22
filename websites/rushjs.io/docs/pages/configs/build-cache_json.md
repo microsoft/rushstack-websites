@@ -12,7 +12,7 @@ generates for **build-cache.json**:
  * This configuration file manages Rush's build cache feature.
  * More documentation is available on the Rush website: https://rushjs.io
  */
- {
+{
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/build-cache.schema.json",
 
   /**
@@ -30,16 +30,17 @@ generates for **build-cache.json**:
   "cacheProvider": "local-only",
 
   /**
-   * Setting this property overrides the cache entry ID. If this property is set, it must contain
-   * a [hash] token. 
-   * Other available tokens: 
+   * Setting this property overrides the cache entry ID.  If this property is set, it must contain
+   * a [hash] token.
+   *
+   * Other available tokens:
    *  - [projectName]
    *  - [projectName:normalize]
    *  - [phaseName]
    *  - [phaseName:normalize]
    *  - [phaseName:trimPrefix]
    */
-  // "cacheEntryNamePattern": "[projectName:normalize]-[hash]"
+  // "cacheEntryNamePattern": "[projectName:normalize]-[phaseName:normalize]-[hash]"
 
   /**
    * Use this configuration with "cacheProvider"="azure-blob-storage"
@@ -48,7 +49,7 @@ generates for **build-cache.json**:
     /**
      * (Required) The name of the the Azure storage account to use for build cache.
      */
-    // "storageAccountName": "my-account",
+    // "storageAccountName": "example",
 
     /**
      * (Required) The name of the container in the Azure storage account to use for build cache.
@@ -78,17 +79,26 @@ generates for **build-cache.json**:
    */
   "amazonS3Configuration": {
     /**
-     * (Required) The Amazon S3 region of the bucket to use for build cache (e.g. "us-east-1").
-     */
-    // "s3Region": "us-east-1",
-
-    /**
-     * (Required) The name of the bucket in Amazon S3 to use for build cache.
+     * (Required unless s3Endpoint is specified) The name of the bucket to use for build cache.
+     * Example: "my-bucket"
      */
     // "s3Bucket": "my-bucket",
 
     /**
-     * An optional prefix ("folder") for cache items.
+     * (Required unless s3Bucket is specified) The Amazon S3 endpoint of the bucket to use for build cache.
+     * This should not include any path; use the s3Prefix to set the path.
+     * Examples: "my-bucket.s3.us-east-2.amazonaws.com" or "http://localhost:9000"
+     */
+    // "s3Endpoint": "https://my-bucket.s3.us-east-2.amazonaws.com",
+
+    /**
+     * (Required) The Amazon S3 region of the bucket to use for build cache.
+     * Example: "us-east-1"
+     */
+    // "s3Region": "us-east-1",
+
+    /**
+     * An optional prefix ("folder") for cache items. It should not start with "/".
      */
     // "s3Prefix": "my-prefix",
 
