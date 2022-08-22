@@ -69,8 +69,9 @@ This also provides a centralized place to document their meanings.
     * This is an optional, but recommended, list of allowed tags that can be applied to Rush projects
     * using the "tags" setting in this file.  This list is useful for preventing mistakes such as misspelling,
     * and it also provides a centralized place to document your tags.  If "allowedProjectTags" list is
-    * not specified, then any valid tag is allowed.  A tag name must be one or more words separated
-    * by hyphens, where a word may contain lowercase letters, digits, and the period character.
+    * not specified, then any valid tag is allowed.  A tag name must be one or more words
+    * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
+    * ".", and "@" characters.
     */
   "allowedProjectTags": [
     // Apply this tag to all Rush projects that are CLI tools
