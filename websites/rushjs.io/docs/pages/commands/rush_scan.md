@@ -3,7 +3,7 @@ title: rush scan
 ---
 
 ```
-usage: rush scan [-h]
+usage: rush scan [-h] [--json] [--all]
 
 The Node.js module system allows a project to import NPM packages without
 explicitly declaring them as dependencies in the package.json file. Such
@@ -18,6 +18,9 @@ save a lot of time when migrating projects.
 
 Optional arguments:
   -h, --help  Show this help message and exit.
+  --json      If this flag is specified, output will be in JSON format.
+  --all       If this flag is specified, output will list all detected
+              dependencies.
 ```
 
 ## See also

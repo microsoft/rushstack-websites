@@ -7,6 +7,7 @@ usage: rush version [-h] [-b BRANCH] [--ensure-version-policy]
                     [--override-version NEW_VERSION] [--bump]
                     [--bypass-policy] [--version-policy POLICY]
                     [--override-bump BUMPTYPE] [--override-prerelease-id ID]
+                    [--ignore-git-hooks]
 
 
 use this "rush version" command to ensure version policies and bump versions.
@@ -42,6 +43,8 @@ Optional arguments:
                         prerelease id when "--bump" is provided but only
                         replaces the prerelease name when
                         "--ensure-version-policy" is provided.
+  --ignore-git-hooks    Skips execution of all git hooks. Make sure you know
+                        what you are skipping.
 ```
 
 ## See also

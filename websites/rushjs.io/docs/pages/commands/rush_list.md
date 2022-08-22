@@ -3,9 +3,10 @@ title: rush list
 ---
 
 ```
-usage: rush list [-h] [-v] [-p] [--full-path] [--json] [-t PROJECT]
-                 [-T PROJECT] [-f PROJECT] [-o PROJECT] [-i PROJECT]
-                 [-I PROJECT] [--to-version-policy VERSION_POLICY_NAME]
+usage: rush list [-h] [-v] [-p] [--full-path] [--detailed] [--json]
+                 [-t PROJECT] [-T PROJECT] [-f PROJECT] [-o PROJECT]
+                 [-i PROJECT] [-I PROJECT]
+                 [--to-version-policy VERSION_POLICY_NAME]
                  [--from-version-policy VERSION_POLICY_NAME]
 
 
@@ -20,6 +21,11 @@ Optional arguments:
                         displayed in a column along with the package name.
   --full-path           If this flag is specified, the project full path will
                         be displayed in a column along with the package name.
+  --detailed            For the non --json view, if this flag is specified,
+                        include path (-p), version (-v) columns along with
+                        the project's applicable: versionPolicy,
+                        versionPolicyName, shouldPublish, reviewPolicy, and
+                        tags fields.
   --json                If this flag is specified, output will be in JSON
                         format.
   -t PROJECT, --to PROJECT
