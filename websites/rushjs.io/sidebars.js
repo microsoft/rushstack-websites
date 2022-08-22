@@ -110,8 +110,7 @@ const sidebars = {
         'pages/commands/rush_update',
         'pages/commands/rush_update-autoinstaller',
         'pages/commands/rush_update-cloud-credentials',
-        'pages/commands/rush_version',
-        'pages/commands/rush_write-build-cache'
+        'pages/commands/rush_version'
       ]
     },
     {
