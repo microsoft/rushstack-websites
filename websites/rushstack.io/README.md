@@ -30,7 +30,16 @@ rushx serve
 To build the production site and then push it to the `gh-pages` branch of the target repo:
 
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=true rushx deploy
+# This is Bash's syntax; for Windows shell, change "export" to be "set"
+export GIT_USER=<Your GitHub username>
+
+# (Optional) Specify this if you use SSH instead of HTTPS authentication
+export USE_SSH=true
+
+# Specify the deployment target
+export TARGET=prod
+
+rushx deploy
 ```
 
 (Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials

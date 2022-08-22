@@ -104,7 +104,7 @@ For example, if you want to try out a different release of Rush before upgrading
 the variable like this:
 
 ```bash
-# This is Bash notation; for Windows shell, change "export" to be "set"
+# This is Bash's syntax; for Windows shell, change "export" to be "set"
 export RUSH_PREVIEW_VERSION=5.0.0-dev.25
 
 rush install

@@ -27,7 +27,7 @@ We recommend to use API Extractor for every TypeScript library project, especial
 You will need to add the `@microsoft/api-extractor` package to your project:
 
 ```bash
-$ rush add --package @microsoft/api-extractor --dev
+rush add --package @microsoft/api-extractor --dev
 ```
 
 Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](../heft/rig_packages.md) article.

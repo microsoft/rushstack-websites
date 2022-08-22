@@ -62,7 +62,7 @@ Before we get to the Git hook, first we need to configure Prettier, and get your
 
     **&lt;repo root&gt;/.prettierignore**
 
-    ```shell
+    ```bash
     #-------------------------------------------------------------------------------------------------------------------
     # Keep this section in sync with .gitignore
     #-------------------------------------------------------------------------------------------------------------------
@@ -97,18 +97,18 @@ Before we get to the Git hook, first we need to configure Prettier, and get your
     source files. You can fine-tune your `.prettierignore` configuration by examining the Git diff after
     performing this command.
 
-    ```shell
+    ```bash
     # Install prettier so you can invoke it manually
-    $ npm install --global prettier
+    npm install --global prettier
 
     # Run these commands from your repo root, since "." below refers to the current folder
-    $ cd my-repo
+    cd my-repo
 
     # See what files Prettier will operate on; use this to tune your .prettierignore rules
-    $ prettier . --list-different
+    prettier . --list-different
 
     # When you are ready, this will bulk fix all existing source files in your repo
-    $ prettier . --write
+    prettier . --write
     ```
 
 The first time you run Prettier, it may produce a very large diff if you already have many files in your repo.
@@ -142,35 +142,35 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
 1.  First, use the [rush init-autoinstaller](../../commands/rush_init-autoinstaller) command to
     create an autoinstaller:
 
-    ```shell
+    ```bash
     # This creates the common/autoinstallers/rush-prettier/package.json file:
-    $ rush init-autoinstaller --name rush-prettier
+    rush init-autoinstaller --name rush-prettier
     ```
 
 2.  Install the dependencies and create the **pnpm-lock.yaml** file:
 
-    ```shell
-    $ cd common/autoinstallers/rush-prettier
+    ```bash
+    cd common/autoinstallers/rush-prettier
 
     # Instead of running these commands, you could instead manually edit the
     # "dependencies" in the package.json file
-    $ pnpm install prettier
-    $ pnpm install pretty-quick
+    pnpm install prettier
+    pnpm install pretty-quick
 
     # (If you need plugins, install them as well)
 
     # When you are finished, run this command to ensure that the
     # common/autoinstallers/rush-prettier/ppnpm-lock.yaml file is up to date
-    $ rush update-autoinstaller --name rush-prettier
+    rush update-autoinstaller --name rush-prettier
     ```
 
 3.  You should now have two files **package.json** and **pnpm-lock.yaml** in your
     **common/autoinstallers/rush-prettier** folder. Add them to Git and commit them.
 
-    ```shell
-    $ git add package.json
-    $ git add pnpm-lock.yaml
-    $ git commit -m "Create rush-prettier autoinstaller"
+    ```bash
+    git add package.json
+    git add pnpm-lock.yaml
+    git commit -m "Create rush-prettier autoinstaller"
     ```
 
 4.  Next, we will create a `rush prettier` custom command that invokes the `pretty-quick` tool.
@@ -261,7 +261,7 @@ Here's an example, using the `prettier-plugin-packagejson` plugin:
 
 2.  Update your autoinstaller's lockfile:
 
-    ```shell
+    ```bash
     rush update-autoinstaller --name rush-prettier
     ```
 

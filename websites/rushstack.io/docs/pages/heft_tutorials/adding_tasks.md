@@ -14,11 +14,11 @@ and [ESlint](../heft_tasks/eslint.md).
 
 1. First, we need to install the TypeScript typings for Jest. These steps continue the **my-app** project from the [Getting started with Heft](../heft_tutorials/getting_started.md) article. Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
 
-   ```shell
-   $ cd my-app
+   ```bash
+   cd my-app
 
    # Typings should always use "--save-exact" version specifiers.
-   $ pnpm install --save-dev --save-exact @types/heft-jest
+   pnpm install --save-dev --save-exact @types/heft-jest
    ```
 
 2. Since [Jest's API](https://jestjs.io/docs/en/api) consists of global variables, we need to load them globally (whereas most other `@types` packages are loaded via `import` statements in your source code). Update your **tsconfig.json** file to say `"types": ["heft-jest", "node"]` instead of just `"types": ["node"]`. The result should look like this:
@@ -76,14 +76,14 @@ and [ESlint](../heft_tasks/eslint.md).
 
 5. To run the test, we need to use the `heft test` action, because `heft build` normally skips testing to speed up development.
 
-   ```shell
+   ```bash
    # For Windows, use backslashes for all these commands
 
    # View the command line help
-   $ heft test --help
+   heft test --help
 
    # Build the project and run tests
-   $ heft test
+   heft test
    ```
 
    We should update our **package.json** script to invoke `heft test` instead of `heft build` as well. That way `pnpm run build` will also run the Jest tests:
@@ -109,14 +109,14 @@ That's it for setting up Jest! Further information, including instructions for d
 
 1. To ensure best practices and catch common mistakes, let's also enable the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) standard ruleset. First we need to add a few more NPM dependencies to our **package.json** file.
 
-   ```shell
-   $ cd my-app
+   ```bash
+   cd my-app
 
    # Add the ESLint engine.
-   $ pnpm install --save-dev eslint
+   pnpm install --save-dev eslint
 
    # Add Rush Stack's all-in-one ruleset
-   $ pnpm install --save-dev @rushstack/eslint-config
+   pnpm install --save-dev @rushstack/eslint-config
    ```
 
 2. Next, create the [.eslintrc.js](https://eslint.org/docs/user-guide/configuring) config file. The presence of this file causes Heft to invoke the ESLint task.:
