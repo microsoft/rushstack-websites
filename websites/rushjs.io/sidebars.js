@@ -48,6 +48,8 @@ const sidebars = {
         'pages/maintainer/git_hooks',
         'pages/maintainer/enabling_prettier',
         'pages/maintainer/custom_commands',
+        'pages/maintainer/autoinstallers',
+        'pages/maintainer/using_rush_plugins',
         'pages/maintainer/publishing',
         'pages/maintainer/deploying',
         'pages/maintainer/build_cache',
@@ -73,9 +75,14 @@ const sidebars = {
         'pages/advanced/preferred_versions',
         'pages/advanced/incremental_builds',
         'pages/advanced/watch_mode',
-        'pages/advanced/installation_variants',
-        'pages/advanced/api'
+        'pages/advanced/installation_variants'
       ]
+    },
+    {
+      type: 'category',
+      label: 'Extensibility',
+      collapsible: false,
+      items: ['pages/extensibility/creating_plugins', 'pages/extensibility/api']
     },
     {
       type: 'category',
@@ -123,6 +130,8 @@ const sidebars = {
         'pages/configs/deploy_json',
         'pages/configs/experiments_json',
         'pages/configs/rush_json',
+        'pages/configs/rush-plugin-manifest_json',
+        'pages/configs/rush-plugins_json',
         'pages/configs/rush-project_json',
         'pages/configs/version-policies_json'
       ]

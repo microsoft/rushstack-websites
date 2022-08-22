@@ -103,7 +103,7 @@ const config = {
             to: 'pages/intro/welcome',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!help)(?!news)(?!advanced/api)'
+            activeBaseRegex: 'pages/(?!help)(?!news)(?!extensibility/api)'
           },
           {
             type: 'doc',
@@ -112,10 +112,10 @@ const config = {
             label: 'News'
           },
           {
-            to: 'pages/advanced/api',
+            to: 'pages/extensibility/api',
             position: 'right',
             label: 'API',
-            activeBasePath: 'pages/advanced/api'
+            activeBasePath: 'pages/extensibility/api'
           },
           {
             to: 'pages/contributing',
