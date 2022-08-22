@@ -39,8 +39,8 @@ For details about the `tag:my-custom-tag` selector syntax, see [Selecting subset
 
 ## Tag syntax
 
-The tag name must be one or more words separated by hyphens, where a word may contain lowercase letters, digits,
-and the period character. Some examples:
+The tag name must be one or more words separated by hyphens or slashes, where a word may contain
+lowercase ASCII letters, digits, `.`, and `@` characters. Some examples:
 
 ```bash
 rush list --to tag:my-custom-tag
