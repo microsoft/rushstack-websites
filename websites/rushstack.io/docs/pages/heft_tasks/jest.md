@@ -21,13 +21,13 @@ That said, if for some reason you need to run tests in some other runtime such a
 Heft has direct dependencies on the Jest packages that it needs, so you don't need to add Jest to your project's **package.json** file. Instead, you will need to install the Heft plugin package:
 
 ```bash
-$ rush add --package @rushstack/heft-jest-plugin --dev
+rush add --package @rushstack/heft-jest-plugin --dev
 ```
 
 Your project should get its typings from `@types/heft-jest` instead of `@types/jest`:
 
 ```bash
-$ rush add --package @types/heft-jest --exact --dev
+rush add --package @types/heft-jest --exact --dev
 ```
 
 ...and then reference `heft-jest` in your **tsconfig.json** file, like this example:

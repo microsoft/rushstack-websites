@@ -128,19 +128,19 @@ Rush's "watch mode" formalizes this basic idea, replacing the simple loop with a
 3. Invoke the command using [project selection parameters](../../developer/selecting_subsets) that
    select all of `D`'s dependencies but not `D` itself:
 
-   ```shell
+   ```bash
    # Build everything that D depends on (but not D itself),
    # and keep doing that in an endless loop:
-   $ rush build:watch --to-except D
+   rush build:watch --to-except D
    ```
 
 4. Lastly, start your dev server in the app folder:
 
-   ```shell
+   ```bash
    # Start Webpack's dev server in the folder for project D
    # (which is the web application in this example):
-   $ cd apps/D
-   $ heft start # <-- or your own "npm run start" equivalent here
+   cd apps/D
+   heft start # <-- or your own "npm run start" equivalent here
    ```
 
 5. In some situations, the `--changed-projects-only` command can be combined

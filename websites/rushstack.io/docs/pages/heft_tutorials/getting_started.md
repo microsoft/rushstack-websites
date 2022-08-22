@@ -13,8 +13,8 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
 1. We'll use the [PNPM package manager](https://pnpm.js.org/) for this demo. (Its command line is very similar to NPM, so you can substitute `npm` for `pnpm` in these steps.) There are [various ways](https://pnpm.io/installation) to install PNPM, but the simplest is like this:
 
-   ```shell
-   $ npm install --global pnpm
+   ```bash
+   npm install --global pnpm
    ```
 
 2. Create a new folder **my-app** with a **package.json** file for our project, like this:
@@ -45,14 +45,14 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
 4. Install [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft) and [typescript](https://www.npmjs.com/package/typescript) as `devDependenices` for your project:
 
-   ```shell
-   $ cd my-app
-   $ pnpm install --save-dev @rushstack/heft
-   $ pnpm install --save-dev typescript
+   ```bash
+   cd my-app
+   pnpm install --save-dev @rushstack/heft
+   pnpm install --save-dev typescript
 
    # Since this project will use the console.log() API, we also need to add the TypeScript
    # typings for Node.js.  Typings should always use "--save-exact" version specifiers.
-   $ pnpm install --save-dev --save-exact @types/node
+   pnpm install --save-dev --save-exact @types/node
    ```
 
 5. Next we need to create the TypeScript [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file. The presence of this file causes Heft to invoke the TypeScript compiler. For now we'll create a simple standalone **tsconfig.json** file; later we'll demonstrate how to share a reusable configuration across many projects.
@@ -96,9 +96,9 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 6. You can invoke Heft using `./node_modules/.bin/heft`, but it's more convenient to install it globally
    so that it's always available in your shell `PATH`:
 
-   ```shell
+   ```bash
    # Install the Heft tool globally
-   $ pnpm install --global @rushstack/heft
+   pnpm install --global @rushstack/heft
    ```
 
    > What if the globally installed `heft` binary is the wrong version?
@@ -109,21 +109,21 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
 7. Let's try manually invoking Heft's [command line](../heft/cli.md) to build our project.
 
-   ```shell
+   ```bash
    # For Windows, use backslashes for all these commands
 
    # Make sure we're in your project folder
-   $ cd my-app
+   cd my-app
 
    # View the command line help
-   $ heft --help
-   $ heft build --help
+   heft --help
+   heft build --help
 
    # Build the project
-   $ heft build
+   heft build
 
    # To see more detail about what Heft is doing, add you can the "--verbose" flag
-   $ heft build --verbose
+   heft build --verbose
    ```
 
    Invoking `heft build` should produce console output like this:
@@ -155,12 +155,12 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
 8. If you recall, our **package.json** file has a `"scripts"` section that specifies `"start": "node lib/start.js"`. Let's try running the compiled code using `pnpm run`.
 
-   ```shell
+   ```bash
    # Invoke the "start" script from package.json
-   $ pnpm run start
+   pnpm run start
 
    # If you have Rush installed, you can also use this slightly shorter equivalent
-   $ rushx start
+   rushx start
    ```
 
    You should see output like this:

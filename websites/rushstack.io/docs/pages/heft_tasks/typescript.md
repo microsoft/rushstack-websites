@@ -22,7 +22,7 @@ Obviously certain components may inevitably require Java, C++, Swift, etc. But i
 You will need to add the `typescript` package to your project:
 
 ```bash
-$ rush add --package typescript --dev
+rush add --package typescript --dev
 ```
 
 Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../heft_tutorials/heft_and_rush.md) article.
@@ -30,7 +30,7 @@ Alternatively, you can avoid this dependency by loading it from a "rig package",
 If your **tsconfig.json** enables `"importHelpers": true` for more efficient transpiler output, you may also need a dependency on **tslib**:
 
 ```bash
-$ rush add --package tslib
+rush add --package tslib
 ```
 
 ## Config files

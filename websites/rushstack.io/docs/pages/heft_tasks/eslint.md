@@ -23,7 +23,7 @@ Although it's recommended to set up your build system in this way, Heft doesn't 
 You will need to add the `eslint` package to your project:
 
 ```bash
-$ rush add --package eslint --dev
+rush add --package eslint --dev
 ```
 
 Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../heft_tutorials/heft_and_rush.md) article. However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it may still be useful to add ESLint to your **package.json** file. (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)

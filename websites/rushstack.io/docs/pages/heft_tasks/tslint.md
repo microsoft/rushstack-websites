@@ -15,7 +15,7 @@ New projects should use the [eslint](../heft_tasks/eslint.md) task instead.
 You will need to add the `tslint` package to your project:
 
 ```bash
-$ rush add --package tslint --dev
+rush add --package tslint --dev
 ```
 
 Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Using rig packages](../heft/rig_packages.md) article.
