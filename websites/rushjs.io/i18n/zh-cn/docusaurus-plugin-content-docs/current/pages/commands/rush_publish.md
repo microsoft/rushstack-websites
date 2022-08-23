@@ -57,7 +57,7 @@ title: rush publish
                         版本策略名，当使用 --include-all 时，只有存在版本策略的项目
                         会被发布。
   --prerelease-name NAME
-                        使用预览版命名来讲其提高到预览版。不能与 --suffix 一起使用。
+                        使用预览版命名来将其提高到预览版。不能与 --suffix 一起使用。
   --partial-prerelease  与 --prerelease-name 结合使用，只会将变更的库提升到预览版。
   --suffix SUFFIX       给所有变更的版本增加后缀。不能与 --prerelease-name 一起使用。
   --force               如果该参数与 --publish 共同使用，那么会给 npm 带上 --force.
