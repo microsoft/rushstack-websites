@@ -42,6 +42,7 @@
     "@algolia/client-search": "~4.14.2",
     "@babel/core": "~7.18.10",
     "@babel/runtime": "~7.17.9",
+    "@docusaurus/types": "2.0.1",
     "@types/js-cookie": "3.0.2",
     "@types/react-dom": "^17.0.2",
     "@types/react": "^17.0.2",
