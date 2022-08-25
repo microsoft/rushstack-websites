@@ -1,6 +1,6 @@
 # remark-canonical-link-plugin
 
-A [remark plugin](https://github.com/remarkjs/remark/blob/main/doc/plugins.md) that transforms site prefixes like `@rushjs` into full URLs like `https://rushjs.io`.
+A [remark plugin](https://github.com/remarkjs/remark/blob/main/doc/plugins.md) that adds a canonical link to each page to prevent search engines from indexing unofficial deployments of the website.
 
 This plugin runs after the markdown file has been parsed and turned into an AST, but before the AST is translated into HTML.
 
