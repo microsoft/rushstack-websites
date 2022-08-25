@@ -208,8 +208,6 @@ Starting "rush update-cloud-credentials"
 
 对于 Azure 而言，必须使用序列化的 SAS 口令来充当一个 query 参数，可以查看[此篇文章](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) 来获取更多信息，你可以通过 [设置 > 访问密钥](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) 页面来获取你的存储账号的访问密钥。
 
-如果你的 CI 使用了自定义的构建系统（例如 [BuildXL](https://github.com/Microsoft/BuildXL))，那么 [rush write-build-cache](../commands/rush_write-build-cache.md) 指令可以从某个项目的输出文件夹中更新缓存。
-
 > 构建缓存功能依然在开发中，有意见或者建议请联系我们！
 >
 > 一些相关的 GitHub 提问：
