@@ -72,14 +72,6 @@ function getSiteConfig(packageName) {
     '@tsdoc': 'https://tsdoc.org'
   };
 
-  // When deploying a fork, the supported websites can link between each other
-  const forkedSitePrefixes = {
-    '@api-extractor': 'https://api-extractor.com',
-    '@rushjs': '/rushstack-websites/rushjs.io',
-    '@rushstack': '/rushstack-websites/rushstack.io',
-    '@tsdoc': 'https://tsdoc.org'
-  };
-
   switch (target.target) {
     case 'local':
       return {
@@ -90,7 +82,7 @@ function getSiteConfig(packageName) {
     case 'fork':
       return {
         ...target,
-        sitePrefixes: forkedSitePrefixes,
+        sitePrefixes,
         configOverrides: {
           baseUrl: `/rushstack-websites/${packageName}/`,
           organizationName: target.org
