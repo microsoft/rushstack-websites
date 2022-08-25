@@ -16,4 +16,4 @@ install" 和 "rush update" 中添加 "--no-link" 参数后使用 "rush link".
 
 ## 参考
 
-- [rush unlink](../../commands/rush_unlink)
+- [rush unlink](../commands/rush_unlink.md)

@@ -10,7 +10,7 @@ title: '"copy-files" task'
 
 一些说明：
 
-- 避免使用这个 task 来读写项目文件夹以外的文件。这样做会违反 Rush 的 [项目隔离原则](.../heft_tutorials/heft_and_rush.md)。
+- 避免使用这个 task 来读写项目文件夹以外的文件。这样做会违反 Rush 的 [项目隔离原则](../heft_tutorials/heft_and_rush.md)。
 - 尽可能避免使用诸如 `**` 这样低效的 glob 操作符，这些操作会递归地遍历一个目录树。这些磁盘密集型的操作会拖慢构建速度。
 - 过于宽泛的通配符有时会包含到那些不被 Git 标记的游离文件夹。
 

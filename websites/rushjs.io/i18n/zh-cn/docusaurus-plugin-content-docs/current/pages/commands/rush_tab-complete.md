@@ -15,4 +15,4 @@ title: rush tab-complete
 
 ## 参考
 
-- [配置 tab 补全](../../developer/tab_completion)
+- [配置 tab 补全](../developer/tab_completion.md)

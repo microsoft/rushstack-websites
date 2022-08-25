@@ -2,7 +2,7 @@
 title: command-line.json
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **command-line.json** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **command-line.json** 文件：
 
 **common/config/rush/command-line.json**
 
@@ -297,4 +297,4 @@ title: command-line.json
 
 ## 参考
 
-- [可选参数](../../maintainer/custom_commands)
+- [可选参数](../maintainer/custom_commands.md)

@@ -4,7 +4,7 @@ title: 常见问题回答
 
 ### 我的项目都放在一个大的仓库里？这是一个好主意吗？
 
-_回答在 [这篇文章](../../intro/why_mono) 中。_
+_回答在 [这篇文章](../intro/why_mono.md) 中。_
 
 ### 我该如何报告错误或请求新功能？
 
@@ -100,4 +100,4 @@ _讨论其他更多的可能性，参考 [issue #1088](https://github.com/micros
 
 对于 Yarn 或 NPM, 类似 `git clean -dfx` 的命令通常足够。（改操作会删除文件 -- 调用前请[参考手册](https://git-scm.com/docs/git-clean)）
 
-为了清理 Rush 安装，并不推荐 `git clean`, 这是因为它们不能很可靠的处理符号连接。相反，使用 [rush purge](../../commands/rush_purge) 来删除由 Rush 创建的 `node_modules` 文件夹。
+为了清理 Rush 安装，并不推荐 `git clean`, 这是因为它们不能很可靠的处理符号连接。相反，使用 [rush purge](../commands/rush_purge.md) 来删除由 Rush 创建的 `node_modules` 文件夹。

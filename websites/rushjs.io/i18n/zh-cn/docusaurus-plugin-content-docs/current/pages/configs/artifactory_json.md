@@ -2,7 +2,7 @@
 title: artifactory.json（实验性）
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **artifactory.json** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **artifactory.json** 文件：
 
 **common/config/rush/artifactory.json**
 
@@ -98,4 +98,4 @@ title: artifactory.json（实验性）
 
 ## 参考
 
-- [NPM 源认证](../../maintainer/npm_registry_auth)
+- [NPM 源认证](../maintainer/npm_registry_auth.md)

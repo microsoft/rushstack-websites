@@ -2,7 +2,7 @@
 title: NPM 分身
 ---
 
-_首先建议先阅读 “[幻影依赖](../../advanced/phantom_deps)” 一文，因为这篇文章是其后续。_
+_首先建议先阅读 “[幻影依赖](../advanced/phantom_deps.md)” 一文，因为这篇文章是其后续。_
 
 ## NPM 分身如何出现的
 

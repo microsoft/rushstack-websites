@@ -2,7 +2,7 @@
 title: version-policies.json
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **version-policies.json**:
 
 **common/config/rush/version-policies.json**

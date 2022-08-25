@@ -10,7 +10,7 @@ Let's say you need to add a new dependency on a library "**example-lib**". Witho
 ~/my-repo/apps/my-app$ npm install --save example-lib
 ```
 
-In a Rush repo, you should instead use the [rush add](../../commands/rush_add) command:
+In a Rush repo, you should instead use the [rush add](../commands/rush_add.md) command:
 
 ```bash
 ~/my-repo$ cd apps/my-app
@@ -42,7 +42,7 @@ The `rush add` command can also be used to update the version of an existing dep
 
 ```
 
-The [command-line help](../../commands/rush_add) for `rush add` describes other options that you can use to customize the behavior.
+The [command-line help](../commands/rush_add.md) for `rush add` describes other options that you can use to customize the behavior.
 
 > **Tip: A cool VS Code feature**
 >

@@ -83,7 +83,7 @@ Aborting, so you can go fix your settings.  (Or use --bypass-policy to skip.)
 
 由于需要不同程度的安全审查（例如对外发布的产品与内部项目、内部库不同），Rush 区分了“审查类别”。这使得我们可以依据项目类别来批准一个包，然而当该包被应用在其他地方时仍然被提醒。
 
-以[创建一个新仓库](../../maintainer/setup_new_repo)为基础，下面来看如何在 rush.json 中定义一些审查类别，用于“发布”项目与“内部项目”：
+以[创建一个新仓库](../maintainer/setup_new_repo.md)为基础，下面来看如何在 rush.json 中定义一些审查类别，用于“发布”项目与“内部项目”：
 
 ```javascript
 {

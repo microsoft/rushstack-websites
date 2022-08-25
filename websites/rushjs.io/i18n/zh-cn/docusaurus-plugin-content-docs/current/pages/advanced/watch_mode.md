@@ -70,7 +70,7 @@ $ while true; do rush build --to-except D; done
 
 Rush 的“文件监听” 基本思想是用 [chokidar](https://www.npmjs.com/package/chokidar) 来优化循环。下面是其用法：
 
-1. 在 [command-line.json](../../configs/command-line_json) 中的添加一个[自定义指令](../../maintainer/custom_commands)。继续上面的示例，我们的自定义指令将被命名为 `"build:watch"`。重要的设置是 `"incremental"` 和 `"watchForChanges"`:
+1. 在 [command-line.json](../configs/command-line_json.md) 中的添加一个[自定义指令](../maintainer/custom_commands.md)。继续上面的示例，我们的自定义指令将被命名为 `"build:watch"`。重要的设置是 `"incremental"` 和 `"watchForChanges"`:
 
    **common/config/rush/command-line.json**
 
@@ -107,7 +107,7 @@ Rush 的“文件监听” 基本思想是用 [chokidar](https://www.npmjs.com/p
   . . .
 ```
 
-3. 参考[选择部分项目](../../developer/selecting_subsets)一文选中 `D` 的所有依赖，但不包含 `D` 本身：
+3. 参考[选择部分项目](../developer/selecting_subsets.md)一文选中 `D` 的所有依赖，但不包含 `D` 本身：
 
 ```shell
 # 构建所有依赖于 D 的项目（但不包括 D 本身），并在无限循环中重复这个操作
@@ -123,7 +123,7 @@ $ cd apps/D
 $ heft start # 或者用自己的 "npm run start"
 ```
 
-5. 在某些情况下，为了实现更快的监听，`--changed-projects-only` 命令可以与 `"watchForChanges"` 结合使用。[增量构建](../../advanced/incremental_builds#building-changed-projects-only-unsafe)一文详细说明了他是如何工作的，以及它是否适合使用。
+5. 在某些情况下，为了实现更快的监听，`--changed-projects-only` 命令可以与 `"watchForChanges"` 结合使用。[增量构建](../advanced/incremental_builds.md#building-changed-projects-only-unsafe)一文详细说明了他是如何工作的，以及它是否适合使用。
 
 > **“实验性”** `"watchForChanges"` 的功能还在其初期阶段。有意见或建议请联系我们！
 > GitHub issue [#1202](https://github.com/microsoft/rushstack/issues/1202)
@@ -139,5 +139,5 @@ Rush 的社区分享了一些有用的替代方案：
 
 ## 参考
 
-- [选择部分项目](../../developer/selecting_subsets)
-- [增量构建](../../advanced/incremental_builds)
+- [选择部分项目](../developer/selecting_subsets.md)
+- [增量构建](../advanced/incremental_builds.md)

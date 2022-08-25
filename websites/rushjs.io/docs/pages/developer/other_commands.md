@@ -21,11 +21,11 @@ For everyday work, `--full` can introduce unrelated breaks in your PR branch, fo
 
 - **If you changed a library**: Let's say your Git repo contains 50 projects, and you just fixed some bugs in the **widget** library. You need to run unit tests for all the projects that use this library, and anything that depends on them, but it would be wasteful to rebuild everything else. To rebuild just the downstream projects: `rush rebuild --from widget`
 
-The full set of project selection parameters are described in the article [Selecting subsets of projects](../../developer/selecting_subsets).
+The full set of project selection parameters are described in the article [Selecting subsets of projects](../developer/selecting_subsets.md).
 
 ## A faster way to install
 
-If your repo is using PNPM with the new `useWorkspaces=true` mode enabled in your [rush.json](../../configs/rush_json) file, you can use a feature called "filtered installs". This feature reduces installation times by only installing the subset of NPM packages required to build a specific project.
+If your repo is using PNPM with the new `useWorkspaces=true` mode enabled in your [rush.json](../configs/rush_json.md) file, you can use a feature called "filtered installs". This feature reduces installation times by only installing the subset of NPM packages required to build a specific project.
 
 For example:
 

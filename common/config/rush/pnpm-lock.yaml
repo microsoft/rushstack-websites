@@ -150,11 +150,13 @@ importers:
       '@docusaurus/core': 2.0.1
       '@docusaurus/preset-classic': 2.0.1
       '@docusaurus/theme-common': 2.0.1
+      '@docusaurus/types': 2.0.1
       '@mdx-js/react': ~1.6.22
       '@microsoft/api-documenter': ~7.19.4
       '@rushstack/node-core-library': ~3.50.1
       '@svgr/webpack': ~6.3.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       algoliasearch: ~4.14.2
@@ -195,9 +197,11 @@ importers:
       '@algolia/client-search': 4.14.2
       '@babel/core': 7.18.10
       '@babel/runtime': 7.17.9
+      '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
       '@microsoft/api-documenter': 7.19.4
       '@rushstack/node-core-library': 3.50.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       algoliasearch: 4.14.2
@@ -217,9 +221,11 @@ importers:
       '@docusaurus/core': 2.0.1
       '@docusaurus/preset-classic': 2.0.1
       '@docusaurus/theme-common': 2.0.1
+      '@docusaurus/types': 2.0.1
       '@mdx-js/react': ~1.6.22
       '@svgr/webpack': ~6.3.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       algoliasearch: ~4.14.2
@@ -261,7 +267,9 @@ importers:
       '@algolia/client-search': 4.14.2
       '@babel/core': 7.18.10
       '@babel/runtime': 7.17.9
+      '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       algoliasearch: 4.14.2
@@ -280,10 +288,12 @@ importers:
       '@docusaurus/core': 2.0.1
       '@docusaurus/preset-classic': 2.0.1
       '@docusaurus/theme-common': 2.0.1
+      '@docusaurus/types': 2.0.1
       '@mdx-js/react': ~1.6.22
       '@svgr/webpack': ~6.3.1
       '@types/history': 5.0.0
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       '@types/react-router-dom': ^5.3.3
@@ -326,8 +336,10 @@ importers:
       '@algolia/client-search': 4.14.2
       '@babel/core': 7.18.10
       '@babel/runtime': 7.17.9
+      '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
       '@types/history': 5.0.0
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       '@types/react-router-dom': 5.3.3
@@ -2205,7 +2217,7 @@ packages:
       react: '*'
     dependencies:
       '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.48
+      '@types/react': 17.0.37
       prop-types: 15.8.1
       react: 17.0.2
     transitivePeerDependencies:
@@ -3570,6 +3582,13 @@ packages:
     dependencies:
       '@types/history': 4.7.11
       '@types/react': 17.0.48
+
+  /@types/react/17.0.37:
+    resolution: {integrity: sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.0
 
   /@types/react/17.0.48:
     resolution: {integrity: sha512-zJ6IYlJ8cYYxiJfUaZOQee4lh99mFihBoqkOSEGV+dFi9leROW6+PgstzQ+w3gWTnUfskALtQPGHK6dYmPj+2A==}

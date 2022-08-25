@@ -123,7 +123,7 @@ is invoked without Heft. It replaces Jest's `"preset"` field which has limited m
 
 在内部，Jest 通过名为 [transforms](https://jestjs.io/docs/en/tutorial-react#custom-transformers) 的插件来支持 TypeScript 编译，这些插件被设定为一个同步函数，它以 `.ts` 文件为输入，并输出 `.js` 和 `.map` 文件。官方的 `babel-jest` 实际上是一次编译一个文件，但这种方法不能支持诸如 `const enum` 等语言特性来进行分析类型。`ts-jest` 通过执行完整的编译器流程并在每次调用转码时复用之前的操作来解决上述问题，但这不支持诸如预处理器等其他构建步骤。`babel-jest`和 `ts-jest` 在运行测试的时候，都会二次调用编译器，这也会带来很大的性能损耗。
 
-Heft 采取了一种不同的方法，即先执行构建流程，然后在对输出调用 Jest. 如果你的代码在浏览器上运行，则需要使用 [emitFolderNameForTests](.../heft_tasks/webpack.md) 配置来在一个辅助文件夹下输出 CommonJS 格式。（输出额外的文件比调用两次编译器要快得多）。Heft 的 `jest-build-transform.js` 本身不编译任何东西，而是返回整个流程的输出。
+Heft 采取了一种不同的方法，即先执行构建流程，然后在对输出调用 Jest. 如果你的代码在浏览器上运行，则需要使用 [emitFolderNameForTests](../heft_tasks/webpack.md) 配置来在一个辅助文件夹下输出 CommonJS 格式。（输出额外的文件比调用两次编译器要快得多）。Heft 的 `jest-build-transform.js` 本身不编译任何东西，而是返回整个流程的输出。
 
 在 [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) 项目中可以找到一些关于模拟和其他 Jest 的示例：
 

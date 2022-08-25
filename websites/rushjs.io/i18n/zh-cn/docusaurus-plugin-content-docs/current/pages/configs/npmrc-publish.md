@@ -2,7 +2,7 @@
 title: .npmrc-publish
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **.npmrc-publish** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **.npmrc-publish** 文件：
 
 **common/config/rush/.npmrc-publish**
 
@@ -28,4 +28,4 @@ title: .npmrc-publish
 
 ## 参考
 
-- [.npmrc](../../configs/npmrc) 配置文件
+- [.npmrc](../configs/npmrc.md) 配置文件

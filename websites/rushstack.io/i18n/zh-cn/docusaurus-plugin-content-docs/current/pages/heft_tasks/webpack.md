@@ -56,7 +56,7 @@ $ rush add --package @types/webpack-env --exact  --dev
 }
 ```
 
-上面安装的 Heft 插件需要使用 [heft.json 配置文件](.../heft_configs/heft_json.md)加载。
+上面安装的 Heft 插件需要使用 [heft.json 配置文件](../heft_configs/heft_json.md)加载。
 
 **&lt;project folder&gt;/config/heft.json**
 

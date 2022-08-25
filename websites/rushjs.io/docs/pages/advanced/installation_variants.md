@@ -96,7 +96,7 @@ git commit -m "Creating a new variant"
 
 **3<!-- -->. Override the dependency versions for the variant.** For this example, we will downgrade
 **widget-sdk** to use version 2.x. This can be done by using Rush's
-[preferred versions](../../advanced/preferred_versions) feature.
+[preferred versions](../advanced/preferred_versions.md) feature.
 We'll use a wildcard so that `rush update --full` still picks up minor/patch releases:
 
 **\*common-versions.json** excerpt\*
@@ -141,7 +141,7 @@ rush rebuild
 ```
 
 👉 If you get tired of typing `--variant`, you can also use the
-[RUSH_VARIANT](../../configs/environment_vars)
+[RUSH_VARIANT](../configs/environment_vars.md)
 environment variable to specify the variant name.
 
 **5<!-- -->. Restoring the original state.** When you're done testing your variant, you can return to the original

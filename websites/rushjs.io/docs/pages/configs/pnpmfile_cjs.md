@@ -2,7 +2,7 @@
 title: .pnpmfile.cjs
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for the monorepo **pnpmfile.js** file:
 
 **common/config/rush/.pnpmfile.cjs**

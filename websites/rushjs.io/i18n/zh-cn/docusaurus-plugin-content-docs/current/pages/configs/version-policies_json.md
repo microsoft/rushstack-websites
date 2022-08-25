@@ -2,7 +2,7 @@
 title: version-policies.json
 ---
 
-该文件是 [rush init](../../commands/rush_init) 生成的 **version-policies.json** 模板：
+该文件是 [rush init](../commands/rush_init.md) 生成的 **version-policies.json** 模板：
 
 **common/config/rush/version-policies.json**
 

@@ -15,11 +15,11 @@ title: 部署项目
 
 一个构建方式是执行 `rush install` 和 `rush build`, 但是该操作会将整个仓库传递到 Node 服务上，然而，这也会引入很多无关的文件和 NPM 包。相反，我们可以只处理 `app1` 和其依赖 `ext-lib7`, `lib3`, `lib5`, 我们并不想引入诸如 `ext-tool8` 等开发依赖。
 
-[rush deploy](../../commands/rush_deploy) 指令可以将这组文件传入到指定的服务器上。
+[rush deploy](../commands/rush_deploy.md) 指令可以将这组文件传入到指定的服务器上。
 
 ## 配置 "rush deploy"
 
-`rush deploy` 指令从 [common/config/rush/deploy.json](../../configs/deploy_json) 中读取配置，该文件并不是 `rush init` 生成的，而是需要执行 [rush init-deploy](../../commands/rush_init-deploy) 来创建。
+`rush deploy` 指令从 [common/config/rush/deploy.json](../configs/deploy_json.md) 中读取配置，该文件并不是 `rush init` 生成的，而是需要执行 [rush init-deploy](../commands/rush_init-deploy.md) 来创建。
 
 继续我们的示例，我们可以使用下面指令来创建文件
 
@@ -179,6 +179,6 @@ $ rush deploy --target-folder /mnt/deploy/app2 --scenario app2-example
 
 ## 参考
 
-- [common/config/rush/deploy.json](../../configs/deploy_json) 配置文件
-- [rush deploy](../../commands/rush_deploy) 命令行参数
-- [rush init-deploy](../../commands/rush_init-deploy) 命令行参数
+- [common/config/rush/deploy.json](../configs/deploy_json.md) 配置文件
+- [rush deploy](../commands/rush_deploy.md) 命令行参数
+- [rush init-deploy](../commands/rush_init-deploy.md) 命令行参数

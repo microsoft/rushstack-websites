@@ -16,4 +16,4 @@ title: rush update-autoinstaller
 
 ## 参考
 
-- [rush init-autoinstaller](../../commands/rush_init-autoinstaller)
+- [rush init-autoinstaller](../commands/rush_init-autoinstaller.md)

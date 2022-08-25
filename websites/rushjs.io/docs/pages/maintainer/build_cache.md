@@ -2,7 +2,7 @@
 title: Enabling the build cache (experimental)
 ---
 
-Rush has always supported an [incremental analyzer](../../advanced/incremental_builds) that
+Rush has always supported an [incremental analyzer](../advanced/incremental_builds.md) that
 enables `rush build` to skip projects whose input files have not changed since the last build. (This optimization
 can also be used with custom commands by enabling the `incremental` flag in **custom-commands.json**.) However,
 the build output is not saved anywhere, so generally a full rebuild is still required when switching to another branch.
@@ -11,7 +11,7 @@ Rush's experimental new **build cache** improves on this by creating a tar archi
 The archive is cached so that later, if `rush build` can find a match in the cache, it can extract the archive
 instead of building that project. This can provide dramatic speedups, for example reducing a 30 minute build time
 to 30 seconds. The cache key is a hash of the source files and NPM dependencies, following the
-[same basic rules](../../advanced/incremental_builds) as the incremental analyzer.
+[same basic rules](../advanced/incremental_builds.md) as the incremental analyzer.
 
 The build cache archives are stored in two places:
 
@@ -31,7 +31,7 @@ The build cache archives are stored in two places:
 
 ## Enabling the local disk cache
 
-The build cache feature is enabled using the [build-cache.json](../../configs/build-cache_json)
+The build cache feature is enabled using the [build-cache.json](../configs/build-cache_json.md)
 config file. You can copy the template from the website or use `rush init` to create this file.
 
 To enable the basic local disk cache, add these two settings:
@@ -73,7 +73,7 @@ so it does not support caching.
 
 The build cache needs to know which folders should be stored in the tar archive. Those details vary between
 toolchains, and are thus configured separately for each project using the
-[rush-project.json](../../configs/rush-project_json) config file.
+[rush-project.json](../configs/rush-project_json.md) config file.
 
 For example:
 
@@ -145,7 +145,7 @@ example-project was restored from the build cache.
 ```
 
 Note that `rush rebuild` will not read from cache. To disable writing from cache during `rush rebuild`, set the
-[`RUSH_BUILD_CACHE_WRITE_ALLOWED`](../../configs/environment_vars) environment variable to `0`.
+[`RUSH_BUILD_CACHE_WRITE_ALLOWED`](../configs/environment_vars.md) environment variable to `0`.
 
 By default, the cached tar archives are stored under your **common/temp/build-cache** folder
 (and thus will be cleaned by `rush purge`). It is safe to delete these files.
@@ -215,7 +215,7 @@ hashes which are difficult to guess without access to your Git repo. This provid
 [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity).
 
 A more security-conscious organization however will prefer to require authentication even for read-only access.
-Rush provides a [rush update-cloud-credentials](../../commands/rush_update-cloud-credentials)
+Rush provides a [rush update-cloud-credentials](../commands/rush_update-cloud-credentials.md)
 command to make this easy for users to set up:
 
 ```bash
@@ -243,9 +243,9 @@ The credentials are stored in the user's home directory under `~/.rush-user/cred
 In a typical configuration, users have read-only access and the cache is populated by an automation account;
 for example, a CI job that builds your `main` branch after each PR is merged. In our example above, the
 `"isCacheWriteAllowed": false` setting is what prevents users from writing to the cache. The CI job can
-override this by setting the [RUSH_BUILD_CACHE_WRITE_ALLOWED](../../configs/environment_vars)
+override this by setting the [RUSH_BUILD_CACHE_WRITE_ALLOWED](../configs/environment_vars.md)
 environment variable, and by providing credentials for the CI environment in the
-[RUSH_BUILD_CACHE_CREDENTIAL](../../configs/environment_vars) environment variable.
+[RUSH_BUILD_CACHE_CREDENTIAL](../configs/environment_vars.md) environment variable.
 
 For Azure Blob Storage, this must be a SAS token serialized as query parameters.
 See [this article](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) for details
@@ -254,11 +254,6 @@ page for your storage account.
 
 For Amazon S3, this will be your AWS Access Key ID and AWS Secret Access Key separated by a colon,
 such as: `<AccessKeyID>:<SecretAccessKey>`.
-
-If your CI system uses a custom build orchestrator with Rush
-(for example [BuildXL](https://github.com/Microsoft/BuildXL)),
-the [rush write-build-cache](../../commands/rush_write-build-cache) command enables you to
-populate a cache entry from a specific project's output folders.
 
 > The build cache feature is still under development. Feedback is welcome!
 >

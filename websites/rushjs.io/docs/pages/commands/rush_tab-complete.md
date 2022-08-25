@@ -16,4 +16,4 @@ Optional arguments:
 
 ## See also
 
-- [Configuring tab completion](../../developer/tab_completion)
+- [Configuring tab completion](../developer/tab_completion.md)

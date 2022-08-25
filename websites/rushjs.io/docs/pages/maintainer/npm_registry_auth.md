@@ -34,7 +34,7 @@ on `http://localhost` and implements a complete private registry with proxy capa
 ## Registry mappings
 
 The mappings for your private registry are specified in
-[the monorepo .npmrc file](../../configs/npmrc).
+[the monorepo .npmrc file](../configs/npmrc.md).
 
 Below is an example configuration that installs company packages from the private
 registry, but gets all other packages from the public registry. The company packages are
@@ -81,7 +81,7 @@ always-auth=true
 ```
 
 > For details about the lookup precedence for **.npmrc** settings,
-> see the [.npmrc](../../configs/npmrc) page.
+> see the [.npmrc](../configs/npmrc.md) page.
 
 ## Prompting for credentials with "rush setup"
 
@@ -123,13 +123,13 @@ The initial implementation supports the [JFrog Artifactory](https://jfrog.com/ar
 Other services will be implemented in the future.
 
 To use this feature, simply assign the `"registryUrl"` field and set `"enabled": true` in your
-[artifactory.json](../../configs/artifactory_json) config file.
+[artifactory.json](../configs/artifactory_json.md) config file.
 The file template contains documentation for other optional settings that can be used to customize
 the dialogue.
 
 ## See also
 
-- [rush setup](../../commands/rush_setup)
-- [artifactory.json](../../configs/artifactory_json) config file
-- [.npmrc](../../configs/npmrc) config file
-- [.npmrc-publish](../../configs/npmrc-publish) config file
+- [rush setup](../commands/rush_setup.md)
+- [artifactory.json](../configs/artifactory_json.md) config file
+- [.npmrc](../configs/npmrc.md) config file
+- [.npmrc-publish](../configs/npmrc-publish.md) config file

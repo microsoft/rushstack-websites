@@ -14,7 +14,7 @@ Rush 的环境变量可以通过终端环境变量来定制：
 
 ## RUSH_BUILD_CACHE_CREDENTIAL（实验性）
 
-该环境变量用于 [构建缓存](../../maintainer/build_cache) 这个实验性的功能。
+该环境变量用于 [构建缓存](../maintainer/build_cache.md) 这个实验性的功能。
 
 配置后将会给远端的构建缓存提供一个凭证。这个凭证可以被缓存或覆盖。
 
@@ -22,19 +22,19 @@ Rush 的环境变量可以通过终端环境变量来定制：
 
 ## RUSH_BUILD_CACHE_ENABLED （实验性）
 
-该环境变量用于 [构建缓存](../../maintainer/build_cache) 这个实验性的功能。
+该环境变量用于 [构建缓存](../maintainer/build_cache.md) 这个实验性的功能。
 
 覆盖定义在 `build-cache.json` 中的 `buildCacheEnabled` 值。这个环境变量必须是 `1`（表示 true）或者 `0`（表示 false）。如果没有配置构建缓存，那么该环境变量将被忽略。
 
 ## RUSH_BUILD_CACHE_WRITE_ALLOWED（实验性）
 
-该环境变量用于 [构建缓存](../../maintainer/build_cache) 这个实验性的功能。
+该环境变量用于 [构建缓存](../maintainer/build_cache.md) 这个实验性的功能。
 
 覆盖定义在 `build-cache.json` 中的 `isCacheWriteAllowed` 值。这个环境变量必须是 `1`（表示 true）或者 `0`（表示 false）。如果没有配置构建缓存，那么该环境变量将被忽略。
 
 ## RUSH_DEPLOY_TARGET_FOLDER
 
-该环境变量用于给 [rush deploy](../../commands/rush_deploy) 指令指定 `--target-folder` 参数。
+该环境变量用于给 [rush deploy](../commands/rush_deploy.md) 指令指定 `--target-folder` 参数。
 
 ## RUSH_GIT_BINARY_PATH
 
@@ -55,7 +55,7 @@ Rush 的环境变量可以通过终端环境变量来定制：
 
 ## RUSH_PARALLELISM
 
-约定构建期间最大的并行进程数，更多信息可以参考 [rush build](../../commands/rush_build) 的 `--parallelism` 参数的命令行帮助。
+约定构建期间最大的并行进程数，更多信息可以参考 [rush build](../commands/rush_build.md) 的 `--parallelism` 参数的命令行帮助。
 
 ## RUSH_PNPM_STORE_PATH
 
@@ -82,4 +82,4 @@ $ rush install
 
 该变量设定了当安装和链接包依赖时 Rush 使用的安装变种。
 
-更多信息可以参考[安装变种](../../advanced/installation_variants)。
+更多信息可以参考[安装变种](../advanced/installation_variants.md)。

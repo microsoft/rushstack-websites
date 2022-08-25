@@ -18,4 +18,4 @@ title: rush update-cloud-credentials (experimental)
 
 ## 参考更多
 
-- [启用构建缓存](../../maintainer/build_cache)
+- [启用构建缓存](../maintainer/build_cache.md)

@@ -2,7 +2,7 @@
 title: command-line.json
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **command-line.json**:
 
 **common/config/rush/command-line.json**
@@ -309,4 +309,4 @@ generates for **command-line.json**:
 
 ## See also
 
-- [Custom commands](../../maintainer/custom_commands)
+- [Custom commands](../maintainer/custom_commands.md)

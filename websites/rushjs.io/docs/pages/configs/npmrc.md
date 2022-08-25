@@ -2,7 +2,7 @@
 title: .npmrc
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for the monorepo **.npmrc** file:
 
 **common/config/rush/.npmrc**
@@ -50,7 +50,7 @@ Regular Rush operations perform the following lookup:
 The above rules also apply for helpers scripts such as **install-run.js**.
 
 The `rush publish` command uses a different file **.npmrc-publish** with its own rules.
-See [this documentation](../../configs/npmrc-publish) for details.
+See [this documentation](../configs/npmrc-publish.md) for details.
 
 The above rules do not apply if the package manager is invoked directly (instead of via Rush).
 For example, `npm publish` is invoked from the shell, then the
@@ -60,5 +60,5 @@ additional **.npmrc** files.
 
 ## See also
 
-- [NPM registry authentication](../../maintainer/npm_registry_auth)
-- [.npmrc-publish](../../configs/npmrc-publish) config file
+- [NPM registry authentication](../maintainer/npm_registry_auth.md)
+- [.npmrc-publish](../configs/npmrc-publish.md) config file

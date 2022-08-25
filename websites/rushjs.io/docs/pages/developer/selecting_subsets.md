@@ -3,7 +3,7 @@
 title: Selecting subsets of projects
 ---
 
-[Bulk commands](../../maintainer/custom_commands) like `rush build` and `rush rebuild` operate on
+[Bulk commands](../maintainer/custom_commands.md) like `rush build` and `rush rebuild` operate on
 all projects in the monorepo by default. This becomes expensive as you accumulate more and more projects.
 To speed things up, Rush provides a set of command-line parameters for selecting subsets of projects.
 
@@ -220,7 +220,7 @@ rush list --impacted-by git:release/v3.0.0
 
 ### Tagged projects: `tag:`
 
-Rush [project tags](../project_tags) enable you to define arbitrary collections of projects,
+Rush [project tags](../developer/project_tags.md) enable you to define arbitrary collections of projects,
 which can then be referenced using the `tag:` selector.
 
 Examples:
@@ -258,8 +258,8 @@ The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:
 
 ## See also
 
-- [Incremental builds](../../advanced/incremental_builds)
-- [Using watch mode](../../advanced/watch_mode)
-- [Using project tgas](../../developer/project_tags)
-- [rush build](../../commands/rush_build)
-- [rush rebuild](../../commands/rush_rebuild)
+- [Incremental builds](../advanced/incremental_builds.md)
+- [Using watch mode](../advanced/watch_mode.md)
+- [Using project tgas](../developer/project_tags.md)
+- [rush build](../commands/rush_build.md)
+- [rush rebuild](../commands/rush_rebuild.md)

@@ -2,7 +2,7 @@
 title: .npmrc-publish
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **.npmrc-publish**:
 
 **common/config/rush/.npmrc-publish**
@@ -32,4 +32,4 @@ generates for **.npmrc-publish**:
 
 ## See also
 
-- [.npmrc](../../configs/npmrc) config file
+- [.npmrc](../configs/npmrc.md) config file

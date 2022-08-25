@@ -2,7 +2,7 @@
 title: .npmrc
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **.npmrc** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **.npmrc** 文件：
 
 **common/config/rush/.npmrc**
 
@@ -36,11 +36,11 @@ always-auth=false
 
 以上规则同样适用于诸如 **install-run.js** 等辅助脚本。
 
-`rush publish` 可以使用不同 **.npmrc-publish**, 。详细请参考[此文档](../../configs/npmrc-publish)。
+`rush publish` 可以使用不同 **.npmrc-publish**, 。详细请参考[此文档](../configs/npmrc-publish.md)。
 
 当包管理器直接被调用时（而不是通过 Rush），那么上述规则不适用。例如，从 shell 中调用 `npm publish`, 之后将使用[包管理器的通常优先级](https://docs.npmjs.com/cli/v7/using-npm/config#npmrc-files)。通常不鼓励上述行为，你可以创建额外的 **.npmrc** 文件。
 
 ## 参考
 
-- [NPM 源认证](../../maintainer/npm_registry_auth)
-- [.npmrc-publish](../../configs/npmrc-publish) 配置文件
+- [NPM 源认证](../maintainer/npm_registry_auth.md)
+- [.npmrc-publish](../configs/npmrc-publish.md) 配置文件

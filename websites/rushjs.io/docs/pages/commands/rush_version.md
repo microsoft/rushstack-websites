@@ -49,6 +49,6 @@ Optional arguments:
 
 ## See also
 
-- [Publishing packages](../../maintainer/publishing)
-- [rush change](../../commands/rush_change)
-- [rush publish](../../commands/rush_publish)
+- [Publishing packages](../maintainer/publishing.md)
+- [rush change](../commands/rush_change.md)
+- [rush publish](../commands/rush_publish.md)

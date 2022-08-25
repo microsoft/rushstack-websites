@@ -2,7 +2,7 @@
 title: artifactory.json (experimental)
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **artifactory.json**:
 
 **common/config/rush/artifactory.json**
@@ -101,4 +101,4 @@ generates for **artifactory.json**:
 
 ## See also
 
-- [NPM registry authentication](../../maintainer/npm_registry_auth)
+- [NPM registry authentication](../maintainer/npm_registry_auth.md)

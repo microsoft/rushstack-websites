@@ -2,7 +2,7 @@
 title: experiments.json
 ---
 
-这是 [rush init](../../commands/rush_init) 生成的模版下的 **experiments.json** 文件：
+这是 [rush init](../commands/rush_init.md) 生成的模版下的 **experiments.json** 文件：
 
 **common/config/rush/experiments.json**
 

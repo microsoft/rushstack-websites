@@ -71,4 +71,4 @@ by a [rig package](https://rushstack.io/pages/heft/rig_packages/).
 
 ## See also
 
-- [Enabling the build cache](../../maintainer/build_cache)
+- [Enabling the build cache](../maintainer/build_cache.md)

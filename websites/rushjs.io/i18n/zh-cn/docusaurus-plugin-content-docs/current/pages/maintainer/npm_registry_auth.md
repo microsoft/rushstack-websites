@@ -19,7 +19,7 @@ title: NPM 仓库认证
 
 ## 源的映射
 
-私有源的映射被定义在 [monorepo .npmrc 文件](../../configs/npmrc)中。
+私有源的映射被定义在 [monorepo .npmrc 文件](../configs/npmrc.md)中。
 
 下面的示例将从私有源中安装公司的库，从公共源中获取其他包，公司的库的 NPM scope 为 `@example`.
 
@@ -57,7 +57,7 @@ always-auth=true
 //my-registry.example.com/npm-private/:username=${MY_CI_USER}
 ```
 
-> 可以通过 [.npmrc](../../configs/npmrc) 页来了解一些比 **.npmrc** 优先级更高的配置。
+> 可以通过 [.npmrc](../configs/npmrc.md) 页来了解一些比 **.npmrc** 优先级更高的配置。
 
 ## 使用 "rush setup" 来获取口令
 
@@ -98,7 +98,7 @@ Adding Artifactory token to: /home/example-user/.npmrc
 
 ## 参考更多
 
-- [rush setup](../../commands/rush_setup)
-- [artifactory.json](../../configs/artifactory_json) 配置文件
-- [.npmrc](../../configs/npmrc) 配置文件
-- [.npmrc-publish](../../configs/npmrc-publish) 配置文件
+- [rush setup](../commands/rush_setup.md)
+- [artifactory.json](../configs/artifactory_json.md) 配置文件
+- [.npmrc](../configs/npmrc.md) 配置文件
+- [.npmrc-publish](../configs/npmrc-publish.md) 配置文件

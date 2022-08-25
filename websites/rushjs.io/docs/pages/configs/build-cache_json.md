@@ -2,7 +2,7 @@
 title: build-cache.json (experimental)
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **build-cache.json**:
 
 **common/config/rush/build-cache.json**
@@ -112,4 +112,4 @@ generates for **build-cache.json**:
 
 ## See also
 
-- [Enabling the build cache](../../maintainer/build_cache)
+- [Enabling the build cache](../maintainer/build_cache.md)

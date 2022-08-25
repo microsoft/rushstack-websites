@@ -10,7 +10,7 @@ title: 修改 package.json
 ~/my-repo/apps/my-app$ npm install --save example-lib
 ```
 
-在 Rush 仓库内，你应该使用 [rush add](../../commands/rush_add) 命令：
+在 Rush 仓库内，你应该使用 [rush add](../commands/rush_add.md) 命令：
 
 ```sh
 ~/my-repo$ cd apps/my-app
@@ -38,7 +38,7 @@ title: 修改 package.json
 ~/my-repo/apps/my-app$ rush add --package example-lib@1.2.3 --make-consistent
 ```
 
-如果你想了解更多，可以查看[rush add](../../commands/rush_add).
+如果你想了解更多，可以查看[rush add](../commands/rush_add.md).
 
 > **提示：VS Code 内一个有趣的功能**
 >

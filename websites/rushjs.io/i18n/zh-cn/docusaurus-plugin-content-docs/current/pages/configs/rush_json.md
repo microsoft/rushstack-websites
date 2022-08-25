@@ -2,7 +2,7 @@
 title: rush.json
 ---
 
-这是 [rush init](../../commands/rush_init) 生成的模版下的 **rush.json** 文件（在项目根目录下）：
+这是 [rush init](../commands/rush_init.md) 生成的模版下的 **rush.json** 文件（在项目根目录下）：
 
 **&lt;repo root&gt;rush.json**
 

@@ -38,6 +38,6 @@ title: rush version
 
 ## 参考
 
-- [发包](../../maintainer/publishing)
-- [rush change](../../commands/rush_change)
-- [rush publish](../../commands/rush_publish)
+- [发包](../maintainer/publishing.md)
+- [rush change](../commands/rush_change.md)
+- [rush publish](../commands/rush_publish.md)

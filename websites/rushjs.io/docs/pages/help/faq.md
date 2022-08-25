@@ -4,7 +4,7 @@ title: Frequently Asked Questions (FAQ)
 
 ### All my projects in one big repo? Is that a good idea?
 
-_Answered in [this article](../../intro/why_mono)._
+_Answered in [this article](../intro/why_mono.md)._
 
 ### Where do I send bug reports or feature requests?
 
@@ -110,4 +110,4 @@ Generally it's recommended to perform all monorepo management using Rush. The sy
 
 For Yarn or NPM, a command like `git clean -dfx` is generally sufficient. (THIS DELETES FILES -- [read the manual](https://git-scm.com/docs/git-clean) before invoking!)
 
-For cleaning up a Rush installation, `git clean` is NOT recommended because it does not handle symlinks reliably. Instead, use the [rush purge](../../commands/rush_purge) command to delete the `node_modules` folders created by Rush.
+For cleaning up a Rush installation, `git clean` is NOT recommended because it does not handle symlinks reliably. Instead, use the [rush purge](../commands/rush_purge.md) command to delete the `node_modules` folders created by Rush.

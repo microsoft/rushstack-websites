@@ -2,7 +2,7 @@
 title: 与 Rush 交互
 ---
 
-[开始使用 Heft](./getting_started.md) 教展示了独立项目中使用 Heft. 本文将介绍 Rush monorepo 下如何使用 Heft.
+[开始使用 Heft](../heft_tutorials/getting_started.md) 教展示了独立项目中使用 Heft. 本文将介绍 Rush monorepo 下如何使用 Heft.
 
 ## Heft 如何被调用
 

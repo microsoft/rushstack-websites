@@ -21,4 +21,4 @@ Optional arguments:
 
 ## See also
 
-- [Enabling the build cache](../../maintainer/build_cache)
+- [Enabling the build cache](../maintainer/build_cache.md)

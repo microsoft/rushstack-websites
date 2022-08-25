@@ -48,7 +48,7 @@ Let's assume you already created an empty GitHub repo that we will copy these pr
 ~/my-repo$ rush init
 ```
 
-It will generate these files (see [Config file reference](../../advanced/config_files) for more info):
+It will generate these files (see [Config file reference](../advanced/config_files.md) for more info):
 
 | File                                         | What it does                                                                                                                                                                |
 | :------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ The template files have lots of documentation and commented example snippets. We
 
 You can change your options at any time, but there are a few settings in **rush.json** that you should think about in advance:
 
-- **Choose a package manager**: The template defaults to using PNPM, but you can also use NPM or Yarn. See [NPM vs PNPM vs Yarn](../../maintainer/package_managers) for guidance.
+- **Choose a package manager**: The template defaults to using PNPM, but you can also use NPM or Yarn. See [NPM vs PNPM vs Yarn](../maintainer/package_managers.md) for guidance.
 
 - **Check your Rush version**: Make sure your `rushVersion` setting is the latest version, which is shown in the [NPM registry](https://www.npmjs.com/package/@microsoft/rush).
 
@@ -85,4 +85,4 @@ You can change your options at any time, but there are a few settings in **rush.
 
 - **Decide whether to use the "category folders" model**: See the comments in **rush.json** regarding `projectFolderMinDepth` and `projectFolderMaxDepth`, and make a plan for how project folders will be organized in the monorepo
 
-- **Configure your registry access**: The initial **.npmrc** file is configured to use the public NPM registry. If you will be using a [private registry](../../maintainer/npm_registry_auth), you should update the **common/config/rush/.npmrc** file.
+- **Configure your registry access**: The initial **.npmrc** file is configured to use the public NPM registry. If you will be using a [private registry](../maintainer/npm_registry_auth.md), you should update the **common/config/rush/.npmrc** file.

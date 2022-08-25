@@ -34,5 +34,9 @@
   "sidebar.docsSidebar.category.Help": {
     "message": "帮助",
     "description": "The label for category Help in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Extensibility": {
+    "message": "Extensibility",
+    "description": "The label for category Extensibility in sidebar docsSidebar"
   }
 }

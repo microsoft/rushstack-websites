@@ -26,7 +26,7 @@ Rush Stack 推荐使用 ESLint 与其他几个库作为代码校验工具：
 $ rush add --package eslint --dev
 ```
 
-另外，你可以通过从 [与 Rush 交互](.../heft_tutorials/heft_and_rush.md) 一文中描述的 "rig package" 中加载来避免添加该依赖。然而，如果你使用 [VS Code 内的 ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，它将尝试从你的项目文件夹中解析 `eslint`.此时需要将 ESLint 添加到 **package.json** 文件中来确保插件可用。(该扩展也能够加载一个全局安装的 `eslint`, 但版本可能与本地分支所要求的版本不一致)。
+另外，你可以通过从 [与 Rush 交互](../heft_tutorials/heft_and_rush.md) 一文中描述的 "rig package" 中加载来避免添加该依赖。然而，如果你使用 [VS Code 内的 ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，它将尝试从你的项目文件夹中解析 `eslint`.此时需要将 ESLint 添加到 **package.json** 文件中来确保插件可用。(该扩展也能够加载一个全局安装的 `eslint`, 但版本可能与本地分支所要求的版本不一致)。
 
 ## 配置文件
 

@@ -80,4 +80,4 @@ shrinkwrap 文件偶然更新，那么这些谨慎的人可以使用 "rush insta
 
 ## 参考
 
-- [rush update](../../commands/rush_update)
+- [rush update](../commands/rush_update.md)

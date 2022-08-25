@@ -82,8 +82,8 @@ These problems can be solved by creating a special streamlined script for watch 
 Rush's "watch mode" formalizes this basic idea, replacing the simple loop with an optimized
 [chokidar](https://www.npmjs.com/package/chokidar) filesystem monitor. Here's how you would use it:
 
-1. Add a [custom command](../../maintainer/custom_commands) in
-   your [command-line.json](../../configs/command-line_json) config file.
+1. Add a [custom command](../maintainer/custom_commands.md) in
+   your [command-line.json](../configs/command-line_json.md) config file.
    Continuing the example above, our custom command will be called `"build:watch"`.
    The important settings are `"incremental"` and `"watchForChanges"`:
 
@@ -125,7 +125,7 @@ Rush's "watch mode" formalizes this basic idea, replacing the simple loop with a
      . . .
    ```
 
-3. Invoke the command using [project selection parameters](../../developer/selecting_subsets) that
+3. Invoke the command using [project selection parameters](../developer/selecting_subsets.md) that
    select all of `D`'s dependencies but not `D` itself:
 
    ```bash
@@ -145,7 +145,7 @@ Rush's "watch mode" formalizes this basic idea, replacing the simple loop with a
 
 5. In some situations, the `--changed-projects-only` command can be combined
    with `"watchForChanges"` for even faster watching. The section
-   [Building changed projects only](../../advanced/incremental_builds#building-changed-projects-only-unsafe)
+   [Building changed projects only](../advanced/incremental_builds.md#building-changed-projects-only-unsafe)
    explains how it works and when it is appropriate.
 
 > **"Experimental"** The `"watchForChanges"` feature is still in its early stages. Feedback is welcome!
@@ -165,5 +165,5 @@ helpful:
 
 ## See also
 
-- [Selecting subsets of projects](../../developer/selecting_subsets)
-- [Incremental builds](../../advanced/incremental_builds)
+- [Selecting subsets of projects](../developer/selecting_subsets.md)
+- [Incremental builds](../advanced/incremental_builds.md)

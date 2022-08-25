@@ -71,5 +71,5 @@ title: rush publish
 
 ## 参考
 
-- [发布包](../../maintainer/publishing)
-- [rush version](../../commands/rush_version)
+- [发布包](../maintainer/publishing.md)
+- [rush version](../commands/rush_version.md)

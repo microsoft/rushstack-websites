@@ -79,7 +79,7 @@ $ git add .
 $ git commit -m "Creating a new variant"
 ```
 
-**3. 重写变种的依赖版本。**例如，我们将会将 **widget-sdk** 降级到使用 2.x 版本。这可以通过使用 Rush 的[偏好版本](../../advanced/preferred_versions)功能实现。我们使用通配符，这样 `rush update --full` 仍然会抓取 minor/patch 版本：
+**3. 重写变种的依赖版本。**例如，我们将会将 **widget-sdk** 降级到使用 2.x 版本。这可以通过使用 Rush 的[偏好版本](../advanced/preferred_versions.md)功能实现。我们使用通配符，这样 `rush update --full` 仍然会抓取 minor/patch 版本：
 
 **\*common-versions.json** 摘录\*
 
@@ -115,7 +115,7 @@ $ rush update --full --variant old-widget-sdk
 $ rush rebuild
 ```
 
-⏵ 如果你经常使用 `--variant`，你也可以使用 [RUSH_PREVIEW_VERSION](../../configs/environment_vars).
+⏵ 如果你经常使用 `--variant`，你也可以使用 [RUSH_PREVIEW_VERSION](../configs/environment_vars.md).
 
 **5. 恢复原始状态。**当你测试完变种后，你通过不带有 `--variant` 参数的 `rush install` 返回到原始状态。我们称其为“**默认变种**”，因为它与一个没有定义安装变种的仓库的默认行为相同：
 

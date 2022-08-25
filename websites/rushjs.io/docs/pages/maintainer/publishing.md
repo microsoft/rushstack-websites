@@ -8,7 +8,7 @@ There are two stages in a Rush publishing flow. The first stage is during develo
 
 ## 1. Track Changes
 
-Only changes to public packages need to be tracked. People can control which package should get published and which package should not get published in rush.json by specifying field [shouldPublish](../../maintainer/setup_new_repo). Once public packages have been defined, repo admins can enforce developers to provide change files if they have modified any public packages. Developers can use a tool to generate change files after answering a few questions.
+Only changes to public packages need to be tracked. People can control which package should get published and which package should not get published in rush.json by specifying field [shouldPublish](../maintainer/setup_new_repo.md). Once public packages have been defined, repo admins can enforce developers to provide change files if they have modified any public packages. Developers can use a tool to generate change files after answering a few questions.
 
 ### How to enforce developers to provide change files
 

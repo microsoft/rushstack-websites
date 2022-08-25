@@ -8,7 +8,7 @@ title: 欢迎使用 Rush
 
 - **仅需一次 NPM 安装:** 仅需一步，Rush 便可以将你项目的所有依赖安装到一个公共文件夹下，该文件夹并不像 "package.json" 一样位于项目的根目录（放到根目录的设计可能存在幻影依赖的问题），相反，Rush 使用符号链接来为每个项目重新构建一个准确的 "node_modules" 文件。
 
-⏵ **该算法支持 [PNPM, NPM, and Yarn](../../maintainer/package_managers) 等包管理工具.**
+⏵ **该算法支持 [PNPM, NPM, and Yarn](../maintainer/package_managers.md) 等包管理工具.**
 
 - **本地自动链接：** 在 Rush 仓库内的所有项目之间被自动链接，当代码发生变动时，你可以在不发布的情况下看到下游所有的变动，同时，也不会困扰于 `npm link` 如何使用；如果你不想让某一个仓库被链接，那也很容易做到。
 

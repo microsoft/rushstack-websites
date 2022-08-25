@@ -19,4 +19,4 @@ Optional arguments:
 
 ## See also
 
-- [rush unlink](../../commands/rush_unlink)
+- [rush unlink](../commands/rush_unlink.md)

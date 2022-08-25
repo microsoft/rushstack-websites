@@ -13,4 +13,4 @@ title: rush unlink
 
 ## 参考
 
-- [rush link](../../commands/rush_link)
+- [rush link](../commands/rush_link.md)

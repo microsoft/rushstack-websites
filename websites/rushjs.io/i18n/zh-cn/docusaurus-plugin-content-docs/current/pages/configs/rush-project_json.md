@@ -71,4 +71,4 @@ title: rush-project.json （实验性）
 
 ## 参考
 
-- [开启构建缓存](../../maintainer/build_cache)
+- [开启构建缓存](../maintainer/build_cache.md)

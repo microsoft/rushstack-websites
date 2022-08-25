@@ -25,7 +25,7 @@ $ rush link
 $ rush rebuild --ship --verbose
 ```
 
-这里有个小插曲 —— 如果你的 CI 环境没有预先安装 Rush, 则可以在项目的根目录下放置一个 **package.json**, 然后通过 `npm install` 来安装 Rush. 但这样也会引入一个 **node_modules** 目录, 进而导致 Rush 的防止[幻影依赖](../../advanced/phantom_deps)的功能失效。
+这里有个小插曲 —— 如果你的 CI 环境没有预先安装 Rush, 则可以在项目的根目录下放置一个 **package.json**, 然后通过 `npm install` 来安装 Rush. 但这样也会引入一个 **node_modules** 目录, 进而导致 Rush 的防止[幻影依赖](../advanced/phantom_deps.md)的功能失效。
 
 ## install-run-rush.js 来启动 Rush
 

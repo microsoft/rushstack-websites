@@ -27,7 +27,7 @@ Optional arguments:
 
 ## See also
 
-- [Deploying projects](../../maintainer/deploying)
-- [deploy.json](../../configs/deploy_json) config file
-- [rush deploy](../../commands/rush_deploy)
-- [rush init](../../commands/rush_init)
+- [Deploying projects](../maintainer/deploying.md)
+- [deploy.json](../configs/deploy_json.md) config file
+- [rush deploy](../commands/rush_deploy.md)
+- [rush init](../commands/rush_init.md)

@@ -32,7 +32,7 @@ title: 日常用到的指令
 >
 > 需要项目中并没有将依赖指定为诸如 `1.2.3` 这样精确的版本，而是使用诸如 `1.x` 或者 `^1.2.3` 这样语义化版本。语义化的版本意味着依赖安装时的最新版本，这种**非确定性**的策略存在一定问题：当依赖的库新版本发布时，周一建立分支周二便可能因此而失败，这就很让人抓狂。shrinkwrap 文件就解决了这个问题，它存储了一个完整的安装计划，并被会 Git 记录。
 >
-> shrinkwrap 文件在不同的 [包管理器](../../maintainer/package_managers) 中有不同的名字：**shrinkwrap.yaml**, **npm-shrinkwrap.json** 或者 **yarn.lock** 等。
+> shrinkwrap 文件在不同的 [包管理器](../maintainer/package_managers.md) 中有不同的名字：**shrinkwrap.yaml**, **npm-shrinkwrap.json** 或者 **yarn.lock** 等。
 
 你可以观察到，CI 流水线中使用 `rush install` 来替代 `rush update`, 二者的不同点是 `rush install` 不会更新任何文件，相反，如果存在过失的数据，则会在 PR 上报错，并提示你执行 `rush update` 或者提示你 commit 其结果。（一些开发者为了防止 shrinkwrap 文件中不符合预期的更新，他们选择使用 `rush install` 当作常用指令，而不是 `rush build`）
 
@@ -58,7 +58,7 @@ title: 日常用到的指令
 
 随后，Rush 的自动发布工作流会检查这些文件，以确定哪些包需要发布。它会删除这些文件，并将你的更新信息复制到包的 CHANGELOG.md 文件中。
 
-⏵ 查看 [更新日志编写](../../best_practices/change_logs) 来获取更多写变更记录的提示。
+⏵ 查看 [更新日志编写](../best_practices/change_logs.md) 来获取更多写变更记录的提示。
 
 # 常见情况
 

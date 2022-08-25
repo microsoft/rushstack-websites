@@ -50,7 +50,7 @@ _注意：如果由于缺少权限而导致访问 NPM 全局目录失败，可�
 ~/my-repo$ rush init
 ```
 
-它将会生成以下文件：（更多信息可查阅 [配置文件参考](../../advanced/config_files)）
+它将会生成以下文件：（更多信息可查阅 [配置文件参考](../advanced/config_files.md)）
 
 | 文件                                         | 用途                                                                                                 |
 | :------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
@@ -79,7 +79,7 @@ _注意：如果由于缺少权限而导致访问 NPM 全局目录失败，可�
 
 你可以随时修改你的选项，但是 **rush.json** 中有一些配置项需要一些了解：
 
-- **选择包管理器**: 模版默认使用 PNPM，但是你也可以使用 NPM 或者 Yarn. 可以参考 [NPM vs PNPM vs Yarn](../../maintainer/package_managers).
+- **选择包管理器**: 模版默认使用 PNPM，但是你也可以使用 NPM 或者 Yarn. 可以参考 [NPM vs PNPM vs Yarn](../maintainer/package_managers.md).
 
 - **检查你的 Rush 版本**：确保 `rushVersion` 是最新版本，版本列表可查看 [NPM 源](https://www.npmjs.com/package/@microsoft/rush).
 
@@ -87,4 +87,4 @@ _注意：如果由于缺少权限而导致访问 NPM 全局目录失败，可�
 
 - **是否使用“类别目录”模型**：参考 **rush.json** 中的 `projectFolderMinDepth` 和 `projectFolderMaxDepth` 的注释，并计划好 monorepo 内的项目目录如何组织。
 
-- **配置源的访问权限**：初始的 **.npmrc** 被配置为使用公开的 NPM 源。如果你将要使用[私有源](../../maintainer/npm_registry_auth)，你应该更新 **common/config/rush/.npmrc** 文件。
+- **配置源的访问权限**：初始的 **.npmrc** 被配置为使用公开的 NPM 源。如果你将要使用[私有源](../maintainer/npm_registry_auth.md)，你应该更新 **common/config/rush/.npmrc** 文件。

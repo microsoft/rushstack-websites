@@ -2,7 +2,7 @@
 title: rush.json
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **rush.json** (in the repo root folder):
 
 **&lt;repo root&gt;rush.json**

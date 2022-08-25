@@ -117,7 +117,7 @@ PR for the next steps below.
 
 ## Git hook requirements
 
-Let's set up a [Git hook](../../maintainer/git_hooks) that will invoke Prettier automatically
+Let's set up a [Git hook](../maintainer/git_hooks.md) that will invoke Prettier automatically
 whenever changes are committed.
 
 Keep in mind that the `git commit` command is a core operation that must always be quick and reliable:
@@ -125,7 +125,7 @@ Developers may want to make commits to their branch without running `rush instal
 `rush install` cannot be run, because the branch may be in a partially working state. It seems that our Git hook
 should NOT rely on the usual monorepo installation mechanism.
 
-We could solve this by using Rush's [install-run.js](../../maintainer/enabling_ci_builds)
+We could solve this by using Rush's [install-run.js](../maintainer/enabling_ci_builds.md)
 script to install the Prettier package on demand. But it turns out that we need to install several dependencies
 together:
 
@@ -139,7 +139,7 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
 
 ## Enabling the Git hook
 
-1.  First, use the [rush init-autoinstaller](../../commands/rush_init-autoinstaller) command to
+1.  First, use the [rush init-autoinstaller](../commands/rush_init-autoinstaller.md) command to
     create an autoinstaller:
 
     ```bash

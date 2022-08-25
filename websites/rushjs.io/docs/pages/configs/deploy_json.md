@@ -2,7 +2,7 @@
 title: deploy.json
 ---
 
-This is the template that [rush init-deploy](../../commands/rush_init-deploy)
+This is the template that [rush init-deploy](../commands/rush_init-deploy.md)
 generates for **deploy.json** and **deploy-&lt;scenario name&gt;>.json**:
 
 **common/config/rush/deploy.json**
@@ -126,5 +126,5 @@ generates for **deploy.json** and **deploy-&lt;scenario name&gt;>.json**:
 
 ## See also
 
-- [Deploying projects](../../maintainer/deploying)
-- [rush deploy](../../commands/rush_deploy) command-line parameters
+- [Deploying projects](../maintainer/deploying.md)
+- [rush deploy](../commands/rush_deploy.md) command-line parameters

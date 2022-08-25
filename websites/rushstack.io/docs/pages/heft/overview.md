@@ -72,7 +72,7 @@ similar systems, Heft has some unique design goals:
 
 - [Interfacing with Rush](../heft_tutorials/heft_and_rush.md) explains how Heft and Rush interact
 
-- The [Heft architecture](./architecture.md) article provides more detail about the
+- The [Heft architecture](../heft/architecture.md) article provides more detail about the
   build system's design
 
 ## Links

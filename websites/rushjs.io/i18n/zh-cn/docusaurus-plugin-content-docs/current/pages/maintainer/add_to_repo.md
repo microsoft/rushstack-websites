@@ -2,7 +2,7 @@
 title: 仓库中添加项目
 ---
 
-_该文章是 [创建一个新的仓库](../../maintainer/setup_new_repo) 的继续。（如果你想看最终结果，可以在 GitHub 上查看 [rush 示例](https://github.com/microsoft/rush-example)）_
+_该文章是 [创建一个新的仓库](../maintainer/setup_new_repo.md) 的继续。（如果你想看最终结果，可以在 GitHub 上查看 [rush 示例](https://github.com/microsoft/rush-example)）_
 
 ## 步骤 4: 添加第一个项目
 
@@ -130,14 +130,14 @@ Rush 通常会使用系统的 PATH 环境变量来查找脚本，然而，如果
 $ rush build
 ```
 
-Rush 提供了大量命令行选项来构建项目，可以参考 [rush build](../../commands/rush_build) 和 [rush rebuild](../../commands/rush_rebuild).
+Rush 提供了大量命令行选项来构建项目，可以参考 [rush build](../commands/rush_build.md) 和 [rush rebuild](../commands/rush_rebuild.md).
 
 > **幻影依赖错误**
 >
-> Rush 和 PNPM 使用符号连接来防止项目中引入[幻影依赖](../../advanced/phantom_deps)，如果一个 NPM 依赖并没有在项目内的 **package.json**
+> Rush 和 PNPM 使用符号连接来防止项目中引入[幻影依赖](../advanced/phantom_deps.md)，如果一个 NPM 依赖并没有在项目内的 **package.json**
 > 中声明，那么当你尝试引入它时会有一个运行时报错。当你将项目迁移到 Rush 时，幻影依赖报错是最常见的问题之一。通常的解决方案是将缺失的依赖添加到 **package.json** 文件中。
 >
-> [rush scan](../../commands/rush_scan) 指令可以快速地检查出这些问题。
+> [rush scan](../commands/rush_scan.md) 指令可以快速地检查出这些问题。
 
 ## 步骤 7: 添加更多的项目
 

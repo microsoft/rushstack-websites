@@ -83,7 +83,7 @@ var glob = require('glob'); // ???
 }
 ```
 
-这会允许人们执行 `npm run deploy-app`, 该脚本会被自动部署 monorepo 中的所有项目（不要再 Rush 中使用这种方式，请使用[自定义指令](../../maintainer/custom_commands)）。注意，这个幻想的脚本需要使用 **semver** 这个库，所以它被添加到 `devDependencies` 列表中，在项目根目录中，开发者可以在执行 `npm run deploy-app` 之前执行 `npm install`.
+这会允许人们执行 `npm run deploy-app`, 该脚本会被自动部署 monorepo 中的所有项目（不要再 Rush 中使用这种方式，请使用[自定义指令](../maintainer/custom_commands.md)）。注意，这个幻想的脚本需要使用 **semver** 这个库，所以它被添加到 `devDependencies` 列表中，在项目根目录中，开发者可以在执行 `npm run deploy-app` 之前执行 `npm install`.
 
 安装目录的结构如下：
 
