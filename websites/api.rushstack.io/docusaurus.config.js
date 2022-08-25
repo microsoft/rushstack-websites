@@ -20,11 +20,8 @@ const config = {
 
   trailingSlash: true,
 
-  // TOOD: Discover and fix all broken links before we deploy.
-  // TODO: Decide if we want broken links to actually fail deployment
-  // (potentially long turn-around time?).
-  onBrokenLinks: 'log', //'throw',
-  onBrokenMarkdownLinks: 'log', //'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   favicon: 'images/favicon.ico',
   organizationName: 'microsoft',
