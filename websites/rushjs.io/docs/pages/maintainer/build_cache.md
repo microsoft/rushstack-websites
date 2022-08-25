@@ -255,11 +255,6 @@ page for your storage account.
 For Amazon S3, this will be your AWS Access Key ID and AWS Secret Access Key separated by a colon,
 such as: `<AccessKeyID>:<SecretAccessKey>`.
 
-If your CI system uses a custom build orchestrator with Rush
-(for example [BuildXL](https://github.com/Microsoft/BuildXL)),
-the [rush write-build-cache](../commands/rush_write-build-cache.md) command enables you to
-populate a cache entry from a specific project's output folders.
-
 > The build cache feature is still under development. Feedback is welcome!
 >
 > Some relevant GitHub issues to follow:
