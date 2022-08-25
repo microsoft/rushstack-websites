@@ -156,6 +156,7 @@ importers:
       '@rushstack/node-core-library': ~3.50.1
       '@svgr/webpack': ~6.3.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       algoliasearch: ~4.14.2
@@ -200,6 +201,7 @@ importers:
       '@microsoft/api-documenter': 7.19.4
       '@rushstack/node-core-library': 3.50.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       algoliasearch: 4.14.2
@@ -223,6 +225,7 @@ importers:
       '@mdx-js/react': ~1.6.22
       '@svgr/webpack': ~6.3.1
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       algoliasearch: ~4.14.2
@@ -266,6 +269,7 @@ importers:
       '@babel/runtime': 7.17.9
       '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       algoliasearch: 4.14.2
@@ -289,6 +293,7 @@ importers:
       '@svgr/webpack': ~6.3.1
       '@types/history': 5.0.0
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
       '@types/react-router-dom': ^5.3.3
@@ -334,6 +339,7 @@ importers:
       '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
       '@types/history': 5.0.0
       '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
       '@types/react': 17.0.48
       '@types/react-dom': 17.0.17
       '@types/react-router-dom': 5.3.3

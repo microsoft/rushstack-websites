@@ -102,6 +102,8 @@ function getSiteConfig(packageName) {
         sitePrefixes,
         configOverrides: {}
       };
+    default:
+      throw new Error('The target was not specified');
   }
 }
 
