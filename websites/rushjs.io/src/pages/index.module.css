@@ -6,7 +6,7 @@
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 
-  background: url('/images/bg-masthead-code.jpg') no-repeat center center;
+  background: url('~/images/bg-masthead-code.jpg') no-repeat center center;
   background-size: cover;
 }
 
