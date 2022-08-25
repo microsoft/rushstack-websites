@@ -48,5 +48,5 @@ Optional arguments:
 
 ## See also
 
-- [Deploying projects](../../maintainer/deploying)
-- [rush init-deploy](../../commands/rush_init-deploy)
+- [Deploying projects](../maintainer/deploying.md)
+- [rush init-deploy](../commands/rush_init-deploy.md)

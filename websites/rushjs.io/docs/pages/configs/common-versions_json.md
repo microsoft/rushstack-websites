@@ -2,7 +2,7 @@
 title: common-versions.json
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **common-versions.json**:
 
 **common/config/rush/common-versions.json**

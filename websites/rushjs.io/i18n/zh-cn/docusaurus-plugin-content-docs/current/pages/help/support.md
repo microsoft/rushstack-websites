@@ -4,7 +4,7 @@ title: 获取支持
 
 Rush 目前由 MS Office 团队开发，不过 Microsoft 不提供官方支持，但有许多社区选项可供您使用：
 
-- [常见问题回答](../../help/faq)
+- [常见问题回答](../help/faq.md)
 
 - **发现了一个 bug?** 你可以在 **rushstack** 仓库下开启一个 [issue](https://github.com/microsoft/rushstack/issues)
 

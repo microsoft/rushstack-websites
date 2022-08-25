@@ -3,7 +3,7 @@ title: rush-plugin-manifest.json (experimental)
 ---
 
 This is the template for the **rush-plugin-manifest.json** file that is used when
-[creating a Rush plugin](../extensibility/creating_plugins).
+[creating a Rush plugin](../extensibility/creating_plugins.md).
 
 **&lt;your plugin project&gt;/rush-plugin-manifest.json**
 
@@ -80,5 +80,5 @@ This is the template for the **rush-plugin-manifest.json** file that is used whe
 
 ## See also
 
-- [Creating a Rush plugin](../extensibility/creating_plugins)
-- [Using Rush plugins](../maintainer/using_rush_plugins)
+- [Creating a Rush plugin](../extensibility/creating_plugins.md)
+- [Using Rush plugins](../maintainer/using_rush_plugins.md)

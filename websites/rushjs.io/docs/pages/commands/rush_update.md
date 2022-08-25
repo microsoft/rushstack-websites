@@ -72,4 +72,4 @@ Optional arguments:
 
 ## See also
 
-- [rush install](../../commands/rush_install)
+- [rush install](../commands/rush_install.md)

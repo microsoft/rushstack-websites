@@ -9,7 +9,7 @@ _Phased builds_ are a way to increase parallelism, by defining individual operat
 executed on a project. As an example, if project B depends on project A, we could first build project A, and then
 begin building project B while running the unit tests for project A in parallel.
 
-> NOTE: Phased builds are built on top of, and require, the build cache feature -- if you haven't already enabled the build cache for your monorepo, see [Enabling build cache (experimental)](../build_cache).
+> NOTE: Phased builds are built on top of, and require, the build cache feature -- if you haven't already enabled the build cache for your monorepo, see [Enabling build cache (experimental)](../maintainer/build_cache.md).
 
 ## Enable the experiment
 

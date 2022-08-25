@@ -51,4 +51,4 @@ update" 会在瞬时完成。注意：在某些情况下应该使用 "rush insta
 
 ## 参考
 
-- [rush install](../../commands/rush_install)
+- [rush install](../commands/rush_install.md)

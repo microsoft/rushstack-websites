@@ -99,5 +99,5 @@ Optional arguments:
 
 ## See also
 
-- [Publishing packages](../../maintainer/publishing)
-- [rush version](../../commands/rush_version)
+- [Publishing packages](../maintainer/publishing.md)
+- [rush version](../commands/rush_version.md)

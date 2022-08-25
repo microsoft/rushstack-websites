@@ -10,7 +10,7 @@ Rush plugins enable you to:
 
 Plugins are distributed via an NPM package, which we call a **plugin package**. A single
 package may define one or more Rush plugins. (If you are interested in creating your plugin package,
-see the article [Creating rush plugins](../../extensibility/creating_plugins).)
+see the article [Creating rush plugins](../extensibility/creating_plugins.md).)
 
 ## Enabling a Rush plugin
 
@@ -20,7 +20,7 @@ let's configure a hypothetical plugin called `"example"` that is provided by the
 
 ### Step 1: Configure an autoinstaller
 
-Plugins rely on Rush's [autoinstaller](../../maintainer/autoinstallers) feature for on-demand
+Plugins rely on Rush's [autoinstaller](../maintainer/autoinstallers.md) feature for on-demand
 installation of their NPM package.
 
 Here's how to create a new autoinstaller called `rush-plugins`:
@@ -92,7 +92,7 @@ Continuing our example:
 ```
 
 The `pluginName` field can be found in the
-[rush-plugin-manifest.json](../../configs/rush-plugin-manifest_json)
+[rush-plugin-manifest.json](../configs/rush-plugin-manifest_json.md)
 of the plugin package.
 
 ### Step 3: Optional config file
@@ -136,6 +136,6 @@ If you created an interesting plugin for Rush, let us know in a GitHub issue. Th
 
 ## See also
 
-- [rush init-autoinstaller](../commands/rush_init-autoinstaller)
-- [rush update-autoinstaller](../commands/rush_update-autoinstaller)
-- [Creating a Rush plugin](../extensibility/creating_plugins)
+- [rush init-autoinstaller](../commands/rush_init-autoinstaller.md)
+- [rush update-autoinstaller](../commands/rush_update-autoinstaller.md)
+- [Creating a Rush plugin](../extensibility/creating_plugins.md)

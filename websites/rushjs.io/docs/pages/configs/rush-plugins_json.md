@@ -3,7 +3,7 @@ title: rush-plugins.json (experimental)
 ---
 
 This is the template for the **rush-plugins.json** file that is used to enable
-[Rush plugins](../maintainer/using_rush_plugins).
+[Rush plugins](../maintainer/using_rush_plugins.md).
 
 **common/config/rush/command-line.json**
 
@@ -43,5 +43,5 @@ This is the template for the **rush-plugins.json** file that is used to enable
 
 ## See also
 
-- [Using Rush plugins](../maintainer/using_rush_plugins)
-- [Creating a Rush plugin](../extensibility/creating_plugins)
+- [Using Rush plugins](../maintainer/using_rush_plugins.md)
+- [Creating a Rush plugin](../extensibility/creating_plugins.md)

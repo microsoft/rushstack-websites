@@ -121,5 +121,5 @@ Optional arguments:
 
 ## See also
 
-- [Selecting subsets of projects](../../developer/selecting_subsets)
-- [rush build](../../commands/rush_build)
+- [Selecting subsets of projects](../developer/selecting_subsets.md)
+- [rush build](../commands/rush_build.md)

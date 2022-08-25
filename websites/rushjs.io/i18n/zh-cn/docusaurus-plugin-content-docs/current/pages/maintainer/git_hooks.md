@@ -54,4 +54,4 @@ fi
 
 Prettier 工具保证代码遵守统一的缩进、逗号等格式。通过配置一个 `git commit` 钩子来自动调用 Prettier, 便可以在不影响其他开发者的情况下进行修复。
 
-[启用 Prettier](../../maintainer/enabling_prettier) 一文有手把手的教学。
+[启用 Prettier](../maintainer/enabling_prettier.md) 一文有手把手的教学。

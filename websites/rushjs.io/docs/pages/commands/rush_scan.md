@@ -25,4 +25,4 @@ Optional arguments:
 
 ## See also
 
-- [Phantom dependencies](../../advanced/phantom_deps)
+- [Phantom dependencies](../advanced/phantom_deps.md)

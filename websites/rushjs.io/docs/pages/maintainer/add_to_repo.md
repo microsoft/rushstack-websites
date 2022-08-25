@@ -2,7 +2,7 @@
 title: Adding projects to a repo
 ---
 
-_This continues the tutorial that started with "[Setting up a new repo](../../maintainer/setup_new_repo)". (To see a fully worked out sample based on these steps, take a look at the [rush-example](https://github.com/microsoft/rush-example) repo on GitHub.)_
+_This continues the tutorial that started with "[Setting up a new repo](../maintainer/setup_new_repo.md)". (To see a fully worked out sample based on these steps, take a look at the [rush-example](https://github.com/microsoft/rush-example) repo on GitHub.)_
 
 ## Step 4: Add your first project
 
@@ -134,16 +134,16 @@ Now let's try building your project. From anywhere under the folder containing *
 rush build
 ```
 
-Rush provides a lot of command-line switches for building projects. See [rush build](../../commands/rush_build) and [rush rebuild](../../commands/rush_rebuild) for details.
+Rush provides a lot of command-line switches for building projects. See [rush build](../commands/rush_build.md) and [rush rebuild](../commands/rush_rebuild.md) for details.
 
 > **Phantom dependency errors**
 >
-> Rush and PNPM use symlinks to prevent projects from importing [phantom dependencies](../../advanced/phantom_deps).
+> Rush and PNPM use symlinks to prevent projects from importing [phantom dependencies](../advanced/phantom_deps.md).
 > If an NPM dependency is not declared in your **package.json** file, a runtime error may occur if your project tries to
 > import it. These phantom dependency errors are one of the most common issues when migrating an existing project into
 > a Rush monorepo. Generally the fix is simply to add the missing dependency to your **package.json** file.
 >
-> The [rush scan](../../commands/rush_scan) command is a quick way to detect these problems.
+> The [rush scan](../commands/rush_scan.md) command is a quick way to detect these problems.
 
 ## Step 7: Adding more projects
 

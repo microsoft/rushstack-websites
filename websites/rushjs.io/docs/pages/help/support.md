@@ -4,7 +4,7 @@ title: Getting support
 
 Rush is actively developed by a team within MS Office. Although Microsoft does not provide official support for Rush, there are various community options for help:
 
-- [Frequently Asked Questions](../../help/faq)
+- [Frequently Asked Questions](../help/faq.md)
 
 - **Found a bug?** You can [open a GitHub issue](https://github.com/microsoft/rushstack/issues)
   in the **rushstack** monorepo where Rush is developed

@@ -15,4 +15,4 @@ Optional arguments:
 
 ## See also
 
-- [rush link](../../commands/rush_link)
+- [rush link](../commands/rush_link.md)

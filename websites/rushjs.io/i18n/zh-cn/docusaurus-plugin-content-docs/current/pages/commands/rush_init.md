@@ -19,6 +19,6 @@ title: rush init
 
 ## 参考
 
-- [开始一个新仓库](../../maintainer/setup_new_repo)
+- [开始一个新仓库](../maintainer/setup_new_repo.md)
 - GitHub 上的[rush 示例](https://github.com/microsoft/rush-example)仓库
-- [rush init-deploy](../../commands/rush_init-deploy)
+- [rush init-deploy](../commands/rush_init-deploy.md)

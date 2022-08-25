@@ -20,14 +20,14 @@ However, this could potentially include many extraneous files and NPM packages. 
 only `app1` and its regular dependencies (`ext-lib7`, `lib3`, `lib5`). We do not want to include dev dependencies such
 as `ext-tool8`.
 
-The [rush deploy](../../commands/rush_deploy) command calculates this set of files and
+The [rush deploy](../commands/rush_deploy.md) command calculates this set of files and
 copies them to a target folder, which you can then upload to your server.
 
 ## Configuring "rush deploy"
 
 The `rush deploy` command reads its settings from a config file
-[common/config/rush/deploy.json](../../configs/deploy_json). This config file is not created
-by `rush init`. Instead, you create the file using [rush init-deploy](../../commands/rush_init-deploy).
+[common/config/rush/deploy.json](../configs/deploy_json.md). This config file is not created
+by `rush init`. Instead, you create the file using [rush init-deploy](../commands/rush_init-deploy.md).
 
 Continuing our example, we can create the file using this command:
 
@@ -213,6 +213,6 @@ in its `"deploymentProjectNames"` array.
 
 ## See also
 
-- [common/config/rush/deploy.json](../../configs/deploy_json) config file
-- [rush deploy](../../commands/rush_deploy) command-line parameters
-- [rush init-deploy](../../commands/rush_init-deploy) command-line parameters
+- [common/config/rush/deploy.json](../configs/deploy_json.md) config file
+- [rush deploy](../commands/rush_deploy.md) command-line parameters
+- [rush init-deploy](../commands/rush_init-deploy.md) command-line parameters

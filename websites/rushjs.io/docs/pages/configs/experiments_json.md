@@ -2,7 +2,7 @@
 title: experiments.json
 ---
 
-This is the template that [rush init](../../commands/rush_init)
+This is the template that [rush init](../commands/rush_init.md)
 generates for **experiments.json**:
 
 **common/config/rush/experiments.json**

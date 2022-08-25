@@ -24,6 +24,6 @@ Optional arguments:
 
 ## See also
 
-- [Setting up a new repo](../../maintainer/setup_new_repo)
+- [Setting up a new repo](../maintainer/setup_new_repo.md)
 - The [rush-example](https://github.com/microsoft/rush-example) repo on GitHub
-- [rush init-deploy](../../commands/rush_init-deploy)
+- [rush init-deploy](../commands/rush_init-deploy.md)

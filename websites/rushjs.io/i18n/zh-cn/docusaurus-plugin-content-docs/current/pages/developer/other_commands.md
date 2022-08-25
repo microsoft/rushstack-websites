@@ -20,11 +20,11 @@ $ rush update --full
 
 - **如果你变更了某个库**：假设你的 Git 仓库包含 50 个项目，同时你仅仅在 **widget** 库中修复了一些 bugs, 同时你需要给所有用到该库的项目进行单元测试，但是重新构建所有项目有些浪费时间，因此可以通过 `rush rebuild --from widget` 来构建只包含该库的项目。
 
-[只选择部分项目](../../developer/selecting_subsets)一文详细描述了如何只选择部分项目。
+[只选择部分项目](../developer/selecting_subsets.md)一文详细描述了如何只选择部分项目。
 
 ## 一种更快的安装方式
 
-如果你的仓库正在使用 PNPM 并在 [rush.json](../../configs/rush_json) 中启用了 `useWorkspaces=true`，那么就可以使用 “部分安装” 的功能，该功能可以通过仅在指定的项目中安装 NPM 包来减少安装时间。
+如果你的仓库正在使用 PNPM 并在 [rush.json](../configs/rush_json.md) 中启用了 `useWorkspaces=true`，那么就可以使用 “部分安装” 的功能，该功能可以通过仅在指定的项目中安装 NPM 包来减少安装时间。
 
 例如：
 

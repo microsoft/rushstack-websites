@@ -18,4 +18,4 @@ from '__'", "require('__')", and "System.import('__'). 这种方法并不完美�
 
 ## 参考
 
-- [幻影依赖](../../advanced/phantom_deps)
+- [幻影依赖](../advanced/phantom_deps.md)

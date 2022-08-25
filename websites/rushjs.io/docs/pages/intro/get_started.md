@@ -46,5 +46,5 @@ rush rebuild --verbose
 
 Choose your tutorial scenario...
 
-- [I'm a developer.](../../developer/new_developer) Learn how to work in a repo that already uses Rush.
-- [I'm a repo maintainer.](../../maintainer/setup_new_repo) Learn how to convert your repo to use the Rush system.
+- [I'm a developer.](../developer/new_developer.md) Learn how to work in a repo that already uses Rush.
+- [I'm a repo maintainer.](../maintainer/setup_new_repo.md) Learn how to convert your repo to use the Rush system.

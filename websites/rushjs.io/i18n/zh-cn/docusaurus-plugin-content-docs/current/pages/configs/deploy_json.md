@@ -2,7 +2,7 @@
 title: deploy.json
 ---
 
-这是 [rush init-deploy](../../commands/rush_init-deploy) 为 **deploy.json** 和 **deploy-&lt;scenario name&gt;>.json** 生成的模版文件：
+这是 [rush init-deploy](../commands/rush_init-deploy.md) 为 **deploy.json** 和 **deploy-&lt;scenario name&gt;>.json** 生成的模版文件：
 
 **common/config/rush/deploy.json**
 
@@ -127,5 +127,5 @@ title: deploy.json
 
 ## 参考
 
-- [构建项目](../../maintainer/deploying)
-- [rush deploy](../../commands/rush_deploy) command-line parameters
+- [构建项目](../maintainer/deploying.md)
+- [rush deploy](../commands/rush_deploy.md) command-line parameters

@@ -2,7 +2,7 @@
 title: build-cache.json（实验性）
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **build-cache.json** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **build-cache.json** 文件：
 
 **common/config/rush/build-cache.json**
 
@@ -98,4 +98,4 @@ title: build-cache.json（实验性）
 
 ## 参考
 
-- [开启构建缓存](../../maintainer/build_cache)
+- [开启构建缓存](../maintainer/build_cache.md)

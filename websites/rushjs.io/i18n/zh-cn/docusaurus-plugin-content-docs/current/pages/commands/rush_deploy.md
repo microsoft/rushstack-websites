@@ -34,5 +34,5 @@ title: rush deploy
 
 ## 参考
 
-- [部署项目](../../maintainer/deploying)
-- [rush init-deploy](../../commands/rush_init-deploy)
+- [部署项目](../maintainer/deploying.md)
+- [rush init-deploy](../commands/rush_init-deploy.md)

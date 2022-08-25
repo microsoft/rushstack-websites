@@ -2,7 +2,7 @@
 title: NPM doppelgangers
 ---
 
-_This article continues the discussion from the "[Phantom dependencies](../../advanced/phantom_deps)" section. It's recommended to read that first._
+_This article continues the discussion from the "[Phantom dependencies](../advanced/phantom_deps.md)" section. It's recommended to read that first._
 
 ## How NPM doppelgangers arise
 

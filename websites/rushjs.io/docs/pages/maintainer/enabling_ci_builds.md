@@ -30,7 +30,7 @@ But there's one hitch -- what if your CI environment doesn't come with Rush prei
 You might consider sticking a **package.json** at the root of your repo, and then invoking
 `npm install` to install Rush. Unfortunately this would introduce a phantom **node_modules**
 folder, which defeats Rush's protection against
-[phantom dependencies](../../advanced/phantom_deps).
+[phantom dependencies](../advanced/phantom_deps.md).
 
 ## install-run-rush.js for bootstrapping Rush
 

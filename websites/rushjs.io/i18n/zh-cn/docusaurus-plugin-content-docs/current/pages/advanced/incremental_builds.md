@@ -9,7 +9,7 @@ Rush 的**增量构建**功能可以通过跳过某些已经是最新的库来�
 3. 如果该项目依赖另一个 Rush 项目，这些项目都是最新的，并且
 4. 命令行参数没有变化（例如，在 `rush build` 后调用 `rush build --production` 需要重新构建）。
 
-该功能可以和[选择项目参数](../../developer/selecting_subsets)结合使用，其作用是开发者显式的告诉 Rush 那些项目需要被处理。增量构建可以重新使用本地磁盘上已经存在的输出（与[构建缓存](../../maintainer/build_cache)形成鲜明的对比，构建缓存可以从云端获取到之前的构建缓存，它依然是实验性的功能，但是它可能最终会替换增量构建。)
+该功能可以和[选择项目参数](../developer/selecting_subsets.md)结合使用，其作用是开发者显式的告诉 Rush 那些项目需要被处理。增量构建可以重新使用本地磁盘上已经存在的输出（与[构建缓存](../maintainer/build_cache.md)形成鲜明的对比，构建缓存可以从云端获取到之前的构建缓存，它依然是实验性的功能，但是它可能最终会替换增量构建。)
 
 ## 如何使用
 
@@ -25,7 +25,7 @@ $ rush build
 $ rush build
 ```
 
-`rush build` 是增量构建（`rush rebuild` 不是增量构建）。如果是你自定义的[全局指令](../../maintainer/custom_commands), 你可以在配置文件 [command-line.json](../../configs/command-line_json) 中启用 `"incremental"` 选项来使其成为增量构建。
+`rush build` 是增量构建（`rush rebuild` 不是增量构建）。如果是你自定义的[全局指令](../maintainer/custom_commands.md), 你可以在配置文件 [command-line.json](../configs/command-line_json.md) 中启用 `"incremental"` 选项来使其成为增量构建。
 
 ## 它是如何工作的？
 
@@ -69,5 +69,5 @@ $ rush build --changed-projects-only
 
 参考
 
-- [选择部分项目](../../developer/selecting_subsets)
-- [使用监听模式](../../advanced/watch_mode)
+- [选择部分项目](../developer/selecting_subsets.md)
+- [使用监听模式](../advanced/watch_mode.md)

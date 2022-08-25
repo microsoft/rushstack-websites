@@ -136,4 +136,4 @@ For older package managers, automatically adding these entries tended to reduce 
 However, implicitly preferred versions can cause trouble for certain dependencies with incompatible `peerDependencies`
 ranges. If you're encountering installation errors involving peer dependencies, we recommend to disable
 this behavior by setting `implicitlyPreferredVersions` to `false` in the
-[common/config/rush/common-versions.json](../../configs/common-versions_json) config file.
+[common/config/rush/common-versions.json](../configs/common-versions_json.md) config file.

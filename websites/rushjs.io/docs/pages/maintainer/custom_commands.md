@@ -186,4 +186,4 @@ In other words, Rush's custom parameters are simply appended to the **package.js
 
 ## See also
 
-- [command-line.json](../../configs/command-line_json)
+- [command-line.json](../configs/command-line_json.md)

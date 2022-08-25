@@ -12,7 +12,7 @@ Rush plugins enable repository maintainers to:
 
 A **plugin package** is an NPM package that provides one or more **Rush plugins**.
 The plugins are described by a **plugin manifest** file. This file is always named
-[rush-plugin-manifest.json](../../configs/rush-plugin-manifest_json)
+[rush-plugin-manifest.json](../configs/rush-plugin-manifest_json.md)
 and found in same folder as the **package.json** file.
 
 ## Common extensibility scenarios
@@ -21,7 +21,7 @@ and found in same folder as the **package.json** file.
 
 A plugin can define new commands and parameters that extend Rush's command-line,
 using the same **command-line.json** file format that is used to implement
-[Rush custom commands](../../maintainer/custom_commands).
+[Rush custom commands](../maintainer/custom_commands.md).
 
 Here's an example:
 
@@ -172,7 +172,7 @@ setting in your plugin manifest:
 
 ## See also
 
-- [Using Rush plugins](../../maintainer/using_rush_plugins)
-- [rush-plugin-manifest.json](../../configs/rush-plugin-manifest_json) config file documentation
-- [command-line.json](../../configs/command-line_json)
-- [Rush custom commands](../../maintainer/custom_commands)
+- [Using Rush plugins](../maintainer/using_rush_plugins.md)
+- [rush-plugin-manifest.json](../configs/rush-plugin-manifest_json.md) config file documentation
+- [command-line.json](../configs/command-line_json.md)
+- [Rush custom commands](../maintainer/custom_commands.md)

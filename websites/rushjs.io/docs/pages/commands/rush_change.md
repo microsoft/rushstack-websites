@@ -57,5 +57,5 @@ Optional arguments:
 
 ## See also
 
-- [Authoring change logs](../../best_practices/change_logs)
-- [rush version](../../commands/rush_version)
+- [Authoring change logs](../best_practices/change_logs.md)
+- [rush version](../commands/rush_version.md)

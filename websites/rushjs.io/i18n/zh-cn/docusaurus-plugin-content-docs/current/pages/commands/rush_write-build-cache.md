@@ -17,4 +17,4 @@ title: rush write-build-cache (experimental)
 
 ## 参考
 
-- [启用构建缓存](../../maintainer/build_cache)
+- [启用构建缓存](../maintainer/build_cache.md)

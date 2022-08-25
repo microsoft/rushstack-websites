@@ -21,13 +21,13 @@ field from **rush.json**.
 Setting this environment variable overrides the value of `allowWarningsInSuccessfulBuild`
 in the **command-line.json** configuration file. Specify `1` to allow warnings in a successful build,
 or `0` to disallow them. (See the comments in the
-[command-line.json](../../configs/command-line_json)
+[command-line.json](../configs/command-line_json.md)
 file for more information).
 
 ## RUSH_BUILD_CACHE_CREDENTIAL (EXPERIMENTAL)
 
 This environment variable is used by the experimental
-[build cache](../../maintainer/build_cache)
+[build cache](../maintainer/build_cache.md)
 feature.
 
 Provides a credential for accessing the remote build cache, if configured. This credential overrides
@@ -43,11 +43,11 @@ about SAS tokens.
 ## RUSH_BUILD_CACHE_ENABLED (EXPERIMENTAL)
 
 This environment variable is used by the experimental
-[build cache](../../maintainer/build_cache)
+[build cache](../maintainer/build_cache.md)
 feature.
 
 Setting this environment variable overrides the value of `buildCacheEnabled` in the
-[build-cache.json](../../configs/build-cache_json)
+[build-cache.json](../configs/build-cache_json.md)
 configuration file. Specify `1` to enable the build cache or `0` to disable it.
 
 If set to `0`, this is equivalent to passing the `--disable-build-cache` flag.
@@ -57,7 +57,7 @@ If there is no build cache configured, then this environment variable is ignored
 ## RUSH_BUILD_CACHE_WRITE_ALLOWED (EXPERIMENTAL)
 
 This environment variable is used by the experimental
-[build cache](../../maintainer/build_cache)
+[build cache](../maintainer/build_cache.md)
 feature.
 
 Overrides the value of `isCacheWriteAllowed` in the `build-cache.json` configuration file. The value of this
@@ -67,7 +67,7 @@ this environment variable is ignored.
 ## RUSH_DEPLOY_TARGET_FOLDER
 
 This environment variable can be used to specify the `--target-folder` parameter
-for the [rush deploy](../../commands/rush_deploy) command.
+for the [rush deploy](../commands/rush_deploy.md) command.
 
 ## RUSH_GIT_BINARY_PATH
 
@@ -105,7 +105,7 @@ assign when they execute lifecycle scripts.
 
 Specifies the maximum number of concurrent processes to launch during a build.
 For more information, see the command-line help for the `--parallelism` parameter for
-[rush build](../../commands/rush_build).
+[rush build](../commands/rush_build.md).
 
 ## RUSH_PNPM_STORE_PATH
 
@@ -145,4 +145,4 @@ This variable selects a specific installation variant for Rush to use when insta
 and linking package dependencies.
 
 For more information about this feature, see
-[Installation Variants](../../advanced/installation_variants).
+[Installation Variants](../advanced/installation_variants.md).

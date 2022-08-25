@@ -76,4 +76,4 @@ The Prettier tool ensures that source files follow consistent conventions for sy
 By configuring a `git commit` hook to invoke Prettier automatically, you can apply these fixes without any effort
 on the developer's part.
 
-The [Enabling Prettier](../../maintainer/enabling_prettier) article provides step-by-step instructions.
+The [Enabling Prettier](../maintainer/enabling_prettier.md) article provides step-by-step instructions.

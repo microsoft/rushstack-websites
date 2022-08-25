@@ -87,7 +87,7 @@ Are there certain people on your team who constantly find exciting new libraries
 
 Since different levels of scrutiny are often required (e.g. for a shipping product, versus an intern project, versus an internal library), we distinguish "review categories". This allows us to approve a package once for an entire category of projects, while still being alerted when the dependency is used somewhere else.
 
-Continuing the example scenario from [Setting up a new repo](../../maintainer/setup_new_repo), here's how we would update **rush.json** to define some review categories for "published" versus "internal" projects:
+Continuing the example scenario from [Setting up a new repo](../maintainer/setup_new_repo.md), here's how we would update **rush.json** to define some review categories for "published" versus "internal" projects:
 
 ```javascript
 {

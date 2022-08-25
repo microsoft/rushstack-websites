@@ -11,10 +11,10 @@ In this context, "already up to date" means:
 4. the command line parameters haven't changed. (For example, invoking `rush build --production`
    after `rush build` would require rebuilding.)
 
-This feature can be combined with [project selection parameters](../../developer/selecting_subsets),
+This feature can be combined with [project selection parameters](../developer/selecting_subsets.md),
 where a person explicitly tells Rush which projects to process. Incremental builds reuse existing outputs on
 your local disk. (This can be contrasted with Rush's upcoming
-[build cache](../../maintainer/build_cache)
+[build cache](../maintainer/build_cache.md)
 feature that can fetch previously built outputs from a cloud storage container. The build cache is still experimental,
 but it may eventually replace incremental builds entirely.)
 
@@ -33,9 +33,9 @@ rush build
 ```
 
 The native `rush build` is hard-wired to be incremental. (And `rush rebuild` is the non-incremental variant of
-this command.) If you define your own custom [bulk commands](../../maintainer/custom_commands),
+this command.) If you define your own custom [bulk commands](../maintainer/custom_commands.md),
 you can make them incremental as well by enabling the `"incremental"` option in
-the [command-line.json](../../configs/command-line_json) config file.
+the [command-line.json](../configs/command-line_json.md) config file.
 
 ## How does it work?
 
@@ -97,5 +97,5 @@ to be built. If that assumption is incorrect, you can always do `rush build` to 
 
 ## See also
 
-- [Selecting subsets of projects](../../developer/selecting_subsets)
-- [Using watch mode](../../advanced/watch_mode)
+- [Selecting subsets of projects](../developer/selecting_subsets.md)
+- [Using watch mode](../advanced/watch_mode.md)

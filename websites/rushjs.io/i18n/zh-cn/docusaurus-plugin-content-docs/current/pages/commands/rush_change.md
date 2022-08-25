@@ -37,5 +37,5 @@ title: rush change
 
 ## 参考
 
-- [编写变更日志](../../best_practices/change_logs)
-- [rush version](../../commands/rush_version)
+- [编写变更日志](../best_practices/change_logs.md)
+- [rush version](../commands/rush_version.md)

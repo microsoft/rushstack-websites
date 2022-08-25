@@ -3,7 +3,7 @@
 title: 选择部分项目
 ---
 
-诸如 `rush build` 和 `rush rebuild` 等 [Bulk 指令](../../maintainer/custom_commands) 默认会操作该 monorepo 内的所有项目。当你的项目越来越多时，这种操作变得十分耗时，为了加速这一过程，Rush 提供了一系列命令行参数来选择部分项目。
+诸如 `rush build` 和 `rush rebuild` 等 [Bulk 指令](../maintainer/custom_commands.md) 默认会操作该 monorepo 内的所有项目。当你的项目越来越多时，这种操作变得十分耗时，为了加速这一过程，Rush 提供了一系列命令行参数来选择部分项目。
 
 假设我们的 Rush 工程形式如下图：
 
@@ -166,10 +166,10 @@ $ rush build --only A --impacted-by-except B --to F
 
 ## 更多
 
-- [增量构建](../../advanced/incremental_builds)
+- [增量构建](../advanced/incremental_builds.md)
 
-- [watch 模式](../../advanced/incremental_builds)
+- [watch 模式](../advanced/incremental_builds.md)
 
-- [rush build](../../commands/rush_build)
+- [rush build](../commands/rush_build.md)
 
-- [rush rebuild](../../commands/rush_rebuild)
+- [rush rebuild](../commands/rush_rebuild.md)

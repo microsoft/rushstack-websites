@@ -133,5 +133,5 @@ Optional arguments:
 
 ## See also
 
-- [Selecting subsets of projects](../../developer/selecting_subsets)
-- [rush rebuild](../../commands/rush_rebuild)
+- [Selecting subsets of projects](../developer/selecting_subsets.md)
+- [rush rebuild](../commands/rush_rebuild.md)

@@ -13,14 +13,14 @@ An autoinstaller is defined as folder under **common/autoinstallers/** with a **
 and its own private shrinkwrap file. This folder is added to Git, but it is not a normal Rush project:
 It is not installed by `rush install`, nor does it contain any buildable source code for `rush build`.
 An autoinstaller is purely a container for installing NPM dependencies. Autoinstallers can be associated
-with Rush features such as [custom commands](./custom_commands.md) or [Rush plugins](../extensibility/creating_plugins.md);
+with Rush features such as [custom commands](../maintainer/custom_commands.md) or [Rush plugins](../extensibility/creating_plugins.md);
 when the associated feature is invoked, Rush will automatically install the dependencies.
 
 ## When to use autoinstallers
 
 If you're enabling a Rush plugin, you must configure an autoinstaller.
 
-If you are creating a [Rush custom command](./custom_commands.md) whose script needs NPM dependences,
+If you are creating a [Rush custom command](../maintainer/custom_commands.md) whose script needs NPM dependences,
 there are several possible approaches to consider:
 
 - **rush install**: Typically most dependencies in a Rush monorepo will get installed all together by
@@ -30,7 +30,7 @@ there are several possible approaches to consider:
   [project selection parameters](../developer/selecting_subsets.md) such as
   `rush install --to example-project`.
 
-- **install-run.js**: The [install-run.js](./enabling_ci_builds.md#install-runjs-for-other-commands) script enables
+- **install-run.js**: The [install-run.js](../maintainer/enabling_ci_builds.md#install-runjs-for-other-commands) script enables
   you to install NPM packages outside of `rush install`. This is useful for commands that run in contexts
   where `rush install` is not invoked at all, or where `rush install` may be broken. For example, a Git commit
   hook script gets run on branches where `rush install` might fail: developers often commit work in progress,
@@ -110,6 +110,6 @@ documentation.
 
 - [rush init-autoinstaller](../commands/rush_init-autoinstaller.md)
 - [rush update-autoinstaller](../commands/rush_update-autoinstaller.md)
-- [Enabling Prettier](../../maintainer/enabling_prettier)
-- [Custom commands](./custom_commands.md)
+- [Enabling Prettier](../maintainer/enabling_prettier.md)
+- [Custom commands](../maintainer/custom_commands.md)
 - [Creating Rush plugins](../extensibility/creating_plugins.md)

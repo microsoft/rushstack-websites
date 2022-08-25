@@ -66,5 +66,5 @@ title: rush rebuild
 
 ## 参考
 
-- [选择部分项目](../../developer/selecting_subsets)
-- [rush build](../../commands/rush_build)
+- [选择部分项目](../developer/selecting_subsets.md)
+- [rush build](../commands/rush_build.md)

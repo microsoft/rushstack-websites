@@ -22,7 +22,7 @@ title: rush init-deploy
 
 ## 参考
 
-- [部署项目](../../maintainer/deploying)
-- [deploy.json](../../configs/deploy_json) 配置文件
-- [rush deploy](../../commands/rush_deploy)
-- [rush init](../../commands/rush_init)
+- [部署项目](../maintainer/deploying.md)
+- [deploy.json](../configs/deploy_json.md) 配置文件
+- [rush deploy](../commands/rush_deploy.md)
+- [rush init](../commands/rush_init.md)

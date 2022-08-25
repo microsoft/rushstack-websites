@@ -8,7 +8,7 @@ title: NPM vs PNPM vs Yarn
 
 - [Yarn](https://yarnpkg.com/en/): 它重新实现了 NPM, 与之相比，Yarn 具有相同的管理方式，但是安装速度更快，稳定性更好，而且提供了一些新特性（例如 Yarn workspaces），用于大型开发。
 
-- [PNPM](https:pnpm.js.org/): 它提供了一个全新的包管理模式，该模式解决了[“幻影依赖”和“ NPM 分身”](../../advanced/phantom_deps)的问题，同时[符号链接](https://en.wikipedia.org/wiki/Symbolic_link)使之与 NodeJS 模块解析标准保持 100% 兼容。
+- [PNPM](https:pnpm.js.org/): 它提供了一个全新的包管理模式，该模式解决了[“幻影依赖”和“ NPM 分身”](../advanced/phantom_deps.md)的问题，同时[符号链接](https://en.wikipedia.org/wiki/Symbolic_link)使之与 NodeJS 模块解析标准保持 100% 兼容。
 
 ## 当使用 Rush 时应该选择哪个？
 
@@ -24,7 +24,7 @@ _如果使用 Rush 与 NPM 结合出现问题时，首先尝试下降级到 `"np
 
 #### 关于 PNPM 的思考
 
-- PNPM 是解决 [NPM 分身](../../advanced/npm_doppelgangers) 的唯一选择。在复杂的 monorepo 项目中，NPM 分身 可能会导致很多麻烦，PNPM 在这方面有一个重要的优势。
+- PNPM 是解决 [NPM 分身](../advanced/npm_doppelgangers.md) 的唯一选择。在复杂的 monorepo 项目中，NPM 分身 可能会导致很多麻烦，PNPM 在这方面有一个重要的优势。
 
 - 尽管 PNPM 的链接策略遵循了当下 NodeJS 版本解析辨准，但是很多老包并没有，这可能存在一些兼容性问题。当尝试从 Yarn/NPM 迁移到 PNPM 时，团队需要对一些存在“问题的包”进行一些处理。不兼容性问题经常会出现在：(1) 忘记在 **package.json** 中列出依赖项；(2) 不以标准的方式实现符号链接。这些“问题”包有非常直接的解决方式，但是对于小团队而言可能比较艰难（[PNPM Discord 聊天室](https://discord.gg/mThkzAT) 是一个很好寻求帮助的地方）。
 

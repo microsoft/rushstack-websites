@@ -100,11 +100,11 @@ Rush 中的[格式化策略](https://rushstack.io/pages/heft_tasks/eslint/) 推�
 
 ## Git 钩子的要求
 
-这次我们将实现一个 [Git 钩子](../../maintainer/git_hooks)，它会在 commit 时自动调用 Prettier。
+这次我们将实现一个 [Git 钩子](../maintainer/git_hooks.md)，它会在 commit 时自动调用 Prettier。
 
 注意，`git commit` 是最关键的操作，因此需要保持它快速且可靠，开发者也许想在没有运行 `rush install` 前提交更改。在某些情况下，`rush install` 不能被执行，因为分支可能处于工作状态，因此我们的 Git 钩子不应该依赖于 monorepo 的安装机制。
 
-我们可以使用 Rush 的 [install-run.js](../../maintainer/enabling_ci_builds) 脚本来启动按需 Prettier, 但是它会涉及到一些依赖：
+我们可以使用 Rush 的 [install-run.js](../maintainer/enabling_ci_builds.md) 脚本来启动按需 Prettier, 但是它会涉及到一些依赖：
 
 - `pretty-quick`: 为了加速操作，我们使用 [pretty-quick](https://www.npmjs.com/package/pretty-quick) 来计算出需要 commit 的文件，只有这些文件需要处理，Prettier 不能处理这一部分，因为它不能与 Git 交互。
 - `prettier`: `pretty-quick` 的依赖 Prettier.
@@ -114,7 +114,7 @@ Rush 中的[格式化策略](https://rushstack.io/pages/heft_tasks/eslint/) 推�
 
 ## 启用 Git 钩子
 
-1. 首先，使用 [rush init-autoinstaller](../../commands/rush_init-autoinstaller) 来创建一个自动安装程序：
+1. 首先，使用 [rush init-autoinstaller](../commands/rush_init-autoinstaller.md) 来创建一个自动安装程序：
 
    ```shell
    # 下面指令会创建 common/autoinstallers/rush-prettier/package.json 文件

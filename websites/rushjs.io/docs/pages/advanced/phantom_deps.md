@@ -144,7 +144,7 @@ like this:
 
 This allows people to run `npm run deploy-app`, and our script will automatically deploy all the projects
 in the monorepo. (Don't do this if you're using Rush! Instead define a
-[custom command](../../maintainer/custom_commands).) Notice that this hypothetical script
+[custom command](../maintainer/custom_commands.md).) Notice that this hypothetical script
 needs to use the **semver** library, so it was added to the `devDependencies` list. People are asked to
 run `npm install` in the repo root folder before `npm run deploy-app`.
 

@@ -2,7 +2,7 @@
 title: common-versions.json
 ---
 
-这是 [rush init](../../commands/rush_init) 为 monorepo 生成的模版下的 **command-version.json** 文件：
+这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **command-version.json** 文件：
 
 **common/config/rush/common-versions.json**
 

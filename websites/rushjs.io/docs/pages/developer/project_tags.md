@@ -35,7 +35,7 @@ For example:
   . . .
 ```
 
-For details about the `tag:my-custom-tag` selector syntax, see [Selecting subsets of projects](../../developer/selecting_subsets#selectors).
+For details about the `tag:my-custom-tag` selector syntax, see [Selecting subsets of projects](../developer/selecting_subsets.md#selectors).
 
 ## Tag syntax
 

@@ -136,4 +136,4 @@ Optional arguments:
 
 ## See also
 
-- [rush update](../../commands/rush_update)
+- [rush update](../commands/rush_update.md)

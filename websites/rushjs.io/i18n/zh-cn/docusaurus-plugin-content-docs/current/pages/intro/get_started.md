@@ -48,6 +48,6 @@ $ rush rebuild --verbose
 
 选择适合你的教程
 
-- [我是开发者](../../developer/new_developer) 学习如何在 Rush 下开发。
+- [我是开发者](../developer/new_developer.md) 学习如何在 Rush 下开发。
 
-- [我是仓库的维护者](../../maintainer/setup_new_repo) 学习如何将你的仓库托管到 Rush 下。
+- [我是仓库的维护者](../maintainer/setup_new_repo.md) 学习如何将你的仓库托管到 Rush 下。

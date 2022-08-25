@@ -183,4 +183,4 @@ Optional arguments:
 
 ## 参考
 
-- [command-line.json](../../configs/command-line_json)
+- [command-line.json](../configs/command-line_json.md)

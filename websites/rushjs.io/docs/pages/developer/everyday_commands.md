@@ -26,7 +26,7 @@ What `rush update` does:
 >
 > Most projects don't specify an exact version such as `1.2.3` for a dependency, but instead specify SemVer range such as `1.x` or `^1.2.3`. By itself, this would mean that what gets installed depends on the latest version at the time. Such **nondeterminism** is bad: It would be maddening for a Git branch that built on Monday to mysteriously be failing on Tuesday because of a new release of a library. The shrinkwrap file solves this problem by storing a complete installation plan in a large file that is tracked by Git.
 >
-> The shrinkwrap file has different names depending on the [package manager](../../maintainer/package_managers) that your repo is using: **shrinkwrap.yaml**, **npm-shrinkwrap.json**, or **yarn.lock**
+> The shrinkwrap file has different names depending on the [package manager](../maintainer/package_managers.md) that your repo is using: **shrinkwrap.yaml**, **npm-shrinkwrap.json**, or **yarn.lock**
 
 You will notice that automated CI jobs use `rush install` instead of `rush update`. The difference is that `rush install` won't update any files. Instead, it will fail your PR build if something is out of date, to let you know that you forgot to run `rush update` or forgot to commit the result. (Some people choose to use `rush install` as their everyday command, in order to catch unintended changes to the shrinkwrap file.)
 
@@ -52,7 +52,7 @@ To write change logs, first commit any pending work to Git. Then type `rush chan
 
 Later, Rush's automated publishing workflow will inspect these files to determine which packages need to be published. It will delete the files and copy your messages into the package's CHANGELOG.md file.
 
-👉 See [Authoring change logs](../../best_practices/change_logs) for tips about writing change logs.
+👉 See [Authoring change logs](../best_practices/change_logs.md) for tips about writing change logs.
 
 # Common scenarios
 
