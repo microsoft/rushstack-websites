@@ -2,7 +2,7 @@
 title: 日常用到的 Heft 命令
 ---
 
-[开始使用 Heft](./getting_started.md) 教程介绍了 `heft build` 和 `heft test`. 本文将介绍一些特别有用的日常命令，参考 [Heft 命令行](../heft/cli.md) 一文来获取完整的命令和参数。
+[开始使用 Heft](../heft_tutorials/getting_started.md) 教程介绍了 `heft build` 和 `heft test`. 本文将介绍一些特别有用的日常命令，参考 [Heft 命令行](../heft/cli.md) 一文来获取完整的命令和参数。
 
 ## 调查问题
 

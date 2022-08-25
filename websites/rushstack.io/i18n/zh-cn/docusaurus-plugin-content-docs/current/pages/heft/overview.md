@@ -42,7 +42,7 @@ Heft 通常由 **package.json** 中的 `"build"` 脚本调用。Heft 被设计�
 
 - [与 Rush 交互](../heft_tutorials/heft_and_rush.md) 一文解释了 Heft 与 Rush 如何交互使用
 
-- [Heft 架构](./architecture.md) 一文描述了构建系统的设计细节
+- [Heft 架构](../heft/architecture.md) 一文描述了构建系统的设计细节
 
 ## 链接
 

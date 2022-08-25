@@ -2,7 +2,7 @@
 title: Everyday Heft commands
 ---
 
-The [Getting started with Heft](./getting_started.md) tutorial introduced the `heft build` and `heft test` command-line actions. In this section, we'll call out a few everyday commands that are particularly useful to know about. Refer to the [Heft command line](../heft/cli.md) reference for a full listing of actions and parameters.
+The [Getting started with Heft](../heft_tutorials/getting_started.md) tutorial introduced the `heft build` and `heft test` command-line actions. In this section, we'll call out a few everyday commands that are particularly useful to know about. Refer to the [Heft command line](../heft/cli.md) reference for a full listing of actions and parameters.
 
 ## Investigating problems
 
