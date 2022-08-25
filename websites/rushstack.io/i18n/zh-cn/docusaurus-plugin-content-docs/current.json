@@ -1390,5 +1390,57 @@
   "sidebar.apiSidebar.category.StringValuesTypingsGenerator": {
     "message": "StringValuesTypingsGenerator",
     "description": "The label for category StringValuesTypingsGenerator in sidebar apiSidebar"
+  },
+  "sidebar.docsSidebar.doc.Introduction": {
+    "message": "Introduction",
+    "description": "The label for the doc item Introduction in sidebar docsSidebar, linking to the doc pages/heft/overview"
+  },
+  "sidebar.docsSidebar.doc.Architecture": {
+    "message": "Architecture",
+    "description": "The label for the doc item Architecture in sidebar docsSidebar, linking to the doc pages/heft/architecture"
+  },
+  "sidebar.docsSidebar.doc.api-extractor": {
+    "message": "api-extractor",
+    "description": "The label for the doc item api-extractor in sidebar docsSidebar, linking to the doc pages/heft_tasks/api-extractor"
+  },
+  "sidebar.docsSidebar.doc.copy-files": {
+    "message": "copy-files",
+    "description": "The label for the doc item copy-files in sidebar docsSidebar, linking to the doc pages/heft_tasks/copy-files"
+  },
+  "sidebar.docsSidebar.doc.copy-static-assets": {
+    "message": "copy-static-assets",
+    "description": "The label for the doc item copy-static-assets in sidebar docsSidebar, linking to the doc pages/heft_tasks/copy-static-assets"
+  },
+  "sidebar.docsSidebar.doc.delete-globs": {
+    "message": "delete-globs",
+    "description": "The label for the doc item delete-globs in sidebar docsSidebar, linking to the doc pages/heft_tasks/delete-globs"
+  },
+  "sidebar.docsSidebar.doc.eslint": {
+    "message": "eslint",
+    "description": "The label for the doc item eslint in sidebar docsSidebar, linking to the doc pages/heft_tasks/eslint"
+  },
+  "sidebar.docsSidebar.doc.jest": {
+    "message": "jest",
+    "description": "The label for the doc item jest in sidebar docsSidebar, linking to the doc pages/heft_tasks/jest"
+  },
+  "sidebar.docsSidebar.doc.node-service": {
+    "message": "node-service",
+    "description": "The label for the doc item node-service in sidebar docsSidebar, linking to the doc pages/heft_tasks/node-service"
+  },
+  "sidebar.docsSidebar.doc.sass-typings": {
+    "message": "sass-typings",
+    "description": "The label for the doc item sass-typings in sidebar docsSidebar, linking to the doc pages/heft_tasks/sass-typings"
+  },
+  "sidebar.docsSidebar.doc.tslint": {
+    "message": "tslint",
+    "description": "The label for the doc item tslint in sidebar docsSidebar, linking to the doc pages/heft_tasks/tslint"
+  },
+  "sidebar.docsSidebar.doc.typescript": {
+    "message": "typescript",
+    "description": "The label for the doc item typescript in sidebar docsSidebar, linking to the doc pages/heft_tasks/typescript"
+  },
+  "sidebar.docsSidebar.doc.webpack": {
+    "message": "webpack",
+    "description": "The label for the doc item webpack in sidebar docsSidebar, linking to the doc pages/heft_tasks/webpack"
   }
 }
