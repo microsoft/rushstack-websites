@@ -33,7 +33,7 @@ Alternatively, you can avoid this dependency by loading it from a "rig package",
 There isn't a Heft-specific file for this task. Heft looks for ESLint's config file. Although ESLint supports [7 different](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) names/formats for this file, Heft requires it to be named **".eslintrc.js"**. This has a couple benefits:
 
 - **Consistency:** Using one standard name **".eslintrc.js"** makes it easy to search for these files, perform bulk edits, and copy configuration recipes between projects.
-- **Workarounds:** Using the `.js` file extension enables JavaScript expressions in the file. This is practice is generally discouraged because code expressions are harder to validate, and expressions can depend on environmental inputs that are invisible to caches. However, for historical reasons, ESLint's config file format has some limitations that can only be solved with scripts (for example using `__dirname` to resolve file paths).
+- **Workarounds:** Using the `.js` file extension enables JavaScript expressions in the file. This practice is generally discouraged because code expressions are harder to validate, and expressions can depend on environmental inputs that are invisible to caches. However, for historical reasons, ESLint's config file format has some limitations that can only be solved with scripts (for example using `__dirname` to resolve file paths).
 
 It's not recommended to place a centralized **.eslintrc.js** in the monorepo root folder. This violates Rush's principle that projects should be independent and easily movable between monorepos.
 
@@ -57,7 +57,7 @@ module.exports = {
 
 The `@rushstack/eslint-config` package currently provides three different **lint profiles**. Choose one:
 
-- `@rushstack/eslint-config/profile/node`- for Node.js services
+- `@rushstack/eslint-config/profile/node` - for Node.js services
 - `@rushstack/eslint-config/profile/node-trusted-tool` - for Node.js tools
 - `@rushstack/eslint-config/profile/web-app` - for web browser applications
 
