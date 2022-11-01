@@ -57,7 +57,7 @@ module.exports = {
 
 The `@rushstack/eslint-config` package currently provides three different **lint profiles**. Choose one:
 
-- `@rushstack/eslint-config/profile/node`- for Node.js services
+- `@rushstack/eslint-config/profile/node` - for Node.js services
 - `@rushstack/eslint-config/profile/node-trusted-tool` - for Node.js tools
 - `@rushstack/eslint-config/profile/web-app` - for web browser applications
 
