@@ -1,5 +1,5 @@
 ---
-title: What is Rush Stack?
+title: Overview
 hide_title: true
 ---
 
