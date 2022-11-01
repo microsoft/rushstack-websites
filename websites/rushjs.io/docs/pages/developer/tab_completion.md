@@ -52,3 +52,20 @@ _rush_bash_complete()
 
 complete -f -F _rush_bash_complete rush
 ```
+
+## Fish
+
+To enable tab completion for [Fish shell](https://fishshell.com/), add the following code to the file **~/.config/fish/completions/rush.fish**:
+
+```fish
+# Fish parameter completions for the Rush CLI
+complete rush --no-files
+
+function __fish_rush
+	set -l position (string length (commandline -cp))
+	set -l word (commandline -opc)
+    rush tab-complete --word "$word" --position "$position"
+end
+
+complete rush -x -a "(__fish_rush)"
+```
