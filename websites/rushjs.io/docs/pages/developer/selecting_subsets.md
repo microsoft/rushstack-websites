@@ -260,6 +260,6 @@ The projects selected by this example are `A`, `C`, `D`, `E`, and `F`:
 
 - [Incremental builds](../advanced/incremental_builds.md)
 - [Using watch mode](../advanced/watch_mode.md)
-- [Using project tgas](../developer/project_tags.md)
+- [Using project tags](../developer/project_tags.md)
 - [rush build](../commands/rush_build.md)
 - [rush rebuild](../commands/rush_rebuild.md)
