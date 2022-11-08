@@ -50,6 +50,11 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
                 url="https://rushstack.io/pages/heft/overview/"
               />
               <PopupMenuItem
+                title="Lockfile Explorer"
+                iconPath="/images/suitenav/lfx-icon.svg"
+                url="https://lfx.rushstack.io/"
+              />
+              <PopupMenuItem
                 title="API Extractor"
                 iconPath="/images/suitenav/ae-icon.svg"
                 url="https://api-extractor.com/"
