@@ -81,32 +81,43 @@ that is undesirable, for example scripts that are only used by a lightweight CI 
 require a `rush install`. or Git hooks that need to work correctly even when the `rush install` state
 is broken or outdated.
 
-## Travis example from "rush init"
+## GitHub Actions example from "rush init"
 
-[Travis CI](https://travis-ci.com/) is a continuous integration build service that integrates
-with GitHub and is free for open source projects. The `rush init` command creates a **.travis.yml**
+[GitHub Actions](https://github.com/features/actions) is a continuous integration build service that integrates
+with GitHub and is free for open source projects. The `rush init` command creates a **ci.yml** pipeline
 that's a good starting point if you use this service. Note how it uses **install-run-rush.js**
 to invoke the Rush tool:
 
+**.githib/workflows/ci.yml**
+
 ```yaml
-language: node_js
-node_js:
-  - '8.9.4'
-script:
-  - set -e
-
-  - echo 'Checking for missing change logs...' && echo -en 'travis_fold:start:change\\r'
-  - git fetch origin main:refs/remotes/origin/main -a
-  - node common/scripts/install-run-rush.js change -v
-  - echo -en 'travis_fold:end:change\\r'
-
-  - echo 'Installing...' && echo -en 'travis_fold:start:install\\r'
-  - node common/scripts/install-run-rush.js install
-  - echo -en 'travis_fold:end:install\\r'
-
-  - echo 'Building...' && echo -en 'travis_fold:start:build\\r'
-  - node common/scripts/install-run-rush.js rebuild --verbose
-  - echo -en 'travis_fold:end:build\\r'
+name: CI
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Git config user
+        uses: snow-actions/git-config-user@v1.0.0
+        with:
+          name: # Service Account's Name
+          email: # Service Account's Email Address
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Verify Change Logs
+        run: node common/scripts/install-run-rush.js change --verify
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+      - name: Rush rebuild
+        run: node common/scripts/install-run-rush.js rebuild --verbose --production
 ```
 
 For an example of an equivalent setup using an Azuze DevOps build pipeline, take a look at the
