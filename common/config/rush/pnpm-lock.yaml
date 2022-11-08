@@ -213,6 +213,73 @@ importers:
       typescript: 4.7.4
       webpack: 5.72.1
 
+  ../../websites/lfx.rushstack.io:
+    specifiers:
+      '@algolia/client-search': ~4.14.2
+      '@babel/core': ~7.18.10
+      '@babel/runtime': ~7.17.9
+      '@docusaurus/core': 2.0.1
+      '@docusaurus/preset-classic': 2.0.1
+      '@docusaurus/theme-common': 2.0.1
+      '@docusaurus/types': 2.0.1
+      '@mdx-js/react': ~1.6.22
+      '@svgr/webpack': ~6.3.1
+      '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
+      '@types/react': ^17.0.2
+      '@types/react-dom': ^17.0.2
+      algoliasearch: ~4.14.2
+      clsx: ~1.2.1
+      dayjs: ~1.11.4
+      docusaurus-theme-search-typesense: ~0.5.3
+      file-loader: ^6.2.0
+      js-cookie: ~3.0.1
+      prism-react-renderer: ~1.3.5
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      rehype-headerless-table-plugin: workspace:*
+      remark-canonical-link-plugin: workspace:*
+      remark-cross-site-link-plugin: workspace:*
+      site-config: workspace:*
+      theme-rushstack-suite-nav: workspace:*
+      tslib: ^2.4.0
+      typescript: ~4.7.4
+      url-loader: ^4.1.1
+      webpack: ~5.72.0
+    dependencies:
+      '@docusaurus/core': 2.0.1_dccc44159aab2d15be0b73def9353315
+      '@docusaurus/preset-classic': 2.0.1_51b8523e7a94bc5c9544f0bd3329c79a
+      '@docusaurus/theme-common': 2.0.1_dccc44159aab2d15be0b73def9353315
+      '@mdx-js/react': 1.6.22_react@17.0.2
+      '@svgr/webpack': 6.3.1
+      clsx: 1.2.1
+      dayjs: 1.11.4
+      docusaurus-theme-search-typesense: 0.5.3_241381b6859cbadd2ea27fce2a1a970b
+      file-loader: 6.2.0_webpack@5.72.1
+      js-cookie: 3.0.1
+      prism-react-renderer: 1.3.5_react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
+      tslib: 2.4.0
+      url-loader: 4.1.1_file-loader@6.2.0+webpack@5.72.1
+    devDependencies:
+      '@algolia/client-search': 4.14.2
+      '@babel/core': 7.18.10
+      '@babel/runtime': 7.17.9
+      '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
+      '@types/js-cookie': 3.0.2
+      '@types/node': 14.18.23
+      '@types/react': 17.0.48
+      '@types/react-dom': 17.0.17
+      algoliasearch: 4.14.2
+      rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
+      remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
+      remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
+      site-config: link:../../tools/site-config
+      typescript: 4.7.4
+      webpack: 5.72.1
+
   ../../websites/rushjs.io:
     specifiers:
       '@algolia/client-search': ~4.14.2
@@ -869,7 +936,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.18.9
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.18.8_@babel+core@7.12.9
 
@@ -2217,7 +2284,7 @@ packages:
       react: '*'
     dependencies:
       '@docusaurus/types': 2.0.1_react-dom@17.0.2+react@17.0.2
-      '@types/react': 17.0.37
+      '@types/react': 17.0.48
       prop-types: 15.8.1
       react: 17.0.2
     transitivePeerDependencies:
@@ -3582,13 +3649,6 @@ packages:
     dependencies:
       '@types/history': 4.7.11
       '@types/react': 17.0.48
-
-  /@types/react/17.0.37:
-    resolution: {integrity: sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.2
-      csstype: 3.1.0
 
   /@types/react/17.0.48:
     resolution: {integrity: sha512-zJ6IYlJ8cYYxiJfUaZOQee4lh99mFihBoqkOSEGV+dFi9leROW6+PgstzQ+w3gWTnUfskALtQPGHK6dYmPj+2A==}
@@ -8312,6 +8372,7 @@ packages:
 
   /mini-create-react-context/0.4.1_prop-types@15.8.1+react@17.0.2:
     resolution: {integrity: sha512-YWCYEmd5CQeHGSAKrYvXgmzzkrvssZcuuQDDeqkT+PziKGMgE+0MCCtcKbROzocGBG1meBLl2FotlRwf4gAzbQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       prop-types: ^15.0.0
       react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0

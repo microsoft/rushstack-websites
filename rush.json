@@ -400,6 +400,10 @@
       "projectFolder": "websites/api.rushstack.io"
     },
     {
+      "packageName": "lfx.rushstack.io",
+      "projectFolder": "websites/lfx.rushstack.io"
+    },
+    {
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
     },
