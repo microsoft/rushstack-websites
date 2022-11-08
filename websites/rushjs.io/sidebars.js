@@ -128,6 +128,7 @@ const sidebars = {
         'pages/configs/common-versions_json',
         'pages/configs/deploy_json',
         'pages/configs/experiments_json',
+        'pages/configs/pnpm-config_json',
         'pages/configs/rush_json',
         'pages/configs/rush-plugin-manifest_json',
         'pages/configs/rush-plugins_json',

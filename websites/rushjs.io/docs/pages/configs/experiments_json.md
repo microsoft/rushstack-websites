@@ -52,5 +52,4 @@ generates for **experiments.json**:
    */
   // "phasedCommands": true
 }
-}
 ```
