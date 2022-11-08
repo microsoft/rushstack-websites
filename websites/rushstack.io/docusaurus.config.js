@@ -27,7 +27,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
-  favicon: 'images/favicon.ico',
+  favicon: 'images/site/favicon.ico',
   organizationName: 'microsoft',
   projectName: 'rushstack.io-website',
 
@@ -85,6 +85,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
+      image: 'images/site/rushstack-ograph.jpg',
       navbar: {
         title: '',
         logo: {

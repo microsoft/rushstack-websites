@@ -13,13 +13,13 @@ const { plugin: rehypeHeaderlessTablePlugin } = require('rehype-headerless-table
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Rush',
+  title: 'Lockfile Explorer',
   // tagline: 'Dinosaurs are cool',
-  url: 'https://rushjs.io',
+  url: 'https://lfx.rushstack.io',
   baseUrl: '/',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-cn']
+    locales: ['en']
   },
 
   trailingSlash: true,
@@ -29,7 +29,7 @@ const config = {
 
   favicon: 'images/site/favicon.ico',
   organizationName: 'microsoft',
-  projectName: 'rushjs.io-website',
+  projectName: 'lfx.rushstack.io-website',
 
   // Deployment settings above can be overriden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
@@ -53,7 +53,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           breadcrumbs: false,
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io/',
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/lfx.rushstack.io/',
           remarkPlugins: [
             [
               remarkCrossSiteLinkPlugin,
@@ -64,7 +64,7 @@ const config = {
             [
               remarkCanonicalLinkPlugin,
               {
-                prefix: 'https://rushstack.io/'
+                prefix: 'https://lfx.rushstack.io/'
               }
             ]
           ],
@@ -73,7 +73,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushjs.io/blog/'
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/lfx.rushstack.io/blog/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
@@ -85,12 +85,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
-      image: 'images/site/rush-ograph.jpg',
+      image: 'images/site/lfx-ograph.jpg',
       navbar: {
         title: '',
         logo: {
-          alt: 'Rush',
-          src: 'images/rush-horiz.svg'
+          alt: 'Lockfile Explorer',
+          src: 'images/site/lockfile-explorer.svg'
         },
         items: [
           {
@@ -98,80 +98,41 @@ const config = {
             position: 'left'
           },
           {
-            to: 'pages/intro/welcome',
+            to: 'pages/basics/usage',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!help)(?!news)(?!extensibility/api)'
+            activeBaseRegex: 'pages/(?!support)'
           },
           {
-            type: 'doc',
-            docId: 'pages/news',
+            to: 'pages/support/news',
             position: 'right',
-            label: 'News'
+            label: 'News',
+            activeBasePath: 'pages/support/news'
           },
           {
-            to: 'pages/extensibility/api',
-            position: 'right',
-            label: 'API',
-            activeBasePath: 'pages/extensibility/api'
-          },
-          {
-            to: 'pages/contributing',
+            to: 'pages/support/contributing',
             position: 'right',
             label: 'GitHub',
-            activeBasePath: 'pages/contributing'
+            activeBasePath: 'pages/support/contributing'
           },
           {
-            to: 'pages/help/support',
+            to: 'pages/support/help',
             position: 'right',
             label: 'Help',
-            activeBaseRegex: 'pages/help/'
+            activeBasePath: 'pages/support/help'
           }
         ]
       },
       footer: {
         style: 'dark',
 
-        links: [
-          /*
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-          */
-        ],
+        links: [],
         copyright: `© ${new Date().getFullYear()} Microsoft`
+      },
+      colorMode: {
+        // TODO: Implement dark mode color theme
+        defaultMode: 'light',
+        disableSwitch: true
       },
       prism: {
         theme: lightCodeTheme,
@@ -179,7 +140,7 @@ const config = {
       },
       typesense: {
         // Replace with your own doc site's name. Should match the collection name in the scraper settings.
-        typesenseCollectionName: 'rushjs.io',
+        typesenseCollectionName: 'lfx.rushstack.io',
 
         typesenseServerConfig: {
           nodes: [
