@@ -55,12 +55,19 @@ It will generate these files (see [Config file reference](../advanced/config_fil
 | **rush.json**                                | The main configuration file for Rush                                                                                                                                        |
 | **.gitattributes**                           | _(Delete this file if you're not using Git.)_ <br/>Tells Git not to perform merging operations for shrinkwrap files, because it is unsafe.                                  |
 | **.gitignore**                               | _(Delete this file if you're not using Git.)_ <br/>Tells Git not to track temporary files created by Rush.                                                                  |
-| **.travis.yml**                              | _(Delete this file if you're not using Travis.)_ <br/>Configures the [Travis CI](https://travis-ci.com/) service to perform PR builds using Rush.                           |
+| **.github/workflows/ci.yml**                 | _(Delete this file if you're not using GitHub Actions.)_ <br/>Configures the [GitHub Actions](https://github.com/features/actions) service to perform PR builds using Rush. |
 | **common/config/rush/.npmrc**                | Rush uses this file to configure the package registry, regardless of whether the package manager is PNPM, NPM, or Yarn.                                                     |
+| **common/config/rush/.npmrc-publish**        | Rush uses this file instead of **.npmrc** when publishing NPM packages.                                                                                                     |
+| **common/config/rush/.pnpmfile.cjs**         | _(Delete this file if you've chosen to use NPM or Yarn instead of PNPM.)_ <br/>Used to workaround problems with dependencies that have mistakes in their package.json file. |
+| **common/config/rush/artifactory.json**      | _(Delete this file if you're not using Artifactory.)_ <br/>Used to define a custom `rush setup` experience for configuring Artifactory credentials.                         |
+| **common/config/rush/build-cache.json**      | Used to configure Rush's cloud build cache.                                                                                                                                 |
 | **common/config/rush/command-line.json**     | You can use this to define custom commands/parameters that will become part of the Rush command-line.                                                                       |
 | **common/config/rush/common-versions.json**  | Used to specify NPM dependency version selections that affect all projects in a Rush repo.                                                                                  |
-| **common/config/rush/pnpmfile.js**           | _(Delete this file if you've chosen to use NPM or Yarn instead of PNPM.)_ <br/>Used to workaround problems with dependencies that have mistakes in their package.json file. |
+| **common/config/rush/experiments.json**      | Used to enable experimental features of Rush.                                                                                                                               |
+| **common/config/rush/pnpm-config.json**      | Used to configure how the PNPM package manager behaves during `rush install` and `rush update`.                                                                             |
+| **common/config/rush/rush-plugins.json**     | Used to enable plugins for Rush.                                                                                                                                            |
 | **common/config/rush/version-policies.json** | Used to define advanced publishing configurations.                                                                                                                          |
+| **git-hooks/commit-msg.sample**              | A template for defining Git hooks that will be activated by `rush install`.                                                                                                 |
 
 **NOTE: If any of these files already exists in your branch, `rush init` will issue a warning and will NOT overwrite the existing files.**
 

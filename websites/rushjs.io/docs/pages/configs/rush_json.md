@@ -26,7 +26,7 @@ generates for **rush.json** (in the repo root folder):
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.76.1",
+  "rushVersion": "5.82.1",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -40,88 +40,6 @@ generates for **rush.json** (in the repo root folder):
 
   // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
-
-  /**
-   * Options that are only used when the PNPM package manager is selected
-   */
-  "pnpmOptions": {
-    /**
-     * Specifies the location of the PNPM store.  There are two possible values:
-     *
-     * - "local" - use the "pnpm-store" folder in the current configured temp folder:
-     *   "common/temp/pnpm-store" by default.
-     * - "global" - use PNPM's global store, which has the benefit of being shared
-     *    across multiple repo folders, but the disadvantage of less isolation for builds
-     *    (e.g. bugs or incompatibilities when two repos use different releases of PNPM)
-     *
-     * RUSH_PNPM_STORE_PATH will override the directory that will be used as the store
-     *
-     * In all cases, the store path will be overridden by the environment variable RUSH_PNPM_STORE_PATH.
-     *
-     * The default value is "local".
-     */
-    // "pnpmStore": "local",
-
-    /**
-     * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
-     * This causes "rush install" to fail if there are unsatisfied peer dependencies, which is
-     * an invalid state that can cause build failures or incompatible dependency versions.
-     * (For historical reasons, JavaScript package managers generally do not treat this invalid
-     * state as an error.)
-     *
-     * The default value is false to avoid legacy compatibility issues.
-     * It is strongly recommended to set strictPeerDependencies=true.
-     */
-    // "strictPeerDependencies": true,
-
-    /**
-     * Configures the strategy used to select versions during installation.
-     *
-     * This feature requires PNPM version 3.1 or newer.  It corresponds to the "--resolution-strategy" command-line
-     * option for PNPM.  Possible values are "fast" and "fewer-dependencies".  PNPM's default is "fast", but this may
-     * be incompatible with certain packages, for example the "@types" packages from DefinitelyTyped.  Rush's default
-     * is "fewer-dependencies", which causes PNPM to avoid installing a newer version if an already installed version
-     * can be reused; this is more similar to NPM's algorithm.
-     *
-     * After modifying this field, it's recommended to run "rush update --full" so that the package manager
-     * will recalculate all version selections.
-     */
-    // "resolutionStrategy": "fast",
-
-    /**
-     * If true, then `rush install` will report an error if manual modifications
-     * were made to the PNPM shrinkwrap file without running "rush update" afterwards.
-     *
-     * This feature protects against accidental inconsistencies that may be introduced
-     * if the PNPM shrinkwrap file ("pnpm-lock.yaml") is manually edited.  When this
-     * feature is enabled, "rush update" will append a hash to the file as a YAML comment,
-     * and then "rush update" and "rush install" will validate the hash.  Note that this does not prohibit
-     * manual modifications, but merely requires "rush update" be run
-     * afterwards, ensuring that PNPM can report or repair any potential inconsistencies.
-     *
-     * To temporarily disable this validation when invoking "rush install", use the
-     * "--bypass-policy" command-line parameter.
-     *
-     * The default value is false.
-     */
-    // "preventManualShrinkwrapChanges": true,
-
-    /**
-     * If true, then `rush install` will use the PNPM workspaces feature to perform the
-     * install.
-     *
-     * This feature uses PNPM to perform the entire monorepo install. When using workspaces, Rush will
-     * generate a "pnpm-workspace.yaml" file referencing all local projects to install. Rush will
-     * also generate a "pnpmfile.js" which is used to provide preferred versions support. When install
-     * is run, this pnpmfile will be used to replace dependency version ranges with a smaller subset
-     * of the original range. If the preferred version is not fully a subset of the original version
-     * range, it will be left as-is. After this, the pnpmfile.js provided in the repository (if one
-     * exists) will be called to further modify package dependencies.
-     *
-     * This option is recommended. The default value is false.
-     */
-    "useWorkspaces": true
-  },
 
   /**
    * Older releases of the Node.js engine may be missing features required by your system.
@@ -255,7 +173,7 @@ generates for **rush.json** (in the repo root folder):
      */
     // "allowedEmailRegExps": [
     //   "[^@]+@users\\.noreply\\.github\\.com",
-    //   "travis@example\\.org"
+    //   "rush-bot@example\\.org"
     // ],
 
     /**
@@ -263,7 +181,7 @@ generates for **rush.json** (in the repo root folder):
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
-    // "sampleEmail": "mrexample@users.noreply.github.com",
+    // "sampleEmail": "example@users.noreply.github.com",
 
     /**
      * The commit message to use when committing changes during 'rush publish'.
@@ -281,7 +199,14 @@ generates for **rush.json** (in the repo root folder):
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
+    // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]",
+
+    /**
+     * The commit message to use when commiting changefiles during 'rush change --commit'
+     *
+     * If no commit message is set it will default to 'Rush change'
+     */
+     // "changefilesCommitMessage": "Rush change"
   },
 
   "repository": {
@@ -398,7 +323,7 @@ generates for **rush.json** (in the repo root folder):
     * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
     * ".", and "@" characters.
     */
-  // "allowedProjectTags": [ "apps", "Web", "tools" ],
+  // "allowedProjectTags": [ "tools", "frontend-team", "1.0.0-release" ],
 
   /**
    * (Required) This is the inventory of projects to be managed by Rush.
@@ -483,28 +408,28 @@ generates for **rush.json** (in the repo root folder):
     //    */
     //   // "versionPolicyName": "",
     //
-    //  /**
-    //   * An optional set of custom tags that can be used to select this project.  For example,
-    //   * adding "my-custom-tag" will allow this project to be selected by the
-    //   * command "rush list --only tag:my-custom-tag".  The tag name must be one or more words
-    //   * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
-    //   * ".", and "@" characters.
-    //   */
-    //   // "tags": ["apps", "web"]
+    //   /**
+    //    * An optional set of custom tags that can be used to select this project.  For example,
+    //    * adding "my-custom-tag" will allow this project to be selected by the
+    //    * command "rush list --only tag:my-custom-tag".  The tag name must be one or more words
+    //    * separated by hyphens or slashes, where a word may contain lowercase ASCII letters, digits,
+    //    * ".", and "@" characters.
+    //    */
+    //   // "tags": [ "1.0.0-release", "frontend-team" ]
     // },
     //
     // {
     //   "packageName": "my-controls",
     //   "projectFolder": "libraries/my-controls",
     //   "reviewCategory": "production",
-    //   "tags": ["libraries", "web"]
+    //   "tags": [ "frontend-team" ]
     // },
     //
     // {
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
     //   "reviewCategory": "tools",
-    //   "tags": ["tools"]
+    //   "tags": [ "tools" ]
     // }
   ]
 }
