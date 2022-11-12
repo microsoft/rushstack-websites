@@ -2,6 +2,8 @@
 title: Modifying package.json
 ---
 
+## rush add
+
 Let's say you need to add a new dependency on a library "**example-lib**". Without Rush, you would do something like this:
 
 ```bash
@@ -39,21 +41,51 @@ The `rush add` command can also be used to update the version of an existing dep
 # If any other projects in the repo are using "example-lib", you can update them all
 # to "1.2.3" in bulk:
 ~/my-repo/apps/my-app$ rush add --package example-lib@1.2.3 --make-consistent
-
 ```
 
-The [command-line help](../commands/rush_add.md) for `rush add` describes other options that you can use to customize the behavior.
+## rush remove
+
+There is also a corresponding [rush remove](../commands/rush_remove.md) command for deleting entries from **package.json**:
+
+```bash
+~/my-repo$ cd apps/my-app
+
+# Remove the "example-lib" dependency from package.json and then automatically run "rush update":
+~/my-repo/apps/my-app$ rush remove --package example-lib
+```
+
+## Manually modifying package.json
+
+Of course, you can also simply edit the **package.json** file directly. Remember to run `rush update`
+afterwards to update the shrinkwrap file.
 
 > **Tip: A cool VS Code feature**
 >
-> By the way, if you use Visual Studio Code as your editor, another option is to simply edit the **package.json** file directly. If you start typing `"example-lib":`, VS Code will automatically query the NPM registry and show autocomplete suggestions for the latest published version. For simple additions, this can be even quicker than `rush add`.
->
-> If you modify **package.json** manually, don't forget to run `rush update` afterwards.
+> By the way, if you use Visual Studio Code as your editor, the
+> [Version Lens extension](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
+> can display a tool tip showing the latest version of each dependency in your **package.json**.
+> This is helpful for finding and fixing outdated versions.
 
-## Upgrading to newer versions of your NPM packages
+## rush upgrade-interactive
 
-The `rush update --full` can install newer versions that satisfy your existing **package.json** files; however, if you want to upgrade the **package.json** files to specify newer version ranges, today Rush does not yet provide a command for doing that in bulk.
+The `rush add` and `rush remove` commands operate on a single dependency at a time.
+To upgrade many packages and projects across your repo, you can use the
+[rush upgrade-interactive](../commands/rush_upgrade-interactive.md) command.
+It will walk you through selecting projects and choosing which versions to upgrade:
 
-The [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) tool will work to upgrade individual projects in a Rush repo, as long as you remember to run `rush update` afterwards (instead of `npm install`).
+<img src="/images/docs/upgrade-interactive-0.png" alt="rush upgrade-interactive screenshot" /><br/>
 
-_NOTE: Support for PNPM workspaces is [already available](https://github.com/microsoft/rushstack/pull/1938); with this feature enabled, the [pnpm update](https://pnpm.js.org/en/cli/update) command can be used for bulk upgrades._
+_Choosing the project_
+
+<img src="/images/docs/upgrade-interactive-1.png" alt="rush upgrade-interactive screenshot" /><br/>
+
+_Choosing the dependencies to upgrade_
+
+## pnpm outdated
+
+To create a report about outdated dependencies, you can also use the [pnpm outdated](https://pnpm.io/cli/outdated)
+command. Note that when invoking PNPM commands in a Rush monorepo, you must use the `rush-pnpm` CLI helper.
+
+<img src="/images/docs/pnpm-outdated.png" alt="rush-pnpm outdated screenshot" /><br/>
+
+_Invoking rush-pnpm outdated_

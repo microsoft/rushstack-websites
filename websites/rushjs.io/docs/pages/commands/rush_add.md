@@ -44,3 +44,8 @@ Optional arguments:
   --all                 If specified, the dependency will be added to all
                         projects.
 ```
+
+## See also
+
+- [Modifying package.json](../developer/modifying_package_json.md)
+- [rush remove](../commands/rush_remove.md)
