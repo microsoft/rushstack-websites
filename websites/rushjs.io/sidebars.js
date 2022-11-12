@@ -103,6 +103,7 @@ const sidebars = {
         'pages/commands/rush_publish',
         'pages/commands/rush_purge',
         'pages/commands/rush_rebuild',
+        'pages/commands/rush_remove',
         'pages/commands/rush_scan',
         'pages/commands/rush_setup',
         'pages/commands/rush_tab-complete',
@@ -110,6 +111,7 @@ const sidebars = {
         'pages/commands/rush_update',
         'pages/commands/rush_update-autoinstaller',
         'pages/commands/rush_update-cloud-credentials',
+        'pages/commands/rush_upgrade-interactive',
         'pages/commands/rush_version'
       ]
     },
