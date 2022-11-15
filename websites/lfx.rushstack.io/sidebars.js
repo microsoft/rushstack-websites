@@ -24,8 +24,16 @@ const sidebars = {
       type: 'category',
       label: 'Versioning Concepts',
       collapsible: false,
-      items: ['pages/concepts/semver', 'pages/concepts/install_models', 'pages/concepts/pnpm_lockfile']
+      items: [
+        'pages/concepts/version_conflicts',
+        'pages/concepts/semver',
+        'pages/concepts/install_models',
+        'pages/concepts/tracing_resolution',
+        //        'pages/concepts/pnpm_lockfile',
+        'pages/concepts/strict_settings'
+      ]
     },
+    /*
     {
       type: 'category',
       label: 'App Features',
@@ -38,6 +46,7 @@ const sidebars = {
         'pages/features/other_features'
       ]
     },
+    */
     {
       type: 'category',
       label: 'Scenarios',
@@ -46,8 +55,8 @@ const sidebars = {
         'pages/scenarios/demos_repo',
         'pages/scenarios/side-by-side_versions',
         'pages/scenarios/peer_dependencies',
-        'pages/scenarios/npm_doppelgangers',
-        'pages/scenarios/phantom_dependencies'
+        'pages/scenarios/npm_doppelgangers'
+        //        'pages/scenarios/phantom_dependencies'
       ]
     },
     {

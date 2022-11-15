@@ -98,7 +98,7 @@ const config = {
             position: 'left'
           },
           {
-            to: 'pages/basics/usage',
+            to: 'pages/basics/getting_started',
             position: 'right',
             label: 'Docs',
             activeBaseRegex: 'pages/(?!support)'
