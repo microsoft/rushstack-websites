@@ -19,9 +19,26 @@ and [ESlint](../heft_tasks/eslint.md).
 
    # Typings should always use "--save-exact" version specifiers.
    pnpm install --save-dev --save-exact @types/heft-jest
+   pnpm install --save-dev @rushstack/heft-jest-plugin
+   ```
+2. Register the plugin to heft.json and add it to the plugin statement.
+  ```bash
+   "heftPlugins": [
+    {
+      //  /**
+      //   * The path to the plugin package.
+      //   */
+      "plugin": "@rushstack/heft-jest-plugin"
+      //
+      //  /**
+      //   * An optional object that provides additional settings that may be defined by the plugin.
+      //   */
+      //  // "options": { }
+    }
+  ]
    ```
 
-2. Since [Jest's API](https://jestjs.io/docs/en/api) consists of global variables, we need to load them globally (whereas most other `@types` packages are loaded via `import` statements in your source code). Update your **tsconfig.json** file to say `"types": ["heft-jest", "node"]` instead of just `"types": ["node"]`. The result should look like this:
+3. Since [Jest's API](https://jestjs.io/docs/en/api) consists of global variables, we need to load them globally (whereas most other `@types` packages are loaded via `import` statements in your source code). Update your **tsconfig.json** file to say `"types": ["heft-jest", "node"]` instead of just `"types": ["node"]`. The result should look like this:
 
    **my-app/tsconfig.json**
 
@@ -52,17 +69,26 @@ and [ESlint](../heft_tasks/eslint.md).
    }
    ```
 
-3. Next, we need to add the [jest.config.json](https://jestjs.io/docs/en/configuration) config file. The presence of this file causes Heft to invoke the Jest test runner. Heft expects a specific file path **config/jest.config.json**. For most cases, your Jest configuration should simply extend Heft's standard preset as shown below:
+4. Next, we need to add the [jest.config.json](https://jestjs.io/docs/en/configuration) config file. The presence of this file causes Heft to invoke the Jest test runner. Heft expects a specific file path **config/jest.config.json**. For most cases, your Jest configuration should simply extend Heft's standard preset as shown below:
 
    **my-app/config/jest.config.json**
 
    ```js
    {
-     "preset": "./node_modules/@rushstack/heft/includes/jest-shared.config.json"
+    "extends": "@rushstack/heft-jest-plugin/includes/jest-shared.config.json",
+    "collectCoverage": true,
+    "coverageThreshold": {
+     "global": {
+       "branches": 50,
+       "functions": 50,
+       "lines": 50,
+       "statements": 50
+       }
+     }
    }
    ```
 
-4. Now we need to add a unit test. Jest supports quite a lot of features, but for this tutorial we'll create a trivial test file. The `.test.ts` file extension causes Heft to look for unit tests in this file:
+5. Now we need to add a unit test. Jest supports quite a lot of features, but for this tutorial we'll create a trivial test file. The `.test.ts` file extension causes Heft to look for unit tests in this file:
 
    **my-app/src/example.test.ts**
 
@@ -74,7 +100,7 @@ and [ESlint](../heft_tasks/eslint.md).
    });
    ```
 
-5. To run the test, we need to use the `heft test` action, because `heft build` normally skips testing to speed up development.
+6. To run the test, we need to use the `heft test` action, because `heft build` normally skips testing to speed up development.
 
    ```bash
    # For Windows, use backslashes for all these commands
