@@ -173,7 +173,7 @@ Some projects may not have any meaningful work to do for a phase, in which case 
 
 ## Define per-phase output folder names
 
-Within the `rush-project.json` configuration file of each project (or, preferably, each rig profile), redefine your `operationSettings` so that each folder is specified in only one phase. For exampe:
+Within the `rush-project.json` configuration file of each project (or, preferably, each rig profile), redefine your `operationSettings` so that each folder is specified in only one phase. For example:
 
 ```json
 {
