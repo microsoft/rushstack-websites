@@ -100,7 +100,7 @@ In `common/config/rush/command-line.json`, in the `"commands"` section, redefine
       "summary": "Build and test all projects.",
       "phases": ["_phase:build", "_phase:test"],
       "enableParallelism": true,
-      "incremental": true
+      "incremental": false
     }
   ]
 }
