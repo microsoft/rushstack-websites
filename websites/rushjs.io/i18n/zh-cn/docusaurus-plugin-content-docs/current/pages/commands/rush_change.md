@@ -7,7 +7,7 @@ title: rush change
                    [--email EMAIL] [--bulk] [--message MESSAGE]
                    [--bump-type {major,minor,patch,none}]
 
-通过询问一系列的问题之后在公公文件见中生成 <branchname>-<timestamp>.json 文件。当变更版
+通过询问一系列的问题之后在公共文件夹中生成 <branchname>-<timestamp>.json 文件。当变更版
 本号时通过 `publish` 命令来消费这些文件。注意这些变更日志最终会被放到每个项目的 changelog.md
 文件中。变更的类型有：MAJOR - 存在破坏性变动并且向后不兼容，例如重命名一个公共类，在公共 API 中
 添加或删除一个必选参数，或者重命名一个导出的变量或函数；MINOR - 存在向后兼容（但不向前兼容）的变
