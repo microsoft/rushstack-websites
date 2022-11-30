@@ -79,8 +79,65 @@ These problems can be solved by creating a special streamlined script for watch 
 
 ## The "watchForChanges" setting (experimental)
 
-Rush's "watch mode" formalizes this basic idea, replacing the simple loop with an optimized
-[chokidar](https://www.npmjs.com/package/chokidar) filesystem monitor. Here's how you would use it:
+Rush's multi-project "watch mode" formalizes this basic idea, replacing the simple loop with an optimized
+[chokidar](https://www.npmjs.com/package/chokidar) filesystem monitor.
+
+How you enable Rush multi-project watch mode depends on whether you are using a _bulk command_ or a _phased command_ for your build scripts. We suggest switching to [phased builds](../../maintainer/phased_builds) before enabling watch mode, as it is a better and easier-to-understand experience for developers.
+
+### Watch mode for phased commands
+
+1. In your [command-line.json](../../configs/command-line_json) config file, add the new `watchOptions`
+   section to each phased command you want to enable. For example:
+
+   ```js
+     . . .
+     "commands": [
+        {
+          "commandKind": "phased",
+          "name": "build",
+          "phases": ["_phase:build"],
+          "enableParallelism": true,
+          "incremental": true,
+          "watchOptions": {
+            "alwaysWatch": false,
+            "watchPhases": ["_phase:build"]
+          }
+        },
+        {
+          "commandKind": "phased",
+          "name": "test",
+          "phases": ["_phase:build", "_phase:test"],
+          "enableParallelism": true,
+          "incremental": true,
+          "watchOptions": {
+            "alwaysWatch": false,
+            "watchPhases": ["_phase:build", "_phase:test"]
+          }
+        }
+     ]
+   ```
+
+   Rush will automatically add a new boolean flag, `--watch`, to any command with the `watchOptions` property.
+
+2. Invoke the command using [project selection parameters](../../developer/selecting_subsets) that
+   select all of `D`'s dependencies but not `D` itself:
+
+   ```shell
+   # Build everything that D depends on (but not D itself),
+   # and keep doing that in an endless loop:
+   $ rush build --watch --to-except D
+   ```
+
+3. Then, start your dev server in the app folder:
+
+   ```shell
+   # Start Webpack's dev server in the folder for project D
+   # (which is the web application in this example):
+   $ cd apps/D
+   $ heft start # <-- or your own "npm run start" equivalent here
+   ```
+
+### Watch mode for bulk commands
 
 1. Add a [custom command](../maintainer/custom_commands.md) in
    your [command-line.json](../configs/command-line_json.md) config file.
