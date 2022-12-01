@@ -1,5 +1,5 @@
 ---
-title: Enabling the build cache (experimental)
+title: Enabling the build cache
 ---
 
 Rush has always supported an [incremental analyzer](../advanced/incremental_builds.md) that
@@ -7,7 +7,7 @@ enables `rush build` to skip projects whose input files have not changed since t
 can also be used with custom commands by enabling the `incremental` flag in **custom-commands.json**.) However,
 the build output is not saved anywhere, so generally a full rebuild is still required when switching to another branch.
 
-Rush's experimental new **build cache** improves on this by creating a tar archive of each project's build outputs.
+Rush's **build cache** improves on this by creating a tar archive of each project's build outputs.
 The archive is cached so that later, if `rush build` can find a match in the cache, it can extract the archive
 instead of building that project. This can provide dramatic speedups, for example reducing a 30 minute build time
 to 30 seconds. The cache key is a hash of the source files and NPM dependencies, following the
