@@ -4,7 +4,7 @@ title: Swag Shop
 
 <div style={{ paddingTop: "20px", paddingBottom: "20px", display: "flex", flexDirection: "row" }}>
   <div style={{ textAlign: "center" }}>
-    <a class="no-external-link-icon" target="_blank" href="https://rushstack.myspreadshop.com/"><img
+    <a className="no-external-link-icon" target="_blank" href="https://rushstack.myspreadshop.com/"><img
     src="/images/swagshop.jpg" alt="swag shop" title="swag shop"
     style={{ width: "380px", borderStyle: "solid", borderWidth: "2px", borderColor: "#c0c0c0" }}/></a>
     <br/>
