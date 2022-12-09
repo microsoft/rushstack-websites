@@ -26,8 +26,9 @@ These major tools are developed under the **Rush Stack** umbrella:
   ESLint rule set, specifically designed for large scale TypeScript monorepos
 - [@<!---->rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
   "Packlets" are a lightweight alternative to NPM packages for organizing source files within a single project
-- [Lockfile Explorer](https://www.npmjs.com/package/@rushstack/lockfile-explorer): helps you investigate and solve version conflicts when working in a Rush monorepo
+- [Lockfile Explorer](https://lfx.rushstack.io/): helps you investigate and solve version conflicts when working in a Rush monorepo
 - [Rundown](https://www.npmjs.com/package/@rushstack/rundown): a tool for optimizing Node.js process startup times
+- [@<!---->rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import): Our command-line tool for troubleshooting how modules are resolved by `import` and `require()`
 
 The projects are built on a common framework of reusable library packages, which includes:
 
