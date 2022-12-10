@@ -78,7 +78,7 @@ demo repo. **_You will need to launch the Verdaccio service in a separate shell 
 
 Recall that the `demo/sample-1` lockfile looks like this:
 
-<img src='/images/docs/lfx-demo-sample-1.svg' alt="dependency graph: demo/sample-1" />
+<img src='https://raw.githubusercontent.com/microsoft/lockfile-explorer-demos/demo/sample-1/common/images/lfx-demo-sample-1.svg' alt="dependency graph: demo/sample-1" />
 
 After running `rush install` in the `~/lockfile-explorer-demos/` folder, the project `C` should
 have the following files:
