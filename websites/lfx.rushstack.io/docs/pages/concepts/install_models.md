@@ -17,8 +17,8 @@ in common use for Node.js today:
    NPM's implementation also produces
    [nondeterministic installations](http://npm.github.io/how-npm-works-docs/npm3/non-determinism.html)
    depending on the order in which CLI comands are invoked.
-   The other installation models can all be understood as attempts to undo these design flaws,
-   with different tradeoffs for backwards compatibility with existing packages.
+   The later installation models can all be understood as attempts to mitigate these design flaws,
+   with different tradeoffs for backwards compatibility with legacy packages.
 
 2. **PNPM installation model** - The [PNPM](https://pnpm.io/) package manager introduced a completely
    different `node_modules` layout that relies heavily on [symlinks](https://en.wikipedia.org/wiki/Symbolic_link).
@@ -43,12 +43,18 @@ in common use for Node.js today:
    now optionally supports the Plug'n'Play installation model via
    the [node-linker=pnp](https://pnpm.io/npmrc#node-linker) setting.
 
+4. **Rush legacy symlinking** - Rush implemented its own
+   [symlinking installation model](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/logic/npm/NpmLinkManager.ts)
+   which predates the Yarn and PNPM workspace features. This model is used when `useWorkspaces=false`
+   in [pnpm-config.json](@rushjs/pages/configs/pnpm-config_json/), or if the Yarn or NPM package manager
+   is selected in **rush.json**. This algorithm is still supported but not recommended.
+
 Rush Stack recommends the **PNPM installation model** for monorepos, because it currently seems to provide
 the best tradeoff between correctness and backwards compatibility. It is the default and best supported
 installation mode for the Rush build orchestrator. It is the only model supported by Lockfile Explorer,
 although in the future we expect to implement support for other lockfile formats.
 
-> This [Feature Comparison](https://pnpm.io/feature-comparison) summarizes some other interesting
+> PNPM's [Feature Comparison](https://pnpm.io/feature-comparison) summarizes some other interesting
 > differences between package managers, beyond the installation models that they support.
 
 > The acronyms "PnP" and "PNPM" are easy to confuse: PnP (Plug'n'Play) is an installation model,

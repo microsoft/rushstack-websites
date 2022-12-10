@@ -2,9 +2,6 @@
 title: Demos repository
 ---
 
-_This hands-on demo uses the `lockfile-explorer-demos` environment.
-For setup instructions, read the [Demos repository](./demos_repo.md) article._
-
 This section contains a series of hands-on tutorials that explore various lockfile versioning scenarios.
 The demo content can be checked out from this repo:
 

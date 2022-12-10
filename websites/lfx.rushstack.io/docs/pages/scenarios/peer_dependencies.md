@@ -10,6 +10,8 @@ For setup instructions, read the [Demos repository](./demos_repo.md) article._
 **GitHub checkout branch:** [demo/peer-1](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/peer-1)
 
 ```bash
+cd lockfile-explorer-demos
+
 # WARNING: THIS COMMAND WILL DELETE ANY LOCAL CHANGES YOU MADE
 git checkout -f -B demo/peer-1 remotes/origin/demo/peer-1
 rush install

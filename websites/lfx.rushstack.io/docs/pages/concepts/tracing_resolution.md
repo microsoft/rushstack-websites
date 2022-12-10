@@ -129,7 +129,7 @@ m    Junction {C:\Git\lockfile-explorer-demos\common\temp\node_modules\.pnpm\@ru
   <TabItem value="cmd" label="DOS">
 
 ```batch
-# Example project C's node_modules folder
+:: Example project C's node_modules folder
 dir projects\c\node_modules\@rushstack\
 ```
 
