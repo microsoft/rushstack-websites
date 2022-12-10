@@ -80,7 +80,6 @@ they are considered to precede their base version. For example, the following ve
 - `1.2.3-dev.2`
 - `1.2.3-pr1234.0`
 - `1.2.3-pr1234.1`
-- `1.2.3-beta`
 - `1.2.3` (biggest / newest version)
 
 Be careful: The ordering rules for prereleases involve complicated string parsing heuristics,
@@ -96,31 +95,23 @@ and the version range matching rules can be counterintuitive.
 
 The following version range syntaxes are commonly used with NPM packages, and can be considered "best practices":
 
-- `1.2.3` - if an exact version is used, it matches only that single version
+<div className="markdown-table-nowrap-first-column">
 
-- `*` - the star will matches any version without restrictions
+<!-- prettier-ignore-start -->
+| Example syntax | Description |
+| :--- | :--- |
+| `1.2.3` | If an exact version is used, it matches only that single version |
+| `*` | The star will matches any version without restrictions |
+| `>=1.2.3` | Comparison operators (`<`, `>`, `<=`, `>=`) match according to the ordering of versions.  In this example, `1.2.3` and `5.0.0`, but not `1.2.2`. Note that `1.2.3-prerelease.1` will also match,  but `1.2.4-prerelease.0` will NOT -- **prerelease versions** only match ranges with equal MAJOR/MINOR/PATCH. |
+| `>=1.2.3-prerelease.0` | Note that a **prerelease range** can match a differing MAJOR/MINOR/PATCH.  This example will match both `5.0.0` and `>=1.2.3-prerelease.2` (but NOT `1.2.4-prerelease.0`). |
+| `>=1.2.3 <3.0.0` | Concatenated ranges specify an AND conjunction.  In this example, `1.2.3` and `2.0.0` but not `3.0.0` nor `1.0.0`. |
+| `~1.2.3` | The tilde (`~`) shorthand matches equal or newer versions within the same PATCH version.  The example `~1.2.3` is equivalent to `>=1.2.3 <1.3.0`. See **MAJOR Version 0** warning below. |
+| `^1.2.3` | The caret (`^`) shorthand matches equal or newer versions within the same MINOR version.  The example `^1.2.3` is equivalent to `>=1.2.3 <2.0.0`. See **MAJOR Version 0** warning below. |
+| <!-- MDX is incapable of escaping a pipe --> <code>^1.0.0 &#124;&#124; ^2.0.0</code> | The <code>&#124;&#124;</code> operator specifies an OR disjunction.  This example will match either `^1.0.0` or `^2.0.0`. |
+| `workspace:*` | Expressions with colon prefixes such as `npm:` and `workspace:` are actually **dependency specifiers**, not SemVer ranges. They are explained in a separate section below. |
+<!-- prettier-ignore-end -->
 
-- `>=1.2.3` - Comparison operators (`<`, `>`, `<=`, `>=`) match according to the ordering of versions.
-  In this example, `1.2.3` and `5.0.0`, but not `1.2.2`. Note that `1.2.3-prerelease.1` will also match,
-  but `1.2.4-prerelease.0` will NOT -- **prerelease versions** only match ranges with equal MAJOR/MINOR/PATCH.
-
-- `>=1.2.3-prerelease.0` - Note that a **prerelease range** can match a differing MAJOR/MINOR/PATCH.
-  This example will match both `5.0.0` and `>=1.2.3-prerelease.2` (but NOT `1.2.4-prerelease.0`).
-
-- `>=1.2.3 <3.0.0` - Concatenated ranges specify an AND conjunction.
-  In this example, `1.2.3` and `2.0.0` but not `3.0.0` nor `1.0.0`.
-
-- `~1.2.3` - the tilde (`~`) shorthand matches equal or newer versions within the same PATCH version.
-  The example `~1.2.3` is equivalent to `>=1.2.3 <1.3.0`. See **MAJOR Version 0** warning below.
-
-- `^1.2.3` - the caret (`^`) shorthand matches equal or newer versions within the same MINOR version.
-  The example `^1.2.3` is equivalent to `>=1.2.3 <2.0.0`. See **MAJOR Version 0** warning below.
-
-- `^1.0.0 || ^2.0.0` - the `||` operator specifies an OR disjunction.
-  This example will match either `^1.0.0` or `^2.0.0`.
-
-- Expressions with colon prefixes such as `npm:` and `workspace:` are actually
-  **dependency specifiers**, not SemVer ranges. They are explained in a separate section below.
+</div>
 
 The SemVer standard defines many other syntaxes; however, if a syntax doesn't appear in the list above,
 then we generally recommend to avoid it. Keep your version ranges simple!
@@ -164,23 +155,20 @@ to see what they match.
 Strictly speaking, the `"dependencies"` table in **package.json** maps to a **dependency specifier** syntax,
 which is a superset of **SemVer ranges**. Here's some examples:
 
-- `"example-package": "beta"` - install the specific version that is currently tagged using the `beta` dist-tag,
-  according to the NPM registry
+<div className="markdown-table-nowrap-first-column">
 
-- `"example-package": "workspace:^1.2.3"` - symlink `example-package` from the project folder in
-  your local PNPM workspace, instead of installing a package from the NPM registry. If the containing package
-  gets published, during publishing `pnpm publish` will transform `"workspace:^1.2.3"` to `"^1.2.3"`
-  in the published **package.json** file.
+<!-- prettier-ignore-start -->
+| Example syntax | Description |
+| :--- | :--- |
+| `"foo": "beta"` | Install the specific version of NPM package `foo` that is currently tagged using the `beta` [dist-tag](https://docs.npmjs.com/cli/v9/commands/npm-dist-tag), according to the NPM registry |
+| `"foo": "workspace:^1.2.3"` | Symlink `foo` from the project folder in your local PNPM workspace, instead of installing a package from the NPM registry. If the containing package gets published, during publishing `pnpm publish` will transform `"workspace:^1.2.3"` to `"^1.2.3"` in the published **package.json** file. |
+| `"foo": "workspace:*"` | The string `workspace:*` is handled specially by PNPM during publishing.  It will match any version, but during publishing the `workspace:*` string will get transformed to the exact version  of that package. For example, suppose `foo` is a local project with version `1.2.3`. During publishing,  `workspace:^1.0.0` would transform to `^1.0.0`, whereas `workspace:*` would transform to `1.2.3`. |
+| `"foo2": "npm:foo@^2.0.0"` | Install `foo` with version range `^2.0.0`, but into `node_modules/foo2/` (for example because we already installed version 1 in `node_modules/foo/` |
+| `"foo": "file:./path/to/foo.tgz"` | Install `foo` by extracting **foo.tgz** from disk. This practice is not recommended, but called out here because it was used by Rush's legacy installation model (with `useWorkspaces=false`). |
 
-- `"example-package": "workspace:*"` - The string `workspace:*` is handled specially by PNPM during publishing.
-  It will match any version, but during publishing the `workspace:*` string will get transformed to the exact version
-  of that package. For example, suppose `example-package` is a local project with version `1.2.3`. During publishing,
-  `workspace:^1.0.0` would transform to `^1.0.0`, whereas `workspace:*` would transform to `1.2.3`.
+<!-- prettier-ignore-end -->
 
-- `"example-package": "npm:example-package@^2.0.0"` - install `example-package` with version range `^2.0.0`,
-  but into `node_modules/example2/` (for example because we already installed version 1 in `node_modules/example/`
-
-- `"example-package": "file:./path/to/example.tgz"` - install `example-package` by extracting **example.tgz** from disk
+</div>
 
 ## See Also
 
