@@ -1,0 +1,3 @@
+---
+title: The package spec
+---

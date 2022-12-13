@@ -98,7 +98,7 @@ const config = {
             position: 'left'
           },
           {
-            to: 'pages/basics/usage',
+            to: 'pages/basics/getting_started',
             position: 'right',
             label: 'Docs',
             activeBaseRegex: 'pages/(?!support)'
@@ -136,7 +136,8 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['batch', 'json5', 'powershell']
       },
       typesense: {
         // Replace with your own doc site's name. Should match the collection name in the scraper settings.

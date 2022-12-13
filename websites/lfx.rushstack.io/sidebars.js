@@ -16,9 +16,48 @@ const sidebars = {
   docsSidebar: [
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Introduction',
       collapsible: false,
-      items: ['pages/basics/usage']
+      items: ['index', 'pages/basics/getting_started']
+    },
+    {
+      type: 'category',
+      label: 'Versioning Concepts',
+      collapsible: false,
+      items: [
+        'pages/concepts/version_conflicts',
+        'pages/concepts/semver',
+        'pages/concepts/install_models',
+        'pages/concepts/tracing_resolution',
+        //        'pages/concepts/pnpm_lockfile',
+        'pages/concepts/strict_settings'
+      ]
+    },
+    /*
+    {
+      type: 'category',
+      label: 'App Features',
+      collapsible: false,
+      items: [
+        'pages/features/entries',
+        'pages/features/package_spec',
+        'pages/features/the_graph',
+        'pages/features/influencers',
+        'pages/features/other_features'
+      ]
+    },
+    */
+    {
+      type: 'category',
+      label: 'Scenarios',
+      collapsible: false,
+      items: [
+        'pages/scenarios/demos_repo',
+        'pages/scenarios/side-by-side_versions',
+        'pages/scenarios/peer_dependencies',
+        'pages/scenarios/npm_doppelgangers'
+        //        'pages/scenarios/phantom_dependencies'
+      ]
     },
     {
       type: 'category',
