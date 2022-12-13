@@ -80,7 +80,7 @@ API for `fancy-button`, all consumers must be fixed at the time when that change
 The cost of fixing downstream consumers is paid by the person who introduced the break
 ("you broke it, you fix it"), which avoids creating downstream victims, and ensures costs and effects
 are fully analyzed before a prospective change is released. Monorepos work great for a large code base
-that's maintained partner teams within a single organization, but of course it's not a realistic model
+that's maintained by partner teams within a single organization, but of course it's not a realistic model
 for external libraries maintained by different parties on the internet. Nonetheless, if you think about it,
 the various mitigations that we'll be presenting are basically approximating a monorepo, by manipulating
 your `node_modules` dependencies as if they were part of your own set of projects.

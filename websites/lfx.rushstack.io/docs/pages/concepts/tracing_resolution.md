@@ -7,14 +7,13 @@ import TabItem from '@theme/TabItem';
 
 ## CommonJS module resolution
 
-If you are using the NPM or PNPM [installation model](./install_models.md) (versus PnP),
-the CommonJS `require()` API performs module resolution by traversing physical folders on disk.
-This is convenient for troubleshooting, because many problems can be understood simply by inspecting folders
-using your shell. The complete algorithm is detailed in
+If you are using the NPM or PNPM [installation model](./install_models.md), the CommonJS `require()` API performs
+module resolution by traversing physical folders on disk. This is convenient for troubleshooting, as many
+problems can be understood simply by inspecting folders using your shell. The complete algorithm is detailed in
 [the Node.js specification](https://nodejs.org/api/modules.html#all-together), but essentially it works
 like this (ignoring many details such as folder imports and path mappings):
 
-1. If your import path starts with `.` or `..` or `/` (for example `require('./path/to/file')`),
+1. If your import path starts with `.` or `..` or `/`, for example `require('./path/to/file')`,
    then the entire string will be resolved as a regular file/folder path.
 
 2. Otherwise, the first part will be interpreted as an NPM package name. For example
@@ -38,7 +37,7 @@ like this (ignoring many details such as folder imports and path mappings):
    Let's suppose that `/a/b/node_modules/@company/one/package.json` was the found install folder;
    then (absent other mappings) the resolved target path will be `/a/b/node_modules/@company/one/two/three.js`.
 
-5. If the package subpath is not specified (for example `require('@company/one')`), then a main index will be used.
+5. If the package subpath is not specified, for example `require('@company/one')`, then a main index will be used.
    The default would be `/a/b/node_modules/@company/one/index.js`, but most likely an explicit path will be
    specified by a **package.json** field such as `"main"`. For example, with `"main": "dist/bundle.js"`,
    the final target path instead would become `/a/b/node_modules/@company/one/dist/bundle.js`.
@@ -46,8 +45,8 @@ like this (ignoring many details such as folder imports and path mappings):
 A couple important things to understand about this algorithm:
 
 - **Phantom dependencies are possible:**
-  The `node_modules` folder was probably created by `pnpm install` based on some **package.json** file,
-  most likely the package that owns our script `/a/b/c/d/e.js`. However, at no point does the algorithm
+  Your `node_modules` folder was probably created by `pnpm install` based on some **package.json** file,
+  most likely the package that owns our example script `/a/b/c/d/e.js`. However, at no point does the algorithm
   read THAT **package.json** file. Resolution only considers `node_modules` folders, regardless of how they
   were created. This is the fundamental design flaw that makes
   [phantom dependencies](@rushjs/pages/advanced/phantom_deps/) possible, along with **"hoisting"**
@@ -160,7 +159,8 @@ Observe that:
 > the target is a local project or an external package. This is because Rush silently forces
 > [--link-workspace-packages=false](https://pnpm.io/npmrc#link-workspace-packages).
 > If you are using PNPM without Rush, this may not be the case, in which case you'll have to
-> compare versions from two different **package.json** files to determine the answer.
+> deduce the answer by hunting for a matching workspace project and then double-checking
+> that its version matches the specified `worksapce:` range.
 
 Instead of inspecting symlinks, we can use the
 [@rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import)
@@ -234,11 +234,11 @@ actually starts from `projects/e` not `projects/c/node_modules/@rushstack/e/`.
 CommonJS is consdered a "legacy" module system, and today it is mainly used by Node.js
 and associated tools such as Jest. Bundlers such as Webpack implement the modern ECMAScript
 module system, whose most visible difference is that scripts use `import` instead of `require()`.
+(Webpack prefers ECMAScript because `import` is a declaration instead of an API call,
+data instead of code, which provides guarantees that enable better optimizations.)
 
-It's common that a library will need to be imported via both `import` and `require()`,
-which requires having a maintaing separate copies of the code in each format. For example,
-
-For example, consider the
+A library will often want to support both `import` and `require()`, which requires having a maintaing
+separate copies of the code in each format. For example, consider the
 [@microsoft/tsdoc](https://www.npmjs.com/package/@microsoft/tsdoc) NPM package.
 Its **package.json** specifies two fields `"main"` and `"module"`:
 
@@ -255,21 +255,27 @@ Its **package.json** specifies two fields `"main"` and `"module"`:
   "typings": "lib/index.d.ts",
 ```
 
-If present, the `"module"` field will be used by ECMAScript imports instead
-of the `"main"` field.
+If present, the `"module"` field will be used by ECMAScript imports. In the above example,
+the `lib/index.js` script will have the `import` declarations that Webpack understands,
+whereas `lib-commonjs/index.js` would have `require()` API calls that classic Node.js needs.
 
 ## TypeScript module resolution
 
 At compile time, TypeScript compiler looks for `.d.ts` files instead of `.js` files. In the simple case,
 it simply performs CommonJS or ECMAScript resolution to find the `.js` file, and then looks for a `.d.ts` file
-in the same folder. For example, `example-package/dist/bundle.d.ts` from `example-package/dist/bundle.js`.
+in the same folder. For example, `example-package/dist/bundle.js` maps to `example-package/dist/bundle.d.ts`.
 
 However, like with `"main"` and `"module"`, you can specify a main index using `"typings"` as seen above.
 (The field can be called `"types"` or `"typings"` -- they have the same meaning.)
 
 If none of these methods work, the TypeScript compiler will also search for a
-[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) package
-such as `@types/example-package` for `package` (or `@types/scope__example` if the name was `@scope/example`).
+[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped). The default naming
+pattern uses `@types` NPM scope, like this:
+
+| NPM package name | DefinitelyTyped package name |
+| ---------------- | ---------------------------- |
+| `example`        | `@types/example`             |
+| `@scope/example` | `@types/scope__example`      |
 
 The full spec is detailed in the
 [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/module-resolution.html).
@@ -280,7 +286,7 @@ The `trace-import` tool can also be used to try resolving `.d.ts` files for Type
 The command line is the same as in the above example, except that you need to include
 the `--resolution-type ts` parameter (`-t ts` for short).
 
-The `trace-import` is a handy tool for basic checks; however, it currently does not implement advanced
+The `trace-import` tool is quick and convenient; however, it currently does not implement advanced
 import mappings and **tsconfig.json** settings. For the most accurate diagnostics, it's recommended
 instead to compile your project using the
 [--traceResolution](https://www.typescriptlang.org/tsconfig/#traceResolution)
