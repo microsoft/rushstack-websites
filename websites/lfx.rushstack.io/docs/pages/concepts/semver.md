@@ -110,7 +110,7 @@ and the version range matching rules can be counterintuitive.
 
 The following version range syntaxes are commonly used with NPM packages, and can be considered "best practices":
 
-<div className="markdown-table-nowrap-first-column">
+<div className="markdown-table-nowrap-col-1">
 
 <!-- prettier-ignore-start -->
 | Example syntax | Description |
@@ -170,7 +170,7 @@ to see what they match.
 Strictly speaking, the `"dependencies"` table in **package.json** maps to a **dependency specifier** syntax,
 which is a superset of **SemVer ranges**. Here's some examples:
 
-<div className="markdown-table-nowrap-first-column">
+<div className="markdown-table-nowrap-col-1">
 
 <!-- prettier-ignore-start -->
 | Example syntax | Description |

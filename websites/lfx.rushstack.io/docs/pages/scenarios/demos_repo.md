@@ -16,21 +16,30 @@ that is running on your `http://localhost` network, which is used by `rush insta
 If you want to invoke `rush install` or `rush update` in the demo branches, the [Verdaccio](https://verdaccio.org/)
 NPM registry service must be running. Launch it like this:
 
-1. Clone the `main` branch of the [lockfile-explorer-demos](https://github.com/microsoft/lockfile-explorer-demos)
+1. If you haven't done so already, install Rush and PNPM tools globally:
+
+   ```bash
+   # (You could substitute "pnpm" or "yarn" instead of "npm" here.  To avoid confusing
+   # duplicate installs, always use the same tool for global installations!)
+   npm install -g @microsoft/rush
+   npm install -g pnpm
+   ```
+
+2. Clone the `main` branch of the [lockfile-explorer-demos](https://github.com/microsoft/lockfile-explorer-demos)
    repository. Since you'll need two clones of the repository, we recommend to name this folder
    `"lockfile-explorer-demos-verdaccio"`:
    ```bash
    git clone https://github.com/microsoft/lockfile-explorer-demos.git lockfile-explorer-demos-verdaccio
    ```
-2. Use the [PNPM package manager](https://pnpm.io/) to install the tooling dependencies:
+3. Use the [PNPM package manager](https://pnpm.io/) to install the tooling dependencies:
    ```bash
    pnpm install
    ```
-3. Launch the Verdaccio service:
+4. Launch the Verdaccio service:
    ```bash
    pnpm start
    ```
-4. **_In a separate shell window_** run `pnpm publish-all` to publish all of the
+5. **_In a separate shell window_** run `pnpm publish-all` to publish all of the
    [demo NPM packages](https://github.com/microsoft/lockfile-explorer-demos/tree/main/demo-packages)
    to `http://localhost`:
 
@@ -38,13 +47,18 @@ NPM registry service must be running. Launch it like this:
    # (Open a separate shell window, since "pnpm start" is still running from step 3)
    cd lockfile-explorer-demos-verdaccio
 
+   # The packages are published into Verdaccio's database, which is stored
+   # in ./temp/verdaccio/storage
    pnpm publish-all
    ```
 
+Now that Verdaccio is running, proceed to the **"Checking out a demo branch"** section below.
+
 > Deleting the Verdaccio database
 >
-> If want to experiment with changing the locally published **package.json** files, you MUST delete the Verdaccio
-> database first:
+> If `pnpm publish-all` sees that a given package was already published, it will skip it.
+> If you want to experiment with modifying one of the demo **package.json** files,
+> you MUST delete the Verdaccio database before redoing `pnpm publish-all`:
 >
 > 1. Stop the service if it's already running (CTRL+C)
 > 2. Delete the temporary files `temp/verdaccio/storage/*` by running: `rm -Rf temp`
@@ -59,7 +73,7 @@ NPM registry service must be running. Launch it like this:
 > Will retry in 10 seconds. 2 retries left.
 > ```
 >
-> **How to fix it:** Make sure Verdaccio is running!
+> **How to fix it:** Make sure Verdaccio is running! See above.
 
 Here's the steps for checking out the `demo/sample-1` branch. Other branches can be checked out
 in the same way.

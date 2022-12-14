@@ -29,7 +29,7 @@ const sidebars = {
         'pages/concepts/semver',
         'pages/concepts/install_models',
         'pages/concepts/tracing_resolution',
-        //        'pages/concepts/pnpm_lockfile',
+        'pages/concepts/pnpm_lockfile',
         'pages/concepts/strict_settings'
       ]
     },

@@ -70,7 +70,9 @@ A couple important things to understand about this algorithm:
 
 Let's try a hands-on experiment, to see how CommonJS resolution can be traced by inspecting folders on disk.
 
-1<!-- -->. Clone and install the [demo/sample-1](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/sample-1)
+#### 1. Clone the demo repo
+
+Clone and install the [demo/sample-1](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/sample-1)
 branch from the [lockfile-explorer-demos](https://github.com/microsoft/lockfile-explorer-demos/)
 demo repo. **_You will need to launch the Verdaccio service in a separate shell window._** See the
 [Demos repository](../scenarios/demos_repo.md) topic for instructions.
@@ -78,6 +80,8 @@ demo repo. **_You will need to launch the Verdaccio service in a separate shell 
 Recall that the `demo/sample-1` lockfile looks like this:
 
 <img src='https://raw.githubusercontent.com/microsoft/lockfile-explorer-demos/demo/sample-1/common/images/lfx-demo-sample-1.svg' alt="dependency graph: demo/sample-1" />
+
+#### 2. Inspect the symlinks
 
 After running `rush install` in the `~/lockfile-explorer-demos/` folder, the project `C` should
 have the following files:
@@ -162,6 +166,8 @@ Observe that:
 > deduce the answer by hunting for a matching workspace project and then double-checking
 > that its version matches the specified `worksapce:` range.
 
+#### 3. Resolving with "trace-import"
+
 Instead of inspecting symlinks, we can use the
 [@rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import)
 tool to test how the dependency gets resolved:
@@ -191,6 +197,8 @@ Main index:              (none)
 
 Target path:             C:\Git\lockfile-explorer-demos\common\temp\node_modules\.pnpm\@rushstack+m@1.0.0\node_modules\@rushstack\m\index.js
 ```
+
+#### 4. Tracing parent folders
 
 Now let's follow the chain a step further. At runtime, suppose that `C` imports a script from `E`,
 and then `E` in turn tries to import `M`. Will it work? We might try this experiment:
