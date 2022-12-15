@@ -10,39 +10,42 @@ PNPM installation model, and so the filename is `pnpm-lock.yaml`.
 
 ## Why do we need a lockfile?
 
-Suppose hypothetically that we did not have a `pnpm-lock.yaml` stored in Git, and suppose also that
+Suppose hypothetically that we did not have a `pnpm-lock.yaml` file stored in Git, and suppose also that
 `my-app/package.json` has a dependency on `"react": "^18.0.0"`. Let's say today is May 1st, and the latest release
 from the 18 series is `react@18.1.0`. Without a lockfile, that is what PNPM would choose to install.
 Latest is greatest, right? Well, consider a few hypothetical scenarios:
 
-1. **Ability to reproduce an error.** Some time passes, and it's now June 15th. When you install `my-app`, now
-   the latest version is `react@18.2.0`. The app malfunctions because of a change introduced in that version.
-   However when you report the error to a teammate, they don't know what you're talking about. _"Everything
+1. **Ability to reproduce an error.** Some time passes, and it's now June 15th. When you install `my-app`,
+   the latest version is now `react@18.2.0`. Suppose the app malfunctions because of a change introduced in
+   that version. But when you ask a teammate for help, they don't know what you're talking about. _"Everything
    runs fine on my computer!"_ The reason is that their `node_modules` folder still has the old `react@18.1.0`.
 
 2. **Building old branches.** To investigate, you remember that the project worked successfully a week ago,
-   so you decide to try checking out older versions of the Git branch. If you can pinpoint the commit that
-   broke things, then you could compare the diff to see what might have changed. However because there is
+   so you decide to try checking out older versions of the Git branch. By pinpointing the commit that
+   broke things, maybe you can compare the diff to find the change that broke things. However because there is
    no lockfile, those old branches are all now failing as well, because `react@18.2.0` is getting installed
    instead of `react@18.1.0`.
 
 3. **Deterministic releases.** But that means... The next time we deploy to production, it's going to
-   include `react@18.2.0` and cause a customer incident. Essentially, we're deploying something
-   different from what we tested. How can we pin the version back to `react@18.1.0`?
+   include `react@18.2.0` and cause a customer incident. Uh oh! Essentially, we're deploying something
+   different from what we tested. How can we pin the version back to `react@18.1.0` for a given branch?
 
 A naive solution would be to change `"react": "^18.0.0"` to `"react": "18.1.0"` in `my-app/package.json`,
 however this only affects direct dependencies of your project. A typical `node_modules` folder may contain
-thousands of NPM packages, most of which are indirect dependencies determined by an external `package.json` file.
+thousands of NPM packages, most of which are dependencies-of-dependencies, whose version range is determined
+by an external `package.json` file.
 
-## What does it store?
+## What does a lockfile store?
 
-The package lockfile is the ideal solution to this problem. It stores the exact version number of every
+The package lockfile is the ideal solution to the above problem: It records the exact version number of every
 single package in your `node_modules` folder, along with topological information such as peer dependency
-relationships. It is organized into a text file whose diff is designed to avoid Git merge conflicts
-as much as possible. It also carefully avoids storing extra information that might not be portable
-between operating systems or NPM registry proxies.
+relationships. This enables the package manager to reproduce the exact same `node_modules` folder structure
+regardless of whatever the "latest" versions might be on that day. The `pnpm-lock.yaml` file is serialized as
+human-readable text, in a format whose diff minimizes Git merge conflicts as much as possible. The file format
+also carefully avoids storing extra information that might not be portable between operating systems
+or NPM registry configurations.
 
-## How is it created
+## How is a lockfile created?
 
 <div className="markdown-table-nowrap-col-1-and-2">
 
@@ -60,8 +63,8 @@ between operating systems or NPM registry proxies.
 With Rush, the lockfile is stored in `common/config/rush/pnpm-lockfile.yaml`. During installation, it gets
 copied to `common/temp/` where the workspace installation occurs.
 
-If you're using a PNPM workspace without Rush, the `pnpm-lockfile.yaml` is stored in the repository root folder,
-next to your `pnpm-workspace.yaml` file.
+If you're using a PNPM workspace without Rush, then `pnpm-lockfile.yaml` is instead stored in your repository's
+root folder, next to your `pnpm-workspace.yaml` file.
 
 > **Two different meanings of "lockfile"**
 >
@@ -140,18 +143,19 @@ version `1.0.0` needs to be installed in two separate folder locations:
   `.pnpm/@rushstack+k@1.0.0_wxpgugna4ivthu7yyu4fmciltu/node_modules/@rushstack/k>`
 
 The `.pnpm` disk folder can be found under `common/temp/node_modules/`, and PNPM's various symlinks will ultimately
-point into paths under this folder. These disk paths are not represented in the lockfile; to see them, you need
-to run `rush install` and then inspect the resulting `common/temp` folder.
+point into paths under this folder. The exact disk paths are implementation details and therefore not captured in
+the lockfile; to observe them, you need to run `rush install` and then inspect the resulting `common/temp` folder.
 
 The `_@rushstack+m@1.0.0` suffix is really just an informational label to improve readability for humans.
-In cases where the label would be too long, PNPM falls back to generating a hashed string such
+In cases where the generated label would be too long, PNPM falls back to using a hashed string such
 as `_wxpgugna4ivthu7yyu4fmciltu`.
 
 ## Lockfile "entries"
 
 Lockfile Explorer refers to the `importers:` and `packages:` items as **lockfile entries**. It's important
-to understand that they don't represent package versions, but rather **_folders on disk_** where a package version
-got installed. A single package version may produce multiple lockfile entries, in the case of doppelgangers.
+to understand that "entries" don't correspond to package versions, but rather **_folders on disk_** where
+a package version got installed: A single package version may produce multiple lockfile entries,
+in the case of doppelgangers.
 
 The Lockfile Explorer UI displays `importers:` on the "Projects" tab. The `packages:` are displayed the "Packages" tab.
 
@@ -160,7 +164,7 @@ these lockfile entries appear in the UI.
 
 ## A package entry
 
-Here's an example entry from the `packages:` section:
+Here's an example entry from the `packages:` section, describing an install of `@rushstack/l` version `1.0.0`:
 
 ```yaml
 /@rushstack/l/1.0.0_wxpgugna4ivthu7yyu4fmciltu:
@@ -196,7 +200,8 @@ We can see several fields:
 
 ## A project entry
 
-The `importers:` section for local projects surprisingly has a somewhat different structure:
+Perhaps surprisingly, the `importers:` section for local projects has a somewhat different structure,
+even though both are described by the same **package.json** input format. Let's see if we can explain why:
 
 ```yaml
 ../../projects/c:
@@ -212,26 +217,34 @@ The `importers:` section for local projects surprisingly has a somewhat differen
 
 - `specifiers:` remembers the original SemVer ranges from **package.json**. Because this package was not
   published to an NPM registry, its **package.json** file can be manually modified at any time, so the
-  lockfile needs to detect such changes.
+  lockfile needs to detect such changes. In other words, the lockfile needs to capture more details about
+  local projects, because they are mutable whereas published packages are (mostly) immutable.
 
 - `dependencies:` tracks the dependencies in the same way as the `packages:` section.
-  Note that `link:../e` indicates a dependency that will be symlinked to a local project folder.
+  The `link:../e` string describes a dependency that will be symlinked to a local project folder,
+  for example due to a `workspace:*` specifier in **package.json**.
 
-- Note that `peerDependencies` is never saved for projects. The reason is that PNPM cannot properly
-  install peer dependencies, because it cannot make doppelgangers for projects that are built from
-  source code. Doing so would require a special postprocessing step that copies the build outputs
-  into the doppelganger folders under `node_modules`. This is a somewhat important limitation to understand.
-  See [PNPM#4407](https://github.com/pnpm/pnpm/issues/4407#issuecomment-1125470213) for our current
-  thinking about it.
+- Note that `peerDependencies` never appears in this section. The reason is that PNPM does not properly
+  install peer dependencies for local projects. Why? Well, as we've seen, peer dependencies are installed
+  by creating peer doppelganger folders -- multiple copies of the package folder. But for a local project
+  that is built from source code, how would that work? Whenever you recompile the code, there would need
+  to be some mechanism that copies the output into the various doppelganger folders under `node_modules`.
+  In practice it doesn't cause much trouble, but nonetheless it's a somewhat important limitation to understand,
+  as it explains some weirdness with peer dependencies for local projects.
+  See [PNPM#4407](https://github.com/pnpm/pnpm/issues/4407#issuecomment-1125470213)
+  for our current thinking about it.
 
 ## Lockfile entry identifiers
 
-Looking at the above snippets, you may notice that they YAML key uses a different notation than the
-`dependencies:` section. For example:
+Looking at the above snippets, you may notice that the `dependencies:` section uses a different
+entry identifier syntax than the YAML keys. For example:
 
-- `/@rushstack/k/1.0.0_@rushstack+m@1.0.0` got referenced as `'@rushstack/k': 1.0.0_@rushstack+m@1.0.0`
-- `../../projects/e` got referenced as `../e` (relative to `projects/c` instead of relative to `common/temp/pnpm-workspace.yaml`)
+- `../../projects/e` from `importers:` gets referenced as `../e`. The path is relative to `projects/c` instead
+  of relative to `common/temp/pnpm-workspace.yaml`.
+- `/@rushstack/k/1.0.0_@rushstack+m@1.0.0` from `packages:` gets referenced as
+  `'@rushstack/k': 1.0.0_@rushstack+m@1.0.0`.
 
-These differences produce significant file compression for the YAML file, but they make it somewhat
-difficult to pick through the dependency graph using a text editor. This was one of the major
-motivations for creating the Lockfile Explorer app.
+The `dependencies:` uses a shortened form of the lockfile entry identifier, probably because it yields
+significant file compression for the YAML file, and maybe is a little easier to read. However this inconsistency
+makes it somewhat difficult to traverse the dependency graph by searching for strings in your text editor.
+This was one of the major motivations for creating the Lockfile Explorer app.
