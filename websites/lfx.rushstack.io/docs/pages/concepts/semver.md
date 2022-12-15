@@ -2,7 +2,11 @@
 title: SemVer
 ---
 
-When an **NPM package** is published to an NPM registry, the package folder gets compressed into a `tar` archive
+A lockfile can be thought of as a solution to a large multivariable equation, where the variables are
+version ranges (`"^1.0.0"`) and the solved values are versions (`"1.2.3"`). Let's review the mechanics
+of NPM package versioning.
+
+When an NPM package is published to an NPM registry, the package folder gets compressed into a `tar` archive
 ("tarball") and uploaded to the NPM registry server. The release is identified by a package `"name"`
 and `"version"`, which are specified in the published **package.json** file. For example:
 
@@ -16,14 +20,13 @@ and `"version"`, which are specified in the published **package.json** file. For
 }
 ```
 
-The published version (`1.2.3`) might later be marked as **"deprecated"**, for example
-
-If a security vulnerability is later discovered for the `1.2.3` release, we can mark that version
+For published packages, the version is a mostly unique key identifying a given release, within
+a given NPM registry server at least. Most production registries will not allow a given version
+to be republished with different content, since that can interfere with caching and reproducible builds.
+If a critical security vulnerability is discovered for the `1.2.3` release, we can mark that version
 as **"deprecated"**. If the release is found to contain malware or other content that violates a policy,
-we could mark it as **"unpublished"** (preventing installation entirely). However, most modern registries
-will NOT allow a given version to be republished with different content, since that can interfere with caching
-and reproducible builds. Thus, within a given NPM registry, the package name and version from a mostly
-unique key for obtaining a given release.
+we could mark it as **"unpublished"** (preventing installation entirely). Either way, when a fix is
+published, it will need to use a different version number such as `1.2.4`.
 
 A package can "depend on" other packages, which essentially means that in order to install the package,
 the package manager must also install those dependencies. Dependencies are specified in **package.json**
@@ -45,30 +48,32 @@ Here's an example where `my-app` depends on `my-library`:
 }
 ```
 
-The version notation is defined by the **Semantic Version** standard, **"SemVer"** for short. Consult
-the [SemVer Specification](https://semver.org/) for full details. The standard defines two kinds of syntaxes:
+These version syntaxes are defined by the **Semantic Version** standard, **"SemVer"** for short. The
+[SemVer Specification](https://semver.org/) defines two fundamentally different kinds of syntaxes:
 
-1. A **version** identifies a single specific release of an NPM package.
-   For example, `1.2.3` used in the `"version"` field above.
-2. A **version range** is a pattern that can match muliple possible versions.
-   For example `^1.2.0` used in the `"dependencies"` field above. It matches `1.2.0` and `1.7.9`
-   but not `1.1.0` nor `2.0.0`. See below for details.
+- A **version** identifies a single specific release of an NPM package.
+  For example, `1.2.3` used in the `"version"` field above.
+- A **version range** is a pattern that can match muliple possible versions.
+  For example `^1.2.0` used in the `"dependencies"` field above. It matches `1.2.0` and `1.7.9`
+  but not `1.1.0` nor `2.0.0`. See below for details.
 
 ## "Version" cheat sheet
 
-Versions must have three parts (`MAJOR.MINOR.PATCH`) and sometimes four parts (`MAJOR.MINOR.PATCH-PRERELEASE`):
+SemVer versions must have three parts (`MAJOR.MINOR.PATCH`) and sometimes four parts (`MAJOR.MINOR.PATCH-PRERELEASE`):
 
-- **MAJOR number:** No guarantees; breaking changes are possible.
+- **MAJOR number:** When upgrading to a new major version, there are no compatibility guarantees.
+  Breaking changes are possible. <br/>
   For example if `2.0.0` is bumped to `3.0.0`, an existing API might get removed or renamed.
-- **MINOR number:** Guaranteed backwards compatible; but may not be forwards compatible.
+
+- **MINOR number:** Guaranteed backwards compatible; but may not be forwards compatible. <br/>
   For example if `2.0.0` is bumped to `2.1.0`, a new API might be added, but an old API shouldn't get removed.
-- **PATCH number:** Guaranteed backwards and forwards compatible; bug fixes only.
+
+- **PATCH number:** Guaranteed backwards and forwards compatible; bug fixes only. <br/>
   For example if `2.0.0` is bumped to `2.0.1`, a bug might get fixed, but no API is added or removed.
+
 - **PRERELEASE suffix:** Used to specify a sequence of incremental releases, such as nightly builds,
-  release candidates for testing, preview releases, etc. For example, the third test release of pull request
-  #1234 might get published with version `5.0.0-pr1234.3`.
-- For completeness: The spec also defines an optional "metadata suffx" specified using the `+` character.
-  This component has limited usefulness and is best avoided.
+  release candidates for testing, preview releases, etc. <br/>
+  For example, the third test release of pull request #1234 might get published with version `5.0.0-pr1234.3`.
 
 "Prerelease" tags are optional strings that are appended using a hyphen (`-`). They are so-named because
 they are considered to precede their base version. For example, the following versions are listed in
@@ -85,17 +90,27 @@ they are considered to precede their base version. For example, the following ve
 Be careful: The ordering rules for prereleases involve complicated string parsing heuristics,
 and the version range matching rules can be counterintuitive.
 
+> **SemVer syntax vs semantics**
+>
 > Many NPM packages use SemVer syntax but do not implement its behavioral semantics.
 > Some packages are simply careless about their interface contracts. Other projects
 > intentionally chose a looser convention, where MAJOR bumps are reserved for big changes,
 > and MINOR and PATCH increments indicate "less significant changes" that may still break
 > an interface contract.
 
+> **SemVer metadata suffix: best avoided**
+>
+> The SemVer spec defines an optional "metadata" string specified using the `+` character,
+> for example `5.0.0-pr1234.3+git20a70b7`. Its purpose is to distinguish different builds
+> of the same version, such as QA release candidates. We recommend NOT to use metadata suffixes;
+> build numbers and release versions are separate problems, best tackled separately.
+> If you need to track a build identifier, find some other field to store it in.
+
 ## "Version range" cheat sheet
 
 The following version range syntaxes are commonly used with NPM packages, and can be considered "best practices":
 
-<div className="markdown-table-nowrap-first-column">
+<div className="markdown-table-nowrap-col-1">
 
 <!-- prettier-ignore-start -->
 | Example syntax | Description |
@@ -155,7 +170,7 @@ to see what they match.
 Strictly speaking, the `"dependencies"` table in **package.json** maps to a **dependency specifier** syntax,
 which is a superset of **SemVer ranges**. Here's some examples:
 
-<div className="markdown-table-nowrap-first-column">
+<div className="markdown-table-nowrap-col-1">
 
 <!-- prettier-ignore-start -->
 | Example syntax | Description |
