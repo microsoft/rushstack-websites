@@ -27,6 +27,6 @@ of changelogs for all projects.
 
 ## Announcements
 
-Follow us on [Twitter (@rushstack)](https://twitter.com/rushstack) or [Mastodon (@rushstack@mas.to)](https://mas.to/@rushstack)
+Follow us on [Twitter (@rushstack)](https://twitter.com/rushstack) or [Mastodon (@rushstack@fosstodon.org)](https://fosstodon.org/@rushstack)
 
 <div dangerouslySetInnerHTML={{__html: '<a class="twitter-timeline" data-width="600" tweet-limit="10" chrome="noscrollbar" data-dnt="true" data-link-color="#c95228" href="https://twitter.com/rushstack?ref_src=twsrc%5Etfw">Tweets by @rushstack</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'}} />

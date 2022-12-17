@@ -69,3 +69,7 @@ In summer of 2019, we launched **Rush Stack** with the aim to provide a reusable
 - Trade your flexibility for an opinionated approach backed by tooling experts who run huge monorepos
 - Join forces with the open community that's investing in this approach
 - Help us to "go deep" with integrations, optimizations, documentation, and polish to achieve a world class developer experience
+
+<!-- Verification of Mastodon account -->
+
+<a rel="me" class="no-external-link-icon" href="https://fosstodon.org/@rushstack"></a>
