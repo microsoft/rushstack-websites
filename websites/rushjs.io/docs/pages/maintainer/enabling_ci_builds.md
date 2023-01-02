@@ -120,6 +120,6 @@ jobs:
         run: node common/scripts/install-run-rush.js rebuild --verbose --production
 ```
 
-For an example of an equivalent setup using an Azuze DevOps build pipeline, take a look at the
+For an example of an equivalent setup using an Azure DevOps build pipeline, take a look at the
 [build.yaml file](https://github.com/microsoft/rushstack/blob/main/common/config/azure-pipelines/templates/build.yaml),
 in the monorepo where Rush is developed.
