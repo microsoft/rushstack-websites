@@ -35,6 +35,11 @@
   "//": "Alphabetical by first name",
   "collaborators": [
     {
+      "name": "Cheng",
+      "githubAlias": "chengcyber",
+      "caption": "facilitating: Rush; contributed many features including the Rush plugin system"
+    },
+    {
       "name": "Elliot Nelson",
       "githubAlias": "elliot-nelson",
       "caption": "facilitating: Rush, Heft, Docusaurus"
