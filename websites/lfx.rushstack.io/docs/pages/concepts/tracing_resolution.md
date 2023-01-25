@@ -10,8 +10,8 @@ import TabItem from '@theme/TabItem';
 If you are using the NPM or PNPM [installation model](./install_models.md), the CommonJS `require()` API performs
 module resolution by traversing physical folders on disk. This is convenient for troubleshooting, as many
 problems can be understood simply by inspecting folders using your shell. The complete algorithm is detailed in
-[the Node.js specification](https://nodejs.org/api/modules.html#all-together), but essentially it works
-like this (ignoring many details such as folder imports and path mappings):
+[the Node.js specification](https://nodejs.org/api/modules.html#all-together), but here's a quick summary
+(ignoring many details such as folder imports and path mappings):
 
 1. If your import path starts with `.` or `..` or `/`, for example `require('./path/to/file')`,
    then the entire string will be resolved as a regular file/folder path.
@@ -239,13 +239,13 @@ actually starts from `projects/e` not `projects/c/node_modules/@rushstack/e/`.
 
 ## ES module resolution
 
-CommonJS is consdered a "legacy" module system, and today it is mainly used by Node.js
+CommonJS is considered a "legacy" module system, and today it is mainly used by Node.js
 and associated tools such as Jest. Bundlers such as Webpack implement the modern ECMAScript
 module system, whose most visible difference is that scripts use `import` instead of `require()`.
 (Webpack prefers ECMAScript because `import` is a declaration instead of an API call,
 data instead of code, which provides guarantees that enable better optimizations.)
 
-A library will often want to support both `import` and `require()`, which requires having a maintaing
+A library will often want to support both `import` and `require()`, which requires maintaining
 separate copies of the code in each format. For example, consider the
 [@microsoft/tsdoc](https://www.npmjs.com/package/@microsoft/tsdoc) NPM package.
 Its **package.json** specifies two fields `"main"` and `"module"`:
@@ -277,7 +277,7 @@ However, like with `"main"` and `"module"`, you can specify a main index using `
 (The field can be called `"types"` or `"typings"` -- they have the same meaning.)
 
 If none of these methods work, the TypeScript compiler will also search for a
-[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped). The default naming
+[Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) helper package. The default naming
 pattern uses `@types` NPM scope, like this:
 
 | NPM package name | DefinitelyTyped package name |

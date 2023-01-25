@@ -16,7 +16,7 @@ in common use for Node.js today:
    (duplicate installations of the same version of the same package).
    NPM's implementation also produces
    [nondeterministic installations](http://npm.github.io/how-npm-works-docs/npm3/non-determinism.html)
-   depending on the order in which CLI comands are invoked.
+   depending on the order in which CLI commands are invoked.
    The later installation models can all be understood as attempts to mitigate these design flaws,
    with different tradeoffs for backwards compatibility with legacy packages.
 
@@ -38,8 +38,8 @@ in common use for Node.js today:
    The script is expected to implement the [PnP API](https://yarnpkg.com/advanced/pnpapi) contract, although there
    is currently no spec for how module resolution might be performed by a tool that cannot execute arbitrary
    JavaScript code (for example a Java service). Because it fundamentally redesigns the semantics of `require()`,
-   Plug'n'Play offers significant improvements in both features and performance; however it has struggled to gain
-   widespread adoption due to compatibility challenges for existing NPM packages. The PNPM package manager
+   Plug'n'Play offers significant improvements in both features and performance; however adoption has been
+   limited due to compatibility challenges for existing NPM packages. The PNPM package manager
    now optionally supports the Plug'n'Play installation model via
    the [node-linker=pnp](https://pnpm.io/npmrc#node-linker) setting.
 

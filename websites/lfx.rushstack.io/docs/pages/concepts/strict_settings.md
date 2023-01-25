@@ -7,7 +7,7 @@ Rush and PNPM. These settings activate additional validation checks and disable
 some "magic" features that try to hide problems caused by an incorrect lockfile.
 
 These strict settings are disabled by default, because it can take some effort
-to get them enabled in a preexisting mononrepo. Once enabled, engineers may encounter
+to get them enabled in a preexisting monorepo. Once enabled, engineers may encounter
 versioning errors more frequently in their day to day work, but these errors are generally
 less costly to manage than the much deeper problems that can arise in a monorepo
 with inherent version conflicts, whose engineers learned about versioning by studying
