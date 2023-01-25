@@ -15,11 +15,11 @@ monorepo.
 
 The relevant monorepo project folders are:
 
-- [apps/lockfile-explorer](https://github.com/microsoft/rushstack/tree/main/apps/lockfile-explorer)
-  - the published NPM package, containing the command-line binary and localhost Node.js service
-- [apps/lockfile-explorer-web](https://github.com/microsoft/rushstack/tree/main/apps/lockfile-explorer-web)
-  - the React web application project. This NPM package is not published; instead, its bundle is copied
-    into the `@rushstack/lockfile-explorer` package.
+- [apps/lockfile-explorer](https://github.com/microsoft/rushstack/tree/main/apps/lockfile-explorer) - the
+  published NPM package, containing the command-line binary and localhost Node.js service
+- [apps/lockfile-explorer-web](https://github.com/microsoft/rushstack/tree/main/apps/lockfile-explorer-web) - the
+  React web application project. This NPM package is not published; instead, its bundle is copied
+  into the `@rushstack/lockfile-explorer` package.
 
 ## Building Lockfile Explorer in "watch mode"
 
@@ -58,7 +58,7 @@ rushx start
 When you're ready to create your PR, it's a good idea to build a full production release and try
 installing it locally:
 
-```
+```bash
 cd rushstack
 
 # Install NPM packages
@@ -78,4 +78,5 @@ npm install -g rushstack-lockfile-explorer-1.2.3.tgz
 
 # When you run the "lockfile-explorer" shell command, it should now launch your
 # locally built package
+lockfile-explorer
 ```
