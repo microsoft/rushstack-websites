@@ -2,15 +2,23 @@
 title: Getting started
 ---
 
-The Rush Stack projects are all developed in the **rushstack** monorepo on GitHub:
+Most Rush Stack projects are developed in the main **rushstack** monorepo on GitHub:
 
 &nbsp;&nbsp;&nbsp;&nbsp; [https://github.com/microsoft/rushstack](https://github.com/microsoft/rushstack)
 
-For documentation fixes, each website has its own GitHub repo:
+We also maintain a number of supporting repositories for documentation and code samples:
 
-- Rush Stack website: [https://github.com/microsoft/rushstack.io-website](https://github.com/microsoft/rushstack.io-website)
-- [Rush](@rushjs/) website: [https://github.com/microsoft/rushjs.io-website](https://github.com/microsoft/rushjs.io-website)
-- [API Extractor](@api-extractor/) website: [https://github.com/microsoft/api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website)
+<!-- prettier-ignore-start -->
+| GitHub repo | Contents |
+|-------------|----------|
+| [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites) | Docusaurus websites for `rushjs.io`, `rushstack.io`, `lfx.rushstack.io`, `api.rushstack.io` |
+| [microsoft/api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website) | Jekyll website for `api-extractor.com` |
+| [microsoft/tsdoc.org-website](https://github.com/microsoft/tsdoc.org-website) | Jekyll website for `tsdoc.org` |
+| [microsoft/rush-example](https://github.com/microsoft/rush-example) | A barebones example repository for testing Rush commands |
+| [microsoft/rushstack-samples](https://github.com/microsoft/rushstack-samples) | A collection of code samples using the Rush Stack tooling |
+| [microsoft/rushstack-legacy](https://github.com/microsoft/rushstack-legacy) | Legacy projects that are no longer actively developed |
+| [microsoft/tsdoc](https://github.com/microsoft/tsdoc) | TSDoc-related projects are developed in this standalone monorepo |
+<!-- prettier-ignore-end -->
 
 ## Setting up your machine
 

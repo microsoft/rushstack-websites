@@ -53,7 +53,7 @@ These version syntaxes are defined by the **Semantic Version** standard, **"SemV
 
 - A **version** identifies a single specific release of an NPM package.
   For example, `1.2.3` used in the `"version"` field above.
-- A **version range** is a pattern that can match muliple possible versions.
+- A **version range** is a pattern that can match multiple possible versions.
   For example `^1.2.0` used in the `"dependencies"` field above. It matches `1.2.0` and `1.7.9`
   but not `1.1.0` nor `2.0.0`. See below for details.
 
@@ -148,7 +148,7 @@ that have been known to violate SemVer by introducing breaking changes in a MINO
 
 Unbounded MAJOR ranges such as `*` or `>2.0.0` are generally not recommended, unless constrained in
 some other way such as via a peer dependency. (The special `workspace:*` notation is okay
-because its wildcard gets rewritten to an exact version during pubishing.)
+because its wildcard gets rewritten to an exact version during publishing.)
 
 ## SemVer surprises
 
@@ -160,7 +160,7 @@ Here's a quick list of SemVer edge cases that can be counterintuitive for casual
   considered "smaller" than `1.0.0`
 - `^1.0.0` does NOT match `1.0.1-hotfix.0` because prereleases only match their base version
 - `>1.0.0` does NOT match `1.0.1-hotfix.0` for the same reason
-- `^1.0.0-beta` DOES match `1.2.3` because prerelease ranges do mwatch newer versions
+- `^1.0.0-beta` DOES match `1.2.3` because prerelease ranges do match newer versions
 
 You can use the [SemVer calculator](https://semver.npmjs.com/) website to experiment with SemVer range expressions
 to see what they match.
