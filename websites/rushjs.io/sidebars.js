@@ -68,7 +68,7 @@ const sidebars = {
       label: 'Advanced topics',
       collapsible: false,
       items: [
-        'pages/advanced/config_files',
+        'pages/advanced/rush_files_and_folders',
         'pages/advanced/phantom_deps',
         'pages/advanced/npm_doppelgangers',
         'pages/advanced/compatibility_db',
@@ -89,6 +89,8 @@ const sidebars = {
       label: 'Command reference',
       collapsible: false,
       items: [
+        'pages/commands/rushx',
+        'pages/commands/rush-pnpm',
         'pages/commands/rush_add',
         'pages/commands/rush_build',
         'pages/commands/rush_change',
