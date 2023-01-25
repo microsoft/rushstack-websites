@@ -22,6 +22,7 @@ rush install
 
 # Launch the Lockfile Explorer command line interface (CLI).
 # It expects to find a Rush/PNPM workspace in your shell's current working directory.
+# As a shorthand, the "lfx" alias can be used here instead of "lockfile-explorer".
 lockfile-explorer
 ```
 
