@@ -163,3 +163,13 @@ th:nth-child(1),
 th:nth-child(2) {
   white-space: nowrap;
 }
+
+/**
+ * Docusaurus's NavbarNavLink relies on a hardwired isInternalUrl() to determine
+ * whether to inject the "external link" SVG glyph.  It's difficult to disable,
+ * so we just use a CSS selector to hide it.
+ */
+a .navbar__link,
+.navbar__item > svg {
+  display: none;
+}
