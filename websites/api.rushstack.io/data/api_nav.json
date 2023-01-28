@@ -282,6 +282,11 @@
             },
             {
               "type": "doc",
+              "label": "alphaTrimmedFilePath",
+              "id": "pages/api-extractor.extractorconfig.alphatrimmedfilepath"
+            },
+            {
+              "type": "doc",
               "label": "apiJsonFilePath",
               "id": "pages/api-extractor.extractorconfig.apijsonfilepath"
             },
@@ -289,6 +294,11 @@
               "type": "doc",
               "label": "apiReportEnabled",
               "id": "pages/api-extractor.extractorconfig.apireportenabled"
+            },
+            {
+              "type": "doc",
+              "label": "apiReportIncludeForgottenExports",
+              "id": "pages/api-extractor.extractorconfig.apireportincludeforgottenexports"
             },
             {
               "type": "doc",
@@ -304,6 +314,16 @@
               "type": "doc",
               "label": "docModelEnabled",
               "id": "pages/api-extractor.extractorconfig.docmodelenabled"
+            },
+            {
+              "type": "doc",
+              "label": "docModelIncludeForgottenExports",
+              "id": "pages/api-extractor.extractorconfig.docmodelincludeforgottenexports"
+            },
+            {
+              "type": "doc",
+              "label": "enumMemberOrder",
+              "id": "pages/api-extractor.extractorconfig.enummemberorder"
             },
             {
               "type": "doc",
@@ -379,6 +399,11 @@
               "type": "doc",
               "label": "projectFolder",
               "id": "pages/api-extractor.extractorconfig.projectfolder"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderUrl",
+              "id": "pages/api-extractor.extractorconfig.projectfolderurl"
             },
             {
               "type": "doc",
@@ -606,6 +631,11 @@
             },
             {
               "type": "doc",
+              "label": "includeForgottenExports",
+              "id": "pages/api-extractor.iconfigapireport.includeforgottenexports"
+            },
+            {
+              "type": "doc",
               "label": "reportFileName",
               "id": "pages/api-extractor.iconfigapireport.reportfilename"
             },
@@ -665,6 +695,16 @@
               "type": "doc",
               "label": "enabled",
               "id": "pages/api-extractor.iconfigdocmodel.enabled"
+            },
+            {
+              "type": "doc",
+              "label": "includeForgottenExports",
+              "id": "pages/api-extractor.iconfigdocmodel.includeforgottenexports"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderUrl",
+              "id": "pages/api-extractor.iconfigdocmodel.projectfolderurl"
             }
           ]
         },
@@ -676,6 +716,11 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/api-extractor.iconfigdtsrollup"
+            },
+            {
+              "type": "doc",
+              "label": "alphaTrimmedFilePath",
+              "id": "pages/api-extractor.iconfigdtsrollup.alphatrimmedfilepath"
             },
             {
               "type": "doc",
@@ -737,6 +782,11 @@
               "type": "doc",
               "label": "dtsRollup",
               "id": "pages/api-extractor.iconfigfile.dtsrollup"
+            },
+            {
+              "type": "doc",
+              "label": "enumMemberOrder",
+              "id": "pages/api-extractor.iconfigfile.enummemberorder"
             },
             {
               "type": "doc",
@@ -869,6 +919,11 @@
             },
             {
               "type": "doc",
+              "label": "ignoreMissingEntryPoint",
+              "id": "pages/api-extractor.iextractorconfigprepareoptions.ignoremissingentrypoint"
+            },
+            {
+              "type": "doc",
               "label": "packageJson",
               "id": "pages/api-extractor.iextractorconfigprepareoptions.packagejson"
             },
@@ -982,6 +1037,48 @@
           "type": "doc",
           "label": "(members)",
           "id": "pages/api-extractor-model"
+        },
+        {
+          "type": "doc",
+          "label": "ApiAbstractMixin",
+          "id": "pages/api-extractor-model.apiabstractmixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiAbstractMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiabstractmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isAbstract",
+              "id": "pages/api-extractor-model.apiabstractmixin.isabstract"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apiabstractmixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiAbstractMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiabstractmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiabstractmixin.isbaseclassof"
+            }
+          ]
         },
         {
           "type": "category",
@@ -1178,6 +1275,11 @@
             },
             {
               "type": "doc",
+              "label": "fileUrlPath",
+              "id": "pages/api-extractor-model.apideclareditem.fileurlpath"
+            },
+            {
+              "type": "doc",
               "label": "getExcerptWithModifiers",
               "id": "pages/api-extractor-model.apideclareditem.getexcerptwithmodifiers"
             },
@@ -1190,6 +1292,11 @@
               "type": "doc",
               "label": "serializeInto",
               "id": "pages/api-extractor-model.apideclareditem.serializeinto"
+            },
+            {
+              "type": "doc",
+              "label": "sourceLocation",
+              "id": "pages/api-extractor-model.apideclareditem.sourcelocation"
             }
           ]
         },
@@ -1337,23 +1444,50 @@
             },
             {
               "type": "doc",
-              "label": "initializerExcerpt",
-              "id": "pages/api-extractor-model.apienummember.initializerexcerpt"
-            },
-            {
-              "type": "doc",
               "label": "kind",
               "id": "pages/api-extractor-model.apienummember.kind"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiExportedMixin",
+          "id": "pages/api-extractor-model.apiexportedmixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiExportedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiexportedmixin"
             },
             {
               "type": "doc",
-              "label": "onDeserializeInto",
-              "id": "pages/api-extractor-model.apienummember.ondeserializeinto"
+              "label": "isExported",
+              "id": "pages/api-extractor-model.apiexportedmixin.isexported"
             },
             {
               "type": "doc",
               "label": "serializeInto",
-              "id": "pages/api-extractor-model.apienummember.serializeinto"
+              "id": "pages/api-extractor-model.apiexportedmixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiExportedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiexportedmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiexportedmixin.isbaseclassof"
             }
           ]
         },
@@ -1426,6 +1560,48 @@
               "type": "doc",
               "label": "kind",
               "id": "pages/api-extractor-model.apiindexsignature.kind"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiInitializerMixin",
+          "id": "pages/api-extractor-model.apiinitializermixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiInitializerMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiinitializermixin"
+            },
+            {
+              "type": "doc",
+              "label": "initializerExcerpt",
+              "id": "pages/api-extractor-model.apiinitializermixin.initializerexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apiinitializermixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiInitializerMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiinitializermixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiinitializermixin.isbaseclassof"
             }
           ]
         },
@@ -1521,6 +1697,11 @@
             },
             {
               "type": "doc",
+              "label": "getAssociatedModel",
+              "id": "pages/api-extractor-model.apiitem.getassociatedmodel"
+            },
+            {
+              "type": "doc",
               "label": "getAssociatedPackage",
               "id": "pages/api-extractor-model.apiitem.getassociatedpackage"
             },
@@ -1594,6 +1775,16 @@
               "type": "doc",
               "label": "findMembersByName",
               "id": "pages/api-extractor-model.apiitemcontainermixin.findmembersbyname"
+            },
+            {
+              "type": "doc",
+              "label": "findMembersWithInheritance",
+              "id": "pages/api-extractor-model.apiitemcontainermixin.findmemberswithinheritance"
+            },
+            {
+              "type": "doc",
+              "label": "preserveMemberOrder",
+              "id": "pages/api-extractor-model.apiitemcontainermixin.preservememberorder"
             },
             {
               "type": "doc",
@@ -1927,6 +2118,16 @@
             },
             {
               "type": "doc",
+              "label": "onDeserializeInto",
+              "id": "pages/api-extractor-model.apipackage.ondeserializeinto"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderUrl",
+              "id": "pages/api-extractor-model.apipackage.projectfolderurl"
+            },
+            {
+              "type": "doc",
               "label": "saveToJsonFile",
               "id": "pages/api-extractor-model.apipackage.savetojsonfile"
             },
@@ -2089,6 +2290,90 @@
               "type": "doc",
               "label": "kind",
               "id": "pages/api-extractor-model.apipropertysignature.kind"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiProtectedMixin",
+          "id": "pages/api-extractor-model.apiprotectedmixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiProtectedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiprotectedmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isProtected",
+              "id": "pages/api-extractor-model.apiprotectedmixin.isprotected"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apiprotectedmixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiProtectedMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apiprotectedmixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apiprotectedmixin.isbaseclassof"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "ApiReadonlyMixin",
+          "id": "pages/api-extractor-model.apireadonlymixin"
+        },
+        {
+          "type": "category",
+          "label": "ApiReadonlyMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apireadonlymixin"
+            },
+            {
+              "type": "doc",
+              "label": "isReadonly",
+              "id": "pages/api-extractor-model.apireadonlymixin.isreadonly"
+            },
+            {
+              "type": "doc",
+              "label": "serializeInto",
+              "id": "pages/api-extractor-model.apireadonlymixin.serializeinto"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ApiReadonlyMixin",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.apireadonlymixin"
+            },
+            {
+              "type": "doc",
+              "label": "isBaseClassOf",
+              "id": "pages/api-extractor-model.apireadonlymixin.isbaseclassof"
             }
           ]
         },
@@ -2368,6 +2653,11 @@
           "id": "pages/api-extractor-model.constructor"
         },
         {
+          "type": "doc",
+          "label": "EnumMemberOrder",
+          "id": "pages/api-extractor-model.enummemberorder"
+        },
+        {
           "type": "category",
           "label": "Excerpt",
           "items": [
@@ -2445,6 +2735,11 @@
           "id": "pages/api-extractor-model.excerpttokenkind"
         },
         {
+          "type": "doc",
+          "label": "FindApiItemsMessageId",
+          "id": "pages/api-extractor-model.findapiitemsmessageid"
+        },
+        {
           "type": "category",
           "label": "HeritageType",
           "items": [
@@ -2462,6 +2757,22 @@
               "type": "doc",
               "label": "excerpt",
               "id": "pages/api-extractor-model.heritagetype.excerpt"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IApiAbstractMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiabstractmixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isAbstract",
+              "id": "pages/api-extractor-model.iapiabstractmixinoptions.isabstract"
             }
           ]
         },
@@ -2514,6 +2825,11 @@
               "type": "doc",
               "label": "excerptTokens",
               "id": "pages/api-extractor-model.iapideclareditemoptions.excerpttokens"
+            },
+            {
+              "type": "doc",
+              "label": "fileUrlPath",
+              "id": "pages/api-extractor-model.iapideclareditemoptions.fileurlpath"
             }
           ]
         },
@@ -2539,25 +2855,30 @@
           "id": "pages/api-extractor-model.iapientrypointoptions"
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IApiEnumMemberOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/api-extractor-model.iapienummemberoptions"
-            },
-            {
-              "type": "doc",
-              "label": "initializerTokenRange",
-              "id": "pages/api-extractor-model.iapienummemberoptions.initializertokenrange"
-            }
-          ]
+          "id": "pages/api-extractor-model.iapienummemberoptions"
         },
         {
           "type": "doc",
           "label": "IApiEnumOptions",
           "id": "pages/api-extractor-model.iapienumoptions"
+        },
+        {
+          "type": "category",
+          "label": "IApiExportedMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiexportedmixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isExported",
+              "id": "pages/api-extractor-model.iapiexportedmixinoptions.isexported"
+            }
+          ]
         },
         {
           "type": "doc",
@@ -2568,6 +2889,22 @@
           "type": "doc",
           "label": "IApiIndexSignatureOptions",
           "id": "pages/api-extractor-model.iapiindexsignatureoptions"
+        },
+        {
+          "type": "category",
+          "label": "IApiInitializerMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiinitializermixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "initializerTokenRange",
+              "id": "pages/api-extractor-model.iapiinitializermixinoptions.initializertokenrange"
+            }
+          ]
         },
         {
           "type": "category",
@@ -2603,6 +2940,11 @@
               "type": "doc",
               "label": "members",
               "id": "pages/api-extractor-model.iapiitemcontainermixinoptions.members"
+            },
+            {
+              "type": "doc",
+              "label": "preserveMemberOrder",
+              "id": "pages/api-extractor-model.iapiitemcontainermixinoptions.preservememberorder"
             }
           ]
         },
@@ -2666,6 +3008,11 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/api-extractor-model.iapipackageoptions"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderUrl",
+              "id": "pages/api-extractor-model.iapipackageoptions.projectfolderurl"
             },
             {
               "type": "doc",
@@ -2772,6 +3119,38 @@
           "type": "doc",
           "label": "IApiPropertySignatureOptions",
           "id": "pages/api-extractor-model.iapipropertysignatureoptions"
+        },
+        {
+          "type": "category",
+          "label": "IApiProtectedMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapiprotectedmixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isProtected",
+              "id": "pages/api-extractor-model.iapiprotectedmixinoptions.isprotected"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IApiReadonlyMixinOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.iapireadonlymixinoptions"
+            },
+            {
+              "type": "doc",
+              "label": "isReadonly",
+              "id": "pages/api-extractor-model.iapireadonlymixinoptions.isreadonly"
+            }
+          ]
         },
         {
           "type": "category",
@@ -2944,6 +3323,53 @@
         },
         {
           "type": "category",
+          "label": "IFindApiItemsMessage",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage"
+            },
+            {
+              "type": "doc",
+              "label": "messageId",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage.messageid"
+            },
+            {
+              "type": "doc",
+              "label": "text",
+              "id": "pages/api-extractor-model.ifindapiitemsmessage.text"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFindApiItemsResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.ifindapiitemsresult"
+            },
+            {
+              "type": "doc",
+              "label": "items",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.items"
+            },
+            {
+              "type": "doc",
+              "label": "maybeIncompleteResult",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.maybeincompleteresult"
+            },
+            {
+              "type": "doc",
+              "label": "messages",
+              "id": "pages/api-extractor-model.ifindapiitemsresult.messages"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IParameterOptions",
           "items": [
             {
@@ -2996,6 +3422,27 @@
         },
         {
           "type": "category",
+          "label": "ISourceLocationOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.isourcelocationoptions"
+            },
+            {
+              "type": "doc",
+              "label": "fileUrlPath",
+              "id": "pages/api-extractor-model.isourcelocationoptions.fileurlpath"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderUrl",
+              "id": "pages/api-extractor-model.isourcelocationoptions.projectfolderurl"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ITypeParameterOptions",
           "items": [
             {
@@ -3012,6 +3459,11 @@
               "type": "doc",
               "label": "defaultTypeExcerpt",
               "id": "pages/api-extractor-model.itypeparameteroptions.defaulttypeexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.itypeparameteroptions.isoptional"
             },
             {
               "type": "doc",
@@ -3094,6 +3546,27 @@
         },
         {
           "type": "category",
+          "label": "SourceLocation",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/api-extractor-model.sourcelocation"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/api-extractor-model.sourcelocation._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "fileUrl",
+              "id": "pages/api-extractor-model.sourcelocation.fileurl"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "TypeParameter",
           "items": [
             {
@@ -3115,6 +3588,11 @@
               "type": "doc",
               "label": "defaultTypeExcerpt",
               "id": "pages/api-extractor-model.typeparameter.defaulttypeexcerpt"
+            },
+            {
+              "type": "doc",
+              "label": "isOptional",
+              "id": "pages/api-extractor-model.typeparameter.isoptional"
             },
             {
               "type": "doc",
@@ -3372,11 +3850,6 @@
               "type": "doc",
               "label": "save",
               "id": "pages/rush-lib.commonversionsconfiguration.save"
-            },
-            {
-              "type": "doc",
-              "label": "xstitchPreferredVersions",
-              "id": "pages/rush-lib.commonversionsconfiguration.xstitchpreferredversions"
             }
           ]
         },
@@ -3489,6 +3962,11 @@
               "type": "doc",
               "label": "pnpmStorePathOverride",
               "id": "pages/rush-lib.environmentconfiguration.pnpmstorepathoverride"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmVerifyStoreIntegrity",
+              "id": "pages/rush-lib.environmentconfiguration.pnpmverifystoreintegrity"
             },
             {
               "type": "doc",
@@ -3678,6 +4156,11 @@
             },
             {
               "type": "doc",
+              "label": "credentialMetadata",
+              "id": "pages/rush-lib.icredentialcacheentry.credentialmetadata"
+            },
+            {
+              "type": "doc",
               "label": "expires",
               "id": "pages/rush-lib.icredentialcacheentry.expires"
             }
@@ -3728,6 +4211,11 @@
               "type": "doc",
               "label": "buildCacheWithAllowWarningsInSuccessfulBuild",
               "id": "pages/rush-lib.iexperimentsjson.buildcachewithallowwarningsinsuccessfulbuild"
+            },
+            {
+              "type": "doc",
+              "label": "cleanInstallAfterNpmrcChanges",
+              "id": "pages/rush-lib.iexperimentsjson.cleaninstallafternpmrcchanges"
             },
             {
               "type": "doc",
@@ -3862,6 +4350,11 @@
               "type": "doc",
               "label": "isManaged",
               "id": "pages/rush-lib.ilaunchoptions.ismanaged"
+            },
+            {
+              "type": "doc",
+              "label": "terminalProvider",
+              "id": "pages/rush-lib.ilaunchoptions.terminalprovider"
             }
           ]
         },
@@ -3996,6 +4489,11 @@
               "type": "doc",
               "label": "stdioSummarizer",
               "id": "pages/rush-lib.ioperationrunnercontext.stdiosummarizer"
+            },
+            {
+              "type": "doc",
+              "label": "stopwatch",
+              "id": "pages/rush-lib.ioperationrunnercontext.stopwatch"
             }
           ]
         },
@@ -4070,6 +4568,150 @@
               "type": "doc",
               "label": "terminalProvider",
               "id": "pages/rush-lib.irushsessionoptions.terminalprovider"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IStopwatchResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.istopwatchresult"
+            },
+            {
+              "type": "doc",
+              "label": "toString",
+              "id": "pages/rush-lib.istopwatchresult.tostring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ITelemetryData",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.itelemetrydata"
+            },
+            {
+              "type": "doc",
+              "label": "durationInSeconds",
+              "id": "pages/rush-lib.itelemetrydata.durationinseconds"
+            },
+            {
+              "type": "doc",
+              "label": "extraData",
+              "id": "pages/rush-lib.itelemetrydata.extradata"
+            },
+            {
+              "type": "doc",
+              "label": "machineInfo",
+              "id": "pages/rush-lib.itelemetrydata.machineinfo"
+            },
+            {
+              "type": "doc",
+              "label": "name",
+              "id": "pages/rush-lib.itelemetrydata.name"
+            },
+            {
+              "type": "doc",
+              "label": "operationResults",
+              "id": "pages/rush-lib.itelemetrydata.operationresults"
+            },
+            {
+              "type": "doc",
+              "label": "platform",
+              "id": "pages/rush-lib.itelemetrydata.platform"
+            },
+            {
+              "type": "doc",
+              "label": "result",
+              "id": "pages/rush-lib.itelemetrydata.result"
+            },
+            {
+              "type": "doc",
+              "label": "rushVersion",
+              "id": "pages/rush-lib.itelemetrydata.rushversion"
+            },
+            {
+              "type": "doc",
+              "label": "timestampMs",
+              "id": "pages/rush-lib.itelemetrydata.timestampms"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ITelemetryMachineInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.itelemetrymachineinfo"
+            },
+            {
+              "type": "doc",
+              "label": "machineArchitecture",
+              "id": "pages/rush-lib.itelemetrymachineinfo.machinearchitecture"
+            },
+            {
+              "type": "doc",
+              "label": "machineCores",
+              "id": "pages/rush-lib.itelemetrymachineinfo.machinecores"
+            },
+            {
+              "type": "doc",
+              "label": "machineCpu",
+              "id": "pages/rush-lib.itelemetrymachineinfo.machinecpu"
+            },
+            {
+              "type": "doc",
+              "label": "machineFreeMemoryMiB",
+              "id": "pages/rush-lib.itelemetrymachineinfo.machinefreememorymib"
+            },
+            {
+              "type": "doc",
+              "label": "machineTotalMemoryMiB",
+              "id": "pages/rush-lib.itelemetrymachineinfo.machinetotalmemorymib"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ITelemetryOperationResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.itelemetryoperationresult"
+            },
+            {
+              "type": "doc",
+              "label": "dependencies",
+              "id": "pages/rush-lib.itelemetryoperationresult.dependencies"
+            },
+            {
+              "type": "doc",
+              "label": "endTimestampMs",
+              "id": "pages/rush-lib.itelemetryoperationresult.endtimestampms"
+            },
+            {
+              "type": "doc",
+              "label": "nonCachedDurationMs",
+              "id": "pages/rush-lib.itelemetryoperationresult.noncacheddurationms"
+            },
+            {
+              "type": "doc",
+              "label": "result",
+              "id": "pages/rush-lib.itelemetryoperationresult.result"
+            },
+            {
+              "type": "doc",
+              "label": "startTimestampMs",
+              "id": "pages/rush-lib.itelemetryoperationresult.starttimestampms"
             }
           ]
         },
@@ -4278,6 +4920,11 @@
             },
             {
               "type": "doc",
+              "label": "removeDependency",
+              "id": "pages/rush-lib.packagejsoneditor.removedependency"
+            },
+            {
+              "type": "doc",
               "label": "resolutionsList",
               "id": "pages/rush-lib.packagejsoneditor.resolutionslist"
             },
@@ -4316,11 +4963,6 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.packagemanager"
-            },
-            {
-              "type": "doc",
-              "label": "_shrinkwrapFilename",
-              "id": "pages/rush-lib.packagemanager._shrinkwrapfilename"
             },
             {
               "type": "doc",
@@ -4371,6 +5013,41 @@
             },
             {
               "type": "doc",
+              "label": "globalAllowedDeprecatedVersions",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globalalloweddeprecatedversions"
+            },
+            {
+              "type": "doc",
+              "label": "globalNeverBuiltDependencies",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globalneverbuiltdependencies"
+            },
+            {
+              "type": "doc",
+              "label": "globalOverrides",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globaloverrides"
+            },
+            {
+              "type": "doc",
+              "label": "globalPackageExtensions",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globalpackageextensions"
+            },
+            {
+              "type": "doc",
+              "label": "globalPatchedDependencies",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globalpatcheddependencies"
+            },
+            {
+              "type": "doc",
+              "label": "globalPeerDependencyRules",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.globalpeerdependencyrules"
+            },
+            {
+              "type": "doc",
+              "label": "jsonFilename",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.jsonfilename"
+            },
+            {
+              "type": "doc",
               "label": "pnpmStore",
               "id": "pages/rush-lib.pnpmoptionsconfiguration.pnpmstore"
             },
@@ -4388,6 +5065,16 @@
               "type": "doc",
               "label": "strictPeerDependencies",
               "id": "pages/rush-lib.pnpmoptionsconfiguration.strictpeerdependencies"
+            },
+            {
+              "type": "doc",
+              "label": "unsupportedPackageJsonSettings",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.unsupportedpackagejsonsettings"
+            },
+            {
+              "type": "doc",
+              "label": "updateGlobalPatchedDependencies",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.updateglobalpatcheddependencies"
             },
             {
               "type": "doc",
@@ -4481,6 +5168,11 @@
               "type": "doc",
               "label": "launch",
               "id": "pages/rush-lib.rush.launch"
+            },
+            {
+              "type": "doc",
+              "label": "launchRushPnpm",
+              "id": "pages/rush-lib.rush.launchrushpnpm"
             },
             {
               "type": "doc",
@@ -4640,6 +5332,11 @@
             },
             {
               "type": "doc",
+              "label": "gitChangefilesCommitMessage",
+              "id": "pages/rush-lib.rushconfiguration.gitchangefilescommitmessage"
+            },
+            {
+              "type": "doc",
               "label": "gitChangeLogUpdateCommitMessage",
               "id": "pages/rush-lib.rushconfiguration.gitchangelogupdatecommitmessage"
             },
@@ -4742,6 +5439,11 @@
               "type": "doc",
               "label": "projectsByName",
               "id": "pages/rush-lib.rushconfiguration.projectsbyname"
+            },
+            {
+              "type": "doc",
+              "label": "projectsByTag",
+              "id": "pages/rush-lib.rushconfiguration.projectsbytag"
             },
             {
               "type": "doc",
@@ -4866,6 +5568,11 @@
             },
             {
               "type": "doc",
+              "label": "decoupledLocalDependencies",
+              "id": "pages/rush-lib.rushconfigurationproject.decoupledlocaldependencies"
+            },
+            {
+              "type": "doc",
               "label": "dependencyProjects",
               "id": "pages/rush-lib.rushconfigurationproject.dependencyprojects"
             },
@@ -4943,6 +5650,11 @@
               "type": "doc",
               "label": "skipRushCheck",
               "id": "pages/rush-lib.rushconfigurationproject.skiprushcheck"
+            },
+            {
+              "type": "doc",
+              "label": "tags",
+              "id": "pages/rush-lib.rushconfigurationproject.tags"
             },
             {
               "type": "doc",
@@ -5032,6 +5744,11 @@
             },
             {
               "type": "doc",
+              "label": "defaultWatchDebounceMs",
+              "id": "pages/rush-lib.rushconstants.defaultwatchdebouncems"
+            },
+            {
+              "type": "doc",
               "label": "experimentsFilename",
               "id": "pages/rush-lib.rushconstants.experimentsfilename"
             },
@@ -5077,6 +5794,11 @@
             },
             {
               "type": "doc",
+              "label": "pnpmConfigFilename",
+              "id": "pages/rush-lib.rushconstants.pnpmconfigfilename"
+            },
+            {
+              "type": "doc",
               "label": "pnpmfileV1Filename",
               "id": "pages/rush-lib.rushconstants.pnpmfilev1filename"
             },
@@ -5084,6 +5806,11 @@
               "type": "doc",
               "label": "pnpmfileV6Filename",
               "id": "pages/rush-lib.rushconstants.pnpmfilev6filename"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmPatchesFolderName",
+              "id": "pages/rush-lib.rushconstants.pnpmpatchesfoldername"
             },
             {
               "type": "doc",
@@ -5195,6 +5922,16 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.rushlifecyclehooks"
+            },
+            {
+              "type": "doc",
+              "label": "beforeInstall",
+              "id": "pages/rush-lib.rushlifecyclehooks.beforeinstall"
+            },
+            {
+              "type": "doc",
+              "label": "flushTelemetry",
+              "id": "pages/rush-lib.rushlifecyclehooks.flushtelemetry"
             },
             {
               "type": "doc",
@@ -5461,6 +6198,16 @@
             },
             {
               "type": "doc",
+              "label": "caCertificateData",
+              "id": "pages/debug-certificate-manager.certificatestore.cacertificatedata"
+            },
+            {
+              "type": "doc",
+              "label": "caCertificatePath",
+              "id": "pages/debug-certificate-manager.certificatestore.cacertificatepath"
+            },
+            {
+              "type": "doc",
               "label": "certificateData",
               "id": "pages/debug-certificate-manager.certificatestore.certificatedata"
             },
@@ -5477,6 +6224,11 @@
           ]
         },
         {
+          "type": "doc",
+          "label": "DEFAULT_CERTIFICATE_SUBJECT_NAMES",
+          "id": "pages/debug-certificate-manager.default_certificate_subject_names"
+        },
+        {
           "type": "category",
           "label": "ICertificate",
           "items": [
@@ -5487,6 +6239,11 @@
             },
             {
               "type": "doc",
+              "label": "pemCaCertificate",
+              "id": "pages/debug-certificate-manager.icertificate.pemcacertificate"
+            },
+            {
+              "type": "doc",
               "label": "pemCertificate",
               "id": "pages/debug-certificate-manager.icertificate.pemcertificate"
             },
@@ -5494,6 +6251,32 @@
               "type": "doc",
               "label": "pemKey",
               "id": "pages/debug-certificate-manager.icertificate.pemkey"
+            },
+            {
+              "type": "doc",
+              "label": "subjectAltNames",
+              "id": "pages/debug-certificate-manager.icertificate.subjectaltnames"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ICertificateGenerationOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/debug-certificate-manager.icertificategenerationoptions"
+            },
+            {
+              "type": "doc",
+              "label": "subjectAltNames",
+              "id": "pages/debug-certificate-manager.icertificategenerationoptions.subjectaltnames"
+            },
+            {
+              "type": "doc",
+              "label": "validityInDays",
+              "id": "pages/debug-certificate-manager.icertificategenerationoptions.validityindays"
             }
           ]
         }
@@ -5792,8 +6575,8 @@
             },
             {
               "type": "doc",
-              "label": "locale",
-              "id": "pages/heft.ibuildstageproperties.locale"
+              "label": "locales",
+              "id": "pages/heft.ibuildstageproperties.locales"
             },
             {
               "type": "doc",
@@ -6564,33 +7347,101 @@
           ]
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IConfigurationFileOptions",
+          "id": "pages/heft-config-file.iconfigurationfileoptions"
+        },
+        {
+          "type": "category",
+          "label": "IConfigurationFileOptionsBase",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft-config-file.iconfigurationfileoptions"
+              "id": "pages/heft-config-file.iconfigurationfileoptionsbase"
             },
             {
               "type": "doc",
               "label": "jsonPathMetadata",
-              "id": "pages/heft-config-file.iconfigurationfileoptions.jsonpathmetadata"
-            },
-            {
-              "type": "doc",
-              "label": "jsonSchemaPath",
-              "id": "pages/heft-config-file.iconfigurationfileoptions.jsonschemapath"
+              "id": "pages/heft-config-file.iconfigurationfileoptionsbase.jsonpathmetadata"
             },
             {
               "type": "doc",
               "label": "projectRelativeFilePath",
-              "id": "pages/heft-config-file.iconfigurationfileoptions.projectrelativefilepath"
+              "id": "pages/heft-config-file.iconfigurationfileoptionsbase.projectrelativefilepath"
             },
             {
               "type": "doc",
               "label": "propertyInheritance",
-              "id": "pages/heft-config-file.iconfigurationfileoptions.propertyinheritance"
+              "id": "pages/heft-config-file.iconfigurationfileoptionsbase.propertyinheritance"
+            },
+            {
+              "type": "doc",
+              "label": "propertyInheritanceDefaults",
+              "id": "pages/heft-config-file.iconfigurationfileoptionsbase.propertyinheritancedefaults"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IConfigurationFileOptionsWithJsonSchemaFilePath",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemafilepath"
+            },
+            {
+              "type": "doc",
+              "label": "jsonSchemaObject",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.jsonschemaobject"
+            },
+            {
+              "type": "doc",
+              "label": "jsonSchemaPath",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.jsonschemapath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IConfigurationFileOptionsWithJsonSchemaObject",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemaobject"
+            },
+            {
+              "type": "doc",
+              "label": "jsonSchemaObject",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemaobject.jsonschemaobject"
+            },
+            {
+              "type": "doc",
+              "label": "jsonSchemaPath",
+              "id": "pages/heft-config-file.iconfigurationfileoptionswithjsonschemaobject.jsonschemapath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ICustomJsonPathMetadata",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata"
+            },
+            {
+              "type": "doc",
+              "label": "customResolver",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata.customresolver"
+            },
+            {
+              "type": "doc",
+              "label": "pathResolutionMethod",
+              "id": "pages/heft-config-file.icustomjsonpathmetadata.pathresolutionmethod"
             }
           ]
         },
@@ -6611,25 +7462,9 @@
           ]
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IJsonPathMetadata",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft-config-file.ijsonpathmetadata"
-            },
-            {
-              "type": "doc",
-              "label": "customResolver",
-              "id": "pages/heft-config-file.ijsonpathmetadata.customresolver"
-            },
-            {
-              "type": "doc",
-              "label": "pathResolutionMethod",
-              "id": "pages/heft-config-file.ijsonpathmetadata.pathresolutionmethod"
-            }
-          ]
+          "id": "pages/heft-config-file.ijsonpathmetadata"
         },
         {
           "type": "doc",
@@ -6640,6 +7475,22 @@
           "type": "doc",
           "label": "InheritanceType",
           "id": "pages/heft-config-file.inheritancetype"
+        },
+        {
+          "type": "category",
+          "label": "INonCustomJsonPathMetadata",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.inoncustomjsonpathmetadata"
+            },
+            {
+              "type": "doc",
+              "label": "pathResolutionMethod",
+              "id": "pages/heft-config-file.inoncustomjsonpathmetadata.pathresolutionmethod"
+            }
+          ]
         },
         {
           "type": "category",
@@ -6684,6 +7535,27 @@
           ]
         },
         {
+          "type": "category",
+          "label": "IPropertyInheritanceDefaults",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.ipropertyinheritancedefaults"
+            },
+            {
+              "type": "doc",
+              "label": "array",
+              "id": "pages/heft-config-file.ipropertyinheritancedefaults.array"
+            },
+            {
+              "type": "doc",
+              "label": "object",
+              "id": "pages/heft-config-file.ipropertyinheritancedefaults.object"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "label": "PathResolutionMethod",
           "id": "pages/heft-config-file.pathresolutionmethod"
@@ -6697,214 +7569,27 @@
     },
     {
       "type": "category",
-      "label": "@rushstack/localization-plugin",
+      "label": "@rushstack/localization-utilities",
       "items": [
         {
           "type": "doc",
           "label": "(members)",
-          "id": "pages/localization-plugin"
-        },
-        {
-          "type": "category",
-          "label": "IDefaultLocaleOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.idefaultlocaleoptions"
-            },
-            {
-              "type": "doc",
-              "label": "fillMissingTranslationStrings",
-              "id": "pages/localization-plugin.idefaultlocaleoptions.fillmissingtranslationstrings"
-            },
-            {
-              "type": "doc",
-              "label": "localeName",
-              "id": "pages/localization-plugin.idefaultlocaleoptions.localename"
-            }
-          ]
+          "id": "pages/localization-utilities"
         },
         {
           "type": "doc",
-          "label": "ILocaleData",
-          "id": "pages/localization-plugin.ilocaledata"
+          "label": "getPseudolocalizer",
+          "id": "pages/localization-utilities.getpseudolocalizer"
         },
         {
           "type": "doc",
-          "label": "ILocaleElementMap",
-          "id": "pages/localization-plugin.ilocaleelementmap"
-        },
-        {
-          "type": "doc",
-          "label": "ILocaleFileData",
-          "id": "pages/localization-plugin.ilocalefiledata"
+          "label": "IgnoreStringFunction",
+          "id": "pages/localization-utilities.ignorestringfunction"
         },
         {
           "type": "doc",
           "label": "ILocalizationFile",
-          "id": "pages/localization-plugin.ilocalizationfile"
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationPluginOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions"
-            },
-            {
-              "type": "doc",
-              "label": "filesToIgnore",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.filestoignore"
-            },
-            {
-              "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.globstoignore"
-            },
-            {
-              "type": "doc",
-              "label": "localizationStats",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.localizationstats"
-            },
-            {
-              "type": "doc",
-              "label": "localizedData",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.localizeddata"
-            },
-            {
-              "type": "doc",
-              "label": "noStringsLocaleName",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.nostringslocalename"
-            },
-            {
-              "type": "doc",
-              "label": "typingsOptions",
-              "id": "pages/localization-plugin.ilocalizationpluginoptions.typingsoptions"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStats",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstats"
-            },
-            {
-              "type": "doc",
-              "label": "entrypoints",
-              "id": "pages/localization-plugin.ilocalizationstats.entrypoints"
-            },
-            {
-              "type": "doc",
-              "label": "namedChunkGroups",
-              "id": "pages/localization-plugin.ilocalizationstats.namedchunkgroups"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsChunkGroup",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatschunkgroup"
-            },
-            {
-              "type": "doc",
-              "label": "localizedAssets",
-              "id": "pages/localization-plugin.ilocalizationstatschunkgroup.localizedassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsEntrypoint",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatsentrypoint"
-            },
-            {
-              "type": "doc",
-              "label": "localizedAssets",
-              "id": "pages/localization-plugin.ilocalizationstatsentrypoint.localizedassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizationStatsOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions"
-            },
-            {
-              "type": "doc",
-              "label": "callback",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions.callback"
-            },
-            {
-              "type": "doc",
-              "label": "dropPath",
-              "id": "pages/localization-plugin.ilocalizationstatsoptions.droppath"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ILocalizedData",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizeddata"
-            },
-            {
-              "type": "doc",
-              "label": "defaultLocale",
-              "id": "pages/localization-plugin.ilocalizeddata.defaultlocale"
-            },
-            {
-              "type": "doc",
-              "label": "ignoreMissingResxComments",
-              "id": "pages/localization-plugin.ilocalizeddata.ignoremissingresxcomments"
-            },
-            {
-              "type": "doc",
-              "label": "normalizeResxNewlines",
-              "id": "pages/localization-plugin.ilocalizeddata.normalizeresxnewlines"
-            },
-            {
-              "type": "doc",
-              "label": "passthroughLocale",
-              "id": "pages/localization-plugin.ilocalizeddata.passthroughlocale"
-            },
-            {
-              "type": "doc",
-              "label": "pseudolocales",
-              "id": "pages/localization-plugin.ilocalizeddata.pseudolocales"
-            },
-            {
-              "type": "doc",
-              "label": "resolveMissingTranslatedStrings",
-              "id": "pages/localization-plugin.ilocalizeddata.resolvemissingtranslatedstrings"
-            },
-            {
-              "type": "doc",
-              "label": "translatedStrings",
-              "id": "pages/localization-plugin.ilocalizeddata.translatedstrings"
-            }
-          ]
+          "id": "pages/localization-utilities.ilocalizationfile"
         },
         {
           "type": "category",
@@ -6913,59 +7598,90 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizedstring"
+              "id": "pages/localization-utilities.ilocalizedstring"
             },
             {
               "type": "doc",
               "label": "comment",
-              "id": "pages/localization-plugin.ilocalizedstring.comment"
+              "id": "pages/localization-utilities.ilocalizedstring.comment"
             },
             {
               "type": "doc",
               "label": "value",
-              "id": "pages/localization-plugin.ilocalizedstring.value"
+              "id": "pages/localization-utilities.ilocalizedstring.value"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IParseFileOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-utilities.iparsefileoptions"
+            },
+            {
+              "type": "doc",
+              "label": "content",
+              "id": "pages/localization-utilities.iparsefileoptions.content"
+            },
+            {
+              "type": "doc",
+              "label": "filePath",
+              "id": "pages/localization-utilities.iparsefileoptions.filepath"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/localization-utilities.iparsefileoptions.ignorestring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IParseLocFileOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/localization-utilities.iparselocfileoptions"
+            },
+            {
+              "type": "doc",
+              "label": "parser",
+              "id": "pages/localization-utilities.iparselocfileoptions.parser"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "ILocalizedStrings",
-          "id": "pages/localization-plugin.ilocalizedstrings"
+          "label": "IParseResxOptions",
+          "id": "pages/localization-utilities.iparseresxoptions"
         },
         {
           "type": "category",
-          "label": "ILocalizedWebpackChunk",
+          "label": "IParseResxOptionsBase",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ilocalizedwebpackchunk"
+              "id": "pages/localization-utilities.iparseresxoptionsbase"
             },
             {
               "type": "doc",
-              "label": "localizedFiles",
-              "id": "pages/localization-plugin.ilocalizedwebpackchunk.localizedfiles"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IPassthroughLocaleOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions"
+              "label": "ignoreMissingResxComments",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.ignoremissingresxcomments"
             },
             {
               "type": "doc",
-              "label": "passthroughLocaleName",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions.passthroughlocalename"
+              "label": "resxNewlineNormalization",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.resxnewlinenormalization"
             },
             {
               "type": "doc",
-              "label": "usePassthroughLocale",
-              "id": "pages/localization-plugin.ipassthroughlocaleoptions.usepassthroughlocale"
+              "label": "terminal",
+              "id": "pages/localization-utilities.iparseresxoptionsbase.terminal"
             }
           ]
         },
@@ -6976,109 +7692,42 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.ipseudolocaleoptions"
+              "id": "pages/localization-utilities.ipseudolocaleoptions"
             },
             {
               "type": "doc",
               "label": "append",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.append"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.append"
             },
             {
               "type": "doc",
               "label": "delimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.delimiter"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.delimiter"
             },
             {
               "type": "doc",
               "label": "endDelimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.enddelimiter"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.enddelimiter"
             },
             {
               "type": "doc",
               "label": "extend",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.extend"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.extend"
             },
             {
               "type": "doc",
               "label": "override",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.override"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.override"
             },
             {
               "type": "doc",
               "label": "prepend",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.prepend"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.prepend"
             },
             {
               "type": "doc",
               "label": "startDelimiter",
-              "id": "pages/localization-plugin.ipseudolocaleoptions.startdelimiter"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IPseudolocalesOptions",
-          "id": "pages/localization-plugin.ipseudolocalesoptions"
-        },
-        {
-          "type": "doc",
-          "label": "IResolvedMissingTranslations",
-          "id": "pages/localization-plugin.iresolvedmissingtranslations"
-        },
-        {
-          "type": "category",
-          "label": "IResxReaderOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.iresxreaderoptions"
-            },
-            {
-              "type": "doc",
-              "label": "newlineNormalization",
-              "id": "pages/localization-plugin.iresxreaderoptions.newlinenormalization"
-            },
-            {
-              "type": "doc",
-              "label": "resxFilePath",
-              "id": "pages/localization-plugin.iresxreaderoptions.resxfilepath"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/localization-plugin.iresxreaderoptions.terminal"
-            },
-            {
-              "type": "doc",
-              "label": "warnOnMissingComment",
-              "id": "pages/localization-plugin.iresxreaderoptions.warnonmissingcomment"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ITypingsGenerationOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.itypingsgenerationoptions"
-            },
-            {
-              "type": "doc",
-              "label": "exportAsDefault",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.exportasdefault"
-            },
-            {
-              "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
-              "label": "sourceRoot",
-              "id": "pages/localization-plugin.itypingsgenerationoptions.sourceroot"
+              "id": "pages/localization-utilities.ipseudolocaleoptions.startdelimiter"
             }
           ]
         },
@@ -7089,86 +7738,59 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions"
             },
             {
               "type": "doc",
               "label": "exportAsDefault",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.exportasdefault"
-            },
-            {
-              "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.globstoignore"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.exportasdefault"
             },
             {
               "type": "doc",
               "label": "ignoreMissingResxComments",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.ignoremissingresxcomments"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.ignoremissingresxcomments"
+            },
+            {
+              "type": "doc",
+              "label": "ignoreString",
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.ignorestring"
+            },
+            {
+              "type": "doc",
+              "label": "processComment",
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.processcomment"
             },
             {
               "type": "doc",
               "label": "resxNewlineNormalization",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.resxnewlinenormalization"
-            },
-            {
-              "type": "doc",
-              "label": "srcFolder",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.srcfolder"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/localization-plugin.itypingsgeneratoroptions.terminal"
+              "id": "pages/localization-utilities.itypingsgeneratoroptions.resxnewlinenormalization"
             }
           ]
         },
         {
-          "type": "category",
-          "label": "LocalizationPlugin",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.localizationplugin"
-            },
-            {
-              "type": "doc",
-              "label": "(constructor)",
-              "id": "pages/localization-plugin.localizationplugin._constructor_"
-            },
-            {
-              "type": "doc",
-              "label": "apply",
-              "id": "pages/localization-plugin.localizationplugin.apply"
-            }
-          ]
+          "type": "doc",
+          "label": "parseLocFile",
+          "id": "pages/localization-utilities.parselocfile"
         },
         {
-          "type": "category",
-          "label": "ResxReader",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/localization-plugin.resxreader"
-            },
-            {
-              "type": "doc",
-              "label": "readResxAsLocFile",
-              "id": "pages/localization-plugin.resxreader.readresxaslocfile"
-            },
-            {
-              "type": "doc",
-              "label": "readResxFileAsLocFile",
-              "id": "pages/localization-plugin.resxreader.readresxfileaslocfile"
-            }
-          ]
+          "type": "doc",
+          "label": "parseLocJson",
+          "id": "pages/localization-utilities.parselocjson"
+        },
+        {
+          "type": "doc",
+          "label": "parseResJson",
+          "id": "pages/localization-utilities.parseresjson"
+        },
+        {
+          "type": "doc",
+          "label": "parseResx",
+          "id": "pages/localization-utilities.parseresx"
+        },
+        {
+          "type": "doc",
+          "label": "ParserKind",
+          "id": "pages/localization-utilities.parserkind"
         },
         {
           "type": "category",
@@ -7177,12 +7799,12 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/localization-plugin.typingsgenerator"
+              "id": "pages/localization-utilities.typingsgenerator"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/localization-plugin.typingsgenerator._constructor_"
+              "id": "pages/localization-utilities.typingsgenerator._constructor_"
             }
           ]
         }
@@ -7190,145 +7812,17 @@
     },
     {
       "type": "category",
-      "label": "@rushstack/module-minifier-plugin",
+      "label": "@rushstack/module-minifier",
       "items": [
         {
           "type": "doc",
           "label": "(members)",
-          "id": "pages/module-minifier-plugin"
-        },
-        {
-          "type": "doc",
-          "label": "CHUNK_MODULES_TOKEN",
-          "id": "pages/module-minifier-plugin.chunk_modules_token"
-        },
-        {
-          "type": "doc",
-          "label": "generateLicenseFileForAsset",
-          "id": "pages/module-minifier-plugin.generatelicensefileforasset"
+          "id": "pages/module-minifier"
         },
         {
           "type": "doc",
           "label": "getIdentifier",
-          "id": "pages/module-minifier-plugin.getidentifier"
-        },
-        {
-          "type": "category",
-          "label": "IAssetInfo",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.iassetinfo"
-            },
-            {
-              "type": "doc",
-              "label": "chunk",
-              "id": "pages/module-minifier-plugin.iassetinfo.chunk"
-            },
-            {
-              "type": "doc",
-              "label": "externalNames",
-              "id": "pages/module-minifier-plugin.iassetinfo.externalnames"
-            },
-            {
-              "type": "doc",
-              "label": "fileName",
-              "id": "pages/module-minifier-plugin.iassetinfo.filename"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.iassetinfo.modules"
-            },
-            {
-              "type": "doc",
-              "label": "source",
-              "id": "pages/module-minifier-plugin.iassetinfo.source"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IAssetMap",
-          "id": "pages/module-minifier-plugin.iassetmap"
-        },
-        {
-          "type": "category",
-          "label": "IDehydratedAssets",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.idehydratedassets"
-            },
-            {
-              "type": "doc",
-              "label": "assets",
-              "id": "pages/module-minifier-plugin.idehydratedassets.assets"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.idehydratedassets.modules"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IDENTIFIER_LEADING_DIGITS",
-          "id": "pages/module-minifier-plugin.identifier_leading_digits"
-        },
-        {
-          "type": "doc",
-          "label": "IDENTIFIER_TRAILING_DIGITS",
-          "id": "pages/module-minifier-plugin.identifier_trailing_digits"
-        },
-        {
-          "type": "category",
-          "label": "IExtendedModule",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.iextendedmodule"
-            },
-            {
-              "type": "doc",
-              "label": "external",
-              "id": "pages/module-minifier-plugin.iextendedmodule.external"
-            },
-            {
-              "type": "doc",
-              "label": "hasDependencies",
-              "id": "pages/module-minifier-plugin.iextendedmodule.hasdependencies"
-            },
-            {
-              "type": "doc",
-              "label": "id",
-              "id": "pages/module-minifier-plugin.iextendedmodule.id"
-            },
-            {
-              "type": "doc",
-              "label": "identifier",
-              "id": "pages/module-minifier-plugin.iextendedmodule.identifier"
-            },
-            {
-              "type": "doc",
-              "label": "modules",
-              "id": "pages/module-minifier-plugin.iextendedmodule.modules"
-            },
-            {
-              "type": "doc",
-              "label": "readableIdentifier",
-              "id": "pages/module-minifier-plugin.iextendedmodule.readableidentifier"
-            },
-            {
-              "type": "doc",
-              "label": "resource",
-              "id": "pages/module-minifier-plugin.iextendedmodule.resource"
-            }
-          ]
+          "id": "pages/module-minifier.getidentifier"
         },
         {
           "type": "category",
@@ -7337,12 +7831,12 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.ilocalminifieroptions"
+              "id": "pages/module-minifier.ilocalminifieroptions"
             },
             {
               "type": "doc",
               "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.ilocalminifieroptions.terseroptions"
+              "id": "pages/module-minifier.ilocalminifieroptions.terseroptions"
             }
           ]
         },
@@ -7353,50 +7847,24 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.iminifierconnection"
+              "id": "pages/module-minifier.iminifierconnection"
             },
             {
               "type": "doc",
               "label": "configHash",
-              "id": "pages/module-minifier-plugin.iminifierconnection.confighash"
+              "id": "pages/module-minifier.iminifierconnection.confighash"
             },
             {
               "type": "doc",
               "label": "disconnect",
-              "id": "pages/module-minifier-plugin.iminifierconnection.disconnect"
+              "id": "pages/module-minifier.iminifierconnection.disconnect"
             }
           ]
-        },
-        {
-          "type": "category",
-          "label": "IModuleInfo",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleinfo"
-            },
-            {
-              "type": "doc",
-              "label": "module",
-              "id": "pages/module-minifier-plugin.imoduleinfo.module"
-            },
-            {
-              "type": "doc",
-              "label": "source",
-              "id": "pages/module-minifier-plugin.imoduleinfo.source"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IModuleMap",
-          "id": "pages/module-minifier-plugin.imodulemap"
         },
         {
           "type": "doc",
           "label": "IModuleMinificationCallback",
-          "id": "pages/module-minifier-plugin.imoduleminificationcallback"
+          "id": "pages/module-minifier.imoduleminificationcallback"
         },
         {
           "type": "category",
@@ -7405,27 +7873,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult"
+              "id": "pages/module-minifier.imoduleminificationerrorresult"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.code"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.code"
             },
             {
               "type": "doc",
               "label": "error",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.error"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.error"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.hash"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.hash"
             },
             {
               "type": "doc",
               "label": "map",
-              "id": "pages/module-minifier-plugin.imoduleminificationerrorresult.map"
+              "id": "pages/module-minifier.imoduleminificationerrorresult.map"
             }
           ]
         },
@@ -7436,34 +7904,34 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest"
+              "id": "pages/module-minifier.imoduleminificationrequest"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.code"
+              "id": "pages/module-minifier.imoduleminificationrequest.code"
             },
             {
               "type": "doc",
               "label": "externals",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.externals"
+              "id": "pages/module-minifier.imoduleminificationrequest.externals"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.hash"
+              "id": "pages/module-minifier.imoduleminificationrequest.hash"
             },
             {
               "type": "doc",
               "label": "nameForMap",
-              "id": "pages/module-minifier-plugin.imoduleminificationrequest.nameformap"
+              "id": "pages/module-minifier.imoduleminificationrequest.nameformap"
             }
           ]
         },
         {
           "type": "doc",
           "label": "IModuleMinificationResult",
-          "id": "pages/module-minifier-plugin.imoduleminificationresult"
+          "id": "pages/module-minifier.imoduleminificationresult"
         },
         {
           "type": "category",
@@ -7472,27 +7940,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult"
             },
             {
               "type": "doc",
               "label": "code",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.code"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.code"
             },
             {
               "type": "doc",
               "label": "error",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.error"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.error"
             },
             {
               "type": "doc",
               "label": "hash",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.hash"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.hash"
             },
             {
               "type": "doc",
               "label": "map",
-              "id": "pages/module-minifier-plugin.imoduleminificationsuccessresult.map"
+              "id": "pages/module-minifier.imoduleminificationsuccessresult.map"
             }
           ]
         },
@@ -7503,107 +7971,24 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifier"
+              "id": "pages/module-minifier.imoduleminifier"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.imoduleminifier.connect"
+              "id": "pages/module-minifier.imoduleminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.imoduleminifier.minify"
+              "id": "pages/module-minifier.imoduleminifier.minify"
             }
           ]
         },
         {
           "type": "doc",
           "label": "IModuleMinifierFunction",
-          "id": "pages/module-minifier-plugin.imoduleminifierfunction"
-        },
-        {
-          "type": "category",
-          "label": "IModuleMinifierPluginHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks"
-            },
-            {
-              "type": "doc",
-              "label": "finalModuleId",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.finalmoduleid"
-            },
-            {
-              "type": "doc",
-              "label": "postProcessCodeFragment",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.postprocesscodefragment"
-            },
-            {
-              "type": "doc",
-              "label": "rehydrateAssets",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginhooks.rehydrateassets"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IModuleMinifierPluginOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions"
-            },
-            {
-              "type": "doc",
-              "label": "compressAsyncImports",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.compressasyncimports"
-            },
-            {
-              "type": "doc",
-              "label": "minifier",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.minifier"
-            },
-            {
-              "type": "doc",
-              "label": "sourceMap",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.sourcemap"
-            },
-            {
-              "type": "doc",
-              "label": "usePortableModules",
-              "id": "pages/module-minifier-plugin.imoduleminifierpluginoptions.useportablemodules"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "IPostProcessFragmentContext",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext"
-            },
-            {
-              "type": "doc",
-              "label": "compilation",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.compilation"
-            },
-            {
-              "type": "doc",
-              "label": "loggingName",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.loggingname"
-            },
-            {
-              "type": "doc",
-              "label": "module",
-              "id": "pages/module-minifier-plugin.ipostprocessfragmentcontext.module"
-            }
-          ]
+          "id": "pages/module-minifier.imoduleminifierfunction"
         },
         {
           "type": "category",
@@ -7612,22 +7997,22 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions"
             },
             {
               "type": "doc",
               "label": "maxThreads",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.maxthreads"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.maxthreads"
             },
             {
               "type": "doc",
               "label": "terserOptions",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.terseroptions"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.terseroptions"
             },
             {
               "type": "doc",
               "label": "verbose",
-              "id": "pages/module-minifier-plugin.iworkerpoolminifieroptions.verbose"
+              "id": "pages/module-minifier.iworkerpoolminifieroptions.verbose"
             }
           ]
         },
@@ -7638,63 +8023,53 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.localminifier"
+              "id": "pages/module-minifier.localminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.localminifier._constructor_"
+              "id": "pages/module-minifier.localminifier._constructor_"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.localminifier.connect"
+              "id": "pages/module-minifier.localminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.localminifier.minify"
+              "id": "pages/module-minifier.localminifier.minify"
             }
           ]
         },
         {
-          "type": "doc",
-          "label": "MODULE_WRAPPER_PREFIX",
-          "id": "pages/module-minifier-plugin.module_wrapper_prefix"
-        },
-        {
-          "type": "doc",
-          "label": "MODULE_WRAPPER_SUFFIX",
-          "id": "pages/module-minifier-plugin.module_wrapper_suffix"
-        },
-        {
           "type": "category",
-          "label": "ModuleMinifierPlugin",
+          "label": "MessagePortMinifier",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin"
+              "id": "pages/module-minifier.messageportminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin._constructor_"
+              "id": "pages/module-minifier.messageportminifier._constructor_"
             },
             {
               "type": "doc",
-              "label": "apply",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.apply"
+              "label": "connect",
+              "id": "pages/module-minifier.messageportminifier.connect"
             },
             {
               "type": "doc",
-              "label": "hooks",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.hooks"
+              "label": "minify",
+              "id": "pages/module-minifier.messageportminifier.minify"
             },
             {
               "type": "doc",
-              "label": "minifier",
-              "id": "pages/module-minifier-plugin.moduleminifierplugin.minifier"
+              "label": "port",
+              "id": "pages/module-minifier.messageportminifier.port"
             }
           ]
         },
@@ -7705,55 +8080,19 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.noopminifier"
+              "id": "pages/module-minifier.noopminifier"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.noopminifier.connect"
+              "id": "pages/module-minifier.noopminifier.connect"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.noopminifier.minify"
+              "id": "pages/module-minifier.noopminifier.minify"
             }
           ]
-        },
-        {
-          "type": "category",
-          "label": "PortableMinifierModuleIdsPlugin",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin"
-            },
-            {
-              "type": "doc",
-              "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin._constructor_"
-            },
-            {
-              "type": "doc",
-              "label": "apply",
-              "id": "pages/module-minifier-plugin.portableminifiermoduleidsplugin.apply"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "rehydrateAsset",
-          "id": "pages/module-minifier-plugin.rehydrateasset"
-        },
-        {
-          "type": "doc",
-          "label": "STAGE_AFTER",
-          "id": "pages/module-minifier-plugin.stage_after"
-        },
-        {
-          "type": "doc",
-          "label": "STAGE_BEFORE",
-          "id": "pages/module-minifier-plugin.stage_before"
         },
         {
           "type": "category",
@@ -7762,27 +8101,27 @@
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/module-minifier-plugin.workerpoolminifier"
+              "id": "pages/module-minifier.workerpoolminifier"
             },
             {
               "type": "doc",
               "label": "(constructor)",
-              "id": "pages/module-minifier-plugin.workerpoolminifier._constructor_"
+              "id": "pages/module-minifier.workerpoolminifier._constructor_"
             },
             {
               "type": "doc",
               "label": "connect",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.connect"
+              "id": "pages/module-minifier.workerpoolminifier.connect"
             },
             {
               "type": "doc",
               "label": "maxThreads",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.maxthreads"
+              "id": "pages/module-minifier.workerpoolminifier.maxthreads"
             },
             {
               "type": "doc",
               "label": "minify",
-              "id": "pages/module-minifier-plugin.workerpoolminifier.minify"
+              "id": "pages/module-minifier.workerpoolminifier.minify"
             }
           ]
         }
@@ -7862,6 +8201,11 @@
               "type": "doc",
               "label": "mapAsync",
               "id": "pages/node-core-library.async.mapasync"
+            },
+            {
+              "type": "doc",
+              "label": "runWithRetriesAsync",
+              "id": "pages/node-core-library.async.runwithretriesasync"
             },
             {
               "type": "doc",
@@ -8197,6 +8541,62 @@
         },
         {
           "type": "category",
+          "label": "FileError",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.fileerror"
+            },
+            {
+              "type": "doc",
+              "label": "[Symbol.hasInstance]",
+              "id": "pages/node-core-library.fileerror._symbol.hasinstance_"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/node-core-library.fileerror._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "absolutePath",
+              "id": "pages/node-core-library.fileerror.absolutepath"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.fileerror.column"
+            },
+            {
+              "type": "doc",
+              "label": "getFormattedErrorMessage",
+              "id": "pages/node-core-library.fileerror.getformattederrormessage"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.fileerror.line"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolder",
+              "id": "pages/node-core-library.fileerror.projectfolder"
+            },
+            {
+              "type": "doc",
+              "label": "toString",
+              "id": "pages/node-core-library.fileerror.tostring"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "FileLocationStyle",
+          "id": "pages/node-core-library.filelocationstyle"
+        },
+        {
+          "type": "category",
           "label": "FileSystem",
           "items": [
             {
@@ -8381,6 +8781,11 @@
             },
             {
               "type": "doc",
+              "label": "isDirectoryError",
+              "id": "pages/node-core-library.filesystem.isdirectoryerror"
+            },
+            {
+              "type": "doc",
               "label": "isErrnoException",
               "id": "pages/node-core-library.filesystem.iserrnoexception"
             },
@@ -8398,6 +8803,11 @@
               "type": "doc",
               "label": "isFolderDoesNotExistError",
               "id": "pages/node-core-library.filesystem.isfolderdoesnotexisterror"
+            },
+            {
+              "type": "doc",
+              "label": "isNotDirectoryError",
+              "id": "pages/node-core-library.filesystem.isnotdirectoryerror"
             },
             {
               "type": "doc",
@@ -8742,6 +9152,53 @@
         },
         {
           "type": "category",
+          "label": "IFileErrorFormattingOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ifileerrorformattingoptions"
+            },
+            {
+              "type": "doc",
+              "label": "format",
+              "id": "pages/node-core-library.ifileerrorformattingoptions.format"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFileErrorOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ifileerroroptions"
+            },
+            {
+              "type": "doc",
+              "label": "absolutePath",
+              "id": "pages/node-core-library.ifileerroroptions.absolutepath"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.ifileerroroptions.column"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.ifileerroroptions.line"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolder",
+              "id": "pages/node-core-library.ifileerroroptions.projectfolder"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IFileSystemCopyFileBaseOptions",
           "items": [
             {
@@ -9067,6 +9524,27 @@
               "type": "doc",
               "label": "packageName",
               "id": "pages/node-core-library.iimportresolvepackageoptions.packagename"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IJsonFileLoadAndValidateOptions",
+          "id": "pages/node-core-library.ijsonfileloadandvalidateoptions"
+        },
+        {
+          "type": "category",
+          "label": "IJsonFileParseOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ijsonfileparseoptions"
+            },
+            {
+              "type": "doc",
+              "label": "jsonSyntax",
+              "id": "pages/node-core-library.ijsonfileparseoptions.jsonsyntax"
             }
           ]
         },
@@ -9472,6 +9950,52 @@
               "type": "doc",
               "label": "pathToConvert",
               "id": "pages/node-core-library.ipathformatconciselyoptions.pathtoconvert"
+            },
+            {
+              "type": "doc",
+              "label": "trimLeadingDotSlash",
+              "id": "pages/node-core-library.ipathformatconciselyoptions.trimleadingdotslash"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IPathFormatFileLocationOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions"
+            },
+            {
+              "type": "doc",
+              "label": "baseFolder",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.basefolder"
+            },
+            {
+              "type": "doc",
+              "label": "column",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.column"
+            },
+            {
+              "type": "doc",
+              "label": "format",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.format"
+            },
+            {
+              "type": "doc",
+              "label": "line",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.line"
+            },
+            {
+              "type": "doc",
+              "label": "message",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.message"
+            },
+            {
+              "type": "doc",
+              "label": "pathToFormat",
+              "id": "pages/node-core-library.ipathformatfilelocationoptions.pathtoformat"
             }
           ]
         },
@@ -9498,6 +10022,32 @@
               "type": "doc",
               "label": "onSet",
               "id": "pages/node-core-library.iprotectablemapparameters.onset"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IRunWithRetriesOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.irunwithretriesoptions"
+            },
+            {
+              "type": "doc",
+              "label": "action",
+              "id": "pages/node-core-library.irunwithretriesoptions.action"
+            },
+            {
+              "type": "doc",
+              "label": "maxRetries",
+              "id": "pages/node-core-library.irunwithretriesoptions.maxretries"
+            },
+            {
+              "type": "doc",
+              "label": "retryDelayMs",
+              "id": "pages/node-core-library.irunwithretriesoptions.retrydelayms"
             }
           ]
         },
@@ -9535,6 +10085,22 @@
               "type": "doc",
               "label": "toString",
               "id": "pages/node-core-library.istringbuilder.tostring"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ISubprocessOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.isubprocessoptions"
+            },
+            {
+              "type": "doc",
+              "label": "detached",
+              "id": "pages/node-core-library.isubprocessoptions.detached"
             }
           ]
         },
@@ -9756,6 +10322,11 @@
               "id": "pages/node-core-library.jsonschema.validateobjectwithcallback"
             }
           ]
+        },
+        {
+          "type": "doc",
+          "label": "JsonSyntax",
+          "id": "pages/node-core-library.jsonsyntax"
         },
         {
           "type": "category",
@@ -10054,6 +10625,11 @@
             },
             {
               "type": "doc",
+              "label": "convertToPlatformDefault",
+              "id": "pages/node-core-library.path.converttoplatformdefault"
+            },
+            {
+              "type": "doc",
               "label": "convertToSlashes",
               "id": "pages/node-core-library.path.converttoslashes"
             },
@@ -10061,6 +10637,11 @@
               "type": "doc",
               "label": "formatConcisely",
               "id": "pages/node-core-library.path.formatconcisely"
+            },
+            {
+              "type": "doc",
+              "label": "formatFileLocation",
+              "id": "pages/node-core-library.path.formatfilelocation"
             },
             {
               "type": "doc",
@@ -10275,6 +10856,32 @@
         },
         {
           "type": "category",
+          "label": "SubprocessTerminator",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.subprocessterminator"
+            },
+            {
+              "type": "doc",
+              "label": "killProcessTree",
+              "id": "pages/node-core-library.subprocessterminator.killprocesstree"
+            },
+            {
+              "type": "doc",
+              "label": "killProcessTreeOnExit",
+              "id": "pages/node-core-library.subprocessterminator.killprocesstreeonexit"
+            },
+            {
+              "type": "doc",
+              "label": "RECOMMENDED_OPTIONS",
+              "id": "pages/node-core-library.subprocessterminator.recommended_options"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "Terminal",
           "items": [
             {
@@ -10474,8 +11081,8 @@
         },
         {
           "type": "doc",
-          "label": "getRepoState",
-          "id": "pages/package-deps-hash.getrepostate"
+          "label": "getRepoStateAsync",
+          "id": "pages/package-deps-hash.getrepostateasync"
         },
         {
           "type": "category",
@@ -11530,11 +12137,6 @@
             },
             {
               "type": "doc",
-              "label": "onDefineParameters",
-              "id": "pages/ts-command-line.commandlineaction.ondefineparameters"
-            },
-            {
-              "type": "doc",
               "label": "onExecute",
               "id": "pages/ts-command-line.commandlineaction.onexecute"
             },
@@ -11762,6 +12364,16 @@
             },
             {
               "type": "doc",
+              "label": "parameterGroup",
+              "id": "pages/ts-command-line.commandlineparameter.parametergroup"
+            },
+            {
+              "type": "doc",
+              "label": "parameterScope",
+              "id": "pages/ts-command-line.commandlineparameter.parameterscope"
+            },
+            {
+              "type": "doc",
               "label": "reportInvalidData",
               "id": "pages/ts-command-line.commandlineparameter.reportinvaliddata"
             },
@@ -11769,6 +12381,11 @@
               "type": "doc",
               "label": "required",
               "id": "pages/ts-command-line.commandlineparameter.required"
+            },
+            {
+              "type": "doc",
+              "label": "scopedLongName",
+              "id": "pages/ts-command-line.commandlineparameter.scopedlongname"
             },
             {
               "type": "doc",
@@ -11898,6 +12515,11 @@
             },
             {
               "type": "doc",
+              "label": "parseScopedLongName",
+              "id": "pages/ts-command-line.commandlineparameterprovider.parsescopedlongname"
+            },
+            {
+              "type": "doc",
               "label": "remainder",
               "id": "pages/ts-command-line.commandlineparameterprovider.remainder"
             },
@@ -11905,6 +12527,11 @@
               "type": "doc",
               "label": "renderHelpText",
               "id": "pages/ts-command-line.commandlineparameterprovider.renderhelptext"
+            },
+            {
+              "type": "doc",
+              "label": "renderUsageText",
+              "id": "pages/ts-command-line.commandlineparameterprovider.renderusagetext"
             }
           ]
         },
@@ -12079,31 +12706,15 @@
             },
             {
               "type": "doc",
-              "label": "onDefineParameters",
-              "id": "pages/ts-command-line.dynamiccommandlineaction.ondefineparameters"
-            },
-            {
-              "type": "doc",
               "label": "onExecute",
               "id": "pages/ts-command-line.dynamiccommandlineaction.onexecute"
             }
           ]
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "DynamicCommandLineParser",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/ts-command-line.dynamiccommandlineparser"
-            },
-            {
-              "type": "doc",
-              "label": "onDefineParameters",
-              "id": "pages/ts-command-line.dynamiccommandlineparser.ondefineparameters"
-            }
-          ]
+          "id": "pages/ts-command-line.dynamiccommandlineparser"
         },
         {
           "type": "category",
@@ -12126,8 +12737,18 @@
             },
             {
               "type": "doc",
+              "label": "parameterGroup",
+              "id": "pages/ts-command-line.ibasecommandlinedefinition.parametergroup"
+            },
+            {
+              "type": "doc",
               "label": "parameterLongName",
               "id": "pages/ts-command-line.ibasecommandlinedefinition.parameterlongname"
+            },
+            {
+              "type": "doc",
+              "label": "parameterScope",
+              "id": "pages/ts-command-line.ibasecommandlinedefinition.parameterscope"
             },
             {
               "type": "doc",
@@ -12287,6 +12908,11 @@
             },
             {
               "type": "doc",
+              "label": "toolEpilog",
+              "id": "pages/ts-command-line.icommandlineparseroptions.toolepilog"
+            },
+            {
+              "type": "doc",
               "label": "toolFilename",
               "id": "pages/ts-command-line.icommandlineparseroptions.toolfilename"
             }
@@ -12328,6 +12954,73 @@
           "type": "doc",
           "label": "ICommandLineStringListDefinition",
           "id": "pages/ts-command-line.icommandlinestringlistdefinition"
+        },
+        {
+          "type": "category",
+          "label": "IScopedLongNameParseResult",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult"
+            },
+            {
+              "type": "doc",
+              "label": "longName",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult.longname"
+            },
+            {
+              "type": "doc",
+              "label": "scope",
+              "id": "pages/ts-command-line.iscopedlongnameparseresult.scope"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ScopedCommandLineAction",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.scopedcommandlineaction"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/ts-command-line.scopedcommandlineaction._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefineparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineScopedParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefinescopedparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onDefineUnscopedParameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.ondefineunscopedparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onExecute",
+              "id": "pages/ts-command-line.scopedcommandlineaction.onexecute"
+            },
+            {
+              "type": "doc",
+              "label": "parameters",
+              "id": "pages/ts-command-line.scopedcommandlineaction.parameters"
+            },
+            {
+              "type": "doc",
+              "label": "ScopingParameterGroup",
+              "id": "pages/ts-command-line.scopedcommandlineaction.scopingparametergroup"
+            }
+          ]
         }
       ]
     },
@@ -12400,6 +13093,42 @@
         },
         {
           "type": "category",
+          "label": "ITypingsGeneratorBaseOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions"
+            },
+            {
+              "type": "doc",
+              "label": "generatedTsFolder",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.generatedtsfolder"
+            },
+            {
+              "type": "doc",
+              "label": "globsToIgnore",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.globstoignore"
+            },
+            {
+              "type": "doc",
+              "label": "secondaryGeneratedTsFolders",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.secondarygeneratedtsfolders"
+            },
+            {
+              "type": "doc",
+              "label": "srcFolder",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.srcfolder"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/typings-generator.itypingsgeneratorbaseoptions.terminal"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ITypingsGeneratorOptions",
           "items": [
             {
@@ -12419,33 +13148,13 @@
             },
             {
               "type": "doc",
-              "label": "generatedTsFolder",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.generatedtsfolder"
-            },
-            {
-              "type": "doc",
               "label": "getAdditionalOutputFiles",
               "id": "pages/typings-generator.itypingsgeneratoroptions.getadditionaloutputfiles"
             },
             {
               "type": "doc",
-              "label": "globsToIgnore",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.globstoignore"
-            },
-            {
-              "type": "doc",
               "label": "parseAndGenerateTypings",
               "id": "pages/typings-generator.itypingsgeneratoroptions.parseandgeneratetypings"
-            },
-            {
-              "type": "doc",
-              "label": "srcFolder",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.srcfolder"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/typings-generator.itypingsgeneratoroptions.terminal"
             }
           ]
         },
@@ -12496,6 +13205,16 @@
             },
             {
               "type": "doc",
+              "label": "ignoredFileGlobs",
+              "id": "pages/typings-generator.typingsgenerator.ignoredfileglobs"
+            },
+            {
+              "type": "doc",
+              "label": "inputFileGlob",
+              "id": "pages/typings-generator.typingsgenerator.inputfileglob"
+            },
+            {
+              "type": "doc",
               "label": "registerDependency",
               "id": "pages/typings-generator.typingsgenerator.registerdependency"
             },
@@ -12503,10 +13222,20 @@
               "type": "doc",
               "label": "runWatcherAsync",
               "id": "pages/typings-generator.typingsgenerator.runwatcherasync"
+            },
+            {
+              "type": "doc",
+              "label": "sourceFolderPath",
+              "id": "pages/typings-generator.typingsgenerator.sourcefolderpath"
             }
           ]
         }
       ]
+    },
+    {
+      "type": "doc",
+      "label": "@rushstack/worker-pool",
+      "id": "pages/worker-pool"
     }
   ]
 }

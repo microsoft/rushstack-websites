@@ -22,7 +22,6 @@ Then, in this folder:
 ```
 rush build --to-except .
 rushx update-api-docs <path-to-local-rushstack>
-mv docs/api_nav.json data
 ```
 
 Check in the resulting `docs/api` and `data` folder changes and include it in your PR.

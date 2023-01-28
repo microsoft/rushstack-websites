@@ -109,4 +109,4 @@ dist-dev
 dist-prod
 
 # These files are machine-generated
-websites/rushstack.io/docs/pages/api/
+websites/api.rushstack.io/docs/pages/

@@ -42,10 +42,16 @@ export class DocusaurusMarkdownFeature extends MarkdownDocumenterFeature {
     ].join('\n');
     eventArgs.pageContent = header + eventArgs.pageContent;
 
-    // Requires more investigation. HTML comments are ok, but the little empty
-    // comments (<!-- -->) that are inserted in between links break the MDX parser
-    // in Docusuarus.
-    eventArgs.pageContent = eventArgs.pageContent.replace(/<!-- -->/g, ' ');
+    // API Documenter generates "<!-- -->" comments to prevent emitted Markdown from
+    // being misinterpreted in certain contexts that are handed ambiguously by different
+    // Markdown engines.  See these test cases for some examples:
+    //
+    // https://github.com/microsoft/rushstack/blob/484a7be546784783f5a7b4d387cbb48b0cebde27/apps/api-documenter/src/markdown/test/__snapshots__/CustomMarkdownEmitter.test.ts.snap#L25
+    // https://github.com/microsoft/rushstack/blob/484a7be546784783f5a7b4d387cbb48b0cebde27/apps/api-documenter/src/markdown/MarkdownEmitter.ts#L248
+    //
+    // HTML comments don't work with Docusaurus, because it uses MDX instead of Markdown.
+    // However empty React fragments have an equivalent effect:
+    eventArgs.pageContent = eventArgs.pageContent.replace(/<!-- -->/g, '<></>');
 
     this._apiItemsWithPages.add(eventArgs.apiItem);
   }
