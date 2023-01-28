@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 const path = require('path');
-const { Executable } = require('@rushstack/node-core-library');
+const { Executable, FileSystem } = require('@rushstack/node-core-library');
 
 const rushstackPath = process.argv[2];
 
@@ -27,5 +27,11 @@ const result = Executable.spawnSync(
   ],
   { stdio: 'inherit', shell: true }
 );
+
+FileSystem.move({
+  sourcePath: 'docs/api_nav.json',
+  destinationPath: 'data/api_nav.json',
+  overwrite: true
+});
 
 process.exitCode = result.status;
