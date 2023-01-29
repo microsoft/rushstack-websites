@@ -98,16 +98,24 @@ These are defined in the config file **common/config/rush/command-line.json**. Y
 
 **Custom commands:** You can define your own commands that are similar to Rush's built-in command verbs (e.g. `rush build`, `rush check`, etc). There are two kinds:
 
-- **bulk command:** These commands run individually for each project in the repo, similar to how `rush build` works. If you set `"enableParallelism": true`, projects can be processed in parallel.
-- **global command:** These commands run once for the entire repo, by executing a specified script file.
+- **bulk command:** These commands run individually for each project in the repo, similar to how `rush build` works.
+  If you set `"enableParallelism": true`, projects can be processed in parallel. Bulk commands can execute
+  a script defined in each project's **package.json** file, or a single script file specified by the (optional)
+  `shellCommand` field.
+
+- **global command:** These commands run once for the entire repo, by executing a single script file specified
+  by the (required) `shellCommand` field.
 
 You can also define your own command-line "parameters". A parameter can be associated with one or more commands via its `associatedCommands` list. You can even associate your custom parameters with Rush's own built-in `build` and `rebuild` commands. In the above example, we associate the `--ship` parameter with `rush build`, `rush rebuild`, and our custom `rush import-strings`.
 
 Currently three kinds of `parameterKind` are supported:
 
-- **flag parameter**: A "flag" is a simple switch such as `--ship`.
-- **choice parameter**: An "choice" requires an additional argument which must come from a list of supported alternatives, for example `--locale fr-fr`.
-- **string parameter**: A "string" can take any string as a value, for example `--name my-new-package`.
+- **flag parameter**: A "flag" is a simple switch, for example `--production`.
+- **string parameter**: A parameter that includes a text string argument, for example `--title "Hello, world!"`.
+- **string list parameter**: A string parameter that can be specified multiple times, for example `--category docs --category dashboard`
+- **choice parameter**: Similar to a string but the argument must come from a list of supported alternatives, for example `--locale fr-fr`.
+- **integer parameter**: A parameter that includes an integer argument, for example `--pull-request 1234`.
+- **integer list parameter**: An integer parameter that can be specified multiple times, for example `--pr 1234 --pr 1235 --pr 1236`
 
 More parameter kinds may be supported in the future. (They are parsed using the [ts-command-line](https://www.npmjs.com/package/@microsoft/ts-command-line) library which supports other parameter kinds that could be exposed.)
 
@@ -153,7 +161,7 @@ Optional arguments:
                         builds.
 ```
 
-How to implement a custom command/parameter? For global commands, Rush simply invokes their `shellCommand` and passes the parameters along. For bulk commands, Rush looks for a corresponding script name in your **package.json** file. Suppose we have something like this:
+How to implement a custom command/parameter? For global commands, Rush simply invokes their `shellCommand` and passes the parameters along. For bulk commands, Rush can alternatively look for a corresponding script name in your **package.json** file. Suppose we have something like this:
 
 **example/package.json**
 
@@ -186,4 +194,4 @@ In other words, Rush's custom parameters are simply appended to the **package.js
 
 ## See also
 
-- [command-line.json](../configs/command-line_json.md)
+- [command-line.json](../configs/command-line_json.md) documentation
