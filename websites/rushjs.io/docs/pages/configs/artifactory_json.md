@@ -102,6 +102,18 @@ generates for **artifactory.json**:
        * button if you haven't already done so previously."
        */
       // "locateApiKey": ""
+
+      /**
+       * Overrides the message that normally prompts:
+       * "What is your Artifactory user name?"
+       */
+      // "userNamePrompt": ""
+
+      /**
+       * Overrides the message that normally prompts:
+       * "What is your Artifactory API key?"
+       */
+      // "apiKeyPrompt": ""
     }
   }
 }
