@@ -92,6 +92,12 @@
   "//": "Include the month when they were added in YYYY-MM format",
   "starContributors": [
     {
+      "//": "month when added: 2023-02",
+      "name": "William Huang",
+      "githubAlias": "william2958",
+      "caption": "contributed the Lockfile Explorer app"
+    },
+    {
       "//": "month when added: 2021-12",
       "name": "Cheng",
       "githubAlias": "chengcyber",
