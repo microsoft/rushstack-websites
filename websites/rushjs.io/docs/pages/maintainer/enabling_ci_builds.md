@@ -88,7 +88,7 @@ with GitHub and is free for open source projects. The `rush init` command create
 that's a good starting point if you use this service. Note how it uses **install-run-rush.js**
 to invoke the Rush tool:
 
-**.githib/workflows/ci.yml**
+**.github/workflows/ci.yml**
 
 ```yaml
 name: CI
