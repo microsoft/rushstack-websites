@@ -12,10 +12,10 @@
     "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
-    "@rushstack/heft-node-rig": "~1.10.2",
-    "@rushstack/heft": "~0.47.2",
+    "@rushstack/heft-node-rig": "~1.12.4",
+    "@rushstack/heft": "~0.49.7",
     "@types/heft-jest": "~1.0.3",
-    "@types/node": "14.18.23",
+    "@types/node": "16.18.12",
     "typescript": "~4.7.4",
     "@types/unist": "~2.0.6"
   }
