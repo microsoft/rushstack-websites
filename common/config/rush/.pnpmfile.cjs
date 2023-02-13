@@ -47,10 +47,10 @@ function readPackage(packageJson, context) {
       ];
       for (const docusaurusPackageName of docusaurusPackageNames) {
         if (packageJson.dependencies[docusaurusPackageName]) {
-          packageJson.dependencies[docusaurusPackageName] = '2.0.1';
+          packageJson.dependencies[docusaurusPackageName] = '2.3.1';
         }
         if (packageJson.peerDependencies[docusaurusPackageName]) {
-          packageJson.peerDependencies[docusaurusPackageName] = '2.0.1';
+          packageJson.peerDependencies[docusaurusPackageName] = '2.3.1';
         }
       }
     }
@@ -59,7 +59,7 @@ function readPackage(packageJson, context) {
     // peer dependency, we end up with side-by-side installs of "@docusaurus/theme-common" etc whose
     // only difference is whether "@docusaurus/types" was included.
     if (packageJson.name.startsWith('@docusaurus/')) {
-      packageJson.dependencies['@docusaurus/types'] = '2.0.1';
+      packageJson.dependencies['@docusaurus/types'] = '2.3.1';
     }
 
     if (packageJson.dependencies['trim'] == '0.0.1') {
