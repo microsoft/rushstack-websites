@@ -15,8 +15,8 @@ JSON file contains the extracted type signatures and doc comments. The **api-doc
 can use these files to generate an API reference website, or you can use them as inputs for a custom documentation
 pipeline.
 
-<div class="d-flex flex-row justify-content-center py-5">
-  <img style="height: 450px;" class="mx-auto" src="{{ site.baseurl }}/images/ae-flow-chart.svg" />
+<div style={{ marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
+  <img src="/images/docs/ae-flow-chart.svg" alt="data flow diagram" style={{ height: '450px' }}/>
 </div>
 
 #### Next up: [A sample project](../overview/demo_project.md)
