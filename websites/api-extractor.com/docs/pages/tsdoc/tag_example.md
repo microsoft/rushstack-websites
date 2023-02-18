@@ -1,20 +1,17 @@
 ---
-layout: page
 title: '@example'
-navigation_source: docs_nav
 ---
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [extended](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
 Indicates a documentation section that should be presented as an example
-illustrating how to use the API.  It may include a code sample.
+illustrating how to use the API. It may include a code sample.
 
 **Usage example:**
 
-```ts
+````ts
 /**
  * Adds two numbers together.
  *
@@ -42,9 +39,9 @@ illustrating how to use the API.  It may include a code sample.
 export function add(x: number, y: number): number {
   return x + y;
 }
-```
+````
 
-API Documenter will number the example sections automatically.  The output might look like this:
+API Documenter will number the example sections automatically. The output might look like this:
 
 > **add() function**
 >
@@ -58,10 +55,10 @@ API Documenter will number the example sections automatically.  The output might
 >
 > ## Parameters
 >
-> |  Parameter | Type | Description |
-> |  --- | --- | --- |
-> |  x | <code>number</code> | the first number to add |
-> |  y | <code>number</code> | the second number to add |
+> | Parameter | Type                | Description              |
+> | --------- | ------------------- | ------------------------ |
+> | x         | <code>number</code> | the first number to add  |
+> | y         | <code>number</code> | the second number to add |
 >
 > <b>Returns:</b>
 >

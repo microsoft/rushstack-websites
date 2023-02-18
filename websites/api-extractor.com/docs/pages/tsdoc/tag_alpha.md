@@ -1,16 +1,13 @@
 ---
-layout: page
 title: '@alpha'
-navigation_source: docs_nav
 ---
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [discretionary](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [discretionary](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
-The `@alpha` modifier is one of the four **release tags**.  It indicates that an API item is eventually intended
-to be public, but currently is in an early stage of development.  Third parties should not use "alpha" APIs.
+The `@alpha` modifier is one of the four **release tags**. It indicates that an API item is eventually intended
+to be public, but currently is in an early stage of development. Third parties should not use "alpha" APIs.
 
 **Usage example:**
 
@@ -19,7 +16,7 @@ to be public, but currently is in an early stage of development.  Third parties 
  * This is some example documentation.
  * @alpha
  */
-export function doSomething(): void { }
+export function doSomething(): void {}
 ```
 
 ## See also

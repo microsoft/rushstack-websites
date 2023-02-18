@@ -1,14 +1,12 @@
 ---
-layout: page
 title: ae-missing-release-tag
-navigation_source: docs_nav
 ---
 
-*"___ is part of the package's API, but it is missing a release tag (@alpha, @beta, @public, or @internal)."*
+_"\_\_\_ is part of the package's API, but it is missing a release tag (@alpha, @beta, @public, or @internal)."_
 
 ## Remarks
 
-API Extractor uses release tags to track the maturity of your API.  By default, it requires every declaration
+API Extractor uses release tags to track the maturity of your API. By default, it requires every declaration
 in your API to have a release tag.
 
 Example:
@@ -17,10 +15,10 @@ Example:
 /**
  * The widget class
  */
-export class Widget {  // <-- missing release tag
+export class Widget {
+  // <-- missing release tag
   /** Renders the widget */
-  public render(): void {
-  }
+  public render(): void {}
 }
 
 // Warning: "Widget" is part of the package's API, but it is missing
@@ -36,12 +34,13 @@ We can fix this warning by adding the `@public` release tag like this:
  */
 export class Widget {
   /** Renders the widget */
-  public render(): void {  // <-- release tag not required
+  public render(): void {
+    // <-- release tag not required
   }
 }
 ```
 
-Note that release tags are inherited from containers of nested declarations.  Thus, `ae-missing-release-tag` only
+Note that release tags are inherited from containers of nested declarations. Thus, `ae-missing-release-tag` only
 considers the outermost container.
 
 The `ae-missing-release-tag` validation may seem a little cumbersome at first. However, requiring explicit release tags
@@ -51,10 +50,10 @@ has several benefits:
   not be able to see the entry point, but the release tag clearly signals that this class should get special
   attention. It is part of your API signature.
 
-- When adding a new API, choosing a release tag requires the person to stop and think about visibility:  How mature
-  is this API design?  Should it really be `@public`, or should we maybe start with `@alpha` or `@beta`?
+- When adding a new API, choosing a release tag requires the person to stop and think about visibility: How mature
+  is this API design? Should it really be `@public`, or should we maybe start with `@alpha` or `@beta`?
 
-- It avoids accidents.  For example, it might be embarrassing to be browsing your API web site one day, and
+- It avoids accidents. For example, it might be embarrassing to be browsing your API web site one day, and
   discover an internal class that got included unintentionally. The content may have been generated from private
   code comments that nobody intended to share with a public audience!
 
@@ -74,7 +73,6 @@ validation by adding a section like this to your **api-extractor.json** file:
     }
   }
 ```
-
 
 ## See also
 

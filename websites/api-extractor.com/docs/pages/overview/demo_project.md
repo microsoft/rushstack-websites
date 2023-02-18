@@ -1,16 +1,15 @@
 ---
-layout: page
 title: A sample project
-navigation_source: docs_nav
 ---
 
-*This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page.  It's recommended to start there.*
+_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
 
-For this tutorial, we'll consider a hypothetical TypeScript library project.  The declarations are taken from
-a real-world NPM package **@microsoft/sp-core-library**.  Its main entry point is **src/index.ts**, which contains
+For this tutorial, we'll consider a hypothetical TypeScript library project. The declarations are taken from
+a real-world NPM package **@microsoft/sp-core-library**. Its main entry point is **src/index.ts**, which contains
 export statements like this:
 
 **src/index.ts**<br/>
+
 ```ts
 export { default as Log } from './log/Log';
 export { default as ILogHandler } from './log/ILogHandler';
@@ -19,6 +18,7 @@ export { default as ILogHandler } from './log/ILogHandler';
 These definitions come from three other source files (excerpted here for brevity):
 
 **src/log/Log.ts**<br/>
+
 ```ts
 import DefaultLogHandler from './DefaultLogHandler';
 import ILogHandler from './ILogHandler';
@@ -71,6 +71,7 @@ export default class Log {
 ```
 
 **src/log/ILogHandler.ts**<br/>
+
 ```ts
 /**
  * The redirectable implementation for the Log class.
@@ -78,16 +79,16 @@ export default class Log {
  */
 export interface ILogHandler {
   verbose(source: string, message: string): void;
-  info   (source: string, message: string): void;
-  warn   (source: string, message: string): void;
-  error  (source: string, error: Error): void;
+  info(source: string, message: string): void;
+  warn(source: string, message: string): void;
+  error(source: string, error: Error): void;
 }
 
 export default ILogHandler;
 ```
 
 **src/log/DefaultLogHandler.ts**<br/>
-*(private in this example, so its implementation is unimportant and left to your imagination.)*
+_(private in this example, so its implementation is unimportant and left to your imagination.)_
 
 Let's examine how API Extractor processes these inputs to produce the API report, d.ts rollup, and API documentation
 outputs...

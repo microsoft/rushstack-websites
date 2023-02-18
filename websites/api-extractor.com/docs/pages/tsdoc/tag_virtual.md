@@ -1,22 +1,19 @@
 ---
-layout: page
 title: '@virtual'
-navigation_source: docs_nav
 ---
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [extended](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
-The `@virtual` modifier has similar semantics to the `virtual` keyword in C#.  It should only be applied
-to a member of a class.  It indicates that the member may be overridden (i.e. redefined) by a corresponding member
-of a child class.  The `@virtual` modifier should not be applied to `abstract` members, because the `abstract`
+The `@virtual` modifier has similar semantics to the `virtual` keyword in C#. It should only be applied
+to a member of a class. It indicates that the member may be overridden (i.e. redefined) by a corresponding member
+of a child class. The `@virtual` modifier should not be applied to `abstract` members, because the `abstract`
 keyword already implies that the method is virtual.
 
 The `@virtual` modifier will be displayed in the generated documentation.
 
-API Extractor does not currently validate whether the `@virtual` modifier is used correctly.  (This may be implemented
+API Extractor does not currently validate whether the `@virtual` modifier is used correctly. (This may be implemented
 in the future.)
 
 > NOTE: Unlike many other programming languages, TypeScript supports inheritance for static members of a class.

@@ -1,12 +1,10 @@
 ---
-layout: page
 title: The .d.ts rollup
-navigation_source: docs_nav
 ---
 
-*This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page.  It's recommended to start there.*
+_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
 
-The next API Extractor output that we'll discuss is the "**.d.ts rollup**."  Recall that our example project
+The next API Extractor output that we'll discuss is the "**.d.ts rollup**." Recall that our example project
 has these TypeScript source files:
 
 <b>
@@ -37,6 +35,7 @@ from appearing in the rollup file: **dist/sp-core-library-public.d.ts**
 The trimmed file contents would look like this:
 
 **dist/sp-core-library-public.d.ts**
+
 ```ts
 /* Excluded from this release type: ILogHandler */
 
@@ -73,13 +72,13 @@ export declare class Log {
 ```
 
 With trimming enabled, developers no longer have to worry about accidentally taking a dependency on the
-unstable `Log.initialize()` function when they are targeting production.  That function won't even appear
-in their VS Code IntelliSense!  If they want to use the `@beta` APIs, they would explicitly opt-in to a
-"beta" release.  For the real **@microsoft/sp-core-library** package, "opting in" is accomplished by installing
+unstable `Log.initialize()` function when they are targeting production. That function won't even appear
+in their VS Code IntelliSense! If they want to use the `@beta` APIs, they would explicitly opt-in to a
+"beta" release. For the real **@microsoft/sp-core-library** package, "opting in" is accomplished by installing
 [a special version number](https://www.npmjs.com/package/@microsoft/sp-core-library?activeTab=versions)
 with the `-plusbeta` suffix (however other approaches are possible as well).
 
-API Extractor's .d.ts rollup feature is fairly sophisticated.  For example, it supports:
+API Extractor's .d.ts rollup feature is fairly sophisticated. For example, it supports:
 
 - declarations whose exported name is different from the original definition
 - types imported from other packages

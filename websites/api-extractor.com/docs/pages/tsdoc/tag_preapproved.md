@@ -1,22 +1,20 @@
 ---
-layout: page
 title: '@preapproved'
-navigation_source: docs_nav
 ---
 
 **Tag type:** modifier
 
-**TSDoc standardization:** *none; this tag is proprietary to API Extractor*
+**TSDoc standardization:** _none; this tag is proprietary to API Extractor_
 
 Even though an API is marked as `@internal`, its signature will still be tracked in the API report
-file (\*.api.md file) because an API review process is often interested in internal APIs.  We may ask
+file (\*.api.md file) because an API review process is often interested in internal APIs. We may ask
 questions such as:
 
-- *"Will this change cause a break for other internal packages?"*
-- *"Should we consider making this a `@public` API instead?"*
-- *"Why do we keep adding more stuff to that huge "`InternalUtilities`" class?"*
+- _"Will this change cause a break for other internal packages?"_
+- _"Should we consider making this a `@public` API instead?"_
+- _"Why do we keep adding more stuff to that huge "`InternalUtilities`" class?"_
 
-However, if it is not useful to review a certain API, it can be marked as `@preapproved`.  This prevents it from
+However, if it is not useful to review a certain API, it can be marked as `@preapproved`. This prevents it from
 being emitted in the API file, and thus exempts it from any review policies.
 
 The `@preapproved` tag is only supported for declarations marked as `@internal`, and only for the following

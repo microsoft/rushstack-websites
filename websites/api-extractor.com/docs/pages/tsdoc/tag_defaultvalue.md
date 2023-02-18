@@ -1,19 +1,16 @@
 ---
-layout: page
 title: '@defaultValue'
-navigation_source: docs_nav
 ---
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [extended](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
 This tag is used to document the default value for a field or property, if a value is not assigned explicitly.
 This tag should only be used with fields or properties that are members of a class or interface.
 
 Being a block tag, `@defaultValue` introduces a TSDoc section that contains all comment text up until the
-next block tag.  This content is called the "**value text**".  The value text can have various forms, for example:
+next block tag. This content is called the "**value text**". The value text can have various forms, for example:
 
 - A literal value, for example: `@defaultValue 3`
 - A code span, for example: <code>@defaultValue `true`</code>

@@ -1,28 +1,24 @@
 ---
-layout: page
 title: api-extractor.json
-navigation_source: docs_nav
 ---
 
 API Extractor's behavior is controlled by a config file **api-extractor.json** that is stored with your project.
 You can use the [api-extractor init]({% link pages/commands/api-extractor_init.md %}) command to create a template
-file to get you started.  The template will contain comments describing each setting.  It is based on
-[api-extractor-template.json](
-https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/schemas/api-extractor-template.json)
+file to get you started. The template will contain comments describing each setting. It is based on
+[api-extractor-template.json](https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/schemas/api-extractor-template.json)
 from the source code.
 
 The individual JSON fields are documented below.
 
-* TOC
-{:toc}
-
-
+- TOC
+  {:toc}
 
 ## Top-level Settings
 
 ### extends
 
 Examples:
+
 ```js
   "extends": "./shared/api-extractor-base.json",
 ```
@@ -35,11 +31,11 @@ Examples:
 
 **Supported tokens:** none
 
-Optionally specifies another JSON config file that this file extends from.  This provides a way for
+Optionally specifies another JSON config file that this file extends from. This provides a way for
 standard settings to be shared across multiple projects.
 
 If the path starts with `./` or `../`, the path is resolved relative to the folder of the file that contains the
-`extends` field.  Otherwise, the first path segment is interpreted as an NPM package name, and will be resolved using
+`extends` field. Otherwise, the first path segment is interpreted as an NPM package name, and will be resolved using
 NodeJS `require()`.
 
 ### projectFolder
@@ -54,27 +50,28 @@ Example:
 
 **Supported tokens:** `<lookup>`
 
-Determines the `<projectFolder>` token that can be used with other config file settings.  The project folder typically
+Determines the `<projectFolder>` token that can be used with other config file settings. The project folder typically
 contains the **tsconfig.json** and **package.json** config files, but the path is user-defined.
 
 The path is resolved relative to the folder of the config file that contains the setting.
 
 The default value for `projectFolder` is the token `<lookup>`, which means the folder is determined by traversing
 parent folders, starting from the folder containing api-extractor.json, and stopping at the first folder that contains
-a **tsconfig.json** file.  If a **tsconfig.json** file cannot be found in this way, then an error will be reported.
+a **tsconfig.json** file. If a **tsconfig.json** file cannot be found in this way, then an error will be reported.
 
 ### mainEntryPointFilePath
 
 **(REQUIRED)**
 
 Example:
+
 ```js
   "mainEntryPointFilePath": "<projectFolder>/lib/index.d.ts",
 ```
 
 **Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
 
-Specifies the .d.ts file to be used as the starting point for analysis.  API Extractor analyzes the symbols exported
+Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported
 by this module.
 
 The file extension must be ".d.ts" and not ".ts".
@@ -85,6 +82,7 @@ prepend a folder token such as `<projectFolder>`.
 ### bundledPackages
 
 Example:
+
 ```js
   "bundledPackages": [ "library2" ],
 ```
@@ -92,28 +90,30 @@ Example:
 A list of NPM package names whose exports should be treated as part of this package.
 
 For example, suppose that API extractor is run on the project `library1`, and Webpack is used to generate a distributed
-bundle `library1.js` that embeds another NPM package `library2`.  Some types from `library2` may become part
+bundle `library1.js` that embeds another NPM package `library2`. Some types from `library2` may become part
 of the exported API for `library1`, but by default API Extractor would generate a .d.ts rollup that explicitly
-imports `library2`.  To avoid this, we can specify `"bundledPackages": [ "library2" ]` as shown above.
+imports `library2`. To avoid this, we can specify `"bundledPackages": [ "library2" ]` as shown above.
 This would direct API Extractor to embed those types directly in the .d.ts rollup `library1.d.ts`, as if they had
 been local files for `library1`.
 
 ### newlineKind
 
 Example:
+
 ```js
   "newlineKind": "lf",
 ```
 
 **Default value:** `"crlf"`
 
-Specifies what type of newlines API Extractor should use when writing output files.  By default, the output files
-will be written with Windows-style newlines.  To use POSIX-style newlines, specify `"lf"` instead. To use the OS's default
+Specifies what type of newlines API Extractor should use when writing output files. By default, the output files
+will be written with Windows-style newlines. To use POSIX-style newlines, specify `"lf"` instead. To use the OS's default
 newline kind, specify `"os"`.
 
 ### testMode
 
 Example:
+
 ```js
   "testMode": true,
 ```
@@ -126,6 +126,7 @@ Set to true when invoking API Extractor's test harness. When `testMode` is true,
 ### enumMemberOrder
 
 Example:
+
 ```js
   "enumMemberOrder": "preserve",
 ```
@@ -135,16 +136,14 @@ Example:
 Specifies how API Extractor sorts members of an enum when generating api.json. By default, the output files
 will be sorted alphabetically, which is `"by-name"`. To keep the ordering in the source code, specify `"preserve"`.
 
-
-
 ## Compiler Section
 
 Determines how the TypeScript compiler engine will be invoked by API Extractor.
 
-
 ### compiler.tsconfigFilePath
 
 Example:
+
 ```js
   "tsconfigFilePath": "<projectFolder>/tsconfig.json",
 ```
@@ -163,6 +162,7 @@ Note: This setting will be ignored if `overrideTsconfig` is used.
 ### compiler.overrideTsconfig
 
 Example:
+
 ```js
   "compiler": {
     . . .
@@ -185,7 +185,7 @@ Example:
   }
 ```
 
-**Default value:** *no overrideTsconfig section*
+**Default value:** _no overrideTsconfig section_
 
 **Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
 
@@ -197,6 +197,7 @@ If omitted, then the **tsconfig.json** file will be read from the `projectFolder
 ### compiler.skipLibCheck
 
 Example:
+
 ```js
   "compiler": {
     . . .
@@ -211,8 +212,6 @@ may cause API Extractor to produce incomplete or incorrect declarations, but it 
 contain declarations that are incompatible with the TypeScript engine that API Extractor uses for its analysis.
 Where possible, the underlying issue should be fixed rather than relying on `skipLibCheck`.
 
-
-
 ## API Report Section
 
 Configures how the API report file (\*.api.md) will be generated.
@@ -222,6 +221,7 @@ Configures how the API report file (\*.api.md) will be generated.
 **(REQUIRED)**
 
 Example:
+
 ```js
   "apiReport": {
     "enabled": true,
@@ -234,6 +234,7 @@ Whether to generate an API report.
 ### apiReport.reportFileName
 
 Example:
+
 ```js
   "apiReport": {
     . . .
@@ -246,7 +247,7 @@ Example:
 
 **Supported tokens:** `<packageName>`, `<unscopedPackageName>`
 
-The filename for the API report files.  It will be combined with `reportFolder` or `reportTempFolder` to produce
+The filename for the API report files. It will be combined with `reportFolder` or `reportTempFolder` to produce
 a full output filename.
 
 The file extension should be `.api.md`, and the string should not contain a path separator such as `\` or `/`.
@@ -254,6 +255,7 @@ The file extension should be `.api.md`, and the string should not contain a path
 ### apiReport.reportFolder
 
 Example:
+
 ```js
   "apiReport": {
     . . .
@@ -266,10 +268,10 @@ Example:
 
 **Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
 
-Specifies the folder where the API report file is written.  The file name portion is determined by
+Specifies the folder where the API report file is written. The file name portion is determined by
 the `reportFileName` setting.
 
-The API report file is normally tracked by Git.  Changes to it can be used to trigger a branch policy, e.g. for
+The API report file is normally tracked by Git. Changes to it can be used to trigger a branch policy, e.g. for
 an API review.
 
 The path is resolved relative to the folder of the config file that contains the setting; to change this,
@@ -278,6 +280,7 @@ prepend a folder token such as `<projectFolder>`.
 ### apiReport.reportTempFolder
 
 Example:
+
 ```js
   "apiReport": {
     . . .
@@ -290,7 +293,7 @@ Example:
 
 **Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
 
-Specifies the folder where the temporary report file is written.  The file name portion is determined by
+Specifies the folder where the temporary report file is written. The file name portion is determined by
 the `reportFileName` setting.
 
 After the temporary file is written to disk, it is compared with the file in the `reportFolder`.
@@ -302,6 +305,7 @@ prepend a folder token such as `<projectFolder>`.
 ### apiReport.includeForgottenExports
 
 Example:
+
 ```js
   "apiReport": {
     . . .
@@ -315,7 +319,6 @@ Example:
 Whether "forgotten exports" should be included in the API report file. Forgotten exports are declarations
 flagged with [ae-forgotten-export]({% link pages/messages/ae-forgotten-export.md %}) warnings.
 
-
 ## Doc Model Section
 
 Configures how the doc model file (\*.api.json) will be generated.
@@ -325,6 +328,7 @@ Configures how the doc model file (\*.api.json) will be generated.
 **(REQUIRED)**
 
 Example:
+
 ```js
   "docModel": {
     "enabled": true,
@@ -337,6 +341,7 @@ Whether to generate a doc model file.
 ### docModel.apiJsonFilePath
 
 Example:
+
 ```js
   "docModel": {
     . . .
@@ -349,7 +354,7 @@ Example:
 
 **Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
 
-The output path for the doc model file.  The file extension should be `.api.json`.
+The output path for the doc model file. The file extension should be `.api.json`.
 
 The path is resolved relative to the folder of the config file that contains the setting; to change this,
 prepend a folder token such as `<projectFolder>`.
@@ -357,6 +362,7 @@ prepend a folder token such as `<projectFolder>`.
 ### docModel.includeForgottenExports
 
 Example:
+
 ```js
   "docModel": {
     . . .
@@ -370,7 +376,6 @@ Example:
 Whether "forgotten exports" should be included in the doc model file. Forgotten exports are declarations
 flagged with [ae-forgotten-export]({% link pages/messages/ae-forgotten-export.md %}) warnings.
 
-
 ## .d.ts Rollup Section
 
 Configures how the .d.ts rollup file will be generated.
@@ -380,6 +385,7 @@ Configures how the .d.ts rollup file will be generated.
 **(REQUIRED)**
 
 Example:
+
 ```js
   "dtsRollup": {
     "enabled": true,
@@ -392,6 +398,7 @@ Whether to generate the .d.ts rollup file.
 ### dtsRollup.untrimmedFilePath
 
 Example:
+
 ```js
   "dtsRollup": {
     . . .
@@ -415,6 +422,7 @@ prepend a folder token such as `<projectFolder>`.
 ### dtsRollup.betaTrimmedFilePath
 
 Example:
+
 ```js
   "dtsRollup": {
     . . .
@@ -438,6 +446,7 @@ prepend a folder token such as `<projectFolder>`.
 ### dtsRollup.publicTrimmedFilePath
 
 Example:
+
 ```js
   "dtsRollup": {
     . . .
@@ -461,6 +470,7 @@ prepend a folder token such as `<projectFolder>`.
 ### dtsRollup.omitTrimmingComments
 
 Example:
+
 ```js
   "dtsRollup": {
     . . .
@@ -472,10 +482,8 @@ Example:
 **Default value:** `false`
 
 When a declaration is trimmed, by default it will be replaced by a code comment such as
-`Excluded from this release type: exampleMember`.  Set `omitTrimmingComments` to true to remove the
+`Excluded from this release type: exampleMember`. Set `omitTrimmingComments` to true to remove the
 declaration completely.
-
-
 
 ## TSDoc Metadata Section
 
@@ -484,6 +492,7 @@ Configures how the **tsdoc-metadata.json** file will be generated.
 ### tsdocMetadata.enabled
 
 Example:
+
 ```js
   "tsdocMetadata": {
     "enabled": true,
@@ -498,6 +507,7 @@ Whether to generate the **tsdoc-metadata.json** file.
 ### tsdocMetadata.tsdocMetadataFilePath
 
 Example:
+
 ```js
   "tsdocMetadata": {
     . . .
@@ -516,16 +526,14 @@ The path is resolved relative to the folder of the config file that contains the
 prepend a folder token such as `<projectFolder>`.
 
 The default value is `<lookup>`, which causes the path to be automatically inferred from the `tsdocMetadata`,
-`typings` or `main` fields of the project's package.json.  If none of these fields are set, the lookup
+`typings` or `main` fields of the project's package.json. If none of these fields are set, the lookup
 falls back to `tsdoc-metadata.json` in the package folder.
-
-
 
 ## Message Reporting Section
 
 Configures how API Extractor reports error and warning messages produced during analysis.
 
-There are three sources of messages:  compiler messages, API Extractor messages, and TSDoc messages.
+There are three sources of messages: compiler messages, API Extractor messages, and TSDoc messages.
 
 ### messages.\<section\>.\<rule\>.logLevel
 
@@ -547,11 +555,11 @@ Example:
 
 **Possible values:** `"error"`, `"warning"`, `"none"`
 
-Specifies whether the message should be written to the the tool's output log.  Note that
+Specifies whether the message should be written to the the tool's output log. Note that
 the `addToApiReportFile` property may supersede this option.
 
-Errors cause the build to fail and return a nonzero exit code.  Warnings cause a production build fail
-and return a nonzero exit code.  For a non-production build (e.g. when `api-extractor run` includes
+Errors cause the build to fail and return a nonzero exit code. Warnings cause a production build fail
+and return a nonzero exit code. For a non-production build (e.g. when `api-extractor run` includes
 the `--local` option), the warning is displayed but the build will not fail.
 
 ### messages.\<section\>.\<rule\>.addToApiReportFile
@@ -574,7 +582,7 @@ Example:
 
 **Default value:** `false`
 
-When `addToApiReportFile` is true:  If API Extractor is configured to write an API report file (.api.md),
+When `addToApiReportFile` is true: If API Extractor is configured to write an API report file (.api.md),
 then the message will be written inside that file; otherwise, the message is instead logged according to
 the `logLevel` option.
 
@@ -610,8 +618,7 @@ Example:
 Configures handling of diagnostic messages reported by the TypeScript compiler engine while analyzing
 the input .d.ts files.
 
-TypeScript message identifiers start with `TS` followed by an integer.  For example: `TS2551`
-
+TypeScript message identifiers start with `TS` followed by an integer. For example: `TS2551`
 
 ### messages.extractorMessageReporting
 
@@ -632,9 +639,8 @@ Example:
 
 **Default value:**
 
-*(See [api-extractor-defaults.json](
-https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/schemas/api-extractor-defaults.json)
-for the complete up-to-date table.)*
+_(See [api-extractor-defaults.json](https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/schemas/api-extractor-defaults.json)
+for the complete up-to-date table.)_
 
 ```js
   "messages": {
@@ -670,7 +676,7 @@ for the complete up-to-date table.)*
 
 Configures handling of messages reported by API Extractor during its analysis.
 
-API Extractor message identifiers start with `ae-`.  For example: `ae-extra-release-tag`
+API Extractor message identifiers start with `ae-`. For example: `ae-extra-release-tag`
 
 ### messages.tsdocMessageReporting
 
@@ -703,4 +709,4 @@ Example:
 
 Configures handling of messages reported by the TSDoc parser when analyzing code comments.
 
-TSDoc message identifiers start with `tsdoc-`.  For example: `tsdoc-link-tag-unescaped-text`
+TSDoc message identifiers start with `tsdoc-`. For example: `tsdoc-link-tag-unescaped-text`

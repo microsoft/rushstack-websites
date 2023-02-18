@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ae-internal-mixed-release-tag
-navigation_source: docs_nav
 ---
 
-*"Mixed release tags are not allowed for ___ because one of its declarations is marked as @internal."*
+_"Mixed release tags are not allowed for \_\_\_ because one of its declarations is marked as @internal."_
 
 ## Remarks
 

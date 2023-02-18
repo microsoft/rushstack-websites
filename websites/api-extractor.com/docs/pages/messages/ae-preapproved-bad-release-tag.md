@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ae-preapproved-bad-release-tag
-navigation_source: docs_nav
 ---
 
-*"The @preapproved tag cannot be applied to ___ without an @internal release tag."*
+_"The @preapproved tag cannot be applied to \_\_\_ without an @internal release tag."_
 
 ## Remarks
 

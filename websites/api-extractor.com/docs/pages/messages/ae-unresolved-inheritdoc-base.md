@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ae-unresolved-inheritdoc-base
-navigation_source: docs_nav
 ---
 
-*"The @inheritDoc tag needs a TSDoc declaration reference; signature matching is not supported yet"*
+_"The @inheritDoc tag needs a TSDoc declaration reference; signature matching is not supported yet"_
 
 ## Remarks
 
@@ -15,8 +13,7 @@ export class Base {
   /**
    * Some documentation that we want to inherit
    */
-   public member(): void {
-   }
+  public member(): void {}
 }
 
 export interface IChild {
@@ -31,11 +28,10 @@ export interface IChild {
 
 ```ts
 export class Child extends Base implements IChild {
-  /** {@inheritDoc} */    // <-- not supported
-  public member(): void {
-  }
+  /** {@inheritDoc} */ // <-- not supported
+  public member(): void {}
 
-  /** {@inheritDoc} */    // <-- not supported
+  /** {@inheritDoc} */ // <-- not supported
   public value: string = 'example';
 }
 
@@ -44,14 +40,13 @@ export class Child extends Base implements IChild {
 ```
 
 It would be convenient if the `{@inheritDoc}` tag could be matched with the corresponding member from the
-base class or interface.  This may be implemented in the future; however, it is not supported today.
+base class or interface. This may be implemented in the future; however, it is not supported today.
 Instead, you need to provide an explicit declaration reference like this:
 
 ```ts
 export class Child extends Base implements IChild {
   /** {@inheritDoc Base.member} */
-  public member(): void {
-  }
+  public member(): void {}
 
   /** {@inheritDoc IChild.value} */
   public value: string = 'example';

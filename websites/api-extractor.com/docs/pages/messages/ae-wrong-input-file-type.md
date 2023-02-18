@@ -1,29 +1,26 @@
 ---
-layout: page
 title: ae-wrong-input-file-type
-navigation_source: docs_nav
 ---
 
-*"Incorrect file type; API Extractor expects to analyze compiler outputs with the .d.ts file extension."*
+_"Incorrect file type; API Extractor expects to analyze compiler outputs with the .d.ts file extension."_
 
 ## Remarks
 
-Unlike some other tools, API Extractor does not process TypeScript source files directly.  Instead, it is
+Unlike some other tools, API Extractor does not process TypeScript source files directly. Instead, it is
 designed to analyze the .d.ts files that are emitted by the compiler and exported by your NPM package.
 This design choice ensures that API Extractor sees your library the same way that an external consumer
-will see it.  It also ensures that the .d.ts rollup preserves the particular syntax choices of
+will see it. It also ensures that the .d.ts rollup preserves the particular syntax choices of
 your toolchain, compiler version, and manually authored inputs.
 
 As a result, your `mainEntryPointFilePath` must have the .d.ts file extension, and so must all of
-the imported modules.  An `ae-wrong-input-file-type` error is reported if any incorrect file extensions
+the imported modules. An `ae-wrong-input-file-type` error is reported if any incorrect file extensions
 are encountered.
-
 
 ## How to fix
 
-To reduce log noise, the `ae-wrong-input-file-type` error is reported at most once.  To see the full list
+To reduce log noise, the `ae-wrong-input-file-type` error is reported at most once. To see the full list
 of imported paths, invoke API Extractor with the `--diagnostics` parameter, then look for any file paths
-that have a problematic file extension such as `.ts` or `.tsx`.  Try to determine why that file is being
+that have a problematic file extension such as `.ts` or `.tsx`. Try to determine why that file is being
 imported instead of the corresponding `.d.ts` file.
 
 > **Tip**
@@ -35,8 +32,8 @@ imported instead of the corresponding `.d.ts` file.
 > tsc --traceResolution > trace.log
 > ```
 >
-> Although this reports the dependency graph of the ***source files*** (and not the `mainEntryPointFilePath`
-> view), it can still be informative.  For an accurate trace, you could invoke the compiler on
+> Although this reports the dependency graph of the **_source files_** (and not the `mainEntryPointFilePath`
+> view), it can still be informative. For an accurate trace, you could invoke the compiler on
 > a secondary project that imports your project as an NPM dependency.
 
 Common issues:

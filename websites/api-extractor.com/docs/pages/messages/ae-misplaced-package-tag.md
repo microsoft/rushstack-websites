@@ -1,15 +1,13 @@
 ---
-layout: page
 title: ae-misplaced-package-tag
-navigation_source: docs_nav
 ---
 
-*"The @packageDocumentation comment must appear at the top of entry point *.d.ts file."*
+_"The @packageDocumentation comment must appear at the top of entry point _.d.ts file."\*
 
 ## Remarks
 
 The doc comment containing the `@packageDocumentation` tag must appear as the first comment
-in the entry point file (as specified by the `mainEntryPointFilePath` setting).  To prevent mistakes,
+in the entry point file (as specified by the `mainEntryPointFilePath` setting). To prevent mistakes,
 API Extractor reports `ae-misplaced-package-tag` if it finds a comment with the `@packageDocumentation` tag
 in some other location.
 

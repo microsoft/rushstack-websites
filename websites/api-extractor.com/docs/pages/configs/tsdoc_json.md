@@ -1,22 +1,21 @@
 ---
-layout: page
 title: tsdoc.json
-navigation_source: docs_nav
 ---
 
-[TSDoc](https://tsdoc.org/) is a standard syntax for TypeScript doc comments.  It can be extended with custom
-tag definitions.  API Extractor's custom tags are referred to as "AEDoc" tags.  They are defined in the file
+[TSDoc](https://tsdoc.org/) is a standard syntax for TypeScript doc comments. It can be extended with custom
+tag definitions. API Extractor's custom tags are referred to as "AEDoc" tags. They are defined in the file
 [extends/tsdoc-base.json](https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/extends/tsdoc-base.json).
 
 If your code comments are processed by other TSDoc-compatible tools, you can add a **tsdoc.json** config file
-to your project. This enables different tools to agree about how comments should be parsed.  If you are using
+to your project. This enables different tools to agree about how comments should be parsed. If you are using
 the [eslint-plugin-tsdoc](https://www.npmjs.com/package/eslint-plugin-tsdoc) plugin, it also enables ESLint
-to report warnings for tags that are ***not defined*** (for example misspelled) or ***not supported***
+to report warnings for tags that are **_not defined_** (for example misspelled) or **_not supported_**
 (for example a standardized tag that is not implemented by your tooling).
 
 Add a file like this to your project:
 
 **&lt;your-project-folder&gt;/tsdoc.json**
+
 ```js
 {
   "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -25,7 +24,6 @@ Add a file like this to your project:
   "extends": [ "@microsoft/api-extractor/extends/tsdoc-base.json" ]
 }
 ```
-
 
 ## Defining your own TSDoc tags
 
@@ -38,6 +36,7 @@ so that they are accessible to tools that use the
 A custom tag definition might look like this:
 
 **&lt;your-project-folder&gt;/tsdoc.json**
+
 ```js
 {
   "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -65,7 +64,7 @@ A custom tag definition might look like this:
 ```
 
 The resulting TSDoc configuration will include the AEDoc definitions that were merged via `"extends"`,
-plus the standard tags that are predefined by the TSDoc parser.  To see your project's final TSDoc configuration,
+plus the standard tags that are predefined by the TSDoc parser. To see your project's final TSDoc configuration,
 invoke API Extractor with the `--diagnostics` command-line option:
 
 ```

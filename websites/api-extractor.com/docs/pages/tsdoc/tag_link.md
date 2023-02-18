@@ -1,25 +1,21 @@
 ---
-layout: page
 title: '{@link}'
-navigation_source: docs_nav
 ---
 
 **Tag type:** inline tag
 
-**TSDoc standardization:** [core](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
 **Syntax:**
 
-* `{@link DECLARATION_REFERENCE}`
-* `{@link DECLARATION_REFERENCE | DISPLAY_TEXT}`
-* `{@link URL}`
-* `{@link URL | DISPLAY_TEXT}`
+- `{@link DECLARATION_REFERENCE}`
+- `{@link DECLARATION_REFERENCE | DISPLAY_TEXT}`
+- `{@link URL}`
+- `{@link URL | DISPLAY_TEXT}`
 
 The `@link` tag creates a hyperlink to an internet URL or another API documentation page specified
 using a [TSDoc declaration references]({% link pages/tsdoc/declaration_references.md %}) notation.
-If the *DISPLAY_TEXT* is omitted, then the declaration name or URL address will be used as the display text.
-
+If the _DISPLAY_TEXT_ is omitted, then the declaration name or URL address will be used as the display text.
 
 **Usage example:**
 

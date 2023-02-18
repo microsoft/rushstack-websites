@@ -1,23 +1,20 @@
 ---
-layout: page
 title: '@remarks'
-navigation_source: docs_nav
 ---
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
 The main documentation for an API item is separated into a brief "summary" section, optionally followed by
-a more detailed "remarks" section.  On a documentation web site, index pages (e.g. showing members of a class)
+a more detailed "remarks" section. On a documentation web site, index pages (e.g. showing members of a class)
 will show only the brief summaries, whereas a detail pages (e.g. describing a single member) will show the summary
-followed by the remarks.  The `@remarks` block tag ends the summary section, and begins the remarks section for
+followed by the remarks. The `@remarks` block tag ends the summary section, and begins the remarks section for
 a doc comment.
 
-*NOTE: This design differs from [JSDoc's approach](http://usejsdoc.org/tags-summary.html), which uses
-an optional `@summary` tag to provide a condensed restatement of the full documentation.  We experimented with
-this, but found that a well-written article already contains a "summary" in its first sentence or two.*
+_NOTE: This design differs from [JSDoc's approach](http://usejsdoc.org/tags-summary.html), which uses
+an optional `@summary` tag to provide a condensed restatement of the full documentation. We experimented with
+this, but found that a well-written article already contains a "summary" in its first sentence or two._
 
 **Usage example:**
 
@@ -60,16 +57,16 @@ The index page for the class might show the summaries in tables like this:
 
 > <span style="font-weight: 700; font-size: 24px;">Properties</span>
 >
-> |  Property | Modifiers | Type | Description |
-> |  --- | --- | --- | --- |
-> |  [firstName](#) |  | <code>string</code> | The employee's first name. |
-> |  [lastName](#) |  | <code>string</code> | The employee's last name. |
+> | Property       | Modifiers | Type                | Description                |
+> | -------------- | --------- | ------------------- | -------------------------- |
+> | [firstName](#) |           | <code>string</code> | The employee's first name. |
+> | [lastName](#)  |           | <code>string</code> | The employee's last name.  |
 >
 > <span style="font-weight: 700; font-size: 24px;">Methods</span>
 >
-> |  Method | Modifiers | Description |
-> |  --- | --- | --- |
-> |  [getFullName()](#) |  | The employee's full name. |
+> | Method             | Modifiers | Description               |
+> | ------------------ | --------- | ------------------------- |
+> | [getFullName()](#) |           | The employee's full name. |
 
 Whereas the detail page for `getFullName()` would show the summary followed by the remarks:
 
@@ -82,6 +79,7 @@ Whereas the detail page for `getFullName()` would show the summary followed by t
 > ```typescript
 > getFullName(): string;
 > ```
+>
 > <b>Returns:</b> `string`
 >
 > <span style="font-weight: 700; font-size: 24px;">Remarks</span>

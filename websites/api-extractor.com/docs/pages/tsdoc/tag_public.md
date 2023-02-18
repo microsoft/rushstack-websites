@@ -1,16 +1,13 @@
 ---
-layout: page
 title: '@public'
-navigation_source: docs_nav
 ---
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [discretionary](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [discretionary](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
-The `@public` modifier is one of the four **release tags**.  It indicates that an API item has been officially
-released, and is now part of the supported contract for a package.  If the [SemVer](https://semver.org/) versioning
+The `@public` modifier is one of the four **release tags**. It indicates that an API item has been officially
+released, and is now part of the supported contract for a package. If the [SemVer](https://semver.org/) versioning
 scheme is used, then the API signature cannot be changed without a MAJOR version increment.
 
 **Usage example:**
@@ -20,7 +17,7 @@ scheme is used, then the API signature cannot be changed without a MAJOR version
  * This is some example documentation.
  * @public
  */
-export function doSomething(): void { }
+export function doSomething(): void {}
 ```
 
 ## See also

@@ -1,17 +1,14 @@
 ---
-layout: page
 title: '@override'
-navigation_source: docs_nav
 ---
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [extended](
-https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
 
-The `@override` modifier has similar semantics to the `override` keyword in C#.  It should only be applied
-to a member of a class.  The `@override` modifier indicates that the member is overriding (i.e. redefining)
-the corresponding member from a base class.  The base class member should be marked as `@virtual` or `@override`.
+The `@override` modifier has similar semantics to the `override` keyword in C#. It should only be applied
+to a member of a class. The `@override` modifier indicates that the member is overriding (i.e. redefining)
+the corresponding member from a base class. The base class member should be marked as `@virtual` or `@override`.
 
 The `@override` modifier will be displayed in the generated documentation.
 

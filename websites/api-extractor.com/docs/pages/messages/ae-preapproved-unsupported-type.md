@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ae-preapproved-unsupported-type
-navigation_source: docs_nav
 ---
 
-*"The @preapproved tag cannot be applied to ___ because it is not a supported declaration type."*
+_"The @preapproved tag cannot be applied to \_\_\_ because it is not a supported declaration type."_
 
 ## Remarks
 

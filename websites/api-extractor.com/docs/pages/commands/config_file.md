@@ -1,4 +1,10 @@
 ---
 layout: redirect
-redirect_url: /pages/configs/api-extractor_json
+hide_title: true
 ---
+
+Redirecting...
+
+<head>
+  <meta http-equiv="refresh" content="1; url=/pages/configs/api-extractor_json" />
+</head>

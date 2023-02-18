@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ae-extra-release-tag
-navigation_source: docs_nav
 ---
 
-*"The doc comment should not contain more than one release tag."*
+_"The doc comment should not contain more than one release tag."_
 
 ## Remarks
 
@@ -23,7 +21,7 @@ Example:
 /**
  * @public @public
  */
-export function f1(): void { }
+export function f1(): void {}
 
 // Warning: The doc comment should not contain more than one release tag.
 ```
