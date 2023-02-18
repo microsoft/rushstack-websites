@@ -102,28 +102,31 @@ const config = {
             to: 'pages/overview/intro',
             position: 'right',
             label: 'Docs',
-            activeBaseRegex: 'pages/(?!support)'
-          }
-          /*
-          {
-            to: 'pages/support/news',
-            position: 'right',
-            label: 'News',
-            activeBasePath: 'pages/support/news'
+            activeBaseRegex: 'pages/(?!news)'
           },
           {
-            to: 'pages/support/contributing',
+            to: 'pages/news',
+            position: 'right',
+            label: 'News'
+          },
+          {
+            to: 'pages/developer/api',
+            position: 'right',
+            label: 'API',
+            activeBasePath: 'DO_NOT_HIGHLIGHT'
+          },
+          {
+            to: 'pages/contributing/building',
             position: 'right',
             label: 'GitHub',
-            activeBasePath: 'pages/support/contributing'
+            activeBasePath: 'DO_NOT_HIGHLIGHT'
           },
           {
-            to: 'pages/support/help',
+            to: 'pages/setup/help',
             position: 'right',
             label: 'Help',
-            activeBasePath: 'pages/support/help'
+            activeBasePath: 'DO_NOT_HIGHLIGHT'
           }
-          */
         ]
       },
       footer: {
