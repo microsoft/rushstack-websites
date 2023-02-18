@@ -331,6 +331,10 @@
   "projects": [
     // Websites
     {
+      "packageName": "api-extractor.com",
+      "projectFolder": "websites/api-extractor.com"
+    },
+    {
       "packageName": "api.rushstack.io",
       "projectFolder": "websites/api.rushstack.io"
     },
