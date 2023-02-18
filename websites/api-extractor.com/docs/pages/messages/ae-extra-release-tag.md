@@ -34,4 +34,4 @@ Remove the extra release tags.
 
 ## See also
 
-- [Doc comment syntax: Release tags]({% link pages/tsdoc/doc_comment_syntax.md %}#release-tags)
+- [Doc comment syntax: Release tags](../tsdoc/doc_comment_syntax.md#release-tags)

@@ -3,7 +3,7 @@ title: api-extractor.json
 ---
 
 API Extractor's behavior is controlled by a config file **api-extractor.json** that is stored with your project.
-You can use the [api-extractor init]({% link pages/commands/api-extractor_init.md %}) command to create a template
+You can use the [api-extractor init](../commands/api-extractor_init.md) command to create a template
 file to get you started. The template will contain comments describing each setting. It is based on
 [api-extractor-template.json](https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/schemas/api-extractor-template.json)
 from the source code.
@@ -317,7 +317,7 @@ Example:
 **Default value:** `false`
 
 Whether "forgotten exports" should be included in the API report file. Forgotten exports are declarations
-flagged with [ae-forgotten-export]({% link pages/messages/ae-forgotten-export.md %}) warnings.
+flagged with [ae-forgotten-export](../messages/ae-forgotten-export.md) warnings.
 
 ## Doc Model Section
 
@@ -374,7 +374,7 @@ Example:
 **Default value:** `false`
 
 Whether "forgotten exports" should be included in the doc model file. Forgotten exports are declarations
-flagged with [ae-forgotten-export]({% link pages/messages/ae-forgotten-export.md %}) warnings.
+flagged with [ae-forgotten-export](../messages/ae-forgotten-export.md) warnings.
 
 ## .d.ts Rollup Section
 

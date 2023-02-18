@@ -103,7 +103,7 @@ export class FancyButton extends Button {
 
 ## See also
 
-- [@override modifier]({% link pages/tsdoc/tag_override.md %})
-- [@virtual modifier]({% link pages/tsdoc/tag_virtual.md %})
+- [@override modifier](../tsdoc/tag_override.md)
+- [@virtual modifier](../tsdoc/tag_virtual.md)
 - [C# "sealed" keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed)
 - [Java "final" keyword](<https://en.wikipedia.org/wiki/Final_(Java)>)

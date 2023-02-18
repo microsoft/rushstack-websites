@@ -2,7 +2,7 @@
 title: The .d.ts rollup
 ---
 
-_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
+_This article continues the tutorial from the "[What is API Extractor?](../overview/intro.md)" page. It's recommended to start there._
 
 The next API Extractor output that we'll discuss is the "**.d.ts rollup**." Recall that our example project
 has these TypeScript source files:
@@ -89,4 +89,4 @@ One significant limitation for .d.ts rollups is the assumption that your package
 (If that's not the case, you probably won't be able to use this feature of API Extractor, although you can still
 use the API report and documentation generation features.)
 
-#### Next up: [The API docs]({% link pages/overview/demo_docs.md %})
+#### Next up: [The API docs](../overview/demo_docs.md)

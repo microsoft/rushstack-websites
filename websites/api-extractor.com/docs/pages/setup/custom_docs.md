@@ -2,10 +2,10 @@
 title: Integrating a custom doc pipeline
 ---
 
-_This article continues the tutorial from the "[Invoking API Extractor]({% link pages/setup/invoking.md %})" page.
+_This article continues the tutorial from the "[Invoking API Extractor](../setup/invoking.md)" page.
 It's recommended to start there._
 
-On the [previous page]({% link pages/setup/generating_docs.md %}), we discussed various documentation systems that
+On the [previous page](../setup/generating_docs.md), we discussed various documentation systems that
 can render the outputs created by the **api-documenter** tool. But what if you want a custom layout,
 or want to integrate with a totally different system? If you're not afraid of writing some code, API Extractor makes
 this fairly straightforward.

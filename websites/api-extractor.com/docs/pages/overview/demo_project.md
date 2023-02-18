@@ -2,7 +2,7 @@
 title: A sample project
 ---
 
-_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
+_This article continues the tutorial from the "[What is API Extractor?](../overview/intro.md)" page. It's recommended to start there._
 
 For this tutorial, we'll consider a hypothetical TypeScript library project. The declarations are taken from
 a real-world NPM package **@microsoft/sp-core-library**. Its main entry point is **src/index.ts**, which contains
@@ -93,4 +93,4 @@ _(private in this example, so its implementation is unimportant and left to your
 Let's examine how API Extractor processes these inputs to produce the API report, d.ts rollup, and API documentation
 outputs...
 
-#### Next up: [The API report]({% link pages/overview/demo_api_report.md %})
+#### Next up: [The API report](../overview/demo_api_report.md)

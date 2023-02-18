@@ -19,4 +19,4 @@ pipeline.
   <img style="height: 450px;" class="mx-auto" src="{{ site.baseurl }}/images/ae-flow-chart.svg" />
 </div>
 
-#### Next up: [A sample project]({% link pages/overview/demo_project.md %})
+#### Next up: [A sample project](../overview/demo_project.md)

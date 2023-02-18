@@ -15,7 +15,7 @@ and it should be the first `/**` comment encountered in that file. The `@package
 used in any other type of doc comment.
 
 The `@packageDocumentation` comment should NOT have a
-[release tag]({% link pages/tsdoc/doc_comment_syntax.md %}#release-tags)
+[release tag](../tsdoc/doc_comment_syntax.md#release-tags)
 such as `@public` or `@internal`.
 
 If the `@packageDocumentation` comment is not found, API Extractor will add the following message to the
@@ -68,6 +68,6 @@ export class Widget implements IWidget {
 
 ## See also
 
-- [Doc comment syntax: Release tags]({% link pages/tsdoc/doc_comment_syntax.md %}#release-tags)
-- [ae-misplaced-package-tag]({% link pages/messages/ae-misplaced-package-tag.md %})
-- [mainEntryPointFilePath setting]({% link pages/configs/api-extractor_json.md %}#mainentrypointfilepath)
+- [Doc comment syntax: Release tags](../tsdoc/doc_comment_syntax.md#release-tags)
+- [ae-misplaced-package-tag](../messages/ae-misplaced-package-tag.md)
+- [mainEntryPointFilePath setting](../configs/api-extractor_json.md#mainentrypointfilepath)

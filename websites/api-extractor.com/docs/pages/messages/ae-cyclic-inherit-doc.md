@@ -52,4 +52,4 @@ Remove or change one of the `@inheritDoc` tags to eliminate the cycle.
 
 ## See also
 
-- [@inheritDoc tag]({% link pages/tsdoc/tag_inheritdoc.md %})
+- [@inheritDoc tag](../tsdoc/tag_inheritdoc.md)

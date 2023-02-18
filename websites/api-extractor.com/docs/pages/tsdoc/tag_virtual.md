@@ -63,6 +63,6 @@ export class Button extends Control {
 
 ## See also
 
-- [@override modifier]({% link pages/tsdoc/tag_override.md %})
-- [@sealed modifier]({% link pages/tsdoc/tag_sealed.md %})
+- [@override modifier](../tsdoc/tag_override.md)
+- [@sealed modifier](../tsdoc/tag_sealed.md)
 - [C# "virtual" keyword](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)

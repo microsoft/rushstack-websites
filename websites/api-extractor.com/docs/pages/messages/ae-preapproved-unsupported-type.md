@@ -21,4 +21,4 @@ Remove the `@preapproved` tag.
 
 ## See also
 
-- [@preapproved tag]({% link pages/tsdoc/tag_preapproved.md %})
+- [@preapproved tag](../tsdoc/tag_preapproved.md)

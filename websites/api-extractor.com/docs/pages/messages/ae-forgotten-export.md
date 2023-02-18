@@ -73,4 +73,4 @@ for tracking purposes. It will not produce a console warning and thus will NOT b
 
 ## See also
 
-- [mainEntryPointFilePath setting]({% link pages/configs/api-extractor_json.md %}#mainentrypointfilepath)
+- [mainEntryPointFilePath setting](../configs/api-extractor_json.md#mainentrypointfilepath)

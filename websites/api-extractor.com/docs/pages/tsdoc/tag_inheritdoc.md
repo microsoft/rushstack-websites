@@ -13,13 +13,13 @@ title: '{@inheritDoc}'
 The `@inheritDoc` tag automatically copies documentation content from another declaration. This avoids duplication
 when two declarations have the same behavior, and thus should have identical documentation.
 
-The inline tag content is a [TSDoc declaration reference]({% link pages/tsdoc/declaration_references.md %}),
+The inline tag content is a [TSDoc declaration reference](../tsdoc/declaration_references.md),
 which specifies the "**target declaration**" to be copied from. The target can be any arbitrary declaration;
 it does not need to be from a base class or implemented interface. The target declaration is not optional;
-an [ae-unresolved-inheritdoc-base]({% link pages/messages/ae-unresolved-inheritdoc-base.md %}) error
+an [ae-unresolved-inheritdoc-base](../messages/ae-unresolved-inheritdoc-base.md) error
 will be reported if it is omitted. The target declaration may itself contain another
 `@inheritDoc` tag; however, if the links form a cycle, then the
-[ae-cyclic-inherit-doc]({% link pages/messages/ae-cyclic-inherit-doc.md %}) error will be reported.
+[ae-cyclic-inherit-doc](../messages/ae-cyclic-inherit-doc.md) error will be reported.
 
 **Usage example:**
 
@@ -76,7 +76,7 @@ the `@inheritDoc` tag.
 
 ## See also
 
-- [Declaration references]({% link pages/tsdoc/declaration_references.md %})
-- [ae-cyclic-inherit-doc]({% link pages/messages/ae-cyclic-inherit-doc.md %})
-- [ae-unresolved-inheritdoc-base]({% link pages/messages/ae-unresolved-inheritdoc-base.md %})
-- [ae-unresolved-inheritdoc-reference]({% link pages/messages/ae-unresolved-inheritdoc-reference.md %})
+- [Declaration references](../tsdoc/declaration_references.md)
+- [ae-cyclic-inherit-doc](../messages/ae-cyclic-inherit-doc.md)
+- [ae-unresolved-inheritdoc-base](../messages/ae-unresolved-inheritdoc-base.md)
+- [ae-unresolved-inheritdoc-reference](../messages/ae-unresolved-inheritdoc-reference.md)

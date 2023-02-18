@@ -65,4 +65,4 @@ export class Book {
 
 ## See also
 
-- [ae-missing-getter]({% link pages/messages/ae-missing-getter.md %})
+- [ae-missing-getter](../messages/ae-missing-getter.md)

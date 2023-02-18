@@ -2,7 +2,7 @@
 title: Configuring an API report
 ---
 
-_This article continues the tutorial from the "[Invoking API Extractor]({% link pages/setup/invoking.md %})" page.
+_This article continues the tutorial from the "[Invoking API Extractor](../setup/invoking.md)" page.
 It's recommended to start there._
 
 The API report file is relatively simple to configure. The two most interesting settings are:
@@ -25,7 +25,7 @@ less formalized.
 ### Redirecting warnings to the API report file
 
 By the way, the API report file can also be used to track specific warning types. For example, although the
-[ae-forgotten-export]({% link pages/messages/ae-forgotten-export.md %}) validation is generally useful,
+[ae-forgotten-export](../messages/ae-forgotten-export.md) validation is generally useful,
 suppose there are certain cases where you purposefully do not want to export a declaration.
 
 Normally the warning would be printed to the console, like this:
@@ -37,7 +37,7 @@ the entry point index.d.ts
 
 Console warnings cause the **api-extractor** tool to return a nonzero exit code, which will cause
 a production build to fail. However, using the
-[addToApiReportFile]({% link pages/configs/api-extractor_json.md %}#messagessectionruleaddtoapireportfile)
+[addToApiReportFile](../configs/api-extractor_json.md#messagessectionruleaddtoapireportfile)
 setting, you can configure the warning to be added to the API report file instead. You would add a section
 like this to your **api-extractor.json** file:
 
@@ -74,4 +74,4 @@ you will see that API Extractor already does this by default for many message ty
 for any message where the problem is not serious, but the fix may require nontrivial effort or have nontrivial
 consequences for your API.
 
-#### Next up: [Configuring a .d.ts rollup]({% link pages/setup/configure_rollup.md %})
+#### Next up: [Configuring a .d.ts rollup](../setup/configure_rollup.md)

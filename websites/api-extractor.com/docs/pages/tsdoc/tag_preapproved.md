@@ -44,5 +44,5 @@ export enum _LoggingIds {
 
 ## See also
 
-- [ae-preapproved-unsupported-type]({% link pages/messages/ae-preapproved-unsupported-type.md %})
-- [@internal tag]({% link pages/tsdoc/tag_internal.md %})
+- [ae-preapproved-unsupported-type](../messages/ae-preapproved-unsupported-type.md)
+- [@internal tag](../tsdoc/tag_internal.md)

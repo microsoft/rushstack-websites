@@ -20,5 +20,5 @@ Move the comment to the top of the file.
 
 ## See also
 
-- [@packageDocumentation tag]({% link pages/tsdoc/tag_packagedocumentation.md %})
-- [mainEntryPointFilePath setting]({% link pages/configs/api-extractor_json.md %}#mainentrypointfilepath)
+- [@packageDocumentation tag](../tsdoc/tag_packagedocumentation.md)
+- [mainEntryPointFilePath setting](../configs/api-extractor_json.md#mainentrypointfilepath)

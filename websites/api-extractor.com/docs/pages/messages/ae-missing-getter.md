@@ -104,4 +104,4 @@ export class Book {
 
 ## See also
 
-- [ae-setter-with-docs message]({% link pages/messages/ae-setter-with-docs.md %})
+- [ae-setter-with-docs message](../messages/ae-setter-with-docs.md)

@@ -2,7 +2,7 @@
 title: API documentation
 ---
 
-_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
+_This article continues the tutorial from the "[What is API Extractor?](../overview/intro.md)" page. It's recommended to start there._
 
 The final API Extractor output that we'll look at is the "**doc model**" file. This JSON file captures
 the API signatures and doc comments for a project that was processed by API Extractor. It contains all the
@@ -112,4 +112,4 @@ an integrated website, complete with cross-package hyperlinks and an integrated 
 
 This concludes our quick tour of the three major use cases for API Extractor. Ready to get started?
 
-#### Next up: [Invoking API Extractor]({% link pages/setup/invoking.md %})
+#### Next up: [Invoking API Extractor](../setup/invoking.md)

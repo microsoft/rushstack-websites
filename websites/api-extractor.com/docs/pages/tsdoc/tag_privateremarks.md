@@ -36,4 +36,4 @@ export class BaseWidget {
 
 ## See also
 
-- [@remarks tag]({% link pages/tsdoc/tag_remarks.md %})
+- [@remarks tag](../tsdoc/tag_remarks.md)

@@ -66,4 +66,4 @@ like this to your **api-extractor.json** file:
 
 ## See also
 
-- [Invoking API Extractor]({% link pages/setup/invoking.md %})
+- [Invoking API Extractor](../setup/invoking.md)

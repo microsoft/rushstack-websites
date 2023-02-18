@@ -2,7 +2,7 @@
 title: Configuring a .d.ts rollup
 ---
 
-_This article continues the tutorial from the "[Invoking API Extractor]({% link pages/setup/invoking.md %})" page.
+_This article continues the tutorial from the "[Invoking API Extractor](../setup/invoking.md)" page.
 It's recommended to start there._
 
 ## Simple case
@@ -77,7 +77,7 @@ API Extractor to analyze all your declarations as if they came from a single ent
 ## Trimming based on release tags
 
 The .d.ts rollup feature also supports "trimming", i.e. removing unwanted members according to their
-[release tag]({% link pages/tsdoc/doc_comment_syntax.md %}#release-tags) (`@alpha`, `@beta`, `@public`, or
+[release tag](../tsdoc/doc_comment_syntax.md#release-tags) (`@alpha`, `@beta`, `@public`, or
 `@internal`). Keep in mind that in API Extractor's terminology, "beta" does not refer to the readiness
 of an entire release branch. Instead, we're using "beta" to describe the support level for
 _individual API members_. Thus, the trimmed version and untrimmed version will typically be compiled from
@@ -135,4 +135,4 @@ The approach described here the advantage that consumers can easily switch betwe
 based on their version selection, and we've found it works well when you need to publish a set of
 closely interrelated NPM packages.
 
-#### Next up: [Generating Docs]({% link pages/setup/generating_docs.md %})
+#### Next up: [Generating Docs](../setup/generating_docs.md)

@@ -21,5 +21,5 @@ export function doSomething(): void {}
 
 ## See also
 
-- [Doc comment syntax: Release tags]({% link pages/tsdoc/doc_comment_syntax.md %}#release-tags)
-- [The .d.ts rollup]({% link pages/overview/demo_rollup.md %})
+- [Doc comment syntax: Release tags](../tsdoc/doc_comment_syntax.md#release-tags)
+- [The .d.ts rollup](../overview/demo_rollup.md)

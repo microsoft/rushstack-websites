@@ -37,4 +37,4 @@ export function f2(): void {}
 
 ## See also
 
-- [@link tag]({% link pages/tsdoc/tag_link.md %})
+- [@link tag](../tsdoc/tag_link.md)

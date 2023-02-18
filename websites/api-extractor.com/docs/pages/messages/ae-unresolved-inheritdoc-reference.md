@@ -32,4 +32,4 @@ export function f2(): void {}
 
 ## See also
 
-- [@inheritDoc tag]({% link pages/tsdoc/tag_inheritdoc.md %})
+- [@inheritDoc tag](../tsdoc/tag_inheritdoc.md)

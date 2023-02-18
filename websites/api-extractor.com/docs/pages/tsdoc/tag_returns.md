@@ -58,4 +58,4 @@ export class Statistics {
 
 ## See also
 
-- [@param tag]({% link pages/tsdoc/tag_param.md %})
+- [@param tag](../tsdoc/tag_param.md)

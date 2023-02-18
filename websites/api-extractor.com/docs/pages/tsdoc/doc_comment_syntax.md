@@ -164,12 +164,12 @@ these rules, but it will soon.
 
 ## See also
 
-- [@internal tag]({% link pages/tsdoc/tag_internal.md %})
-- [@alpha tag]({% link pages/tsdoc/tag_alpha.md %})
-- [@beta tag]({% link pages/tsdoc/tag_beta.md %})
-- [@public tag]({% link pages/tsdoc/tag_public.md %})
-- [ae-different-release-tags]({% link pages/messages/ae-different-release-tags.md %})
-- [ae-extra-release-tag]({% link pages/messages/ae-extra-release-tag.md %})
-- [ae-incompatible-release-tags]({% link pages/messages/ae-incompatible-release-tags.md %})
-- [ae-internal-missing-underscore]({% link pages/messages/ae-internal-missing-underscore.md %})
-- [ae-internal-mixed-release-tag]({% link pages/messages/ae-internal-mixed-release-tag.md %})
+- [@internal tag](../tsdoc/tag_internal.md)
+- [@alpha tag](../tsdoc/tag_alpha.md)
+- [@beta tag](../tsdoc/tag_beta.md)
+- [@public tag](../tsdoc/tag_public.md)
+- [ae-different-release-tags](../messages/ae-different-release-tags.md)
+- [ae-extra-release-tag](../messages/ae-extra-release-tag.md)
+- [ae-incompatible-release-tags](../messages/ae-incompatible-release-tags.md)
+- [ae-internal-missing-underscore](../messages/ae-internal-missing-underscore.md)
+- [ae-internal-mixed-release-tag](../messages/ae-internal-mixed-release-tag.md)

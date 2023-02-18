@@ -2,7 +2,7 @@
 title: The API report
 ---
 
-_This article continues the tutorial from the "[What is API Extractor?]({% link pages/overview/intro.md %})" page. It's recommended to start there._
+_This article continues the tutorial from the "[What is API Extractor?](../overview/intro.md)" page. It's recommended to start there._
 
 The first API Extractor output that we'll discuss is the "**API report file**." Since the NPM package name for our
 example library is **@microsoft/sp-core-library**, the default API report filename will be
@@ -46,7 +46,7 @@ class Log {
 ````
 
 The report file is tracked by Git. Suppose a developer makes a change to the `Log` class on their local PC.
-When they rebuild locally (for example with the `--local` command-line option for [the api-extractor tool]({% link pages/commands/api-extractor_run.md %})), they will see a message alerting them that the report file has changed:
+When they rebuild locally (for example with the `--local` command-line option for [the api-extractor tool](../commands/api-extractor_run.md)), they will see a message alerting them that the report file has changed:
 
 ```
 [17:01:21] Starting subtask 'api-extractor'...
@@ -89,4 +89,4 @@ is often an enlightening moment. (_"What is THAT doing in there?! These names ar
 anyone write documentation?!"_ and so forth.) Although people work with a project's source files every day,
 it's easy to miss the big picture without a way to visualize it.
 
-#### Next up: [The .d.ts rollup]({% link pages/overview/demo_rollup.md %})
+#### Next up: [The .d.ts rollup](../overview/demo_rollup.md)

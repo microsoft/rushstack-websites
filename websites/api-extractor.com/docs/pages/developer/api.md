@@ -6,7 +6,7 @@ These NPM packages export developer APIs that are documented in the [integrated 
 
 - [@microsoft/api-extractor](https://api.rushstack.io/pages/api-extractor/) API docs
 
-  This is used to invoke the API Extractor engine from a toolchain. An code sample is presented in the [Invoking API Extractor]({% link pages/setup/invoking.md %}) tutorial.
+  This is used to invoke the API Extractor engine from a toolchain. An code sample is presented in the [Invoking API Extractor](../setup/invoking.md) tutorial.
 
 - [@microsoft/api-extractor-model](https://api.rushstack.io/pages/api-extractor-model/) API docs
 

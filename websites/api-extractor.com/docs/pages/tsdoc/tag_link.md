@@ -14,7 +14,7 @@ title: '{@link}'
 - `{@link URL | DISPLAY_TEXT}`
 
 The `@link` tag creates a hyperlink to an internet URL or another API documentation page specified
-using a [TSDoc declaration references]({% link pages/tsdoc/declaration_references.md %}) notation.
+using a [TSDoc declaration references](../tsdoc/declaration_references.md) notation.
 If the _DISPLAY_TEXT_ is omitted, then the declaration name or URL address will be used as the display text.
 
 **Usage example:**
@@ -41,5 +41,5 @@ export class BaseWidget implements IWidget {
 
 ## See also
 
-- [Declaration references]({% link pages/tsdoc/declaration_references.md %})
-- [ae-unresolved-link]({% link pages/messages/ae-unresolved-link.md %})
+- [Declaration references](../tsdoc/declaration_references.md)
+- [ae-unresolved-link](../messages/ae-unresolved-link.md)

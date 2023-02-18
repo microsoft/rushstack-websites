@@ -38,5 +38,5 @@ class ItemCollection<TItem extends object> {
 
 ## See also
 
-- [@param tag]({% link pages/tsdoc/tag_param.md %})
-- [@returns tag]({% link pages/tsdoc/tag_returns.md %})
+- [@param tag](../tsdoc/tag_param.md)
+- [@returns tag](../tsdoc/tag_returns.md)

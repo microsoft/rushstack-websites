@@ -86,7 +86,7 @@ $ api-extractor init
 
 We recommend to use this template for your real config file. However, since the template is fairly verbose,
 in this tutorial we will show condensed files without the extra comments.
-[This page]({% link pages/configs/api-extractor_json.md %}) explains each setting in depth.
+[This page](../configs/api-extractor_json.md) explains each setting in depth.
 
 > **Comments in JSON files**
 >
@@ -229,8 +229,8 @@ So... if you work in a modern monorepo with many different projects, how can you
 API Extractor settings without a lot of copy+pasting of **api-extractor.json** files? Following the
 convention of **tsconfig.json** and **tslint.json**, API Extractor supports an `"extends"` field that allows
 your **api-extractor.json** file to inherit its configuration from a shared template file.
-[See here]({% link pages/configs/api-extractor_json.md %}#extends) for details.
+[See here](../configs/api-extractor_json.md#extends) for details.
 
 _Now that we've got things running, let's look at how to configure the three different output types..._
 
-#### Next up: [Configuring an API report]({% link pages/setup/configure_api_report.md %})
+#### Next up: [Configuring an API report](../setup/configure_api_report.md)

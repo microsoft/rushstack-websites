@@ -2,7 +2,7 @@
 title: Generating API docs
 ---
 
-_This article continues the tutorial from the "[Invoking API Extractor]({% link pages/setup/invoking.md %})" page.
+_This article continues the tutorial from the "[Invoking API Extractor](../setup/invoking.md)" page.
 It's recommended to start there._
 
 ## Generating JSON files
@@ -55,7 +55,7 @@ Here's a typical usage scenario:
     ```
 
     You can customize these folders using parameters such as `--input-folder` and `--output-folder`.
-    See [the command line reference]({% link pages/commands/api-documenter_markdown.md %}) for details.
+    See [the command line reference](../commands/api-documenter_markdown.md) for details.
 
 What do we do with these generated Markdown files? There are various options:
 
@@ -100,4 +100,4 @@ using **api-documenter** with DocFX:
 These are nice options. But suppose you have custom needs, and you're not afraid to write some code to get
 what you want...
 
-#### Next up: [Integrating a custom doc pipeline]({% link pages/setup/custom_docs.md %})
+#### Next up: [Integrating a custom doc pipeline](../setup/custom_docs.md)

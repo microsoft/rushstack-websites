@@ -88,5 +88,5 @@ Whereas the detail page for `getFullName()` would show the summary followed by t
 
 ## See also
 
-- [Doc comment syntax: Comment structure]({% link pages/tsdoc/doc_comment_syntax.md %}#comment-structure)
-- [@privateRemarks tag]({% link pages/tsdoc/tag_privateremarks.md %})
+- [Doc comment syntax: Comment structure](../tsdoc/doc_comment_syntax.md#comment-structure)
+- [@privateRemarks tag](../tsdoc/tag_privateremarks.md)
