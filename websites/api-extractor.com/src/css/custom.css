@@ -52,7 +52,7 @@ select {
 }
 
 .navbar__logo {
-  height: 40px;
+  height: 50px;
 }
 
 /*
@@ -178,7 +178,4 @@ a .navbar__link,
   font-weight: 400;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-}
-.navbar__logo {
-  height: 50px;
 }
