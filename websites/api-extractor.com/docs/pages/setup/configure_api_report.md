@@ -73,5 +73,3 @@ If you take a look at [api-extractor-defaults.json](https://github.com/microsoft
 you will see that API Extractor already does this by default for many message types. In general it defaults to true
 for any message where the problem is not serious, but the fix may require nontrivial effort or have nontrivial
 consequences for your API.
-
-#### Next up: [Configuring a .d.ts rollup](../setup/configure_rollup.md)

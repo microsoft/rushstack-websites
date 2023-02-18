@@ -134,5 +134,3 @@ Many other approaches are possible as well. Your build scripts can use these fil
 The approach described here the advantage that consumers can easily switch between different release types
 based on their version selection, and we've found it works well when you need to publish a set of
 closely interrelated NPM packages.
-
-#### Next up: [Generating Docs](../setup/generating_docs.md)

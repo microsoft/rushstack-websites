@@ -88,9 +88,8 @@ export default ILogHandler;
 ```
 
 **src/log/DefaultLogHandler.ts**<br/>
-_(private in this example, so its implementation is unimportant and left to your imagination.)_
+
+> _(private in this example, so its implementation is unimportant and left to your imagination)_
 
 Let's examine how API Extractor processes these inputs to produce the API report, d.ts rollup, and API documentation
 outputs...
-
-#### Next up: [The API report](../overview/demo_api_report.md)

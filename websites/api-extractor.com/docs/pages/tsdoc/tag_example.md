@@ -43,7 +43,7 @@ export function add(x: number, y: number): number {
 
 API Documenter will number the example sections automatically. The output might look like this:
 
-> **add() function**
+> <div style={{fontWeight: 'bold', fontSize: '24px'}}>add() function</div>
 >
 > Adds two numbers together.
 >
@@ -53,7 +53,7 @@ API Documenter will number the example sections automatically. The output might 
 > export declare function add(x: number, y: number): number;
 > ```
 >
-> ## Parameters
+> <div style={{fontWeight: 'bold', fontSize: '24px', paddingTop: '1rem'}}>Parameters</div>
 >
 > | Parameter | Type                | Description              |
 > | --------- | ------------------- | ------------------------ |
@@ -64,11 +64,11 @@ API Documenter will number the example sections automatically. The output might 
 >
 > `number`
 >
-> ## Remarks
+> <div style={{fontWeight: 'bold', fontSize: '24px', paddingTop: '1rem'}}>Remarks</div>
 >
 > Use this function to perform example addition.
 >
-> ## Example 1
+> <div style={{fontWeight: 'bold', fontSize: '24px', paddingTop: '1rem'}}>Example 1</div>
 >
 > Here's a simple example:
 >
@@ -77,7 +77,7 @@ API Documenter will number the example sections automatically. The output might 
 > console.log(add(1,1));
 > ```
 >
-> ## Example 2
+> <div style={{fontWeight: 'bold', fontSize: '24px', paddingTop: '1rem'}}>Example 2</div>
 >
 > Here's an example with negative numbers:
 >

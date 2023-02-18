@@ -10,9 +10,6 @@ from the source code.
 
 The individual JSON fields are documented below.
 
-- TOC
-  {:toc}
-
 ## Top-level Settings
 
 ### extends
@@ -535,7 +532,7 @@ Configures how API Extractor reports error and warning messages produced during 
 
 There are three sources of messages: compiler messages, API Extractor messages, and TSDoc messages.
 
-### messages.\<section\>.\<rule\>.logLevel
+### messages.&lt;section&gt;.&lt;rule&gt;.logLevel
 
 Example:
 
@@ -562,7 +559,7 @@ Errors cause the build to fail and return a nonzero exit code. Warnings cause a 
 and return a nonzero exit code. For a non-production build (e.g. when `api-extractor run` includes
 the `--local` option), the warning is displayed but the build will not fail.
 
-### messages.\<section\>.\<rule\>.addToApiReportFile
+### messages.&lt;section&gt;.&lt;rule&gt;.addToApiReportFile
 
 Example:
 

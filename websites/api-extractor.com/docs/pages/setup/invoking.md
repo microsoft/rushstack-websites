@@ -4,9 +4,6 @@ title: Invoking API Extractor
 
 Sounds great! So... how exactly do we enable API Extractor for a new project?
 
-- TOC
-  {:toc}
-
 ## Invoking via the command-line
 
 The simplest way to invoke API Extractor is via the command-line.
@@ -113,16 +110,14 @@ in this tutorial we will show condensed files without the extra comments.
 
 Our convention is to put config files in the "config" subfolder, so folder tree might look like this:
 
-<b>
-awesome-widgets/package.json<br/>
-awesome-widgets/tsconfig.json<br/>
-awesome-widgets/config/api-extractor.json<br/>
-awesome-widgets/lib/index.d.js<br/>
-awesome-widgets/lib/index.js.map<br/>
-awesome-widgets/lib/index.d.ts<br/>
-awesome-widgets/lib/index.d.ts.map<br/>
-awesome-widgets/src/index.ts<br/>
-</b>
+- awesome-widgets/package.json
+- awesome-widgets/tsconfig.json
+- awesome-widgets/config/api-extractor.json
+- awesome-widgets/lib/index.d.js
+- awesome-widgets/lib/index.js.map
+- awesome-widgets/lib/index.d.ts
+- awesome-widgets/lib/index.d.ts.map
+- awesome-widgets/src/index.ts
 
 If your project doesn't use the "config" subfolder convention, you can also put **api-extractor.json** in your
 project folder. API Extractor will look for it in both places.
@@ -232,5 +227,3 @@ your **api-extractor.json** file to inherit its configuration from a shared temp
 [See here](../configs/api-extractor_json.md#extends) for details.
 
 _Now that we've got things running, let's look at how to configure the three different output types..._
-
-#### Next up: [Configuring an API report](../setup/configure_api_report.md)

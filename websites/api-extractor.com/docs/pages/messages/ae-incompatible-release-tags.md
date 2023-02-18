@@ -8,7 +8,7 @@ _"The symbol *** is marked as ***, but its signature references *** which is mar
 
 The TSDoc "release tags" form an ordering according to their visibility:
 
-`@public` \> `@beta` \> `@alpha`\> `@internal`
+`@public` &gt; `@beta` &gt; `@alpha` &gt; `@internal`
 
 For example, when .d.ts trimming is applied, a "beta" release will include declarations marked as `@public` or `@beta`,
 but will omit declarations marked as `@alpha` or `@internal`. This prevents the developer from accidentally

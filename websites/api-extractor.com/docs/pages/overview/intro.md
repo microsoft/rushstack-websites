@@ -18,5 +18,3 @@ pipeline.
 <div style={{ marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
   <img src="/images/docs/ae-flow-chart.svg" alt="data flow diagram" style={{ height: '450px' }}/>
 </div>
-
-#### Next up: [A sample project](../overview/demo_project.md)

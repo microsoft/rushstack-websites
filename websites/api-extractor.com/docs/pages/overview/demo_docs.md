@@ -111,5 +111,3 @@ together in a central location, a tool such as **api-documenter** can load them 
 an integrated website, complete with cross-package hyperlinks and an integrated navigation tree.
 
 This concludes our quick tour of the three major use cases for API Extractor. Ready to get started?
-
-#### Next up: [Invoking API Extractor](../setup/invoking.md)

@@ -99,5 +99,3 @@ using **api-documenter** with DocFX:
 
 These are nice options. But suppose you have custom needs, and you're not afraid to write some code to get
 what you want...
-
-#### Next up: [Integrating a custom doc pipeline](../setup/custom_docs.md)

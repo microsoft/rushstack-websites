@@ -11,11 +11,6 @@ in all these situations. (This aspect of TSDoc is still evolving; it is tracked 
 [RFC #9](https://github.com/microsoft/tsdoc/issues/9). The current spec is outlined in
 [code-snippets/DeclarationReferences.ts](https://github.com/microsoft/tsdoc/blob/master/spec/code-snippets/DeclarationReferences.ts).)
 
-**Contents**
-
-- TOC
-  {:toc}
-
 ## Syntax Examples
 
 Below are syntax examples that should help you get started writing declaration references.

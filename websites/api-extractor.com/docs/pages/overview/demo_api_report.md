@@ -88,5 +88,3 @@ Having this synopsis in one easy-to-review report is very powerful. Turning on A
 is often an enlightening moment. (_"What is THAT doing in there?! These names are pretty confusing! Why didn't
 anyone write documentation?!"_ and so forth.) Although people work with a project's source files every day,
 it's easy to miss the big picture without a way to visualize it.
-
-#### Next up: [The .d.ts rollup](../overview/demo_rollup.md)

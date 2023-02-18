@@ -7,22 +7,18 @@ _This article continues the tutorial from the "[What is API Extractor?](../overv
 The next API Extractor output that we'll discuss is the "**.d.ts rollup**." Recall that our example project
 has these TypeScript source files:
 
-<b>
-src/index.ts<br/>
-src/log/Log.ts<br/>
-src/log/ILogHandler.ts<br/>
-</b>
+- src/index.ts
+- src/log/Log.ts
+- src/log/ILogHandler.ts
 
 Each of the above files builds into a corresponding set of intermediary outputs:
 
-<b>
-lib/index.d.ts<br/>
-lib/index.js<br/>
-lib/log/Log.d.ts<br/>
-lib/log/Log.js<br/>
-lib/log/ILogHandler.d.ts<br/>
-lib/log/ILogHandler.js<br/>
-</b>
+- lib/index.d.ts
+- lib/index.js
+- lib/log/Log.d.ts
+- lib/log/Log.js
+- lib/log/ILogHandler.d.ts
+- lib/log/ILogHandler.js
 
 We can use a linker such as [Webpack](https://webpack.js.org) to roll up the \*.js files into a combined
 bundle file: **dist/sp-core-library.js**
@@ -88,5 +84,3 @@ API Extractor's .d.ts rollup feature is fairly sophisticated. For example, it su
 One significant limitation for .d.ts rollups is the assumption that your package has a single entry point.
 (If that's not the case, you probably won't be able to use this feature of API Extractor, although you can still
 use the API report and documentation generation features.)
-
-#### Next up: [The API docs](../overview/demo_docs.md)
