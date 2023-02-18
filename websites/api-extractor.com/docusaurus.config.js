@@ -88,16 +88,18 @@ const config = {
     {
       image: 'images/site/ae-ograph.png',
       navbar: {
-        title: '',
+        title: 'API Extractor',
         logo: {
           alt: 'API Extractor',
           src: 'images/site/api-extractor.svg'
         },
         items: [
+          /*
           {
             type: 'localeDropdown',
             position: 'left'
           },
+          */
           {
             to: 'pages/overview/intro',
             position: 'right',
