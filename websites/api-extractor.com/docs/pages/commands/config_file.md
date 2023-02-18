@@ -1,5 +1,5 @@
 ---
-layout: redirect
+custom_edit_url:
 hide_title: true
 ---
 
