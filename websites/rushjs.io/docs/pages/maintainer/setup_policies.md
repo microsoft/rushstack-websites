@@ -150,7 +150,7 @@ After running `rush install`, the **browser-approved-packages.json** file will l
 
 For example, this file is showing that the external dependency **@microsoft/gulp-core-build** was found in the package.json file for an "internal" project (let's say **~/demo/lib1**) but not any "public" project (such as **~/demo/application**).
 
-Rush has no way to detect whether an NPM package is for the browser or not. Since these are all non-browser files, you must manually move them to the other file **browser-approved-packages.json**.
+Rush has no way to detect whether an NPM package is for the browser or not. Since these are all non-browser files, you must manually move them to the other file **nonbrowser-approved-packages.json**.
 
 #### How approvals work
 
