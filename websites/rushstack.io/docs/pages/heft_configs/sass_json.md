@@ -42,7 +42,7 @@ title: sass.json
   // "fileExtensions": [
   //   ".sass",
   //   ".scss",
-  //   ".css
+  //   ".css"
   // ],
 
   /**
