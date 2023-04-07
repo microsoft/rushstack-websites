@@ -145,6 +145,11 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
    > Some terminology: When we invoke the `heft build` command from the shell, the "build" verb is called an **action**. Actions are user interface concepts, sort of like macros. The action causes Heft to invoke multiple **tasks** such as `[typescript]` or `[copy-static-assets]`. These tasks often run in parallel. The tasks are grouped into **stages** such as "Compile" and "Bundle" in the above log. Stages represent major steps of the overall operation. These concepts are explained in more depth in the [Heft architecture](../heft/architecture.md) article.
 
+   > NOTE: When reporting diagnostic messages such as a compile error, Heft prints file paths relative
+   > to the project folder. This can be customized using the
+   > [RUSHSTACK_FILE_ERROR_BASE_FOLDER](../heft_configs/environment_vars.md#rushstack_file_error_base_folder)
+   > environment variable.
+
    After the build finishes, confirm that it produced several output files in your `lib` folder:
 
    - **start.js** - the compiled JavaScript code
