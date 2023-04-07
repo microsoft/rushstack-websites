@@ -118,6 +118,7 @@ const sidebars = {
       label: 'Heft config files',
       collapsible: false,
       items: [
+        'pages/heft_configs/environment_vars',
         'pages/heft_configs/api-extractor-task_json',
         'pages/heft_configs/heft_json',
         'pages/heft_configs/node-service_json',
