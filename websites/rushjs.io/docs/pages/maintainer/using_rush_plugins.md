@@ -125,7 +125,8 @@ Here's a gallery of some community contributed plugins.
 
 | NPM Package                                                                                                                          | Description                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| [rush-archive-project-plugin](https://github.com/bytesfriends/rush-plugins/tree/main/rush-plugins/rush-archive-project-plugin)       | Archive Rush projects that are no longer maintained                                     |
+| [rush-archive-project-plugin](https://github.com/bytesfriends/rush-plugins/tree/main/rush-plugins/rush-archive-project-plugin)       | Archive Rush projects that are no longer maintained 
+| [rush-github-action-build-cache-plugin](https://github.com/gigara/rush-github-action-build-cache-plugin)       | Save and restore the build cache in Github actions                                     |
 | [rush-init-project-plugin](https://github.com/bytesfriends/rush-plugins/tree/main/rush-plugins/rush-init-project-plugin)             | Initialize new Rush projects                                                            |
 | [rush-lint-staged-plugin](https://github.com/bytesfriends/rush-plugins/tree/main/rush-plugins/rush-lint-staged-plugin)               | Integrate [lint-staged](https://www.npmjs.com/package/lint-staged) with a Rush monorepo |
 | [rush-print-log-if-error-plugin](https://github.com/bytesfriends/rush-plugins/tree/main/rush-plugins/rush-print-log-if-error-plugin) | Print a project's entire log file when an error occurs                                  |
