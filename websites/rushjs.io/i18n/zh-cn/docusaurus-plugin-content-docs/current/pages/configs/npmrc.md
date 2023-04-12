@@ -30,7 +30,7 @@ always-auth=false
 
 普通 Rush 操作执行如下查找：
 
-1. 为了支持不规范的情况，NPM 配置的环境变量优先于任何 **.npmrc** 配置。环境变量名以 `npm_config_` 开头，例如设置 `npm_config_registry` 可以覆盖 **.npmrc** 中的 `registry` 设置。NPM 的设计中也可以 i 接受不规范的命名，例如 `npm_config_@example:registry`.
+1. 为了支持不规范的情况，NPM 配置的环境变量优先于任何 **.npmrc** 配置。环境变量名以 `npm_config_` 开头，例如设置 `npm_config_registry` 可以覆盖 **.npmrc** 中的 `registry` 设置。Rush 也可以接受 NPM 标准中不规范的命名，例如 `npm_config_@example:registry`。
 2. 通常的配置刚来自于 Rush 拷贝到工作目录的临时文件 **.npmrc**，这个文件拷贝自 **common/config/rush/.npmrc**，但是省略了很多没有定义的环境变量（解释如上）。对于大多数的操作，工作目录是 **common/temp**。
 3. 如果包管理器没有从方法 1 或方法 2 中找到配置项，将使用用户配置中的 **~/.npmrc**。用户通常存储自己的身份验证令牌在这个文件中。
 
