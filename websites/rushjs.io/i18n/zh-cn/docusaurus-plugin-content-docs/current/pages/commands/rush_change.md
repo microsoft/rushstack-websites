@@ -28,7 +28,7 @@ title: rush change
                         --bulk 参数存在时会导致失败）
   --email EMAIL         邮箱地址用于变更文件中和，如果没有提供该参数，那么会在交互模式下
                         检测邮箱。
-  --bulk                一旦执行该参数，那么会将相同的变更信息和变更类型应用到所有项目。
+  --bulk                一旦指定该参数，那么会将相同的变更信息和变更类型应用到所有项目。
                         一旦使用该参数，同时需要指定 --message 和 --bump-type 参数。
   --message MESSAGE     当指定 --bulk 参数时，该参数会适用于所有变化的项目
   --bump-type {major,minor,patch,none}
