@@ -50,7 +50,7 @@ title: rush publish
   --release-folder FOLDER
                         该参数用于给 --pack 参数提供自定义的打包位置，而不是使用默
                         认值。
-  --include-all         一旦指定改参数，则 rush.json 内所有设定 shouldPublish=
+  --include-all         一旦指定该参数，则 rush.json 内所有设定 shouldPublish=
                         true 的项目，和指定了版本策略且其版本比旧版本新的项目都会被
                         发布。
   --version-policy POLICY

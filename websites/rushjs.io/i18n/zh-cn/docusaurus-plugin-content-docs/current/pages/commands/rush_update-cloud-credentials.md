@@ -13,7 +13,7 @@ title: rush update-cloud-credentials (experimental)
   -i, --interactive     如果云服务商支持的话，可以以交互形式来更新凭证。
   --credential CREDENTIAL_STRING
                         一个将被缓存的静态凭证。
-  -d, --delete          一旦指定改参数，会删除存储的凭证。
+  -d, --delete          一旦指定该参数，会删除存储的凭证。
 ```
 
 ## 参考更多
