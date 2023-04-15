@@ -3,24 +3,20 @@ title: rush remove
 ---
 
 ```
-usage: rush remove [-h] [-s] -p PACKAGE [--all]
+用法：rush remove [-h] [-s] -p PACKAGE [--all]
 
-Removes specified package(s) from the dependencies of the current project (as
-determined by the current working directory) and then runs "rush update".
+从当前项目（由当前工作目录确定）的依赖项中删除指定的包，并运行 "rush update"。
 
-Optional arguments:
-  -h, --help            Show this help message and exit.
-  -s, --skip-update     If specified, the "rush update" command will not be
-                        run after updating the package.json files.
+可选参数：
+  -h, --help            显示此帮助消息并退出。
+  -s, --skip-update     如果指定，将不会运行 "rush update" 命令来更新 package.json 文件。
   -p PACKAGE, --package PACKAGE
-                        The name of the package which should be removed. To
-                        remove multiple packages, run "rush remove --package
-                        foo --package bar".
-  --all                 If specified, the dependency will be removed from all
-                        projects that declare it.
+                        要删除的包的名称。要删除多个包，
+                        请运行 "rush remove --package foo --package bar"。
+  --all                 如果指定，将从所有声明它的项目中删除依赖项。
 ```
 
-## See also
+## 参见
 
-- [Modifying package.json](../developer/modifying_package_json.md)
+- [修改 package.json](../developer/modifying_package_json.md)
 - [rush add](../commands/rush_add.md)
