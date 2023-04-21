@@ -43,7 +43,7 @@ fi
 
 1. 在 **common/git-hooks** 目录下添加该文件，并在 Git 上提交。
 2. 当开发者执行 `rush install` 时，Rush 将会拷贝该文件到 **.git/hooks/commit-msg** 目录下。
-3. 当你执行 `git commit` 时，Git 讲找到该脚本并调用它。
+3. 当你执行 `git commit` 时，Git 将找到该脚本并调用它。
 4. 如果 commit 消息过短，脚本会返回非零状态码，Git 显示 `Invalid commit message` 提示并且拒绝操作。
 
 使用 Rush 来安装这个钩子脚本需要避免使用 [Husky](https://www.npmjs.com/package/husky) 等独立解决方案。注意 Husky 预期你的仓库在根目录上有一个 **package.json** 和 **node_modules** 目录，并且 Husky 将会执行每个 Git 操作的 shell 命令（即使未使用的钩子）；使用 Rush 来安装钩子可以避免这些限制。
