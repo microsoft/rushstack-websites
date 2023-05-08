@@ -1,4 +1,6 @@
-# What is TSDoc?
+---
+title: What is TSDoc?
+---
 
 TSDoc is a proposal to standardize the doc comments used in [TypeScript](http://www.typescriptlang.org/) code, so that different tools can extract content without getting confused by each other's markup. The TSDoc notation looks pretty familiar:
 

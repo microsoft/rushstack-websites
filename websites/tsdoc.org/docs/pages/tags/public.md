@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@public'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Discretionary]({% link pages/spec/standardization_groups.md %}) |

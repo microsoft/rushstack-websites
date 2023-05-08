@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@returns'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |

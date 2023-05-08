@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@remarks'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |

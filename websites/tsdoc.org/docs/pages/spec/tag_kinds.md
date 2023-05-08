@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Tag kinds
-navigation_source: docs_nav
 ---
 
 TSDoc distinguishes three kinds of tags: Block tags, modifier tags, and inline tags.

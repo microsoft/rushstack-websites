@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Submitting a pull request
-navigation_source: docs_nav
 ---
 
 1. Make sure the Rush tool is installed, following the

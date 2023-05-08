@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@deprecated'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |

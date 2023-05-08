@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@microsoft/tsdoc'
-navigation_source: docs_nav
 ---
 
 [NPM package](https://www.npmjs.com/package/@microsoft/tsdoc)<br/>

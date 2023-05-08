@@ -1,7 +1,5 @@
 ---
-layout: page
 title: TSDoc spec
-navigation_source: docs_nav
 ---
 
 Technical details for the TSDoc syntax are tracked by "RFC" issues with the

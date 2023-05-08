@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Standardization groups
-navigation_source: docs_nav
 ---
 
 Three "standardization groups" are used to classify the standard TSDoc tags, according to the

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@beta'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Discretionary]({% link pages/spec/standardization_groups.md %}) |

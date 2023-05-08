@@ -1,7 +1,5 @@
 ---
-layout: page
 title: How can I use TSDoc?
-navigation_source: docs_nav
 ---
 
 By itself, the **@microsoft/tsdoc** package is not a documentation solution you can use directly. It is an engine component used by other tools such as [API Extractor](https://api-extractor.com/pages/tsdoc/doc_comment_syntax/). The [NPM dependency report](https://www.npmjs.com/browse/depended/@microsoft/tsdoc) is an easy way to find tools that implement TSDoc.

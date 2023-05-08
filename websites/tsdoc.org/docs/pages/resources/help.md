@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Getting help
-navigation_source: docs_nav
 ---
 
 The TSDoc projects are coordinated by the [Rush Stack](https://rushstack.io/) group at Microsoft.

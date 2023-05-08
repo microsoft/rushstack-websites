@@ -1,7 +1,5 @@
 ---
-layout: page
 title: eslint-plugin-tsdoc
-navigation_source: docs_nav
 ---
 
 [NPM package](https://www.npmjs.com/package/eslint-plugin-tsdoc)<br/>

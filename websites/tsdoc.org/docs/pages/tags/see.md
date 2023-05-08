@@ -1,7 +1,5 @@
 ---
-layout: page
 title: '@see'
-navigation_source: docs_nav
 ---
 
 | Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |

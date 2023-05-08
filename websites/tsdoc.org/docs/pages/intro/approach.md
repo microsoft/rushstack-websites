@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Approach
-navigation_source: docs_nav
 ---
 
 The TSDoc specification aims to meet these requirements:

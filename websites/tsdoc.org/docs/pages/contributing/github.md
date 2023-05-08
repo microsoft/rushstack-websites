@@ -1,7 +1,5 @@
 ---
-layout: page
 title: GitHub
-navigation_source: docs_nav
 ---
 
 The TSDoc projects are developed in a single GitHub monorepo:

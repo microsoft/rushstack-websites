@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Project roadmap
-navigation_source: docs_nav
 ---
 
 ## Already completed

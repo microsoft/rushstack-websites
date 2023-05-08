@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Building the projects
-navigation_source: docs_nav
 ---
 
 If you're going to submit a pull request for TSDoc, you will need to use the Rush monorepo manager tool.
