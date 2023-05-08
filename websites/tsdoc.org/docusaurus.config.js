@@ -105,31 +105,26 @@ const config = {
             label: 'Intro'
           },
           {
+            to: 'pages/tags/alpha',
+            position: 'right',
+            label: 'Tags'
+          },
+          {
+            to: 'pages/contributing/github',
+            position: 'right',
+            label: 'GitHub'
+          },
+          {
+            to: 'pages/resources/help',
+            position: 'right',
+            label: 'Help'
+          },
+          {
             to: '/play',
             label: 'Playground',
             position: 'right',
             className: 'tsdoc-playground-button'
           }
-          /*
-          {
-            to: 'pages/support/news',
-            position: 'right',
-            label: 'News',
-            activeBasePath: 'pages/support/news'
-          },
-          {
-            to: 'pages/support/contributing',
-            position: 'right',
-            label: 'GitHub',
-            activeBasePath: 'pages/support/contributing'
-          },
-          {
-            to: 'pages/support/help',
-            position: 'right',
-            label: 'Help',
-            activeBasePath: 'pages/support/help'
-          }
-          */
         ]
       },
       footer: {
