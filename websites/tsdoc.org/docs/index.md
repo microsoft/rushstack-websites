@@ -99,6 +99,6 @@ Contributing design input:
 
 ## Next steps
 
-👉 [Learn more]({% link pages/intro/approach.md %}) -- about the goals and approach
+👉 [Learn more](./pages/intro/approach.md) -- about the goals and approach
 
-👉 [How can I use TSDoc?]({% link pages/intro/using_tsdoc.md %}) -- learn about tools and resources for developing with TSDoc
+👉 [How can I use TSDoc?](./pages/intro/using_tsdoc.md) -- learn about tools and resources for developing with TSDoc

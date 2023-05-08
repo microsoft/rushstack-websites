@@ -2,8 +2,8 @@
 title: '@override'
 ---
 
-| Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Extended](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -35,7 +35,7 @@ class Child extends Base {
 
 ## See also
 
-- [@sealed]({% link pages/tags/sealed.md %}) tag
-- [@virtual]({% link pages/tags/virtual.md %}) tag
+- [@sealed](../tags/sealed.md) tag
+- [@virtual](../tags/virtual.md) tag
 - [C# reference: override](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override):
   an equivalent feature from another programming language

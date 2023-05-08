@@ -2,8 +2,8 @@
 title: '@virtual'
 ---
 
-| Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Extended](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -34,7 +34,7 @@ class Child extends Base {
 
 ## See also
 
-- [@override]({% link pages/tags/override.md %}) tag
-- [@sealed]({% link pages/tags/sealed.md %}) tag
+- [@override](../tags/override.md) tag
+- [@sealed](../tags/sealed.md) tag
 - [C# reference: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual):
   an equivalent feature from another programming language

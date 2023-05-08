@@ -2,8 +2,8 @@
 title: '@inheritDoc'
 ---
 
-| Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Inline tag]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Extended](../spec/standardization_groups.md) |
+| Syntax kind: | [Inline tag](../spec/tag_kinds.md) |
 
 ## Usage
 

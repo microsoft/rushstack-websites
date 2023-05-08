@@ -3,7 +3,7 @@ title: Submitting a pull request
 ---
 
 1. Make sure the Rush tool is installed, following the
-   [Building the projects]({% link pages/contributing/building.md %}) instructions.
+   [Building the projects](../contributing/building.md) instructions.
 
 2. Install dependencies for all projects in the monorepo:
 
@@ -30,11 +30,11 @@ title: Submitting a pull request
    ```
 
 4. Manual testing: Before submitting your PR, you should also try running the
-   [/api-demo](./api-demo/) and [/playground](./playground) projects to make sure they
+   [/api-demo](https://github.com/microsoft/tsdoc/tree/main/api-demo) and [/playground](https://github.com/microsoft/tsdoc/tree/main/playground) projects to make sure they
    weren't broken by your change.
 
 5. Change logs: If your PR modifies the published NPM package, you will need to write a
-   change entry for our [CHANGELOG.md](./tsdoc/CHANGELOG.md) change log. Please read the
+   change entry for our [CHANGELOG.md](https://github.com/microsoft/tsdoc/blob/main/tsdoc/CHANGELOG.md) change log. Please read the
    "[recommended practices](https://rushjs.io/pages/best_practices/change_logs/)" for
    authoring change logs.
 

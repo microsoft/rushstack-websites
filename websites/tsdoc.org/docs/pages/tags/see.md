@@ -2,8 +2,8 @@
 title: '@see'
 ---
 
-| Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Block tag]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Extended](../spec/standardization_groups.md) |
+| Syntax kind: | [Block tag](../spec/tag_kinds.md) |
 
 ## Usage
 

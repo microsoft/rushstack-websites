@@ -2,8 +2,8 @@
 title: '@remarks'
 ---
 
-| Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Block tag]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Core](../spec/standardization_groups.md) |
+| Syntax kind: | [Block tag](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -40,4 +40,4 @@ remarks section for a doc comment.
 
 ## See also
 
-- [@privateRemarks]({% link pages/tags/privateremarks.md %}) tag
+- [@privateRemarks](../tags/privateremarks.md) tag

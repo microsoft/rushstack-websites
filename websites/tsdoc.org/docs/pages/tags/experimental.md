@@ -2,9 +2,9 @@
 title: '@experimental'
 ---
 
-| Standardization: | [Discretionary]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
-| Synonyms: | [@beta]({% link pages/tags/beta.md %}) |
+| Standardization: | [Discretionary](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
+| Synonyms: | [@beta](../tags/beta.md) |
 
 ## Suggested meaning
 
@@ -36,7 +36,7 @@ whereas `Book.title` is marked as "experimental".
 
 ## See also
 
-- [@alpha]({% link pages/tags/alpha.md %}) tag
-- [@beta]({% link pages/tags/beta.md %}) tag
-- [@public]({% link pages/tags/public.md %}) tag
-- [@internal]({% link pages/tags/internal.md %}) tag
+- [@alpha](../tags/alpha.md) tag
+- [@beta](../tags/beta.md) tag
+- [@public](../tags/public.md) tag
+- [@internal](../tags/internal.md) tag

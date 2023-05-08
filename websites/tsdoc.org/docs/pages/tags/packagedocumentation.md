@@ -2,8 +2,8 @@
 title: '@packageDocumentation'
 ---
 
-| Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Core](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -41,9 +41,9 @@ export interface IWidget {
 
 ## See also
 
-- [@alpha]({% link pages/tags/alpha.md %}) tag
-- [@beta]({% link pages/tags/beta.md %}) tag
-- [@experimental]({% link pages/tags/experimental.md %}) tag
-- [@public]({% link pages/tags/public.md %}) tag
+- [@alpha](../tags/alpha.md) tag
+- [@beta](../tags/beta.md) tag
+- [@experimental](../tags/experimental.md) tag
+- [@public](../tags/public.md) tag
 - [API Extractor: @packageDocumentation](https://api-extractor.com/pages/tsdoc/tag_packagedocumentation/):
   a reference implementation of this feature

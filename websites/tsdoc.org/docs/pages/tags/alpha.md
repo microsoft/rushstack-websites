@@ -2,8 +2,8 @@
 title: '@alpha'
 ---
 
-| Standardization: | [Discretionary]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Discretionary](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 
 ## Suggested meaning
 
@@ -37,9 +37,9 @@ whereas `Book.title` is marked as "alpha".
 
 ## See also
 
-- [@beta]({% link pages/tags/beta.md %}) tag
-- [@experimental]({% link pages/tags/experimental.md %}) tag
-- [@internal]({% link pages/tags/internal.md %}) tag
-- [@public]({% link pages/tags/public.md %}) tag
+- [@beta](../tags/beta.md) tag
+- [@experimental](../tags/experimental.md) tag
+- [@internal](../tags/internal.md) tag
+- [@public](../tags/public.md) tag
 - [Trimming based on release tags](https://api-extractor.com/pages/setup/configure_rollup/#trimming-based-on-release-tags):
   a reference implementation of this feature

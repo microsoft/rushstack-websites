@@ -13,8 +13,8 @@ not be written as a block tag because it is defined to be an inline tag.
 
 Block tags should always appear as the first element on a line. In normalized form, a block tag
 should be the only element on its line, except for certain tags that assign special meaning to
-the first line of text. For example, the [@example]({% link pages/tags/example.md %}) and
-[@throws]({% link pages/tags/throws.md %}) tags interpret their first line as a section title.
+the first line of text. For example, the [@example](../tags/example.md) and
+[@throws](../tags/throws.md) tags interpret their first line as a section title.
 
 All text following a block tag, up until the start of the next block tag or modifier tag, is
 considered to be the block tag's **tag content**. The content may include Markdown elements and

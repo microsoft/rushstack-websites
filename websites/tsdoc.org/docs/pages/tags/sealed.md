@@ -2,8 +2,8 @@
 title: '@sealed'
 ---
 
-| Standardization: | [Extended]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Modifier]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Extended](../spec/standardization_groups.md) |
+| Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -36,7 +36,7 @@ class Child extends Base {
 
 ## See also
 
-- [@override]({% link pages/tags/override.md %}) tag
-- [@virtual]({% link pages/tags/virtual.md %}) tag
+- [@override](../tags/override.md) tag
+- [@virtual](../tags/virtual.md) tag
 - [C# reference: sealed](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed):
   an equivalent feature from another programming language

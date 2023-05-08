@@ -6,7 +6,7 @@ Technical details for the TSDoc syntax are tracked by "RFC" issues with the
 [Request for Comments](https://github.com/microsoft/tsdoc/issues?q=is%3Aissue+is%3Aopen+label%3A%22request+for+comments%22+)
 GitHub label.
 
-The [@microsoft/tsdoc]({% link pages/packages/tsdoc.md %}) package provides a feature complete reference
+The [@microsoft/tsdoc](../packages/tsdoc.md) package provides a feature complete reference
 implementation of a parser, and many syntax details are explained in the code comments for its source code.
 
 > This section is still under development. We'll post more detail soon.

@@ -54,7 +54,7 @@ $ npm run watch
 
 ## Debugging the unit tests
 
-The [./tsdoc/.vscode/launch.json](./tsdoc/.vscode/launch.json) file includes a
+The [./tsdoc/.vscode/launch.json](https://github.com/microsoft/tsdoc/blob/main/tsdoc/.vscode/launch.json) file includes a
 [Visual Studio Code](https://code.visualstudio.com/) configuration that makes debugging
 easier. To debug a unit test:
 
@@ -73,5 +73,5 @@ easier. To debug a unit test:
    This will run all tests in the debugger.
 
 <p style="text-align: right; font-weight: bold; font-size: larger; padding-top: 10px;">
-👉 Next: <a href="{% link pages/contributing/pr_checklist.md %}">Submitting a pull request</a>
+👉 Next: <a href="../contributing/pr_checklist.md">Submitting a pull request</a>
 </p>

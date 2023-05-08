@@ -2,8 +2,8 @@
 title: '@returns'
 ---
 
-| Standardization: | [Core]({% link pages/spec/standardization_groups.md %}) |
-| Syntax kind: | [Block tag]({% link pages/spec/tag_kinds.md %}) |
+| Standardization: | [Core](../spec/standardization_groups.md) |
+| Syntax kind: | [Block tag](../spec/tag_kinds.md) |
 
 ## Usage
 
@@ -31,4 +31,4 @@ function getAverage(x: number, y: number): number {
 
 ## See also
 
-- [@param]({% link pages/tags/param.md %}) tag
+- [@param](../tags/param.md) tag
