@@ -124,7 +124,7 @@ const config = {
         ]
       },
       footer: {
-        style: 'dark',
+        style: 'light', // Use --ifm-footer-background-color always
 
         links: [],
         copyright: `© ${new Date().getFullYear()} Microsoft`
