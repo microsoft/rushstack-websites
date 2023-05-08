@@ -21,7 +21,3 @@ Supplementary project folders are:
 The `tsdoc.org` website is hosted in this Github repo:
 
 [https://github.com/microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/tree/main/websites/tsdoc.org)
-
-<p style="text-align: right; font-weight: bold; font-size: larger; padding-top: 10px;">
-👉 Next: <a href="../pages/contributing/building.md">Building the projects</a>
-</p>

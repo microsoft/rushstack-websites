@@ -71,7 +71,3 @@ easier. To debug a unit test:
 
 4. From the DEBUG combo box, choose the "**Debug Jest tests**" debug configuration, and click the play button.
    This will run all tests in the debugger.
-
-<p style="text-align: right; font-weight: bold; font-size: larger; padding-top: 10px;">
-👉 Next: <a href="../contributing/pr_checklist.md">Submitting a pull request</a>
-</p>
