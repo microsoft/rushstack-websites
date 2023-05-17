@@ -33,7 +33,7 @@ interface IWarningOptions {
    *
    * @defaultValue `WarningStyle.DialogBox`
    */
-  warningStyle: WarningStyle;
+  warningStyle?: WarningStyle;
 
   /**
    * Whether the warning can interrupt a user's current activity.
