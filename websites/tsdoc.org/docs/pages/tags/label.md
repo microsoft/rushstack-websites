@@ -2,8 +2,12 @@
 title: '@label'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Core](../spec/standardization_groups.md) |
 | Syntax kind: | [Inline tag](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Usage
 

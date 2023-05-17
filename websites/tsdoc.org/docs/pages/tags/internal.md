@@ -2,8 +2,12 @@
 title: '@internal'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Discretionary](../spec/standardization_groups.md) |
 | Syntax kind: | [Modifier](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Suggested meaning
 

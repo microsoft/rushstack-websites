@@ -2,8 +2,12 @@
 title: '@decorator'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Extended](../spec/standardization_groups.md) |
 | Syntax kind: | [Block tag](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Usage
 

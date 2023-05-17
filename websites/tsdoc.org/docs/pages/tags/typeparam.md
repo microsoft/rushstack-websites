@@ -2,8 +2,12 @@
 title: '@typeParam'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Core](../spec/standardization_groups.md) |
 | Syntax kind: | [Block tag](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Usage
 

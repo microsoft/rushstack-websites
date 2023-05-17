@@ -2,9 +2,13 @@
 title: '@experimental'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Discretionary](../spec/standardization_groups.md) |
 | Syntax kind: | [Modifier](../spec/tag_kinds.md) |
 | Synonyms: | [@beta](../tags/beta.md) |
+<!-- prettier-ignore-end -->
 
 ## Suggested meaning
 

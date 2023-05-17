@@ -2,8 +2,12 @@
 title: '@inheritDoc'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Extended](../spec/standardization_groups.md) |
 | Syntax kind: | [Inline tag](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Usage
 

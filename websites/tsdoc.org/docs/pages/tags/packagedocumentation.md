@@ -2,8 +2,12 @@
 title: '@packageDocumentation'
 ---
 
+<!-- prettier-ignore-start -->
+|    |    |
+| -- | -- |
 | Standardization: | [Core](../spec/standardization_groups.md) |
 | Syntax kind: | [Modifier](../spec/tag_kinds.md) |
+<!-- prettier-ignore-end -->
 
 ## Usage
 
