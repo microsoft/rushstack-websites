@@ -85,7 +85,7 @@ Implementation:
 - [Brian Folts](https://github.com/bafolts) contributed the **eslint-plugin-tsdoc** package for ESLint
 - many other contributors who implemented features and bugfixes!
 
-(Should your name appear here? [Suggest an update](https://github.com/microsoft/tsdoc.org-website/edit/master/_includes/home_content.md) to this page.)
+(Should your name appear here? [Suggest an update](https://github.com/microsoft/rushstack-websites/edit/main/websites/tsdoc.org/docs/index.md) to this page.)
 
 Contributing design input:
 

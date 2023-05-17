@@ -9,7 +9,7 @@ Although Microsoft does not provide official support for TSDoc, there are commun
 - **Found a bug?** Create a [GitHub issue](https://github.com/microsoft/tsdoc/issues)
 
 - **Problem with the website?** Create your issue under
-  the [tsdoc.org-website](https://github.com/microsoft/tsdoc.org-website/issues) GitHub project
+  the [rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) documentation monorepo
 
 - **Zulip chat:** The Rush Stack chat server hosts a [#tsdoc](https://rushstack.zulipchat.com/#narrow/stream/266672-tsdoc)
   stream where you can contact the project maintainers. For help with getting a PR merged, try the
