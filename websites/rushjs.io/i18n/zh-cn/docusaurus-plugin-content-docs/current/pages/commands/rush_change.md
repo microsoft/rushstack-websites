@@ -22,13 +22,13 @@ title: rush change
   -v, --verify          验证是否生成了有效的变更文件
   --no-fetch            在执行 "git diff" 检测之前，跳过获取基准分支
   -b BRANCH, --target-branch BRANCH
-                        一旦指定改参数，会比较当前分支和目标分支的差异。如果没有指定该
+                        一旦指定该参数，会比较当前分支和目标分支的差异。如果没有指定该
                         参数，则默认比较 "main" 分支
   --overwrite           如果某个变更日志存在，将在没有提示的情况下对该文件进行覆盖（当
                         --bulk 参数存在时会导致失败）
   --email EMAIL         邮箱地址用于变更文件中和，如果没有提供该参数，那么会在交互模式下
                         检测邮箱。
-  --bulk                一旦执行改参数，那么会将相同的变更信息和变更类型应用到所有项目。
+  --bulk                一旦指定该参数，那么会将相同的变更信息和变更类型应用到所有项目。
                         一旦使用该参数，同时需要指定 --message 和 --bump-type 参数。
   --message MESSAGE     当指定 --bulk 参数时，该参数会适用于所有变化的项目
   --bump-type {major,minor,patch,none}

@@ -68,7 +68,7 @@ title: deploy.json
   // "linkCreation": "script",
 
   /**
-   * 一旦指定改参数，那么 "rush deploy" 会递归地将文件夹中的文件复制到
+   * 一旦指定该参数，那么 "rush deploy" 会递归地将文件夹中的文件复制到
    * 部署的目标文件夹中 (common/deploy). 这可以用来提供额外的配置文件
    * 或者部署时所需的脚本。该路径相对于仓库根目录。
    */
