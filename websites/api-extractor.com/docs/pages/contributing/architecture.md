@@ -4,7 +4,8 @@ title: Architecture notes
 
 If you're interested in contributing, here's some general architectural notes that will hopefully help you find
 your way around the code base. (By the way, if you'd like to see more detail about specific aspects or topics,
-please let use know by creating a GitHib issue in the [api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website/) repo.)
+please let use know by creating a GitHib issue in the
+[rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) documentation monorepo.)
 
 ## Project anatomy
 
