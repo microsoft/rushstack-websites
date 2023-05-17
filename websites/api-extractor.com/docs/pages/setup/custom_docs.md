@@ -16,8 +16,7 @@ The **api-documenter** project was designed to serve as a code sample, so if you
 you can simply fork it and modify the code. Here's the basic files you'd want to look at:
 
 - [apps/api-documenter](https://github.com/microsoft/rushstack/tree/main/apps/api-documenter) - the main
-  project folder on GitHub. This project is part of a [Rush](https://rushjs.io/) monorepo, but if you want to
-  keep things simple, you can run `npm install` and `npm run build` in this folder and ignore all the other stuff.
+  project folder on GitHub.
 
 - [MarkdownAction.ts](https://github.com/microsoft/rushstack/blob/main/apps/api-documenter/src/cli/MarkdownAction.ts) -
   This source file defines the `api-documenter markdown` command-line and its parameters. It loads the `ApiModel`
