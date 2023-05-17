@@ -8,7 +8,7 @@ API Extractor is developed in the monorepo for the [Rush Stack](https://rushstac
 
 Related GitHub repos:
 
-- The API Extractor website and documentation: [https://github.com/microsoft/api-extractor.com-website](https://github.com/microsoft/api-extractor.com-website)
+- The API Extractor website and documentation: [https://github.com/microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/tree/main/websites/api-extractor.com)
 - The TSDoc parser for doc comments: [https://github.com/Microsoft/tsdoc](https://github.com/Microsoft/tsdoc)
 
 For general instructions on building API Extractor and guidelines for submitting PRs, please read the
