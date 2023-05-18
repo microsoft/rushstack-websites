@@ -1,6 +1,10 @@
+:root {
+  --rushstack-suitenav-background-color: #555555;
+}
+
 .suiteNavBar {
   height: 48px;
-  background: #555555;
+  background: var(--rushstack-suitenav-background-color);
   color: #ffffff;
   font-weight: 500;
   display: flex;

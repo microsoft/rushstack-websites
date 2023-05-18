@@ -350,6 +350,10 @@
       "packageName": "rushjs.io",
       "projectFolder": "websites/rushjs.io"
     },
+    {
+      "packageName": "tsdoc.org",
+      "projectFolder": "websites/tsdoc.org"
+    },
 
     // Upcoming websites
     /*
