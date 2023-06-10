@@ -247,13 +247,22 @@ override this by setting the [RUSH_BUILD_CACHE_WRITE_ALLOWED](../configs/environ
 environment variable, and by providing credentials for the CI environment in the
 [RUSH_BUILD_CACHE_CREDENTIAL](../configs/environment_vars.md) environment variable.
 
-For Azure Blob Storage, this must be a SAS token serialized as query parameters.
+### Credentials
+
+#### Azure Storage
+
+For Azure Blob Storage, `RUSH_BUILD_CACHE_CREDENTIAL` must be a SAS token serialized as query parameters.
 See [this article](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) for details
 about SAS tokens. You can obtain a SAS token via the [Settings > Access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)
 page for your storage account.
 
-For Amazon S3, this will be your AWS Access Key ID and AWS Secret Access Key separated by a colon,
-such as: `<AccessKeyID>:<SecretAccessKey>`.
+#### AWS
+
+For Amazon S3, `RUSH_BUILD_CACHE_CREDENTIAL` will be your AWS Access Key ID and AWS Secret Access Key separated by a colon,
+such as: `<AccessKeyID>:<SecretAccessKey>`. You can also pass temporary session tokens required when assuming an IAM role: `<AccessKeyID>:<SecretAccessKey>:<SessionToken>`.
+
+If `RUSH_BUILD_CACHE_CREDENTIAL` is not set, the build cache will attempt to read the environment vars `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_SESSION_TOKEN` that
+are commonly set via the AWS CLI or other CI tooling. However, `RUSH_BUILD_CACHE_CREDENTIAL` will always take precedence if it exists.
 
 > The build cache feature is still under development. Feedback is welcome!
 >
