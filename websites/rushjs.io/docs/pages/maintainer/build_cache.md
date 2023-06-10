@@ -249,7 +249,7 @@ environment variable, and by providing credentials for the CI environment in the
 
 ### Credentials
 
-#### Azure
+#### Azure Storage
 
 For Azure Blob Storage, `RUSH_BUILD_CACHE_CREDENTIAL` must be a SAS token serialized as query parameters.
 See [this article](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) for details
