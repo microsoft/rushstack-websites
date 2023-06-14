@@ -106,9 +106,9 @@ const config = {
             label: 'API'
           },
           {
-            href: 'https://rushstack.io' + '/pages/shop',
+            href: 'https://rushstack.io' + '/blog',
             position: 'right',
-            label: 'Shop'
+            label: 'Blog'
           },
           {
             href: 'https://rushstack.io' + '/pages/news',
@@ -119,6 +119,11 @@ const config = {
             href: 'https://rushstack.io' + '/community/events',
             position: 'right',
             label: 'Events'
+          },
+          {
+            href: 'https://rushstack.io' + '/pages/shop',
+            position: 'right',
+            label: 'Shop'
           },
           {
             href: 'https://rushstack.io' + '/pages/contributing/get_started',
