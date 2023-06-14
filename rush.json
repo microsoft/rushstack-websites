@@ -355,22 +355,11 @@
       "projectFolder": "websites/tsdoc.org"
     },
 
-    // Upcoming websites
-    /*
-    {
-      "packageName": "api-extractor.com",
-      "projectFolder": "websites/api-extractor.com"
-    },
-    {
-      "packageName": "tsdoc.org",
-      "projectFolder": "websites/tsdoc.org"
-    },
-    */
-
     // Tools
     {
       "packageName": "api-documenter-docusaurus-plugin",
-      "projectFolder": "tools/api-documenter-docusaurus-plugin"
+      "projectFolder": "tools/api-documenter-docusaurus-plugin",
+      "tags": ["website-deps"]
     },
     {
       "packageName": "deploy-fork",
@@ -378,25 +367,30 @@
     },
     {
       "packageName": "site-config",
-      "projectFolder": "tools/site-config"
+      "projectFolder": "tools/site-config",
+      "tags": ["website-deps"]
     },
 
     // Plugins
     {
       "packageName": "remark-canonical-link-plugin",
-      "projectFolder": "plugins/remark-canonical-link-plugin"
+      "projectFolder": "plugins/remark-canonical-link-plugin",
+      "tags": ["website-deps"]
     },
     {
       "packageName": "remark-cross-site-link-plugin",
-      "projectFolder": "plugins/remark-cross-site-link-plugin"
+      "projectFolder": "plugins/remark-cross-site-link-plugin",
+      "tags": ["website-deps"]
     },
     {
       "packageName": "rehype-headerless-table-plugin",
-      "projectFolder": "plugins/rehype-headerless-table-plugin"
+      "projectFolder": "plugins/rehype-headerless-table-plugin",
+      "tags": ["website-deps"]
     },
     {
       "packageName": "theme-rushstack-suite-nav",
-      "projectFolder": "plugins/theme-rushstack-suite-nav"
+      "projectFolder": "plugins/theme-rushstack-suite-nav",
+      "tags": ["website-deps"]
     }
 
     // {
