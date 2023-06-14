@@ -113,10 +113,9 @@ const config = {
             label: 'API'
           },
           {
-            type: 'doc',
-            docId: 'pages/shop',
+            to: 'blog',
             position: 'right',
-            label: 'Shop'
+            label: 'Blog'
           },
           {
             type: 'doc',
@@ -130,9 +129,10 @@ const config = {
             label: 'Events'
           },
           {
-            to: 'blog',
+            type: 'doc',
+            docId: 'pages/shop',
             position: 'right',
-            label: 'Blog'
+            label: 'Shop'
           },
           {
             to: 'pages/contributing/get_started',
