@@ -28,8 +28,8 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
         <div className={styles.popupUnderlay} onClick={this._onClosePopup}>
           <div className={styles.popupPane} onBlur={this._onClosePopup} onClick={this._onIgnoreEvent}>
             <div className={styles.popupHeader} onClick={this._onClosePopup}>
-              <div className={styles.hamburger}>
-                <img src={'/images/suitenav/rs-hamburger-dark.svg'} />
+              <div className={styles.waffle}>
+                <img src={'/images/suitenav/rs-waffle-dark.svg'} />
               </div>
             </div>
 
@@ -87,15 +87,15 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
         <div className={styles.suiteNavBar}>
           <div
             role="button"
-            className={[styles.hamburger, styles.hamburgerInteraction].join(' ')}
+            className={[styles.waffle, styles.waffleInteraction].join(' ')}
             onClick={this._onOpenPopup}
           >
-            <img src={'/images/suitenav/rs-hamburger.svg'} />
+            <img src={'/images/suitenav/rs-waffle.svg'} />
           </div>
-          <div className={styles.hamburgerDivider} />
+          <div className={styles.waffleDivider} />
 
-          <a href="https://rushstack.io/pages/overview/roadmap/" className={styles.suiteNavItem}>
-            Roadmap
+          <a href="https://rushstack.io/" className={styles.suiteNavItem}>
+            Rush Stack
           </a>
           <a href="https://rushstack.io/pages/shop/" className={styles.suiteNavItem}>
             Shop

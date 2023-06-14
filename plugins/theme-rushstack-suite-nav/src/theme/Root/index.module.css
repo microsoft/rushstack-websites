@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.hamburger {
+.waffle {
   width: 36px;
   height: 36px;
 
@@ -25,18 +25,18 @@
   user-select: none;
 }
 
-.hamburgerInteraction:active,
-.hamburgerInteraction:hover {
+.waffleInteraction:active,
+.waffleInteraction:hover {
   cursor: pointer;
   background-color: #808080;
   border-radius: 4px;
 }
 
-.hamburger img {
+.waffle img {
   height: 20px;
 }
 
-.hamburgerDivider {
+.waffleDivider {
   width: 2px;
   height: 80%;
   background: #808080;

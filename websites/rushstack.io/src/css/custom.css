@@ -161,8 +161,9 @@ html[data-theme='dark'] blockquote {
  * Add a little icon next to hyperlinks that point to an external page.
  * We only do this inside an <article> element.  Use the class="no-external-link-icon" to disable it.
  * An "external" page has "://" in its URL and does not include a recognized DNS name.
+ * The `:not(.avatar > *)` and `:not(.avatar__name > *)` exclusions are for blog author details.
  */
-article a[href*="://"]:not([href*="api-extractor.com"]):not([href*="rushstack.io"]):not([href*="api.rushstack.io"]):not([href*="lfx.rushstack.io"]):not([href*="rushjs.io"]):not([href*="tsdoc.org"]):not([href*="localhost"]):not(.no-external-link-icon)
+article a[href*="://"]:not([href*="api-extractor.com"]):not([href*="rushstack.io"]):not([href*="api.rushstack.io"]):not([href*="lfx.rushstack.io"]):not([href*="rushjs.io"]):not([href*="tsdoc.org"]):not([href*="localhost"]):not(.no-external-link-icon):not(.avatar > *):not(.avatar__name > *)
 {
   background-position: center right;
   background-repeat: no-repeat;

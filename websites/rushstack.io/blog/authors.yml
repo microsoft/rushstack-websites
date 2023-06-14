@@ -1,0 +1,39 @@
+# Titles should be kept in sync with people.json.
+# If the person is not a maintainer, the default title is "Community contributor"
+# Alphabetical by GitHub alias
+
+chengcyber:
+  name: Cheng
+  title: Rush Stack affiliate collaborator
+  url: https://github.com/chengcyber
+  image_url: https://github.com/chengcyber.png
+
+D4N14L:
+  name: Daniel Nadeau
+  title: Rush Stack maintainer
+  url: https://github.com/D4N14L
+  image_url: https://github.com/D4N14L.png
+
+elliot-nelson:
+  name: Elliot Nelson
+  title: Rush Stack affiliate collaborator
+  url: https://github.com/elliot-nelson
+  image_url: https://github.com/elliot-nelson.png
+
+iclanton:
+  name: Ian Clanton-Thuon
+  title: Rush Stack maintainer
+  url: https://github.com/iclanton
+  image_url: https://github.com/iclanton.png
+
+octogonz:
+  name: Pete Gonzalez
+  title: Rush Stack maintainer
+  url: https://github.com/octogonz
+  image_url: https://github.com/octogonz.png
+
+TheLarkInn:
+  name: Sean Larkin
+  title: Rush Stack maintainer, webpack core maintainer
+  url: https://github.com/TheLarkInn
+  image_url: https://github.com/TheLarkInn.png
