@@ -71,6 +71,10 @@ const config = {
           rehypePlugins: [rehypeHeaderlessTablePlugin]
         },
         blog: {
+          // Index page meta title for SEO.
+          blogTitle: 'Docusaurus blog!',
+          // Index page meta description for better SEO.
+          blogDescription: 'A Docusaurus powered blog!',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/blog/'
@@ -124,6 +128,11 @@ const config = {
             to: '/community/events',
             position: 'right',
             label: 'Events'
+          },
+          {
+            to: 'blog',
+            position: 'right',
+            label: 'Blog'
           },
           {
             to: 'pages/contributing/get_started',
