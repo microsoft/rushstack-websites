@@ -6,5 +6,5 @@ hide_title: true
 Redirecting...
 
 <head>
-  <meta http-equiv="refresh" content="1; url=https://github.com/microsoft/rushstack/blob/main/apps/heft/UPGRADING.md#heft-0510" />
+  <meta http-equiv="refresh" content="1; url=/blog/2023/06/14/heft-big-changes/" />
 </head>
