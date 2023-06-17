@@ -11,7 +11,7 @@ hide_table_of_contents: false
 
 <!--truncate-->
 
-> For upgrade instructions, refer to the [Heft 0.51 Migration Guide](/blog/2023/06/14/heft-migration-guide) post.
+> For upgrade instructions, refer to the [Heft 0.51 Migration Guide](/blog/2023/06/16/heft-migration-guide) post.
 
 Some key areas that were improved with the updated version of Heft include:
 
