@@ -400,14 +400,21 @@ The `--serve` CLI parameter is our standard convention for launching a `localhos
 
 In updating to the new version of Heft, plugins will also need to be updated for compatibility. Some of the more notable API changes include:
 
-- "heft.json" format completely changed. See above for more information on "heft.json"
-- "heft-plugin.json" manifest file must accompany any plugin package. If no "heft-plugin.json" file is found, Heft will throw an error. See above for more information on "heft-plugin.json"
-- Plugin classes must have parameterless constructors, and must be the default export of the file pointed to by the `entryPoint` property in "heft-plugin.json"
-- Schema files for options provided in "heft.json" can now be specified using the `optionsSchema` property in "heft-plugin.json" and they will be validated by Heft
-- Parameters are now defined in "heft-plugin.json" and are consumed in the plugin via the `IHeftTaskSession.parameters` or `IHeftLifecycleSession.parameters` property. _NOTE: Other than the default Heft-included parameters, only parameters defined by the calling plugin are accessible_
-- Plugins can no longer define their own actions. If a plugin deserves its own action, a dedicated phase should be added to the consumers "heft.json"
+- The **heft-plugin.json** manifest file must accompany any plugin package. If no **heft-plugin.json** file is found, Heft will report an error.
+- Plugin classes must have parameterless constructors, and must be the default export of the file pointed to by the `entryPoint` property in **heft-plugin.json**
+- Schema files for options provided in **heft.json** can now be specified using the `optionsSchema` property in **heft-plugin.json** and they will be validated by Heft
+- Parameters are now defined in **heft-plugin.json** and are consumed in the plugin via the `IHeftTaskSession.parameters` or `IHeftLifecycleSession.parameters` property.
+  _NOTE: Other than the default Heft-included parameters, only parameters defined by the calling plugin are accessible_
+- Plugins can no longer define their own actions. If a plugin requires its own action, a dedicated phase should be added to the consumers **heft.json**
 - The `runScript` Heft event has been modified to only accept a `runAsync` method, and the properties have been updated to reflect what is available to normal Heft task plugins
 - Path-related variables have been renamed to clarify they are paths (ex. `HeftConfiguration.buildFolder` is now `HeftConfiguration.buildFolderPath`)
 - The `runIncremental` hook can now be utilized to ensure that watch mode rebuilds occur in proper dependency order
-- The `clean` hook was removed in favor of the `cleanFiles` option in "heft.json" in order to make it obvious what files are being cleaned and when
-- The `folderNameForTests` and `extensionForTests` properties have been removed and should instead be addressed via the `testMatch` property in `jest.config.json`
+- The `clean` hook was removed in favor of the `cleanFiles` option in **heft.json** in order to make it obvious what files are being cleaned and when
+- As a consequence, plugins can no longer programmatically compute folders to be cleaned by the `heft clean` command; its behavior is predetermined by static config files, which makes the overall system simpler and more predictable.
+
+## Miscellaneous migration notes
+
+- In **jest.config.json**, the `folderNameForTests` and `extensionForTests` properties have been removed and should instead be addressed via the `testMatch` property
+- The `node-service-plugin` built-in plugin now supports the `--serve` parameter, to be consistent with the `@rushstack/heft-webpack5-plugin` dev server.
+- If `--serve` is specified and `config/node-service.json` is omitted, then `node-service-plugin` fails with a hard error
+- Although `@rushstack/heft-lint-plugin` and `@rushstack/heft-typescript-plugin` have been extracted into separate NPM packages, they must be invoked in the same phase, due to their optimized communication using a [plugin accessor](/blog/2023/06/15/heft-whats-new/#cross-plugin-interaction).

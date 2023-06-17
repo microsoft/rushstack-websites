@@ -211,7 +211,7 @@ Additionally, Rushstack-provided rigs have been updated to be compatible with th
 
 ### Lifecycle plugins
 
-Heft lifecycle plugins provide the implementation for certain lifecycle-related hooks. These plugins will be used across all Heft phases, and as such should be rarely used outside of a few specific cases (such as for metrics reporting). Heft lifecycle plugins provide an `apply` method, and here plugins can hook into the following Tapable hooks:
+Heft lifecycle plugins provide the implementation for certain lifecycle-related hooks. These plugins will be used across all Heft phases, and as such should be rarely used outside of a few specific cases (such as for metrics reporting). Heft lifecycle plugins provide an `apply()` method, and here plugins can hook into the following Tapable hooks:
 
 - `toolStart` - Used to provide plugin-related functionality at the start of Heft execution
 - `toolFinish` - Used to provide plugin-related functionality at the end of Heft execution, after all tasks are finished
@@ -219,7 +219,7 @@ Heft lifecycle plugins provide the implementation for certain lifecycle-related 
 
 ### Task plugins
 
-Heft task plugins provide the implementation for Heft tasks. Heft plugins provide an `apply` method, and here plugins can hook into the following Tapable hooks:
+Heft task plugins provide the implementation for Heft tasks. Heft plugins provide an `apply()` method, and here plugins can hook into the following Tapable hooks:
 
 - `registerFileOperations` - Invoked exactly once before the first time a plugin runs. Allows a plugin to register copy or delete operations using the same options as the `copyFiles` and `deleteFiles` Heft events (this hook is how those events are implemented).
 - `run` - Used to provide plugin-related task functionality
@@ -277,7 +277,9 @@ The following is an example **heft-plugin.json** file defining a lifecycle plugi
 
 ### Cross-plugin interaction
 
-Heft plugins can use the `requestAccessToPluginByName` API to access the requested plugin accessors. Accessors are objects provided by plugins for external use and are the ideal place to share plugin-specific information or hooks used to provide additional plugin functionality.
+Sometimes plugins can benefit by communicating with each other. For example, `@rushstack/heft-lint-plugin` and `@rushstack/heft-typescript-plugin` share a single TypeScript `ts.Program` object, which significantly improves build time by avoiding the need to compute the compiler's semantic analysis two times. This optimization brings a constraint that the tasks must share the same Heft phase in your **heft.json** configuration.
+
+How does this work? Heft plugins can use the `requestAccessToPluginByName()` API to access the requested **plugin accessors**. Accessors are objects provided by plugins for external use and are the ideal place to share plugin-specific information or hooks used to provide additional plugin functionality.
 
 Access requests are fulfilled at the beginning of phase execution, prior to `clean` hook execution. If the requested plugin does not provide an accessor, an error will be thrown noting the plugin with the missing accessor. However, if the plugin requested is not present at all, the access request will silently fail. This is done to allow for non-required integrations with external plugins. For this reason, it is important to implement cross-plugin interaction in such a way as to expect this case and to handle it gracefully, or to throw a helpful error.
 
