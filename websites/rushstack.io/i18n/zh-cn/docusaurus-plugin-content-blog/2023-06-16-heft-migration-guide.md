@@ -1,5 +1,5 @@
 ---
-title: Heft 0.51 Migration Guide
+title: Heft 0.51迁移指南
 authors:
   - D4N14L
   - octogonz
@@ -8,42 +8,42 @@ draft: false
 hide_table_of_contents: false
 ---
 
-The Heft **0.51.0** release introduces a "multi-phase" feature that brings some significant architectural changes. If you've been using an older version, upgrading will require making some changes to your **Heft config files** and also any **custom plugins** that you may have authored. In this post, we'll summarized what changed and how to migrate your projects. This is probably the last major breaking change before the 1.0.0 release of Heft.
+Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶段"特性。如果你一直在使用较旧的版本，那么升级将需要对你的**Heft 配置文件**以及可能编写的**自定义插件**进行一些更改。在这篇文章中，我们将总结发生了哪些更改，以及如何迁移你的项目。这可能是在 Heft 的 1.0.0 版本发布之前的最后一次重大破坏性更改。
 
 <!--truncate-->
 
-> For a deeper dive into the multi-phase design and its underlying motivation, please see our other post [What's New in Heft 0.51](/blog/2023/06/15/heft-whats-new/).
+> 想要更深入地了解多阶段设计及其背后的动机，请参阅我们的另一篇文章[Heft 0.51 中的新内容](/blog/2023/06/15/heft-whats-new/)。
 
-## Version timeline
+## 版本时间线
 
-Although most of the breaking changes are in Heft **0.51.0**, other significant changes were made in several subsequent versions:
+虽然大部分的重大更改都在 Heft **0.51.0** 中，但在后续的几个版本中也进行了一些重要的更改：
 
-- Heft **0.51.0**: The big architecture change for multi-phase support, with breaking changes for config file schemas and plugin APIs
-- Heft **0.52.0**: Restored support for the `heft start` alias (which had been removed in 0.51.0); added the ability to define custom aliases; `@rushstack/heft-node-rig` now launches its dev server using the same `heft start` alias as `@rushstack/heft-web-rig`
-- Heft **0.53.0**: Removed the `taskEvents` config setting; built-in tasks like `copy-files-plugin` and `node-service-plugin` now use identical configuration as third-party plugins (simply specifying `@rushstack/heft` as their plugin package name)
-- Heft **0.54.0**: Restored support for short parameter names such as `-u` in `heft test -u` (which had been removed in 0.51.0)
-- Heft **0.55.0**: Removed `cacheFolderPath` from plugin API's session object, since the `.cache` folder is no longer used
+- Heft **0.51.0**: 为支持多阶段功能做出的大规模架构变更，包括配置文件架构和插件 API 的破坏性更改
+- Heft **0.52.0**: 恢复对 `heft start` 别名的支持（该别名在 0.51.0 版本中被移除）；增加了定义自定义别名的能力；`@rushstack/heft-node-rig` 现在使用与 `@rushstack/heft-web-rig` 相同的 `heft start` 别名启动其开发服务器
+- Heft **0.53.0**: 移除了 `taskEvents` 配置设置；像 `copy-files-plugin` 和 `node-service-plugin` 这样的内建任务现在使用与第三方插件相同的配置（简单地指定 `@rushstack/heft` 为他们的插件包名称）
+- Heft **0.54.0**: 恢复了对 `heft test -u` 中 `-u` 等短参数名称的支持（该支持在 0.51.0 版本中被移除）
+- Heft **0.55.0**: 从插件 API 的会话对象中移除了 `cacheFolderPath`，因为 `.cache` 文件夹不再被使用
 
-To simplify these migration notes, in this article we'll assume you're upgrading to **0.55.0 or newer**, and that you're coming from **0.50.x or older**.
+为了简化这些迁移说明，在本文中我们将假设你正在升级到 **0.55.0 或更新的版本**，且你的当前版本是 **0.50.x 或更旧的版本**。
 
-## Migrating heft.json files
+## 迁移 heft.json 文件
 
-### JSON Schema URL changes
+### JSON Schema URL 的更改
 
-In order to have correct VS Code IntelliSense when editing config files, update the `"$schema"` field in each Heft config file. Simply replace `json-schemas/heft/` with `json-schemas/heft/v0`.
+为了在编辑配置文件时能得到正确的 VS Code 智能提示，需要更新每个 Heft 配置文件中的 `"$schema"` 字段。只需将 `json-schemas/heft/` 替换为 `json-schemas/heft/v0` 即可。
 
-For example:
+例如：
 
-- Old: `"$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json"`
-- New: `"$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json"`
+- 旧的：`"$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json"`
+- 新的：`"$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json"`
 
-The full list of JSON schema names can be found [in this GitHub folder](https://github.com/microsoft/json-schemas/tree/main/heft/v0). These names are the last part of the URL shown above.
+完整的 JSON schema 名称列表可以在[此 GitHub 文件夹](https://github.com/microsoft/json-schemas/tree/main/heft/v0)中找到。这些名称是上面显示的 URL 的最后一部分。
 
-### Plugins must be explicitly loaded
+### 插件必须显式加载
 
-In the old design, a number of plugins were built-in to `@rushstack/heft` and did not need to be explicitly loaded using **heft.json** settings. If their associated config file was not found, then their task would be silently skipped.
+在旧的设计中，许多插件被内置于 `@rushstack/heft` 中，不需要使用 **heft.json** 设置显式加载。如果找不到它们相关的配置文件，那么它们的任务就会被默默地跳过。
 
-**OLD:** Plugins that were implicitly loaded:
+**旧的：** 隐式加载的插件：
 
 - heft-typescript-plugin
 - copy-static-assets-plugin
@@ -54,20 +54,20 @@ In the old design, a number of plugins were built-in to `@rushstack/heft` and di
 - project-validator-plugin
 - node-service-plugin
 
-**NEW:** After migrating, every plugin must be explicitly loaded via the **heft.json** config file. Typically this is inherited from your rig. This new model eliminates magic and mysteries, since the full set of plugins and their dependencies is now represented in the config file.
+**新的：** 迁移后，每个插件必须通过 **heft.json** 配置文件显式加载。通常这是从你的 rig 继承过来的。这种新模型消除了神秘和不确定性，因为插件及其依赖的完整集合现在在配置文件中表示。
 
-If you are using our `@rushstack/heft-node-rig` and `@rushstack/heft-web-rig`, your project should only need minor changes, since the updated rigs now explicitly load all these plugins. If you created a custom rig, the migration work will be more involved, but you can copy from our examples:
+如果你正在使用我们的 `@rushstack/heft-node-rig` 和 `@rushstack/heft-web-rig`，你的项目应该只需要做少量的更改，因为更新后的 rigs 现在显式加载所有这些插件。如果你创建了一个自定义的 rig，迁移工作将会更复杂，但你可以从我们的例子中复制：
 
 - [heft-node-rig/profiles/default/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-node-rig/profiles/default/config/heft.json)
 - [heft-web-rig/profiles/app/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-web-rig/profiles/app/config/heft.json)
 
-### Migrating package.json dependencies
+### 迁移 package.json 依赖
 
-Many of these plugins have been extracted into their own NPM packages. This reduces the startup time and installation footprint for projects that don't use certain plugins.
+许多插件已经被提取到它们自己的 NPM 包中。这减少了对某些插件不使用的项目的启动时间和安装占用。
 
-Here's the current inventory as of this writing:
+以下是写作时的当前库存：
 
-- [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft): Its [heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) defines multiple plugins copy-files-plugin, delete-files-plugin, node-service-plugin, run-script-plugin
+- [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft)：其[heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json)定义了多个插件 copy-files-plugin、delete-files-plugin、node-service-plugin、run-script-plugin
 - [@rushstack/heft-api-extractor-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-api-extractor-plugin)
 - [@rushstack/heft-dev-cert-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-dev-cert-plugin)
 - [@rushstack/heft-jest-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-jest-plugin)
@@ -79,21 +79,21 @@ Here's the current inventory as of this writing:
 - [@rushstack/heft-webpack4-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-webpack4-plugin)
 - [@rushstack/heft-webpack5-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-webpack5-plugin)
 
-### Migrating a standalone heft.json
+### 迁移独立的 heft.json
 
-The old **heft.json** distinguished "event actions" (i.e. built-in tasks) versus "heftPlugins" (i.e. tasks from plugin packages).
+旧的 **heft.json** 区分了"事件动作"（即内置任务）和"heftPlugins"（即来自插件包的任务）。
 
-**OLD:** **heft.json** excerpt from `heft-node-rig`
+**旧的：** `heft-node-rig` 中的 **heft.json** 摘录
 
 ```ts
-// ⚠️ OLD FORMAT EXAMPLE -- DO NOT USE! ⚠️
+// ⚠️ 旧格式示例 -- 请勿使用！⚠️
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
 
-  // "deleteGlobs" is specified to run with the "clean" event
+  // "deleteGlobs" 指定在 "clean" 事件下运行
   "eventActions": [
     {
-      // 📌 [1] old way of cleaning
+      // 📌 [1] 旧的清理方式
       "actionKind": "deleteGlobs",
       "heftEvent": "clean",
       "actionId": "defaultClean",
@@ -101,32 +101,32 @@ The old **heft.json** distinguished "event actions" (i.e. built-in tasks) versus
     }
   ],
 
-  // the Jest plugin is loaded using the "heftPlugins" section
-  // and its event sequence was defined using program logic
+  // Jest 插件使用 "heftPlugins" 部分加载
+  // 并且它的事件序列是使用程序逻辑定义的
   "heftPlugins": [
-    // 📌 [2] old way of loading a plugin
+    // 📌 [2] 旧的加载插件方式
     { "plugin": "@rushstack/heft-jest-plugin" }
   ]
 }
 ```
 
-**NEW:** **heft.json** excerpt from `heft-node-rig`
+**新的：** `heft-node-rig` 中的 **heft.json** 摘录
 
 ```ts
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
   "phasesByName": {
-    // ("build" is a user-defined name, not a schema field)
+    // ("build" 是用户定义的名称，不是模式字段)
     "build": {
-      // 📌 [1] new way of cleaning
+      // 📌 [1] 新的清理方式
       "cleanFiles": [
         { "sourcePath": "dist" },
         { "sourcePath": "lib" },
         { "sourcePath": "lib-commonjs" }
       ],
       "tasksByName": {
-        // ("typescript" is a user-defined name, not a schema field)
+        // ("typescript" 是用户定义的名称，不是模式字段)
         "typescript": {
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-typescript-plugin"
@@ -147,7 +147,7 @@ The old **heft.json** distinguished "event actions" (i.e. built-in tasks) versus
         "node-service": {
           "taskDependencies": ["typescript"],
           "taskPlugin": {
-            // This built-in plugin specifies "@rushstack/heft" as its package name
+            // 这个内置插件指定 "@rushstack/heft" 作为它的包名称
             "pluginPackage": "@rushstack/heft",
             "pluginName": "node-service-plugin"
           }
@@ -155,13 +155,13 @@ The old **heft.json** distinguished "event actions" (i.e. built-in tasks) versus
       }
     },
 
-    // ("test" is a user-defined name, not a schema field)
+    // ("test" 是用户定义的名称，不是模式字段)
     "test": {
       "phaseDependencies": ["build"],
       "tasksByName": {
-        // ("jest" is a user-defined name for this task)
+        // ("jest" 是用户定义的任务名称)
         "jest": {
-          // 📌 [2] new way of loading a plugin
+          // 📌 [2] 新的加载插件方式
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-jest-plugin"
           }
@@ -172,22 +172,22 @@ The old **heft.json** distinguished "event actions" (i.e. built-in tasks) versus
 }
 ```
 
-Looking at the above example, the major changes are:
+观察上面的示例，主要的更改有：
 
-- every task must be explicitly loaded from a `pluginPackage`, so the rig's **heft.json** is now more verbose (but more understandable!)
-- built-in tasks (e.g. `node-service`) have identical specification as external plugins
-- the old `"heftEvent"` lifecycle has been replaced by `phaseDependencies` and `taskDependencies` whose dependency graph determines the sequencing of tasks
+- 每个任务必须从 `pluginPackage` 中显式加载，因此 rig 的 **heft.json** 现在更冗长（但更易理解！）
+- 内置任务（例如 `node-service`）与外部插件具有相同的规范
+- 旧的 `"heftEvent"` 生命周期已被 `phaseDependencies` 和 `taskDependencies` 取代，其依赖图确定了任务的顺序
 
-The complete config file can be found here: [heft-node-rig/profiles/default/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-node-rig/profiles/default/config/heft.json)
+完整的配置文件可以在这里找到：[heft-node-rig/profiles/default/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-node-rig/profiles/default/config/heft.json)
 
-### Migrating a rigged heft.json
+### 迁移已配置的 heft.json
 
-Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) project, whose [heft.json](https://github.com/microsoft/tsdoc/blob/main/playground/config/heft.json) inherits from our `heft-web-rig`:
+这是来自[TSDoc Playground](https://tsdoc.org/play/)项目的另一个示例，它的 [heft.json](https://github.com/microsoft/tsdoc/blob/main/playground/config/heft.json) 继承自我们的 `heft-web-rig`：
 
-**OLD:** **heft.json** excerpt from `playground/config/heft.json`
+**旧的：** `playground/config/heft.json` 中的 **heft.json** 摘录
 
 ```ts
-// ⚠️ OLD FORMAT EXAMPLE -- DO NOT USE! ⚠️
+// ⚠️ 旧格式示例 -- 请勿使用！⚠️
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
 
@@ -197,12 +197,12 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
     {
       "actionId": "copyLicenseToDistFolder",
       "actionKind": "copyFiles",
-      // 📌 [3] old way to do a post-compile action
+      // 📌 [3] 旧的编译后操作方式
       "heftEvent": "compile",
       "copyOperations": [
         {
           "destinationFolders": ["./dist"],
-          // 📌 [4] old way of specifying a source folder
+          // 📌 [4] 旧的指定源文件夹方式
           "sourceFolder": "..",
           "includeGlobs": ["LICENSE"]
         }
@@ -212,7 +212,7 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
 }
 ```
 
-**NEW:** **heft.json** excerpt from `playground/config/heft.json`
+**新的：** `playground/config/heft.json` 中的 **heft.json** 摘录
 
 ```ts
 {
@@ -221,14 +221,14 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
   "extends": "@rushstack/heft-web-rig/profiles/library/config/heft.json",
 
   "phasesByName": {
-    // ("build" is a user-defined name, not a schema field)
+    // ("build" 是用户定义的名称，不是模式字段)
     "build": {
       "tasksByName": {
-        // ("post-compile-copy" is a user-defined name, not a schema field)
+        // ("post-compile-copy" 是用户定义的名称，不是模式字段)
         "post-compile-copy": {
-          // 📌 [3] new way to do a post-compile action, by depending on the relevant task(s)
+          // 📌 [3] 新的编译后操作方式，通过依赖于相关任务来实现
 
-          // The "post-compile-copy" task should not run until after "typescript" completes
+          // 在 "typescript" 完成后才应运行 "post-compile-copy" 任务
           "taskDependencies": ["typescript"],
 
           "taskPlugin": {
@@ -237,7 +237,7 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
             "options": {
               "copyOperations": [
                 {
-                  // 📌 [4] new way of specifying a source folder (or file path)
+                  // 📌 [4] 新的指定源文件夹（或文件路径）的方式
                   "sourcePath": "..",
                   "destinationFolders": ["./dist"],
                   "includeGlobs": ["LICENSE"]
@@ -252,25 +252,22 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
 }
 ```
 
-Observations:
+观察：
 
-- The changes here are minimal, since the rig provides most of the build definition
-- The latest `heft-web-rig` uses `heft-webpack5-plugin`, so we had to upgrade from Webpack 4 -> 5 as part of this conversion
-- The `"heftEvent": "compile"` event no longer exists; instead it must be represented via an equivalent `"taskDependencies"` entry, which references the rig's `"typescript"` task definition
+- 这里的更改很小，因为 rig 提供了大部分的构建定义
+- 最新的 `heft-web-rig` 使用了 `heft-webpack5-plugin`，因此我们需要在转换过程中从 Webpack 4 升级到 5
+- `"heftEvent": "compile"` 事件不再存在；相反，它必须通过等效的 `"taskDependencies"` 条目来表示，该条目引用了 rig 的 `"typescript"` 任务定义
 
-### Migrating a "pre-compile" action
+### 迁移"pre-compile"操作
 
-In the above example, we migrated our config file by replacing `"heftEvent": "compile"`
-with `"taskDependencies": ["typescript"]`, which accomplishes the same thing by expressing that the
-action cannot be performed until after the `"typescript"` task has completed. But the `"taskDependencies"`
-is a unidirectional relationship. In this new model, how can we represent an event such as `pre-compile`?
+在上面的示例中，我们通过将 `"heftEvent": "compile"` 替换为 `"taskDependencies": ["typescript"]` 进行了配置文件的迁移，通过表达在 `"typescript"` 任务完成之后才能执行该操作。但是 `"taskDependencies"` 是单向关系。在这种新模型中，我们如何表示诸如 `pre-compile` 这样的事件呢？
 
-Consider this example:
+考虑以下示例：
 
-**OLD:** **heft.json** excerpt
+**旧的：** **heft.json** 摘录
 
 ```ts
-// ⚠️ OLD FORMAT EXAMPLE -- DO NOT USE! ⚠️
+// ⚠️ 旧格式示例 -- 请勿使用！⚠️
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
 
@@ -280,7 +277,7 @@ Consider this example:
     {
       "actionKind": "copyFiles",
       "actionId": "copyAssets",
-      // 📌 [5] old way to do a "post-compile" action
+      // 📌 [5] 旧的执行"pre-compile"操作的方式
       "heftEvent": "pre-compile",
       "copyOperations": [
         {
@@ -294,7 +291,7 @@ Consider this example:
 }
 ```
 
-**NEW:** **heft.json** excerpt from `playground/config/heft.json`
+**新的：** `playground/config/heft.json` 中的 **heft.json** 摘录
 
 ```ts
 {
@@ -303,10 +300,10 @@ Consider this example:
   "extends": "@rushstack/heft-web-rig/profiles/app/config/heft.json",
 
   "phasesByName": {
-    // ("build" is a user-defined name, not a schema field)
+    // ("build" 是用户定义的名称，不是模式字段)
     "build": {
       "tasksByName": {
-        // ("pre-compile-copy" is a user-defined name, not a schema field)
+        // ("pre-compile-copy" 是用户定义的名称，不是模式字段)
         "pre-compile-copy": {
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft",
@@ -323,10 +320,10 @@ Consider this example:
           }
         },
 
-        // ("typescript" is a user-defined name, that is originally defined in the rig)
+        // ("typescript" 是用户定义的名称，最初在 rig 中定义)
         "typescript": {
-          // 📌 [5] new way to do a "post-compile" action
-          // The "typescript" task should not run until after "pre-compile-copy" completes.
+          // 📌 [5] 新的执行"pre-compile"操作的方式
+          // "typescript" 任务在 "pre-compile-copy" 完成之后才能运行
           "taskDependencies": ["pre-compile-copy"]
         }
       }
@@ -335,9 +332,9 @@ Consider this example:
 }
 ```
 
-For reference, `@rushstack/heft-web-rig` defines the `"typescript"` task as follows:
+供参考，`@rushstack/heft-web-rig` 如下定义了 `"typescript"` 任务：
 
-[heft-web-rig/profiles/app/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-web-rig/profiles/app/config/heft.json) excerpt
+[heft-web-rig/profiles/app/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-web-rig/profiles/app/config/heft.json) 摘录
 
 ```js
   . . .
@@ -350,42 +347,37 @@ For reference, `@rushstack/heft-web-rig` defines the `"typescript"` task as foll
   . . .
 ```
 
-Observations:
+观察：
 
-- Recall that we implemented `"post-compile-copy"` by specifying `taskDependencies` for our own task (`"taskDependencies": ["typescript"]`)
-- By contrast, `"pre-compile-copy"` is implemented by amending the `taskDependencies` for the rig's `"typescript"` task
-  (`"taskDependencies": ["pre-compile-copy"]`)
-- The rig already has `"taskDependencies": ["sass"]`. But we do NOT need to specify `"taskDependencies": ["typescript", "sass"]` because by default, Heft's config parser will merge arrays by appending rather than replacing entries
-- This merge behavior is implemented by `@rushstack/heft-config-file` and can be customized using
-  [property inheritance directives](/blog/2023/06/15/heft-whats-new/#heftjson-property-inheritance-directives)
+- 回想一下，我们通过为自己的任务指定 `taskDependencies`（`"taskDependencies": ["typescript"]`）来实现了 `"post-compile-copy"`。
+- 相比之下，我们通过修改 rig 的 `"typescript"` 任务的 `taskDependencies`（`"taskDependencies": ["pre-compile-copy"]`）来实现 `"pre-compile-copy"`。
+- rig 已经有 `"taskDependencies": ["sass"]`。但我们不需要指定 `"taskDependencies": ["typescript", "sass"]`，因为 Heft 的配置解析器默认会通过追加而不是替换的方式合并数组。
+- 这种合并行为由 `@rushstack/heft-config-file` 实现，并且可以使用[属性继承指令](/blog/2023/06/15/heft-whats-new/#heftjson-property-inheritance-directives)进行自定义。
 
-## Migrating command line syntax
+## 迁移命令行语法
 
-The old `--watch` command line parameter has been removed. Instead, watch mode is enabled by appending `-watch`
-to the action name.
+旧的 `--watch` 命令行参数已被移除。现在，可以通过在操作名称后附加 `-watch` 来启用监听模式。
 
-**OLD:**
+**旧的：**
 
 ```shell
 heft build --watch --verbose
 ```
 
-**NEW:**
+**新的：**
 
 ```
 heft build-watch --verbose
 ```
 
-## Command aliases
+## 命令别名
 
-In the old design, `heft start` was a special action for launching dev servers. In the new design, it is
-a command alias defined in **heft.json**. The new aliasing system allows you to define your own custom aliases
-to shorten common commands.
+在旧的设计中，`heft start` 是一个特殊操作，用于启动开发服务器。在新的设计中，它是在 **heft.json** 中定义的命令别名。新的别名系统允许您定义自己的自定义别名，以缩短常用命令的长度。
 
-[heft-web-rig/profiles/app/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-web-rig/profiles/app/config/heft.json) excerpt
+[heft-web-rig/profiles/app/config/heft.json](https://github.com/microsoft/rushstack/blob/main/rigs/heft-web-rig/profiles/app/config/heft.json) 摘录
 
 ```js
-  // Define "heft start" to be an alias for "heft build-watch --serve".
+  // 将 "heft start" 定义为 "heft build-watch --serve" 的别名。
   "aliasesByName": {
     "start": {
       "actionName": "build-watch",
@@ -394,27 +386,27 @@ to shorten common commands.
   },
 ```
 
-The `--serve` CLI parameter is our standard convention for launching a `localhost` dev server. It is supported by both `heft-webpack5-plugin` and the built-in `node-service-plugin`.
+The `--serve` CLI 参数是我们启动`localhost`开发服务器的标准约定。它被`heft-webpack5-plugin`和内置的`node-service-plugin`所支持。
 
-## Migrating custom plugins
+## 迁移自定义插件
 
-In updating to the new version of Heft, plugins will also need to be updated for compatibility. Some of the more notable API changes include:
+在更新到新版本的 Heft 时，插件也需要进行兼容性更新。一些较为显著的 API 更改包括：
 
-- The **heft-plugin.json** manifest file must accompany any plugin package. If no **heft-plugin.json** file is found, Heft will report an error.
-- Plugin classes must have parameterless constructors, and must be the default export of the file pointed to by the `entryPoint` property in **heft-plugin.json**
-- Schema files for options provided in **heft.json** can now be specified using the `optionsSchema` property in **heft-plugin.json** and they will be validated by Heft
-- Parameters are now defined in **heft-plugin.json** and are consumed in the plugin via the `IHeftTaskSession.parameters` or `IHeftLifecycleSession.parameters` property.
-  _NOTE: Other than the default Heft-included parameters, only parameters defined by the calling plugin are accessible_
-- Plugins can no longer define their own actions. If a plugin requires its own action, a dedicated phase should be added to the consumers **heft.json**
-- The `runScript` Heft event has been modified to only accept a `runAsync` method, and the properties have been updated to reflect what is available to normal Heft task plugins
-- Path-related variables have been renamed to clarify they are paths (ex. `HeftConfiguration.buildFolder` is now `HeftConfiguration.buildFolderPath`)
-- The `runIncremental` hook can now be utilized to ensure that watch mode rebuilds occur in proper dependency order
-- The `clean` hook was removed in favor of the `cleanFiles` option in **heft.json** in order to make it obvious what files are being cleaned and when
-- As a consequence, plugins can no longer programmatically compute folders to be cleaned by the `heft clean` command; its behavior is predetermined by static config files, which makes the overall system simpler and more predictable.
+- **heft-plugin.json**清单文件必须随插件包一起提供。如果找不到**heft-plugin.json**文件，Heft 将报告错误。
+- 插件类必须具有无参数的构造函数，并且必须是**heft-plugin.json**中的`entryPoint`属性指向的文件的默认导出。
+- 现在可以使用**heft-plugin.json**中的`optionsSchema`属性指定在**heft.json**中提供的选项的模式文件，并且 Heft 将对其进行验证。
+- 参数现在在**heft-plugin.json**中定义，并且通过插件的`IHeftTaskSession.parameters`或`IHeftLifecycleSession.parameters`属性来使用。
+  _注意：除了默认的 Heft 参数外，只有调用插件定义的参数是可访问的_
+- 插件不再能够定义自己的操作。如果插件需要自己的操作，应将专用阶段添加到消费者的**heft.json**中。
+- `runScript` Heft 事件已被修改，仅接受`runAsync`方法，并且属性已更新以反映常规 Heft 任务插件可用的内容。
+- 与路径相关的变量已重命名以明确表示它们是路径（例如，`HeftConfiguration.buildFolder`现在是`HeftConfiguration.buildFolderPath`）
+- `runIncremental`钩子现在可以用于确保按正确的依赖顺序进行监视模式的重建
+- `clean`钩子已被删除，以便使用**heft.json**中的`cleanFiles`选项清除文件，以便明确指定正在清除的文件和时间
+- 作为后果，插件不再能够以编程方式计算`heft clean`命令要清除的文件夹；其行为由静态配置文件预先确定，从而使整个系统更简单和更可预测。
 
-## Miscellaneous migration notes
+## 其他迁移说明
 
-- In **jest.config.json**, the `folderNameForTests` and `extensionForTests` properties have been removed and should instead be addressed via the `testMatch` property
-- The `node-service-plugin` built-in plugin now supports the `--serve` parameter, to be consistent with the `@rushstack/heft-webpack5-plugin` dev server.
-- If `--serve` is specified and `config/node-service.json` is omitted, then `node-service-plugin` fails with a hard error
-- Although `@rushstack/heft-lint-plugin` and `@rushstack/heft-typescript-plugin` have been extracted into separate NPM packages, they must be invoked in the same phase, due to their optimized communication using a [plugin accessor](/blog/2023/06/15/heft-whats-new/#cross-plugin-interaction).
+- 在**jest.config.json**中，已删除`folderNameForTests`和`extensionForTests`属性，应改用`testMatch`属性处理。
+- 内置的`node-service-plugin`现在支持`--serve`参数，以保持与`@rushstack/heft-webpack5-plugin`开发服务器的一致性。
+- 如果指定了`--serve`并且省略了`config/node-service.json`，那么`node-service-plugin`将以硬错误失败。
+- 尽管`@rushstack/heft-lint-plugin`和`@rushstack/heft-typescript-plugin`已分别提取到单独的 NPM 包中，但它们必须

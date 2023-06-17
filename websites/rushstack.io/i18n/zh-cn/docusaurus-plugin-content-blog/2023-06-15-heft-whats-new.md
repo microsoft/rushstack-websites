@@ -1,5 +1,5 @@
 ---
-title: What's New in Heft 0.51
+title: Heft 0.51中的新功能
 authors:
   - D4N14L
 tags: [heft]
@@ -7,82 +7,79 @@ draft: false
 hide_table_of_contents: false
 ---
 
-"Multi-phase" Heft is a complete re-write of the `@rushstack/heft` project with the goal of integrating more closely with [Rush phased builds](@rushjs/pages/maintainer/phased_builds/). In addition, this update brings greater customizability and improved parallel process handling to Heft. This post explains the motivation and architecture behind these improvements.
+"多阶段" Heft 是`@rushstack/heft`项目的全新重写，目标是与[Rush 分阶段构建](@rushjs/pages/maintainer/phased_builds/)更紧密地集成。此外，这次更新为 Heft 带来了更大的可定制性和改进的并行进程处理能力。这篇文章解释了这些改进背后的动机和架构。
 
 <!--truncate-->
 
-> For upgrade instructions, refer to the [Heft 0.51 Migration Guide](/blog/2023/06/16/heft-migration-guide) post.
+> 对于升级指南，请参阅[Heft 0.51 迁移指南](/blog/2023/06/16/heft-migration-guide)文章。
 
-Some key areas that were improved with the updated version of Heft include:
+更新版本的 Heft 改进了一些关键领域，包括：
 
-- Developer-defined order of execution for Heft plugins and Heft events
-- Partial execution of Heft actions via scoping parameters like `--to` or `--only`
-- A simplified plugin API for developers making Heft plugins
-- Explicit definition of all Heft plugins via **heft-plugin.json**
-- Native support for defining multiple plugins within a single plugin package
-- Improved handling of plugin parameters
-- Native support for incremental watch-mode in Heft actions
-- Reduced overhead and performance improvements
-- Much more!
+- 开发者定义的 Heft 插件和 Heft 事件的执行顺序
+- 通过`--to`或`--only`等范围参数对 Heft 操作的部分执行
+- 简化的插件 API，方便开发者制作 Heft 插件
+- 通过**heft-plugin.json**明确定义所有 Heft 插件
+- 为在一个插件包内定义多个插件提供了原生支持
+- 改进了插件参数的处理
+- 在 Heft 操作中提供了对增量观察模式的原生支持
+- 降低了开销并改进了性能
+- 还有更多！
 
-## Heft tasks
+## Heft 任务
 
-Heft tasks are the smallest unit of work specified in **heft.json**. Heft tasks may take dependencies on other tasks within the same phase, and all task dependencies must complete execution before dependent tasks can execute.
+Heft 任务是在**heft.json**中指定的最小工作单元。Heft 任务可能依赖于同一阶段内的其他任务，所有任务依赖必须在依赖任务才能执行之前完成执行。
 
-In past releases, we distinguished built-in tasks (`copy-files-plugin`, `node-service-plugin`, etc)
-versus third-party tasks loaded from plugin packages. As of Heft 0.53.0 both kinds of tasks
-are now declared identically. Built-in plugins simply specify `@rushstack/heft` as for
-their plugin `packageName`.
+在过去的版本中，我们区分了内置任务（`copy-files-plugin`，`node-service-plugin`等）与从插件包中加载的第三方任务。从 Heft 0.53.0 开始，两种任务现在都以相同的方式声明。内置插件只需为他们的插件`packageName`指定`@rushstack/heft`即可。
 
-## Heft phases
+## Heft 阶段
 
-Heft phases define a collection of tasks that will run when executing that phase. Phases act as a logical collection of tasks that would reasonably (but not necessarily) map to a [Rush phase](@rushjs/pages/maintainer/phased_builds/). Heft phases may take dependencies on other phases, and when executing multiple phases, all selected phases must complete execution before dependent phases can execute.
+Heft 阶段定义了在执行该阶段时将运行的一组任务。阶段充当一组逻辑任务的集合，这些任务在合理的情况下（但不一定）映射到[Rush 阶段](@rushjs/pages/maintainer/phased_builds/)。Heft 阶段可能依赖于其他阶段，当执行多个阶段时，所有选定的阶段必须完成执行，才能执行依赖的阶段。
 
-The **heft.json** file is where phases and tasks are defined for a given project or rig. Since this file contains the relationships between the phases and tasks, it defines the order of operations for the execution of a Heft action.
+**heft.json**文件是定义给定项目或装备的阶段和任务的地方。由于此文件包含阶段和任务之间的关系，因此它定义了执行 Heft 操作的操作顺序。
 
-## Heft actions
+## Heft 操作
 
-Using similar expansion logic to Rush, execution of a selection of Heft phases can be done through the use of the `heft run` action. This action executes a set of selected phases in order of phase dependency. If the selected phases are not dependent upon each other, they will be executed in parallel. Selection parameters include:
+使用与 Rush 类似的扩展逻辑，可以通过使用`heft run`操作来执行一组 Heft 阶段。此操作按阶段依赖关系的顺序执行一组选定的阶段。如果选定的阶段互不依赖，那么将并行执行它们。选择参数包括：
 
-- `--only` - Execute the specified phase
-- `--to` - Execute the specified phase and all its dependencies
+- `--only` - 执行指定的阶段
+- `--to` - 执行指定的阶段及其所有依赖项
 
-Additionally, task- and phase-specific parameters may be provided to the `heft run` action by appending `-- <parameters>` to the command. For example, `heft run --only build -- --clean` will run only the `build` phase and will run a clean before executing the phase.
+此外，还可以通过在命令后附加`-- <参数>`来为`heft run`操作提供任务和阶段特定的参数。例如，`heft run --only build -- --clean`将仅运行`build`阶段，并在执行阶段之前进行清理。
 
-In addition, Heft will generate actions for each phase specified in the **heft.json** configuration. These actions are executed by running `heft <phaseName>` and run Heft to the specified phase, including all phase dependencies. As such, these inferred Heft actions are equivalent to running `heft run --to <phaseName>`, and are intended as a CLI shorthand.
+此外，Heft 将为在**heft.json**配置中指定的每个阶段生成操作。通过运行`heft <阶段名称>`执行这些操作，并运行 Heft 至指定的阶段，包括所有阶段依赖项。因此，这些推断的 Heft 操作相当于运行`heft run --to <阶段名称>`，并且旨在作为 CLI 的简写。
 
-## Watch mode
+## 观察模式
 
-Watch mode is now a first-class feature in Heft. Watch mode actions are created for all Heft actions. For example, to run `build` and `test` phases in watch mode, either of the commands `heft test-watch` or `heft run-watch --to test`. When running in watch mode, Heft prefers the `runIncremental` hook to the `run` hook (see [Heft Task Plugins](#heft-task-plugins)).
+现在，观察模式已成为 Heft 中的一项一等公民特性。所有的 Heft 操作都创建了观察模式操作。例如，要在观察模式下运行`build`和`test`阶段，可以使用`heft test-watch`或`heft run-watch --to test`中的任一命令。在观察模式下运行时，Heft 更喜欢`runIncremental`钩子而非`run`钩子（参见[Heft 任务插件](#heft任务插件)）。
 
-## heft.json structure
+## heft.json 结构
 
-All phases are defined within the top-level `phasesByName` property. Each phase may specify `phaseDependencies` to define the order of phase execution when running a selection of Heft phases. Phases may also provide the `cleanFiles` option, which accepts an array of deletion operations to perform when running with the `--clean` flag.
+所有阶段都在顶级`phasesByName`属性内定义。每个阶段可能会指定`phaseDependencies`，以定义在运行一组 Heft 阶段时的阶段执行顺序。阶段也可以提供`cleanFiles`选项，该选项接受一个删除操作数组，在使用`--clean`标志运行时执行。
 
-Within the phase specification, `tasksByName` defines all tasks that run while executing a phase. Each task may specify `taskDependencies` to define the order of task execution. All tasks defined in `taskDependencies` must exist within the same phase. For CLI-availability reasons, phase names, task names, plugin names, and parameter scopes, must be `kebab-cased`.
+在阶段规范中，`tasksByName`定义了在执行阶段时运行的所有任务。每个任务可能会指定`taskDependencies`，以定义任务执行的顺序。在`taskDependencies`中定义的所有任务必须存在于同一阶段内。出于 CLI 可用性的原因，阶段名称、任务名称、插件名称和参数范围，都必须是`kebab-case`格式。
 
-The following is an example "heft.json" file defining both a `build` and a `test` phase:
+以下是一个定义了`build`和`test`阶段的"heft.json"文件示例：
 
-**heft.json** example for defining phases and tasks
+**heft.json**定义阶段和任务的示例
 
 ```js
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
   "extends": "base-project/config/heft.json",
 
-  // "phasesByName" defines all phases, and each phase defines tasks to be run
+  // "phasesByName"定义了所有阶段，每个阶段定义了要运行的任务
   "phasesByName": {
-    // ("build" is a user-defined name, not a schema field)
+    // ("build"是用户定义的名称，不是模式字段)
     "build": {
-      "phaseDescription": "Transpile and run a linter against build output",
+      "phaseDescription": "对构建输出进行转译并运行一个语法检查器",
       "cleanFiles": [
         {
           "sourcePath": "temp-build-output"
         }
       ],
-      // "tasksByName" defines all tasks within a phase
+      // "tasksByName"定义了阶段内的所有任务
       "tasksByName": {
-        // ("typescript" is a user-defined name, not a schema field)
+        // ("typescript"是用户定义的名称，不是模式字段)
         "typescript": {
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-typescript-plugin"
@@ -102,7 +99,7 @@ The following is an example "heft.json" file defining both a `build` and a `test
             "options": {
               "copyOperations": [
                 {
-                  // NOTE: THIS WAS CALLED "sourceFolder" IN PREVIOUS HEFT VERSIONS
+                  // 注意：在之前的HEFT版本中，这被称为"sourceFolder"
                   "sourcePath": "src/assets",
                   "destinationFolders": [ "dist/assets" ]
                 }
@@ -113,12 +110,12 @@ The following is an example "heft.json" file defining both a `build` and a `test
       }
     },
 
-    // ("test" is a user-defined name, not a schema field)
+    // ("test"是用户定义的名称，不是模式字段)
     "test": {
       "phaseDependencies": [ "build" ],
-      "phaseDescription": "Run Jest tests, if provided.",
+      "phaseDescription": "运行Jest测试，如果提供的话。",
       "tasksByName": {
-        // ("jest" is a user-defined name, not a schema field)
+        // ("jest"是用户定义的名称，不是模式字段)
         "jest": {
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-jest-plugin"
@@ -130,9 +127,9 @@ The following is an example "heft.json" file defining both a `build` and a `test
 }
 ```
 
-Lifecycle plugins are specified in the top-level `heftPlugins` array. Plugins can be referenced by providing a package name and a plugin name. Optionally, if a package contains only a single plugin, a plugin can be referenced by providing only the package name and Heft will resolve to the only exported plugin. Lifecycle plugins can also be provided options to modify the default behavior.
+生命周期插件在顶层的`heftPlugins`数组中指定。插件可以通过提供包名和插件名来引用。另外，如果一个包只包含一个插件，插件可以通过仅提供包名来引用，Heft 将解析为唯一导出的插件。生命周期插件也可以提供选项来修改默认行为。
 
-**heft.json** example for loading a lifecycle plugin
+**heft.json**加载生命周期插件的示例
 
 ```js
 {
@@ -152,44 +149,44 @@ Lifecycle plugins are specified in the top-level `heftPlugins` array. Plugins ca
     }
   ]
 
-  // (the "phasesByName" section can also appear here)
+  // (此处也可以出现"phasesByName"部分)
 }
 ```
 
-## heft.json property inheritance directives
+## heft.json 属性继承指令
 
-Previously, common properties between a **heft.json** file its extended base file would merge arrays and overwrite objects. Now, both arrays and objects will merge, allowing for simplified use of the **heft.json** file when customizing extended base configurations.
+以前，**heft.json** 文件与其扩展的基本文件之间的共享属性将合并数组和覆盖对象。现在，数组和对象都将合并，当自定义扩展基本配置时，简化了**heft.json**文件的使用。
 
-Additionally, the config file parsers now supports **property inheritance directives** for customizing how JSON properties get merged when using `"extends"` inheritance. This system is implemented by the [@rushstack/heft-config-file](https://www.npmjs.com/package/@rushstack/heft-config-file) library, and applies to all config files that are loaded using that parser. Overrides are specified by using directives that define inheritance behavior.
+另外，配置文件解析器现在支持**属性继承指令**，用于自定义在使用`"extends"`继承时 JSON 属性如何合并。这个系统由 [@rushstack/heft-config-file](https://www.npmjs.com/package/@rushstack/heft-config-file) 库实现，并适用于所有使用该解析器加载的配置文件。覆盖是通过使用定义继承行为的指令来指定的。
 
-For example, assume that we are extending a file with a previously defined `exampleObject` value that is a keyed object, and a `exampleArray` value that is an array object:
+例如，假设我们正在扩展一个文件，该文件具有预先定义的`exampleObject`值（一个键对象）和`exampleArray`值（一个数组对象）：
 
 ```js
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/example-config-file.schema.json",
   "extends": "base-project/config/example-config-file.json",
 
-  "$exampleObject.inheritanceType": "merge", // valid choices are: "merge", "replace"
+  "$exampleObject.inheritanceType": "merge", // 有效选择为："merge", "replace"
   "exampleObject": {
-    "$exampleObjectMember.inheritanceType": "merge", // valid choices are: "merge", "replace"
+    "$exampleObjectMember.inheritanceType": "merge", // 有效选择为："merge", "replace"
     "exampleObjectMember": { ... },
 
-    "$exampleArrayMember.inheritanceType": "append", // valid choices are: "append", "replace"
+    "$exampleArrayMember.inheritanceType": "append", // 有效选择为："append", "replace"
     "exampleArrayMember": [ ... ]
   },
 
-  "$exampleArray.inheritanceType": "replace", // valid choices are: "append", "replace"
+  "$exampleArray.inheritanceType": "replace", // 有效选择为："append", "replace"
   "exampleArray": [ ... ]
 }
 ```
 
-Once an object is set to a `inheritanceType` of override, all sub-property `inheritanceType` values will be ignored, since the top-most object already overrides all sub-properties.
+一旦对象被设置为覆盖的`inheritanceType`，所有子属性的`inheritanceType`值将被忽略，因为最顶层的对象已经覆盖了所有子属性。
 
-One thing to note is that different `mergeBehavior` verbs are used for the merging of keyed objects and arrays. This is to make it explicit that arrays will be appended as-is, and no additional processing (eg. deduplicating if the array is intended to be a set) is done during merge. If such behavior is required, it can be done on the implementation side. Deduplicating arrays within the `@rushstack/heft-config-file` package doesn't quite make sense, since deduplicating arrays of non-primitive objects is not easily defined.
+需要注意的一点是，合并键对象和数组时使用了不同的`mergeBehavior`动词。这是为了明确表示数组将按原样追加，合并过程中不进行任何额外处理（例如，如果数组应该是一组，那么不进行重复）。如果需要这样的行为，可以在实现端完成。在`@rushstack/heft-config-file`包中对数组进行重复处理没有什么意义，因为对非基元对象的数组进行重复处理并不容易定义。
 
-## Associated NPM packages
+## 关联的 NPM 包
 
-Many tasks that were previously built-in to have Heft have been split out into separate NPM packages. The full list:
+许多以前内置于 Heft 的任务现已被拆分到单独的 NPM 包中。完整列表如下：
 
 - `@rushstack/heft`
 - `@rushstack/heft-typescript-plugin`
@@ -202,36 +199,36 @@ Many tasks that were previously built-in to have Heft have been split out into s
 - `@rushstack/heft-webpack5-plugin`
 - `@rushstack/heft-dev-cert-plugin`
 
-Additionally, Rushstack-provided rigs have been updated to be compatible with the new version of Heft:
+此外，Rushstack 提供的 rigs 已更新以与新版本的 Heft 兼容：
 
 - `@rushstack/heft-node-rig`
 - `@rushstack/heft-web-rig`
 
-## Authoring Heft plugins
+## 编写 Heft 插件
 
-### Lifecycle plugins
+### 生命周期插件
 
-Heft lifecycle plugins provide the implementation for certain lifecycle-related hooks. These plugins will be used across all Heft phases, and as such should be rarely used outside of a few specific cases (such as for metrics reporting). Heft lifecycle plugins provide an `apply()` method, and here plugins can hook into the following Tapable hooks:
+Heft 生命周期插件为某些与生命周期相关的钩子提供实现。这些插件将在所有 Heft 阶段中使用，因此除了少数特定情况（如用于指标报告）之外，应很少在外部使用。Heft 生命周期插件提供一个 `apply()` 方法，插件可以在此处挂载以下 Tapable 钩子：
 
-- `toolStart` - Used to provide plugin-related functionality at the start of Heft execution
-- `toolFinish` - Used to provide plugin-related functionality at the end of Heft execution, after all tasks are finished
-- `recordMetrics` - Used to provide metrics information about the Heft run to the plugin after all tasks are finished
+- `toolStart` - 在 Heft 执行开始时提供与插件相关的功能
+- `toolFinish` - 在所有任务完成后，在 Heft 执行结束时提供与插件相关的功能
+- `recordMetrics` - 在所有任务完成后，向插件提供有关 Heft 运行的指标信息
 
-### Task plugins
+### 任务插件
 
-Heft task plugins provide the implementation for Heft tasks. Heft plugins provide an `apply()` method, and here plugins can hook into the following Tapable hooks:
+Heft 任务插件为 Heft 任务提供实现。Heft 插件提供一个 `apply()` 方法，插件可以在此处挂载以下 Tapable 钩子：
 
-- `registerFileOperations` - Invoked exactly once before the first time a plugin runs. Allows a plugin to register copy or delete operations using the same options as the `copyFiles` and `deleteFiles` Heft events (this hook is how those events are implemented).
-- `run` - Used to provide plugin-related task functionality
-- `runIncremental` - Used to provide plugin-related task functionality when in watch mode. If no `runIncremental` implementation is provided for a task, Heft will fall back to using the `run` hook as usual. The options structure includes two functions used to support watch operations:
-  - `requestRun()` - This function asks the Heft runtime to schedule a new run of the plugin's owning task, potentially cancelling the current build.
-  - `watchGlobAsync(patterns, options)` - This function is provided for convenience for the common case of monitoring a glob for changes. It returns a `Map<string, IWatchedFileState>` that enumerates the list of files (or folders) selected by the glob and whether or not they have changed since the previous invocation. It will automatically invoke the `requestRun()` callback if it detects changes to files or directory listings that might impact the output of the glob.
+- `registerFileOperations` - 在插件首次运行前确切地调用一次。允许插件使用与 `copyFiles` 和 `deleteFiles` Heft 事件相同的选项注册复制或删除操作（这个钩子就是实现这些事件的方式）。
+- `run` - 提供与插件相关的任务功能
+- `runIncremental` - 在观察模式下提供与插件相关的任务功能。如果没有为任务提供 `runIncremental` 实现，Heft 将像往常一样回退到使用 `run` 钩子。选项结构包括两个用于支持观察操作的函数：
+  - `requestRun()` - 这个函数请求 Heft 运行时安排插件所属任务的新运行，可能会取消当前的构建。
+  - `watchGlobAsync(patterns, options)` - 这个函数是为了方便常见的监视 glob 变化的情况而提供的。它返回一个 `Map<string, IWatchedFileState>`，该映射枚举了 glob 选定的文件（或文件夹）列表，以及它们自
 
 ### heft-plugin.json
 
-The **heft-plugin.json** config file is a new, required manifest file that must be present in the package folder of all Heft plugin packages. This file is used for multiple purposes, including the definition of all contained lifecycle or task plugins, the definition of all plugin-specific CLI parameters, and providing an optional schema file to validate plugin options that can be passed via **heft.json**.
+**heft-plugin.json** 配置文件是一个新的，必需的清单文件，所有 Heft 插件包的包文件夹中都必须存在。此文件用于多种用途，包括定义所有包含的生命周期或任务插件，定义所有插件特定的 CLI 参数，并提供一个可选的模式文件，以验证可以通过 **heft.json** 传递的插件选项。
 
-The following is an example **heft-plugin.json** file defining a lifecycle plugin and a task plugin:
+以下是定义生命周期插件和任务插件的示例 **heft-plugin.json** 文件：
 
 ```json
 {
@@ -275,20 +272,20 @@ The following is an example **heft-plugin.json** file defining a lifecycle plugi
 }
 ```
 
-### Cross-plugin interaction
+### 跨插件交互
 
-Sometimes plugins can benefit by communicating with each other. For example, `@rushstack/heft-lint-plugin` and `@rushstack/heft-typescript-plugin` share a single TypeScript `ts.Program` object, which significantly improves build time by avoiding the need to compute the compiler's semantic analysis two times. This optimization brings a constraint that the tasks must share the same Heft phase in your **heft.json** configuration.
+有时插件之间的交流会很有帮助。例如，`@rushstack/heft-lint-plugin` 和 `@rushstack/heft-typescript-plugin` 共享一个 TypeScript 的 `ts.Program` 对象，这极大地提高了构建时间，因为避免了两次计算编译器的语义分析。这种优化带来了一个约束，那就是任务必须在您的 **heft.json** 配置中共享同一个 Heft 阶段。
 
-How does this work? Heft plugins can use the `requestAccessToPluginByName()` API to access the requested **plugin accessors**. Accessors are objects provided by plugins for external use and are the ideal place to share plugin-specific information or hooks used to provide additional plugin functionality.
+这是如何工作的？Heft 插件可以使用 `requestAccessToPluginByName()` API 来访问请求的 **插件访问器**。访问器是插件提供给外部使用的对象，是分享插件特定信息或提供额外插件功能的钩子的理想位置。
 
-Access requests are fulfilled at the beginning of phase execution, prior to `clean` hook execution. If the requested plugin does not provide an accessor, an error will be thrown noting the plugin with the missing accessor. However, if the plugin requested is not present at all, the access request will silently fail. This is done to allow for non-required integrations with external plugins. For this reason, it is important to implement cross-plugin interaction in such a way as to expect this case and to handle it gracefully, or to throw a helpful error.
+在阶段执行开始时，清理钩子执行之前，满足访问请求。如果请求的插件没有提供访问器，将抛出一个错误，指出缺少访问器的插件。然而，如果完全没有请求的插件，访问请求将默默地失败。这样做是为了允许对外部插件进行非必需的集成。因此，实现跨插件交互的方式很重要，以期望这种情况，并优雅地处理，或者抛出一个有帮助的错误。
 
-Plugins available for access are restricted based on scope. For lifecycle plugins, you may request access to any other lifecycle plugin added to the Heft configuration. For task plugins, you may request access to any other task plugin residing within the same phase in the Heft configuration.
+可访问的插件基于范围进行限制。对于生命周期插件，您可以请求访问添加到 Heft 配置中的任何其他生命周期插件。对于任务插件，您可以请求访问 Heft 配置中相同阶段内的任何其他任务插件。
 
-### Custom CLI parameters
+### 自定义 CLI 参数
 
-Defining CLI parameters is now only possible via **heft-plugin.json**, and defined parameters can be consumed in plugins via the `HeftTaskSession.parameters` API. Additionally, all plugin parameters for the selected Heft phases are now discoverable on the CLI when using the `--help` argument (ex. `heft test --help` or `heft run --to test -- --help`).
+现在，只能通过 **heft-plugin.json** 定义 CLI 参数，而定义的参数可以通过 `HeftTaskSession.parameters` API 在插件中使用。此外，当使用 `--help` 参数（例如 `heft test --help` 或 `heft run --to test -- --help`）时，现在可以在 CLI 中发现选定的 Heft 阶段的所有插件参数。
 
-These parameters can be automatically "de-duped" on the CLI using an optionally-provided `parameterScope`. By default, parameters defined in **heft-plugin.json** will be available on the CLI using `--<parameterName>` and `--<parameterScope>:<parameterName>`. When multiple plugins provide the same parameter, only the latter parameter will be available on the CLI in order to "de-dupe" conflicting parameters. For example, if PluginA with parameter scope "PluginA" defines `--parameter`, and PluginB with parameter scope "PluginB" also defines `--parameter`, the parameters will _only_ be available as `--PluginA:parameter` and `--PluginB:parameter`.
+这些参数可以使用可选提供的 `parameterScope` 在 CLI 上自动进行 "去重"。默认情况下，**heft-plugin.json** 中定义的参数将使用 `--<parameterName>` 和 `--<parameterScope>:<parameterName>` 在 CLI 上可用。当多个插件提供相同的参数时，为了 "去重" 冲突的参数，只有后者参数在 CLI 上可用。例如，如果 PluginA 具有参数范围 "PluginA" 定义 `--parameter`，并且 PluginB 也使用参数范围 "PluginB" 定义 `--parameter`，那么参数 _只能_ 作为 `--PluginA:parameter` 和 `--PluginB:parameter` 可用。
 
-If you have any questions or feedback regarding these changes to Heft, please [ask in the chatroom](https://rushstack.zulipchat.com/#narrow/stream/262522-heft) or [file an issue](https://github.com/microsoft/rushstack/issues/new?assignees=&labels=&template=heft.md&title=%5Bheft%2Frc%2f0%5D+).
+如果您对这些对 Heft 的更改有任何问题或反馈，请[在聊天室中提问](https://rushstack.zulipchat.com/#narrow/stream/262522-heft)或[提交一个问题](https://github.com/microsoft/rushstack/issues/new?assignees=&labels=&template=heft.md&title=%5Bheft%2Frc%2f0%5D+)。

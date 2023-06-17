@@ -1,5 +1,5 @@
 ---
-title: About the Rush Stack blog
+title: 关于Rush Stack博客
 authors:
   - octogonz
 tags: []
@@ -7,26 +7,24 @@ draft: false
 hide_table_of_contents: false
 ---
 
-Welcome to the **Rush Stack blog**! We've added this new website section for sharing news and insights
-about Rush Stack projects.
+欢迎来到**Rush Stack 博客**！我们新设立了这个网站板块，用于分享关于 Rush Stack 项目的新闻和见解。
 
-We'll announce new blog posts on [Twitter](https://twitter.com/rushstack)
-and [Mastodon](https://fosstodon.org/@rushstack). You can also subscribe directly to the blog's
-[RSS](/blog/rss.xml) or [Atom](/blog/atom.xml) feeds.
+我们会在[Twitter](https://twitter.com/rushstack)
+和[Mastodon](https://fosstodon.org/@rushstack)上发布新博客文章的公告。您也可以直接订阅博客的
+[RSS](/blog/rss.xml)或者[Atom](/blog/atom.xml)源。
 
 <!--truncate-->
 
-Whereas the website docs are primarily reference material, blog topics may include:
+而网站文档主要是参考资料，博客主题可能包括：
 
-- Announcement details
-- Explanations of major changes
-- Tips about tech to try out
-- Best practices
-- Ideas and analyses
+- 公告详情
+- 主要更改的解释
+- 尝试技术的提示
+- 最佳实践
+- 想法和分析
 
 <!--
-NOTE: Use Twitter/Mastodon for quick announcements.  The blog should only be
-used for content that is too large to fit in a tweet.
+注意：使用Twitter/Mastodon进行快速公告。只有内容太大无法放在一条推文中的情况下，才应使用博客。
 -->
 
-If you'd like to contribute a blog post, please contact [@octogonz](https://github.com/octogonz).
+如果您想贡献一篇博客文章或者帮助我们的翻译工作，请联系[@octogonz](https://github.com/octogonz)。
