@@ -63,7 +63,7 @@ If you are using our `@rushstack/heft-node-rig` and `@rushstack/heft-web-rig`, y
 
 ### Migrating package.json dependencies
 
-Many of these plugins have been extracted into their own NPM packages. This reduces the installation footprint for projects that don't use certain plugins.
+Many of these plugins have been extracted into their own NPM packages. This reduces the startup time and installation footprint for projects that don't use certain plugins.
 
 Here's the current inventory as of this writing:
 
@@ -197,8 +197,8 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
     {
       "actionId": "copyLicenseToDistFolder",
       "actionKind": "copyFiles",
-      // 📌 [3] old way to do a "post-build" action
-      "heftEvent": "post-build",
+      // 📌 [3] old way to do a post-compile action
+      "heftEvent": "compile",
       "copyOperations": [
         {
           "destinationFolders": ["./dist"],
@@ -226,7 +226,7 @@ Here's another example from the [TSDoc Playground](https://tsdoc.org/play/) proj
       "tasksByName": {
         // ("post-compile-copy" is a user-defined name, not a schema field)
         "post-compile-copy": {
-          // 📌 [3] new way to do a "post-build" action, by depending on the relevant task(s)
+          // 📌 [3] new way to do a post-compile action, by depending on the relevant task(s)
 
           // The "post-compile-copy" task should not run until after "typescript" completes
           "taskDependencies": ["typescript"],
@@ -256,11 +256,11 @@ Observations:
 
 - The changes here are minimal, since the rig provides most of the build definition
 - The latest `heft-web-rig` uses `heft-webpack5-plugin`, so we had to upgrade from Webpack 4 -> 5 as part of this conversion
-- The `"heftEvent": "post-build"` event no longer exists; instead it must be represented via an equivalent `"taskDependencies"` entry, which references the rig's `"typescript"` task definition
+- The `"heftEvent": "compile"` event no longer exists; instead it must be represented via an equivalent `"taskDependencies"` entry, which references the rig's `"typescript"` task definition
 
 ### Migrating a "pre-compile" action
 
-In the above example, we migrated our config file by replacing `"heftEvent": "post-build"`
+In the above example, we migrated our config file by replacing `"heftEvent": "compile"`
 with `"taskDependencies": ["typescript"]`, which accomplishes the same thing by expressing that the
 action cannot be performed until after the `"typescript"` task has completed. But the `"taskDependencies"`
 is a unidirectional relationship. In this new model, how can we represent an event such as `pre-compile`?
@@ -408,6 +408,6 @@ In updating to the new version of Heft, plugins will also need to be updated for
 - Plugins can no longer define their own actions. If a plugin deserves its own action, a dedicated phase should be added to the consumers "heft.json"
 - The `runScript` Heft event has been modified to only accept a `runAsync` method, and the properties have been updated to reflect what is available to normal Heft task plugins
 - Path-related variables have been renamed to clarify they are paths (ex. `HeftConfiguration.buildFolder` is now `HeftConfiguration.buildFolderPath`)
-- The `runIncremental` hook can now be utilized to add ensure that watch mode rebuilds occur in proper dependency order
+- The `runIncremental` hook can now be utilized to ensure that watch mode rebuilds occur in proper dependency order
 - The `clean` hook was removed in favor of the `cleanFiles` option in "heft.json" in order to make it obvious what files are being cleaned and when
 - The `folderNameForTests` and `extensionForTests` properties have been removed and should instead be addressed via the `testMatch` property in `jest.config.json`
