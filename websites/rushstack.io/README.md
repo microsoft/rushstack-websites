@@ -61,4 +61,4 @@ Common commands:
 
 - `rushx start --locale zh-cn` - launch the localhost dev server in the specified language.
 
-- `rushx write-translations --locale zh-cn` - Update the `i8an/*.json` files with any new strings.
+- `rushx write-translations --locale zh-cn` - Update the `i18n/*.json` files with any new strings.
