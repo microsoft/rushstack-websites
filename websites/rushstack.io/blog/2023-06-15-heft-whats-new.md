@@ -59,7 +59,7 @@ Watch mode is now a first-class feature in Heft. Watch mode actions are created 
 
 All phases are defined within the top-level `phasesByName` property. Each phase may specify `phaseDependencies` to define the order of phase execution when running a selection of Heft phases. Phases may also provide the `cleanFiles` option, which accepts an array of deletion operations to perform when running with the `--clean` flag.
 
-Within the phase specification, `tasksByName` defines all tasks that run while executing a phase. Each task may specify `taskDependencies` to define the order of task execution. All tasks defined in `taskDependencies` must exist within the same phase. For CLI-availability reasons, phase names, task names, plugin names, and parameter scopes, must be `kebab-cased`.
+Within the phase specification, `tasksByName` defines all tasks that run while executing a phase. Each task may specify `taskDependencies` to define the order of task execution. (If `taskDependencies` is omitted, it defaults to [] and the task only waits for any `phaseDependencies` of the containing phase.) All tasks defined in `taskDependencies` must exist within the same phase. For CLI-availability reasons, phase names, task names, plugin names, and parameter scopes, must be `kebab-cased`.
 
 The following is an example "heft.json" file defining both a `build` and a `test` phase:
 

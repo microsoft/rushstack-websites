@@ -56,7 +56,7 @@ Heft 阶段定义了在执行该阶段时将运行的一组任务。阶段充当
 
 所有阶段都在顶级`phasesByName`属性内定义。每个阶段可能会指定`phaseDependencies`，以定义在运行一组 Heft 阶段时的阶段执行顺序。阶段也可以提供`cleanFiles`选项，该选项接受一个删除操作数组，在使用`--clean`标志运行时执行。
 
-在阶段规范中，`tasksByName`定义了在执行阶段时运行的所有任务。每个任务可能会指定`taskDependencies`，以定义任务执行的顺序。在`taskDependencies`中定义的所有任务必须存在于同一阶段内。出于 CLI 可用性的原因，阶段名称、任务名称、插件名称和参数范围，都必须是`kebab-case`格式。
+在阶段规格中，`tasksByName` 定义了执行阶段时运行的所有任务。每个任务可能会指定 `taskDependencies` 来定义任务执行的顺序。（如果省略了 `taskDependencies`，则默认为 []，并且任务只等待包含阶段的任何 `phaseDependencies`。）`taskDependencies` 中定义的所有任务必须存在于同一阶段。由于 CLI 可用性的原因，阶段名、任务名、插件名和参数范围，必须是 `kebab-cased`。
 
 以下是一个定义了`build`和`test`阶段的"heft.json"文件示例：
 
