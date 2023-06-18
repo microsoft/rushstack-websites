@@ -11,7 +11,9 @@ hide_table_of_contents: false
 
 我们会在[Twitter](https://twitter.com/rushstack)
 和[Mastodon](https://fosstodon.org/@rushstack)上发布新博客文章的公告。您也可以直接订阅博客的
-[RSS](/blog/rss.xml)或者[Atom](/blog/atom.xml)源。
+[RSS](@rushstack/blog/rss.xml)或者[Atom](@rushstack/blog/atom.xml)源。
+
+<!-- 上述链接使用了 @rushstack 前缀以强制使用没有尾部斜杠重写的字面URL -->
 
 <!--truncate-->
 
