@@ -12,7 +12,9 @@ about Rush Stack projects.
 
 We'll announce new blog posts on [Twitter](https://twitter.com/rushstack)
 and [Mastodon](https://fosstodon.org/@rushstack). You can also subscribe directly to the blog's
-[RSS](/blog/rss.xml) or [Atom](/blog/atom.xml) feeds.
+[RSS](@rushstack/blog/rss.xml) or [Atom](@rushstack/blog/atom.xml) feeds.
+
+<!-- The above links use @rushstack prefixes to force literal URLs without trailingSlash rewriting -->
 
 <!--truncate-->
 

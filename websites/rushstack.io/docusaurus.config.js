@@ -72,12 +72,25 @@ const config = {
         },
         blog: {
           // Index page meta title for SEO.
-          blogTitle: 'Docusaurus blog!',
+          blogTitle: 'The Rush Stack blog',
           // Index page meta description for better SEO.
-          blogDescription: 'A Docusaurus powered blog!',
+          blogDescription: 'Announcements, opinions, and ideas relate to Rush Stack projects',
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/blog/'
+          editUrl: 'https://github.com/microsoft/rushstack-websites/tree/main/websites/rushstack.io/',
+          remarkPlugins: [
+            [
+              remarkCrossSiteLinkPlugin,
+              {
+                prefixes: siteConfig.sitePrefixes
+              }
+            ],
+            [
+              remarkCanonicalLinkPlugin,
+              {
+                prefix: 'https://rushstack.io/'
+              }
+            ]
+          ]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')

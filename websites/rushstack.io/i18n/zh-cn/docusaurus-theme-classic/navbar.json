@@ -26,5 +26,9 @@
   "item.label.Help": {
     "message": "帮助",
     "description": "Navbar item with label Help"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
   }
 }
