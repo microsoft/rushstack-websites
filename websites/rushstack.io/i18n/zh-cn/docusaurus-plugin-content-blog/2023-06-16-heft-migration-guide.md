@@ -264,7 +264,7 @@ Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶
 
 考虑以下示例：
 
-**旧的：** **heft.json** 摘录
+**旧版:** **heft.json** 样本
 
 ```ts
 // ⚠️ 旧格式示例 -- 请勿使用！⚠️
@@ -281,9 +281,9 @@ Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶
       "heftEvent": "pre-compile",
       "copyOperations": [
         {
-          "sourceFolder": "assets",
-          "destinationFolders": ["dist"],
-          "includeGlobs": ["images/*"]
+          "sourceFolder": "node_modules/some-library/dist",
+          "destinationFolders": ["temp/typings"],
+          "includeGlobs": ["*.d.ts"]
         }
       ]
     }
@@ -291,7 +291,7 @@ Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶
 }
 ```
 
-**新的：** `playground/config/heft.json` 中的 **heft.json** 摘录
+**新版:** **heft.json** 样本
 
 ```ts
 {
@@ -311,9 +311,9 @@ Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶
             "options": {
               "copyOperations": [
                 {
-                  "sourcePath": "assets",
-                  "destinationFolders": ["dist"],
-                  "includeGlobs": ["images/*", "demos/*.json"]
+                  "sourcePath": "node_modules/some-library/dist",
+                  "destinationFolders": ["temp/typings"],
+                  "includeGlobs": ["*.d.ts"]
                 }
               ]
             }

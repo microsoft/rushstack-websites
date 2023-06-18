@@ -265,9 +265,9 @@ with `"taskDependencies": ["typescript"]`, which accomplishes the same thing by 
 action cannot be performed until after the `"typescript"` task has completed. But the `"taskDependencies"`
 is a unidirectional relationship. In this new model, how can we represent an event such as `pre-compile`?
 
-Consider this example:
+Consider this hypothetical example:
 
-**OLD:** **heft.json** excerpt
+**OLD:** **heft.json** sample
 
 ```ts
 // ⚠️ OLD FORMAT EXAMPLE -- DO NOT USE! ⚠️
@@ -284,9 +284,9 @@ Consider this example:
       "heftEvent": "pre-compile",
       "copyOperations": [
         {
-          "sourceFolder": "assets",
-          "destinationFolders": ["dist"],
-          "includeGlobs": ["images/*"]
+          "sourceFolder": "node_modules/some-library/dist",
+          "destinationFolders": ["temp/typings"],
+          "includeGlobs": ["*.d.ts"]
         }
       ]
     }
@@ -294,7 +294,7 @@ Consider this example:
 }
 ```
 
-**NEW:** **heft.json** excerpt from `playground/config/heft.json`
+**NEW:** **heft.json** sample
 
 ```ts
 {
@@ -314,9 +314,9 @@ Consider this example:
             "options": {
               "copyOperations": [
                 {
-                  "sourcePath": "assets",
-                  "destinationFolders": ["dist"],
-                  "includeGlobs": ["images/*", "demos/*.json"]
+                  "sourcePath": "node_modules/some-library/dist",
+                  "destinationFolders": ["temp/typings"],
+                  "includeGlobs": ["*.d.ts"]
                 }
               ]
             }
