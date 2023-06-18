@@ -7,7 +7,7 @@ draft: false
 hide_table_of_contents: false
 ---
 
-"多阶段" Heft 是`@rushstack/heft`项目的全新重写，目标是与[Rush 分阶段构建](@rushjs/pages/maintainer/phased_builds/)更紧密地集成。此外，这次更新为 Heft 带来了更大的可定制性和改进的并行进程处理能力。这篇文章解释了这些改进背后的动机和架构。
+"多阶段" Heft 是 `@rushstack/heft` 项目的一次重大更新，目标是与 [Rush 分阶段构建](@rushjs/pages/maintainer/phased_builds/) 更紧密地集成。此外，这次更新为 Heft 带来了更大的可定制性和改进的并行处理能力。这篇文章解释了这些改进背后的动机和架构。
 
 <!--truncate-->
 

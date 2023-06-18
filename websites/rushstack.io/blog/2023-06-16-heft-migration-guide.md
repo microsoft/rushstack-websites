@@ -8,7 +8,7 @@ draft: false
 hide_table_of_contents: false
 ---
 
-The Heft **0.51.0** release introduces a "multi-phase" feature that brings some significant architectural changes. If you've been using an older version, upgrading will require making some changes to your **Heft config files** and also any **custom plugins** that you may have authored. In this post, we'll summarized what changed and how to migrate your projects. This is probably the last major breaking change before the 1.0.0 release of Heft.
+The Heft **0.51.0** release introduces a "multi-phase" feature that brings some significant architectural changes. If you've been using an older version, upgrading will require making some changes to your **Heft config files** and also any **custom plugins** that you may have authored. In this post, we'll summarize what changed and how to migrate your projects. This is probably the last major breaking change before the 1.0.0 release of Heft.
 
 <!--truncate-->
 

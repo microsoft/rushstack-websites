@@ -7,7 +7,7 @@ draft: false
 hide_table_of_contents: false
 ---
 
-"Multi-phase" Heft is a complete re-write of the `@rushstack/heft` project with the goal of integrating more closely with [Rush phased builds](@rushjs/pages/maintainer/phased_builds/). In addition, this update brings greater customizability and improved parallel process handling to Heft. This post explains the motivation and architecture behind these improvements.
+"Multi-phase" Heft is a major update for the `@rushstack/heft` project with the goal of integrating more closely with [Rush phased builds](@rushjs/pages/maintainer/phased_builds/). In addition, this update brings greater customizability and improved parallel process handling to Heft. This post explains the motivation and architecture behind these improvements.
 
 <!--truncate-->
 
