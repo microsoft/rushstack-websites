@@ -46,6 +46,12 @@ title: typescript.json
     //    * (Required) The name of the folder where the output will be written.
     //    */
     //    "outFolderName": "lib-amd"
+    //
+    //   /**
+    //    * File extension to use instead of '.js' for emitted ECMAScript files.
+    //    * For example, '.cjs' to indicate commonjs content, or '.mjs' to indicate ECMAScript modules.
+    //    */
+    //    "jsExtensionOverride": ".cjs"
     // }
   ],
 
