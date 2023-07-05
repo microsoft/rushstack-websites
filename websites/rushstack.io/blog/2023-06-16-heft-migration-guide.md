@@ -396,6 +396,23 @@ to shorten common commands.
 
 The `--serve` CLI parameter is our standard convention for launching a `localhost` dev server. It is supported by both `heft-webpack5-plugin` and the built-in `node-service-plugin`.
 
+## @rushstack/heft-jest-plugin changes
+
+Heft does not follow the Jest convention of using `ts-jest` to naively translate `.ts` files to `.js`. Instead, the full Heft toolchain is invoked, avoiding duplicate transpilation and ensuring accurate invocation of all preprocessors. In the past, this was implemented by pointing your **jest.config.json** at the source code (`"roots": ["<rootDir>/src"]`) and relying on `@rushstack/heft-jest-plugin/exports/jest-build-transform.js` to return Heft's output `.js` files. However newer releases of Jest introduced a [snapshotResolver](https://jestjs.io/docs/configuration/#snapshotresolver-string) setting, which allows Jest to process `"<rootDir>/lib"` directly and still be able to update inline snapshots. The latest Heft adopted this approach because it provides a better debugging experience.
+
+**How to migrate:** If you're using the Rush Stack rigs or extending from `@rushstack/heft-jest-plugin/includes/jest-shared.config.json`, just delete `emitFolderNameForTests` from your **typescript.json** file.
+
+For more customized setups, here's the full list of underlying changes:
+
+- These plugin options have been removed from `@rushstack/heft-jest-plugin`: `extensionForTests`, `folderNameForTests`, `folderNameForSnapshots`
+- The `emitFolderNameForTests` setting is removed from **config/typescript.json**
+- In **jest.config.json**, fields such as `roots`, `testMatch`, `collectCoverageFrom` should now point to the CommonJS output folder (`lib-commonjs` or `lib`) instead of the `src` folder
+- In **jest.config.json**, `moduleFileExtensions` should no longer include `.ts` or `.tsx` extensions
+- In **jest.config.json**, **jest-build-transform.js** is replaced by `"snapshotResolver": "@rushstack/heft-jest-plugin/exports/jest-source-map-snapshot-resolver.js"`
+- For web development, we've introduced [heft-jest-plugin/includes/jest-web.config.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/includes/jest-web.config.json) (for web projects that write their CommonJS to `lib-commonjs`) alongside the familiar **jest-shared.config.json** (for Node.js projects that write their CommonJS to `lib`).
+
+For a real world example, [this GitHub diff](https://github.com/microsoft/rushstack/compare/6edf3f81a96b7f0c2951b3320825a952ba9d7d0c..4ec1513cdd37cb805b5ed348b5cd3d0e5a9fdba6#diff-467d5815d520ad0cdf1d3338f7ad09f6cdabdd8583f9eb36f8b4547b1728506f) shows the recent changes to **heft-jest-plugin/includes/jest-shared.config.json**.
+
 ## Migrating custom plugins
 
 In updating to the new version of Heft, plugins will also need to be updated for compatibility. Some of the more notable API changes include:
@@ -414,7 +431,6 @@ In updating to the new version of Heft, plugins will also need to be updated for
 
 ## Miscellaneous migration notes
 
-- In **jest.config.json**, the `folderNameForTests` and `extensionForTests` properties have been removed and should instead be addressed via the `testMatch` property
 - The `node-service-plugin` built-in plugin now supports the `--serve` parameter, to be consistent with the `@rushstack/heft-webpack5-plugin` dev server.
 - If `--serve` is specified and `config/node-service.json` is omitted, then `node-service-plugin` fails with a hard error
 - Although `@rushstack/heft-lint-plugin` and `@rushstack/heft-typescript-plugin` have been extracted into separate NPM packages, they must be invoked in the same phase, due to their optimized communication using a [plugin accessor](/blog/2023/06/15/heft-whats-new/#cross-plugin-interaction).
