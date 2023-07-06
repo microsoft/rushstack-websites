@@ -68,7 +68,14 @@ const config = {
               }
             ]
           ],
-          rehypePlugins: [rehypeHeaderlessTablePlugin]
+          rehypePlugins: [rehypeHeaderlessTablePlugin],
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Current Release',
+              badge: false
+            }
+          }
         },
         blog: {
           showReadingTime: true,
@@ -94,6 +101,11 @@ const config = {
           src: 'images/site/heft-logo.svg'
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownActiveClassDisabled: true
+          },
           {
             type: 'localeDropdown',
             position: 'left'
