@@ -62,13 +62,3 @@ similar systems, Heft has some unique design goals:
 <!-- --------------------------------------------------------------------------- -->
 <!-- Text above this line should stay in sync with heft's package README.md file -->
 <!-- --------------------------------------------------------------------------- -->
-
-## Sample projects
-
-For a couple quick examples of Heft projects in a real Rush monorepo, take a look at these folders:
-
-- [heft-node-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-basic-tutorial): A basic Node.js
-  application with Jest and ESLint
-
-- [heft-webpack-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-webpack-basic-tutorial): A basic
-  web application bundled using Webpack
