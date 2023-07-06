@@ -30,10 +30,10 @@ You will need to add the `@microsoft/api-extractor` package to your project:
 rush add --package @microsoft/api-extractor --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](../heft/rig_packages.md) article.
+Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](../intro/rig_packages.md) article.
 
 ## Configuration
 
-Heft looks for API Extractor's config file [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/). This file can be created by invoking the [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) command. This file is [riggable](../heft/rig_packages.md).
+Heft looks for API Extractor's config file [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/). This file can be created by invoking the [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) command. This file is [riggable](../intro/rig_packages.md).
 
-For advanced scenarios, the optional [api-extractor-task.json](../heft_configs/api-extractor-task_json.md) config file provides some additional Heft-specific settings.
+For advanced scenarios, the optional [api-extractor-task.json](../configs/api-extractor-task_json.md) config file provides some additional Heft-specific settings.

@@ -24,10 +24,10 @@ title: '"api-extractor" task'
 $ rush add --package @microsoft/api-extractor --dev
 ```
 
-另外，你也可以通过加载 rig 来避免添加依赖，其用法可以参考 [使用 rig 库](../heft/rig_packages.md) 一文。
+另外，你也可以通过加载 rig 来避免添加依赖，其用法可以参考 [使用 rig 库](../intro/rig_packages.md) 一文。
 
 ## 配置
 
-Heft 寻找 API Extractor 的配置文件 [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/)。该文件可以通过调用 [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) 命令来创建。这个文件是[riggable](../heft/rig_packages.md)。
+Heft 寻找 API Extractor 的配置文件 [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/)。该文件可以通过调用 [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) 命令来创建。这个文件是[riggable](../intro/rig_packages.md)。
 
-对于更复杂的场景，[api-extractor-task.json](../heft_configs/api-extractor-task_json.md)配置文件中的可选参数提供了一些额外的 Heft 配置。
+对于更复杂的场景，[api-extractor-task.json](../configs/api-extractor-task_json.md)配置文件中的可选参数提供了一些额外的 Heft 配置。

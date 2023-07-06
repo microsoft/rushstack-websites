@@ -8,9 +8,9 @@ title: 开始使用 Heft
 > 和 [heft-webpack-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-webpack-basic-tutorial)
 > 项目，它们展示了使用 Heft 构建的简单示例项目。
 
-We'll begin by creating a simple standalone project without Rush. (Later, the [Interfacing with Rush](../heft_tutorials/heft_and_rush.md) tutorial will examine what's different when using Heft in a monorepo.)
+We'll begin by creating a simple standalone project without Rush. (Later, the [Interfacing with Rush](../tutorials/heft_and_rush.md) tutorial will examine what's different when using Heft in a monorepo.)
 
-我们以创建一个没有 Rush 的独立项目作为起点（稍后，[与 Rush 交互](../heft_tutorials/heft_and_rush.md) 一文将展示在 monorepo 内使用 Heft 有哪些不同）。
+我们以创建一个没有 Rush 的独立项目作为起点（稍后，[与 Rush 交互](../tutorials/heft_and_rush.md) 一文将展示在 monorepo 内使用 Heft 有哪些不同）。
 
 1. 这个示例中，我们将使用 [PNPM 包管理器](https://pnpm.js.org/). （它的命令行与 NPM 十分类似，所以在接下来的步骤中使用 `npm` 替换 `pnpm`), 这里有[多种方法](https://pnpm.io/installation) 来安装 PNPM，但最简单的方法是：
 
@@ -89,7 +89,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
 
    注意，`"types": ["node"]` 指向了上面安装的 `@types/node` 包。该步骤是必须的，因为 Node.js 放到了全局环境下，所以它的类型也需要在全局环境中加载。其他大多数 `@types` 包可以通过在源代码中使用 `import` 语句来加载。
 
-   [typescript task](../heft_tasks/typescript.md) 一文描述了 Heft 下 TypeScript 配置的相关背景。
+   [typescript task](../tasks/typescript.md) 一文描述了 Heft 下 TypeScript 配置的相关背景。
 
 6. 你可以通过 `./node_modules/.bin/heft` 来调用 Heft, 但是更方便的是将它安装到全局，这样就可以在你的 shell 环境中调用它。
 
@@ -103,7 +103,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    > 与 Rush 类似，Heft 实现了“版本选择”功能，它可以自动地在本地的 `node_modules` 文件夹中
    > 查找并调用 `./node_modules/.bin/heft`，以确保使用正确的版本。
 
-7. 下面尝试调用 Heft 的 [命令行](../heft/cli.md) 来构建我们的项目：
+7. 下面尝试调用 Heft 的 [命令行](../intro/cli.md) 来构建我们的项目：
 
    ```shell
    # Windows 中所有的命令都使用反斜线
@@ -139,7 +139,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    Node version: v12.17.0
    ```
 
-   > 一些术语：当在 shell 中调用 `heft build` 命令时，动词 "build" 就被视为一个 **action**. action 是一个类似于宏的用户交互的概念。action 可以使 Heft 调用多个诸如 `[typescript]` 或 `[copy-static-assets]` 的任务。这些任务经常以并行的方式运行。这些任务被分组到不同的 "stage" 中，诸如上面日志中的“编译”和“打包”。stage 表明整操作的主要步骤，这些概念在 [Heft 架构](../heft/architecture.md) 一文中有更详细的解释。
+   > 一些术语：当在 shell 中调用 `heft build` 命令时，动词 "build" 就被视为一个 **action**. action 是一个类似于宏的用户交互的概念。action 可以使 Heft 调用多个诸如 `[typescript]` 或 `[copy-static-assets]` 的任务。这些任务经常以并行的方式运行。这些任务被分组到不同的 "stage" 中，诸如上面日志中的“编译”和“打包”。stage 表明整操作的主要步骤，这些概念在 [Heft 架构](../intro/architecture.md) 一文中有更详细的解释。
 
    构建完成后，你的 `lib` 文件夹中将会以下输出文件：
 

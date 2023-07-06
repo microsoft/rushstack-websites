@@ -2,7 +2,7 @@
 title: Interfacing with Rush
 ---
 
-The [Getting started with Heft](../heft_tutorials/getting_started.md) tutorial showed how Heft can be used in a standalone project. Now let's look at how Heft works in the context of a Rush monorepo.
+The [Getting started with Heft](../tutorials/getting_started.md) tutorial showed how Heft can be used in a standalone project. Now let's look at how Heft works in the context of a Rush monorepo.
 
 ## How Heft gets invoked
 
@@ -33,7 +33,7 @@ Instead, Heft supports a formalism called **rig packages**, where common setting
 2. Riggable config files can be eliminated entirely, using a **config/rig.json** file that directs Heft to find them in the rig package. Example: **config/heft.json**
 3. Riggable dependencies can be provided by the rig package, avoiding the need to add them to your project's `devDependencies`. Example: the **typescript** package
 
-The [Using rig packages](../heft/rig_packages.md) article describes this in detail.
+The [Using rig packages](../intro/rig_packages.md) article describes this in detail.
 
 ## Incremental builds
 

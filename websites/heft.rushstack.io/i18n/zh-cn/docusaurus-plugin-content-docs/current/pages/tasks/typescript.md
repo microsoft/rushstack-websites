@@ -25,7 +25,7 @@ TypeScript 是 Rush Stack 的标准编程语言。在所有程序中使用“通
 $ rush add --package typescript --dev
 ```
 
-另外，你可以通过加载 "rig" 来避免添加依赖，正如在 [使用 rig 包](../heft/rig_packages.md) 一文中描述的那样。
+另外，你可以通过加载 "rig" 来避免添加依赖，正如在 [使用 rig 包](../intro/rig_packages.md) 一文中描述的那样。
 
 如果你的 **tsconfig.json** 启用了 `"importHelpers": true` 来实现更高效的转译, 那么你也许可能需要 **tslib** 依赖：
 
@@ -37,4 +37,4 @@ $ rush add --package tslib
 
 主要配置来自 TypeScript 的 [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-对于复杂场景，Heft 还提供了一个可选的 [typescript.json](../heft_configs/typescript_json.md) 配置文件，它可用于配置工具链功能，如 TypeScript 的多个编译输出格式。
+对于复杂场景，Heft 还提供了一个可选的 [typescript.json](../configs/typescript_json.md) 配置文件，它可用于配置工具链功能，如 TypeScript 的多个编译输出格式。

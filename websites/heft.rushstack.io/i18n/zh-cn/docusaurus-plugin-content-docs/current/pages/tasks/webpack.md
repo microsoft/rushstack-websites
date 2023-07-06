@@ -56,7 +56,7 @@ $ rush add --package @types/webpack-env --exact  --dev
 }
 ```
 
-上面安装的 Heft 插件需要使用 [heft.json 配置文件](../heft_configs/heft_json.md)加载。
+上面安装的 Heft 插件需要使用 [heft.json 配置文件](../configs/heft_json.md)加载。
 
 **&lt;project folder&gt;/config/heft.json**
 
@@ -193,4 +193,4 @@ Webpack 最好使用 `esnext` 格式，然而由于 Jest 的测试在 Node.js �
 }
 ```
 
-查阅 [typescript.json](../heft_configs/typescript_json.md) 配置文件来观察更多细节。
+查阅 [typescript.json](../configs/typescript_json.md) 配置文件来观察更多细节。

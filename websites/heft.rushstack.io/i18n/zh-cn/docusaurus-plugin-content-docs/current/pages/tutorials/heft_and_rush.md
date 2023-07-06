@@ -2,7 +2,7 @@
 title: 与 Rush 交互
 ---
 
-[开始使用 Heft](../heft_tutorials/getting_started.md) 教展示了独立项目中使用 Heft. 本文将介绍 Rush monorepo 下如何使用 Heft.
+[开始使用 Heft](../tutorials/getting_started.md) 教展示了独立项目中使用 Heft. 本文将介绍 Rush monorepo 下如何使用 Heft.
 
 ## Heft 如何被调用
 
@@ -33,7 +33,7 @@ monorepos 的一个主题是**_尽量减少 "模板 "文件_**。换句话说，
 2. Rig 的配置文件可以消除整个配置文件，使用 **config/rig.json** 文件来直接指定 Heft 在 rig 包中查找配置文件。例如：**config/heft.json**
 3. Rig 的依赖可以通过 rig 包来提供，避免在项目内的 `devDependencies` 中添加它们。例如：**typescript** 包
 
-[使用 rig 包](../heft/rig_packages.md)一文中有更详细的介绍。
+[使用 rig 包](../intro/rig_packages.md)一文中有更详细的介绍。
 
 ## 增量构建
 

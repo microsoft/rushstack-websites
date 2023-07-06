@@ -14,7 +14,7 @@ title: '"delete-globs" task'
 
 ## 配置文件
 
-在 [heft.json](../heft_configs/heft_json.md) 配置文件内注册事件，例如：
+在 [heft.json](../configs/heft_json.md) 配置文件内注册事件，例如：
 
 **&lt;project folder&gt;/config/heft.json**
 

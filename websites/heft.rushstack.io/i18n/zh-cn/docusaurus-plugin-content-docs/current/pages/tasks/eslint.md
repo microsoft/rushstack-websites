@@ -10,13 +10,13 @@ Rush Stack 推荐使用 ESLint 与其他几个库作为代码校验工具：
 
 - [Prettier](@rushjs/pages/maintainer/enabling_prettier/): Prettier 用来管理琐碎的语法，例如空格、逗号、分号等。它们并不影响代码语义，我们也不会因此来报错影响开发者，它们也不是构建的一部分。相反，Prettier 会通过 `git commit` 的钩子来自动格式化代码。可以查看 Rush 观望中的[启用 Prettier](@rushjs/pages/maintainer/enabling_prettier/) 一文。
 
-- [TypeScript](../heft_tasks/typescript.md): TypeScript 编译器执行复杂的类型检查和语义分析，这是保证程序正确性的重要保障。
+- [TypeScript](../tasks/typescript.md): TypeScript 编译器执行复杂的类型检查和语义分析，这是保证程序正确性的重要保障。
 
 - **ESLint**: lint 使用额外的语法规则来辅助编译器检查代码，这些规则十分主观并高度可定制。TypeScript 可能会检查到 _"函数参数是一个字符串但是被声明称了一个数字"_，但是 ESLint 可能会检查到 _"这个类名应该使用帕斯卡命名法而不是驼峰命名法"_。不同于 Prettier, ESLint 修复问题可能需要一个大的代码变更，并且甚至可能会破坏 API 一致性。
 
-- [API Extractor](../heft_tasks/api-extractor.md): 额外校验库包的有效性。它可以确保 API 正常工作并具有正确的文档。
+- [API Extractor](../tasks/api-extractor.md): 额外校验库包的有效性。它可以确保 API 正常工作并具有正确的文档。
 
-尽管建议以上述方式配置你的构建系统，但 Heft 并不要求采用特定的方法。上述组件中都是可选的，而且其他配置也是允许的。例如，旧的代码库可能需要使用 [TSLint](../heft_tasks/tslint.md) 来代替 ESLint.
+尽管建议以上述方式配置你的构建系统，但 Heft 并不要求采用特定的方法。上述组件中都是可选的，而且其他配置也是允许的。例如，旧的代码库可能需要使用 [TSLint](../tasks/tslint.md) 来代替 ESLint.
 
 ## package.json dependencies
 
@@ -26,7 +26,7 @@ Rush Stack 推荐使用 ESLint 与其他几个库作为代码校验工具：
 $ rush add --package eslint --dev
 ```
 
-另外，你可以通过从 [与 Rush 交互](../heft_tutorials/heft_and_rush.md) 一文中描述的 "rig package" 中加载来避免添加该依赖。然而，如果你使用 [VS Code 内的 ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，它将尝试从你的项目文件夹中解析 `eslint`.此时需要将 ESLint 添加到 **package.json** 文件中来确保插件可用。(该扩展也能够加载一个全局安装的 `eslint`, 但版本可能与本地分支所要求的版本不一致)。
+另外，你可以通过从 [与 Rush 交互](../tutorials/heft_and_rush.md) 一文中描述的 "rig package" 中加载来避免添加该依赖。然而，如果你使用 [VS Code 内的 ESLint 插件](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)，它将尝试从你的项目文件夹中解析 `eslint`.此时需要将 ESLint 添加到 **package.json** 文件中来确保插件可用。(该扩展也能够加载一个全局安装的 `eslint`, 但版本可能与本地分支所要求的版本不一致)。
 
 ## 配置文件
 

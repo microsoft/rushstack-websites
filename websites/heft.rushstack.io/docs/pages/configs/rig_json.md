@@ -2,11 +2,11 @@
 title: rig.json
 ---
 
-|                                          |                                            |
-| ---------------------------------------- | ------------------------------------------ |
-| **File path:**                           | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**](../heft/rig_packages.md) | No                                         |
-| **Associated plugins:**                  |                                            |
+|                                           |                                            |
+| ----------------------------------------- | ------------------------------------------ |
+| **File path:**                            | **&lt;project folder&gt;/config/rig.json** |
+| [**Riggable?**](../intro/rig_packages.md) | No                                         |
+| **Associated plugins:**                   |                                            |
 
 ## Template
 
@@ -32,5 +32,5 @@ title: rig.json
 
 ## See also
 
-- [Using rig packages](../heft/rig_packages.md) with Heft
+- [Using rig packages](../intro/rig_packages.md) with Heft
 - [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) documentation

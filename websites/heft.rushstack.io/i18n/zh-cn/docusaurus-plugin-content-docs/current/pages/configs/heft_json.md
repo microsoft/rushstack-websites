@@ -2,11 +2,11 @@
 title: heft.json
 ---
 
-|                                          |                                                                                                                                                                                                                                    |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                           | **&lt;project folder&gt;/config/heft.json**                                                                                                                                                                                        |
-| [**Riggable?**](../heft/rig_packages.md) | Yes                                                                                                                                                                                                                                |
-| **Associated plugins:**                  | [CopyFilesPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/CopyFilesPlugin.ts), [DeleteGlobsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/DeleteGlobsPlugin.ts) |
+|                                           |                                                                                                                                                                                                                                    |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **File path:**                            | **&lt;project folder&gt;/config/heft.json**                                                                                                                                                                                        |
+| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                                                                                                                |
+| **Associated plugins:**                   | [CopyFilesPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/CopyFilesPlugin.ts), [DeleteGlobsPlugin](https://github.com/microsoft/rushstack/blob/master/apps/heft/src/plugins/DeleteGlobsPlugin.ts) |
 
 ## Template
 
@@ -158,5 +158,5 @@ title: heft.json
 
 ## 参考
 
-- [copy-files](../heft_tasks/copy-files.md) task
-- [delete-globs](../heft_tasks/delete-globs.md) task
+- [copy-files](../tasks/copy-files.md) task
+- [delete-globs](../tasks/delete-globs.md) task

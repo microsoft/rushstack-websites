@@ -57,7 +57,7 @@ be be added to your TypeScript configuration like this:
 }
 ```
 
-The Heft plugin that you installed above needs to be loaded using the [heft.json config file](../heft_configs/heft_json.md):
+The Heft plugin that you installed above needs to be loaded using the [heft.json config file](../configs/heft_json.md):
 
 **&lt;project folder&gt;/config/heft.json**
 
@@ -193,4 +193,4 @@ Webpack works best with the `esnext` module format, whereas Jest must use the `c
 }
 ```
 
-See the [typescript.json](../heft_configs/typescript_json.md) config file documentation for details.
+See the [typescript.json](../configs/typescript_json.md) config file documentation for details.

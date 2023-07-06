@@ -5,13 +5,13 @@ hide_title: true
 
 ## 如何开始
 
-- [使用 Heft 来开始](../heft_tutorials/getting_started.md) 一文提供了使用 Heft 建立项目的示例。
+- [使用 Heft 来开始](../tutorials/getting_started.md) 一文提供了使用 Heft 建立项目的示例。
 
 - 它在 NPM 上的包是： [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft)
 
-- [与 Rush 交互](../heft_tutorials/heft_and_rush.md) 一文解释了 Heft 与 Rush 如何交互使用
+- [与 Rush 交互](../tutorials/heft_and_rush.md) 一文解释了 Heft 与 Rush 如何交互使用
 
-- [Heft 架构](../heft/architecture.md) 一文描述了构建系统的设计细节
+- [Heft 架构](../intro/architecture.md) 一文描述了构建系统的设计细节
 
 ## 链接
 

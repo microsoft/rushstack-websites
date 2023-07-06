@@ -4,7 +4,7 @@ hide_title: true
 ---
 
 <div>
-  <img src="/images/heft-logo.svg" alt="heft" title="heft" style={{ width: '380px', paddingTop: '30px' }} />
+  <img src="/images/site/heft-logo.svg" alt="heft" title="heft" style={{ width: '380px', paddingTop: '30px' }} />
   <p />
 </div>
 

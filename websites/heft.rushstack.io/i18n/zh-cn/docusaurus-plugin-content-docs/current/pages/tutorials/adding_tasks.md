@@ -2,15 +2,15 @@
 title: 添加更多的任务
 ---
 
-_本文是[开始使用 Heft](../heft_tutorials/getting_started.md) 一文的后续。_
+_本文是[开始使用 Heft](../tutorials/getting_started.md) 一文的后续。_
 
-Heft 带有一些内置的 task, 这些 task 根据你的配置文件自动启用。所有的 task 都记录在 [Heft tasks](../heft_tasks/api-extractor.md) 一文中。
+Heft 带有一些内置的 task, 这些 task 根据你的配置文件自动启用。所有的 task 都记录在 [Heft tasks](../tasks/api-extractor.md) 一文中。
 
-继续我们的教程，让我们使用两个最基本的 task: [Jest](../heft_tasks/jest.md) 和 [ESlint](../heft_tasks/eslint.md).
+继续我们的教程，让我们使用两个最基本的 task: [Jest](../tasks/jest.md) 和 [ESlint](../tasks/eslint.md).
 
 ## 项目中增加单元测试
 
-1. 首先，我们需要安装 Jest 的 TypeScript 类型。该步骤是[开始使用 Heft](../heft_tutorials/getting_started.md) 中创建好 **may-app** 的后续。回想起这个项目还没有使用 Rush, 所以依然直接调用 PNPM 来在 **package.json** 文件中添加依赖（而不是使用 [rush add](@rushjs/pages/commands/rush_add/)）:
+1. 首先，我们需要安装 Jest 的 TypeScript 类型。该步骤是[开始使用 Heft](../tutorials/getting_started.md) 中创建好 **may-app** 的后续。回想起这个项目还没有使用 Rush, 所以依然直接调用 PNPM 来在 **package.json** 文件中添加依赖（而不是使用 [rush add](@rushjs/pages/commands/rush_add/)）:
 
    ```shell
    $ cd my-app
@@ -101,7 +101,7 @@ Heft 带有一些内置的 task, 这些 task 根据你的配置文件自动启�
 
 > **注意：** 不要直接调用 `jest` 命令行，因为它仅仅执行测试而不会执行 Heft 的构建步骤。
 
-这就是启用 Jest 的方法！诸如调试测试等更进一步的信息，可以参考 ["jest" task](../heft_tasks/jest.md) 一文和 [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) 示例项目。
+这就是启用 Jest 的方法！诸如调试测试等更进一步的信息，可以参考 ["jest" task](../tasks/jest.md) 一文和 [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) 示例项目。
 
 ## 启用格式化
 
@@ -172,4 +172,4 @@ Heft 带有一些内置的 task, 这些 task 根据你的配置文件自动启�
 
 4. `@rushstack/eslint-config` 的规则集被设定为与 Prettier 共同工作。可以参考 Rush 官网的[启用 Prettier](@rushjs/pages/maintainer/enabling_prettier/) 来完成设定。
 
-这就是设定 ESLint 的步骤！更多细节可以参考 [eslint task](../heft_tasks/eslint.md) 一文。
+这就是设定 ESLint 的步骤！更多细节可以参考 [eslint task](../tasks/eslint.md) 一文。

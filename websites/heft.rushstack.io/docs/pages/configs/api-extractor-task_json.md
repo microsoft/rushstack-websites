@@ -2,11 +2,11 @@
 title: api-extractor-task.json
 ---
 
-|                                          |                                                                                                                                       |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                           | **&lt;project folder&gt;/config/api-extractor-task.json**                                                                             |
-| [**Riggable?**](../heft/rig_packages.md) | Yes                                                                                                                                   |
-| **Associated plugins:**                  | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
+|                                           |                                                                                                                                       |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **File path:**                            | **&lt;project folder&gt;/config/api-extractor-task.json**                                                                             |
+| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                   |
+| **Associated plugins:**                   | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
 
 ## Template
 
@@ -42,5 +42,5 @@ title: api-extractor-task.json
 
 ## See also
 
-- [api-extractor](../heft_tasks/api-extractor.md) task
+- [api-extractor](../tasks/api-extractor.md) task
 - [API Extractor](@api-extractor/) website

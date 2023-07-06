@@ -34,11 +34,11 @@ Heft 提供了两种标准的 rig 包，可以在你的项目中使用：
 
 以下配置文件都支持诸如 "extends" 的字段，以便设置可以从另一个 NPM 包继承配置：
 
-- **.eslintrc.js** 用于 [eslint task](../heft_tasks/eslint.md), 提供了 [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) 的解决方法，或者使用 [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) 规则集（包含了 `@rushstack/eslint-patch`）
-- **config/api-extractor.json** 用于 [api-extractor task](../heft_tasks/api-extractor.md)
-- **config/jest.config.json** 用于 [jest task](../heft_tasks/jest.md)
-- **tsconfig.json** 用于 [typescript task](../heft_tasks/typescript.md)
-- **tslint.json** 用于 [tslint task](../heft_tasks/tslint.md)
+- **.eslintrc.js** 用于 [eslint task](../tasks/eslint.md), 提供了 [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) 的解决方法，或者使用 [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) 规则集（包含了 `@rushstack/eslint-patch`）
+- **config/api-extractor.json** 用于 [api-extractor task](../tasks/api-extractor.md)
+- **config/jest.config.json** 用于 [jest task](../tasks/jest.md)
+- **tsconfig.json** 用于 [typescript task](../tasks/typescript.md)
+- **tslint.json** 用于 [tslint task](../tasks/tslint.md)
 - **webpack.config.js** 不直接支持集成，但是它是一个 JavaScript 模块，可以通过 `require()` 来加载共享配置。
 
 ## 2. "Riggable" 配置文件

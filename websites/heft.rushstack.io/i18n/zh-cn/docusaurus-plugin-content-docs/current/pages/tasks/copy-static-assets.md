@@ -24,7 +24,7 @@ import './styles.css';
 
 ## 配置文件
 
-接着上面的例子，我们可以通过 [typescript.json](../heft_configs/typescript_json.md) 下的 `"staticAssetsToCopy"` 字段复制 `style.css` 文件，例如：
+接着上面的例子，我们可以通过 [typescript.json](../configs/typescript_json.md) 下的 `"staticAssetsToCopy"` 字段复制 `style.css` 文件，例如：
 
 **&lt;project folder&gt;/config/typescript.json**
 

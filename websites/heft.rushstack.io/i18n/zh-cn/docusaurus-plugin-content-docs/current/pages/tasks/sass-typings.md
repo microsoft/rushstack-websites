@@ -71,7 +71,7 @@ export class ExampleApp extends React.Component {
 > [build-tests/heft-sass-test](https://github.com/microsoft/rushstack/tree/master/build-tests/heft-sass-test)
 > 项目提供了 `.css`, `.scss` 和 `.sass` 的示例。
 
-`sass-typings` 插件默认开启，并会对 `src` 文件下所有支持的扩展名（`.css`, `.scss`, 和 `.sass`）的文件生成类型。它的行为可以在 [sass.json](../heft_configs/sass_json.md) 配置文件中自定义，在大多数情况下，默认行为足够使用。
+`sass-typings` 插件默认开启，并会对 `src` 文件下所有支持的扩展名（`.css`, `.scss`, 和 `.sass`）的文件生成类型。它的行为可以在 [sass.json](../configs/sass_json.md) 配置文件中自定义，在大多数情况下，默认行为足够使用。
 
 通过在编译器配置中的 `rootDirs` 设置中添加 `temp/sass-ts` 来引用生成的类型。
 
@@ -86,4 +86,4 @@ export class ExampleApp extends React.Component {
 
 ```
 
-确保 [copy-static-assets](../heft_tasks/copy-static-assets.md) 任务被配置为复制 CSS 的文件扩展名。
+确保 [copy-static-assets](../tasks/copy-static-assets.md) 任务被配置为复制 CSS 的文件扩展名。

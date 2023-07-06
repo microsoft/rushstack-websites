@@ -4,7 +4,7 @@ title: '"node-service" task （实验性）'
 
 该任务支持 Heft 下开发 Node.js 服务。它允许使用 `heft start` 在 **localhost** 端口上启动服务。当你保存源代码时，服务会自动重启。
 
-该函数与诸如 [nodemon](https://nodemon.io/) 和 [node-dev](https://www.npmjs.com/package/node-dev) 这类独立的启动器类似，它们也可以被用于 Heft 中。然而，`node-service` 优点是 [riggable](../heft/rig_packages.md), 并且可以更好地集成到 Heft 的工作流中。
+该函数与诸如 [nodemon](https://nodemon.io/) 和 [node-dev](https://www.npmjs.com/package/node-dev) 这类独立的启动器类似，它们也可以被用于 Heft 中。然而，`node-service` 优点是 [riggable](../intro/rig_packages.md), 并且可以更好地集成到 Heft 的工作流中。
 
 ## 何时使用它
 
@@ -25,7 +25,7 @@ title: '"node-service" task （实验性）'
 
 ## 配置
 
-1. 通过添加[node-service.json](../heft_configs/node-service_json.md) 来启用 `node-service` 插件。
+1. 通过添加[node-service.json](../configs/node-service_json.md) 来启用 `node-service` 插件。
    它的默认值在大多数情况下就可以正常工作，所以配置文件大多数为空。
 
 2. 在 **package.json** 文件中添加一个启动服务的命令。这个命令的默认名称是 `"serve"`。例如：
