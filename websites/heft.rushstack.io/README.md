@@ -60,3 +60,20 @@ rushx deploy
 (Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials
 necessary to write to the https://github.com/microsoft/heft.rushstack.io-website repo that serves as the
 GitHub Pages deployment target.)
+
+## Managing translations
+
+Instructions for internationalization with Docusaurus: https://docusaurus.io/docs/i18n/introduction
+
+The supported locales for this project can be found in the `"i18n"` section of
+[docusaurus.config.js](./docusaurus.config.js).
+
+> **NOTE:** Each locale is built as a distinct standalone single-page application. The localhost
+> dev server builds only one locale at a time. To view multiple locales together, you must deploy
+> the site.
+
+Common commands:
+
+- `rushx start --locale zh-cn` - launch the localhost dev server in the specified language.
+
+- `rushx write-translations --locale zh-cn` - Update the `i18n/*.json` files with any new strings.
