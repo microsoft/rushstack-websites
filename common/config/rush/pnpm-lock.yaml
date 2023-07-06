@@ -280,6 +280,73 @@ importers:
       typescript: 4.7.4
       webpack: 5.72.1
 
+  ../../websites/heft.rushstack.io:
+    specifiers:
+      '@algolia/client-search': ~4.14.2
+      '@babel/core': ~7.18.10
+      '@babel/runtime': ~7.17.9
+      '@docusaurus/core': 2.3.1
+      '@docusaurus/preset-classic': 2.3.1
+      '@docusaurus/theme-common': 2.3.1
+      '@docusaurus/types': 2.3.1
+      '@mdx-js/react': ~1.6.22
+      '@svgr/webpack': ~6.3.1
+      '@types/js-cookie': 3.0.2
+      '@types/node': 16.18.12
+      '@types/react': ^17.0.2
+      '@types/react-dom': ^17.0.2
+      algoliasearch: ~4.14.2
+      clsx: ~1.2.1
+      dayjs: ~1.11.4
+      docusaurus-theme-search-typesense: ~0.9.0
+      file-loader: ^6.2.0
+      js-cookie: ~3.0.1
+      prism-react-renderer: ~1.3.5
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      rehype-headerless-table-plugin: workspace:*
+      remark-canonical-link-plugin: workspace:*
+      remark-cross-site-link-plugin: workspace:*
+      site-config: workspace:*
+      theme-rushstack-suite-nav: workspace:*
+      tslib: ^2.4.0
+      typescript: ~4.7.4
+      url-loader: ^4.1.1
+      webpack: ~5.72.0
+    dependencies:
+      '@docusaurus/core': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
+      '@docusaurus/preset-classic': 2.3.1_xoiy5em4olq7y6oij5l4weju7i
+      '@docusaurus/theme-common': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
+      '@mdx-js/react': 1.6.22_react@17.0.2
+      '@svgr/webpack': 6.3.1
+      clsx: 1.2.1
+      dayjs: 1.11.7
+      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      file-loader: 6.2.0_webpack@5.72.1
+      js-cookie: 3.0.1
+      prism-react-renderer: 1.3.5_react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
+      tslib: 2.5.0
+      url-loader: 4.1.1_4spiask3fd7dtsm35bmnngyscq
+    devDependencies:
+      '@algolia/client-search': 4.14.3
+      '@babel/core': 7.18.13
+      '@babel/runtime': 7.17.9
+      '@docusaurus/types': 2.3.1_sfoxds7t5ydpegc3knd667wn6m
+      '@types/js-cookie': 3.0.2
+      '@types/node': 16.18.12
+      '@types/react': 17.0.53
+      '@types/react-dom': 17.0.19
+      algoliasearch: 4.14.3
+      rehype-headerless-table-plugin: link:../../plugins/rehype-headerless-table-plugin
+      remark-canonical-link-plugin: link:../../plugins/remark-canonical-link-plugin
+      remark-cross-site-link-plugin: link:../../plugins/remark-cross-site-link-plugin
+      site-config: link:../../tools/site-config
+      typescript: 4.7.4
+      webpack: 5.72.1
+
   ../../websites/lfx.rushstack.io:
     specifiers:
       '@algolia/client-search': ~4.14.2
@@ -1129,7 +1196,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.12.9
 
@@ -10504,6 +10571,7 @@ packages:
 
   /trim/1.0.1:
     resolution: {integrity: sha512-3JVP2YVqITUisXblCDq/Bi4P9457G/sdEamInkyvCsjbTcXLXIiG7XCb4kGMFWh6JGXesS3TKxOPtrncN/xe8w==}
+    deprecated: Use String.prototype.trim() instead
 
   /trough/1.0.5:
     resolution: {integrity: sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==}

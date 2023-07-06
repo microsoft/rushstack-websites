@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Support",
+    "description": "The label for category Support in sidebar docsSidebar"
+  }
+}

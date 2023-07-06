@@ -339,6 +339,10 @@
       "projectFolder": "websites/api.rushstack.io"
     },
     {
+      "packageName": "heft.rushstack.io",
+      "projectFolder": "websites/heft.rushstack.io"
+    },
+    {
       "packageName": "lfx.rushstack.io",
       "projectFolder": "websites/lfx.rushstack.io"
     },
