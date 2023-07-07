@@ -11,10 +11,12 @@ export type AssertType<T1 extends { [P2 in keyof T2]: T2[P2] }, T2 extends { [P1
 
 export type ApiEventStatus = 'NEW' | 'CANCELLED' | 'RESCHEDULED' | 'DONE';
 
+export type ApiDate = string;
+
 export type IApiTableEvent = {
   dbEventId: number;
   eventTitle: string;
-  startTime: Date | undefined;
+  startTime: ApiDate | undefined;
   duration: number | undefined;
   durationUnits: string;
   hostedBy: string;
@@ -29,7 +31,7 @@ export type IApiTableEvent = {
 
 export type IApiTableHistory = {
   dbHistoryId: number;
-  timestamp: Date;
+  timestamp: ApiDate;
   dbUserId: number | undefined;
   username: string;
   dbEventId: number | undefined;
@@ -40,8 +42,8 @@ export type IApiTableHistory = {
 export type IApiTableRegistration = {
   dbEventId: number;
   dbUserId: number;
-  signupTimestamp: Date;
-  cancelTimestamp: Date | undefined;
+  signupTimestamp: ApiDate;
+  cancelTimestamp: ApiDate | undefined;
 };
 
 export type IApiTableUser = {
@@ -76,6 +78,7 @@ export type IApiTableUser = {
 
 export type IApiEvent = IApiTableEvent & {
   spotsLeftNotice: string;
+  invitationOnly: boolean;
   userIsSignedUp: boolean;
 };
 
