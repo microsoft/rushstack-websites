@@ -154,7 +154,13 @@ export class EventCard extends React.Component<IEventCardProps> {
 
     if (!apiEvent.isCompleted) {
       // UPCOMING EVENT
-      if (apiEvent.userIsSignedUp) {
+      if (apiEvent.invitationOnly) {
+        spotsLeftDiv = (
+          <div style={{ paddingTop: '20px', fontWeight: 'bold' }}>
+            Online signup is not available for this event.
+          </div>
+        );
+      } else if (apiEvent.userIsSignedUp) {
         footnote = <>You are attending this event</>;
 
         if (this.props.cardType === 'summary') {
