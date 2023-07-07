@@ -43,7 +43,6 @@
     "@babel/core": "~7.18.10",
     "@babel/runtime": "~7.17.9",
     "@docusaurus/types": "2.3.1",
-    "@types/history": "5.0.0",
     "@types/js-cookie": "3.0.2",
     "@types/node": "16.18.12",
     "@types/react-dom": "^17.0.2",
