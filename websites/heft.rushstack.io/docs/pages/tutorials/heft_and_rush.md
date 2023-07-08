@@ -2,7 +2,7 @@
 title: Interfacing with Rush
 ---
 
-The [Getting started with Heft](../tutorials/getting_started.md) tutorial showed how Heft can be used in a standalone project. Now let's look at how Heft works in the context of a Rush monorepo.
+The [Hello World](../tutorials/hello_world.md) tutorial showed how Heft can be used in a standalone project. Now let's look at how Heft works in the context of a Rush monorepo.
 
 ## How Heft gets invoked
 

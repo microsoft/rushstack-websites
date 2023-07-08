@@ -1,5 +1,5 @@
 ---
-title: Getting started with Heft
+title: Hello world
 ---
 
 This walkthrough will get you started with Heft by creating a basic Node.js console project.

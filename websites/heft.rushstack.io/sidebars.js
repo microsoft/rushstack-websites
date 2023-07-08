@@ -32,7 +32,7 @@ const sidebars = {
       label: 'Heft tutorials',
       collapsible: false,
       items: [
-        'pages/tutorials/getting_started',
+        'pages/tutorials/hello_world',
         'pages/tutorials/adding_tasks',
         'pages/tutorials/everyday_commands',
         'pages/tutorials/heft_and_rush'
