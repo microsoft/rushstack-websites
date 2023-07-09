@@ -1,5 +1,5 @@
 ---
-title: '"node-service" task (experimental)'
+title: 'node-service-plugin'
 ---
 
 This task supports development of Node.js services using Heft. It enables `heft start` to launch your service on a **localhost** port. The service will automatically restart whenever you save a change to your source code.

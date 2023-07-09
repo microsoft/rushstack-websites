@@ -1,0 +1,3 @@
+---
+title: 'serverless-stack-plugin'
+---

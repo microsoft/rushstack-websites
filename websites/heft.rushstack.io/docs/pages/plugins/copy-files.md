@@ -1,5 +1,5 @@
 ---
-title: '"copy-files" task'
+title: 'copy-files-plugin'
 ---
 
 This task implements the `"actionKind": "copyFiles"` action kind that is used when specifying

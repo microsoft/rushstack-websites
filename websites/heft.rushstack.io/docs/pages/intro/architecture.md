@@ -45,7 +45,7 @@ Heft plugins are TypeScript classes that implement the `IHeftPlugin` contract. T
 
 A "plugin package" is an NPM package providing Heft plugins. The NPM package naming pattern is `heft-____-plugin` or `heft-____-plugins` (according to the number of plugins). **Built-in plugins** are loaded directly from the `@rushstack/heft` package.
 
-See [Core Plugins](../intro/core_plugins.md) for a list of official plugins.
+See the [Plugin package index](../plugins/package_index.md) for the list of official plugins.
 
 **Example:** The `@rushstack/heft-jest-plugin` package implements [jest-plugin](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/heft-plugins/heft-jest-plugin/src/JestPlugin.ts#L144).
 

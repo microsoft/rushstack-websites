@@ -1,5 +1,5 @@
 ---
-title: '"api-extractor" task'
+title: 'api-extractor-plugin'
 ---
 
 This task invokes the [API Extractor](@api-extractor/) tool which reads TypeScript declarations (.d.ts files)

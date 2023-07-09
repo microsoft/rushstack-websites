@@ -1,5 +1,5 @@
 ---
-title: '"eslint" task'
+title: 'lint-plugin'
 ---
 
 This task invokes the [ESLint](https://eslint.org/) tool which reports errors about common coding problems.
@@ -16,7 +16,7 @@ ESLint fits together with several other tools as part of Rush Stack's recommende
 
 - [API Extractor](../plugins/api-extractor.md): This is an additional validation check for library packages only. It ensures their API contracts are well-formed and properly documented.
 
-Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use [TSLint](../plugins/tslint.md) instead of ESLint.
+Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use TSLint instead of ESLint.
 
 ## package.json dependencies
 
@@ -68,3 +68,29 @@ It also supports **lint mixins**. Add as many as you like:
 - `@rushstack/eslint-config/mixins/tsdoc` - if you are using API Extractor in your workspace
 
 The [@rushstack/eslint-config documentation](https://www.npmjs.com/package/@rushstack/eslint-config) explains these options in more detail.
+
+---
+
+## title: '"tslint" task'
+
+This task invokes the [TSLint](https://palantir.github.io/tslint/) tool for linting TypeScript code.
+
+## When to use it
+
+**TSLint is deprecated and should only be used for legacy projects.** In 2019, the groups that maintain the TypeScript compiler, ESLint, and TSLint got together and agreed [to deprecate TSLint](https://medium.com/palantir/tslint-in-2019-1a144c2317a9). Instead, a TypeScript parser has been integrated into ESLint, which provides a single unified solution for linting JavaScript and TypeScript source files.
+
+New projects should use the eslint task instead.
+
+## package.json dependencies
+
+You will need to add the `tslint` package to your project:
+
+```bash
+rush add --package tslint --dev
+```
+
+Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Using rig packages](../intro/rig_packages.md) article.
+
+## Config files
+
+There isn't a Heft-specific file for this task. Heft looks for TSLint's config file [tslint.json](https://palantir.github.io/tslint/usage/configuration/).

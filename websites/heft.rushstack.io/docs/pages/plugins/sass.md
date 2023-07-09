@@ -1,5 +1,5 @@
 ---
-title: '"sass-typings" task'
+title: 'sass-plugin'
 ---
 
 This task generates TypeScript typings for CSS styles. It supports three different stylesheet formats:
@@ -88,5 +88,5 @@ Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setti
 
 ```
 
-Make sure that the [copy-static-assets](../plugins/copy-static-assets.md) task is configured
+Make sure that the copy-static-assets task is configured
 to copy CSS file extensions.

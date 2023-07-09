@@ -1,5 +1,5 @@
 ---
-title: '"webpack" task'
+title: 'webpack-plugin'
 ---
 
 <!-- No we are not going to use branded capitalization like "webpack" or "npm". ;-) -->

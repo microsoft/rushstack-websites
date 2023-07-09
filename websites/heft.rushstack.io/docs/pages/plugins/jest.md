@@ -1,5 +1,5 @@
 ---
-title: '"jest" task'
+title: 'jest-plugin'
 ---
 
 This task invokes the [Jest](https://jestjs.io/en/) test framework for unit testing.

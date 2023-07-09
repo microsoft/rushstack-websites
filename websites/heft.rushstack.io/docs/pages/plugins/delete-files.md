@@ -1,5 +1,5 @@
 ---
-title: '"delete-globs" task'
+title: 'delete-files-plugin'
 ---
 
 This task implements the `"actionKind": "deleteGlobs"` action kind that is used when specifying

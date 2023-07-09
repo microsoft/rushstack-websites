@@ -22,7 +22,6 @@ const sidebars = {
         'index',
         'pages/intro/getting_started',
         'pages/intro/architecture',
-        'pages/intro/core_plugins',
         'pages/intro/rig_packages',
         'pages/intro/cli'
       ]
@@ -40,9 +39,14 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Heft tasks',
+      label: 'Heft plugins',
       collapsible: false,
       items: [
+        {
+          type: 'doc',
+          label: '(package index)',
+          id: 'pages/plugins/package_index'
+        },
         {
           type: 'doc',
           label: 'api-extractor',
@@ -55,18 +59,13 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'copy-static-assets',
-          id: 'pages/plugins/copy-static-assets'
+          label: 'delete-files',
+          id: 'pages/plugins/delete-files'
         },
         {
           type: 'doc',
-          label: 'delete-globs',
-          id: 'pages/plugins/delete-globs'
-        },
-        {
-          type: 'doc',
-          label: 'eslint',
-          id: 'pages/plugins/eslint'
+          label: 'dev-cert',
+          id: 'pages/plugins/dev-cert'
         },
         {
           type: 'doc',
@@ -75,18 +74,33 @@ const sidebars = {
         },
         {
           type: 'doc',
+          label: 'lint',
+          id: 'pages/plugins/lint'
+        },
+        {
+          type: 'doc',
           label: 'node-service',
           id: 'pages/plugins/node-service'
         },
         {
           type: 'doc',
-          label: 'sass-typings',
-          id: 'pages/plugins/sass-typings'
+          label: 'run-script',
+          id: 'pages/plugins/run-script'
         },
         {
           type: 'doc',
-          label: 'tslint',
-          id: 'pages/plugins/tslint'
+          label: 'sass',
+          id: 'pages/plugins/sass'
+        },
+        {
+          type: 'doc',
+          label: 'serverless-stack',
+          id: 'pages/plugins/serverless-stack'
+        },
+        {
+          type: 'doc',
+          label: 'storybook',
+          id: 'pages/plugins/storybook'
         },
         {
           type: 'doc',
