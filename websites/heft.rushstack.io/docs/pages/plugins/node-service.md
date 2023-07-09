@@ -1,6 +1,15 @@
 ---
-title: 'node-service-plugin'
+title: Node.js service plugin
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft) (built-in) |
+| **Plugin name:** | [node-service-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) |
+| **Plugin config file:** | [node-service.json](../configs/node-service_json.md) |
+| **heft.json options:** | (none) |
+<!-- prettier-ignore-end -->
 
 This task supports development of Node.js services using Heft. It enables `heft start` to launch your service on a **localhost** port. The service will automatically restart whenever you save a change to your source code.
 

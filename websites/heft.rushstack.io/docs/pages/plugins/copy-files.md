@@ -1,6 +1,15 @@
 ---
-title: 'copy-files-plugin'
+title: Copy files plugin
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft) (built-in) |
+| **Plugin name:** | [copy-files-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) |
+| **Plugin config file:** | (none) |
+| **heft.json options:** | [copy-files-options.schema.json](https://developer.microsoft.com/json-schemas/heft/v0/copy-files-options.schema.json) |
+<!-- prettier-ignore-end -->
 
 This task implements the `"actionKind": "copyFiles"` action kind that is used when specifying
 `"eventActions"` in the [heft.json](../configs/heft_json.md) config file.

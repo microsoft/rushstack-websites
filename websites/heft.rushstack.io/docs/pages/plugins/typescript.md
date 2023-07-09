@@ -1,6 +1,15 @@
 ---
-title: 'typescript-plugin'
+title: TypeScript plugin
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft-typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin) |
+| **Plugin name:** | [typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin/heft-plugin.json) |
+| **Plugin config file:** | [typescript.json](../configs/typescript_json.md) |
+| **heft.json options:** | (none) |
+<!-- prettier-ignore-end -->
 
 This task invokes the compiler for the [TypeScript](https://www.typescriptlang.org/) programming language.
 

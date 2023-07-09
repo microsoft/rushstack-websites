@@ -1,6 +1,15 @@
 ---
-title: 'lint-plugin'
+title: ESlint / TSLint plugins
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft-lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin) |
+| **Plugin name:** | [lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin/heft-plugin.json) |
+| **Plugin config file:** | (none) |
+| **heft.json options:** | (none) |
+<!-- prettier-ignore-end -->
 
 This task invokes the [ESLint](https://eslint.org/) tool which reports errors about common coding problems.
 

@@ -1,6 +1,15 @@
 ---
-title: 'sass-plugin'
+title: Sass plugin
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft-sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin) |
+| **Plugin name:** | [sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/heft-plugin.json) |
+| **Plugin config file:** | [sass.json](../configs/sass_json.md) |
+| **heft.json options:** | (none) |
+<!-- prettier-ignore-end -->
 
 This task generates TypeScript typings for CSS styles. It supports three different stylesheet formats:
 

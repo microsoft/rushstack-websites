@@ -49,67 +49,67 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'api-extractor',
+          label: 'API Extractor',
           id: 'pages/plugins/api-extractor'
         },
         {
           type: 'doc',
-          label: 'copy-files',
+          label: 'Copy files',
           id: 'pages/plugins/copy-files'
         },
         {
           type: 'doc',
-          label: 'delete-files',
+          label: 'Delete files',
           id: 'pages/plugins/delete-files'
         },
         {
           type: 'doc',
-          label: 'dev-cert',
+          label: 'Dev certificate',
           id: 'pages/plugins/dev-cert'
         },
         {
           type: 'doc',
-          label: 'jest',
+          label: 'Jest',
           id: 'pages/plugins/jest'
         },
         {
           type: 'doc',
-          label: 'lint',
+          label: 'ESlint / TSLint',
           id: 'pages/plugins/lint'
         },
         {
           type: 'doc',
-          label: 'node-service',
+          label: 'Node.js service',
           id: 'pages/plugins/node-service'
         },
         {
           type: 'doc',
-          label: 'run-script',
+          label: 'Run script',
           id: 'pages/plugins/run-script'
         },
         {
           type: 'doc',
-          label: 'sass',
+          label: 'Sass',
           id: 'pages/plugins/sass'
         },
         {
           type: 'doc',
-          label: 'serverless-stack',
+          label: 'Serverless Stack',
           id: 'pages/plugins/serverless-stack'
         },
         {
           type: 'doc',
-          label: 'storybook',
+          label: 'Storybook',
           id: 'pages/plugins/storybook'
         },
         {
           type: 'doc',
-          label: 'typescript',
+          label: 'TypeScript',
           id: 'pages/plugins/typescript'
         },
         {
           type: 'doc',
-          label: 'webpack',
+          label: 'Webpack',
           id: 'pages/plugins/webpack'
         }
       ]

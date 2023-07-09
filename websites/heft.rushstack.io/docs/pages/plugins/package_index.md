@@ -16,5 +16,4 @@ title: Plugin package index
 | [@rushstack/heft-typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin) | [typescript-plugin](./typescript.md) |
 | [@rushstack/heft-webpack4-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin) | [webpack4-plugin](./webpack.md) |
 | [@rushstack/heft-webpack5-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin) | [webpack5-plugin](./webpack.md) |
-
 <!-- prettier-ignore-end -->

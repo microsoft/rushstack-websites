@@ -1,6 +1,15 @@
 ---
-title: 'api-extractor-plugin'
+title: API Extractor plugin
 ---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **Plugin package:** | [@rushstack/heft-api-extractor-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-api-extractor-plugin) |
+| **Plugin name:** | [api-extractor-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-api-extractor-plugin/heft-plugin.json) |
+| **Plugin config file:** | [api-extractor-task.json](../configs/api-extractor-task_json.md) |
+| **heft.json options:** | (none) |
+<!-- prettier-ignore-end -->
 
 This task invokes the [API Extractor](@api-extractor/) tool which reads TypeScript declarations (.d.ts files)
 as inputs and produces three types of outputs:
