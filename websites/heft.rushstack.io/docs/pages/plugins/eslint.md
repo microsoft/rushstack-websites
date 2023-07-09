@@ -10,13 +10,13 @@ ESLint fits together with several other tools as part of Rush Stack's recommende
 
 - [Prettier](@rushjs/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build. Instead, Prettier reformats the code automatically via a `git commit` hook. To se this up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
 
-- [TypeScript](../tasks/typescript.md): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
+- [TypeScript](../plugins/typescript.md): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
 
 - **ESLint**: The lint rules supplement the compiler's checks with additional stylistic rules that are more subjective and highly customizable. Whereas TypeScript might detect that _"This function parameter is a string but was declared as a number"_, the linter might detect an issue such as _"This class name should use PascalCase instead of camelCase."_ Unlike Prettier issues, fixing an ESLint issue may involve a significant code change, and may even break an API contract.
 
-- [API Extractor](../tasks/api-extractor.md): This is an additional validation check for library packages only. It ensures their API contracts are well-formed and properly documented.
+- [API Extractor](../plugins/api-extractor.md): This is an additional validation check for library packages only. It ensures their API contracts are well-formed and properly documented.
 
-Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use [TSLint](../tasks/tslint.md) instead of ESLint.
+Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use [TSLint](../plugins/tslint.md) instead of ESLint.
 
 ## package.json dependencies
 

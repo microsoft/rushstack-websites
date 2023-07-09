@@ -104,6 +104,6 @@ title: typescript.json
 
 ## See also
 
-- [typescript](../tasks/typescript.md) task
-- [copy-static-assets](../tasks/copy-static-assets.md) task
-- [jest](../tasks/jest.md) task
+- [typescript](../plugins/typescript.md) task
+- [copy-static-assets](../plugins/copy-static-assets.md) task
+- [jest](../plugins/jest.md) task

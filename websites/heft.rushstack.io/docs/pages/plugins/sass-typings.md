@@ -88,5 +88,5 @@ Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setti
 
 ```
 
-Make sure that the [copy-static-assets](../tasks/copy-static-assets.md) task is configured
+Make sure that the [copy-static-assets](../plugins/copy-static-assets.md) task is configured
 to copy CSS file extensions.

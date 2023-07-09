@@ -42,11 +42,11 @@ file can add custom settings such as `"types"` as needed.
 
 The following config files all support a field such as `"extends"` that enables settings to be inherited from another NPM package:
 
-- **.eslintrc.js** for the [eslint task](../tasks/eslint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
-- **config/api-extractor.json** for the [api-extractor task](../tasks/api-extractor.md)
-- **config/jest.config.json** for the [jest task](../tasks/jest.md)
-- **tsconfig.json** for the [typescript task](../tasks/typescript.md)
-- **tslint.json** for the [tslint task](../tasks/tslint.md)
+- **.eslintrc.js** for the [eslint task](../plugins/eslint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
+- **config/api-extractor.json** for the [api-extractor task](../plugins/api-extractor.md)
+- **config/jest.config.json** for the [jest task](../plugins/jest.md)
+- **tsconfig.json** for the [typescript task](../plugins/typescript.md)
+- **tslint.json** for the [tslint task](../plugins/tslint.md)
 - **webpack.config.js** does not explicitly support inheritance, but being a JavaScript module, it can call `require()` to load shared settings.
 
 ## 2. "Riggable" config files

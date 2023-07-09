@@ -46,57 +46,57 @@ const sidebars = {
         {
           type: 'doc',
           label: 'api-extractor',
-          id: 'pages/tasks/api-extractor'
+          id: 'pages/plugins/api-extractor'
         },
         {
           type: 'doc',
           label: 'copy-files',
-          id: 'pages/tasks/copy-files'
+          id: 'pages/plugins/copy-files'
         },
         {
           type: 'doc',
           label: 'copy-static-assets',
-          id: 'pages/tasks/copy-static-assets'
+          id: 'pages/plugins/copy-static-assets'
         },
         {
           type: 'doc',
           label: 'delete-globs',
-          id: 'pages/tasks/delete-globs'
+          id: 'pages/plugins/delete-globs'
         },
         {
           type: 'doc',
           label: 'eslint',
-          id: 'pages/tasks/eslint'
+          id: 'pages/plugins/eslint'
         },
         {
           type: 'doc',
           label: 'jest',
-          id: 'pages/tasks/jest'
+          id: 'pages/plugins/jest'
         },
         {
           type: 'doc',
           label: 'node-service',
-          id: 'pages/tasks/node-service'
+          id: 'pages/plugins/node-service'
         },
         {
           type: 'doc',
           label: 'sass-typings',
-          id: 'pages/tasks/sass-typings'
+          id: 'pages/plugins/sass-typings'
         },
         {
           type: 'doc',
           label: 'tslint',
-          id: 'pages/tasks/tslint'
+          id: 'pages/plugins/tslint'
         },
         {
           type: 'doc',
           label: 'typescript',
-          id: 'pages/tasks/typescript'
+          id: 'pages/plugins/typescript'
         },
         {
           type: 'doc',
           label: 'webpack',
-          id: 'pages/tasks/webpack'
+          id: 'pages/plugins/webpack'
         }
       ]
     },

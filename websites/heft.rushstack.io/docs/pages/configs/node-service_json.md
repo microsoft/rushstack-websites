@@ -71,4 +71,4 @@ title: node-service.json
 
 ## See also
 
-- [node-service](../tasks/node-service.md) task
+- [node-service](../plugins/node-service.md) task

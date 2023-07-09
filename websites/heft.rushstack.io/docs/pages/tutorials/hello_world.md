@@ -90,7 +90,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    because Node.js is a global environment, so its typings must be loaded globally. Most other `@types` packages
    can be loaded via `import` statements in your source code.
 
-   See the [typescript task](../tasks/typescript.md) documentation for more background about
+   See the [typescript task](../plugins/typescript.md) documentation for more background about
    TypeScript configuration with Heft.
 
 6. You can invoke Heft using `./node_modules/.bin/heft`, but it's more convenient to install it globally

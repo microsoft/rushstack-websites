@@ -62,4 +62,4 @@ title: sass.json
 
 ## See also
 
-- [sass-typings](../tasks/sass-typings.md) task
+- [sass-typings](../plugins/sass-typings.md) task

@@ -5,10 +5,10 @@ title: Adding more tasks
 _This section continues the tutorial project from the [Hello World](../tutorials/hello_world.md) tutorial._
 
 Heft comes with a number of built-in tasks that become enabled automatically based on config files that you create.
-All the tasks are documented in the [Heft tasks](../tasks/api-extractor.md) section.
+All the tasks are documented in the [Heft tasks](../plugins/api-extractor.md) section.
 
-Continuing our tutorial, let's enable the two most common tasks: [Jest](../tasks/jest.md)
-and [ESlint](../tasks/eslint.md).
+Continuing our tutorial, let's enable the two most common tasks: [Jest](../plugins/jest.md)
+and [ESlint](../plugins/eslint.md).
 
 ## Adding unit tests to your project
 
@@ -131,7 +131,7 @@ and [ESlint](../tasks/eslint.md).
 
 > **Note:** Do not invoke the `jest` command line directly, since it only runs tests and will not perform Heft's other build steps.
 
-That's it for setting up Jest! Further information, including instructions for debugging tests, can be found in the ["jest" task](../tasks/jest.md) reference and the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) sample project.
+That's it for setting up Jest! Further information, including instructions for debugging tests, can be found in the ["jest" task](../plugins/jest.md) reference and the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) sample project.
 
 ## Enabling linting
 
@@ -204,4 +204,4 @@ That's it for setting up Jest! Further information, including instructions for d
    To set that up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) article
    on the Rush website.
 
-That's it for ESLint! More detail can be found in the [eslint task](../tasks/eslint.md) reference.
+That's it for ESLint! More detail can be found in the [eslint task](../plugins/eslint.md) reference.

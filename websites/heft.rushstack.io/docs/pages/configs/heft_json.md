@@ -161,5 +161,5 @@ title: heft.json
 
 ## See also
 
-- [copy-files](../tasks/copy-files.md) task
-- [delete-globs](../tasks/delete-globs.md) task
+- [copy-files](../plugins/copy-files.md) task
+- [delete-globs](../plugins/delete-globs.md) task

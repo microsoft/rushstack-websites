@@ -42,5 +42,5 @@ title: api-extractor-task.json
 
 ## See also
 
-- [api-extractor](../tasks/api-extractor.md) task
+- [api-extractor](../plugins/api-extractor.md) task
 - [API Extractor](@api-extractor/) website
