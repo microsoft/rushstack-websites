@@ -6,7 +6,7 @@ title: Delete files plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft) (built-in) |
-| **Plugin name:** | [delete-files-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) |
+| **Plugin name:** | [delete-files-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) implemented by [DeleteFilesPlugin.ts](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/DeleteFilesPlugin.ts) |
 | **Plugin config file:** | (none) |
 | **heft.json options:** | [delete-files-options.schema.json](https://developer.microsoft.com/json-schemas/heft/v0/delete-files-options.schema.json) |
 <!-- prettier-ignore-end -->

@@ -6,7 +6,7 @@ title: Jest plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft-jest-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin) |
-| **Plugin name:** | [jest-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) |
+| **Plugin name:** | [jest-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) implemented by [JestPlugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
 | **Plugin config file:** | Jest's [jest.config.json](https://jestjs.io/docs/configuration) loaded by `@rushstack/heft-config-file` for rigging |
 | **heft.json options:** | [IJestPluginOptions](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
 <!-- prettier-ignore-end -->

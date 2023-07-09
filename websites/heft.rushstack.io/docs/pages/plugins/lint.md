@@ -6,7 +6,7 @@ title: ESlint / TSLint plugins
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft-lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin) |
-| **Plugin name:** | [lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin/heft-plugin.json) |
+| **Plugin name:** | [lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin/heft-plugin.json) implemented by [LintPlugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin/src/LintPlugin.ts) |
 | **Plugin config file:** | (none) |
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->

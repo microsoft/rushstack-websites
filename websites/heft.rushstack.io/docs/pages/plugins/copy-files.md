@@ -6,13 +6,12 @@ title: Copy files plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft) (built-in) |
-| **Plugin name:** | [copy-files-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) |
+| **Plugin name:** | [copy-files-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) implemented by [CopyFilesPlugin.ts](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/CopyFilesPlugin.ts) |
 | **Plugin config file:** | (none) |
 | **heft.json options:** | [copy-files-options.schema.json](https://developer.microsoft.com/json-schemas/heft/v0/copy-files-options.schema.json) |
 <!-- prettier-ignore-end -->
 
-This task implements the `"actionKind": "copyFiles"` action kind that is used when specifying
-`"eventActions"` in the [heft.json](../configs/heft_json.md) config file.
+This plugin copies files or folders specified using various wildcards.
 
 ## When to use it
 
@@ -30,11 +29,7 @@ Some general notes:
 
 None - this feature is implemented internally by Heft.
 
-## Config files
-
-Event actions are registered in the [heft.json](../configs/heft_json.md) config file. For example:
-
-**&lt;project folder&gt;/config/heft.json**
+## Configuration
 
 ```js
 {

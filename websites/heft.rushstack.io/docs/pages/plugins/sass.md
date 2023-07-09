@@ -6,7 +6,7 @@ title: Sass plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft-sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin) |
-| **Plugin name:** | [sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/heft-plugin.json) |
+| **Plugin name:** | [sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/heft-plugin.json) implemented by [SassPlugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/src/SassPlugin.ts) |
 | **Plugin config file:** | [sass.json](../configs/sass_json.md) |
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->

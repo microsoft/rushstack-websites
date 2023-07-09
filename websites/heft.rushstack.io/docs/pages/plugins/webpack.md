@@ -6,7 +6,7 @@ title: Webpack plugins
 |     |     |
 | --- | --- |
 | **Plugin packages:** | [@rushstack/heft-webpack4-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin) <br/>  [@rushstack/heft-webpack5-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin) |
-| **Plugin names:** | [webpack4-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin/heft-plugin.json) <br/> [webpack5-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin/heft-plugin.json) |
+| **Plugin names:** | [webpack4-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin/heft-plugin.json) implemented by [Webpack4Plugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin/src/Webpack4Plugin.ts) <br/> [webpack5-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin/heft-plugin.json) implemented by [Webpack5Plugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin/src/Webpack5Plugin.ts) |
 | **Plugin config file:** | (none) |
 | **heft.json options:** | [IWebpackPluginOptions (Webpack 4)](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack4-plugin/src/Webpack4Plugin.ts) <br/> [IWebpackPluginOptions (Webpack 5)](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-webpack5-plugin/src/Webpack5Plugin.ts) |
 <!-- prettier-ignore-end -->

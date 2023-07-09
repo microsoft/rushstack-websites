@@ -6,7 +6,7 @@ title: TypeScript plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft-typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin) |
-| **Plugin name:** | [typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin/heft-plugin.json) |
+| **Plugin name:** | [typescript-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin/heft-plugin.json) implemented by [TypeScriptPlugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-typescript-plugin/src/TypeScriptPlugin.ts) |
 | **Plugin config file:** | [typescript.json](../configs/typescript_json.md) |
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->

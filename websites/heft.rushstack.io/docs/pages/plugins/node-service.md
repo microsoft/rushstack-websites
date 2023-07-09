@@ -6,7 +6,7 @@ title: Node.js service plugin
 |     |     |
 | --- | --- |
 | **Plugin package:** | [@rushstack/heft](https://github.com/microsoft/rushstack/tree/main/apps/heft) (built-in) |
-| **Plugin name:** | [node-service-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) |
+| **Plugin name:** | [node-service-plugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/heft-plugin.json) implemented by [NodeServicePlugin.ts](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/NodeServicePlugin.ts) |
 | **Plugin config file:** | [node-service.json](../configs/node-service_json.md) |
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->
