@@ -20,8 +20,11 @@ and Mac OS.
 
 ## When to use it
 
-For example, if you'd like to configure `webpack-dev-server` to use HTTPS in serve mode
-without having to manually generate and install a self-signed certificate.
+Generally `http://localhost` works fine for local development, however HTTPS may be required if your
+app needs to make requests to a production service whose [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+policy requires SSL. For that situation, your `webpack-dev-server` or Node.js service will need to be
+configured with a self-signed certificate. This plugin automatically generates the certificate, installs it,
+and configures your OS to trust it.
 
 ## package.json dependencies
 
@@ -29,7 +32,8 @@ None.
 
 ## Configuration
 
-The `trust-dev-certificate-plugin` might be loaded as follows:
+The `trust-dev-certificate-plugin` can be mapped to `heft trust-dev-cert` and `heft untrust-dev-cert` actions
+with a configuration such as:
 
 **&lt;project folder&gt;/config/heft.json**
 

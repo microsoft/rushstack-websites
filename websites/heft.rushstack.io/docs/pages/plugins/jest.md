@@ -55,25 +55,42 @@ rush add --package @types/heft-jest --exact --dev
 
 ## Config files
 
-The Heft plugin that you installed above needs to be loaded using the [heft.json config file](../configs/heft_json.md):
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
+or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then Jest will already be configured.
+Otherwise, your [heft.json config file](../configs/heft_json.md) could load it like this:
 
 **&lt;project folder&gt;/config/heft.json**
 
 ```js
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
-  . . .
-
-  "heftPlugins": [
-    { "plugin": "@rushstack/heft-jest-plugin" }  // <---- ADD THIS
-  ]
+  "phasesByName": {
+    "build": {
+      . . .
+    },
+    "test": {
+      "phaseDependencies": ["build"],
+      "tasksByName": {
+        "jest": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-jest-plugin"
+          }
+        }
+      }
+    }
+  }
 }
 ```
 
-Heft looks for [Jest's config file](https://jestjs.io/docs/en/configuration) in the standard path **config/jest.config.json**. Although Jest itself supports other config file names and even embedding settings in your **package.json** file, Heft requires the name `jest.config.json`. Using one standard filename makes it easy to search for these files, perform bulk edits, and copy configuration recipes between projects.
+Heft looks for [Jest's config file](https://jestjs.io/docs/en/configuration) in the standard path
+**config/jest.config.json**. Although Jest itself supports other config file names and even embedding settings
+in your **package.json** file, Heft requires the name `config/jest.config.json`. In a large scale monorepo,
+enforcing one standard filename makes it easier to search for these files, perform bulk edits, and copy configuration
+recipes between projects.
 
-For a simple setup, your Jest configuration should extend Heft's [jest-shared.config.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/includes/jest-shared.config.json) like this:
+For a simple setup, your Jest configuration should extend Heft's
+[jest-shared.config.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/includes/jest-shared.config.json) like this:
 
 **&lt;project folder&gt;/config/jest.config.json**
 
@@ -96,15 +113,21 @@ Alternatively, if you are using a rig package such as `@rushstack/heft-web-rig`,
 (If you maintain your own rig, it should extend from `@rushstack/heft-jest-plugin` to ensure that Jest uses
 Heft's transforms and resolver.)
 
-_**Note:** If you find yourself frequently adding lots of custom settings to **jest.config.json**, please create a GitHub issue and tell us about it. Our aim is to provide a configuration that minimizes the need for project-specific customizations._
+_**Note:** If you find yourself frequently adding lots of custom settings to **jest.config.json**, please create
+a GitHub issue and tell us about it. Our aim is to provide a configuration that minimizes the need for
+project-specific customizations._
 
 ## The "extends" field
 
-The `"extends"` field in **jest.config.json** is a Heft-specific enhancement that will not work if the Jest command line
-is invoked without Heft. It replaces Jest's `"preset"` field which has limited module resolution capabilities and does not support rigs.
+The `"extends"` field in **jest.config.json** is a Heft-specific enhancement that will not work if the Jest
+command line is invoked without Heft. This setting replaces Jest's `"preset"` field which has limited module
+resolution capabilities and does not support rigs. Heft parses **jest.config.json** using
+the `@rushstack/heft-config-file` engine, with full support for
+[property inheritance directives](../advanced/heft-config-file.md#property-inheritance-directives).
 
 If for some reason your `jest.config.json` needs to be directly readable by Jest, the
-`disableConfigurationModuleResolution` plugin setting can be used to restore the old behavior.
+`disableConfigurationModuleResolution` plugin setting can be used to restore the standard behavior,
+with the downside that your Jest configuration will not be riggable.
 
 For example:
 
@@ -112,27 +135,35 @@ For example:
 
 ```js
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
-  . . .
-
-  "heftPlugins": [
-    {
-      "plugin": "@rushstack/heft-jest-plugin",
-      "options": {
-        // (Not recommended) Disable Heft's support for rigs and the "extends" field
-        "disableConfigurationModuleResolution": true
+  "phasesByName": {
+    "build": {
+      . . .
+    },
+    "test": {
+      "phaseDependencies": ["build"],
+      "tasksByName": {
+        "jest": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-jest-plugin",
+            "options": {
+              // (Not recommended) Disable Heft's support for rigs and the "extends" field
+              "disableConfigurationModuleResolution": true
+            }
+          }
+        }
       }
     }
-  ]
+  }
 }
 ```
 
 ## Differences from ts-jest
 
-Internally, Jest supports TypeScript compilation via plugins called [transforms](https://jestjs.io/docs/en/tutorial-react#custom-transformers), which are modeled as a synchronous function that receives a single `.ts` file as input, and returns a `.js` file and `.map` file as its output. The official `babel-jest` transform actually does compile one file at a time, but that approach cannot support language features such as `const enum` that require analyzing imported types. The `ts-jest` transform solves this problem by performing a full compiler analysis and reusing it each time the transform is invoked, but this won't support other build steps such as preprocessors. Both `babel-jest` and `ts-jest` also impose a significant performance cost, by invoking the compiler a second time when running tests.
+Conventionally, Jest supports TypeScript compilation via plugins called [transforms](https://jestjs.io/docs/en/tutorial-react#custom-transformers), which are modeled as a function that receives a single `.ts` file as input, and returns a `.js` file and `.map` file as its output. The official `babel-jest` transform actually does compile one file at a time, but that approach cannot support language features such as `const enum` that require analyzing imported types. The popular `ts-jest` transform solves that problem by performing a full compiler analysis and reusing it each time the transform is invoked, but this won't support other build steps such as preprocessors. Both `babel-jest` and `ts-jest` also impose a significant performance cost, by invoking the compiler a second time when running tests.
 
-Heft takes a different approach of performing a conventional build and then invoking Jest on the output. If your build targets a browser runtime, you'll need to use the [emitFolderNameForTests](../plugins/webpack.md) setting to emit CommonJS outputs in a secondary folder. (Emitting extra files is still significantly faster than invoking the compiler twice.) Heft's `jest-build-transform.js` does not compile anything itself, but rather returns the output of the full pipeline.
+Heft takes a different approach of performing a conventional build and then invoking Jest on the output. If your build targets a browser runtime, you'll need to use the [additionalModuleKindsToEmit](../configs/typescript_json.md) setting to emit CommonJS outputs in a secondary folder. (Emitting extra files is still significantly faster than invoking the compiler twice.) Besides avoiding redundant compiler invocations, Heft's strategy ensures that your unit tests are compiled with your full build process including any preprocessor tasks such as [Sass typings generation](../plugins/sass.md).
 
 Some helpful examples of mocking and other Jest techniques can be found in the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) project folder.
 
@@ -173,6 +204,114 @@ To debug your Jest tests, it's recommended create a VS Code [launch.json file](h
 This launches the full Heft toolchain in your debugger. The `--debug` switch prevents Jest from being spawned as a separate process. The `--clean` flag is optional, but fixes an issue where in rare situations Jest's "haste-map" may become corrupted by an aborted run.
 
 To restrict the debugger to run one specific test, you can add the `--test-name-pattern` parameter. (See [here](../intro/cli.md) for command-line documentation.) Another option is to use Jest's [test.only()](https://jestjs.io/docs/en/api#testonlyname-fn-timeout) API.
+
+## CLI parameters
+
+[heft-jest-plugin/heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) defines these parameters:
+
+```
+  --config RELATIVE_PATH
+                        Use this parameter to control which Jest
+                        configuration file will be used to run Jest tests. If
+                        not specified, it will default to "config/jest.config.
+                        json". This corresponds to the "--config" parameter
+                        in Jest's documentation.
+  --debug-heft-reporter
+                        Normally Heft installs a custom Jest reporter so that
+                        test results are presented consistently with other
+                        task logging. If you suspect a problem with the
+                        HeftJestReporter, specify "--debug-heft-reporter" to
+                        temporarily disable it so that you can compare with
+                        how Jest's default reporter would have presented it.
+                        Include this output in your bug report. Do not use
+                        "--debug-heft-reporter" in production.
+  --detect-open-handles
+                        Attempt to collect and print open handles preventing
+                        Jest from exiting cleanly. This option has a
+                        significant performance penalty and should only be
+                        used for debugging. This corresponds to the
+                        "--detectOpenHandles" parameter in Jest's
+                        documentation.
+  --disable-code-coverage
+                        Disable any configured code coverage. If code
+                        coverage is not configured, this parameter has no
+                        effect.
+  --find-related-tests SOURCE_FILE
+                        Find and run the tests that cover a source file that
+                        was passed in as an argument. This corresponds to the
+                        "--findRelatedTests" parameter in Jest's
+                        documentation. This parameter is not compatible with
+                        watch mode.
+  --max-workers COUNT_OR_PERCENTAGE
+                        Use this parameter to control maximum number of
+                        worker processes tests are allowed to use. This
+                        parameter is similar to the parameter noted in the
+                        Jest documentation, and can either be an integer
+                        representing the number of workers to spawn when
+                        running tests, or can be a string representing a
+                        percentage of the available CPUs on the machine to
+                        utilize. Example values: "3", "25%"
+  --silent
+                        Prevent tests from printing messages through the
+                        console. This corresponds to the "--silent" parameter
+                        in Jest's documentation.
+  -t REGEXP, --test-name-pattern REGEXP
+                        Run only tests with a name that matches a regular
+                        expression. The REGEXP is matched against the full
+                        name, which is a combination of the test name and all
+                        its surrounding describe blocks. This corresponds to
+                        the "--testNamePattern" parameter in Jest's
+                        documentation.
+  --test-path-ignore-patterns REGEXP
+                        Avoid running tests with a source file path that
+                        matches one ore more regular expressions. On Windows
+                        you will need to use "/" instead of "\". This
+                        corresponds to the "--testPathIgnorePatterns"
+                        parameter in Jest's documentation.
+  --test-path-pattern REGEXP
+                        Run only tests with a source file path that matches a
+                        regular expression. On Windows you will need to use
+                        "/" instead of "\". This corresponds to the
+                        "--testPathPattern" parameter in Jest's documentation.
+  --test-timeout-ms TIMEOUT
+                        Change the default timeout for tests; if a test
+                        doesn't complete within this many milliseconds, it
+                        will fail. Individual tests can override the default.
+                        If unspecified, the default is normally 5000 ms. This
+                        corresponds to the "--testTimeout" parameter in
+                        Jest's documentation.
+  -u, --update-snapshots
+                        Update Jest snapshots while running the tests. This
+                        corresponds to the "--updateSnapshots" parameter in
+                        Jest.
+```
+
+## heft.json options
+
+When loading `@rushstack/heft-jest-plugin` in your **heft.json**, the following settings can be provided inline using the `"options"` field:
+
+[heft-plugins/heft-jest-plugin/src/JestPlugin.ts](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts)
+
+```js
+export interface IJestPluginOptions {
+  configurationPath?: string;
+  debugHeftReporter?: boolean;
+  detectOpenHandles?: boolean;
+  disableCodeCoverage?: boolean;
+  disableConfigurationModuleResolution?: boolean;
+  findRelatedTests?: string[];
+  maxWorkers?: string;
+  passWithNoTests?: boolean;
+  silent?: boolean;
+  testNamePattern?: string;
+  testPathIgnorePatterns?: string;
+  testPathPattern?: string;
+  testTimeout?: number;
+  updateSnapshots?: boolean;
+}
+```
+
+Their function is identical to the corresponding command-line parameters.
 
 ## See also
 

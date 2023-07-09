@@ -39,6 +39,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Advanced topics',
+      collapsible: false,
+      items: ['pages/advanced/heft-config-file']
+    },
+    {
+      type: 'category',
       label: 'Heft plugins',
       collapsible: false,
       items: [
