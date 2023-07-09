@@ -11,64 +11,116 @@ title: Delete files plugin
 | **heft.json options:** | [delete-files-options.schema.json](https://developer.microsoft.com/json-schemas/heft/v0/delete-files-options.schema.json) |
 <!-- prettier-ignore-end -->
 
-This task implements the `"actionKind": "deleteGlobs"` action kind that is used when specifying
-`"eventActions"` in the [heft.json](../configs/heft_json.md) config file.
+This plugin deletes files or folders specified using various wildcards.
 
 ## When to use it
 
-The most common usage is to implement the `heft clean` action that deletes build output folders
-such as `lib`, `temp`, and `dist`.
+**NOT GENERALLY NEEDED:** It is recommended to delete build output files using the `cleanFiles` setting for
+Heft phases, since this ensures proper interoperation with other features such as `--clean`.
+The `delete-files-plugin` is generally only used for mid-phase situations, for example deleting to refine the
+result of a `copy-files-plugin` operation.
+
+Some caveats:
+
+- Avoid using this task to delete files outside the project folder. Doing so would violate Rush's
+  [principle of project isolation](../tutorials/heft_and_rush.md).
+- Where possible, avoid using inefficient glob operators such as `**` that recursively traverse a directory tree.
+  These disk-intensive operations will slow down the build.
 
 ## package.json dependencies
 
 None - this feature is implemented internally by Heft.
 
-## Config files
+## Configuration
 
-Event actions are registered in the [heft.json](../configs/heft_json.md) config file. For example:
+The `delete-files-plugin` is a built-in plugin loaded directly from `@rushstack/heft`.
 
 **&lt;project folder&gt;/config/heft.json**
 
 ```js
 {
-  . . .
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+  "extends": "@rushstack/heft-web-rig/profiles/library/config/heft.json",
 
-  "eventActions": [
-    {
-      /**
-       * (Required) The kind of built-in operation that should be performed.
-       * The "deleteGlobs" action deletes files or folders that match the specified glob patterns.
-       */
-      "actionKind": "deleteGlobs",
+  "phasesByName": {
+    // ("build" is a user-defined name, not a schema field)
+    "build": {
+      "tasksByName": {
+        // ("post-compile" is a user-defined name, not a schema field)
+        "post-compile": {
+          // The "post-compile" task should not run until after "typescript" completes
+          "taskDependencies": ["typescript"],
 
-      /**
-       * (Required) The Heft stage when this action should be performed.  Note that heft.json event actions
-       * are scheduled after any plugin tasks have processed the event.  For example, a "compile" event action
-       * will be performed after the TypeScript compiler has been invoked.
-       *
-       * Options: "clean", "pre-compile", "compile", "bundle", "post-build"
-       */
-      "heftEvent": "clean",
+          "taskPlugin": {
+            "pluginName": "delete-files-plugin",
+            "pluginPackage": "@rushstack/heft",
 
-      /**
-       * (Required) A user-defined tag whose purpose is to allow configs to replace/delete handlers that
-       * were added by other configs.
-       */
-      "actionId": "my-example-action",
-
-      /**
-       * (Required) Glob patterns to be deleted. The paths are resolved relative to the project folder.
-       * Documentation for supported glob syntaxes: https://www.npmjs.com/package/fast-glob
-       */
-      "globsToDelete": [
-        "dist",
-        "lib",
-        "lib-esnext",
-        "temp"
-      ]
+            // --------------------------------------------------------------
+            // EXAMPLE OPTIONS FOR delete-files-plugin
+            "options": {
+              "deleteOperations": [
+                {
+                  "sourcePath": ["temp/typings"],
+                  "fileExtensions": [ ".d.ts" ]
+                }
+              ]
+            }
+            // --------------------------------------------------------------
+          }
+        }
+      }
     }
-  ],
+  }
+}
+```
 
-  . . .
+This commented template describes the available options. In the above example, it would get
+pasted between the two horizontal bars
+
+**heft.json "options" section**
+
+```ts
+// OPTIONS FOR delete-files-plugin
+// JSON Schema: https://developer.microsoft.com/json-schemas/heft/v0/delete-files-options.schema.json
+"options": {
+  /**
+   * An array of delete operations to be performed by this task.
+   */
+  "deleteOperations": [
+    /**
+     * Absolute path to the source file or folder, relative to the project root.
+     * If "fileExtensions", "excludeGlobs",  or "includeGlobs" are specified, then "sourcePath"
+     * is assumed to be a folder; if it is not a folder, an error will be thrown.
+     * Settings such as "includeGlobs" and "excludeGlobs" will be resolved relative to this path.
+     * If no globs or file extensions are specified, the entire folder will be copied.
+     * If this parameter is not provided, it defaults to the project root.
+     */
+    // "sourcePath": "assets/images",
+
+    /**
+     * If specified, this option recursively scans all folders under "sourcePath" and includes
+     * any files that match the specified extensions.  If "fileExtensions" and "includeGlobs"
+     * are both specified, their selections are added together.
+     */
+    // "fileExtensions": [ ".png" ],
+
+    /**
+     * A list of glob patterns that select files to be copied.  The paths are resolved relative
+     * to "sourcePath", which must be a folder path.  If "fileExtensions" and "includeGlobs"
+     * are both specified, their selections are added together.
+     *
+     * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+     */
+    // "includeGlobs": [],
+
+    /**
+     * A list of glob patterns that exclude files or folders from being copied.  The paths are resolved
+     * relative to "sourcePath", which must be a folder path.  These exclusions eliminate items that
+     * were selected by the "includeGlobs" or "fileExtensions" setting.
+     *
+     * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+     */
+    // "excludeGlobs": [ "**/temp" ],
+  ]
 }
 ```
