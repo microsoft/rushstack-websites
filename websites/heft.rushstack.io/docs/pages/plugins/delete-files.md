@@ -34,6 +34,7 @@ None - this feature is built-in to `@rushstack/heft`.
 ## Configuration
 
 The `delete-files-plugin` is a built-in plugin loaded directly from `@rushstack/heft`.
+Here's a code sample for a task that loads this plugin:
 
 **&lt;project folder&gt;/config/heft.json**
 
@@ -74,10 +75,10 @@ The `delete-files-plugin` is a built-in plugin loaded directly from `@rushstack/
 }
 ```
 
-This commented template describes the available options. In the above example, it would get
-pasted between the two horizontal bars
+## heft.json plugin options
 
-**heft.json "options" section**
+This commented template documents the available options. In the above example, it would get
+pasted between the `------` bars.
 
 ```ts
 // OPTIONS FOR delete-files-plugin

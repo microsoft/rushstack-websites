@@ -55,7 +55,7 @@ rush add --package @rushstack/heft-lint-plugin --dev
 npm install @rushstack/heft-lint-plugin --save-dev
 ```
 
-## Config files
+## Configuration
 
 If the plugin is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could invoke it
 like in this example:

@@ -68,7 +68,7 @@ npm install @types/heft-jest --dev-dev --save-exact
 }
 ```
 
-## Config files
+## Configuration
 
 If Jest is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could invoke it
 like in this example:
@@ -300,7 +300,7 @@ To restrict the debugger to run one specific test, you can add the `--test-name-
                         Jest.
 ```
 
-## heft.json options
+## heft.json plugin options
 
 When loading `@rushstack/heft-jest-plugin` in your **heft.json**, the following settings can be provided inline using the `"options"` field:
 
