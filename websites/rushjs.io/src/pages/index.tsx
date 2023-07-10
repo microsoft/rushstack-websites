@@ -120,7 +120,7 @@ function CustomPage(props: {}): JSX.Element {
         </div>
 
         <h1 style={{ paddingTop: '5rem' }}>
-          <Translate id="home.content.boxIntro.header">The Rush difference </Translate>
+          <Translate id="home.content.boxIntro.header">The Rush difference</Translate>
         </h1>
         <p>
           <Translate id="home.content.boxIntro.span1">
@@ -139,10 +139,11 @@ function CustomPage(props: {}): JSX.Element {
             </h2>
             <p>
               <Translate id="home.content.box1.span1">
-                At Microsoft, we build monorepos with hundreds of projects. Rush's unique installation
-                strategy produces a single shrinkwrap/lock file for all your projects that installs extremely
-                fast. Rush supports parallel builds, subset builds, and incremental builds. Distributed
-                multi-machine builds are coming soon!
+                Rush is built by professional engineers who maintain large production monorepos. Our job is to
+                provide the best developer experience for our colleagues, not to convert you into a customer
+                for a paid consulting or hosting service. The repositories we maintain contain hundreds of
+                apps with many years of Git history. To manage this scale, Rush offers parallel builds, subset
+                builds, incremental builds, and distributed builds.
               </Translate>
             </p>
           </div>
@@ -161,8 +162,7 @@ function CustomPage(props: {}): JSX.Element {
                 Rush provides many mechanisms for onboarding newcomers and coordinating collaboration between
                 teams. Repo policies allow new package dependencies to be reviewed before they are accepted.
                 Rush can enforce consistent dependency versions across your repo. Different subsets of
-                projects can publish separately with lockstep or independent versioning strategies, private
-                releases, and so forth.
+                projects can publish separately with lockstep or independent versioning strategies.
               </Translate>
             </p>
           </div>
@@ -174,62 +174,41 @@ function CustomPage(props: {}): JSX.Element {
           </div>
           <div className={styles.cardContentBox}>
             <h2>
-              <Translate id="home.content.box3.header">No phantom dependencies!</Translate>
+              <Translate id="home.content.box3.header">Reliable NPM installations</Translate>
             </h2>
             <p>
               <Translate id="home.content.box3.span1">
-                Tired of broken imports or mismatched versions when someone else installs your package? Rush's
-                isolated symlinking model eliminates these NPM
+                Rush's installation model leverages the PNPM package manager to eliminate the
               </Translate>{' '}
               <Link to="pages/advanced/phantom_deps">
                 <Translate id="home.content.box3.span2">phantom dependencies</Translate>
-              </Link>
-              <Translate id="home.content.box3.span3">
-                , ensuring you'll never again accidentally import a library that was missing from
-                package.json.
-              </Translate>
-            </p>
-            <p>
-              <Translate id="home.content.box3.span4">
-                This algorithm is compatible with PNPM, NPM, and Yarn package managers.
-              </Translate>
+              </Link>{' '}
+              <Translate id="home.content.box3.span3">and</Translate>{' '}
+              <Link to="pages/advanced/npm_doppelgangers">
+                <Translate id="home.content.box3.span4">NPM doppelgangers</Translate>
+              </Link>{' '}
+              <Translate id="home.content.box3.span5">
+                that frustrate large scale installations. You can visualize and troubleshoot version conflicts
+                using our
+              </Translate>{' '}
+              <Link to="https://lfx.rushstack.io">
+                <Translate id="home.content.box3.span6">Lockfile Explorer</Translate>
+              </Link>{' '}
+              <Translate id="home.content.box3.span7">companion tool.</Translate>
             </p>
           </div>
         </div>
 
         <div className={styles.cardContainerRight}>
           <div className={styles.cardImageBox}>
-            <img src="/images/home/card-doppel.svg" width="80%" height="80%" alt="NPM doppelganger" />
-          </div>
-          <div className={styles.cardContentBox}>
-            <h2>
-              <Translate id="home.content.box4.header">No NPM doppelgangers!</Translate>
-            </h2>
-            <p>
-              <Translate id="home.content.box4.span1">
-                Rush's installation model now supports the PNPM package manager, which eliminates
-              </Translate>{' '}
-              <Link to="pages/advanced/npm_doppelgangers">
-                <Translate id="home.content.box4.span2">NPM doppelgangers</Translate>
-              </Link>
-              <Translate id="home.content.box4.span3">
-                . You'll never again find 5 copies of the same version of the same library in your
-                node_modules folder!
-              </Translate>
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.cardContainerLeft}>
-          <div className={styles.cardImageBox}>
             <img src="/images/home/card-trike.svg" width="100%" height="100%" alt="motorbike and tricycle" />
           </div>
           <div className={styles.cardContentBox}>
             <h2>
-              <Translate id="home.content.box5.header">Easy to administer</Translate>
+              <Translate id="home.content.box4.header">Easy to administer</Translate>
             </h2>
             <p>
-              <Translate id="home.content.box5.span1">
+              <Translate id="home.content.box4.span1">
                 When you maintain a large repo, you don't want developers opening support tickets that can't
                 be reproduced on any other computer. Rush helps to ensure that installs and builds are
                 completely deterministic. Even the Rush engine version is automatically installed according to
@@ -240,34 +219,39 @@ function CustomPage(props: {}): JSX.Element {
           </div>
         </div>
 
-        <div className={styles.cardContainerRight}>
+        <div className={styles.cardContainerLeft}>
           <div className={styles.cardImageBox}>
             <img src="/images/home/card-knife.svg" width="100%" height="100%" alt="army knife" />
           </div>
           <div className={styles.cardContentBox}>
             <h2>
-              <Translate id="home.content.box6.header">Turnkey solution</Translate>
+              <Translate id="home.content.box5.header">Turnkey solution</Translate>
             </h2>
             <p>
-              <Translate id="home.content.box6.span1">
+              <Translate id="home.content.box5.span1">
                 Tired of cobbling together your developer experience from multiple tools that never seem to
                 integrate properly? Rush is a unified orchestrator that can install, link, build, generate
-                change logs, publish, and bump versions.
-              </Translate>
+                change logs, publish, and bump versions. These features are designed to integrate with the
+                broader
+              </Translate>{' '}
+              <Link to="https://rushstack.io">
+                <Translate id="home.content.box5.span2">Rush Stack</Translate>
+              </Link>{' '}
+              <Translate id="home.content.box5.span3">suite of tools and practices.</Translate>
             </p>
           </div>
         </div>
 
-        <div className={styles.cardContainerLeft}>
+        <div className={styles.cardContainerRight}>
           <div className={styles.cardImageBox}>
             <img src="/images/home/card-free.svg" width="100%" height="100%" alt="free price tag" />
           </div>
           <div className={styles.cardContentBox}>
             <h2>
-              <Translate id="home.content.box7.header">Open model</Translate>
+              <Translate id="home.content.box6.header">Open model</Translate>
             </h2>
             <p>
-              <Translate id="home.content.box7.span1">
+              <Translate id="home.content.box6.span1">
                 The Rush software is free and open source. Community contributions are welcome! We're also
                 open-minded about your toolchain: In a Rush repo, each project folder remains fully
                 self-contained, individually installable, and easy to relocate if needed. Relatively little
