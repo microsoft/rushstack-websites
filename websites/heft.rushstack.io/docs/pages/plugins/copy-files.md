@@ -34,7 +34,7 @@ Some caveats:
 
 ## package.json dependencies
 
-None - this feature is implemented internally by Heft.
+None - this feature is built-in to `@rushstack/heft`.
 
 ## Configuration
 

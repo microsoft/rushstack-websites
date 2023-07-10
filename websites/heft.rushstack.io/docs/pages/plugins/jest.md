@@ -11,7 +11,7 @@ title: Jest plugin
 | **heft.json options:** | [IJestPluginOptions](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
 <!-- prettier-ignore-end -->
 
-This task invokes the [Jest](https://jestjs.io/en/) test framework for unit testing.
+This plugin invokes the [Jest](https://jestjs.io/en/) test framework for unit testing.
 
 ## When to use it
 
@@ -27,19 +27,34 @@ That said, if for some reason you need to run tests in some other runtime such a
 
 ## package.json dependencies
 
-Heft has direct dependencies on the Jest packages that it needs, so you don't need to add Jest to your project's **package.json** file. Instead, you will need to install the Heft plugin package:
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
+or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then Jest
+will already be loaded and configured.
+
+Otherwise, you'll need to add the plugin package to your project:
 
 ```bash
+# If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-jest-plugin --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install @rushstack/heft-jest-plugin --dev-dev
 ```
+
+The plugin has direct dependencies on the Jest packages that it needs, so you don't need to add Jest to your
+project's **package.json** file.
 
 Your project should get its typings from `@types/heft-jest` instead of `@types/jest`:
 
 ```bash
+# If you are using Rush, run this shell command in your project folder:
 rush add --package @types/heft-jest --exact --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install @types/heft-jest --dev-dev --save-exact
 ```
 
-...and then reference `heft-jest` in your **tsconfig.json** file, like this example:
+...and then reference the `@types/heft-jest` in your **tsconfig.json** file, like this example:
 
 ```js
 {
@@ -55,9 +70,8 @@ rush add --package @types/heft-jest --exact --dev
 
 ## Config files
 
-If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
-or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then Jest will already be configured.
-Otherwise, your [heft.json config file](../configs/heft_json.md) could load it like this:
+If Jest is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could invoke it
+like in this example:
 
 **&lt;project folder&gt;/config/heft.json**
 

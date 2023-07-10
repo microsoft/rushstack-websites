@@ -10,3 +10,11 @@ title: Run script plugin
 | **Plugin config file:** | (none) |
 | **heft.json options:** | [run-script-options.schema.json](https://developer.microsoft.com/json-schemas/heft/v0/run-script-options.schema.json) |
 <!-- prettier-ignore-end -->
+
+## When to use it
+
+## package.json dependencies
+
+None - this feature is built-in to `@rushstack/heft`.
+
+## Configuration

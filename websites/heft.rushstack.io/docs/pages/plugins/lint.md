@@ -32,14 +32,63 @@ Although it's recommended to set up your build system in this way, Heft doesn't 
 You will need to add the `eslint` package to your project:
 
 ```bash
+# If you are using Rush, run this shell command in your project folder:
 rush add --package eslint --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install eslint --save-dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../tutorials/heft_and_rush.md) article. However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it may still be useful to add ESLint to your **package.json** file. (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
+> If you're using a rig, the `eslint` dependency could be omitted and obtained via [rig resolution](../intro/rig_packages.md). However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it is still useful to add ESLint to your **package.json** file. (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
+
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
+or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then `@rushstack/heft-lint-plugin`
+will already be loaded and configured.
+
+Otherwise, you'll need to add the packages to your project:
+
+```bash
+# If you are using Rush, run this shell command in your project folder:
+rush add --package @rushstack/heft-lint-plugin --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install @rushstack/heft-lint-plugin --save-dev
+```
 
 ## Config files
 
-There isn't a Heft-specific file for this task. Heft looks for ESLint's config file. Although ESLint supports [7 different](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) names/formats for this file, Heft requires it to be named **".eslintrc.js"**. This has a couple benefits:
+If the plugin is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could invoke it
+like in this example:
+
+**&lt;project folder&gt;/config/heft.json**
+
+```js
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+  . . .
+  "phasesByName": {
+    "build": {
+      "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }, { "sourcePath": "lib-commonjs" }],
+      "tasksByName": {
+        "typescript": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-typescript-plugin"
+          }
+        },
+        "lint": {
+          "taskDependencies": ["typescript"],
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-lint-plugin"
+          }
+        }
+      }
+    }
+    . . .
+  }
+}
+```
+
+Heft only invokes the linter if it finds an ESLint config file. Although ESLint supports [7 different](https://eslint.org/docs/user-guide/configuring#configuration-file-formats) names/formats for this file, Heft requires it to be named **".eslintrc.js"**. This has a couple benefits:
 
 - **Consistency:** Using one standard name **".eslintrc.js"** makes it easy to search for these files, perform bulk edits, and copy configuration recipes between projects.
 - **Workarounds:** Using the `.js` file extension enables JavaScript expressions in the file. This practice is generally discouraged because code expressions are harder to validate, and expressions can depend on environmental inputs that are invisible to caches. However, for historical reasons, ESLint's config file format has some limitations that can only be solved with scripts (for example using `__dirname` to resolve file paths).

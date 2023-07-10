@@ -28,7 +28,13 @@ and configures your OS to trust it.
 
 ## package.json dependencies
 
-None.
+```bash
+# If you are using Rush, run this shell command in your project folder:
+rush add --package @rushstack/heft-dev-cert-plugin --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install @rushstack/heft-dev-cert-plugin --save-dev
+```
 
 ## Configuration
 

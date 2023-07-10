@@ -33,15 +33,55 @@ We recommend to use API Extractor for every TypeScript library project, especial
 
 ## package.json dependencies
 
-You will need to add the `@microsoft/api-extractor` package to your project:
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
+or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then API Extractor
+will already be loaded and configured.
+
+Otherwise, you'll need to add these packages to your project:
 
 ```bash
+# If you are using Rush, run this shell command in your project folder:
+rush add --package @rushstack/heft-api-extractor-plugin --dev
 rush add --package @microsoft/api-extractor --dev
+
+# Or if you are using plain NPM, run this shell command:
+npm install @rushstack/heft-api-extractor-plugin --save-dev
+npm install @microsoft/api-extractor --save-dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a rig, as described in the [Using rig packages](../intro/rig_packages.md) article.
-
 ## Configuration
+
+If API Extractor is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could invoke it
+like in this example:
+
+**&lt;project folder&gt;/config/heft.json**
+
+```js
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+  . . .
+  "phasesByName": {
+    "build": {
+      "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }, { "sourcePath": "lib-commonjs" }],
+      "tasksByName": {
+        "typescript": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-typescript-plugin"
+          }
+        },
+        "api-extractor": {
+          "taskDependencies": ["typescript"],
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-api-extractor-plugin"
+          }
+        },
+        . . .
+      }
+    }
+    . . .
+  }
+}
+```
 
 Heft looks for API Extractor's config file [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/). This file can be created by invoking the [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) command. This file is [riggable](../intro/rig_packages.md).
 
