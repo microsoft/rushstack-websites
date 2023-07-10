@@ -11,21 +11,21 @@ title: ESlint / TSLint plugins
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->
 
-This task invokes the [ESLint](https://eslint.org/) tool which reports errors about common coding problems.
+This plugin invokes the [ESLint](https://eslint.org/) or [TSLint](https://palantir.github.io/tslint/) linters, which check your code for stylistic issues and common mistakes.
 
 ## When to use it
 
-ESLint fits together with several other tools as part of Rush Stack's recommended strategy for code validation:
+TSLint is deprecated (see below). We recommend to use ESLint for all projects, as part of the following combined approach to code validation:
 
-- [Prettier](@rushjs/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build. Instead, Prettier reformats the code automatically via a `git commit` hook. To se this up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
+- [Prettier](@rushjs/pages/maintainer/enabling_prettier/): This tool manages trivial syntax aspects such as spaces, commas, and semicolons. Because these aspects normally don't affect code semantics, we never bother the developer with error messages about it, nor is it part of the build. Instead, Prettier reformats the code automatically via a `git commit` hook. To set this up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) tutorial on the Rush website.
 
 - [TypeScript](../plugins/typescript.md): The TypeScript compiler performs sophisticated type checking and semantic analysis that is the most important safeguard for program correctness.
 
-- **ESLint**: The lint rules supplement the compiler's checks with additional stylistic rules that are more subjective and highly customizable. Whereas TypeScript might detect that _"This function parameter is a string but was declared as a number"_, the linter might detect an issue such as _"This class name should use PascalCase instead of camelCase."_ Unlike Prettier issues, fixing an ESLint issue may involve a significant code change, and may even break an API contract.
+- **ESLint**: The lint rules supplement the compiler's checks with additional stylistic rules that are more subjective and highly customizable. Whereas TypeScript might detect that _"This function parameter is a string but was declared as a number"_, the linter might detect an issue such as _"This class name should use PascalCase instead of camelCase."_ However operationally ESLint's validation is very similar to type checking, and some ESLint rules require TypeScript semantic analysis, which may depend on project-specific compiler configurations. Therefore we recommend to run ESLint as part of the build, not as a Git commit hook or global analysis.
 
 - [API Extractor](../plugins/api-extractor.md): This is an additional validation check for library packages only. It ensures their API contracts are well-formed and properly documented.
 
-Although it's recommended to set up your build system in this way, Heft doesn't require a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use TSLint instead of ESLint.
+Although it's recommended to set up your build system in this way, Heft doesn't enforce a particular approach. Each of these components is optional, and other configurations are possible. For example, older code bases may need to use TSLint instead of ESLint.
 
 ## package.json dependencies
 
@@ -78,28 +78,8 @@ It also supports **lint mixins**. Add as many as you like:
 
 The [@rushstack/eslint-config documentation](https://www.npmjs.com/package/@rushstack/eslint-config) explains these options in more detail.
 
----
+## TSLint
 
-## title: '"tslint" task'
+The [TSLint](https://palantir.github.io/tslint/) tool predates ESLint and is now deprecated, but may still be used in some older code bases.
 
-This task invokes the [TSLint](https://palantir.github.io/tslint/) tool for linting TypeScript code.
-
-## When to use it
-
-**TSLint is deprecated and should only be used for legacy projects.** In 2019, the groups that maintain the TypeScript compiler, ESLint, and TSLint got together and agreed [to deprecate TSLint](https://medium.com/palantir/tslint-in-2019-1a144c2317a9). Instead, a TypeScript parser has been integrated into ESLint, which provides a single unified solution for linting JavaScript and TypeScript source files.
-
-New projects should use the eslint task instead.
-
-## package.json dependencies
-
-You will need to add the `tslint` package to your project:
-
-```bash
-rush add --package tslint --dev
-```
-
-Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Using rig packages](../intro/rig_packages.md) article.
-
-## Config files
-
-There isn't a Heft-specific file for this task. Heft looks for TSLint's config file [tslint.json](https://palantir.github.io/tslint/usage/configuration/).
+The `lint-plugin` supports both tools: If `<project folder>/tslint.json` is found, then TSLint will be invoked. If both config files are present, then both TSLint and ESLint will be invoked.
