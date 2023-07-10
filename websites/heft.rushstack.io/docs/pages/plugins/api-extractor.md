@@ -33,8 +33,8 @@ We recommend to use API Extractor for every TypeScript library project, especial
 
 ## package.json dependencies
 
-If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
-or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then API Extractor
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig)
+or [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig), then API Extractor
 will already be loaded and configured.
 
 Otherwise, you'll need to add these packages to your project:

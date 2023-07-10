@@ -67,7 +67,7 @@ The main philosophy of Heft is to move build logic into plugin packages, so that
 
 The Rush Stack [rig system](./rig_packages.md) goes a step further, optionally moving config files into a centralized NPM package called a "rig." Rigs define standardized configurations for your projects. In a large monorepo, they formalize the configurations that your build team has agreed to support. Heft also allows `devDependencies` to be resolved from rig packages, reducing **package.json** clutter.
 
-**Example:** [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig) is Rush Stack's reference rig for web projects.
+**Example:** [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig) is Rush Stack's reference rig for web projects.
 
 ### Rig profile
 

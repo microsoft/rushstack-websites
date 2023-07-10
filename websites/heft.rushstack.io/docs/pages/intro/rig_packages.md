@@ -11,8 +11,8 @@ come from the same NPM package; each profile is a folder containing a set of con
 
 Heft also provides two standard rig packages that you can use in your projects:
 
-- [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig) with a profile called `default`
-- [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig) with a profile called `library`
+- [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig) with a profile called `default`
+- [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig) with a profile called `library`
 
 It's also easy to define your own custom rig packages.
 
@@ -42,11 +42,10 @@ file can add custom settings such as `"types"` as needed.
 
 The following config files all support a field such as `"extends"` that enables settings to be inherited from another NPM package:
 
-- **.eslintrc.js** for the [eslint task](../plugins/eslint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
+- **.eslintrc.js** for the [lint task](../plugins/lint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
 - **config/api-extractor.json** for the [api-extractor task](../plugins/api-extractor.md)
 - **config/jest.config.json** for the [jest task](../plugins/jest.md)
 - **tsconfig.json** for the [typescript task](../plugins/typescript.md)
-- **tslint.json** for the [tslint task](../plugins/tslint.md)
 - **webpack.config.js** does not explicitly support inheritance, but being a JavaScript module, it can call `require()` to load shared settings.
 
 ## 2. "Riggable" config files

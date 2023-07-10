@@ -27,8 +27,8 @@ That said, if for some reason you need to run tests in some other runtime such a
 
 ## package.json dependencies
 
-If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
-or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then Jest
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig)
+or [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig), then Jest
 will already be loaded and configured.
 
 Otherwise, you'll need to add the plugin package to your project:

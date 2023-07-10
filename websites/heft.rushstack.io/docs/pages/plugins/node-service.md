@@ -37,7 +37,7 @@ None - this feature is built-in to `@rushstack/heft`.
 
 ## Configuration
 
-1. If you are using the standard [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig),
+1. If you are using the standard [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig),
    then `node-service-plugin` will already be loaded and configured.
    Otherwise, your [heft.json config file](../configs/heft_json.md) could invoke it in this example:
 

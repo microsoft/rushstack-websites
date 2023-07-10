@@ -41,8 +41,8 @@ npm install eslint --save-dev
 
 > If you're using a rig, the `eslint` dependency could be omitted and obtained via [rig resolution](../intro/rig_packages.md). However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it is still useful to add ESLint to your **package.json** file. (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
 
-If you are using a standard rig such as [@rushstack/heft-node-rig](https://www.npmjs.com/package/@rushstack/heft-node-rig)
-or [@rushstack/heft-web-rig](https://www.npmjs.com/package/@rushstack/heft-web-rig), then `@rushstack/heft-lint-plugin`
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig)
+or [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig), then `@rushstack/heft-lint-plugin`
 will already be loaded and configured.
 
 Otherwise, you'll need to add the packages to your project:

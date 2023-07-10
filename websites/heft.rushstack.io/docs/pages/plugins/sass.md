@@ -11,15 +11,15 @@ title: Sass plugin
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->
 
-This task generates TypeScript typings for CSS styles. It supports three different stylesheet formats:
+This plugin generates TypeScript typings for CSS styles. It supports three different stylesheet formats:
 
 - `.css` for plain [Cascading Style Sheets](https://en.wikipedia.org/wiki/CSS)
-- `.scss` which extends the CSS file format with preprocessor macros, as defined by the [Syntactically Awesome Style Sheet (SASS)](https://sass-lang.com/) project
+- `.scss` which extends the CSS file format with preprocessor macros, as defined by the [Syntactically Awesome Style Sheet (Sass)](https://sass-lang.com/) project
 - `.sass` the older [indented syntax](https://sass-lang.com/documentation/syntax) which is still supported because some people prefer it
 
 ## When to use it
 
-We recommend using SASS for any TypeScript web application that uses CSS styles. The `.scss` file format is a good choice because its syntax is a proper superset of plain CSS.
+We recommend using Sass for any TypeScript web application that uses CSS styles. The `.scss` file format is the recommended choice because its syntax is a proper superset of plain CSS.
 
 ## How it works
 
@@ -35,7 +35,7 @@ $marginValue: 20px;
 }
 ```
 
-Before Heft invokes the TypeScript compiler, the `sass-typings` task can generate a temporary file containing type declarations:
+Before Heft invokes the TypeScript compiler, the `sass-plugin` can generate a temporary file containing type declarations:
 
 **temp/sass-ts/styles.scss.d.ts**
 
@@ -70,32 +70,91 @@ the compiler to catch common mistakes such as misspelled identifiers.
 > The `.d.ts` file is generated using [@rushstack/typings-generator](https://www.npmjs.com/package/@rushstack/typings-generator).
 > You can reuse this library to implement custom Heft plugins that generate typings for other resources besides CSS.
 
+The `sass-plugin` will automatically generate typings for any files under the `src` folder with supported
+file extension (`.css`, `.scss`, and `.sass`). Its behavior can be customized using the
+[sass.json](../configs/sass_json.md) config file, but in most cases the default behavior is sufficient.
+
+The [build-tests/heft-sass-test](https://github.com/microsoft/rushstack/tree/main/build-tests/heft-sass-test)
+project provides examples of `.css`, `.scss`, and `.sass` imports.
+
 ## package.json dependencies
 
-None - this feature is implemented internally by Heft.
+If you are using [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig), then Sass
+will already be loaded and configured.
 
-## Config files
+Otherwise, you'll need to add the plugin package to your project:
 
-> The [build-tests/heft-sass-test](https://github.com/microsoft/rushstack/tree/main/build-tests/heft-sass-test)
-> project provides examples of `.css`, `.scss`, and `.sass` imports.
+```bash
+# If you are using Rush, run this shell command in your project folder:
+rush add --package @rushstack/heft-sass-plugin --dev
 
-The `sass-typings` plugin is enabled by default and will automatically generate typings for any files under
-the `src` folder with supported file extension (`.css`, `.scss`, and `.sass`). Its behavior can be customized using
-the [sass.json](../configs/sass_json.md) config file, but in most cases the default behavior
-is sufficient.
+# Or if you are using plain NPM, run this shell command:
+npm install @rushstack/heft-sass-plugin --dev-dev
+```
+
+Because the plugin only generates TypeScript typings, your project will need additional configuration
+to invoke the Sass processor for transpiling styles. The specifics depend on your bundling configuration.
+For a complete example using Webpack, take a look at the
+[heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig) project folder.
+
+## Configuration
+
+If Sass is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) might invoke it
+like in this example:
+
+**&lt;project folder&gt;/config/heft.json**
+
+```js
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+
+  . . .
+  "phasesByName": {
+    "build": {
+      "cleanFiles": [
+        { "sourcePath": "dist" },
+        { "sourcePath": "lib" },
+        { "sourcePath": "lib-amd" },
+        { "sourcePath": "lib-commonjs" },
+        { "sourcePath": "lib-es6" }
+      ],
+      "tasksByName": {
+        "sass": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-sass-plugin"
+          }
+        },
+        "typescript": {
+          "taskDependencies": ["sass"],
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-typescript-plugin"
+          }
+        },
+        "webpack": {
+          "taskDependencies": ["typescript"],
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-webpack5-plugin"
+          }
+        }
+      }
+    }
+    . . .
+  }
+}
+```
 
 Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setting in your compiler configuration:
 
 **tsconfig.json**
 
-```js
+```ts
 {
   "$schema": "http://json.schemastore.org/tsconfig",
 
   "compilerOptions": {
     "rootDirs": ["src/", "temp/sass-ts/"],
-
+  . . .
 ```
 
-Make sure that the copy-static-assets task is configured
-to copy CSS file extensions.
+Make sure that the `staticAssetsToCopy` setting your [typescript.json](../plugins/typescript.md) file
+is configured to copy the `.css`, `.scss`, and `.sass` file extensions.
