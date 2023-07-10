@@ -388,5 +388,108 @@
   "theme.SearchModal.placeholder": {
     "message": "Search docs",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文档侧边栏",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "关闭导航栏",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切换导航栏",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "home.masthead.subtitle": {
+    "message": "Rush：一个可扩展的Web单仓库管理器"
+  },
+  "home.masthead.learnMore": {
+    "message": "了解更多"
+  },
+  "home.masthead.getStarted": {
+    "message": "开始吧！"
+  },
+  "home.content.intro.span1": {
+    "message": "Rush让那些从一个公共Git仓库构建和发布多个包的JavaScript开发者的生活变得更轻松。如果你正打算将你的大型应用程序分解为更小的部分，并且你已经意识到"
+  },
+  "home.content.intro.span2": {
+    "message": "为什么这不可行"
+  },
+  "home.content.intro.span3": {
+    "message": "将每个包放在一个单独的仓库里... 那么Rush就是为你准备的！"
+  },
+  "home.content.boxIntro.header": {
+    "message": "Rush的不同之处"
+  },
+  "home.content.boxIntro.span1": {
+    "message": "现在许多不同的工具可以在20个不同的文件夹中运行\"npm install\"和\"npm run build\"。那么Rush有什么优点呢？"
+  },
+  "home.content.box1.header": {
+    "message": "适应大型仓库"
+  },
+  "home.content.box1.span1": {
+    "message": "Rush是由维护大型生产单仓库的专业工程师构建的。我们的工作是为我们的同事提供最佳的开发者体验，而不是将你转变为付费咨询或托管服务的客户。我们维护的仓库包含有多年Git历史记录的数百个应用程序。为了管理这种规模，Rush提供并行构建、子集构建、增量构建和分布式构建。"
+  },
+  "home.content.box2.header": {
+    "message": "为大型团队设计"
+  },
+  "home.content.box2.span1": {
+    "message": "Rush提供了许多机制来引导新手和协调团队间的协作。仓库策略允许在接受新的包依赖关系之前对其进行审查。Rush可以在你的仓库中强制执行一致的依赖版本。不同的项目子集可以使用锁定步调或独立版本策略进行独立发布。"
+  },
+  "home.content.box3.header": {
+    "message": "可靠的NPM安装"
+  },
+  "home.content.box3.span1": {
+    "message": "Rush的安装模型利用PNPM包管理器消除"
+  },
+  "home.content.box3.span2": {
+    "message": "幽灵依赖"
+  },
+  "home.content.box3.span3": {
+    "message": "和"
+  },
+  "home.content.box3.span4": {
+    "message": "NPM替身"
+  },
+  "home.content.box3.span5": {
+    "message": "这些使大规模安装受挫的问题。你可以使用我们的"
+  },
+  "home.content.box3.span6": {
+    "message": "锁文件资源管理器"
+  },
+  "home.content.box3.span7": {
+    "message": "配套工具来可视化和解决版本冲突。"
+  },
+  "home.content.box4.header": {
+    "message": "易于管理"
+  },
+  "home.content.box4.span1": {
+    "message": "当你维护一个大型仓库时，你不希望开发者提出无法在任何其他计算机上复现的支持请求。Rush有助于确保安装和构建完全确定。甚至Rush引擎版本也会根据你的Git分支自动安装。如果你定义自定义命令或选项，它们会被严格验证，并作为Rush命令行帮助的一部分进行文档记录。"
+  },
+  "home.content.box5.header": {
+    "message": "一站式解决方案"
+  },
+  "home.content.box5.span1": {
+    "message": "厌倦了从多个工具中拼凑出你的开发者体验，而这些工具似乎从未正确集成过吗？Rush是一个统一的协调器，可以安装、链接、构建、生成变更日志、发布和升级版本。这些功能旨在与更广泛的"
+  },
+  "home.content.box5.span2": {
+    "message": "Rush Stack"
+  },
+  "home.content.box5.span3": {
+    "message": "工具和实践套件集成。"
+  },
+  "home.content.box6.header": {
+    "message": "开放模式"
+  },
+  "home.content.box6.span1": {
+    "message": "Rush软件是免费和开源的。我们欢迎社区的贡献！我们也对你的工具链持开放态度：在Rush仓库中，每个项目文件夹都保持完全独立，可以单独安装，如果需要也易于迁移。只需要相对较少的努力就可以为一组特定的项目启用/禁用Rush。"
+  },
+  "home.whosUsingRush": {
+    "message": "谁在使用Rush？"
   }
 }
