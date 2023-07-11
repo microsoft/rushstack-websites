@@ -2,11 +2,13 @@
 title: api-extractor-task.json
 ---
 
-|                                           |                                                                                                                                       |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/api-extractor-task.json**                                                                             |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                   |
-| **Associated plugins:**                   | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/api-extractor-task.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugins:** | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
+<!-- prettier-ignore-end -->
 
 ## Template
 

@@ -2,11 +2,13 @@
 title: node-service.json
 ---
 
-|                                           |                                                                                                                  |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/node-service.json**                                                              |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                              |
-| **Associated plugins:**                   | [NodeServicePlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/NodeServicePlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/node-service.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugins:** | [NodeServicePlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/NodeServicePlugin.ts) |
+<!-- prettier-ignore-end -->
 
 ## Template
 

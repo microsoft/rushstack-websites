@@ -2,11 +2,13 @@
 title: heft.json
 ---
 
-|                                           |                                                                                                                                                                                                                                |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **File path:**                            | **&lt;project folder&gt;/config/heft.json**                                                                                                                                                                                    |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                                                                                                            |
-| **Associated plugins:**                   | [CopyFilesPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/CopyFilesPlugin.ts), [DeleteGlobsPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/DeleteGlobsPlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/heft.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugins:** | [CopyFilesPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/CopyFilesPlugin.ts), [DeleteGlobsPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/DeleteGlobsPlugin.ts) |
+<!-- prettier-ignore-end -->
 
 ## Template
 
