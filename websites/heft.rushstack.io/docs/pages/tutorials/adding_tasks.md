@@ -2,43 +2,80 @@
 title: Adding more tasks
 ---
 
-_This section continues the tutorial project from the [Getting started with Heft](../tutorials/getting_started.md) article._
+_This section continues the tutorial project from the [Hello World](../tutorials/hello_world.md) tutorial._
 
-Heft comes with a number of built-in tasks that become enabled automatically based on config files that you create.
-All the tasks are documented in the [Heft tasks](../tasks/api-extractor.md) section.
+Heft's [architecture](../intro/architecture.md) is designed around plugin packages. Heft ships with
+a collection of [official plugin packages](../plugins/package_index.md) for the most common build tasks.
+Their source code can be found in the [rushstack/heft-plugins](https://github.com/microsoft/rushstack/tree/main/heft-plugins)
+which is a great reference, if you want to create your own Heft plugins.
 
-Continuing our tutorial, let's enable the two most common tasks: [Jest](../tasks/jest.md)
-and [ESlint](../tasks/eslint.md).
+Continuing our tutorial, let's enable the two most common plugins: [Jest](../plugins/jest.md) for unit tests
+and [ESlint](../plugins/lint.md) for style checking.
 
 ## Adding unit tests to your project
 
-1. First, we need to install the TypeScript typings for Jest. These steps continue the **my-app** project from the [Getting started with Heft](../tutorials/getting_started.md) article. Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
+1. First, we need to install the TypeScript typings for Jest. These steps continue the **my-app** project from the [Hello World](../tutorials/hello_world.md) tutorial. Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
 
    ```bash
    cd my-app
 
-   # Typings should always use "--save-exact" version specifiers.
+   # Because @types packages don't follow SemVer, it's a good idea to use --save-exact
    pnpm install --save-dev --save-exact @types/heft-jest
    pnpm install --save-dev @rushstack/heft-jest-plugin
    ```
 
-2. Register the plugin to heft.json and add it to the plugin statement.
+2. Add a `"test"` section to your Heft config file, producing this result:
 
-```bash
- "heftPlugins": [
-  {
-    //  /**
-    //   * The path to the plugin package.
-    //   */
-    "plugin": "@rushstack/heft-jest-plugin"
-    //
-    //  /**
-    //   * An optional object that provides additional settings that may be defined by the plugin.
-    //   */
-    //  // "options": { }
-  }
-]
-```
+   **config/heft.json**
+
+   ```js
+   {
+     "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+
+     "phasesByName": {
+       // Define a phase whose name is "build"
+       "build": {
+         "phaseDescription": "This phase compiles the project source code.",
+
+         // Before invoking the compiler, delete the "dist" and "lib" folders
+         "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
+
+         "tasksByName": {
+           // Define a task whose name is "typescript"
+           "typescript": {
+             "taskPlugin": {
+               // This task will invoke the TypeScript plugin
+               "pluginPackage": "@rushstack/heft-typescript-plugin"
+             }
+           }
+         }
+       },
+
+       // Define a phase whose name is "test"
+       "test": {
+         "phaseDescription": "This phase runs the project's unit tests.",
+
+         // This phase requires the "build" phase to be run first
+         "phaseDependencies": ["build"],
+
+         "tasksByName": {
+           // Define a task whose name is "jest"
+           "jest": {
+             "taskPlugin": {
+                // This task will invoke the Jest plugin
+                "pluginPackage": "@rushstack/heft-jest-plugin"
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
+
+   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
+
+   If you run `heft --help` you should now see `test` and `test-watch` command-line actions
+   because our second phase was named `"test"`.
 
 3. Since [Jest's API](https://jestjs.io/docs/en/api) consists of global variables, we need to load them globally (whereas most other `@types` packages are loaded via `import` statements in your source code). Update your **tsconfig.json** file to say `"types": ["heft-jest", "node"]` instead of just `"types": ["node"]`. The result should look like this:
 
@@ -59,9 +96,12 @@ and [ESlint](../tasks/eslint.md).
        "inlineSources": true,
        "experimentalDecorators": true,
        "strict": true,
+       "useUnknownInCatchVariables": false,
        "esModuleInterop": true,
-       "types": ["heft-jest", "node"],
+       "noEmitOnError": false,
+       "allowUnreachableCode": false,
 
+       "types": ["heft-jest", "node"],
        "module": "commonjs",
        "target": "es2017",
        "lib": ["es2017"]
@@ -90,6 +130,11 @@ and [ESlint](../tasks/eslint.md).
    }
    ```
 
+   > **Note:** For web projects, you probably want to use
+   > `@rushstack/heft-jest-plugin/includes/jest-web.config.json` instead of `jest-shared.config.json`
+   > to support dual outputs as `lib-commonjs` and `lib` folders. See the [Jest plugin](../plugins/jest.md)
+   > documentation for details.
+
 5. Now we need to add a unit test. Jest supports quite a lot of features, but for this tutorial we'll create a trivial test file. The `.test.ts` file extension causes Heft to look for unit tests in this file:
 
    **my-app/src/example.test.ts**
@@ -105,16 +150,24 @@ and [ESlint](../tasks/eslint.md).
 6. To run the test, we need to use the `heft test` action, because `heft build` normally skips testing to speed up development.
 
    ```bash
-   # For Windows, use backslashes for all these commands
-
    # View the command line help
    heft test --help
 
    # Build the project and run tests
-   heft test
+   heft test --verbose
+
+   # Run Jest in watch mode
+   heft test-watch
    ```
 
-   We should update our **package.json** script to invoke `heft test` instead of `heft build` as well. That way `pnpm run build` will also run the Jest tests:
+   Wow, `heft test --help` has quite a lot of command-line parameters! Where did they come from?
+   They were added by the Jest plugin's [heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) manifest file because we loaded that plugin in our phase.
+
+   (What happens if two different plugins define the same command-line parameter? Heft includes a sophisticated
+   disambiguation mechanism, for example allowing you to use `--jest:update-snapshots` instead of `--update-snapshots`
+   if some other plugin also defines a `--update-snapshots` parameter.)
+
+7. We should update our **package.json** script so that `pnpm run test` will run the Jest tests:
 
    **my-app/package.json**
 
@@ -122,16 +175,18 @@ and [ESlint](../tasks/eslint.md).
    {
      . . .
      "scripts": {
-       "build": "heft test --clean",
+       "build": "heft build --clean",
+       "test": "heft test --clean",
        "start": "node lib/start.js"
      },
      . . .
    }
    ```
 
-> **Note:** Do not invoke the `jest` command line directly, since it only runs tests and will not perform Heft's other build steps.
+> **Note:** Do not invoke the `jest` command line directly. Doing so would run the tests that it finds
+> in `lib/**/*.js`, but it will not invoke Heft's other tasks needed to update those output files.
 
-That's it for setting up Jest! Further information, including instructions for debugging tests, can be found in the ["jest" task](../tasks/jest.md) reference and the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) sample project.
+That's it for setting up Jest! Further information, including instructions for debugging tests, can be found in the [Jest plugin](../plugins/jest.md) reference and the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) sample project.
 
 ## Enabling linting
 
@@ -140,14 +195,75 @@ That's it for setting up Jest! Further information, including instructions for d
    ```bash
    cd my-app
 
-   # Add the ESLint engine.
+   # Add the ESLint engine
    pnpm install --save-dev eslint
 
-   # Add Rush Stack's all-in-one ruleset
+   # Add Heft's plugin for ESLint
+   pnpm install --save-dev @rushstack/heft-lint-plugin
+
+   # Add Rush Stack's all-in-one lint ruleset
    pnpm install --save-dev @rushstack/eslint-config
    ```
 
-2. Next, create the [.eslintrc.js](https://eslint.org/docs/user-guide/configuring) config file. The presence of this file causes Heft to invoke the ESLint task.:
+2. Update your Heft config file to add a task that loads `@rushstack/heft-lint-plugin` during the `heft build` phase:
+
+   **config/heft.json**
+
+   ```js
+   {
+     "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+
+     "phasesByName": {
+       // Define a phase whose name is "build"
+       "build": {
+         "phaseDescription": "Compiles the project source code",
+
+         // Before invoking the compiler, delete the "dist" and "lib" folders
+         "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
+
+         "tasksByName": {
+           // Define a task whose name is "typescript"
+           "typescript": {
+             "taskPlugin": {
+               // This task will invoke the TypeScript plugin
+               "pluginPackage": "@rushstack/heft-typescript-plugin"
+             }
+           },
+
+           // Define a task whose name is "lint"
+           "lint": {
+            // This task should run after "typescript" has completed
+            // because Heft optimizes ESLint by reusing the TypeScript
+            // compiler's AST analysis
+            "taskDependencies": ["typescript"],
+            "taskPlugin": {
+              // This task will invoke the ESLint plugin
+              "pluginPackage": "@rushstack/heft-lint-plugin"
+            }
+          }
+         }
+       },
+       // Define a phase whose name is "test"
+       "test": {
+         // This phase requires the "build" phase to be run first
+         "phaseDependencies": ["build"],
+         "tasksByName": {
+           // Define a task whose name is "jest"
+           "jest": {
+             "taskPlugin": {
+                // This task will invoke the Jest plugin
+                "pluginPackage": "@rushstack/heft-jest-plugin"
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
+
+   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
+
+3. Next, create the [.eslintrc.js](https://eslint.org/docs/user-guide/configuring) config file. For this tutorial we'll just use the official Rush Stack ruleset:
 
    **my-app/.eslintrc.js**
 
@@ -163,7 +279,7 @@ That's it for setting up Jest! Further information, including instructions for d
 
    _Note: If your project uses the [React](https://reactjs.org/) framework, you should also extend from the `"@rushstack/eslint-config/mixins/react"` mixin. See [the documentation](https://www.npmjs.com/package/@rushstack/eslint-config) for details about `@rushstack/eslint-config` "profiles" and "mixins"._
 
-3. To test it out, try updating your **start.ts** source file to introduce a lint issue:
+4. To test it out, try updating your **start.ts** source file to introduce a lint issue:
 
    **my-app/src/start.ts**
 
@@ -178,14 +294,9 @@ That's it for setting up Jest! Further information, including instructions for d
    When you run `pnpm run build`, you should see a log message like this:
 
    ```
-   . . .
-   ---- Compile started ----
-   [copy-static-assets] Copied 0 static assets in 0ms
-   [typescript] Using TypeScript version 3.9.7
-   [eslint] Using ESLint version 7.5.0
-   [eslint] Encountered 1 ESLint error:
-   [eslint]   ERROR: src\start.ts:3:8 - (@typescript-eslint/explicit-function-return-type) Missing return type on function.
-   . . .
+   -------------------- Finished (3.555s) --------------------
+   Encountered 1 warning
+   [build:lint] src/start.ts:3:8 - (@typescript-eslint/explicit-function-return-type) Missing return type on function.
    ```
 
    To fix the problem, fix the code to add the missing return type, and it should now build successfully:
@@ -200,8 +311,8 @@ That's it for setting up Jest! Further information, including instructions for d
    }
    ```
 
-4. The `@rushstack/eslint-config` ruleset is designed to work together with the Prettier code formatter.
+5. The `@rushstack/eslint-config` ruleset is designed to work together with the Prettier code formatter.
    To set that up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) article
    on the Rush website.
 
-That's it for ESLint! More detail can be found in the [eslint task](../tasks/eslint.md) reference.
+That's it for ESLint! More detail can be found in the [Lint plugin](../plugins/lint.md) reference.

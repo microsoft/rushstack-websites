@@ -4,10 +4,10 @@ title: Getting started
 
 ## Where to begin?
 
-- The [Getting started with Heft](../tutorials/getting_started.md) tutorial provides a quick
+- The [Hello World](../tutorials/hello_world.md) tutorial provides a quick
   walkthrough of the steps for setting up a project to build using Heft
 
-- The NPM package page is here: [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft)
+- The main NPM package page is here: [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft)
 
 - [Interfacing with Rush](../tutorials/heft_and_rush.md) explains how Heft and Rush interact
 

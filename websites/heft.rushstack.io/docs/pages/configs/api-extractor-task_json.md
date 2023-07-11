@@ -2,11 +2,13 @@
 title: api-extractor-task.json
 ---
 
-|                                           |                                                                                                                                       |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/api-extractor-task.json**                                                                             |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                   |
-| **Associated plugins:**                   | [ApiExtractorPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/ApiExtractorPlugin/ApiExtractorPlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/api-extractor-task.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugin:** | [API Extractor plugin](../plugins/api-extractor.md) |
+<!-- prettier-ignore-end -->
 
 ## Template
 
@@ -18,7 +20,7 @@ title: api-extractor-task.json
  * controlled by API Extractor's own "api-extractor.json" config file.
  */
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/api-extractor-task.schema.json"
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/api-extractor-task.schema.json"
 
   /**
    * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
@@ -42,5 +44,5 @@ title: api-extractor-task.json
 
 ## See also
 
-- [api-extractor](../tasks/api-extractor.md) task
-- [API Extractor](@api-extractor/) website
+- [API Extractor plugin](../plugins/api-extractor.md)
+- [API Extractor](@api-extractor/)

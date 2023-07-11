@@ -2,13 +2,9 @@
 title: rig.json
 ---
 
-|                                           |                                            |
-| ----------------------------------------- | ------------------------------------------ |
-| **File path:**                            | **&lt;project folder&gt;/config/rig.json** |
-| [**Riggable?**](../intro/rig_packages.md) | No                                         |
-| **Associated plugins:**                   |                                            |
-
 ## Template
+
+**&lt;project folder&gt;/config/rig.json**
 
 ```js
 // The "rig.json" file directs tools to look for their config files in an external package.

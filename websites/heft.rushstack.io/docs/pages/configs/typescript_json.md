@@ -2,20 +2,22 @@
 title: typescript.json
 ---
 
-|                                           |                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/typescript.json**                                                                                                                                                                                                                                                                                                                           |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                                                                                                                                                                                                                                                                         |
-| **Associated plugins:**                   | [TypeScriptPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/TypeScriptPlugin/TypeScriptPlugin.ts), [CopyStaticAssetsPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/CopyStaticAssetsPlugin.ts), [JestPlugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/typescript.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugin:** | [TypeScript plugin](../plugins/typescript.md) |
+<!-- prettier-ignore-end -->
 
 ## Template
 
 ```js
 /**
- * Configures the TypeScript plugin for Heft.  This plugin also manages linting.
+ * Configures the TypeScript plugin for Heft.
  */
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/typescript.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/typescript.schema.json",
 
   /**
    * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
@@ -24,55 +26,55 @@ title: typescript.json
   // "extends": "base-project/config/typescript.json",
 
   /**
-   * Can be set to "copy" or "hardlink". If set to "copy", copy files from cache.
-   * If set to "hardlink", files will be hardlinked to the cache location.
-   * This option is useful when producing a tarball of build output as TAR files don't
-   * handle these hardlinks correctly. "hardlink" is the default behavior.
-   */
-  // "copyFromCacheMode": "copy",
-
-  /**
    * If provided, emit these module kinds in addition to the modules specified in the tsconfig.
    * Note that this option only applies to the main tsconfig.json configuration.
    */
   "additionalModuleKindsToEmit": [
     // {
     //   /**
-    //    * (Required) Must be one of "commonjs", "amd", "umd", "system", "es2015", "esnext"
+    //    * (REQUIRED) Must be one of "commonjs", "amd", "umd", "system", "es2015", "esnext"
     //    */
     //  "moduleKind": "amd",
     //
     //   /**
-    //    * (Required) The name of the folder where the output will be written.
+    //    * (REQUIRED) The name of the folder where the output will be written.
     //    */
     //    "outFolderName": "lib-amd"
-    //
-    //   /**
-    //    * File extension to use instead of '.js' for emitted ECMAScript files.
-    //    * For example, '.cjs' to indicate commonjs content, or '.mjs' to indicate ECMAScript modules.
-    //    */
-    //    "jsExtensionOverride": ".cjs"
     // }
   ],
 
   /**
-   * Specifies the intermediary folder that tests will use.  Because Jest uses the
-   * Node.js runtime to execute tests, the module format must be CommonJS.
-   *
-   * The default value is "lib".
+   * If true, emit CommonJS module output to the folder specified in the tsconfig "outDir"
+   * compiler option with the .cjs extension alongside (or instead of, if tsconfig.json
+   * specifies CommonJS) the default compilation output.
    */
-  // "emitFolderNameForTests": "lib-commonjs",
+  // "emitCjsExtensionForCommonJS": true,
 
   /**
-   * If set to "true", the TSlint task will not be invoked.
+   * If true, emit ESNext module output to the folder specified in the tsconfig "outDir"
+   * compiler option with the .mjs extension alongside (or instead of, if tsconfig.js
+   * specifies ESNext) the default compilation output.
    */
-  // "disableTslint": true,
+  // "emitMjsExtensionForESModule": true,
 
   /**
-   * Set this to change the maximum number of file handles that will be opened concurrently for writing.
-   * The default is 50.
+   * If true, enable behavior analogous to the "tsc --build" command. Will build projects
+   * referenced by the main project. Note that this will effectively enable "noEmitOnError".
    */
-  // "maxWriteParallelism": 50,
+  // "buildProjectReferences": true,
+
+  /**
+   * If true, and the tsconfig.json has "isolatedModules": true, then transpilation will happen
+   * in parallel in a worker thread.
+   */
+  // "useTranspilerWorker": true,
+
+  /**
+   * Specifies the tsconfig.json file that will be used for compilation. Equivalent to
+   * the "project" argument for the 'tsc' and 'tslint' command line tools.
+   * The default value is "./tsconfig.json".
+   */
+  // "project": "tsconfig.special.json",
 
   /**
    * Configures additional file types that should be copied into the TypeScript compiler's emit folders, for example
@@ -85,12 +87,14 @@ title: typescript.json
     // "fileExtensions": [
     //   ".json", ".css"
     // ],
+
     /**
      * Glob patterns that should be explicitly included.
      */
     // "includeGlobs": [
     //   "some/path/*.js"
     // ],
+
     /**
      * Glob patterns that should be explicitly excluded. This takes precedence over globs listed
      * in "includeGlobs" and files that match the file extensions provided in "fileExtensions".
@@ -104,6 +108,5 @@ title: typescript.json
 
 ## See also
 
-- [typescript](../tasks/typescript.md) task
-- [copy-static-assets](../tasks/copy-static-assets.md) task
-- [jest](../tasks/jest.md) task
+- [TypeScript plugin](../plugins/typescript.md)
+- [Jest plugin](../plugins/jest.md)

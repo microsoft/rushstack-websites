@@ -22,7 +22,6 @@ const sidebars = {
         'index',
         'pages/intro/getting_started',
         'pages/intro/architecture',
-        'pages/intro/core_plugins',
         'pages/intro/rig_packages',
         'pages/intro/cli'
       ]
@@ -32,7 +31,7 @@ const sidebars = {
       label: 'Heft tutorials',
       collapsible: false,
       items: [
-        'pages/tutorials/getting_started',
+        'pages/tutorials/hello_world',
         'pages/tutorials/adding_tasks',
         'pages/tutorials/everyday_commands',
         'pages/tutorials/heft_and_rush'
@@ -40,63 +39,84 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Heft tasks',
+      label: 'Advanced topics',
+      collapsible: false,
+      items: ['pages/advanced/heft-config-file']
+    },
+    {
+      type: 'category',
+      label: 'Heft plugins',
       collapsible: false,
       items: [
         {
           type: 'doc',
-          label: 'api-extractor',
-          id: 'pages/tasks/api-extractor'
+          label: '(package index)',
+          id: 'pages/plugins/package_index'
         },
         {
           type: 'doc',
-          label: 'copy-files',
-          id: 'pages/tasks/copy-files'
+          label: 'API Extractor',
+          id: 'pages/plugins/api-extractor'
         },
         {
           type: 'doc',
-          label: 'copy-static-assets',
-          id: 'pages/tasks/copy-static-assets'
+          label: 'Copy files',
+          id: 'pages/plugins/copy-files'
         },
         {
           type: 'doc',
-          label: 'delete-globs',
-          id: 'pages/tasks/delete-globs'
+          label: 'Delete files',
+          id: 'pages/plugins/delete-files'
         },
         {
           type: 'doc',
-          label: 'eslint',
-          id: 'pages/tasks/eslint'
+          label: 'Dev certificate',
+          id: 'pages/plugins/dev-cert'
         },
         {
           type: 'doc',
-          label: 'jest',
-          id: 'pages/tasks/jest'
+          label: 'Jest',
+          id: 'pages/plugins/jest'
         },
         {
           type: 'doc',
-          label: 'node-service',
-          id: 'pages/tasks/node-service'
+          label: 'ESlint / TSLint',
+          id: 'pages/plugins/lint'
         },
         {
           type: 'doc',
-          label: 'sass-typings',
-          id: 'pages/tasks/sass-typings'
+          label: 'Node.js service',
+          id: 'pages/plugins/node-service'
         },
         {
           type: 'doc',
-          label: 'tslint',
-          id: 'pages/tasks/tslint'
+          label: 'Run script',
+          id: 'pages/plugins/run-script'
         },
         {
           type: 'doc',
-          label: 'typescript',
-          id: 'pages/tasks/typescript'
+          label: 'Sass',
+          id: 'pages/plugins/sass'
         },
         {
           type: 'doc',
-          label: 'webpack',
-          id: 'pages/tasks/webpack'
+          label: 'Serverless Stack',
+          id: 'pages/plugins/serverless-stack'
+        },
+        {
+          type: 'doc',
+          label: 'Storybook',
+          id: 'pages/plugins/storybook'
+        },
+        {
+          type: 'doc',
+          label: 'TypeScript',
+          id: 'pages/plugins/typescript'
+        },
+        {
+          type: 'doc',
+          label: 'Webpack',
+          id: 'pages/plugins/webpack'
         }
       ]
     },

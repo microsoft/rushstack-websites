@@ -2,59 +2,95 @@
 title: sass.json
 ---
 
-|                                           |                                                                                                                       |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/rig.json**                                                                            |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                                   |
-| **Associated plugins:**                   | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/src/SassPlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/rig.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugin:** | [Sass plugin](../plugins/sass.md) |
+<!-- prettier-ignore-end -->
 
 ## Template
 
 ```js
 /**
- * Configures the Sass Typings plugin for the Heft build system.
- *
- * This optional additional file customizes Sass parsing, module resolution, and emitting of
- * typings files for the Typescript compiler.
+ * Configuration for @rushstack/heft-sass-plugin
  */
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/sass.schema.json"
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft-sass-plugin.schema.json"
 
   /**
-   * Source code root directory.
-   * This is where .css, .sass, and .scss files will be searched for to generate typings.
+   * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
+   * settings to be shared across multiple projects.
    */
-  // "srcFolder": "src",
+  // "extends": "base-project/config/serve-command.json",
+
+  /**
+   * The root directory for project source code.
+   *
+   * Default value: "src/"
+   */
+  // "srcFolder": "src/",
 
   /**
    * Output directory for generated Sass typings.
+   *
+   * Default value: "temp/sass-ts/"
    */
-  // "generatedTsFolder": "temp/sass-ts",
+  // "generatedTsFolder": "temp/sass-ts/",
 
   /**
-   * Determines if export values are wrapped in a default property, or not.
+   * Optional additional folders to which Sass typings should be output.
    */
-  // "exportAsDefault": true,
+  // "secondaryGeneratedTsFolders": [],
+
+  /**
+   * Determines whether export values are wrapped in a default property, or not.
+   *
+   * Default value: true
+   */
+  // "exportAsDefault": false,
+
+  /**
+   * If specified, folders where compiled CSS files will be emitted to. They will be named by appending
+   * ".css" to the source file name for ease of reference translation, unless "preserveSCSSExtension" is set.
+   *
+   * Default value: undefined
+   */
+  // "cssOutputFolders": [],
+
+  /**
+   * If set, when emitting compiled CSS from a file with a ".scss" extension, the emitted CSS will have
+   * the extension ".scss" instead of ".scss.css".
+   *
+   * Default value: false
+   */
+  // "preserveSCSSExtension": true,
 
   /**
    * Files with these extensions will pass through the Sass transpiler for typings generation.
+   *
+   * Default value: [".sass", ".scss", ".css"]
    */
-  // "fileExtensions": [
-  //   ".sass",
-  //   ".scss",
-  //   ".css"
-  // ],
+  // "fileExtensions": [".sass", ".scss"],
 
   /**
-   * A list of paths used when resolving Sass imports.
+   * Files with these extensions will be treated as non-module SCSS and pass through
+   * the Sass transpiler for typings generation.
    */
-  // "importIncludePaths": [
-  //   "node_modules",
-  //   "src"
-  // ],
+  // "nonModuleFileExtensions": [ ".css" ],
+
+  /**
+   * A list of paths used when resolving Sass imports.  The paths should be relative to the project root.
+   *
+   * Default value: ["node_modules", "src"]
+   */
+  // "importIncludePaths": ["node_modules", "src"],
 
   /**
    * A list of file paths relative to the "src" folder that should be excluded from typings generation.
+   *
+   * Default value: undefined
    */
   // "excludeFiles": []
 }
@@ -62,4 +98,4 @@ title: sass.json
 
 ## See also
 
-- [sass-typings](../tasks/sass-typings.md) task
+- [Sass plugin](../plugins/sass.md) task

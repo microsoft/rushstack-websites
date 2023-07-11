@@ -41,9 +41,3 @@ The default value is `{PROJECT_FOLDER}`, however when Rush invokes commands such
 ## WEBPACK_DEV_SERVER
 
 By default `@rushstack/heft-webpack4-plugin` and `@rushstack/heft-webpack5-plugin` look for an NPM package called `webpack-dev-server` when launching Webpack. Use the `WEBPACK_DEV_SERVER` environment to configure a different NPM package name, such as a private fork of this package.
-
-## See also
-
-- [@rushstack/heft-jest-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-jest-plugin)
-- [@rushstack/heft-webpack5-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-webpack5-plugin)
-- [@rushstack/heft-webpack4-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-webpack4-plugin)

@@ -2,11 +2,13 @@
 title: node-service.json
 ---
 
-|                                           |                                                                                                                  |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **File path:**                            | **&lt;project folder&gt;/config/node-service.json**                                                              |
-| [**Riggable?**](../intro/rig_packages.md) | Yes                                                                                                              |
-| **Associated plugins:**                   | [NodeServicePlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/NodeServicePlugin.ts) |
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/node-service.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugin:** | [Node.js service plugin](../plugins/node-service.md) |
+<!-- prettier-ignore-end -->
 
 ## Template
 
@@ -16,7 +18,7 @@ title: node-service.json
  * Heft will watch for changes and restart the service process whenever it gets rebuilt.
  */
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/heft/node-service.schema.json"
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/node-service.schema.json"
 
   /**
    * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
@@ -71,4 +73,4 @@ title: node-service.json
 
 ## See also
 
-- [node-service](../tasks/node-service.md) task
+- [Node.js service plugin](../plugins/node-service.md)
