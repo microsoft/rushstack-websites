@@ -47,7 +47,7 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
               <PopupMenuItem
                 title="Heft"
                 iconPath="/images/suitenav/heft-icon.svg"
-                url="https://rushstack.io/pages/heft/overview/"
+                url="https://heft.rushstack.io/"
               />
               <PopupMenuItem
                 title="Lockfile Explorer"
