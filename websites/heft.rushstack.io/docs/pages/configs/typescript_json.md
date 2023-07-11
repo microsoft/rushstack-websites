@@ -7,7 +7,7 @@ title: typescript.json
 | --- | --- |
 | **File path:** | **&lt;project folder&gt;/config/typescript.json** |
 | [**Riggable?**](../intro/rig_packages.md) | Yes |
-| **Associated plugins:** | [TypeScriptPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/TypeScriptPlugin/TypeScriptPlugin.ts), [CopyStaticAssetsPlugin](https://github.com/microsoft/rushstack/blob/main/apps/heft/src/plugins/CopyStaticAssetsPlugin.ts), [JestPlugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/src/JestPlugin.ts) |
+| **Associated plugin:** | [TypeScript plugin](../plugins/typescript.md) |
 <!-- prettier-ignore-end -->
 
 ## Template
@@ -108,6 +108,5 @@ title: typescript.json
 
 ## See also
 
-- [typescript](../plugins/typescript.md) task
-- [copy-static-assets](../plugins/copy-static-assets.md) task
-- [jest](../plugins/jest.md) task
+- [TypeScript plugin](../plugins/typescript.md)
+- [Jest plugin](../plugins/jest.md)

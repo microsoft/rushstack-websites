@@ -7,7 +7,7 @@ title: sass.json
 | --- | --- |
 | **File path:** | **&lt;project folder&gt;/config/rig.json** |
 | [**Riggable?**](../intro/rig_packages.md) | Yes |
-| **Associated plugins:** | [SassTypingsPlugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin/src/SassPlugin.ts) |
+| **Associated plugin:** | [Sass plugin](../plugins/sass.md) |
 <!-- prettier-ignore-end -->
 
 ## Template
@@ -98,4 +98,4 @@ title: sass.json
 
 ## See also
 
-- [sass-typings](../plugins/sass-typings.md) task
+- [Sass plugin](../plugins/sass.md) task
