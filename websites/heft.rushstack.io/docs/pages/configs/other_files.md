@@ -15,7 +15,7 @@ consulted when building a project.
 |                                           |                                         |
 | ----------------------------------------- | --------------------------------------- |
 | **Supported file path:**                  | **&lt;project folder&gt;/.eslintrc.js** |
-| **Associated task:**                      | [eslint](../plugins/eslint.md)          |
+| **Associated task:**                      | [lint](../plugins/lint.md)              |
 | **Description:**                          | Configures lint rules                   |
 | [**Riggable?**](../intro/rig_packages.md) | via `"extends"` only                    |
 
@@ -43,7 +43,7 @@ consulted when building a project.
 |                                           |                                        |
 | ----------------------------------------- | -------------------------------------- |
 | **Supported file path:**                  | **&lt;project folder&gt;/tslint.json** |
-| **Associated task:**                      | [tslint](../plugins/tslint.md)         |
+| **Associated task:**                      | [lint](../plugins/lint.md)             |
 | **Description:**                          | Configures lint rules                  |
 | [**Riggable?**](../intro/rig_packages.md) | via `"extends"` only                   |
 

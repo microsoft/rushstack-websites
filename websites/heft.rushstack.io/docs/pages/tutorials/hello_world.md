@@ -205,7 +205,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      * Defines configuration used by core Heft.
      */
     {
-      "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
+      "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
       "eventActions": [
         {
