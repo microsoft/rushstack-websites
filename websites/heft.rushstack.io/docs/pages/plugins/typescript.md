@@ -2,6 +2,9 @@
 title: TypeScript plugin
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -11,7 +14,7 @@ title: TypeScript plugin
 | **heft.json options:** | (none) |
 <!-- prettier-ignore-end -->
 
-This task invokes the compiler for the [TypeScript](https://www.typescriptlang.org/) programming language.
+This plugin invokes the compiler for the [TypeScript](https://www.typescriptlang.org/) programming language.
 
 ## When to use it
 
@@ -28,90 +31,113 @@ Obviously certain components may inevitably require Java, C++, Swift, etc. But i
 
 ## package.json dependencies
 
-You will need to add the `typescript` package to your project:
+If you are using a standard rig such as [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig)
+or [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig), then TypeScript
+will already be loaded and configured.
+
+Otherwise, you'll need to add the plugin package to your project:
+
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
 
 ```bash
+# If you are using Rush, run this shell command in your project folder:
+rush add --package @rushstack/heft-typescript-plugin --dev
+```
+
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
+npm install @rushstack/heft-typescript-plugin --save-dev
+```
+
+  </TabItem>
+</Tabs>
+
+You will also need to add the `typescript` package to your project:
+
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
+```bash
+# If you are using Rush, run this shell command in your project folder:
 rush add --package typescript --dev
 ```
 
-Alternatively, you can avoid this dependency by loading it from a "rig package", as described in the [Interfacing with Rush](../tutorials/heft_and_rush.md) article.
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
+npm install typescript --save-dev
+```
+
+  </TabItem>
+</Tabs>
 
 If your **tsconfig.json** enables `"importHelpers": true` for more efficient transpiler output, you may also need a dependency on **tslib**:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
-rush add --package tslib
+# If you are using Rush, run this shell command in your project folder:
+rush add --package tslib --dev
 ```
 
-## Config files
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# Or if you are using vanilla NPM, run this shell command in your project folder:
+npm install tslib --save-dev
+```
+
+  </TabItem>
+</Tabs>
+
+## Configuration
+
+If TypeScript is not already being provided by a rig, your [heft.json config file](../configs/heft_json.md) could
+invoke it like in this example:
+
+**&lt;project folder&gt;/config/heft.json**
+
+```js
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+  . . .
+  "phasesByName": {
+    "build": {
+      "cleanFiles": [
+        { "sourcePath": "dist" },
+        { "sourcePath": "lib" },
+        { "sourcePath": "lib-amd" },
+        { "sourcePath": "lib-commonjs" },
+        { "sourcePath": "lib-es6" }
+      ],
+      "tasksByName": {
+        "typescript": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-typescript-plugin"
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 The primary configuration comes from TypeScript's [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file.
 
-For advanced scenarios, Heft also provides an optional [typescript.json](../configs/typescript_json.md) config file that can be used to configure toolchain features such as multiple emit targets for the TypeScript compiler.
+For advanced scenarios, Heft also supports an optional [config/typescript.json](../configs/typescript_json.md)
+config file that can be used to configure toolchain features such as multiple emit targets for the TypeScript
+compiler. It also supports a `staticAssetsToCopy` feature for copying files such as `.css` and `.json`
+into the emit target folder.
 
----
+## See also
 
-## title: '"copy-static-assets" task'
-
-This task supplements the TypeScript transpiler by copying asset files into the output folder, so that they can be imported by .js files.
-
-## When to use it
-
-The `copy-static-assets` task is used when source files need to reference asset files using `import` or `require()`. For example, a React project may have a file that loads an **src/styles.css** asset like this:
-
-**src/index.tsx**
-
-```ts
-import './styles.css';
-
-. . .
-```
-
-In Heft's standard configuration, the TypeScript compiler reads **src/\*\*/.ts** inputs and writes **lib/\*\*/.js** outputs. When Webpack is invoked on **lib/index.js**, it will process the resulting `require("./styles.css");` and expect to bundle the file path **lib/styles.css** (instead of **src/styles.css** as in the TypeScript code).
-
-## package.json dependencies
-
-None - this feature is implemented internally by Heft.
-
-## Config files
-
-Continuing the above example, we can copy the `styles.css` file using the `"staticAssetsToCopy"`setting in [typescript.json](../configs/typescript_json.md). For example:
-
-**&lt;project folder&gt;/config/typescript.json**
-
-```js
-  . . .
-
-  /**
-   * Configures additional file types that should be copied into the TypeScript compiler's emit folders, for example
-   * so that these files can be resolved by import statements.
-   */
-  "staticAssetsToCopy": {
-    /**
-     * File extensions that should be copied from the src folder to the destination folder(s).
-     */
-    // "fileExtensions": [
-    //   ".json", ".css"
-    // ],
-
-    "fileExtensions": [
-      ".css"
-    ],
-
-    /**
-     * Glob patterns that should be explicitly included.
-     */
-    // "includeGlobs": [
-    //   "some/path/*.js"
-    // ],
-
-    /**
-     * Glob patterns that should be explicitly excluded. This takes precedence over globs listed
-     * in "includeGlobs" and files that match the file extensions provided in "fileExtensions".
-     */
-    // "excludeGlobs": [
-    //   "some/path/*.css"
-    // ]
-  }
-
-. . .
-```
+- [config/typescript.json](../configs/typescript_json.md) config file for Heft
+- [tsconfig.json](https://www.typescriptlang.org/tsconfig) reference
