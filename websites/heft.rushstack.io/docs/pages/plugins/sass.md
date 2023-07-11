@@ -2,6 +2,9 @@
 title: Sass plugin
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -84,13 +87,24 @@ will already be loaded and configured.
 
 Otherwise, you'll need to add the plugin package to your project:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-sass-plugin --dev
-
-# Or if you are using plain NPM, run this shell command:
-npm install @rushstack/heft-sass-plugin --dev-dev
 ```
+
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
+npm install @rushstack/heft-sass-plugin --save-dev
+```
+
+  </TabItem>
+</Tabs>
 
 Because the plugin only generates TypeScript typings, your project will need additional configuration
 to invoke the Sass processor for transpiling styles. The specifics depend on your bundling configuration.
@@ -158,3 +172,8 @@ Reference the generated typings by adding `temp/sass-ts` to the `rootDirs` setti
 
 Make sure that the `staticAssetsToCopy` setting your [typescript.json](../plugins/typescript.md) file
 is configured to copy the `.css`, `.scss`, and `.sass` file extensions.
+
+## See also
+
+- [config/sass.json](../configs/sass_json.md) config file for Heft
+- [Syntactically Awesome Style Sheet (Sass)](https://sass-lang.com/)

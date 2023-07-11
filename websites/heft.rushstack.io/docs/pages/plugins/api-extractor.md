@@ -2,6 +2,9 @@
 title: API Extractor plugin
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -39,15 +42,26 @@ will already be loaded and configured.
 
 Otherwise, you'll need to add these packages to your project:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-api-extractor-plugin --dev
 rush add --package @microsoft/api-extractor --dev
+```
 
-# Or if you are using plain NPM, run this shell command:
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
 npm install @rushstack/heft-api-extractor-plugin --save-dev
 npm install @microsoft/api-extractor --save-dev
 ```
+
+  </TabItem>
+</Tabs>
 
 ## Configuration
 
@@ -86,3 +100,8 @@ like in this example:
 Heft looks for API Extractor's config file [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/). This file can be created by invoking the [api-extractor init](@api-extractor/pages/commands/api-extractor_init/) command. This file is [riggable](../intro/rig_packages.md).
 
 For advanced scenarios, the optional [api-extractor-task.json](../configs/api-extractor-task_json.md) config file provides some additional Heft-specific settings.
+
+## See also
+
+- [config/api-extractor.json](@api-extractor/pages/configs/api-extractor_json/) config file for Heft
+- [API Extractor](@api-extractor/) website

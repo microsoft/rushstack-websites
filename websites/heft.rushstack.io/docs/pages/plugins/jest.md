@@ -2,6 +2,9 @@
 title: Jest plugin
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -33,26 +36,52 @@ will already be loaded and configured.
 
 Otherwise, you'll need to add the plugin package to your project:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-jest-plugin --dev
-
-# Or if you are using plain NPM, run this shell command:
-npm install @rushstack/heft-jest-plugin --dev-dev
 ```
+
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
+npm install @rushstack/heft-jest-plugin --save-dev
+```
+
+  </TabItem>
+</Tabs>
 
 The plugin has direct dependencies on the Jest packages that it needs, so you don't need to add Jest to your
 project's **package.json** file.
 
 Your project should get its typings from `@types/heft-jest` instead of `@types/jest`:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
-rush add --package @types/heft-jest --exact --dev
+rush add --package @types/heft-jest --dev --exact
 
-# Or if you are using plain NPM, run this shell command:
-npm install @types/heft-jest --dev-dev --save-exact
+# Because @types packages don't follow SemVer, it's a good idea to use --exact
 ```
+
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
+npm install @types/heft-jest --save-dev --save-exact
+
+# Because @types packages don't follow SemVer, it's a good idea to use --save-exact
+```
+
+  </TabItem>
+</Tabs>
 
 ...and then reference the `@types/heft-jest` in your **tsconfig.json** file, like this example:
 

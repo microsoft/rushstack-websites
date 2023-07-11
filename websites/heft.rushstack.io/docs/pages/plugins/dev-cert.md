@@ -2,6 +2,9 @@
 title: Dev certificate plugins
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -28,13 +31,24 @@ and configures your OS to trust it.
 
 ## package.json dependencies
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-dev-cert-plugin --dev
+```
 
-# Or if you are using plain NPM, run this shell command:
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
 npm install @rushstack/heft-dev-cert-plugin --save-dev
 ```
+
+  </TabItem>
+</Tabs>
 
 ## Configuration
 

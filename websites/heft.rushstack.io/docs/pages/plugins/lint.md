@@ -2,6 +2,9 @@
 title: ESlint / TSLint plugins
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!-- prettier-ignore-start -->
 |     |     |
 | --- | --- |
@@ -31,13 +34,24 @@ Although it's recommended to set up your build system in this way, Heft doesn't 
 
 You will need to add the `eslint` package to your project:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package eslint --dev
+```
 
-# Or if you are using plain NPM, run this shell command:
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
 npm install eslint --save-dev
 ```
+
+  </TabItem>
+</Tabs>
 
 > If you're using a rig, the `eslint` dependency could be omitted and obtained via [rig resolution](../intro/rig_packages.md). However, if you use the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), it will try to resolve the `eslint` package from your project folder. Thus it is still useful to add ESLint to your **package.json** file. (The extension is able to load a globally installed `eslint` package; however, its version may not match the version required by the local branch.)
 
@@ -47,13 +61,24 @@ will already be loaded and configured.
 
 Otherwise, you'll need to add the packages to your project:
 
+<Tabs>
+  <TabItem value="rush-install" label="Rush">
+
 ```bash
 # If you are using Rush, run this shell command in your project folder:
 rush add --package @rushstack/heft-lint-plugin --dev
+```
 
-# Or if you are using plain NPM, run this shell command:
+  </TabItem>
+  <TabItem value="npm-install" label="NPM">
+
+```bash
+# If you are using vanilla NPM, run this shell command in your project folder:
 npm install @rushstack/heft-lint-plugin --save-dev
 ```
+
+  </TabItem>
+</Tabs>
 
 ## Configuration
 
