@@ -169,7 +169,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      "phasesByName": {
        // Define a phase whose name is "build"
        "build": {
-         "phaseDescription": "Compiles the project source code",
+         "phaseDescription": "This phase compiles the project source code.",
 
          // Before invoking the compiler, delete the "dist" and "lib" folders
          "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
@@ -187,6 +187,8 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      }
    }
    ```
+
+   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
 
    If you run `heft --help`, you will now see that a `build` and `build-watch`
    action have been added to your command line, since our phase was called `"build"`:
