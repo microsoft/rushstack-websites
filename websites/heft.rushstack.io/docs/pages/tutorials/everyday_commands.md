@@ -11,34 +11,38 @@ If you're diagnosing problems with the Heft build, there are a couple useful par
 - `--verbose`: For example, instead of `heft build`, you can run `heft build --verbose` to see more details about how the tasks are invoked.
 - `--debug`: For even more detail, you can run `heft --debug build` to see call stacks and additional trace information. Note that `--debug` is a global parameter, so it must precede the `build` action name.
 
-## Building with -<!---->-watch
+## Running arbitrary sets of phases
 
-If you run `heft build --watch`, the TypeScript compiler will continue running and wait for changes to source files. Whenever a file is changed, Heft will rebuild only the affected files, as a minimal incremental update that can be very fast.
-
-When using Webpack, `heft start` invokes a localhost dev server (see [DevServer](https://webpack.js.org/configuration/dev-server/)) that uses this mode to automatically reload the web browser with the recompiled code, every time a source file is saved. This can save a lot of time when tuning UI layouts! The `--watch` parameter is not needed with `heft start`, because watch mode is always enabled for that action.
-
-## Jest interactive shell
-
-For tests, you can also do `heft test --watch` which invokes Jest's interactive shell. It shows a menu like this:
+Each phase that you define in **heft.config** will produce a pair of command-line actions
+which invoke that phase and its dependencies (as declared using `phaseDependencies`).
+The `heft run` command allows you to choose arbitrary phases to run:
 
 ```
-No tests found related to files changed since last commit.
-Press `a` to run all tests, or run Jest with `--watchAll`.
+usage: heft run [-h] [-t PHASE] [-T PHASE] [-o PHASE] ...
 
-Run start. 0 test suites
+Run a provided selection of Heft phases.
 
-Tests finished:
-  Successes: 0
-  Failures: 0
-  Total: 0
+Positional arguments:
+  "..."                 Scoped parameters. Must be prefixed with "--", ex.
+                        "-- --scopedParameter foo --scopedFlag". For more
+                        information on available scoped parameters, use "--
+                        --help".
 
-Watch Usage
- › Press a to run all tests.
- › Press f to run only failed tests.
- › Press p to filter by a filename regex pattern.
- › Press t to filter by a test name regex pattern.
- › Press q to quit watch mode.
- › Press Enter to trigger a test run.
+Optional arguments:
+  -h, --help            Show this help message and exit.
+
+Optional scoping arguments:
+  -t PHASE, --to PHASE  The phase to run to, including all transitive
+                        dependencies.
+  -T PHASE, --to-except PHASE
+                        The phase to run to (but not include), including all
+                        transitive dependencies.
+  -o PHASE, --only PHASE
+                        The phase to run.
 ```
 
-Whenever you save a change to a source file, Heft will automatically recompile the project, and then Jest will rerun any affected tests, updating the report.
+Suppose that your `test` phase depends on `build`. Running `heft test` would then normally
+perform both phases. To invoke **\*only** the `test` phase, you can use `heft run --only test`.
+
+Note that tasks cannot be run individually. The phase is the smallest granularity for
+selecting Heft operations.
