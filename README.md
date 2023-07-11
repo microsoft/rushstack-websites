@@ -10,6 +10,7 @@ The following websites are maintained in this monorepo:
 - https://api-extractor.com
 - https://api.rushstack.io
 - https://lfx.rushstack.io
+- https://heft.rushstack.io/
 - https://rushjs.io
 - https://rushstack.io
 - https://tsdoc.org
