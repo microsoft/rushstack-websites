@@ -100,6 +100,9 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
           <a href="https://rushstack.io/pages/shop/" className={styles.suiteNavItem}>
             Shop
           </a>
+          <a href="https://rushstack.io/blog/" className={styles.suiteNavItem}>
+            Blog
+          </a>
           <a href="https://rushstack.io/community/events/" className={styles.suiteNavItem}>
             Events
           </a>
