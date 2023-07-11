@@ -19,7 +19,7 @@ hide_title: true
 在 **Rush Stack** 中，主要有以下项目：
 
 - [Rush](@rushjs/): 可扩展的 monorepo 构建编排工具。
-- [Heft](./pages/heft/overview.md): 可以与 Rush 交互的可扩展构建系统。
+- [Heft](@heft/): 可以与 Rush 交互的可扩展构建系统。
 - [API Extractor](@api-extractor/): 为工具库审阅 API 并生成 .d.ts 文件。
 - [API Documenter](@api-extractor/pages/setup/generating_docs): 生成你的 API 文档站。
 - [@<!---->rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): 专门为大型 TypeScript monorepo 仓库设计的 ESLint 规则集。

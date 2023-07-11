@@ -11,7 +11,7 @@ We also maintain a number of supporting repositories for documentation and code 
 <!-- prettier-ignore-start -->
 | GitHub repo | Contents |
 |-------------|----------|
-| [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites) | Docusaurus websites for `rushjs.io`, `rushstack.io`, `lfx.rushstack.io`, `api.rushstack.io`, `api-extractor.com`, and `tsdoc.org` |
+| [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites) | Docusaurus websites for `rushjs.io`, `rushstack.io`, `heft.rushstack.io`, `lfx.rushstack.io`, `api.rushstack.io`, `api-extractor.com`, and `tsdoc.org` |
 | [microsoft/rush-example](https://github.com/microsoft/rush-example) | A barebones example repository for testing Rush commands |
 | [microsoft/rushstack-samples](https://github.com/microsoft/rushstack-samples) | A collection of code samples using the Rush Stack tooling |
 | [microsoft/rushstack-legacy](https://github.com/microsoft/rushstack-legacy) | Legacy projects that are no longer actively developed |
