@@ -15,7 +15,7 @@ The lifecycle session is responsible for providing session-specific information 
 **Signature:**
 
 ```typescript
-export interface IHeftLifecycleSession 
+export interface IHeftLifecycleSession
 ```
 
 ## Properties
@@ -23,7 +23,7 @@ export interface IHeftLifecycleSession
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [hooks](./heft.iheftlifecyclesession.hooks.md) | <code>readonly</code> | [IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md) | The hooks available to the lifecycle plugin. |
-|  [logger](./heft.iheftlifecyclesession.logger.md) | <code>readonly</code> | [IScopedLogger](./heft.iscopedlogger.md) | The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format "\[lifecycle:<pluginName>\]". It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message. |
+|  [logger](./heft.iheftlifecyclesession.logger.md) | <code>readonly</code> | [IScopedLogger](./heft.iscopedlogger.md) | The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format `[lifecycle:<pluginName>]`. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message. |
 |  [parameters](./heft.iheftlifecyclesession.parameters.md) | <code>readonly</code> | [IHeftParameters](./heft.iheftparameters.md) | Contains default parameters provided by Heft, as well as CLI parameters requested by the lifecycle plugin. |
 |  [tempFolderPath](./heft.iheftlifecyclesession.tempfolderpath.md) | <code>readonly</code> | string | The temp folder for the lifecycle plugin. This folder is unique for each lifecycle plugin, and will be cleaned when Heft is run with <code>--clean</code>. |
 
