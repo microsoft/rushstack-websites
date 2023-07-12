@@ -13707,11 +13707,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "doc",
-      "label": "@rushstack/worker-pool",
-      "id": "pages/worker-pool"
     }
   ]
 }

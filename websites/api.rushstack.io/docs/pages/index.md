@@ -32,5 +32,4 @@ pagination_next: null
 |  [@rushstack/tree-pattern](./tree-pattern.md) | A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST). |
 |  [@rushstack/ts-command-line](./ts-command-line.md) | An object-oriented command-line parser for TypeScript projects. |
 |  [@rushstack/typings-generator](./typings-generator.md) | An engine for generating TypeScript .d.ts files that provide type signatures for non-TypeScript modules such as generated JavaScript or CSS. It can operate in either a single-run mode or a watch mode. |
-|  [@rushstack/worker-pool](./worker-pool.md) | A lightweight worker pool implementation using the NodeJS <code>worker_threads</code> API. |
 
