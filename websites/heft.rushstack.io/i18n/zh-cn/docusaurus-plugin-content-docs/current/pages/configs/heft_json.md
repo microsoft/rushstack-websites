@@ -14,169 +14,164 @@ title: heft.json
 
 ```js
 /**
- * Defines configuration used by core Heft.
+ * 定义 core Heft 使用的配置。
  */
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
   /**
-   * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
-   * settings to be shared across multiple projects.
+   * 可选地指定此文件继承自的另一个 JSON 配置文件。这为标准设置在多个项目之间共享提供了一种方式。
    */
   // "extends": "base-project/config/heft.json",
 
   /**
-   * Defines aliases for existing Heft actions, and allows them to be invoked by
-   * name with default parameters.  The JSON keys is are user-defined names.
+   * 为现有的 Heft 动作定义别名，并允许他们通过
+   * 名称和默认参数来调用。JSON 的键是用户自定义的名称。
    *
-   * For example, the "heft start" alias is conventionally defined to invoke
-   * "heft build-watch --serve" using a definition like this:
+   * 例如，"heft start" 别名通常定义为调用
+   * "heft build-watch --serve"，使用类似以下的定义：
    *
    *   "aliasesByName": { "start": { "actionName": "build-watch", "defaultParameters": [ "--serve" ] } }
    */
   "aliasesByName": {
     // /**
-    //  * The command-line action name of the Heft alias that is being defined.
-    //  * This JSON key is a user-defined value.
+    //  * 被定义的 Heft 别名的命令行动作名称。
+    //  * 此 JSON 键是用户自定义的值。
     //  */
     // "example-alias-name": {
     //   /**
-    //    * The name of the existing Heft command-line action to be invoked by this alias.
+    //    * 由此别名调用的现有 Heft 命令行动作的名称。
     //    */
     //   "actionName": "example-action",
     //
     //   /**
-    //    * A list of command-line parameters to pass to the Heft action by default.
-    //    * These parameters will be appended after the specified action and before
-    //    * any user-specified parameters.
+    //    * 默认传递给 Heft 动作的命令行参数列表。
+    //    * 这些参数将在指定的动作之后和
+    //    * 用户指定的参数之前附加。
     //    */
     //   "defaultParameters": [ "--do-some-thing" ]
     // }
   },
 
   /**
-   * List of Heft lifecycle plugins to be loaded for this project.
+   * 此项目要加载的 Heft 生命周期插件列表。
    */
   "heftPlugins": [
     // {
     //   /**
-    //    * (REQUIRED) The NPM package name for the plugin.
+    //    * (必须的) 插件的 NPM 包名。
     //    */
     //   "pluginPackage": "@mycorp/heft-example-plugin",
     //
     //   /**
-    //    * The name of the plugin to load from the NPM package's heft-plugin.json manifest.
-    //    * If not specified, and if the plugin package provides a single plugin, then that
-    //    * plugin will be loaded.
+    //    * 从 NPM 包的 heft-plugin.json 清单中加载的插件名称。
+    //    * 如果未指定，且插件包提供单个插件，则加载该插件。
     //    */
     //   // "pluginName": "example-plugin",
     //
     //   /**
-    //    * Options to pass to the plugin.  This is a custom object whose structure
-    //    * is defined by the plugin.
+    //    * 传递给插件的选项。 这是一个自定义对象，其结构
+    //    * 由插件定义。
     //    */
     //   // "options": { "example-key": "example-value" }
     // }
   ],
 
   /**
-   * Heft phases that can be run during an execution of Heft.
-   * The JSON keys is are user-defined names.
+   * Heft 在执行过程中可以运行的阶段。
+   * JSON 的键是用户自定义的名称。
    */
   "phasesByName": {
     /**
-     * The name of the phase, which is used by other fields such as "phaseDependencies".
-     * This JSON key is a user-defined value.
+     * 阶段的名称，被其他字段如 "phaseDependencies" 所使用。
+     * 此 JSON 键是用户自定义的值。
      */
     "example-phase": {
       /**
-       * A description to be shown in the command-line help.
+       * 在命令行帮助中显示的描述。
        */
-      "phaseDescription": "An example phase",
+      "phaseDescription": "一个示例阶段",
 
       /**
-       * A list of delete operations to perform when cleaning at the beginning of phase execution.
-       * Their structure is similar the options used by the delete-files-plugin.
+       * 在阶段执行开始时进行清理的删除操作列表。
+       * 它们的结构类似于 delete-files-plugin 使用的选项。
        */
       "cleanFiles": [
         // {
         //   /**
-        //    * Absolute path to the source file or folder, relative to the project root.
-        //    * If "fileExtensions", "excludeGlobs",  or "includeGlobs" are specified, then "sourcePath"
-        //    * is assumed to be a folder; if it is not a folder, an error will be thrown.
-        //    * Settings such as "includeGlobs" and "excludeGlobs" will be resolved relative to this path.
-        //    * If no globs or file extensions are specified, the entire folder will be copied.
-        //    * If this parameter is not provided, it defaults to the project root.
+        //    * 源文件或文件夹的绝对路径，相对于项目根目录。
+        //    * 如果指定了 "fileExtensions", "excludeGlobs", 或 "includeGlobs"，则 "sourcePath"
+        //    * 被视为文件夹；如果不是文件夹，将抛出错误。
+        //    * 诸如 "includeGlobs" 和 "excludeGlobs" 的设置将相对于此路径解析。
+        //    * 如果没有指定 globs 或文件扩展名，整个文件夹将被复制。
+        //    * 如果未提供此参数，则默认为项目根目录。
         //    */
         //   // "sourcePath": "lib",
         //
         //   /**
-        //    * If specified, this option recursively scans all folders under "sourcePath" and includes
-        //    * any files that match the specified extensions.  If "fileExtensions" and "includeGlobs"
-        //    * are both specified, their selections are added together.
+        //    * 如果指定，此选项递归扫描 "sourcePath" 下的所有文件夹，并包含
+        //    * 与指定扩展名匹配的任何文件。 如果 "fileExtensions" 和 "includeGlobs"
+        //    * 都指定了，它们的选择将会合并。
         //    */
         //   // "fileExtensions": [ ".png" ],
         //
         //   /**
-        //    * A list of glob patterns that select files to be copied.  The paths are resolved relative
-        //    * to "sourcePath", which must be a folder path.  If "fileExtensions" and "includeGlobs"
-        //    * are both specified, their selections are added together.
+        //    * 选择要复制的文件的 glob 模式列表。 路径相对于 "sourcePath" 解析，
+        //    * "sourcePath" 必须是文件夹路径。 如果 "fileExtensions" 和 "includeGlobs"
+        //    * 都指定了，它们的选择将会合并。
         //    *
-        //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+        //    * 对于 glob 语法，请参考：https://www.npmjs.com/package/fast-glob
         //    */
         //   // "excludeGlobs": [],
         //
         //
         //   /**
-        //    * A list of glob patterns that exclude files or folders from being copied.  The paths are resolved
-        //    * relative to "sourcePath", which must be a folder path.  These exclusions eliminate items that
-        //    * were selected by the "includeGlobs" or "fileExtensions" setting.
+        //    * 排除从中复制文件或文件夹的 glob 模式列表。 路径相对于 "sourcePath" 解析，
+        //    * "sourcePath" 必须是文件夹路径。 这些排除项消除了由 "includeGlobs" 或 "fileExtensions" 设置选中的项目。
         //    *
-        //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+        //    * 对于 glob 语法，请参考：https://www.npmjs.com/package/fast-glob
         //    */
         //   // "includeGlobs": [ "**/temp" ]
         // }
-      ]
+      ],
 
       /**
-       * A list of phase names that must be run before this phase can start.
+       * 必须在此阶段开始之前运行的阶段名称列表。
        */
       "phaseDependencies": [ ],
 
       /**
-       * Heft tasks that are run during an execution of the Heft phase.
-       * The JSON keys is are user-defined names.
+       * 在执行 Heft 阶段期间运行的 Heft 任务。
+       * JSON 的键是用户自定义的名称。
        */
       "tasksByName": {
         /**
-         * The name of the task, which is used by other fields such as "taskDependencies".
-         * This JSON key is a user-defined value.
+         * 任务的名称，被其他字段如 "taskDependencies" 所使用。
+         * 此 JSON 键是用户自定义的值。
          */
         "example-task": {
           /**
-           * A list of task names that must be run before this task can start.
+           * 必须在此任务开始之前运行的任务名称列表。
            */
           "taskDependencies": [],
 
           /**
-           * (REQUIRED) The Heft plugin to be loaded, which will perform the operation for this task.
+           * (必需) 要加载的 Heft 插件，它将执行此任务的操作。
            */
           "taskPlugin": {
             /**
-             * (REQUIRED) The NPM package name for the plugin.
+             * (必需) 插件的 NPM 包名称。
              */
             "pluginPackage": "@mycorp/heft-example-plugin",
 
             /**
-             * The name of the plugin to load from the NPM package's heft-plugin.json manifest.
-             * If not specified, and if the plugin package provides a single plugin, then that
-             * plugin will be loaded.
+             * 要从 NPM 包的 heft-plugin.json manifest 中加载的插件的名称。
+             * 如果未指定，并且插件包提供了一个插件，则将加载该插件。
              */
             // "pluginName": "example-plugin",
 
             /**
-             * Options to pass to the plugin.  This is a custom object whose structure
-             * is defined by the plugin.
+             * 传递给插件的选项。这是一个由插件定义的自定义对象的结构。
              */
             // "options": { "example-key": "example-value" }
           }

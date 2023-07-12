@@ -2,75 +2,75 @@
 title: Heft architecture
 ---
 
-## Read this first 🎈
+## 先读这个 🎈
 
-Here's a quick summary of the most important concepts of Heft:
+以下是 Heft 最重要的一些概念的快速总结：
 
 ### Action
 
-In Heft's terminology, an "action" is command-line verb, as formalized by Rush Stack's [ts-command-line](https://www.npmjs.com/package/@rushstack/ts-command-line) system. Use `heft --help` to see the available actions. The `clean` and `run` actions are provided by Heft itself; the others are produced by your **heft.json** configuration.
+在 Heft 的术语中，"action"是命令行动词，由 Rush Stack 的[ts-command-line](https://www.npmjs.com/package/@rushstack/ts-command-line)系统规范化。使用`heft --help`来查看可用的 actions。`clean`和`run` actions 是由 Heft 本身提供的；其它的是由你的**heft.json**配置生成的。
 
-**Example:** A shell command `heft test --clean` is invoking the `test` action.
+**例子：**一个 shell 命令`heft test --clean`正在调用`test` action。
 
-> **Note:** Early releases of Heft also used the word "action" for `eventActions` in **heft.json**. This terminology is no longer used.
+> **注意：**Heft 的早期版本也使用"action"这个词来表示**heft.json**中的`eventActions`。这个术语现在已经不再使用。
 
 ### Parameter
 
-Actions support various command-line "parameters" for adjusting behavior. Some parameters are defined by Heft itself; others are contributed by Heft plugins.
+Actions 支持各种命令行"parameters"以调整行为。一些 parameters 是由 Heft 本身定义的；其他的是由 Heft plugins 贡献的。
 
-**Example:** A shell command `heft test --clean` is using the `--clean` parameter.
+**例子：**一个 shell 命令`heft test --clean`正在使用`--clean` parameter。
 
 ### Task
 
-Heft "tasks" are defined in the `tasksByName` section of a **heft.json** config file for your project. Tasks typically read input files and/or generate output files, often by invoking a familiar tool such as TypeScript or ESLint. Each task loads a Heft task plugin (see below). It's possible for two different tasks to load the same plugin. Tasks can depend on each other, which determines scheduling order.
+Heft "tasks"在你的项目的**heft.json**配置文件的`tasksByName`部分中定义。Tasks 通常读取输入文件和/或生成输出文件，通常通过调用如 TypeScript 或 ESLint 这样的熟悉的工具。每个 task 加载一个 Heft task plugin（见下文）。两个不同的 tasks 可以加载同一个 plugin。Tasks 可以相互依赖，这决定了调度顺序。
 
-**Example:** The `@rushstack/heft-web-rig` configuration [defines](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/rigs/heft-web-rig/profiles/app/config/heft.json#L53) a task called `webpack`.
+**例子：**`@rushstack/heft-web-rig`配置[定义](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/rigs/heft-web-rig/profiles/app/config/heft.json#L53)了一个名为`webpack`的 task。
 
 ### Phase
 
-A "phase" is an arrangement of Heft tasks, defined in the `phasesByName` section of a **heft.json** config file for your project. In that file, phases are given names such as `build` or `test`. Defining a phase creates two corresponding command-line actions. For example, the `test` phase produces a `heft test` and `heft test-watch` action. The `-watch` variant is for interactive watch mode, for example a localhost dev server.
+"Phase"是 Heft tasks 的一种安排，定义在你的项目的**heft.json**配置文件的`phasesByName`部分。在该文件中，phases 被赋予如`build`或`test`等名称。定义一个 phase 会创建两个对应的命令行 actions。例如，`test` phase 会产生一个`heft test`和`heft test-watch` action。`-watch`变体用于交互式的观察模式，例如本地开发服务器。
 
-If tasks belong to the same phase, they can share memory objects for optimization; otherwise, they must only communicate by writing files to disk. This requirement supports integration with [Rush phases](https://rushjs.io/pages/maintainer/phased_builds/) which may run at different times or on different computers, communicating via the Rush build cache.
+如果 tasks 属于同一个 phase，它们可以共享内存对象进行优化；否则，它们只能通过将文件写入磁盘进行通信。这个要求支持与[Rush phases](https://rushjs.io/pages/maintainer/phased_builds/)的集成，后者可能在不同的时间或在不同的计算机上运行，通过 Rush 构建缓存进行通信。
 
-**Example:** The `@rushstack/heft-web-rig` configuration [defines](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/rigs/heft-web-rig/profiles/app/config/heft.json#L21) a `build` phase that incorporates a `webpack` task.
+**例子：**`@rushstack/heft-web-rig`配置[定义](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/rigs/heft-web-rig/profiles/app/config/heft.json#L21)了一个包含`webpack` task 的`build` phase。
 
 ### Plugin
 
-Heft plugins are TypeScript classes that implement the `IHeftPlugin` contract. There are two kinds of plugins:
+Heft plugins 是实现`IHeftPlugin`合约的 TypeScript 类。有两种类型的 plugins：
 
-- a **task plugin** can be loaded by **heft.json** tasks and provides their implementation
-- a **lifecycle plugin** provides general functionality that is not specific to any task; for example, to collect timing metrics
+- 一个**task plugin**可以被**heft.json** tasks 加载，并提供他们的实现
+- 一个**lifecycle plugin**提供了不特定于任何 task 的通用功能；例如，收集时间度量
 
 ### Plugin package
 
-A "plugin package" is an NPM package providing Heft plugins. The NPM package naming pattern is `heft-____-plugin` or `heft-____-plugins` (according to the number of plugins). **Built-in plugins** are loaded directly from the `@rushstack/heft` package.
+"Plugin package"是提供 Heft plugins 的 NPM 包。NPM 包的命名模式是`heft-____-plugin`或`heft-____-plugins`（根据 plugins 的数量）。**内建的 plugins**直接从`@rushstack/heft`包中加载。
 
-See the [Plugin package index](../plugins/package_index.md) for the list of official plugins.
+请查看[Plugin package index](../plugins/package_index.md)以获取官方 plugins 的列表。
 
-**Example:** The `@rushstack/heft-jest-plugin` package implements [jest-plugin](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/heft-plugins/heft-jest-plugin/src/JestPlugin.ts#L144).
+**例子：**`@rushstack/heft-jest-plugin`包实现了[jest-plugin](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/heft-plugins/heft-jest-plugin/src/JestPlugin.ts#L144)。
 
 ### Plugin manifest
 
-Each plugin package includes a file **heft-plug.json** which is called the "plugin manifest." It describes the available plugins, their options, and their command-line parameters. Heft is data-driven, which means that such information can be discovered without executing any custom scripts. (Although scripted configuration is very popular, it has many problems such as unexpected performance costs, unpredictable behavior that hinders caching, and poor error messages.)
+每个 plugin package 都包含一个名为"plugin manifest"的文件**heft-plug.json**。它描述了可用的 plugins，他们的选项，以及他们的命令行 parameters。Heft 是数据驱动的，这意味着这样的信息可以在不执行任何自定义脚本的情况下被发现。(尽管脚本配置非常流行，但它有许多问题，比如意想不到的性能成本，妨碍缓存的不可预测的行为，以及糟糕的错误信息。)
 
-**Example:** The `@rushstack/heft-jest-plugin` package declares `jest-plugin` in [this manifest](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/heft-plugins/heft-jest-plugin/heft-plugin.json).
+**例子：**`@rushstack/heft-jest-plugin`包在[这个 manifest](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/heft-plugins/heft-jest-plugin/heft-plugin.json)中声明了`jest-plugin`。
 
 ### Hook
 
-Heft plugins can register handlers for various events during the build lifecycle. The API terminology of "tapping" event "hooks" comes from Heft's usage of the [tapable](https://www.npmjs.com/package/tapable) system, familiar from Webpack plugins.
+Heft plugins 可以为构建生命周期中的各种事件注册处理程序。"tapping"事件"hooks"的 API 术语来自于 Heft 的[tapable](https://www.npmjs.com/package/tapable)系统的使用，这在 Webpack plugins 中很常见。
 
-**Example:** In Heft's source code, the [IHeftTaskHooks](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/apps/heft/src/pluginFramework/HeftTaskSession.ts#L135) interface exposes some hooks.
+**例子：**在 Heft 的源代码中，[IHeftTaskHooks](https://github.com/microsoft/rushstack/blob/9ffb14519dd42e5808e56bc2ea80c8734f5f2e5b/apps/heft/src/pluginFramework/HeftTaskSession.ts#L135)接口公开了一些 hooks。
 
 ### Rig package
 
-The main philosophy of Heft is to move build logic into plugin packages, so that your build process is defined by config files instead of program scripts. In a large monorepo, this greatly reduces maintenance costs, by ensuring that program scripts are developed as professional software and not ad hoc commands in a `.js` file.
+Heft 的主要理念是将构建逻辑移到 plugin packages 中，这样你的构建过程就是由 config files 而不是 program scripts 定义的。在大型的 monorepo 中，这极大地降低了维护成本，通过确保 program scripts 作为专业软件进行开发，而不是作为`.js`文件中的特设命令。
 
-The Rush Stack [rig system](./rig_packages.md) goes a step further, optionally moving config files into a centralized NPM package called a "rig." Rigs define standardized configurations for your projects. In a large monorepo, they formalize the configurations that your build team has agreed to support. Heft also allows `devDependencies` to be resolved from rig packages, reducing **package.json** clutter.
+Rush Stack 的[rig system](./rig_packages.md)更进一步，可选地将 config files 移动到一个名为"rig"的集中 NPM 包中。Rigs 为你的项目定义标准化的配置。在大型的 monorepo 中，他们规范了你的构建团队已经同意支持的配置。Heft 还允许从 rig packages 解析`devDependencies`，减少了**package.json**的混乱。
 
-**Example:** [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig) is Rush Stack's reference rig for web projects.
+**例子：**[@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig)是 Rush Stack 为 web 项目的参考 rig。
 
 ### Rig profile
 
-A single rig package can provide multiple "profiles" tailored for specific purposes. Profiles within a rig package share the same rigged `devDependencies`, and may also share configuration via `"extends"` inheritance.
+单个 rig 包可以为特定目的提供多个"profiles"。rig 包中的 profiles 共享相同的 rigged `devDependencies`，并且可能通过`"extends"`继承共享配置。
 
-**Example:** The `@rushstack/heft-web-rig` rig package currently defines [two profiles](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig/profiles), `app` and `library`.
+**例子：**`@rushstack/heft-web-rig` rig 包目前定义了[two profiles](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig/profiles)，`app`和`library`。

@@ -2,41 +2,28 @@
 title: Using rig packages
 ---
 
-In a large scale environment, it's beneficial for many projects to be built using the exact same Heft configuration.
-There may be some minor differences -- for example, a Node.js project may emit CommonJS modules, whereas a web application
-project may need to emit ESNext modules. But generally a small handful of common "profiles" will cover most projects.
-The [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) system provides a formalized
-mechanism for moving common settings into an NPM package which gets added to the `"devDependencies"` for the projects
-that consume it. This is called a **rig package**. Note that several different **rig profiles** may come from the
-same NPM package; each profile is a folder containing a set of config files.
+在大规模的环境中，许多项目使用完全相同的 Heft 配置进行构建是有益的。可能存在一些细微差别——例如，一个 Node.js 项目可能需要输出 CommonJS 模块，而一个 web 应用程序项目可能需要输出 ESNext 模块。但通常，少数几个常见的"配置文件"（profile）就能涵盖大多数项目。[@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package)系统为将常见设置移入添加到消费它的项目的`"devDependencies"`中的 NPM 包提供了一种正式化的机制。这就叫做**rig package**。注意，同一个 NPM 包可能产生几个不同的**rig profile**；每个配置文件都是一个包含一组配置文件的文件夹。
 
-## Some concrete examples
+## 一些具体示例
 
-Heft also provides two standard rig packages that you can use in your projects:
+Heft 也提供了两个你可以在项目中使用的标准 rig package：
 
-- [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig) with a profile called `default`
-- [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig) with profiles `app` and `library`
+- [@rushstack/heft-node-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-node-rig)有一个叫做`default`的 profile
+- [@rushstack/heft-web-rig](https://github.com/microsoft/rushstack/tree/main/rigs/heft-web-rig)有`app`和`library`两个 profiles
 
-It's also easy to define your own custom rig packages by following these examples.
+按照这些示例定义你自己的自定义 rig package 也很简单。
 
-The [heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial)
-sample project illustrates how to consume `@rushstack/heft-node-rig`.
+[heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial)示例项目演示了如何使用`@rushstack/heft-node-rig`。
 
-## Principles of rigging
+## 配置的原则
 
-The [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) defines the "rigging" concept
-but only provides an API for resolving file paths based on a **rig.json** config file. Retrofitting rigging
-onto existing tools requires extra logic beyond this API, and different implementations may be needed for different
-tools. Heft has already implemented such logic for its official plugins, but if you have projects that use some
-other toolchain besides Heft, you make them riggable by copying the same approaches as Heft.
+[@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package)定义了"配置"（rigging）的概念，但仅提供一个基于**rig.json**配置文件解析文件路径的 API。将配置应用到现有工具需要超越此 API 的额外逻辑，不同的工具可能需要不同的实现。Heft 已经为其官方插件实现了这样的逻辑，但如果你有使用 Heft 以外的其他工具链的项目，你可以通过复制 Heft 的同样的方法使它们可配置。
 
-Rigging involves three distinct features:
+配置涉及三个不同的特性：
 
-### 1. Base files for `"extends"`
+### 1. 用于`"extends"`的基础文件
 
-Many config files provide a facility for inheriting shared settings from another file,
-which is an easy way to reuse configuration from a rig. For example, in our sample project,
-the TypeScript configuration is reduced to just a few lines:
+许多配置文件提供了一种继承另一个文件的共享设置的功能，这是重用配置的一种简单方式。例如，在我们的样例项目中，TypeScript 配置只减少到几行：
 
 **heft-node-rig-tutorial/tsconfig.json**
 
@@ -49,87 +36,75 @@ the TypeScript configuration is reduced to just a few lines:
 }
 ```
 
-The bulk of the settings come from `tsconfig-base.json` in the `default` profile. But our local **tsconfig.json**
-file can add custom settings such as `"types"` as needed.
+大部分的设置都来自`default`配置文件中的`tsconfig-base.json`。但是我们本地的**tsconfig.json**文件可以根据需要添加如`"types"`之类的自定义设置。
 
-The following config files all support a field such as `"extends"` that enables settings to be inherited from another NPM package:
+以下配置文件都支持一个字段如`"extends"`，该字段可以继承来自另一个 NPM 包的设置：
 
-- **.eslintrc.js** for the [lint task](../plugins/lint.md), provided that you use the [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch) workaround or the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) ruleset (which includes the patch)
-- **config/api-extractor.json** for the [api-extractor task](../plugins/api-extractor.md)
-- **config/jest.config.json** for the [jest task](../plugins/jest.md); Jest conventionally uses the `"preset"` field for inheritance however it has some problems, so Heft replaces Jest's config loader with `@rushstack/heft-config-file` engine, and then we use `"extends"` instead of `"preset"`. In all other respects, this file has the standard Jest format.
-- **tsconfig.json** for the [typescript task](../plugins/typescript.md)
-- **webpack.config.js** does not explicitly support inheritance, but being a JavaScript module, it can call `require()` to load shared settings.
+- **.eslintrc.js**用于[lint task](../plugins/lint.md)，只要你使用[@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch)的解决方法或[@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config)的规则集（包含补丁）
+- **config/api-extractor.json**用于[api-extractor task](../plugins/api-extractor.md)
+- **config/jest.config.json**用于[jest task](../plugins/jest.md)；Jest 常规使用`"preset"`字段用于继承，但是它有一些问题，所以 Heft 用`@rushstack/heft-config-file`引擎替换了 Jest 的配置加载器，然后我们使用`"extends"`而非`"preset"`。在所有其他方面，此文件具有标准的 Jest 格式。
+- **tsconfig.json**用于[typescript task](../plugins/typescript.md)
+- **webpack.config.js**并未显式支持继承，但作为一个 JavaScript 模块，它可以调用`require()`来加载共享设置。
 
-### 2. Riggable config files
+### 2. 可配置的配置文件
 
-Although `"extends"` makes files smaller, it cannot eliminate them entirely. The **rig.json** file
-can completely eliminate most Heft config files. We say that such files are "riggable" config files.
-Here's an example from the `heft-node-rig-tutorial` project:
+尽管`"extends"`可以使文件变小，但不能完全消除它们。**rig.json**文件可以完全消除大部分 Heft 配置文件。我们说这样的文件是"可配置"的配置文件。以下是来自`heft-node-rig-tutorial`项目的一个例子：
 
 **heft-node-rig-tutorial/config/rig.json**
 
 ```js
-// The "rig.json" file directs tools to look for their config files in an external package.
-// Documentation for this system: https://www.npmjs.com/package/@rushstack/rig-package
+// "rig.json" 文件引导工具去外部包中查找它们的配置文件。
+// 此系统的文档：https://www.npmjs.com/package/@rushstack/rig-package
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rig-package/rig.schema.json",
 
   /**
-   * (Required) The name of the rig package to inherit from.
-   * It should be an NPM package name with the "-rig" suffix.
+   * (必须的)要继承的 rig package 的名称。
+   * 它应该是一个带有 "-rig" 后缀的 NPM 包名。
    */
   "rigPackageName": "@rushstack/heft-node-rig"
 
   /**
-   * (Optional) Selects a config profile from the rig package.  The name must consist of
-   * lowercase alphanumeric words separated by hyphens, for example "sample-profile".
-   * If omitted, then the "default" profile will be used."
+   * (可选的)从 rig package 中选择一个配置文件。名称必须由
+   * 用连字符分隔的小写字母数字单词组成，例如 "sample-profile"。
+   * 如果省略，则将使用 "default" 配置文件。"
    */
   // "rigProfile": "your-profile-name"
 }
 ```
 
-The **rig.json** file tells Heft that if it doesn't find a file in the **heft-node-rig-tutorial/config**, it should
-try looking in the **@rushstack/heft-node-rig/profiles/default/common** folder instead.
+**rig.json**文件告诉 Heft，如果它在**heft-node-rig-tutorial/config**中找不到文件，那么它应该尝试在**@rushstack/heft-node-rig/profiles/default/common**文件夹中寻找。
 
-Examples of "riggable" config files:
+"可配置"配置文件的例子：
 
-- **&lt;project folder&gt;/config/api-extractor-task.json**
-- **&lt;project folder&gt;/config/heft.json**
-- **&lt;project folder&gt;/config/typescript.json**
+- **&lt;项目文件夹&gt;/config/api-extractor-task.json**
+- **&lt;项目文件夹&gt;/config/heft.json**
+- **&lt;项目文件夹&gt;/config/typescript.json**
 
-We cannot eliminate **tsconfig.json** entirely because tools such as VS Code expect to find this file in
-the root of your project folder. This is true of a few other files such as **.eslintrc.js**. On this website,
-the documentation for each config file specifies whether it is riggable or not.
+我们不能完全消除**tsconfig.json**，因为像 VS Code 这样的工具期望在项目文件夹的根目录中找到这个文件。其他一些文件如**.eslintrc.js**也是如此。在这个网站上，每个配置文件的文档都会指定它是否可配置。
 
-### 3. Riggable dependencies
+### 3. 可配置的依赖
 
-A rig package can also provide NPM dependencies, to avoid having to specify them as `"devDependencies"` for
-your project. The following tool packages can be provided by the rig (provided they aren't required as
-`peerDependencies` of some other project dependency):
+一个 rig package 也可以提供 NPM 依赖，避免在项目中指定他们为`"devDependencies"`。以下工具包可以由 rig 提供（只要他们不被需要作为其他项目依赖的`peerDependencies`）：
 
 - `@microsoft/api-extractor`
 - `eslint`
-- `jest` and related packages
+- `jest` 和相关的包
 - `tslint`
 - `typescript`
-- `webpack` and its loaders and plugins
+- `webpack` 以及它的加载器和插件
 
-Providing dependencies via a rig is optional. Your local project's `devDependencies` take precedence over the rig.
+通过 rig 提供依赖是可选的。你本地项目的`devDependencies`优先级高于 rig。
 
-Heft resolves each riggable tool independently, using the following procedure:
+Heft 使用以下流程分别解析每一个可配置的工具：
 
-1. If the tool package is listed in the `devDependencies` for the local project, then the tool is resolved from
-   the current project folder. (This step does NOT consider `dependencies` or `peerDependencies`.)
+1. 如果工具包在本地项目的`devDependencies`中列出，那么工具将从当前项目文件夹中解析。（这个步骤不考虑`dependencies`或`peerDependencies`。）
 
-2. OTHERWISE, if the current project has a **rig.json** file, and if the rig's **package.json** lists the tool in its
-   `dependencies`, then the tool is resolved from the rig package folder. (This step does NOT consider
-   `devDependencies` or `peerDependencies`.)
+2. 否则，如果当前项目有一个**rig.json**文件，并且 rig 的**package.json**在它的`dependencies`中列出了该工具，那么工具将从 rig package 文件夹中解析。（这个步骤不考虑`devDependencies`或`peerDependencies`。）
 
-3. OTHERWISE, the tool is resolved from the current project folder. If it can't be found there, then an error
-   is reported.
+3. 否则，工具将从当前项目文件夹中解析。如果在那里找不到，那么就会报告一个错误。
 
-## See also
+## 另见
 
-- [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) documentation provides the complete specification for the **rig.json** system
-- [heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial) sample project
+- [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) 文档提供了**rig.json**系统的完整规范
+- [heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial) 样例项目
