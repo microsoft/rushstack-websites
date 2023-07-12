@@ -28,11 +28,11 @@ export declare class LookupByPath<TItem>
 
 ```ts
 const tree = new LookupByPath([['foo', 1], ['bar', 2], ['foo/bar', 3]]);
-tree.getNearestAncestor('foo'); // returns 1
-tree.getNearestAncestor('foo/baz'); // returns 1
-tree.getNearestAncestor('baz'); // returns undefined
-tree.getNearestAncestor('foo/bar/baz'); returns 3
-tree.getNearestAncestor('bar/foo/bar'); returns 2
+tree.findChildPath('foo'); // returns 1
+tree.findChildPath('foo/baz'); // returns 1
+tree.findChildPath('baz'); // returns undefined
+tree.findChildPath('foo/bar/baz'); returns 3
+tree.findChildPath('bar/foo/bar'); returns 2
 ```
 
 ## Constructors
@@ -53,6 +53,7 @@ tree.getNearestAncestor('bar/foo/bar'); returns 2
 |  --- | --- | --- |
 |  [findChildPath(childPath)](./rush-lib.lookupbypath.findchildpath.md) |  | **_(BETA)_** Searches for the item associated with <code>childPath</code>, or the nearest ancestor of that path that has an associated item. |
 |  [findChildPathFromSegments(childPathSegments)](./rush-lib.lookupbypath.findchildpathfromsegments.md) |  | **_(BETA)_** Searches for the item associated with <code>childPathSegments</code>, or the nearest ancestor of that path that has an associated item. |
+|  [findLongestPrefixMatch(query)](./rush-lib.lookupbypath.findlongestprefixmatch.md) |  | **_(BETA)_** Searches for the item for which the recorded prefix is the longest matching prefix of <code>query</code>. Obtains both the item and the length of the matched prefix, so that the remainder of the path can be extracted. |
 |  [iteratePathSegments(serializedPath, delimiter)](./rush-lib.lookupbypath.iteratepathsegments.md) | <code>static</code> | **_(BETA)_** Iterates over the segments of a serialized path. |
 |  [setItem(serializedPath, value)](./rush-lib.lookupbypath.setitem.md) |  | **_(BETA)_** Associates the value with the specified serialized path. If a value is already associated, will overwrite. |
 |  [setItemFromSegments(pathSegments, value)](./rush-lib.lookupbypath.setitemfromsegments.md) |  | **_(BETA)_** Associates the value with the specified path. If a value is already associated, will overwrite. |

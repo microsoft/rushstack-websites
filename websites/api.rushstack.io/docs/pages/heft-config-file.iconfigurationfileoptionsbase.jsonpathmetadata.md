@@ -18,5 +18,5 @@ Use this property to specify how JSON nodes are postprocessed.
 **Signature:**
 
 ```typescript
-jsonPathMetadata?: IJsonPathsMetadata;
+jsonPathMetadata?: IJsonPathsMetadata<TConfigurationFile>;
 ```

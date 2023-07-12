@@ -18,7 +18,7 @@ Find and return a configuration file for the specified project, automatically re
 **Signature:**
 
 ```typescript
-loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: RigConfig): Promise<TConfigurationFile>;
+loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: IRigConfig): Promise<TConfigurationFile>;
 ```
 
 ## Parameters
@@ -27,7 +27,7 @@ loadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, r
 |  --- | --- | --- |
 |  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
 |  projectPath | string |  |
-|  rigConfig | [RigConfig](./rig-package.rigconfig.md) | _(Optional)_ |
+|  rigConfig | [IRigConfig](./rig-package.irigconfig.md) | _(Optional)_ |
 
 **Returns:**
 

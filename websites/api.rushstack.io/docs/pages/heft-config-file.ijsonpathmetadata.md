@@ -17,7 +17,7 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type IJsonPathMetadata = ICustomJsonPathMetadata | INonCustomJsonPathMetadata;
+export type IJsonPathMetadata<T> = ICustomJsonPathMetadata<T> | INonCustomJsonPathMetadata;
 ```
 **References:** [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)<></>, [INonCustomJsonPathMetadata](./heft-config-file.inoncustomjsonpathmetadata.md)
 

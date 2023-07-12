@@ -15,5 +15,5 @@ An already constructed `RigConfig` object. If omitted, then a new `RigConfig` ob
 **Signature:**
 
 ```typescript
-rigConfig?: RigConfig;
+rigConfig?: IRigConfig;
 ```

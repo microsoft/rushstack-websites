@@ -15,5 +15,5 @@ Typings for one of the streams inside IExecutableSpawnSyncOptions.stdio.
 **Signature:**
 
 ```typescript
-export declare type ExecutableStdioStreamMapping = 'pipe' | 'ignore' | 'inherit' | NodeJS.WritableStream | NodeJS.ReadableStream | number | undefined;
+export type ExecutableStdioStreamMapping = 'pipe' | 'ignore' | 'inherit' | NodeJS.WritableStream | NodeJS.ReadableStream | number | undefined;
 ```

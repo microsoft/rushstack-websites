@@ -15,7 +15,7 @@ Provides additional detail about the success or failure of [TreePattern.match()]
 **Signature:**
 
 ```typescript
-export declare type ITreePatternCaptureSet = {
+export type ITreePatternCaptureSet = {
     [tagName: string]: TreeNode;
 } | {
     failPath: string;

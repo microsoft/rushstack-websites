@@ -18,16 +18,15 @@ Options provided to scripts that are run using the RunScriptPlugin.
 **Signature:**
 
 ```typescript
-export interface IRunScriptOptions<TStageProperties> 
+export interface IRunScriptOptions 
 ```
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [debugMode](./heft.irunscriptoptions.debugmode.md) |  | boolean | **_(BETA)_** |
 |  [heftConfiguration](./heft.irunscriptoptions.heftconfiguration.md) |  | [HeftConfiguration](./heft.heftconfiguration.md) | **_(BETA)_** |
-|  [properties](./heft.irunscriptoptions.properties.md) |  | TStageProperties | **_(BETA)_** |
-|  [scopedLogger](./heft.irunscriptoptions.scopedlogger.md) |  | [ScopedLogger](./heft.scopedlogger.md) | **_(BETA)_** |
-|  [scriptOptions](./heft.irunscriptoptions.scriptoptions.md) |  | Record&lt;string, any&gt; | **_(BETA)_** |
+|  [heftTaskSession](./heft.irunscriptoptions.hefttasksession.md) |  | [IHeftTaskSession](./heft.ihefttasksession.md) | **_(BETA)_** |
+|  [runOptions](./heft.irunscriptoptions.runoptions.md) |  | [IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md) | **_(BETA)_** |
+|  [scriptOptions](./heft.irunscriptoptions.scriptoptions.md) |  | Record&lt;string, unknown&gt; | **_(BETA)_** |
 

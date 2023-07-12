@@ -60,7 +60,6 @@ A library for writing scripts that interact with the [Rush](https://rushjs.io/) 
 |  --- | --- |
 |  [BumpType](./rush-lib.bumptype.md) | Type of version bumps |
 |  [DependencyType](./rush-lib.dependencytype.md) |  |
-|  [EnvironmentVariableNames](./rush-lib.environmentvariablenames.md) | **_(BETA)_** Names of environment variables used by Rush. |
 |  [Event](./rush-lib.event.md) | **_(BETA)_** Events happen during Rush runs. |
 |  [OperationStatus](./rush-lib.operationstatus.md) | **_(BETA)_** Enumeration defining potential states of an operation |
 |  [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy base type names |
@@ -86,6 +85,7 @@ A library for writing scripts that interact with the [Rush](https://rushjs.io/) 
 |  [IOperationRunnerContext](./rush-lib.ioperationrunnercontext.md) | **_(BETA)_** Information passed to the executing <code>IOperationRunner</code> |
 |  [IPackageManagerOptionsJsonBase](./rush-lib.ipackagemanageroptionsjsonbase.md) | Options for the package manager. |
 |  [IPhasedCommand](./rush-lib.iphasedcommand.md) | **_(BETA)_** Information about the currently executing phased script command (as defined in command-line.json, or default "build" or "rebuild") provided to plugins. |
+|  [IPrefixMatch](./rush-lib.iprefixmatch.md) | **_(BETA)_** Object containing both the matched item and the start index of the remainder of the query. |
 |  [IRushCommand](./rush-lib.irushcommand.md) | **_(BETA)_** Information about the currently executing command provided to plugins. |
 |  [IRushPlugin](./rush-lib.irushplugin.md) | **_(BETA)_** |
 |  [IRushSessionOptions](./rush-lib.irushsessionoptions.md) | **_(BETA)_** |
@@ -94,6 +94,12 @@ A library for writing scripts that interact with the [Rush](https://rushjs.io/) 
 |  [ITelemetryMachineInfo](./rush-lib.itelemetrymachineinfo.md) | **_(BETA)_** |
 |  [ITelemetryOperationResult](./rush-lib.itelemetryoperationresult.md) | **_(BETA)_** |
 |  [ITryFindRushJsonLocationOptions](./rush-lib.itryfindrushjsonlocationoptions.md) | Options for <code>RushConfiguration.tryFindRushJsonLocation</code>. |
+
+## Variables
+
+|  Variable | Description |
+|  --- | --- |
+|  [EnvironmentVariableNames](./rush-lib.environmentvariablenames.md) | **_(BETA)_** Names of environment variables used by Rush. |
 
 ## Type Aliases
 

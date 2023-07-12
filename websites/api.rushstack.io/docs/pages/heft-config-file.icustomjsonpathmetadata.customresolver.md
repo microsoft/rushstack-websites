@@ -18,5 +18,5 @@ If `ICustomJsonPathMetadata.pathResolutionMethod` is set to `PathResolutionMetho
 **Signature:**
 
 ```typescript
-customResolver?: (configurationFilePath: string, propertyName: string, propertyValue: string) => string;
+customResolver?: (resolverOptions: IJsonPathMetadataResolverOptions<TConfigurationFile>) => string;
 ```

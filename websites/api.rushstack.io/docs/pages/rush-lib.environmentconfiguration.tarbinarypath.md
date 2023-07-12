@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Allows the tar binary path to be explicitly provided. See [EnvironmentVariableNames.RUSH\_TAR\_BINARY\_PATH](./rush-lib.environmentvariablenames.md)
+Allows the tar binary path to be explicitly provided. See 
 
 **Signature:**
 

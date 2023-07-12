@@ -15,5 +15,5 @@ The format that the FileError message should conform to. The supported formats a
 **Signature:**
 
 ```typescript
-export declare type FileLocationStyle = 'Unix' | 'VisualStudio';
+export type FileLocationStyle = 'Unix' | 'VisualStudio';
 ```

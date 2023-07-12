@@ -22,6 +22,7 @@ export interface ICertificateGenerationOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [subjectAltNames?](./debug-certificate-manager.icertificategenerationoptions.subjectaltnames.md) |  | ReadonlyArray&lt;string&gt; | _(Optional)_ The DNS Subject names to issue the certificate for. |
+|  [subjectAltNames?](./debug-certificate-manager.icertificategenerationoptions.subjectaltnames.md) |  | ReadonlyArray&lt;string&gt; | _(Optional)_ The DNS Subject names to issue the certificate for. Defaults to \['localhost'\]. |
+|  [subjectIPAddresses?](./debug-certificate-manager.icertificategenerationoptions.subjectipaddresses.md) |  | ReadonlyArray&lt;string&gt; | _(Optional)_ The IP Address Subject names to issue the certificate for. Defaults to \['127.0.0.1'\]. |
 |  [validityInDays?](./debug-certificate-manager.icertificategenerationoptions.validityindays.md) |  | number | _(Optional)_ How many days the certificate should be valid for. |
 

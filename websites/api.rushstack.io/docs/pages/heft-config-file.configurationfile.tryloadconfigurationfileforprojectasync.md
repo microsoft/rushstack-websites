@@ -18,7 +18,7 @@ This function is identical to [ConfigurationFile.loadConfigurationFileForProject
 **Signature:**
 
 ```typescript
-tryLoadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: RigConfig): Promise<TConfigurationFile | undefined>;
+tryLoadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string, rigConfig?: IRigConfig): Promise<TConfigurationFile | undefined>;
 ```
 
 ## Parameters
@@ -27,7 +27,7 @@ tryLoadConfigurationFileForProjectAsync(terminal: ITerminal, projectPath: string
 |  --- | --- | --- |
 |  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
 |  projectPath | string |  |
-|  rigConfig | [RigConfig](./rig-package.rigconfig.md) | _(Optional)_ |
+|  rigConfig | [IRigConfig](./rig-package.irigconfig.md) | _(Optional)_ |
 
 **Returns:**
 

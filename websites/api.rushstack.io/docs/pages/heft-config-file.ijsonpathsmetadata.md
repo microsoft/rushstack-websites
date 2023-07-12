@@ -18,5 +18,5 @@ Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/)
 **Signature:**
 
 ```typescript
-export interface IJsonPathsMetadata 
+export interface IJsonPathsMetadata<TConfigurationFile> 
 ```

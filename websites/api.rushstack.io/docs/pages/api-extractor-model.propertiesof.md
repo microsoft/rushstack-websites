@@ -15,7 +15,7 @@ This abstraction is used by the mixin pattern. It describes the "static side" of
 **Signature:**
 
 ```typescript
-export declare type PropertiesOf<T> = {
+export type PropertiesOf<T> = {
     [K in keyof T]: T[K];
 };
 ```

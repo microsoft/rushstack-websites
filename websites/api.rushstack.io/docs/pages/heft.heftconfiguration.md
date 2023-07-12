@@ -21,13 +21,13 @@ export declare class HeftConfiguration
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [buildCacheFolder](./heft.heftconfiguration.buildcachefolder.md) | <code>readonly</code> | string | <p>The project's build cache folder.</p><p>This folder exists at &lt;<></>project root<></>&gt;<></>/.heft/build-cache. TypeScript's output goes into this folder and then is either copied or linked to the final output folder</p> |
-|  [buildFolder](./heft.heftconfiguration.buildfolder.md) | <code>readonly</code> | string | Project build folder. This is the folder containing the project's package.json file. |
+|  [buildFolderPath](./heft.heftconfiguration.buildfolderpath.md) | <code>readonly</code> | string | Project build folder path. This is the folder containing the project's package.json file. |
 |  [globalTerminal](./heft.heftconfiguration.globalterminal.md) | <code>readonly</code> | [ITerminal](./node-core-library.iterminal.md) | Terminal instance to facilitate logging. |
 |  [heftPackageJson](./heft.heftconfiguration.heftpackagejson.md) | <code>readonly</code> | [IPackageJson](./node-core-library.ipackagejson.md) | The Heft tool's package.json |
-|  [projectConfigFolder](./heft.heftconfiguration.projectconfigfolder.md) | <code>readonly</code> | string | The path to the project's "config" folder. |
-|  [projectHeftDataFolder](./heft.heftconfiguration.projectheftdatafolder.md) | <code>readonly</code> | string | The path to the project's ".heft" folder. |
+|  [projectConfigFolderPath](./heft.heftconfiguration.projectconfigfolderpath.md) | <code>readonly</code> | string | The path to the project's "config" folder. |
 |  [projectPackageJson](./heft.heftconfiguration.projectpackagejson.md) | <code>readonly</code> | [IPackageJson](./node-core-library.ipackagejson.md) | The package.json of the project being built |
-|  [rigConfig](./heft.heftconfiguration.rigconfig.md) | <code>readonly</code> | [RigConfig](./rig-package.rigconfig.md) | The rig.json configuration for this project, if present. |
+|  [rigConfig](./heft.heftconfiguration.rigconfig.md) | <code>readonly</code> | [IRigConfig](./rig-package.irigconfig.md) | The rig.json configuration for this project, if present. |
+|  [rigPackageResolver](./heft.heftconfiguration.rigpackageresolver.md) | <code>readonly</code> | [IRigPackageResolver](./heft.irigpackageresolver.md) | The rig package resolver, which can be used to rig-resolve a requested package. |
+|  [tempFolderPath](./heft.heftconfiguration.tempfolderpath.md) | <code>readonly</code> | string | The project's temporary folder. |
 |  [terminalProvider](./heft.heftconfiguration.terminalprovider.md) | <code>readonly</code> | [ITerminalProvider](./node-core-library.iterminalprovider.md) | Terminal provider for the provided terminal. |
 

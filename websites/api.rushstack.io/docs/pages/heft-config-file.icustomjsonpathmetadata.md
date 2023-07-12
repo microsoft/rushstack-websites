@@ -18,13 +18,13 @@ Used to specify how node(s) in a JSON object should be processed after being loa
 **Signature:**
 
 ```typescript
-export interface ICustomJsonPathMetadata 
+export interface ICustomJsonPathMetadata<TConfigurationFile> 
 ```
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [customResolver?](./heft-config-file.icustomjsonpathmetadata.customresolver.md) |  | (configurationFilePath: string, propertyName: string, propertyValue: string) =&gt; string | **_(BETA)_** _(Optional)_ If <code>ICustomJsonPathMetadata.pathResolutionMethod</code> is set to <code>PathResolutionMethod.custom</code>, this property be used to resolve the path. |
+|  [customResolver?](./heft-config-file.icustomjsonpathmetadata.customresolver.md) |  | (resolverOptions: [IJsonPathMetadataResolverOptions](./heft-config-file.ijsonpathmetadataresolveroptions.md)<></>&lt;TConfigurationFile&gt;) =&gt; string | **_(BETA)_** _(Optional)_ If <code>ICustomJsonPathMetadata.pathResolutionMethod</code> is set to <code>PathResolutionMethod.custom</code>, this property be used to resolve the path. |
 |  [pathResolutionMethod?](./heft-config-file.icustomjsonpathmetadata.pathresolutionmethod.md) |  | [PathResolutionMethod.custom](./heft-config-file.pathresolutionmethod.md) | **_(BETA)_** _(Optional)_ If this property describes a filesystem path, use this property to describe how the path should be resolved. |
 

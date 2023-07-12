@@ -18,7 +18,7 @@ Calculates the cache entry id string for an operation.
 **Signature:**
 
 ```typescript
-export declare type GetCacheEntryIdFunction = (options: IGenerateCacheEntryIdOptions) => string;
+export type GetCacheEntryIdFunction = (options: IGenerateCacheEntryIdOptions) => string;
 ```
 **References:** [IGenerateCacheEntryIdOptions](./rush-lib.igeneratecacheentryidoptions.md)
 

@@ -30,6 +30,7 @@ The utilities provided by this class are intended to be simple, small, and very 
 |  [convertToCrLf(input)](./node-core-library.text.converttocrlf.md) | <code>static</code> | Converts all newlines in the provided string to use Windows-style CRLF end of line characters. |
 |  [convertToLf(input)](./node-core-library.text.converttolf.md) | <code>static</code> | <p>Converts all newlines in the provided string to use POSIX-style LF end of line characters.</p><p>POSIX is a registered trademark of the Institute of Electrical and Electronic Engineers, Inc.</p> |
 |  [ensureTrailingNewline(s, newlineKind)](./node-core-library.text.ensuretrailingnewline.md) | <code>static</code> | Returns the input string with a trailing <code>\n</code> character appended, if not already present. |
+|  [escapeRegExp(literal)](./node-core-library.text.escaperegexp.md) | <code>static</code> | Escapes a string so that it can be treated as a literal string when used in a regular expression. |
 |  [getNewline(newlineKind)](./node-core-library.text.getnewline.md) | <code>static</code> | Returns the newline character sequence for the specified <code>NewlineKind</code>. |
 |  [padEnd(s, minimumLength, paddingCharacter)](./node-core-library.text.padend.md) | <code>static</code> | Append characters to the end of a string to ensure the result has a minimum length. |
 |  [padStart(s, minimumLength, paddingCharacter)](./node-core-library.text.padstart.md) | <code>static</code> | Append characters to the start of a string to ensure the result has a minimum length. |

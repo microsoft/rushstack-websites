@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RigConfig.tryResolveConfigFilePathAsync() method
 
-An async variant of [RigConfig.tryResolveConfigFilePath()](./rig-package.rigconfig.tryresolveconfigfilepath.md)
+An async variant of [IRigConfig.tryResolveConfigFilePath()](./rig-package.irigconfig.tryresolveconfigfilepath.md)
 
 **Signature:**
 

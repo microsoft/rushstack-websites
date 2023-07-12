@@ -10,19 +10,21 @@ pagination_next: null
 
 ## IHeftPlugin.apply() method
 
+Apply the plugin to the session. Plugins are expected to hook into session hooks to provide plugin implementation. The `apply(...)` method is called once per phase.
+
 **Signature:**
 
 ```typescript
-apply(heftSession: HeftSession, heftConfiguration: HeftConfiguration, options?: TOptions): void;
+apply(session: TSession, heftConfiguration: HeftConfiguration, pluginOptions?: TOptions): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  heftSession | [HeftSession](./heft.heftsession.md) |  |
-|  heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) |  |
-|  options | TOptions | _(Optional)_ |
+|  session | TSession | The session to apply the plugin to. |
+|  heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) | The Heft configuration. |
+|  pluginOptions | TOptions | _(Optional)_ Options for the plugin, specified in heft.json. |
 
 **Returns:**
 

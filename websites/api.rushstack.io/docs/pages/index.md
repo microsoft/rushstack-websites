@@ -25,6 +25,7 @@ pagination_next: null
 |  [@rushstack/module-minifier](./module-minifier.md) | This library wraps terser in convenient handles for parallelization. It powers <code>@rushstack/webpack4-module-minifier-plugin</code> and <code>@rushstack/webpack5-module-minifier-plugin</code> but has no coupling with webpack. |
 |  [@rushstack/node-core-library](./node-core-library.md) | Core libraries that every NodeJS toolchain project should use. |
 |  [@rushstack/package-deps-hash](./package-deps-hash.md) | This package builds a JSON object containing the git hashes of all files used to produce a given NPM package. The [Rush](https://rushjs.io/) tool uses this library to implement incremental build detection. |
+|  [@rushstack/package-extractor](./package-extractor.md) |  |
 |  [@rushstack/rig-package](./rig-package.md) | A system for sharing tool configurations between projects without duplicating config files. |
 |  [@rushstack/stream-collator](./stream-collator.md) | This library enables a tool to display live console output from multiple concurrent processes, while ensuring that their output does not get jumbled together. |
 |  [@rushstack/terminal](./terminal.md) | This library implements a system for processing human readable text that will be output by console applications. |

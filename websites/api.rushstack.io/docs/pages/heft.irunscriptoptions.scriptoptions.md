@@ -16,5 +16,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-scriptOptions: Record<string, any>;
+scriptOptions: Record<string, unknown>;
 ```

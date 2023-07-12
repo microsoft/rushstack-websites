@@ -24,5 +24,6 @@ export interface IImportResolveOptions
 |  --- | --- | --- | --- |
 |  [allowSelfReference?](./node-core-library.iimportresolveoptions.allowselfreference.md) |  | boolean | _(Optional)_ If true, then resolvePath is allowed to refer to the package.json of the active project. |
 |  [baseFolderPath](./node-core-library.iimportresolveoptions.basefolderpath.md) |  | string | The path from which [IImportResolveModuleOptions.modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md) or [IImportResolvePackageOptions.packageName](./node-core-library.iimportresolvepackageoptions.packagename.md) should be resolved. |
+|  [getRealPath?](./node-core-library.iimportresolveoptions.getrealpath.md) |  | (filePath: string) =&gt; string | _(Optional)_ A function used to resolve the realpath of a provided file path. |
 |  [includeSystemModules?](./node-core-library.iimportresolveoptions.includesystemmodules.md) |  | boolean | _(Optional)_ If true, if the package name matches a Node.js system module, then the return value will be the package name without any path. |
 

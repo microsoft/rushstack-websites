@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Overrides the location of the `~/.rush` global folder where Rush stores temporary files. See [EnvironmentVariableNames.RUSH\_GLOBAL\_FOLDER](./rush-lib.environmentvariablenames.md)
+Overrides the location of the `~/.rush` global folder where Rush stores temporary files. See 
 
 **Signature:**
 

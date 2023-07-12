@@ -15,7 +15,7 @@ pagination_next: null
 
 If this environment variable is set to "1", the Node.js version check will print a warning instead of causing a hard error if the environment's Node.js version doesn't match the version specifier in `rush.json`<></>'s "nodeSupportedVersionRange" property.
 
-See [EnvironmentVariableNames.RUSH\_ALLOW\_UNSUPPORTED\_NODEJS](./rush-lib.environmentvariablenames.md)<></>.
+See .
 
 **Signature:**
 

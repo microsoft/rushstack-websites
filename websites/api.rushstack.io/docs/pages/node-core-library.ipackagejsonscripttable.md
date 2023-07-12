@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IPackageJsonScriptTable interface
 
-This interface is part of the IPackageJson file format. It is used for the "scripts" field.
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "scripts" field.
 
 **Signature:**
 

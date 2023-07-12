@@ -15,14 +15,14 @@ An async version of [FileSystem.copyFiles()](./node-core-library.filesystem.copy
 **Signature:**
 
 ```typescript
-static copyFilesAsync(options: IFileSystemCopyFilesOptions): Promise<void>;
+static copyFilesAsync(options: IFileSystemCopyFilesAsyncOptions): Promise<void>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md) |  |
+|  options | [IFileSystemCopyFilesAsyncOptions](./node-core-library.ifilesystemcopyfilesasyncoptions.md) |  |
 
 **Returns:**
 

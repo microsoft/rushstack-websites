@@ -17,5 +17,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type PropertyInheritanceCustomFunction<TObject> = (currentObject: TObject, parentObject: TObject) => TObject;
+export type PropertyInheritanceCustomFunction<TObject> = (currentObject: TObject, parentObject: TObject) => TObject;
 ```

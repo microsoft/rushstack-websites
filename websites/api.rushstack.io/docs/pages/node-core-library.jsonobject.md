@@ -15,7 +15,7 @@ Represents a JSON-serializable object whose type has not been determined yet.
 **Signature:**
 
 ```typescript
-export declare type JsonObject = any;
+export type JsonObject = any;
 ```
 
 ## Remarks

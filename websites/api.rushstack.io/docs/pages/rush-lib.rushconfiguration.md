@@ -97,4 +97,5 @@ export declare class RushConfiguration
 |  [loadFromDefaultLocation(options)](./rush-lib.rushconfiguration.loadfromdefaultlocation.md) | <code>static</code> |  |
 |  [tryFindRushJsonLocation(options)](./rush-lib.rushconfiguration.tryfindrushjsonlocation.md) | <code>static</code> | Find the rush.json location and return the path, or undefined if a rush.json can't be found. |
 |  [tryGetProjectForPath(currentFolderPath)](./rush-lib.rushconfiguration.trygetprojectforpath.md) |  | Returns the project for which the specified path is underneath that project's folder. If the path is not under any project's folder, returns undefined. |
+|  [tryLoadFromDefaultLocation(options)](./rush-lib.rushconfiguration.tryloadfromdefaultlocation.md) | <code>static</code> |  |
 

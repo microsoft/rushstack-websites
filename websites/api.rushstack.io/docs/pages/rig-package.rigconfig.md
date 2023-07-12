@@ -15,8 +15,9 @@ This is the main API for loading the `config/rig.json` file format.
 **Signature:**
 
 ```typescript
-export declare class RigConfig 
+export declare class RigConfig implements IRigConfig 
 ```
+**Implements:** [IRigConfig](./rig-package.irigconfig.md)
 
 ## Properties
 
@@ -37,9 +38,9 @@ export declare class RigConfig
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [getResolvedProfileFolder()](./rig-package.rigconfig.getresolvedprofilefolder.md) |  | Performs Node.js module resolution to locate the rig package folder, then returns the absolute path of the rig profile folder specified by <code>rig.json</code>. |
-|  [getResolvedProfileFolderAsync()](./rig-package.rigconfig.getresolvedprofilefolderasync.md) |  | An async variant of [RigConfig.getResolvedProfileFolder()](./rig-package.rigconfig.getresolvedprofilefolder.md) |
+|  [getResolvedProfileFolderAsync()](./rig-package.rigconfig.getresolvedprofilefolderasync.md) |  | An async variant of [IRigConfig.getResolvedProfileFolder()](./rig-package.irigconfig.getresolvedprofilefolder.md) |
 |  [loadForProjectFolder(options)](./rig-package.rigconfig.loadforprojectfolder.md) | <code>static</code> | Use this method to load the <code>config/rig.json</code> file for a given project. |
 |  [loadForProjectFolderAsync(options)](./rig-package.rigconfig.loadforprojectfolderasync.md) | <code>static</code> | An async variant of [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md) |
 |  [tryResolveConfigFilePath(configFileRelativePath)](./rig-package.rigconfig.tryresolveconfigfilepath.md) |  | This lookup first checks for the specified relative path under <code>projectFolderPath</code>; if it does not exist there, then it checks in the resolved rig profile folder. If the file is found, its absolute path is returned. Otherwise, <code>undefined</code> is returned. |
-|  [tryResolveConfigFilePathAsync(configFileRelativePath)](./rig-package.rigconfig.tryresolveconfigfilepathasync.md) |  | An async variant of [RigConfig.tryResolveConfigFilePath()](./rig-package.rigconfig.tryresolveconfigfilepath.md) |
+|  [tryResolveConfigFilePathAsync(configFileRelativePath)](./rig-package.rigconfig.tryresolveconfigfilepathasync.md) |  | An async variant of [IRigConfig.tryResolveConfigFilePath()](./rig-package.irigconfig.tryresolveconfigfilepath.md) |
 

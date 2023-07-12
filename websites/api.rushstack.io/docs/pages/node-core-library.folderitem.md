@@ -15,7 +15,7 @@ An alias for the Node.js `fs.Dirent` object.
 **Signature:**
 
 ```typescript
-export declare type FolderItem = fs.Dirent;
+export type FolderItem = fs.Dirent;
 ```
 
 ## Remarks

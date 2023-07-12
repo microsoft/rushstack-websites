@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RigConfig.getResolvedProfileFolderAsync() method
 
-An async variant of [RigConfig.getResolvedProfileFolder()](./rig-package.rigconfig.getresolvedprofilefolder.md)
+An async variant of [IRigConfig.getResolvedProfileFolder()](./rig-package.irigconfig.getresolvedprofilefolder.md)
 
 **Signature:**
 

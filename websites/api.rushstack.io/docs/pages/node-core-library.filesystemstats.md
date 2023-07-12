@@ -15,7 +15,7 @@ An alias for the Node.js `fs.Stats` object.
 **Signature:**
 
 ```typescript
-export declare type FileSystemStats = fs.Stats;
+export type FileSystemStats = fs.Stats;
 ```
 
 ## Remarks

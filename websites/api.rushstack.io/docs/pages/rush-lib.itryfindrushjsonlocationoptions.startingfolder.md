@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ITryFindRushJsonLocationOptions.startingFolder property
 
-The folder path where the search will start. Defaults tot he current working directory.
+The folder path where the search will start. Defaults to the current working directory.
 
 **Signature:**
 

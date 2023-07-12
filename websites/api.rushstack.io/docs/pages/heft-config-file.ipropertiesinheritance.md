@@ -17,7 +17,7 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type IPropertiesInheritance<TConfigurationFile> = {
+export type IPropertiesInheritance<TConfigurationFile> = {
     [propertyName in keyof TConfigurationFile]?: IPropertyInheritance<InheritanceType.append | InheritanceType.merge | InheritanceType.replace> | ICustomPropertyInheritance<TConfigurationFile[propertyName]>;
 };
 ```

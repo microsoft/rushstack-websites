@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-An override for the PNPM store path, if `pnpmStore` configuration is set to 'path' See [EnvironmentVariableNames.RUSH\_PNPM\_STORE\_PATH](./rush-lib.environmentvariablenames.md)
+An override for the PNPM store path, if `pnpmStore` configuration is set to 'path' See 
 
 **Signature:**
 

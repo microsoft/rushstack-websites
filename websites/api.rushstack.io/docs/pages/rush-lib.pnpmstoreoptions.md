@@ -15,5 +15,5 @@ This represents the available PNPM store options
 **Signature:**
 
 ```typescript
-export declare type PnpmStoreOptions = 'local' | 'global';
+export type PnpmStoreOptions = 'local' | 'global';
 ```
