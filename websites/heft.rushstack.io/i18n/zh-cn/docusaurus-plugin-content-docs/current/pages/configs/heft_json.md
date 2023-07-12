@@ -1,0 +1,188 @@
+---
+title: heft.json
+---
+
+<!-- prettier-ignore-start -->
+|     |     |
+| --- | --- |
+| **File path:** | **&lt;project folder&gt;/config/heft.json** |
+| [**Riggable?**](../intro/rig_packages.md) | Yes |
+| **Associated plugin:** | (global) |
+<!-- prettier-ignore-end -->
+
+## Template
+
+```js
+/**
+ * Defines configuration used by core Heft.
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+
+  /**
+   * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
+   * settings to be shared across multiple projects.
+   */
+  // "extends": "base-project/config/heft.json",
+
+  /**
+   * Defines aliases for existing Heft actions, and allows them to be invoked by
+   * name with default parameters.  The JSON keys is are user-defined names.
+   *
+   * For example, the "heft start" alias is conventionally defined to invoke
+   * "heft build-watch --serve" using a definition like this:
+   *
+   *   "aliasesByName": { "start": { "actionName": "build-watch", "defaultParameters": [ "--serve" ] } }
+   */
+  "aliasesByName": {
+    // /**
+    //  * The command-line action name of the Heft alias that is being defined.
+    //  * This JSON key is a user-defined value.
+    //  */
+    // "example-alias-name": {
+    //   /**
+    //    * The name of the existing Heft command-line action to be invoked by this alias.
+    //    */
+    //   "actionName": "example-action",
+    //
+    //   /**
+    //    * A list of command-line parameters to pass to the Heft action by default.
+    //    * These parameters will be appended after the specified action and before
+    //    * any user-specified parameters.
+    //    */
+    //   "defaultParameters": [ "--do-some-thing" ]
+    // }
+  },
+
+  /**
+   * List of Heft lifecycle plugins to be loaded for this project.
+   */
+  "heftPlugins": [
+    // {
+    //   /**
+    //    * (REQUIRED) The NPM package name for the plugin.
+    //    */
+    //   "pluginPackage": "@mycorp/heft-example-plugin",
+    //
+    //   /**
+    //    * The name of the plugin to load from the NPM package's heft-plugin.json manifest.
+    //    * If not specified, and if the plugin package provides a single plugin, then that
+    //    * plugin will be loaded.
+    //    */
+    //   // "pluginName": "example-plugin",
+    //
+    //   /**
+    //    * Options to pass to the plugin.  This is a custom object whose structure
+    //    * is defined by the plugin.
+    //    */
+    //   // "options": { "example-key": "example-value" }
+    // }
+  ],
+
+  /**
+   * Heft phases that can be run during an execution of Heft.
+   * The JSON keys is are user-defined names.
+   */
+  "phasesByName": {
+    /**
+     * The name of the phase, which is used by other fields such as "phaseDependencies".
+     * This JSON key is a user-defined value.
+     */
+    "example-phase": {
+      /**
+       * A description to be shown in the command-line help.
+       */
+      "phaseDescription": "An example phase",
+
+      /**
+       * A list of delete operations to perform when cleaning at the beginning of phase execution.
+       * Their structure is similar the options used by the delete-files-plugin.
+       */
+      "cleanFiles": [
+        // {
+        //   /**
+        //    * Absolute path to the source file or folder, relative to the project root.
+        //    * If "fileExtensions", "excludeGlobs",  or "includeGlobs" are specified, then "sourcePath"
+        //    * is assumed to be a folder; if it is not a folder, an error will be thrown.
+        //    * Settings such as "includeGlobs" and "excludeGlobs" will be resolved relative to this path.
+        //    * If no globs or file extensions are specified, the entire folder will be copied.
+        //    * If this parameter is not provided, it defaults to the project root.
+        //    */
+        //   // "sourcePath": "lib",
+        //
+        //   /**
+        //    * If specified, this option recursively scans all folders under "sourcePath" and includes
+        //    * any files that match the specified extensions.  If "fileExtensions" and "includeGlobs"
+        //    * are both specified, their selections are added together.
+        //    */
+        //   // "fileExtensions": [ ".png" ],
+        //
+        //   /**
+        //    * A list of glob patterns that select files to be copied.  The paths are resolved relative
+        //    * to "sourcePath", which must be a folder path.  If "fileExtensions" and "includeGlobs"
+        //    * are both specified, their selections are added together.
+        //    *
+        //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+        //    */
+        //   // "excludeGlobs": [],
+        //
+        //
+        //   /**
+        //    * A list of glob patterns that exclude files or folders from being copied.  The paths are resolved
+        //    * relative to "sourcePath", which must be a folder path.  These exclusions eliminate items that
+        //    * were selected by the "includeGlobs" or "fileExtensions" setting.
+        //    *
+        //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
+        //    */
+        //   // "includeGlobs": [ "**/temp" ]
+        // }
+      ]
+
+      /**
+       * A list of phase names that must be run before this phase can start.
+       */
+      "phaseDependencies": [ ],
+
+      /**
+       * Heft tasks that are run during an execution of the Heft phase.
+       * The JSON keys is are user-defined names.
+       */
+      "tasksByName": {
+        /**
+         * The name of the task, which is used by other fields such as "taskDependencies".
+         * This JSON key is a user-defined value.
+         */
+        "example-task": {
+          /**
+           * A list of task names that must be run before this task can start.
+           */
+          "taskDependencies": [],
+
+          /**
+           * (REQUIRED) The Heft plugin to be loaded, which will perform the operation for this task.
+           */
+          "taskPlugin": {
+            /**
+             * (REQUIRED) The NPM package name for the plugin.
+             */
+            "pluginPackage": "@mycorp/heft-example-plugin",
+
+            /**
+             * The name of the plugin to load from the NPM package's heft-plugin.json manifest.
+             * If not specified, and if the plugin package provides a single plugin, then that
+             * plugin will be loaded.
+             */
+            // "pluginName": "example-plugin",
+
+            /**
+             * Options to pass to the plugin.  This is a custom object whose structure
+             * is defined by the plugin.
+             */
+            // "options": { "example-key": "example-value" }
+          }
+        }
+      }
+    }
+  }
+}
+```
