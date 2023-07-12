@@ -112,9 +112,9 @@ Optional arguments:
                         mode.
 ```
 
-## storybook-plugin
+## serverless-stack-plugin
 
-[storybook-plugin](../plugins//storybook.md) adds these custom command-line parameters:
+[serverless-stack-plugin](../plugins//serverless-stack.md) adds these custom command-line parameters:
 
 ```
   --sst
@@ -123,6 +123,10 @@ Optional arguments:
                         Specifies the Serverless Stack stage; equivalent to
                         to the "--stage" parameter from the "sst" CLI
 ```
+
+## storybook-plugin
+
+[storybook-plugin](../plugins//storybook.md) adds these custom command-line parameters:
 
 ```
   --storybook
