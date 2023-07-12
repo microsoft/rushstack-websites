@@ -2,131 +2,29 @@
 title: Heft command line
 ---
 
-## heft
+## heft barebones configuration
 
 ```
-usage: heft [-h] [--unmanaged] [--debug] [--plugin PATH] <command> ...
+usage: heft [-h] [--debug] [--unmanaged] <command> ...
 
 Heft is a pluggable build system designed for web projects.
 
 Positional arguments:
   <command>
-    clean        Clean the project
-    build        Build the project.
-    start        Run the local server for the current project
-    test         Build the project and run tests.
+    clean      Clean the project, removing temporary task folders and
+              specified clean paths.
+    run        Run a provided selection of Heft phases.
+    run-watch  Run a provided selection of Heft phases in watch mode..
 
 Optional arguments:
-  -h, --help     Show this help message and exit.
-  --unmanaged    Disables the Heft version selector: When Heft is invoked via
-                 the shell path, normally it will examine the project's
-                 package.json dependencies and try to use the locally
-                 installed version of Heft. Specify "--unmanaged" to force
-                 the invoked version of Heft to be used. This is useful for
-                 example if you want to test a different version of Heft.
-  --debug        Show the full call stack if an error occurs while executing
-                 the tool
-  --plugin PATH  Used to specify Heft plugins.
-
-For detailed help about a specific command, use: heft <command> -h
-
+  -h, --help   Show this help message and exit.
 ```
 
-## heft clean
+## jest-plugin
+
+[jest-plugin](../plugins/jest.md) adds these custom command-line parameters:
 
 ```
-usage: heft clean [-h] [-v] [--clear-cache]
-
-Optional arguments:
-  -h, --help     Show this help message and exit.
-  -v, --verbose  If specified, log information useful for debugging.
-  --clear-cache  If this flag is provided, the compiler cache will also be
-                 cleared. This isn't dangerous, but may lead to longer
-                 compile times
-```
-
-## heft build
-
-```
-usage: heft build [-h] [-v] [--production] [--locale LOCALE] [-l]
-                  [--typescript-max-write-parallelism PARALLEILSM]
-                  [--max-old-space-size SIZE] [-w] [--clean]
-
-
-Optional arguments:
-  -h, --help            Show this help message and exit.
-  -v, --verbose         If specified, log information useful for debugging.
-  --production          If specified, build ship/production output
-  --locale LOCALE       Only build the specified locale, if applicable.
-  -l, --lite            Perform a minimal build, skipping optional steps like
-                        linting.
-  --typescript-max-write-parallelism PARALLEILSM
-                        Set this to change the maximum write parallelism.
-                        This parameter overrides what is set in typescript.
-                        json. The default is 50.
-  --max-old-space-size SIZE
-                        Used to specify the max old space size.
-  -w, --watch           If provided, run tests in watch mode.
-  --clean               If specified, clean the package before building.
-```
-
-## heft start
-
-```
-usage: heft start [-h] [-v] [--production] [--locale LOCALE] [-l]
-                  [--typescript-max-write-parallelism PARALLEILSM]
-                  [--max-old-space-size SIZE] [--clean]
-
-
-Optional arguments:
-  -h, --help            Show this help message and exit.
-  -v, --verbose         If specified, log information useful for debugging.
-  --production          If specified, build ship/production output
-  --locale LOCALE       Only build the specified locale, if applicable.
-  -l, --lite            Perform a minimal build, skipping optional steps like
-                        linting.
-  --typescript-max-write-parallelism PARALLEILSM
-                        Set this to change the maximum write parallelism.
-                        This parameter overrides what is set in typescript.
-                        json. The default is 50.
-  --max-old-space-size SIZE
-                        Used to specify the max old space size.
-  --clean               If specified, clean the package before starting the
-                        development server.
-```
-
-## heft test
-
-(Help is shown with `@rushstack/heft-jest-plugin` configured.)
-
-```
-usage: heft test [-h] [-v] [--production] [--locale LOCALE] [-l]
-                 [--typescript-max-write-parallelism PARALLEILSM]
-                 [--max-old-space-size SIZE] [-w] [--clean] [--no-test]
-                 [--no-build] [--config RELATIVE_PATH] [--debug-heft-reporter]
-                 [--detect-open-handles] [--disable-code-coverage]
-                 [--find-related-tests SOURCE_FILE]
-                 [--max-workers COUNT_OR_PERCENTAGE] [--silent] [-t REGEXP]
-                 [--test-path-pattern REGEXP] [--test-timeout-ms INTEGER] [-u]
-
-
-Optional arguments:
-  -h, --help            Show this help message and exit.
-  -v, --verbose         If specified, log information useful for debugging.
-  --production          If specified, build ship/production output
-  --locale LOCALE       Only build the specified locale, if applicable.
-  -l, --lite            Perform a minimal build, skipping optional steps like
-                        linting.
-  --typescript-max-write-parallelism PARALLEILSM
-                        Set this to change the maximum write parallelism.
-                        This parameter overrides what is set in typescript.
-                        json. The default is 50.
-  --max-old-space-size SIZE
-                        Used to specify the max old space size.
-  -w, --watch           If provided, run tests in watch mode.
-  --clean               If specified, clean the package before building.
-  --no-test             If specified, run the build without testing.
-  --no-build            If provided, only run tests. Do not build first.
   --config RELATIVE_PATH
                         Use this parameter to control which Jest
                         configuration file will be used to run Jest tests. If
@@ -148,20 +46,17 @@ Optional arguments:
                         significant performance penalty and should only be
                         used for debugging. This corresponds to the
                         "--detectOpenHandles" parameter in Jest's
-                        documentation. This parameter may alternatively be
-                        specified via the HEFT_JEST_DETECT_OPEN_HANDLES
-                        environment variable.
+                        documentation.
   --disable-code-coverage
                         Disable any configured code coverage. If code
                         coverage is not configured, this parameter has no
-                        effect. This parameter may alternatively be specified
-                        via the HEFT_JEST_DISABLE_CODE_COVERAGE environment
-                        variable.
+                        effect.
   --find-related-tests SOURCE_FILE
-                        Find and run the tests that cover a space separated
-                        list of source files that were passed in as arguments.
-                         This corresponds to the "--findRelatedTests"
-                        parameter in Jest's documentation.
+                        Find and run the tests that cover a source file that
+                        was passed in as an argument. This corresponds to the
+                        "--findRelatedTests" parameter in Jest's
+                        documentation. This parameter is not compatible with
+                        watch mode.
   --max-workers COUNT_OR_PERCENTAGE
                         Use this parameter to control maximum number of
                         worker processes tests are allowed to use. This
@@ -170,10 +65,9 @@ Optional arguments:
                         representing the number of workers to spawn when
                         running tests, or can be a string representing a
                         percentage of the available CPUs on the machine to
-                        utilize. Example values: "3", "25%" This parameter
-                        may alternatively be specified via the
-                        HEFT_JEST_MAX_WORKERS environment variable.
-  --silent              Prevent tests from printing messages through the
+                        utilize. Example values: "3", "25%"
+  --silent
+                        Prevent tests from printing messages through the
                         console. This corresponds to the "--silent" parameter
                         in Jest's documentation.
   -t REGEXP, --test-name-pattern REGEXP
@@ -183,22 +77,66 @@ Optional arguments:
                         its surrounding describe blocks. This corresponds to
                         the "--testNamePattern" parameter in Jest's
                         documentation.
+  --test-path-ignore-patterns REGEXP
+                        Avoid running tests with a source file path that
+                        matches one ore more regular expressions. On Windows
+                        you will need to use "/" instead of "\". This
+                        corresponds to the "--testPathIgnorePatterns"
+                        parameter in Jest's documentation.
   --test-path-pattern REGEXP
                         Run only tests with a source file path that matches a
                         regular expression. On Windows you will need to use
-                        "/" instead of "\" This corresponds to the
+                        "/" instead of "\". This corresponds to the
                         "--testPathPattern" parameter in Jest's documentation.
-  --test-timeout-ms INTEGER
+  --test-timeout-ms TIMEOUT
                         Change the default timeout for tests; if a test
                         doesn't complete within this many milliseconds, it
                         will fail. Individual tests can override the default.
                         If unspecified, the default is normally 5000 ms. This
                         corresponds to the "--testTimeout" parameter in
-                        Jest's documentation. This parameter may
-                        alternatively be specified via the
-                        HEFT_JEST_TEST_TIMEOUT_MS environment variable.
+                        Jest's documentation.
   -u, --update-snapshots
                         Update Jest snapshots while running the tests. This
                         corresponds to the "--updateSnapshots" parameter in
-                        Jest
+                        Jest.
+```
+
+## node-service-plugin
+
+[node-service-plugin](../plugins//node-service.md) adds these custom command-line parameters:
+
+```
+  --serve
+                        Start a local web server for testing purposes. This
+                        parameter is only available when running in watch
+                        mode.
+```
+
+## storybook-plugin
+
+[storybook-plugin](../plugins//storybook.md) adds these custom command-line parameters:
+
+```
+  --sst
+                        Invokes the SST postprocessing. Requires AWS credentials.
+  --sst-stage STAGE_NAME
+                        Specifies the Serverless Stack stage; equivalent to
+                        to the "--stage" parameter from the "sst" CLI
+```
+
+```
+  --storybook
+                        Used by the "@rushstack/heft-storybook-plugin" package to launch
+                        Storybook.
+```
+
+## webpack5-plugin
+
+[webpack5-plugin](../plugins//webpack.md) adds these custom command-line parameters:
+
+```
+  --serve
+                        Start a local web server for testing purposes using
+                        webpack-dev-server. This parameter is only available
+                        when running in watch mode.
 ```
