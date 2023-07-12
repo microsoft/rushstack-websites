@@ -8,7 +8,7 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@microsoft/rush-lib](./rush-lib.md) &gt; [EnvironmentVariableNames](./rush-lib.environmentvariablenames.md)
 
-## EnvironmentVariableNames enum
+## EnvironmentVariableNames variable
 
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
@@ -18,28 +18,24 @@ Names of environment variables used by Rush.
 **Signature:**
 
 ```typescript
-export declare enum EnvironmentVariableNames 
+EnvironmentVariableNames: {
+    readonly RUSH_TEMP_FOLDER: "RUSH_TEMP_FOLDER";
+    readonly RUSH_PREVIEW_VERSION: "RUSH_PREVIEW_VERSION";
+    readonly RUSH_ALLOW_UNSUPPORTED_NODEJS: "RUSH_ALLOW_UNSUPPORTED_NODEJS";
+    readonly RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD: "RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD";
+    readonly RUSH_VARIANT: "RUSH_VARIANT";
+    readonly RUSH_PARALLELISM: "RUSH_PARALLELISM";
+    readonly RUSH_ABSOLUTE_SYMLINKS: "RUSH_ABSOLUTE_SYMLINKS";
+    readonly RUSH_PNPM_STORE_PATH: "RUSH_PNPM_STORE_PATH";
+    readonly RUSH_PNPM_VERIFY_STORE_INTEGRITY: "RUSH_PNPM_VERIFY_STORE_INTEGRITY";
+    readonly RUSH_DEPLOY_TARGET_FOLDER: "RUSH_DEPLOY_TARGET_FOLDER";
+    readonly RUSH_GLOBAL_FOLDER: "RUSH_GLOBAL_FOLDER";
+    readonly RUSH_BUILD_CACHE_CREDENTIAL: "RUSH_BUILD_CACHE_CREDENTIAL";
+    readonly RUSH_BUILD_CACHE_ENABLED: "RUSH_BUILD_CACHE_ENABLED";
+    readonly RUSH_BUILD_CACHE_WRITE_ALLOWED: "RUSH_BUILD_CACHE_WRITE_ALLOWED";
+    readonly RUSH_GIT_BINARY_PATH: "RUSH_GIT_BINARY_PATH";
+    readonly RUSH_TAR_BINARY_PATH: "RUSH_TAR_BINARY_PATH";
+    readonly RUSH_LIB_PATH: "_RUSH_LIB_PATH";
+    readonly RUSH_INVOKED_FOLDER: "RUSH_INVOKED_FOLDER";
+}
 ```
-
-## Enumeration Members
-
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  RUSH\_ABSOLUTE\_SYMLINKS | <code>&quot;RUSH_ABSOLUTE_SYMLINKS&quot;</code> | **_(BETA)_** If this variable is set to "1", Rush will create symlinks with absolute paths instead of relative paths. This can be necessary when a repository is moved during a build or if parts of a repository are moved into a sandbox. |
-|  RUSH\_ALLOW\_UNSUPPORTED\_NODEJS | <code>&quot;RUSH_ALLOW_UNSUPPORTED_NODEJS&quot;</code> | **_(BETA)_** If this variable is set to "1", Rush will not fail the build when running a version of Node that does not match the criteria specified in the "nodeSupportedVersionRange" field from rush.json. |
-|  RUSH\_ALLOW\_WARNINGS\_IN\_SUCCESSFUL\_BUILD | <code>&quot;RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD&quot;</code> | **_(BETA)_** Setting this environment variable overrides the value of <code>allowWarningsInSuccessfulBuild</code> in the <code>command-line.json</code> configuration file. Specify <code>1</code> to allow warnings in a successful build, or <code>0</code> to disallow them. (See the comments in the command-line.json file for more information). |
-|  RUSH\_BUILD\_CACHE\_CREDENTIAL | <code>&quot;RUSH_BUILD_CACHE_CREDENTIAL&quot;</code> | **_(BETA)_** Provides a credential for a remote build cache, if configured. This credential overrides any cached credentials. |
-|  RUSH\_BUILD\_CACHE\_ENABLED | <code>&quot;RUSH_BUILD_CACHE_ENABLED&quot;</code> | **_(BETA)_** Setting this environment variable overrides the value of <code>buildCacheEnabled</code> in the <code>build-cache.json</code> configuration file. |
-|  RUSH\_BUILD\_CACHE\_WRITE\_ALLOWED | <code>&quot;RUSH_BUILD_CACHE_WRITE_ALLOWED&quot;</code> | **_(BETA)_** Overrides the value of <code>isCacheWriteAllowed</code> in the <code>build-cache.json</code> configuration file. The value of this environment variable must be <code>1</code> (for true) or <code>0</code> (for false). If there is no build cache configured, then this environment variable is ignored. |
-|  RUSH\_DEPLOY\_TARGET\_FOLDER | <code>&quot;RUSH_DEPLOY_TARGET_FOLDER&quot;</code> | **_(BETA)_** This environment variable can be used to specify the <code>--target-folder</code> parameter for the "rush deploy" command. |
-|  RUSH\_GIT\_BINARY\_PATH | <code>&quot;RUSH_GIT_BINARY_PATH&quot;</code> | **_(BETA)_** Explicitly specifies the path for the Git binary that is invoked by certain Rush operations. |
-|  RUSH\_GLOBAL\_FOLDER | <code>&quot;RUSH_GLOBAL_FOLDER&quot;</code> | **_(BETA)_** Overrides the location of the <code>~/.rush</code> global folder where Rush stores temporary files. |
-|  RUSH\_INVOKED\_FOLDER | <code>&quot;RUSH_INVOKED_FOLDER&quot;</code> | **_(BETA)_** When Rush executes shell scripts, it sometimes changes the working directory to be a project folder or the repository root folder. The original working directory (where the Rush command was invoked) is assigned to the the child process's <code>RUSH_INVOKED_FOLDER</code> environment variable, in case it is needed by the script. |
-|  RUSH\_PARALLELISM | <code>&quot;RUSH_PARALLELISM&quot;</code> | **_(BETA)_** Specifies the maximum number of concurrent processes to launch during a build. For more information, see the command-line help for the <code>--parallelism</code> parameter for "rush build". |
-|  RUSH\_PNPM\_STORE\_PATH | <code>&quot;RUSH_PNPM_STORE_PATH&quot;</code> | <p>**_(BETA)_** When using PNPM as the package manager, this variable can be used to configure the path that PNPM will use as the store directory.</p><p>If a relative path is used, then the store path will be resolved relative to the process's current working directory. An absolute path is recommended.</p> |
-|  RUSH\_PNPM\_VERIFY\_STORE\_INTEGRITY | <code>&quot;RUSH_PNPM_VERIFY_STORE_INTEGRITY&quot;</code> | **_(BETA)_** When using PNPM as the package manager, this variable can be used to control whether or not PNPM validates the integrity of the PNPM store during installation. The value of this environment variable must be <code>1</code> (for true) or <code>0</code> (for false). If not specified, defaults to the value in .npmrc. |
-|  RUSH\_PREVIEW\_VERSION | <code>&quot;RUSH_PREVIEW_VERSION&quot;</code> | **_(BETA)_** This variable overrides the version of Rush that will be installed by the version selector. The default value is determined by the "rushVersion" field from rush.json. |
-|  RUSH\_TAR\_BINARY\_PATH | <code>&quot;RUSH_TAR_BINARY_PATH&quot;</code> | **_(BETA)_** Explicitly specifies the path for the <code>tar</code> binary that is invoked by certain Rush operations. |
-|  RUSH\_TEMP\_FOLDER | <code>&quot;RUSH_TEMP_FOLDER&quot;</code> | **_(BETA)_** This variable overrides the temporary folder used by Rush. The default value is "common/temp" under the repository root. |
-|  RUSH\_VARIANT | <code>&quot;RUSH_VARIANT&quot;</code> | **_(BETA)_** This variable selects a specific installation variant for Rush to use when installing and linking package dependencies. For more information, see the command-line help for the <code>--variant</code> parameter and this article: https://rushjs.io/pages/advanced/installation\_variants/ |
-

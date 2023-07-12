@@ -19,6 +19,7 @@ Core libraries that every NodeJS toolchain project should use.
 |  [AlreadyReportedError](./node-core-library.alreadyreportederror.md) | This exception can be thrown to indicate that an operation failed and an error message has already been reported appropriately. Thus, the catch handler does not have responsibility for reporting the error. |
 |  [AnsiEscape](./node-core-library.ansiescape.md) | Operations for working with text strings that contain [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)<></>. The most commonly used escape codes set the foreground/background color for console output. |
 |  [Async](./node-core-library.async.md) | **_(BETA)_** Utilities for parallel asynchronous operations, for use with the system <code>Promise</code> APIs. |
+|  [AsyncQueue](./node-core-library.asyncqueue.md) | A queue that allows for asynchronous iteration. During iteration, the queue will wait until the next item is pushed into the queue before yielding. If instead all queue items are consumed and all callbacks have been called, the queue will return. |
 |  [Colors](./node-core-library.colors.md) | **_(BETA)_** The static functions on this class are used to produce colored text for use with the node-core-library terminal. |
 |  [ConsoleTerminalProvider](./node-core-library.consoleterminalprovider.md) | **_(BETA)_** Terminal provider that prints to STDOUT (for log- and verbose-level messages) and STDERR (for warning- and error-level messsages). |
 |  [Enum](./node-core-library.enum.md) | A helper for looking up TypeScript <code>enum</code> keys/values. |
@@ -38,12 +39,14 @@ Core libraries that every NodeJS toolchain project should use.
 |  [PackageName](./node-core-library.packagename.md) | Provides basic operations for validating and manipulating NPM package names such as <code>my-package</code> or <code>@scope/my-package</code>. |
 |  [PackageNameParser](./node-core-library.packagenameparser.md) | A configurable parser for validating and manipulating NPM package names such as <code>my-package</code> or <code>@scope/my-package</code>. |
 |  [Path](./node-core-library.path.md) | Common operations for manipulating file and directory paths. |
+|  [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md) | **_(BETA)_** Wraps an existing [ITerminalProvider](./node-core-library.iterminalprovider.md) that prefixes each line of output with a specified prefix string. |
 |  [ProtectableMap](./node-core-library.protectablemap.md) | The ProtectableMap provides an easy way for an API to expose a <code>Map&lt;K, V&gt;</code> property while intercepting and validating any write operations that are performed by consumers of the API. |
 |  [Sort](./node-core-library.sort.md) | Operations for sorting collections. |
 |  [StringBufferTerminalProvider](./node-core-library.stringbufferterminalprovider.md) | **_(BETA)_** Terminal provider that stores written data in buffers separated by severity. This terminal provider is designed to be used when code that prints to a terminal is being unit tested. |
 |  [StringBuilder](./node-core-library.stringbuilder.md) | This class allows a large text string to be constructed incrementally by appending small chunks. The final string can be obtained by calling StringBuilder.toString(). |
 |  [SubprocessTerminator](./node-core-library.subprocessterminator.md) | **_(BETA)_** When a child process is created, registering it with the SubprocessTerminator will ensure that the child gets terminated when the current process terminates. |
 |  [Terminal](./node-core-library.terminal.md) | **_(BETA)_** This class facilitates writing to a console. |
+|  [TerminalWritable](./node-core-library.terminalwritable.md) | **_(BETA)_** A adapter to allow writing to a provided terminal using Writable streams. |
 |  [Text](./node-core-library.text.md) | Operations for working with strings that contain text. |
 |  [TypeUuid](./node-core-library.typeuuid.md) | Provides a version-independent implementation of the JavaScript <code>instanceof</code> operator. |
 
@@ -70,6 +73,7 @@ Core libraries that every NodeJS toolchain project should use.
 |  [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) | **_(BETA)_** Options for controlling the parallelism of asynchronous operations. |
 |  [IColorableSequence](./node-core-library.icolorablesequence.md) | **_(BETA)_** |
 |  [IConsoleTerminalProviderOptions](./node-core-library.iconsoleterminalprovideroptions.md) | **_(BETA)_** Options to be provided to a [ConsoleTerminalProvider](./node-core-library.consoleterminalprovider.md) |
+|  [IDynamicPrefixProxyTerminalProviderOptions](./node-core-library.idynamicprefixproxyterminalprovideroptions.md) | **_(BETA)_** Options for [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md)<></>. |
 |  [IEnvironmentEntry](./node-core-library.ienvironmententry.md) | A process environment variable name and its value. Used by [EnvironmentMap](./node-core-library.environmentmap.md)<></>. |
 |  [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md) | Options for Executable.tryResolve(). |
 |  [IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md) | Options for [Executable.spawn()](./node-core-library.executable.spawn.md) |
@@ -88,8 +92,11 @@ Core libraries that every NodeJS toolchain project should use.
 |  [IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md) | The options for [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md) Both times must be specified. |
 |  [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md) |
 |  [IFileWriterFlags](./node-core-library.ifilewriterflags.md) | Interface which represents the flags about which mode the file should be opened in. |
+|  [IImportResolveAsyncOptions](./node-core-library.iimportresolveasyncoptions.md) | Common options shared by [IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md) and [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md) |
+|  [IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md) | Options for [Import.resolveModuleAsync()](./node-core-library.import.resolvemoduleasync.md) |
 |  [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) | Options for [Import.resolveModule()](./node-core-library.import.resolvemodule.md) |
 |  [IImportResolveOptions](./node-core-library.iimportresolveoptions.md) | Common options shared by [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) and [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md) |
+|  [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md) | Options for [Import.resolvePackageAsync()](./node-core-library.import.resolvepackageasync.md) |
 |  [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md) | Options for [Import.resolvePackage()](./node-core-library.import.resolvepackage.md) |
 |  [IJsonFileLoadAndValidateOptions](./node-core-library.ijsonfileloadandvalidateoptions.md) | Options for [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md) and [JsonFile.loadAndValidateAsync()](./node-core-library.jsonfile.loadandvalidateasync.md) |
 |  [IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md) | Options for [JsonFile.parseString()](./node-core-library.jsonfile.parsestring.md)<></>, [JsonFile.load()](./node-core-library.jsonfile.load.md)<></>, and [JsonFile.loadAsync()](./node-core-library.jsonfile.loadasync.md)<></>. |
@@ -100,22 +107,26 @@ Core libraries that every NodeJS toolchain project should use.
 |  [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | Options for JsonSchema.validateObject() |
 |  [INodePackageJson](./node-core-library.inodepackagejson.md) | An interface for accessing common fields from a package.json file whose version field may be missing. |
 |  [IPackageJson](./node-core-library.ipackagejson.md) | An interface for accessing common fields from a package.json file. |
-|  [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | This interface is part of the IPackageJson file format. It is used for the "dependencies", "optionalDependencies", and "devDependencies" fields. |
+|  [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "dependencies", "optionalDependencies", and "devDependencies" fields. |
 |  [IPackageJsonLookupParameters](./node-core-library.ipackagejsonlookupparameters.md) | Constructor parameters for [PackageJsonLookup](./node-core-library.packagejsonlookup.md) |
-|  [IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md) | This interface is part of the IPackageJson file format. It is used for the "repository" field. |
-|  [IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md) | This interface is part of the IPackageJson file format. It is used for the "scripts" field. |
+|  [IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "repository" field. |
+|  [IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "scripts" field. |
 |  [IPackageNameParserOptions](./node-core-library.ipackagenameparseroptions.md) | Options that configure the validation rules used by a [PackageNameParser](./node-core-library.packagenameparser.md) instance. |
 |  [IParsedPackageName](./node-core-library.iparsedpackagename.md) | A package name that has been separated into its scope and unscoped name. |
 |  [IParsedPackageNameOrError](./node-core-library.iparsedpackagenameorerror.md) | Result object returned by [PackageName.tryParse()](./node-core-library.packagename.tryparse.md) |
 |  [IPathFormatConciselyOptions](./node-core-library.ipathformatconciselyoptions.md) | Options for [Path.formatConcisely()](./node-core-library.path.formatconcisely.md)<></>. |
 |  [IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md) | Options for [Path.formatFileLocation()](./node-core-library.path.formatfilelocation.md)<></>. |
+|  [IPeerDependenciesMetaTable](./node-core-library.ipeerdependenciesmetatable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "peerDependenciesMeta" field. |
+|  [IPrefixProxyTerminalProviderOptionsBase](./node-core-library.iprefixproxyterminalprovideroptionsbase.md) | **_(BETA)_** |
 |  [IProtectableMapParameters](./node-core-library.iprotectablemapparameters.md) | Constructor parameters for [ProtectableMap](./node-core-library.protectablemap.md) |
 |  [IRunWithRetriesOptions](./node-core-library.irunwithretriesoptions.md) | **_(BETA)_** |
+|  [IStaticPrefixProxyTerminalProviderOptions](./node-core-library.istaticprefixproxyterminalprovideroptions.md) | **_(BETA)_** Options for [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md)<></>, with a static prefix. |
 |  [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | **_(BETA)_** |
 |  [IStringBuilder](./node-core-library.istringbuilder.md) | An interface for a builder object that allows a large text string to be constructed incrementally by appending small chunks. |
 |  [ISubprocessOptions](./node-core-library.isubprocessoptions.md) | **_(BETA)_** Details about how the <code>child_process.ChildProcess</code> was created. |
 |  [ITerminal](./node-core-library.iterminal.md) | **_(BETA)_** |
 |  [ITerminalProvider](./node-core-library.iterminalprovider.md) | **_(BETA)_** Implement the interface to create a terminal provider. Terminal providers can be registered to a [Terminal](./node-core-library.terminal.md) instance to receive messages. |
+|  [ITerminalWritableOptions](./node-core-library.iterminalwritableoptions.md) | **_(BETA)_** Options for [TerminalWritable](./node-core-library.terminalwritable.md)<></>. |
 
 ## Type Aliases
 
@@ -129,6 +140,7 @@ Core libraries that every NodeJS toolchain project should use.
 |  [FileSystemCopyFilesFilter](./node-core-library.filesystemcopyfilesfilter.md) | Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-library.ifilesystemcopyfilesoptions.filter.md) |
 |  [FileSystemStats](./node-core-library.filesystemstats.md) | An alias for the Node.js <code>fs.Stats</code> object. |
 |  [FolderItem](./node-core-library.folderitem.md) | An alias for the Node.js <code>fs.Dirent</code> object. |
+|  [IPrefixProxyTerminalProviderOptions](./node-core-library.iprefixproxyterminalprovideroptions.md) | **_(BETA)_** |
 |  [JsonNull](./node-core-library.jsonnull.md) | The Rush Stack lint rules discourage usage of <code>null</code>. However, JSON parsers always return JavaScript's <code>null</code> to keep the two syntaxes consistent. When creating interfaces that describe JSON structures, use <code>JsonNull</code> to avoid triggering the lint rule. Do not use <code>JsonNull</code> for any other purpose. |
 |  [JsonObject](./node-core-library.jsonobject.md) | Represents a JSON-serializable object whose type has not been determined yet. |
 |  [LegacyCallback](./node-core-library.legacycallback.md) | Callback used by [LegacyAdapters](./node-core-library.legacyadapters.md)<></>. |

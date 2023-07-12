@@ -17,7 +17,7 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type CloudBuildCacheProviderFactory = (buildCacheJson: IBuildCacheJson) => ICloudBuildCacheProvider;
+export type CloudBuildCacheProviderFactory = (buildCacheJson: IBuildCacheJson) => ICloudBuildCacheProvider | Promise<ICloudBuildCacheProvider>;
 ```
 **References:** [ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md)
 

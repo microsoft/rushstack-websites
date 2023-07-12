@@ -15,5 +15,5 @@ Callback function type for [IFileSystemCopyFilesAsyncOptions.filter](./node-core
 **Signature:**
 
 ```typescript
-export declare type FileSystemCopyFilesAsyncFilter = (sourcePath: string, destinationPath: string) => Promise<boolean>;
+export type FileSystemCopyFilesAsyncFilter = (sourcePath: string, destinationPath: string) => Promise<boolean>;
 ```

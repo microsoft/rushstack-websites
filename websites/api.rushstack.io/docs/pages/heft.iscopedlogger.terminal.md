@@ -10,6 +10,8 @@ pagination_next: null
 
 ## IScopedLogger.terminal property
 
+The terminal used to write messages to the console.
+
 **Signature:**
 
 ```typescript

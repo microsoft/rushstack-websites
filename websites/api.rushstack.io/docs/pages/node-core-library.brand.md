@@ -15,7 +15,7 @@ A "branded type" is a primitive type with a compile-type key that makes it incom
 **Signature:**
 
 ```typescript
-export declare type Brand<T, BrandTag extends string> = T & {
+export type Brand<T, BrandTag extends string> = T & {
     __brand: BrandTag;
 };
 ```

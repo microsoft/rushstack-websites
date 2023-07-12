@@ -15,7 +15,7 @@ Types for [IExecutableSpawnSyncOptions.stdio](./node-core-library.iexecutablespa
 **Signature:**
 
 ```typescript
-export declare type ExecutableStdioMapping = 'pipe' | 'ignore' | 'inherit' | ExecutableStdioStreamMapping[];
+export type ExecutableStdioMapping = 'pipe' | 'ignore' | 'inherit' | ExecutableStdioStreamMapping[];
 ```
 **References:** [ExecutableStdioStreamMapping](./node-core-library.executablestdiostreammapping.md)
 

@@ -34,6 +34,7 @@ A library for loading config files for use with the [Heft](https://rushstack.io/
 |  [IConfigurationFileOptionsWithJsonSchemaObject](./heft-config-file.iconfigurationfileoptionswithjsonschemaobject.md) | **_(BETA)_** |
 |  [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md) | **_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded. |
 |  [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md) | **_(BETA)_** |
+|  [IJsonPathMetadataResolverOptions](./heft-config-file.ijsonpathmetadataresolveroptions.md) | **_(BETA)_** Options provided to the custom resolver specified in [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)<></>. |
 |  [IJsonPathsMetadata](./heft-config-file.ijsonpathsmetadata.md) | **_(BETA)_** Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/)<></>, and values are objects that describe how node(s) selected by the JSONPath are processed after loading. |
 |  [INonCustomJsonPathMetadata](./heft-config-file.inoncustomjsonpathmetadata.md) | **_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded. |
 |  [IOriginalValueOptions](./heft-config-file.ioriginalvalueoptions.md) | **_(BETA)_** |

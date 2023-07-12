@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-If "1", create symlinks with absolute paths instead of relative paths. See [EnvironmentVariableNames.RUSH\_ABSOLUTE\_SYMLINKS](./rush-lib.environmentvariablenames.md)
+If "1", create symlinks with absolute paths instead of relative paths. See 
 
 **Signature:**
 

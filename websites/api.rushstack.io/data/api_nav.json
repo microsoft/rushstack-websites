@@ -4219,6 +4219,11 @@
             },
             {
               "type": "doc",
+              "label": "forbidPhantomResolvableNodeModulesFolders",
+              "id": "pages/rush-lib.iexperimentsjson.forbidphantomresolvablenodemodulesfolders"
+            },
+            {
+              "type": "doc",
               "label": "noChmodFieldInTarHeaderNormalization",
               "id": "pages/rush-lib.iexperimentsjson.nochmodfieldintarheadernormalization"
             },
@@ -4231,6 +4236,11 @@
               "type": "doc",
               "label": "phasedCommands",
               "id": "pages/rush-lib.iexperimentsjson.phasedcommands"
+            },
+            {
+              "type": "doc",
+              "label": "printEventHooksOutputToConsole",
+              "id": "pages/rush-lib.iexperimentsjson.printeventhooksoutputtoconsole"
             },
             {
               "type": "doc",
@@ -4517,6 +4527,27 @@
           "type": "doc",
           "label": "IPhasedCommand",
           "id": "pages/rush-lib.iphasedcommand"
+        },
+        {
+          "type": "category",
+          "label": "IPrefixMatch",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.iprefixmatch"
+            },
+            {
+              "type": "doc",
+              "label": "index",
+              "id": "pages/rush-lib.iprefixmatch.index"
+            },
+            {
+              "type": "doc",
+              "label": "value",
+              "id": "pages/rush-lib.iprefixmatch.value"
+            }
+          ]
         },
         {
           "type": "category",
@@ -4810,6 +4841,11 @@
               "type": "doc",
               "label": "findChildPathFromSegments",
               "id": "pages/rush-lib.lookupbypath.findchildpathfromsegments"
+            },
+            {
+              "type": "doc",
+              "label": "findLongestPrefixMatch",
+              "id": "pages/rush-lib.lookupbypath.findlongestprefixmatch"
             },
             {
               "type": "doc",
@@ -5163,6 +5199,11 @@
               "type": "doc",
               "label": "(members)",
               "id": "pages/rush-lib.rush"
+            },
+            {
+              "type": "doc",
+              "label": "_rushLibPackageFolder",
+              "id": "pages/rush-lib.rush._rushlibpackagefolder"
             },
             {
               "type": "doc",
@@ -5527,6 +5568,11 @@
             },
             {
               "type": "doc",
+              "label": "tryLoadFromDefaultLocation",
+              "id": "pages/rush-lib.rushconfiguration.tryloadfromdefaultlocation"
+            },
+            {
+              "type": "doc",
               "label": "versionPolicyConfiguration",
               "id": "pages/rush-lib.rushconfiguration.versionpolicyconfiguration"
             },
@@ -5716,6 +5762,11 @@
               "type": "doc",
               "label": "bulkCommandKind",
               "id": "pages/rush-lib.rushconstants.bulkcommandkind"
+            },
+            {
+              "type": "doc",
+              "label": "bypassPolicyFlagLongName",
+              "id": "pages/rush-lib.rushconstants.bypasspolicyflaglongname"
             },
             {
               "type": "doc",
@@ -6275,6 +6326,11 @@
             },
             {
               "type": "doc",
+              "label": "subjectIPAddresses",
+              "id": "pages/debug-certificate-manager.icertificategenerationoptions.subjectipaddresses"
+            },
+            {
+              "type": "doc",
               "label": "validityInDays",
               "id": "pages/debug-certificate-manager.icertificategenerationoptions.validityindays"
             }
@@ -6293,154 +6349,60 @@
         },
         {
           "type": "category",
-          "label": "BuildStageHooks",
+          "label": "CancellationToken",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.buildstagehooks"
+              "id": "pages/heft.cancellationtoken"
             },
             {
               "type": "doc",
-              "label": "bundle",
-              "id": "pages/heft.buildstagehooks.bundle"
+              "label": "isCancelled",
+              "id": "pages/heft.cancellationtoken.iscancelled"
             },
             {
               "type": "doc",
-              "label": "compile",
-              "id": "pages/heft.buildstagehooks.compile"
-            },
-            {
-              "type": "doc",
-              "label": "postBuild",
-              "id": "pages/heft.buildstagehooks.postbuild"
-            },
-            {
-              "type": "doc",
-              "label": "preCompile",
-              "id": "pages/heft.buildstagehooks.precompile"
+              "label": "onCancelledPromise",
+              "id": "pages/heft.cancellationtoken.oncancelledpromise"
             }
           ]
         },
         {
           "type": "category",
-          "label": "BuildSubstageHooksBase",
+          "label": "CancellationTokenSource",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.buildsubstagehooksbase"
+              "id": "pages/heft.cancellationtokensource"
             },
             {
               "type": "doc",
-              "label": "run",
-              "id": "pages/heft.buildsubstagehooksbase.run"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "BundleSubstageHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.bundlesubstagehooks"
+              "label": "(constructor)",
+              "id": "pages/heft.cancellationtokensource._constructor_"
             },
             {
               "type": "doc",
-              "label": "afterConfigureWebpack",
-              "id": "pages/heft.bundlesubstagehooks.afterconfigurewebpack"
+              "label": "cancel",
+              "id": "pages/heft.cancellationtokensource.cancel"
             },
             {
               "type": "doc",
-              "label": "configureWebpack",
-              "id": "pages/heft.bundlesubstagehooks.configurewebpack"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "CleanStageHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.cleanstagehooks"
+              "label": "isCancelled",
+              "id": "pages/heft.cancellationtokensource.iscancelled"
             },
             {
               "type": "doc",
-              "label": "run",
-              "id": "pages/heft.cleanstagehooks.run"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "CompileSubstageHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.compilesubstagehooks"
-            },
-            {
-              "type": "doc",
-              "label": "afterCompile",
-              "id": "pages/heft.compilesubstagehooks.aftercompile"
-            },
-            {
-              "type": "doc",
-              "label": "afterRecompile",
-              "id": "pages/heft.compilesubstagehooks.afterrecompile"
+              "label": "token",
+              "id": "pages/heft.cancellationtokensource.token"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "CustomActionParameterType",
-          "id": "pages/heft.customactionparametertype"
-        },
-        {
-          "type": "category",
-          "label": "HeftCommandLine",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.heftcommandline"
-            },
-            {
-              "type": "doc",
-              "label": "registerChoiceListParameter",
-              "id": "pages/heft.heftcommandline.registerchoicelistparameter"
-            },
-            {
-              "type": "doc",
-              "label": "registerChoiceParameter",
-              "id": "pages/heft.heftcommandline.registerchoiceparameter"
-            },
-            {
-              "type": "doc",
-              "label": "registerFlagParameter",
-              "id": "pages/heft.heftcommandline.registerflagparameter"
-            },
-            {
-              "type": "doc",
-              "label": "registerIntegerParameter",
-              "id": "pages/heft.heftcommandline.registerintegerparameter"
-            },
-            {
-              "type": "doc",
-              "label": "registerStringListParameter",
-              "id": "pages/heft.heftcommandline.registerstringlistparameter"
-            },
-            {
-              "type": "doc",
-              "label": "registerStringParameter",
-              "id": "pages/heft.heftcommandline.registerstringparameter"
-            }
-          ]
+          "label": "GlobFn",
+          "id": "pages/heft.globfn"
         },
         {
           "type": "category",
@@ -6453,13 +6415,8 @@
             },
             {
               "type": "doc",
-              "label": "buildCacheFolder",
-              "id": "pages/heft.heftconfiguration.buildcachefolder"
-            },
-            {
-              "type": "doc",
-              "label": "buildFolder",
-              "id": "pages/heft.heftconfiguration.buildfolder"
+              "label": "buildFolderPath",
+              "id": "pages/heft.heftconfiguration.buildfolderpath"
             },
             {
               "type": "doc",
@@ -6473,13 +6430,8 @@
             },
             {
               "type": "doc",
-              "label": "projectConfigFolder",
-              "id": "pages/heft.heftconfiguration.projectconfigfolder"
-            },
-            {
-              "type": "doc",
-              "label": "projectHeftDataFolder",
-              "id": "pages/heft.heftconfiguration.projectheftdatafolder"
+              "label": "projectConfigFolderPath",
+              "id": "pages/heft.heftconfiguration.projectconfigfolderpath"
             },
             {
               "type": "doc",
@@ -6493,6 +6445,16 @@
             },
             {
               "type": "doc",
+              "label": "rigPackageResolver",
+              "id": "pages/heft.heftconfiguration.rigpackageresolver"
+            },
+            {
+              "type": "doc",
+              "label": "tempFolderPath",
+              "id": "pages/heft.heftconfiguration.tempfolderpath"
+            },
+            {
+              "type": "doc",
               "label": "terminalProvider",
               "id": "pages/heft.heftconfiguration.terminalprovider"
             }
@@ -6500,407 +6462,318 @@
         },
         {
           "type": "category",
-          "label": "HeftSession",
+          "label": "ICancellationTokenSourceOptions",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.heftsession"
+              "id": "pages/heft.icancellationtokensourceoptions"
             },
             {
               "type": "doc",
-              "label": "commandLine",
-              "id": "pages/heft.heftsession.commandline"
+              "label": "delayMs",
+              "id": "pages/heft.icancellationtokensourceoptions.delayms"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ICopyOperation",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.icopyoperation"
             },
             {
               "type": "doc",
-              "label": "debugMode",
-              "id": "pages/heft.heftsession.debugmode"
+              "label": "destinationFolders",
+              "id": "pages/heft.icopyoperation.destinationfolders"
             },
             {
               "type": "doc",
-              "label": "hooks",
-              "id": "pages/heft.heftsession.hooks"
+              "label": "flatten",
+              "id": "pages/heft.icopyoperation.flatten"
             },
             {
               "type": "doc",
-              "label": "registerAction",
-              "id": "pages/heft.heftsession.registeraction"
-            },
-            {
-              "type": "doc",
-              "label": "requestAccessToPluginByName",
-              "id": "pages/heft.heftsession.requestaccesstopluginbyname"
-            },
-            {
-              "type": "doc",
-              "label": "requestScopedLogger",
-              "id": "pages/heft.heftsession.requestscopedlogger"
+              "label": "hardlink",
+              "id": "pages/heft.icopyoperation.hardlink"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "IBuildStageContext",
-          "id": "pages/heft.ibuildstagecontext"
+          "label": "IDeleteOperation",
+          "id": "pages/heft.ideleteoperation"
         },
         {
           "type": "category",
-          "label": "IBuildStageProperties",
+          "label": "IFileSelectionSpecifier",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.ibuildstageproperties"
+              "id": "pages/heft.ifileselectionspecifier"
             },
             {
               "type": "doc",
-              "label": "emitExtensionForTests",
-              "id": "pages/heft.ibuildstageproperties.emitextensionfortests"
+              "label": "excludeGlobs",
+              "id": "pages/heft.ifileselectionspecifier.excludeglobs"
             },
             {
               "type": "doc",
-              "label": "emitFolderNameForTests",
-              "id": "pages/heft.ibuildstageproperties.emitfoldernamefortests"
+              "label": "fileExtensions",
+              "id": "pages/heft.ifileselectionspecifier.fileextensions"
             },
             {
               "type": "doc",
-              "label": "isTypeScriptProject",
-              "id": "pages/heft.ibuildstageproperties.istypescriptproject"
+              "label": "includeGlobs",
+              "id": "pages/heft.ifileselectionspecifier.includeglobs"
             },
             {
               "type": "doc",
-              "label": "lite",
-              "id": "pages/heft.ibuildstageproperties.lite"
+              "label": "sourcePath",
+              "id": "pages/heft.ifileselectionspecifier.sourcepath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IGlobOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.igloboptions"
+            },
+            {
+              "type": "doc",
+              "label": "absolute",
+              "id": "pages/heft.igloboptions.absolute"
+            },
+            {
+              "type": "doc",
+              "label": "cwd",
+              "id": "pages/heft.igloboptions.cwd"
+            },
+            {
+              "type": "doc",
+              "label": "dot",
+              "id": "pages/heft.igloboptions.dot"
+            },
+            {
+              "type": "doc",
+              "label": "ignore",
+              "id": "pages/heft.igloboptions.ignore"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftDefaultParameters",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.iheftdefaultparameters"
+            },
+            {
+              "type": "doc",
+              "label": "clean",
+              "id": "pages/heft.iheftdefaultparameters.clean"
+            },
+            {
+              "type": "doc",
+              "label": "debug",
+              "id": "pages/heft.iheftdefaultparameters.debug"
             },
             {
               "type": "doc",
               "label": "locales",
-              "id": "pages/heft.ibuildstageproperties.locales"
-            },
-            {
-              "type": "doc",
-              "label": "maxOldSpaceSize",
-              "id": "pages/heft.ibuildstageproperties.maxoldspacesize"
+              "id": "pages/heft.iheftdefaultparameters.locales"
             },
             {
               "type": "doc",
               "label": "production",
-              "id": "pages/heft.ibuildstageproperties.production"
+              "id": "pages/heft.iheftdefaultparameters.production"
             },
             {
               "type": "doc",
-              "label": "serveMode",
-              "id": "pages/heft.ibuildstageproperties.servemode"
+              "label": "verbose",
+              "id": "pages/heft.iheftdefaultparameters.verbose"
             },
             {
               "type": "doc",
-              "label": "watchMode",
-              "id": "pages/heft.ibuildstageproperties.watchmode"
-            },
-            {
-              "type": "doc",
-              "label": "webpackStats",
-              "id": "pages/heft.ibuildstageproperties.webpackstats"
+              "label": "watch",
+              "id": "pages/heft.iheftdefaultparameters.watch"
             }
           ]
         },
         {
           "type": "category",
-          "label": "IBuildSubstage",
+          "label": "IHeftLifecycleCleanHookOptions",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.ibuildsubstage"
+              "id": "pages/heft.iheftlifecyclecleanhookoptions"
+            },
+            {
+              "type": "doc",
+              "label": "addDeleteOperations",
+              "id": "pages/heft.iheftlifecyclecleanhookoptions.adddeleteoperations"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftLifecycleHooks",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.iheftlifecyclehooks"
+            },
+            {
+              "type": "doc",
+              "label": "clean",
+              "id": "pages/heft.iheftlifecyclehooks.clean"
+            },
+            {
+              "type": "doc",
+              "label": "recordMetrics",
+              "id": "pages/heft.iheftlifecyclehooks.recordmetrics"
+            },
+            {
+              "type": "doc",
+              "label": "toolFinish",
+              "id": "pages/heft.iheftlifecyclehooks.toolfinish"
+            },
+            {
+              "type": "doc",
+              "label": "toolStart",
+              "id": "pages/heft.iheftlifecyclehooks.toolstart"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "label": "IHeftLifecyclePlugin",
+          "id": "pages/heft.iheftlifecycleplugin"
+        },
+        {
+          "type": "category",
+          "label": "IHeftLifecycleSession",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.iheftlifecyclesession"
             },
             {
               "type": "doc",
               "label": "hooks",
-              "id": "pages/heft.ibuildsubstage.hooks"
+              "id": "pages/heft.iheftlifecyclesession.hooks"
             },
             {
               "type": "doc",
-              "label": "properties",
-              "id": "pages/heft.ibuildsubstage.properties"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "IBundleSubstage",
-          "id": "pages/heft.ibundlesubstage"
-        },
-        {
-          "type": "category",
-          "label": "IBundleSubstageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.ibundlesubstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "webpackConfiguration",
-              "id": "pages/heft.ibundlesubstageproperties.webpackconfiguration"
-            },
-            {
-              "type": "doc",
-              "label": "webpackDevServerVersion",
-              "id": "pages/heft.ibundlesubstageproperties.webpackdevserverversion"
-            },
-            {
-              "type": "doc",
-              "label": "webpackVersion",
-              "id": "pages/heft.ibundlesubstageproperties.webpackversion"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "ICleanStageContext",
-          "id": "pages/heft.icleanstagecontext"
-        },
-        {
-          "type": "category",
-          "label": "ICleanStageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icleanstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "deleteCache",
-              "id": "pages/heft.icleanstageproperties.deletecache"
-            },
-            {
-              "type": "doc",
-              "label": "pathsToDelete",
-              "id": "pages/heft.icleanstageproperties.pathstodelete"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "ICompileSubstage",
-          "id": "pages/heft.icompilesubstage"
-        },
-        {
-          "type": "category",
-          "label": "ICompileSubstageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icompilesubstageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "typescriptMaxWriteParallelism",
-              "id": "pages/heft.icompilesubstageproperties.typescriptmaxwriteparallelism"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionoptions"
-            },
-            {
-              "type": "doc",
-              "label": "actionName",
-              "id": "pages/heft.icustomactionoptions.actionname"
-            },
-            {
-              "type": "doc",
-              "label": "callback",
-              "id": "pages/heft.icustomactionoptions.callback"
-            },
-            {
-              "type": "doc",
-              "label": "documentation",
-              "id": "pages/heft.icustomactionoptions.documentation"
+              "label": "logger",
+              "id": "pages/heft.iheftlifecyclesession.logger"
             },
             {
               "type": "doc",
               "label": "parameters",
-              "id": "pages/heft.icustomactionoptions.parameters"
+              "id": "pages/heft.iheftlifecyclesession.parameters"
             },
             {
               "type": "doc",
-              "label": "summary",
-              "id": "pages/heft.icustomactionoptions.summary"
+              "label": "requestAccessToPluginByName",
+              "id": "pages/heft.iheftlifecyclesession.requestaccesstopluginbyname"
+            },
+            {
+              "type": "doc",
+              "label": "tempFolderPath",
+              "id": "pages/heft.iheftlifecyclesession.tempfolderpath"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "ICustomActionParameter",
-          "id": "pages/heft.icustomactionparameter"
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionParameterBase",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionparameterbase"
-            },
-            {
-              "type": "doc",
-              "label": "description",
-              "id": "pages/heft.icustomactionparameterbase.description"
-            },
-            {
-              "type": "doc",
-              "label": "kind",
-              "id": "pages/heft.icustomactionparameterbase.kind"
-            },
-            {
-              "type": "doc",
-              "label": "parameterLongName",
-              "id": "pages/heft.icustomactionparameterbase.parameterlongname"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionParameterFlag",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionparameterflag"
-            },
-            {
-              "type": "doc",
-              "label": "kind",
-              "id": "pages/heft.icustomactionparameterflag.kind"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionParameterInteger",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionparameterinteger"
-            },
-            {
-              "type": "doc",
-              "label": "kind",
-              "id": "pages/heft.icustomactionparameterinteger.kind"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionParameterString",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionparameterstring"
-            },
-            {
-              "type": "doc",
-              "label": "kind",
-              "id": "pages/heft.icustomactionparameterstring.kind"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "ICustomActionParameterStringList",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.icustomactionparameterstringlist"
-            },
-            {
-              "type": "doc",
-              "label": "kind",
-              "id": "pages/heft.icustomactionparameterstringlist.kind"
-            }
-          ]
+          "label": "IHeftLifecycleToolFinishHookOptions",
+          "id": "pages/heft.iheftlifecycletoolfinishhookoptions"
         },
         {
           "type": "doc",
-          "label": "IHeftActionConfiguration",
-          "id": "pages/heft.iheftactionconfiguration"
+          "label": "IHeftLifecycleToolStartHookOptions",
+          "id": "pages/heft.iheftlifecycletoolstarthookoptions"
         },
         {
           "type": "category",
-          "label": "IHeftActionConfigurationOptions",
+          "label": "IHeftParameters",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.iheftactionconfigurationoptions"
+              "id": "pages/heft.iheftparameters"
             },
             {
               "type": "doc",
-              "label": "mergeArrays",
-              "id": "pages/heft.iheftactionconfigurationoptions.mergearrays"
+              "label": "getChoiceListParameter",
+              "id": "pages/heft.iheftparameters.getchoicelistparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getChoiceParameter",
+              "id": "pages/heft.iheftparameters.getchoiceparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getFlagParameter",
+              "id": "pages/heft.iheftparameters.getflagparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getIntegerListParameter",
+              "id": "pages/heft.iheftparameters.getintegerlistparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getIntegerParameter",
+              "id": "pages/heft.iheftparameters.getintegerparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getStringListParameter",
+              "id": "pages/heft.iheftparameters.getstringlistparameter"
+            },
+            {
+              "type": "doc",
+              "label": "getStringParameter",
+              "id": "pages/heft.iheftparameters.getstringparameter"
             }
           ]
         },
         {
           "type": "category",
-          "label": "IHeftBaseParameter",
+          "label": "IHeftParsedCommandLine",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.iheftbaseparameter"
+              "id": "pages/heft.iheftparsedcommandline"
             },
             {
               "type": "doc",
-              "label": "actionAssociated",
-              "id": "pages/heft.iheftbaseparameter.actionassociated"
+              "label": "commandName",
+              "id": "pages/heft.iheftparsedcommandline.commandname"
             },
             {
               "type": "doc",
-              "label": "definition",
-              "id": "pages/heft.iheftbaseparameter.definition"
-            },
-            {
-              "type": "doc",
-              "label": "value",
-              "id": "pages/heft.iheftbaseparameter.value"
+              "label": "unaliasedCommandName",
+              "id": "pages/heft.iheftparsedcommandline.unaliasedcommandname"
             }
           ]
-        },
-        {
-          "type": "doc",
-          "label": "IHeftChoiceListParameter",
-          "id": "pages/heft.iheftchoicelistparameter"
-        },
-        {
-          "type": "doc",
-          "label": "IHeftChoiceParameter",
-          "id": "pages/heft.iheftchoiceparameter"
-        },
-        {
-          "type": "doc",
-          "label": "IHeftFlagParameter",
-          "id": "pages/heft.iheftflagparameter"
-        },
-        {
-          "type": "doc",
-          "label": "IHeftIntegerParameter",
-          "id": "pages/heft.iheftintegerparameter"
         },
         {
           "type": "category",
@@ -6920,64 +6793,180 @@
               "type": "doc",
               "label": "apply",
               "id": "pages/heft.iheftplugin.apply"
-            },
-            {
-              "type": "doc",
-              "label": "optionsSchema",
-              "id": "pages/heft.iheftplugin.optionsschema"
-            },
-            {
-              "type": "doc",
-              "label": "pluginName",
-              "id": "pages/heft.iheftplugin.pluginname"
             }
           ]
         },
         {
-          "type": "doc",
-          "label": "IHeftRegisterParameterOptions",
-          "id": "pages/heft.iheftregisterparameteroptions"
-        },
-        {
           "type": "category",
-          "label": "IHeftSessionHooks",
+          "label": "IHeftRecordMetricsHookOptions",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.iheftsessionhooks"
+              "id": "pages/heft.iheftrecordmetricshookoptions"
             },
             {
               "type": "doc",
-              "label": "build",
-              "id": "pages/heft.iheftsessionhooks.build"
+              "label": "metricData",
+              "id": "pages/heft.iheftrecordmetricshookoptions.metricdata"
             },
             {
               "type": "doc",
-              "label": "clean",
-              "id": "pages/heft.iheftsessionhooks.clean"
+              "label": "metricName",
+              "id": "pages/heft.iheftrecordmetricshookoptions.metricname"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftTaskFileOperations",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.ihefttaskfileoperations"
             },
             {
               "type": "doc",
-              "label": "metricsCollector",
-              "id": "pages/heft.iheftsessionhooks.metricscollector"
+              "label": "copyOperations",
+              "id": "pages/heft.ihefttaskfileoperations.copyoperations"
             },
             {
               "type": "doc",
-              "label": "test",
-              "id": "pages/heft.iheftsessionhooks.test"
+              "label": "deleteOperations",
+              "id": "pages/heft.ihefttaskfileoperations.deleteoperations"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftTaskHooks",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.ihefttaskhooks"
+            },
+            {
+              "type": "doc",
+              "label": "registerFileOperations",
+              "id": "pages/heft.ihefttaskhooks.registerfileoperations"
+            },
+            {
+              "type": "doc",
+              "label": "run",
+              "id": "pages/heft.ihefttaskhooks.run"
+            },
+            {
+              "type": "doc",
+              "label": "runIncremental",
+              "id": "pages/heft.ihefttaskhooks.runincremental"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "IHeftStringListParameter",
-          "id": "pages/heft.iheftstringlistparameter"
+          "label": "IHeftTaskPlugin",
+          "id": "pages/heft.ihefttaskplugin"
         },
         {
-          "type": "doc",
-          "label": "IHeftStringParameter",
-          "id": "pages/heft.iheftstringparameter"
+          "type": "category",
+          "label": "IHeftTaskRunHookOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.ihefttaskrunhookoptions"
+            },
+            {
+              "type": "doc",
+              "label": "cancellationToken",
+              "id": "pages/heft.ihefttaskrunhookoptions.cancellationtoken"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftTaskRunIncrementalHookOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.ihefttaskrunincrementalhookoptions"
+            },
+            {
+              "type": "doc",
+              "label": "requestRun",
+              "id": "pages/heft.ihefttaskrunincrementalhookoptions.requestrun"
+            },
+            {
+              "type": "doc",
+              "label": "watchGlobAsync",
+              "id": "pages/heft.ihefttaskrunincrementalhookoptions.watchglobasync"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IHeftTaskSession",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.ihefttasksession"
+            },
+            {
+              "type": "doc",
+              "label": "hooks",
+              "id": "pages/heft.ihefttasksession.hooks"
+            },
+            {
+              "type": "doc",
+              "label": "logger",
+              "id": "pages/heft.ihefttasksession.logger"
+            },
+            {
+              "type": "doc",
+              "label": "parameters",
+              "id": "pages/heft.ihefttasksession.parameters"
+            },
+            {
+              "type": "doc",
+              "label": "parsedCommandLine",
+              "id": "pages/heft.ihefttasksession.parsedcommandline"
+            },
+            {
+              "type": "doc",
+              "label": "requestAccessToPluginByName",
+              "id": "pages/heft.ihefttasksession.requestaccesstopluginbyname"
+            },
+            {
+              "type": "doc",
+              "label": "taskName",
+              "id": "pages/heft.ihefttasksession.taskname"
+            },
+            {
+              "type": "doc",
+              "label": "tempFolderPath",
+              "id": "pages/heft.ihefttasksession.tempfolderpath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IIncrementalCopyOperation",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.iincrementalcopyoperation"
+            },
+            {
+              "type": "doc",
+              "label": "onlyIfChanged",
+              "id": "pages/heft.iincrementalcopyoperation.onlyifchanged"
+            }
+          ]
         },
         {
           "type": "category",
@@ -7037,29 +7026,35 @@
         },
         {
           "type": "category",
-          "label": "IParameterAssociatedActionNames",
+          "label": "IRigPackageResolver",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.iparameterassociatedactionnames"
+              "id": "pages/heft.irigpackageresolver"
             },
             {
               "type": "doc",
-              "label": "associatedActionNames",
-              "id": "pages/heft.iparameterassociatedactionnames.associatedactionnames"
+              "label": "resolvePackageAsync",
+              "id": "pages/heft.irigpackageresolver.resolvepackageasync"
             }
           ]
         },
         {
-          "type": "doc",
-          "label": "IPostBuildSubstage",
-          "id": "pages/heft.ipostbuildsubstage"
-        },
-        {
-          "type": "doc",
-          "label": "IPreCompileSubstage",
-          "id": "pages/heft.iprecompilesubstage"
+          "type": "category",
+          "label": "IRunScript",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft.irunscript"
+            },
+            {
+              "type": "doc",
+              "label": "runAsync",
+              "id": "pages/heft.irunscript.runasync"
+            }
+          ]
         },
         {
           "type": "category",
@@ -7072,23 +7067,18 @@
             },
             {
               "type": "doc",
-              "label": "debugMode",
-              "id": "pages/heft.irunscriptoptions.debugmode"
-            },
-            {
-              "type": "doc",
               "label": "heftConfiguration",
               "id": "pages/heft.irunscriptoptions.heftconfiguration"
             },
             {
               "type": "doc",
-              "label": "properties",
-              "id": "pages/heft.irunscriptoptions.properties"
+              "label": "heftTaskSession",
+              "id": "pages/heft.irunscriptoptions.hefttasksession"
             },
             {
               "type": "doc",
-              "label": "scopedLogger",
-              "id": "pages/heft.irunscriptoptions.scopedlogger"
+              "label": "runOptions",
+              "id": "pages/heft.irunscriptoptions.runoptions"
             },
             {
               "type": "doc",
@@ -7118,6 +7108,21 @@
             },
             {
               "type": "doc",
+              "label": "hasErrors",
+              "id": "pages/heft.iscopedlogger.haserrors"
+            },
+            {
+              "type": "doc",
+              "label": "loggerName",
+              "id": "pages/heft.iscopedlogger.loggername"
+            },
+            {
+              "type": "doc",
+              "label": "resetErrorsAndWarnings",
+              "id": "pages/heft.iscopedlogger.reseterrorsandwarnings"
+            },
+            {
+              "type": "doc",
               "label": "terminal",
               "id": "pages/heft.iscopedlogger.terminal"
             }
@@ -7125,174 +7130,24 @@
         },
         {
           "type": "category",
-          "label": "IStageContext",
+          "label": "IWatchedFileState",
           "items": [
             {
               "type": "doc",
               "label": "(members)",
-              "id": "pages/heft.istagecontext"
+              "id": "pages/heft.iwatchedfilestate"
             },
             {
               "type": "doc",
-              "label": "hooks",
-              "id": "pages/heft.istagecontext.hooks"
-            },
-            {
-              "type": "doc",
-              "label": "properties",
-              "id": "pages/heft.istagecontext.properties"
+              "label": "changed",
+              "id": "pages/heft.iwatchedfilestate.changed"
             }
           ]
         },
         {
           "type": "doc",
-          "label": "ITestStageContext",
-          "id": "pages/heft.iteststagecontext"
-        },
-        {
-          "type": "category",
-          "label": "ITestStageProperties",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.iteststageproperties"
-            },
-            {
-              "type": "doc",
-              "label": "watchMode",
-              "id": "pages/heft.iteststageproperties.watchmode"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "MetricsCollectorHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.metricscollectorhooks"
-            },
-            {
-              "type": "doc",
-              "label": "flush",
-              "id": "pages/heft.metricscollectorhooks.flush"
-            },
-            {
-              "type": "doc",
-              "label": "flushAndTeardown",
-              "id": "pages/heft.metricscollectorhooks.flushandteardown"
-            },
-            {
-              "type": "doc",
-              "label": "recordMetric",
-              "id": "pages/heft.metricscollectorhooks.recordmetric"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "label": "RegisterAction",
-          "id": "pages/heft.registeraction"
-        },
-        {
-          "type": "doc",
-          "label": "RequestAccessToPluginByNameCallback",
-          "id": "pages/heft.requestaccesstopluginbynamecallback"
-        },
-        {
-          "type": "category",
-          "label": "ScopedLogger",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.scopedlogger"
-            },
-            {
-              "type": "doc",
-              "label": "emitError",
-              "id": "pages/heft.scopedlogger.emiterror"
-            },
-            {
-              "type": "doc",
-              "label": "emitWarning",
-              "id": "pages/heft.scopedlogger.emitwarning"
-            },
-            {
-              "type": "doc",
-              "label": "errors",
-              "id": "pages/heft.scopedlogger.errors"
-            },
-            {
-              "type": "doc",
-              "label": "loggerName",
-              "id": "pages/heft.scopedlogger.loggername"
-            },
-            {
-              "type": "doc",
-              "label": "terminal",
-              "id": "pages/heft.scopedlogger.terminal"
-            },
-            {
-              "type": "doc",
-              "label": "terminalProvider",
-              "id": "pages/heft.scopedlogger.terminalprovider"
-            },
-            {
-              "type": "doc",
-              "label": "warnings",
-              "id": "pages/heft.scopedlogger.warnings"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "StageHooksBase",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.stagehooksbase"
-            },
-            {
-              "type": "doc",
-              "label": "afterLoadStageConfiguration",
-              "id": "pages/heft.stagehooksbase.afterloadstageconfiguration"
-            },
-            {
-              "type": "doc",
-              "label": "loadStageConfiguration",
-              "id": "pages/heft.stagehooksbase.loadstageconfiguration"
-            },
-            {
-              "type": "doc",
-              "label": "overrideStage",
-              "id": "pages/heft.stagehooksbase.overridestage"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "TestStageHooks",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/heft.teststagehooks"
-            },
-            {
-              "type": "doc",
-              "label": "configureTest",
-              "id": "pages/heft.teststagehooks.configuretest"
-            },
-            {
-              "type": "doc",
-              "label": "run",
-              "id": "pages/heft.teststagehooks.run"
-            }
-          ]
+          "label": "WatchGlobFn",
+          "id": "pages/heft.watchglobfn"
         }
       ]
     },
@@ -7465,6 +7320,37 @@
           "type": "doc",
           "label": "IJsonPathMetadata",
           "id": "pages/heft-config-file.ijsonpathmetadata"
+        },
+        {
+          "type": "category",
+          "label": "IJsonPathMetadataResolverOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/heft-config-file.ijsonpathmetadataresolveroptions"
+            },
+            {
+              "type": "doc",
+              "label": "configurationFile",
+              "id": "pages/heft-config-file.ijsonpathmetadataresolveroptions.configurationfile"
+            },
+            {
+              "type": "doc",
+              "label": "configurationFilePath",
+              "id": "pages/heft-config-file.ijsonpathmetadataresolveroptions.configurationfilepath"
+            },
+            {
+              "type": "doc",
+              "label": "propertyName",
+              "id": "pages/heft-config-file.ijsonpathmetadataresolveroptions.propertyname"
+            },
+            {
+              "type": "doc",
+              "label": "propertyValue",
+              "id": "pages/heft-config-file.ijsonpathmetadataresolveroptions.propertyvalue"
+            }
+          ]
         },
         {
           "type": "doc",
@@ -8211,6 +8097,32 @@
               "type": "doc",
               "label": "sleep",
               "id": "pages/node-core-library.async.sleep"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "AsyncQueue",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.asyncqueue"
+            },
+            {
+              "type": "doc",
+              "label": "[Symbol.asyncIterator]",
+              "id": "pages/node-core-library.asyncqueue._symbol.asynciterator_"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/node-core-library.asyncqueue._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "push",
+              "id": "pages/node-core-library.asyncqueue.push"
             }
           ]
         },
@@ -9058,6 +8970,22 @@
         },
         {
           "type": "category",
+          "label": "IDynamicPrefixProxyTerminalProviderOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.idynamicprefixproxyterminalprovideroptions"
+            },
+            {
+              "type": "doc",
+              "label": "getPrefix",
+              "id": "pages/node-core-library.idynamicprefixproxyterminalprovideroptions.getprefix"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IEnvironmentEntry",
           "items": [
             {
@@ -9471,6 +9399,38 @@
         },
         {
           "type": "category",
+          "label": "IImportResolveAsyncOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.iimportresolveasyncoptions"
+            },
+            {
+              "type": "doc",
+              "label": "getRealPathAsync",
+              "id": "pages/node-core-library.iimportresolveasyncoptions.getrealpathasync"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IImportResolveModuleAsyncOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.iimportresolvemoduleasyncoptions"
+            },
+            {
+              "type": "doc",
+              "label": "modulePath",
+              "id": "pages/node-core-library.iimportresolvemoduleasyncoptions.modulepath"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IImportResolveModuleOptions",
           "items": [
             {
@@ -9506,8 +9466,29 @@
             },
             {
               "type": "doc",
+              "label": "getRealPath",
+              "id": "pages/node-core-library.iimportresolveoptions.getrealpath"
+            },
+            {
+              "type": "doc",
               "label": "includeSystemModules",
               "id": "pages/node-core-library.iimportresolveoptions.includesystemmodules"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IImportResolvePackageAsyncOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.iimportresolvepackageasyncoptions"
+            },
+            {
+              "type": "doc",
+              "label": "packageName",
+              "id": "pages/node-core-library.iimportresolvepackageasyncoptions.packagename"
             }
           ]
         },
@@ -9674,8 +9655,18 @@
             },
             {
               "type": "doc",
+              "label": "resolveModuleAsync",
+              "id": "pages/node-core-library.import.resolvemoduleasync"
+            },
+            {
+              "type": "doc",
               "label": "resolvePackage",
               "id": "pages/node-core-library.import.resolvepackage"
+            },
+            {
+              "type": "doc",
+              "label": "resolvePackageAsync",
+              "id": "pages/node-core-library.import.resolvepackageasync"
             }
           ]
         },
@@ -9737,6 +9728,11 @@
               "type": "doc",
               "label": "peerDependencies",
               "id": "pages/node-core-library.inodepackagejson.peerdependencies"
+            },
+            {
+              "type": "doc",
+              "label": "peerDependenciesMeta",
+              "id": "pages/node-core-library.inodepackagejson.peerdependenciesmeta"
             },
             {
               "type": "doc",
@@ -10000,6 +9996,32 @@
           ]
         },
         {
+          "type": "doc",
+          "label": "IPeerDependenciesMetaTable",
+          "id": "pages/node-core-library.ipeerdependenciesmetatable"
+        },
+        {
+          "type": "doc",
+          "label": "IPrefixProxyTerminalProviderOptions",
+          "id": "pages/node-core-library.iprefixproxyterminalprovideroptions"
+        },
+        {
+          "type": "category",
+          "label": "IPrefixProxyTerminalProviderOptionsBase",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.iprefixproxyterminalprovideroptionsbase"
+            },
+            {
+              "type": "doc",
+              "label": "terminalProvider",
+              "id": "pages/node-core-library.iprefixproxyterminalprovideroptionsbase.terminalprovider"
+            }
+          ]
+        },
+        {
           "type": "category",
           "label": "IProtectableMapParameters",
           "items": [
@@ -10048,6 +10070,22 @@
               "type": "doc",
               "label": "retryDelayMs",
               "id": "pages/node-core-library.irunwithretriesoptions.retrydelayms"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IStaticPrefixProxyTerminalProviderOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.istaticprefixproxyterminalprovideroptions"
+            },
+            {
+              "type": "doc",
+              "label": "prefix",
+              "id": "pages/node-core-library.istaticprefixproxyterminalprovideroptions.prefix"
             }
           ]
         },
@@ -10198,6 +10236,32 @@
               "type": "doc",
               "label": "write",
               "id": "pages/node-core-library.iterminalprovider.write"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ITerminalWritableOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.iterminalwritableoptions"
+            },
+            {
+              "type": "doc",
+              "label": "severity",
+              "id": "pages/node-core-library.iterminalwritableoptions.severity"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/node-core-library.iterminalwritableoptions.terminal"
+            },
+            {
+              "type": "doc",
+              "label": "writableOptions",
+              "id": "pages/node-core-library.iterminalwritableoptions.writableoptions"
             }
           ]
         },
@@ -10672,6 +10736,37 @@
         },
         {
           "type": "category",
+          "label": "PrefixProxyTerminalProvider",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.prefixproxyterminalprovider"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/node-core-library.prefixproxyterminalprovider._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "eolCharacter",
+              "id": "pages/node-core-library.prefixproxyterminalprovider.eolcharacter"
+            },
+            {
+              "type": "doc",
+              "label": "supportsColor",
+              "id": "pages/node-core-library.prefixproxyterminalprovider.supportscolor"
+            },
+            {
+              "type": "doc",
+              "label": "write",
+              "id": "pages/node-core-library.prefixproxyterminalprovider.write"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "ProtectableMap",
           "items": [
             {
@@ -10963,6 +11058,27 @@
         },
         {
           "type": "category",
+          "label": "TerminalWritable",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.terminalwritable"
+            },
+            {
+              "type": "doc",
+              "label": "_write",
+              "id": "pages/node-core-library.terminalwritable._write"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/node-core-library.terminalwritable._constructor_"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "Text",
           "items": [
             {
@@ -10989,6 +11105,11 @@
               "type": "doc",
               "label": "ensureTrailingNewline",
               "id": "pages/node-core-library.text.ensuretrailingnewline"
+            },
+            {
+              "type": "doc",
+              "label": "escapeRegExp",
+              "id": "pages/node-core-library.text.escaperegexp"
             },
             {
               "type": "doc",
@@ -11119,6 +11240,233 @@
     },
     {
       "type": "category",
+      "label": "@rushstack/package-extractor",
+      "items": [
+        {
+          "type": "doc",
+          "label": "(members)",
+          "id": "pages/package-extractor"
+        },
+        {
+          "type": "category",
+          "label": "IExtractorMetadataJson",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.iextractormetadatajson"
+            },
+            {
+              "type": "doc",
+              "label": "links",
+              "id": "pages/package-extractor.iextractormetadatajson.links"
+            },
+            {
+              "type": "doc",
+              "label": "mainProjectName",
+              "id": "pages/package-extractor.iextractormetadatajson.mainprojectname"
+            },
+            {
+              "type": "doc",
+              "label": "projects",
+              "id": "pages/package-extractor.iextractormetadatajson.projects"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IExtractorOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.iextractoroptions"
+            },
+            {
+              "type": "doc",
+              "label": "createArchiveFilePath",
+              "id": "pages/package-extractor.iextractoroptions.createarchivefilepath"
+            },
+            {
+              "type": "doc",
+              "label": "createArchiveOnly",
+              "id": "pages/package-extractor.iextractoroptions.createarchiveonly"
+            },
+            {
+              "type": "doc",
+              "label": "folderToCopy",
+              "id": "pages/package-extractor.iextractoroptions.foldertocopy"
+            },
+            {
+              "type": "doc",
+              "label": "includeDevDependencies",
+              "id": "pages/package-extractor.iextractoroptions.includedevdependencies"
+            },
+            {
+              "type": "doc",
+              "label": "includeNpmIgnoreFiles",
+              "id": "pages/package-extractor.iextractoroptions.includenpmignorefiles"
+            },
+            {
+              "type": "doc",
+              "label": "linkCreation",
+              "id": "pages/package-extractor.iextractoroptions.linkcreation"
+            },
+            {
+              "type": "doc",
+              "label": "mainProjectName",
+              "id": "pages/package-extractor.iextractoroptions.mainprojectname"
+            },
+            {
+              "type": "doc",
+              "label": "overwriteExisting",
+              "id": "pages/package-extractor.iextractoroptions.overwriteexisting"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmInstallFolder",
+              "id": "pages/package-extractor.iextractoroptions.pnpminstallfolder"
+            },
+            {
+              "type": "doc",
+              "label": "projectConfigurations",
+              "id": "pages/package-extractor.iextractoroptions.projectconfigurations"
+            },
+            {
+              "type": "doc",
+              "label": "sourceRootFolder",
+              "id": "pages/package-extractor.iextractoroptions.sourcerootfolder"
+            },
+            {
+              "type": "doc",
+              "label": "targetRootFolder",
+              "id": "pages/package-extractor.iextractoroptions.targetrootfolder"
+            },
+            {
+              "type": "doc",
+              "label": "terminal",
+              "id": "pages/package-extractor.iextractoroptions.terminal"
+            },
+            {
+              "type": "doc",
+              "label": "transformPackageJson",
+              "id": "pages/package-extractor.iextractoroptions.transformpackagejson"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IExtractorProjectConfiguration",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.iextractorprojectconfiguration"
+            },
+            {
+              "type": "doc",
+              "label": "additionalDependenciesToInclude",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.additionaldependenciestoinclude"
+            },
+            {
+              "type": "doc",
+              "label": "additionalProjectsToInclude",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.additionalprojectstoinclude"
+            },
+            {
+              "type": "doc",
+              "label": "dependenciesToExclude",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.dependenciestoexclude"
+            },
+            {
+              "type": "doc",
+              "label": "patternsToExclude",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.patternstoexclude"
+            },
+            {
+              "type": "doc",
+              "label": "patternsToInclude",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.patternstoinclude"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolder",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.projectfolder"
+            },
+            {
+              "type": "doc",
+              "label": "projectName",
+              "id": "pages/package-extractor.iextractorprojectconfiguration.projectname"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ILinkInfo",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.ilinkinfo"
+            },
+            {
+              "type": "doc",
+              "label": "kind",
+              "id": "pages/package-extractor.ilinkinfo.kind"
+            },
+            {
+              "type": "doc",
+              "label": "linkPath",
+              "id": "pages/package-extractor.ilinkinfo.linkpath"
+            },
+            {
+              "type": "doc",
+              "label": "targetPath",
+              "id": "pages/package-extractor.ilinkinfo.targetpath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IProjectInfoJson",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.iprojectinfojson"
+            },
+            {
+              "type": "doc",
+              "label": "path",
+              "id": "pages/package-extractor.iprojectinfojson.path"
+            },
+            {
+              "type": "doc",
+              "label": "projectName",
+              "id": "pages/package-extractor.iprojectinfojson.projectname"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "PackageExtractor",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/package-extractor.packageextractor"
+            },
+            {
+              "type": "doc",
+              "label": "extractAsync",
+              "id": "pages/package-extractor.packageextractor.extractasync"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "@rushstack/rig-package",
       "items": [
         {
@@ -11149,6 +11497,72 @@
               "type": "doc",
               "label": "projectFolderPath",
               "id": "pages/rig-package.iloadforprojectfolderoptions.projectfolderpath"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IRigConfig",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rig-package.irigconfig"
+            },
+            {
+              "type": "doc",
+              "label": "filePath",
+              "id": "pages/rig-package.irigconfig.filepath"
+            },
+            {
+              "type": "doc",
+              "label": "getResolvedProfileFolder",
+              "id": "pages/rig-package.irigconfig.getresolvedprofilefolder"
+            },
+            {
+              "type": "doc",
+              "label": "getResolvedProfileFolderAsync",
+              "id": "pages/rig-package.irigconfig.getresolvedprofilefolderasync"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderOriginalPath",
+              "id": "pages/rig-package.irigconfig.projectfolderoriginalpath"
+            },
+            {
+              "type": "doc",
+              "label": "projectFolderPath",
+              "id": "pages/rig-package.irigconfig.projectfolderpath"
+            },
+            {
+              "type": "doc",
+              "label": "relativeProfileFolderPath",
+              "id": "pages/rig-package.irigconfig.relativeprofilefolderpath"
+            },
+            {
+              "type": "doc",
+              "label": "rigFound",
+              "id": "pages/rig-package.irigconfig.rigfound"
+            },
+            {
+              "type": "doc",
+              "label": "rigPackageName",
+              "id": "pages/rig-package.irigconfig.rigpackagename"
+            },
+            {
+              "type": "doc",
+              "label": "rigProfile",
+              "id": "pages/rig-package.irigconfig.rigprofile"
+            },
+            {
+              "type": "doc",
+              "label": "tryResolveConfigFilePath",
+              "id": "pages/rig-package.irigconfig.tryresolveconfigfilepath"
+            },
+            {
+              "type": "doc",
+              "label": "tryResolveConfigFilePathAsync",
+              "id": "pages/rig-package.irigconfig.tryresolveconfigfilepathasync"
             }
           ]
         },
@@ -12113,6 +12527,37 @@
         },
         {
           "type": "category",
+          "label": "AliasCommandLineAction",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.aliascommandlineaction"
+            },
+            {
+              "type": "doc",
+              "label": "(constructor)",
+              "id": "pages/ts-command-line.aliascommandlineaction._constructor_"
+            },
+            {
+              "type": "doc",
+              "label": "defaultParameters",
+              "id": "pages/ts-command-line.aliascommandlineaction.defaultparameters"
+            },
+            {
+              "type": "doc",
+              "label": "onExecute",
+              "id": "pages/ts-command-line.aliascommandlineaction.onexecute"
+            },
+            {
+              "type": "doc",
+              "label": "targetAction",
+              "id": "pages/ts-command-line.aliascommandlineaction.targetaction"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "CommandLineAction",
           "items": [
             {
@@ -12718,6 +13163,37 @@
         },
         {
           "type": "category",
+          "label": "IAliasCommandLineActionOptions",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/ts-command-line.ialiascommandlineactionoptions"
+            },
+            {
+              "type": "doc",
+              "label": "aliasName",
+              "id": "pages/ts-command-line.ialiascommandlineactionoptions.aliasname"
+            },
+            {
+              "type": "doc",
+              "label": "defaultParameters",
+              "id": "pages/ts-command-line.ialiascommandlineactionoptions.defaultparameters"
+            },
+            {
+              "type": "doc",
+              "label": "targetAction",
+              "id": "pages/ts-command-line.ialiascommandlineactionoptions.targetaction"
+            },
+            {
+              "type": "doc",
+              "label": "toolFilename",
+              "id": "pages/ts-command-line.ialiascommandlineactionoptions.toolfilename"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IBaseCommandLineDefinition",
           "items": [
             {
@@ -13231,11 +13707,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "doc",
-      "label": "@rushstack/worker-pool",
-      "id": "pages/worker-pool"
     }
   ]
 }

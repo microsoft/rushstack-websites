@@ -15,5 +15,5 @@ This abstraction is used by the mixin pattern. It describes a class constructor.
 **Signature:**
 
 ```typescript
-export declare type Constructor<T = {}> = new (...args: any[]) => T;
+export type Constructor<T = {}> = new (...args: any[]) => T;
 ```

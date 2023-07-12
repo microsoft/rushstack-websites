@@ -10,24 +10,23 @@ pagination_next: null
 
 ## IHeftPlugin interface
 
+The interface used for all Heft plugins.
 
 **Signature:**
 
 ```typescript
-export interface IHeftPlugin<TOptions = void> 
+export interface IHeftPlugin<TSession extends IHeftLifecycleSession | IHeftTaskSession = IHeftLifecycleSession | IHeftTaskSession, TOptions = void> 
 ```
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [accessor?](./heft.iheftplugin.accessor.md) | <code>readonly</code> | object | _(Optional)_ |
-|  [optionsSchema?](./heft.iheftplugin.optionsschema.md) | <code>readonly</code> | [JsonSchema](./node-core-library.jsonschema.md) | _(Optional)_ |
-|  [pluginName](./heft.iheftplugin.pluginname.md) | <code>readonly</code> | string |  |
+|  [accessor?](./heft.iheftplugin.accessor.md) | <code>readonly</code> | object | _(Optional)_ The accessor provided by the plugin. This accessor can be obtained by other plugins within the same phase by calling <code>session.requestAccessToPlugin(...)</code>, and is used by other plugins to interact with hooks or properties provided by the host plugin. |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [apply(heftSession, heftConfiguration, options)](./heft.iheftplugin.apply.md) |  |
+|  [apply(session, heftConfiguration, pluginOptions)](./heft.iheftplugin.apply.md) | Apply the plugin to the session. Plugins are expected to hook into session hooks to provide plugin implementation. The <code>apply(...)</code> method is called once per phase. |
 

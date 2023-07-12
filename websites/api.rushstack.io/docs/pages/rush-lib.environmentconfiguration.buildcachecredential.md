@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Provides a credential for reading from and writing to a remote build cache, if configured. See [EnvironmentVariableNames.RUSH\_BUILD\_CACHE\_CREDENTIAL](./rush-lib.environmentvariablenames.md)
+Provides a credential for reading from and writing to a remote build cache, if configured. See 
 
 **Signature:**
 

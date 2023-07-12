@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ApiParameterListMixin.overloadIndex property
 
-When a function has multiple overloaded declarations, this zero-based integer index can be used to unqiuely identify them.
+When a function has multiple overloaded declarations, this one-based integer index can be used to uniquely identify them.
 
 **Signature:**
 

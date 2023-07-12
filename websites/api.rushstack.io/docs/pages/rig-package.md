@@ -27,5 +27,6 @@ The `config/rig.json` file is a system that Node.js build tools can support, in 
 |  Interface | Description |
 |  --- | --- |
 |  [ILoadForProjectFolderOptions](./rig-package.iloadforprojectfolderoptions.md) | Options for [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md)<></>. |
+|  [IRigConfig](./rig-package.irigconfig.md) | This is the main API for loading the <code>config/rig.json</code> file format. |
 |  [IRigConfigJson](./rig-package.irigconfigjson.md) | Represents the literal contents of the <code>config/rig.json</code> file. |
 

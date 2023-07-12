@@ -15,7 +15,7 @@ The Rush Stack lint rules discourage usage of `null`<></>. However, JSON parsers
 **Signature:**
 
 ```typescript
-export declare type JsonNull = null;
+export type JsonNull = null;
 ```
 
 ## Remarks

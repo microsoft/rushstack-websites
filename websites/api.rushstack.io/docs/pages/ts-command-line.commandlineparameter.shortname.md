@@ -15,5 +15,5 @@ An optional short name for the flag including the dash, e.g. "-d"
 **Signature:**
 
 ```typescript
-readonly shortName: string | undefined;
+get shortName(): string | undefined;
 ```

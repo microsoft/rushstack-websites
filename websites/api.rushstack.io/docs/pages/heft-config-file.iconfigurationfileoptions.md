@@ -17,7 +17,7 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type IConfigurationFileOptions<TConfigurationFile> = IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile> | IConfigurationFileOptionsWithJsonSchemaObject<TConfigurationFile>;
+export type IConfigurationFileOptions<TConfigurationFile> = IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile> | IConfigurationFileOptionsWithJsonSchemaObject<TConfigurationFile>;
 ```
 **References:** [IConfigurationFileOptionsWithJsonSchemaFilePath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.md)<></>, [IConfigurationFileOptionsWithJsonSchemaObject](./heft-config-file.iconfigurationfileoptionswithjsonschemaobject.md)
 

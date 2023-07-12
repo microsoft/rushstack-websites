@@ -14,5 +14,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare type IgnoreStringFunction = (filePath: string, stringName: string) => boolean;
+export type IgnoreStringFunction = (filePath: string, stringName: string) => boolean;
 ```

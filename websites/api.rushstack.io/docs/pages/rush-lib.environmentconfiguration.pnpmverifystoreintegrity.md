@@ -13,7 +13,7 @@ pagination_next: null
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-If specified, enables or disables integrity verification of the pnpm store during install. See [EnvironmentVariableNames.RUSH\_PNPM\_VERIFY\_STORE\_INTEGRITY](./rush-lib.environmentvariablenames.md)
+If specified, enables or disables integrity verification of the pnpm store during install. See 
 
 **Signature:**
 

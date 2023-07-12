@@ -16,71 +16,48 @@ Heft is a config-driven toolchain that invokes other popular tools such as TypeS
 
 |  Class | Description |
 |  --- | --- |
-|  [BuildStageHooks](./heft.buildstagehooks.md) |  |
-|  [BuildSubstageHooksBase](./heft.buildsubstagehooksbase.md) |  |
-|  [BundleSubstageHooks](./heft.bundlesubstagehooks.md) |  |
-|  [CleanStageHooks](./heft.cleanstagehooks.md) |  |
-|  [CompileSubstageHooks](./heft.compilesubstagehooks.md) |  |
-|  [HeftCommandLine](./heft.heftcommandline.md) | **_(BETA)_** Command line utilities provided for Heft plugin developers. |
+|  [CancellationToken](./heft.cancellationtoken.md) | **_(BETA)_** A cancellation token. Can be used to signal that an ongoing process has either been cancelled or timed out. |
+|  [CancellationTokenSource](./heft.cancellationtokensource.md) | **_(BETA)_** A cancellation token source. Produces cancellation tokens that can be used to signal that an ongoing process has either been cancelled or timed out. |
 |  [HeftConfiguration](./heft.heftconfiguration.md) |  |
-|  [HeftSession](./heft.heftsession.md) |  |
-|  [MetricsCollectorHooks](./heft.metricscollectorhooks.md) | Tap these hooks to record build metrics, to a file, for example. |
-|  [ScopedLogger](./heft.scopedlogger.md) |  |
-|  [TestStageHooks](./heft.teststagehooks.md) |  |
-
-## Abstract Classes
-
-|  Abstract Class | Description |
-|  --- | --- |
-|  [StageHooksBase](./heft.stagehooksbase.md) |  |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [IBuildStageContext](./heft.ibuildstagecontext.md) |  |
-|  [IBuildStageProperties](./heft.ibuildstageproperties.md) |  |
-|  [IBuildSubstage](./heft.ibuildsubstage.md) |  |
-|  [IBundleSubstage](./heft.ibundlesubstage.md) |  |
-|  [IBundleSubstageProperties](./heft.ibundlesubstageproperties.md) |  |
-|  [ICleanStageContext](./heft.icleanstagecontext.md) |  |
-|  [ICleanStageProperties](./heft.icleanstageproperties.md) |  |
-|  [ICompileSubstage](./heft.icompilesubstage.md) |  |
-|  [ICompileSubstageProperties](./heft.icompilesubstageproperties.md) |  |
-|  [ICustomActionOptions](./heft.icustomactionoptions.md) | **_(BETA)_** |
-|  [ICustomActionParameterBase](./heft.icustomactionparameterbase.md) | **_(BETA)_** |
-|  [ICustomActionParameterFlag](./heft.icustomactionparameterflag.md) | **_(BETA)_** |
-|  [ICustomActionParameterInteger](./heft.icustomactionparameterinteger.md) | **_(BETA)_** |
-|  [ICustomActionParameterString](./heft.icustomactionparameterstring.md) | **_(BETA)_** |
-|  [ICustomActionParameterStringList](./heft.icustomactionparameterstringlist.md) | **_(BETA)_** |
-|  [IHeftActionConfiguration](./heft.iheftactionconfiguration.md) | The base action configuration that all custom action configuration files should inherit from. |
-|  [IHeftActionConfigurationOptions](./heft.iheftactionconfigurationoptions.md) | Options to be used when retrieving the action configuration. |
-|  [IHeftBaseParameter](./heft.iheftbaseparameter.md) | **_(BETA)_** The base set of utility values provided in every object returned when registering a parameter. |
-|  [IHeftPlugin](./heft.iheftplugin.md) |  |
-|  [IHeftSessionHooks](./heft.iheftsessionhooks.md) |  |
+|  [ICancellationTokenSourceOptions](./heft.icancellationtokensourceoptions.md) | **_(BETA)_** Options for the cancellation token source. |
+|  [ICopyOperation](./heft.icopyoperation.md) | Used to specify a selection of files to copy from a specific source folder to one or more destination folders. |
+|  [IDeleteOperation](./heft.ideleteoperation.md) | Used to specify a selection of source files to delete from the specified source folder. |
+|  [IFileSelectionSpecifier](./heft.ifileselectionspecifier.md) | Used to specify a selection of one or more files. |
+|  [IGlobOptions](./heft.igloboptions.md) | A supported subset of options used when globbing files. |
+|  [IHeftDefaultParameters](./heft.iheftdefaultparameters.md) | The default parameters provided by Heft. |
+|  [IHeftLifecycleCleanHookOptions](./heft.iheftlifecyclecleanhookoptions.md) | Options provided to the clean hook. |
+|  [IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md) | Hooks that are available to the lifecycle plugin. |
+|  [IHeftLifecyclePlugin](./heft.iheftlifecycleplugin.md) | The interface that Heft lifecycle plugins must implement. Lifecycle plugins are used to provide functionality that affects the lifecycle of the Heft run. As such, they do not belong to any particular Heft phase. |
+|  [IHeftLifecycleSession](./heft.iheftlifecyclesession.md) | The lifecycle session is responsible for providing session-specific information to Heft lifecycle plugins. The session provides access to the hooks that Heft will run as part of lifecycle execution, as well as access to parameters provided via the CLI. The session is also how you request access to other lifecycle plugins. |
+|  [IHeftLifecycleToolFinishHookOptions](./heft.iheftlifecycletoolfinishhookoptions.md) | Options provided to the toolFinish hook. |
+|  [IHeftLifecycleToolStartHookOptions](./heft.iheftlifecycletoolstarthookoptions.md) | Options provided to the toolStart hook. |
+|  [IHeftParameters](./heft.iheftparameters.md) | Parameters provided to a Heft plugin. |
+|  [IHeftParsedCommandLine](./heft.iheftparsedcommandline.md) | The type of [IHeftTaskSession.parsedCommandLine](./heft.ihefttasksession.parsedcommandline.md)<></>, which exposes details about the command line that was used to invoke Heft. |
+|  [IHeftPlugin](./heft.iheftplugin.md) | The interface used for all Heft plugins. |
+|  [IHeftRecordMetricsHookOptions](./heft.iheftrecordmetricshookoptions.md) |  |
+|  [IHeftTaskFileOperations](./heft.ihefttaskfileoperations.md) | Options provided to the <code>registerFileOperations</code> hook. |
+|  [IHeftTaskHooks](./heft.ihefttaskhooks.md) | Hooks that are available to the task plugin. |
+|  [IHeftTaskPlugin](./heft.ihefttaskplugin.md) | The interface that Heft task plugins must implement. Task plugins are used to provide the implementation of a specific task. |
+|  [IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md) | Options provided to the <code>run</code> hook. |
+|  [IHeftTaskRunIncrementalHookOptions](./heft.ihefttaskrunincrementalhookoptions.md) | Options provided to the 'runIncremental' hook. |
+|  [IHeftTaskSession](./heft.ihefttasksession.md) | The task session is responsible for providing session-specific information to Heft task plugins. The session provides access to the hooks that Heft will run as part of task execution, as well as access to parameters provided via the CLI. The session is also how you request access to other task plugins. |
+|  [IIncrementalCopyOperation](./heft.iincrementalcopyoperation.md) | Used to specify a selection of files to copy from a specific source folder to one or more destination folders. |
 |  [IMetricsData](./heft.imetricsdata.md) |  |
-|  [IParameterAssociatedActionNames](./heft.iparameterassociatedactionnames.md) | **_(BETA)_** The configuration interface for associating a parameter definition with a Heft command line action in [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md)<></>. |
-|  [IPostBuildSubstage](./heft.ipostbuildsubstage.md) |  |
-|  [IPreCompileSubstage](./heft.iprecompilesubstage.md) |  |
+|  [IRigPackageResolver](./heft.irigpackageresolver.md) | Rig resolves requested tools from the project's Heft rig. |
+|  [IRunScript](./heft.irunscript.md) | **_(BETA)_** Interface used by scripts that are run by the RunScriptPlugin. |
 |  [IRunScriptOptions](./heft.irunscriptoptions.md) | **_(BETA)_** Options provided to scripts that are run using the RunScriptPlugin. |
-|  [IScopedLogger](./heft.iscopedlogger.md) |  |
-|  [IStageContext](./heft.istagecontext.md) |  |
-|  [ITestStageContext](./heft.iteststagecontext.md) |  |
-|  [ITestStageProperties](./heft.iteststageproperties.md) |  |
+|  [IScopedLogger](./heft.iscopedlogger.md) | A logger which is used to emit errors and warnings to the console, as well as to write to the console. Messaged emitted by the scoped logger are prefixed with the name of the scoped logger. |
+|  [IWatchedFileState](./heft.iwatchedfilestate.md) | Information about the state of a watched file. |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [CustomActionParameterType](./heft.customactionparametertype.md) | **_(BETA)_** |
-|  [ICustomActionParameter](./heft.icustomactionparameter.md) | **_(BETA)_** |
-|  [IHeftChoiceListParameter](./heft.iheftchoicelistparameter.md) | **_(BETA)_** The object returned when registering a choiceList type parameter. |
-|  [IHeftChoiceParameter](./heft.iheftchoiceparameter.md) | **_(BETA)_** The object returned when registering a choice type parameter. |
-|  [IHeftFlagParameter](./heft.iheftflagparameter.md) | **_(BETA)_** The object returned when registering a flag type parameter. |
-|  [IHeftIntegerParameter](./heft.iheftintegerparameter.md) | **_(BETA)_** The object returned when registering an integer type parameter. |
-|  [IHeftRegisterParameterOptions](./heft.iheftregisterparameteroptions.md) | **_(BETA)_** The options object provided to the command line parser when registering a parameter in addition to the action names used to associate the parameter with. |
-|  [IHeftStringListParameter](./heft.iheftstringlistparameter.md) | **_(BETA)_** The object returned when registering a stringList type parameter. |
-|  [IHeftStringParameter](./heft.iheftstringparameter.md) | **_(BETA)_** The object returned when registering a string type parameter. |
-|  [RegisterAction](./heft.registeraction.md) | **_(BETA)_** |
-|  [RequestAccessToPluginByNameCallback](./heft.requestaccesstopluginbynamecallback.md) | **_(BETA)_** |
+|  [GlobFn](./heft.globfn.md) | Glob a set of files and return a list of paths that match the provided patterns. |
+|  [WatchGlobFn](./heft.watchglobfn.md) | Glob a set of files and return a map of paths that match the provided patterns to their current state in the watcher. |
 

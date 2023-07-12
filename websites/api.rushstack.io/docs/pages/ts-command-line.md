@@ -16,6 +16,7 @@ An object-oriented command-line parser for TypeScript projects.
 
 |  Class | Description |
 |  --- | --- |
+|  [AliasCommandLineAction](./ts-command-line.aliascommandlineaction.md) | <p>Represents a sub-command that is part of the CommandLineParser command line. The sub-command is an alias for another existing action.</p><p>The alias name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs").</p> |
 |  [CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md) | The data type returned by [CommandLineParameterProvider.defineChoiceListParameter()](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)<></>. |
 |  [CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md) | The data type returned by [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)<></>. |
 |  [CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md) | The data type returned by [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)<></>. |
@@ -50,6 +51,7 @@ An object-oriented command-line parser for TypeScript projects.
 
 |  Interface | Description |
 |  --- | --- |
+|  [IAliasCommandLineActionOptions](./ts-command-line.ialiascommandlineactionoptions.md) | Options for the AliasCommandLineAction constructor. |
 |  [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md) | For use with CommandLineParser, this interface represents a generic command-line parameter |
 |  [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md) | The common base interface for parameter types that accept an argument. |
 |  [ICommandLineActionOptions](./ts-command-line.icommandlineactionoptions.md) | Options for the CommandLineAction constructor. |

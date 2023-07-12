@@ -23,6 +23,6 @@ export interface IExtractorConfigLoadForFolderOptions
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [packageJsonLookup?](./api-extractor.iextractorconfigloadforfolderoptions.packagejsonlookup.md) |  | [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | _(Optional)_ An already constructed <code>PackageJsonLookup</code> cache object to use. If omitted, a temporary one will be constructed. |
-|  [rigConfig?](./api-extractor.iextractorconfigloadforfolderoptions.rigconfig.md) |  | [RigConfig](./rig-package.rigconfig.md) | _(Optional)_ An already constructed <code>RigConfig</code> object. If omitted, then a new <code>RigConfig</code> object will be constructed. |
+|  [rigConfig?](./api-extractor.iextractorconfigloadforfolderoptions.rigconfig.md) |  | [IRigConfig](./rig-package.irigconfig.md) | _(Optional)_ An already constructed <code>RigConfig</code> object. If omitted, then a new <code>RigConfig</code> object will be constructed. |
 |  [startingFolder](./api-extractor.iextractorconfigloadforfolderoptions.startingfolder.md) |  | string | The folder path to start from when searching for api-extractor.json. |
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICertificateGenerationOptions.subjectAltNames property
 
-The DNS Subject names to issue the certificate for.
+The DNS Subject names to issue the certificate for. Defaults to \['localhost'\].
 
 **Signature:**
 

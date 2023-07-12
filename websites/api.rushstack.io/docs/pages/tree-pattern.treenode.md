@@ -15,7 +15,7 @@ Indicates the tree-like data structure that [TreePattern](./tree-pattern.treepat
 **Signature:**
 
 ```typescript
-export declare type TreeNode = any;
+export type TreeNode = any;
 ```
 
 ## Remarks

@@ -15,5 +15,5 @@ Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-libr
 **Signature:**
 
 ```typescript
-export declare type FileSystemCopyFilesFilter = (sourcePath: string, destinationPath: string) => boolean;
+export type FileSystemCopyFilesFilter = (sourcePath: string, destinationPath: string) => boolean;
 ```

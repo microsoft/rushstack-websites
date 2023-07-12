@@ -10,6 +10,8 @@ pagination_next: null
 
 ## IHeftPlugin.accessor property
 
+The accessor provided by the plugin. This accessor can be obtained by other plugins within the same phase by calling `session.requestAccessToPlugin(...)`<></>, and is used by other plugins to interact with hooks or properties provided by the host plugin.
+
 **Signature:**
 
 ```typescript

@@ -15,7 +15,7 @@ Result from the minifier.
 **Signature:**
 
 ```typescript
-export declare type IModuleMinificationResult = IModuleMinificationErrorResult | IModuleMinificationSuccessResult;
+export type IModuleMinificationResult = IModuleMinificationErrorResult | IModuleMinificationSuccessResult;
 ```
 **References:** [IModuleMinificationErrorResult](./module-minifier.imoduleminificationerrorresult.md)<></>, [IModuleMinificationSuccessResult](./module-minifier.imoduleminificationsuccessresult.md)
 

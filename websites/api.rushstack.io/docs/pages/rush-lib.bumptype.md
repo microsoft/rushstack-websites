@@ -26,6 +26,5 @@ export declare enum BumpType
 |  minor | <code>4</code> |  |
 |  none | <code>0</code> |  |
 |  patch | <code>2</code> |  |
-|  preminor | <code>3</code> |  |
 |  prerelease | <code>1</code> |  |
 

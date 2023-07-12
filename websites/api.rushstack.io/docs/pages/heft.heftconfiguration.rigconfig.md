@@ -15,5 +15,5 @@ The rig.json configuration for this project, if present.
 **Signature:**
 
 ```typescript
-get rigConfig(): RigConfig;
+get rigConfig(): IRigConfig;
 ```

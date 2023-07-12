@@ -15,5 +15,5 @@ This represents the available Package Manager tools as a string
 **Signature:**
 
 ```typescript
-export declare type PackageManagerName = 'pnpm' | 'npm' | 'yarn';
+export type PackageManagerName = 'pnpm' | 'npm' | 'yarn';
 ```
