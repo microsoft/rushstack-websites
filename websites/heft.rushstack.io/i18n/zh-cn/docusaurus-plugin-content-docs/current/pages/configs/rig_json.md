@@ -2,31 +2,31 @@
 title: rig.json
 ---
 
-## Template
+## 模板
 
-**&lt;project folder&gt;/config/rig.json**
+**&lt;项目文件夹&gt;/config/rig.json**
 
 ```js
-// The "rig.json" file directs tools to look for their config files in an external package.
-// Documentation for this system: https://www.npmjs.com/package/@rushstack/rig-package
+// "rig.json" 文件指导工具在外部包中查找其配置文件。
+// 这个系统的文档：https://www.npmjs.com/package/@rushstack/rig-package
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rig-package/rig.schema.json",
 
   /**
-   * (Required) The name of the rig package to inherit from.
-   * It should be an NPM package name with the "-rig" suffix.
+   * （必填）要继承的 rig 包的名称。
+   * 它应该是带有 "-rig" 后缀的 NPM 包名称。
    */
   "rigPackageName": "example-rig",
   /**
-   * (Optional) Selects a config profile from the rig package.  The name must consist of
-   * lowercase alphanumeric words separated by hyphens, for example "sample-profile".
-   * If omitted, then the "default" profile will be used."
+   * （可选）从 rig 包中选择一个配置文件。名称必须由
+   * 用连字符分隔的小写字母数字单词组成，例如 "sample-profile"。
+   * 如果省略，则将使用 "default" 配置文件。
    */
   "rigProfile": "web-library"
 }
 ```
 
-## See also
+## 参见
 
-- [Using rig packages](../intro/rig_packages.md) with Heft
-- [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) documentation
+- 使用 Heft 的 [rig 包](../intro/rig_packages.md)
+- [@rushstack/rig-package](https://www.npmjs.com/package/@rushstack/rig-package) 文档
