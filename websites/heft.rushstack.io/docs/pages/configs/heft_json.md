@@ -136,7 +136,7 @@ title: heft.json
         //    */
         //   // "includeGlobs": [ "**/temp" ]
         // }
-      ]
+      ],
 
       /**
        * A list of phase names that must be run before this phase can start.
