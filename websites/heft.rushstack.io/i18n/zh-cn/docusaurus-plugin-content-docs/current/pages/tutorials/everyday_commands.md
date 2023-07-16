@@ -1,5 +1,5 @@
 ---
-title: Everyday Heft commands
+title: 日常Heft命令
 ---
 
 [Hello World](../tutorials/hello_world.md)教程介绍了`heft build`和`heft test`命令行 action。在本节中，我们将介绍一些特别有用的日常命令。有关 action 和 parameter 的完整列表，请参考[Heft 命令行](../intro/cli.md)参考。

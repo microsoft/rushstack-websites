@@ -1,5 +1,5 @@
 ---
-title: Help
+title: 帮助
 ---
 
 Heft is actively developed by the [Rush Stack](@rushstack/) community. There are various community options for help:

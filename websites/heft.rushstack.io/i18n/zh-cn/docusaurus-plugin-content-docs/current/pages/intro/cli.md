@@ -1,5 +1,5 @@
 ---
-title: Heft command line
+title: Heft命令行
 ---
 
 ## Heft 基础配置

@@ -1,5 +1,5 @@
 ---
-title: Interfacing with Rush
+title: 与Rush的接口
 ---
 
 [Hello World](../tutorials/hello_world.md)教程演示了如何在独立项目中使用 Heft。现在，让我们来看看 Heft 在 Rush monorepo 环境中是如何工作的。

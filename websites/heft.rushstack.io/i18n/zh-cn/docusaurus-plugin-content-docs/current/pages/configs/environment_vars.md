@@ -1,5 +1,5 @@
 ---
-title: Environment variables
+title: 环境变量
 ---
 
 Heft 的行为可以通过下面描述的 shell 环境变量进行自定义：

@@ -1,5 +1,5 @@
 ---
-title: Adding more tasks
+title: 添加更多任务
 ---
 
 _本节将继续从[Hello World](../tutorials/hello_world.md)教程中的教程项目。_

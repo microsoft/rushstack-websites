@@ -1,5 +1,5 @@
 ---
-title: Heft architecture
+title: Heft架构
 ---
 
 ## 先读这个 🎈
