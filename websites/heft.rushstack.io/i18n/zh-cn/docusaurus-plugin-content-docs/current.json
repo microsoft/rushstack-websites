@@ -1,50 +1,50 @@
 {
   "version.label": {
-    "message": "Current Release",
+    "message": "当前发布",
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.Introduction": {
-    "message": "Introduction",
+    "message": "介绍",
     "description": "The label for category Introduction in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Heft tutorials": {
-    "message": "Heft tutorials",
+    "message": "Heft 教程",
     "description": "The label for category Heft tutorials in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Advanced topics": {
-    "message": "Advanced topics",
+    "message": "高级话题",
     "description": "The label for category Advanced topics in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Heft plugins": {
-    "message": "Heft plugins",
+    "message": "Heft 插件",
     "description": "The label for category Heft plugins in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Heft config files": {
-    "message": "Heft config files",
+    "message": "Heft 配置文件",
     "description": "The label for category Heft config files in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Support": {
-    "message": "Support",
+    "message": "支持",
     "description": "The label for category Support in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.doc.(package index)": {
-    "message": "(package index)",
+    "message": "(包索引)",
     "description": "The label for the doc item (package index) in sidebar docsSidebar, linking to the doc pages/plugins/package_index"
   },
   "sidebar.docsSidebar.doc.API Extractor": {
-    "message": "API Extractor",
+    "message": "API 提取器",
     "description": "The label for the doc item API Extractor in sidebar docsSidebar, linking to the doc pages/plugins/api-extractor"
   },
   "sidebar.docsSidebar.doc.Copy files": {
-    "message": "Copy files",
+    "message": "复制文件",
     "description": "The label for the doc item Copy files in sidebar docsSidebar, linking to the doc pages/plugins/copy-files"
   },
   "sidebar.docsSidebar.doc.Delete files": {
-    "message": "Delete files",
+    "message": "删除文件",
     "description": "The label for the doc item Delete files in sidebar docsSidebar, linking to the doc pages/plugins/delete-files"
   },
   "sidebar.docsSidebar.doc.Dev certificate": {
-    "message": "Dev certificate",
+    "message": "Dev 证书",
     "description": "The label for the doc item Dev certificate in sidebar docsSidebar, linking to the doc pages/plugins/dev-cert"
   },
   "sidebar.docsSidebar.doc.Jest": {
@@ -56,11 +56,11 @@
     "description": "The label for the doc item ESlint / TSLint in sidebar docsSidebar, linking to the doc pages/plugins/lint"
   },
   "sidebar.docsSidebar.doc.Node.js service": {
-    "message": "Node.js service",
+    "message": "Node.js 服务",
     "description": "The label for the doc item Node.js service in sidebar docsSidebar, linking to the doc pages/plugins/node-service"
   },
   "sidebar.docsSidebar.doc.Run script": {
-    "message": "Run script",
+    "message": "运行脚本",
     "description": "The label for the doc item Run script in sidebar docsSidebar, linking to the doc pages/plugins/run-script"
   },
   "sidebar.docsSidebar.doc.Sass": {
@@ -68,7 +68,7 @@
     "description": "The label for the doc item Sass in sidebar docsSidebar, linking to the doc pages/plugins/sass"
   },
   "sidebar.docsSidebar.doc.Serverless Stack": {
-    "message": "Serverless Stack",
+    "message": "无服务器栈",
     "description": "The label for the doc item Serverless Stack in sidebar docsSidebar, linking to the doc pages/plugins/serverless-stack"
   },
   "sidebar.docsSidebar.doc.Storybook": {
