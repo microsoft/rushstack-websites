@@ -32,7 +32,7 @@
     "description": "The label for the doc item (package index) in sidebar docsSidebar, linking to the doc pages/plugins/package_index"
   },
   "sidebar.docsSidebar.doc.API Extractor": {
-    "message": "API 提取器",
+    "message": "API Extractor",
     "description": "The label for the doc item API Extractor in sidebar docsSidebar, linking to the doc pages/plugins/api-extractor"
   },
   "sidebar.docsSidebar.doc.Copy files": {
@@ -68,7 +68,7 @@
     "description": "The label for the doc item Sass in sidebar docsSidebar, linking to the doc pages/plugins/sass"
   },
   "sidebar.docsSidebar.doc.Serverless Stack": {
-    "message": "无服务器栈",
+    "message": "Serverless Stack",
     "description": "The label for the doc item Serverless Stack in sidebar docsSidebar, linking to the doc pages/plugins/serverless-stack"
   },
   "sidebar.docsSidebar.doc.Storybook": {
