@@ -1,14 +1,86 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Current Release",
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.Introduction": {
     "message": "Introduction",
     "description": "The label for category Introduction in sidebar docsSidebar"
   },
+  "sidebar.docsSidebar.category.Heft tutorials": {
+    "message": "Heft tutorials",
+    "description": "The label for category Heft tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced topics": {
+    "message": "Advanced topics",
+    "description": "The label for category Advanced topics in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft plugins": {
+    "message": "Heft plugins",
+    "description": "The label for category Heft plugins in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Heft config files": {
+    "message": "Heft config files",
+    "description": "The label for category Heft config files in sidebar docsSidebar"
+  },
   "sidebar.docsSidebar.category.Support": {
     "message": "Support",
     "description": "The label for category Support in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.doc.(package index)": {
+    "message": "(package index)",
+    "description": "The label for the doc item (package index) in sidebar docsSidebar, linking to the doc pages/plugins/package_index"
+  },
+  "sidebar.docsSidebar.doc.API Extractor": {
+    "message": "API Extractor",
+    "description": "The label for the doc item API Extractor in sidebar docsSidebar, linking to the doc pages/plugins/api-extractor"
+  },
+  "sidebar.docsSidebar.doc.Copy files": {
+    "message": "Copy files",
+    "description": "The label for the doc item Copy files in sidebar docsSidebar, linking to the doc pages/plugins/copy-files"
+  },
+  "sidebar.docsSidebar.doc.Delete files": {
+    "message": "Delete files",
+    "description": "The label for the doc item Delete files in sidebar docsSidebar, linking to the doc pages/plugins/delete-files"
+  },
+  "sidebar.docsSidebar.doc.Dev certificate": {
+    "message": "Dev certificate",
+    "description": "The label for the doc item Dev certificate in sidebar docsSidebar, linking to the doc pages/plugins/dev-cert"
+  },
+  "sidebar.docsSidebar.doc.Jest": {
+    "message": "Jest",
+    "description": "The label for the doc item Jest in sidebar docsSidebar, linking to the doc pages/plugins/jest"
+  },
+  "sidebar.docsSidebar.doc.ESlint / TSLint": {
+    "message": "ESlint / TSLint",
+    "description": "The label for the doc item ESlint / TSLint in sidebar docsSidebar, linking to the doc pages/plugins/lint"
+  },
+  "sidebar.docsSidebar.doc.Node.js service": {
+    "message": "Node.js service",
+    "description": "The label for the doc item Node.js service in sidebar docsSidebar, linking to the doc pages/plugins/node-service"
+  },
+  "sidebar.docsSidebar.doc.Run script": {
+    "message": "Run script",
+    "description": "The label for the doc item Run script in sidebar docsSidebar, linking to the doc pages/plugins/run-script"
+  },
+  "sidebar.docsSidebar.doc.Sass": {
+    "message": "Sass",
+    "description": "The label for the doc item Sass in sidebar docsSidebar, linking to the doc pages/plugins/sass"
+  },
+  "sidebar.docsSidebar.doc.Serverless Stack": {
+    "message": "Serverless Stack",
+    "description": "The label for the doc item Serverless Stack in sidebar docsSidebar, linking to the doc pages/plugins/serverless-stack"
+  },
+  "sidebar.docsSidebar.doc.Storybook": {
+    "message": "Storybook",
+    "description": "The label for the doc item Storybook in sidebar docsSidebar, linking to the doc pages/plugins/storybook"
+  },
+  "sidebar.docsSidebar.doc.TypeScript": {
+    "message": "TypeScript",
+    "description": "The label for the doc item TypeScript in sidebar docsSidebar, linking to the doc pages/plugins/typescript"
+  },
+  "sidebar.docsSidebar.doc.Webpack": {
+    "message": "Webpack",
+    "description": "The label for the doc item Webpack in sidebar docsSidebar, linking to the doc pages/plugins/webpack"
   }
 }
