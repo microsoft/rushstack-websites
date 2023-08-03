@@ -10,92 +10,92 @@ title: sass.json
 | **Associated plugin:** | [Sass plugin](../plugins/sass.md) |
 <!-- prettier-ignore-end -->
 
-## Template
+## 模板
 
 ```js
 /**
- * Configuration for @rushstack/heft-sass-plugin
+ * @rushstack/heft-sass-plugin 的配置
  */
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft-sass-plugin.schema.json"
 
   /**
-   * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
-   * settings to be shared across multiple projects.
+   * 可选地指定另一个此文件扩展的 JSON 配置文件。这提供了在多个项目之间共享标准设置的方法。
    */
   // "extends": "base-project/config/serve-command.json",
 
   /**
-   * The root directory for project source code.
+   * 项目源代码的根目录。
    *
-   * Default value: "src/"
+   * 默认值："src/"
    */
   // "srcFolder": "src/",
 
   /**
-   * Output directory for generated Sass typings.
+   * 生成的 Sass 类型定义的输出目录。
    *
-   * Default value: "temp/sass-ts/"
+   * 默认值："temp/sass-ts/"
    */
   // "generatedTsFolder": "temp/sass-ts/",
 
   /**
-   * Optional additional folders to which Sass typings should be output.
+   * 可选的额外文件夹，Sass 类型定义应该输出到这些文件夹。
    */
   // "secondaryGeneratedTsFolders": [],
 
   /**
-   * Determines whether export values are wrapped in a default property, or not.
+   * 确定是否将导出值包装在默认属性中，或者不包装。
    *
-   * Default value: true
+   * 默认值：true
    */
   // "exportAsDefault": false,
 
   /**
-   * If specified, folders where compiled CSS files will be emitted to. They will be named by appending
-   * ".css" to the source file name for ease of reference translation, unless "preserveSCSSExtension" is set.
+   * 如果指定，编译过的 CSS 文件将被发射到哪些文件夹。为了方便引用翻译，
+   * 它们将通过在源文件名后面追加
+   * ".css" 来命名，除非设置了 "preserveSCSSExtension"。
    *
-   * Default value: undefined
+   * 默认值：undefined
    */
   // "cssOutputFolders": [],
 
   /**
-   * If set, when emitting compiled CSS from a file with a ".scss" extension, the emitted CSS will have
-   * the extension ".scss" instead of ".scss.css".
+   * 如果设置，当从带有 ".scss" 扩展名的文件中发射编译的 CSS 时，发射的 CSS 将具有
+   * 扩展名 ".scss"，而不是 ".scss.css"。
    *
-   * Default value: false
+   * 默认值：false
    */
   // "preserveSCSSExtension": true,
 
   /**
-   * Files with these extensions will pass through the Sass transpiler for typings generation.
+   * 具有这些扩展名的文件将通过 Sass 转译器进行类型生成。
    *
-   * Default value: [".sass", ".scss", ".css"]
+   * 默认值：[".sass", ".scss", ".css"]
    */
   // "fileExtensions": [".sass", ".scss"],
 
   /**
-   * Files with these extensions will be treated as non-module SCSS and pass through
-   * the Sass transpiler for typings generation.
+   * 具有这些扩展名的文件将被视为非模块 SCSS，并通过
+   * Sass 转译器进行类型生成。
    */
   // "nonModuleFileExtensions": [ ".css" ],
 
   /**
-   * A list of paths used when resolving Sass imports.  The paths should be relative to the project root.
+   * 用于解析 Sass 导入的路径列表。路径应该相对于项目根目录。
    *
-   * Default value: ["node_modules", "src"]
+   * 默认值：["node_modules", "src"]
    */
   // "importIncludePaths": ["node_modules", "src"],
 
   /**
-   * A list of file paths relative to the "src" folder that should be excluded from typings generation.
+   * 一个相对于 "src" 文件夹的文件路径列表，应该从类型生成中排除这些文件。
    *
-   * Default value: undefined
+   * 默认值：undefined
    */
   // "excludeFiles": []
 }
 ```
 
-## See also
+## 参见
 
-- [Sass plugin](../plugins/sass.md) task
+- [Sass 插件](../plugins/sass.md) 任务

@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: 入门指南
 ---
 
 ## 从何开始？

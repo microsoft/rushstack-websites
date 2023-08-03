@@ -1,30 +1,26 @@
 ---
-title: Adding more tasks
+title: 添加更多任务
 ---
 
-_This section continues the tutorial project from the [Hello World](../tutorials/hello_world.md) tutorial._
+_本节将继续从[Hello World](../tutorials/hello_world.md)教程中的教程项目。_
 
-Heft's [architecture](../intro/architecture.md) is designed around plugin packages. Heft ships with
-a collection of [official plugin packages](../plugins/package_index.md) for the most common build tasks.
-Their source code can be found in the [rushstack/heft-plugins](https://github.com/microsoft/rushstack/tree/main/heft-plugins)
-which is a great reference, if you want to create your own Heft plugins.
+Heft 的[架构](../intro/architecture.md)是围绕插件包设计的。Heft 带有一组[官方插件包](../plugins/package_index.md)，用于最常见的构建任务。它们的源代码可以在[rushstack/heft-plugins](https://github.com/microsoft/rushstack/tree/main/heft-plugins)中找到，如果你想创建自己的 Heft 插件，这是一个很好的参考。
 
-Continuing our tutorial, let's enable the two most common plugins: [Jest](../plugins/jest.md) for unit tests
-and [ESlint](../plugins/lint.md) for style checking.
+在我们的教程中，让我们启用两个最常见的插件：[Jest](../plugins/jest.md)用于单元测试，和[ESlint](../plugins/lint.md)用于样式检查。
 
-## Adding unit tests to your project
+## 将单元测试添加到您的项目
 
-1. First, we need to install the TypeScript typings for Jest. These steps continue the **my-app** project from the [Hello World](../tutorials/hello_world.md) tutorial. Recall that this project is not using Rush yet, so we will invoke PNPM directly to add the dependency to our **package.json** file (instead of using [rush add](@rushjs/pages/commands/rush_add/)):
+1. 首先，我们需要安装 Jest 的 TypeScript 类型定义。这些步骤将继续从[Hello World](../tutorials/hello_world.md)教程中的**my-app**项目。请记住，该项目尚未使用 Rush，因此我们将直接调用 PNPM 将依赖项添加到我们的**package.json**文件中（而不是使用[rush add](@rushjs/pages/commands/rush_add/)）：
 
    ```bash
    cd my-app
 
-   # Because @types packages don't follow SemVer, it's a good idea to use --save-exact
+   # 因为@types包不遵循SemVer，所以使用--save-exact是个好主意
    pnpm install --save-dev --save-exact @types/heft-jest
    pnpm install --save-dev @rushstack/heft-jest-plugin
    ```
 
-2. Add a `"test"` section to your Heft config file, producing this result:
+2. 将`"test"`部分添加到您的 Heft 配置文件中，生成这个结果：
 
    **config/heft.json**
 
@@ -33,36 +29,36 @@ and [ESlint](../plugins/lint.md) for style checking.
      "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
      "phasesByName": {
-       // Define a phase whose name is "build"
+       // 定义一个名为"build"的phase
        "build": {
          "phaseDescription": "This phase compiles the project source code.",
 
-         // Before invoking the compiler, delete the "dist" and "lib" folders
+         // 在调用编译器之前，删除"dist"和"lib"文件夹
          "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
 
          "tasksByName": {
-           // Define a task whose name is "typescript"
+           // 定义一个名为"typescript"的task
            "typescript": {
              "taskPlugin": {
-               // This task will invoke the TypeScript plugin
+               // 此task将调用TypeScript插件
                "pluginPackage": "@rushstack/heft-typescript-plugin"
              }
            }
          }
        },
 
-       // Define a phase whose name is "test"
+       // 定义一个名为"test"的phase
        "test": {
          "phaseDescription": "This phase runs the project's unit tests.",
 
-         // This phase requires the "build" phase to be run first
+         // 此phase需要先运行"build"phase
          "phaseDependencies": ["build"],
 
          "tasksByName": {
-           // Define a task whose name is "jest"
+           // 定义一个名为"jest"的task
            "jest": {
              "taskPlugin": {
-                // This task will invoke the Jest plugin
+                // 此task将调用Jest插件
                 "pluginPackage": "@rushstack/heft-jest-plugin"
              }
            }
@@ -72,12 +68,11 @@ and [ESlint](../plugins/lint.md) for style checking.
    }
    ```
 
-   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
+   _有关这些设置的完整描述，请参阅[heft.json](../configs/heft_json.md)模板。_
 
-   If you run `heft --help` you should now see `test` and `test-watch` command-line actions
-   because our second phase was named `"test"`.
+   如果你运行`heft --help`，你应该现在看到`test`和`test-watch`命令行 actions，因为我们的第二个 phase 被命名为`"test"`。
 
-3. Since [Jest's API](https://jestjs.io/docs/en/api) consists of global variables, we need to load them globally (whereas most other `@types` packages are loaded via `import` statements in your source code). Update your **tsconfig.json** file to say `"types": ["heft-jest", "node"]` instead of just `"types": ["node"]`. The result should look like this:
+3. 由于[Jest 的 API](https://jestjs.io/docs/en/api)包括全局变量，我们需要在全局加载它们（而大多数其他`@types`包是通过在源代码中的`import`语句加载的）。更新你的**tsconfig.json**文件，将`"types": ["node"]`改为`"types": ["heft-jest", "node"]`。结果应该如下所示：
 
    **my-app/tsconfig.json**
 
@@ -111,7 +106,7 @@ and [ESlint](../plugins/lint.md) for style checking.
    }
    ```
 
-4. Next, we need to add the [jest.config.json](https://jestjs.io/docs/en/configuration) config file. The presence of this file causes Heft to invoke the Jest test runner. Heft expects a specific file path **config/jest.config.json**. For most cases, your Jest configuration should simply extend Heft's standard preset as shown below:
+4. 接下来，我们需要添加[jest.config.json](https://jestjs.io/docs/en/configuration)配置文件。这个文件的存在使得 Heft 调用 Jest 测试运行器。Heft 期望一个特定的文件路径**config/jest.config.json**。在大多数情况下，你的 Jest 配置应该只是扩展 Heft 的标准预设，如下所示：
 
    **my-app/config/jest.config.json**
 
@@ -130,12 +125,12 @@ and [ESlint](../plugins/lint.md) for style checking.
    }
    ```
 
-   > **Note:** For web projects, you probably want to use
-   > `@rushstack/heft-jest-plugin/includes/jest-web.config.json` instead of `jest-shared.config.json`
-   > to support dual outputs as `lib-commonjs` and `lib` folders. See the [Jest plugin](../plugins/jest.md)
-   > documentation for details.
+   > **注意：**对于 web 项目，你可能想要使用
+   > `@rushstack/heft-jest-plugin/includes/jest-web.config.json`取代`jest-shared.config.json`
+   > 以支持作为`lib-commonjs`和`lib`文件夹的双输出。详情请参阅[Jest 插件](../plugins/jest.md)
+   > 文档。
 
-5. Now we need to add a unit test. Jest supports quite a lot of features, but for this tutorial we'll create a trivial test file. The `.test.ts` file extension causes Heft to look for unit tests in this file:
+5. 现在我们需要添加一个单元测试。Jest 支持相当多的功能，但对于这个教程，我们将创建一个简单的测试文件。`.test.ts`文件扩展名使 Heft 在这个文件中寻找单元测试：
 
    **my-app/src/example.test.ts**
 
@@ -147,27 +142,27 @@ and [ESlint](../plugins/lint.md) for style checking.
    });
    ```
 
-6. To run the test, we need to use the `heft test` action, because `heft build` normally skips testing to speed up development.
+6. 为了运行测试，我们需要使用`heft test`action，因为`heft build`通常会跳过测试以加快开发。
 
    ```bash
-   # View the command line help
+   # 查看命令行帮助
    heft test --help
 
-   # Build the project and run tests
+   # 构建项目并运行测试
    heft test --verbose
 
-   # Run Jest in watch mode
+   # 在观察模式下运行Jest
    heft test-watch
    ```
 
-   Wow, `heft test --help` has quite a lot of command-line parameters! Where did they come from?
-   They were added by the Jest plugin's [heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) manifest file because we loaded that plugin in our phase.
+   哇，`heft test --help`有很多命令行参数！它们从哪里来的？
+   它们是由 Jest 插件的[heft-plugin.json](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin/heft-plugin.json) manifest 文件添加的，因为我们在我们的 phase 中加载了那个插件。
 
-   (What happens if two different plugins define the same command-line parameter? Heft includes a sophisticated
-   disambiguation mechanism, for example allowing you to use `--jest:update-snapshots` instead of `--update-snapshots`
-   if some other plugin also defines a `--update-snapshots` parameter.)
+   （如果两个不同的插件定义了相同的命令行参数会怎样？Heft 包含了一个复杂的
+   区分机制，例如允许你使用`--jest:update-snapshots`代替`--update-snapshots`
+   如果其他插件也定义了一个`--update-snapshots`参数。）
 
-7. We should update our **package.json** script so that `pnpm run test` will run the Jest tests:
+7. 我们应该更新我们的**package.json**脚本，以便`pnpm run test`会运行 Jest 测试：
 
    **my-app/package.json**
 
@@ -183,29 +178,28 @@ and [ESlint](../plugins/lint.md) for style checking.
    }
    ```
 
-> **Note:** Do not invoke the `jest` command line directly. Doing so would run the tests that it finds
-> in `lib/**/*.js`, but it will not invoke Heft's other tasks needed to update those output files.
+> **注意：**不要直接调用`jest`命令行。这样做会运行它在`lib/**/*.js`中找到的测试，但它不会调用 Heft 的其他 task 需要更新那些输出文件。
 
-That's it for setting up Jest! Further information, including instructions for debugging tests, can be found in the [Jest plugin](../plugins/jest.md) reference and the [heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial) sample project.
+这就是设置 Jest 的所有内容！更多信息，包括调试测试的说明，可以在[Jest 插件](../plugins/jest.md)参考和[heft-node-jest-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-jest-tutorial)样本项目中找到。
 
-## Enabling linting
+## 启用 linting
 
-1. To ensure best practices and catch common mistakes, let's also enable the [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config) standard ruleset. First we need to add a few more NPM dependencies to our **package.json** file.
+1. 为了确保最佳实践并捕捉常见错误，让我们也启用[@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config)标准规则集。首先，我们需要向我们的**package.json**文件添加一些更多的 NPM 依赖。
 
    ```bash
    cd my-app
 
-   # Add the ESLint engine
+   # 添加ESLint引擎
    pnpm install --save-dev eslint
 
-   # Add Heft's plugin for ESLint
+   # 添加Heft的ESLint插件
    pnpm install --save-dev @rushstack/heft-lint-plugin
 
-   # Add Rush Stack's all-in-one lint ruleset
+   # 添加Rush Stack的一体化lint规则集
    pnpm install --save-dev @rushstack/eslint-config
    ```
 
-2. Update your Heft config file to add a task that loads `@rushstack/heft-lint-plugin` during the `heft build` phase:
+2. 更新你的 Heft 配置文件，添加一个在`heft build`阶段加载`@rushstack/heft-lint-plugin`的 task：
 
    **config/heft.json**
 
@@ -214,44 +208,44 @@ That's it for setting up Jest! Further information, including instructions for d
      "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
      "phasesByName": {
-       // Define a phase whose name is "build"
+       // 定义一个名为 "build" 的phase
        "build": {
          "phaseDescription": "Compiles the project source code",
 
-         // Before invoking the compiler, delete the "dist" and "lib" folders
+         // 在调用编译器之前，删除 "dist" 和 "lib" 文件夹
          "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
 
          "tasksByName": {
-           // Define a task whose name is "typescript"
+           // 定义一个名为 "typescript" 的task
            "typescript": {
              "taskPlugin": {
-               // This task will invoke the TypeScript plugin
+               // 这个task将调用TypeScript插件
                "pluginPackage": "@rushstack/heft-typescript-plugin"
              }
            },
 
-           // Define a task whose name is "lint"
+           // 定义一个名为 "lint" 的task
            "lint": {
-            // This task should run after "typescript" has completed
-            // because Heft optimizes ESLint by reusing the TypeScript
-            // compiler's AST analysis
+            // 这个task应在 "typescript" 完成后运行
+            // 因为Heft通过重用TypeScript
+            // 编译器的AST分析来优化ESLint
             "taskDependencies": ["typescript"],
             "taskPlugin": {
-              // This task will invoke the ESLint plugin
+              // 这个task将调用ESLint插件
               "pluginPackage": "@rushstack/heft-lint-plugin"
             }
           }
          }
        },
-       // Define a phase whose name is "test"
+       // 定义一个名为 "test" 的phase
        "test": {
-         // This phase requires the "build" phase to be run first
+         // 这个phase需要 "build" phase首先运行
          "phaseDependencies": ["build"],
          "tasksByName": {
-           // Define a task whose name is "jest"
+           // 定义一个名为 "jest" 的task
            "jest": {
              "taskPlugin": {
-                // This task will invoke the Jest plugin
+                // 这个task将调用Jest插件
                 "pluginPackage": "@rushstack/heft-jest-plugin"
              }
            }
@@ -261,14 +255,14 @@ That's it for setting up Jest! Further information, including instructions for d
    }
    ```
 
-   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
+   _关于这些设置的完整描述，请参见[heft.json](../configs/heft_json.md)模板。_
 
-3. Next, create the [.eslintrc.js](https://eslint.org/docs/user-guide/configuring) config file. For this tutorial we'll just use the official Rush Stack ruleset:
+3. 接下来，创建[.eslintrc.js](https://eslint.org/docs/user-guide/configuring)配置文件。对于本教程，我们将只使用官方的 Rush Stack 规则集：
 
    **my-app/.eslintrc.js**
 
    ```js
-   // This is a workaround for https://github.com/eslint/eslint/issues/3458
+   // 这是对https://github.com/eslint/eslint/issues/3458的解决方案
    require('@rushstack/eslint-config/patch/modern-module-resolution');
 
    module.exports = {
@@ -277,9 +271,9 @@ That's it for setting up Jest! Further information, including instructions for d
    };
    ```
 
-   _Note: If your project uses the [React](https://reactjs.org/) framework, you should also extend from the `"@rushstack/eslint-config/mixins/react"` mixin. See [the documentation](https://www.npmjs.com/package/@rushstack/eslint-config) for details about `@rushstack/eslint-config` "profiles" and "mixins"._
+   _注意：如果你的项目使用[React](https://reactjs.org/)框架，你也应该从`"@rushstack/eslint-config/mixins/react"`混入扩展。关于`@rushstack/eslint-config`的"profiles"和"mixins"的详细信息，请参见[文档](https://www.npmjs.com/package/@rushstack/eslint-config)。_
 
-4. To test it out, try updating your **start.ts** source file to introduce a lint issue:
+4. 为了测试它，尝试更新你的**start.ts**源文件以引入一个 lint 问题：
 
    **my-app/src/start.ts**
 
@@ -291,7 +285,7 @@ That's it for setting up Jest! Further information, including instructions for d
    }
    ```
 
-   When you run `pnpm run build`, you should see a log message like this:
+   当你运行`pnpm run build`时，你应该看到像这样的日志信息：
 
    ```
    -------------------- Finished (3.555s) --------------------
@@ -299,7 +293,7 @@ That's it for setting up Jest! Further information, including instructions for d
    [build:lint] src/start.ts:3:8 - (@typescript-eslint/explicit-function-return-type) Missing return type on function.
    ```
 
-   To fix the problem, fix the code to add the missing return type, and it should now build successfully:
+   要解决这个问题，修复代码以添加缺失的返回类型，现在它应该能成功构建：
 
    **my-app/src/start.ts**
 
@@ -311,8 +305,7 @@ That's it for setting up Jest! Further information, including instructions for d
    }
    ```
 
-5. The `@rushstack/eslint-config` ruleset is designed to work together with the Prettier code formatter.
-   To set that up, see the [Enabling Prettier](@rushjs/pages/maintainer/enabling_prettier/) article
-   on the Rush website.
+5. `@rushstack/eslint-config`规则集旨在与 Prettier 代码格式化工具一起使用。
+   要设置它，请参见 Rush 网站上的[启用 Prettier](@rushjs/pages/maintainer/enabling_prettier/)文章。
 
-That's it for ESLint! More detail can be found in the [Lint plugin](../plugins/lint.md) reference.
+至此，ESLint 的设置就完成了！在[Lint 插件](../plugins/lint.md)参考中可以找到更多详细信息。

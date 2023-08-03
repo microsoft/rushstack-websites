@@ -1,21 +1,19 @@
 ---
-title: Everyday Heft commands
+title: 日常Heft命令
 ---
 
-The [Hello World](../tutorials/hello_world.md) tutorial introduced the `heft build` and `heft test` command-line actions. In this section, we'll call out a few everyday commands that are particularly useful to know about. Refer to the [Heft command line](../intro/cli.md) reference for a full listing of actions and parameters.
+[Hello World](../tutorials/hello_world.md)教程介绍了`heft build`和`heft test`命令行 action。在本节中，我们将介绍一些特别有用的日常命令。有关 action 和 parameter 的完整列表，请参考[Heft 命令行](../intro/cli.md)参考。
 
-## Investigating problems
+## 调查问题
 
-If you're diagnosing problems with the Heft build, there are a couple useful parameters to be aware of:
+如果你正在诊断 Heft 构建的问题，有几个有用的 parameter 需要注意：
 
-- `--verbose`: For example, instead of `heft build`, you can run `heft build --verbose` to see more details about how the tasks are invoked.
-- `--debug`: For even more detail, you can run `heft --debug build` to see call stacks and additional trace information. Note that `--debug` is a global parameter, so it must precede the `build` action name.
+- `--verbose`：例如，你可以运行`heft build --verbose`来查看有关如何调用 task 的更多详细信息，而不是`heft build`。
+- `--debug`：对于更多的详细信息，你可以运行`heft --debug build`来查看调用堆栈和额外的跟踪信息。注意，`--debug`是一个全局 parameter，所以它必须在`build` action 名之前。
 
-## Running arbitrary sets of phases
+## 运行任意集合的 phases
 
-Each phase that you define in **heft.config** will produce a pair of command-line actions
-which invoke that phase and its dependencies (as declared using `phaseDependencies`).
-The `heft run` command allows you to choose arbitrary phases to run:
+你在**heft.config**中定义的每个 phase 都会产生一对命令行 action，这些 action 调用该 phase 及其依赖项（使用`phaseDependencies`声明）。`heft run`命令允许你选择运行任意的 phases：
 
 ```
 usage: heft run [-h] [-t PHASE] [-T PHASE] [-o PHASE] ...
@@ -41,8 +39,6 @@ Optional scoping arguments:
                         The phase to run.
 ```
 
-Suppose that your `test` phase depends on `build`. Running `heft test` would then normally
-perform both phases. To invoke **\*only** the `test` phase, you can use `heft run --only test`.
+假设你的`test` phase 依赖于`build`。然后正常运行`heft test`会执行这两个 phases。要**只**调用`test` phase，你可以使用`heft run --only test`。
 
-Note that tasks cannot be run individually. The phase is the smallest granularity for
-selecting Heft operations.
+请注意，task 不能单独运行。phase 是选择 Heft 操作的最小粒度。

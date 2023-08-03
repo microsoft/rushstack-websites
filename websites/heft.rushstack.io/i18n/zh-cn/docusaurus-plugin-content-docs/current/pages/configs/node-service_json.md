@@ -10,67 +10,62 @@ title: node-service.json
 | **Associated plugin:** | [Node.js service plugin](../plugins/node-service.md) |
 <!-- prettier-ignore-end -->
 
-## Template
+## 模板
 
 ```js
 /**
- * Configures "heft start" to launch a shell command such as a Node.js service.
- * Heft will watch for changes and restart the service process whenever it gets rebuilt.
+ * 配置 "heft start" 来启动一个 shell 命令，例如 Node.js 服务。
+ * Heft 会监视更改，并在每次重新构建服务进程时重新启动服务。
  */
 {
   "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/node-service.schema.json"
 
   /**
-   * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
-   * settings to be shared across multiple projects.
+   * 可选地指定另一个此文件扩展自的 JSON 配置文件。这为跨多个项目共享标准设置提供了一种方法。
    */
   // "extends": "base-project/config/serve-command.json",
 
   /**
-   * Specifies the name of a "scripts" command from the project's package.json file.
-   * When "heft start" is invoked, it will use this shell command to launch the
-   * service process.
+   * 指定项目的 package.json 文件中 "scripts" 命令的名称。
+   * 当调用 "heft start" 时，它将使用这个 shell 命令来启动服务进程。
    *
-   * Default value: "serve"
+   * 默认值："serve"
    */
   // "commandName": "serve",
 
   /**
-   * If false, then an error is reported if the "scripts" command is not found in the
-   * project's package.json.  If true, then no action will be taken.
+   * 如果为假，那么如果在项目的 package.json 中找不到 "scripts" 命令，就会报告一个错误。
+   * 如果为真，则不会采取任何行动。
    *
-   * Default value: false
+   * 默认值：false
    */
   // "ignoreMissingScript": false,
 
   /**
-   * Customizes the number of milliseconds to wait before restarting the child process,
-   * as measured from when the previous process exited.  If this interval is too small, then
-   * the new process may start while the developer is still saving changes, or while
-   * other monitoring processes are still holding OS locks.
+   * 自定义在重新启动子进程之前等待的毫秒数，从前一个进程退出时开始测量。
+   * 如果这个间隔太小，那么新的进程可能会在开发人员仍在保存更改的时候启动，
+   * 或者在其他监视进程仍然持有 OS 锁的时候启动。
    *
-   * Default value: 2000
+   * 默认值：2000
    */
   // "waitBeforeRestartMs": 2000,
 
   /**
-   * Customizes the number of milliseconds to wait for the child process to be terminated (SIGTERM)
-   * before forcibly killing it.
+   * 自定义在强制杀死子进程之前等待子进程被终止（SIGTERM）的毫秒数。
    *
-   * Default value: 2000
+   * 默认值：2000
    */
   // "waitForTerminateMs": 2000,
 
   /**
-   * Customizes the number of milliseconds to wait for the child process to be killed (SIGKILL)
-   * before giving up and abandoning it.
+   * 自定义在放弃并且放弃子进程之前，等待子进程被杀死（SIGKILL）的毫秒数。
    *
-   * Default value: 2000
+   * 默认值：2000
    */
   // "waitForKillMs": 2000
 }
 ```
 
-## See also
+## 参见
 
-- [Node.js service plugin](../plugins/node-service.md)
+- [Node.js 服务插件](../plugins/node-service.md)

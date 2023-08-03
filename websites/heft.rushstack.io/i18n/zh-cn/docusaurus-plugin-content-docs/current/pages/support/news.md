@@ -1,5 +1,5 @@
 ---
-title: What's new
+title: 新功能
 ---
 
 To find out what's changed in the latest release, please see the Heft

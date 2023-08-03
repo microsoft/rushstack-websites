@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: 贡献
 ---
 
 Heft is developed in the monorepo for the [Rush Stack](@rushstack/) family of projects:

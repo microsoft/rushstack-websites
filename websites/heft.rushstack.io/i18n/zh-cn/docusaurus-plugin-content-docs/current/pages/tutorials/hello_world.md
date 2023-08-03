@@ -2,32 +2,29 @@
 title: Hello world
 ---
 
-This walkthrough will get you started with Heft by creating a basic Node.js console project from scratch,
-adding each task step by step. In practice, **you would probably want to use a readymade rig instead.**
-This tutorial's goal is to illustrate the fundamental concepts and architecture of Heft. With this foundation,
-you can more easily understand complex configurations and troubleshoot any problems that arise.
+此教程将通过从头开始创建一个基础的 Node.js 控制台项目，逐步添加每个任务来帮助你开始使用 Heft。实际上，**你可能更倾向于使用预制的 rig**。此教程的目标是阐述 Heft 的基础概念和架构。有了这个基础，你可以更轻松地理解复杂的配置，并解决任何出现的问题。
 
-> **_"Show me the code!"_**
+> **_"给我看代码！"_**
 >
-> If you're in a hurry, the
+> 如果你赶时间，可以查看
 > [heft-node-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-basic-tutorial)
-> and [heft-webpack-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-webpack-basic-tutorial)
-> folders illustrate a fully worked out example of a simple project that builds using Heft.
+> 和 [heft-webpack-basic-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-webpack-basic-tutorial)
+> 文件夹，这些文件夹展示了一个简单的使用 Heft 构建的完全实例化的项目。
 >
-> The [heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial)
-> and [heft-web-rig-app-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-web-rig-app-tutorial)
-> folders show how to accomplish the same result by using Rush Stack rigs, rather than a manual Heft configuration.
-> Rigs enable many projects to share a standard configuration, which greatly reduces maintenance cost of upgrades.
+> [heft-node-rig-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-node-rig-tutorial)
+> 和 [heft-web-rig-app-tutorial](https://github.com/microsoft/rushstack-samples/tree/main/heft/heft-web-rig-app-tutorial)
+> 文件夹展示了如何使用 Rush Stack rigs 而不是手动 Heft 配置来实现相同的结果。
+> Rig 允许多个项目共享标准配置，大大降低了升级的维护成本。
 
-We'll begin by creating a simple standalone project without Rush. (Later, the [Interfacing with Rush](../tutorials/heft_and_rush.md) tutorial will examine what's different when using Heft in a monorepo.)
+我们首先创建一个不使用 Rush 的简单独立项目。（稍后，[与 Rush 交互](../tutorials/heft_and_rush.md) 教程将探讨在 monorepo 中使用 Heft 有何不同。）
 
-1. We'll use the [PNPM package manager](https://pnpm.js.org/) for this demo. Its command line is very similar to NPM, so you could substitute `npm` for `pnpm` in these steps. There are [various ways](https://pnpm.io/installation) to install PNPM, but the simplest is like this:
+1. 我们将使用 [PNPM 包管理器](https://pnpm.js.org/) 来进行此演示。它的命令行和 NPM 非常相似，所以你可以在这些步骤中用 `npm` 替换 `pnpm`。有[各种方法](https://pnpm.io/installation)可以安装 PNPM，但最简单的方法是这样的：
 
    ```bash
    npm install --global pnpm
    ```
 
-2. Create a new folder **my-app** with a **package.json** file for our project, like this:
+2. 创建一个新文件夹 **my-app** 并为我们的项目创建一个 **package.json** 文件，如下：
 
    **my-app/package.json**
 
@@ -45,7 +42,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    }
    ```
 
-3. Create a TypeScript source file that we'll compile.
+3. 创建一个我们将要编译的 TypeScript 源文件。
 
    **my-app/src/start.ts**
 
@@ -53,7 +50,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    console.log("Hello, world!");
    ```
 
-4. Install [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft), [@rushstack/heft-typescript-plugin](https://www.npmjs.com/package/@rushstack/heft-typescript-plugin), and [typescript](https://www.npmjs.com/package/typescript) as `devDependenices` for your project:
+4. 为你的项目安装 [@rushstack/heft](https://www.npmjs.com/package/@rushstack/heft), [@rushstack/heft-typescript-plugin](https://www.npmjs.com/package/@rushstack/heft-typescript-plugin), 和 [typescript](https://www.npmjs.com/package/typescript) 作为 `devDependenices`：
 
    ```bash
    cd my-app
@@ -61,12 +58,12 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    pnpm install --save-dev @rushstack/heft-typescript-plugin
    pnpm install --save-dev typescript
 
-   # Since this project will use the console.log() API, we also need to add the TypeScript
-   # typings for Node.js.  Typings should always use "--save-exact" version specifiers.
+   # 由于此项目将使用 console.log() API，我们还需要添加 TypeScript
+   # 的 Node.js 类型定义。类型定义应始终使用 "--save-exact" 版本规范。
    pnpm install --save-dev --save-exact @types/node
    ```
 
-5. Next we need to create the TypeScript [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file. The presence of this file causes Heft to invoke the TypeScript compiler. For now we'll create a simple standalone **tsconfig.json** file; later we'll demonstrate how to share a reusable configuration across many projects.
+5. 接下来我们需要创建 TypeScript [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) 文件。此文件的存在会使 Heft 调用 TypeScript 编译器。现在我们将创建一个简单的独立 **tsconfig.json** 文件；稍后我们将演示如何在多个项目之间共享可复用的配置。
 
    **my-app/tsconfig.json**
 
@@ -100,35 +97,24 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    }
    ```
 
-   Note that `"types": ["node"]` references the `@types/node` package that we installed above. This is needed
-   because Node.js is a global environment, so its typings must be loaded globally. Most other `@types` packages
-   can be loaded via `import` statements in your source code.
+注意 `"types": ["node"]` 引用了我们之前安装的 `@types/node` 包。因为 Node.js 是全局环境，所以它的类型定义必须全局加载。大多数其他的 `@types` 包可以通过您的源代码中的 `import` 语句加载。
 
-   See the [TypeScript plugin](../plugins/typescript.md) documentation for more background about
-   TypeScript configuration with Heft.
+更多关于 TypeScript 配置和 Heft 的信息，请参阅 [TypeScript 插件](../plugins/typescript.md) 文档。
 
-6. You can invoke Heft using `./node_modules/.bin/heft`, but it's more convenient to also install it globally
-   so that it's always available in your shell `PATH`:
+6. 您可以使用 `./node_modules/.bin/heft` 来调用 Heft，但是将其全局安装更方便，因为这样它将始终在您的 shell `PATH` 中可用：
 
    ```bash
-   # Install the Heft tool globally
+   # 全局安装 Heft 工具
    npm install --global @rushstack/heft
    ```
 
-   > What if the globally installed `heft` binary is the wrong version?
+   > 如果全局安装的 `heft` 二进制文件的版本是错误的怎么办？
    >
-   > Just like Rush, Heft implements a "version selector" feature that will automatically
-   > discover your local `node_modules` folder and invoke `./node_modules/.bin/heft`, ensuring
-   > that the correct version is used.
+   > 就像 Rush 一样，Heft 实现了一个 "version selector" 特性，它会自动发现您的本地 `node_modules` 文件夹并调用 `./node_modules/.bin/heft`，以确保使用正确的版本。
 
-7. Heft is config-driven, which means its behavior within a project folder is defined by data
-   (config files) not code (arbitrary scripts). If you need to extend your build process with program logic,
-   we strongly encourage moving that code into a Heft plugin package, which should be developed as
-   professional software using TypeScript, ESLint, and code reviews. This is more work, but as your
-   monorepo grows in scale, it greatly simplifies maintenance.
+7. Heft 是基于配置驱动的，这意味着它在项目文件夹中的行为由数据（配置文件）定义，而不是代码（任意脚本）。如果您需要使用程序逻辑扩展您的构建过程，我们强烈建议将该代码移入 Heft 插件包中，该插件应作为使用 TypeScript、ESLint 和代码审查的专业软件开发。这需要更多的工作，但是随着您的 monorepo 规模的扩大，它极大地简化了维护。
 
-   Heft's main config file is [config/heft.json](../configs/heft_json.md). Let's start with the
-   simplest possible file:
+   Heft 的主要配置文件是 [config/heft.json](../configs/heft_json.md)。让我们从最简单的文件开始：
 
    **config/heft.json**
 
@@ -138,7 +124,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    }
    ```
 
-   If you run `heft --help` you should see output like this:
+   如果你运行 `heft --help`，你应该会看到如下输出：
 
    ```
    usage: heft [-h] [--debug] [--unmanaged] <command> ...
@@ -156,9 +142,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      -h, --help   Show this help message and exit.
    ```
 
-8. Now let's expand our configuration by adding a simple phase called `"build"` that invokes
-   a task called `"typescript"` to compile your code. (For definitions of these terms,
-   refer to the [architecture](../intro/architecture.md) notes.)
+8. 现在，让我们通过添加一个名为 `"build"` 的简单阶段来扩展我们的配置，该阶段调用一个名为 `"typescript"` 的任务来编译您的代码。（关于这些术语的定义，参见 [architecture](../intro/architecture.md) 笔记。）
 
    **config/heft.json**
 
@@ -167,18 +151,18 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
 
      "phasesByName": {
-       // Define a phase whose name is "build"
+       // 定义一个名为 "build" 的阶段
        "build": {
          "phaseDescription": "This phase compiles the project source code.",
 
-         // Before invoking the compiler, delete the "dist" and "lib" folders
+         // 在调用编译器之前，删除 "dist" 和 "lib" 文件夹
          "cleanFiles": [{ "sourcePath": "dist" }, { "sourcePath": "lib" }],
 
          "tasksByName": {
-           // Define a task whose name is "typescript"
+           // 定义一个名为 "typescript" 的任务
            "typescript": {
              "taskPlugin": {
-               // This task will invoke the TypeScript plugin
+               // 此任务将调用 TypeScript 插件
                "pluginPackage": "@rushstack/heft-typescript-plugin"
              }
            }
@@ -188,10 +172,10 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    }
    ```
 
-   _For complete descriptions of these settings, see [heft.json](../configs/heft_json.md) template._
+   _对于这些设置的完整描述，请参见 [heft.json](../configs/heft_json.md) 模板。_
 
-   If you run `heft --help`, you will now see that a `build` and `build-watch`
-   action have been added to your command line, since our phase was called `"build"`:
+   如果你运行 `heft --help`，你现在会看到一个 `build` 和 `build-watch`
+   动作已被添加到你的命令行中，因为我们的阶段被称为 `"build"`：
 
    ```
    usage: heft [-h] [--debug] [--unmanaged] <command> ...
@@ -213,26 +197,26 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
      -h, --help   Show this help message and exit.
    ```
 
-   The `"phaseDescription"` is printed if you run `heft build --help`.
+   如果你运行 `heft build --help`， `"phaseDescription"` 将被打印出来。
 
-9. Let's try invoking Heft's [command line](../intro/cli.md) to build our project.
+9. 我们尝试调用 Heft 的[命令行](../intro/cli.md)来构建我们的项目。
 
    ```bash
-   # Make sure we're in your project folder
+   # 确保我们在你的项目文件夹中
    cd my-app
 
-   # View the command line help
+   # 查看命令行帮助
    heft --help
    heft build --help
 
-   # Build the project
+   # 构建项目
    heft build
 
-   # To see more detail about what Heft is doing, add you can the "--verbose" flag
+   # 为了查看更多关于 Heft 在做什么的详细信息，你可以添加 "--verbose" 标志
    heft build --verbose
    ```
 
-   Invoking `heft build --verbose` should produce console output like this:
+   执行 `heft build --verbose` 应该会产生类似这样的控制台输出：
 
    ```
    Project: my-app@1.0.0
@@ -267,28 +251,27 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
    -------------------- Finished (2.02s) --------------------
    ```
 
-   > NOTE: When reporting diagnostic messages such as a compile error, Heft prints file paths relative
-   > to the project folder. This can be customized using the
+   > 注意：当报告诊断信息，如编译错误时，Heft 会打印相对于项目文件夹的文件路径。这可以使用
    > [RUSHSTACK_FILE_ERROR_BASE_FOLDER](../configs/environment_vars.md#rushstack_file_error_base_folder)
-   > environment variable.
+   > 环境变量进行自定义。
 
-   After the build finishes, confirm that it produced several output files in your `lib` folder:
+   构建完成后，确认它在你的 `lib` 文件夹中产生了几个输出文件：
 
-   - **start.js** - the compiled JavaScript code
-   - **start.d.ts** - the TypeScript typings, for external libraries that might import this module
-   - **start.js.map** and **start.d.ts.map** - Source map files, which enable tools like debuggers to find the corresponding source code file/line, for a given item in an output file
+   - **start.js** - 编译后的 JavaScript 代码
+   - **start.d.ts** - TypeScript 的类型定义，用于可能导入此模块的外部库
+   - **start.js.map** 和 **start.d.ts.map** - Source map 文件，可以帮助像调试器这样的工具找到对应输出文件中的某个项的源代码文件/行。
 
-10. If you recall, our **package.json** file has a `"scripts"` section that specifies `"start": "node lib/start.js"`. Let's try running the compiled code using `pnpm run`.
+10. 如果你还记得，我们的 **package.json** 文件有一个 `"scripts"` 部分，指定了 `"start": "node lib/start.js"`。我们试试用 `pnpm run` 来运行编译后的代码。
 
     ```bash
-    # Invoke the "start" script from package.json
+    # 调用 package.json 中的 "start" 脚本
     pnpm run start
 
-    # If you have Rush installed, you can also use this slightly shorter equivalent
+    # 如果你已经安装了 Rush，你也可以使用这个稍微短一点的等价命令
     rushx start
     ```
 
-    You should see output like this:
+    你应该会看到像这样的输出：
 
     ```
     > my-app@1.0.0 start C:\my-app
@@ -297,7 +280,7 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
     Hello, world!
     ```
 
-11. We can also add a `"build"` script to our **package.json** file:
+11. 我们还可以在我们的 **package.json** 文件中添加一个 `"build"` 脚本：
 
     **my-app/package.json**
 
@@ -312,6 +295,4 @@ We'll begin by creating a simple standalone project without Rush. (Later, the [I
     }
     ```
 
-    With this change, you can also build by invoking `pnpm run build` (or `rushx build`). This toolchain-agnostic
-    convention makes it easier for newcomers to guess how to build your project. It will also be useful later when
-    we integrate with Rush.
+    有了这个改变，你也可以通过调用 `pnpm run build`（或 `rushx build`）来进行构建。这个工具链无关的约定使得新手更容易猜到如何构建你的项目。当我们稍后与 Rush 集成时，它也会变得非常有用。
