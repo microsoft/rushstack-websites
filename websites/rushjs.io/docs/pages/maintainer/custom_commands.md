@@ -173,7 +173,7 @@ How to implement a custom command/parameter? For global commands, Rush simply in
   "typings": "lib/index.d.ts",
   "scripts": {
     "import-strings": "./node_modules/.bin/loc-importer",
-    "build": "./node_modules/.bin/gulp"
+    "build": "./node_modules/.bin/heft build"
   }
 }
 ```

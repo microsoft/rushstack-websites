@@ -19,7 +19,7 @@ You might be thinking: "Hmmm.. if my current install takes 3 minutes, and you wa
 Nope! Rush works within the existing systems and standards. It just does things better and faster.
 
 - Each project folder remains self-contained (no blurring of package boundaries)
-- It's still possible to build any project without Rush; just do `npm install` and `gulp` as usual
+- It's still possible to build any project without Rush; just do `pnpm install` and `npm run build` as usual (although `workspace:*` [references](https://pnpm.io/workspaces#workspace-protocol-workspace) in **package.json** might need to be removed)
 - A project can be moved to a separate repo at any time, without any code changes; no commitment!
 
 ### Is "Rush Stack" the same thing as Rush?
@@ -46,7 +46,7 @@ Rush Multi-Package Build Tool 2.5.0 - http://aka.ms/rush
 
 NPM seems to say that it is installing version 3.0.1, but when we execute the command, it shows Rush version 2.5.0. What's going on here?!
 
-The problem is that when you type commands like "gulp" or "rush", they are found in your system PATH, which can be pointing to folders from previous installs of NodeJS or NPM.
+The problem is that when you type commands like "heft" or "rush", they are found in your system PATH, which can be pointing to folders from previous installs of NodeJS or NPM.
 
 The fix:
 

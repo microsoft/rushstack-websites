@@ -127,28 +127,28 @@ When you run `rush install`, it will create two files that report your dependenc
 - **~/demo/common/config/rush/browser-approved-packages.json**: Packages approved for usage in a web browser. This is generally the stricter of the two types, so by default all new packages are added to this file. For web browser dependencies, the review discussion typically focuses on: _How big is the minified code?_ _What's the license?_ _Are there security issues?_
 - **~/demo/common/config/rush/nonbrowser-approved-packages.json**: Packages approved for usage everywhere _except_ in a web browser. This review discussion typically focuses on: _How much clutter will it pull into our node_modules folder?_ _Do we already have an equivalent package?_ _Is there any real code in there, or is it a just a flimsy wrapper for another package?_
 
-After running `rush install`, the **browser-approved-packages.json** file will look like this.
+After running `rush install`, the **browser-approved-packages.json** file might look like this:
 
 ```javascript
 {
   "packages": [
     {
-      "name": "@microsoft/gulp-core-build",
+      "name": "@rushstack/heft",
       "allowedCategories": [ "internal" ]
     },
     {
-      "name": "@microsoft/node-library-build",
+      "name": "@rushstack/node-library-build",
       "allowedCategories": [ "internal", "published" ]
     },
     {
-      "name": "gulp",
+      "name": "semver",
       "allowedCategories": [ "internal", "published" ]
     }
   ]
 }
 ```
 
-For example, this file is showing that the external dependency **@microsoft/gulp-core-build** was found in the package.json file for an "internal" project (let's say **~/demo/lib1**) but not any "public" project (such as **~/demo/application**).
+For example, this file is showing that the external dependency **@rushstack/heft** was found in the package.json file for an "internal" project (let's say **~/demo/lib1**) but not any "public" project (such as **~/demo/application**).
 
 Rush has no way to detect whether an NPM package is for the browser or not. Since these are all non-browser files, you must manually move them to the other file **browser-approved-packages.json**.
 
