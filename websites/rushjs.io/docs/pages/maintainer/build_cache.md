@@ -103,7 +103,7 @@ to copy this file into each project folder.
 Now you should see projects being cached as shown in this sample log output:
 
 ```bash
-rush rebuild --verbose
+rush build --verbose
 ```
 
 ```
@@ -127,7 +127,7 @@ Successfully set cache entry.
 When we run the same command a second time, Rush extracts the archive instead of invoking the build task:
 
 ```bash
-rush rebuild --verbose
+rush build --verbose
 ```
 
 ```
@@ -144,8 +144,8 @@ Successfully restored output from the build cache.
 example-project was restored from the build cache.
 ```
 
-Note that `rush rebuild` will not read from cache. To disable writing from cache during `rush rebuild`, set the
-[`RUSH_BUILD_CACHE_WRITE_ALLOWED`](../configs/environment_vars.md) environment variable to `0`.
+Note that `rush rebuild` will not read from cache, only `rush build` does. To disable writing from cache during `rush rebuild`,
+set the [`RUSH_BUILD_CACHE_WRITE_ALLOWED`](../configs/environment_vars.md) environment variable to `0`.
 
 By default, the cached tar archives are stored under your **common/temp/build-cache** folder
 (and thus will be cleaned by `rush purge`). It is safe to delete these files.
