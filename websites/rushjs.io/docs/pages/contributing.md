@@ -76,7 +76,7 @@ After saving this file, in VS Code click _"View" --> "Run"_ and choose your "Deb
 
 ## Building without unit tests
 
-Rush currently builds using the **gulp-core-build** toolchain which by default runs unit tests, which take a long time. You can bypass them by invoking gulp directly.
+Rush builds using the [Heft](https://heft.rushstack.io/) toolchain. You can invoke the `heft` command-line directly for better additional options.
 
 ```bash
 # Full incremental build of Rush and its dependencies, including unit tests

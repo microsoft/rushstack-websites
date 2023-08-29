@@ -120,11 +120,11 @@ In order to build your projects, Rush will look for a `"build"` script in the `"
 
 There are a few things to keep in mind when creating a `"build"` script:
 
-- Rush will normally use your system PATH environment variable to find the script commands. However, if you specify a single-word command like "gulp" or "make", Rush will first look for the program in the `common\temp\node_modules\.bin` folder.
+- Rush will normally use your system PATH environment variable to find the script commands. However, if you specify a single-word command like "heft" or "make", Rush will first look for the program in the `common\temp\node_modules\.bin` folder.
 
 - If the process returns a non-zero exit status, Rush will assume there was a failure and will block downstream builds.
 
-- If the command writes anything to the `stderr` stream, Rush will interpret this to mean that at least one error or warning was reported. This will break the build. (This is by design -- if you allow people to merge PRs that "cry wolf", pretty soon you will find that so many warnings have accumulated that nobody even reads them any more.) Some tooling libraries (e.g. Jest) write to `stderr` as part of their normal operation; you will need to [redirect their output](https://github.com/microsoft/rushstack-legacy/blob/main/core-build/gulp-core-build/src/tasks/JestReporter.ts#L14).
+- If the command writes anything to the `stderr` stream, Rush will interpret this to mean that at least one error or warning was reported. This will break the build. (This is by design -- if you allow people to merge PRs that "cry wolf", pretty soon you will find that so many warnings have accumulated that nobody even reads them any more.) Some tooling libraries (e.g. Jest) write to `stderr` as part of their normal operation; you will need to [redirect their output](https://github.com/microsoft/spfx-gulp-tools/blob/main/core-build/gulp-core-build/src/tasks/JestReporter.ts#L23).
 
 - If certain projects don't need to be processed by `rush build`, you still need a `build` entry. Set the value to an empty string (`""`) and Rush will ignore it.
 
