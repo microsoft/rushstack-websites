@@ -77,13 +77,14 @@ export function CommunitySidebar(props: React.PropsWithChildren<ICommunitySideba
               paddingTop: '50px'
             }}
           >
-            ⚠{' '}
             <i>
-              This feature is experimental. Please{' '}
-              <a href="https://github.com/microsoft/rushstack-websites/issues" target="_blank">
-                let us know
-              </a>{' '}
-              if anything is broken.
+              <div>
+                If you have questions or problems regarding event sign-ups, let us know in the{' '}
+                <a href="https://rushstack.zulipchat.com/#narrow/stream/296580-rush-hour" target="_blank">
+                  #rush-hour
+                </a>{' '}
+                chat room.
+              </div>
             </i>
           </div>
         </div>
