@@ -102,6 +102,7 @@ export function EventCardBody(props: {
 
 interface IEventCardProps {
   cardType: 'summary' | 'detail';
+  loggedOutPreview?: boolean;
   eventModel: EventModel;
   apiDataService: ApiDataService;
 }
@@ -160,6 +161,13 @@ export class EventCard extends React.Component<IEventCardProps> {
             Online signup is not available for this event.
           </div>
         );
+      } else if (this.props.loggedOutPreview) {
+        actionButton = (
+          <DecoratedButton onClick={eventModel.onNavigateToEventDetailPageRequireLogin}>
+            Sign in to learn more
+          </DecoratedButton>
+        );
+        // Don't show spotsLeftDiv for people who are not logged in
       } else if (apiEvent.userIsSignedUp) {
         footnote = <>You are attending this event</>;
 

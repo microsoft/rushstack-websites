@@ -54,8 +54,11 @@ export class AppSession {
     return `/community/event?id=${eventId}`;
   }
 
-  public navigateToEventDetailPage(eventId: number): void {
-    const url: string = this.getEventDetailPageUrl(eventId);
+  public navigateToEventDetailPage(eventId: number, requireLogin?: boolean): void {
+    let url: string = this.getEventDetailPageUrl(eventId);
+    if (requireLogin) {
+      url += '&login';
+    }
     this.navigateToPage(url);
   }
 

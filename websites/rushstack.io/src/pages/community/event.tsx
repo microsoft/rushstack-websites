@@ -11,7 +11,6 @@ import { BrowserOnlyLayout } from '../../rscommunity/view/BrowserOnlyLayout';
 
 class EventPageBody extends React.Component {
   private readonly _appSession: AppSession;
-  private _eventId: number | undefined;
 
   public constructor(props: {}) {
     super(props);
@@ -20,14 +19,6 @@ class EventPageBody extends React.Component {
 
   public componentDidMount(): void {
     this._appSession.apiDataService.updated.subscribe(this, () => this.forceUpdate());
-
-    this._eventId = undefined;
-    const queryParams: URLSearchParams = new URLSearchParams(window.location.search);
-    const eventId: number = parseInt(queryParams.get('id') ?? '');
-    if (!isNaN(eventId)) {
-      this._eventId = eventId;
-      this.forceUpdate();
-    }
   }
 
   public componentWillUnmount(): void {
@@ -35,27 +26,62 @@ class EventPageBody extends React.Component {
   }
 
   public render(): JSX.Element {
-    if (!this._appSession.loggedInUser) {
-      return <CommunitySignInPage appSession={this._appSession} />;
+    const queryParams: URLSearchParams = new URLSearchParams(window.location.search);
+    let eventId: number | undefined = parseInt(queryParams.get('id') ?? '');
+    if (!isNaN(eventId)) {
+      eventId = eventId;
     }
 
-    if (this._eventId === undefined) {
-      return <div>ERROR: Missing event id</div>;
+    let requireLogin: boolean = false;
+    if (queryParams.has('login')) {
+      requireLogin = true;
     }
 
-    const eventTask: ApiTask<EventModel> = this._appSession.apiDataService.initiateGetEvent(
-      this,
-      this._eventId
-    );
+    let eventModel: EventModel | undefined;
+    let loggedOutPreview: boolean;
 
-    if (eventTask.status === ApiTaskStatus.Error) {
-      return <div>ERROR: {eventTask.error.message}</div>;
-    }
+    if (this._appSession.loggedInUser) {
+      if (eventId === undefined) {
+        return <div>ERROR: Missing event id</div>;
+      }
 
-    if (eventTask.status === ApiTaskStatus.Pending) {
-      return <></>;
+      const eventTask: ApiTask<EventModel> = this._appSession.apiDataService.initiateGetEvent(this, eventId);
+
+      if (eventTask.status === ApiTaskStatus.Error) {
+        return <div>ERROR: {eventTask.error.message}</div>;
+      }
+
+      if (eventTask.status === ApiTaskStatus.Pending) {
+        return <></>;
+      }
+      eventModel = eventTask.result;
+      loggedOutPreview = false;
+    } else {
+      if (!requireLogin) {
+        // If the user is not logged in, see if there is a preview for this event
+        const eventTask: ApiTask<EventModel[]> = this._appSession.apiDataService.initiateGetEvents(
+          this,
+          'preview'
+        );
+
+        if (eventTask.status === ApiTaskStatus.Error) {
+          return <div>ERROR: {eventTask.error.message}</div>;
+        }
+        if (eventTask.status === ApiTaskStatus.Pending) {
+          return <></>;
+        }
+        const eventModels: EventModel[] = eventTask.result;
+
+        eventModel = eventModels.find((x) => x.apiEvent.dbEventId === eventId);
+      }
+
+      if (eventModel === undefined) {
+        // If we can't find an event preview, then require a login
+        return <CommunitySignInPage appSession={this._appSession} />;
+      }
+
+      loggedOutPreview = true;
     }
-    const eventModel: EventModel = eventTask.result;
 
     let breadcrumb: JSX.Element = (
       <div>
@@ -80,6 +106,7 @@ class EventPageBody extends React.Component {
           {eventModel ? (
             <EventCard
               cardType="detail"
+              loggedOutPreview={loggedOutPreview}
               eventModel={eventModel}
               apiDataService={this._appSession.apiDataService}
               key={eventModel.apiEvent.dbEventId}
