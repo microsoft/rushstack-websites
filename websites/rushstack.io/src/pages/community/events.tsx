@@ -26,13 +26,9 @@ class EventsPageBody extends React.Component {
   }
 
   public render(): JSX.Element {
-    if (!this._appSession.loggedInUser) {
-      return <CommunitySignInPage appSession={this._appSession} />;
-    }
-
     const eventTask: ApiTask<EventModel[]> = this._appSession.apiDataService.initiateGetEvents(
       this,
-      'current'
+      this._appSession.loggedInUser ? 'current' : 'preview'
     );
 
     if (eventTask.status === ApiTaskStatus.Error) {
@@ -50,6 +46,7 @@ class EventsPageBody extends React.Component {
           {eventModels.map((eventModel) => (
             <EventCard
               cardType="summary"
+              loggedOutPreview={!this._appSession.loggedInUser}
               eventModel={eventModel}
               apiDataService={this._appSession.apiDataService}
               key={eventModel.apiEvent.dbEventId}

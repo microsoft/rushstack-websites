@@ -91,13 +91,25 @@ export class ApiDataService {
     });
   }
 
-  public initiateGetEvents(component: React.Component, filter: 'past' | 'current'): ApiTask<EventModel[]> {
+  public initiateGetEvents(
+    component: React.Component,
+    filter: 'past' | 'current' | 'preview'
+  ): ApiTask<EventModel[]> {
     const apiTaskKey: string = `events:${filter}`;
     return this._startApiTask(apiTaskKey, component, async () => {
-      this._requireLoggedIn();
+      if (filter !== 'preview') {
+        this._requireLoggedIn();
+      }
       console.log('Fetching events...');
 
-      const data: Response = await fetch(`${this.appSession.serviceUrl}/api/events?filter=${filter}`, {
+      let url: string;
+      if (filter === 'preview') {
+        url = `${this.appSession.serviceUrl}/api/events-preview`;
+      } else {
+        url = `${this.appSession.serviceUrl}/api/events?filter=${filter}`;
+      }
+
+      const data: Response = await fetch(url, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include'

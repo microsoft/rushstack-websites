@@ -14,6 +14,10 @@ export class EventModel {
     this.appSession.navigateToEventDetailPage(this.apiEvent.dbEventId);
   };
 
+  public onNavigateToEventDetailPageRequireLogin = (): void => {
+    this.appSession.navigateToEventDetailPage(this.apiEvent.dbEventId, true);
+  };
+
   public onAddReservation = (): void => {
     this.appSession.apiDataService.addReservationAsync(this).catch((error) => {
       console.error((error as Error).toString());

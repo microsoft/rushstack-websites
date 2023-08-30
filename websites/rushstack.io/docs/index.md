@@ -72,4 +72,4 @@ In summer of 2019, we launched **Rush Stack** with the aim to provide a reusable
 
 <!-- Verification of Mastodon account -->
 
-<a rel="me" class="no-external-link-icon" href="https://fosstodon.org/@rushstack"></a>
+<a rel="me" className="no-external-link-icon" href="https://fosstodon.org/@rushstack"></a>
