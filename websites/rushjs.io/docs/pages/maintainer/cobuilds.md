@@ -2,6 +2,26 @@
 title: Cobuilds (Experimental)
 ---
 
+<!--
+  Grammar note for writers
+
+  The noun form refers to the overall run:
+  RIGHT: "This cobuild used 3 machines."
+  WRONG: "This run used 3 cobuilds." !!!
+
+  So the plural form refers indirectly to the feature:
+  RIGHT: "This monorepo uses cobuilds."
+  RIGHT: "Cobuilds are enabled in this monorepo."
+
+  Otherwise you have to say "feature":
+  RIGHT: "You need to enable the cobuild feature."
+  WRONG: "You need to enable cobuild." !!!
+  WRONG: "You need to enable the cobuilds feature." !!!
+
+  Adjective form:
+  RIGHT: "This class defines a cobuild lock provider."
+-->
+
 Rush's **cobuild** feature ("cooperative builds") provides a cheap way to distribute work across
 multiple machines. For an extremely large scale setup, you need a build accelerator such as
 [BuildXL](https://github.com/microsoft/BuildXL/blob/main/Documentation/Wiki/Frontends/js-rush-options.md)
