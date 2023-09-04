@@ -81,21 +81,21 @@ Before adopting cobuilds, we recommend to try these things first:
 
 1. Upgrade `rushVersion` in your **rush.json** to `5.104.0` or newer.
 
-2. If you haven't done something equivalent already, create an autoinstaller for your Rush plugins:
+2. If you haven't done something equivalent already, create an autoinstaller for the Rush plugin:
 
    ```bash
-   rush init-autoinstaller --name rush-plugins
+   rush init-autoinstaller --name cobuild-plugin
    ```
 
    For background about plugins and autoinstallers, see [Using Rush plugins](../maintainer/using_rush_plugins.md).
 
 3. Add the `@rushstack/rush-redis-cobuild-plugin` plugin to the autoinstaller. (We'll use Redis for this tutorial.)
 
-   **common/autoinstallers/rush-plugins/package.json**
+   **common/autoinstallers/cobuild-plugin/package.json**
 
    ```js
    {
-     "name": "rush-plugins",
+     "name": "cobuild-plugin",
      "version": "1.0.0",
      "private": true,
      "dependencies": {
@@ -112,7 +112,7 @@ Before adopting cobuilds, we recommend to try these things first:
 4. Update the autoinstaller's lockfile:
 
    ```bash
-   rush update-autoinstaller --name rush-plugins
+   rush update-autoinstaller --name cobuild-plugin
 
    # Remember to commit the updated pnpm-lock.yaml file to git
    ```
@@ -146,7 +146,7 @@ Before adopting cobuilds, we recommend to try these things first:
           * to the package.json "dependencies" of your autoinstaller, then run
           * "rush update-autoinstaller".
           */
-         "autoinstallerName": "rush-plugins"
+         "autoinstallerName": "cobuild-plugin"
        }
      ]
    }
@@ -167,11 +167,11 @@ Before adopting cobuilds, we recommend to try these things first:
       * An environment variable that your CI pipeline will assign,
       * which the plugin uses to authenticate with Redis.
       */
-     "passwordEnvironmentVariable": "REDIS_PASS"
+     "passwordEnvironmentVariable": "REDIS_PASSWORD"
    }
    ```
 
-7. Lastly, use `rush init` to create the **cobuild.json** [config file](../configs/cobuild_json.md) that is
+7. Use `rush init` to create the **cobuild.json** [config file](../configs/cobuild_json.md) that is
    used to enable the cobuild feature. Make sure to set `"cobuildFeatureEnabled": true` as shown below:
 
    **common/config/rush/cobuild.json**
@@ -200,6 +200,14 @@ Before adopting cobuilds, we recommend to try these things first:
      "cobuildLockProvider": "redis"
    }
    ```
+
+8. Run `rush update` which should install the `cobuild-plugin` autoinstaller. This downloads its
+   manifest file, which should be committed to Git as well:
+
+   **common/autoinstallers/cobuild-plugin/rush-plugins/@rushstack/rush-redis-cobuild-plugin/rush-plugin-manifest.json**
+
+   (As part of the plugin system, this file caches important information so that Rush can access it
+   without having to install the plugin's NPM package.)
 
 ## Configuring build pipelines
 
@@ -278,8 +286,8 @@ Some examples:
 | CI system | Suggested value for `RUSH_COBUILD_CONTEXT_ID` | Reference |
 |---|---|---|
 |  Azure DevOps | `Build.BuildNumber` | [Configure run or build numbers](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml) |
-| Github Actions | | Combine `GITHUB_ACTION` `GITHUB_RUN_NUMBER` `GITHUB_RUN_ATTEMPT` | [Default environment variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) |
-| CircleCI | Combine `CIRCLE_WORKFLOW_ID` `CIRCLE_BUILD_NUM` | [Project values and variables](https://circleci.com/docs/variables/) |
+| Github Actions | `GITHUB_ACTION` `GITHUB_RUN_NUMBER` `GITHUB_RUN_ATTEMPT` | [Default environment variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) |
+| CircleCI | `CIRCLE_WORKFLOW_ID` `CIRCLE_BUILD_NUM` | [Project values and variables](https://circleci.com/docs/variables/) |
 <!-- prettier-ignore-end -->
 
 ### `RUSH_COBUILD_RUNNER_ID`
