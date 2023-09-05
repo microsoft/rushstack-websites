@@ -40,29 +40,33 @@ some other service such as [Memcached](https://www.memcached.org/), it's
 [fairly easy](https://github.com/microsoft/rushstack/blob/main/rush-plugins/rush-redis-cobuild-plugin/src/RedisCobuildLockProvider.ts)
 to implement your own provider.)
 
-## Do I need cobuilds?
+## When to use cobuilds?
 
 Without cobuilds, Rush already parallelizes your jobs on a single machine. (This may not be immediately obvious,
 since Rush's output is "collated" for readability, making it appear as if projects are getting built one at a time.)
 You can fine-tune the maximum parallelism using the `--parallelism` command-line parameter, but keep in mind
 that projects can only build concurrently if they don't depend on each other. Thus, cobuilds will only help
-if you've reached the limits for a single machine (considering cpu cores, disk I/O rates, and available memory).
-And only if further parallelism is actually possible for your project dependency graph.
+if you've already reached the limits for a single machine (considering cpu cores, disk I/O rates, and available memory).
+And only if further parallelism is actually possible for your monorepo's project dependency graph.
 
 The cobuild feature launches multiple instances of a CI pipeline, under the assumption that machines will be
-readily available. Typical Rush monorepos target a pool of machines that is 100 or less, so this should not
-be an issue. An extremely large monorepo, might need thousands of machines, at which point it would make more
+readily available. For example, if your cobuild uses 4 machines, and your VM pool has 40 machines, then
+contention would not become an issue until 10 pull requests are backed up in the queue. In that case, a
+[merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)
+can help by optimistically validating multiple PRs together.
+
+An extremely large monorepo might need thousands of machines, at which point it would make more
 sense to use a "build accelerator" such as
 [BuildXL](https://github.com/microsoft/BuildXL/blob/main/Documentation/Wiki/Frontends/js-rush-options.md)
 instead of cobuilds. (There are also plans to integrate Rush with
 [bazel-buildfarm](https://github.com/bazelbuild/bazel-buildfarm); Bazel is Google's equivalent of BuildXL.)
 Build accelerators generally require you to replace your CI system with their centralized job scheduler
 that manages its own dedicated pool of machines. Such systems require nontrivial maintenance
-and can have steeper learning curves, which is why we recommend to start with cobuilds first.
+and can have steeper learning curves, so we generally recommend to start with cobuilds first.
 
 Before adopting cobuilds, we recommend to try these things first:
 
-1. **Enable the build cache**: The [build cache](./build_cache.md) is a prerequisite for cobuilds anyway.
+1. **Enable the build cache**: The [build cache](./build_cache.md) is a prerequisite for cobuilds.
 
 2. **Identify bottlenecks:** If your monorepo's dependency graph does not actually allow lots of projects
    to be built in parallel, that must be fixed first before considering distributed builds.
@@ -85,11 +89,15 @@ Before adopting cobuilds, we recommend to try these things first:
    save the PNPM store and restore it between runs. Some environments permit the machine to be reused for
    multiple jobs, so that other Rush caches are preserved.
 
+5. **Consider using a merge queue**: GitHub offers a basic
+   [merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)
+   for free. Rush can also be used with the [Mergify](https://mergify.com/) enterprise service.
+
 > **Prerequisites**
 >
 > In order to use this feature, you will need:
 >
-> - The [build cache](./build_cache.md) enabled with a cloud storage provider.
+> - The Rush [build cache](./build_cache.md) enabled with a cloud storage provider.
 >
 > - A [Redis server](https://redis.io/). If your company uses some other key/value service,
 >   you can implement a plugin by following the example of
@@ -99,7 +107,7 @@ Before adopting cobuilds, we recommend to try these things first:
 > - A CI system that is able to trigger multiple runners for a given CI pipeline.
 >   For example, Jenkins and Azure DevOps allow a "parent" pipeline to trigger "child" pipelines.
 >
-> - [Rush phases](./phased_builds.md) are suggested to increase parallelism, but are not required.
+> - [Rush phases](./phased_builds.md) are suggested to increase parallelism, but are _not required_ for cobuilds.
 
 ## Enabling the cobuild feature
 
