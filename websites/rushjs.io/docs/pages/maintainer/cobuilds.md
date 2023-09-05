@@ -236,83 +236,123 @@ Before adopting cobuilds, we recommend to try these things first:
 
 ## Configuring build pipelines
 
-Each CI system has different ways of defining jobs. Many of them now use YAML config files to define
-the work, although the file format is different for each system.
+Each CI system has different ways of defining jobs. For this tutorial, we'll use a
+[GitHub Actions workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
+since it's included with the free plan for public projects.
 
-Here's some simplified pseudocode:
+Suppose our non-cobuild CI pipeline looks like this (with build cache writes enabled):
 
-**cobuild example with 3 machines**
+**.github/workflows/ci-single.yml**
 
 ```yaml
-# THIS IS SIMPLIFIED PSEUDOCODE ILLUSTRATING THE BASIC IDEA.
-# YOUR ACTUAL CI SYSTEM WILL USE A DIFFERENT REPRESENTATION.
+name: ci-single.yml
+on:
+  #push:
+  #  branches: ['main']
+  #pull_request:
+  #  branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
-  - job: primary
-    envs:
-      RUSH_COBUILD_CONTEXT_ID: ${{ BUILD_ID }}
-      RUSH_COBUILD_RUNNER_ID: primary
-      RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
-      REDIS_PASS: my_redis_password
+  build:
+    name: build
+    runs-on: ubuntu-latest
     steps:
-      - git clone
-      - rush install
-      - rush build
-      - publish artifacts
+      - uses: actions/checkout@v3
 
-  - job: cobuild1
-    envs:
-      RUSH_COBUILD_CONTEXT_ID: ${{ BUILD_ID }}
-      RUSH_COBUILD_RUNNER_ID: cobuild1
-      RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
-      REDIS_PASS: my_redis_password
-    steps:
-      - git clone
-      - rush install
-      - rush build
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-  - job: cobuild2
-    envs:
-      RUSH_COBUILD_CONTEXT_ID: ${{ BUILD_ID }}
-      RUSH_COBUILD_RUNNER_ID: cobuild2
-      RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
-      REDIS_PASS: my_redis_password
-    steps:
-      - git clone
-      - rush install
-      - rush build
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+
+      - name: Rush build (install-run-rush)
+        run: node common/scripts/install-run-rush.js build --verbose --timeline
+        env:
+          RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
+          RUSH_BUILD_CACHE_CREDENTIAL: ${{ secrets.RUSH_BUILD_CACHE_CREDENTIAL }}
 ```
 
-## Configuring environment variables
+Here's how we would convert that into a cobuild with 3 runners:
+
+**.github/workflows/ci-cobuild.yml**
+
+```yaml
+name: ci-cobuild.yml
+on:
+  #push:
+  #  branches: ['main']
+  #pull_request:
+  #  branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build:
+    name: cobuild
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        runner_id: [runner1, runner2, runner3]
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+
+      - name: Rush build (install-run-rush)
+        run: node common/scripts/install-run-rush.js build --verbose --timeline
+        env:
+          RUSH_BUILD_CACHE_WRITE_ALLOWED: 1
+          RUSH_BUILD_CACHE_CREDENTIAL: ${{ secrets.RUSH_BUILD_CACHE_CREDENTIAL }}
+          RUSH_COBUILD_CONTEXT_ID: ${{ github.run_id }}_${{ github.run_number }}_${{ github.run_attempt }}
+          RUSH_COBUILD_RUNNER_ID: ${{ matrix.runner_id }}
+          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+```
+
+The `runner_id` matrix causes the job to be run on 3 separate machines. The `REDIS_PASSWORD` variable name
+is what we defined earlier in **rush-redis-cobuild-plugin.json**. The `RUSH_COBUILD_CONTEXT_ID`
+and `RUSH_COBUILD_RUNNER_ID` variables are explained below.
+
+## Cobuild environment variables in detail
 
 ### `RUSH_COBUILD_CONTEXT_ID`
 
-Cobuild pipelines must define this environment variable; without it, Rush will perform a regular build without
+Cobuild runners must define this environment variable; without it, Rush will perform a regular build without
 any cobuild logic.
 
 The `RUSH_COBUILD_CONTEXT_ID` variable controls caching: Imagine that a pull request validation has failed
 because a project had errors. Without cobuilds, a project with errors is NOT saved to the build cache. If a
 person goes to the GitHub website and clicks a button to **"Re-run this job"**, the successful projects will
-be pulled from the cache, but that failed project will get built again.
+be pulled from the cache, but that failed project will be forced to build again, which is good because maybe
+it was a transient failure.
 
-However with cobuilds, if a project had errors, we don't want the other two machines to try to build that project.
-The error logs are saved to the build cache. Thus, without `RUSH_COBUILD_CONTEXT_ID`, when the person clicks
-**"Re-run this job"** the failing project would wrongly NOT get rebuilt.
+Whereas with cobuilds, if a project has errors, we don't want the other two machines to try to build that project.
+The error logs are saved to the build cache, and will be restored and printed by the other runners (to provide
+a complete log on every machine). But if a person clicks **"Re-run this job"**, how do we force the failing
+projects to get rebuild in that case? The `RUSH_COBUILD_CONTEXT_ID` identifier solves this, by getting added
+to the cache key to force a rebuild.
 
-How to assign this ID depends on your particular system, built most likely it will be a unique identifier of
-the parent job that spawns the 3 child jobs. It can be any string with these properties:
+`RUSH_COBUILD_CONTEXT_ID` is specified differently for each system. It can be any string with these properties:
 
-- `RUSH_COBUILD_CONTEXT_ID` must be the same across every machine for a given "run"
-- `RUSH_COBUILD_CONTEXT_ID` must be different each time a new "run" is started
+- `RUSH_COBUILD_CONTEXT_ID` must be the same across every machine for a given job
+- `RUSH_COBUILD_CONTEXT_ID` must be different each time the job is run, including reattempts of the same "run"
 - It must be a short string, because it becomes part of a cache key
 
 Some examples:
 
 <!-- prettier-ignore-start -->
-| CI system | Suggested value for `RUSH_COBUILD_CONTEXT_ID` | Reference |
-|---|---|---|
-|  Azure DevOps | `Build.BuildNumber` | [Configure run or build numbers](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml) |
-| Github Actions | `GITHUB_ACTION` `GITHUB_RUN_NUMBER` `GITHUB_RUN_ATTEMPT` | [Default environment variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) |
-| CircleCI | `CIRCLE_WORKFLOW_ID` `CIRCLE_BUILD_NUM` | [Project values and variables](https://circleci.com/docs/variables/) |
+| CI system | Suggested value for `RUSH_COBUILD_CONTEXT_ID` |
+|---|---|
+| [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml) | `${{ Build.BuildNumber }}` |
+| [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) | ` ${{ github.run_id }}_${{ github.run_number }}_${{ github.run_attempt }}` |
+| [CircleCI](https://circleci.com/docs/variables/) | `${CIRCLE_WORKFLOW_ID}_${CIRCLE_WORKFLOW_JOB_ID}` |
 <!-- prettier-ignore-end -->
 
 ### `RUSH_COBUILD_RUNNER_ID`
@@ -320,9 +360,11 @@ Some examples:
 This environment variable to uniquely identifies each machine. If this variable is not defined,
 Rush will generate a random identifier on each run.
 
+In the example, we specified it as `RUSH_COBUILD_RUNNER_ID: ${{ matrix.runner_id }}` for readability.
+
 ## Technical background
 
-### What is stored in Redis?
+### What gets stored in Redis?
 
 The cobuild feature uses Redis for two main purposes:
 
@@ -337,3 +379,10 @@ The cobuild feature uses Redis for two main purposes:
    of the operation's execution result and the corresponding `cache_id`. Before attempting to acquire a lock,
    a machine will first query this completion result information. If there is a completion result available,
    the result is reused based on the parsed information.
+
+## See also
+
+- [Enabling the build cache](./build_cache.md)
+- [Environment variables](../configs/environment_vars.md)
+- [Using Rush plugins](../maintainer/using_rush_plugins.md)
+- [Autoinstallers](./autoinstallers.md)
