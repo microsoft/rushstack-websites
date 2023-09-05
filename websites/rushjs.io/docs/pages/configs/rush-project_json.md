@@ -1,5 +1,5 @@
 ---
-title: rush-project.json (experimental)
+title: rush-project.json
 ---
 
 This is the template for the optional **rush-project.json** config file. This file may be provided

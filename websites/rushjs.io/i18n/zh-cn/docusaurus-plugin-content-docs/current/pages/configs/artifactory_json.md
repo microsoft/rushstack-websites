@@ -1,5 +1,5 @@
 ---
-title: artifactory.json（实验性）
+title: artifactory.json
 ---
 
 这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **artifactory.json** 文件：

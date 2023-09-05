@@ -1,5 +1,5 @@
 ---
-title: Cobuilds (Experimental)
+title: Cobuilds (experimental)
 ---
 
 <!--

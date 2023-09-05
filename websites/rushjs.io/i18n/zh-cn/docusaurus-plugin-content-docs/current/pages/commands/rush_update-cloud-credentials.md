@@ -1,5 +1,5 @@
 ---
-title: rush update-cloud-credentials（实验性）
+title: rush update-cloud-credentials
 ---
 
 ```

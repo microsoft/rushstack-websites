@@ -1,5 +1,5 @@
 ---
-title: artifactory.json (experimental)
+title: artifactory.json
 ---
 
 This is the template that [rush init](../commands/rush_init.md)
