@@ -351,13 +351,13 @@ it was a transient failure.
 Whereas with cobuilds, if a project has errors, we don't want the other two machines to try to build that project.
 The error logs are saved to the build cache, and will be restored and printed by the other runners (to provide
 a complete log on every machine). But if a person clicks **"Re-run this job"**, how do we force the failing
-projects to get rebuild in that case? The `RUSH_COBUILD_CONTEXT_ID` identifier solves this, by getting added
-to the cache key to force a rebuild.
+projects to get rebuild in that case? The `RUSH_COBUILD_CONTEXT_ID` identifier solves this. Rush adds it to the
+build cache key for failing projects to ensure they are rebuilt if the job is reattempted.
 
 `RUSH_COBUILD_CONTEXT_ID` is specified differently for each system. It can be any string with these properties:
 
-- `RUSH_COBUILD_CONTEXT_ID` must be the same across every machine for a given job
-- `RUSH_COBUILD_CONTEXT_ID` must be different each time the job is run, including reattempts of the same "run"
+- `RUSH_COBUILD_CONTEXT_ID` must be the same across every machine for a given pipeline
+- `RUSH_COBUILD_CONTEXT_ID` must be different each time the pipeline is run, including "reattempts" and "retries"
 - It must be a short string, because it becomes part of a cache key
 
 Some examples:
