@@ -50,12 +50,9 @@ if you've already reached the limits for a single machine (considering cpu cores
 And only if further parallelism is actually possible for your monorepo's project dependency graph.
 
 The cobuild feature launches multiple instances of a CI pipeline, under the assumption that machines will be
-readily available. For example, if your cobuild uses 4 machines, and your VM pool has 40 machines, then
-contention would not become an issue until 10 pull requests are backed up in the queue. In that case, a
-[merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)
-can help by optimistically validating multiple PRs together.
-
-An extremely large monorepo might need thousands of machines, at which point it would make more
+readily available. For example, if your cobuild allocates 4 machines, and your VM pool has 40 machines, then pool
+contention would not become a concern until 10 pull requests are waiting in the queue. By contrast,
+an extremely large monorepo might need thousands of machines, at which point it would make more
 sense to use a "build accelerator" such as
 [BuildXL](https://github.com/microsoft/BuildXL/blob/main/Documentation/Wiki/Frontends/js-rush-options.md)
 instead of cobuilds. (There are also plans to integrate Rush with
@@ -89,13 +86,22 @@ Before adopting cobuilds, we recommend to try these things first:
    save the PNPM store and restore it between runs. Some environments permit the machine to be reused for
    multiple jobs, so that other Rush caches are preserved.
 
-5. **Consider using a merge queue**: GitHub offers a basic
+5. **Consider using a merge queue**: If two pull requests are waiting to get merged, normally a CI system will
+   build a hot merge of `pr1+main` and `pr2+main`, to ensure that each PR branch is tested with the latest `main`.
+   However after `pr1+main` has merged, we generally won't force `pr2+main` to be redone with the new `main`; this
+   lack of safety can occasionally cause build breaks. (For example, suppose `pr1` deleted an API, but `pr2` added
+   another call to that API.) A "merge queue" (also known as "commit queue") improves safety by instead building
+   `pr1+main` and `pr1+pr2+main`; if the first PR fails, then it will retry with `pr2+main`. Advanced
+   merge queues support "batches", where they directly test a "train" of pull requests `pr1+pr2+main` and
+   only test `pr1+main` if there is a failure. This can speed up builds and/or reduce VM contention,
+   while still guaranteeing safety. GitHub's
    [merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)
-   for free. Rush can also be used with the [Mergify](https://mergify.com/) enterprise service.
+   doesn't support batches at the time of this writing, however, the [Mergify](https://mergify.com/) third-party
+   service [implements batches](https://docs.mergify.com/actions/queue/#batch-size) and has been tested with Rush.
 
 > **Prerequisites**
 >
-> In order to use this feature, you will need:
+> In order to use the cobuild feature, you will need:
 >
 > - The Rush [build cache](./build_cache.md) enabled with a cloud storage provider.
 >
