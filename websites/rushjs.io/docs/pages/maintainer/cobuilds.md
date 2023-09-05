@@ -365,9 +365,9 @@ Some examples:
 <!-- prettier-ignore-start -->
 | CI system | Suggested value for `RUSH_COBUILD_CONTEXT_ID` |
 |---|---|
-| [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml) | `${{ Build.BuildNumber }}` |
-| [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) | ` ${{ github.run_id }}_${{ github.run_number }}_${{ github.run_attempt }}` |
+| [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml) | `$(Build.BuildNumber)_$(System.Attempt)` |
 | [CircleCI](https://circleci.com/docs/variables/) | `${CIRCLE_WORKFLOW_ID}_${CIRCLE_WORKFLOW_JOB_ID}` |
+| [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) | ` ${{ github.run_id }}_${{ github.run_number }}_${{ github.run_attempt }}` |
 <!-- prettier-ignore-end -->
 
 ### `RUSH_COBUILD_RUNNER_ID`
