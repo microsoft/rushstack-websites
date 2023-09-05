@@ -362,7 +362,35 @@ Rush will generate a random identifier on each run.
 
 In the example, we specified it as `RUSH_COBUILD_RUNNER_ID: ${{ matrix.runner_id }}` for readability.
 
-## Technical background
+## Technical details
+
+### Build cache correctness
+
+You will find that the cobuild feature increases the requirement that every project's output is accurately saved
+and restored by the cache. To see why, suppose that project `A` directly depends on project `B`. There are several
+ways that an inaccurate cache might still produce a successful build:
+
+1. Project `A` and `B` are both cache misses, so no caching occurs. **- OR -**
+2. Project `A` and `B` are both cache hits. `B` does not get restored accurately. `A` would have failed to
+   compile, but didn't need to build `A`. The final result of `A` is still correct. **- OR -**
+3. Only project `A` is a cache miss. `B` does not get restored accurately, but the missing files are
+   still on disk from a previous build on the same machine. Thus `A` compiles without errors.
+
+These lucky situations are relatively common in non-cobuild scenarios, and if you're unlucky, the problem might
+go away of you try again. The failure won't be noticed consistently until this happens:
+
+4. Only project `A` is a cache miss. `B` does not get restored accurately, and we started with a clean disk.
+
+Cobuilds greatly increase the likelihood of encountering #4, because their goal is to build cache misses
+that depend on a cache hit. In short, after first enabling the cobuilds feature, you may need to spend some time
+fixing incorrect build cache configurations.
+
+> 👉 **rush-audit-cache-plugin**
+>
+> If you suspect that files are not getting accurately saved/restored by the Rush build cache,
+> try the [rush-audit-cache-plugin](https://www.npmjs.com/package/rush-audit-cache-plugin).
+> It detects such problems by monitoring file writes during a build operation. The file paths are then compared
+> with your cache configuration to produce a report of file paths that aren't being cached correctly.
 
 ### What gets stored in Redis?
 
