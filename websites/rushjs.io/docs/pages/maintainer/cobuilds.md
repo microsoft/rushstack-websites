@@ -22,42 +22,63 @@ title: Cobuilds (experimental)
   RIGHT: "This class defines a cobuild lock provider."
 -->
 
-Rush's **cobuild** feature ("cooperative builds") provides a cheap way to distribute work across
-multiple machines. For an extremely large scale setup, you need a build accelerator such as
-[BuildXL](https://github.com/microsoft/BuildXL/blob/main/Documentation/Wiki/Frontends/js-rush-options.md)
-to manage a farm of machines and schedule jobs. (There are also plans to integrate Rush
-with [bazel-buildfarm](https://github.com/bazelbuild/bazel-buildfarm), Google's equivalent of BuildXL.)
-However such systems have steep learning curves and require nontrivial maintenance.
+Rush's "cobuild" feature (cooperative builds) provides a lightweight solution for distributing work across
+multiple machines. The idea is a simple extension of what you're already doing: just spawn multiple instances
+of the same CI pipeline on different machines, allowing them to share work via Rush's [build cache](./build_cache.md).
 
-By comparsion, cobuilds are a simple extension of what you're already doing: spawn multiple instances of
-your CI pipeline on different machines, allowing them to share work via Rush's [build cache](./build_cache.md).
-For example, suppose your runs `rush install && rush build` and we launch this two machines.
-If machine #1 has already built a project, then machine #2 can skip that project, by fetching the result
-from the build cache. But there is a flaw in this idea: What if machine #2 gets to that project when
-machine #1 is almost finished. The cache miss will cause machine #2 to start building the same project,
-when it would have been better to work on something else and wait for machine #1 to finish.
+For example, suppose your job runs `rush install && rush build`, and we launch this command on two machines.
+If machine #1 has already built a project, then machine #2 will skip that project, instead fetching the result
+from the build cache. In this way, the building gets divided between the two pipelines, and with perfect parallelism
+the build might finish in half the time.
+
+But there is a flaw in this idea: What if machine #2 reaches a project that machine #1 already started building
+but has not finished yet? This cache miss will cause machine #2 to start building the same project,
+when it may have been better to work on something else while waiting for machine #1 to finish that project.
 We can solve this by using a simple key/value store to communicate progress between machines.
-(Rush includes a [Redis](https://redis.io/) provider, but it's easy to implement plugins for whatever
-service is most convenient for your environment.)
+(In this tutorial we'll use Rush's [Redis](https://redis.io/) provider, but if your company already hosts
+some other service such as [Memcached](https://www.memcached.org/), it's
+[fairly easy](https://github.com/microsoft/rushstack/blob/main/rush-plugins/rush-redis-cobuild-plugin/src/RedisCobuildLockProvider.ts)
+to implement your own provider.)
 
 ## Do I need cobuilds?
 
 Without cobuilds, Rush already parallelizes your jobs on a single machine. (This may not be immediately obvious,
-since Rush "collates" the console output so that it looks as if projects are getting built one at a time.)
-You can fine-tune the parallelism using the `--parallelism` command-line parameter.
+since Rush's output is "collated" for readability, making it appear as if projects are getting built one at a time.)
+You can fine-tune the maximum parallelism using the `--parallelism` command-line parameter, but keep in mind
+that projects can only build concurrently if they don't depend on each other. Thus, cobuilds will only help
+if you've reached the limits for a single machine (considering cpu cores, disk I/O rates, and available memory).
+And only if further parallelism is actually possible for your project dependency graph.
+
+The cobuild feature launches multiple instances of a CI pipeline, under the assumption that machines will be
+readily available. Typical Rush monorepos target a pool of machines that is 100 or less, so this should not
+be an issue. An extremely large monorepo, might need thousands of machines, at which point it would make more
+sense to use a "build accelerator" such as
+[BuildXL](https://github.com/microsoft/BuildXL/blob/main/Documentation/Wiki/Frontends/js-rush-options.md)
+instead of cobuilds. (There are also plans to integrate Rush with
+[bazel-buildfarm](https://github.com/bazelbuild/bazel-buildfarm); Bazel is Google's equivalent of BuildXL.)
+Build accelerators generally require you to replace your CI system with their centralized job scheduler
+that manages its own dedicated pool of machines. Such systems require nontrivial maintenance
+and can have steeper learning curves, which is why we recommend to start with cobuilds first.
 
 Before adopting cobuilds, we recommend to try these things first:
 
 1. **Enable the build cache**: The [build cache](./build_cache.md) is a prerequisite for cobuilds anyway.
 
-2. **Identify bottlenecks:** If your monorepo's dependency graph does not allow parallelism, then no approach
-   or amount of parallelism will be effective. You can use the`--timeline` parameter to identify bottlenecks
-   that causing too many projects to wait before they can start building. These bottlenecks can be solved
-   by refactoring code to break apart big projects and eliminate unnecessary dependencies.
+2. **Identify bottlenecks:** If your monorepo's dependency graph does not actually allow lots of projects
+   to be built in parallel, that must be fixed first before considering distributed builds.
+   You can use Rush's `--timeline` parameter to identify bottlenecks that are causing too many projects
+   to wait before they can start building. These bottlenecks can be solved by:
 
-3. **Upgrade your hardware:** Compared to engineering salaries, hardware is extremely cheap.
-   If your builds are slow, we recommend to upgrade to high end hardware with the maximum amount of RAM
-   and CPU cores.
+   - eliminating unnecessary dependencies between projects
+   - introducing [Rush phases](./phased_builds.md) to break up build steps into multiple operations
+   - refactoring code to break up big projects into smaller projects
+
+3. **Upgrade your hardware:** If your builds are slow, it can help to add more machines. We generally recommend
+   to choose high end hardware with the maximum amount of RAM and CPU cores for your plan, based on typical
+   behavior of `rush install` and `rush build`. But every monorepo is different, so collect benchmarks on
+   different hardware configurations to inform your decision. Speeding up the build makes everybody more productive;
+   however, because hardware upgrades usually come from a different budget than engineering salaries,
+   management sometimes may need some help to see this connection.
 
 4. **Cache state between runs:** CI machines often start `rush install && rush build` with a completely clean
    machine image. For example, `rush install` time can be improved by using `RUSH_PNPM_STORE_PATH` to
@@ -71,23 +92,27 @@ Before adopting cobuilds, we recommend to try these things first:
 > - The [build cache](./build_cache.md) enabled with a cloud storage provider.
 >
 > - A [Redis server](https://redis.io/). If your company uses some other key/value service,
->   you can use that instead, by implementing a plugin following the example of
+>   you can implement a plugin by following the example of
 >   [rush-redis-cobuild-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-redis-cobuild-plugin).
+>   (And consider contributing it back to Rush Stack!)
 >
-> - A CI job runner that is able to trigger multiple instances of a given CI pipeline.
+> - A CI system that is able to trigger multiple runners for a given CI pipeline.
 >   For example, Jenkins and Azure DevOps allow a "parent" pipeline to trigger "child" pipelines.
+>
+> - [Rush phases](./phased_builds.md) are suggested to increase parallelism, but are not required.
 
 ## Enabling the cobuild feature
 
-1. Upgrade `rushVersion` in your **rush.json** to `5.104.0` or newer.
+1. Upgrade `rushVersion` in your **rush.json** to `5.104.1` or newer.
 
-2. If you haven't done something equivalent already, create an autoinstaller for the Rush plugin:
+2. Create an autoinstaller for the Rush plugin:
 
    ```bash
    rush init-autoinstaller --name cobuild-plugin
    ```
 
-   For background about plugins and autoinstallers, see [Using Rush plugins](../maintainer/using_rush_plugins.md).
+   It's also okay to use an existing autoinstaller. For more about Rush plugins and autoinstallers,
+   see [Using Rush plugins](../maintainer/using_rush_plugins.md) and [Autoinstallers](./autoinstallers.md).
 
 3. Add the `@rushstack/rush-redis-cobuild-plugin` plugin to the autoinstaller. (We'll use Redis for this tutorial.)
 
@@ -106,7 +131,7 @@ Before adopting cobuilds, we recommend to try these things first:
 
    > 👉 **IMPORTANT:**
    >
-   > Keep the version of `@rushstack/rush-redis-cobuild-plugin` in sync with
+   > Over time, make sure to keep the version of `@rushstack/rush-redis-cobuild-plugin` in sync with
    > the `rushVersion` from your **rush.json**.
 
 4. Update the autoinstaller's lockfile:
@@ -161,7 +186,7 @@ Before adopting cobuilds, we recommend to try these things first:
      /**
       * The URL of your Redis server
       */
-     "url": "redis://<remote_ip>:6379",
+     "url": "redis://server.example.com:6379",
 
      /**
       * An environment variable that your CI pipeline will assign,
@@ -171,7 +196,7 @@ Before adopting cobuilds, we recommend to try these things first:
    }
    ```
 
-7. Use `rush init` to create the **cobuild.json** [config file](../configs/cobuild_json.md) that is
+7. You can use `rush init` to create the **cobuild.json** [config file](../configs/cobuild_json.md) that is
    used to enable the cobuild feature. Make sure to set `"cobuildFeatureEnabled": true` as shown below:
 
    **common/config/rush/cobuild.json**
@@ -201,13 +226,13 @@ Before adopting cobuilds, we recommend to try these things first:
    }
    ```
 
-8. Run `rush update` which should install the `cobuild-plugin` autoinstaller. This downloads its
-   manifest file, which should be committed to Git as well:
+8. Run `rush update` which should now install the `cobuild-plugin` autoinstaller. This downloads its
+   manifest file:
 
    **common/autoinstallers/cobuild-plugin/rush-plugins/@rushstack/rush-redis-cobuild-plugin/rush-plugin-manifest.json**
 
-   (As part of the plugin system, this file caches important information so that Rush can access it
-   without having to install the plugin's NPM package.)
+   Commit this file to Git as well. (As part of the plugin system, this file caches important information so
+   that Rush can access it without having to install the plugin's NPM package.)
 
 ## Configuring build pipelines
 
