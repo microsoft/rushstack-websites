@@ -50,7 +50,7 @@ if you've already reached the limits for a single machine (considering cpu cores
 And only if further parallelism is actually possible for your monorepo's project dependency graph.
 
 The cobuild feature launches multiple instances of a CI pipeline, under the assumption that machines will be
-readily available. For example, if your cobuild allocates 4 machines, and your VM pool has 40 machines, then pool
+readily available. For example, if your cobuild allocates 4 machines, and your machine pool has 40 machines, then pool
 contention would not become a concern until 10 pull requests are waiting in the queue. By contrast,
 an extremely large monorepo might need thousands of machines, at which point it would make more
 sense to use a "build accelerator" such as
@@ -93,7 +93,7 @@ Before adopting cobuilds, we recommend to try these things first:
    another call to that API.) A "merge queue" (also known as "commit queue") improves safety by instead building
    `pr1+main` and `pr1+pr2+main`; if the first PR fails, then it will retry with `pr2+main`. Advanced
    merge queues support "batches", where they directly test a "train" of pull requests `pr1+pr2+main` and
-   only test `pr1+main` if there is a failure. This can speed up builds and/or reduce VM contention,
+   only test `pr1+main` if there is a failure. This can speed up builds and/or reduce machine contention,
    while still guaranteeing safety. GitHub's
    [merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)
    doesn't support batches at the time of this writing, however, the [Mergify](https://mergify.com/) third-party
@@ -110,8 +110,9 @@ Before adopting cobuilds, we recommend to try these things first:
 >   [rush-redis-cobuild-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-redis-cobuild-plugin).
 >   (And consider contributing it back to Rush Stack!)
 >
-> - A CI system that is able to trigger multiple runners for a given CI pipeline.
->   For example, Jenkins and Azure DevOps allow a "parent" pipeline to trigger "child" pipelines.
+> - A CI system that is able to allocate multiple machines when a CI pipeline is triggered.
+>   For example, with GitHub Actions, a "workflow" can launch multiple "jobs" whose "runner" is a separate machine.
+>   With Azure DevOps, "pipelines" can run jobs on multiple "agents" that can be on different machines.
 >
 > - [Rush phases](./phased_builds.md) are suggested to increase parallelism, but are _not required_ for cobuilds.
 
