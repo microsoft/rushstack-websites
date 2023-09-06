@@ -1,5 +1,5 @@
 ---
-title: build-cache.json（实验性）
+title: build-cache.json
 ---
 
 这是 [rush init](../commands/rush_init.md) 为 monorepo 生成的模版下的 **build-cache.json** 文件：

@@ -1,5 +1,5 @@
 ---
-title: rush-project.json （实验性）
+title: rush-project.json
 ---
 
 **rush-project.json** 是可选的配置文件，该文件通过 [rig 包](https://rushstack.io/pages/heft/rig_packages/) 提供。

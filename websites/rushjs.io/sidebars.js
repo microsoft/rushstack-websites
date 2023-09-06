@@ -54,6 +54,7 @@ const sidebars = {
         'pages/maintainer/deploying',
         'pages/maintainer/build_cache',
         'pages/maintainer/phased_builds',
+        'pages/maintainer/cobuilds',
         'pages/maintainer/npm_registry_auth'
       ]
     },
@@ -128,6 +129,7 @@ const sidebars = {
         'pages/configs/pnpmfile_cjs',
         'pages/configs/artifactory_json',
         'pages/configs/build-cache_json',
+        'pages/configs/cobuild_json',
         'pages/configs/command-line_json',
         'pages/configs/common-versions_json',
         'pages/configs/deploy_json',

@@ -1,5 +1,5 @@
 ---
-title: build-cache.json (experimental)
+title: build-cache.json
 ---
 
 This is the template that [rush init](../commands/rush_init.md)

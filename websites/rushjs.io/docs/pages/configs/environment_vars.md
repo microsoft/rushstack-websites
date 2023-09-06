@@ -64,6 +64,30 @@ Overrides the value of `isCacheWriteAllowed` in the `build-cache.json` configura
 environment variable must be `1` (for true) or `0` (for false). If there is no build cache configured, then
 this environment variable is ignored.
 
+## RUSH_COBUILD_CONTEXT_ID (EXPERIMENTAL)
+
+Cobuild pipelines must define this environment variable; without it, Rush will perform a regular build without
+any cobuild logic. See the [Cobuilds](../maintainer/cobuilds.md) documentation for details.
+
+## RUSH_COBUILD_LEAF_PROJECT_LOG_ONLY_ALLOWED (EXPERIMENTAL)
+
+This is useful when you are using the cobuild feature but the Rush build cache is not able for
+"leaf" projects in the dependency graph. (For example, common libraries have build cache enabled,
+but the apps the consume these libraries do now.) Normally, because we can't obtain such projects
+from the cache, all cobuild machines are forced to build that project. This is inefficient if our
+goal is to validate whether the project builds successfully, not to deploy it.
+
+Setting `RUSH_COBUILD_LEAF_PROJECT_LOG_ONLY_ALLOWED` to `1` will cause Rush to use a special
+"log files only" caching for leaf projects with build cache disabled. The log files are cached
+and will be displayed on other cobuild machines, but the project contents are cached or restored.
+See the [Cobuilds](../maintainer/cobuilds.md) documentation for details.
+
+## RUSH_COBUILD_RUNNER_ID (EXPERIMENTAL)
+
+This environment variable to uniquely identifies each cobuild machine. If this variable is not defined,
+Rush will generate a random identifier on each run.
+See the [Cobuilds](../maintainer/cobuilds.md) documentation for details.
+
 ## RUSH_DEPLOY_TARGET_FOLDER
 
 This environment variable can be used to specify the `--target-folder` parameter

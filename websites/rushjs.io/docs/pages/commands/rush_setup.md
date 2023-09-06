@@ -1,5 +1,5 @@
 ---
-title: rush setup (experimental)
+title: rush setup
 ---
 
 ```

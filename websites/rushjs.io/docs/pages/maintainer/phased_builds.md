@@ -1,5 +1,5 @@
 ---
-title: Enabling phased builds (experimental)
+title: Enabling phased builds
 ---
 
 By default, Rush builds each project by running a build script (similar to `npm run build`) separately in each project folder, processing projects in parallel when the dependency graph allows. From Rush's perspective, everything that happens inside that build
