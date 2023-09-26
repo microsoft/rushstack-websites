@@ -57,6 +57,9 @@ Optional arguments:
                         "--findRelatedTests" parameter in Jest's
                         documentation. This parameter is not compatible with
                         watch mode.
+  --log-heap-usage, --jest:log-heap-usage
+                        Logs the heap usage after every test. Useful to debug
+                        memory leaks. Use together with --expose-gc in node.
   --max-workers COUNT_OR_PERCENTAGE
                         Use this parameter to control maximum number of
                         worker processes tests are allowed to use. This

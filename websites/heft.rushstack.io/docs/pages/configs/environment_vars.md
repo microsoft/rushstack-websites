@@ -24,6 +24,10 @@ This environment variable provides an alternate method for specifying the
 This environment variable provides an alternate method for specifying the
 `--test-timeout-ms` parameter for `@rushstack/heft-jest-plugin`.
 
+## NODE_ENV
+
+This environment variable is automatically set to value of `test` unless it already exists.
+
 ## RUSHSTACK_FILE_ERROR_BASE_FOLDER
 
 Controls how source file paths are displayed when printing diagnostic messages such as errors or warnings.
