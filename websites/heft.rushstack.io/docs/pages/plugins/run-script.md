@@ -85,7 +85,7 @@ export interface IRunScriptOptions {
 
   /**
    * If your script performs a long-running task, it must periodically check
-   * this `cancellationToken` so that Heft can gracefully abort the operation.
+   * this `abortSignal` so that Heft can gracefully abort the operation.
    */
   runOptions: IHeftTaskRunHookOptions;
 
@@ -106,7 +106,7 @@ import type { IRunScriptOptions } from '@rushstack/heft';
 
 export async function runAsync(options: IRunScriptOptions): Promise<void> {
   // If your script performs a long-running task, it must periodically check
-  // options.runOptions.cancellationToken so that Heft can gracefully abort the operation.
+  // options.runOptions.abortSignal so that Heft can gracefully abort the operation.
   options.heftTaskSession.logger.terminal.writeLine('Hello, world!');
 }
 ```
@@ -118,7 +118,7 @@ export async function runAsync(options: IRunScriptOptions): Promise<void> {
 module.exports = {
   runAsync: async (options) => {
     // If your script performs a long-running task, it must periodically check
-    // options.runOptions.cancellationToken so that Heft can gracefully abort the operation.
+    // options.runOptions.abortSignal so that Heft can gracefully abort the operation.
     options.heftTaskSession.logger.terminal.writeLine('Hello, world!');
   }
 };
