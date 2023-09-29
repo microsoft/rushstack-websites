@@ -28,8 +28,6 @@ frequently receive support tickets about this error, which can be avoided by sho
 The `ERR_PNPM_NO_MATCHING_VERSION` code above is from PNPM. Rush's corresponding tip ID
 is `TIP_PNPM_NO_MATCHING_VERSION`. We can define the tip as follows:
 
-(If you don't have this file, you can generate it using `rush init`.)
-
 **common/config/rush/custom-tips.json**
 
 ```js
@@ -65,6 +63,8 @@ is `TIP_PNPM_NO_MATCHING_VERSION`. We can define the tip as follows:
   ]
 }
 ```
+
+> If you don't have this file, you can generate it using `rush init`.
 
 With this change, users will now see the custom message alongside the original error:
 

@@ -22,8 +22,6 @@ The latest release of example-library is "1.1.0".
 
 上面的 `ERR_PNPM_NO_MATCHING_VERSION` 代码来自 PNPM。Rush 对应的提示 ID 是 `TIP_PNPM_NO_MATCHING_VERSION`。我们可以如下定义提示：
 
-(如果您没有此文件，您可以使用 `rush init` 生成它。)
-
 **common/config/rush/custom-tips.json**
 
 ```js
@@ -58,6 +56,8 @@ The latest release of example-library is "1.1.0".
   ]
 }
 ```
+
+> 如果您没有此文件，您可以使用 `rush init` 生成它。
 
 随着这次更改，用户现在将在原始错误旁边看到 custom tip：
 
