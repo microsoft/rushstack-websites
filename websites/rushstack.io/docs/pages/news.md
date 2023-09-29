@@ -2,6 +2,8 @@
 title: What's new
 ---
 
+import { MastodonFeed } from 'theme-rushstack-suite-nav/lib/components/MastodonFeed';
+
 The **Rush Hour** monthly video call is the easiest way to find out what's happening with Rush Stack:
 
 - Sign up using the [Events](https://rushstack.io/community/events/) page.
@@ -27,6 +29,6 @@ of changelogs for all projects.
 
 ## Announcements
 
-Follow us on [Twitter (@rushstack)](https://twitter.com/rushstack) or [Mastodon (@rushstack@fosstodon.org)](https://fosstodon.org/@rushstack)
+Follow us on [Mastodon (@rushstack@fosstodon.org)](https://fosstodon.org/@rushstack) or [Twitter (@rushstack)](https://twitter.com/rushstack).
 
-<div dangerouslySetInnerHTML={{__html: '<a class="twitter-timeline" data-width="600" tweet-limit="10" chrome="noscrollbar" data-dnt="true" data-link-color="#c95228" href="https://twitter.com/rushstack?ref_src=twsrc%5Etfw">Tweets by @rushstack</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'}} />
+<MastodonFeed mastodonUserFullName="@rushstack@fosstodon.org" mastodonUserId="109525862248474026" />
