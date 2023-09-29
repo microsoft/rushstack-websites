@@ -1,0 +1,118 @@
+.feed {
+  color: #ffffff;
+  background-color: #282c37;
+  max-width: 600px;
+  border-radius: 6px;
+}
+
+.feedHeader {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #ffffff;
+  text-align: right;
+}
+.feedHeader a {
+  color: #ffffff;
+}
+
+.statusPrepend {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  padding-bottom: 16px;
+
+  font-weight: 700;
+  color: #606984;
+}
+
+.status {
+  border-color: #393f4f;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 16px;
+
+  cursor: pointer;
+}
+
+.status_info {
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status_relativeTime {
+  color: #606984;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.status_relativeTime:hover {
+  color: #606984;
+}
+
+.status_displayName {
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+  column-gap: 10px;
+}
+
+.status_displayName:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.displayName_html {
+  font-weight: 700;
+}
+
+.displayName_html:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.displayName_account {
+  color: #606984;
+}
+.displayName_account:hover {
+  color: #606984;
+}
+
+.status_avatar {
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  height: 46px;
+  width: 46px;
+  border-radius: 4px;
+}
+
+.status_content {
+}
+
+.status_content a {
+  color: #8c8dff;
+}
+
+.status_content :global(.mention) {
+  color: #d9e1e8;
+}
+
+.media_gallery {
+  border-radius: 8px;
+}
+
+.mastodonIcon_boost {
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2220.639025%22%20height%3D%2212.692221%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m4.2439268%200.02472098c-0.1%200.03-0.17%200.1-0.22%200.18l-3.95%204.9c-0.2%200.3%200.03%200.78%200.4%200.8h2.4v2.68c0%204.26-0.55%203.62%203.66%203.62h7.6600002l-2.3-2.84c-0.03-0.02-0.03-0.04-0.05-0.06h-5.3000002c-0.44%200-0.72-0.3-0.72-0.72v-2.7h2.5c0.37%200.03%200.63-0.48%200.4-0.77l-3.95-4.9c-0.12-0.17-0.34-0.25-0.53-0.2zm12.16%200.43c-0.55-0.02-1.32%200.02-2.4%200.02h-7.6300002l2.32%202.85%200.03%200.06h5.2500002c0.42%200%200.72%200.28%200.72%200.72v2.7h-2.5c-0.36%200.02-0.56%200.54-0.3%200.8l3.92%204.9c0.18%200.25%200.6%200.25%200.78%200l3.94-4.9c0.26-0.28%200-0.83-0.37-0.8h-2.49v-2.7c0-3.15%200.4-3.62-1.25-3.66z%22%20fill%3D%22%23606984%22%20stroke-width%3D%220%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
