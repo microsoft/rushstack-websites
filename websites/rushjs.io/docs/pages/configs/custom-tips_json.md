@@ -3,7 +3,7 @@ title: custom-tips.json (experimental)
 ---
 
 This is the template that [rush init](../commands/rush_init.md)
-generates for the [Custom Tips](../maintainer/custom_tips.md) feature.
+generates for the [Custom tips](../maintainer/custom_tips.md) feature.
 
 **common/config/rush/custom-tips.json**
 
@@ -39,4 +39,4 @@ generates for the [Custom Tips](../maintainer/custom_tips.md) feature.
 
 ## See also
 
-- [Custom Tips](../maintainer/custom_tips.md)
+- [Custom tips](../maintainer/custom_tips.md)

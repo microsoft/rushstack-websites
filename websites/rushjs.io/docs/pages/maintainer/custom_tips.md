@@ -2,7 +2,7 @@
 title: Custom tips (experimental)
 ---
 
-Custom Tips allow you to annotate Rush's console messages with advice tailored for your specific monorepo.
+Custom tips allow you to annotate Rush's console messages with advice tailored for your specific monorepo.
 
 Here's an example situation where custom tips can help: Suppose that your company uses a private NPM registry,
 which periodically syncs the latest package versions from the upstream `npmjs.com` server. Sometimes users may
@@ -96,7 +96,7 @@ relatively easy. The code is in
 [rush-lib/src/api/CustomTipsConfiguration.ts](https://github.com/microsoft/rushstack/blob/main/libraries/rush-lib/src/api/CustomTipsConfiguration.ts),
 so feel free to create a pull request proposing new tips.
 
-## Custom Tip identifiers
+## Custom tip identifiers
 
 <!-- NOTE: Sort them alphabetically! -->
 
