@@ -2,9 +2,9 @@
 title: Custom tips (实验性功能)
 ---
 
-Custom tips 允许您为 Rush 的控制台消息添加为您的特定单仓库量身定制的建议。
+Custom tips 允许您为 Rush 打印的命令行消息添加为您的特定单仓库量身定制的建议 (tips)。
 
-以下是一个 custom tips 可以帮助的例子：假设您的公司使用一个私有的 NPM 注册表，该注册表定期从上游的 `npmjs.com` 服务器同步最新的包版本。有时用户可能试图安装刚刚发布的版本，而该版本尚未同步，此时 `rush update` 可能会显示以下错误：
+以下是一个 custom tips 能够帮忙的例子：假设您的公司使用一个私有的 NPM registry，该注册表定期从上游的 `npmjs.com` 服务器同步最新的包版本。有时用户可能试图安装刚刚发布的版本，而该版本尚未同步，此时 `rush update` 可能会显示以下错误：
 
 ```
 Progress: resolved 0, reused 1, downloaded 0, added 0
@@ -16,7 +16,7 @@ This error happened while installing a direct dependency of my-app
 The latest release of example-library is "1.1.0".
 ```
 
-此错误有些令人困惑，因为真正的最新发布版本是 `1.2.3`，而错误则是指的私有注册表同步的最新版本。如果您为您的单仓库维护一个帮助热线，您可能会经常收到关于这个错误的支持票据，这可以通过显示 custom tip 来避免。
+此错误有些令人困惑，因为 npm 上的最新发布版本确实是 `1.2.3`，而错误是因为您公司私有的 NPM registry 同步的最新最新版本还在 `1.1.0`。如果您的团队为 monorepo 维护一个帮助热线（比如 oncall 群），您可能会经常收到关于这个错误的 on-call。这可以通过显示 custom tip 来避免。
 
 ## 配置 custom tip
 
@@ -51,7 +51,7 @@ The latest release of example-library is "1.1.0".
     // }
     {
       "tipId": "TIP_PNPM_NO_MATCHING_VERSION",
-       "message": "PNPM 的这个“没有匹配版本”的错误经常是由于新版本尚未同步到我们公司的内部 NPM 注册表所导致的。\n\n要获取故障排除指南，请查阅我们的团队 wiki：\n\nhttps://example.com/wiki/npm-syncing"
+       "message": "PNPM 的这个“no matching version”的错误经常是由于新版本尚未同步到我们公司的内部 NPM registry所导致的。\n\n要获取故障排除指南，请查阅我们的团队 wiki：\n\nhttps://example.com/wiki/npm-syncing"
     }
   ]
 }
@@ -72,7 +72,7 @@ The latest release of example-library is "1.1.0".
 
 | Custom Tip (TIP_PNPM_NO_MATCHING_VERSION)
 |
-| PNPM 的这个“没有匹配版本”的错误经常是由于新版本尚未同步到我们公司的内部 NPM 注册表所导致的。
+| PNPM 的这个“no matching version found”的错误经常是由于新版本尚未同步到我们公司的内部 NPM registry 所导致的。
 |
 | 要获取故障排除指南，请查阅我们的团队 wiki：
 |
@@ -127,12 +127,12 @@ The latest release of example-library is "1.1.0".
 
 ### TIP_RUSH_INCONSISTENT_VERSIONS
 
-当项目有不一致的依赖版本时，此消息由 `rush install` 或 `rush update` 打印，只有在 **rush.json** 中启用了 `ensureConsistentVersions` 时才会这样。
+当项目有不一致的依赖版本时，此消息由 `rush install` 或 `rush update` 打印，前提是你的项目在 **rush.json** 中启用了 `ensureConsistentVersions`（我们也推荐如此）。
 
 **Rush 输出示例：**
 
 ```
-找到 5 个不匹配的依赖关系！
+Found 5 mis-matching dependencies!
 ```
 
 ## 另请参阅
