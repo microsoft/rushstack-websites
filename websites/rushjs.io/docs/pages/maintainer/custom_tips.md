@@ -144,3 +144,7 @@ only if `ensureConsistentVersions` is enabled in **rush.json**.
 ```
 Found 5 mis-matching dependencies!
 ```
+
+## See also
+
+- [custom-tips.json](../configs/custom-tips_json.md) documentation

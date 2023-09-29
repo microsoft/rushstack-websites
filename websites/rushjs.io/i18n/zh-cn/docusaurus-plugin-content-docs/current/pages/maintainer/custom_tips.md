@@ -134,3 +134,7 @@ The latest release of example-library is "1.1.0".
 ```
 找到 5 个不匹配的依赖关系！
 ```
+
+## 另请参阅
+
+- [custom-tips.json](../configs/custom-tips_json.md) 文档
