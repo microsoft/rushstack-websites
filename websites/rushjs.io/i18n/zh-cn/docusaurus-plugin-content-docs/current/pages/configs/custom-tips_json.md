@@ -2,7 +2,7 @@
 title: custom-tips.json (实验性功能)
 ---
 
-这是 [rush init](../commands/rush_init.md) 为 [Custom tips](../maintainer/custom_tips.md) 功能生成的模板。
+这是 [rush init](../commands/rush_init.md) 为 [Custom tips](../maintainer/custom_tips.md) 功能生成的模板配置文件。
 
 **common/config/rush/custom-tips.json**
 
