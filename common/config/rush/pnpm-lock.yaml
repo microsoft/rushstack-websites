@@ -68,16 +68,21 @@ importers:
       '@docusaurus/types': 2.3.1
       '@rushstack/heft': ~0.49.7
       '@rushstack/heft-web-rig': ~0.14.5
+      '@types/dompurify': ^3.0.3
       '@types/heft-jest': ~1.0.3
       '@types/node': 16.18.12
       '@types/react': ^17.0.2
       '@types/react-dom': ^17.0.2
+      dayjs: ~1.11.4
+      dompurify: ^3.0.6
       react: ^17.0.2
       react-dom: ^17.0.2
       tslib: ^2.4.0
       typescript: ~4.7.4
     dependencies:
       '@docusaurus/core': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
+      dayjs: 1.11.7
+      dompurify: 3.0.6
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       tslib: 2.5.0
@@ -85,6 +90,7 @@ importers:
       '@docusaurus/types': 2.3.1_sfoxds7t5ydpegc3knd667wn6m
       '@rushstack/heft': 0.49.7_@types+node@16.18.12
       '@rushstack/heft-web-rig': 0.14.5_5hykmn7vfxz5xqj34k2r5ezzia
+      '@types/dompurify': 3.0.3
       '@types/heft-jest': 1.0.3
       '@types/node': 16.18.12
       '@types/react': 17.0.53
@@ -3855,6 +3861,12 @@ packages:
     dependencies:
       '@types/node': 16.18.12
 
+  /@types/dompurify/3.0.3:
+    resolution: {integrity: sha512-odiGr/9/qMqjcBOe5UhcNLOFHSYmKFOyr+bJ/Xu3Qp4k1pNPAlNLUVNNLcLfjQI7+W7ObX58EdD3H+3p3voOvA==}
+    dependencies:
+      '@types/trusted-types': 2.0.4
+    dev: true
+
   /@types/eslint-scope/3.7.4:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
@@ -4054,6 +4066,10 @@ packages:
 
   /@types/tough-cookie/4.0.2:
     resolution: {integrity: sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==}
+    dev: true
+
+  /@types/trusted-types/2.0.4:
+    resolution: {integrity: sha512-IDaobHimLQhjwsQ/NMwRVfa/yL7L/wriQPMhw1ZJall0KX6E1oxk29XMDeilW5qTIg5aoiqf5Udy8U/51aNoQQ==}
     dev: true
 
   /@types/unist/2.0.6:
@@ -5776,6 +5792,10 @@ packages:
     engines: {node: '>= 4'}
     dependencies:
       domelementtype: 2.3.0
+    dev: false
+
+  /dompurify/3.0.6:
+    resolution: {integrity: sha512-ilkD8YEnnGh1zJ240uJsW7AzE+2qpbOUYjacomn3AvJ6J4JhKGSZ2nh4wUIXPZrEPppaCLx5jFe8T89Rk8tQ7w==}
     dev: false
 
   /domutils/2.8.0:
