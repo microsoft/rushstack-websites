@@ -26,7 +26,7 @@ This environment variable provides an alternate method for specifying the
 
 ## NODE_ENV
 
-This environment variable is automatically set to value of `test` unless it already exists.
+While running tests, the [Jest plugin](../plugins/jest.md) sets `NODE_ENV=test` unless the variable was already assigned.
 
 ## RUSHSTACK_FILE_ERROR_BASE_FOLDER
 

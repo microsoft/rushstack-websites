@@ -55,7 +55,8 @@ const sidebars = {
         'pages/maintainer/build_cache',
         'pages/maintainer/phased_builds',
         'pages/maintainer/cobuilds',
-        'pages/maintainer/npm_registry_auth'
+        'pages/maintainer/npm_registry_auth',
+        'pages/maintainer/custom_tips'
       ]
     },
     {
@@ -132,6 +133,7 @@ const sidebars = {
         'pages/configs/cobuild_json',
         'pages/configs/command-line_json',
         'pages/configs/common-versions_json',
+        'pages/configs/custom-tips_json',
         'pages/configs/deploy_json',
         'pages/configs/experiments_json',
         'pages/configs/pnpm-config_json',
