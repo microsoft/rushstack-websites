@@ -2,6 +2,8 @@
   "extends": "./node_modules/@rushstack/heft-web-rig/profiles/library/tsconfig-base.json",
   "compilerOptions": {
     "types": ["node", "heft-jest"],
+    "target": "ES2020",
+    "lib": ["ESNext", "scripthost", "es2015.collection", "es2015.promise", "es2015.iterable", "dom"],
     "importHelpers": true,
     "noEmitHelpers": true
   }
