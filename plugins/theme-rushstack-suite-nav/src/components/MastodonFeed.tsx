@@ -252,6 +252,15 @@ export function MastodonFeed(props: IMastodonFeedProps): JSX.Element {
       {posts.map((post, index) => (
         <MastodonPost key={index} post={post} userUrl={userUrl} />
       ))}
+      <a
+        className={[styles.feedFooterLink, 'no-external-link-icon'].join(' ')}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={userUrl}
+      >
+        <div className={styles.feedFooter}> • &nbsp; • &nbsp; • </div>
+      </a>
     </div>
   );
 }
+// 🞃

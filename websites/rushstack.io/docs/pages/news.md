@@ -31,4 +31,4 @@ of changelogs for all projects.
 
 Follow us on [Mastodon (@rushstack@fosstodon.org)](https://fosstodon.org/@rushstack) or [Twitter (@rushstack)](https://twitter.com/rushstack).
 
-<MastodonFeed mastodonUserFullName="@rushstack@fosstodon.org" mastodonUserId="109525862248474026" />
+<MastodonFeed mastodonUserFullName="@rushstack@fosstodon.org" mastodonUserId="109525862248474026" maxFeedItems="6" />
