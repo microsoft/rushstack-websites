@@ -27,16 +27,15 @@ const advocates: IAdvocate[] = [
 
 function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   const advocate: IAdvocate = props.advocate;
-
+  console.log(advocate);
   if (advocate.url) {
     const linkStyle = {
-      color: '#000000',
-      textDecorationColor: '#000000'
+      color: 'inherit'
     };
 
     return (
       <div className={styles.advocateCard}>
-        <Link style={linkStyle} to={advocate.url}>
+        <Link to={advocate.url} style={linkStyle}>
           <img src={`/images/3rdparty/${advocate.image}`} alt={`${advocate.title} logo`} />
           <div>{advocate.title}</div>
         </Link>
@@ -68,8 +67,8 @@ function CustomPage(props: {}): JSX.Element {
               </h2>
             </div>
           </div>
-          <div className="row" style={{ paddingTop: '2rem' }}>
-            <div style={{ marginLeft: 'auto', marginRight: '1rem' }}>
+          <div className="row" style={{ paddingTop: '2rem', justifyContent: 'center', gap: '2rem' }}>
+            <div>
               <Link
                 to="pages/intro/welcome"
                 className={['button', 'button--secondary', styles.mastheadButton].join(' ')}
@@ -77,7 +76,7 @@ function CustomPage(props: {}): JSX.Element {
                 <Translate id="home.masthead.learnMore">Learn More</Translate>
               </Link>
             </div>
-            <div style={{ marginRight: 'auto', marginLeft: '1rem' }}>
+            <div>
               <Link
                 to="pages/intro/get_started"
                 className={['button', 'button--primary', styles.mastheadButton].join(' ')}
