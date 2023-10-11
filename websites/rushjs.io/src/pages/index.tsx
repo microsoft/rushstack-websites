@@ -27,7 +27,6 @@ const advocates: IAdvocate[] = [
 
 function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
   const advocate: IAdvocate = props.advocate;
-  console.log(advocate);
   if (advocate.url) {
     const linkStyle = {
       color: 'inherit'
