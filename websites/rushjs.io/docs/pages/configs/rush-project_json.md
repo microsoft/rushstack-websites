@@ -60,6 +60,21 @@ by a [rig package](https://rushstack.io/pages/heft/rig_packages/).
     //   ],
     //
     //   /**
+    //    * Specify a list of glob (minimatch) paths (absolute or relative) pointing to files
+    //    * (within or outside the .git repository) that affect the output of this operation.
+    //    * If provided, the hash values of these files will become part of the final hash when
+    //    * reading and writing from cache.
+    //    */
+    //   "dependsOnAdditionalFiles": [],
+    //
+    //   /**
+    //    * Specify a list of environment variables that affect the output of this operation.
+    //    * If provided, the values of these variables will become part of the hash when reading
+    //    * and writing from cache.
+    //    */
+    //   "dependsOnEnvVars": [ "MY_ENVIRONMENT_VARIABLE" ],
+    //
+    //   /**
     //    * Disable caching for this operation.  The operation will never be restored from cache.
     //    * This may be useful if this operation affects state outside of its folder.
     //    */
