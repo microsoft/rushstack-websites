@@ -2,16 +2,18 @@
 title: Enabling the build cache
 ---
 
-Rush has always supported an [incremental analyzer](../advanced/incremental_builds.md) that
-enables `rush build` to skip projects whose input files have not changed since the last build. (This optimization
-can also be used with custom commands by enabling the `incremental` flag in **custom-commands.json**.) However,
-the build output is not saved anywhere, so generally a full rebuild is still required when switching to another branch.
+Rush has always supported an [incremental build](../advanced/incremental_builds.md) analyzer that
+enables `rush build` to skip projects whose input files have not changed since the last build.
+We call this the **"output preservation"** strategy for incremental builds. It can also be used with custom commands
+by enabling the `incremental` flag in **custom-commands.json**.
 
-Rush's **build cache** improves on this by creating a tar archive of each project's build outputs.
+However, the build output is not saved anywhere, so generally a full rebuild is still required when checking out
+a different branch. Rush's **build cache** improves on this by creating a tar archive of each project's build outputs.
 The archive is cached so that later, if `rush build` can find a match in the cache, it can extract the archive
 instead of building that project. This can provide dramatic speedups, for example reducing a 30 minute build time
 to 30 seconds. The cache key is a hash of the source files and NPM dependencies, following the
-[same basic rules](../advanced/incremental_builds.md) as the incremental analyzer.
+[same basic rules](../advanced/incremental_builds.md) as the incremental analyzer. We call this the
+**"cache restoration"** strategy for incremental builds.
 
 The build cache archives are stored in two places:
 
@@ -94,6 +96,10 @@ For example:
   . . .
 }
 ```
+
+The cache key by default will consider your project's inputs to be the source files under the project folder
+that are not excluded by `.gitignore`; the details can be customized using
+the [rush-project.json](../configs/rush-project_json.md) config file.
 
 It's recommended to use a [rig package](https://rushstack.io/pages/heft/rig_packages/) to avoid having
 to copy this file into each project folder.
