@@ -26,11 +26,6 @@ The build cache archives are stored in two places:
   the `main` branch, the CI system builds that baseline and uploads it to cloud storage. Even for a user who
   is doing `git clone` for the first time, their `rush build` will be very fast.
 
-> Build caching is considered a replacement for build skipping, so once enabled, commands that support
-> incremental building will begin saving and restoring from the cache instead of the previous "skipping"
-> behavior. Projects that haven't been configured for build caching, or intentionally disable build
-> caching, will continue to use the default build skipping behavior.
-
 ## Enabling the local disk cache
 
 The build cache feature is enabled using the [build-cache.json](../configs/build-cache_json.md)
