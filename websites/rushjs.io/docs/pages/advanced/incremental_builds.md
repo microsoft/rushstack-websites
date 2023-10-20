@@ -6,10 +6,14 @@ Rush's **incremental build** feature speeds things up by skipping projects that 
 In this context, "already up to date" means:
 
 1. the project has already been built locally, AND
-2. its source files and NPM dependencies have not changed since then, AND
+2. its input files and NPM dependencies have not changed since then, AND
 3. if the project depends on any other Rush projects, those projects are up to date as well, AND
 4. the command line parameters haven't changed. (For example, invoking `rush build --production`
    after `rush build` would require rebuilding.)
+
+By default, the "input files" are all source files under the project folder, except for files that are excluded
+by `.gitignore`; the details can be customized using the [rush-project.json](../configs/rush-project_json.md)
+config file.
 
 This feature can be combined with [project selection parameters](../developer/selecting_subsets.md),
 where a person explicitly tells Rush which projects to process. Incremental builds reuse existing outputs on
@@ -54,6 +58,35 @@ be impacted as long as the source file contents have not changed. The file hashe
 [@rushstack/package-deps-hash](https://www.npmjs.com/package/@rushstack/package-deps-hash) library.
 The hashes are saved in a file such as `<your-project>/.rush/temp/package-deps_<task-name>.json`. Inspecting this
 file can provide some insight into what the algorithm is doing.
+
+There are actually three distinct behaviors for incremental analysis:
+
+- **No incremental optimization:** If the invoked Rush command is not incremental (`incremental: false`
+  in **command-line.json**), then the operation is always redone every time.
+
+- **Output preservation:** If the Build Cache is disabled
+  (`"buildCacheEnabled": false` in **build-cache.json**), then Rush checks to see whether the input files
+  have changed since the previous build on the same local machine. If no files were modified, then Rush assumes
+  that the output files under the project's folder are up-to-date, and the project is "skipped"
+  without performing any work. Note that this assumption can be easily violated by manually tampering
+  with the output files.
+
+- **Cache restoration:** If the [build cache](../maintainer/build_cache.md) is enabled
+  (`"buildCacheEnabled": true` in **build-cache.json**), then Rush instead queries the cache provider
+  to see if this project has been built before. The cache provider may be cloud storage or the local disk cache.
+  For a cache hit, the project's output files are deleted and replaced by restoring from the cache.
+
+> **Possible future improvement:** In the current implementation, when the build cache is enabled, the
+> **output preservation** strategy is never used. In other words, the project output folders are always
+> cleaned and replaced by restoring from the cache, which seems inefficient in situations where
+> the files on disk are already up to date. Would it be more efficient to combine **output preservation**
+> and **cache restoration** approaches?
+>
+> The engineering challenge is that when the build cache is enabled, we also need to write to the cache,
+> which requires a high degree of confidence in the correctness of the outputs. The **output preservation**
+> algorithm currently does not validate hashes of the output files or check for extra/missing files.
+> If such validation is implemented, its runtime must be faster than tarball extraction, which is
+> already a very fast operation.
 
 ## Building changed projects only (unsafe)
 
