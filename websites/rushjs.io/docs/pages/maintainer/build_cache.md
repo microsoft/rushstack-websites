@@ -4,16 +4,14 @@ title: Enabling the build cache
 
 Rush has always supported an [incremental build](../advanced/incremental_builds.md) analyzer that
 enables `rush build` to skip projects whose input files have not changed since the last build.
-We call this the **"output preservation"** strategy for incremental builds. It can also be used with custom commands
-by enabling the `incremental` flag in **custom-commands.json**.
+It can also be used with custom commands by enabling the `incremental` flag in **custom-commands.json**.
+We call this the **"output preservation"** strategy for incremental builds. Because the build output
+is not saved anywhere, a full rebuild is generally still required when checking out a different branch.
 
-However, the build output is not saved anywhere, so generally a full rebuild is still required when checking out
-a different branch. Rush's **build cache** improves on this by creating a tar archive of each project's build outputs.
+Rush's **build cache** improves on this by creating a tar archive of each project's build outputs.
 The archive is cached so that later, if `rush build` can find a match in the cache, it can extract the archive
 instead of building that project. This can provide dramatic speedups, for example reducing a 30 minute build time
-to 30 seconds. The cache key is a hash of the source files and NPM dependencies, following the
-[same basic rules](../advanced/incremental_builds.md) as the incremental analyzer. We call this the
-**"cache restoration"** strategy for incremental builds.
+to 30 seconds. We call this the **"cache restoration"** strategy for incremental builds.
 
 The build cache archives are stored in two places:
 
@@ -92,12 +90,31 @@ For example:
 }
 ```
 
-The cache key by default will consider your project's inputs to be the source files under the project folder
-that are not excluded by `.gitignore`; the details can be customized using
-the [rush-project.json](../configs/rush-project_json.md) config file.
+## Configuring project inputs
 
-It's recommended to use a [rig package](https://rushstack.io/pages/heft/rig_packages/) to avoid having
-to copy this file into each project folder.
+By default, the following inputs are incorporated into Rush's cache key. In other words, if any of these things
+changes, then the project must be rebuilt:
+
+- the hash of the source files that are under the project's folder, ignoring any files excluded by `.gitignore`
+- the hashes of source files under other workspace projects that are dependencies of the project <br/>
+  (applies to **cache restoration** strategy but not **output preservation** strategy)
+
+- the versions of all external NPM packages that your project depends on, including indirect dependencies
+- the Rush command-line parameters used to perform the operation
+
+These details can be customized using the [rush-project.json](../configs/rush-project_json.md) config file.
+For example, you can include/exclude certain glob patterns, or specify environment variables that affect the
+build output. It's recommended to use a [rig package](https://heft.rushstack.io/pages/intro/rig_packages/) to avoid
+having to copy **rush-project.json** into every project folder.
+
+> **Important:** Configure these settings carefully. If a project inputs/outputs are not accurately specified,
+> then the build cache may produce incorrect or inconsistent results. For example, the restored output may
+> be missing some files. Or it may be different from what would be produced by a full rebuild. Such problems
+> can be difficult to reproduce and troubleshoot.
+>
+> If you suspect that the Rush build cache may be misconfigured, try the
+> [rush-audit-cache-plugin](https://www.npmjs.com/package/rush-audit-cache-plugin).
+> It monitors file writes during the build to identify inputs that are not part of your cache key.
 
 ## Testing the build cache
 
