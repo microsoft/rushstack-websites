@@ -116,6 +116,15 @@ group policy forbids executing scripts installed in a user's home directory.
 
 (POSIX is a registered trademark of the Institute of Electrical and Electronic Engineers, Inc.)
 
+## RUSH_INVOKED_ARGS
+
+When running a hook script, this environment variable communicates the original arguments
+passed to the `rush` or `rushx` command.
+
+Unlike `RUSH_INVOKED_FOLDER`, the `RUSH_INVOKED_ARGS` variable is only available for hook scripts.
+Other lifecycle scripts should not make assumptions about Rush's command line syntax
+if Rush did not explicitly pass along command-line parameters to their process.
+
 ## RUSH_INVOKED_FOLDER
 
 When Rush executes shell scripts, it sometimes changes the working directory to be a project folder or
@@ -170,3 +179,9 @@ and linking package dependencies.
 
 For more information about this feature, see
 [Installation Variants](../advanced/installation_variants.md).
+
+## RUSH_PNPM_VERIFY_STORE_INTEGRITY
+
+When using PNPM as the package manager, this variable can be used to control whether or not PNPM
+validates the integrity of the PNPM store during installation. The value of this environment variable must be
+`1` (for true) or `0` (for false). If not specified, defaults to the value in **.npmrc**.
