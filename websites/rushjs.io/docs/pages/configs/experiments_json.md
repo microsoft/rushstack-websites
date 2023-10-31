@@ -28,6 +28,13 @@ generates for **experiments.json**:
   // "usePnpmPreferFrozenLockfileForRushUpdate": true,
 
   /**
+   * By default, 'rush update' runs as a single operation.
+   * Set this option to true to instead update the lockfile with `--lockfile-only`, then perform a `--frozen-lockfile` install.
+   * Necessary when using the `afterAllResolved` hook in .pnpmfile.cjs.
+   */
+  // "usePnpmLockfileOnlyThenFrozenLockfileForRushUpdate": true,
+
+  /**
    * If using the 'preventManualShrinkwrapChanges' option, restricts the hash to only include the layout of external dependencies.
    * Used to allow links between workspace projects or the addition/removal of references to existing dependency versions to not
    * cause hash changes.
@@ -50,6 +57,22 @@ generates for **experiments.json**:
    * If true, the phased commands feature is enabled. To use this feature, create a "phased" command
    * in common/config/rush/command-line.json.
    */
-  // "phasedCommands": true
+  // "phasedCommands": true,
+
+  /**
+   * If true, perform a clean install after when running `rush install` or `rush update` if the
+   * `.npmrc` file has changed since the last install.
+   */
+  // "cleanInstallAfterNpmrcChanges": true,
+
+  /**
+   * If true, print the outputs of shell commands defined in event hooks to the console.
+   */
+  // "printEventHooksOutputToConsole": true,
+
+  /**
+   * If true, Rush will not allow node_modules in the repo folder or in parent folders.
+   */
+  // "forbidPhantomResolvableNodeModulesFolders": true
 }
 ```
