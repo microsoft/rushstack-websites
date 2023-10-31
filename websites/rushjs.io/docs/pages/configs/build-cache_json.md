@@ -16,9 +16,9 @@ generates for **build-cache.json**:
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/build-cache.schema.json",
 
   /**
-   * (Required) EXPERIMENTAL - Set this to true to enable the build cache feature.
+   * (Required) Set this to true to enable the build cache feature.
    *
-   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this experimental feature.
+   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this feature.
    */
   "buildCacheEnabled": false,
 

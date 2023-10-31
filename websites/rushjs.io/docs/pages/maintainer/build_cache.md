@@ -37,9 +37,9 @@ To enable the basic local disk cache, add these two settings:
 {
   . . .
   /**
-   * (Required) EXPERIMENTAL - Set this to true to enable the build cache feature.
+   * (Required) Set this to true to enable the build cache feature.
    *
-   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this experimental feature.
+   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this feature.
    */
   "buildCacheEnabled": true,
 
@@ -53,9 +53,6 @@ To enable the basic local disk cache, add these two settings:
   . . .
 }
 ```
-
-> **Upgrade note:** Early releases of this feature were enabled using the `"buildCache": true` setting
-> in **experiments.json**. This has been superseded by `"buildCacheEnabled"` in **build-cache.json**.
 
 ## Configuring project output folders
 
@@ -187,9 +184,9 @@ As one example, here's how to configure an Azure blob container:
 {
   . . .
   /**
-   * (Required) EXPERIMENTAL - Set this to true to enable the build cache feature.
+   * (Required) Set this to true to enable the build cache feature.
    *
-   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this experimental feature.
+   * See https://rushjs.io/pages/maintainer/build_cache/ for details about this feature.
    */
   "buildCacheEnabled": true,
 

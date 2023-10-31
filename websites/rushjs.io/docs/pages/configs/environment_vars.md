@@ -24,9 +24,9 @@ or `0` to disallow them. (See the comments in the
 [command-line.json](../configs/command-line_json.md)
 file for more information).
 
-## RUSH_BUILD_CACHE_CREDENTIAL (EXPERIMENTAL)
+## RUSH_BUILD_CACHE_CREDENTIAL
 
-This environment variable is used by the experimental
+This environment variable is used by the
 [build cache](../maintainer/build_cache.md)
 feature.
 
@@ -40,9 +40,9 @@ If Azure Blob Storage is used to store cache entries, this must be a SAS token s
 See [this article](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) for details
 about SAS tokens.
 
-## RUSH_BUILD_CACHE_ENABLED (EXPERIMENTAL)
+## RUSH_BUILD_CACHE_ENABLED
 
-This environment variable is used by the experimental
+This environment variable is used by the
 [build cache](../maintainer/build_cache.md)
 feature.
 
@@ -54,9 +54,9 @@ If set to `0`, this is equivalent to passing the `--disable-build-cache` flag.
 
 If there is no build cache configured, then this environment variable is ignored.
 
-## RUSH_BUILD_CACHE_WRITE_ALLOWED (EXPERIMENTAL)
+## RUSH_BUILD_CACHE_WRITE_ALLOWED
 
-This environment variable is used by the experimental
+This environment variable is used by the
 [build cache](../maintainer/build_cache.md)
 feature.
 
