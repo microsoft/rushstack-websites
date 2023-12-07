@@ -17,10 +17,9 @@ config file.
 
 This feature can be combined with [project selection parameters](../developer/selecting_subsets.md),
 where a person explicitly tells Rush which projects to process. Incremental builds reuse existing outputs on
-your local disk. (This can be contrasted with Rush's upcoming
-[build cache](../maintainer/build_cache.md)
-feature that can fetch previously built outputs from a cloud storage container. The build cache is still experimental,
-but it may eventually replace incremental builds entirely.)
+your local disk. This can be contrasted with Rush's
+[build cache](../maintainer/build_cache.md) feature that can fetch previously built outputs from
+a cloud storage container.
 
 ## How to use it
 
