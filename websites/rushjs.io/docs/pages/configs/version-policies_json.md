@@ -50,7 +50,7 @@ generates for **version-policies.json**:
   //    * When creating a release branch in Git, this field should be updated according to the
   //    * type of release.
   //    *
-  //    * Valid values are: "prerelease", "release", "minor", "patch", "major"
+  //    * Valid values are: "prerelease", "preminor", "minor", "patch", "major"
   //    */
   //   "nextBump": "prerelease",
   //
