@@ -40,12 +40,12 @@ Here's a typical usage scenario:
 3.  Install the [api-documenter tool](https://www.npmjs.com/package/@microsoft/api-documenter) in your global
     environment, using a shell command like this:
 
-        ```shell
-        $ npm install -g @microsoft/api-documenter
-        ```
+    ```shell
+    $ npm install -g @microsoft/api-documenter
+    ```
 
-        Assuming your `PATH` environment variable is set up correctly, now you should now be able to invoke
-        `api-documenter` from your shell.
+    Assuming your `PATH` environment variable is set up correctly, now you should now be able to invoke
+    `api-documenter` from your shell.
 
 4.  Run the **api-documenter** tool like this:
 
