@@ -131,6 +131,6 @@ To publish a public release, we would first update the `"typings"` field in **pa
 that file.) Then we run `npm publish`.
 
 Many other approaches are possible as well. Your build scripts can use these files however you like.
-The approach described here the advantage that consumers can easily switch between different release types
+The approach described here has the advantage that consumers can easily switch between different release types
 based on their version selection, and we've found it works well when you need to publish a set of
 closely interrelated NPM packages.
