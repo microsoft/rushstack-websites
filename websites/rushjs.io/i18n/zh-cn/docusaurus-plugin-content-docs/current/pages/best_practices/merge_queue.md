@@ -116,7 +116,7 @@ title: 启用合并队列
 准确地模拟项目文件夹之间的细粒度依赖关系。为此，我们正在协作
 一种与语言无关的
 [project-impact-graph.yaml](https://github.com/tiktok/project-impact-graph) 规范，服务
-像合并队列这样的服务可以用来查询任何 monorepo 中任何编程语言的项目依赖。
+对于合并队列这样的服务而言，可以用来查询任何 monorepo 中任何编程语言的项目依赖。
 使用 Rush 插件，这个 YAML 文件将通过 `rush update` 生成并提交到 Git，这使得
 合并队列服务能够高效地查询任何分支的文件夹依赖关系，而无需进行 Git 检出。
 
