@@ -147,7 +147,7 @@ pull_request_rules:
           - project-c
 ```
 
-一些其他有用的动作：
+其他有用的操作：
 
 - [回传](https://docs.mergify.com/workflow/actions/backport/)：一旦合并，将拉取请求复制到另一个分支。
 - [更新](https://docs.mergify.com/workflow/actions/update/)：用其基础分支更新拉取请求分支。
