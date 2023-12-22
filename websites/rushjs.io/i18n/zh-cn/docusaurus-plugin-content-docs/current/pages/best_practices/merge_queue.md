@@ -131,4 +131,4 @@ title: 启用合并队列
   有关设置详情，请参阅 [集成：将 Mergify 与 Rush 一起使用](../integrations/mergify.md)。
 - GitLab 包括一个内置的 [合并列车](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html) 功能
 
-_如果您的组织正在使用一个未在上面列出的与 Rush 一起的合并队列，请添加它。_
+_如果您的组织使用的 Rush 相关合并队列未在上面列出，请添加它。_
