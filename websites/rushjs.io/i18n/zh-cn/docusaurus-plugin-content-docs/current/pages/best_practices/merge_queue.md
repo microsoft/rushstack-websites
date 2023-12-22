@@ -103,7 +103,6 @@ title: 启用合并队列
 
 接下来，假设 `project-b` 的 **package.json** 文件指定了对 `project-a` 的依赖。
 在这种情况下，PR 就不再独立：在 PR 1 合并后，PR 2 只有先验证`start+pr1+pr2`后才能安全合并
-而不首先验证 `start+pr1+pr2`。
 
 这种分析依赖于对文件夹之间依赖关系的了解，这在不同的编程语言和构建系统之间差异很大。即使在 JavaScript 的生态系统内，对 **package.json** 文件的解释也需要对 PNPM、Rush+PNPM、Yarn 等进行特别考虑。
 
