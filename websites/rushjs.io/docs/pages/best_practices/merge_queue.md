@@ -21,7 +21,7 @@ named `pr1` and `pr2`. Traditionally there were a few basic approaches to valida
 1. **Slow but safe:** Let's use `start` to refer to the latest commit of the `main` branch.
    The CI system creates a temporary branch `start+pr1` (merging `start` with `pr1`).
    We build this "hot merge" and, if successful, now we can merge PR 1 into `main`.
-   If PR 2 had an an going build, it should be aborted, because `main` has changed. Its hot merge needs
+   If PR 2 had an ongoing build, it should be aborted, because `main` has changed. Its hot merge needs
    to be redone using `start+pr1+pr2`, because that is what will be in `main` after PR 2 merges.
    This approach ensures correctness of every commit in `main`. However in an active monorepo,
    a backlog will quickly pile up, because the builds that ultimately get merged are not being parallelized at all.
