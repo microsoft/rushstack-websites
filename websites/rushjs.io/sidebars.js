@@ -63,7 +63,7 @@ const sidebars = {
       type: 'category',
       label: 'Best practices',
       collapsible: false,
-      items: ['pages/best_practices/change_logs']
+      items: ['pages/best_practices/change_logs', 'pages/best_practices/merge_queue']
     },
     {
       type: 'category',
@@ -79,6 +79,12 @@ const sidebars = {
         'pages/advanced/watch_mode',
         'pages/advanced/installation_variants'
       ]
+    },
+    {
+      type: 'category',
+      label: 'Integrations',
+      collapsible: false,
+      items: ['pages/integrations/mergify']
     },
     {
       type: 'category',

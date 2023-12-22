@@ -59,9 +59,9 @@ instead of cobuilds. (There are also plans to integrate Rush with
 [bazel-buildfarm](https://github.com/bazelbuild/bazel-buildfarm); Bazel is Google's equivalent of BuildXL.)
 Build accelerators generally require you to replace your CI system with their centralized job scheduler
 that manages its own dedicated pool of machines. Such systems require nontrivial maintenance
-and can have steeper learning curves, so we generally recommend to start with cobuilds first.
+and can have steeper learning curves, so we generally recommend to start with cobuilds.
 
-Before adopting cobuilds, we recommend to try these things first:
+Before adopting cobuilds, we recommend to first consider simpler solutions:
 
 1. **Enable the build cache**: The [build cache](./build_cache.md) is a prerequisite for cobuilds.
 
@@ -82,9 +82,10 @@ Before adopting cobuilds, we recommend to try these things first:
    management sometimes may need some help to see this connection.
 
 4. **Cache state between runs:** CI machines often start `rush install && rush build` with a completely clean
-   machine image. For example, `rush install` time can be improved by using `RUSH_PNPM_STORE_PATH` to
-   save the PNPM store and restore it between runs. Some environments permit the machine to be reused for
-   multiple jobs, so that other Rush caches are preserved.
+   machine image. Caching can improve this, for example `rush install` time can be improved by using
+   the `RUSH_PNPM_STORE_PATH` environment variable to relocate the PNPM store to a location that your CI system
+   can save and restore across runs. Some environments permit the same machine to be reused for multiple jobs,
+   so that other Rush caches are preserved.
 
 5. **Consider using a merge queue**: If two pull requests are waiting to get merged, normally a CI system will
    build a hot merge of `pr1+main` and `pr2+main`, to ensure that each PR branch is tested with the latest `main`.
