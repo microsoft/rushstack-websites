@@ -18,7 +18,7 @@ const sidebars = {
       type: 'category',
       label: 'Overview',
       collapsible: false,
-      items: ['index', 'pages/overview/people', 'pages/overview/roadmap']
+      items: ['index', 'pages/overview/people']
     },
     {
       type: 'category',

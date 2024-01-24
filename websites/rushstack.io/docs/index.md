@@ -12,7 +12,7 @@ hide_title: true
 - **Specific strategy** that integrates popular tools like Node.js, TypeScript, ESLint, Prettier, Webpack, Jest, etc.
 - **Family of projects** that fill in the gaps for this strategy
 
-Although various pieces of this work have been underway for years, we're now bringing them together under a common charter as **Rush Stack**. Track our progress on the [News](pages/news.md) page and [Roadmap](pages/overview/roadmap.md).
+Although various pieces of this work have been underway for years, we're now bringing them together under a common charter as **Rush Stack**. Track our progress on the [News](pages/news.md) page.
 
 ## What's in the stack?
 
