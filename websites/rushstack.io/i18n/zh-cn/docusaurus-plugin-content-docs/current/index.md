@@ -12,7 +12,7 @@ hide_title: true
 - **具体策略**：整合诸如 Node.js, TypeScript, ESLint, Prettier, Webpack, Jest 等一系列流行的工具最终形成解决方案
 - **一系列项目**：同宗同源，项目之间紧密合作
 
-如今我们选择将多年的沉淀的各个部分统筹到 **Rush Stack** 的统一框架下。可以通过[新闻](pages/news.md)和[路线](pages/overview/roadmap.md)页面来了解进展。
+如今我们选择将多年的沉淀的各个部分统筹到 **Rush Stack** 的统一框架下。
 
 ## Rush Stack 里有什么？
 

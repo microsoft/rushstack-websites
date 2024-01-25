@@ -10,8 +10,6 @@ The **Rush Hour** monthly video call is the easiest way to find out what's happe
 - If you missed an event, the [Past Events](https://rushstack.io/community/past-events/) archive often
   includes a green **Meeting Notes** button with a summary of important points.
 
-The [Project roadmap](./overview/roadmap.md) page outlines general initiatives, but it's updated less often.
-
 ## Changelogs
 
 To learn what's new for a specific project, check out its CHANGELOG.md file. The most popular ones:
