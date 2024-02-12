@@ -3,7 +3,7 @@ title: deploy.json
 ---
 
 This is the template that [rush init-deploy](../commands/rush_init-deploy.md)
-generates for **deploy.json** and **deploy-&lt;scenario name&gt;>.json**:
+generates for **deploy.json** and **deploy-&lt;scenario name&gt;.json**:
 
 **common/config/rush/deploy.json**
 
