@@ -77,9 +77,3 @@ $ rush install
 ## RUSH_TEMP_FOLDER
 
 该变量覆盖了 Rush 的临时目录。默认值是仓库根目录下的 **common/temp**。
-
-## RUSH_VARIANT
-
-该变量设定了当安装和链接包依赖时 Rush 使用的安装变种。
-
-更多信息可以参考[安装变种](../advanced/installation_variants.md)。

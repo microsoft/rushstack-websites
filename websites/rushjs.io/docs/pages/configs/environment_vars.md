@@ -162,11 +162,3 @@ The default value is **common/temp** under the repository root.
 
 This environment variable is not compatible with workspace installs (`useWorkspaces` = true).
 If attempting to move the PNPM store path, see the `RUSH_PNPM_STORE_PATH` environment variable.
-
-## RUSH_VARIANT
-
-This variable selects a specific installation variant for Rush to use when installing
-and linking package dependencies.
-
-For more information about this feature, see
-[Installation Variants](../advanced/installation_variants.md).
