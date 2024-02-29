@@ -236,15 +236,34 @@ rush build --to tag:shipping
 rush list --only tag:frontend-team-libs --detailed
 ```
 
+### JSON file: `json:`
+
+This selector allows you to specify the path to a JSON file containing a \*_JSON selector expression_. These expressions allow you to define complex project selections (for example, "all projects changed since this commit that are also tagged with this tag"). These expressions can use all of the selectors and selector parameters from above, and also make use of set operators like union, intersect, and subtract.
+
+To use a selector expression file, you'll create a JSON file containing the expression and then refer to it in a `json:` selector.
+
+Examples:
+
+```bash
+# Select a predefined subset of projects (the path is relative to monorepo root)
+rush build --to json:common/config/updated-web-apps.json
+
+# Use a file relative to the current path
+rush build --to json:./apps.json
+
+# Use a JSON expression piped from stdin
+cat expression.json | rush build --to json:-
+```
+
+For more details on selector expressions, see the advanced guide: [Selector expressions](../advanced/selector_expressions.md).
+
 ## Combining parameters
 
 - You can combine any of the selection parameters on a single command line. The result is always the union of each
   individual selection.
 - The same parameter can be specified multiple times. For example: `rush build --only A --only B --only C`
   will select `A`, `B`, and `C`
-- Note that Rush does not provide any parameter that would reduce the selection. This is an intentional design choice;
-  in [#1241](https://github.com/microsoft/rushstack/issues/1241) we'll implement personal tags for building up more
-  complex selections.)
+- Note that Rush does not provide command-line parameters that would reduce the selection. This is an intentional design choice. If you need more complex selections (for example, intersecting or subtracting different selections), see [Selector expressions](../advanced/selector_expressions.md).
 
 Here's a more complex combined command-line:
 
