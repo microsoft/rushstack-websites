@@ -81,17 +81,23 @@ prepend a folder token such as `<projectFolder>`.
 Example:
 
 ```js
-  "bundledPackages": [ "library2" ],
+  "bundledPackages": [ "library2", "@my-company/*" ],
 ```
 
 A list of NPM package names whose exports should be treated as part of this package.
 
-For example, suppose that API extractor is run on the project `library1`, and Webpack is used to generate a distributed
-bundle `library1.js` that embeds another NPM package `library2`. Some types from `library2` may become part
-of the exported API for `library1`, but by default API Extractor would generate a .d.ts rollup that explicitly
-imports `library2`. To avoid this, we can specify `"bundledPackages": [ "library2" ]` as shown above.
-This would direct API Extractor to embed those types directly in the .d.ts rollup `library1.d.ts`, as if they had
-been local files for `library1`.
+For example, suppose that API extractor is run on the project `library1`, and Webpack is used to generate
+a distributed bundle for the project `library1`, and another NPM package `library2` is embedded in this bundle.
+Some types from `library2` may become part of the exported API for `library1`, but by default API Extractor would
+generate a .d.ts rollup that explicitly imports `library2`. To avoid this, we might specify
+`"bundledPackages": [ "library2" ]` as shown above. This would direct API Extractor to embed those types directly
+in the .d.ts rollup, as if they had been local files for `library1`.
+
+The `"bundledPackages"` elements may specify glob patterns using
+[minimatch](https://www.npmjs.com/package/minimatch) syntax. To ensure deterministic
+output, globs are expanded by matching explicitly declared top-level dependencies only. For example,
+the `"@my-company/*"` pattern above will NOT match `@my-company/example` unless it appears in a field such as
+`"dependencies"` or `"devDependencies"` of the project's **package.json** file.
 
 ### newlineKind
 
