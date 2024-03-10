@@ -310,36 +310,6 @@ title: rush.json
   },
 
   /**
-   * 安装变种允许你维护一套平行的配置文件，它们可以用于以另一套依赖来构建整个仓库。
-   * 例如，假设你将你所有的项目使用的一个重要框架的升级到新版本，但是在此期间你想要
-   * 维持与旧版本的兼容性。此时，你也许想让你的 CI 两次校验整个仓库的构建产物：一次是
-   * 旧版本，一次是新版本。
-   *
-   * Rush 的 "安装变种" 对应于以下文件夹的配置文件：
-   *
-   *   common/config/rush/variants/<variant_name>
-   *
-   * 变种文件夹包含一系列可供选择的 common-version.json 文件。其“优先版本”
-   * 字段可以用来选择依赖的旧版本（在 package.json 中语义版本的范围内）
-   * 执行 "rush install --variant <variant_name>". 来安装一个变量。
-   *
-   * 更多信息，可以参考 https://rushjs.io/pages/advanced/installation_variants/
-   */
-  "variants": [
-    // {
-    //   /**
-    //    * 变种名。
-    //    */
-    //   "variantName": "old-sdk",
-    //
-    //   /**
-    //    * 详实的描述
-    //    */
-    //   "description": "Build this repo using the previous release of the SDK"
-    // }
-  ],
-
-  /**
    * Rush 可以匿名收集开发者日常数据，例如安装、构建和其他操作。你可以用它来识别工具链或
    * Rush 本身的问题。这些数据不会与微软共享。
    * 它会以 JSON 的形式被写入 common/temp 目录下。 你可以读写这些 JSON 文件并对其进行

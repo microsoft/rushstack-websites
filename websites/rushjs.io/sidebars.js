@@ -76,8 +76,7 @@ const sidebars = {
         'pages/advanced/compatibility_db',
         'pages/advanced/preferred_versions',
         'pages/advanced/incremental_builds',
-        'pages/advanced/watch_mode',
-        'pages/advanced/installation_variants'
+        'pages/advanced/watch_mode'
       ]
     },
     {
