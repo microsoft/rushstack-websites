@@ -43,7 +43,7 @@ const sidebars = {
       type: 'category',
       label: 'Guides',
       collapsible: false,
-      items: ['pages/guides/ts-node']
+      items: ['pages/guides/invoke-tsc']
     },
     {
       type: 'category',
