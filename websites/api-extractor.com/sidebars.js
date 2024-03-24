@@ -41,6 +41,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Guides',
+      collapsible: false,
+      items: ['pages/guides/ts-node']
+    },
+    {
+      type: 'category',
       label: 'Doc comment syntax',
       collapsible: false,
       items: [
