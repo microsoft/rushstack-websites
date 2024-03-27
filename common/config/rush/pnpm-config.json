@@ -180,7 +180,8 @@
    */
   "globalPatchedDependencies": {
     "docusaurus-theme-search-typesense@0.9.0": "patches/docusaurus-theme-search-typesense@0.9.0.patch",
-    "typesense-docsearch-react@0.2.3": "patches/typesense-docsearch-react@0.2.3.patch"
+    "typesense-docsearch-react@0.2.3": "patches/typesense-docsearch-react@0.2.3.patch",
+    "@docusaurus/theme-classic@2.3.1": "patches/@docusaurus__theme-classic@2.3.1.patch"
   },
 
   /**

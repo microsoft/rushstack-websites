@@ -1,0 +1,12 @@
+diff --git a/lib/theme/CodeBlock/WordWrapButton/index.js b/lib/theme/CodeBlock/WordWrapButton/index.js
+index 58330cd3ab8ac9bc43d9ac80fb8aa211d188ea0e..d8e1f76420f0d54085817dcd1af252aa58e43ebb 100644
+--- a/lib/theme/CodeBlock/WordWrapButton/index.js
++++ b/lib/theme/CodeBlock/WordWrapButton/index.js
+@@ -25,6 +25,7 @@ export default function WordWrapButton({className, onClick, isEnabled}) {
+         isEnabled && styles.wordWrapButtonEnabled,
+       )}
+       aria-label={title}
++      aria-pressed={isEnabled}
+       title={title}>
+       <svg
+         className={styles.wordWrapButtonIcon}
