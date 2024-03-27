@@ -1,0 +1,14 @@
+diff --git a/dist/esm/TypesenseLogo.js b/dist/esm/TypesenseLogo.js
+index ecf27af7e5ca9149536a8fe2f73e4b7f8caf9afd..e4991236a1edc270d907e3351d6491e777b8d564 100644
+--- a/dist/esm/TypesenseLogo.js
++++ b/dist/esm/TypesenseLogo.js
+@@ -7,7 +7,8 @@ export function TypesenseLogo(_ref) {
+   return /*#__PURE__*/React.createElement("a", {
+     href: "https://typesense.org/?utm_source=".concat(window.location.hostname, "&utm_medium=referral&utm_content=powered_by&utm_campaign=docsearch"),
+     target: "_blank",
+-    rel: "noopener noreferrer"
++    rel: "noopener noreferrer",
++    "aria-label": "Search by Typesense"
+   }, /*#__PURE__*/React.createElement("span", {
+     className: "DocSearch-Label"
+   }, searchByText), /*#__PURE__*/React.createElement("svg", {
