@@ -1,0 +1,25 @@
+diff --git a/lib/theme/CodeBlock/Content/styles.module.css b/lib/theme/CodeBlock/Content/styles.module.css
+index 88ba4a7f9a59580108b887ddd747e869edd416d6..9edcf487e47f7f34f9b7496051f0a48b8dcacd47 100644
+--- a/lib/theme/CodeBlock/Content/styles.module.css
++++ b/lib/theme/CodeBlock/Content/styles.module.css
+@@ -25,6 +25,8 @@
+   --ifm-pre-background: var(--prism-background-color);
+   margin: 0;
+   padding: 0;
++
++  border: 1px solid #ccc;
+ }
+ 
+ .codeBlockTitle + .codeBlockContent .codeBlock {
+diff --git a/lib/theme/CodeBlock/WordWrapButton/index.js b/lib/theme/CodeBlock/WordWrapButton/index.js
+index 58330cd3ab8ac9bc43d9ac80fb8aa211d188ea0e..d8e1f76420f0d54085817dcd1af252aa58e43ebb 100644
+--- a/lib/theme/CodeBlock/WordWrapButton/index.js
++++ b/lib/theme/CodeBlock/WordWrapButton/index.js
+@@ -25,6 +25,7 @@ export default function WordWrapButton({className, onClick, isEnabled}) {
+         isEnabled && styles.wordWrapButtonEnabled,
+       )}
+       aria-label={title}
++      aria-pressed={isEnabled}
+       title={title}>
+       <svg
+         className={styles.wordWrapButtonIcon}

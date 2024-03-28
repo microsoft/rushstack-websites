@@ -1,5 +1,12 @@
 :root {
-  --rushstack-suitenav-background-color: #555555;
+  --docsearch-muted-color: #707783 !important;
+  --rushstack-suitenav-background-color: #444444;
+  --ifm-footer-background-color: var(--rushstack-suitenav-background-color) !important;
+  --ifm-footer-color: #b1b1b1;
+}
+
+:global .DocSearch-Commands {
+  display: none !important;
 }
 
 .suiteNavBar {

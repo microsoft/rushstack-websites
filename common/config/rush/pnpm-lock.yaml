@@ -1,5 +1,16 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  '@docusaurus/theme-classic@2.3.1':
+    hash: vajx5zwdn6umygb45b7eofuqwa
+    path: patches/@docusaurus__theme-classic@2.3.1.patch
+  typesense-docsearch-react@0.2.3:
+    hash: sh4qgzi7gjmfyeljy2ueglzdvi
+    path: patches/typesense-docsearch-react@0.2.3.patch
+  docusaurus-theme-search-typesense@0.9.0:
+    hash: jvcqwir3pddtwu7bdphpuo6jeq
+    path: patches/docusaurus-theme-search-typesense@0.9.0.patch
+
 importers:
 
   .:
@@ -146,7 +157,12 @@ importers:
       typescript: 4.7.4
 
   ../../tools/site-config:
-    specifiers: {}
+    specifiers:
+      prism-react-renderer: ~1.3.5
+      react: ^17.0.2
+    dependencies:
+      prism-react-renderer: 1.3.5_react@17.0.2
+      react: 17.0.2
 
   ../../websites/api-extractor.com:
     specifiers:
@@ -169,7 +185,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -189,10 +204,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -239,7 +253,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -258,10 +271,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -307,7 +319,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -327,10 +338,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -374,7 +384,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -394,10 +403,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -441,7 +449,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -461,10 +468,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -509,7 +515,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -529,10 +534,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -577,7 +581,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -597,10 +600,9 @@ importers:
       '@svgr/webpack': 6.3.1
       clsx: 1.2.1
       dayjs: 1.11.7
-      docusaurus-theme-search-typesense: 0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi
+      docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -2578,7 +2580,7 @@ packages:
       '@docusaurus/plugin-google-gtag': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/plugin-google-tag-manager': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/plugin-sitemap': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
-      '@docusaurus/theme-classic': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
+      '@docusaurus/theme-classic': 2.3.1_vajx5zwdn6umygb45b7eofuqwa_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/theme-common': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/theme-search-algolia': 2.3.1_xoiy5em4olq7y6oij5l4weju7i
       '@docusaurus/types': 2.3.1_sfoxds7t5ydpegc3knd667wn6m
@@ -2621,7 +2623,7 @@ packages:
       - uglify-js
       - webpack-cli
 
-  /@docusaurus/theme-classic/2.3.1_3tgeifm2vmwrlpqlopppsnjtcu:
+  /@docusaurus/theme-classic/2.3.1_vajx5zwdn6umygb45b7eofuqwa_3tgeifm2vmwrlpqlopppsnjtcu:
     resolution: {integrity: sha512-SelSIDvyttb7ZYHj8vEUhqykhAqfOPKk+uP0z85jH72IMC58e7O8DIlcAeBv+CWsLbNIl9/Hcg71X0jazuxJug==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -2672,6 +2674,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
     dev: false
+    patched: true
 
   /@docusaurus/theme-common/2.3.1_3tgeifm2vmwrlpqlopppsnjtcu:
     resolution: {integrity: sha512-RYmYl2OR2biO+yhmW1aS5FyEvnrItPINa+0U2dMxcHpah8reSCjQ9eJGRmAgkZFchV1+aIQzXOI1K7LCW38O0g==}
@@ -5701,7 +5704,7 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /docusaurus-theme-search-typesense/0.9.0_scnh7x6fp3w2qmbrm7iqhytxpi:
+  /docusaurus-theme-search-typesense/0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi:
     resolution: {integrity: sha512-c9aOShE1sbgREyyWtGjGvjeu78iEJ8LYHsP0tOIeS9xAdId4YxkX+A7AWGH3JjxDBD29EAs32bSVQLB4XqFf8Q==}
     engines: {node: '>=16.14'}
     peerDependencies:
@@ -5725,7 +5728,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       tslib: 2.5.0
-      typesense-docsearch-react: 0.2.3_kfcczw3kkjx4qt62nxrsoqs7ue
+      typesense-docsearch-react: 0.2.3_sh4qgzi7gjmfyeljy2ueglzdvi_kfcczw3kkjx4qt62nxrsoqs7ue
       typesense-instantsearch-adapter: 2.5.1_@babel+runtime@7.17.9
       utility-types: 3.10.0
     transitivePeerDependencies:
@@ -5750,6 +5753,7 @@ packages:
       - vue-template-compiler
       - webpack-cli
     dev: false
+    patched: true
 
   /dom-converter/0.2.0:
     resolution: {integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==}
@@ -10669,7 +10673,7 @@ packages:
     resolution: {integrity: sha512-+/t9Jz5dwH52Xpk9ikpJaQZs+McX/a4aY+8Iw+IiD9yu9+JJddEA5RYjBgkcQ140gUtp9L213z/V0g2bC3B/hw==}
     dev: false
 
-  /typesense-docsearch-react/0.2.3_kfcczw3kkjx4qt62nxrsoqs7ue:
+  /typesense-docsearch-react/0.2.3_sh4qgzi7gjmfyeljy2ueglzdvi_kfcczw3kkjx4qt62nxrsoqs7ue:
     resolution: {integrity: sha512-2eODhYFk3KLhwEF+shzcTsiB0zU8GefPFZGzNlGdwdUJiUxjh8SgS7VtylXGdKQZxh33wbWN4wr94CG2WxcIIw==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -10690,6 +10694,7 @@ packages:
       - algoliasearch
       - debug
     dev: false
+    patched: true
 
   /typesense-instantsearch-adapter/2.5.1_@babel+runtime@7.17.9:
     resolution: {integrity: sha512-oAt6P6lXv321vtYCfp8Z9KGjAaht5f0cLs2qWDNgTLrc0wWZ7QxCmBrNkpRAATKeg9HnSOVZlbSRrcpJIXqksg==}
