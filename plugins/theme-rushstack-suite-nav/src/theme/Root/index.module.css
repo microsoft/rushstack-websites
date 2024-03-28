@@ -5,6 +5,10 @@
   --ifm-footer-color: #b1b1b1;
 }
 
+:global .DocSearch-Commands {
+  display: none !important;
+}
+
 .suiteNavBar {
   height: 48px;
   background: var(--rushstack-suitenav-background-color);
