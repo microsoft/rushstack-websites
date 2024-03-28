@@ -1,9 +1,6 @@
 lockfileVersion: 5.4
 
 patchedDependencies:
-  docusaurus-theme-search-typesense@0.9.0:
-    hash: vxuifjx7nfbgkem7coco5fvfeu
-    path: patches/docusaurus-theme-search-typesense@0.9.0.patch
   '@docusaurus/theme-classic@2.3.1':
     hash: ldrt4qsq2g6avvfpr32jo5gpoe
     path: patches/@docusaurus__theme-classic@2.3.1.patch
