@@ -28,11 +28,11 @@ jobs:
         persistCredentials: true
       - template: templates/build.yaml
       - script: |
-          echo "machine github.com login ${GIT_USER} password ${GIT_TOKEN}" > ~/.netrc
+          git config credential.helper "!f() { echo \"username=${GIT_USER}\\npassword=${GIT_TOKEN}\"; }; f"
         displayName: 'Configure Git credentials'
         env:
           GIT_USER: rushbot
-          GIT_TOKEN: $(GH_TOKEN)
+          GIT_TOKEN: $(System.AccessToken)
       - ${{ each site in parameters.sites }}:
           - script: 'node ../../common/scripts/install-run-rushx.js deploy'
             displayName: 'Deploy ${{ site }}'
@@ -40,3 +40,4 @@ jobs:
             env:
               TARGET: prod
               GIT_USER: rushbot
+              GIT_TOKEN: $(System.AccessToken)
