@@ -1,0 +1,34 @@
+diff --git a/lib/theme/SearchBar/index.js b/lib/theme/SearchBar/index.js
+index 62024e02632646077f63c7b3d1b8cb7be9656d44..dbf7b7f308c54b093734b14a0dc46fed71dfc985 100644
+--- a/lib/theme/SearchBar/index.js
++++ b/lib/theme/SearchBar/index.js
+@@ -60,6 +60,7 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
+     const searchButtonRef = useRef(null);
+     const [isOpen, setIsOpen] = useState(false);
+     const [initialQuery, setInitialQuery] = useState(undefined);
++    const [previousFocusedElement, setPreviousFocusedElement] = useState(null);
+     const importDocSearchModalIfNeeded = useCallback(() => {
+         if (DocSearchModal) {
+             return Promise.resolve();
+@@ -76,16 +77,19 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
+         });
+     }, []);
+     const onOpen = useCallback(() => {
++        setPreviousFocusedElement(document.activeElement);
+         importDocSearchModalIfNeeded().then(() => {
+             searchContainer.current = document.createElement('div');
+             document.body.insertBefore(searchContainer.current, document.body.firstChild);
+             setIsOpen(true);
+         });
+-    }, [importDocSearchModalIfNeeded, setIsOpen]);
++    }, [importDocSearchModalIfNeeded, setPreviousFocusedElement, setIsOpen]);
+     const onClose = useCallback(() => {
+         setIsOpen(false);
+         searchContainer.current?.remove();
+-    }, [setIsOpen]);
++        previousFocusedElement?.focus();
++        setPreviousFocusedElement(null);
++    }, [setIsOpen, setPreviousFocusedElement, previousFocusedElement]);
+     const onInput = useCallback((event) => {
+         importDocSearchModalIfNeeded().then(() => {
+             setIsOpen(true);

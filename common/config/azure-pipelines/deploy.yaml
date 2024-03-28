@@ -4,7 +4,16 @@ parameters:
   - name: sites
     type: object
     displayName: 'Sites to include'
-    default: ['rushjs.io', 'rushstack.io', 'api.rushstack.io']
+    default:
+      [
+        'api-extractor.com',
+        'api.rushstack.io',
+        'heft.rushstack.io',
+        'lfx.rushstack.io',
+        'rushjs.io',
+        'rushstack.io',
+        'tsdoc.org'
+      ]
 pool:
   vmImage: 'ubuntu-latest'
 variables:

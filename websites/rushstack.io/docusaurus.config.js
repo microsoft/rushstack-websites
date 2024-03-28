@@ -1,10 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-const { getSiteConfig } = require('site-config');
+const { getSiteConfig, lightCodeTheme, darkCodeTheme } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
 const { plugin: remarkCanonicalLinkPlugin } = require('remark-canonical-link-plugin');

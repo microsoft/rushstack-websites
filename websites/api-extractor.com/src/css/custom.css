@@ -49,9 +49,6 @@ select {
   --ifm-color-secondary-lightest: #b4b9be;
 
   --ifm-menu-color: #333;
-
-  --ifm-footer-background-color: var(--rushstack-suitenav-background-color) !important;
-  --ifm-footer-color: #a0a0a0;
 }
 
 .navbar__logo {
