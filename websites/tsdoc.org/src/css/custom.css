@@ -50,15 +50,8 @@ select {
 
   --ifm-menu-color: #333;
 
-  --ifm-footer-background-color: var(--rushstack-suitenav-background-color) !important;
-  --ifm-footer-color: #a0a0a0;
-
   --ifm-navbar-link-color: #ffffff;
   --ifm-navbar-link-hover-color: #ffffff;
-
-  --rushstack-suitenav-background-color: #444 !important;
-
-  --docsearch-muted-color: #707783 !important;
 }
 
 .navbar__logo {
