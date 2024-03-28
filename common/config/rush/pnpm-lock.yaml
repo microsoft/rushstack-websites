@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 patchedDependencies:
   '@docusaurus/theme-classic@2.3.1':
-    hash: ldrt4qsq2g6avvfpr32jo5gpoe
+    hash: vajx5zwdn6umygb45b7eofuqwa
     path: patches/@docusaurus__theme-classic@2.3.1.patch
   typesense-docsearch-react@0.2.3:
     hash: sh4qgzi7gjmfyeljy2ueglzdvi
@@ -2580,7 +2580,7 @@ packages:
       '@docusaurus/plugin-google-gtag': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/plugin-google-tag-manager': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/plugin-sitemap': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
-      '@docusaurus/theme-classic': 2.3.1_ldrt4qsq2g6avvfpr32jo5gpoe_3tgeifm2vmwrlpqlopppsnjtcu
+      '@docusaurus/theme-classic': 2.3.1_vajx5zwdn6umygb45b7eofuqwa_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/theme-common': 2.3.1_3tgeifm2vmwrlpqlopppsnjtcu
       '@docusaurus/theme-search-algolia': 2.3.1_xoiy5em4olq7y6oij5l4weju7i
       '@docusaurus/types': 2.3.1_sfoxds7t5ydpegc3knd667wn6m
@@ -2623,7 +2623,7 @@ packages:
       - uglify-js
       - webpack-cli
 
-  /@docusaurus/theme-classic/2.3.1_ldrt4qsq2g6avvfpr32jo5gpoe_3tgeifm2vmwrlpqlopppsnjtcu:
+  /@docusaurus/theme-classic/2.3.1_vajx5zwdn6umygb45b7eofuqwa_3tgeifm2vmwrlpqlopppsnjtcu:
     resolution: {integrity: sha512-SelSIDvyttb7ZYHj8vEUhqykhAqfOPKk+uP0z85jH72IMC58e7O8DIlcAeBv+CWsLbNIl9/Hcg71X0jazuxJug==}
     engines: {node: '>=16.14'}
     peerDependencies:

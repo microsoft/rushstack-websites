@@ -5,11 +5,6 @@
   --ifm-footer-color: #b1b1b1;
 }
 
-pre code {
-  border: 1px solid #ccc;
-  box-shadow: none;
-}
-
 .suiteNavBar {
   height: 48px;
   background: var(--rushstack-suitenav-background-color);
