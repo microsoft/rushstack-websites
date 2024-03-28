@@ -157,7 +157,12 @@ importers:
       typescript: 4.7.4
 
   ../../tools/site-config:
-    specifiers: {}
+    specifiers:
+      prism-react-renderer: ~1.3.5
+      react: ^17.0.2
+    dependencies:
+      prism-react-renderer: 1.3.5_react@17.0.2
+      react: 17.0.2
 
   ../../websites/api-extractor.com:
     specifiers:
@@ -180,7 +185,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -203,7 +207,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -250,7 +253,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -272,7 +274,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -318,7 +319,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -341,7 +341,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -385,7 +384,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -408,7 +406,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -452,7 +449,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -475,7 +471,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -520,7 +515,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -543,7 +537,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
@@ -588,7 +581,6 @@ importers:
       docusaurus-theme-search-typesense: ~0.9.0
       file-loader: ^6.2.0
       js-cookie: ~3.0.1
-      prism-react-renderer: ~1.3.5
       react: ^17.0.2
       react-dom: ^17.0.2
       rehype-headerless-table-plugin: workspace:*
@@ -611,7 +603,6 @@ importers:
       docusaurus-theme-search-typesense: 0.9.0_jvcqwir3pddtwu7bdphpuo6jeq_scnh7x6fp3w2qmbrm7iqhytxpi
       file-loader: 6.2.0_webpack@5.72.1
       js-cookie: 3.0.1
-      prism-react-renderer: 1.3.5_react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       theme-rushstack-suite-nav: link:../../plugins/theme-rushstack-suite-nav
