@@ -57,6 +57,8 @@ select {
   --ifm-navbar-link-hover-color: #ffffff;
 
   --rushstack-suitenav-background-color: #444 !important;
+
+  --docsearch-muted-color: #707783 !important;
 }
 
 .navbar__logo {
