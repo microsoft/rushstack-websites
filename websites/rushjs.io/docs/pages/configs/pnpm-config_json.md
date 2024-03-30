@@ -61,6 +61,25 @@ generates for **pnpm-config.json**:
   // "resolutionMode": "time-based",
 
   /**
+   * This setting determines whether PNPM will automatically install (non-optional)
+   * missing peer dependencies instead of reporting an error.  Doing so conveniently
+   * avoids the need to specify peer versions in package.json, but in a large monorepo
+   * this often creates worse problems.  The reason is that peer dependency behavior
+   * is inherently complicated, and it is easier to troubleshoot consequences of an explicit
+   * version than an invisible heuristic.  The original NPM RFC discussion pointed out
+   * some other problems with this feature: https://github.com/npm/rfcs/pull/43
+
+   * IMPORTANT: Without Rush, the setting defaults to true for PNPM 8 and newer; however,
+   * as of Rush version 5.109.0 the default is always false unless `autoInstallPeers`
+   * is specified in pnpm-config.json or .npmrc, regardless of your PNPM version.
+
+   * PNPM documentation: https://pnpm.io/npmrc#auto-install-peers
+
+   * The default value is false.
+   */
+  // "autoInstallPeers": false,
+
+  /**
    * If true, then Rush will add the `--strict-peer-dependencies` command-line parameter when
    * invoking PNPM.  This causes `rush update` to fail if there are unsatisfied peer dependencies,
    * which is an invalid state that can cause build failures or incompatible dependency versions.
@@ -116,6 +135,32 @@ generates for **pnpm-config.json**:
    * The default value is false.
    */
   // "preventManualShrinkwrapChanges": true,
+
+  /**
+   * Defines the policies to be checked for the `pnpm-lock.yaml` file.
+   */
+   "pnpmLockfilePolicies": {
+
+    /**
+     * This policy will cause "rush update" to report an error if `pnpm-lock.yaml` contains
+     * any SHA1 integrity hashes.
+     *
+     * For each NPM dependency, `pnpm-lock.yaml` normally stores an `integrity` hash.  Although
+     * its main purpose is to detect corrupted or truncated network requests, this hash can also
+     * serve as a security fingerprint to protect against attacks that would substitute a
+     * malicious tarball, for example if a misconfigured .npmrc caused a machine to accidentally
+     * download a matching package name+version from npmjs.com instead of the private NPM registry.
+     * NPM originally used a SHA1 hash; this was insecure because an attacker can too easily craft
+     * a tarball with a matching fingerprint.  For this reason, NPM later deprecated SHA1 and
+     * instead adopted a cryptographically strong SHA512 hash.  Nonetheless, SHA1 hashes can
+     * occasionally reappear during "rush update", for example due to missing metadata fallbacks
+     * (https://github.com/orgs/pnpm/discussions/6194) or an incompletely migrated private registry.
+     * Enable `disallowInsecureSha1` to avoid security/compliance alerts about this issue.
+     *
+     * The default value is false.
+     */
+    // "disallowInsecureSha1": true
+  },
 
   /**
    * The "globalOverrides" setting provides a simple mechanism for overriding version selections
