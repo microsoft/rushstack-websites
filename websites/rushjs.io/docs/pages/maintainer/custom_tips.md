@@ -134,6 +134,17 @@ Corresponds to PNPM's [ERR_PNPM_TARBALL_INTEGRITY](https://pnpm.io/errors#err_pn
 
 Corresponds to PNPM's [ERR_PNPM_UNEXPECTED_STORE](https://pnpm.io/errors#err_pnpm_unexpected_store).
 
+### TIP_RUSH_DISALLOW_INSECURE_SHA1
+
+Reported for violations of the `disallowInsecureSha1` policy from [pnpm-config.json](../configs/pnpm-config_json.md); see that documentation for details.
+
+**Example Rush output:**
+
+```
+Error: An integrity field with "sha1" was found in pnpm-lock.yaml; this conflicts with the
+"disallowInsecureSha1" policy from pnpm-config.json.
+```
+
 ### TIP_RUSH_INCONSISTENT_VERSIONS
 
 This message is printed by `rush install` or `rush update` when projects have inconsistent dependency versions,
