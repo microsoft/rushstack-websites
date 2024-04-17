@@ -47,3 +47,18 @@ _rush_bash_complete()
 
 complete -f -F _rush_bash_complete rush
 ```
+
+## Zsh
+
+[Zsh](https://www.zsh.org/) 的环境变量会稍有不同，需要在 `~/.zshrc` 文件中添加以下代码：
+
+```zsh
+(( ${+commands[rush]} )) && {
+  _rush_completion() {
+    compadd -- $(rush tab-complete --position ${CURSOR} --word "${BUFFER}" 2>>/dev/null)
+  }
+  compdef _rush_completion rush
+}
+```
+
+它会检查 rush 命令是否存在，因此这段代码需要添加在 PATH 已经设置好之后（或者在 [nvm](https://github.com/nvm-sh/nvm) 初始化之后）。或者，你也可以删除第一行的 rush 命令检查。
