@@ -72,7 +72,7 @@ complete rush -x -a "(__fish_rush)"
 
 ## Zsh
 
-[Zsh](https://www.zsh.org/) has slightly different env variables, add the following into `~/.zshrc`:
+[Zsh](https://www.zsh.org/) has slightly different env variables, add the following into **~/.zshrc**:
 
 ```zsh
 (( ${+commands[rush]} )) && {

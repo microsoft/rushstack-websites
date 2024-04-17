@@ -50,7 +50,7 @@ complete -f -F _rush_bash_complete rush
 
 ## Zsh
 
-[Zsh](https://www.zsh.org/) 的环境变量会稍有不同，需要在 `~/.zshrc` 文件中添加以下代码：
+[Zsh](https://www.zsh.org/) 的环境变量会稍有不同，需要在 **~/.zshrc** 文件中添加以下代码：
 
 ```zsh
 (( ${+commands[rush]} )) && {
