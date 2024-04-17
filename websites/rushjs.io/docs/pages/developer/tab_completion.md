@@ -69,3 +69,18 @@ end
 
 complete rush -x -a "(__fish_rush)"
 ```
+
+## Zsh
+
+[Zsh](https://www.zsh.org/) has slightly different env variables, add the following into `~/.zshrc`:
+
+```zsh
+(( ${+commands[rush]} )) && {
+  _rush_completion() {
+    compadd -- $(rush tab-complete --position ${CURSOR} --word "${BUFFER}" 2>>/dev/null)
+  }
+  compdef _rush_completion rush
+}
+```
+
+It checks for the existence of rush. This needs to be added after the PATH is properly set (or after [nvm](https://github.com/nvm-sh/nvm) is initialized). Otherwise, you will need to remove the first line.
