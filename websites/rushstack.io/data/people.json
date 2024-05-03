@@ -50,6 +50,12 @@
       "caption": "facilitating: Rush"
     },
     {
+      "//": "month when added: 2024-05",
+      "name": "William Huang",
+      "githubAlias": "william2958",
+      "caption": "facilitating: Lockfile Explorer and the Rush subspaces feature"
+    },
+    {
       "name": "Zack Elliott",
       "githubAlias": "zelliott",
       "caption": "facilitating: API Extractor"
@@ -91,6 +97,12 @@
   "//": "Newest additions go at the top",
   "//": "Include the month when they were added in YYYY-MM format",
   "starContributors": [
+    {
+      "//": "month when added: 2024-05",
+      "name": "Chao Guo",
+      "githubAlias": "g-chao",
+      "caption": "implemented the pnpm-sync feature for Rush"
+    },
     {
       "//": "month when added: 2023-02",
       "name": "William Huang",
