@@ -77,6 +77,7 @@ const sidebars = {
         'pages/advanced/preferred_versions',
         'pages/advanced/incremental_builds',
         'pages/advanced/watch_mode',
+        'pages/advanced/subspaces',
         'pages/advanced/installation_variants'
       ]
     },
@@ -147,6 +148,7 @@ const sidebars = {
         'pages/configs/rush-plugin-manifest_json',
         'pages/configs/rush-plugins_json',
         'pages/configs/rush-project_json',
+        'pages/configs/subspaces_json',
         'pages/configs/version-policies_json'
       ]
     },
