@@ -160,7 +160,7 @@ For this situation, Rush's "autoinstaller" feature provides a convenient alterna
     # (If you need plugins, install them as well)
 
     # When you are finished, run this command to ensure that the
-    # common/autoinstallers/rush-prettier/ppnpm-lock.yaml file is up to date
+    # common/autoinstallers/rush-prettier/pnpm-lock.yaml file is up to date
     rush update-autoinstaller --name rush-prettier
     ```
 
