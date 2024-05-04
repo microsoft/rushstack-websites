@@ -345,6 +345,14 @@ generates for **rush.json** (in the repo root folder):
     //    */
     //   "projectFolder": "apps/my-app",
     //
+    //
+    //   /**
+    //    * This field is only used if "subspacesEnabled" is true in subspaces.json.
+    //    * It specifies the subspace that this project belongs to.  If omitted, then the
+    //    * project belongs to the "default" subspace.
+    //    */
+    //   "subspaceName": "my-subspace",
+    //
     //   /**
     //    * An optional category for usage in the "browser-approved-packages.json"
     //    * and "nonbrowser-approved-packages.json" files.  The value must be one of the
