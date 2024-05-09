@@ -71,7 +71,7 @@ title: Rush 子空间
 
 ## 如何启用子空间
 
-1. 确保你的 **rush.json** 文件中指定 `"rushVersion": "5.122.0"` 或更新版本，`"pnpmVersion": "8.7.6"` 或更新版本。
+1. 确保你的 **rush.json** 文件中指定了 `"rushVersion": "5.122.0"` 或更新版本，`"pnpmVersion": "8.7.6"` 或更新版本。
 
 2. 使用 **subspaces.json** 启用此功能并定义子空间。你可以从 [subspaces.json](../configs/subspaces_json.md) 文档中复制此文件的模板，或者使用 `rush init` 生成它。在本教程中，我们将创建一个名为 `install-test` 的子空间，用于测试 NPM 包：
 
