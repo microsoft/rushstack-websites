@@ -50,13 +50,13 @@ Rush 项目通常使用 `workspace:` 指定符号来依赖单体仓库工作区�
 
 为什么我们需要 `peerDependencies` 而不是 `dependencies`？如果使用 `dependencies`，那么包管理器可以自由选择任何匹配 `"^18.0.0 || ^17.0.0"` 的 `react` 版本。例如，如果我们的应用使用 React 17，那么 `my-library` 可能会获取 React 18，这是错误的。对等依赖通过规定 `my-library` 必须与其使用者保持相同的 `react` 版本（实际上是相同的已安装磁盘文件夹）来避免这种情况。
 
-如果两个不同的应用依赖 `my-library`，且这些应用有不同版本的 `react`，该怎么办？对于外部 NPM 包，PNPM 通常通过将（相同版本的）`my-library` 安装到 `node_modules` 的不同子文件夹来解决此问题。这些副本称为 **“对等依赖二重身”**。这是 Node.js 模块解析器的设计约束所决定的：
+如果两个不同的应用依赖 `my-library`，且这些应用有不同版本的 `react`，该怎么办？对于外部 NPM 包，PNPM 通常通过将（相同版本的）`my-library` 安装到 `node_modules` 的不同子文件夹来解决此问题。这些副本称为 **“对等依赖分身”**。这是 Node.js 模块解析器的设计约束所决定的：
 
 > _**无上下文解析：** 当某个文件导入 NPM 包时，模块解析器对文件的每个导入者的解析方式都是一致的。_
 
-换句话说，唯一能让 `my-library` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即二重身）导入。
+换句话说，唯一能让 `my-library` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即分身）导入。
 
-当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建二重身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么对等依赖将如何满足？在这种情况下，PNPM 只会产生一个错误的安装：
+当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建分身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么对等依赖将如何满足？在这种情况下，PNPM 只会产生一个错误的安装：
 
 - 当 `my-project` 导入 React 时，它将获取版本 18
 - 当 `my-project` 导入 `my-library` 而 `my-library` 导入 React 时，它将获取版本 17（从 `devDependencies` 安装）
@@ -85,7 +85,7 @@ Rush 项目通常使用 `workspace:` 指定符号来依赖单体仓库工作区�
 }
 ```
 
-进行此更改后，`pnpm install`（在我们的例子中是 `rush install` 或 `rush update`）将通过将项目内容复制到 `my-project` 的 `node_modules` 文件夹中来安装 `my-library`。由于它们是常规安装的，注入依赖可以成为二重身并正确满足对等依赖。
+进行此更改后，`pnpm install`（在我们的例子中是 `rush install` 或 `rush update`）将通过将项目内容复制到 `my-project` 的 `node_modules` 文件夹中来安装 `my-library`。由于它们是常规安装的，注入依赖可以成为分身并正确满足对等依赖。
 
 注入安装遵循发布过滤器，例如 `.npmignore`，因此复制的内容准确地反映了如果 `my-library` 发布到 NPM 注册表会发生什么。因此，消耗库的测试项目可以设置 `injected: true`，以捕捉 `.npmignore` 过滤器中的错误——这些在使用 `workspace:` 符号链接时经常被忽略的配置错误。
 
