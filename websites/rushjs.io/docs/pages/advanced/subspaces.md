@@ -58,8 +58,6 @@ Note that the following config files are NOT moved:
 - `common/config/.npmrc-publish`: This file is used for Rush NPM publishing, regardless of which subspaces the published projects belong to
 - `common/config/.pnpmfile.cjs`: This file can apply versioning overrides that will affect all subspaces in the monorepo. To avoid confusing interactions across lockfiles, in most cases it is better to use `.pnpmfile-subspace.cjs` instead.
 
-Note that `common/config/rush/.pnpmfile.cjs` is still allowed, and can be used to apply overrides that affect all subspaces in the monorepo.
-
 Without subspaces, Rush generates and installs the PNPM workspace in the `common/temp/` folder. With subspaces enabled, this will be performed separately in folders such as `common/temp/<subspace-name>/`.
 
 There are two basic modes of operation:
