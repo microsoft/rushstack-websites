@@ -91,7 +91,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 
 听起来很棒——那么为什么 PNPM 不对所有 `workspace:` 引用使用注入安装？
 
-## 同步注入依赖
+## 注入依赖的更新
 
 我们说过，注入依赖会在 `rush install` 期间被复制到 `node_modules` 文件夹中。但是如果我们对 `my-library` 进行了更改，然后运行 `rush build`，会发生什么？当 `my-project` 导入 `my-library` 时，它仍会找到来自 `node_modules` 的旧副本。为了得到正确的结果，我们需要在每次重建 `my-library` 后重新执行 `rush install`。更准确地说，我们需要在构建任何注入项目 _**之后**_ 但 _**在**_ 消费者开始构建 _**之前**_ 重新执行 `rush install`。在最坏的情况下，这可能意味着在 `rush build` 期间重复执行 `rush install` 数百次。这是不现实的。
 
