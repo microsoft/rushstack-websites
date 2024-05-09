@@ -52,11 +52,11 @@ Why do we need `peerDependencies` instead of `dependencies`? With `dependencies`
 
 What if two different apps depend on `my-library`, and those apps have different versions of `react`? For external NPM packages, PNPM would normally solve this by installing two copies of (the same version of) `my-library` into two different subfolders of `node_modules`. These copies are called **"peer dependency doppelgangers".** They are needed because of a design constraint of the Node.js module resolvers:
 
-> _**Context-free resolution:** When a given file imports an NPM package, the module resolver will always resolve the same way for every importer of the file._
+> _**Context-free resolution:** When a given file on disk imports an NPM package, the module resolver will always resolve the same way for that file._
 
-In other words, the only way to cause `my-library` to import React 17 for `app1` while importing React 18 for `app2` is for the two apps to import from two different `my-library` folders on disk (doppelgangers).
+In other words, the only way to cause `my-library/lib/index.js` to import React 17 for `app1` while importing React 18 for `app2` is for the two apps to import from two different (doppelganger) copies of `index.js`.
 
-The package manager creates doppelgangers automatically as needed when extracting NPM packages into the `node_modules` folder. However, in our example, `my-project` uses `workspace:*` to create a symlink to the project folder for `my-library`, instead of extracting an NPM package into the `node_modules` folder. How will the peer dependency be satisfied? PNPM simply produces an incorrect installation in this situation:
+The package manager creates doppelgangers automatically as needed when extracting NPM packages into the `node_modules` folder. However, in our example, `my-project` used `workspace:*` to create a symlink to the project folder for `my-library`, instead of extracting an NPM package into the `node_modules` folder. How will the peer dependency be satisfied? PNPM simply produces an incorrect installation in this situation:
 
 - When `my-project` imports React, it will get version 18
 - When `my-project` imports `my-library` and `my-library` imports React, it will get version 17 (as installed from the `devDependencies`)
@@ -87,15 +87,15 @@ To solve this problem, PNPM supports [a package.json setting](https://pnpm.io/pa
 
 With this change, `pnpm install` (in our case `rush install` or `rush update`) will install `my-library` by copying the project contents into the `node_modules` folder of `my-project`. Because they are conventionally installed, injected dependencies can become doppelgangers and correctly satisfy peer dependencies.
 
-Injected installation honors publishing filters such as `.npmignore`, and so the copied contents accurately reflect what would happen if `my-library` had been published to an NPM registry. For this reason, a test project that consumes a library can set `injected: true` to catch mistakes in `.npmignore` filters -- misconfigurations that are often missed when using `workspace:` symlinking.
+**A second benefit:** Injected installation honors publishing filters such as `.npmignore`, and so the copied contents accurately reflect what would happen if `my-library` had been published to an NPM registry. For this reason, a test project that consumes the library can set `injected: true` to catch mistakes in `.npmignore` filters -- misconfigurations that are often missed when using `workspace:` symlinking.
 
-Sounds great -- so why doesn't PNPM use injected install for all `workspace:` references?
+Sounds great -- so why doesn't PNPM use injected install for every `workspace:` reference?
 
 ## Syncing injected dependencies
 
 We said that injected dependencies get copied into a `node_modules` folder during `rush install`. But what happens if we make changes to `my-library` and then run `rush build`? When `my-project` imports `my-library`, it will still find the old copy from `node_modules`. To get a correct result, we would need to redo `rush install` every time we rebuild `my-library`. More precisely, we would need to redo `rush install` _**after**_ building any injected project but _**before**_ the consumer gets built. In a worst case, that could mean redoing `rush install` hundreds of times during `rush build`. This is unrealistic.
 
-PNPM currently doesn't yet include a built-in solution for this problem, and as a result injected dependencies have not yet gained wide adoption. However, a new tool called [pnpm-sync](https://github.com/tiktok/pnpm-sync) provides a solution: Whenever `my-library` is rebuilt, `pnpm-sync` will automatically copy its outputs to update the appropriate `node_modules` subfolders.
+PNPM currently doesn't yet include a built-in solution for this problem, and as a result injected dependencies have not yet gained wide adoption. However, a new tool called [pnpm-sync](https://github.com/tiktok/pnpm-sync) provides a solution: Whenever `my-library` is rebuilt, `pnpm-sync` can copy its outputs to update the appropriate `node_modules` subfolders.
 
 Normally it would be up to each project to determine whether and how to invoke the `pnpm-sync` command, but Rush integrates this feature and manages it automatically. To use `pnpm-sync` with Rush, enable the `usePnpmSyncForInjectedDependencies` experiment:
 
