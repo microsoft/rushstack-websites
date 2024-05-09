@@ -6,7 +6,7 @@ title: 注入依赖
 
 ## 背景：传统的工作区符号链接
 
-Rush 项目通常使用 `workspace:` 指定符号来依赖单体仓库工作区内的其他项目。例如，假设 `my-project` 和 `my-library` 是 Rush 工作区中的项目：
+Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内的其他本地项目。假设 `my-project` 和 `my-library` 是 Rush monorepo 中的项目：
 
 **my-repo/apps/my-project/package.json**
 
