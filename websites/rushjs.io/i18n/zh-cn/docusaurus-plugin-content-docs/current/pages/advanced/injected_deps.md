@@ -1,12 +1,12 @@
 ---
-title: Injected dependencies
+title: 注入依赖
 ---
 
-Injected dependencies are a PNPM feature allowing local project folders to be installed as if they were published to an NPM registry.
+注入依赖是 PNPM 的一种功能，可以让本地项目文件夹像发布到 NPM 注册表一样被安装。
 
-## Background: Conventional workspace symlinking
+## 背景：传统的工作区符号链接
 
-Rush projects typically use the `workspace:` specifier to depend on other projects within the monorepo workspace. For example, suppose `my-project` and `my-library` are projects in the Rush workspace:
+Rush 项目通常使用 `workspace:` 指定符号来依赖单体仓库工作区内的其他项目。例如，假设 `my-project` 和 `my-library` 是 Rush 工作区中的项目：
 
 **my-repo/apps/my-project/package.json**
 
@@ -21,15 +21,15 @@ Rush projects typically use the `workspace:` specifier to depend on other projec
 }
 ```
 
-In the above example, the `react` package will installed by downloading from the NPM registry and extracting into a `node_modules` subfolder. By contrast, the `workspace:*` specifier causes PNPM to create a `node_modules` symlink pointing to the source code folder where `my-library` is developed:
+在上述示例中，`react` 包将通过从 NPM 注册表下载并解压到 `node_modules` 子文件夹中来安装。相比之下，`workspace:*` 指定符号会让 PNPM 创建一个指向 `my-library` 开发所在源码文件夹的 `node_modules` 符号链接：
 
-**Symlink:** `my-repo/apps/my-project/node_modules/my-library` --> `my-repo/libraries/my-library/`
+**符号链接：** `my-repo/apps/my-project/node_modules/my-library` --> `my-repo/libraries/my-library/`
 
-In this way, `my-project` will always consume the latest locally built outputs for `my-library`. It may even be the case that `my-project` and `my-library` are never published to an NPM registry at all.
+通过这种方式，`my-project` 将始终使用 `my-library` 最新的本地构建输出。甚至可能存在 `my-project` 和 `my-library` 都从未发布到 NPM 注册表的情况。
 
-## Limitations of workspace symlinking
+## 工作区符号链接的局限性
 
-Suppose however that `my-library` declares a peer dependency like this:
+然而，假设 `my-library` 声明了一个对等依赖如下：
 
 **my-repo/libraries/my-library/package.json**
 
@@ -46,26 +46,26 @@ Suppose however that `my-library` declares a peer dependency like this:
 }
 ```
 
-The `my-library` project declares that it can use both React version 17 and 18. For local development, the `devDependencies` install the oldest supported version 17.0.0, a common practice to validate backwards compatibility.
+`my-library` 项目声明它可以使用 React 版本 17 和 18。在本地开发中，`devDependencies` 安装了支持的最早版本 17.0.0，这是一种验证向后兼容性的常见做法。
 
-Why do we need `peerDependencies` instead of `dependencies`? With `dependencies`, then the package manager would be free to choose any version of `react` matching `"^18.0.0 || ^17.0.0"`. For example, if our app is using React 17, then `my-library` could get React 18, which is wrong. The peer dependency avoids this possibility by stipulating that `my-library` must get the same `react` version as its consumer (and in fact the same installed disk folder).
+为什么我们需要 `peerDependencies` 而不是 `dependencies`？如果使用 `dependencies`，那么包管理器可以自由选择任何匹配 `"^18.0.0 || ^17.0.0"` 的 `react` 版本。例如，如果我们的应用使用 React 17，那么 `my-library` 可能会获取 React 18，这是错误的。对等依赖通过规定 `my-library` 必须与其使用者保持相同的 `react` 版本（实际上是相同的已安装磁盘文件夹）来避免这种情况。
 
-What if two different apps depend on `my-library`, and those apps have different versions of `react`? For external NPM packages, PNPM would normally solve this by installing two copies of (the same version of) `my-library` into two different subfolders of `node_modules`. These copies are called **"peer dependency doppelgangers".** They are needed because of a design constraint of the Node.js module resolvers:
+如果两个不同的应用依赖 `my-library`，且这些应用有不同版本的 `react`，该怎么办？对于外部 NPM 包，PNPM 通常通过将（相同版本的）`my-library` 安装到 `node_modules` 的不同子文件夹来解决此问题。这些副本称为 **“对等依赖二重身”**。这是 Node.js 模块解析器的设计约束所决定的：
 
-> _**Context-free resolution:** When a given file imports an NPM package, the module resolver will always resolve the same way for every importer of the file._
+> _**无上下文解析：** 当某个文件导入 NPM 包时，模块解析器对文件的每个导入者的解析方式都是一致的。_
 
-In other words, the only way to cause `my-library` to import React 17 for `app1` while importing React 18 for `app2` is for the two apps to import from two different `my-library` folders on disk (doppelgangers).
+换句话说，唯一能让 `my-library` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即二重身）导入。
 
-The package manager creates doppelgangers automatically as needed when extracting NPM packages into the `node_modules` folder. However, in our example, `my-project` uses `workspace:*` to create a symlink to the project folder for `my-library`, instead of extracting an NPM package into the `node_modules` folder. How will the peer dependency be satisfied? PNPM simply produces an incorrect installation in this situation:
+当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建二重身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么对等依赖将如何满足？在这种情况下，PNPM 只会产生一个错误的安装：
 
-- When `my-project` imports React, it will get version 18
-- When `my-project` imports `my-library` and `my-library` imports React, it will get version 18 (as installed from the `devDependencies`)
+- 当 `my-project` 导入 React 时，它将获取版本 18
+- 当 `my-project` 导入 `my-library` 而 `my-library` 导入 React 时，它将获取版本 18（从 `devDependencies` 安装）
 
-The `peerDependencies` are ignored.
+`peerDependencies` 被忽略。
 
-## Injected dependencies to the rescue
+## 注入依赖的救援
 
-To solve this problem, PNPM supports [a package.json setting](https://pnpm.io/package_json#dependenciesmetainjected) called `injected` that will cause `my-library` to get installed as if it had been published to NPM. Here's how to enable it:
+为了解决这个问题，PNPM 支持一个名为 `injected` 的 [package.json 配置](https://pnpm.io/package_json#dependenciesmetainjected)，它将使 `my-library` 像发布到 NPM 一样被安装。以下是启用它的方法：
 
 **my-repo/apps/my-project/package.json**
 
@@ -85,77 +85,69 @@ To solve this problem, PNPM supports [a package.json setting](https://pnpm.io/pa
 }
 ```
 
-With this change, `pnpm install` (in our case `rush install` or `rush update`) will install `my-library` by copying the project contents into the `node_modules` folder of `my-project`. Because they are conventionally installed, injected dependencies can become doppelgangers and correctly satisfy peer dependencies.
+进行此更改后，`pnpm install`（在我们的例子中是 `rush install` 或 `rush update`）将通过将项目内容复制到 `my-project` 的 `node_modules` 文件夹中来安装 `my-library`。由于它们是常规安装的，注入依赖可以成为二重身并正确满足对等依赖。
 
-Injected installation honors publishing filters such as `.npmignore`, and so the copied contents accurately reflect what would happen if `my-library` had been published to an NPM registry. For this reason, a test project that consumes a library can set `injected: true` to catch mistakes in `.npmignore` filters -- misconfigurations that are often missed when using `workspace:` symlinking.
+注入安装遵循发布过滤器，例如 `.npmignore`，因此复制的内容准确地反映了如果 `my-library` 发布到 NPM 注册表会发生什么。因此，消耗库的测试项目可以设置 `injected: true`，以捕捉 `.npmignore` 过滤器中的错误——这些在使用 `workspace:` 符号链接时经常被忽略的配置错误。
 
-Sounds great -- so why doesn't PNPM use injected install for all `workspace:` references?
+听起来很棒——那么为什么 PNPM 不对所有 `workspace:` 引用使用注入安装？
 
-## Syncing injected dependencies
+## 同步注入依赖
 
-We said that injected dependencies get copied into a `node_modules` folder during `rush install`. But what happens if we make changes to `my-library` and then run `rush build`? When `my-project` imports `my-library`, it will still find the old copy from `node_modules`. To get a correct result, we would need to redo `rush install` every time we rebuild `my-library`. More precisely, we would need to redo `rush install` _**after**_ building any injected project but _**before**_ the consumer gets built. In a worst case, that could mean redoing `rush install` hundreds of times during `rush build`. This is unrealistic.
+我们说过，注入依赖会在 `rush install` 期间被复制到 `node_modules` 文件夹中。但是如果我们对 `my-library` 进行了更改，然后运行 `rush build`，会发生什么？当 `my-project` 导入 `my-library` 时，它仍会找到来自 `node_modules` 的旧副本。为了得到正确的结果，我们需要在每次重建 `my-library` 后重新执行 `rush install`。更准确地说，我们需要在构建任何注入项目 _**之后**_ 但 _**在**_ 消费者开始构建 _**之前**_ 重新执行 `rush install`。在最坏的情况下，这可能意味着在 `rush build` 期间重复执行 `rush install` 数百次。这是不现实的。
 
-PNPM currently doesn't yet include a built-in solution for this problem, and as a result injected dependencies have not yet gained wide adoption. However, a new tool called [pnpm-sync](https://github.com/tiktok/pnpm-sync) provides a solution: Whenever `my-library` is rebuilt, `pnpm-sync` will automatically copy its outputs to update the appropriate `node_modules` subfolders.
+PNPM 目前还没有包含该问题的内置解决方案，因此注入依赖尚未被广泛采用。然而，一个名为 [pnpm-sync](https://github.com/tiktok/pnpm-sync) 的新工具提供了解决方案：每当 `my-library` 被重建时，`pnpm-sync` 会自动将其输出复制到适当的 `node_modules` 子文件夹进行更新。
 
-Normally it would be up to each project to determine whether and how to invoke the `pnpm-sync` command, but Rush integrates this feature and manages it automatically. To use `pnpm-sync` with Rush, enable the `usePnpmSyncForInjectedDependencies` experiment:
+通常每个项目都需要自行决定是否以及如何调用 `pnpm-sync` 命令，但 Rush 集成了此功能并自动进行管理。要在 Rush 中使用 `pnpm-sync`，可以启用 `usePnpmSyncForInjectedDependencies` 实验：
 
 **common/config/rush/experiments.json**
 
 ```json
   /**
-   * (UNDER DEVELOPMENT) For certain installation problems involving peer dependencies, PNPM cannot
-   * correctly satisfy versioning requirements without installing duplicate copies of a package inside the
-   * node_modules folder. This poses a problem for "workspace:*" dependencies, as they are normally
-   * installed by making a symlink to the local project source folder. PNPM's "injected dependencies"
-   * feature provides a model for copying the local project folder into node_modules, however copying
-   * must occur AFTER the dependency project is built and BEFORE the consuming project starts to build.
-   * The "pnpm-sync" tool manages this operation; see its documentation for details.
-   * Enable this experiment if you want "rush" and "rushx" commands to resync injected dependencies
-   * by invoking "pnpm-sync" during the build.
+   * （开发中）对于涉及对等依赖的某些安装问题，PNPM 无法在不在 node_modules 文件夹中安装包的副本的情况下正确满足版本要求。
+   * 这对“workspace:*”依赖项构成了问题，因为它们通常是通过将符号链接指向本地项目源码文件夹进行安装。
+   * PNPM 的“注入依赖”功能提供了一种将本地项目文件夹复制到 node_modules 的模型，但复制必须在依赖项目构建 **之后** 并且在消费者项目开始构建 **之前** 发生。
+   * “pnpm-sync”工具负责管理此操作；有关详细信息，请参阅其文档。
+   * 如果希望在构建期间通过调用“pnpm-sync”来重新同步注入依赖，请启用此实验。
    */
   "usePnpmSyncForInjectedDependencies": true
 ```
 
-This will enable the following behaviors:
+此设置将启用以下行为：
 
-- `rush install` and `rush update` will automatically invoke `pnpm-sync prepare` to configure copying of injected dependencies such as `my-library`
+- `rush install` 和 `rush update` 将自动调用 `pnpm-sync prepare` 来配置注入依赖（如 `my-library`）的复制
 
-- `rush build` (and other Rush custom commands and phases) will automatically invoke `pnpm-sync copy` to resync the installed folders whenever a project like `my-library` is rebuilt
+- `rush build`（以及其他 Rush 自定义命令和阶段）将在 `my-library` 等项目重建时自动调用 `pnpm-sync copy` 以重新同步已安装的文件夹
 
-- `rushx` will automatically invoke `pnpm-sync copy` after any operation performed under the `my-library` folder
+- `rushx` 将在 `my-library` 文件夹下执行的任何操作后自动调用 `pnpm-sync copy`
 
-## Injected dependencies for subspaces
+## 用于子空间的注入依赖
 
-If you are using Rush subspaces, consider enabling `alwaysInjectDependenciesFromOtherSubspaces` as well:
+如果您使用 Rush 子空间，请考虑同时启用 `alwaysInjectDependenciesFromOtherSubspaces`：
 
 **common/config/subspaces/&lt;subspace-name&gt;/pnpm-config.json**
 
 ```json
   /**
-   * When a project uses `workspace:` to depend on another Rush project, PNPM normally installs
-   * it by creating a symlink under `node_modules`.  This generally works well, but in certain
-   * cases such as differing `peerDependencies` versions, symlinking may cause trouble
-   * such as incorrectly satisfied versions.  For such cases, the dependency can be declared
-   * as "injected", causing PNPM to copy its built output into `node_modules` like a real
-   * install from a registry.  Details here: https://rushjs.io/pages/advanced/injected_deps/
+   * 当项目使用 `workspace:` 依赖其他 Rush 项目时，PNPM 通常通过在 `node_modules` 下创建一个符号链接来安装。
+   * 这通常效果很好，但在某些情况下，例如不同的 `peerDependencies` 版本，符号链接可能会引发问题，
+   * 比如错误的版本满足。对于这种情况，可以将依赖项声明为“injected”，
+   * 使得 PNPM 能够将其构建输出复制到 `node_modules` 中，就像从注册表实际安装一样。
+   * 详细信息：https://rushjs.io/pages/advanced/injected_deps/
    *
-   * When using Rush subspaces, these sorts of versioning problems are much more likely if
-   * `workspace:` refers to a project from a different subspace.  This is because the symlink
-   * would point to a separate `node_modules` tree installed by a different PNPM lockfile.
-   * A comprehensive solution is to enable `alwaysInjectDependenciesFromOtherSubspaces`,
-   * which automatically treats all projects from other subspaces as injected dependencies
-   * without having to manually configure them.
+   * 使用 Rush 子空间时，如果 `workspace:` 引用来自不同子空间的项目，那么这类版本问题的可能性更高。
+   * 这是因为符号链接将指向由不同的 PNPM 锁定文件安装的独立 `node_modules` 树。
+   * 全面的解决方案是启用 `alwaysInjectDependenciesFromOtherSubspaces`，
+   * 它会自动将其他子空间中的所有项目视为注入依赖，无需手动配置它们。
    *
-   * NOTE: Use carefully -- excessive file copying can slow down the `rush install` and
-   * `pnpm-sync` operations if too many dependencies become injected.
+   * 注意：请谨慎使用——如果注入的依赖过多，过度的文件复制会减慢 `rush install` 和 `pnpm-sync` 操作。
    *
-   * The default value is false.
+   * 默认值为 false。
    */
   "alwaysInjectDependenciesFromOtherSubspaces": true
 ```
 
-## See also
+## 另见
 
-- [pnpm-sync](https://github.com/tiktok/pnpm-sync) GitHub project
-- [dependenciesMeta.\*.injected](https://pnpm.io/package_json#dependenciesmetainjected) from PNPM documentation
-- [Rush subspaces](../advanced/subspaces.md)
+- [pnpm-sync](https://github.com/tiktok/pnpm-sync) GitHub 项目
+- PNPM 文档中的 [dependenciesMeta.\*.injected](https://pnpm.io/package_json#dependenciesmetainjected)
+- [Rush 子空间](../advanced/subspaces.md)

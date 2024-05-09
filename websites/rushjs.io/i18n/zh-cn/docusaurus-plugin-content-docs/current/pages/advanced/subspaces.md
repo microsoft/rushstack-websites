@@ -1,81 +1,81 @@
 ---
-title: Rush subspaces
+title: Rush 子空间
 ---
 
-## What are subspaces?
+## 什么是子空间？
 
-Subspaces are a Rush feature that enables a single monorepo to install using multiple PNPM lockfiles. For example, if the subspace name is `my-team`, there will be a folder `common/config/subspaces/my-team/` containing the `pnpm-lock.yaml` file and related configuration. Each Rush project belongs to exactly one subspace, and the monorepo still has one unified "workspace." Thus, a project's `package.json` file can use the `workspace:` specifier to depend on projects from other subspaces.
+子空间是 Rush 的一个功能，使单一的 monorepo 能够使用多个 PNPM 锁定文件进行安装。例如，如果子空间名称是 `my-team`，则会有一个文件夹 `common/config/subspaces/my-team/`，其中包含 `pnpm-lock.yaml` 文件和相关配置。每个 Rush 项目都只属于一个子空间，monorepo 仍然保持一个统一的 "工作区"。因此，一个项目的 `package.json` 文件可以使用 `workspace:` 来指定对其他子空间项目的依赖。
 
-## What is the benefit?
+## 有什么好处？
 
-Generally it's best to have a single lockfile for the entire monorepo, as this optimizes installation time and minimizes maintenance work for managing version conflicts. However, multiple lockfiles have advantages in certain situations:
+通常情况下，整个 monorepo 使用单个锁定文件是最好的，因为这可以优化安装时间，并最大限度地减少管理版本冲突的维护工作。然而，在某些情况下，多个锁定文件有其优势：
 
-- **A very large codebase**: A lockfile can be thought of as giant multivariable equation, which we solve by coordinating NPM package version choices across many projects to eliminate conflicts and minimize duplication. (The [Lockfile Explorer](@lfx/) docs explain this in depth.) Dividing up monorepo dependencies into smaller lockfiles does make these equations smaller and easier to solve, but with the tradeoff of increasing the total overhead for managing versions. With a very large engineering team, dividing up the work can be more important than minimizing the total amount of work.
+- **非常庞大的代码库**：锁定文件可以被视为一个庞大的多变量方程，我们通过在许多项目中协调 NPM 包版本选择来消除冲突并尽量减少重复。（[锁定文件浏览器](@lfx/) 文档对此有详细说明。）将 monorepo 的依赖关系分成较小的锁定文件确实使这些方程更小、更容易解决，但增加了管理版本的整体开销。对于庞大的工程团队来说，分工比减少工作总量更重要。
 
-- **Decoupled project sets**: A large code base may have certain clusters of projects whose dependencies are not aligned with the rest of the repo. For example, suppose 50 projects comprise a legacy application that uses a deprecated or outdated framework, with no business motivation to modernize it. Moving these projects into a subspace enables their versioning to be managed independently.
+- **解耦的项目集合**：一个庞大的代码库中可能有一些项目集，它们的依赖关系与代码库的其他部分不一致。例如，假设有 50 个项目构成一个使用已弃用或过时框架的遗留应用程序，没有业务动机去现代化。将这些项目移入一个子空间可以使其版本管理独立。
 
-- **Installation testing**: When publishing NPM packages, certain bugs cannot be reproduced using `workspace:*` symlinking. For example, phantom dependencies or incorrect `.npmignore` globs will cause failures for external consumers of a package, but may work fine when the same library is tested within the monorepo. Moving test projects into a subspace (combined with [injected dependencies](./injected_deps.md)) produces a more accurate installation that can catch such problems, while still avoiding the overhead of actually publishing to a testing NPM registry.
+- **安装测试**：在发布 NPM 包时，使用 `workspace:*` 符号链接无法重现某些错误。例如，幽灵依赖或错误的 `.npmignore` 通配符会导致外部消费者的包失败，但在 monorepo 中测试同一库时可能工作正常。将测试项目移入子空间（结合[注入依赖](./injected_deps.md)）会产生更准确的安装，从而发现此类问题，同时避免实际发布到测试 NPM 注册表的开销。
 
-## How many subspaces do I need?
+## 我需要多少个子空间？
 
-We generally recommend "as few as possible" to minimize additional version management overhead. _One subspace per team_ is a sensible maximum limit. That said, this feature has been used successfully in a production monorepo with more than 1,000 subspaces.
+我们通常建议 "尽可能少" 以尽量减少额外的版本管理开销。_每个团队一个子空间_ 是一个合理的最大上限。尽管如此，在一个包含超过 1000 个子空间的生产 monorepo 中，该功能已被成功使用。
 
-> **Real world demo**
+> **真实世界示例**
 >
-> Rush Stack's own repository on GitHub is currently configured with two subspaces:
+> Rush Stack 在 GitHub 上的自有仓库目前配置了两个子空间：
 >
-> - [common/config/subspaces/build-tests-subspace](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/build-tests-subspace): used to test installation of published NPM packages
-> - [common/config/subspaces/default](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/default): contains all other projects
+> - [common/config/subspaces/build-tests-subspace](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/build-tests-subspace): 用于测试发布的 NPM 包的安装
+> - [common/config/subspaces/default](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/default): 包含所有其他项目
 
-## Feature design
+## 功能设计
 
-Each subspace must have its name registered centrally in the [common/config/subspaces.json](../configs/subspaces_json.md) config file. Projects are added to a subspace using their `subspaceName` field in [rush.json](../configs/rush_json.md).
+每个子空间必须在 [common/config/subspaces.json](../configs/subspaces_json.md) 配置文件中进行中央注册。项目通过 [rush.json](../configs/rush_json.md) 中的 `subspaceName` 字段添加到子空间。
 
-The configuration for each subspace goes in a folder `common/config/subspaces/<subspace-name>/`, which may contain the following files:
+每个子空间的配置位于文件夹 `common/config/subspaces/<subspace-name>/` 中，可能包含以下文件：
 
-| File                                                         | Purpose                                                                                                                                        |
-| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`common-versions.json`](../configs/common-versions_json.md) | Rush version overrides                                                                                                                         |
-| [`pnpm-config.json`](../configs/pnpm-config_json.md)         | PNPM version overrides                                                                                                                         |
-| `pnpm-lock.yaml`                                             | The PNPM lockfile                                                                                                                              |
-| `repo-state.json`                                            | A config file generated by Rush to prevent manual lockfile changes                                                                             |
-| [`.npmrc`](../configs/npmrc.md)                              | package manager configuration                                                                                                                  |
-| `.pnpmfile-subspace.cjs`                                     | Programmatic version overrides, following the same specification as [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) but specific to the subspace |
+| 文件                                                         | 作用                                                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| [`common-versions.json`](../configs/common-versions_json.md) | Rush 版本覆盖                                                                               |
+| [`pnpm-config.json`](../configs/pnpm-config_json.md)         | PNPM 版本覆盖                                                                               |
+| `pnpm-lock.yaml`                                             | PNPM 锁定文件                                                                               |
+| `repo-state.json`                                            | Rush 生成的配置文件，用于防止手动更改锁定文件                                               |
+| [`.npmrc`](../configs/npmrc.md)                              | 包管理器配置                                                                                |
+| `.pnpmfile-subspace.cjs`                                     | 程序化版本覆盖，与 [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) 规范一致，但特定于该子空间 |
 
-Some files can be configured globally (applying across the entire monorepo) in addition to subspace level:
+有些文件可以全局配置（适用于整个 monorepo），同时也可以在子空间级别配置：
 
-| Subspace config file     | Global config file                    | Inheritance                                                                             |
-| ------------------------ | ------------------------------------- | --------------------------------------------------------------------------------------- |
-| `common-versions.json`   | none                                  | global file is forbidden with subspaces enabled                                         |
-| `pnpm-config.json`       | `common/config/rush/pnpm-config.json` | **(STILL UNDER DEVELOPMENT)** subspace takes precedence, but certain fields are ignored |
-| `pnpm-lock.yaml`         | none                                  | global file is forbidden with subspaces enabled                                         |
-| `repo-state.json`        | none                                  | global file is forbidden with subspaces enabled                                         |
-| `.npmrc`                 | `common/config/rush/.npmrc`           | subspace overrides take precedence                                                      |
-| `.pnpmfile-subspace.cjs` | `common/config/rush/.pnpmfile.cjs`    | subspace overrides take precedence                                                      |
+| 子空间配置文件           | 全局配置文件                          | 继承关系                                        |
+| ------------------------ | ------------------------------------- | ----------------------------------------------- |
+| `common-versions.json`   | 无                                    | 启用子空间时禁止使用全局文件                    |
+| `pnpm-config.json`       | `common/config/rush/pnpm-config.json` | **（仍在开发中）** 子空间优先，但某些字段被忽略 |
+| `pnpm-lock.yaml`         | 无                                    | 启用子空间时禁止使用全局文件                    |
+| `repo-state.json`        | 无                                    | 启用子空间时禁止使用全局文件                    |
+| `.npmrc`                 | `common/config/rush/.npmrc`           | 子空间覆盖优先                                  |
+| `.pnpmfile-subspace.cjs` | `common/config/rush/.pnpmfile.cjs`    | 子空间覆盖优先                                  |
 
-Note that the following config files are NOT moved:
+请注意以下配置文件不会移动：
 
-- `common/config/.npmrc-publish`: This file is used for Rush NPM publishing, regardless of which subspaces the published projects belong to
-- `common/config/.pnpmfile.cjs`: This file can apply versioning overrides that will affect all subspaces in the monorepo. To avoid confusing interactions across lockfiles, in most cases it is better to use `.pnpmfile-subspace.cjs` instead.
+- `common/config/.npmrc-publish`: 该文件用于 Rush NPM 发布，无论发布的项目属于哪个子空间
+- `common/config/.pnpmfile.cjs`: 该文件可应用影响 monorepo 中所有子空间的版本覆盖。为了避免跨锁定文件的混乱交互，大多数情况下最好使用 `.pnpmfile-subspace.cjs`。
 
-Note that `common/config/rush/.pnpmfile.cjs` is still allowed, and can be used to apply overrides that affect all subspaces in the monorepo.
+请注意，`common/config/rush/.pnpmfile.cjs` 仍然被允许，可以用于应用影响 monorepo 中所有子空间的覆盖。
 
-Without subspaces, Rush generates and installs the PNPM workspace in the `common/temp/` folder. With subspaces enabled, this will be performed separately in folders such as `common/temp/<subspace-name>/`.
+没有子空间时，Rush 会在 `common/temp/` 文件夹中生成并安装 PNPM 工作区。启用子空间后，将在类似 `common/temp/<subspace-name>/` 的文件夹中分别执行。
 
-There are two basic modes of operation:
+有两种基本操作模式：
 
-1. **Just a few subspaces:** You can set `"preventSelectingAllSubspaces": false` in `subspaces.json`, and `rush install` by default will install all subspaces.
+1. **只有几个子空间：** 你可以在 `subspaces.json` 中设置 `"preventSelectingAllSubspaces": false`，并且默认情况下，`rush install` 将安装所有子空间。
 
-2. **Lots of subspaces:** If installing all subspaces would consume too much time and disk space, then you can set `"preventSelectingAllSubspaces": true`. In this mode, when invoking commands like `rush install` or `rush update`, users MUST filter the subspaces in some way, such as:
-   - `rush install --to my-project` to install only dependencies of a given project
-   - `rush install --subspace my-subspace` to install only a specific subspace
-   - `rush install --to subspace:my-subspace` using a [project selector](../developer/selecting_subsets.md#subspace-members-subspace) to install for projects belonging to a given subspace
+2. **大量子空间：** 如果安装所有子空间会消耗过多的时间和磁盘空间，那么你可以设置 `"preventSelectingAllSubspaces": true`。在此模式下，调用 `rush install` 或 `rush update` 等命令时，用户必须以某种方式过滤子空间，例如：
+   - 使用 `rush install --to my-project` 只安装指定项目的依赖
+   - 使用 `rush install --subspace my-subspace` 只安装特定子空间
+   - 使用 [项目选择器](../developer/selecting_subsets.md#subspace-members-subspace) 中的 `rush install --to subspace:my-subspace` 为属于某个子空间的项目安装
 
-## How to enable subspaces
+## 如何启用子空间
 
-1. Make sure your **rush.json** specifies `"rushVersion": "5.122.0"` or newer, and `"pnpmVersion": "8.7.6"` or newer.
+1. 确保你的 **rush.json** 文件中指定 `"rushVersion": "5.122.0"` 或更新版本，`"pnpmVersion": "8.7.6"` 或更新版本。
 
-2. Use **subspaces.json** to enable the feature and define the subspaces. You can copy the template for this file from the [subspaces.json](../configs/subspaces_json.md) docs, or use `rush init` to generate it. In this tutorial, we'll create one subspace called `install-test` for testing NPM packages:
+2. 使用 **subspaces.json** 启用此功能并定义子空间。你可以从 [subspaces.json](../configs/subspaces_json.md) 文档中复制此文件的模板，或者使用 `rush init` 生成它。在本教程中，我们将创建一个名为 `install-test` 的子空间，用于测试 NPM 包：
 
    **common/config/rush/subspaces.json**
 
@@ -84,56 +84,53 @@ There are two basic modes of operation:
      "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/subspaces.schema.json",
 
      /**
-      * Set this flag to "true" to enable usage of subspaces.
+      * 设置此标志为 "true" 以启用子空间。
       */
      "subspacesEnabled": false,
 
      /**
-      * When a command such as "rush update" is invoked without the "--subspace" or "--to"
-      * parameters, Rush will install all subspaces.  In a huge monorepo with numerous subspaces,
-      * this would be extremely slow.  Set "preventSelectingAllSubspaces" to true to avoid this
-      * mistake by always requiring selection parameters for commands such as "rush update".
+      * 当执行类似 "rush update" 的命令且没有使用 "--subspace" 或 "--to" 参数时，Rush 会安装所有子空间。
+      * 在拥有大量子空间的庞大 monorepo 中，这样做会非常缓慢。
+      * 通过始终要求选择参数来执行类似 "rush update" 之类的命令，可以设置 "preventSelectingAllSubspaces" 为 true 以避免此类错误。
       */
      "preventSelectingAllSubspaces": false,
 
      /**
-      * The list of subspace names, which should be lowercase alphanumeric words separated by
-      * hyphens, for example "my-subspace".  The corresponding config files will have paths
-      * such as "common/config/subspaces/my-subspace/package-lock.yaml".
+      * 子空间名称列表，应为小写的字母数字单词并用连字符分隔，例如 "my-subspace"。
+      * 对应的配置文件路径可能为 "common/config/subspaces/my-subspace/package-lock.yaml"。
       */
      "subspaceNames": [
-       // The "default" subspace always exists even if you don't define it,
-       // but let's include it for clarity
+       // "default" 子空间即使你没有定义它也总是存在，但为了清晰起见，让我们将其包含在内
        "default",
 
-       "install-test" // 👈👈👈 Our secondary subspace name
+       "install-test" // 👈👈👈 我们的第二个子空间名称
      ]
    }
    ```
 
-3. Create the `default` subspace folder and move the existing config files there:
+3. 创建 `default` 子空间文件夹并将现有配置文件移动到那里：
 
    ```bash
    cd my-repo
    mkdir --parents common/config/subspaces/default
 
-   # Move these files:
+   # 移动这些文件：
    mv common/config/rush/common-versions.json  common/config/subspaces/default/
    mv common/config/rush/pnpm-lock.yaml        common/config/subspaces/default/
    mv common/config/rush/.npmrc                common/config/subspaces/default/
 
-   # Rename this file:
+   # 重命名此文件：
    mv common/config/rush/.pnpmfile.cjs  common/config/subspaces/default/.pnpmfile-subspace.cjs
    ```
 
-4. Create the `install-test` subspace folder:
+4. 创建 `install-test` 子空间文件夹：
 
    ```bash
    cd my-repo
    mkdir --parents common/config/subspaces/install-test
    ```
 
-5. Assign projects to subspaces by editing `rush.json`. For example:
+5. 通过编辑 `rush.json` 将项目分配到子空间。例如：
 
    **rush.json**
 
@@ -150,26 +147,25 @@ There are two basic modes of operation:
    . . .
    ```
 
-   If `"subspaceName"` is omitted for any projects, they will belong to the `default` subspace.
+   如果任何项目省略了 `"subspaceName"`，它们将属于 `default` 子空间。
 
-6. Now update the lockfiles for the new subspaces:
+6. 现在更新新子空间的锁定文件：
 
    ```bash
-   # Clean out the common/temp folder from before
+   # 清理之前的 common/temp 文件夹
    rush purge
 
-   # Regenerate the "default" subspace:
+   # 重新生成 "default" 子空间：
    rush update --full --subspace default
 
-   # Regenerate the "install-test" subspace:
+   # 重新生成 "install-test" 子空间：
    rush update --full --subspace install-test
    ```
 
-   > **Note:** You can migrate to subspaces without using `--full` to regenerate any lockfiles,
-   > but it is a more involved process that may involve using a script to rewrite some paths in
-   > the `pnpm-lock.yaml` files.
+   > **注意：** 你可以在不使用 `--full` 重新生成任何锁定文件的情况下迁移到子空间，
+   > 但这是一个更复杂的过程，可能需要使用脚本重写 `pnpm-lock.yaml` 文件中的某些路径。
 
-## See also
+## 另见
 
-- [subspaces.json](../configs/subspaces_json.md) config file
-- [rfc-4230-rush-subspaces.md](https://github.com/microsoft/rushstack/blob/main/common/docs/rfcs/rfc-4230-rush-subspaces.md): The original spec for this feature, which explains the motivation and design in more detail
+- [subspaces.json](../configs/subspaces_json.md) 配置文件
+- [rfc-4230-rush-subspaces.md](https://github.com/microsoft/rushstack/blob/main/common/docs/rfcs/rfc-4230-rush-subspaces.md)：此功能的原始规范，其中更详细地解释了动机和设计
