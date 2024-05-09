@@ -29,7 +29,7 @@ title: Rush 子空间
 
 ## 功能设计
 
-每个子空间必须在 [common/config/subspaces.json](../configs/subspaces_json.md) 配置文件中进行中央注册。项目通过 [rush.json](../configs/rush_json.md) 中的 `subspaceName` 字段添加到子空间。
+每个子空间必须在 [common/config/subspaces.json](../configs/subspaces_json.md) 配置文件中进行集中注册。项目通过 [rush.json](../configs/rush_json.md) 中的 `subspaceName` 字段添加到子空间。
 
 每个子空间的配置位于文件夹 `common/config/subspaces/<subspace-name>/` 中，可能包含以下文件：
 
