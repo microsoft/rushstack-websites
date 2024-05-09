@@ -4,7 +4,7 @@ title: Rush subspaces
 
 ## What are subspaces?
 
-Subspaces are Rush feature that enables a single monorepo to install using multiple PNPM lockfiles. For example, if the subspace name is `my-team`, there will be a folder `common/config/subspaces/my-team/` containing the `pnpm-lock.yaml` file and related configuration. Each Rush project belongs to exactly one subspace, and the monorepo still has one unified "workspace." Thus, a project's `package.json` file can use the `workspace:` specifier to depend on projects from other subspaces.
+Subspaces are a Rush feature that enables a single monorepo to install using multiple PNPM lockfiles. For example, if the subspace name is `my-team`, there will be a folder `common/config/subspaces/my-team/` containing the `pnpm-lock.yaml` file and related configuration. Each Rush project belongs to exactly one subspace, and the monorepo still has one unified "workspace." Thus, a project's `package.json` file can use the `workspace:` specifier to depend on projects from other subspaces.
 
 ## What is the benefit?
 
@@ -29,7 +29,7 @@ We generally recommend "as few as possible" to minimize additional version manag
 
 ## Feature design
 
-Each subspaces must have its name registered centrally in the [common/config/subspaces.json](../configs/subspaces_json.md) config file. Projects are added to a subspace using their `subspaceName` field in [rush.json](../configs/rush_json.md).
+Each subspace must have its name registered centrally in the [common/config/subspaces.json](../configs/subspaces_json.md) config file. Projects are added to a subspace using their `subspaceName` field in [rush.json](../configs/rush_json.md).
 
 The configuration for each subspace goes in a folder `common/config/subspaces/<subspace-name>/`, which may contain the following files:
 
@@ -42,7 +42,7 @@ The configuration for each subspace goes in a folder `common/config/subspaces/<s
 | [`.npmrc`](../configs/npmrc.md)                              | package manager configuration                                                                                                                  |
 | `.pnpmfile-subspace.cjs`                                     | Programmatic version overrides, following the same specification as [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) but specific to the subspace |
 
-Some files can be configured globally (appplying to the entire monorepo) in addition to subspace level:
+Some files can be configured globally (applying across the entire monorepo) in addition to subspace level:
 
 | Subspace config file     | Global config file                    | Inheritance                                                                             |
 | ------------------------ | ------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -66,7 +66,10 @@ There are two basic modes of operation:
 
 1. **Just a few subspaces:** You can set `"preventSelectingAllSubspaces": false` in `subspaces.json`, and `rush install` by default will install all subspaces.
 
-2. **Lots of subspaces:** If installing all subspaces would consume too much time and disk space, then you can set `"preventSelectingAllSubspaces": true`. In this mode, when invoking commands like `rush install` or `rush update`, users MUST indicate the subspaces explicitly (`--subspace` parameter) or implicitly (via project selectors such as `--to`).
+2. **Lots of subspaces:** If installing all subspaces would consume too much time and disk space, then you can set `"preventSelectingAllSubspaces": true`. In this mode, when invoking commands like `rush install` or `rush update`, users MUST filter the subspaces in some way, such as:
+   - `rush install --to my-project` to install only dependencies of a given project
+   - `rush install --subspace my-subspace` to install only a specific subspace
+   - `rush install --to subspace:my-subspace` using a [project selector](../developer/selecting_subsets.md#subspace-members-subspace) to install for projects belonging to a given subspace
 
 ## How to enable subspaces
 
@@ -76,7 +79,7 @@ There are two basic modes of operation:
 
    **common/config/rush/subspaces.json**
 
-   ```js
+   ```json
    {
      "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/subspaces.schema.json",
 
@@ -134,7 +137,7 @@ There are two basic modes of operation:
 
    **rush.json**
 
-   ```js
+   ```json
    . . .
 
      "projects": [
@@ -163,8 +166,8 @@ There are two basic modes of operation:
    ```
 
    > **Note:** You can migrate to subspaces without using `--full` to regenerate any lockfiles,
-   > but it is a more involved process may involve using a script to rewrite some paths in the
-   > `pnpm-lock.yaml` files.
+   > but it is a more involved process that may involve using a script to rewrite some paths in
+   > the `pnpm-lock.yaml` files.
 
 ## See also
 
