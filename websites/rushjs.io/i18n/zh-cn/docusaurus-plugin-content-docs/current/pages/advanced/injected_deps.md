@@ -136,7 +136,7 @@ PNPM 目前还没有包含该问题的内置解决方案，因此注入依赖尚
    *
    * 使用 Rush 子空间时，如果 `workspace:` 引用来自不同子空间的项目，那么这类版本问题的可能性更高。
    * 这是因为符号链接将指向由不同的 PNPM 锁定文件安装的独立 `node_modules` 树。
-   * 全面的解决方案是启用 `alwaysInjectDependenciesFromOtherSubspaces`，
+   * 彻底的解决方案是启用 `alwaysInjectDependenciesFromOtherSubspaces`，
    * 它会自动将其他子空间中的所有项目视为注入依赖，无需手动配置它们。
    *
    * 注意：请谨慎使用——如果注入的依赖过多，过度的文件复制会减慢 `rush install` 和 `pnpm-sync` 操作。
