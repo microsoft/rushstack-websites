@@ -48,7 +48,7 @@ Suppose however that `my-library` declares a peer dependency like this:
 
 The `my-library` project declares that it can use both React version 17 and 18. For local development, the `devDependencies` install the oldest supported version 17.0.0, a common practice to validate backwards compatibility.
 
-Why do we need `peerDependencies` instead of `dependencies`? With `dependencies`, then the package manager would be free to choose any version of `react` matching `"^18.0.0 || ^17.0.0"`. For example, if our app is using React 17, then `my-library` could get React 18, which is wrong. The peer dependency avoids this possibility by stipulating that `my-library` must get the same `react` version as its consumer (and in fact the same installed disk folder).
+Why do we need `peerDependencies` instead of `dependencies`? With `dependencies`, the package manager would be free to choose any version of `react` matching `"^18.0.0 || ^17.0.0"`. For example, if our app is using React 17, then `my-library` could get React 18, which is wrong. The peer dependency avoids this possibility by stipulating that `my-library` must get the same `react` version as its consumer (and in fact the same installed disk folder).
 
 What if two different apps depend on `my-library`, and those apps have different versions of `react`? For external NPM packages, PNPM would normally solve this by installing two copies of (the same version of) `my-library` into two different subfolders of `node_modules`. These copies are called **"peer dependency doppelgangers".** They are needed because of a design constraint of the Node.js module resolvers:
 
