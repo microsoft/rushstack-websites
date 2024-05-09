@@ -4,44 +4,54 @@ title: Rush subspaces
 
 ## What are subspaces?
 
-This feature enables a single monorepo to install using multiple PNPM lockfiles. A Rush **subspace** is a folder such as `common/config/subspaces/my-team/` that contains a **pnpm-lock.yaml** and its associated config files. In this model, each Rush project belongs to exactly one subspace. Subspaces are not "workspaces" -- there's still only one unified workspace, such that the `workspace:*` specifier can be used to depend on projects from other subspaces.
+Subspaces are Rush feature that enables a single monorepo to install using multiple PNPM lockfiles. For example, if the subspace name is `my-team`, there will be a folder `common/config/subspaces/my-team/` containing the `pnpm-lock.yaml` file and related configuration. Each Rush project belongs to exactly one subspace, and the monorepo still has one unified "workspace." Thus, a project's `package.json` file can use the `workspace:` specifier to depend on projects from other subspaces.
 
 ## What is the benefit?
 
-Generally it's best to have a single lockfile for the entire monorepo, as this optimizes installation time and minimizes maintenance work for managing version conflicts. However, multiple lockfiles can have benefits in certain cases:
+Generally it's best to have a single lockfile for the entire monorepo, as this optimizes installation time and minimizes maintenance work for managing version conflicts. However, multiple lockfiles have advantages in certain situations:
 
-- **A very large codebase**: A lockfile can be thought of as giant multivariable equation, which gets solved by coordinating NPM package version choices across many projects to eliminate conflicts and minimize duplication. (The [Lockfile Explorer](@lfx/) docs explain this in depth.) Although partitioning projects into multiple lockfiles produces smaller equations, the overall maintenance work will be significantly greater than with one unified equation. However, at the scale where that equation becomes too complex to manage easily, dividing up the work can be more important than minimizing the total amount of work.
+- **A very large codebase**: A lockfile can be thought of as giant multivariable equation, which we solve by coordinating NPM package version choices across many projects to eliminate conflicts and minimize duplication. (The [Lockfile Explorer](@lfx/) docs explain this in depth.) Dividing up monorepo dependencies into smaller lockfiles does make these equations smaller and easier to solve, but with the tradeoff of increasing the total overhead for managing versions. With a very large engineering team, dividing up the work can be more important than minimizing the total amount of work.
 
-- **Decoupled project sets**: A large code base may have certain clusters of projects whose dependencies are not aligned with the rest of the repo. For example, suppose 50 projects comprise a legacy application that uses deprecated tooling or an outdated framework version, with no plan to ever modernize it. Moving these projects into a subspace enables their versioning to be managed independently.
+- **Decoupled project sets**: A large code base may have certain clusters of projects whose dependencies are not aligned with the rest of the repo. For example, suppose 50 projects comprise a legacy application that uses a deprecated or outdated framework, with no business motivation to modernize it. Moving these projects into a subspace enables their versioning to be managed independently.
 
-- **Installation testing**: When publishing NPM packages, certain bugs cannot be reproduced using `workspace:*` symlinking. For example, phantom dependencies or incorrect `.npmignore` globs may not cause any problems when a library is tested within the monorepo, even though the published package would fail for external consumers. Moving test projects into a subspace (combined with [injected dependencies](./injected_deps.md)) produces a more accurate installation that can catch such problems, while still avoiding the overhead of actually publishing to a testing NPM registry.
+- **Installation testing**: When publishing NPM packages, certain bugs cannot be reproduced using `workspace:*` symlinking. For example, phantom dependencies or incorrect `.npmignore` globs will cause failures for external consumers of a package, but may work fine when the same library is tested within the monorepo. Moving test projects into a subspace (combined with [injected dependencies](./injected_deps.md)) produces a more accurate installation that can catch such problems, while still avoiding the overhead of actually publishing to a testing NPM registry.
 
-## How many subspaces are we talking about?
+## How many subspaces do I need?
 
-We generally recommend "as few as possible" to minimize additional version management overhead. "One subspace per team" is a reasonable maximum limit. That said, this feature has been used successfully in a production monorepo with more than 1,000 subspaces.
+We generally recommend "as few as possible" to minimize additional version management overhead. _One subspace per team_ is a sensible maximum limit. That said, this feature has been used successfully in a production monorepo with more than 1,000 subspaces.
 
 > **Real world demo**
 >
-> This feature is enabled for the Rush Stack repository on GitHub,
-> which has two subspaces:
+> Rush Stack's own repository on GitHub is currently configured with two subspaces:
 >
 > - [common/config/subspaces/build-tests-subspace](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/build-tests-subspace): used to test installation of published NPM packages
 > - [common/config/subspaces/default](https://github.com/microsoft/rushstack/tree/main/common/config/subspaces/default): contains all other projects
 
-## Feature design: Config files
+## Feature design
 
-Subspaces are created by defining their names in the [common/config/subspaces.json](../configs/subspaces_json.md) config file. Projects are added to a subspace using the `subspaceName` field for projects in [rush.json](../configs/rush_json.md).
+Each subspaces must have its name registered centrally in the [common/config/subspaces.json](../configs/subspaces_json.md) config file. Projects are added to a subspace using their `subspaceName` field in [rush.json](../configs/rush_json.md).
 
-The configuration for each subspace goes in a folder **common/config/subspaces/&lt;subspace-name&gt;/**, which may contain the following files:
+The configuration for each subspace goes in a folder `common/config/subspaces/<subspace-name>/`, which may contain the following files:
 
-- [`common-versions.json`](../configs/common-versions_json.md): Rush version overrides
-- [`pnpm-config.json`](../configs/pnpm-config_json.md): PNPM version overrides
-- `pnpm-lock.yaml`: The PNPM lockfile
-- `repo-state.json`: A config file generated by Rush to prevent manual lockfile changes
-- [`.npmrc`](../configs/npmrc.md): package manager configuration
-- `.pnpmfile-subspace.cjs`: Programmatic version overrides, following the same specification as [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) but specific to the subspace
+| File                                                         | Purpose                                                                                                                                        |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`common-versions.json`](../configs/common-versions_json.md) | Rush version overrides                                                                                                                         |
+| [`pnpm-config.json`](../configs/pnpm-config_json.md)         | PNPM version overrides                                                                                                                         |
+| `pnpm-lock.yaml`                                             | The PNPM lockfile                                                                                                                              |
+| `repo-state.json`                                            | A config file generated by Rush to prevent manual lockfile changes                                                                             |
+| [`.npmrc`](../configs/npmrc.md)                              | package manager configuration                                                                                                                  |
+| `.pnpmfile-subspace.cjs`                                     | Programmatic version overrides, following the same specification as [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) but specific to the subspace |
 
-The above files are NOT allowed under `common/config/rush/` folder when the subspaces feature is enabled. When enabling the feature, typically they would be moved to `common/config/subspaces/default/`.
+Some files can be configured globally (appplying to the entire monorepo) in addition to subspace level:
+
+| Subspace config file     | Global config file                    | Inheritance                                                                             |
+| ------------------------ | ------------------------------------- | --------------------------------------------------------------------------------------- |
+| `common-versions.json`   | none                                  | global file is forbidden with subspaces enabled                                         |
+| `pnpm-config.json`       | `common/config/rush/pnpm-config.json` | **(STILL UNDER DEVELOPMENT)** subspace takes precedence, but certain fields are ignored |
+| `pnpm-lock.yaml`         | none                                  | global file is forbidden with subspaces enabled                                         |
+| `repo-state.json`        | none                                  | global file is forbidden with subspaces enabled                                         |
+| `.npmrc`                 | `common/config/rush/.npmrc`           | subspace overrides take precedence                                                      |
+| `.pnpmfile-subspace.cjs` | `common/config/rush/.pnpmfile.cjs`    | subspace overrides take precedence                                                      |
 
 Note that the following config files are NOT moved:
 
@@ -50,9 +60,7 @@ Note that the following config files are NOT moved:
 
 Note that `common/config/rush/.pnpmfile.cjs` is still allowed, and can be used to apply overrides that affect all subspaces in the monorepo.
 
-## Feature design: Mechanics
-
-Without subspaces, Rush generates and installs the PNPM workspace in the `common/temp/` folder. With subspaces enabled, this will be performed separately in folders such as `common/temp/<subspace-name>`.
+Without subspaces, Rush generates and installs the PNPM workspace in the `common/temp/` folder. With subspaces enabled, this will be performed separately in folders such as `common/temp/<subspace-name>/`.
 
 There are two basic modes of operation:
 
@@ -60,11 +68,11 @@ There are two basic modes of operation:
 
 2. **Lots of subspaces:** If installing all subspaces would consume too much time and disk space, then you can set `"preventSelectingAllSubspaces": true`. In this mode, when invoking commands like `rush install` or `rush update`, users MUST indicate the subspaces explicitly (`--subspace` parameter) or implicitly (via project selectors such as `--to`).
 
-## Step-by-step: Migrating to use subspaces
+## How to enable subspaces
 
 1. Make sure your **rush.json** specifies `"rushVersion": "5.122.0"` or newer, and `"pnpmVersion": "8.7.6"` or newer.
 
-2. Use **subspaces.json** to enable the feature and define the subspaces. You can copy the template for this file from the [subspaces.json](../configs/subspaces_json.md) docs, or use `rush init` to generate it. In this tutorial, we'll create one subspace called `install-test` for testing NPM packages.
+2. Use **subspaces.json** to enable the feature and define the subspaces. You can copy the template for this file from the [subspaces.json](../configs/subspaces_json.md) docs, or use `rush init` to generate it. In this tutorial, we'll create one subspace called `install-test` for testing NPM packages:
 
    **common/config/rush/subspaces.json**
 
@@ -108,7 +116,6 @@ There are two basic modes of operation:
 
    # Move these files:
    mv common/config/rush/common-versions.json  common/config/subspaces/default/
-   mv common/config/rush/pnpm-config.json      common/config/subspaces/default/
    mv common/config/rush/pnpm-lock.yaml        common/config/subspaces/default/
    mv common/config/rush/.npmrc                common/config/subspaces/default/
 
