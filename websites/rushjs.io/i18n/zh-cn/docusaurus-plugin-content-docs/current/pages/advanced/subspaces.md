@@ -147,7 +147,7 @@ title: Rush 子空间
 
    如果任何项目省略了 `"subspaceName"`，它们将属于 `default` 子空间。
 
-6. 现在更新新子空间的锁定文件：
+6. 更新新子空间的锁定文件：
 
    ```bash
    # 清理之前的 common/temp 文件夹
