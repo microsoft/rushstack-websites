@@ -142,6 +142,33 @@ rush build --to git:origin/main
 rush list --impacted-by git:release/v3.0.0
 ```
 
+### 子空间成员：`subspace:`
+
+[子空间](../advanced/subspaces.md) 功能使 Rush 项目能够分组到各自使用自己的 PNPM 锁定文件的子空间中。`subspace:` 选择器会匹配属于指定子空间的所有项目。
+
+示例：
+
+```bash
+# 构建所有属于 "install-test" 子空间的项目，以及它们的依赖：
+rush build --to subspace:install-test
+```
+
+### 标记的项目：`tag:`
+
+Rush [项目标记](../developer/project_tags.md) 使您能够定义任意的项目集合，然后可以使用 `tag:` 选择器引用这些集合。
+
+示例：
+
+```bash
+# 构建所有带有 "shipping" 项目标记的项目。
+rush build --to tag:shipping
+```
+
+```bash
+# 打印报告，显示带有 "frontend-team-libs" 项目标记的项目集。
+rush list --only tag:frontend-team-libs --detailed
+```
+
 ## 组合参数
 
 - 你可以在指令中组合任何参数，其结果是所有参数的并集。

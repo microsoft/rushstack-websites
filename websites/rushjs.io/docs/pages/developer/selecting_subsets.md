@@ -218,6 +218,18 @@ rush build --to git:origin/main
 rush list --impacted-by git:release/v3.0.0
 ```
 
+### Subspace members: `subspace:`
+
+The [subspaces](../advanced/subspaces.md) feature enables Rush projects to be grouped into subspaces that install using their own PNPM lockfile. The `subspace:` selector matches all projects belonging to a given subspace.
+
+Example:
+
+```bash
+# Build all projects belonging to the "install-test" subspace, as well
+# as their dependencies:
+rush build --to subspace:install-test
+```
+
 ### Tagged projects: `tag:`
 
 Rush [project tags](../developer/project_tags.md) enable you to define arbitrary collections of projects,

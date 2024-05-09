@@ -375,6 +375,12 @@ title: rush.json
     //   "projectFolder": "apps/my-app",
     //
     //   /**
+    //    * 仅当 subspaces.json 中的 "subspacesEnabled" 为 true 时使用。
+    //    * 它指定该项目所属的子空间。如果省略，则该项目属于 "default" 子空间。
+    //    */
+    //   "subspaceName": "my-subspace",
+    //
+    //   /**
     //    * 可选的种类，它用于 "browser-approved-packages.json"
     //    * 和 "nonbrowser-approved-packages.json" 文件。该值必须
     //    * 是上文 "reviewCategories" 中定义的字符串。
