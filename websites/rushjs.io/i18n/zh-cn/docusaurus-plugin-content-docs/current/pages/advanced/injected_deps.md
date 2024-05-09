@@ -46,7 +46,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 }
 ```
 
-`my-library` 项目声明它可以使用 React 版本 17 和 18。在本地开发中，`devDependencies` 安装了支持的最早版本 17.0.0，这是一种验证向后兼容性的常见做法。
+`my-library` 项目声明它可以使用 React 版本 17 或者 18。在本地开发中，`devDependencies` 安装了符合要求的最老版本 17.0.0。安装最老版本一种为了验证向后兼容性的常见做法。
 
 为什么我们需要 `peerDependencies` 而不是 `dependencies`？如果使用 `dependencies`，那么包管理器可以自由选择任何匹配 `"^18.0.0 || ^17.0.0"` 的 `react` 版本。例如，如果我们的应用使用 React 17，那么 `my-library` 可能会获取 React 18，这是错误的。peer 依赖通过规定 `my-library` 必须与其使用者保持相同的 `react` 版本（实际上是相同的已安装磁盘文件夹）来避免这种情况。
 
