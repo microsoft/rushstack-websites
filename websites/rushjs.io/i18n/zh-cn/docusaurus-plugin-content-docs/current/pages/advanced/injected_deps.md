@@ -56,7 +56,7 @@ Rush 项目通常使用 `workspace:` 指定符号来依赖单体仓库工作区�
 
 换句话说，唯一能让 `my-library` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即分身）导入。
 
-当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建分身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么对等依赖将如何满足？在这种情况下，PNPM 只会产生一个错误的安装：
+当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建分身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么对等依赖将如何满足？在这种情况下，PNPM 会安装错误的包版本：
 
 - 当 `my-project` 导入 React 时，它将获取版本 18
 - 当 `my-project` 导入 `my-library` 而 `my-library` 导入 React 时，它将获取版本 17（从 `devDependencies` 安装）
