@@ -61,7 +61,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 - 当 `my-project` 导入 React 时，它将获取版本 18
 - 当 `my-project` 导入 `my-library` 而 `my-library` 导入 React 时，它将获取版本 17（从 `devDependencies` 安装）
 
-`peerDependencies` 被忽略。
+`peerDependencies` 的申明被忽略了。
 
 ## 注入依赖的救援
 
