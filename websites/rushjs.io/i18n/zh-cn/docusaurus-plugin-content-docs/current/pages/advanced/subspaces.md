@@ -55,7 +55,7 @@ title: Rush 子空间
 
 请注意以下配置文件不会移动：
 
-- `common/config/.npmrc-publish`: 该文件用于 Rush NPM 发布，无论发布的项目属于哪个子空间
+- `common/config/.npmrc-publish`: 该文件用于 Rush NPM 发布，无论发布的项目属于哪个子空间。
 - `common/config/.pnpmfile.cjs`: 该文件可应用影响 monorepo 中所有子空间的版本覆盖。为了避免跨锁定文件的混乱交互，大多数情况下最好使用 `.pnpmfile-subspace.cjs`。
 
 没有子空间时，Rush 会在 `common/temp/` 文件夹中生成并安装 PNPM 工作区。启用子空间后，将在类似 `common/temp/<subspace-name>/` 的文件夹中分别执行。
