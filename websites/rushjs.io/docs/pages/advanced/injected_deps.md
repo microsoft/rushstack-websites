@@ -59,7 +59,7 @@ In other words, the only way to cause `my-library` to import React 17 for `app1`
 The package manager creates doppelgangers automatically as needed when extracting NPM packages into the `node_modules` folder. However, in our example, `my-project` uses `workspace:*` to create a symlink to the project folder for `my-library`, instead of extracting an NPM package into the `node_modules` folder. How will the peer dependency be satisfied? PNPM simply produces an incorrect installation in this situation:
 
 - When `my-project` imports React, it will get version 18
-- When `my-project` imports `my-library` and `my-library` imports React, it will get version 18 (as installed from the `devDependencies`)
+- When `my-project` imports `my-library` and `my-library` imports React, it will get version 17 (as installed from the `devDependencies`)
 
 The `peerDependencies` are ignored.
 
