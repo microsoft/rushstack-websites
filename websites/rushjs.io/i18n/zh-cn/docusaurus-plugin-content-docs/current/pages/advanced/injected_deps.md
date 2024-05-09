@@ -25,7 +25,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 
 **符号链接：** `my-repo/apps/my-project/node_modules/my-library` --> `my-repo/libraries/my-library/`
 
-通过这种方式，`my-project` 将始终使用 `my-library` 最新的本地构建输出。甚至可能存在 `my-project` 和 `my-library` 都从未发布到 NPM 注册表的情况。
+通过这种方式，`my-project` 将始终使用 `my-library` 最新的本地构建产物。在这种情况下 `my-project` 和 `my-library` 甚至都不需要发布到 NPM 托管库。
 
 ## 工作区符号链接的局限性
 
