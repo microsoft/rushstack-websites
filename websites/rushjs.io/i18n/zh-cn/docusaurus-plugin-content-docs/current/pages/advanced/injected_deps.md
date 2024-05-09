@@ -54,7 +54,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 
 > _**无上下文解析：** 当某个文件导入 NPM 包时，模块解析器对文件的每个导入者的解析方式都是一致的。_
 
-换句话说，唯一能让 `my-library` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即分身）导入。
+换句话说，唯一能让 `my-library/lib/index.js` 在为 `app1` 导入 React 17 而为 `app2` 导入 React 18 的方式，是两个应用从磁盘上的两个不同 `my-library` 文件夹（即分身）导入。
 
 当将 NPM 包提取到 `node_modules` 文件夹时，包管理器会根据需要自动创建分身。然而，在我们的示例中，`my-project` 使用 `workspace:*` 来创建 `my-library` 项目文件夹的符号链接，而不是将 NPM 包提取到 `node_modules` 文件夹。那么 peer 依赖将如何满足？在这种情况下，PNPM 会安装错误的包版本：
 
