@@ -87,7 +87,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 
 进行此更改后，`pnpm install`（在我们的例子中是 `rush install` 或 `rush update`）将通过将项目内容复制到 `my-project` 的 `node_modules` 文件夹中来安装 `my-library`。由于它们是常规安装的，注入依赖可以成为分身并正确满足 peer 依赖。
 
-注入安装遵循发布过滤器，例如 `.npmignore`，因此复制的内容准确地反映了如果 `my-library` 发布到 NPM 注册表会发生什么。因此，消耗库的测试项目可以设置 `injected: true`，以捕捉 `.npmignore` 过滤器中的错误——这些在使用 `workspace:` 符号链接时经常被忽略的配置错误。
+注入安装过程也同时会遵循发布过滤规则，例如 `.npmignore`，所以即使在此例子中 `my-library` 是从本地工作区安装的，但安装行为好像就是从远程 `NPM` 仓库被下载安装一样。因此，当你想在本地测试你即将发布的库时，也可以在测试项目中，为即将发布的库的依赖设置 `injected: true`，以提前发现 `.npmignore` 的错误配置——这些通常是在使用 `workspace:` 被符号链接时经常被忽略的配置错误。
 
 听起来很棒——那么为什么 PNPM 不对所有 `workspace:` 引用使用注入安装？
 
