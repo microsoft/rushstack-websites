@@ -95,7 +95,7 @@ Rush monorepo 中的项目通常使用 `workspace:` 协议来依赖工作区内�
 
 我们说过，注入依赖会在 `rush install` 期间被复制到 `node_modules` 文件夹中。但是如果我们对 `my-library` 进行了更改，然后运行 `rush build`，会发生什么？当 `my-project` 导入 `my-library` 时，它仍会找到来自 `node_modules` 的旧副本。为了得到正确的结果，我们需要在每次重建 `my-library` 后重新执行 `rush install`。更准确地说，我们需要在构建任何被注入的项目 _**之后**_ 但在依赖方开始构建 _**之前**_ 重新执行 `rush install`。在最坏的情况下，这可能意味着在 `rush build` 期间重复执行 `rush install` 数百次。这是不现实的。
 
-PNPM 目前还没有包含该问题的内置解决方案，因此注入依赖尚未被广泛采用。然而，一个名为 [pnpm-sync](https://github.com/tiktok/pnpm-sync) 的新工具提供了解决方案：每当 `my-library` 被重建时，`pnpm-sync` 会自动将其输出复制到适当的 `node_modules` 子文件夹进行更新。
+PNPM 目前还没有包含该问题的原生解决方案，因此注入依赖尚未被广泛采用。然而，一个名为 [pnpm-sync](https://github.com/tiktok/pnpm-sync) 的新工具提供了解决方案：每当 `my-library` 被重新构建时，`pnpm-sync` 可被用来将其最新的构建产物复制到适当的 `node_modules` 子文件夹来保持同步。
 
 通常每个项目都需要自行决定是否以及如何调用 `pnpm-sync` 命令，但 Rush 集成了此功能并自动进行管理。要在 Rush 中使用 `pnpm-sync`，可以启用 `usePnpmSyncForInjectedDependencies` 实验：
 
