@@ -7,6 +7,11 @@
       "caption": "manages the team that hosts the Rush Stack projects"
     },
     {
+      "name": "Cheng",
+      "githubAlias": "chengcyber",
+      "caption": "contributed many Rush features including cobuilds and the plugin system"
+    },
+    {
       "name": "Daniel Nadeau",
       "githubAlias": "D4N14L",
       "caption": "feature implementation, focusing on Rush workspaces and Heft"
@@ -34,11 +39,6 @@
   ],
   "//": "Alphabetical by first name",
   "collaborators": [
-    {
-      "name": "Cheng",
-      "githubAlias": "chengcyber",
-      "caption": "facilitating: Rush; contributed many features including the Rush plugin system"
-    },
     {
       "name": "Elliot Nelson",
       "githubAlias": "elliot-nelson",
