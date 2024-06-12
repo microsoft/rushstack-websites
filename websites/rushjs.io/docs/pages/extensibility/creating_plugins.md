@@ -145,7 +145,7 @@ with the same filename as the `"pluginName"` field from the manifest.
 Here's a complete example of this naming pattern:
 
 | Plugin component                                 | Example naming pattern                                        |
-| ------------------------------------------------ | ------------------------------------------------------------- |
+| :----------------------------------------------- | :------------------------------------------------------------ |
 | NPM package name:                                | `@your-company/rush-policy-plugins`                           |
 | `"pluginName"` in **rush-plugin-manifest.json**: | `"email-policy"`                                              |
 | end user config file:                            | **&lt;repo&gt;/common/config/rush-plugins/email-policy.json** |
