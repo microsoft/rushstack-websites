@@ -217,7 +217,7 @@ can use to construct the `ExtractorConfig` object. With this approach it's possi
 **api-extractor.json** file entirely, but we generally recommend not to do that. When developers are
 troubleshooting problems, it's very useful to have your actual configuration represented in a standard config file
 that people can inspect and tinker with. Also, if you ever need to debug API Extractor itself,
-it's probably easer to debug the isolated `api-extractor` process than a complex toolchain, but you'll need an
+it's probably easier to debug the isolated `api-extractor` process than a complex toolchain, but you'll need an
 **api-extractor.json** file for that.
 
 So... if you work in a modern monorepo with many different projects, how can you ensure they have consistent
