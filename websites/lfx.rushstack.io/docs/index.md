@@ -17,6 +17,7 @@ Lockfile Explorer helps with problems such as:
 - Finding and eliminating ["doppelgangers"](./pages/scenarios/npm_doppelgangers.md)
   (multiple installations of the same version of the same package)
 - Troubleshooting problems involving peer dependencies
+- Manually invoked shell command to check for packages in the dependency tree that do not meet expected versions or are inconsistent. For example, execute `lockfile-explorer check --project xxx react@18.2.0`
 
 The app is distributed as a regular NPM package. You invoke it from the shell command line,
 and it launches a Node.js service on `http://localhost`:

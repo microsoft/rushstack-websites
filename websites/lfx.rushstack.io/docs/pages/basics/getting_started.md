@@ -4,6 +4,8 @@ title: Getting started
 
 ## Usage
 
+### Web app
+
 Here's how to invoke the **Rush Lockfile Explorer** tool:
 
 ```bash
@@ -23,7 +25,7 @@ rush install
 # Launch the Lockfile Explorer command line interface (CLI).
 # It expects to find a Rush/PNPM workspace in your shell's current working directory.
 # As a shorthand, the "lfx" alias can be used here instead of "lockfile-explorer".
-lockfile-explorer
+lockfile-explorer start
 ```
 
 The CLI will start a Node.js service on `http://localhost/` and launch your default web browser:
@@ -32,6 +34,20 @@ The CLI will start a Node.js service on `http://localhost/` and launch your defa
 alt="App Screenshot" style={{ width: '600px' }}/></a><br/>
 
 _Lockfile Explorer main window_
+
+### Manually invoked shell command
+
+You can use `lockfile --check` to verify whether there are any versions in the dependency tree that do not meet the expected criteria. The `--project` option specifies the project name, if it is not specified, the project will be automatically located based on the current execution position. You can specify a version number after the package name, if not specified, it will check for consistency across the entire dependency tree.
+
+Usage Example:
+
+```bash
+lockfile-explorer check react
+lockfile-explorer check --project xxx react
+lockfile-explorer check --project xxx react@18
+lockfile-explorer check --project xxx react@18.2
+lockfile-explorer check --project xxx react@18.2.0
+```
 
 ## How it works
 
