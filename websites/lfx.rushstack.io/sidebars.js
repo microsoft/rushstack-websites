@@ -61,6 +61,18 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Lockfile Lint (EXPERIMENTAL)',
+      collapsible: false,
+      items: ['pages/lint/lockfile-lint']
+    },
+    {
+      type: 'category',
+      label: 'Command line',
+      collapsible: false,
+      items: ['pages/cli/lfx', 'pages/cli/lflint-init', 'pages/cli/lflint-check']
+    },
+    {
+      type: 'category',
       label: 'Support',
       collapsible: false,
       items: ['pages/support/help', 'pages/support/news', 'pages/support/contributing']
