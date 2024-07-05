@@ -17,4 +17,5 @@ Optional arguments:
 
 ## See also
 
+- [rush install-autoinstaller](../commands/rush_install-autoinstaller.md)
 - [rush init-autoinstaller](../commands/rush_init-autoinstaller.md)
