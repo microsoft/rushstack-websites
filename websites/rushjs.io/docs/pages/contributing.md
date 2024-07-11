@@ -66,13 +66,21 @@ The same approach is used to debug Rush using the VS Code debugger. Create a deb
       "name": "Debug Rush",
       "program": "${workspaceFolder}/lib/start.js",
       "args": [ "list", "--json" ],  // <====== specify your Rush command line arguments here
-      "cwd": "(repo folder that you want to debug)"  // <===== specify your target working folder here
+      "cwd": "(repo folder that you want to debug)",  // <===== specify your target working folder here
+
+      // The Node.js debugger injects its own messages into the subprocess STDERR, which Rush
+      // may misinterpret as a build failure.  You can uncomment this line as a workaround:
+      // "env": { "RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD": "1" }
     }
   ]
 }
 ```
 
 After saving this file, in VS Code click _"View" --> "Run"_ and choose your "Debug Rush" configuration from the list. Then click _"Run" --> "Start Debugging"_ to start debugging. Breakpoints and TypeScript source maps should work correctly.
+
+> **TIP:** If Rush builds seem to fail in the debugger due to "warnings" such as `Debugger attached.`
+> or `Waiting for the debugger to disconnect...`, see the note above regarding
+> [RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD](./configs/environment_vars.md#rush_allow_warnings_in_successful_build).
 
 ## Building without unit tests
 
