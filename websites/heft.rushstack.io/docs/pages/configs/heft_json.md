@@ -124,7 +124,7 @@ title: heft.json
         //    *
         //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
         //    */
-        //   // "excludeGlobs": [],
+        //   // "includeGlobs": [ "lib" ],
         //
         //
         //   /**
@@ -134,7 +134,7 @@ title: heft.json
         //    *
         //    * For glob syntax, refer to: https://www.npmjs.com/package/fast-glob
         //    */
-        //   // "includeGlobs": [ "**/temp" ]
+        //   // "excludeGlobs": [ "**/temp" ]
         // }
       ],
 
