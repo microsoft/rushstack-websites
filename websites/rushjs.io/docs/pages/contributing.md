@@ -78,8 +78,14 @@ The same approach is used to debug Rush using the VS Code debugger. Create a deb
 
 After saving this file, in VS Code click _"View" --> "Run"_ and choose your "Debug Rush" configuration from the list. Then click _"Run" --> "Start Debugging"_ to start debugging. Breakpoints and TypeScript source maps should work correctly.
 
-> **TIP:** If Rush builds seem to fail in the debugger due to "warnings" such as `Debugger attached.`
-> or `Waiting for the debugger to disconnect...`, see the note above regarding
+> **TIP:** If Rush builds seem to fail in the debugger due to "warnings" such as
+>
+> ```
+> Debugger attached.
+> Waiting for the debugger to disconnect...
+> ```
+>
+> ...see the code commented above regarding
 > [RUSH_ALLOW_WARNINGS_IN_SUCCESSFUL_BUILD](./configs/environment_vars.md#rush_allow_warnings_in_successful_build).
 
 ## Building without unit tests
