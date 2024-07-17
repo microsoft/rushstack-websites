@@ -1,8 +1,6 @@
 ---
-
----
-
 ## title: rush-alerts.json (实验性)
+---
 
 这是[rush init](../commands/rush_init.md)为 Rush 警报功能生成的模板。
 
