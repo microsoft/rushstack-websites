@@ -14,11 +14,17 @@ Below are some usage examples.
 
 You may notice that the NPM packages `@microsoft/rush-lib` and `rushstack/rush-sdk` export the same APIs. What is the difference?
 
-- `@microsoft/rush-lib` is the _**engine**_ of Rush that implements all the core features. It is relatively large package that also includes some built-in Rush plugins, with many NPM dependencies.
+- `@microsoft/rush-lib` is the **engine** of Rush that implements all the core features. It is a relatively large package that also includes some built-in Rush plugins, with many NPM dependencies.
 
 - `@microsoft/rush` is the **CLI** (command-line interface) that provides the `rush` and `rushx` commands that you can invoke from your shell. `@microsoft/rush` depends on `@microsoft/rush-lib`, however if your repository's **rush.json** file requests a different `rushVersion`, the [Rush "version selector"](../contributing.md) will automatically install the requested version of the `@microsoft/rush-lib` engine and use that instead. This ensures that CLI commands always have deterministic behavior, regardless of what version of `@microsoft/rush` is installed globally.
 
-- `@microsoft/rush-sdk` is the _**API**_ interface, which has very few NPM dependencies itself, and mainly acts as a proxy for accessing the `@microsoft/rush-lib` engine. It provides two main benefits: (1) If your tool imports from `@microsoft/rush-sdk`, then it will load the appropriate version of the engine based on `rushVersion` from **rush.json**. This is important, for example because config file formats change between Rush versions, so your tool might fail to parse a config file if the wrong engine version is used. (2) `@microsoft/rush-sdk` also allows you to import internal API's from `@microsoft/rush-lib`, which are normally difficult to access because that package is distributed as a Webpack bundle. See the [@rushstack/rush-sdk](https://www.npmjs.com/package/@rushstack/rush-sdk) documentation for more details.
+- `@microsoft/rush-sdk` is the **API** interface, which has very few NPM dependencies itself, and mainly acts as a proxy for accessing the `@microsoft/rush-lib` engine. It provides two main benefits:
+
+  - **Version selector:** If your tool imports from `@microsoft/rush-sdk`, then it will load the appropriate version of the engine based on `rushVersion` from **rush.json**. This is important, for example if your script directly imports from `@microsoft/rush-lib` and it is a different version, then the engine may fail to parse a config file whose format has changed.
+
+  - **Internal APIs**: `@microsoft/rush-sdk` includes stubs that enable you to import internal API's from `@microsoft/rush-lib`. Internal APIs are normally difficult to access because that package is distributed as a Webpack bundle.
+
+  See the [@rushstack/rush-sdk](https://www.npmjs.com/package/@rushstack/rush-sdk) documentation for more details.
 
 ## Example 1: Reading the rush.json configuration
 
