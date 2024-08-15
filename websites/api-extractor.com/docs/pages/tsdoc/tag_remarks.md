@@ -12,7 +12,7 @@ will show only the brief summaries, whereas a detail pages (e.g. describing a si
 followed by the remarks. The `@remarks` block tag ends the summary section, and begins the remarks section for
 a doc comment.
 
-_NOTE: This design differs from [JSDoc's approach](http://usejsdoc.org/tags-summary.html), which uses
+_NOTE: This design differs from [JSDoc's approach](http://jsdoc.app/tags-summary.html), which uses
 an optional `@summary` tag to provide a condensed restatement of the full documentation. We experimented with
 this, but found that a well-written article already contains a "summary" in its first sentence or two._
 

@@ -14,7 +14,7 @@ The `@param` tag is used to document a function or method parameter. The `@param
 parameter name, followed by a hyphen, followed by a description. Being a block tag, `@param` introduces
 a TSDoc section that contains all comment text up until the next block tag.
 
-> NOTE: [JSDoc's version](http://usejsdoc.org/tags-param.html) of the `@param` tag optionally allows type
+> NOTE: [JSDoc's version](http://jsdoc.app/tags-param.html) of the `@param` tag optionally allows type
 > information to be specified in curly braces. For example:
 >
 > ```js
