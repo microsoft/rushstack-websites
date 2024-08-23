@@ -86,7 +86,7 @@ const sidebars = {
       type: 'category',
       label: 'Integrations',
       collapsible: false,
-      items: ['pages/integrations/mergify']
+      items: ['pages/integrations/sparo', 'pages/integrations/mergify']
     },
     {
       type: 'category',
