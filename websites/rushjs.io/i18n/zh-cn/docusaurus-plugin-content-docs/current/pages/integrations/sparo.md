@@ -96,5 +96,5 @@ sparo commit -m "Example command"
 
 ## 另请参阅
 
-- [Sparo 网站](https://tiktok.github.io/sparo/)
+- [Sparo 网站](https://tiktok.github.io/sparo/zh-cn/)
 - [为前端 Monorepos 提供更快的 Git：介绍 Sparo](https://developers.tiktok.com/blog/2024-sparo-faster-git-for-frontend-monorepos) - 来自 Sparo 维护者的博客文章
