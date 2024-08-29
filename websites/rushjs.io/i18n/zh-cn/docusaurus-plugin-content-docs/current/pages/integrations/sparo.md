@@ -22,7 +22,7 @@ Git 提供了一些内置功能，这些功能可能足以加速中等大小的�
 
 Sparo 通过使用 [Sparo 配置文件](https://tiktok.github.io/sparo/pages/guide/sparo_profiles/)简化稀疏检出，这些配置文件可以指定智能选择，例如：*"只检出我团队正在工作的两个应用程序，以及 Rush 工作区中的所有依赖项。"*这样，工程师就不需要花时间确定确切的文件夹路径进行检出。Sparo 检出总是包括一组基本的["骨架文件夹"](https://tiktok.github.io/sparo/pages/reference/skeleton_folders/)；这确保每个项目的 **package.json** 文件始终可用。Sparo 还可以选择性地收集匿名 Git 时间度量，帮助您的构建团队随时间分析性能。
 
-[Sparo 网站](https://tiktok.github.io/sparo/)提供了更多背景。
+[Sparo 网站](https://tiktok.github.io/sparo/zh-cn/)提供了更多背景。
 
 ## 使用 Sparo
 
