@@ -107,7 +107,7 @@ The config filename will have the same as the `pluginName`, for example:
 ## First-party plugins
 
 | NPM Package                                                                                                                                             | Description                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
 | [@rushstack/rush-amazon-s3-build-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-amazon-s3-build-cache-plugin)         | Cloud build cache provider for Amazon S3                                                                          |
 | [@rushstack/rush-azure-storage-build-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-azure-storage-build-cache-plugin) | Cloud build cache provider for Azure Storage                                                                      |
 | [@rushstack/rush-serve-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-serve-plugin)                                         | (Experimental) A Rush plugin that hooks into action execution and runs an express server to serve project outputs |
@@ -123,15 +123,15 @@ The config filename will have the same as the `pluginName`, for example:
 
 Here's a gallery of some community contributed plugins.
 
-| NPM Package                                                                                                                      | Description                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [rush-archive-project-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-archive-project-plugin)         | Archive Rush projects that are no longer maintained                                     |
-| [rush-github-action-build-cache-plugin](https://github.com/gigara/rush-github-action-build-cache-plugin)                         | Save and restore the build cache in Github actions                                      |
-| [rush-init-project-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-init-project-plugin)               | Initialize new Rush projects                                                            |
-| [rush-lint-staged-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-lint-staged-plugin)                 | Integrate [lint-staged](https://www.npmjs.com/package/lint-staged) with a Rush monorepo |
-| [rush-print-log-if-error-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-print-log-if-error-plugin)   | Print a project's entire log file when an error occurs                                  |
-| [rush-sort-package-json](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-sort-package-json)                   | Sort the package.json file entries for Rush projects                                    |
-| [rush-upgrade-self-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-upgrade-self-plugin)               | A helper for upgrading to the latest release of Rush                                    |
+| NPM Package                                                                                                                    | Description                                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------- |
+| [rush-archive-project-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-archive-project-plugin)       | Archive Rush projects that are no longer maintained                                     |
+| [rush-github-action-build-cache-plugin](https://github.com/gigara/rush-github-action-build-cache-plugin)                       | Save and restore the build cache in Github actions                                      |
+| [rush-init-project-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-init-project-plugin)             | Initialize new Rush projects                                                            |
+| [rush-lint-staged-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-lint-staged-plugin)               | Integrate [lint-staged](https://www.npmjs.com/package/lint-staged) with a Rush monorepo |
+| [rush-print-log-if-error-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-print-log-if-error-plugin) | Print a project's entire log file when an error occurs                                  |
+| [rush-sort-package-json](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-sort-package-json)                 | Sort the package.json file entries for Rush projects                                    |
+| [rush-upgrade-self-plugin](https://github.com/tiktok/rush-plugins/tree/main/rush-plugins/rush-upgrade-self-plugin)             | A helper for upgrading to the latest release of Rush                                    |
 
 If you created an interesting plugin for Rush, let us know in a GitHub issue. Thanks!
 
