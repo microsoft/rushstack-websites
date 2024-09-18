@@ -1,11 +1,11 @@
 ---
-title: rush update-autoinstaller
+title: rush install-autoinstaller
 ---
 
 ```
-用法：rush update-autoinstaller [-h] --name AUTOINSTALLER_NAME
+用法：rush install-autoinstaller [-h] --name AUTOINSTALLER_NAME
 
-使用该指令该给一个自动安装文件夹生成 shrinkwrap 文件。
+使用该指令给一个项目安装依赖。
 
 可选参数：
   -h, --help            展示帮助信息并退出
@@ -14,7 +14,7 @@ title: rush update-autoinstaller
                         下的一个文件夹。
 ```
 
-## 参考
+## See also
 
 - [rush update-autoinstaller](../commands/rush_update-autoinstaller.md)
 - [rush init-autoinstaller](../commands/rush_init-autoinstaller.md)
