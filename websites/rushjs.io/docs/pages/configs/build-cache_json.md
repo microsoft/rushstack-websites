@@ -45,6 +45,11 @@ generates for **build-cache.json**:
   // "cacheEntryNamePattern": "[projectName:normalize]-[phaseName:normalize]-[hash]"
 
   /**
+   * (Optional) Salt to inject during calculation of the cache key. This can be used to invalidate the cache for all projects when the salt changes.
+   */
+  // "cacheHashSalt": "1",
+
+  /**
    * Use this configuration with "cacheProvider"="azure-blob-storage"
    */
   "azureBlobStorageConfiguration": {
@@ -73,7 +78,17 @@ generates for **build-cache.json**:
     /**
      * If set to true, allow writing to the cache. Defaults to false.
      */
-    // "isCacheWriteAllowed": true
+    // "isCacheWriteAllowed": true,
+
+    /**
+     * The Entra ID login flow to use. Defaults to 'AdoCodespacesAuth' on GitHub Codespaces, 'InteractiveBrowser' otherwise.
+     */
+    // "loginFlow": "InteractiveBrowser",
+
+    /**
+     * If set to true, reading the cache requires authentication. Defaults to false.
+     */
+    // "readRequiresAuthentication": true
   },
 
   /**
