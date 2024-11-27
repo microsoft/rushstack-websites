@@ -110,6 +110,7 @@ const sidebars = {
         'pages/commands/rush_init-autoinstaller',
         'pages/commands/rush_init-deploy',
         'pages/commands/rush_install',
+        'pages/commands/rush_install-autoinstaller',
         'pages/commands/rush_link',
         'pages/commands/rush_list',
         'pages/commands/rush_publish',
