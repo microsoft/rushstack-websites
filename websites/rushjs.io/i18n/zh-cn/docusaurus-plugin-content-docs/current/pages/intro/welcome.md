@@ -20,7 +20,7 @@ title: 欢迎使用 Rush
 
 - **批量发布：** 发布时，Rush 可以检测哪些包发生了变动，同时会自动的提高相应的版本号，并在每个文件夹那执行 `npm publish`, 如果你喜欢，你可以配置你的服务器，让它每小时自动执行 `rush publish`。
 
-- **跟踪更新日志：** 每当创建一个 PR, 你可以要求开发者为受到影响的项目提供一个 major/minor/path 的更新条目。发布时，这些日志会被以优雅的格式整合到 [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/libraries/node-core-library/CHANGELOG.md) 文件中.
+- **跟踪更新日志：** 每当创建一个 PR, 你可以要求开发者为受到影响的项目提供一个 major/minor/patch 的更新条目。发布时，这些日志会被以优雅的格式整合到 [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/libraries/node-core-library/CHANGELOG.md) 文件中.
 
 - **企业级政策**：想要在某个依赖被加进 package.json 前对该依赖进行审核，但是又担心重复的问题？想要让你的项目内的所有依赖都有相同版本？是否有不专业的私人邮箱混入到了你公司的 Git 历史中？Rush 可以让多人开发和多项目混合时保持一致的生态。
 
