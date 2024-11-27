@@ -9,7 +9,7 @@ title: '@returns'
 The `@returns` tag is used to document the return value of a function or method parameter. Being a block tag,
 `@returns` introduces a TSDoc section that contains all comment text up until the next block tag.
 
-> NOTE: [JSDoc's version](http://usejsdoc.org/tags-returns.html) of the `@returns` tag optionally allows type
+> NOTE: [JSDoc's version](http://jsdoc.app/tags-returns.html) of the `@returns` tag optionally allows type
 > information to be specified in curly braces. For example:
 >
 > ```js

@@ -113,19 +113,6 @@ Specifies what type of newlines API Extractor should use when writing output fil
 will be written with Windows-style newlines. To use POSIX-style newlines, specify `"lf"` instead. To use the OS's default
 newline kind, specify `"os"`.
 
-### testMode
-
-Example:
-
-```js
-  "testMode": true,
-```
-
-**Default value:** `false`
-
-Set to true when invoking API Extractor's test harness. When `testMode` is true, the `toolVersion` field in the
-.api.json file is assigned an empty string to prevent spurious diffs in output files tracked for tests.
-
 ### enumMemberOrder
 
 Example:
@@ -138,6 +125,19 @@ Example:
 
 Specifies how API Extractor sorts members of an enum when generating api.json. By default, the output files
 will be sorted alphabetically, which is `"by-name"`. To keep the ordering in the source code, specify `"preserve"`.
+
+### testMode
+
+Example:
+
+```js
+  "testMode": true,
+```
+
+**Default value:** `false`
+
+Set to true when invoking API Extractor's test harness. When `testMode` is true, the `toolVersion` field in the
+.api.json file is assigned an empty string to prevent spurious diffs in output files tracked for tests.
 
 ## Compiler Section
 
@@ -160,7 +160,7 @@ Specifies the path to the tsconfig.json file to be used by API Extractor when an
 The path is resolved relative to the folder of the config file that contains the setting; to change this, prepend
 a folder token such as `<projectFolder>`.
 
-Note: This setting will be ignored if `overrideTsconfig` is used.
+> **Note:** This setting will be ignored if `overrideTsconfig` is used.
 
 ### compiler.overrideTsconfig
 
@@ -241,19 +241,50 @@ Example:
 ```js
   "apiReport": {
     . . .
-    "reportFileName": "<unscopedPackageName>.api.md",
+    "reportFileName": "<unscopedPackageName>",
     . . .
   }
 ```
 
-**Default value:** `"<unscopedPackageName>.api.md"`
+**Default value:** `"<unscopedPackageName>"`
 
 **Supported tokens:** `<packageName>`, `<unscopedPackageName>`
 
-The filename for the API report files. It will be combined with `reportFolder` or `reportTempFolder` to produce
-a full output filename.
+The base filename for the API report files, to be combined with `reportFolder` or `reportTempFolder`
+to produce the full file path. The `reportFileName` should not include any path separators such as
+`\` or `/`. The `reportFileName` should not include a file extension, since API Extractor will automatically
+append an appropriate file extension such as `.api.md`. If the `reportVariants` setting is used, then the
+file extension includes the variant name, for example `my-report.public.api.md` or `my-report.beta.api.md`.
+The `"complete"` variant always uses the simple extension `my-report.api.md`.
 
-The file extension should be `.api.md`, and the string should not contain a path separator such as `\` or `/`.
+> **Note:** Previous versions of API Extractor required `reportFileName` to include the `.api.md` extension explicitly;
+> for backwards compatibility, that is still accepted but will be discarded before applying the above rules.
+
+### apiReport.reportVariants
+
+Example:
+
+```js
+  "apiReport": {
+    . . .
+    "reportVariants": [ "public", "beta" ],
+    . . .
+  }
+```
+
+**Default value:** `[ "complete" ]`
+
+To support different approval requirements for different API levels, multiple "variants" of the API report can
+be generated. The `reportVariants` setting specifies a list of variants to be generated. If omitted,
+by default only the `"complete"` variant will be generated, which includes all `@internal`, `@alpha`, `@beta`,
+and `@public` items.
+
+| Variant name | Included release tags                        | File extension            |
+| :----------- | :------------------------------------------- | :------------------------ |
+| `"complete"` | `@internal` + `@alpha` + `@beta` + `@public` | `my-report.api.md`        |
+| `"alpha"`    | `@alpha` + `@beta` + `@public`               | `my-report.alpha.api.md`  |
+| `"beta"`     | `@beta` + `@public`                          | `my-report.beta.api.md`   |
+| `"public"`   | `@public` only                               | `my-report.public.api.md` |
 
 ### apiReport.reportFolder
 
@@ -379,6 +410,29 @@ Example:
 Whether "forgotten exports" should be included in the doc model file. Forgotten exports are declarations
 flagged with [ae-forgotten-export](../messages/ae-forgotten-export.md) warnings.
 
+### docModel.projectFolderUrl
+
+Example:
+
+```js
+  "docModel": {
+    . . .
+    "projectFolderUrl": "http://github.com/path/to/your/projectFolder"
+  }
+```
+
+**Default value:** `""`
+
+The base URL where the project's source code can be viewed on a website such as GitHub or
+Azure DevOps. This URL path corresponds to the `<projectFolder>` path on disk.
+
+This URL is concatenated with the file paths serialized to the doc model to produce URL file paths to individual API items.
+For example, if the `projectFolderUrl` is `https://github.com/microsoft/rushstack/tree/main/apps/api-extractor` and an API
+item's file path is `api/ExtractorConfig.ts`, the full URL file path would be
+`https://github.com/microsoft/rushstack/tree/main/apps/api-extractor/api/ExtractorConfig.js`.
+
+This setting can be omitted if you don't need source code links in your API documentation reference.
+
 ## .d.ts Rollup Section
 
 Configures how the .d.ts rollup file will be generated.
@@ -416,6 +470,30 @@ Example:
 
 Specifies the output path for a .d.ts rollup file to be generated without any trimming.
 This file will include all declarations that are exported by the main entry point.
+
+If the path is an empty string, then this file will not be written.
+
+The path is resolved relative to the folder of the config file that contains the setting; to change this,
+prepend a folder token such as `<projectFolder>`.
+
+### dtsRollup.alphaTrimmedFilePath
+
+Example:
+
+```js
+  "dtsRollup": {
+    . . .
+    "betaTrimmedFilePath": "<projectFolder>/dist/<unscopedPackageName>-alpha.d.ts",
+    . . .
+  }
+```
+
+**Default value:** `""`
+
+**Supported tokens:** `<projectFolder>`, `<packageName>`, `<unscopedPackageName>`
+
+Specifies the output path for a .d.ts rollup file to be generated with trimming for a "alpha" release.
+This file will include only declarations that are marked as `@public`, `@beta`, or `@alpha`.
 
 If the path is an empty string, then this file will not be written.
 
@@ -491,6 +569,10 @@ declaration completely.
 ## TSDoc Metadata Section
 
 Configures how the **tsdoc-metadata.json** file will be generated.
+
+> **Note:** The motivation for **tsdoc-metadata.json** is discussed in
+> [TSDoc RFC #7](https://github.com/microsoft/tsdoc/issues/7). API Extractor's implementation can be found in
+> [PackageMetadataManager.ts](https://github.com/microsoft/rushstack/blob/main/apps/api-extractor/src/analyzer/PackageMetadataManager.ts).
 
 ### tsdocMetadata.enabled
 
