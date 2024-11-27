@@ -28,6 +28,11 @@ This is the template that [rush init](../commands/rush_init.md) generates for th
   "alerts": [
     // {
     //   /**
+    //    * The alertId is used to identify the alert.
+    //    */
+    //   "alertId": "node-js",
+    //
+    //   /**
     //    * When the alert is displayed, this title will appear at the top of the message box.
     //    * It should be a single line of text, as concise as possible.
     //    */
@@ -72,6 +77,26 @@ This is the template that [rush init](../commands/rush_init.md) generates for th
     //    * The format is the same as `startTime`.
     //    */
     //   // "endTime": "2024-01-05",
+    //
+    //   /**
+    //    * (OPTIONAL) Specifies the maximum frequency at which this alert can be displayed within a defined time period.
+    //    * Options are:
+    //    *  "always" (default) - no limit on display frequency,
+    //    *  "monthly" - display up to once per month
+    //    *  "weekly" - display up to once per week
+    //    *  "daily" - display up to once per day
+    //    *  "hourly" - display up to once per hour
+    //    */
+    //   // "maximumDisplayInterval": "always",
+    //
+    //   /**
+    //    * (OPTIONAL) Determines the order in which this alert is shown relative to other alerts, based on urgency.
+    //    * Options are:
+    //    *  "high" - displayed first
+    //    *  "normal" (default) - standard urgency
+    //    *  "low" - least urgency
+    //    */
+    //   // "priority": "normal",
     //
     //   /**
     //    * (OPTIONAL) The filename of a script that determines whether this alert can be shown,
