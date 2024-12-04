@@ -16,7 +16,7 @@
     "@rushstack/heft": "0.68.9",
     "@types/heft-jest": "~1.0.3",
     "@types/node": "16.18.12",
-    "typescript": "~4.9.5",
+    "typescript": "~5.4.2",
     "@types/unist": "~2.0.6"
   }
 }

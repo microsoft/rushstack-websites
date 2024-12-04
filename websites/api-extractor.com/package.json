@@ -51,7 +51,7 @@
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
     "site-config": "workspace:*",
-    "typescript": "~4.9.5",
+    "typescript": "~5.4.2",
     "webpack": "~5.72.0"
   }
 }
