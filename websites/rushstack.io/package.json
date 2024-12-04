@@ -39,8 +39,8 @@
   },
   "devDependencies": {
     "@algolia/client-search": "~4.14.2",
-    "@babel/core": "~7.18.10",
-    "@babel/runtime": "~7.17.9",
+    "@babel/core": "~7.26.0",
+    "@babel/runtime": "~7.26.0",
     "@docusaurus/types": "2.3.1",
     "@types/js-cookie": "3.0.2",
     "@types/node": "16.18.12",
@@ -52,7 +52,7 @@
     "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
     "site-config": "workspace:*",
-    "typescript": "~4.7.4",
+    "typescript": "~5.4.2",
     "webpack": "~5.72.0"
   }
 }

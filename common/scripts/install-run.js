@@ -8,12 +8,15 @@
 //    node common/scripts/install-run.js qrcode@1.2.2 qrcode https://rushjs.io
 //
 // For more information, see: https://rushjs.io/pages/maintainer/setup_new_repo/
+//
+// Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+// See the @microsoft/rush package's LICENSE file for details.
 
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 679877:
+/***/ 832286:
 /*!************************************************!*\
   !*** ./lib-esnext/utilities/npmrcUtilities.js ***!
   \************************************************/
@@ -21,12 +24,12 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isVariableSetInNpmrcFile": () => (/* binding */ isVariableSetInNpmrcFile),
-/* harmony export */   "syncNpmrc": () => (/* binding */ syncNpmrc)
+/* harmony export */   isVariableSetInNpmrcFile: () => (/* binding */ isVariableSetInNpmrcFile),
+/* harmony export */   syncNpmrc: () => (/* binding */ syncNpmrc)
 /* harmony export */ });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ 657147);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ 179896);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ 371017);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ 16928);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
 // Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
 // See LICENSE in the project root for license information.
@@ -161,7 +164,7 @@ function isVariableSetInNpmrcFile(sourceNpmrcFolder, variableKey) {
 
 /***/ }),
 
-/***/ 532081:
+/***/ 535317:
 /*!********************************!*\
   !*** external "child_process" ***!
   \********************************/
@@ -171,7 +174,7 @@ module.exports = require("child_process");
 
 /***/ }),
 
-/***/ 657147:
+/***/ 179896:
 /*!*********************!*\
   !*** external "fs" ***!
   \*********************/
@@ -181,7 +184,7 @@ module.exports = require("fs");
 
 /***/ }),
 
-/***/ 822037:
+/***/ 370857:
 /*!*********************!*\
   !*** external "os" ***!
   \*********************/
@@ -191,7 +194,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 371017:
+/***/ 16928:
 /*!***********************!*\
   !*** external "path" ***!
   \***********************/
@@ -277,21 +280,21 @@ var __webpack_exports__ = {};
   \*******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "RUSH_JSON_FILENAME": () => (/* binding */ RUSH_JSON_FILENAME),
-/* harmony export */   "findRushJsonFolder": () => (/* binding */ findRushJsonFolder),
-/* harmony export */   "getNpmPath": () => (/* binding */ getNpmPath),
-/* harmony export */   "installAndRun": () => (/* binding */ installAndRun),
-/* harmony export */   "runWithErrorAndStatusCode": () => (/* binding */ runWithErrorAndStatusCode)
+/* harmony export */   RUSH_JSON_FILENAME: () => (/* binding */ RUSH_JSON_FILENAME),
+/* harmony export */   findRushJsonFolder: () => (/* binding */ findRushJsonFolder),
+/* harmony export */   getNpmPath: () => (/* binding */ getNpmPath),
+/* harmony export */   installAndRun: () => (/* binding */ installAndRun),
+/* harmony export */   runWithErrorAndStatusCode: () => (/* binding */ runWithErrorAndStatusCode)
 /* harmony export */ });
-/* harmony import */ var child_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! child_process */ 532081);
+/* harmony import */ var child_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! child_process */ 535317);
 /* harmony import */ var child_process__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(child_process__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */ 657147);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */ 179896);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! os */ 822037);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! os */ 370857);
 /* harmony import */ var os__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! path */ 371017);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! path */ 16928);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _utilities_npmrcUtilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utilities/npmrcUtilities */ 679877);
+/* harmony import */ var _utilities_npmrcUtilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utilities/npmrcUtilities */ 832286);
 // Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
 // See LICENSE in the project root for license information.
 /* eslint-disable no-console */
@@ -338,7 +341,7 @@ let _npmPath = undefined;
 function getNpmPath() {
     if (!_npmPath) {
         try {
-            if (os__WEBPACK_IMPORTED_MODULE_2__.platform() === 'win32') {
+            if (_isWindows()) {
                 // We're on Windows
                 const whereOutput = child_process__WEBPACK_IMPORTED_MODULE_0__.execSync('where npm', { stdio: [] }).toString();
                 const lines = whereOutput.split(os__WEBPACK_IMPORTED_MODULE_2__.EOL).filter((line) => !!line);
@@ -457,10 +460,13 @@ function _resolvePackageVersion(logger, rushCommonFolder, { name, version }) {
             // ```
             //
             // if only a single version matches.
-            const npmVersionSpawnResult = child_process__WEBPACK_IMPORTED_MODULE_0__.spawnSync(npmPath, ['view', `${name}@${version}`, 'version', '--no-update-notifier', '--json'], {
+            const spawnSyncOptions = {
                 cwd: rushTempFolder,
-                stdio: []
-            });
+                stdio: [],
+                shell: _isWindows()
+            };
+            const platformNpmPath = _getPlatformPath(npmPath);
+            const npmVersionSpawnResult = child_process__WEBPACK_IMPORTED_MODULE_0__.spawnSync(platformNpmPath, ['view', `${name}@${version}`, 'version', '--no-update-notifier', '--json'], spawnSyncOptions);
             if (npmVersionSpawnResult.status !== 0) {
                 throw new Error(`"npm view" returned error code ${npmVersionSpawnResult.status}`);
             }
@@ -593,10 +599,12 @@ function _installPackage(logger, packageInstallFolder, name, version, command) {
     try {
         logger.info(`Installing ${name}...`);
         const npmPath = getNpmPath();
-        const result = child_process__WEBPACK_IMPORTED_MODULE_0__.spawnSync(npmPath, [command], {
+        const platformNpmPath = _getPlatformPath(npmPath);
+        const result = child_process__WEBPACK_IMPORTED_MODULE_0__.spawnSync(platformNpmPath, [command], {
             stdio: 'inherit',
             cwd: packageInstallFolder,
-            env: process.env
+            env: process.env,
+            shell: _isWindows()
         });
         if (result.status !== 0) {
             throw new Error(`"npm ${command}" encountered an error`);
@@ -612,8 +620,17 @@ function _installPackage(logger, packageInstallFolder, name, version, command) {
  */
 function _getBinPath(packageInstallFolder, binName) {
     const binFolderPath = path__WEBPACK_IMPORTED_MODULE_3__.resolve(packageInstallFolder, NODE_MODULES_FOLDER_NAME, '.bin');
-    const resolvedBinName = os__WEBPACK_IMPORTED_MODULE_2__.platform() === 'win32' ? `${binName}.cmd` : binName;
+    const resolvedBinName = _isWindows() ? `${binName}.cmd` : binName;
     return path__WEBPACK_IMPORTED_MODULE_3__.resolve(binFolderPath, resolvedBinName);
+}
+/**
+ * Returns a cross-platform path - windows must enclose any path containing spaces within double quotes.
+ */
+function _getPlatformPath(platformPath) {
+    return _isWindows() && platformPath.includes(' ') ? `"${platformPath}"` : platformPath;
+}
+function _isWindows() {
+    return os__WEBPACK_IMPORTED_MODULE_2__.platform() === 'win32';
 }
 /**
  * Write a flag file to the package's install directory, signifying that the install was successful.
@@ -656,15 +673,14 @@ function installAndRun(logger, packageName, packageVersion, packageBinName, pack
     const originalEnvPath = process.env.PATH || '';
     let result;
     try {
-        // Node.js on Windows can not spawn a file when the path has a space on it
-        // unless the path gets wrapped in a cmd friendly way and shell mode is used
-        const shouldUseShell = binPath.includes(' ') && os__WEBPACK_IMPORTED_MODULE_2__.platform() === 'win32';
-        const platformBinPath = shouldUseShell ? `"${binPath}"` : binPath;
+        // `npm` bin stubs on Windows are `.cmd` files
+        // Node.js will not directly invoke a `.cmd` file unless `shell` is set to `true`
+        const platformBinPath = _getPlatformPath(binPath);
         process.env.PATH = [binFolderPath, originalEnvPath].join(path__WEBPACK_IMPORTED_MODULE_3__.delimiter);
         result = child_process__WEBPACK_IMPORTED_MODULE_0__.spawnSync(platformBinPath, packageBinArgs, {
             stdio: 'inherit',
             windowsVerbatimArguments: false,
-            shell: shouldUseShell,
+            shell: _isWindows(),
             cwd: process.cwd(),
             env: process.env
         });
