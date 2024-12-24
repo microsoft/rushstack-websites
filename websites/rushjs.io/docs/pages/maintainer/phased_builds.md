@@ -135,7 +135,7 @@ Here are some examples:
 }
 ```
 
-Here, we've defined one flag (`--production`) that can be specified on all 4 variations of our build command, but it will only be passed to the _build_ phase. And, we've defined anothe flag (`--update-snapshots`) that can be specified only on the `test` and `retest` commands, and is only passed to the `test` phase.
+Here, we've defined one flag (`--production`) that can be specified on all 4 variations of our build command, but it will only be passed to the _build_ phase. And, we've defined another flag (`--update-snapshots`) that can be specified only on the `test` and `retest` commands, and is only passed to the `test` phase.
 
 So, if we were to execute this command:
 
