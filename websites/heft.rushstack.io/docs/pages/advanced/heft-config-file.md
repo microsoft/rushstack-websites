@@ -10,6 +10,7 @@ library is the standard engine used to load Heft's config files. It provides a n
 - Support for [rig package](../intro/rig_packages.md) resolution
 - Four different `"extends"` inheritance types (append, merge, replace, computed) with preconfigured defaults
 - Property inheritance directives to customize them
+- Ability to delete a setting inherited from the parent by specifying `null` as the new value
 
 ## Property inheritance directives
 

@@ -23,6 +23,8 @@ title: node-service.json
   /**
    * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
    * settings to be shared across multiple projects.
+   * 
+   * To delete an inherited setting, set it to `null` in this file.
    */
   // "extends": "base-project/config/serve-command.json",
 

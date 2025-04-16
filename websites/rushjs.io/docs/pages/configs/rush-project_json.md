@@ -18,6 +18,8 @@ by a [rig package](https://rushstack.io/pages/heft/rig_packages/).
   /**
    * Optionally specifies another JSON config file that this file extends from. This provides a way for standard
    * settings to be shared across multiple projects.
+   *
+   * To delete an inherited setting, set it to `null` in this file.
    */
   // "extends": "my-rig/profiles/default/config/rush-project.json",
 
