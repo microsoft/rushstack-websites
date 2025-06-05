@@ -121,7 +121,7 @@ There are two basic modes of operation:
    mv common/config/rush/.npmrc                common/config/subspaces/default/
 
    # Rename this file:
-   mv common/config/rush/.pnpmfile.cjs  common/config/subspaces/default/.pnpmfile-subspace.cjs
+   mv common/config/rush/.pnpmfile.cjs  common/config/subspaces/default/.pnpmfile.cjs
    ```
 
 4. Create the `install-test` subspace folder:

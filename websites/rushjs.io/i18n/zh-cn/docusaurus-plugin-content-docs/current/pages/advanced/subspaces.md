@@ -33,34 +33,34 @@ title: Rush 子空间
 
 每个子空间的配置位于文件夹 `common/config/subspaces/<subspace-name>/` 中，可能包含以下文件：
 
-| 文件                                                         | 作用                                                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| [`common-versions.json`](../configs/common-versions_json.md) | Rush 版本覆盖                                                                               |
-| [`pnpm-config.json`](../configs/pnpm-config_json.md)         | PNPM 版本覆盖                                                                               |
-| `pnpm-lock.yaml`                                             | PNPM 锁定文件                                                                               |
-| `repo-state.json`                                            | Rush 生成的配置文件，用于防止手动更改锁定文件                                               |
-| [`.npmrc`](../configs/npmrc.md)                              | 包管理器配置                                                                                |
-| `.pnpmfile-subspace.cjs`                                     | 程序化版本覆盖，与 [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md) 规范一致，但特定于该子空间 |
+| 子空间文件                                                   | 作用                                          |
+| :----------------------------------------------------------- | :-------------------------------------------- |
+| [`common-versions.json`](../configs/common-versions_json.md) | Rush 版本覆盖                                 |
+| [`pnpm-config.json`](../configs/pnpm-config_json.md)         | PNPM 版本覆盖                                 |
+| `pnpm-lock.yaml`                                             | PNPM 锁定文件                                 |
+| `repo-state.json`                                            | Rush 生成的配置文件，用于防止手动更改锁定文件 |
+| [`.npmrc`](../configs/npmrc.md)                              | 包管理器配置                                  |
+| [`.pnpmfile.cjs`](../configs/pnpmfile_cjs.md)                | 程序化版本覆盖                                |
 
-有些文件可以全局配置（适用于整个 monorepo），同时也可以在子空间级别配置：
+> 注意：`common/config/.npmrc-publish` 并不适用于子空间。包发布通常与包安装无关。
 
-| 子空间配置文件           | 全局配置文件                          | 继承关系                                        |
-| ------------------------ | ------------------------------------- | ----------------------------------------------- |
-| `common-versions.json`   | 无                                    | 启用子空间时禁止使用全局文件                    |
-| `pnpm-config.json`       | `common/config/rush/pnpm-config.json` | **（仍在开发中）** 子空间优先，但某些字段被忽略 |
-| `pnpm-lock.yaml`         | 无                                    | 启用子空间时禁止使用全局文件                    |
-| `repo-state.json`        | 无                                    | 启用子空间时禁止使用全局文件                    |
-| `.npmrc`                 | `common/config/rush/.npmrc`           | 子空间覆盖优先                                  |
-| `.pnpmfile-subspace.cjs` | `common/config/rush/.pnpmfile.cjs`    | 子空间覆盖优先                                  |
+以下部分文件既可以在子空间中定义，也可以在 monorepo 配置中定义，继承关系如下表所示：
 
-请注意以下配置文件不会移动：
+- 子空间配置目录：`common/config/subspaces/<subspace-name>/`
+- monorepo 配置目录：`common/config/rush/`
 
-- `common/config/.npmrc-publish`: 该文件用于 Rush NPM 发布，无论发布的项目属于哪个子空间。
-- `common/config/.pnpmfile.cjs`: 该文件可应用影响 monorepo 中所有子空间的版本覆盖。为了避免跨锁定文件的混乱交互，大多数情况下最好使用 `.pnpmfile-subspace.cjs`。
+| 子空间文件                                                       | monorepo 文件                                                | 继承关系                                                                                                        |
+| :--------------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| <code style={{whiteSpace: 'nowrap'}}>common-versions.json</code> | 无                                                           | _启用子空间时禁止使用 monorepo 的该文件。_                                                                      |
+| `pnpm-config.json`                                               | <code style={{whiteSpace: 'nowrap'}}>pnpm-config.json</code> | **回退机制**：仅当子空间中不存在该文件时才使用 monorepo 文件。                                                  |
+| `pnpm-lock.yaml`                                                 | 无                                                           | _启用子空间时禁止使用 monorepo 的该文件。_                                                                      |
+| `repo-state.json`                                                | 无                                                           | _启用子空间时禁止使用 monorepo 的该文件。_                                                                      |
+| `.npmrc`                                                         | `.npmrc`                                                     | **合并**：两个文件合并使用，子空间设置具有优先权。（Rush 在操作的工作目录中生成临时 `.npmrc` 文件时进行合并。） |
+| `.pnpmfile.cjs`                                                  | 无                                                           | _启用子空间时禁止使用 monorepo 的该文件。_                                                                      |
 
-没有子空间时，Rush 会在 `common/temp/` 文件夹中生成并安装 PNPM 工作区。启用子空间后，将在类似 `common/temp/<subspace-name>/` 的文件夹中分别执行。
+在未启用子空间的情况下，Rush 会在 `common/temp/` 文件夹中生成并安装 PNPM 工作区。启用子空间后，则会分别在如 `common/temp/<subspace-name>/` 的文件夹中进行安装。
 
-有两种基本操作模式：
+有两种基本的操作模式：
 
 1. **只有几个子空间：** 你可以在 `subspaces.json` 中设置 `"preventSelectingAllSubspaces": false`，并且默认情况下，`rush install` 将安装所有子空间。
 
@@ -118,7 +118,7 @@ title: Rush 子空间
    mv common/config/rush/.npmrc                common/config/subspaces/default/
 
    # 重命名此文件：
-   mv common/config/rush/.pnpmfile.cjs  common/config/subspaces/default/.pnpmfile-subspace.cjs
+   mv common/config/rush/.pnpmfile.cjs  common/config/subspaces/default/.pnpmfile.cjs
    ```
 
 4. 创建 `install-test` 子空间文件夹：
