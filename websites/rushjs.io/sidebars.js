@@ -90,6 +90,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'AI Integration',
+      collapsible: false,
+      items: ['pages/ai/context_files', 'pages/ai/rush_mcp', 'pages/ai/rush_mcp_plugins']
+    },
+    {
+      type: 'category',
       label: 'Extensibility',
       collapsible: false,
       items: ['pages/extensibility/creating_plugins', 'pages/extensibility/api']
