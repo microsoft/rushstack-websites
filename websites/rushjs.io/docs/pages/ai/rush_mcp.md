@@ -126,6 +126,8 @@ For [Cline](https://docs.cline.bot/mcp/mcp-overview#getting-started), configure 
 
 ```js
 {
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/refs/heads/main/schema/2025-03-26/schema.json",
+  
   "mcpServers": {
     "rush-mcp-server": {
       "disabled": false,
