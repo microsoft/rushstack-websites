@@ -86,7 +86,7 @@ Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md
 
 Replace <workspace-root> with the absolute path to your Rush.js monorepo root directory (the folder containing rush.json).
 
-## GitHub Copilot
+### GitHub Copilot
 
 For [GitHub Copilot](https://code.visualstudio.com/docs/copilot/chat/mcp-servers), add this file to your monorepo:
 
