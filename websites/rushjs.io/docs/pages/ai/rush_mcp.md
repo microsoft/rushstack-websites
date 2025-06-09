@@ -37,8 +37,8 @@ For [Cursor](https://docs.cursor.com/context/model-context-protocol), add this f
 
   "mcpServers": {
     "rush-mcp-server": {
-       "command": "node",
-       "args": [
+      "command": "node",
+      "args": [
         "./common/scripts/install-run.js",
         "@rushstack/mcp-server@0.2.1",
         "mcp-server",
@@ -56,3 +56,121 @@ Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md
 > - In the above file, Cursor will magically replace `"."` with the absolute path of the workspace folder.
 > - Cursor lacks support for `//` comments in JSON files.
 > - Cursor has neglected to publish their JSON schema file, therefore the `$schema` IntelliSense will not work.
+
+### Trae
+
+For [Trae](https://docs.trae.ai/ide/model-context-protocol?_lang=en#c5b33bab), configure manually as follows:
+
+1. At the top right of the side chat box, click the Settings icon > MCP.
+2. Click the + Add MCP Servers button.
+3. Click Configure Manually, and enter the following configuration:
+
+```js
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/refs/heads/main/schema/2025-03-26/schema.json",
+
+  "mcpServers": {
+    "rush-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rushstack/mcp-server@0.2.1",
+        "<workspace-root>"
+      ]
+    }
+  }
+}
+```
+
+Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).
+
+Replace <workspace-root> with the absolute path to your Rush.js monorepo root directory (the folder containing rush.json).
+
+## GitHub Copilot
+
+For [GitHub Copilot](https://code.visualstudio.com/docs/copilot/chat/mcp-servers), add this file to your monorepo:
+
+**&lt;your-repo&gt;/.vscode/mcp.json**
+
+```js
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/refs/heads/main/schema/2025-03-26/schema.json",
+
+  "servers": {
+
+    "rush-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rushstack/mcp-server@0.2.1",
+        "<workspace-root>"
+      ]
+    }
+  }
+}
+```
+
+Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).
+
+Replace <workspace-root> with the absolute path to your Rush.js monorepo root directory (the folder containing rush.json).
+
+
+### Cline
+
+For [Cline](https://docs.cline.bot/mcp/mcp-overview#getting-started), configure manually as follows:
+
+1. Click the MCP Servers button.
+2. Click the Installed button.
+3. Click the Configure MCP Servers button, and enter the following configuration in the newly opened cline_mcp_settings.json file:
+
+```js
+{
+  "mcpServers": {
+    "rush-mcp-server": {
+      "disabled": false,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rushstack/mcp-server@0.2.1",
+        "/Users/bytedance/Desktop/oss/rushstack"
+      ]
+    }
+  }
+}
+```
+
+Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).
+
+Replace <workspace-root> with the absolute path to your Rush.js monorepo root directory (the folder containing rush.json).
+
+### Windsurf
+
+For [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp), configure manually as follows:
+
+1. Click Settings > Windsurf Settings in the top left corner.
+2. In the opened page, click Cascade > Manage plugins > View raw config.
+3. Enter the following in the opened `mcp_config.json` file:
+
+```js
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/refs/heads/main/schema/2025-03-26/schema.json",
+
+  "mcpServers": {
+    "rush-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rushstack/mcp-server@0.2.1",
+        "<workspace-root>"
+      ]
+    }
+  }
+}
+```
+
+Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).
+
+Replace <workspace-root> with the absolute path to your Rush.js monorepo root directory (the folder containing rush.json).
