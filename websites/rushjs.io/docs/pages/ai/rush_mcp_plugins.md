@@ -2,17 +2,19 @@
 title: Rush MCP plugins
 ---
 
-The [Rush MCP server](./rush_mcp.md) provides a ready-made solution for improving the effectiveness of Artificial intelligence (AI) **coding assistants** when working in a Rush monorepo. However, most businesses will have internal systems that could also be included in this service, but which cannot be contributed to the open source implementation. To handle these requirements, you can implement plugins for [@rushstack/mcp-server](https://www.npmjs.com/package/@rushstack/mcp-server). Plugins can also be released as open source to provide optional additional functionality or integrations.
+The [Rush MCP server](./rush_mcp.md) provides a ready-made solution for improving the effectiveness of Artificial intelligence (AI) **coding assistants** when working in a Rush monorepo. However, most businesses will have internal systems that could also be included in this service, but which cannot be contributed to the open source implementation. To handle these requirements, you can implement **Rush MCP plugins** for [@rushstack/mcp-server](https://www.npmjs.com/package/@rushstack/mcp-server). Plugins can also be released as open source to provide optional additional functionality or integrations.
 
 Example plugin scenarios:
 
-- **Team wiki**: Query an internal team wiki that runs on a private content management system.
+- **Team wiki**: Query an internal team wiki that runs on a private content management system
 - **Issue management**: Create tasks and issues in an internal work management system
 - **Semantic search**: Search a semantic vector database such as [Supabase](https://supabase.com/docs/guides/ai/semantic-search) using a proprietary sentence transformer
 
-## Authoring a plugin
+## Creating a plugin
 
-The [build-tests/rush-mcp-example-plugin](https://github.com/microsoft/rushstack/tree/main/build-tests/rush-mcp-example-plugin) project on GitHub demonstrates an example plugin project for usage with `@rushstack/mcp-server`.
+> **Copy our example**
+>
+> The [build-tests/rush-mcp-example-plugin](https://github.com/microsoft/rushstack/tree/main/build-tests/rush-mcp-example-plugin) project on GitHub demonstrates an example plugin project for usage with `@rushstack/mcp-server`.
 
 The main steps for writing a plugin:
 
@@ -98,11 +100,15 @@ The main steps for writing a plugin:
    export default createPlugin satisfies RushMcpPluginFactory<IExamplePluginConfigFile>;
    ```
 
-6. The [MCP SDK for TypeScript](https://github.com/modelcontextprotocol/typescript-sdk) requires the [zod](https://www.npmjs.com/package/zod) framework for generating JSON schema definitions from TypeScript expressions. _You do not need to add `zod` as a **package.json** dependency for each plugin._ Instead, you can import it from the `@rushstack/mcp-server` runtime context. This also ensures that a consistent version of `zod` is used throughout the runtime. Take a look at the [StateCapitalTool.ts](https://github.com/microsoft/rushstack/blob/main/build-tests/rush-mcp-example-plugin/src/StateCapitalTool.ts) for a code sample.
+6. The [MCP SDK for TypeScript](https://github.com/modelcontextprotocol/typescript-sdk) requires the [zod](https://www.npmjs.com/package/zod) framework for generating JSON schema definitions from TypeScript expressions.
+
+   _You do not need to add `zod` as a **package.json** dependency for each plugin._
+
+   Instead, you can import it from the `@rushstack/mcp-server` runtime context. This also ensures that a consistent version of `zod` is used throughout the runtime. Take a look at the [StateCapitalTool.ts](https://github.com/microsoft/rushstack/blob/main/build-tests/rush-mcp-example-plugin/src/StateCapitalTool.ts) for a code sample.
 
 7. Once your plugin is completed, you should publish it to an NPM registry.
 
-## Configuring your plugin
+## Enabling your plugin
 
 The `@rushstack/mcp-server` server expects to load plugins from a Rush [autoinstaller](../maintainer/autoinstallers.md). This ensures deterministic NPM versions, and ensures plugins will work correctly even in a branch where `rush install` is broken.
 
@@ -191,3 +197,8 @@ The `@rushstack/mcp-server` server expects to load plugins from a Rush [autoinst
    ```
 
 If it launches without any problems, then your plugin is ready for use! Confirm that the MCP host displays the new tool.
+
+## See also
+
+- [Autoinstallers](../maintainer/autoinstallers.md)
+- [Rush MCP server](./rush_mcp.md)
