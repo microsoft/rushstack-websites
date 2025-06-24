@@ -73,7 +73,7 @@ any cobuild logic. See the [Cobuilds](../maintainer/cobuilds.md) documentation f
 
 This is useful when you are using the cobuild feature but the Rush build cache is not able for
 "leaf" projects in the dependency graph. (For example, common libraries have build cache enabled,
-but the apps the consume these libraries do now.) Normally, because we can't obtain such projects
+but the apps that consume these libraries do not.) Normally, because we can't obtain such projects
 from the cache, all cobuild machines are forced to build that project. This is inefficient if our
 goal is to validate whether the project builds successfully, not to deploy it.
 
