@@ -172,3 +172,11 @@ For [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp), configure manual
 Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).
 
 Replace `<workspace-root>` with the absolute path to your Rush monorepo root directory (the folder containing `rush.json`).
+
+### Claude Code
+
+For [Claude Code](https://www.anthropic.com/claude-code), configure manually as follows:
+
+1. `cd` to your Rush monorepo root directory (the folder containing `rush.json`).
+2. Run `claude mcp add rush-mcp-server -- npx -y @rushstack/mcp-server@0.2.1 .` (Replace `@rushstack/mcp-server@0.2.1` with the latest version from [CHANGELOG.md](https://github.com/microsoft/rushstack/blob/main/apps/rush-mcp-server/CHANGELOG.md).)
+3. Start `claude` as usual, you can verify the connection using the `/mcp` command
