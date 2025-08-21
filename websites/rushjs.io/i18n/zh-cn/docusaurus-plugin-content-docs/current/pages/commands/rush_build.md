@@ -9,7 +9,7 @@ title: rush build
                   [--from-version-policy VERSION_POLICY_NAME] [-v] [-c]
                   [--ignore-hooks]
 
-除了 "rush build" 可以增量构建外，刚命令与 "rush rebuild" 相似。换句话说，Rush build
+除了 "rush build" 可以增量构建外，与 "rush rebuild" 相似。换句话说，Rush build
 只会构建自上次成功构建后发生的代码。它需要 Git 工作树来进行分析，只关心被 Git 跟踪的源文件
 和在其项目下的文件（该算法的更多细节可以参考 "package-deps-hash" 包的文档）。增量构建状态
 会保存在每个项目中的 ".rush/temp" 文件夹，该文件夹没被 Git 记录。构建指令被 "package-deps_build.json"
