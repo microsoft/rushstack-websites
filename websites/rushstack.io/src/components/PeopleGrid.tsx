@@ -6,11 +6,12 @@ interface IGitHubCardProps {
   person: IPersonJson;
 }
 function GitHubCard(props: IGitHubCardProps) {
+  const size: number = window.devicePixelRatio >= 2 ? 200 : 100;
   return (
     <div className="people-item" style={{ marginBottom: '20px' }}>
       <a href={`https://github.com/${props.person.githubAlias}`} className="no-external-link-icon">
         <img
-          src={`https://github.com/${props.person.githubAlias}.png?s=100`}
+          src={`https://github.com/${props.person.githubAlias}.png?size=${size}`}
           width="100"
           style={{ borderRadius: '50%' }}
         />
