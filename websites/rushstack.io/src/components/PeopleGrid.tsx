@@ -5,19 +5,25 @@ import { IPeopleJson, IPersonJson, peopleJson } from './peopleJson';
 interface IGitHubCardProps {
   person: IPersonJson;
 }
+
+const gitHubBaseUrl = 'https://github.com/';
+
 function GitHubCard(props: IGitHubCardProps) {
+  const gitHubProfileUrl: string = new URL(props.person.githubAlias, gitHubBaseUrl).toString();
+
   const size: number = window.devicePixelRatio >= 2 ? 200 : 100;
+  const githubAvatarUrl: string = new URL(
+    `${props.person.githubAlias}.png?size=${size}`,
+    gitHubBaseUrl
+  ).toString();
+
   return (
     <div className="people-item" style={{ marginBottom: '20px' }}>
-      <a href={`https://github.com/${props.person.githubAlias}`} className="no-external-link-icon">
-        <img
-          src={`https://github.com/${props.person.githubAlias}.png?size=${size}`}
-          width="100"
-          style={{ borderRadius: '50%' }}
-        />
+      <a href={gitHubProfileUrl} className="no-external-link-icon">
+        <img src={githubAvatarUrl} width="100" style={{ borderRadius: '50%' }} />
       </a>
       <div>
-        <a href={`https://github.com/${props.person.githubAlias}`} className="no-external-link-icon">
+        <a href={gitHubProfileUrl} className="no-external-link-icon">
           {props.person.name}
         </a>
       </div>
