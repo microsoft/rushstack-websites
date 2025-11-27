@@ -11,16 +11,6 @@ begin building project B while running the unit tests for project A in parallel.
 
 > NOTE: Phased builds are built on top of, and require, the build cache feature -- if you haven't already enabled the build cache for your monorepo, see [Enabling build cache](../maintainer/build_cache.md).
 
-## Enable the experiment
-
-In `common/config/rush/experiments.json`, enable the `"phasedCommands"` experiment.
-
-```json
-{
-  "phasedCommands": true
-}
-```
-
 ## Define phases
 
 In `common/config/rush/command-line.json`, add a section `"phases"`, as follows:
