@@ -7,7 +7,12 @@
       "caption": "manages the team that hosts the Rush Stack projects"
     },
     {
-      "name": "Cheng",
+      "name": "Bharat Middha",
+      "githubAlias": "bmiddha",
+      "caption": "contributed many Rush features including VS Code extensions, zipsync, and problem matchers"
+    },
+    {
+      "name": "Cheng Liu",
       "githubAlias": "chengcyber",
       "caption": "contributed many Rush features including cobuilds and the plugin system"
     },
@@ -83,7 +88,7 @@
     },
     {
       "name": "Nick Pape",
-      "githubAlias": "nickpape",
+      "githubAlias": "nick-pape",
       "role": "Maintainer 2016-2018",
       "caption": "broad contributions including Rush's task scheduler and stream collator"
     },
@@ -94,7 +99,7 @@
       "caption": "broad contributions including Rush version policies and publishing features"
     },
     {
-      "name": "Daniel Gaeta",
+      "name": "Dan Gaeta",
       "githubAlias": "dgaeta",
       "role": "Collaborator 2017",
       "caption": "implemented API Extractor and API Documenter features"
@@ -117,7 +122,7 @@
     },
     {
       "//": "month when added: 2021-12",
-      "name": "Cheng",
+      "name": "Cheng Liu",
       "githubAlias": "chengcyber",
       "caption": "designed and implemented the plugin system for Rush"
     },
