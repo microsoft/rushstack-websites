@@ -92,7 +92,12 @@ const sidebars = {
       type: 'category',
       label: 'AI Integration',
       collapsible: false,
-      items: ['pages/ai/context_files', 'pages/ai/rush_mcp', 'pages/ai/rush_mcp_plugins']
+      items: [
+        'pages/ai/context_files',
+        'pages/ai/rush_mcp',
+        'pages/ai/rush_mcp_plugins',
+        'pages/ai/rushstack_skill'
+      ]
     },
     {
       type: 'category',
