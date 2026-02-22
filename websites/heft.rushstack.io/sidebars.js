@@ -90,6 +90,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          label: 'Rspack',
+          id: 'pages/plugins/rspack'
+        },
+        {
+          type: 'doc',
           label: 'Run script',
           id: 'pages/plugins/run-script'
         },
