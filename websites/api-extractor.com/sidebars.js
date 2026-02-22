@@ -87,6 +87,7 @@ const sidebars = {
         'pages/messages/ae-preapproved-bad-release-tag',
         'pages/messages/ae-preapproved-unsupported-type',
         'pages/messages/ae-setter-with-docs',
+        'pages/messages/ae-undocumented',
         'pages/messages/ae-unresolved-inheritdoc-base',
         'pages/messages/ae-unresolved-inheritdoc-reference',
         'pages/messages/ae-unresolved-link',
