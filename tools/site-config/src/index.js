@@ -3,7 +3,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 function getGitHubOrg() {
-  const gitResult = spawnSync('git', ['remote', '-v'], { encoding: 'utf8', shell: true });
+  const gitResult = spawnSync('git', ['remote', '-v'], { encoding: 'utf8' });
   const lines = gitResult.stdout.split(/\r?\n/);
   const origins = lines.filter((line) => line.startsWith('origin'));
 
