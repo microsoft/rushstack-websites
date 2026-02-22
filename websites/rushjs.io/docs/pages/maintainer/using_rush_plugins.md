@@ -1,5 +1,5 @@
 ---
-title: Using Rush plugins (experimental)
+title: Using Rush plugins
 ---
 
 Rush plugins enable you to:
@@ -110,7 +110,11 @@ The config filename will have the same as the `pluginName`, for example:
 | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
 | [@rushstack/rush-amazon-s3-build-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-amazon-s3-build-cache-plugin)         | Cloud build cache provider for Amazon S3                                                                          |
 | [@rushstack/rush-azure-storage-build-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-azure-storage-build-cache-plugin) | Cloud build cache provider for Azure Storage                                                                      |
-| [@rushstack/rush-serve-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-serve-plugin)                                         | (Experimental) A Rush plugin that hooks into action execution and runs an express server to serve project outputs |
+| [@rushstack/rush-bridge-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-bridge-cache-plugin)                           | Bypasses command execution to populate or restore the build cache from an external orchestrator                    |
+| [@rushstack/rush-http-build-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-http-build-cache-plugin)                   | Cloud build cache provider using a generic HTTP endpoint                                                          |
+| [@rushstack/rush-redis-cobuild-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-redis-cobuild-plugin)                         | Cobuild lock provider using Redis for distributed builds                                                          |
+| [@rushstack/rush-resolver-cache-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-resolver-cache-plugin)                       | Generates a resolver cache file to optimize Node.js module resolution                                             |
+| [@rushstack/rush-serve-plugin](https://github.com/microsoft/rushstack/tree/main/rush-plugins/rush-serve-plugin)                                         | Hooks into action execution and runs an Express server to serve project outputs in watch mode                      |
 
 > **NOTE:** The `@rushstack/rush-amazon-s3-build-cache-plugin` and `@rushstack/rush-azure-storage-build-cache-plugin`
 > packages are currently built-in to Rush and enabled automatically. For now, you should NOT register them
