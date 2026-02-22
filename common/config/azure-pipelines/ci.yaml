@@ -6,7 +6,7 @@ jobs:
   - job: PRBuild
     displayName: PR Build
     variables:
-      NodeVersion: 16
+      NodeVersion: 24
     steps:
       - checkout: self
       - template: templates/build.yaml

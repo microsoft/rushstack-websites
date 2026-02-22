@@ -121,3 +121,11 @@ dist-storybook/
 # Heft temporary files
 .cache/
 .heft/
+
+#### rushstack-websites specific
+
+# Docusaurus build outputs
+build
+.docusaurus
+
+####
