@@ -41,7 +41,7 @@ const sidebars = {
       type: 'category',
       label: 'Advanced topics',
       collapsible: false,
-      items: ['pages/advanced/heft-config-file']
+      items: ['pages/advanced/heft-config-file', 'pages/advanced/authoring-plugins']
     },
     {
       type: 'category',
