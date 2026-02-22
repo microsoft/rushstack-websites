@@ -4,7 +4,7 @@ title: '@defaultValue'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 This tag is used to document the default value for a field or property, if a value is not assigned explicitly.
 This tag should only be used with fields or properties that are members of a class or interface.

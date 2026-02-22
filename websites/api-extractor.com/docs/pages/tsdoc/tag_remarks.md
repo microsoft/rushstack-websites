@@ -4,7 +4,7 @@ title: '@remarks'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 The main documentation for an API item is separated into a brief "summary" section, optionally followed by
 a more detailed "remarks" section. On a documentation web site, index pages (e.g. showing members of a class)

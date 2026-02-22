@@ -4,7 +4,7 @@ title: '{@inheritDoc}'
 
 **Tag type:** inline tag
 
-**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 **Syntax:**
 

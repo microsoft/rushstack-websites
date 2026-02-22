@@ -4,7 +4,7 @@ title: '@public'
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [discretionary](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [discretionary](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 The `@public` modifier is one of the four **release tags**. It indicates that an API item has been officially
 released, and is now part of the supported contract for a package. If the [SemVer](https://semver.org/) versioning

@@ -9,7 +9,7 @@ It could be part of a merged declaration or an overloaded function.
 The TSDoc syntax provides a special "**declaration reference**" notation for unambiguously identifying declarations
 in all these situations. (This aspect of TSDoc is still evolving; it is tracked by
 [RFC #9](https://github.com/microsoft/tsdoc/issues/9). The current spec is outlined in
-[code-snippets/DeclarationReferences.ts](https://github.com/microsoft/tsdoc/blob/master/spec/code-snippets/DeclarationReferences.ts).)
+[code-snippets/DeclarationReferences.ts](https://github.com/microsoft/tsdoc/blob/main/spec/code-snippets/DeclarationReferences.ts).)
 
 ## Syntax Examples
 
