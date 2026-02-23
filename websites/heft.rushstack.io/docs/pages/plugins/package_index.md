@@ -9,6 +9,7 @@ title: Plugin package index
 | [@rushstack/heft-api-extractor-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-api-extractor-plugin) | [api-extractor-plugin](./api-extractor.md) |
 | [@rushstack/heft-jest-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-jest-plugin) | [jest-plugin](./jest.md) |
 | [@rushstack/heft-dev-cert-plugin](https://github.com/microsoft/rushstack/tree/main/heft-plugins/heft-dev-cert-plugin) | [trust-dev-certificate-plugin](./dev-cert.md) <br/> [untrust-dev-certificate-plugin](./dev-cert.md) |
+| [@rushstack/heft-isolated-typescript-transpile-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-isolated-typescript-transpile-plugin) | [swc-isolated-transpile-plugin](./isolated-transpile.md) |
 | [@rushstack/heft-lint-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-lint-plugin) | [lint-plugin](./lint.md) |
 | [@rushstack/heft-rspack-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-rspack-plugin) | [rspack-plugin](./rspack.md) |
 | [@rushstack/heft-sass-plugin](https://github.com/microsoft/rushstack/blob/main/heft-plugins/heft-sass-plugin) | [sass-plugin](./sass.md) |

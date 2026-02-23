@@ -85,6 +85,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          label: 'Isolated transpile (SWC)',
+          id: 'pages/plugins/isolated-transpile'
+        },
+        {
+          type: 'doc',
           label: 'Node.js service',
           id: 'pages/plugins/node-service'
         },
