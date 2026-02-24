@@ -1,4 +1,5 @@
 import React from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import { IPeopleJson, IPersonJson, peopleJson } from './peopleJson';
 
@@ -7,13 +8,15 @@ interface IGitHubCardProps {
 }
 
 const gitHubBaseUrl = 'https://github.com/';
-const size: number = typeof window !== 'undefined' && window.devicePixelRatio >= 2 ? 200 : 100;
 
 /**
  * Returns GitHub profile and avatar URLs for a given alias.
  * If the alias is invalid, returns false.
  */
-function getGitHubProfileInfo(githubAlias: string): { profileUrl: string; avatarUrl: string } | false {
+function getGitHubProfileInfo(
+  githubAlias: string,
+  size: number
+): { profileUrl: string; avatarUrl: string } | false {
   // Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.
   // This is from the form validation at https://github.com/signup
   if (/^[A-Za-z0-9-]{1,39}$/.test(githubAlias) === false) {
@@ -38,7 +41,7 @@ const placeholderProfile = { profileUrl: '#', avatarUrl: undefined };
 
 function GitHubCard(props: IGitHubCardProps) {
   const profileInfo = React.useMemo(
-    () => getGitHubProfileInfo(props.person.githubAlias),
+    () => getGitHubProfileInfo(props.person.githubAlias, 100),
     [props.person.githubAlias]
   );
   const { profileUrl, avatarUrl } = profileInfo || placeholderProfile;
@@ -46,7 +49,22 @@ function GitHubCard(props: IGitHubCardProps) {
   return (
     <div className="people-item" style={{ marginBottom: '20px' }}>
       <a href={profileUrl} className="no-external-link-icon">
-        <img src={avatarUrl} height="100" width="100" style={{ borderRadius: '50%' }} />
+        <BrowserOnly
+          fallback={<img src={avatarUrl} height="100" width="100" style={{ borderRadius: '50%' }} />}
+        >
+          {() => {
+            const size = window.devicePixelRatio >= 2 ? 200 : 100;
+            const hiresInfo = getGitHubProfileInfo(props.person.githubAlias, size);
+            return (
+              <img
+                src={hiresInfo ? hiresInfo.avatarUrl : avatarUrl}
+                height="100"
+                width="100"
+                style={{ borderRadius: '50%' }}
+              />
+            );
+          }}
+        </BrowserOnly>
       </a>
       <div>
         <a href={profileUrl} className="no-external-link-icon">
