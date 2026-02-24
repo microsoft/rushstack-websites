@@ -6,8 +6,8 @@ interface IGitHubCardProps {
   person: IPersonJson;
 }
 
-const gitHubBaseUrl = 'https://github.com/';
-const size: number = window.devicePixelRatio >= 2 ? 200 : 100;
+const GITHUB_BASE_URL = 'https://github.com/';
+const PROFILE_PHOTO_SIZE: number = 200;
 
 /**
  * Returns GitHub profile and avatar URLs for a given alias.
@@ -21,13 +21,13 @@ function getGitHubProfileInfo(githubAlias: string): { profileUrl: string; avatar
     return false;
   }
 
-  const urlBuilder = new URL(gitHubBaseUrl);
+  const urlBuilder = new URL(GITHUB_BASE_URL);
 
   urlBuilder.pathname = githubAlias;
   const profileUrl = urlBuilder.toString();
 
   urlBuilder.pathname += '.png';
-  urlBuilder.searchParams.set('size', size.toString());
+  urlBuilder.searchParams.set('size', PROFILE_PHOTO_SIZE.toString());
   const avatarUrl = urlBuilder.toString();
 
   return { profileUrl, avatarUrl };
