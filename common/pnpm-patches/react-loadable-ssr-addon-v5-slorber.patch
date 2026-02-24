@@ -1,0 +1,37 @@
+diff --git a/lib/ReactLoadableSSRAddon.js b/lib/ReactLoadableSSRAddon.js
+index 80b1d3e073351c0ef78c408de9fa50f66dcdb363..9a744db26769d8e64636b5db6efa5792bb152613 100644
+--- a/lib/ReactLoadableSSRAddon.js
++++ b/lib/ReactLoadableSSRAddon.js
+@@ -13,8 +13,6 @@ var _fs = _interopRequireDefault(require("fs"));
+ 
+ var _path = _interopRequireDefault(require("path"));
+ 
+-var _url = _interopRequireDefault(require("url"));
+-
+ var _utils = require("./utils");
+ 
+ var PLUGIN_NAME = 'ReactLoadableSSRAddon';
+@@ -219,10 +217,19 @@ var ReactLoadableSSRAddon = function () {
+             currentAsset[_this2.options.integrityPropertyName] = (0, _utils.computeIntegrity)(_this2.options.integrityAlgorithms, currentAsset.source());
+           }
+ 
++          // Simple concatenation avoids the deprecated url.resolve() API.
++          // Ensure publicPath has a trailing separator before appending the file.
++          var base = _this2.options.publicPath || '';
++          if (base && !base.endsWith('/')) {
++            base += '/';
++          }
++
++          const publicPath = base + file;
++
+           assets[id][ext].push({
+             file: file,
+             hash: hash,
+-            publicPath: _url["default"].resolve(_this2.options.publicPath || '', file),
++            publicPath,
+             integrity: currentAsset[_this2.options.integrityPropertyName]
+           });
+         }
+diff --git a/package-lock.json b/package-lock.json
+deleted file mode 100644
+index bfe36bbbe7fb95b07f43e099a45edc88acf15592..0000000000000000000000000000000000000000

@@ -13,6 +13,9 @@ patchedDependencies:
   docusaurus-theme-search-typesense@0.9.0:
     hash: bacec88553f7670a6840ec01ffee4d08589139f4bc50e66891387f9430dbfd97
     path: patches/docusaurus-theme-search-typesense@0.9.0.patch
+  react-loadable-ssr-addon-v5-slorber:
+    hash: 56abf3e0d4c9c2387f4743787ffaedef1028d5e5f5a96273a70386ab7847929a
+    path: patches/react-loadable-ssr-addon-v5-slorber.patch
   typesense-docsearch-react@0.2.3:
     hash: 6db27f943d0bac4504cc19fa3601afb661193d83c93f8625fb724f635b3269c4
     path: patches/typesense-docsearch-react@0.2.3.patch
@@ -8689,7 +8692,7 @@ snapshots:
       react-dom: 17.0.2(react@17.0.2)
       react-helmet-async: 1.3.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       react-loadable: '@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)'
-      react-loadable-ssr-addon-v5-slorber: 1.0.1(@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(webpack@5.105.2)
+      react-loadable-ssr-addon-v5-slorber: 1.0.1(patch_hash=56abf3e0d4c9c2387f4743787ffaedef1028d5e5f5a96273a70386ab7847929a)(@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(webpack@5.105.2)
       react-router: 5.3.4(react@17.0.2)
       react-router-config: 5.1.1(react-router@5.3.4(react@17.0.2))(react@17.0.2)
       react-router-dom: 5.3.4(react@17.0.2)
@@ -15005,7 +15008,7 @@ snapshots:
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-loadable-ssr-addon-v5-slorber@1.0.1(@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(webpack@5.105.2):
+  react-loadable-ssr-addon-v5-slorber@1.0.1(patch_hash=56abf3e0d4c9c2387f4743787ffaedef1028d5e5f5a96273a70386ab7847929a)(@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(webpack@5.105.2):
     dependencies:
       '@babel/runtime': 7.26.10
       react-loadable: '@docusaurus/react-loadable@5.5.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)'
