@@ -181,9 +181,18 @@ importers:
 
   ../../tools/deploy-fork:
     dependencies:
+      api-extractor.com:
+        specifier: workspace:*
+        version: link:../../websites/api-extractor.com
       api.rushstack.io:
         specifier: workspace:*
         version: link:../../websites/api.rushstack.io
+      heft.rushstack.io:
+        specifier: workspace:*
+        version: link:../../websites/heft.rushstack.io
+      lfx.rushstack.io:
+        specifier: workspace:*
+        version: link:../../websites/lfx.rushstack.io
       rushjs.io:
         specifier: workspace:*
         version: link:../../websites/rushjs.io
@@ -193,6 +202,9 @@ importers:
       site-config:
         specifier: workspace:*
         version: link:../site-config
+      tsdoc.org:
+        specifier: workspace:*
+        version: link:../../websites/tsdoc.org
     devDependencies:
       '@docusaurus/core':
         specifier: 2.3.1

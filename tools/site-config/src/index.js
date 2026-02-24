@@ -11,7 +11,7 @@ function getGitHubOrg() {
     throw new Error('Cannot determine fork: no origin entries returned by git remote -v.');
   }
 
-  const match = origins[0].match(/[:/](.+?)\/rushstack-websites(.git)?/);
+  const match = origins[0].match(/[:/]([^:/]+)\/rushstack-websites(.git)?/);
 
   if (match && match[1]) {
     return match[1];
