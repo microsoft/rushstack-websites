@@ -28,7 +28,7 @@ const config = {
   organizationName: 'microsoft',
   projectName: 'rushjs.io-website',
 
-  // Deployment settings above can be overriden based on the TARGET determined at runtime
+  // Deployment settings above can be overridden based on the TARGET determined at runtime
   ...siteConfig.configOverrides,
 
   stylesheets: [
