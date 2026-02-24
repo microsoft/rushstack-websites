@@ -1,5 +1,4 @@
 import React from 'react';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import { IPeopleJson, IPersonJson, peopleJson } from './peopleJson';
 
@@ -7,16 +6,14 @@ interface IGitHubCardProps {
   person: IPersonJson;
 }
 
-const gitHubBaseUrl = 'https://github.com/';
+const GITHUB_BASE_URL = 'https://github.com/';
+const PROFILE_PHOTO_SIZE: number = 200;
 
 /**
  * Returns GitHub profile and avatar URLs for a given alias.
  * If the alias is invalid, returns false.
  */
-function getGitHubProfileInfo(
-  githubAlias: string,
-  size: number
-): { profileUrl: string; avatarUrl: string } | false {
+function getGitHubProfileInfo(githubAlias: string): { profileUrl: string; avatarUrl: string } | false {
   // Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.
   // This is from the form validation at https://github.com/signup
   if (/^[A-Za-z0-9-]{1,39}$/.test(githubAlias) === false) {
@@ -24,13 +21,13 @@ function getGitHubProfileInfo(
     return false;
   }
 
-  const urlBuilder = new URL(gitHubBaseUrl);
+  const urlBuilder = new URL(GITHUB_BASE_URL);
 
   urlBuilder.pathname = githubAlias;
   const profileUrl = urlBuilder.toString();
 
   urlBuilder.pathname += '.png';
-  urlBuilder.searchParams.set('size', size.toString());
+  urlBuilder.searchParams.set('size', PROFILE_PHOTO_SIZE.toString());
   const avatarUrl = urlBuilder.toString();
 
   return { profileUrl, avatarUrl };
@@ -41,7 +38,7 @@ const placeholderProfile = { profileUrl: '#', avatarUrl: undefined };
 
 function GitHubCard(props: IGitHubCardProps) {
   const profileInfo = React.useMemo(
-    () => getGitHubProfileInfo(props.person.githubAlias, 100),
+    () => getGitHubProfileInfo(props.person.githubAlias),
     [props.person.githubAlias]
   );
   const { profileUrl, avatarUrl } = profileInfo || placeholderProfile;
@@ -49,22 +46,7 @@ function GitHubCard(props: IGitHubCardProps) {
   return (
     <div className="people-item" style={{ marginBottom: '20px' }}>
       <a href={profileUrl} className="no-external-link-icon">
-        <BrowserOnly
-          fallback={<img src={avatarUrl} height="100" width="100" style={{ borderRadius: '50%' }} />}
-        >
-          {() => {
-            const size = window.devicePixelRatio >= 2 ? 200 : 100;
-            const hiresInfo = getGitHubProfileInfo(props.person.githubAlias, size);
-            return (
-              <img
-                src={hiresInfo ? hiresInfo.avatarUrl : avatarUrl}
-                height="100"
-                width="100"
-                style={{ borderRadius: '50%' }}
-              />
-            );
-          }}
-        </BrowserOnly>
+        <img src={avatarUrl} height="100" width="100" style={{ borderRadius: '50%' }} />
       </a>
       <div>
         <a href={profileUrl} className="no-external-link-icon">
