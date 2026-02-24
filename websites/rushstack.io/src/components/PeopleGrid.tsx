@@ -7,7 +7,7 @@ interface IGitHubCardProps {
 }
 
 const gitHubBaseUrl = 'https://github.com/';
-const size: number = window.devicePixelRatio >= 2 ? 200 : 100;
+const size: number = typeof window !== 'undefined' && window.devicePixelRatio >= 2 ? 200 : 100;
 
 /**
  * Returns GitHub profile and avatar URLs for a given alias.
