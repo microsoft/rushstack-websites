@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IOperationRunner interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The `Operation` class is a node in the dependency graph of work that needs to be scheduled by the `OperationExecutionManager`<></>. Each `Operation` has a `runner` member of type `IOperationRunner`<></>, whose implementation manages the actual process for running a single operation.
@@ -23,18 +23,181 @@ export interface IOperationRunner
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isCacheWriteAllowed](./rush-lib.ioperationrunner.iscachewriteallowed.md) |  | boolean | **_(BETA)_** Indicates if the output of this operation may be written to the cache |
-|  [isSkipAllowed](./rush-lib.ioperationrunner.isskipallowed.md) |  | boolean | **_(BETA)_** This flag determines if the operation is allowed to be skipped if up to date. |
-|  [name](./rush-lib.ioperationrunner.name.md) | <code>readonly</code> | string | **_(BETA)_** Name of the operation, for logging. |
-|  [reportTiming](./rush-lib.ioperationrunner.reporttiming.md) |  | boolean | **_(BETA)_** Indicates that this runner's duration has meaning. |
-|  [silent](./rush-lib.ioperationrunner.silent.md) |  | boolean | **_(BETA)_** Indicates that this runner is architectural and should not be reported on. |
-|  [warningsAreAllowed](./rush-lib.ioperationrunner.warningsareallowed.md) |  | boolean | **_(BETA)_** If set to true, a warning result should not make Rush exit with a nonzero exit code |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[cacheable](./rush-lib.ioperationrunner.cacheable.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Whether or not the operation is cacheable. If false, all cache engines will be disabled for this operation.
+
+
+</td></tr>
+<tr><td>
+
+[isNoOp?](./rush-lib.ioperationrunner.isnoop.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If set to true, this operation is considered a no-op and can be considered always skipped for analysis purposes.
+
+
+</td></tr>
+<tr><td>
+
+[name](./rush-lib.ioperationrunner.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** Name of the operation, for logging.
+
+
+</td></tr>
+<tr><td>
+
+[reportTiming](./rush-lib.ioperationrunner.reporttiming.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicates that this runner's duration has meaning.
+
+
+</td></tr>
+<tr><td>
+
+[silent](./rush-lib.ioperationrunner.silent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicates that this runner is architectural and should not be reported on.
+
+
+</td></tr>
+<tr><td>
+
+[warningsAreAllowed](./rush-lib.ioperationrunner.warningsareallowed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If set to true, a warning result should not make Rush exit with a nonzero exit code
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [executeAsync(context)](./rush-lib.ioperationrunner.executeasync.md) | **_(BETA)_** Method to be executed for the operation. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[executeAsync(context)](./rush-lib.ioperationrunner.executeasync.md)
+
+
+</td><td>
+
+**_(BETA)_** Method to be executed for the operation.
+
+
+</td></tr>
+<tr><td>
+
+[getConfigHash()](./rush-lib.ioperationrunner.getconfighash.md)
+
+
+</td><td>
+
+**_(BETA)_** Return a hash of the configuration that affects the operation.
+
+
+</td></tr>
+</tbody></table>
 

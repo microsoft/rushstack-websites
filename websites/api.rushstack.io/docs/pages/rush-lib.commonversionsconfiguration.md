@@ -20,19 +20,211 @@ export declare class CommonVersionsConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [allowedAlternativeVersions](./rush-lib.commonversionsconfiguration.allowedalternativeversions.md) | <code>readonly</code> | Map&lt;string, ReadonlyArray&lt;string&gt;&gt; | A table that stores, for a given dependency, a list of SemVer ranges that will be accepted by "rush check" in addition to the normal version range. |
-|  [filePath](./rush-lib.commonversionsconfiguration.filepath.md) | <code>readonly</code> | string | Get the absolute file path of the common-versions.json file. |
-|  [implicitlyPreferredVersions](./rush-lib.commonversionsconfiguration.implicitlypreferredversions.md) | <code>readonly</code> | boolean \| undefined | <p>When set to true, for all projects in the repo, all dependencies will be automatically added as preferredVersions, except in cases where different projects specify different version ranges for a given dependency. For older package managers, this tended to reduce duplication of indirect dependencies. However, it can sometimes cause trouble for indirect dependencies with incompatible peerDependencies ranges.</p><p>If the value is <code>undefined</code>, then the default value is <code>true</code>.</p> |
-|  [preferredVersions](./rush-lib.commonversionsconfiguration.preferredversions.md) | <code>readonly</code> | Map&lt;string, string&gt; | A table that specifies a "preferred version" for a given NPM package. This feature is typically used to hold back an indirect dependency to a specific older version, or to reduce duplication of indirect dependencies. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowedAlternativeVersions](./rush-lib.commonversionsconfiguration.allowedalternativeversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;string, ReadonlyArray&lt;string&gt;&gt;
+
+
+</td><td>
+
+A table that stores, for a given dependency, a list of SemVer ranges that will be accepted by "rush check" in addition to the normal version range.
+
+
+</td></tr>
+<tr><td>
+
+[ensureConsistentVersions](./rush-lib.commonversionsconfiguration.ensureconsistentversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, then consistent version specifiers for dependencies will be enforced. I.e. "rush check" is run before some commands.
+
+
+</td></tr>
+<tr><td>
+
+[filePath](./rush-lib.commonversionsconfiguration.filepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Get the absolute file path of the common-versions.json file.
+
+
+</td></tr>
+<tr><td>
+
+[implicitlyPreferredVersions](./rush-lib.commonversionsconfiguration.implicitlypreferredversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+When set to true, for all projects in the repo, all dependencies will be automatically added as preferredVersions, except in cases where different projects specify different version ranges for a given dependency. For older package managers, this tended to reduce duplication of indirect dependencies. However, it can sometimes cause trouble for indirect dependencies with incompatible peerDependencies ranges.
+
+If the value is `undefined`<></>, then the default value is `true`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[preferredVersions](./rush-lib.commonversionsconfiguration.preferredversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;string, string&gt;
+
+
+</td><td>
+
+A table that specifies a "preferred version" for a given NPM package. This feature is typically used to hold back an indirect dependency to a specific older version, or to reduce duplication of indirect dependencies.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getAllPreferredVersions()](./rush-lib.commonversionsconfiguration.getallpreferredversions.md) |  | Returns preferredVersions. |
-|  [getPreferredVersionsHash()](./rush-lib.commonversionsconfiguration.getpreferredversionshash.md) |  | Get a sha1 hash of the preferred versions. |
-|  [loadFromFile(jsonFilename)](./rush-lib.commonversionsconfiguration.loadfromfile.md) | <code>static</code> | Loads the common-versions.json data from the specified file path. If the file has not been created yet, then an empty object is returned. |
-|  [save()](./rush-lib.commonversionsconfiguration.save.md) |  | Writes the "common-versions.json" file to disk, using the filename that was passed to loadFromFile(). |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getAllPreferredVersions()](./rush-lib.commonversionsconfiguration.getallpreferredversions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns preferredVersions.
+
+
+</td></tr>
+<tr><td>
+
+[getPreferredVersionsHash()](./rush-lib.commonversionsconfiguration.getpreferredversionshash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get a sha1 hash of the preferred versions.
+
+
+</td></tr>
+<tr><td>
+
+[loadFromFile(jsonFilePath, rushConfiguration)](./rush-lib.commonversionsconfiguration.loadfromfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads the common-versions.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
+
+
+</td></tr>
+<tr><td>
+
+[save()](./rush-lib.commonversionsconfiguration.save.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Writes the "common-versions.json" file to disk, using the filename that was passed to loadFromFile().
+
+
+</td></tr>
+</tbody></table>
 

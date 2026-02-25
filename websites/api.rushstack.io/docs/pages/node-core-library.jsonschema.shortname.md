@@ -20,5 +20,5 @@ get shortName(): string;
 
 ## Remarks
 
-If the schema was loaded from a file, then the base filename is used. Otherwise, the "id" field is used if available.
+If the schema was loaded from a file, then the base filename is used. Otherwise, the "$id" field is used if available.
 

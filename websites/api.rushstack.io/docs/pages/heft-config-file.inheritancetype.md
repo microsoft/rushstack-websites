@@ -8,24 +8,20 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/heft-config-file](./heft-config-file.md) &gt; [InheritanceType](./heft-config-file.inheritancetype.md)
 
-## InheritanceType enum
+## InheritanceType variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
+The set of possible mechanisms for merging properties from parent configuration files. If a child configuration file sets a property value to `null`<></>, that will always delete the value specified in the parent configuration file, regardless of the inheritance type.
 
 **Signature:**
 
 ```typescript
-export declare enum InheritanceType 
+InheritanceType: {
+    readonly append: "append";
+    readonly merge: "merge";
+    readonly replace: "replace";
+    readonly custom: "custom";
+}
 ```
-
-## Enumeration Members
-
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  append | <code>&quot;append&quot;</code> | **_(BETA)_** Append additional elements after elements from the parent file's property. Only applicable for arrays. |
-|  custom | <code>&quot;custom&quot;</code> | **_(BETA)_** Custom inheritance functionality |
-|  merge | <code>&quot;merge&quot;</code> | **_(BETA)_** Perform a shallow merge of additional elements after elements from the parent file's property. Only applicable for objects. |
-|  replace | <code>&quot;replace&quot;</code> | **_(BETA)_** Discard elements from the parent file's property |
-

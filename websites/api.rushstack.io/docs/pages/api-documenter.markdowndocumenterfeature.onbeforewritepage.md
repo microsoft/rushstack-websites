@@ -21,9 +21,37 @@ onBeforeWritePage(eventArgs: IMarkdownDocumenterFeatureOnBeforeWritePageArgs): v
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventArgs | [IMarkdownDocumenterFeatureOnBeforeWritePageArgs](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventArgs
+
+
+</td><td>
+
+[IMarkdownDocumenterFeatureOnBeforeWritePageArgs](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

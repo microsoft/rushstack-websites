@@ -25,15 +25,109 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md) | <code>readonly</code> | number \| undefined | The major version that has been locked |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[lockedMajor](./rush-lib.individualversionpolicy.lockedmajor.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The major version that has been locked
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [bump(bumpType, identifier)](./rush-lib.individualversionpolicy.bump.md) |  | Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything. |
-|  [ensure(project, force)](./rush-lib.individualversionpolicy.ensure.md) |  | Returns an updated package json that satisfies the version policy. |
-|  [validate(versionString, packageName)](./rush-lib.individualversionpolicy.validate.md) |  | Validates the specified version and throws if the version does not satisfy the policy. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bump(bumpType, identifier)](./rush-lib.individualversionpolicy.bump.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bumps version. Individual version policy lets change files drive version bump. This method currently does not do anything.
+
+
+</td></tr>
+<tr><td>
+
+[ensure(project, force)](./rush-lib.individualversionpolicy.ensure.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns an updated package json that satisfies the version policy.
+
+
+</td></tr>
+<tr><td>
+
+[validate(versionString, packageName)](./rush-lib.individualversionpolicy.validate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Validates the specified version and throws if the version does not satisfy the policy.
+
+
+</td></tr>
+</tbody></table>
 

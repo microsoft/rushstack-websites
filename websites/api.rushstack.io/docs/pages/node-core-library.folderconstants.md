@@ -8,20 +8,15 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/node-core-library](./node-core-library.md) &gt; [FolderConstants](./node-core-library.folderconstants.md)
 
-## FolderConstants enum
+## FolderConstants variable
 
 String constants for common folder names.
 
 **Signature:**
 
 ```typescript
-export declare enum FolderConstants 
+FolderConstants: {
+    readonly Git: ".git";
+    readonly NodeModules: "node_modules";
+}
 ```
-
-## Enumeration Members
-
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Git | <code>&quot;.git&quot;</code> | ".git" - the data storage for a Git working folder |
-|  NodeModules | <code>&quot;node_modules&quot;</code> | "node\_modules" - the folder where package managers install their files |
-

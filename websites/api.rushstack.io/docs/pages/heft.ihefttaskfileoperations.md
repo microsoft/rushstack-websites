@@ -20,8 +20,64 @@ export interface IHeftTaskFileOperations
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [copyOperations](./heft.ihefttaskfileoperations.copyoperations.md) |  | Set&lt;[ICopyOperation](./heft.icopyoperation.md)<></>&gt; | Copy operations to be performed following the <code>run</code> or <code>runIncremental</code> hook. These operations will be performed after the task <code>run</code> or <code>runIncremental</code> hook has completed. |
-|  [deleteOperations](./heft.ihefttaskfileoperations.deleteoperations.md) |  | Set&lt;[IDeleteOperation](./heft.ideleteoperation.md)<></>&gt; | Delete operations to be performed following the <code>run</code> or <code>runIncremental</code> hook. These operations will be performed after the task <code>run</code> or <code>runIncremental</code> hook has completed. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[copyOperations](./heft.ihefttaskfileoperations.copyoperations.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set&lt;[ICopyOperation](./heft.icopyoperation.md)<></>&gt;
+
+
+</td><td>
+
+Copy operations to be performed following the `run` or `runIncremental` hook. These operations will be performed after the task `run` or `runIncremental` hook has completed.
+
+
+</td></tr>
+<tr><td>
+
+[deleteOperations](./heft.ihefttaskfileoperations.deleteoperations.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set&lt;[IDeleteOperation](./heft.ideleteoperation.md)<></>&gt;
+
+
+</td><td>
+
+Delete operations to be performed following the `run` or `runIncremental` hook. These operations will be performed after the task `run` or `runIncremental` hook has completed.
+
+
+</td></tr>
+</tbody></table>
 

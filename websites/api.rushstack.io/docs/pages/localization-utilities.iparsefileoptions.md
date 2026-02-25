@@ -19,9 +19,79 @@ export interface IParseFileOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [content](./localization-utilities.iparsefileoptions.content.md) |  | string |  |
-|  [filePath](./localization-utilities.iparsefileoptions.filepath.md) |  | string |  |
-|  [ignoreString?](./localization-utilities.iparsefileoptions.ignorestring.md) |  | [IgnoreStringFunction](./localization-utilities.ignorestringfunction.md) | _(Optional)_ Optionally, provide a function that will be called for each string. If the function returns <code>true</code> the string will not be included. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[content](./localization-utilities.iparsefileoptions.content.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[filePath](./localization-utilities.iparsefileoptions.filepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ignoreString?](./localization-utilities.iparsefileoptions.ignorestring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IgnoreStringFunction](./localization-utilities.ignorestringfunction.md)
+
+
+</td><td>
+
+_(Optional)_ Optionally, provide a function that will be called for each string. If the function returns `true` the string will not be included.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,20 +20,349 @@ export interface IExtractorOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [createArchiveFilePath?](./package-extractor.iextractoroptions.createarchivefilepath.md) |  | string | _(Optional)_ The desired path to be used when archiving the target folder. Supported file extensions: .zip. |
-|  [createArchiveOnly?](./package-extractor.iextractoroptions.createarchiveonly.md) |  | boolean | _(Optional)_ Whether to skip copying files to the extraction target directory, and only create an extraction archive. This is only supported when linkCreation is 'script' or 'none'. |
-|  [folderToCopy?](./package-extractor.iextractoroptions.foldertocopy.md) |  | string | _(Optional)_ An additional folder containing files which will be copied into the root of the extraction. |
-|  [includeDevDependencies?](./package-extractor.iextractoroptions.includedevdependencies.md) |  | boolean | _(Optional)_ If dependencies from the "devDependencies" package.json field should be included in the extraction. |
-|  [includeNpmIgnoreFiles?](./package-extractor.iextractoroptions.includenpmignorefiles.md) |  | boolean | _(Optional)_ If files ignored by the .npmignore file should be included in the extraction. |
-|  [linkCreation?](./package-extractor.iextractoroptions.linkcreation.md) |  | 'default' \| 'script' \| 'none' | _(Optional)_ The link creation mode to use. "default": Create the links while copying the files; this is the default behavior. Use this setting if your file copy tool can handle links correctly. "script": A Node.js script called create-links.js will be written to the target folder. Use this setting to create links on the server machine, after the files have been uploaded. "none": Do nothing; some other tool may create the links later, based on the extractor-metadata.json file. |
-|  [mainProjectName](./package-extractor.iextractoroptions.mainprojectname.md) |  | string | The main project to include in the extraction operation. |
-|  [overwriteExisting](./package-extractor.iextractoroptions.overwriteexisting.md) |  | boolean | Whether to overwrite the target folder if it already exists. |
-|  [pnpmInstallFolder?](./package-extractor.iextractoroptions.pnpminstallfolder.md) |  | string | _(Optional)_ The folder where the PNPM "node\_modules" folder is located. This is used to resolve packages linked to the PNPM virtual store. |
-|  [projectConfigurations](./package-extractor.iextractoroptions.projectconfigurations.md) |  | [IExtractorProjectConfiguration](./package-extractor.iextractorprojectconfiguration.md)<></>\[\] | Configurations for individual projects, keyed by the project path relative to the sourceRootFolder. |
-|  [sourceRootFolder](./package-extractor.iextractoroptions.sourcerootfolder.md) |  | string | The source folder that copying originates from. Generally it is the repo root folder. |
-|  [targetRootFolder](./package-extractor.iextractoroptions.targetrootfolder.md) |  | string | The target folder for the extraction. |
-|  [terminal](./package-extractor.iextractoroptions.terminal.md) |  | [ITerminal](./node-core-library.iterminal.md) | A terminal to log extraction progress. |
-|  [transformPackageJson?](./package-extractor.iextractoroptions.transformpackagejson.md) |  | (packageJson: [IPackageJson](./node-core-library.ipackagejson.md)<></>) =&gt; [IPackageJson](./node-core-library.ipackagejson.md) \| undefined | _(Optional)_ The pnpmfile configuration if using PNPM, otherwise undefined. The configuration will be used to transform the package.json prior to extraction. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createArchiveFilePath?](./package-extractor.iextractoroptions.createarchivefilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The desired path to be used when archiving the target folder. Supported file extensions: .zip.
+
+
+</td></tr>
+<tr><td>
+
+[createArchiveOnly?](./package-extractor.iextractoroptions.createarchiveonly.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether to skip copying files to the extraction target directory, and only create an extraction archive. This is only supported when [IExtractorOptions.linkCreation](./package-extractor.iextractoroptions.linkcreation.md) is 'script' or 'none'.
+
+
+</td></tr>
+<tr><td>
+
+[dependencyConfigurations?](./package-extractor.iextractoroptions.dependencyconfigurations.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExtractorDependencyConfiguration](./package-extractor.iextractordependencyconfiguration.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_ Configurations for individual dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[folderToCopy?](./package-extractor.iextractoroptions.foldertocopy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ An additional folder containing files which will be copied into the root of the extraction.
+
+
+</td></tr>
+<tr><td>
+
+[includeDevDependencies?](./package-extractor.iextractoroptions.includedevdependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If dependencies from the "devDependencies" package.json field should be included in the extraction.
+
+
+</td></tr>
+<tr><td>
+
+[includeNpmIgnoreFiles?](./package-extractor.iextractoroptions.includenpmignorefiles.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If files ignored by the .npmignore file should be included in the extraction.
+
+
+</td></tr>
+<tr><td>
+
+[linkCreation?](./package-extractor.iextractoroptions.linkcreation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[LinkCreationMode](./package-extractor.linkcreationmode.md)
+
+
+</td><td>
+
+_(Optional)_ The link creation mode to use. "default": Create the links while copying the files; this is the default behavior. Use this setting if your file copy tool can handle links correctly. "script": A Node.js script called create-links.js will be written to the target folder. Use this setting to create links on the server machine, after the files have been uploaded. "none": Do nothing; some other tool may create the links later, based on the extractor-metadata.json file.
+
+
+</td></tr>
+<tr><td>
+
+[linkCreationScriptPath?](./package-extractor.iextractoroptions.linkcreationscriptpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the generated link creation script. This is only used when [IExtractorOptions.linkCreation](./package-extractor.iextractoroptions.linkcreation.md) is 'script'.
+
+
+</td></tr>
+<tr><td>
+
+[mainProjectName](./package-extractor.iextractoroptions.mainprojectname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The main project to include in the extraction operation.
+
+
+</td></tr>
+<tr><td>
+
+[overwriteExisting](./package-extractor.iextractoroptions.overwriteexisting.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to overwrite the target folder if it already exists.
+
+
+</td></tr>
+<tr><td>
+
+[pnpmInstallFolder?](./package-extractor.iextractoroptions.pnpminstallfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The folder where the PNPM "node\_modules" folder is located. This is used to resolve packages linked to the PNPM virtual store.
+
+
+</td></tr>
+<tr><td>
+
+[projectConfigurations](./package-extractor.iextractoroptions.projectconfigurations.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExtractorProjectConfiguration](./package-extractor.iextractorprojectconfiguration.md)<></>\[\]
+
+
+</td><td>
+
+Configurations for individual projects, keyed by the project path relative to the sourceRootFolder.
+
+
+</td></tr>
+<tr><td>
+
+[sourceRootFolder](./package-extractor.iextractoroptions.sourcerootfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The source folder that copying originates from. Generally it is the repo root folder.
+
+
+</td></tr>
+<tr><td>
+
+[subspaces?](./package-extractor.iextractoroptions.subspaces.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExtractorSubspace](./package-extractor.iextractorsubspace.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_ When using Rush subspaces, this setting can be used to provide configuration information for each individual subspace.
+
+
+</td></tr>
+<tr><td>
+
+[targetRootFolder](./package-extractor.iextractoroptions.targetrootfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The target folder for the extraction.
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./package-extractor.iextractoroptions.terminal.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+A terminal to log extraction progress.
+
+
+</td></tr>
+<tr><td>
+
+[transformPackageJson?](./package-extractor.iextractoroptions.transformpackagejson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(packageJson: [IPackageJson](./node-core-library.ipackagejson.md)<></>) =&gt; [IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+_(Optional)_ The pnpmfile configuration if using PNPM, otherwise `undefined`<></>. The configuration will be used to transform the package.json prior to extraction.
+
+
+</td></tr>
+</tbody></table>
 

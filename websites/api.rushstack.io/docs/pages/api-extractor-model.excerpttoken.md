@@ -20,15 +20,123 @@ export declare class ExcerptToken
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(kind, text, canonicalReference)](./api-extractor-model.excerpttoken._constructor_.md) |  | Constructs a new instance of the <code>ExcerptToken</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(kind, text, canonicalReference)](./api-extractor-model.excerpttoken._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ExcerptToken` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [canonicalReference](./api-extractor-model.excerpttoken.canonicalreference.md) | <code>readonly</code> | DeclarationReference \| undefined | The hyperlink target for a token whose type is <code>ExcerptTokenKind.Reference</code>. For other token types, this property will be <code>undefined</code>. |
-|  [kind](./api-extractor-model.excerpttoken.kind.md) | <code>readonly</code> | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) | Indicates the kind of token. |
-|  [text](./api-extractor-model.excerpttoken.text.md) | <code>readonly</code> | string | The text fragment. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[canonicalReference](./api-extractor-model.excerpttoken.canonicalreference.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+DeclarationReference \| undefined
+
+
+</td><td>
+
+The hyperlink target for a token whose type is `ExcerptTokenKind.Reference`<></>. For other token types, this property will be `undefined`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.excerpttoken.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md)
+
+
+</td><td>
+
+Indicates the kind of token.
+
+
+</td></tr>
+<tr><td>
+
+[text](./api-extractor-model.excerpttoken.text.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The text fragment.
+
+
+</td></tr>
+</tbody></table>
 

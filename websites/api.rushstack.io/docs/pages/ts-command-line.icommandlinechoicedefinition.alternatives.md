@@ -15,5 +15,5 @@ A list of strings (which contain no spaces), of possible options which can be se
 **Signature:**
 
 ```typescript
-alternatives: string[];
+alternatives: ReadonlyArray<TChoice> | ReadonlySet<TChoice>;
 ```

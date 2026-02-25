@@ -20,10 +20,55 @@ combineParts(scope: string, unscopedName: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  scope | string | Must be either an empty string, or a scope name such as "<></>@<></>example" |
-|  unscopedName | string | Must be a nonempty package name that does not contain a scope |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+scope
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Must be either an empty string, or a scope name such as "<></>@<></>example"
+
+
+</td></tr>
+<tr><td>
+
+unscopedName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Must be a nonempty package name that does not contain a scope
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

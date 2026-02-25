@@ -25,14 +25,83 @@ A naive approach might use the `+=` operator to append strings: This would have 
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./node-core-library.stringbuilder._constructor_.md) |  | Constructs a new instance of the <code>StringBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./node-core-library.stringbuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `StringBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [append(text)](./node-core-library.stringbuilder.append.md) |  | Append the specified text to the buffer. |
-|  [toString()](./node-core-library.stringbuilder.tostring.md) |  | Returns a single string containing all the text that was appended to the buffer so far. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[append(text)](./node-core-library.stringbuilder.append.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the specified text to the buffer.
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./node-core-library.stringbuilder.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns a single string containing all the text that was appended to the buffer so far.
+
+
+</td></tr>
+</tbody></table>
 

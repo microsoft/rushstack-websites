@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ITelemetryData.operationResults property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Only applicable to phased commands. Provides detailed results by operation. Keys are operation names, values contain result, timing information, and dependencies.

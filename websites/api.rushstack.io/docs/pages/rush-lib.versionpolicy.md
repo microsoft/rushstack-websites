@@ -24,21 +24,227 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [definitionName](./rush-lib.versionpolicy.definitionname.md) | <code>readonly</code> | [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy definition name |
-|  [exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md) | <code>readonly</code> | boolean | Determines if a version policy wants to opt out of changelog files. |
-|  [includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md) | <code>readonly</code> | boolean | Determines if a version policy wants to opt in to including email. |
-|  [isLockstepped](./rush-lib.versionpolicy.islockstepped.md) | <code>readonly</code> | boolean | Whether it is a lockstepped version policy |
-|  [policyName](./rush-lib.versionpolicy.policyname.md) | <code>readonly</code> | string | Version policy name |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[definitionName](./rush-lib.versionpolicy.definitionname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md)
+
+
+</td><td>
+
+Version policy definition name
+
+
+</td></tr>
+<tr><td>
+
+[exemptFromRushChange](./rush-lib.versionpolicy.exemptfromrushchange.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Determines if a version policy wants to opt out of changelog files.
+
+
+</td></tr>
+<tr><td>
+
+[includeEmailInChangeFile](./rush-lib.versionpolicy.includeemailinchangefile.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Determines if a version policy wants to opt in to including email.
+
+
+</td></tr>
+<tr><td>
+
+[isLockstepped](./rush-lib.versionpolicy.islockstepped.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether it is a lockstepped version policy
+
+
+</td></tr>
+<tr><td>
+
+[policyName](./rush-lib.versionpolicy.policyname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Version policy name
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [bump(bumpType, identifier)](./rush-lib.versionpolicy.bump.md) | <code>abstract</code> | Bumps version based on the policy |
-|  [ensure(project, force)](./rush-lib.versionpolicy.ensure.md) | <code>abstract</code> | Returns an updated package json that satisfies the policy. |
-|  [setDependenciesBeforeCommit(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforecommit.md) |  | Tells the version policy to modify any dependencies in the target package to values used for checked-in source. |
-|  [setDependenciesBeforePublish(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublish.md) |  | Tells the version policy to modify any dependencies in the target package to values used for publishing. |
-|  [validate(versionString, packageName)](./rush-lib.versionpolicy.validate.md) | <code>abstract</code> | Validates the specified version and throws if the version does not satisfy the policy. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bump(bumpType, identifier)](./rush-lib.versionpolicy.bump.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Bumps version based on the policy
+
+
+</td></tr>
+<tr><td>
+
+[ensure(project, force)](./rush-lib.versionpolicy.ensure.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Returns an updated package json that satisfies the policy.
+
+
+</td></tr>
+<tr><td>
+
+[setDependenciesBeforeCommit(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforecommit.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Tells the version policy to modify any dependencies in the target package to values used for checked-in source.
+
+
+</td></tr>
+<tr><td>
+
+[setDependenciesBeforePublish(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublish.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Tells the version policy to modify any dependencies in the target package to values used for publishing.
+
+
+</td></tr>
+<tr><td>
+
+[validate(versionString, packageName)](./rush-lib.versionpolicy.validate.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Validates the specified version and throws if the version does not satisfy the policy.
+
+
+</td></tr>
+</tbody></table>
 

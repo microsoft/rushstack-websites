@@ -20,8 +20,64 @@ export interface INormalizeNewlinesTextRewriterOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ensureNewlineAtEnd?](./terminal.inormalizenewlinestextrewriteroptions.ensurenewlineatend.md) |  | boolean | _(Optional)_ If <code>true</code>, then <code>NormalizeNewlinesTextRewriter.close()</code> will append a newline to the output if it ends with an incomplete line. |
-|  [newlineKind](./terminal.inormalizenewlinestextrewriteroptions.newlinekind.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | Specifies how newlines should be represented in the output stream. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureNewlineAtEnd?](./terminal.inormalizenewlinestextrewriteroptions.ensurenewlineatend.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If `true`<></>, then `NormalizeNewlinesTextRewriter.close()` will append a newline to the output if it ends with an incomplete line.
+
+
+</td></tr>
+<tr><td>
+
+[newlineKind](./terminal.inormalizenewlinestextrewriteroptions.newlinekind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+Specifies how newlines should be represented in the output stream.
+
+
+</td></tr>
+</tbody></table>
 

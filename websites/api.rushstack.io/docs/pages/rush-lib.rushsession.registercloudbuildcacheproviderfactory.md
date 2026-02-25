@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushSession.registerCloudBuildCacheProviderFactory() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 **Signature:**
@@ -21,10 +21,51 @@ registerCloudBuildCacheProviderFactory(cacheProviderName: string, factory: Cloud
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cacheProviderName | string |  |
-|  factory | [CloudBuildCacheProviderFactory](./rush-lib.cloudbuildcacheproviderfactory.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cacheProviderName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+factory
+
+
+</td><td>
+
+[CloudBuildCacheProviderFactory](./rush-lib.cloudbuildcacheproviderfactory.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

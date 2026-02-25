@@ -20,13 +20,151 @@ export declare class Sort
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [compareByValue(x, y)](./node-core-library.sort.comparebyvalue.md) | <code>static</code> | Compares <code>x</code> and <code>y</code> using the JavaScript <code>&gt;</code> and <code>&lt;</code> operators. This function is suitable for usage as the callback for <code>array.sort()</code>. |
-|  [isSorted(collection, comparer)](./node-core-library.sort.issorted.md) | <code>static</code> | Returns true if the collection is already sorted. |
-|  [isSortedBy(collection, keySelector, comparer)](./node-core-library.sort.issortedby.md) | <code>static</code> | Returns true if the collection is already sorted by the specified key. |
-|  [sortBy(array, keySelector, comparer)](./node-core-library.sort.sortby.md) | <code>static</code> | Sorts the array according to a key which is obtained from the array elements. The result is guaranteed to be a stable sort. |
-|  [sortMapKeys(map, keyComparer)](./node-core-library.sort.sortmapkeys.md) | <code>static</code> | Sorts the entries in a Map object according to the map keys. The result is guaranteed to be a stable sort. |
-|  [sortSet(set, comparer)](./node-core-library.sort.sortset.md) | <code>static</code> | Sorts the entries in a Set object. The result is guaranteed to be a stable sort. |
-|  [sortSetBy(set, keySelector, keyComparer)](./node-core-library.sort.sortsetby.md) | <code>static</code> | Sorts the entries in a Set object according to the specified keys. The result is guaranteed to be a stable sort. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[compareByValue(x, y)](./node-core-library.sort.comparebyvalue.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Compares `x` and `y` using the JavaScript `>` and `<` operators. This function is suitable for usage as the callback for `array.sort()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[isSorted(collection, comparer)](./node-core-library.sort.issorted.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the collection is already sorted.
+
+
+</td></tr>
+<tr><td>
+
+[isSortedBy(collection, keySelector, comparer)](./node-core-library.sort.issortedby.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the collection is already sorted by the specified key.
+
+
+</td></tr>
+<tr><td>
+
+[sortBy(array, keySelector, comparer)](./node-core-library.sort.sortby.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Sorts the array according to a key which is obtained from the array elements. The result is guaranteed to be a stable sort.
+
+
+</td></tr>
+<tr><td>
+
+[sortKeys(object)](./node-core-library.sort.sortkeys.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Sort the keys deeply given an object or an array.
+
+Doesn't handle cyclic reference.
+
+
+</td></tr>
+<tr><td>
+
+[sortMapKeys(map, keyComparer)](./node-core-library.sort.sortmapkeys.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Sorts the entries in a Map object according to the map keys. The result is guaranteed to be a stable sort.
+
+
+</td></tr>
+<tr><td>
+
+[sortSet(set, comparer)](./node-core-library.sort.sortset.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Sorts the entries in a Set object. The result is guaranteed to be a stable sort.
+
+
+</td></tr>
+<tr><td>
+
+[sortSetBy(set, keySelector, keyComparer)](./node-core-library.sort.sortsetby.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Sorts the entries in a Set object according to the specified keys. The result is guaranteed to be a stable sort.
+
+
+</td></tr>
+</tbody></table>
 

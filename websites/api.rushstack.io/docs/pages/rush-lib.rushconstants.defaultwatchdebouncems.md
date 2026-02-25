@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.defaultWatchDebounceMs property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The default debounce value for Rush multi-project watch mode. When watching, controls how long to wait after the last encountered file system event before execution. If another file system event occurs in this interval, the timeout will reset.
@@ -18,5 +18,5 @@ The default debounce value for Rush multi-project watch mode. When watching, con
 **Signature:**
 
 ```typescript
-static readonly defaultWatchDebounceMs: number;
+static readonly defaultWatchDebounceMs: 1000;
 ```

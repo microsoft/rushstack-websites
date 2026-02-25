@@ -20,9 +20,39 @@ static ensureFolder(folderPath: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  folderPath | string | The absolute or relative path of the folder which should be created. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+folderPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path of the folder which should be created.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -20,10 +20,102 @@ export interface IAliasCommandLineActionOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [aliasName](./ts-command-line.ialiascommandlineactionoptions.aliasname.md) |  | string | The name of the alias. For example, if the tool is called "example", then the "build" alias might be invoked as: "example build -q --some-other-option" |
-|  [defaultParameters?](./ts-command-line.ialiascommandlineactionoptions.defaultparameters.md) |  | string\[\] | _(Optional)_ A list of default parameters to pass to the target action. |
-|  [targetAction](./ts-command-line.ialiascommandlineactionoptions.targetaction.md) |  | [CommandLineAction](./ts-command-line.commandlineaction.md) | The action that this alias invokes. |
-|  [toolFilename](./ts-command-line.ialiascommandlineactionoptions.toolfilename.md) |  | string | The name of your tool when invoked from the command line. Used for generating help text. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[aliasName](./ts-command-line.ialiascommandlineactionoptions.aliasname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the alias. For example, if the tool is called "example", then the "build" alias might be invoked as: "example build -q --some-other-option"
+
+
+</td></tr>
+<tr><td>
+
+[defaultParameters?](./ts-command-line.ialiascommandlineactionoptions.defaultparameters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ A list of default parameters to pass to the target action.
+
+
+</td></tr>
+<tr><td>
+
+[targetAction](./ts-command-line.ialiascommandlineactionoptions.targetaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CommandLineAction](./ts-command-line.commandlineaction.md)
+
+
+</td><td>
+
+The action that this alias invokes.
+
+
+</td></tr>
+<tr><td>
+
+[toolFilename](./ts-command-line.ialiascommandlineactionoptions.toolfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of your tool when invoked from the command line. Used for generating help text.
+
+
+</td></tr>
+</tbody></table>
 

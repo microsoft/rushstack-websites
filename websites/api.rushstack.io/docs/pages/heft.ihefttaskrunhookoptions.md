@@ -20,7 +20,68 @@ export interface IHeftTaskRunHookOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [cancellationToken](./heft.ihefttaskrunhookoptions.cancellationtoken.md) | <code>readonly</code> | [CancellationToken](./heft.cancellationtoken.md) | **_(BETA)_** A cancellation token that is used to signal that the build is cancelled. This can be used to stop operations early and allow for a new build to be started. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[abortSignal](./heft.ihefttaskrunhookoptions.abortsignal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AbortSignal
+
+
+</td><td>
+
+**_(BETA)_** An abort signal that is used to abort the build. This can be used to stop operations early and allow for a new build to be started.
+
+
+</td></tr>
+<tr><td>
+
+[globAsync](./heft.ihefttaskrunhookoptions.globasync.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[GlobFn](./heft.globfn.md)
+
+
+</td><td>
+
+Reads the specified globs and returns the result.
+
+
+</td></tr>
+</tbody></table>
 

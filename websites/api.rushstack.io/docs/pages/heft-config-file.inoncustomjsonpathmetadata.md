@@ -10,7 +10,7 @@ pagination_next: null
 
 ## INonCustomJsonPathMetadata interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Used to specify how node(s) in a JSON object should be processed after being loaded.
@@ -23,7 +23,45 @@ export interface INonCustomJsonPathMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pathResolutionMethod?](./heft-config-file.inoncustomjsonpathmetadata.pathresolutionmethod.md) |  | [PathResolutionMethod.NodeResolve](./heft-config-file.pathresolutionmethod.md) \| [PathResolutionMethod.nodeResolve](./heft-config-file.pathresolutionmethod.md) \| [PathResolutionMethod.resolvePathRelativeToConfigurationFile](./heft-config-file.pathresolutionmethod.md) \| [PathResolutionMethod.resolvePathRelativeToProjectRoot](./heft-config-file.pathresolutionmethod.md) | **_(BETA)_** _(Optional)_ If this property describes a filesystem path, use this property to describe how the path should be resolved. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pathResolutionMethod?](./heft-config-file.inoncustomjsonpathmetadata.pathresolutionmethod.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[PathResolutionMethod.NodeResolve](./heft-config-file.pathresolutionmethod.noderesolve.md) \| [PathResolutionMethod.nodeResolve](./heft-config-file.pathresolutionmethod.noderesolve.md) \| [PathResolutionMethod.resolvePathRelativeToConfigurationFile](./heft-config-file.pathresolutionmethod.resolvepathrelativetoconfigurationfile.md) \| [PathResolutionMethod.resolvePathRelativeToProjectRoot](./heft-config-file.pathresolutionmethod.resolvepathrelativetoprojectroot.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If this property describes a filesystem path, use this property to describe how the path should be resolved.
+
+
+</td></tr>
+</tbody></table>
 

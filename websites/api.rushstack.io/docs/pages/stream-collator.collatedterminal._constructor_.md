@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedTerminal.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructs a new instance of the `CollatedTerminal` class
@@ -23,7 +23,35 @@ constructor(destination: TerminalWritable);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  destination | [TerminalWritable](./terminal.terminalwritable.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+destination
+
+
+</td><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

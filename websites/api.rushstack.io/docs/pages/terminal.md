@@ -18,58 +18,702 @@ See the [TerminalWritable](./terminal.terminalwritable.md) documentation for an 
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CallbackWritable](./terminal.callbackwritable.md) | This class enables very basic [TerminalWritable.onWriteChunk()](./terminal.terminalwritable.onwritechunk.md) operations to be implemented as a callback function, avoiding the need to define a subclass of <code>TerminalWritable</code>. |
-|  [DiscardStdoutTransform](./terminal.discardstdouttransform.md) | **_(BETA)_** <code>DiscardStdoutTransform</code> discards <code>stdout</code> chunks while fixing up malformed <code>stderr</code> lines. |
-|  [MockWritable](./terminal.mockwritable.md) | **_(BETA)_** A [TerminalWritable](./terminal.terminalwritable.md) subclass for use by unit tests. |
-|  [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) | For use with [TextRewriterTransform](./terminal.textrewritertransform.md)<></>, this rewriter converts all newlines to a standard format. |
-|  [PrintUtilities](./terminal.printutilities.md) | A collection of utilities for printing messages to the console. |
-|  [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md) | For use with [TextRewriterTransform](./terminal.textrewritertransform.md)<></>, this rewriter removes ANSI escape codes including colored text. |
-|  [SplitterTransform](./terminal.splittertransform.md) | Use this instead of [TerminalTransform](./terminal.terminaltransform.md) if you need to output <code>ITerminalChunk</code> data to more than one destination. |
-|  [StderrLineTransform](./terminal.stderrlinetransform.md) | **_(BETA)_** <code>StderrLineTransform</code> normalizes lines that mix characters from <code>stdout</code> and <code>stderr</code>, so that each output line is routed entirely to <code>stdout</code> or <code>stderr</code>. |
-|  [StdioSummarizer](./terminal.stdiosummarizer.md) | **_(BETA)_** Summarizes the results of a failed build task by returning a subset of <code>stderr</code> output not to exceed a specified maximum number of lines. |
-|  [StdioWritable](./terminal.stdiowritable.md) | A [TerminalWritable](./terminal.terminalwritable.md) subclass that writes its output directly to the process <code>stdout</code> and <code>stderr</code> streams. |
-|  [TextRewriterTransform](./terminal.textrewritertransform.md) | A [TerminalTransform](./terminal.terminaltransform.md) subclass that performs one or more [TextRewriter](./terminal.textrewriter.md) operations. The most common operations are [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) and [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md)<></>. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AnsiEscape](./terminal.ansiescape.md)
+
+
+</td><td>
+
+Operations for working with text strings that contain [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)<></>. The most commonly used escape codes set the foreground/background color for console output.
+
+
+</td></tr>
+<tr><td>
+
+[CallbackWritable](./terminal.callbackwritable.md)
+
+
+</td><td>
+
+This class enables very basic [TerminalWritable.onWriteChunk()](./terminal.terminalwritable.onwritechunk.md) operations to be implemented as a callback function, avoiding the need to define a subclass of `TerminalWritable`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[Colorize](./terminal.colorize.md)
+
+
+</td><td>
+
+The static functions on this class are used to produce colored text for use with a terminal that supports ANSI escape codes.
+
+Note that this API always generates color codes, regardless of whether the process's stdout is a TTY. The reason is that, in a complex program, the code that is generating strings often does not know were those strings will end up. In some cases, the same log message may get printed both to a shell that supports color AND to a log file that does not.
+
+
+</td></tr>
+<tr><td>
+
+[ConsoleTerminalProvider](./terminal.consoleterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** Terminal provider that prints to STDOUT (for log- and verbose-level messages) and STDERR (for warning- and error-level messages).
+
+
+</td></tr>
+<tr><td>
+
+[DiscardStdoutTransform](./terminal.discardstdouttransform.md)
+
+
+</td><td>
+
+**_(BETA)_** `DiscardStdoutTransform` discards `stdout` chunks while fixing up malformed `stderr` lines.
+
+
+</td></tr>
+<tr><td>
+
+[MockWritable](./terminal.mockwritable.md)
+
+
+</td><td>
+
+**_(BETA)_** A [TerminalWritable](./terminal.terminalwritable.md) subclass for use by unit tests.
+
+
+</td></tr>
+<tr><td>
+
+[NoOpTerminalProvider](./terminal.noopterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** Terminal provider that stores written data in buffers separated by severity. This terminal provider is designed to be used when code that prints to a terminal is being unit tested.
+
+
+</td></tr>
+<tr><td>
+
+[NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md)
+
+
+</td><td>
+
+For use with [TextRewriterTransform](./terminal.textrewritertransform.md)<></>, this rewriter converts all newlines to a standard format.
+
+
+</td></tr>
+<tr><td>
+
+[PrefixProxyTerminalProvider](./terminal.prefixproxyterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** Wraps an existing [ITerminalProvider](./terminal.iterminalprovider.md) that prefixes each line of output with a specified prefix string.
+
+
+</td></tr>
+<tr><td>
+
+[PrintUtilities](./terminal.printutilities.md)
+
+
+</td><td>
+
+A collection of utilities for printing messages to the console.
+
+
+</td></tr>
+<tr><td>
+
+[ProblemCollector](./terminal.problemcollector.md)
+
+
+</td><td>
+
+**_(BETA)_** A [TerminalWritable](./terminal.terminalwritable.md) that consumes line-oriented terminal output and extracts structured problems using one or more [IProblemMatcher](./problem-matcher.iproblemmatcher.md) instances.
+
+
+</td></tr>
+<tr><td>
+
+[RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md)
+
+
+</td><td>
+
+For use with [TextRewriterTransform](./terminal.textrewritertransform.md)<></>, this rewriter removes ANSI escape codes including colored text.
+
+
+</td></tr>
+<tr><td>
+
+[SplitterTransform](./terminal.splittertransform.md)
+
+
+</td><td>
+
+Use this instead of [TerminalTransform](./terminal.terminaltransform.md) if you need to output `ITerminalChunk` data to more than one destination.
+
+
+</td></tr>
+<tr><td>
+
+[StderrLineTransform](./terminal.stderrlinetransform.md)
+
+
+</td><td>
+
+**_(BETA)_** `StderrLineTransform` normalizes lines that mix characters from `stdout` and `stderr`<></>, so that each output line is routed entirely to `stdout` or `stderr`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[StdioSummarizer](./terminal.stdiosummarizer.md)
+
+
+</td><td>
+
+**_(BETA)_** Summarizes the results of a failed build task by returning a subset of `stderr` output not to exceed a specified maximum number of lines.
+
+
+</td></tr>
+<tr><td>
+
+[StdioWritable](./terminal.stdiowritable.md)
+
+
+</td><td>
+
+A [TerminalWritable](./terminal.terminalwritable.md) subclass that writes its output directly to the process `stdout` and `stderr` streams.
+
+
+</td></tr>
+<tr><td>
+
+[StringBufferTerminalProvider](./terminal.stringbufferterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** Terminal provider that stores written data in buffers separated by severity. This terminal provider is designed to be used when code that prints to a terminal is being unit tested.
+
+
+</td></tr>
+<tr><td>
+
+[Terminal](./terminal.terminal.md)
+
+
+</td><td>
+
+**_(BETA)_** This class facilitates writing to a console.
+
+
+</td></tr>
+<tr><td>
+
+[TerminalStreamWritable](./terminal.terminalstreamwritable.md)
+
+
+</td><td>
+
+**_(BETA)_** A adapter to allow writing to a provided terminal using Writable streams.
+
+
+</td></tr>
+<tr><td>
+
+[TextRewriterTransform](./terminal.textrewritertransform.md)
+
+
+</td><td>
+
+A [TerminalTransform](./terminal.terminaltransform.md) subclass that performs one or more [TextRewriter](./terminal.textrewriter.md) operations. The most common operations are [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) and [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-|  Abstract Class | Description |
-|  --- | --- |
-|  [TerminalTransform](./terminal.terminaltransform.md) | The abstract base class for [TerminalWritable](./terminal.terminalwritable.md) objects that receive an input, transform it somehow, and then write the output to another <code>TerminalWritable</code>. |
-|  [TerminalWritable](./terminal.terminalwritable.md) | The abstract base class for objects that can present, route, or process text output for a console application. This output is typically prepared using the [Terminal](./node-core-library.terminal.md) API. |
-|  [TextRewriter](./terminal.textrewriter.md) | The abstract base class for operations that can be applied by [TextRewriterTransform](./terminal.textrewritertransform.md)<></>. |
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TerminalTransform](./terminal.terminaltransform.md)
+
+
+</td><td>
+
+The abstract base class for [TerminalWritable](./terminal.terminalwritable.md) objects that receive an input, transform it somehow, and then write the output to another `TerminalWritable`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+The abstract base class for objects that can present, route, or process text output for a console application. This output is typically prepared using the [Terminal](./terminal.terminal.md) API.
+
+
+</td></tr>
+<tr><td>
+
+[TextRewriter](./terminal.textrewriter.md)
+
+
+</td><td>
+
+The abstract base class for operations that can be applied by [TextRewriterTransform](./terminal.textrewritertransform.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [TerminalChunkKind](./terminal.terminalchunkkind.md) | Specifies the kind of data represented by a [ITerminalChunk](./terminal.iterminalchunk.md) object. |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TerminalChunkKind](./terminal.terminalchunkkind.md)
+
+
+</td><td>
+
+Specifies the kind of data represented by a [ITerminalChunk](./terminal.iterminalchunk.md) object.
+
+
+</td></tr>
+<tr><td>
+
+[TerminalProviderSeverity](./terminal.terminalproviderseverity.md)
+
+
+</td><td>
+
+**_(BETA)_** Similar to many popular logging packages, terminal providers support a range of message severities. These severities have built-in formatting defaults in the Terminal object (warnings are yellow, errors are red, etc.).
+
+Terminal providers may choose to suppress certain messages based on their severity, or to route some messages to other providers or not based on severity.
+
+Severity \| Purpose \-\-\-\-\-\-\-\-\- \| \-\-\-\-\-\-- error \| Build errors and fatal issues warning \| Not necessarily fatal, but indicate a problem the user should fix log \| Informational messages verbose \| Additional information that may not always be necessary debug \| Highest detail level, best used for troubleshooting information
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ICallbackWritableOptions](./terminal.icallbackwritableoptions.md) | Constructor options for [CallbackWritable](./terminal.callbackwritable.md)<></>. |
-|  [IDiscardStdoutTransformOptions](./terminal.idiscardstdouttransformoptions.md) | **_(BETA)_** Constructor options for [DiscardStdoutTransform](./terminal.discardstdouttransform.md) |
-|  [INormalizeNewlinesTextRewriterOptions](./terminal.inormalizenewlinestextrewriteroptions.md) | Constructor options for [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) |
-|  [ISplitterTransformOptions](./terminal.isplittertransformoptions.md) | Constructor options for [SplitterTransform](./terminal.splittertransform.md)<></>. |
-|  [IStdioLineTransformOptions](./terminal.istdiolinetransformoptions.md) | **_(BETA)_** Constructor options for [StderrLineTransform](./terminal.stderrlinetransform.md) |
-|  [IStdioSummarizerOptions](./terminal.istdiosummarizeroptions.md) | **_(BETA)_** Constructor options for [StdioSummarizer](./terminal.stdiosummarizer.md)<></>. |
-|  [ITerminalChunk](./terminal.iterminalchunk.md) | Represents a chunk of output that will ultimately be written to a [TerminalWritable](./terminal.terminalwritable.md)<></>. |
-|  [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md) | Constructor options for [TerminalTransform](./terminal.terminaltransform.md)<></>. |
-|  [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md) | Constructor options for [TerminalWritable](./terminal.terminalwritable.md) |
-|  [ITextRewriterTransformOptions](./terminal.itextrewritertransformoptions.md) | Constructor options for [TextRewriterTransform](./terminal.textrewritertransform.md)<></>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IAllStringBufferOutput](./terminal.iallstringbufferoutput.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IAnsiEscapeConvertForTestsOptions](./terminal.iansiescapeconvertfortestsoptions.md)
+
+
+</td><td>
+
+Options for [AnsiEscape.formatForTests()](./terminal.ansiescape.formatfortests.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ICallbackWritableOptions](./terminal.icallbackwritableoptions.md)
+
+
+</td><td>
+
+Constructor options for [CallbackWritable](./terminal.callbackwritable.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IConsoleTerminalProviderOptions](./terminal.iconsoleterminalprovideroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options to be provided to a [ConsoleTerminalProvider](./terminal.consoleterminalprovider.md)
+
+
+</td></tr>
+<tr><td>
+
+[IDiscardStdoutTransformOptions](./terminal.idiscardstdouttransformoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Constructor options for [DiscardStdoutTransform](./terminal.discardstdouttransform.md)
+
+
+</td></tr>
+<tr><td>
+
+[IDynamicPrefixProxyTerminalProviderOptions](./terminal.idynamicprefixproxyterminalprovideroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options for [PrefixProxyTerminalProvider](./terminal.prefixproxyterminalprovider.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[INormalizeNewlinesTextRewriterOptions](./terminal.inormalizenewlinestextrewriteroptions.md)
+
+
+</td><td>
+
+Constructor options for [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md)
+
+
+</td></tr>
+<tr><td>
+
+[IOutputChunk](./terminal.ioutputchunk.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IPrefixProxyTerminalProviderOptionsBase](./terminal.iprefixproxyterminalprovideroptionsbase.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IProblemCollector](./terminal.iproblemcollector.md)
+
+
+</td><td>
+
+**_(BETA)_** Collects problems (errors/warnings/info) encountered during an operation.
+
+
+</td></tr>
+<tr><td>
+
+[IProblemCollectorOptions](./terminal.iproblemcollectoroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Constructor options for [ProblemCollector](./terminal.problemcollector.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ISplitterTransformOptions](./terminal.isplittertransformoptions.md)
+
+
+</td><td>
+
+Constructor options for [SplitterTransform](./terminal.splittertransform.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IStaticPrefixProxyTerminalProviderOptions](./terminal.istaticprefixproxyterminalprovideroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options for [PrefixProxyTerminalProvider](./terminal.prefixproxyterminalprovider.md)<></>, with a static prefix.
+
+
+</td></tr>
+<tr><td>
+
+[IStdioLineTransformOptions](./terminal.istdiolinetransformoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Constructor options for [StderrLineTransform](./terminal.stderrlinetransform.md)
+
+
+</td></tr>
+<tr><td>
+
+[IStdioSummarizerOptions](./terminal.istdiosummarizeroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Constructor options for [StdioSummarizer](./terminal.stdiosummarizer.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IStringBufferOutputChunksOptions](./terminal.istringbufferoutputchunksoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IStringBufferOutputOptions](./terminal.istringbufferoutputoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalChunk](./terminal.iterminalchunk.md)
+
+
+</td><td>
+
+Represents a chunk of output that will ultimately be written to a [TerminalWritable](./terminal.terminalwritable.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalProvider](./terminal.iterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** Implement the interface to create a terminal provider. Terminal providers can be registered to a [Terminal](./terminal.terminal.md) instance to receive messages.
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalStreamWritableOptions](./terminal.iterminalstreamwritableoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options for [TerminalStreamWritable](./terminal.terminalstreamwritable.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
+
+
+</td><td>
+
+Constructor options for [TerminalTransform](./terminal.terminaltransform.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
+
+
+</td><td>
+
+Constructor options for [TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td></tr>
+<tr><td>
+
+[ITerminalWriteOptions](./terminal.iterminalwriteoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITextRewriterTransformOptions](./terminal.itextrewritertransformoptions.md)
+
+
+</td><td>
+
+Constructor options for [TextRewriterTransform](./terminal.textrewritertransform.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_CONSOLE\_WIDTH](./terminal.default_console_width.md) | A sensible fallback column width for consoles. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_CONSOLE\_WIDTH](./terminal.default_console_width.md)
+
+
+</td><td>
+
+A sensible fallback column width for consoles.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [TextRewriterState](./terminal.textrewriterstate.md) | Represents the internal state of a [TextRewriter](./terminal.textrewriter.md) subclass. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IPrefixProxyTerminalProviderOptions](./terminal.iprefixproxyterminalprovideroptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[TerminalProviderSeverityName](./terminal.terminalproviderseverityname.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[TerminalWriteParameters](./terminal.terminalwriteparameters.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[TextRewriterState](./terminal.textrewriterstate.md)
+
+
+</td><td>
+
+Represents the internal state of a [TextRewriter](./terminal.textrewriter.md) subclass.
+
+
+</td></tr>
+</tbody></table>
 

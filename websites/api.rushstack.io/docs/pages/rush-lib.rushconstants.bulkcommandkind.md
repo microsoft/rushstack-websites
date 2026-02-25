@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.bulkCommandKind property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The value of the "commandKind" property for a bulk command in command-line.json

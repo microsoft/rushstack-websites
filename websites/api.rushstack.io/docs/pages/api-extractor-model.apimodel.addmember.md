@@ -20,9 +20,37 @@ addMember(member: ApiPackage): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  member | [ApiPackage](./api-extractor-model.apipackage.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+member
+
+
+</td><td>
+
+[ApiPackage](./api-extractor-model.apipackage.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

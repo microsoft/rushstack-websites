@@ -25,20 +25,127 @@ The `TextRewriter` operations are applied separately to the `stderr` and `stdout
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.textrewritertransform._constructor_.md) |  | Constructs a new instance of the <code>TextRewriterTransform</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.textrewritertransform._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TextRewriterTransform` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [textRewriters](./terminal.textrewritertransform.textrewriters.md) | <code>readonly</code> | ReadonlyArray&lt;[TextRewriter](./terminal.textrewriter.md)<></>&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[textRewriters](./terminal.textrewritertransform.textrewriters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[TextRewriter](./terminal.textrewriter.md)<></>&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onClose()](./terminal.textrewritertransform.onclose.md) | <code>protected</code> |  |
-|  [onWriteChunk(chunk)](./terminal.textrewritertransform.onwritechunk.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onClose()](./terminal.textrewritertransform.onclose.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./terminal.textrewritertransform.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -32,24 +32,197 @@ export interface X extends Y {
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apiinterface._constructor_.md) |  | Constructs a new instance of the <code>ApiInterface</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apiinterface._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiInterface` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apiinterface.containerkey.md) | <code>readonly</code> | string |  |
-|  [extendsTypes](./api-extractor-model.apiinterface.extendstypes.md) | <code>readonly</code> | ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md)<></>&gt; | The list of base interfaces that this interface inherits from using the <code>extends</code> keyword. |
-|  [kind](./api-extractor-model.apiinterface.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apiinterface.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[extendsTypes](./api-extractor-model.apiinterface.extendstypes.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md)<></>&gt;
+
+
+</td><td>
+
+The list of base interfaces that this interface inherits from using the `extends` keyword.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apiinterface.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apiinterface.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apiinterface.getcontainerkey.md) | <code>static</code> |  |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiinterface.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apiinterface.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apiinterface.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apiinterface.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiinterface.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apiinterface.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

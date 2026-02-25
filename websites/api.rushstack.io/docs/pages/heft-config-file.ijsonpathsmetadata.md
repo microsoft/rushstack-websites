@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IJsonPathsMetadata interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/)<></>, and values are objects that describe how node(s) selected by the JSONPath are processed after loading.

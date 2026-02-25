@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ProjectChangeAnalyzer.getChangedProjectsAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Gets a list of projects that have changed in the current state of the repo when compared to the specified branch, optionally taking the shrinkwrap and settings in the rush-project.json file into consideration.
@@ -23,9 +23,37 @@ getChangedProjectsAsync(options: IGetChangedProjectsOptions): Promise<Set<RushCo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IGetChangedProjectsOptions](./rush-lib.igetchangedprojectsoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IGetChangedProjectsOptions](./rush-lib.igetchangedprojectsoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

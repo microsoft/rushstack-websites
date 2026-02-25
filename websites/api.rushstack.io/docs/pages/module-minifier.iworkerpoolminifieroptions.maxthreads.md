@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IWorkerPoolMinifierOptions.maxThreads property
 
-Maximum number of worker threads to use. Will never use more than there are modules to process. Defaults to os.cpus().length
+Maximum number of worker threads to use. Will never use more than there are modules to process. Defaults to os.availableParallelism()
 
 **Signature:**
 

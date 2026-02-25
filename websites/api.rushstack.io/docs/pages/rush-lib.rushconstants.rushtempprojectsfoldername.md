@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushTempProjectsFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("projects") where temporary projects will be stored. Example: `C:\MyRepo\common\temp\projects`
@@ -18,5 +18,5 @@ The folder name ("projects") where temporary projects will be stored. Example: `
 **Signature:**
 
 ```typescript
-static readonly rushTempProjectsFolderName: string;
+static readonly rushTempProjectsFolderName: 'projects';
 ```

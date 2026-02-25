@@ -15,14 +15,76 @@ Refresh the data contained in repo-state.json using the current state of the Rus
 **Signature:**
 
 ```typescript
-refreshState(rushConfiguration: RushConfiguration): boolean;
+refreshState(rushConfiguration: RushConfiguration, subspace: Subspace | undefined, variant?: string): boolean;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) | The Rush configuration for the repo. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+The Rush configuration for the repo.
+
+
+</td></tr>
+<tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md) \| undefined
+
+
+</td><td>
+
+The subspace that repo-state.json was loaded from, or `undefined` for the default subspace.
+
+
+</td></tr>
+<tr><td>
+
+variant
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

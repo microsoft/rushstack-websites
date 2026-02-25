@@ -21,8 +21,62 @@ export interface IApiPackageOptions extends IApiItemContainerMixinOptions, IApiN
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [projectFolderUrl?](./api-extractor-model.iapipackageoptions.projectfolderurl.md) |  | string | _(Optional)_ |
-|  [tsdocConfiguration](./api-extractor-model.iapipackageoptions.tsdocconfiguration.md) |  | TSDocConfiguration |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[projectFolderUrl?](./api-extractor-model.iapipackageoptions.projectfolderurl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[tsdocConfiguration](./api-extractor-model.iapipackageoptions.tsdocconfiguration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+TSDocConfiguration
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

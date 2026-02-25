@@ -20,7 +20,35 @@ constructor(options: ICallbackWritableOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ICallbackWritableOptions](./terminal.icallbackwritableoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ICallbackWritableOptions](./terminal.icallbackwritableoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

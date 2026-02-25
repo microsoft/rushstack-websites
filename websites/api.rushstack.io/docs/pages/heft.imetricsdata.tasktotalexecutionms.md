@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IMetricsData.taskTotalExecutionMs property
 
-The amount of time the command took to execute, in milliseconds.
+The total execution duration of all user-defined tasks from `heft.json`<></>, in milliseconds. This metric is for measuring the cumulative time spent on the underlying build steps for a project. If running in watch mode, this will be the duration of the most recent incremental build.
 
 **Signature:**
 

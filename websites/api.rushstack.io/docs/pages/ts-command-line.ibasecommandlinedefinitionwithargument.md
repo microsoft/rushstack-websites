@@ -25,8 +25,64 @@ An argument is an accompanying command-line token, such as "123" in the example 
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [argumentName](./ts-command-line.ibasecommandlinedefinitionwithargument.argumentname.md) |  | string | The name of the argument, which will be shown in the command-line help. |
-|  [completions?](./ts-command-line.ibasecommandlinedefinitionwithargument.completions.md) |  | () =&gt; Promise&lt;string\[\]&gt; | _(Optional)_ An optional callback that provides a list of custom choices for tab completion. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[argumentName](./ts-command-line.ibasecommandlinedefinitionwithargument.argumentname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the argument, which will be shown in the command-line help.
+
+
+</td></tr>
+<tr><td>
+
+[getCompletionsAsync?](./ts-command-line.ibasecommandlinedefinitionwithargument.getcompletionsasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+() =&gt; Promise&lt;ReadonlyArray&lt;string&gt; \| ReadonlySet&lt;string&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ An optional callback that provides a list of custom choices for tab completion.
+
+
+</td></tr>
+</tbody></table>
 

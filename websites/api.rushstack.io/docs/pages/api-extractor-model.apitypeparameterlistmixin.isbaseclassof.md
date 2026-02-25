@@ -20,9 +20,37 @@ function isBaseClassOf(apiItem: ApiItem): apiItem is ApiTypeParameterListMixin;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  apiItem | [ApiItem](./api-extractor-model.apiitem.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+apiItem
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

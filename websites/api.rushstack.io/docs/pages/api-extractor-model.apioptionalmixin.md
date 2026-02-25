@@ -20,7 +20,27 @@ export declare namespace ApiOptionalMixin
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [isBaseClassOf(apiItem)](./api-extractor-model.apioptionalmixin.isbaseclassof.md) | A type guard that tests whether the specified <code>ApiItem</code> subclass extends the <code>ApiOptionalMixin</code> mixin. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isBaseClassOf(apiItem)](./api-extractor-model.apioptionalmixin.isbaseclassof.md)
+
+
+</td><td>
+
+A type guard that tests whether the specified `ApiItem` subclass extends the `ApiOptionalMixin` mixin.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,37 @@ abstract close(state: TextRewriterState): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  state | [TextRewriterState](./terminal.textrewriterstate.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+state
+
+
+</td><td>
+
+[TextRewriterState](./terminal.textrewriterstate.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

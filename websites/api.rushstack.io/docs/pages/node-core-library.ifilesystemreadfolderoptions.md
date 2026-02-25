@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IFileSystemReadFolderOptions interface
 
-The options for [FileSystem.readFolder()](./node-core-library.filesystem.readfolder.md)
+The options for [FileSystem.readFolderItems()](./node-core-library.filesystem.readfolderitems.md) and [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md)<></>.
 
 **Signature:**
 
@@ -20,7 +20,45 @@ export interface IFileSystemReadFolderOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [absolutePaths?](./node-core-library.ifilesystemreadfolderoptions.absolutepaths.md) |  | boolean | _(Optional)_ If true, returns the absolute paths of the files in the folder. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[absolutePaths?](./node-core-library.ifilesystemreadfolderoptions.absolutepaths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, returns the absolute paths of the files in the folder.
+
+
+</td></tr>
+</tbody></table>
 

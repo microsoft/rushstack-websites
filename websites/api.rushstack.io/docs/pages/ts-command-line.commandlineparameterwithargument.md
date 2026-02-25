@@ -15,9 +15,9 @@ The common base class for parameters types that receive an argument.
 **Signature:**
 
 ```typescript
-export declare abstract class CommandLineParameterWithArgument extends CommandLineParameter 
+export declare abstract class CommandLineParameterWithArgument extends CommandLineParameterBase 
 ```
-**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameterBase](./ts-command-line.commandlineparameterbase.md)
 
 ## Remarks
 
@@ -27,8 +27,68 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [argumentName](./ts-command-line.commandlineparameterwithargument.argumentname.md) | <code>readonly</code> | string | The name of the argument, which will be shown in the command-line help. |
-|  [completions](./ts-command-line.commandlineparameterwithargument.completions.md) | <code>readonly</code> | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined | An optional callback that provides a list of custom choices for tab completion. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[argumentName](./ts-command-line.commandlineparameterwithargument.argumentname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the argument, which will be shown in the command-line help.
+
+
+</td></tr>
+<tr><td>
+
+[getCompletionsAsync](./ts-command-line.commandlineparameterwithargument.getcompletionsasync.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(() =&gt; Promise&lt;ReadonlyArray&lt;string&gt; \| ReadonlySet&lt;string&gt;&gt;) \| undefined
+
+
+</td><td>
+
+An optional callback that provides a list of custom choices for tab completion.
+
+
+</td></tr>
+</tbody></table>
 

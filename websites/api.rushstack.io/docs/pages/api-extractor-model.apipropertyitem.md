@@ -21,21 +21,150 @@ export declare class ApiPropertyItem extends ApiPropertyItem_base
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apipropertyitem._constructor_.md) |  | Constructs a new instance of the <code>ApiPropertyItem</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apipropertyitem._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiPropertyItem` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isEventProperty](./api-extractor-model.apipropertyitem.iseventproperty.md) | <code>readonly</code> | boolean | Returns true if this property should be documented as an event. |
-|  [propertyTypeExcerpt](./api-extractor-model.apipropertyitem.propertytypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the property. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isEventProperty](./api-extractor-model.apipropertyitem.iseventproperty.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns true if this property should be documented as an event.
+
+
+</td></tr>
+<tr><td>
+
+[propertyTypeExcerpt](./api-extractor-model.apipropertyitem.propertytypeexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the property.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apipropertyitem.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apipropertyitem.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apipropertyitem.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apipropertyitem.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

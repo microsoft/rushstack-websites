@@ -28,25 +28,491 @@ Use the `INodePackageJson` interface when loading such files. Use `IPackageJson`
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bin?](./node-core-library.inodepackagejson.bin.md) |  | string | _(Optional)_ The main entry point for the package. |
-|  [dependencies?](./node-core-library.inodepackagejson.dependencies.md) |  | [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | _(Optional)_ An array of dependencies that must always be installed for this package. |
-|  [description?](./node-core-library.inodepackagejson.description.md) |  | string | _(Optional)_ A brief description of the package. |
-|  [devDependencies?](./node-core-library.inodepackagejson.devdependencies.md) |  | [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | _(Optional)_ An array of dependencies that must only be installed for developers who will build this package. |
-|  [homepage?](./node-core-library.inodepackagejson.homepage.md) |  | string | _(Optional)_ The URL to the project's web page. |
-|  [license?](./node-core-library.inodepackagejson.license.md) |  | string | _(Optional)_ The name of the license. |
-|  [main?](./node-core-library.inodepackagejson.main.md) |  | string | _(Optional)_ The path to the module file that will act as the main entry point. |
-|  [name](./node-core-library.inodepackagejson.name.md) |  | string | The name of the package. |
-|  [optionalDependencies?](./node-core-library.inodepackagejson.optionaldependencies.md) |  | [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | _(Optional)_ An array of optional dependencies that may be installed for this package. |
-|  [peerDependencies?](./node-core-library.inodepackagejson.peerdependencies.md) |  | [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | _(Optional)_ An array of dependencies that must be installed by a consumer of this package, but which will not be automatically installed by this package. |
-|  [peerDependenciesMeta?](./node-core-library.inodepackagejson.peerdependenciesmeta.md) |  | [IPeerDependenciesMetaTable](./node-core-library.ipeerdependenciesmetatable.md) | _(Optional)_ An array of metadata about peer dependencies. |
-|  [private?](./node-core-library.inodepackagejson.private.md) |  | boolean | _(Optional)_ Indicates whether this package is allowed to be published or not. |
-|  [repository?](./node-core-library.inodepackagejson.repository.md) |  | string \| [IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md) | _(Optional)_ The URL of the project's repository. |
-|  [resolutions?](./node-core-library.inodepackagejson.resolutions.md) |  | Record&lt;string, string&gt; | _(Optional)_ A table of package version resolutions. This feature is only implemented by the Yarn package manager. |
-|  [scripts?](./node-core-library.inodepackagejson.scripts.md) |  | [IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md) | _(Optional)_ A table of script hooks that a package manager or build tool may invoke. |
-|  [tsdocMetadata?](./node-core-library.inodepackagejson.tsdocmetadata.md) |  | string | **_(BETA)_** _(Optional)_ The path to the TSDoc metadata file. This is still being standardized: https://github.com/microsoft/tsdoc/issues/7\#issuecomment-442271815 |
-|  [types?](./node-core-library.inodepackagejson.types.md) |  | string | _(Optional)_ The path to the TypeScript \*.d.ts file describing the module file that will act as the main entry point. |
-|  [typings?](./node-core-library.inodepackagejson.typings.md) |  | string | _(Optional)_ Alias for <code>types</code> |
-|  [version?](./node-core-library.inodepackagejson.version.md) |  | string | _(Optional)_ A version number conforming to the Semantic Versioning (SemVer) standard. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bin?](./node-core-library.inodepackagejson.bin.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| Record&lt;string, string&gt;
+
+
+</td><td>
+
+_(Optional)_ The main entry point for the package.
+
+
+</td></tr>
+<tr><td>
+
+[dependencies?](./node-core-library.inodepackagejson.dependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of dependencies that must always be installed for this package.
+
+
+</td></tr>
+<tr><td>
+
+[dependenciesMeta?](./node-core-library.inodepackagejson.dependenciesmeta.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IDependenciesMetaTable](./node-core-library.idependenciesmetatable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of metadata for dependencies declared inside dependencies, optionalDependencies, and devDependencies. https://pnpm.io/package\_json\#dependenciesmeta
+
+
+</td></tr>
+<tr><td>
+
+[description?](./node-core-library.inodepackagejson.description.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ A brief description of the package.
+
+
+</td></tr>
+<tr><td>
+
+[devDependencies?](./node-core-library.inodepackagejson.devdependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of dependencies that must only be installed for developers who will build this package.
+
+
+</td></tr>
+<tr><td>
+
+[exports?](./node-core-library.inodepackagejson.exports.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| string\[\] \| Record&lt;string, null \| string \| [IPackageJsonExports](./node-core-library.ipackagejsonexports.md)<></>&gt;
+
+
+</td><td>
+
+_(Optional)_ The "exports" field is used to specify the entry points for a package. See [Node.js documentation](https://nodejs.org/api/packages.html#exports)
+
+
+</td></tr>
+<tr><td>
+
+[files?](./node-core-library.inodepackagejson.files.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ The "files" field is an array of file globs that should be included in the package during publishing.
+
+See the [NPM documentation](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#files)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[homepage?](./node-core-library.inodepackagejson.homepage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The URL to the project's web page.
+
+
+</td></tr>
+<tr><td>
+
+[license?](./node-core-library.inodepackagejson.license.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The name of the license.
+
+
+</td></tr>
+<tr><td>
+
+[main?](./node-core-library.inodepackagejson.main.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the module file that will act as the main entry point.
+
+
+</td></tr>
+<tr><td>
+
+[name](./node-core-library.inodepackagejson.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the package.
+
+
+</td></tr>
+<tr><td>
+
+[optionalDependencies?](./node-core-library.inodepackagejson.optionaldependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of optional dependencies that may be installed for this package.
+
+
+</td></tr>
+<tr><td>
+
+[peerDependencies?](./node-core-library.inodepackagejson.peerdependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of dependencies that must be installed by a consumer of this package, but which will not be automatically installed by this package.
+
+
+</td></tr>
+<tr><td>
+
+[peerDependenciesMeta?](./node-core-library.inodepackagejson.peerdependenciesmeta.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPeerDependenciesMetaTable](./node-core-library.ipeerdependenciesmetatable.md)
+
+
+</td><td>
+
+_(Optional)_ An array of metadata about peer dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[private?](./node-core-library.inodepackagejson.private.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Indicates whether this package is allowed to be published or not.
+
+
+</td></tr>
+<tr><td>
+
+[repository?](./node-core-library.inodepackagejson.repository.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| [IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md)
+
+
+</td><td>
+
+_(Optional)_ The URL of the project's repository.
+
+
+</td></tr>
+<tr><td>
+
+[resolutions?](./node-core-library.inodepackagejson.resolutions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, string&gt;
+
+
+</td><td>
+
+_(Optional)_ A table of package version resolutions. This feature is only implemented by the Yarn package manager.
+
+
+</td></tr>
+<tr><td>
+
+[scripts?](./node-core-library.inodepackagejson.scripts.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md)
+
+
+</td><td>
+
+_(Optional)_ A table of script hooks that a package manager or build tool may invoke.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMetadata?](./node-core-library.inodepackagejson.tsdocmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The path to the TSDoc metadata file. This is still being standardized: https://github.com/microsoft/tsdoc/issues/7\#issuecomment-442271815
+
+
+</td></tr>
+<tr><td>
+
+[types?](./node-core-library.inodepackagejson.types.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the TypeScript \*.d.ts file describing the module file that will act as the main entry point.
+
+
+</td></tr>
+<tr><td>
+
+[typesVersions?](./node-core-library.inodepackagejson.typesversions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, Record&lt;string, \[string, ...string\[\]\]&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ A table of TypeScript \*.d.ts file paths that are compatible with specific TypeScript version selectors. This data take a form similar to that of the [INodePackageJson.exports](./node-core-library.inodepackagejson.exports.md) field, with fallbacks listed in order in the value array for example:
+
+```JSON
+"typesVersions": {
+  ">=3.1": {
+    "*": ["./types-3.1/*", "./types-3.1-fallback/*"]
+  },
+  ">=3.0": {
+    "*": ["./types-legacy/*"]
+  }
+}
+```
+or
+
+```JSON
+"typesVersions": {
+  ">=3.1": {
+    "app/*": ["./app/types-3.1/*"],
+    "lib/*": ["./lib/types-3.1/*"]
+  },
+  ">=3.0": {
+    "app/*": ["./app/types-legacy/*"],
+    "lib/*": ["./lib/types-legacy/*"]
+  }
+}
+```
+See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html#version-selection-with-typesversions) for details.
+
+
+</td></tr>
+<tr><td>
+
+[typings?](./node-core-library.inodepackagejson.typings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Alias for `types`
+
+
+</td></tr>
+<tr><td>
+
+[version?](./node-core-library.inodepackagejson.version.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ A version number conforming to the Semantic Versioning (SemVer) standard.
+
+
+</td></tr>
+</tbody></table>
 

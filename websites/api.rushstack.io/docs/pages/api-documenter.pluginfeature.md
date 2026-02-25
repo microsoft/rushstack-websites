@@ -24,14 +24,93 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./api-documenter.pluginfeature.context.md) |  | [PluginFeatureContext](./api-documenter.pluginfeaturecontext.md) | Exposes various services that can be used by a plugin. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./api-documenter.pluginfeature.context.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[PluginFeatureContext](./api-documenter.pluginfeaturecontext.md)
+
+
+</td><td>
+
+Exposes various services that can be used by a plugin.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\[Symbol.hasInstance\](instance)](./api-documenter.pluginfeature._symbol.hasinstance_.md) | <code>static</code> |  |
-|  [onInitialized()](./api-documenter.pluginfeature.oninitialized.md) |  | This event function is called after the feature is initialized, but before any processing occurs. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[Symbol.hasInstance\](instance)](./api-documenter.pluginfeature._symbol.hasinstance_.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onInitialized()](./api-documenter.pluginfeature.oninitialized.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This event function is called after the feature is initialized, but before any processing occurs.
+
+
+</td></tr>
+</tbody></table>
 

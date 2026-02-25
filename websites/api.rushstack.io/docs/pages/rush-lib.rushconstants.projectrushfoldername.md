@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.projectRushFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the per-project folder where project-specific Rush files are stored. For example, the package-deps files, which are used by commands to determine if a particular project needs to be rebuilt.
@@ -18,5 +18,5 @@ The name of the per-project folder where project-specific Rush files are stored.
 **Signature:**
 
 ```typescript
-static readonly projectRushFolderName: string;
+static readonly projectRushFolderName: '.rush';
 ```

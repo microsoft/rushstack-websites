@@ -21,15 +21,107 @@ export declare class MarkdownDocumenterFeature extends PluginFeature
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./api-documenter.markdowndocumenterfeature.context.md) |  | [MarkdownDocumenterFeatureContext](./api-documenter.markdowndocumenterfeaturecontext.md) | Exposes various services that can be used by a plugin. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./api-documenter.markdowndocumenterfeature.context.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[MarkdownDocumenterFeatureContext](./api-documenter.markdowndocumenterfeaturecontext.md)
+
+
+</td><td>
+
+Exposes various services that can be used by a plugin.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\[Symbol.hasInstance\](instance)](./api-documenter.markdowndocumenterfeature._symbol.hasinstance_.md) | <code>static</code> |  |
-|  [onBeforeWritePage(eventArgs)](./api-documenter.markdowndocumenterfeature.onbeforewritepage.md) |  | This event occurs before each markdown file is written. It provides an opportunity to customize the content of the file. |
-|  [onFinished(eventArgs)](./api-documenter.markdowndocumenterfeature.onfinished.md) |  | This event occurs after all output files have been written. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[Symbol.hasInstance\](instance)](./api-documenter.markdowndocumenterfeature._symbol.hasinstance_.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onBeforeWritePage(eventArgs)](./api-documenter.markdowndocumenterfeature.onbeforewritepage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This event occurs before each markdown file is written. It provides an opportunity to customize the content of the file.
+
+
+</td></tr>
+<tr><td>
+
+[onFinished(eventArgs)](./api-documenter.markdowndocumenterfeature.onfinished.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This event occurs after all output files have been written.
+
+
+</td></tr>
+</tbody></table>
 

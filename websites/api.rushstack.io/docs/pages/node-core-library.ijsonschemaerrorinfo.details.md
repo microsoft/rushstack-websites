@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IJsonSchemaErrorInfo.details property
 
-The z-schema error tree, formatted as an indented text string.
+The ajv error list, formatted as an indented text string.
 
 **Signature:**
 

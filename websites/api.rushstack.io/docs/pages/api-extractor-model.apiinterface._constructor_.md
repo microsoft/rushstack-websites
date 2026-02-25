@@ -20,7 +20,35 @@ constructor(options: IApiInterfaceOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiInterfaceOptions](./api-extractor-model.iapiinterfaceoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiInterfaceOptions](./api-extractor-model.iapiinterfaceoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

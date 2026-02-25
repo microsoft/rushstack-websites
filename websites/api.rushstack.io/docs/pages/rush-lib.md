@@ -14,99 +14,1288 @@ A library for writing scripts that interact with the [Rush](https://rushjs.io/) 
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ApprovedPackagesConfiguration](./rush-lib.approvedpackagesconfiguration.md) | This represents the JSON file specified via the "approvedPackagesFile" option in rush.json. |
-|  [ApprovedPackagesItem](./rush-lib.approvedpackagesitem.md) | An item returned by ApprovedPackagesConfiguration |
-|  [ApprovedPackagesPolicy](./rush-lib.approvedpackagespolicy.md) | This is a helper object for RushConfiguration. It exposes the "approvedPackagesPolicy" feature from rush.json. |
-|  [BuildCacheConfiguration](./rush-lib.buildcacheconfiguration.md) | **_(BETA)_** Use this class to load and save the "common/config/rush/build-cache.json" config file. This file provides configuration options for cached project build output. |
-|  [ChangeManager](./rush-lib.changemanager.md) | A class that helps with programmatically interacting with Rush's change files. |
-|  [CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md) | Use this class to load and save the "common/config/rush/common-versions.json" config file. This config file stores dependency version information that affects all projects in the repo. |
-|  [CredentialCache](./rush-lib.credentialcache.md) | **_(BETA)_** |
-|  [EnvironmentConfiguration](./rush-lib.environmentconfiguration.md) | **_(BETA)_** Provides Rush-specific environment variable data. All Rush environment variables must start with "RUSH\_". This class is designed to be used by RushConfiguration. |
-|  [EventHooks](./rush-lib.eventhooks.md) | **_(BETA)_** This class represents Rush event hooks configured for this repo. Hooks are customized script actions that Rush executes when specific events occur. The actions are expressed as a command-line that is executed using the operating system shell. |
-|  [ExperimentsConfiguration](./rush-lib.experimentsconfiguration.md) | Use this class to load the "common/config/rush/experiments.json" config file. This file allows repo maintainers to enable and disable experimental Rush features. |
-|  [FileSystemBuildCacheProvider](./rush-lib.filesystembuildcacheprovider.md) | **_(BETA)_** A build cache provider using the local file system. Required by all cloud cache providers. |
-|  [IndividualVersionPolicy](./rush-lib.individualversionpolicy.md) | This policy indicates all related projects get version bump driven by their own changes. |
-|  [LockStepVersionPolicy](./rush-lib.lockstepversionpolicy.md) | This policy indicates all related projects should use the same version. |
-|  [LookupByPath](./rush-lib.lookupbypath.md) | <p>**_(BETA)_** This class is used to associate POSIX relative paths, such as those returned by <code>git</code> commands, with entities that correspond with ancestor folders, such as Rush Projects.</p><p>It is optimized for efficiently locating the nearest ancestor path with an associated value.</p> |
-|  [NpmOptionsConfiguration](./rush-lib.npmoptionsconfiguration.md) | Options that are only used when the NPM package manager is selected. |
-|  [PackageJsonDependency](./rush-lib.packagejsondependency.md) |  |
-|  [PackageJsonEditor](./rush-lib.packagejsoneditor.md) |  |
-|  [PnpmOptionsConfiguration](./rush-lib.pnpmoptionsconfiguration.md) | Options that are only used when the PNPM package manager is selected. Use this class to load "common/config/rush/pnpm-config.json" file, or, load json from "pnpmOptions" field in "rush.json" for legacy support. |
-|  [ProjectChangeAnalyzer](./rush-lib.projectchangeanalyzer.md) | **_(BETA)_** |
-|  [RepoStateFile](./rush-lib.repostatefile.md) | This file is used to track the state of various Rush-related features. It is generated and updated by Rush. |
-|  [Rush](./rush-lib.rush.md) | General operations for the Rush engine. |
-|  [RushConfiguration](./rush-lib.rushconfiguration.md) | This represents the Rush configuration for a repository, based on the "rush.json" configuration file. |
-|  [RushConfigurationProject](./rush-lib.rushconfigurationproject.md) | This represents the configuration of a project that is built by Rush, based on the Rush.json configuration file. |
-|  [RushConstants](./rush-lib.rushconstants.md) | **_(BETA)_** Constants used by the Rush tool. |
-|  [RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md) | **_(BETA)_** Hooks into the lifecycle of the Rush process invocation that plugins may tap into. |
-|  [RushSession](./rush-lib.rushsession.md) | **_(BETA)_** |
-|  [RushUserConfiguration](./rush-lib.rushuserconfiguration.md) | **_(BETA)_** Rush per-user configuration data. |
-|  [VersionPolicyConfiguration](./rush-lib.versionpolicyconfiguration.md) | Use this class to load and save the "common/config/rush/version-policies.json" config file. This config file configures how different groups of projects will be published by Rush, and how their version numbers will be determined. |
-|  [YarnOptionsConfiguration](./rush-lib.yarnoptionsconfiguration.md) | Options that are only used when the yarn package manager is selected. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApprovedPackagesConfiguration](./rush-lib.approvedpackagesconfiguration.md)
+
+
+</td><td>
+
+This represents the JSON file specified via the "approvedPackagesFile" option in rush.json.
+
+
+</td></tr>
+<tr><td>
+
+[ApprovedPackagesItem](./rush-lib.approvedpackagesitem.md)
+
+
+</td><td>
+
+An item returned by ApprovedPackagesConfiguration
+
+
+</td></tr>
+<tr><td>
+
+[ApprovedPackagesPolicy](./rush-lib.approvedpackagespolicy.md)
+
+
+</td><td>
+
+This is a helper object for RushConfiguration. It exposes the "approvedPackagesPolicy" feature from rush.json.
+
+
+</td></tr>
+<tr><td>
+
+[BuildCacheConfiguration](./rush-lib.buildcacheconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Use this class to load and save the "common/config/rush/build-cache.json" config file. This file provides configuration options for cached project build output.
+
+
+</td></tr>
+<tr><td>
+
+[ChangeManager](./rush-lib.changemanager.md)
+
+
+</td><td>
+
+A class that helps with programmatically interacting with Rush's change files.
+
+
+</td></tr>
+<tr><td>
+
+[CobuildConfiguration](./rush-lib.cobuildconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Use this class to load and save the "common/config/rush/cobuild.json" config file. This file provides configuration options for the Rush Cobuild feature.
+
+
+</td></tr>
+<tr><td>
+
+[CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md)
+
+
+</td><td>
+
+Use this class to load and save the "common/config/rush/common-versions.json" config file. This config file stores dependency version information that affects all projects in the repo.
+
+
+</td></tr>
+<tr><td>
+
+[CustomTipsConfiguration](./rush-lib.customtipsconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Used to access the `common/config/rush/custom-tips.json` config file, which allows repo maintainers to configure extra details to be printed alongside certain Rush messages.
+
+
+</td></tr>
+<tr><td>
+
+[EnvironmentConfiguration](./rush-lib.environmentconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Provides Rush-specific environment variable data. All Rush environment variables must start with "RUSH\_". This class is designed to be used by RushConfiguration.
+
+
+</td></tr>
+<tr><td>
+
+[EventHooks](./rush-lib.eventhooks.md)
+
+
+</td><td>
+
+**_(BETA)_** This class represents Rush event hooks configured for this repo. Hooks are customized script actions that Rush executes when specific events occur. The actions are expressed as a command-line that is executed using the operating system shell.
+
+
+</td></tr>
+<tr><td>
+
+[ExperimentsConfiguration](./rush-lib.experimentsconfiguration.md)
+
+
+</td><td>
+
+Use this class to load the "common/config/rush/experiments.json" config file. This file allows repo maintainers to enable and disable experimental Rush features.
+
+
+</td></tr>
+<tr><td>
+
+[FileSystemBuildCacheProvider](./rush-lib.filesystembuildcacheprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** A build cache provider using the local file system. Required by all cloud cache providers.
+
+
+</td></tr>
+<tr><td>
+
+[IndividualVersionPolicy](./rush-lib.individualversionpolicy.md)
+
+
+</td><td>
+
+This policy indicates all related projects get version bump driven by their own changes.
+
+
+</td></tr>
+<tr><td>
+
+[LockStepVersionPolicy](./rush-lib.lockstepversionpolicy.md)
+
+
+</td><td>
+
+This policy indicates all related projects should use the same version.
+
+
+</td></tr>
+<tr><td>
+
+[NpmOptionsConfiguration](./rush-lib.npmoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the NPM package manager is selected.
+
+
+</td></tr>
+<tr><td>
+
+[Operation](./rush-lib.operation.md)
+
+
+</td><td>
+
+**_(ALPHA)_** The `Operation` class is a node in the dependency graph of work that needs to be scheduled by the `OperationExecutionManager`<></>. Each `Operation` has a `runner` member of type `IOperationRunner`<></>, whose implementation manages the actual process of running a single operation.
+
+The graph of `Operation` instances will be cloned into a separate execution graph after processing.
+
+
+</td></tr>
+<tr><td>
+
+[PackageJsonDependency](./rush-lib.packagejsondependency.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[PackageJsonDependencyMeta](./rush-lib.packagejsondependencymeta.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[PackageJsonEditor](./rush-lib.packagejsoneditor.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[PhasedCommandHooks](./rush-lib.phasedcommandhooks.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Hooks into the execution process for phased commands
+
+
+</td></tr>
+<tr><td>
+
+[PnpmOptionsConfiguration](./rush-lib.pnpmoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the PNPM package manager is selected. Use this class to load "common/config/rush/pnpm-config.json" file, or, load json from "pnpmOptions" field in "rush.json" for legacy support.
+
+
+</td></tr>
+<tr><td>
+
+[ProjectChangeAnalyzer](./rush-lib.projectchangeanalyzer.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[RepoStateFile](./rush-lib.repostatefile.md)
+
+
+</td><td>
+
+This file is used to track the state of various Rush-related features. It is generated and updated by Rush.
+
+
+</td></tr>
+<tr><td>
+
+[Rush](./rush-lib.rush.md)
+
+
+</td><td>
+
+General operations for the Rush engine.
+
+
+</td></tr>
+<tr><td>
+
+[RushCommandLine](./rush-lib.rushcommandline.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the available CLI commands
+
+
+</td></tr>
+<tr><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+This represents the Rush configuration for a repository, based on the "rush.json" configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)
+
+
+</td><td>
+
+This represents the configuration of a project that is built by Rush, based on the Rush.json configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[RushConstants](./rush-lib.rushconstants.md)
+
+
+</td><td>
+
+**_(BETA)_** Constants used by the Rush tool.
+
+
+</td></tr>
+<tr><td>
+
+[RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md)
+
+
+</td><td>
+
+**_(BETA)_** Hooks into the lifecycle of the Rush process invocation that plugins may tap into.
+
+
+</td></tr>
+<tr><td>
+
+[RushProjectConfiguration](./rush-lib.rushprojectconfiguration.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Use this class to load the "config/rush-project.json" config file.
+
+This file provides project-specific configuration options.
+
+
+</td></tr>
+<tr><td>
+
+[RushSession](./rush-lib.rushsession.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[RushUserConfiguration](./rush-lib.rushuserconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Rush per-user configuration data.
+
+
+</td></tr>
+<tr><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+This represents the subspace configurations for a repository, based on the "subspaces.json" configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[SubspacesConfiguration](./rush-lib.subspacesconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** This represents the subspace configurations for a repository, based on the "subspaces.json" configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[VersionPolicyConfiguration](./rush-lib.versionpolicyconfiguration.md)
+
+
+</td><td>
+
+Use this class to load and save the "common/config/rush/version-policies.json" config file. This config file configures how different groups of projects will be published by Rush, and how their version numbers will be determined.
+
+
+</td></tr>
+<tr><td>
+
+[YarnOptionsConfiguration](./rush-lib.yarnoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the yarn package manager is selected.
+
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-|  Abstract Class | Description |
-|  --- | --- |
-|  [PackageManager](./rush-lib.packagemanager.md) | An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn. |
-|  [PackageManagerOptionsConfigurationBase](./rush-lib.packagemanageroptionsconfigurationbase.md) | Options that all package managers share. |
-|  [VersionPolicy](./rush-lib.versionpolicy.md) | This is the base class for version policy which controls how versions get bumped. |
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PackageManager](./rush-lib.packagemanager.md)
+
+
+</td><td>
+
+An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn.
+
+
+</td></tr>
+<tr><td>
+
+[PackageManagerOptionsConfigurationBase](./rush-lib.packagemanageroptionsconfigurationbase.md)
+
+
+</td><td>
+
+Options that all package managers share.
+
+
+</td></tr>
+<tr><td>
+
+[VersionPolicy](./rush-lib.versionpolicy.md)
+
+
+</td><td>
+
+This is the base class for version policy which controls how versions get bumped.
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [BumpType](./rush-lib.bumptype.md) | Type of version bumps |
-|  [DependencyType](./rush-lib.dependencytype.md) |  |
-|  [Event](./rush-lib.event.md) | **_(BETA)_** Events happen during Rush runs. |
-|  [OperationStatus](./rush-lib.operationstatus.md) | **_(BETA)_** Enumeration defining potential states of an operation |
-|  [VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md) | Version policy base type names |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BumpType](./rush-lib.bumptype.md)
+
+
+</td><td>
+
+Type of version bumps
+
+
+</td></tr>
+<tr><td>
+
+[CustomTipId](./rush-lib.customtipid.md)
+
+
+</td><td>
+
+**_(BETA)_** An identifier representing a Rush message that can be customized by defining a custom tip in `common/config/rush/custom-tips.json`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CustomTipSeverity](./rush-lib.customtipseverity.md)
+
+
+</td><td>
+
+**_(BETA)_** The severity of a custom tip. It determines the printing severity ("Error" = red, "Warning" = yellow, "Info" = normal).
+
+
+</td></tr>
+<tr><td>
+
+[CustomTipType](./rush-lib.customtiptype.md)
+
+
+</td><td>
+
+**_(BETA)_** The type of the custom tip.
+
+
+</td></tr>
+<tr><td>
+
+[DependencyType](./rush-lib.dependencytype.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[Event\_2](./rush-lib.event_2.md)
+
+
+</td><td>
+
+**_(BETA)_** Events happen during Rush runs.
+
+
+</td></tr>
+<tr><td>
+
+[OperationStatus](./rush-lib.operationstatus.md)
+
+
+</td><td>
+
+**_(BETA)_** Enumeration defining potential states of an operation
+
+
+</td></tr>
+<tr><td>
+
+[VersionPolicyDefinitionName](./rush-lib.versionpolicydefinitionname.md)
+
+
+</td><td>
+
+Version policy base type names
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md) | **_(BETA)_** |
-|  [IConfigurationEnvironment](./rush-lib.iconfigurationenvironment.md) | A collection of environment variables |
-|  [IConfigurationEnvironmentVariable](./rush-lib.iconfigurationenvironmentvariable.md) | Represents the value of an environment variable, and if the value should be overridden if the variable is set in the parent environment. |
-|  [ICredentialCacheEntry](./rush-lib.icredentialcacheentry.md) | **_(BETA)_** |
-|  [ICredentialCacheOptions](./rush-lib.icredentialcacheoptions.md) | **_(BETA)_** |
-|  [IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md) | **_(BETA)_** |
-|  [IExperimentsJson](./rush-lib.iexperimentsjson.md) | **_(BETA)_** This interface represents the raw experiments.json file which allows repo maintainers to enable and disable experimental Rush features. |
-|  [IFileSystemBuildCacheProviderOptions](./rush-lib.ifilesystembuildcacheprovideroptions.md) | **_(BETA)_** Options for creating a file system build cache provider. |
-|  [IGenerateCacheEntryIdOptions](./rush-lib.igeneratecacheentryidoptions.md) | **_(BETA)_** Options for generating the cache id for an operation. |
-|  [IGetChangedProjectsOptions](./rush-lib.igetchangedprojectsoptions.md) | **_(BETA)_** |
-|  [IGlobalCommand](./rush-lib.iglobalcommand.md) | **_(BETA)_** Information about the currently executing global script command (as defined in command-line.json) provided to plugins. |
-|  [ILaunchOptions](./rush-lib.ilaunchoptions.md) | Options to pass to the rush "launch" functions. |
-|  [ILogger](./rush-lib.ilogger.md) | **_(BETA)_** |
-|  [IOperationRunner](./rush-lib.ioperationrunner.md) | **_(BETA)_** The <code>Operation</code> class is a node in the dependency graph of work that needs to be scheduled by the <code>OperationExecutionManager</code>. Each <code>Operation</code> has a <code>runner</code> member of type <code>IOperationRunner</code>, whose implementation manages the actual process for running a single operation. |
-|  [IOperationRunnerContext](./rush-lib.ioperationrunnercontext.md) | **_(BETA)_** Information passed to the executing <code>IOperationRunner</code> |
-|  [IPackageManagerOptionsJsonBase](./rush-lib.ipackagemanageroptionsjsonbase.md) | Options for the package manager. |
-|  [IPhasedCommand](./rush-lib.iphasedcommand.md) | **_(BETA)_** Information about the currently executing phased script command (as defined in command-line.json, or default "build" or "rebuild") provided to plugins. |
-|  [IPrefixMatch](./rush-lib.iprefixmatch.md) | **_(BETA)_** Object containing both the matched item and the start index of the remainder of the query. |
-|  [IRushCommand](./rush-lib.irushcommand.md) | **_(BETA)_** Information about the currently executing command provided to plugins. |
-|  [IRushPlugin](./rush-lib.irushplugin.md) | **_(BETA)_** |
-|  [IRushSessionOptions](./rush-lib.irushsessionoptions.md) | **_(BETA)_** |
-|  [IStopwatchResult](./rush-lib.istopwatchresult.md) | **_(BETA)_** Represents a readonly view of a <code>Stopwatch</code>. |
-|  [ITelemetryData](./rush-lib.itelemetrydata.md) | **_(BETA)_** |
-|  [ITelemetryMachineInfo](./rush-lib.itelemetrymachineinfo.md) | **_(BETA)_** |
-|  [ITelemetryOperationResult](./rush-lib.itelemetryoperationresult.md) | **_(BETA)_** |
-|  [ITryFindRushJsonLocationOptions](./rush-lib.itryfindrushjsonlocationoptions.md) | Options for <code>RushConfiguration.tryFindRushJsonLocation</code>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICobuildCompletedState](./rush-lib.icobuildcompletedstate.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICobuildContext](./rush-lib.icobuildcontext.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICobuildJson](./rush-lib.icobuildjson.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICobuildLockProvider](./rush-lib.icobuildlockprovider.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IConfigurationEnvironment](./rush-lib.iconfigurationenvironment.md)
+
+
+</td><td>
+
+A collection of environment variables
+
+
+</td></tr>
+<tr><td>
+
+[IConfigurationEnvironmentVariable](./rush-lib.iconfigurationenvironmentvariable.md)
+
+
+</td><td>
+
+Represents the value of an environment variable, and if the value should be overridden if the variable is set in the parent environment.
+
+
+</td></tr>
+<tr><td>
+
+[ICreateOperationsContext](./rush-lib.icreateoperationscontext.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Context used for creating operations to be executed.
+
+
+</td></tr>
+<tr><td>
+
+[ICustomTipInfo](./rush-lib.icustomtipinfo.md)
+
+
+</td><td>
+
+**_(BETA)_** Metadata for a custom tip.
+
+
+</td></tr>
+<tr><td>
+
+[ICustomTipItemJson](./rush-lib.icustomtipitemjson.md)
+
+
+</td><td>
+
+**_(BETA)_** An item from the [ICustomTipsJson.customTips](./rush-lib.icustomtipsjson.customtips.md) list.
+
+
+</td></tr>
+<tr><td>
+
+[ICustomTipsJson](./rush-lib.icustomtipsjson.md)
+
+
+</td><td>
+
+**_(BETA)_** This interface represents the raw custom-tips.json file which allows repo maintainers to configure extra details to be printed alongside certain Rush messages.
+
+
+</td></tr>
+<tr><td>
+
+[IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IExecuteOperationsContext](./rush-lib.iexecuteoperationscontext.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Context used for executing operations.
+
+
+</td></tr>
+<tr><td>
+
+[IExecutionResult](./rush-lib.iexecutionresult.md)
+
+
+</td><td>
+
+**_(ALPHA)_** The `IExecutionResult` interface represents the results of executing a set of [Operation](./rush-lib.operation.md)<></>s.
+
+
+</td></tr>
+<tr><td>
+
+[IExperimentsJson](./rush-lib.iexperimentsjson.md)
+
+
+</td><td>
+
+**_(BETA)_** This interface represents the raw experiments.json file which allows repo maintainers to enable and disable experimental Rush features.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemBuildCacheProviderOptions](./rush-lib.ifilesystembuildcacheprovideroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options for creating a file system build cache provider.
+
+
+</td></tr>
+<tr><td>
+
+[IGenerateCacheEntryIdOptions](./rush-lib.igeneratecacheentryidoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options for generating the cache id for an operation.
+
+
+</td></tr>
+<tr><td>
+
+[IGetChangedProjectsOptions](./rush-lib.igetchangedprojectsoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IGlobalCommand](./rush-lib.iglobalcommand.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the currently executing global script command (as defined in command-line.json) provided to plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IIndividualVersionJson](./rush-lib.iindividualversionjson.md)
+
+
+</td><td>
+
+This interface represents the raw individual version policy JSON object which extends the base version policy with additional fields specific to individual versioning.
+
+
+</td></tr>
+<tr><td>
+
+[IInputsSnapshot](./rush-lib.iinputssnapshot.md)
+
+
+</td><td>
+
+**_(BETA)_** Represents a synchronously-queryable in-memory snapshot of the state of the inputs to a Rush repository.
+
+The methods on this interface are idempotent and will return the same result regardless of when they are executed.
+
+
+</td></tr>
+<tr><td>
+
+[ILaunchOptions](./rush-lib.ilaunchoptions.md)
+
+
+</td><td>
+
+Options to pass to the rush "launch" functions.
+
+
+</td></tr>
+<tr><td>
+
+[ILockStepVersionJson](./rush-lib.ilockstepversionjson.md)
+
+
+</td><td>
+
+This interface represents the raw lock-step version policy JSON object which extends the base version policy with additional fields specific to lock-step versioning.
+
+
+</td></tr>
+<tr><td>
+
+[ILogFilePaths](./rush-lib.ilogfilepaths.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Information about the log files for an operation.
+
+
+</td></tr>
+<tr><td>
+
+[ILogger](./rush-lib.ilogger.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IOperationExecutionResult](./rush-lib.ioperationexecutionresult.md)
+
+
+</td><td>
+
+**_(ALPHA)_** The `IOperationExecutionResult` interface represents the results of executing an [Operation](./rush-lib.operation.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IOperationOptions](./rush-lib.ioperationoptions.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Options for constructing a new Operation.
+
+
+</td></tr>
+<tr><td>
+
+[IOperationRunner](./rush-lib.ioperationrunner.md)
+
+
+</td><td>
+
+**_(BETA)_** The `Operation` class is a node in the dependency graph of work that needs to be scheduled by the `OperationExecutionManager`<></>. Each `Operation` has a `runner` member of type `IOperationRunner`<></>, whose implementation manages the actual process for running a single operation.
+
+
+</td></tr>
+<tr><td>
+
+[IOperationRunnerContext](./rush-lib.ioperationrunnercontext.md)
+
+
+</td><td>
+
+**_(BETA)_** Information passed to the executing `IOperationRunner`
+
+
+</td></tr>
+<tr><td>
+
+[IOperationSettings](./rush-lib.ioperationsettings.md)
+
+
+</td><td>
+
+**_(ALPHA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IPackageManagerOptionsJsonBase](./rush-lib.ipackagemanageroptionsjsonbase.md)
+
+
+</td><td>
+
+Options for the package manager.
+
+
+</td></tr>
+<tr><td>
+
+[IPhase](./rush-lib.iphase.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Metadata about a phase.
+
+
+</td></tr>
+<tr><td>
+
+[IPhasedCommand](./rush-lib.iphasedcommand.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the currently executing phased script command (as defined in command-line.json, or default "build" or "rebuild") provided to plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IPnpmLockfilePolicies](./rush-lib.ipnpmlockfilepolicies.md)
+
+
+</td><td>
+
+Possible values for the `pnpmLockfilePolicies` setting in Rush's pnpm-config.json file.
+
+
+</td></tr>
+<tr><td>
+
+[IPnpmPackageExtension](./rush-lib.ipnpmpackageextension.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IPnpmPeerDependenciesMeta](./rush-lib.ipnpmpeerdependenciesmeta.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IPnpmPeerDependencyRules](./rush-lib.ipnpmpeerdependencyrules.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IRushCommand](./rush-lib.irushcommand.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the currently executing command provided to plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IRushCommandLineAction](./rush-lib.irushcommandlineaction.md)
+
+
+</td><td>
+
+**_(BETA)_** The full spec of an available Rush command line action
+
+
+</td></tr>
+<tr><td>
+
+[IRushCommandLineParameter](./rush-lib.irushcommandlineparameter.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the available parameters associated with a Rush action
+
+
+</td></tr>
+<tr><td>
+
+[IRushCommandLineSpec](./rush-lib.irushcommandlinespec.md)
+
+
+</td><td>
+
+**_(BETA)_** The full spec of a Rush CLI
+
+
+</td></tr>
+<tr><td>
+
+[IRushPhaseSharding](./rush-lib.irushphasesharding.md)
+
+
+</td><td>
+
+**_(ALPHA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IRushPlugin](./rush-lib.irushplugin.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IRushSessionOptions](./rush-lib.irushsessionoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IStopwatchResult](./rush-lib.istopwatchresult.md)
+
+
+</td><td>
+
+**_(BETA)_** Represents a readonly view of a `Stopwatch`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ITelemetryData](./rush-lib.itelemetrydata.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITelemetryMachineInfo](./rush-lib.itelemetrymachineinfo.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITelemetryOperationResult](./rush-lib.itelemetryoperationresult.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ITryFindRushJsonLocationOptions](./rush-lib.itryfindrushjsonlocationoptions.md)
+
+
+</td><td>
+
+Options for `RushConfiguration.tryFindRushJsonLocation`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IVersionPolicyJson](./rush-lib.iversionpolicyjson.md)
+
+
+</td><td>
+
+This interface represents the raw version policy JSON object which allows repo maintainers to define how different groups of projects will be published by Rush, and how their version numbers will be determined.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [EnvironmentVariableNames](./rush-lib.environmentvariablenames.md) | **_(BETA)_** Names of environment variables used by Rush. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[EnvironmentVariableNames](./rush-lib.environmentvariablenames.md)
+
+
+</td><td>
+
+**_(BETA)_** Names of environment variables used by Rush.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [CloudBuildCacheProviderFactory](./rush-lib.cloudbuildcacheproviderfactory.md) | **_(BETA)_** |
-|  [GetCacheEntryIdFunction](./rush-lib.getcacheentryidfunction.md) | **_(BETA)_** Calculates the cache entry id string for an operation. |
-|  [PackageManagerName](./rush-lib.packagemanagername.md) | This represents the available Package Manager tools as a string |
-|  [PnpmStoreOptions](./rush-lib.pnpmstoreoptions.md) | This represents the available PNPM store options |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CloudBuildCacheProviderFactory](./rush-lib.cloudbuildcacheproviderfactory.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[CobuildLockProviderFactory](./rush-lib.cobuildlockproviderfactory.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[GetCacheEntryIdFunction](./rush-lib.getcacheentryidfunction.md)
+
+
+</td><td>
+
+**_(BETA)_** Calculates the cache entry id string for an operation.
+
+
+</td></tr>
+<tr><td>
+
+[GetInputsSnapshotAsyncFn](./rush-lib.getinputssnapshotasyncfn.md)
+
+
+</td><td>
+
+**_(BETA)_** Function that computes a new snapshot of the current state of the repository as of the current moment. Rush-level configuration state will have been bound during creation of the function. Captures the state of the environment, tracked files, and additional files.
+
+
+</td></tr>
+<tr><td>
+
+[IPhaseBehaviorForMissingScript](./rush-lib.iphasebehaviorformissingscript.md)
+
+
+</td><td>
+
+**_(ALPHA)_** The set of valid behaviors for a missing script in a project's package.json scripts for a given phase.
+
+
+</td></tr>
+<tr><td>
+
+[IRushConfigurationProjectForSnapshot](./rush-lib.irushconfigurationprojectforsnapshot.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[NodeVersionGranularity](./rush-lib.nodeversiongranularity.md)
+
+
+</td><td>
+
+**_(ALPHA)_** The granularity at which the Node.js version is included in the build cache hash.
+
+- `"major"` — includes only the major version (e.g. `18`<></>) - `"minor"` — includes the major and minor version (e.g. `18.17`<></>) - `"patch"` — includes the full version (e.g. `18.17.1`<></>)
+
+
+</td></tr>
+<tr><td>
+
+[PackageManagerName](./rush-lib.packagemanagername.md)
+
+
+</td><td>
+
+This represents the available Package Manager tools as a string
+
+
+</td></tr>
+<tr><td>
+
+[PnpmResolutionMode](./rush-lib.pnpmresolutionmode.md)
+
+
+</td><td>
+
+Possible values for the `resolutionMode` setting in Rush's pnpm-config.json file.
+
+
+</td></tr>
+<tr><td>
+
+[PnpmStoreLocation](./rush-lib.pnpmstorelocation.md)
+
+
+</td><td>
+
+This represents the available PNPM store options
+
+
+</td></tr>
+<tr><td>
+
+[PnpmStoreOptions](./rush-lib.pnpmstoreoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

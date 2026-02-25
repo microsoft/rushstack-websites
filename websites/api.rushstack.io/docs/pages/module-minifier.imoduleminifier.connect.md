@@ -10,7 +10,10 @@ pagination_next: null
 
 ## IModuleMinifier.connect() method
 
-Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+> Warning: This API is now obsolete.
+> 
+> Use [IModuleMinifier.connectAsync()](./module-minifier.imoduleminifier.connectasync.md) instead.
+> 
 
 **Signature:**
 

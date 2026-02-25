@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICloudBuildCacheProvider.updateCachedCredentialAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 **Signature:**
@@ -21,10 +21,51 @@ updateCachedCredentialAsync(terminal: ITerminal, credential: string): Promise<vo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
-|  credential | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+terminal
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+credential
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentVariableNames variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Names of environment variables used by Rush.
@@ -33,9 +33,16 @@ EnvironmentVariableNames: {
     readonly RUSH_BUILD_CACHE_CREDENTIAL: "RUSH_BUILD_CACHE_CREDENTIAL";
     readonly RUSH_BUILD_CACHE_ENABLED: "RUSH_BUILD_CACHE_ENABLED";
     readonly RUSH_BUILD_CACHE_WRITE_ALLOWED: "RUSH_BUILD_CACHE_WRITE_ALLOWED";
+    readonly RUSH_BUILD_CACHE_OVERRIDE_JSON: "RUSH_BUILD_CACHE_OVERRIDE_JSON";
+    readonly RUSH_BUILD_CACHE_OVERRIDE_JSON_FILE_PATH: "RUSH_BUILD_CACHE_OVERRIDE_JSON_FILE_PATH";
+    readonly RUSH_COBUILD_CONTEXT_ID: "RUSH_COBUILD_CONTEXT_ID";
+    readonly RUSH_COBUILD_RUNNER_ID: "RUSH_COBUILD_RUNNER_ID";
+    readonly RUSH_COBUILD_LEAF_PROJECT_LOG_ONLY_ALLOWED: "RUSH_COBUILD_LEAF_PROJECT_LOG_ONLY_ALLOWED";
     readonly RUSH_GIT_BINARY_PATH: "RUSH_GIT_BINARY_PATH";
     readonly RUSH_TAR_BINARY_PATH: "RUSH_TAR_BINARY_PATH";
-    readonly RUSH_LIB_PATH: "_RUSH_LIB_PATH";
+    readonly _RUSH_RECURSIVE_RUSHX_CALL: "_RUSH_RECURSIVE_RUSHX_CALL";
+    readonly _RUSH_LIB_PATH: "_RUSH_LIB_PATH";
     readonly RUSH_INVOKED_FOLDER: "RUSH_INVOKED_FOLDER";
+    readonly RUSH_INVOKED_ARGS: "RUSH_INVOKED_ARGS";
 }
 ```

@@ -20,8 +20,68 @@ export interface IHeftParsedCommandLine
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [commandName](./heft.iheftparsedcommandline.commandname.md) | <code>readonly</code> | string | Returns the subcommand passed on the Heft command line, before any aliases have been expanded. This can be useful when printing error messages that need to refer to the invoked command line. |
-|  [unaliasedCommandName](./heft.iheftparsedcommandline.unaliasedcommandname.md) | <code>readonly</code> | string | Returns the subcommand passed on the Heft command line, after any aliases have been expanded. This can be useful when printing error messages that need to refer to the invoked command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[commandName](./heft.iheftparsedcommandline.commandname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns the subcommand passed on the Heft command line, before any aliases have been expanded. This can be useful when printing error messages that need to refer to the invoked command line.
+
+
+</td></tr>
+<tr><td>
+
+[unaliasedCommandName](./heft.iheftparsedcommandline.unaliasedcommandname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns the subcommand passed on the Heft command line, after any aliases have been expanded. This can be useful when printing error messages that need to refer to the invoked command line.
+
+
+</td></tr>
+</tbody></table>
 

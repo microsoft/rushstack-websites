@@ -13,5 +13,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-readonly destinations: ReadonlyArray<TerminalWritable>;
+get destinations(): ReadonlySet<TerminalWritable>;
 ```

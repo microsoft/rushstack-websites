@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.nonbrowserApprovedPackagesFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The filename ("nonbrowser-approved-packages.json") for an optional policy configuration file that stores a list of NPM packages that have been approved for usage by Rush projects. This is part of a pair of config files, one for projects that run in a web browser (e.g. whose approval criteria mostly focuses on licensing and code size), and one for everywhere else (e.g. tooling projects whose approval criteria mostly focuses on avoiding node\_modules sprawl).
@@ -18,5 +18,5 @@ The filename ("nonbrowser-approved-packages.json") for an optional policy config
 **Signature:**
 
 ```typescript
-static readonly nonbrowserApprovedPackagesFilename: string;
+static readonly nonbrowserApprovedPackagesFilename: 'nonbrowser-approved-packages.json';
 ```

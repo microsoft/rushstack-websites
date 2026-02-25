@@ -20,9 +20,83 @@ export interface ILinkInfo
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kind](./package-extractor.ilinkinfo.kind.md) |  | 'fileLink' \| 'folderLink' | The type of link that was encountered. |
-|  [linkPath](./package-extractor.ilinkinfo.linkpath.md) |  | string | The path to the link, relative to the root of the extractor output folder. |
-|  [targetPath](./package-extractor.ilinkinfo.targetpath.md) |  | string | The target that the link points to. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kind](./package-extractor.ilinkinfo.kind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'fileLink' \| 'folderLink'
+
+
+</td><td>
+
+The type of link that was encountered.
+
+
+</td></tr>
+<tr><td>
+
+[linkPath](./package-extractor.ilinkinfo.linkpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to the link, relative to the root of the extractor output folder.
+
+
+</td></tr>
+<tr><td>
+
+[targetPath](./package-extractor.ilinkinfo.targetpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The target that the link points to.
+
+
+</td></tr>
+</tbody></table>
 

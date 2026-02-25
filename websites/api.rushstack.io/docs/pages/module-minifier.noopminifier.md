@@ -21,8 +21,61 @@ export declare class NoopMinifier implements IModuleMinifier
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [connect()](./module-minifier.noopminifier.connect.md) |  |  |
-|  [minify(request, callback)](./module-minifier.noopminifier.minify.md) |  | No-op code transform. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./module-minifier.noopminifier.connect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[connectAsync()](./module-minifier.noopminifier.connectasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+
+
+</td></tr>
+<tr><td>
+
+[minify(request, callback)](./module-minifier.noopminifier.minify.md)
+
+
+</td><td>
+
+
+</td><td>
+
+No-op code transform.
+
+
+</td></tr>
+</tbody></table>
 

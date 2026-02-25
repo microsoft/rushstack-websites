@@ -20,10 +20,55 @@ static readFolderItems(folderPath: string, options?: IFileSystemReadFolderOption
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  folderPath | string | The absolute or relative path to the folder which should be read. |
-|  options | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | _(Optional)_ Optional settings that can change the behavior. Type: <code>IReadFolderOptions</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+folderPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path to the folder which should be read.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional settings that can change the behavior. Type: `IReadFolderOptions`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

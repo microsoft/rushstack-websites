@@ -20,9 +20,39 @@ static readFileToBuffer(filePath: string): Buffer;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filePath | string | The relative or absolute path to the file whose contents should be read. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The relative or absolute path to the file whose contents should be read.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

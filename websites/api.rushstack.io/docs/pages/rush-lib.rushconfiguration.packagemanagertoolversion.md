@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConfiguration.packageManagerToolVersion property
 
-The version of the locally installed NPM tool. (Example: "1.2.3")
+The version of the locally package manager tool. (Example: "1.2.3")
 
 **Signature:**
 

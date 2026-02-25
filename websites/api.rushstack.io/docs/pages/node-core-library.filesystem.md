@@ -26,67 +26,999 @@ Note that in the documentation, we refer to "filesystem objects", this can be a 
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToFile(filePath, contents, options)](./node-core-library.filesystem.appendtofile.md) | <code>static</code> | Writes a text string to a file on disk, appending to the file if it already exists. Behind the scenes it uses <code>fs.appendFileSync()</code>. |
-|  [appendToFileAsync(filePath, contents, options)](./node-core-library.filesystem.appendtofileasync.md) | <code>static</code> | An async version of [FileSystem.appendToFile()](./node-core-library.filesystem.appendtofile.md)<></>. |
-|  [changePosixModeBits(path, mode)](./node-core-library.filesystem.changeposixmodebits.md) | <code>static</code> | Changes the permissions (i.e. file mode bits) for a filesystem object. Behind the scenes it uses <code>fs.chmodSync()</code>. |
-|  [changePosixModeBitsAsync(path, mode)](./node-core-library.filesystem.changeposixmodebitsasync.md) | <code>static</code> | An async version of [FileSystem.changePosixModeBits()](./node-core-library.filesystem.changeposixmodebits.md)<></>. |
-|  [copyFile(options)](./node-core-library.filesystem.copyfile.md) | <code>static</code> | Copies a single file from one location to another. By default, destinationPath is overwritten if it already exists. |
-|  [copyFileAsync(options)](./node-core-library.filesystem.copyfileasync.md) | <code>static</code> | An async version of [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md)<></>. |
-|  [copyFiles(options)](./node-core-library.filesystem.copyfiles.md) | <code>static</code> | Copies a file or folder from one location to another, recursively copying any folder contents. By default, destinationPath is overwritten if it already exists. |
-|  [copyFilesAsync(options)](./node-core-library.filesystem.copyfilesasync.md) | <code>static</code> | An async version of [FileSystem.copyFiles()](./node-core-library.filesystem.copyfiles.md)<></>. |
-|  [createHardLink(options)](./node-core-library.filesystem.createhardlink.md) | <code>static</code> | Creates a hard link. The link target must be a file, not a folder. Behind the scenes it uses <code>fs.linkSync()</code>. |
-|  [createHardLinkAsync(options)](./node-core-library.filesystem.createhardlinkasync.md) | <code>static</code> | An async version of [FileSystem.createHardLink()](./node-core-library.filesystem.createhardlink.md)<></>. |
-|  [createSymbolicLinkFile(options)](./node-core-library.filesystem.createsymboliclinkfile.md) | <code>static</code> | Creates a symbolic link to a file. On Windows operating systems, this may require administrator elevation. Behind the scenes it uses <code>fs.symlinkSync()</code>. |
-|  [createSymbolicLinkFileAsync(options)](./node-core-library.filesystem.createsymboliclinkfileasync.md) | <code>static</code> | An async version of [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md)<></>. |
-|  [createSymbolicLinkFolder(options)](./node-core-library.filesystem.createsymboliclinkfolder.md) | <code>static</code> | Creates a symbolic link to a folder. On Windows operating systems, this may require administrator elevation. Behind the scenes it uses <code>fs.symlinkSync()</code>. |
-|  [createSymbolicLinkFolderAsync(options)](./node-core-library.filesystem.createsymboliclinkfolderasync.md) | <code>static</code> | An async version of [FileSystem.createSymbolicLinkFolder()](./node-core-library.filesystem.createsymboliclinkfolder.md)<></>. |
-|  [createSymbolicLinkJunction(options)](./node-core-library.filesystem.createsymboliclinkjunction.md) | <code>static</code> | Creates an NTFS "directory junction" on Windows operating systems; for other operating systems, it creates a regular symbolic link. The link target must be a folder, not a file. Behind the scenes it uses <code>fs.symlinkSync()</code>. |
-|  [createSymbolicLinkJunctionAsync(options)](./node-core-library.filesystem.createsymboliclinkjunctionasync.md) | <code>static</code> | An async version of [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md)<></>. |
-|  [deleteFile(filePath, options)](./node-core-library.filesystem.deletefile.md) | <code>static</code> | Deletes a file. Can optionally throw if the file doesn't exist. Behind the scenes it uses <code>fs.unlinkSync()</code>. |
-|  [deleteFileAsync(filePath, options)](./node-core-library.filesystem.deletefileasync.md) | <code>static</code> | An async version of [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md)<></>. |
-|  [deleteFolder(folderPath)](./node-core-library.filesystem.deletefolder.md) | <code>static</code> | Deletes a folder, including all of its contents. Behind the scenes is uses <code>fs-extra.removeSync()</code>. |
-|  [deleteFolderAsync(folderPath)](./node-core-library.filesystem.deletefolderasync.md) | <code>static</code> | An async version of [FileSystem.deleteFolder()](./node-core-library.filesystem.deletefolder.md)<></>. |
-|  [ensureEmptyFolder(folderPath)](./node-core-library.filesystem.ensureemptyfolder.md) | <code>static</code> | Deletes the content of a folder, but not the folder itself. Also ensures the folder exists. Behind the scenes it uses <code>fs-extra.emptyDirSync()</code>. |
-|  [ensureEmptyFolderAsync(folderPath)](./node-core-library.filesystem.ensureemptyfolderasync.md) | <code>static</code> | An async version of [FileSystem.ensureEmptyFolder()](./node-core-library.filesystem.ensureemptyfolder.md)<></>. |
-|  [ensureFolder(folderPath)](./node-core-library.filesystem.ensurefolder.md) | <code>static</code> | Recursively creates a folder at a given path. Behind the scenes is uses <code>fs-extra.ensureDirSync()</code>. |
-|  [ensureFolderAsync(folderPath)](./node-core-library.filesystem.ensurefolderasync.md) | <code>static</code> | An async version of [FileSystem.ensureFolder()](./node-core-library.filesystem.ensurefolder.md)<></>. |
-|  [exists(path)](./node-core-library.filesystem.exists.md) | <code>static</code> | Returns true if the path exists on disk. Behind the scenes it uses <code>fs.existsSync()</code>. |
-|  [existsAsync(path)](./node-core-library.filesystem.existsasync.md) | <code>static</code> | An async version of [FileSystem.exists()](./node-core-library.filesystem.exists.md)<></>. |
-|  [formatPosixModeBits(modeBits)](./node-core-library.filesystem.formatposixmodebits.md) | <code>static</code> | Returns a 10-character string representation of a PosixModeBits value similar to what would be displayed by a command such as "ls -l" on a POSIX-like operating system. |
-|  [getLinkStatistics(path)](./node-core-library.filesystem.getlinkstatistics.md) | <code>static</code> | Gets the statistics of a filesystem object. Does NOT follow the link to its target. Behind the scenes it uses <code>fs.lstatSync()</code>. |
-|  [getLinkStatisticsAsync(path)](./node-core-library.filesystem.getlinkstatisticsasync.md) | <code>static</code> | An async version of [FileSystem.getLinkStatistics()](./node-core-library.filesystem.getlinkstatistics.md)<></>. |
-|  [getPosixModeBits(path)](./node-core-library.filesystem.getposixmodebits.md) | <code>static</code> | Retrieves the permissions (i.e. file mode bits) for a filesystem object. Behind the scenes it uses <code>fs.chmodSync()</code>. |
-|  [getPosixModeBitsAsync(path)](./node-core-library.filesystem.getposixmodebitsasync.md) | <code>static</code> | An async version of [FileSystem.getPosixModeBits()](./node-core-library.filesystem.getposixmodebits.md)<></>. |
-|  [getRealPath(linkPath)](./node-core-library.filesystem.getrealpath.md) | <code>static</code> | Follows a link to its destination and returns the absolute path to the final target of the link. Behind the scenes it uses <code>fs.realpathSync()</code>. |
-|  [getRealPathAsync(linkPath)](./node-core-library.filesystem.getrealpathasync.md) | <code>static</code> | An async version of [FileSystem.getRealPath()](./node-core-library.filesystem.getrealpath.md)<></>. |
-|  [getStatistics(path)](./node-core-library.filesystem.getstatistics.md) | <code>static</code> | Gets the statistics for a particular filesystem object. If the path is a link, this function follows the link and returns statistics about the link target. Behind the scenes it uses <code>fs.statSync()</code>. |
-|  [getStatisticsAsync(path)](./node-core-library.filesystem.getstatisticsasync.md) | <code>static</code> | An async version of [FileSystem.getStatistics()](./node-core-library.filesystem.getstatistics.md)<></>. |
-|  [isDirectoryError(error)](./node-core-library.filesystem.isdirectoryerror.md) | <code>static</code> | Returns true if the error object indicates the target is a directory (<code>EISDIR</code>). |
-|  [isErrnoException(error)](./node-core-library.filesystem.iserrnoexception.md) | <code>static</code> | Detects if the provided error object is a <code>NodeJS.ErrnoException</code> |
-|  [isExistError(error)](./node-core-library.filesystem.isexisterror.md) | <code>static</code> | Returns true if the error object indicates the file or folder already exists (<code>EEXIST</code>). |
-|  [isFileDoesNotExistError(error)](./node-core-library.filesystem.isfiledoesnotexisterror.md) | <code>static</code> | Returns true if the error object indicates the file does not exist (<code>ENOENT</code>). |
-|  [isFolderDoesNotExistError(error)](./node-core-library.filesystem.isfolderdoesnotexisterror.md) | <code>static</code> | Returns true if the error object indicates the folder does not exist (<code>ENOTDIR</code>). |
-|  [isNotDirectoryError(error)](./node-core-library.filesystem.isnotdirectoryerror.md) | <code>static</code> | Returns true if the error object indicates the target is not a directory (<code>ENOTDIR</code>). |
-|  [isNotExistError(error)](./node-core-library.filesystem.isnotexisterror.md) | <code>static</code> | Returns true if the error object indicates the file or folder does not exist (<code>ENOENT</code> or <code>ENOTDIR</code>) |
-|  [isUnlinkNotPermittedError(error)](./node-core-library.filesystem.isunlinknotpermittederror.md) | <code>static</code> | Returns true if the error object indicates that the <code>unlink</code> system call failed due to a permissions issue (<code>EPERM</code>). |
-|  [move(options)](./node-core-library.filesystem.move.md) | <code>static</code> | Moves a file. The folder must exist, unless the <code>ensureFolderExists</code> option is provided. Behind the scenes it uses <code>fs-extra.moveSync()</code> |
-|  [moveAsync(options)](./node-core-library.filesystem.moveasync.md) | <code>static</code> | An async version of [FileSystem.move()](./node-core-library.filesystem.move.md)<></>. |
-|  [readFile(filePath, options)](./node-core-library.filesystem.readfile.md) | <code>static</code> | Reads the contents of a file into a string. Behind the scenes it uses <code>fs.readFileSync()</code>. |
-|  [readFileAsync(filePath, options)](./node-core-library.filesystem.readfileasync.md) | <code>static</code> | An async version of [FileSystem.readFile()](./node-core-library.filesystem.readfile.md)<></>. |
-|  [readFileToBuffer(filePath)](./node-core-library.filesystem.readfiletobuffer.md) | <code>static</code> | Reads the contents of a file into a buffer. Behind the scenes is uses <code>fs.readFileSync()</code>. |
-|  [readFileToBufferAsync(filePath)](./node-core-library.filesystem.readfiletobufferasync.md) | <code>static</code> | An async version of [FileSystem.readFileToBuffer()](./node-core-library.filesystem.readfiletobuffer.md)<></>. |
-|  [readFolder(folderPath, options)](./node-core-library.filesystem.readfolder.md) | <code>static</code> |  |
-|  [readFolderAsync(folderPath, options)](./node-core-library.filesystem.readfolderasync.md) | <code>static</code> |  |
-|  [readFolderItemNames(folderPath, options)](./node-core-library.filesystem.readfolderitemnames.md) | <code>static</code> | Reads the names of folder entries, not including "." or "..". Behind the scenes it uses <code>fs.readdirSync()</code>. |
-|  [readFolderItemNamesAsync(folderPath, options)](./node-core-library.filesystem.readfolderitemnamesasync.md) | <code>static</code> | An async version of [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md)<></>. |
-|  [readFolderItems(folderPath, options)](./node-core-library.filesystem.readfolderitems.md) | <code>static</code> | Reads the contents of the folder, not including "." or "..", returning objects including the entry names and types. Behind the scenes it uses <code>fs.readdirSync()</code>. |
-|  [readFolderItemsAsync(folderPath, options)](./node-core-library.filesystem.readfolderitemsasync.md) | <code>static</code> | An async version of [FileSystem.readFolderItems()](./node-core-library.filesystem.readfolderitems.md)<></>. |
-|  [readLink(path)](./node-core-library.filesystem.readlink.md) | <code>static</code> | If <code>path</code> refers to a symbolic link, this returns the path of the link target, which may be an absolute or relative path. |
-|  [readLinkAsync(path)](./node-core-library.filesystem.readlinkasync.md) | <code>static</code> | An async version of [FileSystem.readLink()](./node-core-library.filesystem.readlink.md)<></>. |
-|  [updateTimes(path, times)](./node-core-library.filesystem.updatetimes.md) | <code>static</code> | Updates the accessed and modified timestamps of the filesystem object referenced by path. Behind the scenes it uses <code>fs.utimesSync()</code>. The caller should specify both times in the <code>times</code> parameter. |
-|  [updateTimesAsync(path, times)](./node-core-library.filesystem.updatetimesasync.md) | <code>static</code> | An async version of [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md)<></>. |
-|  [writeFile(filePath, contents, options)](./node-core-library.filesystem.writefile.md) | <code>static</code> | Writes a text string to a file on disk, overwriting the file if it already exists. Behind the scenes it uses <code>fs.writeFileSync()</code>. |
-|  [writeFileAsync(filePath, contents, options)](./node-core-library.filesystem.writefileasync.md) | <code>static</code> | An async version of [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md)<></>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToFile(filePath, contents, options)](./node-core-library.filesystem.appendtofile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Writes a text string to a file on disk, appending to the file if it already exists. Behind the scenes it uses `fs.appendFileSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[appendToFileAsync(filePath, contents, options)](./node-core-library.filesystem.appendtofileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.appendToFile()](./node-core-library.filesystem.appendtofile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[changePosixModeBits(path, modeBits)](./node-core-library.filesystem.changeposixmodebits.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Changes the permissions (i.e. file mode bits) for a filesystem object. Behind the scenes it uses `fs.chmodSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[changePosixModeBitsAsync(path, mode)](./node-core-library.filesystem.changeposixmodebitsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.changePosixModeBits()](./node-core-library.filesystem.changeposixmodebits.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[copyFile(options)](./node-core-library.filesystem.copyfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Copies a single file from one location to another. By default, destinationPath is overwritten if it already exists.
+
+
+</td></tr>
+<tr><td>
+
+[copyFileAsync(options)](./node-core-library.filesystem.copyfileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[copyFiles(options)](./node-core-library.filesystem.copyfiles.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Copies a file or folder from one location to another, recursively copying any folder contents. By default, destinationPath is overwritten if it already exists.
+
+
+</td></tr>
+<tr><td>
+
+[copyFilesAsync(options)](./node-core-library.filesystem.copyfilesasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.copyFiles()](./node-core-library.filesystem.copyfiles.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createHardLink(options)](./node-core-library.filesystem.createhardlink.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates a hard link. The link target must be a file, not a folder. Behind the scenes it uses `fs.linkSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createHardLinkAsync(options)](./node-core-library.filesystem.createhardlinkasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.createHardLink()](./node-core-library.filesystem.createhardlink.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkFile(options)](./node-core-library.filesystem.createsymboliclinkfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates a symbolic link to a file. On Windows operating systems, this may require administrator elevation. Behind the scenes it uses `fs.symlinkSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkFileAsync(options)](./node-core-library.filesystem.createsymboliclinkfileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkFolder(options)](./node-core-library.filesystem.createsymboliclinkfolder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates a symbolic link to a folder. On Windows operating systems, this may require administrator elevation. Behind the scenes it uses `fs.symlinkSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkFolderAsync(options)](./node-core-library.filesystem.createsymboliclinkfolderasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.createSymbolicLinkFolder()](./node-core-library.filesystem.createsymboliclinkfolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkJunction(options)](./node-core-library.filesystem.createsymboliclinkjunction.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates an NTFS "directory junction" on Windows operating systems; for other operating systems, it creates a regular symbolic link. The link target must be a folder, not a file. Behind the scenes it uses `fs.symlinkSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createSymbolicLinkJunctionAsync(options)](./node-core-library.filesystem.createsymboliclinkjunctionasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[deleteFile(filePath, options)](./node-core-library.filesystem.deletefile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Deletes a file. Can optionally throw if the file doesn't exist. Behind the scenes it uses `fs.unlinkSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[deleteFileAsync(filePath, options)](./node-core-library.filesystem.deletefileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[deleteFolder(folderPath)](./node-core-library.filesystem.deletefolder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Deletes a folder, including all of its contents. Behind the scenes is uses `fs-extra.removeSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[deleteFolderAsync(folderPath)](./node-core-library.filesystem.deletefolderasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.deleteFolder()](./node-core-library.filesystem.deletefolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ensureEmptyFolder(folderPath)](./node-core-library.filesystem.ensureemptyfolder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Deletes the content of a folder, but not the folder itself. Also ensures the folder exists. Behind the scenes it uses `fs-extra.emptyDirSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ensureEmptyFolderAsync(folderPath)](./node-core-library.filesystem.ensureemptyfolderasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.ensureEmptyFolder()](./node-core-library.filesystem.ensureemptyfolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ensureFolder(folderPath)](./node-core-library.filesystem.ensurefolder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Recursively creates a folder at a given path. Behind the scenes is uses `fs-extra.ensureDirSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ensureFolderAsync(folderPath)](./node-core-library.filesystem.ensurefolderasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.ensureFolder()](./node-core-library.filesystem.ensurefolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[exists(path)](./node-core-library.filesystem.exists.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the path exists on disk. Behind the scenes it uses `fs.existsSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[existsAsync(path)](./node-core-library.filesystem.existsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.exists()](./node-core-library.filesystem.exists.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[formatPosixModeBits(modeBits)](./node-core-library.filesystem.formatposixmodebits.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns a 10-character string representation of a PosixModeBits value similar to what would be displayed by a command such as "ls -l" on a POSIX-like operating system.
+
+
+</td></tr>
+<tr><td>
+
+[getLinkStatistics(path)](./node-core-library.filesystem.getlinkstatistics.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Gets the statistics of a filesystem object. Does NOT follow the link to its target. Behind the scenes it uses `fs.lstatSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getLinkStatisticsAsync(path)](./node-core-library.filesystem.getlinkstatisticsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.getLinkStatistics()](./node-core-library.filesystem.getlinkstatistics.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getPosixModeBits(path)](./node-core-library.filesystem.getposixmodebits.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Retrieves the permissions (i.e. file mode bits) for a filesystem object. Behind the scenes it uses `fs.chmodSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getPosixModeBitsAsync(path)](./node-core-library.filesystem.getposixmodebitsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.getPosixModeBits()](./node-core-library.filesystem.getposixmodebits.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getRealPath(linkPath)](./node-core-library.filesystem.getrealpath.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Follows a link to its destination and returns the absolute path to the final target of the link. Behind the scenes it uses `fs.realpathSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getRealPathAsync(linkPath)](./node-core-library.filesystem.getrealpathasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.getRealPath()](./node-core-library.filesystem.getrealpath.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getStatistics(path)](./node-core-library.filesystem.getstatistics.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Gets the statistics for a particular filesystem object. If the path is a link, this function follows the link and returns statistics about the link target. Behind the scenes it uses `fs.statSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getStatisticsAsync(path)](./node-core-library.filesystem.getstatisticsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.getStatistics()](./node-core-library.filesystem.getstatistics.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[isDirectoryError(error)](./node-core-library.filesystem.isdirectoryerror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the target is a directory (`EISDIR`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[isErrnoException(error)](./node-core-library.filesystem.iserrnoexception.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Detects if the provided error object is a `NodeJS.ErrnoException`
+
+
+</td></tr>
+<tr><td>
+
+[isExistError(error)](./node-core-library.filesystem.isexisterror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the file or folder already exists (`EEXIST`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[isFileDoesNotExistError(error)](./node-core-library.filesystem.isfiledoesnotexisterror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the file does not exist (`ENOENT`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[isFolderDoesNotExistError(error)](./node-core-library.filesystem.isfolderdoesnotexisterror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the folder does not exist (`ENOTDIR`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[isNotDirectoryError(error)](./node-core-library.filesystem.isnotdirectoryerror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the target is not a directory (`ENOTDIR`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[isNotExistError(error)](./node-core-library.filesystem.isnotexisterror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates the file or folder does not exist (`ENOENT` or `ENOTDIR`<></>)
+
+
+</td></tr>
+<tr><td>
+
+[isUnlinkNotPermittedError(error)](./node-core-library.filesystem.isunlinknotpermittederror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the error object indicates that the `unlink` system call failed due to a permissions issue (`EPERM`<></>).
+
+
+</td></tr>
+<tr><td>
+
+[move(options)](./node-core-library.filesystem.move.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Moves a file. The folder must exist, unless the `ensureFolderExists` option is provided. Behind the scenes it uses `fs-extra.moveSync()`
+
+
+</td></tr>
+<tr><td>
+
+[moveAsync(options)](./node-core-library.filesystem.moveasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.move()](./node-core-library.filesystem.move.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFile(filePath, options)](./node-core-library.filesystem.readfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Reads the contents of a file into a string. Behind the scenes it uses `fs.readFileSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFileAsync(filePath, options)](./node-core-library.filesystem.readfileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.readFile()](./node-core-library.filesystem.readfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFileToBuffer(filePath)](./node-core-library.filesystem.readfiletobuffer.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Reads the contents of a file into a buffer. Behind the scenes is uses `fs.readFileSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFileToBufferAsync(filePath)](./node-core-library.filesystem.readfiletobufferasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.readFileToBuffer()](./node-core-library.filesystem.readfiletobuffer.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFolderItemNames(folderPath, options)](./node-core-library.filesystem.readfolderitemnames.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Reads the names of folder entries, not including "." or "..". Behind the scenes it uses `fs.readdirSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFolderItemNamesAsync(folderPath, options)](./node-core-library.filesystem.readfolderitemnamesasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFolderItems(folderPath, options)](./node-core-library.filesystem.readfolderitems.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Reads the contents of the folder, not including "." or "..", returning objects including the entry names and types. Behind the scenes it uses `fs.readdirSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readFolderItemsAsync(folderPath, options)](./node-core-library.filesystem.readfolderitemsasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.readFolderItems()](./node-core-library.filesystem.readfolderitems.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[readLink(path)](./node-core-library.filesystem.readlink.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+If `path` refers to a symbolic link, this returns the path of the link target, which may be an absolute or relative path.
+
+
+</td></tr>
+<tr><td>
+
+[readLinkAsync(path)](./node-core-library.filesystem.readlinkasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.readLink()](./node-core-library.filesystem.readlink.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[updateTimes(path, times)](./node-core-library.filesystem.updatetimes.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Updates the accessed and modified timestamps of the filesystem object referenced by path. Behind the scenes it uses `fs.utimesSync()`<></>. The caller should specify both times in the `times` parameter.
+
+
+</td></tr>
+<tr><td>
+
+[updateTimesAsync(path, times)](./node-core-library.filesystem.updatetimesasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[writeBuffersToFile(filePath, contents, options)](./node-core-library.filesystem.writebufferstofile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Writes the contents of multiple Uint8Arrays to a file on disk, overwriting the file if it already exists. Behind the scenes it uses `fs.writevSync()`<></>.
+
+This API is useful for writing large files efficiently, especially if the input is being concatenated from multiple sources.
+
+
+</td></tr>
+<tr><td>
+
+[writeBuffersToFileAsync(filePath, contents, options)](./node-core-library.filesystem.writebufferstofileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.writeBuffersToFile()](./node-core-library.filesystem.writebufferstofile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[writeFile(filePath, contents, options)](./node-core-library.filesystem.writefile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Writes a text string to a file on disk, overwriting the file if it already exists. Behind the scenes it uses `fs.writeFileSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[writeFileAsync(filePath, contents, options)](./node-core-library.filesystem.writefileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 

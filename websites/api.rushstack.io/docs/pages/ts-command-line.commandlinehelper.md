@@ -20,7 +20,37 @@ export declare class CommandLineHelper
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [isTabCompletionActionRequest(argv)](./ts-command-line.commandlinehelper.istabcompletionactionrequest.md) | <code>static</code> | Returns true if the current command line action is tab-complete. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isTabCompletionActionRequest(argv)](./ts-command-line.commandlinehelper.istabcompletionactionrequest.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the current command line action is tab-complete.
+
+
+</td></tr>
+</tbody></table>
 

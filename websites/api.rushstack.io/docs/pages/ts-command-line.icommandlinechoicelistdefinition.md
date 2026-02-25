@@ -15,14 +15,70 @@ For use with [CommandLineParameterProvider.defineChoiceListParameter()](./ts-com
 **Signature:**
 
 ```typescript
-export interface ICommandLineChoiceListDefinition extends IBaseCommandLineDefinition 
+export interface ICommandLineChoiceListDefinition<TChoice extends string = string> extends IBaseCommandLineDefinition 
 ```
 **Extends:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alternatives](./ts-command-line.icommandlinechoicelistdefinition.alternatives.md) |  | string\[\] | A list of strings (which contain no spaces), of possible options which can be selected |
-|  [completions?](./ts-command-line.icommandlinechoicelistdefinition.completions.md) |  | () =&gt; Promise&lt;string\[\]&gt; | _(Optional)_ An optional callback that provides a list of custom choices for tab completion. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alternatives](./ts-command-line.icommandlinechoicelistdefinition.alternatives.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReadonlyArray&lt;TChoice&gt; \| ReadonlySet&lt;TChoice&gt;
+
+
+</td><td>
+
+A list of strings (which contain no spaces), of possible options which can be selected
+
+
+</td></tr>
+<tr><td>
+
+[completions?](./ts-command-line.icommandlinechoicelistdefinition.completions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+() =&gt; Promise&lt;ReadonlyArray&lt;TChoice&gt; \| ReadonlySet&lt;TChoice&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ An optional callback that provides a list of custom choices for tab completion.
+
+
+</td></tr>
+</tbody></table>
 

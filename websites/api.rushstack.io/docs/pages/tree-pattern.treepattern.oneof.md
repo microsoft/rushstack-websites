@@ -20,9 +20,37 @@ static oneOf(possibleSubtrees: TreeNode[]): TreeNode;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  possibleSubtrees | [TreeNode](./tree-pattern.treenode.md)<></>\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+possibleSubtrees
+
+
+</td><td>
+
+[TreeNode](./tree-pattern.treenode.md)<></>\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -20,9 +20,37 @@ static validateNoUndefinedMembers(jsonObject: JsonObject): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonObject | [JsonObject](./node-core-library.jsonobject.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonObject
+
+
+</td><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

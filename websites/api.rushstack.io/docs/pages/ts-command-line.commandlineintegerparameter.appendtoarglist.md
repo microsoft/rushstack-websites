@@ -21,9 +21,39 @@ appendToArgList(argList: string[]): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  argList | string\[\] | the parsed strings will be appended to this string array |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+argList
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+the parsed strings will be appended to this string array
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

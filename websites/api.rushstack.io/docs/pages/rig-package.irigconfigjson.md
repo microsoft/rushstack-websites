@@ -20,8 +20,64 @@ export interface IRigConfigJson
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [rigPackageName](./rig-package.irigconfigjson.rigpackagename.md) |  | string | The name of the rig package to use. |
-|  [rigProfile?](./rig-package.irigconfigjson.rigprofile.md) |  | string | _(Optional)_ Specify which rig profile to use from the rig package. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[rigPackageName](./rig-package.irigconfigjson.rigpackagename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the rig package to use.
+
+
+</td></tr>
+<tr><td>
+
+[rigProfile?](./rig-package.irigconfigjson.rigprofile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specify which rig profile to use from the rig package.
+
+
+</td></tr>
+</tbody></table>
 

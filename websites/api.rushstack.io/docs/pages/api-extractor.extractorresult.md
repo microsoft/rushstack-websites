@@ -24,12 +24,152 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiReportChanged](./api-extractor.extractorresult.apireportchanged.md) | <code>readonly</code> | boolean | Returns true if the API report was found to have changed. |
-|  [compilerState](./api-extractor.extractorresult.compilerstate.md) | <code>readonly</code> | [CompilerState](./api-extractor.compilerstate.md) | The TypeScript compiler state that was used. |
-|  [errorCount](./api-extractor.extractorresult.errorcount.md) | <code>readonly</code> | number | Reports the number of errors encountered during analysis. |
-|  [extractorConfig](./api-extractor.extractorresult.extractorconfig.md) | <code>readonly</code> | [ExtractorConfig](./api-extractor.extractorconfig.md) | The API Extractor configuration that was used. |
-|  [succeeded](./api-extractor.extractorresult.succeeded.md) | <code>readonly</code> | boolean | Whether the invocation of API Extractor was successful. For example, if <code>succeeded</code> is false, then the build task would normally return a nonzero process exit code, indicating that the operation failed. |
-|  [warningCount](./api-extractor.extractorresult.warningcount.md) | <code>readonly</code> | number | Reports the number of warnings encountered during analysis. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiReportChanged](./api-extractor.extractorresult.apireportchanged.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns true if the API report was found to have changed.
+
+
+</td></tr>
+<tr><td>
+
+[compilerState](./api-extractor.extractorresult.compilerstate.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CompilerState](./api-extractor.compilerstate.md)
+
+
+</td><td>
+
+The TypeScript compiler state that was used.
+
+
+</td></tr>
+<tr><td>
+
+[errorCount](./api-extractor.extractorresult.errorcount.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Reports the number of errors encountered during analysis.
+
+
+</td></tr>
+<tr><td>
+
+[extractorConfig](./api-extractor.extractorresult.extractorconfig.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ExtractorConfig](./api-extractor.extractorconfig.md)
+
+
+</td><td>
+
+The API Extractor configuration that was used.
+
+
+</td></tr>
+<tr><td>
+
+[succeeded](./api-extractor.extractorresult.succeeded.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether the invocation of API Extractor was successful. For example, if `succeeded` is false, then the build task would normally return a nonzero process exit code, indicating that the operation failed.
+
+
+</td></tr>
+<tr><td>
+
+[warningCount](./api-extractor.extractorresult.warningcount.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Reports the number of warnings encountered during analysis.
+
+
+</td></tr>
+</tbody></table>
 

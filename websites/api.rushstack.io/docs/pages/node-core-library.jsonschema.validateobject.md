@@ -20,11 +20,71 @@ validateObject(jsonObject: JsonObject, filenameForErrors: string, options?: IJso
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonObject | [JsonObject](./node-core-library.jsonobject.md) | The JSON data to be validated |
-|  filenameForErrors | string | The filename that the JSON data was available, or an empty string if not applicable |
-|  options | [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | _(Optional)_ Other options that control the validation |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonObject
+
+
+</td><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+The JSON data to be validated
+
+
+</td></tr>
+<tr><td>
+
+filenameForErrors
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename that the JSON data was available, or an empty string if not applicable
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Other options that control the validation
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -41,9 +41,69 @@ After `close()` has been called, the `TextRewriterState` state should not be reu
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close(state)](./terminal.textrewriter.close.md) | <code>abstract</code> | Close the <code>TextRewriterState</code> object and return any buffered output. |
-|  [initialize()](./terminal.textrewriter.initialize.md) | <code>abstract</code> | Create a new <code>TextRewriterState</code> object that can be used to process a stream of characters. |
-|  [process(state, input)](./terminal.textrewriter.process.md) | <code>abstract</code> | Rewrite the next sequence of characters from the input stream, returning the modified output. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close(state)](./terminal.textrewriter.close.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Close the `TextRewriterState` object and return any buffered output.
+
+
+</td></tr>
+<tr><td>
+
+[initialize()](./terminal.textrewriter.initialize.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Create a new `TextRewriterState` object that can be used to process a stream of characters.
+
+
+</td></tr>
+<tr><td>
+
+[process(state, input)](./terminal.textrewriter.process.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+Rewrite the next sequence of characters from the input stream, returning the modified output.
+
+
+</td></tr>
+</tbody></table>
 

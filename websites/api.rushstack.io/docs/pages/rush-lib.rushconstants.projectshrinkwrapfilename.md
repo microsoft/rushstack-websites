@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.projectShrinkwrapFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the file to drop in project-folder/.rush/temp/ containing a listing of the project's direct and indirect dependencies. This is used to detect if a project's dependencies have changed since the last build.
@@ -18,5 +18,5 @@ The name of the file to drop in project-folder/.rush/temp/ containing a listing 
 **Signature:**
 
 ```typescript
-static readonly projectShrinkwrapFilename: string;
+static readonly projectShrinkwrapFilename: 'shrinkwrap-deps.json';
 ```

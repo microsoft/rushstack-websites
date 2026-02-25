@@ -15,15 +15,44 @@ Loads the repo-state.json data from the specified file path. If the file has not
 **Signature:**
 
 ```typescript
-static loadFromFile(jsonFilename: string, variant: string | undefined): RepoStateFile;
+static loadFromFile(jsonFilename: string): RepoStateFile;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonFilename | string | The path to the repo-state.json file. |
-|  variant | string \| undefined | The variant currently being used by Rush. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonFilename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to the repo-state.json file.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

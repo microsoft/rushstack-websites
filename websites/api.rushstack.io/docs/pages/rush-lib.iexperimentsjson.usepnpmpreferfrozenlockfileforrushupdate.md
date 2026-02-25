@@ -10,10 +10,10 @@ pagination_next: null
 
 ## IExperimentsJson.usePnpmPreferFrozenLockfileForRushUpdate property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-By default, 'rush update' passes --no-prefer-frozen-lockfile to 'pnpm install'. Set this option to true to pass '--prefer-frozen-lockfile' instead.
+By default, 'rush update' passes --no-prefer-frozen-lockfile to 'pnpm install'. Set this option to true to pass '--prefer-frozen-lockfile' instead to minimize shrinkwrap changes.
 
 **Signature:**
 

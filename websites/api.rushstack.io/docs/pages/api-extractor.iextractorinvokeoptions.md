@@ -20,12 +20,159 @@ export interface IExtractorInvokeOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [compilerState?](./api-extractor.iextractorinvokeoptions.compilerstate.md) |  | [CompilerState](./api-extractor.compilerstate.md) | _(Optional)_ An optional TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis. |
-|  [localBuild?](./api-extractor.iextractorinvokeoptions.localbuild.md) |  | boolean | _(Optional)_ Indicates that API Extractor is running as part of a local build, e.g. on developer's machine. |
-|  [messageCallback?](./api-extractor.iextractorinvokeoptions.messagecallback.md) |  | (message: [ExtractorMessage](./api-extractor.extractormessage.md)<></>) =&gt; void | _(Optional)_ An optional callback function that will be called for each <code>ExtractorMessage</code> before it is displayed by API Extractor. The callback can customize the message, handle it, or discard it. |
-|  [showDiagnostics?](./api-extractor.iextractorinvokeoptions.showdiagnostics.md) |  | boolean | _(Optional)_ If true, API Extractor will print diagnostic information used for troubleshooting problems. These messages will be included as [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) output. |
-|  [showVerboseMessages?](./api-extractor.iextractorinvokeoptions.showverbosemessages.md) |  | boolean | _(Optional)_ If true, API Extractor will include [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) messages in its output. |
-|  [typescriptCompilerFolder?](./api-extractor.iextractorinvokeoptions.typescriptcompilerfolder.md) |  | string | _(Optional)_ Specifies an alternate folder path to be used when loading the TypeScript system typings. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[compilerState?](./api-extractor.iextractorinvokeoptions.compilerstate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CompilerState](./api-extractor.compilerstate.md)
+
+
+</td><td>
+
+_(Optional)_ An optional TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis.
+
+
+</td></tr>
+<tr><td>
+
+[localBuild?](./api-extractor.iextractorinvokeoptions.localbuild.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Indicates that API Extractor is running as part of a local build, e.g. on developer's machine.
+
+
+</td></tr>
+<tr><td>
+
+[messageCallback?](./api-extractor.iextractorinvokeoptions.messagecallback.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(message: [ExtractorMessage](./api-extractor.extractormessage.md)<></>) =&gt; void
+
+
+</td><td>
+
+_(Optional)_ An optional callback function that will be called for each `ExtractorMessage` before it is displayed by API Extractor. The callback can customize the message, handle it, or discard it.
+
+
+</td></tr>
+<tr><td>
+
+[printApiReportDiff?](./api-extractor.iextractorinvokeoptions.printapireportdiff.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then any differences between the actual and expected API reports will be printed on the console.
+
+
+</td></tr>
+<tr><td>
+
+[showDiagnostics?](./api-extractor.iextractorinvokeoptions.showdiagnostics.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, API Extractor will print diagnostic information used for troubleshooting problems. These messages will be included as [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) output.
+
+
+</td></tr>
+<tr><td>
+
+[showVerboseMessages?](./api-extractor.iextractorinvokeoptions.showverbosemessages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, API Extractor will include [ExtractorLogLevel.Verbose](./api-extractor.extractorloglevel.md) messages in its output.
+
+
+</td></tr>
+<tr><td>
+
+[typescriptCompilerFolder?](./api-extractor.iextractorinvokeoptions.typescriptcompilerfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies an alternate folder path to be used when loading the TypeScript system typings.
+
+
+</td></tr>
+</tbody></table>
 

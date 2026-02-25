@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IOperationRunnerContext interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Information passed to the executing `IOperationRunner`
@@ -23,11 +23,187 @@ export interface IOperationRunnerContext
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [collatedWriter](./rush-lib.ioperationrunnercontext.collatedwriter.md) |  | [CollatedWriter](./stream-collator.collatedwriter.md) | **_(BETA)_** The writer into which this <code>IOperationRunner</code> should write its logs. |
-|  [debugMode](./rush-lib.ioperationrunnercontext.debugmode.md) |  | boolean | **_(BETA)_** If Rush was invoked with <code>--debug</code> |
-|  [quietMode](./rush-lib.ioperationrunnercontext.quietmode.md) |  | boolean | **_(BETA)_** Defaults to <code>true</code>. Will be <code>false</code> if Rush was invoked with <code>--verbose</code>. |
-|  [stdioSummarizer](./rush-lib.ioperationrunnercontext.stdiosummarizer.md) |  | [StdioSummarizer](./terminal.stdiosummarizer.md) | **_(BETA)_** Object used to report a summary at the end of the Rush invocation. |
-|  [stopwatch](./rush-lib.ioperationrunnercontext.stopwatch.md) |  | [IStopwatchResult](./rush-lib.istopwatchresult.md) | **_(BETA)_** Object used to track elapsed time. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[collatedWriter](./rush-lib.ioperationrunnercontext.collatedwriter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CollatedWriter](./stream-collator.collatedwriter.md)
+
+
+</td><td>
+
+**_(BETA)_** The writer into which this `IOperationRunner` should write its logs.
+
+
+</td></tr>
+<tr><td>
+
+[debugMode](./rush-lib.ioperationrunnercontext.debugmode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If Rush was invoked with `--debug`
+
+
+</td></tr>
+<tr><td>
+
+[environment](./rush-lib.ioperationrunnercontext.environment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+IEnvironment \| undefined
+
+
+</td><td>
+
+**_(BETA)_** The environment in which the operation is being executed. A return value of `undefined` indicates that it should inherit the environment from the parent process.
+
+
+</td></tr>
+<tr><td>
+
+[error?](./rush-lib.ioperationrunnercontext.error.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Error
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Error which occurred while executing this operation, this is stored in case we need it later (for example to re-print errors at end of execution).
+
+
+</td></tr>
+<tr><td>
+
+[quietMode](./rush-lib.ioperationrunnercontext.quietmode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Defaults to `true`<></>. Will be `false` if Rush was invoked with `--verbose`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[status](./rush-lib.ioperationrunnercontext.status.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[OperationStatus](./rush-lib.operationstatus.md)
+
+
+</td><td>
+
+**_(BETA)_** The current execution status of an operation. Operations start in the 'ready' state, but can be 'blocked' if an upstream operation failed. It is 'executing' when the operation is executing. Once execution is complete, it is either 'success' or 'failure'.
+
+
+</td></tr>
+<tr><td>
+
+[stopwatch](./rush-lib.ioperationrunnercontext.stopwatch.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IStopwatchResult](./rush-lib.istopwatchresult.md)
+
+
+</td><td>
+
+**_(BETA)_** Object used to track elapsed time.
+
+
+</td></tr>
+</tbody></table>
+
+## Methods
+
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[runWithTerminalAsync(callback, options)](./rush-lib.ioperationrunnercontext.runwithterminalasync.md)
+
+
+</td><td>
+
+**_(BETA)_** Invokes the specified callback with a terminal that is associated with this operation.
+
+Will write to a log file corresponding to the phase and project, and clean it up upon completion.
+
+
+</td></tr>
+</tbody></table>
 

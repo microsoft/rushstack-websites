@@ -19,7 +19,62 @@ export interface IStringValueTypings
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [typings](./typings-generator.istringvaluetypings.typings.md) |  | [IStringValueTyping](./typings-generator.istringvaluetyping.md)<></>\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[exportAsDefault?](./typings-generator.istringvaluetypings.exportasdefault.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| [IExportAsDefaultOptions](./typings-generator.iexportasdefaultoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for default exports. Note that options provided here will override options provided in [IStringValuesTypingsGeneratorBaseOptions.exportAsDefault](./typings-generator.istringvaluestypingsgeneratorbaseoptions.exportasdefault.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[typings](./typings-generator.istringvaluetypings.typings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IStringValueTyping](./typings-generator.istringvaluetyping.md)<></>\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

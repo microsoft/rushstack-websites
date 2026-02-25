@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICommandLineStringDefinition interface
 
-For use with [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md)<></>, this interface defines a command line parameter whose argument is a string value.
+For use with [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md) and [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter_1.md)<></>, this interface defines a command line parameter whose argument is a string value.
 
 **Signature:**
 
@@ -21,7 +21,45 @@ export interface ICommandLineStringDefinition extends IBaseCommandLineDefinition
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultValue?](./ts-command-line.icommandlinestringdefinition.defaultvalue.md) |  | string | _(Optional)_ The default value which will be used if the parameter is omitted from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultValue?](./ts-command-line.icommandlinestringdefinition.defaultvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The default value which will be used if the parameter is omitted from the command line.
+
+
+</td></tr>
+</tbody></table>
 

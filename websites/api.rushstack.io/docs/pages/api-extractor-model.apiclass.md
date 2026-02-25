@@ -31,25 +31,218 @@ export class X { }
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apiclass._constructor_.md) |  | Constructs a new instance of the <code>ApiClass</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apiclass._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiClass` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apiclass.containerkey.md) | <code>readonly</code> | string |  |
-|  [extendsType](./api-extractor-model.apiclass.extendstype.md) | <code>readonly</code> | [HeritageType](./api-extractor-model.heritagetype.md) \| undefined | The base class that this class inherits from (using the <code>extends</code> keyword), or undefined if there is no base class. |
-|  [implementsTypes](./api-extractor-model.apiclass.implementstypes.md) | <code>readonly</code> | ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md)<></>&gt; | The list of interfaces that this class implements using the <code>implements</code> keyword. |
-|  [kind](./api-extractor-model.apiclass.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apiclass.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[extendsType](./api-extractor-model.apiclass.extendstype.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HeritageType](./api-extractor-model.heritagetype.md) \| undefined
+
+
+</td><td>
+
+The base class that this class inherits from (using the `extends` keyword), or undefined if there is no base class.
+
+
+</td></tr>
+<tr><td>
+
+[implementsTypes](./api-extractor-model.apiclass.implementstypes.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[HeritageType](./api-extractor-model.heritagetype.md)<></>&gt;
+
+
+</td><td>
+
+The list of interfaces that this class implements using the `implements` keyword.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apiclass.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apiclass.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apiclass.getcontainerkey.md) | <code>static</code> |  |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiclass.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apiclass.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apiclass.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apiclass.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiclass.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apiclass.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

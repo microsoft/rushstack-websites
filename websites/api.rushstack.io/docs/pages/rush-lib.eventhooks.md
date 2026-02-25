@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EventHooks class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 This class represents Rush event hooks configured for this repo. Hooks are customized script actions that Rush executes when specific events occur. The actions are expressed as a command-line that is executed using the operating system shell.
@@ -27,7 +27,35 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [get(event)](./rush-lib.eventhooks.get.md) |  | **_(BETA)_** Return all the scripts associated with the specified event. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[get(event)](./rush-lib.eventhooks.get.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Return all the scripts associated with the specified event.
+
+
+</td></tr>
+</tbody></table>
 

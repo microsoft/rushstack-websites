@@ -33,17 +33,165 @@ An excerpt may be empty (i.e. a token range containing zero tokens). For example
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(tokens, tokenRange)](./api-extractor-model.excerpt._constructor_.md) |  | Constructs a new instance of the <code>Excerpt</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(tokens, tokenRange)](./api-extractor-model.excerpt._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `Excerpt` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isEmpty](./api-extractor-model.excerpt.isempty.md) | <code>readonly</code> | boolean | Returns true if the excerpt is an empty range. |
-|  [spannedTokens](./api-extractor-model.excerpt.spannedtokens.md) | <code>readonly</code> | ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt; | The tokens spanned by this excerpt. It is the range of the <code>tokens</code> array as specified by the <code>tokenRange</code> property. |
-|  [text](./api-extractor-model.excerpt.text.md) | <code>readonly</code> | string | The excerpted text, formed by concatenating the text of the <code>spannedTokens</code> strings. |
-|  [tokenRange](./api-extractor-model.excerpt.tokenrange.md) | <code>readonly</code> | Readonly&lt;[IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md)<></>&gt; | Specifies the excerpt's range within the <code>tokens</code> array. |
-|  [tokens](./api-extractor-model.excerpt.tokens.md) | <code>readonly</code> | ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt; | The complete list of tokens for the source code fragment that this excerpt is based upon. If this object is the main excerpt, then it will span all of the tokens; otherwise, it will correspond to a range within the array. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isEmpty](./api-extractor-model.excerpt.isempty.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns true if the excerpt is an empty range.
+
+
+</td></tr>
+<tr><td>
+
+[spannedTokens](./api-extractor-model.excerpt.spannedtokens.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt;
+
+
+</td><td>
+
+The tokens spanned by this excerpt. It is the range of the `tokens` array as specified by the `tokenRange` property.
+
+
+</td></tr>
+<tr><td>
+
+[text](./api-extractor-model.excerpt.text.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The excerpted text, formed by concatenating the text of the `spannedTokens` strings.
+
+
+</td></tr>
+<tr><td>
+
+[tokenRange](./api-extractor-model.excerpt.tokenrange.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md)<></>&gt;
+
+
+</td><td>
+
+Specifies the excerpt's range within the `tokens` array.
+
+
+</td></tr>
+<tr><td>
+
+[tokens](./api-extractor-model.excerpt.tokens.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt;
+
+
+</td><td>
+
+The complete list of tokens for the source code fragment that this excerpt is based upon. If this object is the main excerpt, then it will span all of the tokens; otherwise, it will correspond to a range within the array.
+
+
+</td></tr>
+</tbody></table>
 

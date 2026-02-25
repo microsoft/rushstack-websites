@@ -20,11 +20,101 @@ export declare class Import
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [lazy(moduleName, require)](./node-core-library.import.lazy.md) | <code>static</code> | Provides a way to improve process startup times by lazy-loading imported modules. |
-|  [resolveModule(options)](./node-core-library.import.resolvemodule.md) | <code>static</code> | This resolves a module path using similar logic as the Node.js <code>require.resolve()</code> API, but supporting extra features such as specifying the base folder. |
-|  [resolveModuleAsync(options)](./node-core-library.import.resolvemoduleasync.md) | <code>static</code> | Async version of [Import.resolveModule()](./node-core-library.import.resolvemodule.md)<></>. |
-|  [resolvePackage(options)](./node-core-library.import.resolvepackage.md) | <code>static</code> | Performs module resolution to determine the folder where a package is installed. |
-|  [resolvePackageAsync(options)](./node-core-library.import.resolvepackageasync.md) | <code>static</code> | Async version of [Import.resolvePackage()](./node-core-library.import.resolvepackage.md)<></>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[lazy(moduleName, require)](./node-core-library.import.lazy.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Provides a way to improve process startup times by lazy-loading imported modules.
+
+
+</td></tr>
+<tr><td>
+
+[resolveModule(options)](./node-core-library.import.resolvemodule.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This resolves a module path using similar logic as the Node.js `require.resolve()` API, but supporting extra features such as specifying the base folder.
+
+
+</td></tr>
+<tr><td>
+
+[resolveModuleAsync(options)](./node-core-library.import.resolvemoduleasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Async version of [Import.resolveModule()](./node-core-library.import.resolvemodule.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[resolvePackage(options)](./node-core-library.import.resolvepackage.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Performs module resolution to determine the folder where a package is installed.
+
+
+</td></tr>
+<tr><td>
+
+[resolvePackageAsync(options)](./node-core-library.import.resolvepackageasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Async version of [Import.resolvePackage()](./node-core-library.import.resolvepackage.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 

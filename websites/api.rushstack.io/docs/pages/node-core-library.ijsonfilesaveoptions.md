@@ -21,9 +21,83 @@ export interface IJsonFileSaveOptions extends IJsonFileStringifyOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ensureFolderExists?](./node-core-library.ijsonfilesaveoptions.ensurefolderexists.md) |  | boolean | _(Optional)_ Creates the folder recursively using FileSystem.ensureFolder() Defaults to false. |
-|  [onlyIfChanged?](./node-core-library.ijsonfilesaveoptions.onlyifchanged.md) |  | boolean | _(Optional)_ If there is an existing file, and the contents have not changed, then don't write anything; this preserves the old timestamp. |
-|  [updateExistingFile?](./node-core-library.ijsonfilesaveoptions.updateexistingfile.md) |  | boolean | _(Optional)_ If true, use the "jju" library to preserve the existing JSON formatting: The file will be loaded from the target filename, the new content will be merged in (preserving whitespace and comments), and then the file will be overwritten with the merged contents. If the target file does not exist, then the file is saved normally. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureFolderExists?](./node-core-library.ijsonfilesaveoptions.ensurefolderexists.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Creates the folder recursively using FileSystem.ensureFolder() Defaults to false.
+
+
+</td></tr>
+<tr><td>
+
+[onlyIfChanged?](./node-core-library.ijsonfilesaveoptions.onlyifchanged.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If there is an existing file, and the contents have not changed, then don't write anything; this preserves the old timestamp.
+
+
+</td></tr>
+<tr><td>
+
+[updateExistingFile?](./node-core-library.ijsonfilesaveoptions.updateexistingfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, use the "jju" library to preserve the existing JSON formatting: The file will be loaded from the target filename, the new content will be merged in (preserving whitespace and comments), and then the file will be overwritten with the merged contents. If the target file does not exist, then the file is saved normally.
+
+
+</td></tr>
+</tbody></table>
 

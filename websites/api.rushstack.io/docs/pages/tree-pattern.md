@@ -14,14 +14,64 @@ A fast, lightweight pattern matcher for tree structures such as an Abstract Synt
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [TreePattern](./tree-pattern.treepattern.md) | A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST). |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TreePattern](./tree-pattern.treepattern.md)
+
+
+</td><td>
+
+A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST).
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [ITreePatternCaptureSet](./tree-pattern.itreepatterncaptureset.md) | Provides additional detail about the success or failure of [TreePattern.match()](./tree-pattern.treepattern.match.md)<></>. |
-|  [TreeNode](./tree-pattern.treenode.md) | Indicates the tree-like data structure that [TreePattern](./tree-pattern.treepattern.md) will traverse. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ITreePatternCaptureSet](./tree-pattern.itreepatterncaptureset.md)
+
+
+</td><td>
+
+Provides additional detail about the success or failure of [TreePattern.match()](./tree-pattern.treepattern.match.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[TreeNode](./tree-pattern.treenode.md)
+
+
+</td><td>
+
+Indicates the tree-like data structure that [TreePattern](./tree-pattern.treepattern.md) will traverse.
+
+
+</td></tr>
+</tbody></table>
 

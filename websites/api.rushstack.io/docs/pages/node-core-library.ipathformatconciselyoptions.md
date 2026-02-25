@@ -20,9 +20,83 @@ export interface IPathFormatConciselyOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [baseFolder](./node-core-library.ipathformatconciselyoptions.basefolder.md) |  | string | The base path to use when converting <code>pathToConvert</code> to a relative path. |
-|  [pathToConvert](./node-core-library.ipathformatconciselyoptions.pathtoconvert.md) |  | string | The path to be converted. |
-|  [trimLeadingDotSlash?](./node-core-library.ipathformatconciselyoptions.trimleadingdotslash.md) |  | boolean | _(Optional)_ If set to true, don't include the leading <code>./</code> if the path is under the base folder. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[baseFolder](./node-core-library.ipathformatconciselyoptions.basefolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The base path to use when converting `pathToConvert` to a relative path.
+
+
+</td></tr>
+<tr><td>
+
+[pathToConvert](./node-core-library.ipathformatconciselyoptions.pathtoconvert.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to be converted.
+
+
+</td></tr>
+<tr><td>
+
+[trimLeadingDotSlash?](./node-core-library.ipathformatconciselyoptions.trimleadingdotslash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If set to true, don't include the leading `./` if the path is under the base folder.
+
+
+</td></tr>
+</tbody></table>
 

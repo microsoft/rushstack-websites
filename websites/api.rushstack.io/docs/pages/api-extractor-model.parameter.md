@@ -31,16 +31,140 @@ export function add(x: number, y: number): number {
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.parameter._constructor_.md) |  | Constructs a new instance of the <code>Parameter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.parameter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `Parameter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isOptional](./api-extractor-model.parameter.isoptional.md) |  | boolean | Whether the parameter is optional. |
-|  [name](./api-extractor-model.parameter.name.md) |  | string | The parameter name. |
-|  [parameterTypeExcerpt](./api-extractor-model.parameter.parametertypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the parameter. |
-|  [tsdocParamBlock](./api-extractor-model.parameter.tsdocparamblock.md) | <code>readonly</code> | tsdoc.DocParamBlock \| undefined | Returns the <code>@param</code> documentation for this parameter, if present. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isOptional](./api-extractor-model.parameter.isoptional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether the parameter is optional.
+
+
+</td></tr>
+<tr><td>
+
+[name](./api-extractor-model.parameter.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The parameter name.
+
+
+</td></tr>
+<tr><td>
+
+[parameterTypeExcerpt](./api-extractor-model.parameter.parametertypeexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the parameter.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocParamBlock](./api-extractor-model.parameter.tsdocparamblock.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+tsdoc.DocParamBlock \| undefined
+
+
+</td><td>
+
+Returns the `@param` documentation for this parameter, if present.
+
+
+</td></tr>
+</tbody></table>
 

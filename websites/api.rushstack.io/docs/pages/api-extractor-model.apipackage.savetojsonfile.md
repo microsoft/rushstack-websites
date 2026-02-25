@@ -18,10 +18,53 @@ saveToJsonFile(apiJsonFilename: string, options?: IApiPackageSaveOptions): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  apiJsonFilename | string |  |
-|  options | [IApiPackageSaveOptions](./api-extractor-model.iapipackagesaveoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+apiJsonFilename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IApiPackageSaveOptions](./api-extractor-model.iapipackagesaveoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

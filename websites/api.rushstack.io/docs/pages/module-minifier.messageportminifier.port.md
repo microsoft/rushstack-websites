@@ -13,5 +13,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-readonly port: MessagePort;
+readonly port: WorkerThreads.MessagePort;
 ```

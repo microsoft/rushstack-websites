@@ -20,13 +20,83 @@ export declare class CompilerState
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [program](./api-extractor.compilerstate.program.md) | <code>readonly</code> | unknown | The TypeScript compiler's <code>Program</code> object, which represents a complete scope of analysis. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[program](./api-extractor.compilerstate.program.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+The TypeScript compiler's `Program` object, which represents a complete scope of analysis.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create(extractorConfig, options)](./api-extractor.compilerstate.create.md) | <code>static</code> | Create a compiler state for use with the specified <code>IExtractorInvokeOptions</code>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create(extractorConfig, options)](./api-extractor.compilerstate.create.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a compiler state for use with the specified `IExtractorInvokeOptions`<></>.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,37 @@ static prepare(options: IExtractorConfigPrepareOptions): ExtractorConfig;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

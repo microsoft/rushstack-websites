@@ -20,10 +20,77 @@ constructor(name: string, version: string, type: DependencyType, onChange: () =>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string |  |
-|  version | string |  |
-|  type | [DependencyType](./rush-lib.dependencytype.md) |  |
-|  onChange | () =&gt; void |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+version
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+type
+
+
+</td><td>
+
+[DependencyType](./rush-lib.dependencytype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+onChange
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

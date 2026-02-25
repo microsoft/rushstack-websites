@@ -15,54 +15,906 @@ The `ExtractorConfig` class loads, validates, interprets, and represents the api
 **Signature:**
 
 ```typescript
+/** @sealed */
 export declare class ExtractorConfig 
 ```
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alphaTrimmedFilePath](./api-extractor.extractorconfig.alphatrimmedfilepath.md) | <code>readonly</code> | string | Specifies the output path for a .d.ts rollup file to be generated with trimming for an "alpha" release. |
-|  [apiJsonFilePath](./api-extractor.extractorconfig.apijsonfilepath.md) | <code>readonly</code> | string | The output path for the doc model file. The file extension should be ".api.json". |
-|  [apiReportEnabled](./api-extractor.extractorconfig.apireportenabled.md) | <code>readonly</code> | boolean | Whether to generate an API report. |
-|  [apiReportIncludeForgottenExports](./api-extractor.extractorconfig.apireportincludeforgottenexports.md) | <code>readonly</code> | boolean | Whether "forgotten exports" should be included in the API report file. |
-|  [betaTrimmedFilePath](./api-extractor.extractorconfig.betatrimmedfilepath.md) | <code>readonly</code> | string | Specifies the output path for a .d.ts rollup file to be generated with trimming for a "beta" release. |
-|  [bundledPackages](./api-extractor.extractorconfig.bundledpackages.md) | <code>readonly</code> | string\[\] | A list of NPM package names whose exports should be treated as part of this package. |
-|  [docModelEnabled](./api-extractor.extractorconfig.docmodelenabled.md) | <code>readonly</code> | boolean | Whether to generate a doc model file. |
-|  [docModelIncludeForgottenExports](./api-extractor.extractorconfig.docmodelincludeforgottenexports.md) | <code>readonly</code> | boolean | Whether "forgotten exports" should be included in the doc model file. |
-|  [enumMemberOrder](./api-extractor.extractorconfig.enummemberorder.md) | <code>readonly</code> | [EnumMemberOrder](./api-extractor-model.enummemberorder.md) | Specifies how API Extractor sorts members of an enum when generating the .api.json file. |
-|  [FILENAME](./api-extractor.extractorconfig.filename.md) | <p><code>static</code></p><p><code>readonly</code></p> | 'api-extractor.json' | The config file name "api-extractor.json". |
-|  [jsonSchema](./api-extractor.extractorconfig.jsonschema.md) | <p><code>static</code></p><p><code>readonly</code></p> | [JsonSchema](./node-core-library.jsonschema.md) | The JSON Schema for API Extractor config file (api-extractor.schema.json). |
-|  [mainEntryPointFilePath](./api-extractor.extractorconfig.mainentrypointfilepath.md) | <code>readonly</code> | string | Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported by this module. |
-|  [messages](./api-extractor.extractorconfig.messages.md) | <code>readonly</code> | [IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md) | Configures how API Extractor reports error and warning messages produced during analysis. |
-|  [newlineKind](./api-extractor.extractorconfig.newlinekind.md) | <code>readonly</code> | [NewlineKind](./node-core-library.newlinekind.md) | Specifies what type of newlines API Extractor should use when writing output files. By default, the output files will be written with Windows-style newlines. |
-|  [omitTrimmingComments](./api-extractor.extractorconfig.omittrimmingcomments.md) | <code>readonly</code> | boolean | When a declaration is trimmed, by default it will be replaced by a code comment such as "Excluded from this release type: exampleMember". Set "omitTrimmingComments" to true to remove the declaration completely. |
-|  [overrideTsconfig](./api-extractor.extractorconfig.overridetsconfig.md) | <code>readonly</code> | {} \| undefined | Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk. |
-|  [packageFolder](./api-extractor.extractorconfig.packagefolder.md) | <code>readonly</code> | string \| undefined | The absolute path of the folder containing the package.json file for the working package, or undefined if API Extractor was invoked without a package.json file. |
-|  [packageJson](./api-extractor.extractorconfig.packagejson.md) | <code>readonly</code> | [INodePackageJson](./node-core-library.inodepackagejson.md) \| undefined | The parsed package.json file for the working package, or undefined if API Extractor was invoked without a package.json file. |
-|  [projectFolder](./api-extractor.extractorconfig.projectfolder.md) | <code>readonly</code> | string | Determines the <code>&lt;projectFolder&gt;</code> token that can be used with other config file settings. The project folder typically contains the tsconfig.json and package.json config files, but the path is user-defined. |
-|  [projectFolderUrl](./api-extractor.extractorconfig.projectfolderurl.md) | <code>readonly</code> | string \| undefined | The base URL where the project's source code can be viewed on a website such as GitHub or Azure DevOps. This URL path corresponds to the <code>&lt;projectFolder&gt;</code> path on disk. |
-|  [publicTrimmedFilePath](./api-extractor.extractorconfig.publictrimmedfilepath.md) | <code>readonly</code> | string | Specifies the output path for a .d.ts rollup file to be generated with trimming for a "public" release. |
-|  [reportFilePath](./api-extractor.extractorconfig.reportfilepath.md) | <code>readonly</code> | string | The <code>reportFolder</code> path combined with the <code>reportFileName</code>. |
-|  [reportTempFilePath](./api-extractor.extractorconfig.reporttempfilepath.md) | <code>readonly</code> | string | The <code>reportTempFolder</code> path combined with the <code>reportFileName</code>. |
-|  [rollupEnabled](./api-extractor.extractorconfig.rollupenabled.md) | <code>readonly</code> | boolean | Whether to generate the .d.ts rollup file. |
-|  [skipLibCheck](./api-extractor.extractorconfig.skiplibcheck.md) | <code>readonly</code> | boolean | This option causes the compiler to be invoked with the <code>--skipLibCheck</code> option. |
-|  [testMode](./api-extractor.extractorconfig.testmode.md) | <code>readonly</code> | boolean | Set to true when invoking API Extractor's test harness. |
-|  [tsconfigFilePath](./api-extractor.extractorconfig.tsconfigfilepath.md) | <code>readonly</code> | string | Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project. |
-|  [tsdocConfigFile](./api-extractor.extractorconfig.tsdocconfigfile.md) | <code>readonly</code> | TSDocConfigFile | The tsdoc.json configuration that will be used when parsing doc comments. |
-|  [tsdocConfiguration](./api-extractor.extractorconfig.tsdocconfiguration.md) | <code>readonly</code> | TSDocConfiguration | The <code>TSDocConfiguration</code> loaded from [ExtractorConfig.tsdocConfigFile](./api-extractor.extractorconfig.tsdocconfigfile.md)<></>. |
-|  [tsdocMetadataEnabled](./api-extractor.extractorconfig.tsdocmetadataenabled.md) | <code>readonly</code> | boolean | Whether to generate the tsdoc-metadata.json file. |
-|  [tsdocMetadataFilePath](./api-extractor.extractorconfig.tsdocmetadatafilepath.md) | <code>readonly</code> | string | Specifies where the TSDoc metadata file should be written. |
-|  [untrimmedFilePath](./api-extractor.extractorconfig.untrimmedfilepath.md) | <code>readonly</code> | string | Specifies the output path for a .d.ts rollup file to be generated without any trimming. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alphaTrimmedFilePath](./api-extractor.extractorconfig.alphatrimmedfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the output path for a .d.ts rollup file to be generated with trimming for an "alpha" release.
+
+
+</td></tr>
+<tr><td>
+
+[apiJsonFilePath](./api-extractor.extractorconfig.apijsonfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The output path for the doc model file. The file extension should be ".api.json".
+
+
+</td></tr>
+<tr><td>
+
+[apiReportEnabled](./api-extractor.extractorconfig.apireportenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate an API report.
+
+
+</td></tr>
+<tr><td>
+
+[apiReportIncludeForgottenExports](./api-extractor.extractorconfig.apireportincludeforgottenexports.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether "forgotten exports" should be included in the API report file.
+
+
+</td></tr>
+<tr><td>
+
+[betaTrimmedFilePath](./api-extractor.extractorconfig.betatrimmedfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the output path for a .d.ts rollup file to be generated with trimming for a "beta" release.
+
+
+</td></tr>
+<tr><td>
+
+[bundledPackages](./api-extractor.extractorconfig.bundledpackages.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+A list of NPM package names whose exports should be treated as part of this package.
+
+
+</td></tr>
+<tr><td>
+
+[docModelGenerationOptions](./api-extractor.extractorconfig.docmodelgenerationoptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IApiModelGenerationOptions](./api-extractor.iapimodelgenerationoptions.md) \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If specified, the doc model is enabled and the specified options will be used.
+
+
+</td></tr>
+<tr><td>
+
+[docModelIncludeForgottenExports](./api-extractor.extractorconfig.docmodelincludeforgottenexports.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether "forgotten exports" should be included in the doc model file.
+
+
+</td></tr>
+<tr><td>
+
+[enumMemberOrder](./api-extractor.extractorconfig.enummemberorder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[EnumMemberOrder](./api-extractor-model.enummemberorder.md)
+
+
+</td><td>
+
+Specifies how API Extractor sorts members of an enum when generating the .api.json file.
+
+
+</td></tr>
+<tr><td>
+
+[FILENAME](./api-extractor.extractorconfig.filename.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+'api-extractor.json'
+
+
+</td><td>
+
+The config file name "api-extractor.json".
+
+
+</td></tr>
+<tr><td>
+
+[jsonSchema](./api-extractor.extractorconfig.jsonschema.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+[JsonSchema](./node-core-library.jsonschema.md)
+
+
+</td><td>
+
+The JSON Schema for API Extractor config file (api-extractor.schema.json).
+
+
+</td></tr>
+<tr><td>
+
+[mainEntryPointFilePath](./api-extractor.extractorconfig.mainentrypointfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported by this module.
+
+
+</td></tr>
+<tr><td>
+
+[messages](./api-extractor.extractorconfig.messages.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md)
+
+
+</td><td>
+
+Configures how API Extractor reports error and warning messages produced during analysis.
+
+
+</td></tr>
+<tr><td>
+
+[newlineKind](./api-extractor.extractorconfig.newlinekind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+Specifies what type of newlines API Extractor should use when writing output files. By default, the output files will be written with Windows-style newlines.
+
+
+</td></tr>
+<tr><td>
+
+[omitTrimmingComments](./api-extractor.extractorconfig.omittrimmingcomments.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+When a declaration is trimmed, by default it will be replaced by a code comment such as "Excluded from this release type: exampleMember". Set "omitTrimmingComments" to true to remove the declaration completely.
+
+
+</td></tr>
+<tr><td>
+
+[overrideTsconfig](./api-extractor.extractorconfig.overridetsconfig.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+{} \| undefined
+
+
+</td><td>
+
+Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk.
+
+
+</td></tr>
+<tr><td>
+
+[packageFolder](./api-extractor.extractorconfig.packagefolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The absolute path of the folder containing the package.json file for the working package, or undefined if API Extractor was invoked without a package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[packageJson](./api-extractor.extractorconfig.packagejson.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[INodePackageJson](./node-core-library.inodepackagejson.md) \| undefined
+
+
+</td><td>
+
+The parsed package.json file for the working package, or undefined if API Extractor was invoked without a package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder](./api-extractor.extractorconfig.projectfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Determines the `<projectFolder>` token that can be used with other config file settings. The project folder typically contains the tsconfig.json and package.json config files, but the path is user-defined.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderUrl](./api-extractor.extractorconfig.projectfolderurl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The base URL where the project's source code can be viewed on a website such as GitHub or Azure DevOps. This URL path corresponds to the `<projectFolder>` path on disk.
+
+
+</td></tr>
+<tr><td>
+
+[publicTrimmedFilePath](./api-extractor.extractorconfig.publictrimmedfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the output path for a .d.ts rollup file to be generated with trimming for a "public" release.
+
+
+</td></tr>
+<tr><td>
+
+[reportConfigs](./api-extractor.extractorconfig.reportconfigs.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+readonly [IExtractorConfigApiReport](./api-extractor.iextractorconfigapireport.md)<></>\[\]
+
+
+</td><td>
+
+List of configurations for report files to be generated.
+
+
+</td></tr>
+<tr><td>
+
+[reportFilePath](./api-extractor.extractorconfig.reportfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Gets the file path for the "complete" (default) report configuration, if one was specified. Otherwise, returns an empty string.
+
+
+</td></tr>
+<tr><td>
+
+[reportFolder](./api-extractor.extractorconfig.reportfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the folder where the API report file is written. The file name portion is determined by the `reportFileName` setting.
+
+
+</td></tr>
+<tr><td>
+
+[reportTempFilePath](./api-extractor.extractorconfig.reporttempfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Gets the temp file path for the "complete" (default) report configuration, if one was specified. Otherwise, returns an empty string.
+
+
+</td></tr>
+<tr><td>
+
+[reportTempFolder](./api-extractor.extractorconfig.reporttempfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the folder where the temporary report file is written. The file name portion is determined by the `reportFileName` setting.
+
+
+</td></tr>
+<tr><td>
+
+[rollupEnabled](./api-extractor.extractorconfig.rollupenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate the .d.ts rollup file.
+
+
+</td></tr>
+<tr><td>
+
+[skipLibCheck](./api-extractor.extractorconfig.skiplibcheck.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+This option causes the compiler to be invoked with the `--skipLibCheck` option.
+
+
+</td></tr>
+<tr><td>
+
+[tagsToReport](./api-extractor.extractorconfig.tagstoreport.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;Record&lt;\`@${string}\`, boolean&gt;&gt;
+
+
+</td><td>
+
+Specifies a list of [TSDoc](https://tsdoc.org/) tags that should be reported in the API report file for items whose documentation contains them.
+
+
+</td></tr>
+<tr><td>
+
+[testMode](./api-extractor.extractorconfig.testmode.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Set to true when invoking API Extractor's test harness.
+
+
+</td></tr>
+<tr><td>
+
+[tsconfigFilePath](./api-extractor.extractorconfig.tsconfigfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocConfigFile](./api-extractor.extractorconfig.tsdocconfigfile.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+TSDocConfigFile
+
+
+</td><td>
+
+The tsdoc.json configuration that will be used when parsing doc comments.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocConfiguration](./api-extractor.extractorconfig.tsdocconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+TSDocConfiguration
+
+
+</td><td>
+
+The `TSDocConfiguration` loaded from [ExtractorConfig.tsdocConfigFile](./api-extractor.extractorconfig.tsdocconfigfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMetadataEnabled](./api-extractor.extractorconfig.tsdocmetadataenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate the tsdoc-metadata.json file.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMetadataFilePath](./api-extractor.extractorconfig.tsdocmetadatafilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies where the TSDoc metadata file should be written.
+
+
+</td></tr>
+<tr><td>
+
+[untrimmedFilePath](./api-extractor.extractorconfig.untrimmedfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the output path for a .d.ts rollup file to be generated without any trimming.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getDiagnosticDump()](./api-extractor.extractorconfig.getdiagnosticdump.md) |  | Returns a JSON-like string representing the <code>ExtractorConfig</code> state, which can be printed to a console for diagnostic purposes. |
-|  [hasDtsFileExtension(filePath)](./api-extractor.extractorconfig.hasdtsfileextension.md) | <code>static</code> | Returns true if the specified file path has the ".d.ts" file extension. |
-|  [loadFile(jsonFilePath)](./api-extractor.extractorconfig.loadfile.md) | <code>static</code> | Performs only the first half of [ExtractorConfig.loadFileAndPrepare()](./api-extractor.extractorconfig.loadfileandprepare.md)<></>, providing an opportunity to modify the object before it is passed to [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md)<></>. |
-|  [loadFileAndPrepare(configJsonFilePath)](./api-extractor.extractorconfig.loadfileandprepare.md) | <code>static</code> | Loads the api-extractor.json config file from the specified file path, and prepares an <code>ExtractorConfig</code> object. |
-|  [prepare(options)](./api-extractor.extractorconfig.prepare.md) | <code>static</code> | Prepares an <code>ExtractorConfig</code> object using a configuration that is provided as a runtime object, rather than reading it from disk. This allows configurations to be constructed programmatically, loaded from an alternate source, and/or customized after loading. |
-|  [tryLoadForFolder(options)](./api-extractor.extractorconfig.tryloadforfolder.md) | <code>static</code> | Searches for the api-extractor.json config file associated with the specified starting folder, and loads the file if found. This lookup supports [rig packages](https://www.npmjs.com/package/@rushstack/rig-package)<></>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDiagnosticDump()](./api-extractor.extractorconfig.getdiagnosticdump.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns a JSON-like string representing the `ExtractorConfig` state, which can be printed to a console for diagnostic purposes.
+
+
+</td></tr>
+<tr><td>
+
+[hasDtsFileExtension(filePath)](./api-extractor.extractorconfig.hasdtsfileextension.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the specified file path has the ".d.ts" file extension.
+
+
+</td></tr>
+<tr><td>
+
+[loadFile(jsonFilePath)](./api-extractor.extractorconfig.loadfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Performs only the first half of [ExtractorConfig.loadFileAndPrepare()](./api-extractor.extractorconfig.loadfileandprepare.md)<></>, providing an opportunity to modify the object before it is passed to [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[loadFileAndPrepare(configJsonFilePath)](./api-extractor.extractorconfig.loadfileandprepare.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads the api-extractor.json config file from the specified file path, and prepares an `ExtractorConfig` object.
+
+
+</td></tr>
+<tr><td>
+
+[prepare(options)](./api-extractor.extractorconfig.prepare.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Prepares an `ExtractorConfig` object using a configuration that is provided as a runtime object, rather than reading it from disk. This allows configurations to be constructed programmatically, loaded from an alternate source, and/or customized after loading.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadForFolder(options)](./api-extractor.extractorconfig.tryloadforfolder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Searches for the api-extractor.json config file associated with the specified starting folder, and loads the file if found. This lookup supports [rig packages](https://www.npmjs.com/package/@rushstack/rig-package)<></>.
+
+
+</td></tr>
+</tbody></table>
 

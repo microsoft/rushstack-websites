@@ -10,7 +10,7 @@ pagination_next: null
 
 ## BuildCacheConfiguration.loadAndRequireEnabledAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Loads the build-cache.json data from the standard file path `common/config/rush/build-cache.json`<></>. If the file has not been created yet, or if the feature is not enabled, then an error is reported.
@@ -23,11 +23,65 @@ static loadAndRequireEnabledAsync(terminal: ITerminal, rushConfiguration: RushCo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |  |
-|  rushSession | [RushSession](./rush-lib.rushsession.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+terminal
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+rushSession
+
+
+</td><td>
+
+[RushSession](./rush-lib.rushsession.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

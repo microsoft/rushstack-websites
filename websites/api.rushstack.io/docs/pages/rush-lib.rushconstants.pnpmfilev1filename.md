@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.pnpmfileV1Filename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The filename ("pnpmfile.js") used to add custom configuration to PNPM (PNPM version 1.x and later).
@@ -18,5 +18,5 @@ The filename ("pnpmfile.js") used to add custom configuration to PNPM (PNPM vers
 **Signature:**
 
 ```typescript
-static readonly pnpmfileV1Filename: string;
+static readonly pnpmfileV1Filename: 'pnpmfile.js';
 ```

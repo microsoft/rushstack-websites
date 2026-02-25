@@ -21,14 +21,81 @@ export declare class AsyncQueue<T> implements AsyncIterable<[T, () => void]>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(iterable)](./node-core-library.asyncqueue._constructor_.md) |  | Constructs a new instance of the <code>AsyncQueue</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(iterable)](./node-core-library.asyncqueue._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AsyncQueue` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\[Symbol.asyncIterator\]()](./node-core-library.asyncqueue._symbol.asynciterator_.md) |  |  |
-|  [push(item)](./node-core-library.asyncqueue.push.md) |  | Adds an item to the queue. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[Symbol.asyncIterator\]()](./node-core-library.asyncqueue._symbol.asynciterator_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[push(item)](./node-core-library.asyncqueue.push.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Adds an item to the queue.
+
+
+</td></tr>
+</tbody></table>
 

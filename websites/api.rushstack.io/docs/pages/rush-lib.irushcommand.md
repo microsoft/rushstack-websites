@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRushCommand interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Information about the currently executing command provided to plugins.
@@ -23,7 +23,47 @@ export interface IRushCommand
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [actionName](./rush-lib.irushcommand.actionname.md) | <code>readonly</code> | string | **_(BETA)_** The name of this command, as seen on the command line |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[actionName](./rush-lib.irushcommand.actionname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The name of this command, as seen on the command line
+
+
+</td></tr>
+</tbody></table>
 

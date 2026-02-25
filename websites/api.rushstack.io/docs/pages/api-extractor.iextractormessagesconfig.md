@@ -24,9 +24,83 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [compilerMessageReporting?](./api-extractor.iextractormessagesconfig.compilermessagereporting.md) |  | [IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md) | _(Optional)_ Configures handling of diagnostic messages generating the TypeScript compiler while analyzing the input .d.ts files. |
-|  [extractorMessageReporting?](./api-extractor.iextractormessagesconfig.extractormessagereporting.md) |  | [IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md) | _(Optional)_ Configures handling of messages reported by API Extractor during its analysis. |
-|  [tsdocMessageReporting?](./api-extractor.iextractormessagesconfig.tsdocmessagereporting.md) |  | [IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md) | _(Optional)_ Configures handling of messages reported by the TSDoc parser when analyzing code comments. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[compilerMessageReporting?](./api-extractor.iextractormessagesconfig.compilermessagereporting.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md)
+
+
+</td><td>
+
+_(Optional)_ Configures handling of diagnostic messages generating the TypeScript compiler while analyzing the input .d.ts files.
+
+
+</td></tr>
+<tr><td>
+
+[extractorMessageReporting?](./api-extractor.iextractormessagesconfig.extractormessagereporting.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md)
+
+
+</td><td>
+
+_(Optional)_ Configures handling of messages reported by API Extractor during its analysis.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMessageReporting?](./api-extractor.iextractormessagesconfig.tsdocmessagereporting.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md)
+
+
+</td><td>
+
+_(Optional)_ Configures handling of messages reported by the TSDoc parser when analyzing code comments.
+
+
+</td></tr>
+</tbody></table>
 

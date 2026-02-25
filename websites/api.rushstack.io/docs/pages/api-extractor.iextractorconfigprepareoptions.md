@@ -20,13 +20,159 @@ export interface IExtractorConfigPrepareOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [configObject](./api-extractor.iextractorconfigprepareoptions.configobject.md) |  | [IConfigFile](./api-extractor.iconfigfile.md) | A configuration object as returned by [ExtractorConfig.loadFile()](./api-extractor.extractorconfig.loadfile.md)<></>. |
-|  [configObjectFullPath](./api-extractor.iextractorconfigprepareoptions.configobjectfullpath.md) |  | string \| undefined | The absolute path of the file that the <code>configObject</code> object was loaded from. This is used for error messages and when probing for <code>tsconfig.json</code>. |
-|  [ignoreMissingEntryPoint?](./api-extractor.iextractorconfigprepareoptions.ignoremissingentrypoint.md) |  | boolean | _(Optional)_ When preparing the configuration object, folder and file paths referenced in the configuration are checked for existence, and an error is reported if they are not found. This option can be used to disable this check for the main entry point module. This may be useful when preparing a configuration file for an un-built project. |
-|  [packageJson?](./api-extractor.iextractorconfigprepareoptions.packagejson.md) |  | [INodePackageJson](./node-core-library.inodepackagejson.md) \| undefined | _(Optional)_ The parsed package.json file for the working package, or undefined if API Extractor was invoked without a package.json file. |
-|  [packageJsonFullPath](./api-extractor.iextractorconfigprepareoptions.packagejsonfullpath.md) |  | string \| undefined | The absolute path of the file that the <code>packageJson</code> object was loaded from, or undefined if API Extractor was invoked without a package.json file. |
-|  [projectFolderLookupToken?](./api-extractor.iextractorconfigprepareoptions.projectfolderlookuptoken.md) |  | string | _(Optional)_ The default value for the <code>projectFolder</code> setting is the <code>&lt;lookup&gt;</code> token, which uses a heuristic to guess an appropriate project folder. Use <code>projectFolderLookupValue</code> to manually specify the <code>&lt;lookup&gt;</code> token value instead. |
-|  [tsdocConfigFile?](./api-extractor.iextractorconfigprepareoptions.tsdocconfigfile.md) |  | TSDocConfigFile | _(Optional)_ Allow customization of the tsdoc.json config file. If omitted, this file will be loaded from its default location. If the file does not exist, then the standard definitions will be used from <code>@microsoft/api-extractor/extends/tsdoc-base.json</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[configObject](./api-extractor.iextractorconfigprepareoptions.configobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigFile](./api-extractor.iconfigfile.md)
+
+
+</td><td>
+
+A configuration object as returned by [ExtractorConfig.loadFile()](./api-extractor.extractorconfig.loadfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[configObjectFullPath](./api-extractor.iextractorconfigprepareoptions.configobjectfullpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The absolute path of the file that the `configObject` object was loaded from. This is used for error messages and when probing for `tsconfig.json`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ignoreMissingEntryPoint?](./api-extractor.iextractorconfigprepareoptions.ignoremissingentrypoint.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ When preparing the configuration object, folder and file paths referenced in the configuration are checked for existence, and an error is reported if they are not found. This option can be used to disable this check for the main entry point module. This may be useful when preparing a configuration file for an un-built project.
+
+
+</td></tr>
+<tr><td>
+
+[packageJson?](./api-extractor.iextractorconfigprepareoptions.packagejson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[INodePackageJson](./node-core-library.inodepackagejson.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_ The parsed package.json file for the working package, or undefined if API Extractor was invoked without a package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[packageJsonFullPath](./api-extractor.iextractorconfigprepareoptions.packagejsonfullpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The absolute path of the file that the `packageJson` object was loaded from, or undefined if API Extractor was invoked without a package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderLookupToken?](./api-extractor.iextractorconfigprepareoptions.projectfolderlookuptoken.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The default value for the `projectFolder` setting is the `<lookup>` token, which uses a heuristic to guess an appropriate project folder. Use `projectFolderLookupValue` to manually specify the `<lookup>` token value instead.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocConfigFile?](./api-extractor.iextractorconfigprepareoptions.tsdocconfigfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+TSDocConfigFile
+
+
+</td><td>
+
+_(Optional)_ Allow customization of the tsdoc.json config file. If omitted, this file will be loaded from its default location. If the file does not exist, then the standard definitions will be used from `@microsoft/api-extractor/extends/tsdoc-base.json`<></>.
+
+
+</td></tr>
+</tbody></table>
 

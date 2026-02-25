@@ -24,10 +24,121 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiJsonFilePath?](./api-extractor.iconfigdocmodel.apijsonfilepath.md) |  | string | _(Optional)_ The output path for the doc model file. The file extension should be ".api.json". |
-|  [enabled](./api-extractor.iconfigdocmodel.enabled.md) |  | boolean | Whether to generate a doc model file. |
-|  [includeForgottenExports?](./api-extractor.iconfigdocmodel.includeforgottenexports.md) |  | boolean | _(Optional)_ Whether "forgotten exports" should be included in the doc model file. |
-|  [projectFolderUrl?](./api-extractor.iconfigdocmodel.projectfolderurl.md) |  | string | _(Optional)_ The base URL where the project's source code can be viewed on a website such as GitHub or Azure DevOps. This URL path corresponds to the <code>&lt;projectFolder&gt;</code> path on disk. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiJsonFilePath?](./api-extractor.iconfigdocmodel.apijsonfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The output path for the doc model file. The file extension should be ".api.json".
+
+
+</td></tr>
+<tr><td>
+
+[enabled](./api-extractor.iconfigdocmodel.enabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate a doc model file.
+
+
+</td></tr>
+<tr><td>
+
+[includeForgottenExports?](./api-extractor.iconfigdocmodel.includeforgottenexports.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether "forgotten exports" should be included in the doc model file.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderUrl?](./api-extractor.iconfigdocmodel.projectfolderurl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The base URL where the project's source code can be viewed on a website such as GitHub or Azure DevOps. This URL path corresponds to the `<projectFolder>` path on disk.
+
+
+</td></tr>
+<tr><td>
+
+[releaseTagsToTrim?](./api-extractor.iconfigdocmodel.releasetagstotrim.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ReleaseTagForTrim](./api-extractor.releasetagfortrim.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_ Specifies a list of release tags that will be trimmed from the doc model.
+
+
+</td></tr>
+</tbody></table>
 

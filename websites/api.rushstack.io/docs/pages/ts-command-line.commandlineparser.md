@@ -10,36 +10,217 @@ pagination_next: null
 
 ## CommandLineParser class
 
-The "argparse" library is a relatively advanced command-line parser with features such as word-wrapping and intelligible error messages (that are lacking in other similar libraries such as commander, yargs, and nomnom). Unfortunately, its ruby-inspired API is awkward to use. The abstract base classes CommandLineParser and CommandLineAction provide a wrapper for "argparse" that makes defining and consuming arguments quick and simple, and enforces that appropriate documentation is provided for each parameter.
+The "argparse" library is a relatively advanced command-line parser with features such as word-wrapping and intelligible error messages (that are lacking in other similar libraries such as commander, yargs, and nomnom). Unfortunately, its ruby-inspired API is awkward to use. The base classes CommandLineParser and CommandLineAction provide a wrapper for "argparse" that makes defining and consuming arguments quick and simple, and enforces that appropriate documentation is provided for each parameter.
 
 **Signature:**
 
 ```typescript
-export declare abstract class CommandLineParser extends CommandLineParameterProvider 
+export declare class CommandLineParser extends CommandLineParameterProvider 
 ```
 **Extends:** [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./ts-command-line.commandlineparser._constructor_.md) |  | Constructs a new instance of the <code>CommandLineParser</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./ts-command-line.commandlineparser._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `CommandLineParser` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [actions](./ts-command-line.commandlineparser.actions.md) | <code>readonly</code> | ReadonlyArray&lt;[CommandLineAction](./ts-command-line.commandlineaction.md)<></>&gt; | Returns the list of actions that were defined for this CommandLineParser object. |
-|  [selectedAction](./ts-command-line.commandlineparser.selectedaction.md) |  | [CommandLineAction](./ts-command-line.commandlineaction.md) \| undefined | Reports which CommandLineAction was specified on the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[actions](./ts-command-line.commandlineparser.actions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[CommandLineAction](./ts-command-line.commandlineaction.md)<></>&gt;
+
+
+</td><td>
+
+Returns the list of actions that were defined for this CommandLineParser object.
+
+
+</td></tr>
+<tr><td>
+
+[selectedAction](./ts-command-line.commandlineparser.selectedaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CommandLineAction](./ts-command-line.commandlineaction.md) \| undefined
+
+
+</td><td>
+
+Reports which CommandLineAction was specified on the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addAction(action)](./ts-command-line.commandlineparser.addaction.md) |  | Defines a new action that can be used with the CommandLineParser instance. |
-|  [execute(args)](./ts-command-line.commandlineparser.execute.md) |  | The program entry point will call this method to begin parsing command-line arguments and executing the corresponding action. |
-|  [executeWithoutErrorHandling(args)](./ts-command-line.commandlineparser.executewithouterrorhandling.md) |  | This is similar to [CommandLineParser.execute()](./ts-command-line.commandlineparser.execute.md)<></>, except that execution errors simply cause the promise to reject. It is the caller's responsibility to trap |
-|  [getAction(actionName)](./ts-command-line.commandlineparser.getaction.md) |  | Retrieves the action with the specified name. If no matching action is found, an exception is thrown. |
-|  [onExecute()](./ts-command-line.commandlineparser.onexecute.md) | <code>protected</code> | This hook allows the subclass to perform additional operations before or after the chosen action is executed. |
-|  [tryGetAction(actionName)](./ts-command-line.commandlineparser.trygetaction.md) |  | Retrieves the action with the specified name. If no matching action is found, undefined is returned. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addAction(action)](./ts-command-line.commandlineparser.addaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a new action that can be used with the CommandLineParser instance.
+
+
+</td></tr>
+<tr><td>
+
+[executeAsync(args)](./ts-command-line.commandlineparser.executeasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The program entry point will call this method to begin parsing command-line arguments and executing the corresponding action.
+
+
+</td></tr>
+<tr><td>
+
+[executeWithoutErrorHandlingAsync(args)](./ts-command-line.commandlineparser.executewithouterrorhandlingasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This is similar to [CommandLineParser.executeAsync()](./ts-command-line.commandlineparser.executeasync.md)<></>, except that execution errors simply cause the promise to reject. It is the caller's responsibility to trap
+
+
+</td></tr>
+<tr><td>
+
+[getAction(actionName)](./ts-command-line.commandlineparser.getaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Retrieves the action with the specified name. If no matching action is found, an exception is thrown.
+
+
+</td></tr>
+<tr><td>
+
+[onExecuteAsync()](./ts-command-line.commandlineparser.onexecuteasync.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+This hook allows the subclass to perform additional operations before or after the chosen action is executed.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetAction(actionName)](./ts-command-line.commandlineparser.trygetaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Retrieves the action with the specified name. If no matching action is found, undefined is returned.
+
+
+</td></tr>
+</tbody></table>
 

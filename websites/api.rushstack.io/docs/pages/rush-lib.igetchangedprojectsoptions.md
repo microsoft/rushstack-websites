@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IGetChangedProjectsOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,11 +22,161 @@ export interface IGetChangedProjectsOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [enableFiltering](./rush-lib.igetchangedprojectsoptions.enablefiltering.md) |  | boolean | **_(BETA)_** If set to <code>true</code> apply the <code>incrementalBuildIgnoredGlobs</code> property in a project's <code>rush-project.json</code> and exclude matched files from change detection. |
-|  [includeExternalDependencies](./rush-lib.igetchangedprojectsoptions.includeexternaldependencies.md) |  | boolean | **_(BETA)_** If set to <code>true</code>, consider a project's external dependency installation layout as defined in the package manager lockfile when determining if it has changed. |
-|  [shouldFetch?](./rush-lib.igetchangedprojectsoptions.shouldfetch.md) |  | boolean | **_(BETA)_** _(Optional)_ |
-|  [targetBranchName](./rush-lib.igetchangedprojectsoptions.targetbranchname.md) |  | string | **_(BETA)_** |
-|  [terminal](./rush-lib.igetchangedprojectsoptions.terminal.md) |  | [ITerminal](./node-core-library.iterminal.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[enableFiltering](./rush-lib.igetchangedprojectsoptions.enablefiltering.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If set to `true` apply the `incrementalBuildIgnoredGlobs` property in a project's `rush-project.json` and exclude matched files from change detection.
+
+
+</td></tr>
+<tr><td>
+
+[excludeVersionOnlyChanges?](./rush-lib.igetchangedprojectsoptions.excludeversiononlychanges.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If set to `true`<></>, excludes projects where the only changes are: - A version-only change to `package.json` (only the "version" field differs) - Changes to `CHANGELOG.md` and/or `CHANGELOG.json` files
+
+This prevents `rush version --bump` from triggering `rush change --verify` to request change files for the version bumps and changelog updates it creates.
+
+
+</td></tr>
+<tr><td>
+
+[includeExternalDependencies](./rush-lib.igetchangedprojectsoptions.includeexternaldependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If set to `true`<></>, consider a project's external dependency installation layout as defined in the package manager lockfile when determining if it has changed.
+
+
+</td></tr>
+<tr><td>
+
+[shouldFetch?](./rush-lib.igetchangedprojectsoptions.shouldfetch.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[targetBranchName](./rush-lib.igetchangedprojectsoptions.targetbranchname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./rush-lib.igetchangedprojectsoptions.terminal.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[variant?](./rush-lib.igetchangedprojectsoptions.variant.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

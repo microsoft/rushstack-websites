@@ -20,9 +20,69 @@ export declare enum NewlineKind
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  CrLf | <code>&quot;\r\n&quot;</code> | Windows-style newlines |
-|  Lf | <code>&quot;\n&quot;</code> | POSIX-style newlines |
-|  OsDefault | <code>&quot;os&quot;</code> | Default newline type for this operating system (<code>os.EOL</code>). |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+CrLf
+
+
+</td><td>
+
+`"\r\n"`
+
+
+</td><td>
+
+Windows-style newlines
+
+
+</td></tr>
+<tr><td>
+
+Lf
+
+
+</td><td>
+
+`"\n"`
+
+
+</td><td>
+
+POSIX-style newlines
+
+
+</td></tr>
+<tr><td>
+
+OsDefault
+
+
+</td><td>
+
+`"os"`
+
+
+</td><td>
+
+Default newline type for this operating system (`os.EOL`<></>).
+
+
+</td></tr>
+</tbody></table>
 

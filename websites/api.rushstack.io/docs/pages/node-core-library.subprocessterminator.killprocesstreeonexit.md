@@ -10,7 +10,7 @@ pagination_next: null
 
 ## SubprocessTerminator.killProcessTreeOnExit() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Registers a child process so that it will be terminated automatically if the current process is terminated.
@@ -23,10 +23,51 @@ static killProcessTreeOnExit(subprocess: child_process.ChildProcess, subprocessO
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  subprocess | child\_process.ChildProcess |  |
-|  subprocessOptions | [ISubprocessOptions](./node-core-library.isubprocessoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subprocess
+
+
+</td><td>
+
+child\_process.ChildProcess
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+subprocessOptions
+
+
+</td><td>
+
+[ISubprocessOptions](./node-core-library.isubprocessoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -15,16 +15,72 @@ Get a development certificate from the store, or optionally, generate a new one 
 **Signature:**
 
 ```typescript
-ensureCertificateAsync(canGenerateNewCertificate: boolean, terminal: ITerminal, generationOptions?: ICertificateGenerationOptions): Promise<ICertificate>;
+ensureCertificateAsync(canGenerateNewCertificate: boolean, terminal: ITerminal, options?: ICertificateGenerationOptions): Promise<ICertificate>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  canGenerateNewCertificate | boolean |  |
-|  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
-|  generationOptions | [ICertificateGenerationOptions](./debug-certificate-manager.icertificategenerationoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+canGenerateNewCertificate
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+terminal
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ICertificateGenerationOptions](./debug-certificate-manager.icertificategenerationoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

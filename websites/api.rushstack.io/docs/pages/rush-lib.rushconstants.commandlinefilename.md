@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.commandLineFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Custom command line configuration file, which is used by rush for implementing custom command and options.
@@ -18,5 +18,5 @@ Custom command line configuration file, which is used by rush for implementing c
 **Signature:**
 
 ```typescript
-static readonly commandLineFilename: string;
+static readonly commandLineFilename: 'command-line.json';
 ```

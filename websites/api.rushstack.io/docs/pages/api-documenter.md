@@ -14,26 +14,156 @@ API Documenter generates an API reference website from the .api.json files creat
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [MarkdownDocumenterAccessor](./api-documenter.markdowndocumenteraccessor.md) | Provides access to the documenter that is generating the output. |
-|  [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md) | Inherit from this base class to implement an API Documenter plugin feature that customizes the generation of markdown output. |
-|  [MarkdownDocumenterFeatureContext](./api-documenter.markdowndocumenterfeaturecontext.md) | Context object for [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md)<></>. Exposes various services that can be used by a plugin. |
-|  [PluginFeatureContext](./api-documenter.pluginfeaturecontext.md) | Context object for [PluginFeature](./api-documenter.pluginfeature.md)<></>. Exposes various services that can be used by a plugin. |
-|  [PluginFeatureInitialization](./api-documenter.pluginfeatureinitialization.md) | This is an internal part of the plugin infrastructure. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MarkdownDocumenterAccessor](./api-documenter.markdowndocumenteraccessor.md)
+
+
+</td><td>
+
+Provides access to the documenter that is generating the output.
+
+
+</td></tr>
+<tr><td>
+
+[MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md)
+
+
+</td><td>
+
+Inherit from this base class to implement an API Documenter plugin feature that customizes the generation of markdown output.
+
+
+</td></tr>
+<tr><td>
+
+[MarkdownDocumenterFeatureContext](./api-documenter.markdowndocumenterfeaturecontext.md)
+
+
+</td><td>
+
+Context object for [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md)<></>. Exposes various services that can be used by a plugin.
+
+
+</td></tr>
+<tr><td>
+
+[PluginFeatureContext](./api-documenter.pluginfeaturecontext.md)
+
+
+</td><td>
+
+Context object for [PluginFeature](./api-documenter.pluginfeature.md)<></>. Exposes various services that can be used by a plugin.
+
+
+</td></tr>
+<tr><td>
+
+[PluginFeatureInitialization](./api-documenter.pluginfeatureinitialization.md)
+
+
+</td><td>
+
+This is an internal part of the plugin infrastructure.
+
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-|  Abstract Class | Description |
-|  --- | --- |
-|  [PluginFeature](./api-documenter.pluginfeature.md) | The abstract base class for all API Documenter plugin features. |
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PluginFeature](./api-documenter.pluginfeature.md)
+
+
+</td><td>
+
+The abstract base class for all API Documenter plugin features.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IApiDocumenterPluginManifest](./api-documenter.iapidocumenterpluginmanifest.md) | The manifest for an API Documenter plugin. |
-|  [IFeatureDefinition](./api-documenter.ifeaturedefinition.md) | Defines a "feature" that is provided by an API Documenter plugin. A feature is a user-defined module that customizes the behavior of API Documenter. |
-|  [IMarkdownDocumenterFeatureOnBeforeWritePageArgs](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.md) | Event arguments for MarkdownDocumenterFeature.onBeforeWritePage() |
-|  [IMarkdownDocumenterFeatureOnFinishedArgs](./api-documenter.imarkdowndocumenterfeatureonfinishedargs.md) | Event arguments for MarkdownDocumenterFeature.onFinished() |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IApiDocumenterPluginManifest](./api-documenter.iapidocumenterpluginmanifest.md)
+
+
+</td><td>
+
+The manifest for an API Documenter plugin.
+
+
+</td></tr>
+<tr><td>
+
+[IFeatureDefinition](./api-documenter.ifeaturedefinition.md)
+
+
+</td><td>
+
+Defines a "feature" that is provided by an API Documenter plugin. A feature is a user-defined module that customizes the behavior of API Documenter.
+
+
+</td></tr>
+<tr><td>
+
+[IMarkdownDocumenterFeatureOnBeforeWritePageArgs](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.md)
+
+
+</td><td>
+
+Event arguments for MarkdownDocumenterFeature.onBeforeWritePage()
+
+
+</td></tr>
+<tr><td>
+
+[IMarkdownDocumenterFeatureOnFinishedArgs](./api-documenter.imarkdowndocumenterfeatureonfinishedargs.md)
+
+
+</td><td>
+
+Event arguments for MarkdownDocumenterFeature.onFinished()
+
+
+</td></tr>
+</tbody></table>
 

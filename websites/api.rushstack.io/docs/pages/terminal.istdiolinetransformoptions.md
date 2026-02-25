@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStdioLineTransformOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructor options for [StderrLineTransform](./terminal.stderrlinetransform.md)
@@ -24,7 +24,45 @@ export interface IStdioLineTransformOptions extends ITerminalTransformOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [newlineKind?](./terminal.istdiolinetransformoptions.newlinekind.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | **_(BETA)_** _(Optional)_ Specifies the kind of newline for the output. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[newlineKind?](./terminal.istdiolinetransformoptions.newlinekind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Specifies the kind of newline for the output.
+
+
+</td></tr>
+</tbody></table>
 

@@ -24,9 +24,83 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [overrideTsconfig?](./api-extractor.iconfigcompiler.overridetsconfig.md) |  | {} | _(Optional)_ Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk. |
-|  [skipLibCheck?](./api-extractor.iconfigcompiler.skiplibcheck.md) |  | boolean | _(Optional)_ This option causes the compiler to be invoked with the <code>--skipLibCheck</code> option. |
-|  [tsconfigFilePath?](./api-extractor.iconfigcompiler.tsconfigfilepath.md) |  | string | _(Optional)_ Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[overrideTsconfig?](./api-extractor.iconfigcompiler.overridetsconfig.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{}
+
+
+</td><td>
+
+_(Optional)_ Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk.
+
+
+</td></tr>
+<tr><td>
+
+[skipLibCheck?](./api-extractor.iconfigcompiler.skiplibcheck.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ This option causes the compiler to be invoked with the `--skipLibCheck` option.
+
+
+</td></tr>
+<tr><td>
+
+[tsconfigFilePath?](./api-extractor.iconfigcompiler.tsconfigfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,10 +20,102 @@ export interface IModuleMinificationSuccessResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [code](./module-minifier.imoduleminificationsuccessresult.code.md) |  | string | The minified code. |
-|  [error](./module-minifier.imoduleminificationsuccessresult.error.md) |  | undefined | The error property being <code>undefined</code> indicates success. |
-|  [hash](./module-minifier.imoduleminificationsuccessresult.hash.md) |  | string | Identity of the request |
-|  [map?](./module-minifier.imoduleminificationsuccessresult.map.md) |  | RawSourceMap | _(Optional)_ Marker property to always return the same result shape. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[code](./module-minifier.imoduleminificationsuccessresult.code.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The minified code.
+
+
+</td></tr>
+<tr><td>
+
+[error](./module-minifier.imoduleminificationsuccessresult.error.md)
+
+
+</td><td>
+
+
+</td><td>
+
+undefined
+
+
+</td><td>
+
+The error property being `undefined` indicates success.
+
+
+</td></tr>
+<tr><td>
+
+[hash](./module-minifier.imoduleminificationsuccessresult.hash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Identity of the request
+
+
+</td></tr>
+<tr><td>
+
+[map?](./module-minifier.imoduleminificationsuccessresult.map.md)
+
+
+</td><td>
+
+
+</td><td>
+
+RawSourceMap
+
+
+</td><td>
+
+_(Optional)_ Marker property to always return the same result shape.
+
+
+</td></tr>
+</tbody></table>
 

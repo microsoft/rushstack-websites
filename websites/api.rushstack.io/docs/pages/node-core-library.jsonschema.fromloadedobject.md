@@ -10,25 +10,65 @@ pagination_next: null
 
 ## JsonSchema.fromLoadedObject() method
 
-Registers a JsonSchema that will be loaded from a file on disk.
+Registers a JsonSchema that will be loaded from an object.
 
 **Signature:**
 
 ```typescript
-static fromLoadedObject(schemaObject: JsonObject): JsonSchema;
+static fromLoadedObject(schemaObject: JsonObject, options?: IJsonSchemaFromObjectOptions): JsonSchema;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  schemaObject | [JsonObject](./node-core-library.jsonobject.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+schemaObject
+
+
+</td><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IJsonSchemaFromObjectOptions](./node-core-library.ijsonschemafromobjectoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
 [JsonSchema](./node-core-library.jsonschema.md)
-
-## Remarks
-
-NOTE: An error occurs if the file does not exist; however, the file itself is not loaded or validated until it the schema is actually used.
 

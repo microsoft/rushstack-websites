@@ -20,11 +20,65 @@ requestAccessToPluginByName<T extends object>(pluginToAccessPackage: string, plu
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  pluginToAccessPackage | string |  |
-|  pluginToAccessName | string |  |
-|  pluginApply | (pluginAccessor: T) =&gt; void |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pluginToAccessPackage
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+pluginToAccessName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+pluginApply
+
+
+</td><td>
+
+(pluginAccessor: T) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

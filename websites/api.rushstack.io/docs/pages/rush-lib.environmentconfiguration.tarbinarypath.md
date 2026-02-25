@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentConfiguration.tarBinaryPath property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Allows the tar binary path to be explicitly provided. See 

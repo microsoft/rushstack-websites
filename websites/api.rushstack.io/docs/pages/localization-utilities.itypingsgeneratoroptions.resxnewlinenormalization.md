@@ -10,6 +10,8 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.resxNewlineNormalization property
 
+Normalizes the line endings in .resx files to the specified kind.
+
 **Signature:**
 
 ```typescript

@@ -20,9 +20,83 @@ export interface ILoadForProjectFolderOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bypassCache?](./rig-package.iloadforprojectfolderoptions.bypasscache.md) |  | boolean | _(Optional)_ If specified, force a fresh load instead of returning a cached entry, if one existed. |
-|  [overrideRigJsonObject?](./rig-package.iloadforprojectfolderoptions.overriderigjsonobject.md) |  | [IRigConfigJson](./rig-package.irigconfigjson.md) | _(Optional)_ If specified, instead of loading the <code>config/rig.json</code> from disk, this object will be substituted instead. |
-|  [projectFolderPath](./rig-package.iloadforprojectfolderoptions.projectfolderpath.md) |  | string | The path to the folder of the project to be analyzed. This folder should contain a <code>package.json</code> file. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bypassCache?](./rig-package.iloadforprojectfolderoptions.bypasscache.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If specified, force a fresh load instead of returning a cached entry, if one existed.
+
+
+</td></tr>
+<tr><td>
+
+[overrideRigJsonObject?](./rig-package.iloadforprojectfolderoptions.overriderigjsonobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IRigConfigJson](./rig-package.irigconfigjson.md)
+
+
+</td><td>
+
+_(Optional)_ If specified, instead of loading the `config/rig.json` from disk, this object will be substituted instead.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderPath](./rig-package.iloadforprojectfolderoptions.projectfolderpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to the folder of the project to be analyzed. This folder should contain a `package.json` file.
+
+
+</td></tr>
+</tbody></table>
 

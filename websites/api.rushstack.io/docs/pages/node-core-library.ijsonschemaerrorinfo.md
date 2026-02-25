@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IJsonSchemaErrorInfo interface
 
-Callback function arguments for JsonSchema.validateObjectWithCallback();
+Callback function arguments for [JsonSchema.validateObjectWithCallback()](./node-core-library.jsonschema.validateobjectwithcallback.md)
 
 **Signature:**
 
@@ -20,7 +20,45 @@ export interface IJsonSchemaErrorInfo
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [details](./node-core-library.ijsonschemaerrorinfo.details.md) |  | string | The z-schema error tree, formatted as an indented text string. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[details](./node-core-library.ijsonschemaerrorinfo.details.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The ajv error list, formatted as an indented text string.
+
+
+</td></tr>
+</tbody></table>
 

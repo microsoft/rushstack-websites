@@ -20,9 +20,37 @@ addAction(action: CommandLineAction): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  action | [CommandLineAction](./ts-command-line.commandlineaction.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+action
+
+
+</td><td>
+
+[CommandLineAction](./ts-command-line.commandlineaction.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -20,7 +20,37 @@ constructor(message: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  message | string | A message describing the error. This will be assigned to [InternalError.unformattedMessage](./node-core-library.internalerror.unformattedmessage.md)<></>. The <code>Error.message</code> field will have additional boilerplate explaining that the user has encountered a software defect. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+message
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A message describing the error. This will be assigned to [InternalError.unformattedMessage](./node-core-library.internalerror.unformattedmessage.md)<></>. The `Error.message` field will have additional boilerplate explaining that the user has encountered a software defect.
+
+
+</td></tr>
+</tbody></table>
 

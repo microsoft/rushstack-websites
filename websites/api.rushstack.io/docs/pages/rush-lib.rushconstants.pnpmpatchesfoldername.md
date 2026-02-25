@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.pnpmPatchesFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name used to store patch files for pnpm Example: `C:\MyRepo\common\config\pnpm-patches` Example: `C:\MyRepo\common\temp\patches`
@@ -18,5 +18,5 @@ The folder name used to store patch files for pnpm Example: `C:\MyRepo\common\co
 **Signature:**
 
 ```typescript
-static readonly pnpmPatchesFolderName: string;
+static readonly pnpmPatchesFolderName: 'patches';
 ```

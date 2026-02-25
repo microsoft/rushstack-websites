@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IConfigApiReport.reportFileName property
 
-The filename for the API report files. It will be combined with `reportFolder` or `reportTempFolder` to produce a full output filename.
+The base filename for the API report files, to be combined with [IConfigApiReport.reportFolder](./api-extractor.iconfigapireport.reportfolder.md) or [IConfigApiReport.reportTempFolder](./api-extractor.iconfigapireport.reporttempfolder.md) to produce the full file path.
 
 **Signature:**
 
@@ -20,5 +20,7 @@ reportFileName?: string;
 
 ## Remarks
 
-The file extension should be ".api.md", and the string should not contain a path separator such as `\` or `/`<></>.
+The `reportFileName` should not include any path separators such as `\` or `/`<></>. The `reportFileName` should not include a file extension, since API Extractor will automatically append an appropriate file extension such as `.api.md`<></>. If the [IConfigApiReport.reportVariants](./api-extractor.iconfigapireport.reportvariants.md) setting is used, then the file extension includes the variant name, for example `my-report.public.api.md` or `my-report.beta.api.md`<></>. The `complete` variant always uses the simple extension `my-report.api.md`<></>.
+
+Previous versions of API Extractor required `reportFileName` to include the `.api.md` extension explicitly; for backwards compatibility, that is still accepted but will be discarded before applying the above rules.
 

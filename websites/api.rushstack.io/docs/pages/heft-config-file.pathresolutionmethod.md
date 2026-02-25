@@ -8,25 +8,21 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/heft-config-file](./heft-config-file.md) &gt; [PathResolutionMethod](./heft-config-file.pathresolutionmethod.md)
 
-## PathResolutionMethod enum
+## PathResolutionMethod variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
+The set of possible resolution methods for fields that refer to paths.
 
 **Signature:**
 
 ```typescript
-export declare enum PathResolutionMethod 
+PathResolutionMethod: {
+    readonly resolvePathRelativeToConfigurationFile: "resolvePathRelativeToConfigurationFile";
+    readonly resolvePathRelativeToProjectRoot: "resolvePathRelativeToProjectRoot";
+    readonly NodeResolve: "NodeResolve";
+    readonly nodeResolve: "nodeResolve";
+    readonly custom: "custom";
+}
 ```
-
-## Enumeration Members
-
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  custom | <code>&quot;custom&quot;</code> | **_(BETA)_** Resolve the property using a custom resolver. |
-|  nodeResolve | <code>&quot;nodeResolve&quot;</code> | **_(BETA)_** Treat the property as a NodeJS-style require/import reference and resolve using standard NodeJS filesystem resolution |
-|  NodeResolve | <code>&quot;NodeResolve&quot;</code> | **_(BETA)_** Treat the property as a NodeJS-style require/import reference and resolve using standard NodeJS filesystem resolution |
-|  resolvePathRelativeToConfigurationFile | <code>&quot;resolvePathRelativeToConfigurationFile&quot;</code> | **_(BETA)_** Resolve a path relative to the configuration file |
-|  resolvePathRelativeToProjectRoot | <code>&quot;resolvePathRelativeToProjectRoot&quot;</code> | **_(BETA)_** Resolve a path relative to the root of the project containing the configuration file |
-

@@ -24,8 +24,64 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [enabled](./api-extractor.iconfigtsdocmetadata.enabled.md) |  | boolean | Whether to generate the tsdoc-metadata.json file. |
-|  [tsdocMetadataFilePath?](./api-extractor.iconfigtsdocmetadata.tsdocmetadatafilepath.md) |  | string | _(Optional)_ Specifies where the TSDoc metadata file should be written. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[enabled](./api-extractor.iconfigtsdocmetadata.enabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate the tsdoc-metadata.json file.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMetadataFilePath?](./api-extractor.iconfigtsdocmetadata.tsdocmetadatafilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies where the TSDoc metadata file should be written.
+
+
+</td></tr>
+</tbody></table>
 

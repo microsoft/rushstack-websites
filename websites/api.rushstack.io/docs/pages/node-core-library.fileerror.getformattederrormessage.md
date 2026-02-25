@@ -20,9 +20,39 @@ getFormattedErrorMessage(options?: IFileErrorFormattingOptions): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IFileErrorFormattingOptions](./node-core-library.ifileerrorformattingoptions.md) | _(Optional)_ Options for the error message format. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IFileErrorFormattingOptions](./node-core-library.ifileerrorformattingoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the error message format.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -14,14 +14,56 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export declare function parseLocJson({ content, filePath, ignoreString }: IParseFileOptions): ILocalizationFile;
+export declare function parseLocJson(input: IParseFileOptions): ILocalizationFile;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  { content, filePath, ignoreString } | [IParseFileOptions](./localization-utilities.iparsefileoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ content, filePath, ignoreString }
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+input
+
+
+</td><td>
+
+[IParseFileOptions](./localization-utilities.iparsefileoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -20,11 +20,71 @@ static appendToFile(filePath: string, contents: string | Buffer, options?: IFile
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filePath | string | The absolute or relative path of the file. |
-|  contents | string \| Buffer | The text that should be written to the file. |
-|  options | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | _(Optional)_ Optional settings that can change the behavior. Type: <code>IWriteFileOptions</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path of the file.
+
+
+</td></tr>
+<tr><td>
+
+contents
+
+
+</td><td>
+
+string \| Buffer
+
+
+</td><td>
+
+The text that should be written to the file.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional settings that can change the behavior. Type: `IWriteFileOptions`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

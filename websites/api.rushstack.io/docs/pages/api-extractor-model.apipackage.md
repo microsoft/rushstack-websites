@@ -25,28 +25,259 @@ This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of c
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apipackage._constructor_.md) |  | Constructs a new instance of the <code>ApiPackage</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apipackage._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiPackage` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apipackage.containerkey.md) | <code>readonly</code> | string |  |
-|  [entryPoints](./api-extractor-model.apipackage.entrypoints.md) | <code>readonly</code> | ReadonlyArray&lt;[ApiEntryPoint](./api-extractor-model.apientrypoint.md)<></>&gt; |  |
-|  [kind](./api-extractor-model.apipackage.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
-|  [projectFolderUrl](./api-extractor-model.apipackage.projectfolderurl.md) | <code>readonly</code> | string \| undefined |  |
-|  [tsdocConfiguration](./api-extractor-model.apipackage.tsdocconfiguration.md) | <code>readonly</code> | TSDocConfiguration | The TSDoc configuration that was used when analyzing the API for this package. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apipackage.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[entryPoints](./api-extractor-model.apipackage.entrypoints.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ApiEntryPoint](./api-extractor-model.apientrypoint.md)<></>&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apipackage.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderUrl](./api-extractor-model.apipackage.projectfolderurl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[tsdocConfiguration](./api-extractor-model.apipackage.tsdocconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+TSDocConfiguration
+
+
+</td><td>
+
+The TSDoc configuration that was used when analyzing the API for this package.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addMember(member)](./api-extractor-model.apipackage.addmember.md) |  |  |
-|  [buildCanonicalReference()](./api-extractor-model.apipackage.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [findEntryPointsByPath(importPath)](./api-extractor-model.apipackage.findentrypointsbypath.md) |  |  |
-|  [loadFromJsonFile(apiJsonFilename)](./api-extractor-model.apipackage.loadfromjsonfile.md) | <code>static</code> |  |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apipackage.ondeserializeinto.md) | <code>static</code> |  |
-|  [saveToJsonFile(apiJsonFilename, options)](./api-extractor-model.apipackage.savetojsonfile.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addMember(member)](./api-extractor-model.apipackage.addmember.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apipackage.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[findEntryPointsByPath(importPath)](./api-extractor-model.apipackage.findentrypointsbypath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[loadFromJsonFile(apiJsonFilename)](./api-extractor-model.apipackage.loadfromjsonfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apipackage.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[saveToJsonFile(apiJsonFilename, options)](./api-extractor-model.apipackage.savetojsonfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

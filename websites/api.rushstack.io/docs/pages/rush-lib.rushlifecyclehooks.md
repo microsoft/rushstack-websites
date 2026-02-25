@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Hooks into the lifecycle of the Rush process invocation that plugins may tap into.
@@ -23,13 +23,194 @@ export declare class RushLifecycleHooks
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [beforeInstall](./rush-lib.rushlifecyclehooks.beforeinstall.md) |  | AsyncSeriesHook&lt;[IGlobalCommand](./rush-lib.iglobalcommand.md)<></>&gt; | **_(BETA)_** The hook to run between preparing the common/temp folder and invoking the package manager during "rush install" or "rush update". |
-|  [flushTelemetry](./rush-lib.rushlifecyclehooks.flushtelemetry.md) |  | AsyncParallelHook&lt;\[ReadonlyArray&lt;[ITelemetryData](./rush-lib.itelemetrydata.md)<></>&gt;\]&gt; | **_(BETA)_** A hook to allow plugins to hook custom logic to process telemetry data. |
-|  [initialize](./rush-lib.rushlifecyclehooks.initialize.md) |  | AsyncSeriesHook&lt;[IRushCommand](./rush-lib.irushcommand.md)<></>&gt; | **_(BETA)_** The hook to run before executing any Rush CLI Command. |
-|  [runAnyGlobalCustomCommand](./rush-lib.rushlifecyclehooks.runanyglobalcustomcommand.md) |  | AsyncSeriesHook&lt;[IGlobalCommand](./rush-lib.iglobalcommand.md)<></>&gt; | **_(BETA)_** The hook to run before executing any global Rush CLI Command (defined in command-line.json). |
-|  [runAnyPhasedCommand](./rush-lib.rushlifecyclehooks.runanyphasedcommand.md) |  | AsyncSeriesHook&lt;[IPhasedCommand](./rush-lib.iphasedcommand.md)<></>&gt; | **_(BETA)_** The hook to run before executing any phased Rush CLI Command (defined in command-line.json, or the default "build" or "rebuild"). |
-|  [runGlobalCustomCommand](./rush-lib.rushlifecyclehooks.runglobalcustomcommand.md) |  | HookMap&lt;AsyncSeriesHook&lt;[IGlobalCommand](./rush-lib.iglobalcommand.md)<></>&gt;&gt; | **_(BETA)_** A hook map to allow plugins to hook specific named global commands (defined in command-line.json) before execution. |
-|  [runPhasedCommand](./rush-lib.rushlifecyclehooks.runphasedcommand.md) |  | HookMap&lt;AsyncSeriesHook&lt;[IPhasedCommand](./rush-lib.iphasedcommand.md)<></>&gt;&gt; | **_(BETA)_** A hook map to allow plugins to hook specific named phased commands (defined in command-line.json) before execution. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[afterInstall](./rush-lib.rushlifecyclehooks.afterinstall.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesHook&lt;\[ command: [IRushCommand](./rush-lib.irushcommand.md)<></>, subspace: [Subspace](./rush-lib.subspace.md)<></>, variant: string \| undefined \]&gt;
+
+
+</td><td>
+
+**_(BETA)_** The hook to run after a successful install.
+
+
+</td></tr>
+<tr><td>
+
+[beforeInstall](./rush-lib.rushlifecyclehooks.beforeinstall.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesHook&lt;\[ command: [IGlobalCommand](./rush-lib.iglobalcommand.md)<></>, subspace: [Subspace](./rush-lib.subspace.md)<></>, variant: string \| undefined \]&gt;
+
+
+</td><td>
+
+**_(BETA)_** The hook to run between preparing the common/temp folder and invoking the package manager during "rush install" or "rush update".
+
+
+</td></tr>
+<tr><td>
+
+[flushTelemetry](./rush-lib.rushlifecyclehooks.flushtelemetry.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncParallelHook&lt;\[ReadonlyArray&lt;[ITelemetryData](./rush-lib.itelemetrydata.md)<></>&gt;\]&gt;
+
+
+</td><td>
+
+**_(BETA)_** A hook to allow plugins to hook custom logic to process telemetry data.
+
+
+</td></tr>
+<tr><td>
+
+[initialize](./rush-lib.rushlifecyclehooks.initialize.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesHook&lt;[IRushCommand](./rush-lib.irushcommand.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** The hook to run before executing any Rush CLI Command.
+
+
+</td></tr>
+<tr><td>
+
+[runAnyGlobalCustomCommand](./rush-lib.rushlifecyclehooks.runanyglobalcustomcommand.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesHook&lt;[IGlobalCommand](./rush-lib.iglobalcommand.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** The hook to run before executing any global Rush CLI Command (defined in command-line.json).
+
+
+</td></tr>
+<tr><td>
+
+[runAnyPhasedCommand](./rush-lib.rushlifecyclehooks.runanyphasedcommand.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesHook&lt;[IPhasedCommand](./rush-lib.iphasedcommand.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** The hook to run before executing any phased Rush CLI Command (defined in command-line.json, or the default "build" or "rebuild").
+
+
+</td></tr>
+<tr><td>
+
+[runGlobalCustomCommand](./rush-lib.rushlifecyclehooks.runglobalcustomcommand.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+HookMap&lt;AsyncSeriesHook&lt;[IGlobalCommand](./rush-lib.iglobalcommand.md)<></>&gt;&gt;
+
+
+</td><td>
+
+**_(BETA)_** A hook map to allow plugins to hook specific named global commands (defined in command-line.json) before execution.
+
+
+</td></tr>
+<tr><td>
+
+[runPhasedCommand](./rush-lib.rushlifecyclehooks.runphasedcommand.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+HookMap&lt;AsyncSeriesHook&lt;[IPhasedCommand](./rush-lib.iphasedcommand.md)<></>&gt;&gt;
+
+
+</td><td>
+
+**_(BETA)_** A hook map to allow plugins to hook specific named phased commands (defined in command-line.json) before execution.
+
+
+</td></tr>
+</tbody></table>
 

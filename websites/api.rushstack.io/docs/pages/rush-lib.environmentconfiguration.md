@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentConfiguration class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Provides Rush-specific environment variable data. All Rush environment variables must start with "RUSH\_". This class is designed to be used by RushConfiguration.
@@ -27,26 +27,510 @@ Initialize will throw if any unknown parameters are present.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [absoluteSymlinks](./rush-lib.environmentconfiguration.absolutesymlinks.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean | **_(BETA)_** If "1", create symlinks with absolute paths instead of relative paths. See  |
-|  [allowUnsupportedNodeVersion](./rush-lib.environmentconfiguration.allowunsupportednodeversion.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean | <p>**_(BETA)_** If this environment variable is set to "1", the Node.js version check will print a warning instead of causing a hard error if the environment's Node.js version doesn't match the version specifier in <code>rush.json</code>'s "nodeSupportedVersionRange" property.</p><p>See .</p> |
-|  [allowWarningsInSuccessfulBuild](./rush-lib.environmentconfiguration.allowwarningsinsuccessfulbuild.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean | **_(BETA)_** Setting this environment variable overrides the value of <code>allowWarningsInSuccessfulBuild</code> in the <code>command-line.json</code> configuration file. Specify <code>1</code> to allow warnings in a successful build, or <code>0</code> to disallow them. (See the comments in the command-line.json file for more information). |
-|  [buildCacheCredential](./rush-lib.environmentconfiguration.buildcachecredential.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** Provides a credential for reading from and writing to a remote build cache, if configured. See  |
-|  [buildCacheEnabled](./rush-lib.environmentconfiguration.buildcacheenabled.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean \| undefined | **_(BETA)_** If set, enables or disables the cloud build cache feature. See  |
-|  [buildCacheWriteAllowed](./rush-lib.environmentconfiguration.buildcachewriteallowed.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean \| undefined | **_(BETA)_** If set, enables or disables writing to the cloud build cache. See  |
-|  [gitBinaryPath](./rush-lib.environmentconfiguration.gitbinarypath.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** Allows the git binary path to be explicitly provided. See  |
-|  [pnpmStorePathOverride](./rush-lib.environmentconfiguration.pnpmstorepathoverride.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** An override for the PNPM store path, if <code>pnpmStore</code> configuration is set to 'path' See  |
-|  [pnpmVerifyStoreIntegrity](./rush-lib.environmentconfiguration.pnpmverifystoreintegrity.md) | <p><code>static</code></p><p><code>readonly</code></p> | boolean \| undefined | **_(BETA)_** If specified, enables or disables integrity verification of the pnpm store during install. See  |
-|  [rushGlobalFolderOverride](./rush-lib.environmentconfiguration.rushglobalfolderoverride.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** Overrides the location of the <code>~/.rush</code> global folder where Rush stores temporary files. See  |
-|  [rushTempFolderOverride](./rush-lib.environmentconfiguration.rushtempfolderoverride.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** An override for the common/temp folder path. |
-|  [tarBinaryPath](./rush-lib.environmentconfiguration.tarbinarypath.md) | <p><code>static</code></p><p><code>readonly</code></p> | string \| undefined | **_(BETA)_** Allows the tar binary path to be explicitly provided. See  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[absoluteSymlinks](./rush-lib.environmentconfiguration.absolutesymlinks.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If "1", create symlinks with absolute paths instead of relative paths. See 
+
+
+</td></tr>
+<tr><td>
+
+[allowUnsupportedNodeVersion](./rush-lib.environmentconfiguration.allowunsupportednodeversion.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If this environment variable is set to "1", the Node.js version check will print a warning instead of causing a hard error if the environment's Node.js version doesn't match the version specifier in `rush.json`<></>'s "nodeSupportedVersionRange" property.
+
+See .
+
+
+</td></tr>
+<tr><td>
+
+[allowWarningsInSuccessfulBuild](./rush-lib.environmentconfiguration.allowwarningsinsuccessfulbuild.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Setting this environment variable overrides the value of `allowWarningsInSuccessfulBuild` in the `command-line.json` configuration file. Specify `1` to allow warnings in a successful build, or `0` to disallow them. (See the comments in the command-line.json file for more information).
+
+
+</td></tr>
+<tr><td>
+
+[buildCacheCredential](./rush-lib.environmentconfiguration.buildcachecredential.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Provides a credential for reading from and writing to a remote build cache, if configured. See 
+
+
+</td></tr>
+<tr><td>
+
+[buildCacheEnabled](./rush-lib.environmentconfiguration.buildcacheenabled.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If set, enables or disables the cloud build cache feature. See 
+
+
+</td></tr>
+<tr><td>
+
+[buildCacheOverrideJson](./rush-lib.environmentconfiguration.buildcacheoverridejson.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If set, overrides the build cache configuration that normally lives at `common/config/rush/build-cache.json`<></>. See 
+
+
+</td></tr>
+<tr><td>
+
+[buildCacheOverrideJsonFilePath](./rush-lib.environmentconfiguration.buildcacheoverridejsonfilepath.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If set, overrides the build cache configuration that normally lives at `common/config/rush/build-cache.json`<></>. See 
+
+
+</td></tr>
+<tr><td>
+
+[buildCacheWriteAllowed](./rush-lib.environmentconfiguration.buildcachewriteallowed.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If set, enables or disables writing to the cloud build cache. See 
+
+
+</td></tr>
+<tr><td>
+
+[cobuildContextId](./rush-lib.environmentconfiguration.cobuildcontextid.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Provides a determined cobuild context id if configured See 
+
+
+</td></tr>
+<tr><td>
+
+[cobuildLeafProjectLogOnlyAllowed](./rush-lib.environmentconfiguration.cobuildleafprojectlogonlyallowed.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If set, enables or disables the cobuild leaf project log only feature. See 
+
+
+</td></tr>
+<tr><td>
+
+[cobuildRunnerId](./rush-lib.environmentconfiguration.cobuildrunnerid.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Provides a determined cobuild runner id if configured See 
+
+
+</td></tr>
+<tr><td>
+
+[gitBinaryPath](./rush-lib.environmentconfiguration.gitbinarypath.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Allows the git binary path to be explicitly provided. See 
+
+
+</td></tr>
+<tr><td>
+
+[hasBeenValidated](./rush-lib.environmentconfiguration.hasbeenvalidated.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If true, the environment configuration has been validated and initialized.
+
+
+</td></tr>
+<tr><td>
+
+[pnpmStorePathOverride](./rush-lib.environmentconfiguration.pnpmstorepathoverride.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** An override for the PNPM store path, if `pnpmStore` configuration is set to 'path' See 
+
+
+</td></tr>
+<tr><td>
+
+[pnpmVerifyStoreIntegrity](./rush-lib.environmentconfiguration.pnpmverifystoreintegrity.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If specified, enables or disables integrity verification of the pnpm store during install. See 
+
+
+</td></tr>
+<tr><td>
+
+[rushGlobalFolderOverride](./rush-lib.environmentconfiguration.rushglobalfolderoverride.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Overrides the location of the `~/.rush` global folder where Rush stores temporary files. See 
+
+
+</td></tr>
+<tr><td>
+
+[rushTempFolderOverride](./rush-lib.environmentconfiguration.rushtempfolderoverride.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** An override for the common/temp folder path.
+
+
+</td></tr>
+<tr><td>
+
+[tarBinaryPath](./rush-lib.environmentconfiguration.tarbinarypath.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Allows the tar binary path to be explicitly provided. See 
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [parseBooleanEnvironmentVariable(name, value)](./rush-lib.environmentconfiguration.parsebooleanenvironmentvariable.md) | <code>static</code> | **_(BETA)_** |
-|  [reset()](./rush-lib.environmentconfiguration.reset.md) | <code>static</code> | **_(BETA)_** Resets EnvironmentConfiguration into an un-initialized state. |
-|  [validate(options)](./rush-lib.environmentconfiguration.validate.md) | <code>static</code> | **_(BETA)_** Reads and validates environment variables. If any are invalid, this function will throw. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parseBooleanEnvironmentVariable(name, value)](./rush-lib.environmentconfiguration.parsebooleanenvironmentvariable.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[reset()](./rush-lib.environmentconfiguration.reset.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Resets EnvironmentConfiguration into an un-initialized state.
+
+
+</td></tr>
+<tr><td>
+
+[validate(options)](./rush-lib.environmentconfiguration.validate.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Reads and validates environment variables. If any are invalid, this function will throw.
+
+
+</td></tr>
+</tbody></table>
 

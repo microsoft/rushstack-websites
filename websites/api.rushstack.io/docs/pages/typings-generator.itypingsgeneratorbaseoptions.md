@@ -19,11 +19,117 @@ export interface ITypingsGeneratorBaseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [generatedTsFolder](./typings-generator.itypingsgeneratorbaseoptions.generatedtsfolder.md) |  | string |  |
-|  [globsToIgnore?](./typings-generator.itypingsgeneratorbaseoptions.globstoignore.md) |  | string\[\] | _(Optional)_ |
-|  [secondaryGeneratedTsFolders?](./typings-generator.itypingsgeneratorbaseoptions.secondarygeneratedtsfolders.md) |  | string\[\] | _(Optional)_ |
-|  [srcFolder](./typings-generator.itypingsgeneratorbaseoptions.srcfolder.md) |  | string |  |
-|  [terminal?](./typings-generator.itypingsgeneratorbaseoptions.terminal.md) |  | [ITerminal](./node-core-library.iterminal.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[generatedTsFolder](./typings-generator.itypingsgeneratorbaseoptions.generatedtsfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[globsToIgnore?](./typings-generator.itypingsgeneratorbaseoptions.globstoignore.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[secondaryGeneratedTsFolders?](./typings-generator.itypingsgeneratorbaseoptions.secondarygeneratedtsfolders.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[srcFolder](./typings-generator.itypingsgeneratorbaseoptions.srcfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[terminal?](./typings-generator.itypingsgeneratorbaseoptions.terminal.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

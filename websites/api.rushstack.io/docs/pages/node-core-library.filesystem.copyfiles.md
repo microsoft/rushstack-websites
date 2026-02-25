@@ -20,9 +20,37 @@ static copyFiles(options: IFileSystemCopyFilesOptions): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

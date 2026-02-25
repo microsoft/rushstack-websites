@@ -19,8 +19,62 @@ export interface IHeftRecordMetricsHookOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [metricData](./heft.iheftrecordmetricshookoptions.metricdata.md) |  | [IMetricsData](./heft.imetricsdata.md) |  |
-|  [metricName](./heft.iheftrecordmetricshookoptions.metricname.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[metricData](./heft.iheftrecordmetricshookoptions.metricdata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IMetricsData](./heft.imetricsdata.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[metricName](./heft.iheftrecordmetricshookoptions.metricname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

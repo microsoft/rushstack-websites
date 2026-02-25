@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks.flushTelemetry property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 A hook to allow plugins to hook custom logic to process telemetry data.
@@ -18,5 +18,5 @@ A hook to allow plugins to hook custom logic to process telemetry data.
 **Signature:**
 
 ```typescript
-flushTelemetry: AsyncParallelHook<[ReadonlyArray<ITelemetryData>]>;
+readonly flushTelemetry: AsyncParallelHook<[ReadonlyArray<ITelemetryData>]>;
 ```

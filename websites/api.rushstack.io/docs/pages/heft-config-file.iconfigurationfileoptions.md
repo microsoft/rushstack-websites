@@ -10,14 +10,14 @@ pagination_next: null
 
 ## IConfigurationFileOptions type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
 **Signature:**
 
 ```typescript
-export type IConfigurationFileOptions<TConfigurationFile> = IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile> | IConfigurationFileOptionsWithJsonSchemaObject<TConfigurationFile>;
+export type IConfigurationFileOptions<TConfigurationFile, TExtraOptions extends object> = IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile, TExtraOptions> | IConfigurationFileOptionsWithJsonSchemaObject<TConfigurationFile, TExtraOptions>;
 ```
 **References:** [IConfigurationFileOptionsWithJsonSchemaFilePath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.md)<></>, [IConfigurationFileOptionsWithJsonSchemaObject](./heft-config-file.iconfigurationfileoptionswithjsonschemaobject.md)
 

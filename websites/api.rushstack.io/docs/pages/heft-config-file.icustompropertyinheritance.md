@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICustomPropertyInheritance interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -19,11 +19,49 @@ pagination_next: null
 ```typescript
 export interface ICustomPropertyInheritance<TObject> extends IPropertyInheritance<InheritanceType.custom> 
 ```
-**Extends:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.custom](./heft-config-file.inheritancetype.md)<></>&gt;
+**Extends:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.custom](./heft-config-file.inheritancetype.custom.md)<></>&gt;
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [inheritanceFunction](./heft-config-file.icustompropertyinheritance.inheritancefunction.md) |  | [PropertyInheritanceCustomFunction](./heft-config-file.propertyinheritancecustomfunction.md)<></>&lt;TObject&gt; | **_(BETA)_** Provides a custom inheritance function. This function takes two arguments: the first is the child file's object, and the second is the parent file's object. The function should return the resulting combined object. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[inheritanceFunction](./heft-config-file.icustompropertyinheritance.inheritancefunction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[PropertyInheritanceCustomFunction](./heft-config-file.propertyinheritancecustomfunction.md)<></>&lt;TObject&gt;
+
+
+</td><td>
+
+**_(BETA)_** Provides a custom inheritance function. This function takes two arguments: the first is the child file's object, and the second is the parent file's object. The function should return the resulting combined object. This function will not be invoked if the current value is `null`<></>, the property will simply be deleted.
+
+
+</td></tr>
+</tbody></table>
 

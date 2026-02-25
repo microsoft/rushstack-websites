@@ -20,11 +20,71 @@ static save(jsonObject: JsonObject, jsonFilename: string, options?: IJsonFileSav
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonObject | [JsonObject](./node-core-library.jsonobject.md) | the object to be saved |
-|  jsonFilename | string | the file path to write |
-|  options | [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | _(Optional)_ other settings that control how the file is saved |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonObject
+
+
+</td><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+the object to be saved
+
+
+</td></tr>
+<tr><td>
+
+jsonFilename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+the file path to write
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md)
+
+
+</td><td>
+
+_(Optional)_ other settings that control how the file is saved
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

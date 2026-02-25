@@ -20,8 +20,64 @@ export interface IFindApiItemsMessage
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [messageId](./api-extractor-model.ifindapiitemsmessage.messageid.md) |  | [FindApiItemsMessageId](./api-extractor-model.findapiitemsmessageid.md) | **_(BETA)_** Unique identifier for the message. |
-|  [text](./api-extractor-model.ifindapiitemsmessage.text.md) |  | string | Text description of the message. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[messageId](./api-extractor-model.ifindapiitemsmessage.messageid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[FindApiItemsMessageId](./api-extractor-model.findapiitemsmessageid.md)
+
+
+</td><td>
+
+**_(BETA)_** Unique identifier for the message.
+
+
+</td></tr>
+<tr><td>
+
+[text](./api-extractor-model.ifindapiitemsmessage.text.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Text description of the message.
+
+
+</td></tr>
+</tbody></table>
 

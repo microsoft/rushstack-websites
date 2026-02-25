@@ -20,16 +20,138 @@ export declare class Rush
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_rushLibPackageFolder](./rush-lib.rush._rushlibpackagefolder.md) | <p><code>static</code></p><p><code>readonly</code></p> | string |  |
-|  [version](./rush-lib.rush.version.md) | <p><code>static</code></p><p><code>readonly</code></p> | string | The currently executing version of the "rush-lib" library. This is the same as the Rush tool version for that release. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_rushLibPackageFolder](./rush-lib.rush._rushlibpackagefolder.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[version](./rush-lib.rush.version.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The currently executing version of the "rush-lib" library. This is the same as the Rush tool version for that release.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [launch(launcherVersion, arg)](./rush-lib.rush.launch.md) | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rush" command-line. Third-party tools should not use this API. Instead, they should execute the "rush" binary and start a new Node.js process. |
-|  [launchRushPnpm(launcherVersion, options)](./rush-lib.rush.launchrushpnpm.md) | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rush-pnpm" command-line. Third-party tools should not use this API. Instead, they should execute the "rush-pnpm" binary and start a new Node.js process. |
-|  [launchRushX(launcherVersion, options)](./rush-lib.rush.launchrushx.md) | <code>static</code> | This API is used by the <code>@microsoft/rush</code> front end to launch the "rushx" command-line. Third-party tools should not use this API. Instead, they should execute the "rushx" binary and start a new Node.js process. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[launch(launcherVersion, options)](./rush-lib.rush.launch.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This API is used by the `@microsoft/rush` front end to launch the "rush" command-line. Third-party tools should not use this API. Instead, they should execute the "rush" binary and start a new Node.js process.
+
+
+</td></tr>
+<tr><td>
+
+[launchRushPnpm(launcherVersion, options)](./rush-lib.rush.launchrushpnpm.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This API is used by the `@microsoft/rush` front end to launch the "rush-pnpm" command-line. Third-party tools should not use this API. Instead, they should execute the "rush-pnpm" binary and start a new Node.js process.
+
+
+</td></tr>
+<tr><td>
+
+[launchRushX(launcherVersion, options)](./rush-lib.rush.launchrushx.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This API is used by the `@microsoft/rush` front end to launch the "rushx" command-line. Third-party tools should not use this API. Instead, they should execute the "rushx" binary and start a new Node.js process.
+
+
+</td></tr>
+</tbody></table>
 

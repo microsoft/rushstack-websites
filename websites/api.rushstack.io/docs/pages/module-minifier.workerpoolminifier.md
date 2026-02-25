@@ -21,20 +21,137 @@ export declare class WorkerPoolMinifier implements IModuleMinifier
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./module-minifier.workerpoolminifier._constructor_.md) |  | Constructs a new instance of the <code>WorkerPoolMinifier</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./module-minifier.workerpoolminifier._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `WorkerPoolMinifier` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [maxThreads](./module-minifier.workerpoolminifier.maxthreads.md) |  | number |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[maxThreads](./module-minifier.workerpoolminifier.maxthreads.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [connect()](./module-minifier.workerpoolminifier.connect.md) |  |  |
-|  [minify(request, callback)](./module-minifier.workerpoolminifier.minify.md) |  | Transform code by farming it out to a worker pool. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./module-minifier.workerpoolminifier.connect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[connectAsync()](./module-minifier.workerpoolminifier.connectasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+
+
+</td></tr>
+<tr><td>
+
+[minify(request, callback)](./module-minifier.workerpoolminifier.minify.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Transform code by farming it out to a worker pool.
+
+
+</td></tr>
+</tbody></table>
 

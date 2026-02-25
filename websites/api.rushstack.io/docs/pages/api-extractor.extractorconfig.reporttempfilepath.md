@@ -10,10 +10,15 @@ pagination_next: null
 
 ## ExtractorConfig.reportTempFilePath property
 
-The `reportTempFolder` path combined with the `reportFileName`<></>.
+> Warning: This API is now obsolete.
+> 
+> Use [ExtractorConfig.reportConfigs](./api-extractor.extractorconfig.reportconfigs.md) to access all report configurations.
+> 
+
+Gets the temp file path for the "complete" (default) report configuration, if one was specified. Otherwise, returns an empty string.
 
 **Signature:**
 
 ```typescript
-readonly reportTempFilePath: string;
+get reportTempFilePath(): string;
 ```

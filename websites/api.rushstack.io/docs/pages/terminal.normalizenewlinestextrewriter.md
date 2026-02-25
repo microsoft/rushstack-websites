@@ -21,23 +21,179 @@ export declare class NormalizeNewlinesTextRewriter extends TextRewriter
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.normalizenewlinestextrewriter._constructor_.md) |  | Constructs a new instance of the <code>NormalizeNewlinesTextRewriter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.normalizenewlinestextrewriter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `NormalizeNewlinesTextRewriter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ensureNewlineAtEnd](./terminal.normalizenewlinestextrewriter.ensurenewlineatend.md) | <code>readonly</code> | boolean | If <code>true</code>, then <code>NormalizeNewlinesTextRewriter.close()</code> will append a newline to the output if it ends with an incomplete line. |
-|  [newline](./terminal.normalizenewlinestextrewriter.newline.md) | <code>readonly</code> | string | The specific character sequence that will be used when appending newlines. |
-|  [newlineKind](./terminal.normalizenewlinestextrewriter.newlinekind.md) | <code>readonly</code> | [NewlineKind](./node-core-library.newlinekind.md) | Specifies how newlines should be represented in the output stream. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureNewlineAtEnd](./terminal.normalizenewlinestextrewriter.ensurenewlineatend.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If `true`<></>, then `NormalizeNewlinesTextRewriter.close()` will append a newline to the output if it ends with an incomplete line.
+
+
+</td></tr>
+<tr><td>
+
+[newline](./terminal.normalizenewlinestextrewriter.newline.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The specific character sequence that will be used when appending newlines.
+
+
+</td></tr>
+<tr><td>
+
+[newlineKind](./terminal.normalizenewlinestextrewriter.newlinekind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+Specifies how newlines should be represented in the output stream.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close(unknownState)](./terminal.normalizenewlinestextrewriter.close.md) |  |  |
-|  [initialize()](./terminal.normalizenewlinestextrewriter.initialize.md) |  |  |
-|  [process(unknownState, text)](./terminal.normalizenewlinestextrewriter.process.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close(unknownState)](./terminal.normalizenewlinestextrewriter.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[initialize()](./terminal.normalizenewlinestextrewriter.initialize.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[process(unknownState, text)](./terminal.normalizenewlinestextrewriter.process.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

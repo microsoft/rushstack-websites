@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IExtractorOptions.createArchiveOnly property
 
-Whether to skip copying files to the extraction target directory, and only create an extraction archive. This is only supported when linkCreation is 'script' or 'none'.
+Whether to skip copying files to the extraction target directory, and only create an extraction archive. This is only supported when [IExtractorOptions.linkCreation](./package-extractor.iextractoroptions.linkcreation.md) is 'script' or 'none'.
 
 **Signature:**
 

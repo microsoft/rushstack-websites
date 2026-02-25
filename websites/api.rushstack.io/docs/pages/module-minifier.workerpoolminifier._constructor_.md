@@ -20,7 +20,35 @@ constructor(options: IWorkerPoolMinifierOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IWorkerPoolMinifierOptions](./module-minifier.iworkerpoolminifieroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IWorkerPoolMinifierOptions](./module-minifier.iworkerpoolminifieroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

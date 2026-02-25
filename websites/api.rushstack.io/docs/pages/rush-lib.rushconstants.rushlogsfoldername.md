@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushLogsFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the project `rush-logs` folder.
@@ -18,5 +18,5 @@ The name of the project `rush-logs` folder.
 **Signature:**
 
 ```typescript
-static readonly rushLogsFolderName: string;
+static readonly rushLogsFolderName: 'rush-logs';
 ```

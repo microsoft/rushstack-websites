@@ -20,8 +20,64 @@ export interface IResolveDeclarationReferenceResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [errorMessage](./api-extractor-model.iresolvedeclarationreferenceresult.errormessage.md) |  | string \| undefined | If resolvedApiItem is undefined, then this will always contain an error message explaining why the resolution failed. |
-|  [resolvedApiItem](./api-extractor-model.iresolvedeclarationreferenceresult.resolvedapiitem.md) |  | [ApiItem](./api-extractor-model.apiitem.md) \| undefined | The referenced ApiItem, if the declaration reference could be resolved. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[errorMessage](./api-extractor-model.iresolvedeclarationreferenceresult.errormessage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+If resolvedApiItem is undefined, then this will always contain an error message explaining why the resolution failed.
+
+
+</td></tr>
+<tr><td>
+
+[resolvedApiItem](./api-extractor-model.iresolvedeclarationreferenceresult.resolvedapiitem.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md) \| undefined
+
+
+</td><td>
+
+The referenced ApiItem, if the declaration reference could be resolved.
+
+
+</td></tr>
+</tbody></table>
 

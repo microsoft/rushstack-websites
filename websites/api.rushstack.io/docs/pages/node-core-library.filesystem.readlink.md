@@ -20,9 +20,39 @@ static readLink(path: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | The absolute or relative path to the symbolic link. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path to the symbolic link.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

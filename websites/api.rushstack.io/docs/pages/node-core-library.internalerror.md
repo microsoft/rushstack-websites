@@ -25,20 +25,135 @@ Do not use this class unless you intend to solicit bug reports from end users.
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(message)](./node-core-library.internalerror._constructor_.md) |  | Constructs a new instance of the [InternalError](./node-core-library.internalerror.md) class. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(message)](./node-core-library.internalerror._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the [InternalError](./node-core-library.internalerror.md) class.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [breakInDebugger](./node-core-library.internalerror.breakindebugger.md) | <code>static</code> | boolean | If true, a JavScript <code>debugger;</code> statement will be invoked whenever the <code>InternalError</code> constructor is called. |
-|  [unformattedMessage](./node-core-library.internalerror.unformattedmessage.md) | <code>readonly</code> | string | The underlying error message, without the additional boilerplate for an <code>InternalError</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[breakInDebugger](./node-core-library.internalerror.breakindebugger.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, a JavScript `debugger;` statement will be invoked whenever the `InternalError` constructor is called.
+
+
+</td></tr>
+<tr><td>
+
+[unformattedMessage](./node-core-library.internalerror.unformattedmessage.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The underlying error message, without the additional boilerplate for an `InternalError`<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [toString()](./node-core-library.internalerror.tostring.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[toString()](./node-core-library.internalerror.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

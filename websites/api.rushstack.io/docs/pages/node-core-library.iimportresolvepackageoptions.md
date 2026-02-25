@@ -21,7 +21,64 @@ export interface IImportResolvePackageOptions extends IImportResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [packageName](./node-core-library.iimportresolvepackageoptions.packagename.md) |  | string | The package name to resolve. For example "<></>@<></>rushstack/node-core-library" |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packageName](./node-core-library.iimportresolvepackageoptions.packagename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The package name to resolve. For example "<></>@<></>rushstack/node-core-library"
+
+
+</td></tr>
+<tr><td>
+
+[useNodeJSResolver?](./node-core-library.iimportresolvepackageoptions.usenodejsresolver.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then the module path will be resolved using Node.js's built-in resolution algorithm.
+
+
+</td></tr>
+</tbody></table>
 

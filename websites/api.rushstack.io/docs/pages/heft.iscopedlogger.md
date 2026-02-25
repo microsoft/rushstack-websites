@@ -20,17 +20,137 @@ export interface IScopedLogger
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [hasErrors](./heft.iscopedlogger.haserrors.md) | <code>readonly</code> | boolean | Indicates if the logger has emitted any errors. |
-|  [loggerName](./heft.iscopedlogger.loggername.md) | <code>readonly</code> | string | The name of the scoped logger. Logging messages will be prefixed with this name. |
-|  [terminal](./heft.iscopedlogger.terminal.md) | <code>readonly</code> | [ITerminal](./node-core-library.iterminal.md) | The terminal used to write messages to the console. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hasErrors](./heft.iscopedlogger.haserrors.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Indicates if the logger has emitted any errors.
+
+
+</td></tr>
+<tr><td>
+
+[loggerName](./heft.iscopedlogger.loggername.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the scoped logger. Logging messages will be prefixed with this name.
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./heft.iscopedlogger.terminal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+The terminal used to write messages to the console.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [emitError(error)](./heft.iscopedlogger.emiterror.md) | Call this function to emit an error to the heft runtime. |
-|  [emitWarning(warning)](./heft.iscopedlogger.emitwarning.md) | Call this function to emit an warning to the heft runtime. |
-|  [resetErrorsAndWarnings()](./heft.iscopedlogger.reseterrorsandwarnings.md) | Reset the errors and warnings for this scoped logger. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[emitError(error)](./heft.iscopedlogger.emiterror.md)
+
+
+</td><td>
+
+Call this function to emit an error to the heft runtime.
+
+
+</td></tr>
+<tr><td>
+
+[emitWarning(warning)](./heft.iscopedlogger.emitwarning.md)
+
+
+</td><td>
+
+Call this function to emit an warning to the heft runtime.
+
+
+</td></tr>
+<tr><td>
+
+[resetErrorsAndWarnings()](./heft.iscopedlogger.reseterrorsandwarnings.md)
+
+
+</td><td>
+
+Reset the errors and warnings for this scoped logger.
+
+
+</td></tr>
+</tbody></table>
 

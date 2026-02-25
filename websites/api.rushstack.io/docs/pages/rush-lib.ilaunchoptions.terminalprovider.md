@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ILaunchOptions.terminalProvider property
 
-Used to specify terminal how to write a message
+Pass along the terminal provider from the CLI version selector.
 
 **Signature:**
 

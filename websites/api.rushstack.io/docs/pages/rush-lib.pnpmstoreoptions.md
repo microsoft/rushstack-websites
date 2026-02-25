@@ -10,10 +10,15 @@ pagination_next: null
 
 ## PnpmStoreOptions type
 
-This represents the available PNPM store options
+> Warning: This API is now obsolete.
+> 
+> Use [PnpmStoreLocation](./rush-lib.pnpmstorelocation.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-export type PnpmStoreOptions = 'local' | 'global';
+export type PnpmStoreOptions = PnpmStoreLocation;
 ```
+**References:** [PnpmStoreLocation](./rush-lib.pnpmstorelocation.md)
+

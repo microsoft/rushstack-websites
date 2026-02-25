@@ -10,9 +10,6 @@ pagination_next: null
 
 ## Async class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Utilities for parallel asynchronous operations, for use with the system `Promise` APIs.
 
 **Signature:**
@@ -23,10 +20,165 @@ export declare class Async
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [forEachAsync(iterable, callback, options)](./node-core-library.async.foreachasync.md) | <code>static</code> | **_(BETA)_** Given an input array and a <code>callback</code> function, invoke the callback to start a promise for each element in the array. |
-|  [mapAsync(iterable, callback, options)](./node-core-library.async.mapasync.md) | <code>static</code> | **_(BETA)_** Given an input array and a <code>callback</code> function, invoke the callback to start a promise for each element in the array. Returns an array containing the results. |
-|  [runWithRetriesAsync({ action, maxRetries, retryDelayMs })](./node-core-library.async.runwithretriesasync.md) | <code>static</code> | **_(BETA)_** Executes an async function and optionally retries it if it fails. |
-|  [sleep(ms)](./node-core-library.async.sleep.md) | <code>static</code> | **_(BETA)_** Return a promise that resolves after the specified number of milliseconds. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[forEachAsync(iterable, callback, options)](./node-core-library.async.foreachasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array.
+
+
+</td></tr>
+<tr><td>
+
+[forEachAsync(iterable, callback, options)](./node-core-library.async.foreachasync_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array.
+
+
+</td></tr>
+<tr><td>
+
+[getSignal()](./node-core-library.async.getsignal.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns a Signal, a.k.a. a "deferred promise".
+
+
+</td></tr>
+<tr><td>
+
+[mapAsync(iterable, callback, options)](./node-core-library.async.mapasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array. Returns an array containing the results.
+
+
+</td></tr>
+<tr><td>
+
+[mapAsync(iterable, callback, options)](./node-core-library.async.mapasync_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array. Returns an array containing the results.
+
+
+</td></tr>
+<tr><td>
+
+[runWithRetriesAsync({ action, maxRetries, retryDelayMs }, input)](./node-core-library.async.runwithretriesasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Executes an async function and optionally retries it if it fails.
+
+
+</td></tr>
+<tr><td>
+
+[runWithTimeoutAsync({ action, timeoutMs, timeoutMessage }, input)](./node-core-library.async.runwithtimeoutasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Runs a promise with a timeout. If the promise does not resolve within the specified timeout, it will reject with an error.
+
+
+</td></tr>
+<tr><td>
+
+[sleepAsync(ms)](./node-core-library.async.sleepasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Return a promise that resolves after the specified number of milliseconds.
+
+
+</td></tr>
+<tr><td>
+
+[validateWeightedIterable(operation)](./node-core-library.async.validateweightediterable.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Ensures that the argument is a valid [IWeighted](./node-core-library.iweighted.md)<></>, with a `weight` argument that is a positive integer or 0.
+
+
+</td></tr>
+</tbody></table>
 

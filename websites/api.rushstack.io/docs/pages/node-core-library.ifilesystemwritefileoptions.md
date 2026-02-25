@@ -15,14 +15,70 @@ The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefil
 **Signature:**
 
 ```typescript
-export interface IFileSystemWriteFileOptions 
+export interface IFileSystemWriteFileOptions extends IFileSystemWriteBinaryFileOptions 
 ```
+**Extends:** [IFileSystemWriteBinaryFileOptions](./node-core-library.ifilesystemwritebinaryfileoptions.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [convertLineEndings?](./node-core-library.ifilesystemwritefileoptions.convertlineendings.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | _(Optional)_ If specified, will normalize line endings to the specified style of newline. |
-|  [encoding?](./node-core-library.ifilesystemwritefileoptions.encoding.md) |  | [Encoding](./node-core-library.encoding.md) | _(Optional)_ If specified, will change the encoding of the file that will be written. |
-|  [ensureFolderExists?](./node-core-library.ifilesystemwritefileoptions.ensurefolderexists.md) |  | boolean | _(Optional)_ If true, will ensure the folder is created before writing the file. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertLineEndings?](./node-core-library.ifilesystemwritefileoptions.convertlineendings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+_(Optional)_ If specified, will normalize line endings to the specified style of newline.
+
+
+</td></tr>
+<tr><td>
+
+[encoding?](./node-core-library.ifilesystemwritefileoptions.encoding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Encoding](./node-core-library.encoding.md)
+
+
+</td><td>
+
+_(Optional)_ If specified, will change the encoding of the file that will be written.
+
+
+</td></tr>
+</tbody></table>
 

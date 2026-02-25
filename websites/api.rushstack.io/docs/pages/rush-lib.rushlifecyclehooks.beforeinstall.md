@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks.beforeInstall property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The hook to run between preparing the common/temp folder and invoking the package manager during "rush install" or "rush update".
@@ -18,5 +18,9 @@ The hook to run between preparing the common/temp folder and invoking the packag
 **Signature:**
 
 ```typescript
-beforeInstall: AsyncSeriesHook<IGlobalCommand>;
+readonly beforeInstall: AsyncSeriesHook<[
+        command: IGlobalCommand,
+        subspace: Subspace,
+        variant: string | undefined
+    ]>;
 ```

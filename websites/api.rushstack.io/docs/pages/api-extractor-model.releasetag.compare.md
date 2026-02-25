@@ -20,10 +20,51 @@ function compare(a: ReleaseTag, b: ReleaseTag): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  a | [ReleaseTag](./api-extractor-model.releasetag.md) |  |
-|  b | [ReleaseTag](./api-extractor-model.releasetag.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+a
+
+
+</td><td>
+
+[ReleaseTag](./api-extractor-model.releasetag.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+b
+
+
+</td><td>
+
+[ReleaseTag](./api-extractor-model.releasetag.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

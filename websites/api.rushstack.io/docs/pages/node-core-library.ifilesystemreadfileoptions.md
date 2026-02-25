@@ -20,8 +20,64 @@ export interface IFileSystemReadFileOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [convertLineEndings?](./node-core-library.ifilesystemreadfileoptions.convertlineendings.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | _(Optional)_ If specified, will normalize line endings to the specified style of newline. |
-|  [encoding?](./node-core-library.ifilesystemreadfileoptions.encoding.md) |  | [Encoding](./node-core-library.encoding.md) | _(Optional)_ If specified, will change the encoding of the file that will be written. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertLineEndings?](./node-core-library.ifilesystemreadfileoptions.convertlineendings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+_(Optional)_ If specified, will normalize line endings to the specified style of newline.
+
+
+</td></tr>
+<tr><td>
+
+[encoding?](./node-core-library.ifilesystemreadfileoptions.encoding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Encoding](./node-core-library.encoding.md)
+
+
+</td><td>
+
+_(Optional)_ If specified, will change the encoding of the file that will be written.
+
+
+</td></tr>
+</tbody></table>
 

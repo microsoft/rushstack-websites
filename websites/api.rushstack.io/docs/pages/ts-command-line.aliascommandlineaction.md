@@ -23,20 +23,138 @@ export declare class AliasCommandLineAction extends CommandLineAction
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./ts-command-line.aliascommandlineaction._constructor_.md) |  | Constructs a new instance of the <code>AliasCommandLineAction</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./ts-command-line.aliascommandlineaction._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AliasCommandLineAction` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultParameters](./ts-command-line.aliascommandlineaction.defaultparameters.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt; | A list of default arguments to pass to the target action. |
-|  [targetAction](./ts-command-line.aliascommandlineaction.targetaction.md) | <code>readonly</code> | [CommandLineAction](./ts-command-line.commandlineaction.md) | The action that this alias invokes. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultParameters](./ts-command-line.aliascommandlineaction.defaultparameters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;string&gt;
+
+
+</td><td>
+
+A list of default arguments to pass to the target action.
+
+
+</td></tr>
+<tr><td>
+
+[targetAction](./ts-command-line.aliascommandlineaction.targetaction.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineAction](./ts-command-line.commandlineaction.md)
+
+
+</td><td>
+
+The action that this alias invokes.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onExecute()](./ts-command-line.aliascommandlineaction.onexecute.md) | <code>protected</code> | Executes the target action. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onExecuteAsync()](./ts-command-line.aliascommandlineaction.onexecuteasync.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Executes the target action.
+
+
+</td></tr>
+</tbody></table>
 

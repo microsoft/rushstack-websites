@@ -8,19 +8,14 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/node-core-library](./node-core-library.md) &gt; [FileConstants](./node-core-library.fileconstants.md)
 
-## FileConstants enum
+## FileConstants variable
 
 String constants for common filenames and parts of filenames.
 
 **Signature:**
 
 ```typescript
-export declare enum FileConstants 
+FileConstants: {
+    readonly PackageJson: "package.json";
+}
 ```
-
-## Enumeration Members
-
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  PackageJson | <code>&quot;package.json&quot;</code> | "package.json" - the configuration file that defines an NPM package |
-

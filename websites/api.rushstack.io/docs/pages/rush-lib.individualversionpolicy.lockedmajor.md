@@ -15,5 +15,5 @@ The major version that has been locked
 **Signature:**
 
 ```typescript
-readonly lockedMajor: number | undefined;
+get lockedMajor(): number | undefined;
 ```

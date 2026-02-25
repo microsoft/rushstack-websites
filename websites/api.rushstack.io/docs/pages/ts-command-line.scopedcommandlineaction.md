@@ -27,23 +27,160 @@ export declare abstract class ScopedCommandLineAction extends CommandLineAction
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./ts-command-line.scopedcommandlineaction._constructor_.md) |  | Constructs a new instance of the <code>ScopedCommandLineAction</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./ts-command-line.scopedcommandlineaction._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ScopedCommandLineAction` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parameters](./ts-command-line.scopedcommandlineaction.parameters.md) | <code>readonly</code> | ReadonlyArray&lt;[CommandLineParameter](./ts-command-line.commandlineparameter.md)<></>&gt; | Returns a collection of the parameters that were defined for this object. |
-|  [ScopingParameterGroup](./ts-command-line.scopedcommandlineaction.scopingparametergroup.md) | <p><code>static</code></p><p><code>readonly</code></p> | typeof SCOPING\_PARAMETER\_GROUP | The required group name to apply to all scoping parameters. At least one parameter must be defined with this group name. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parameters](./ts-command-line.scopedcommandlineaction.parameters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[CommandLineParameter](./ts-command-line.commandlineparameter.md)<></>&gt;
+
+
+</td><td>
+
+Returns a collection of the parameters that were defined for this object.
+
+
+</td></tr>
+<tr><td>
+
+[ScopingParameterGroup](./ts-command-line.scopedcommandlineaction.scopingparametergroup.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+typeof SCOPING\_PARAMETER\_GROUP
+
+
+</td><td>
+
+The required group name to apply to all scoping parameters. At least one parameter must be defined with this group name.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onDefineParameters()](./ts-command-line.scopedcommandlineaction.ondefineparameters.md) | <code>protected</code> | The child class should implement this hook to define its command-line parameters, e.g. by calling defineFlagParameter(). |
-|  [onDefineScopedParameters(scopedParameterProvider)](./ts-command-line.scopedcommandlineaction.ondefinescopedparameters.md) | <p><code>protected</code></p><p><code>abstract</code></p> | The child class should implement this hook to define its scoped command-line parameters, e.g. by calling scopedParameterProvider.defineFlagParameter(). These parameters will only be available if the action is invoked with a scope. |
-|  [onDefineUnscopedParameters()?](./ts-command-line.scopedcommandlineaction.ondefineunscopedparameters.md) | <code>protected</code> | _(Optional)_ The child class should implement this hook to define its unscoped command-line parameters, e.g. by calling defineFlagParameter(). At least one scoping parameter must be defined. Scoping parameters are defined by setting the parameterGroupName to ScopedCommandLineAction.ScopingParameterGroupName. |
-|  [onExecute()](./ts-command-line.scopedcommandlineaction.onexecute.md) | <p><code>protected</code></p><p><code>abstract</code></p> | Your subclass should implement this hook to perform the operation. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onDefineScopedParameters(scopedParameterProvider)](./ts-command-line.scopedcommandlineaction.ondefinescopedparameters.md)
+
+
+</td><td>
+
+`protected`
+
+`abstract`
+
+
+</td><td>
+
+The child class should implement this hook to define its scoped command-line parameters, e.g. by calling scopedParameterProvider.defineFlagParameter(). These parameters will only be available if the action is invoked with a scope.
+
+
+</td></tr>
+<tr><td>
+
+[onExecuteAsync()](./ts-command-line.scopedcommandlineaction.onexecuteasync.md)
+
+
+</td><td>
+
+`protected`
+
+`abstract`
+
+
+</td><td>
+
+Your subclass should implement this hook to perform the operation.
+
+
+</td></tr>
+</tbody></table>
 

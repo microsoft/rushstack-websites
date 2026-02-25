@@ -14,14 +14,7 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export interface IStringValuesTypingsGeneratorOptions extends ITypingsGeneratorOptions<IStringValueTypings | undefined> 
+export interface IStringValuesTypingsGeneratorOptions<TFileContents extends string = string> extends ITypingsGeneratorOptions<IStringValueTypings | undefined, TFileContents>, IStringValuesTypingsGeneratorBaseOptions 
 ```
-**Extends:** [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md)<></>&lt;[IStringValueTypings](./typings-generator.istringvaluetypings.md) \| undefined&gt;
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [exportAsDefault?](./typings-generator.istringvaluestypingsgeneratoroptions.exportasdefault.md) |  | boolean | _(Optional)_ Setting this option wraps the typings export in a default property. |
-|  [exportAsDefaultInterfaceName?](./typings-generator.istringvaluestypingsgeneratoroptions.exportasdefaultinterfacename.md) |  | string | _(Optional)_ When <code>exportAsDefault</code> is true, this optional setting determines the interface name for the default wrapped export. Ignored when <code>exportAsDefault</code> is false. |
+**Extends:** [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md)<></>&lt;[IStringValueTypings](./typings-generator.istringvaluetypings.md) \| undefined, TFileContents&gt;, [IStringValuesTypingsGeneratorBaseOptions](./typings-generator.istringvaluestypingsgeneratorbaseoptions.md)
 

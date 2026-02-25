@@ -10,7 +10,7 @@ pagination_next: null
 
 ## StderrLineTransform.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructs a new instance of the `StderrLineTransform` class
@@ -23,7 +23,35 @@ constructor(options: IStdioLineTransformOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IStdioLineTransformOptions](./terminal.istdiolinetransformoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IStdioLineTransformOptions](./terminal.istdiolinetransformoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

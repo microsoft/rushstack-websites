@@ -18,10 +18,51 @@ static fromObject(object: IPackageJson, filename: string): PackageJsonEditor;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  object | [IPackageJson](./node-core-library.ipackagejson.md) |  |
-|  filename | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+object
+
+
+</td><td>
+
+[IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+filename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

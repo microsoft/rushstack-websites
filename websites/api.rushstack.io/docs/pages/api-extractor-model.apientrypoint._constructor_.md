@@ -20,7 +20,35 @@ constructor(options: IApiEntryPointOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiEntryPointOptions](./api-extractor-model.iapientrypointoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiEntryPointOptions](./api-extractor-model.iapientrypointoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

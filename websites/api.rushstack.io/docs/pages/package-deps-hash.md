@@ -18,18 +18,141 @@ For more info, please see the package [README](https://www.npmjs.com/package/@ru
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [ensureGitMinimumVersion(gitPath)](./package-deps-hash.ensuregitminimumversion.md) | Checks the git version and throws an error if it is less than the minimum required version. |
-|  [getGitHashForFiles(filesToHash, packagePath, gitPath)](./package-deps-hash.getgithashforfiles.md) | Takes a list of files and returns the current git hashes for them |
-|  [getPackageDeps(packagePath, excludedPaths, gitPath)](./package-deps-hash.getpackagedeps.md) | Builds an object containing hashes for the files under the specified <code>packagePath</code> folder. |
-|  [getRepoChanges(currentWorkingDirectory, revision, gitPath)](./package-deps-hash.getrepochanges.md) | **_(BETA)_** Find all changed files tracked by Git, their current hashes, and the nature of the change. Only useful if all changes are staged or committed. |
-|  [getRepoRoot(currentWorkingDirectory, gitPath)](./package-deps-hash.getreporoot.md) | **_(BETA)_** Finds the root of the current Git repository |
-|  [getRepoStateAsync(rootDirectory, additionalRelativePathsToHash, gitPath)](./package-deps-hash.getrepostateasync.md) | **_(BETA)_** Gets the object hashes for all files in the Git repo, combining the current commit with working tree state. Uses async operations and runs all primary Git calls in parallel. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureGitMinimumVersion(gitPath)](./package-deps-hash.ensuregitminimumversion.md)
+
+
+</td><td>
+
+Checks the git version and throws an error if it is less than the minimum required version.
+
+
+</td></tr>
+<tr><td>
+
+[getDetailedRepoStateAsync(rootDirectory, additionalRelativePathsToHash, gitPath, filterPath)](./package-deps-hash.getdetailedrepostateasync.md)
+
+
+</td><td>
+
+**_(BETA)_** Gets the object hashes for all files in the Git repo, combining the current commit with working tree state. Uses async operations and runs all primary Git calls in parallel.
+
+
+</td></tr>
+<tr><td>
+
+[getGitHashForFiles(filesToHash, packagePath, gitPath)](./package-deps-hash.getgithashforfiles.md)
+
+
+</td><td>
+
+Takes a list of files and returns the current git hashes for them
+
+
+</td></tr>
+<tr><td>
+
+[getPackageDeps(packagePath, excludedPaths, gitPath)](./package-deps-hash.getpackagedeps.md)
+
+
+</td><td>
+
+Builds an object containing hashes for the files under the specified `packagePath` folder.
+
+
+</td></tr>
+<tr><td>
+
+[getRepoChanges(currentWorkingDirectory, revision, gitPath)](./package-deps-hash.getrepochanges.md)
+
+
+</td><td>
+
+**_(BETA)_** Find all changed files tracked by Git, their current hashes, and the nature of the change. Only useful if all changes are staged or committed.
+
+
+</td></tr>
+<tr><td>
+
+[getRepoRoot(currentWorkingDirectory, gitPath)](./package-deps-hash.getreporoot.md)
+
+
+</td><td>
+
+**_(BETA)_** Finds the root of the current Git repository
+
+
+</td></tr>
+<tr><td>
+
+[getRepoStateAsync(rootDirectory, additionalRelativePathsToHash, gitPath, filterPath)](./package-deps-hash.getrepostateasync.md)
+
+
+</td><td>
+
+**_(BETA)_** Gets the object hashes for all files in the Git repo, combining the current commit with working tree state. Uses async operations and runs all primary Git calls in parallel.
+
+
+</td></tr>
+<tr><td>
+
+[hashFilesAsync(rootDirectory, filesToHash, gitPath)](./package-deps-hash.hashfilesasync.md)
+
+
+</td><td>
+
+**_(BETA)_** Uses `git hash-object` to hash the provided files. Unlike `getGitHashForFiles`<></>, this API is asynchronous, and also allows for the input file paths to be specified as an async iterable.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IFileDiffStatus](./package-deps-hash.ifilediffstatus.md) | **_(BETA)_** Information about the changes to a file. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IDetailedRepoState](./package-deps-hash.idetailedrepostate.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the detailed state of the Git repository.
+
+
+</td></tr>
+<tr><td>
+
+[IFileDiffStatus](./package-deps-hash.ifilediffstatus.md)
+
+
+</td><td>
+
+**_(BETA)_** Information about the changes to a file.
+
+
+</td></tr>
+</tbody></table>
 

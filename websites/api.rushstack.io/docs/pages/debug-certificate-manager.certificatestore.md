@@ -20,17 +20,201 @@ export declare class CertificateStore
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./debug-certificate-manager.certificatestore._constructor_.md) |  | Constructs a new instance of the <code>CertificateStore</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./debug-certificate-manager.certificatestore._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `CertificateStore` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [caCertificateData](./debug-certificate-manager.certificatestore.cacertificatedata.md) |  | string \| undefined | Debug Certificate Authority certificate pem file contents. |
-|  [caCertificatePath](./debug-certificate-manager.certificatestore.cacertificatepath.md) | <code>readonly</code> | string | Path to the saved debug CA certificate |
-|  [certificateData](./debug-certificate-manager.certificatestore.certificatedata.md) |  | string \| undefined | Debug TLS Server certificate pem file contents. |
-|  [certificatePath](./debug-certificate-manager.certificatestore.certificatepath.md) | <code>readonly</code> | string | Path to the saved debug TLS certificate |
-|  [keyData](./debug-certificate-manager.certificatestore.keydata.md) |  | string \| undefined | Key used to sign the debug pem certificate. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[caCertificateData](./debug-certificate-manager.certificatestore.cacertificatedata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Debug Certificate Authority certificate pem file contents.
+
+
+</td></tr>
+<tr><td>
+
+[caCertificatePath](./debug-certificate-manager.certificatestore.cacertificatepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to the saved debug CA certificate
+
+
+</td></tr>
+<tr><td>
+
+[certificateData](./debug-certificate-manager.certificatestore.certificatedata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Debug TLS Server certificate pem file contents.
+
+
+</td></tr>
+<tr><td>
+
+[certificatePath](./debug-certificate-manager.certificatestore.certificatepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to the saved debug TLS certificate
+
+
+</td></tr>
+<tr><td>
+
+[keyData](./debug-certificate-manager.certificatestore.keydata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Key used to sign the debug pem certificate.
+
+
+</td></tr>
+<tr><td>
+
+[keyPath](./debug-certificate-manager.certificatestore.keypath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to the saved debug TLS key
+
+
+</td></tr>
+<tr><td>
+
+[storePath](./debug-certificate-manager.certificatestore.storepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to the directory where the debug certificates are stored.
+
+
+</td></tr>
+</tbody></table>
 

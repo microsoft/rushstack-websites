@@ -20,9 +20,39 @@ export declare function getIdentifier(ordinal: number): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ordinal | number | The number to convert to a base54 identifier |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ordinal
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number to convert to a base54 identifier
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

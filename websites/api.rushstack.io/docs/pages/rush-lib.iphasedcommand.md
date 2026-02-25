@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IPhasedCommand interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Information about the currently executing phased script command (as defined in command-line.json, or default "build" or "rebuild") provided to plugins.
@@ -21,4 +21,71 @@ Information about the currently executing phased script command (as defined in c
 export interface IPhasedCommand extends IRushCommand 
 ```
 **Extends:** [IRushCommand](./rush-lib.irushcommand.md)
+
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hooks](./rush-lib.iphasedcommand.hooks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PhasedCommandHooks](./rush-lib.phasedcommandhooks.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Hooks into the execution of the current phased command
+
+
+</td></tr>
+<tr><td>
+
+[sessionAbortController](./rush-lib.iphasedcommand.sessionabortcontroller.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AbortController
+
+
+</td><td>
+
+**_(ALPHA)_** An abort controller that can be used to abort the command. Long-lived plugins should listen to the signal to handle any cleanup logic.
+
+
+</td></tr>
+</tbody></table>
 

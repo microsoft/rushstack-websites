@@ -20,11 +20,71 @@ static spawnSync(filename: string, args: string[], options?: IExecutableSpawnSyn
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filename | string | The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched. |
-|  args | string\[\] | The command-line arguments to be passed to the process. |
-|  options | [IExecutableSpawnSyncOptions](./node-core-library.iexecutablespawnsyncoptions.md) | _(Optional)_ Additional options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched.
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+The command-line arguments to be passed to the process.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IExecutableSpawnSyncOptions](./node-core-library.iexecutablespawnsyncoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Additional options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,7 +24,35 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getLinkForApiItem(apiItem)](./api-documenter.markdowndocumenteraccessor.getlinkforapiitem.md) |  | For a given <code>ApiItem</code>, return its markdown hyperlink. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getLinkForApiItem(apiItem)](./api-documenter.markdowndocumenteraccessor.getlinkforapiitem.md)
+
+
+</td><td>
+
+
+</td><td>
+
+For a given `ApiItem`<></>, return its markdown hyperlink.
+
+
+</td></tr>
+</tbody></table>
 

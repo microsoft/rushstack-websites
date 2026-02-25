@@ -15,5 +15,5 @@ Absolute path to the target. The provided sourcePath can be to a file or a folde
 **Signature:**
 
 ```typescript
-sourcePath: string;
+sourcePath?: string;
 ```

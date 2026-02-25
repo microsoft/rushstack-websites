@@ -20,10 +20,51 @@ static changePosixModeBitsAsync(path: string, mode: PosixModeBits): Promise<void
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string |  |
-|  mode | [PosixModeBits](./node-core-library.posixmodebits.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+mode
+
+
+</td><td>
+
+[PosixModeBits](./node-core-library.posixmodebits.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

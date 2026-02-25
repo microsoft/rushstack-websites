@@ -14,50 +14,545 @@ Heft is a config-driven toolchain that invokes other popular tools such as TypeS
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CancellationToken](./heft.cancellationtoken.md) | **_(BETA)_** A cancellation token. Can be used to signal that an ongoing process has either been cancelled or timed out. |
-|  [CancellationTokenSource](./heft.cancellationtokensource.md) | **_(BETA)_** A cancellation token source. Produces cancellation tokens that can be used to signal that an ongoing process has either been cancelled or timed out. |
-|  [HeftConfiguration](./heft.heftconfiguration.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HeftConfiguration](./heft.heftconfiguration.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ICancellationTokenSourceOptions](./heft.icancellationtokensourceoptions.md) | **_(BETA)_** Options for the cancellation token source. |
-|  [ICopyOperation](./heft.icopyoperation.md) | Used to specify a selection of files to copy from a specific source folder to one or more destination folders. |
-|  [IDeleteOperation](./heft.ideleteoperation.md) | Used to specify a selection of source files to delete from the specified source folder. |
-|  [IFileSelectionSpecifier](./heft.ifileselectionspecifier.md) | Used to specify a selection of one or more files. |
-|  [IGlobOptions](./heft.igloboptions.md) | A supported subset of options used when globbing files. |
-|  [IHeftDefaultParameters](./heft.iheftdefaultparameters.md) | The default parameters provided by Heft. |
-|  [IHeftLifecycleCleanHookOptions](./heft.iheftlifecyclecleanhookoptions.md) | Options provided to the clean hook. |
-|  [IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md) | Hooks that are available to the lifecycle plugin. |
-|  [IHeftLifecyclePlugin](./heft.iheftlifecycleplugin.md) | The interface that Heft lifecycle plugins must implement. Lifecycle plugins are used to provide functionality that affects the lifecycle of the Heft run. As such, they do not belong to any particular Heft phase. |
-|  [IHeftLifecycleSession](./heft.iheftlifecyclesession.md) | The lifecycle session is responsible for providing session-specific information to Heft lifecycle plugins. The session provides access to the hooks that Heft will run as part of lifecycle execution, as well as access to parameters provided via the CLI. The session is also how you request access to other lifecycle plugins. |
-|  [IHeftLifecycleToolFinishHookOptions](./heft.iheftlifecycletoolfinishhookoptions.md) | Options provided to the toolFinish hook. |
-|  [IHeftLifecycleToolStartHookOptions](./heft.iheftlifecycletoolstarthookoptions.md) | Options provided to the toolStart hook. |
-|  [IHeftParameters](./heft.iheftparameters.md) | Parameters provided to a Heft plugin. |
-|  [IHeftParsedCommandLine](./heft.iheftparsedcommandline.md) | The type of [IHeftTaskSession.parsedCommandLine](./heft.ihefttasksession.parsedcommandline.md)<></>, which exposes details about the command line that was used to invoke Heft. |
-|  [IHeftPlugin](./heft.iheftplugin.md) | The interface used for all Heft plugins. |
-|  [IHeftRecordMetricsHookOptions](./heft.iheftrecordmetricshookoptions.md) |  |
-|  [IHeftTaskFileOperations](./heft.ihefttaskfileoperations.md) | Options provided to the <code>registerFileOperations</code> hook. |
-|  [IHeftTaskHooks](./heft.ihefttaskhooks.md) | Hooks that are available to the task plugin. |
-|  [IHeftTaskPlugin](./heft.ihefttaskplugin.md) | The interface that Heft task plugins must implement. Task plugins are used to provide the implementation of a specific task. |
-|  [IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md) | Options provided to the <code>run</code> hook. |
-|  [IHeftTaskRunIncrementalHookOptions](./heft.ihefttaskrunincrementalhookoptions.md) | Options provided to the 'runIncremental' hook. |
-|  [IHeftTaskSession](./heft.ihefttasksession.md) | The task session is responsible for providing session-specific information to Heft task plugins. The session provides access to the hooks that Heft will run as part of task execution, as well as access to parameters provided via the CLI. The session is also how you request access to other task plugins. |
-|  [IIncrementalCopyOperation](./heft.iincrementalcopyoperation.md) | Used to specify a selection of files to copy from a specific source folder to one or more destination folders. |
-|  [IMetricsData](./heft.imetricsdata.md) |  |
-|  [IRigPackageResolver](./heft.irigpackageresolver.md) | Rig resolves requested tools from the project's Heft rig. |
-|  [IRunScript](./heft.irunscript.md) | **_(BETA)_** Interface used by scripts that are run by the RunScriptPlugin. |
-|  [IRunScriptOptions](./heft.irunscriptoptions.md) | **_(BETA)_** Options provided to scripts that are run using the RunScriptPlugin. |
-|  [IScopedLogger](./heft.iscopedlogger.md) | A logger which is used to emit errors and warnings to the console, as well as to write to the console. Messaged emitted by the scoped logger are prefixed with the name of the scoped logger. |
-|  [IWatchedFileState](./heft.iwatchedfilestate.md) | Information about the state of a watched file. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ICopyOperation](./heft.icopyoperation.md)
+
+
+</td><td>
+
+Used to specify a selection of files to copy from a specific source folder to one or more destination folders.
+
+
+</td></tr>
+<tr><td>
+
+[IDeleteOperation](./heft.ideleteoperation.md)
+
+
+</td><td>
+
+Used to specify a selection of source files to delete from the specified source folder.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSelectionSpecifier](./heft.ifileselectionspecifier.md)
+
+
+</td><td>
+
+Used to specify a selection of one or more files.
+
+
+</td></tr>
+<tr><td>
+
+[IGlobOptions](./heft.igloboptions.md)
+
+
+</td><td>
+
+A supported subset of options used when globbing files.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftDefaultParameters](./heft.iheftdefaultparameters.md)
+
+
+</td><td>
+
+The default parameters provided by Heft.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecycleCleanHookOptions](./heft.iheftlifecyclecleanhookoptions.md)
+
+
+</td><td>
+
+Options provided to the clean hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md)
+
+
+</td><td>
+
+Hooks that are available to the lifecycle plugin.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecyclePlugin](./heft.iheftlifecycleplugin.md)
+
+
+</td><td>
+
+The interface that Heft lifecycle plugins must implement. Lifecycle plugins are used to provide functionality that affects the lifecycle of the Heft run. As such, they do not belong to any particular Heft phase.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecycleSession](./heft.iheftlifecyclesession.md)
+
+
+</td><td>
+
+The lifecycle session is responsible for providing session-specific information to Heft lifecycle plugins. The session provides access to the hooks that Heft will run as part of lifecycle execution, as well as access to parameters provided via the CLI. The session is also how you request access to other lifecycle plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecycleToolFinishHookOptions](./heft.iheftlifecycletoolfinishhookoptions.md)
+
+
+</td><td>
+
+Options provided to the toolFinish hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftLifecycleToolStartHookOptions](./heft.iheftlifecycletoolstarthookoptions.md)
+
+
+</td><td>
+
+Options provided to the toolStart hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftParameters](./heft.iheftparameters.md)
+
+
+</td><td>
+
+Parameters provided to a Heft plugin.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftParsedCommandLine](./heft.iheftparsedcommandline.md)
+
+
+</td><td>
+
+The type of [IHeftTaskSession.parsedCommandLine](./heft.ihefttasksession.parsedcommandline.md)<></>, which exposes details about the command line that was used to invoke Heft.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftPhase](./heft.iheftphase.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftPhaseFinishHookOptions](./heft.iheftphasefinishhookoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftPhaseOperationMetadata](./heft.iheftphaseoperationmetadata.md)
+
+
+</td><td>
+
+Metadata for an operation that represents a phase.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftPhaseStartHookOptions](./heft.iheftphasestarthookoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftPlugin](./heft.iheftplugin.md)
+
+
+</td><td>
+
+The interface used for all Heft plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftRecordMetricsHookOptions](./heft.iheftrecordmetricshookoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTask](./heft.ihefttask.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskFileOperations](./heft.ihefttaskfileoperations.md)
+
+
+</td><td>
+
+Options provided to the `registerFileOperations` hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskFinishHookOptions](./heft.ihefttaskfinishhookoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskHooks](./heft.ihefttaskhooks.md)
+
+
+</td><td>
+
+Hooks that are available to the task plugin.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskOperationMetadata](./heft.ihefttaskoperationmetadata.md)
+
+
+</td><td>
+
+Metadata for an operation that represents a task.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskPlugin](./heft.ihefttaskplugin.md)
+
+
+</td><td>
+
+The interface that Heft task plugins must implement. Task plugins are used to provide the implementation of a specific task.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md)
+
+
+</td><td>
+
+Options provided to the `run` hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskRunIncrementalHookOptions](./heft.ihefttaskrunincrementalhookoptions.md)
+
+
+</td><td>
+
+Options provided to the 'runIncremental' hook.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskSession](./heft.ihefttasksession.md)
+
+
+</td><td>
+
+The task session is responsible for providing session-specific information to Heft task plugins. The session provides access to the hooks that Heft will run as part of task execution, as well as access to parameters provided via the CLI. The session is also how you request access to other task plugins.
+
+
+</td></tr>
+<tr><td>
+
+[IHeftTaskStartHookOptions](./heft.ihefttaskstarthookoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IIncrementalCopyOperation](./heft.iincrementalcopyoperation.md)
+
+
+</td><td>
+
+Used to specify a selection of files to copy from a specific source folder to one or more destination folders.
+
+
+</td></tr>
+<tr><td>
+
+[IMetricsData](./heft.imetricsdata.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IReaddirOptions](./heft.ireaddiroptions.md)
+
+
+</td><td>
+
+Options for `fs.readdir`
+
+
+</td></tr>
+<tr><td>
+
+[IRigPackageResolver](./heft.irigpackageresolver.md)
+
+
+</td><td>
+
+Rig resolves requested tools from the project's Heft rig.
+
+
+</td></tr>
+<tr><td>
+
+[IRunScript](./heft.irunscript.md)
+
+
+</td><td>
+
+**_(BETA)_** Interface used by scripts that are run by the RunScriptPlugin.
+
+
+</td></tr>
+<tr><td>
+
+[IRunScriptOptions](./heft.irunscriptoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options provided to scripts that are run using the RunScriptPlugin.
+
+
+</td></tr>
+<tr><td>
+
+[IScopedLogger](./heft.iscopedlogger.md)
+
+
+</td><td>
+
+A logger which is used to emit errors and warnings to the console, as well as to write to the console. Messaged emitted by the scoped logger are prefixed with the name of the scoped logger.
+
+
+</td></tr>
+<tr><td>
+
+[IWatchedFileState](./heft.iwatchedfilestate.md)
+
+
+</td><td>
+
+Information about the state of a watched file.
+
+
+</td></tr>
+<tr><td>
+
+[IWatchFileSystem](./heft.iwatchfilesystem.md)
+
+
+</td><td>
+
+Interface contract for heft plugins to use the `WatchFileSystemAdapter`
+
+
+</td></tr>
+</tbody></table>
+
+## Namespaces
+
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ConfigurationFile](./heft.configurationfile.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [GlobFn](./heft.globfn.md) | Glob a set of files and return a list of paths that match the provided patterns. |
-|  [WatchGlobFn](./heft.watchglobfn.md) | Glob a set of files and return a map of paths that match the provided patterns to their current state in the watcher. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GlobFn](./heft.globfn.md)
+
+
+</td><td>
+
+Glob a set of files and return a list of paths that match the provided patterns.
+
+
+</td></tr>
+<tr><td>
+
+[ReaddirDirentCallback](./heft.readdirdirentcallback.md)
+
+
+</td><td>
+
+Callback for `fs.readdir` when `withFileTypes` is true
+
+
+</td></tr>
+<tr><td>
+
+[ReaddirStringCallback](./heft.readdirstringcallback.md)
+
+
+</td><td>
+
+Callback for `fs.readdir` when `withFileTypes` is not specified or false
+
+
+</td></tr>
+<tr><td>
+
+[StatCallback](./heft.statcallback.md)
+
+
+</td><td>
+
+Callback for `fs.stat` and `fs.lstat`
+
+
+</td></tr>
+<tr><td>
+
+[WatchGlobFn](./heft.watchglobfn.md)
+
+
+</td><td>
+
+Glob a set of files and return a map of paths that match the provided patterns to their current state in the watcher.
+
+
+</td></tr>
+</tbody></table>
 

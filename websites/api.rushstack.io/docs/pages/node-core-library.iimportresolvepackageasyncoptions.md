@@ -21,7 +21,45 @@ export interface IImportResolvePackageAsyncOptions extends IImportResolveAsyncOp
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [packageName](./node-core-library.iimportresolvepackageasyncoptions.packagename.md) |  | string | The package name to resolve. For example "<></>@<></>rushstack/node-core-library" |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packageName](./node-core-library.iimportresolvepackageasyncoptions.packagename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The package name to resolve. For example "<></>@<></>rushstack/node-core-library"
+
+
+</td></tr>
+</tbody></table>
 

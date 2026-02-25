@@ -20,9 +20,37 @@ static tryLoadForFolder(options: IExtractorConfigLoadForFolderOptions): IExtract
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IExtractorConfigLoadForFolderOptions](./api-extractor.iextractorconfigloadforfolderoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IExtractorConfigLoadForFolderOptions](./api-extractor.iextractorconfigloadforfolderoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

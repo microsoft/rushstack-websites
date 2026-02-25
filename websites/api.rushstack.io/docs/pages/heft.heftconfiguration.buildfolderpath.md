@@ -15,5 +15,5 @@ Project build folder path. This is the folder containing the project's package.j
 **Signature:**
 
 ```typescript
-get buildFolderPath(): string;
+readonly buildFolderPath: string;
 ```

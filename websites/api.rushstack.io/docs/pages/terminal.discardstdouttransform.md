@@ -10,7 +10,7 @@ pagination_next: null
 
 ## DiscardStdoutTransform class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 `DiscardStdoutTransform` discards `stdout` chunks while fixing up malformed `stderr` lines.
@@ -54,13 +54,71 @@ The process completed with errors
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.discardstdouttransform._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>DiscardStdoutTransform</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.discardstdouttransform._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `DiscardStdoutTransform` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onWriteChunk(chunk)](./terminal.discardstdouttransform.onwritechunk.md) | <code>protected</code> | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onWriteChunk(chunk)](./terminal.discardstdouttransform.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

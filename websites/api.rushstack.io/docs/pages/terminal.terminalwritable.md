@@ -10,7 +10,7 @@ pagination_next: null
 
 ## TerminalWritable class
 
-The abstract base class for objects that can present, route, or process text output for a console application. This output is typically prepared using the [Terminal](./node-core-library.terminal.md) API.
+The abstract base class for objects that can present, route, or process text output for a console application. This output is typically prepared using the [Terminal](./terminal.terminal.md) API.
 
 **Signature:**
 
@@ -47,23 +47,182 @@ The stream of messages are [ITerminalChunk](./terminal.iterminalchunk.md) object
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.terminalwritable._constructor_.md) |  | Constructs a new instance of the <code>TerminalWritable</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.terminalwritable._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TerminalWritable` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isOpen](./terminal.terminalwritable.isopen.md) | <code>readonly</code> | boolean | This property is initially <code>true</code> when the object is constructed, and becomes <code>false</code> when <code>close()</code> is called. |
-|  [preventAutoclose](./terminal.terminalwritable.preventautoclose.md) | <code>readonly</code> | boolean |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isOpen](./terminal.terminalwritable.isopen.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+This property is initially `true` when the object is constructed, and becomes `false` when `close()` is called.
+
+
+</td></tr>
+<tr><td>
+
+[preventAutoclose](./terminal.terminalwritable.preventautoclose.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close()](./terminal.terminalwritable.close.md) |  | Calling this method flushes any remaining outputs and permanently transitions the <code>TerminalWritable</code> to a "closed" state, where no further chunks can be written. |
-|  [onClose()](./terminal.terminalwritable.onclose.md) | <code>protected</code> | Subclasses can override this empty method to perform additional operations such as closing a file handle. |
-|  [onWriteChunk(chunk)](./terminal.terminalwritable.onwritechunk.md) | <p><code>protected</code></p><p><code>abstract</code></p> | Subclasses should implement this <code>abstract</code> method to process the chunk. |
-|  [writeChunk(chunk)](./terminal.terminalwritable.writechunk.md) |  | Upstream objects call this method to provide inputs to this object. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close()](./terminal.terminalwritable.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Calling this method flushes any remaining outputs and permanently transitions the `TerminalWritable` to a "closed" state, where no further chunks can be written.
+
+
+</td></tr>
+<tr><td>
+
+[onClose()](./terminal.terminalwritable.onclose.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Subclasses can override this empty method to perform additional operations such as closing a file handle.
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./terminal.terminalwritable.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+`abstract`
+
+
+</td><td>
+
+Subclasses should implement this `abstract` method to process the chunk.
+
+
+</td></tr>
+<tr><td>
+
+[writeChunk(chunk)](./terminal.terminalwritable.writechunk.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Upstream objects call this method to provide inputs to this object.
+
+
+</td></tr>
+</tbody></table>
 

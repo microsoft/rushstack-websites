@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IEnvironmentConfigurationInitializeOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,7 +22,45 @@ export interface IEnvironmentConfigurationInitializeOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [doNotNormalizePaths?](./rush-lib.ienvironmentconfigurationinitializeoptions.donotnormalizepaths.md) |  | boolean | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[doNotNormalizePaths?](./rush-lib.ienvironmentconfigurationinitializeoptions.donotnormalizepaths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

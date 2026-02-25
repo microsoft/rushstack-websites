@@ -10,7 +10,7 @@ pagination_next: null
 
 ## FileSystemBuildCacheProvider class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 A build cache provider using the local file system. Required by all cloud cache providers.
@@ -23,15 +23,97 @@ export declare class FileSystemBuildCacheProvider
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./rush-lib.filesystembuildcacheprovider._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>FileSystemBuildCacheProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./rush-lib.filesystembuildcacheprovider._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `FileSystemBuildCacheProvider` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getCacheEntryPath(cacheId)](./rush-lib.filesystembuildcacheprovider.getcacheentrypath.md) |  | **_(BETA)_** Returns the absolute disk path for the specified cache id. |
-|  [tryGetCacheEntryPathByIdAsync(terminal, cacheId)](./rush-lib.filesystembuildcacheprovider.trygetcacheentrypathbyidasync.md) |  | **_(BETA)_** Validates that the specified cache id exists on disk, and returns the path if it does. |
-|  [trySetCacheEntryBufferAsync(terminal, cacheId, entryBuffer)](./rush-lib.filesystembuildcacheprovider.trysetcacheentrybufferasync.md) |  | **_(BETA)_** Writes the specified buffer to the corresponding file system path for the cache id. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getCacheEntryPath(cacheId)](./rush-lib.filesystembuildcacheprovider.getcacheentrypath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Returns the absolute disk path for the specified cache id.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetCacheEntryPathByIdAsync(terminal, cacheId)](./rush-lib.filesystembuildcacheprovider.trygetcacheentrypathbyidasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Validates that the specified cache id exists on disk, and returns the path if it does.
+
+
+</td></tr>
+<tr><td>
+
+[trySetCacheEntryBufferAsync(terminal, cacheId, entryBuffer)](./rush-lib.filesystembuildcacheprovider.trysetcacheentrybufferasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Writes the specified buffer to the corresponding file system path for the cache id.
+
+
+</td></tr>
+</tbody></table>
 

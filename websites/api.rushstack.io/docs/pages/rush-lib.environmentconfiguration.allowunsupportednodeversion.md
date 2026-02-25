@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentConfiguration.allowUnsupportedNodeVersion property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 If this environment variable is set to "1", the Node.js version check will print a warning instead of causing a hard error if the environment's Node.js version doesn't match the version specifier in `rush.json`<></>'s "nodeSupportedVersionRange" property.

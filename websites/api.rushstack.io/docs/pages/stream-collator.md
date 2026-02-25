@@ -18,15 +18,75 @@ For more info, please see the package [README](https://www.npmjs.com/package/@ru
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CollatedTerminal](./stream-collator.collatedterminal.md) | **_(BETA)_** This API was introduced as a temporary measure. |
-|  [CollatedWriter](./stream-collator.collatedwriter.md) | **_(BETA)_** An writable interface for managing output of simultaneous processes. |
-|  [StreamCollator](./stream-collator.streamcollator.md) | **_(BETA)_** A static class which manages the output of multiple threads. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CollatedTerminal](./stream-collator.collatedterminal.md)
+
+
+</td><td>
+
+**_(BETA)_** This API was introduced as a temporary measure.
+
+
+</td></tr>
+<tr><td>
+
+[CollatedWriter](./stream-collator.collatedwriter.md)
+
+
+</td><td>
+
+**_(BETA)_** An writable interface for managing output of simultaneous processes.
+
+
+</td></tr>
+<tr><td>
+
+[StreamCollator](./stream-collator.streamcollator.md)
+
+
+</td><td>
+
+**_(BETA)_** A static class which manages the output of multiple threads.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IStreamCollatorOptions](./stream-collator.istreamcollatoroptions.md) | **_(BETA)_** Constructor options for [StreamCollator](./stream-collator.streamcollator.md)<></>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IStreamCollatorOptions](./stream-collator.istreamcollatoroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Constructor options for [StreamCollator](./stream-collator.streamcollator.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 

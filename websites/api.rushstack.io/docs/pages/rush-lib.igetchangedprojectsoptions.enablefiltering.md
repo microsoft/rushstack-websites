@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IGetChangedProjectsOptions.enableFiltering property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 If set to `true` apply the `incrementalBuildIgnoredGlobs` property in a project's `rush-project.json` and exclude matched files from change detection.

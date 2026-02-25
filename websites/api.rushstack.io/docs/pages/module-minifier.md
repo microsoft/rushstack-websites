@@ -14,36 +14,226 @@ This library wraps terser in convenient handles for parallelization. It powers `
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [LocalMinifier](./module-minifier.localminifier.md) | Minifier implementation that minifies code on the main thread. |
-|  [MessagePortMinifier](./module-minifier.messageportminifier.md) | Minifier implementation that outsources requests to the other side of a MessagePort |
-|  [NoopMinifier](./module-minifier.noopminifier.md) | Minifier implementation that does not actually transform the code, for debugging. |
-|  [WorkerPoolMinifier](./module-minifier.workerpoolminifier.md) | Minifier implementation that uses a thread pool for minification. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LocalMinifier](./module-minifier.localminifier.md)
+
+
+</td><td>
+
+Minifier implementation that minifies code on the main thread.
+
+
+</td></tr>
+<tr><td>
+
+[MessagePortMinifier](./module-minifier.messageportminifier.md)
+
+
+</td><td>
+
+Minifier implementation that outsources requests to the other side of a MessagePort
+
+
+</td></tr>
+<tr><td>
+
+[NoopMinifier](./module-minifier.noopminifier.md)
+
+
+</td><td>
+
+Minifier implementation that does not actually transform the code, for debugging.
+
+
+</td></tr>
+<tr><td>
+
+[WorkerPoolMinifier](./module-minifier.workerpoolminifier.md)
+
+
+</td><td>
+
+Minifier implementation that uses a thread pool for minification.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [getIdentifier(ordinal)](./module-minifier.getidentifier.md) | Gets a base54 string suitable for use as a JavaScript identifier, omitting those that are valid ECMAScript keywords |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getIdentifier(ordinal)](./module-minifier.getidentifier.md)
+
+
+</td><td>
+
+Gets a base54 string suitable for use as a JavaScript identifier, omitting those that are valid ECMAScript keywords
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ILocalMinifierOptions](./module-minifier.ilocalminifieroptions.md) | Options for configuring the LocalMinifier |
-|  [IMinifierConnection](./module-minifier.iminifierconnection.md) | Metadata from the minifier for the plugin |
-|  [IModuleMinificationCallback](./module-minifier.imoduleminificationcallback.md) | Callback passed to a minifier function |
-|  [IModuleMinificationErrorResult](./module-minifier.imoduleminificationerrorresult.md) | Result from the minifier function when an error is encountered. |
-|  [IModuleMinificationRequest](./module-minifier.imoduleminificationrequest.md) | Request to the minifier |
-|  [IModuleMinificationSuccessResult](./module-minifier.imoduleminificationsuccessresult.md) | Result from the minifier on a successful minification. |
-|  [IModuleMinifier](./module-minifier.imoduleminifier.md) | Object that can be invoked to minify code. |
-|  [IModuleMinifierFunction](./module-minifier.imoduleminifierfunction.md) | An async function called to minify a chunk of code |
-|  [IWorkerPoolMinifierOptions](./module-minifier.iworkerpoolminifieroptions.md) | Options for configuring the WorkerPoolMinifier |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ILocalMinifierOptions](./module-minifier.ilocalminifieroptions.md)
+
+
+</td><td>
+
+Options for configuring the LocalMinifier
+
+
+</td></tr>
+<tr><td>
+
+[IMinifierConnection](./module-minifier.iminifierconnection.md)
+
+
+</td><td>
+
+Metadata from the minifier for the plugin
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinificationCallback](./module-minifier.imoduleminificationcallback.md)
+
+
+</td><td>
+
+Callback passed to a minifier function
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinificationErrorResult](./module-minifier.imoduleminificationerrorresult.md)
+
+
+</td><td>
+
+Result from the minifier function when an error is encountered.
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinificationRequest](./module-minifier.imoduleminificationrequest.md)
+
+
+</td><td>
+
+Request to the minifier
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinificationSuccessResult](./module-minifier.imoduleminificationsuccessresult.md)
+
+
+</td><td>
+
+Result from the minifier on a successful minification.
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinifier](./module-minifier.imoduleminifier.md)
+
+
+</td><td>
+
+Object that can be invoked to minify code.
+
+
+</td></tr>
+<tr><td>
+
+[IModuleMinifierFunction](./module-minifier.imoduleminifierfunction.md)
+
+
+</td><td>
+
+An async function called to minify a chunk of code
+
+
+</td></tr>
+<tr><td>
+
+[IWorkerPoolMinifierOptions](./module-minifier.iworkerpoolminifieroptions.md)
+
+
+</td><td>
+
+Options for configuring the WorkerPoolMinifier
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [IModuleMinificationResult](./module-minifier.imoduleminificationresult.md) | Result from the minifier. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IModuleMinificationResult](./module-minifier.imoduleminificationresult.md)
+
+
+</td><td>
+
+Result from the minifier.
+
+
+</td></tr>
+</tbody></table>
 

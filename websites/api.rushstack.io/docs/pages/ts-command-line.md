@@ -14,55 +14,501 @@ An object-oriented command-line parser for TypeScript projects.
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [AliasCommandLineAction](./ts-command-line.aliascommandlineaction.md) | <p>Represents a sub-command that is part of the CommandLineParser command line. The sub-command is an alias for another existing action.</p><p>The alias name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs").</p> |
-|  [CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md) | The data type returned by [CommandLineParameterProvider.defineChoiceListParameter()](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)<></>. |
-|  [CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md) | The data type returned by [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)<></>. |
-|  [CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md) | The data type returned by [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)<></>. |
-|  [CommandLineHelper](./ts-command-line.commandlinehelper.md) | Helpers for working with the ts-command-line API. |
-|  [CommandLineIntegerListParameter](./ts-command-line.commandlineintegerlistparameter.md) | The data type returned by [CommandLineParameterProvider.defineIntegerListParameter()](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md)<></>. |
-|  [CommandLineIntegerParameter](./ts-command-line.commandlineintegerparameter.md) | The data type returned by [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>. |
-|  [CommandLineRemainder](./ts-command-line.commandlineremainder.md) | The data type returned by [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md)<></>. |
-|  [CommandLineStringListParameter](./ts-command-line.commandlinestringlistparameter.md) | The data type returned by [CommandLineParameterProvider.defineStringListParameter()](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md)<></>. |
-|  [CommandLineStringParameter](./ts-command-line.commandlinestringparameter.md) | The data type returned by [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md)<></>. |
-|  [DynamicCommandLineAction](./ts-command-line.dynamiccommandlineaction.md) |  |
-|  [DynamicCommandLineParser](./ts-command-line.dynamiccommandlineparser.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AliasCommandLineAction](./ts-command-line.aliascommandlineaction.md)
+
+
+</td><td>
+
+Represents a sub-command that is part of the CommandLineParser command line. The sub-command is an alias for another existing action.
+
+The alias name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs").
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineChoiceListParameter()](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineHelper](./ts-command-line.commandlinehelper.md)
+
+
+</td><td>
+
+Helpers for working with the ts-command-line API.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineIntegerListParameter](./ts-command-line.commandlineintegerlistparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineIntegerListParameter()](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineIntegerParameter](./ts-command-line.commandlineintegerparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineParser](./ts-command-line.commandlineparser.md)
+
+
+</td><td>
+
+The "argparse" library is a relatively advanced command-line parser with features such as word-wrapping and intelligible error messages (that are lacking in other similar libraries such as commander, yargs, and nomnom). Unfortunately, its ruby-inspired API is awkward to use. The base classes CommandLineParser and CommandLineAction provide a wrapper for "argparse" that makes defining and consuming arguments quick and simple, and enforces that appropriate documentation is provided for each parameter.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineRemainder](./ts-command-line.commandlineremainder.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineStringListParameter](./ts-command-line.commandlinestringlistparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineStringListParameter()](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineStringParameter](./ts-command-line.commandlinestringparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[DynamicCommandLineAction](./ts-command-line.dynamiccommandlineaction.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[DynamicCommandLineParser](./ts-command-line.dynamiccommandlineparser.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-|  Abstract Class | Description |
-|  --- | --- |
-|  [CommandLineAction](./ts-command-line.commandlineaction.md) | <p>Represents a sub-command that is part of the CommandLineParser command line. Applications should create subclasses of CommandLineAction corresponding to each action that they want to expose.</p><p>The action name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).</p> |
-|  [CommandLineParameter](./ts-command-line.commandlineparameter.md) | The base class for the various command-line parameter types. |
-|  [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md) | This is the common base class for CommandLineAction and CommandLineParser that provides functionality for defining command-line parameters. |
-|  [CommandLineParameterWithArgument](./ts-command-line.commandlineparameterwithargument.md) | The common base class for parameters types that receive an argument. |
-|  [CommandLineParser](./ts-command-line.commandlineparser.md) | The "argparse" library is a relatively advanced command-line parser with features such as word-wrapping and intelligible error messages (that are lacking in other similar libraries such as commander, yargs, and nomnom). Unfortunately, its ruby-inspired API is awkward to use. The abstract base classes CommandLineParser and CommandLineAction provide a wrapper for "argparse" that makes defining and consuming arguments quick and simple, and enforces that appropriate documentation is provided for each parameter. |
-|  [ScopedCommandLineAction](./ts-command-line.scopedcommandlineaction.md) | <p>Represents a sub-command that is part of the CommandLineParser command-line. Applications should create subclasses of ScopedCommandLineAction corresponding to each action that they want to expose.</p><p>The action name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).</p><p>Scoped commands allow for different parameters to be specified for different provided scoping values. For example, the "scoped-action --scope A" command may allow for different scoped arguments to be specified than the "scoped-action --scope B" command.</p><p>Scoped arguments are specified after the "--" pseudo-argument. For example, "scoped-action --scope A -- --scopedFoo --scopedBar".</p> |
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CommandLineAction](./ts-command-line.commandlineaction.md)
+
+
+</td><td>
+
+Represents a sub-command that is part of the CommandLineParser command line. Applications should create subclasses of CommandLineAction corresponding to each action that they want to expose.
+
+The action name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineParameterBase](./ts-command-line.commandlineparameterbase.md)
+
+
+</td><td>
+
+The base class for the various command-line parameter types.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
+
+
+</td><td>
+
+This is the common base class for CommandLineAction and CommandLineParser that provides functionality for defining command-line parameters.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineParameterWithArgument](./ts-command-line.commandlineparameterwithargument.md)
+
+
+</td><td>
+
+The common base class for parameters types that receive an argument.
+
+
+</td></tr>
+<tr><td>
+
+[ScopedCommandLineAction](./ts-command-line.scopedcommandlineaction.md)
+
+
+</td><td>
+
+Represents a sub-command that is part of the CommandLineParser command-line. Applications should create subclasses of ScopedCommandLineAction corresponding to each action that they want to expose.
+
+The action name should be comprised of lower case words separated by hyphens or colons. The name should include an English verb (e.g. "deploy"). Use a hyphen to separate words (e.g. "upload-docs"). A group of related commands can be prefixed with a colon (e.g. "docs:generate", "docs:deploy", "docs:serve", etc).
+
+Scoped commands allow for different parameters to be specified for different provided scoping values. For example, the "scoped-action --scope A" command may allow for different scoped arguments to be specified than the "scoped-action --scope B" command.
+
+Scoped arguments are specified after the "--" pseudo-argument. For example, "scoped-action --scope A -- --scopedFoo --scopedBar".
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [CommandLineConstants](./ts-command-line.commandlineconstants.md) | String constants for command line processing. |
-|  [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Identifies the kind of a CommandLineParameter. |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CommandLineConstants](./ts-command-line.commandlineconstants.md)
+
+
+</td><td>
+
+String constants for command line processing.
+
+
+</td></tr>
+<tr><td>
+
+[CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Identifies the kind of a CommandLineParameter.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IAliasCommandLineActionOptions](./ts-command-line.ialiascommandlineactionoptions.md) | Options for the AliasCommandLineAction constructor. |
-|  [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md) | For use with CommandLineParser, this interface represents a generic command-line parameter |
-|  [IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md) | The common base interface for parameter types that accept an argument. |
-|  [ICommandLineActionOptions](./ts-command-line.icommandlineactionoptions.md) | Options for the CommandLineAction constructor. |
-|  [ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md) | For use with [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options. |
-|  [ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md) | For use with [CommandLineParameterProvider.defineChoiceListParameter()](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options. The parameter can be specified multiple times to build a list. |
-|  [ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md) | For use with [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)<></>, this interface defines a command line parameter that is a boolean flag. |
-|  [ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md) | For use with [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>, this interface defines a command line parameter whose argument is an integer value. |
-|  [ICommandLineIntegerListDefinition](./ts-command-line.icommandlineintegerlistdefinition.md) | For use with [CommandLineParameterProvider.defineIntegerListParameter()](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md)<></>, this interface defines a command line parameter whose argument is an integer value. The parameter can be specified multiple times to build a list. |
-|  [ICommandLineParserOptions](./ts-command-line.icommandlineparseroptions.md) | Options for the [CommandLineParser](./ts-command-line.commandlineparser.md) constructor. |
-|  [ICommandLineRemainderDefinition](./ts-command-line.icommandlineremainderdefinition.md) | For use with [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md)<></>, this interface defines a rule that captures any remaining command line arguments after the recognized portion. |
-|  [ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md) | For use with [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md)<></>, this interface defines a command line parameter whose argument is a string value. |
-|  [ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md) | For use with [CommandLineParameterProvider.defineStringListParameter()](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md)<></>, this interface defines a command line parameter whose argument is a single text string. The parameter can be specified multiple times to build a list. |
-|  [IScopedLongNameParseResult](./ts-command-line.iscopedlongnameparseresult.md) | The result containing the parsed paramter long name and scope. Returned when calling [CommandLineParameterProvider.parseScopedLongName()](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md)<></>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IAliasCommandLineActionOptions](./ts-command-line.ialiascommandlineactionoptions.md)
+
+
+</td><td>
+
+Options for the AliasCommandLineAction constructor.
+
+
+</td></tr>
+<tr><td>
+
+[IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
+
+
+</td><td>
+
+For use with CommandLineParser, this interface represents a generic command-line parameter
+
+
+</td></tr>
+<tr><td>
+
+[IBaseCommandLineDefinitionWithArgument](./ts-command-line.ibasecommandlinedefinitionwithargument.md)
+
+
+</td><td>
+
+The common base interface for parameter types that accept an argument.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineActionOptions](./ts-command-line.icommandlineactionoptions.md)
+
+
+</td><td>
+
+Options for the CommandLineAction constructor.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md) and [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter_1.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineChoiceListParameter()](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options. The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineFlagDefinition](./ts-command-line.icommandlineflagdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineFlagParameter()](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)<></>, this interface defines a command line parameter that is a boolean flag.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>, [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter_1.md)<></>, this interface defines a command line parameter whose argument is an integer value.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineIntegerListDefinition](./ts-command-line.icommandlineintegerlistdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineIntegerListParameter()](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md)<></>, this interface defines a command line parameter whose argument is an integer value. The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineParserOptions](./ts-command-line.icommandlineparseroptions.md)
+
+
+</td><td>
+
+Options for the [CommandLineParser](./ts-command-line.commandlineparser.md) constructor.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineRemainderDefinition](./ts-command-line.icommandlineremainderdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md)<></>, this interface defines a rule that captures any remaining command line arguments after the recognized portion.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter.md) and [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter_1.md)<></>, this interface defines a command line parameter whose argument is a string value.
+
+
+</td></tr>
+<tr><td>
+
+[ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md)
+
+
+</td><td>
+
+For use with [CommandLineParameterProvider.defineStringListParameter()](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md)<></>, this interface defines a command line parameter whose argument is a single text string. The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[IRequiredCommandLineChoiceParameter](./ts-command-line.irequiredcommandlinechoiceparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter_1.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IRequiredCommandLineIntegerParameter](./ts-command-line.irequiredcommandlineintegerparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter_1.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IRequiredCommandLineStringParameter](./ts-command-line.irequiredcommandlinestringparameter.md)
+
+
+</td><td>
+
+The data type returned by [CommandLineParameterProvider.defineStringParameter()](./ts-command-line.commandlineparameterprovider.definestringparameter_1.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IScopedLongNameParseResult](./ts-command-line.iscopedlongnameparseresult.md)
+
+
+</td><td>
+
+The result containing the parsed parameter long name and scope. Returned when calling [CommandLineParameterProvider.parseScopedLongName()](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md)<></>.
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CommandLineParameter](./ts-command-line.commandlineparameter.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

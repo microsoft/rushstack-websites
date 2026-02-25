@@ -20,8 +20,64 @@ export interface IExcerptTokenRange
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [endIndex](./api-extractor-model.iexcerpttokenrange.endindex.md) |  | number | The index of the last member of the span, plus one. |
-|  [startIndex](./api-extractor-model.iexcerpttokenrange.startindex.md) |  | number | The starting index of the span. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[endIndex](./api-extractor-model.iexcerpttokenrange.endindex.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The index of the last member of the span, plus one.
+
+
+</td></tr>
+<tr><td>
+
+[startIndex](./api-extractor-model.iexcerpttokenrange.startindex.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The starting index of the span.
+
+
+</td></tr>
+</tbody></table>
 

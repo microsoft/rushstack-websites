@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICloudBuildCacheProvider interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,17 +22,117 @@ export interface ICloudBuildCacheProvider
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isCacheWriteAllowed](./rush-lib.icloudbuildcacheprovider.iscachewriteallowed.md) | <code>readonly</code> | boolean | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isCacheWriteAllowed](./rush-lib.icloudbuildcacheprovider.iscachewriteallowed.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [deleteCachedCredentialsAsync(terminal)](./rush-lib.icloudbuildcacheprovider.deletecachedcredentialsasync.md) | **_(BETA)_** |
-|  [tryGetCacheEntryBufferByIdAsync(terminal, cacheId)](./rush-lib.icloudbuildcacheprovider.trygetcacheentrybufferbyidasync.md) | **_(BETA)_** |
-|  [trySetCacheEntryBufferAsync(terminal, cacheId, entryBuffer)](./rush-lib.icloudbuildcacheprovider.trysetcacheentrybufferasync.md) | **_(BETA)_** |
-|  [updateCachedCredentialAsync(terminal, credential)](./rush-lib.icloudbuildcacheprovider.updatecachedcredentialasync.md) | **_(BETA)_** |
-|  [updateCachedCredentialInteractiveAsync(terminal)](./rush-lib.icloudbuildcacheprovider.updatecachedcredentialinteractiveasync.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteCachedCredentialsAsync(terminal)](./rush-lib.icloudbuildcacheprovider.deletecachedcredentialsasync.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[tryGetCacheEntryBufferByIdAsync(terminal, cacheId)](./rush-lib.icloudbuildcacheprovider.trygetcacheentrybufferbyidasync.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[trySetCacheEntryBufferAsync(terminal, cacheId, entryBuffer)](./rush-lib.icloudbuildcacheprovider.trysetcacheentrybufferasync.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[updateCachedCredentialAsync(terminal, credential)](./rush-lib.icloudbuildcacheprovider.updatecachedcredentialasync.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[updateCachedCredentialInteractiveAsync(terminal)](./rush-lib.icloudbuildcacheprovider.updatecachedcredentialinteractiveasync.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,37 @@ findProjectByShorthandName(shorthandProjectName: string): RushConfigurationProje
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  shorthandProjectName | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+shorthandProjectName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

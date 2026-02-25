@@ -20,7 +20,35 @@ constructor(options: IParameterOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IParameterOptions](./api-extractor-model.iparameteroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IParameterOptions](./api-extractor-model.iparameteroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

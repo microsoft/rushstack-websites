@@ -10,10 +10,7 @@ pagination_next: null
 
 ## IAsyncParallelismOptions.concurrency property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-Optionally used with the [Async.mapAsync()](./node-core-library.async.mapasync.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md) to limit the maximum number of concurrent promises to the specified number.
+Optionally used with the [Async.mapAsync()](./node-core-library.async.mapasync.md)<></>, [Async.mapAsync()](./node-core-library.async.mapasync_1.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md)<></>, and [Async.forEachAsync()](./node-core-library.async.foreachasync_1.md) to limit the maximum number of concurrent promises to the specified number.
 
 **Signature:**
 

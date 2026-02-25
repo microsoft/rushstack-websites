@@ -15,30 +15,316 @@ Unique identifiers for messages reported by API Extractor during its analysis.
 **Signature:**
 
 ```typescript
-export declare const enum ExtractorMessageId 
+export declare enum ExtractorMessageId 
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  CyclicInheritDoc | <code>&quot;ae-cyclic-inherit-doc&quot;</code> | "The <code>@inheritDoc</code> tag for \_\_\_ refers to its own declaration." |
-|  DifferentReleaseTags | <code>&quot;ae-different-release-tags&quot;</code> | "This symbol has another declaration with a different release tag." |
-|  ExtraReleaseTag | <code>&quot;ae-extra-release-tag&quot;</code> | "The doc comment should not contain more than one release tag." |
-|  ForgottenExport | <code>&quot;ae-forgotten-export&quot;</code> | "The symbol \_\_\_ needs to be exported by the entry point \_\_\_." |
-|  IncompatibleReleaseTags | <code>&quot;ae-incompatible-release-tags&quot;</code> | "The symbol \_\_\_ is marked as \_\_\_, but its signature references \_\_\_ which is marked as \_\_\_." |
-|  InternalMissingUnderscore | <code>&quot;ae-internal-missing-underscore&quot;</code> | "The name \_\_\_ should be prefixed with an underscore because the declaration is marked as <code>@internal</code>." |
-|  InternalMixedReleaseTag | <code>&quot;ae-internal-mixed-release-tag&quot;</code> | "Mixed release tags are not allowed for \_\_\_ because one of its declarations is marked as <code>@internal</code>." |
-|  MisplacedPackageTag | <code>&quot;ae-misplaced-package-tag&quot;</code> | "The <code>@packageDocumentation</code> comment must appear at the top of entry point \*.d.ts file." |
-|  MissingGetter | <code>&quot;ae-missing-getter&quot;</code> | "The property \_\_\_ has a setter but no getter." |
-|  MissingReleaseTag | <code>&quot;ae-missing-release-tag&quot;</code> | "\_\_\_ is part of the package's API, but it is missing a release tag (<code>@alpha</code>, <code>@beta</code>, <code>@public</code>, or <code>@internal</code>)." |
-|  PreapprovedBadReleaseTag | <code>&quot;ae-preapproved-bad-release-tag&quot;</code> | "The <code>@preapproved</code> tag cannot be applied to \_\_\_ without an <code>@internal</code> release tag." |
-|  PreapprovedUnsupportedType | <code>&quot;ae-preapproved-unsupported-type&quot;</code> | "The <code>@preapproved</code> tag cannot be applied to \_\_\_ because it is not a supported declaration type." |
-|  SetterWithDocs | <code>&quot;ae-setter-with-docs&quot;</code> | "The doc comment for the property \_\_\_ must appear on the getter, not the setter." |
-|  UnresolvedInheritDocBase | <code>&quot;ae-unresolved-inheritdoc-base&quot;</code> | "The <code>@inheritDoc</code> tag needs a TSDoc declaration reference; signature matching is not supported yet." |
-|  UnresolvedInheritDocReference | <code>&quot;ae-unresolved-inheritdoc-reference&quot;</code> | "The <code>@inheritDoc</code> reference could not be resolved." |
-|  UnresolvedLink | <code>&quot;ae-unresolved-link&quot;</code> | "The <code>@link</code> reference could not be resolved." |
-|  WrongInputFileType | <code>&quot;ae-wrong-input-file-type&quot;</code> | "Incorrect file type; API Extractor expects to analyze compiler outputs with the .d.ts file extension. Troubleshooting tips: <code>https://api-extractor.com/link/dts-error</code>" |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+CyclicInheritDoc
+
+
+</td><td>
+
+`"ae-cyclic-inherit-doc"`
+
+
+</td><td>
+
+"The `@inheritDoc` tag for \_\_\_ refers to its own declaration."
+
+
+</td></tr>
+<tr><td>
+
+DifferentReleaseTags
+
+
+</td><td>
+
+`"ae-different-release-tags"`
+
+
+</td><td>
+
+"This symbol has another declaration with a different release tag."
+
+
+</td></tr>
+<tr><td>
+
+ExtraReleaseTag
+
+
+</td><td>
+
+`"ae-extra-release-tag"`
+
+
+</td><td>
+
+"The doc comment should not contain more than one release tag."
+
+
+</td></tr>
+<tr><td>
+
+ForgottenExport
+
+
+</td><td>
+
+`"ae-forgotten-export"`
+
+
+</td><td>
+
+"The symbol \_\_\_ needs to be exported by the entry point \_\_\_."
+
+
+</td></tr>
+<tr><td>
+
+IncompatibleReleaseTags
+
+
+</td><td>
+
+`"ae-incompatible-release-tags"`
+
+
+</td><td>
+
+"The symbol \_\_\_ is marked as \_\_\_, but its signature references \_\_\_ which is marked as \_\_\_."
+
+
+</td></tr>
+<tr><td>
+
+InternalMissingUnderscore
+
+
+</td><td>
+
+`"ae-internal-missing-underscore"`
+
+
+</td><td>
+
+"The name \_\_\_ should be prefixed with an underscore because the declaration is marked as `@internal`<></>."
+
+
+</td></tr>
+<tr><td>
+
+InternalMixedReleaseTag
+
+
+</td><td>
+
+`"ae-internal-mixed-release-tag"`
+
+
+</td><td>
+
+"Mixed release tags are not allowed for \_\_\_ because one of its declarations is marked as `@internal`<></>."
+
+
+</td></tr>
+<tr><td>
+
+MisplacedPackageTag
+
+
+</td><td>
+
+`"ae-misplaced-package-tag"`
+
+
+</td><td>
+
+"The `@packageDocumentation` comment must appear at the top of entry point \*.d.ts file."
+
+
+</td></tr>
+<tr><td>
+
+MissingGetter
+
+
+</td><td>
+
+`"ae-missing-getter"`
+
+
+</td><td>
+
+"The property \_\_\_ has a setter but no getter."
+
+
+</td></tr>
+<tr><td>
+
+MissingReleaseTag
+
+
+</td><td>
+
+`"ae-missing-release-tag"`
+
+
+</td><td>
+
+"\_\_\_ is part of the package's API, but it is missing a release tag (`@alpha`<></>, `@beta`<></>, `@public`<></>, or `@internal`<></>)."
+
+
+</td></tr>
+<tr><td>
+
+PreapprovedBadReleaseTag
+
+
+</td><td>
+
+`"ae-preapproved-bad-release-tag"`
+
+
+</td><td>
+
+"The `@preapproved` tag cannot be applied to \_\_\_ without an `@internal` release tag."
+
+
+</td></tr>
+<tr><td>
+
+PreapprovedUnsupportedType
+
+
+</td><td>
+
+`"ae-preapproved-unsupported-type"`
+
+
+</td><td>
+
+"The `@preapproved` tag cannot be applied to \_\_\_ because it is not a supported declaration type."
+
+
+</td></tr>
+<tr><td>
+
+SetterWithDocs
+
+
+</td><td>
+
+`"ae-setter-with-docs"`
+
+
+</td><td>
+
+"The doc comment for the property \_\_\_ must appear on the getter, not the setter."
+
+
+</td></tr>
+<tr><td>
+
+Undocumented
+
+
+</td><td>
+
+`"ae-undocumented"`
+
+
+</td><td>
+
+"Missing documentation for \_\_\_."
+
+
+</td></tr>
+<tr><td>
+
+UnresolvedInheritDocBase
+
+
+</td><td>
+
+`"ae-unresolved-inheritdoc-base"`
+
+
+</td><td>
+
+"The `@inheritDoc` tag needs a TSDoc declaration reference; signature matching is not supported yet."
+
+
+</td></tr>
+<tr><td>
+
+UnresolvedInheritDocReference
+
+
+</td><td>
+
+`"ae-unresolved-inheritdoc-reference"`
+
+
+</td><td>
+
+"The `@inheritDoc` reference could not be resolved."
+
+
+</td></tr>
+<tr><td>
+
+UnresolvedLink
+
+
+</td><td>
+
+`"ae-unresolved-link"`
+
+
+</td><td>
+
+"The `@link` reference could not be resolved."
+
+
+</td></tr>
+<tr><td>
+
+WrongInputFileType
+
+
+</td><td>
+
+`"ae-wrong-input-file-type"`
+
+
+</td><td>
+
+"Incorrect file type; API Extractor expects to analyze compiler outputs with the .d.ts file extension. Troubleshooting tips: `https://api-extractor.com/link/dts-error`<></>"
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

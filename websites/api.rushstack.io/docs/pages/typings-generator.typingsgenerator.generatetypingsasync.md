@@ -20,9 +20,39 @@ generateTypingsAsync(relativeFilePaths?: string[]): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  relativeFilePaths | string\[\] | _(Optional)_ The input files to process, relative to the source folder. If not provided, all input files will be processed. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+relativeFilePaths
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ The input files to process, relative to the source folder. If not provided, all input files will be processed.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

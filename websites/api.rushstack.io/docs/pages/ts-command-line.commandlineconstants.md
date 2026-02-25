@@ -15,12 +15,42 @@ String constants for command line processing.
 **Signature:**
 
 ```typescript
-export declare const enum CommandLineConstants 
+export declare enum CommandLineConstants 
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  TabCompletionActionName | <code>&quot;tab-complete&quot;</code> | The name of the built-in action that serves suggestions for tab-completion |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+TabCompletionActionName
+
+
+</td><td>
+
+`"tab-complete"`
+
+
+</td><td>
+
+The name of the built-in action that serves suggestions for tab-completion
+
+
+</td></tr>
+</tbody></table>
 

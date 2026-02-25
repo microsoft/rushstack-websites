@@ -20,7 +20,35 @@ constructor(pattern: TreeNode);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  pattern | [TreeNode](./tree-pattern.treenode.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pattern
+
+
+</td><td>
+
+[TreeNode](./tree-pattern.treenode.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

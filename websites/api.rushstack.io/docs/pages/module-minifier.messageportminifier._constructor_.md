@@ -15,12 +15,40 @@ Constructs a new instance of the `MessagePortMinifier` class
 **Signature:**
 
 ```typescript
-constructor(port: MessagePort);
+constructor(port: WorkerThreads.MessagePort);
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  port | MessagePort |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+port
+
+
+</td><td>
+
+WorkerThreads.MessagePort
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

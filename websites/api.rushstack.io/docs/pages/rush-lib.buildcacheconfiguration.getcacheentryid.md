@@ -10,7 +10,7 @@ pagination_next: null
 
 ## BuildCacheConfiguration.getCacheEntryId property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Method to calculate the cache entry id for a project, phase, and project state.

@@ -15,21 +15,141 @@ The lifecycle session is responsible for providing session-specific information 
 **Signature:**
 
 ```typescript
-export interface IHeftLifecycleSession
+export interface IHeftLifecycleSession 
 ```
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [hooks](./heft.iheftlifecyclesession.hooks.md) | <code>readonly</code> | [IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md) | The hooks available to the lifecycle plugin. |
-|  [logger](./heft.iheftlifecyclesession.logger.md) | <code>readonly</code> | [IScopedLogger](./heft.iscopedlogger.md) | The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format `[lifecycle:<pluginName>]`. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message. |
-|  [parameters](./heft.iheftlifecyclesession.parameters.md) | <code>readonly</code> | [IHeftParameters](./heft.iheftparameters.md) | Contains default parameters provided by Heft, as well as CLI parameters requested by the lifecycle plugin. |
-|  [tempFolderPath](./heft.iheftlifecyclesession.tempfolderpath.md) | <code>readonly</code> | string | The temp folder for the lifecycle plugin. This folder is unique for each lifecycle plugin, and will be cleaned when Heft is run with <code>--clean</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hooks](./heft.iheftlifecyclesession.hooks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IHeftLifecycleHooks](./heft.iheftlifecyclehooks.md)
+
+
+</td><td>
+
+The hooks available to the lifecycle plugin.
+
+
+</td></tr>
+<tr><td>
+
+[logger](./heft.iheftlifecyclesession.logger.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IScopedLogger](./heft.iscopedlogger.md)
+
+
+</td><td>
+
+The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format `[lifecycle:<pluginName>]`<></>. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message.
+
+
+</td></tr>
+<tr><td>
+
+[parameters](./heft.iheftlifecyclesession.parameters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IHeftParameters](./heft.iheftparameters.md)
+
+
+</td><td>
+
+Contains default parameters provided by Heft, as well as CLI parameters requested by the lifecycle plugin.
+
+
+</td></tr>
+<tr><td>
+
+[tempFolderPath](./heft.iheftlifecyclesession.tempfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The temp folder for the lifecycle plugin. This folder is unique for each lifecycle plugin, and will be cleaned when Heft is run with `--clean`<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [requestAccessToPluginByName(pluginToAccessPackage, pluginToAccessName, pluginApply)](./heft.iheftlifecyclesession.requestaccesstopluginbyname.md) | Set a a callback which will be called if and after the specified plugin has been applied. This can be used to tap hooks on another lifecycle plugin that exists within the same phase. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[requestAccessToPluginByName(pluginToAccessPackage, pluginToAccessName, pluginApply)](./heft.iheftlifecyclesession.requestaccesstopluginbyname.md)
+
+
+</td><td>
+
+Set a a callback which will be called if and after the specified plugin has been applied. This can be used to tap hooks on another lifecycle plugin that exists within the same phase.
+
+
+</td></tr>
+</tbody></table>
 

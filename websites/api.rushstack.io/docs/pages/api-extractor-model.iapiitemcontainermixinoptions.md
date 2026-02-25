@@ -21,8 +21,64 @@ export interface IApiItemContainerMixinOptions extends IApiItemOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [members?](./api-extractor-model.iapiitemcontainermixinoptions.members.md) |  | [ApiItem](./api-extractor-model.apiitem.md)<></>\[\] | _(Optional)_ |
-|  [preserveMemberOrder?](./api-extractor-model.iapiitemcontainermixinoptions.preservememberorder.md) |  | boolean | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[members?](./api-extractor-model.iapiitemcontainermixinoptions.members.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[preserveMemberOrder?](./api-extractor-model.iapiitemcontainermixinoptions.preservememberorder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

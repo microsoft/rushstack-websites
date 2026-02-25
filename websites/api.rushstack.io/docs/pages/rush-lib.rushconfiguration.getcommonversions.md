@@ -10,19 +10,68 @@ pagination_next: null
 
 ## RushConfiguration.getCommonVersions() method
 
-Gets the settings from the common-versions.json config file for a specific variant.
+> Warning: This API is now obsolete.
+> 
+> Use [Subspace.getCommonVersions()](./rush-lib.subspace.getcommonversions.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-getCommonVersions(variant?: string | undefined): CommonVersionsConfiguration;
+getCommonVersions(subspace?: Subspace, variant?: string): CommonVersionsConfiguration;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+variant
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

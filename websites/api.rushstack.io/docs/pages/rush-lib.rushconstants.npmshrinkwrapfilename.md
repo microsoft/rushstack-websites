@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.npmShrinkwrapFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The filename ("npm-shrinkwrap.json") used to store an installation plan for the NPM package manger.
@@ -18,5 +18,5 @@ The filename ("npm-shrinkwrap.json") used to store an installation plan for the 
 **Signature:**
 
 ```typescript
-static readonly npmShrinkwrapFilename: string;
+static readonly npmShrinkwrapFilename: 'npm-shrinkwrap.json';
 ```

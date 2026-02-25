@@ -27,25 +27,220 @@ Most `ApiItem` subclasses have declarations and thus extend `ApiDeclaredItem`<><
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apideclareditem._constructor_.md) |  | Constructs a new instance of the <code>ApiDeclaredItem</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apideclareditem._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiDeclaredItem` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [excerpt](./api-extractor-model.apideclareditem.excerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | The source code excerpt where the API item is declared. |
-|  [excerptTokens](./api-extractor-model.apideclareditem.excerpttokens.md) | <code>readonly</code> | ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt; | The individual source code tokens that comprise the main excerpt. |
-|  [fileUrlPath](./api-extractor-model.apideclareditem.fileurlpath.md) | <code>readonly</code> | string \| undefined | The file URL path relative to the <code>projectFolder</code> and <code>projectFolderURL</code> fields as defined in the <code>api-extractor.json</code> config. Is <code>undefined</code> if the path is the same as the parent API item's. |
-|  [sourceLocation](./api-extractor-model.apideclareditem.sourcelocation.md) | <code>readonly</code> | [SourceLocation](./api-extractor-model.sourcelocation.md) | Returns the source location where the API item is declared. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[excerpt](./api-extractor-model.apideclareditem.excerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+The source code excerpt where the API item is declared.
+
+
+</td></tr>
+<tr><td>
+
+[excerptTokens](./api-extractor-model.apideclareditem.excerpttokens.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ExcerptToken](./api-extractor-model.excerpttoken.md)<></>&gt;
+
+
+</td><td>
+
+The individual source code tokens that comprise the main excerpt.
+
+
+</td></tr>
+<tr><td>
+
+[fileUrlPath](./api-extractor-model.apideclareditem.fileurlpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The file URL path relative to the `projectFolder` and `projectFolderURL` fields as defined in the `api-extractor.json` config. Is `undefined` if the path is the same as the parent API item's.
+
+
+</td></tr>
+<tr><td>
+
+[sourceLocation](./api-extractor-model.apideclareditem.sourcelocation.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[SourceLocation](./api-extractor-model.sourcelocation.md)
+
+
+</td><td>
+
+Returns the source location where the API item is declared.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildExcerpt(tokenRange)](./api-extractor-model.apideclareditem.buildexcerpt.md) |  | Constructs a new [Excerpt](./api-extractor-model.excerpt.md) corresponding to the provided token range. |
-|  [getExcerptWithModifiers()](./api-extractor-model.apideclareditem.getexcerptwithmodifiers.md) |  | If the API item has certain important modifier tags such as <code>@sealed</code>, <code>@virtual</code>, or <code>@override</code>, this prepends them as a doc comment above the excerpt. |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apideclareditem.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apideclareditem.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildExcerpt(tokenRange)](./api-extractor-model.apideclareditem.buildexcerpt.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new [Excerpt](./api-extractor-model.excerpt.md) corresponding to the provided token range.
+
+
+</td></tr>
+<tr><td>
+
+[getExcerptWithModifiers()](./api-extractor-model.apideclareditem.getexcerptwithmodifiers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If the API item has certain important modifier tags such as `@sealed`<></>, `@virtual`<></>, or `@override`<></>, this prepends them as a doc comment above the excerpt.
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apideclareditem.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apideclareditem.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

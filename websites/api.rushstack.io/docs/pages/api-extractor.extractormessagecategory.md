@@ -15,15 +15,90 @@ Specifies a category of messages for use with [ExtractorMessage](./api-extractor
 **Signature:**
 
 ```typescript
-export declare const enum ExtractorMessageCategory 
+export declare enum ExtractorMessageCategory 
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Compiler | <code>&quot;Compiler&quot;</code> | Messages originating from the TypeScript compiler. |
-|  Console | <code>&quot;console&quot;</code> | Console messages communicate the progress of the overall operation. They may include newlines to ensure nice formatting. They are output in real time, and cannot be routed to the API Report file. |
-|  Extractor | <code>&quot;Extractor&quot;</code> | Messages related to API Extractor's analysis. |
-|  TSDoc | <code>&quot;TSDoc&quot;</code> | Messages related to parsing of TSDoc comments. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Compiler
+
+
+</td><td>
+
+`"Compiler"`
+
+
+</td><td>
+
+Messages originating from the TypeScript compiler.
+
+
+</td></tr>
+<tr><td>
+
+Console
+
+
+</td><td>
+
+`"console"`
+
+
+</td><td>
+
+Console messages communicate the progress of the overall operation. They may include newlines to ensure nice formatting. They are output in real time, and cannot be routed to the API Report file.
+
+
+</td></tr>
+<tr><td>
+
+Extractor
+
+
+</td><td>
+
+`"Extractor"`
+
+
+</td><td>
+
+Messages related to API Extractor's analysis.
+
+
+</td></tr>
+<tr><td>
+
+TSDoc
+
+
+</td><td>
+
+`"TSDoc"`
+
+
+</td><td>
+
+Messages related to parsing of TSDoc comments.
+
+
+</td></tr>
+</tbody></table>
 

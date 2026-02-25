@@ -15,7 +15,7 @@ Returns the argument value for a choice parameter that was parsed from the comma
 **Signature:**
 
 ```typescript
-get value(): string | undefined;
+get value(): TChoice | undefined;
 ```
 
 ## Remarks

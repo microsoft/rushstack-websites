@@ -15,5 +15,5 @@ Determines if a version policy wants to opt in to including email.
 **Signature:**
 
 ```typescript
-readonly includeEmailInChangeFile: boolean;
+get includeEmailInChangeFile(): boolean;
 ```

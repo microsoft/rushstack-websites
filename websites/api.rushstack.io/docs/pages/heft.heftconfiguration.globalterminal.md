@@ -15,5 +15,5 @@ Terminal instance to facilitate logging.
 **Signature:**
 
 ```typescript
-get globalTerminal(): ITerminal;
+readonly globalTerminal: ITerminal;
 ```

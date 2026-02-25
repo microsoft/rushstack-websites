@@ -20,9 +20,39 @@ static deleteFolder(folderPath: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  folderPath | string | The absolute or relative path to the folder which should be deleted. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+folderPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path to the folder which should be deleted.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

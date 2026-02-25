@@ -20,10 +20,55 @@ static readFile(filePath: string, options?: IFileSystemReadFileOptions): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filePath | string | The relative or absolute path to the file whose contents should be read. |
-|  options | [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) | _(Optional)_ Optional settings that can change the behavior. Type: <code>IReadFileOptions</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The relative or absolute path to the file whose contents should be read.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional settings that can change the behavior. Type: `IReadFileOptions`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

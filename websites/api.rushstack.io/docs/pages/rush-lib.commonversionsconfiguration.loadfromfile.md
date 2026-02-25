@@ -15,14 +15,58 @@ Loads the common-versions.json data from the specified file path. If the file ha
 **Signature:**
 
 ```typescript
-static loadFromFile(jsonFilename: string): CommonVersionsConfiguration;
+static loadFromFile(jsonFilePath: string, rushConfiguration?: RushConfiguration): CommonVersionsConfiguration;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonFilename | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonFilePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

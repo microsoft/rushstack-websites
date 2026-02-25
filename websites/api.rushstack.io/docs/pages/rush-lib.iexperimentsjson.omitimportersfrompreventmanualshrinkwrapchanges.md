@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IExperimentsJson.omitImportersFromPreventManualShrinkwrapChanges property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 If using the 'preventManualShrinkwrapChanges' option, restricts the hash to only include the layout of external dependencies. Used to allow links between workspace projects or the addition/removal of references to existing dependency versions to not cause hash changes.

@@ -15,15 +15,108 @@ Options for [JsonFile.stringify()](./node-core-library.jsonfile.stringify.md)
 **Signature:**
 
 ```typescript
-export interface IJsonFileStringifyOptions 
+export interface IJsonFileStringifyOptions extends IJsonFileParseOptions 
 ```
+**Extends:** [IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [headerComment?](./node-core-library.ijsonfilestringifyoptions.headercomment.md) |  | string | _(Optional)_ If specified, this header will be prepended to the start of the file. The header must consist of lines prefixed by "//" characters. |
-|  [ignoreUndefinedValues?](./node-core-library.ijsonfilestringifyoptions.ignoreundefinedvalues.md) |  | boolean | _(Optional)_ By default, <code>JsonFile.stringify()</code> validates that the object does not contain any keys whose value is <code>undefined</code>. To disable this validation, set <code>ignoreUndefinedValues=true</code> which causes such keys to be silently discarded, consistent with the system <code>JSON.stringify()</code>. |
-|  [newlineConversion?](./node-core-library.ijsonfilestringifyoptions.newlineconversion.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | _(Optional)_ If provided, the specified newline type will be used instead of the default <code>\r\n</code>. |
-|  [prettyFormatting?](./node-core-library.ijsonfilestringifyoptions.prettyformatting.md) |  | boolean | _(Optional)_ If true, then the "jju" library will be used to improve the text formatting. Note that this is slightly slower than the native JSON.stringify() implementation. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[headerComment?](./node-core-library.ijsonfilestringifyoptions.headercomment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ If specified, this header will be prepended to the start of the file. The header must consist of lines prefixed by "//" characters.
+
+
+</td></tr>
+<tr><td>
+
+[ignoreUndefinedValues?](./node-core-library.ijsonfilestringifyoptions.ignoreundefinedvalues.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ By default, [JsonFile.stringify()](./node-core-library.jsonfile.stringify.md) validates that the object does not contain any keys whose value is `undefined`<></>. To disable this validation, set [IJsonFileStringifyOptions.ignoreUndefinedValues](./node-core-library.ijsonfilestringifyoptions.ignoreundefinedvalues.md) to `true` which causes such keys to be silently discarded, consistent with the system `JSON.stringify()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[newlineConversion?](./node-core-library.ijsonfilestringifyoptions.newlineconversion.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+_(Optional)_ If provided, the specified newline type will be used instead of the default `\r\n`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[prettyFormatting?](./node-core-library.ijsonfilestringifyoptions.prettyformatting.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then the "jju" library will be used to improve the text formatting. Note that this is slightly slower than the native JSON.stringify() implementation.
+
+
+</td></tr>
+</tbody></table>
 

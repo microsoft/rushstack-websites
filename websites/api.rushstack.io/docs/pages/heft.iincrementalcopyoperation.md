@@ -21,7 +21,45 @@ export interface IIncrementalCopyOperation extends ICopyOperation
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [onlyIfChanged?](./heft.iincrementalcopyoperation.onlyifchanged.md) |  | boolean | _(Optional)_ If true, the file will be copied only if the source file is contained in the IHeftTaskRunIncrementalHookOptions.changedFiles map. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onlyIfChanged?](./heft.iincrementalcopyoperation.onlyifchanged.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, the file will be copied only if the source file is contained in the IHeftTaskRunIncrementalHookOptions.changedFiles map.
+
+
+</td></tr>
+</tbody></table>
 

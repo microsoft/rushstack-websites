@@ -20,10 +20,102 @@ export interface IGlobOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [absolute?](./heft.igloboptions.absolute.md) |  | boolean | _(Optional)_ Whether or not the returned file paths should be absolute. |
-|  [cwd?](./heft.igloboptions.cwd.md) |  | string | _(Optional)_ Current working directory that the glob pattern will be applied to. |
-|  [dot?](./heft.igloboptions.dot.md) |  | boolean | _(Optional)_ Whether or not to include dot files when globbing. |
-|  [ignore?](./heft.igloboptions.ignore.md) |  | string\[\] | _(Optional)_ Patterns to ignore when globbing. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[absolute?](./heft.igloboptions.absolute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether or not the returned file paths should be absolute.
+
+
+</td></tr>
+<tr><td>
+
+[cwd?](./heft.igloboptions.cwd.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Current working directory that the glob pattern will be applied to.
+
+
+</td></tr>
+<tr><td>
+
+[dot?](./heft.igloboptions.dot.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether or not to include dot files when globbing.
+
+
+</td></tr>
+<tr><td>
+
+[ignore?](./heft.igloboptions.ignore.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Patterns to ignore when globbing.
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,9 +15,9 @@ The data type returned by [CommandLineParameterProvider.defineChoiceListParamete
 **Signature:**
 
 ```typescript
-export declare class CommandLineChoiceListParameter extends CommandLineParameter 
+export declare class CommandLineChoiceListParameter<TChoice extends string = string> extends CommandLineParameterBase 
 ```
-**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameterBase](./ts-command-line.commandlineparameterbase.md)
 
 ## Remarks
 
@@ -25,16 +25,144 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alternatives](./ts-command-line.commandlinechoicelistparameter.alternatives.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt; | A list of strings (which contain no spaces), of possible options which can be selected |
-|  [completions](./ts-command-line.commandlinechoicelistparameter.completions.md) | <code>readonly</code> | (() =&gt; Promise&lt;string\[\]&gt;) \| undefined | An optional callback that provides a list of custom choices for tab completion. |
-|  [kind](./ts-command-line.commandlinechoicelistparameter.kind.md) | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [values](./ts-command-line.commandlinechoicelistparameter.values.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt; | Returns the string arguments for a choice list parameter that was parsed from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alternatives](./ts-command-line.commandlinechoicelistparameter.alternatives.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;TChoice&gt;
+
+
+</td><td>
+
+A list of strings (which contain no spaces), of possible options which can be selected
+
+
+</td></tr>
+<tr><td>
+
+[completions](./ts-command-line.commandlinechoicelistparameter.completions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(() =&gt; Promise&lt;ReadonlyArray&lt;TChoice&gt; \| ReadonlySet&lt;TChoice&gt;&gt;) \| undefined
+
+
+</td><td>
+
+An optional callback that provides a list of custom choices for tab completion.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./ts-command-line.commandlinechoicelistparameter.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineParameterKind.ChoiceList](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Indicates the type of parameter.
+
+
+</td></tr>
+<tr><td>
+
+[values](./ts-command-line.commandlinechoicelistparameter.values.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;TChoice&gt;
+
+
+</td><td>
+
+Returns the string arguments for a choice list parameter that was parsed from the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlinechoicelistparameter.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlinechoicelistparameter.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

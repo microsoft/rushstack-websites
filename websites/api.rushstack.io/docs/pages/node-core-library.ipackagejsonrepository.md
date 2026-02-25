@@ -20,9 +20,83 @@ export interface IPackageJsonRepository
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [directory?](./node-core-library.ipackagejsonrepository.directory.md) |  | string | _(Optional)_ If the project does not exist at the root of the repository, its path is specified here. |
-|  [type](./node-core-library.ipackagejsonrepository.type.md) |  | string | The source control type for the repository that hosts the project. This is typically "git". |
-|  [url](./node-core-library.ipackagejsonrepository.url.md) |  | string | The URL of the repository that hosts the project. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[directory?](./node-core-library.ipackagejsonrepository.directory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ If the project does not exist at the root of the repository, its path is specified here.
+
+
+</td></tr>
+<tr><td>
+
+[type](./node-core-library.ipackagejsonrepository.type.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The source control type for the repository that hosts the project. This is typically "git".
+
+
+</td></tr>
+<tr><td>
+
+[url](./node-core-library.ipackagejsonrepository.url.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The URL of the repository that hosts the project.
+
+
+</td></tr>
+</tbody></table>
 

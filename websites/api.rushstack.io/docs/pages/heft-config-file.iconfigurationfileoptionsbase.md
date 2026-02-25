@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IConfigurationFileOptionsBase interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,10 +22,104 @@ export interface IConfigurationFileOptionsBase<TConfigurationFile>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [jsonPathMetadata?](./heft-config-file.iconfigurationfileoptionsbase.jsonpathmetadata.md) |  | [IJsonPathsMetadata](./heft-config-file.ijsonpathsmetadata.md)<></>&lt;TConfigurationFile&gt; | **_(BETA)_** _(Optional)_ Use this property to specify how JSON nodes are postprocessed. |
-|  [projectRelativeFilePath](./heft-config-file.iconfigurationfileoptionsbase.projectrelativefilepath.md) |  | string | **_(BETA)_** A project root-relative path to the configuration file that should be loaded. |
-|  [propertyInheritance?](./heft-config-file.iconfigurationfileoptionsbase.propertyinheritance.md) |  | [IPropertiesInheritance](./heft-config-file.ipropertiesinheritance.md)<></>&lt;TConfigurationFile&gt; | **_(BETA)_** _(Optional)_ Use this property to control how root-level properties are handled between parent and child configuration files. |
-|  [propertyInheritanceDefaults?](./heft-config-file.iconfigurationfileoptionsbase.propertyinheritancedefaults.md) |  | [IPropertyInheritanceDefaults](./heft-config-file.ipropertyinheritancedefaults.md) | **_(BETA)_** _(Optional)_ Use this property to control how specific property types are handled between parent and child configuration files. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[customValidationFunction?](./heft-config-file.iconfigurationfileoptionsbase.customvalidationfunction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[CustomValidationFunction](./heft-config-file.customvalidationfunction.md)<></>&lt;TConfigurationFile&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Use this property if you need to validate the configuration file in ways beyond what JSON schema can handle. This function will be invoked after JSON schema validation.
+
+If the file is valid, this function should return `true`<></>, otherwise `ConfigurationFile` will throw an error indicating that custom validation failed. To suppress this error, the function may itself choose to throw.
+
+
+</td></tr>
+<tr><td>
+
+[jsonPathMetadata?](./heft-config-file.iconfigurationfileoptionsbase.jsonpathmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IJsonPathsMetadata](./heft-config-file.ijsonpathsmetadata.md)<></>&lt;TConfigurationFile&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Use this property to specify how JSON nodes are postprocessed.
+
+
+</td></tr>
+<tr><td>
+
+[propertyInheritance?](./heft-config-file.iconfigurationfileoptionsbase.propertyinheritance.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPropertiesInheritance](./heft-config-file.ipropertiesinheritance.md)<></>&lt;TConfigurationFile&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Use this property to control how root-level properties are handled between parent and child configuration files.
+
+
+</td></tr>
+<tr><td>
+
+[propertyInheritanceDefaults?](./heft-config-file.iconfigurationfileoptionsbase.propertyinheritancedefaults.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPropertyInheritanceDefaults](./heft-config-file.ipropertyinheritancedefaults.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Use this property to control how specific property types are handled between parent and child configuration files.
+
+
+</td></tr>
+</tbody></table>
 

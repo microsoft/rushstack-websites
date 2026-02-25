@@ -10,7 +10,7 @@ pagination_next: null
 
 ## StdioSummarizer class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Summarizes the results of a failed build task by returning a subset of `stderr` output not to exceed a specified maximum number of lines.
@@ -41,14 +41,83 @@ If the `stderr` output is completely empty, then the `stdout` output will be sum
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.stdiosummarizer._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>StdioSummarizer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.stdiosummarizer._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `StdioSummarizer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getReport()](./terminal.stdiosummarizer.getreport.md) |  | **_(BETA)_** Returns the summary report. |
-|  [onWriteChunk(chunk)](./terminal.stdiosummarizer.onwritechunk.md) |  | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getReport()](./terminal.stdiosummarizer.getreport.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Returns the summary report.
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./terminal.stdiosummarizer.onwritechunk.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

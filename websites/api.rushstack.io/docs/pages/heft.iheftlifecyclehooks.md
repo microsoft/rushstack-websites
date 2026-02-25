@@ -20,10 +20,178 @@ export interface IHeftLifecycleHooks
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [clean](./heft.iheftlifecyclehooks.clean.md) |  | AsyncParallelHook&lt;[IHeftLifecycleCleanHookOptions](./heft.iheftlifecyclecleanhookoptions.md)<></>&gt; | The <code>clean</code> hook is called at the beginning of Heft execution. It can be used to clean up any files or folders that may be produced by the plugin. To use it, call <code>clean.tapPromise(&lt;pluginName&gt;, &lt;callback&gt;)</code>. |
-|  [recordMetrics](./heft.iheftlifecyclehooks.recordmetrics.md) |  | AsyncParallelHook&lt;[IHeftRecordMetricsHookOptions](./heft.iheftrecordmetricshookoptions.md)<></>&gt; |  |
-|  [toolFinish](./heft.iheftlifecyclehooks.toolfinish.md) |  | AsyncParallelHook&lt;[IHeftLifecycleToolFinishHookOptions](./heft.iheftlifecycletoolfinishhookoptions.md)<></>&gt; | The <code>toolFinish</code> hook is called at the end of Heft execution. It is called after all phases have completed execution. To use it, call <code>toolFinish.tapPromise(&lt;pluginName&gt;, &lt;callback&gt;)</code>. |
-|  [toolStart](./heft.iheftlifecyclehooks.toolstart.md) |  | AsyncParallelHook&lt;[IHeftLifecycleToolStartHookOptions](./heft.iheftlifecycletoolstarthookoptions.md)<></>&gt; | The <code>toolStart</code> hook is called at the beginning of Heft execution, after the <code>clean</code> hook. It is called before any phases have begun to execute. To use it, call <code>toolStart.tapPromise(&lt;pluginName&gt;, &lt;callback&gt;)</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[clean](./heft.iheftlifecyclehooks.clean.md)
+
+
+</td><td>
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftLifecycleCleanHookOptions](./heft.iheftlifecyclecleanhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `clean` hook is called at the beginning of Heft execution. It can be used to clean up any files or folders that may be produced by the plugin. To use it, call `clean.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[phaseFinish](./heft.iheftlifecyclehooks.phasefinish.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SyncHook&lt;[IHeftPhaseFinishHookOptions](./heft.iheftphasefinishhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `phaseFinish` hook is called at the end of a phase. It is called after the phase has completed execution. To use it, call `phaseFinish.tap(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[phaseStart](./heft.iheftlifecyclehooks.phasestart.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SyncHook&lt;[IHeftPhaseStartHookOptions](./heft.iheftphasestarthookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `phaseStart` hook is called at the beginning of a phase. It is called before the phase has begun to execute. To use it, call `phaseStart.tap(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[recordMetrics](./heft.iheftlifecyclehooks.recordmetrics.md)
+
+
+</td><td>
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftRecordMetricsHookOptions](./heft.iheftrecordmetricshookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `recordMetrics` hook is called at the end of every Heft execution pass. It is called after all phases have completed execution (or been canceled). In a watch run, it will be called several times in between `toolStart` and (if the session is gracefully interrupted via Ctrl+C), `toolFinish`<></>. In a non-watch run, it will be invoked exactly once between `toolStart` and `toolFinish`<></>. To use it, call `recordMetrics.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[taskFinish](./heft.iheftlifecyclehooks.taskfinish.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SyncHook&lt;[IHeftTaskFinishHookOptions](./heft.ihefttaskfinishhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `taskFinish` hook is called at the end of a task. It is called after the task has completed execution. To use it, call `taskFinish.tap(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[taskStart](./heft.iheftlifecyclehooks.taskstart.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SyncHook&lt;[IHeftTaskStartHookOptions](./heft.ihefttaskstarthookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `taskStart` hook is called at the beginning of a task. It is called before the task has begun to execute. To use it, call `taskStart.tap(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[toolFinish](./heft.iheftlifecyclehooks.toolfinish.md)
+
+
+</td><td>
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftLifecycleToolFinishHookOptions](./heft.iheftlifecycletoolfinishhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `toolFinish` hook is called at the end of Heft execution. It is called after all phases have completed execution. Plugins that tap this hook are resposible for handling the scenario in which `toolStart` threw an error, since this hook is used to clean up any resources allocated earlier in the lifecycle and therefore runs even in error conditions. To use it, call `toolFinish.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[toolStart](./heft.iheftlifecyclehooks.toolstart.md)
+
+
+</td><td>
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftLifecycleToolStartHookOptions](./heft.iheftlifecycletoolstarthookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `toolStart` hook is called at the beginning of Heft execution, after the `clean` hook. It is called before any phases have begun to execute. To use it, call `toolStart.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+</tbody></table>
 

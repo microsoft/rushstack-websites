@@ -21,14 +21,95 @@ export declare class LocalMinifier implements IModuleMinifier
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./module-minifier.localminifier._constructor_.md) |  | Constructs a new instance of the <code>LocalMinifier</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./module-minifier.localminifier._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `LocalMinifier` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [connect()](./module-minifier.localminifier.connect.md) |  |  |
-|  [minify(request, callback)](./module-minifier.localminifier.minify.md) |  | Transform that invokes Terser on the main thread |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./module-minifier.localminifier.connect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[connectAsync()](./module-minifier.localminifier.connectasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+
+
+</td></tr>
+<tr><td>
+
+[minify(request, callback)](./module-minifier.localminifier.minify.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Transform that invokes Terser on the main thread
+
+
+</td></tr>
+</tbody></table>
 

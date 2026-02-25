@@ -20,9 +20,87 @@ export interface IMarkdownDocumenterFeatureOnBeforeWritePageArgs
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiItem](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.apiitem.md) | <code>readonly</code> | [ApiItem](./api-extractor-model.apiitem.md) | The API item corresponding to this page. |
-|  [outputFilename](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.outputfilename.md) | <code>readonly</code> | string | The filename where the output will be written. |
-|  [pageContent](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.pagecontent.md) |  | string | The page content. The [MarkdownDocumenterFeature.onBeforeWritePage()](./api-documenter.markdowndocumenterfeature.onbeforewritepage.md) handler can reassign this string to customize the page appearance. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiItem](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.apiitem.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md)
+
+
+</td><td>
+
+The API item corresponding to this page.
+
+
+</td></tr>
+<tr><td>
+
+[outputFilename](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.outputfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename where the output will be written.
+
+
+</td></tr>
+<tr><td>
+
+[pageContent](./api-documenter.imarkdowndocumenterfeatureonbeforewritepageargs.pagecontent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The page content. The [MarkdownDocumenterFeature.onBeforeWritePage()](./api-documenter.markdowndocumenterfeature.onbeforewritepage.md) handler can reassign this string to customize the page appearance.
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedWriter.bufferedChunks property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 For diagnostic purposes, if the writer is buffering chunks because it has not become active yet, they can be inspected via this property.

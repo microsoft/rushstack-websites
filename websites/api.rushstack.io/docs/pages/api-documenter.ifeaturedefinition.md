@@ -20,9 +20,85 @@ export interface IFeatureDefinition
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [featureName](./api-documenter.ifeaturedefinition.featurename.md) |  | string | <p>The name of this feature, as it will appear in the config file.</p><p>The name should consist of one or more words separated by hyphens. Each word should consist of lower case letters and numbers. Example: <code>my-feature</code></p> |
-|  [kind](./api-documenter.ifeaturedefinition.kind.md) |  | 'MarkdownDocumenterFeature' | Determines the kind of feature. The specified value is the name of the base class that <code>subclass</code> inherits from. |
-|  [subclass](./api-documenter.ifeaturedefinition.subclass.md) |  | { new (initialization: [PluginFeatureInitialization](./api-documenter.pluginfeatureinitialization.md)<></>): [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md)<></>; } | Your subclass that extends from the base class. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[featureName](./api-documenter.ifeaturedefinition.featurename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of this feature, as it will appear in the config file.
+
+The name should consist of one or more words separated by hyphens. Each word should consist of lower case letters and numbers. Example: `my-feature`
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-documenter.ifeaturedefinition.kind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'MarkdownDocumenterFeature'
+
+
+</td><td>
+
+Determines the kind of feature. The specified value is the name of the base class that `subclass` inherits from.
+
+
+</td></tr>
+<tr><td>
+
+[subclass](./api-documenter.ifeaturedefinition.subclass.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ new (initialization: [PluginFeatureInitialization](./api-documenter.pluginfeatureinitialization.md)<></>): [MarkdownDocumenterFeature](./api-documenter.markdowndocumenterfeature.md)<></>; }
+
+
+</td><td>
+
+Your subclass that extends from the base class.
+
+
+</td></tr>
+</tbody></table>
 

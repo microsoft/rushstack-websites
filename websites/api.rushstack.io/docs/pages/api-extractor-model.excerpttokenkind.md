@@ -19,8 +19,53 @@ export declare enum ExcerptTokenKind
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Content | <code>&quot;Content&quot;</code> | Generic text without any special properties |
-|  Reference | <code>&quot;Reference&quot;</code> | A reference to an API declaration |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Content
+
+
+</td><td>
+
+`"Content"`
+
+
+</td><td>
+
+Generic text without any special properties
+
+
+</td></tr>
+<tr><td>
+
+Reference
+
+
+</td><td>
+
+`"Reference"`
+
+
+</td><td>
+
+A reference to an API declaration
+
+
+</td></tr>
+</tbody></table>
 

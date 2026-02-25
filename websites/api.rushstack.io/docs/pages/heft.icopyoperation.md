@@ -21,9 +21,83 @@ export interface ICopyOperation extends IFileSelectionSpecifier
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [destinationFolders](./heft.icopyoperation.destinationfolders.md) |  | string\[\] | Absolute paths to folders which files or folders should be copied to. |
-|  [flatten?](./heft.icopyoperation.flatten.md) |  | boolean | _(Optional)_ Copy only the file and discard the relative path from the source folder. |
-|  [hardlink?](./heft.icopyoperation.hardlink.md) |  | boolean | _(Optional)_ Hardlink files instead of copying. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[destinationFolders](./heft.icopyoperation.destinationfolders.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+Absolute paths to folders which files or folders should be copied to.
+
+
+</td></tr>
+<tr><td>
+
+[flatten?](./heft.icopyoperation.flatten.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Copy only the file and discard the relative path from the source folder.
+
+
+</td></tr>
+<tr><td>
+
+[hardlink?](./heft.icopyoperation.hardlink.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Hardlink files instead of copying.
+
+
+</td></tr>
+</tbody></table>
 

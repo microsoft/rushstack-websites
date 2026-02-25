@@ -20,7 +20,35 @@ constructor(options: ISplitterTransformOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ISplitterTransformOptions](./terminal.isplittertransformoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ISplitterTransformOptions](./terminal.isplittertransformoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

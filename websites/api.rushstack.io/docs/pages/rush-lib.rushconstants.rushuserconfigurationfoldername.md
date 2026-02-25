@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushUserConfigurationFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the per-user Rush configuration data folder.
@@ -18,5 +18,5 @@ The name of the per-user Rush configuration data folder.
 **Signature:**
 
 ```typescript
-static readonly rushUserConfigurationFolderName: string;
+static readonly rushUserConfigurationFolderName: '.rush-user';
 ```

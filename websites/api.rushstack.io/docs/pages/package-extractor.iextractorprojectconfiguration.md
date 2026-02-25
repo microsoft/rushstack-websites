@@ -20,13 +20,159 @@ export interface IExtractorProjectConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [additionalDependenciesToInclude?](./package-extractor.iextractorprojectconfiguration.additionaldependenciestoinclude.md) |  | string\[\] | _(Optional)_ The names of additional dependencies to include when extracting this project. |
-|  [additionalProjectsToInclude?](./package-extractor.iextractorprojectconfiguration.additionalprojectstoinclude.md) |  | string\[\] | _(Optional)_ The names of additional projects to include when extracting this project. |
-|  [dependenciesToExclude?](./package-extractor.iextractorprojectconfiguration.dependenciestoexclude.md) |  | string\[\] | _(Optional)_ The names of additional dependencies to exclude when extracting this project. |
-|  [patternsToExclude?](./package-extractor.iextractorprojectconfiguration.patternstoexclude.md) |  | string\[\] | _(Optional)_ A list of glob patterns to exclude when extracting this project. If a path is matched by both "patternsToInclude" and "patternsToExclude", the path will be excluded. If undefined, no paths will be excluded. |
-|  [patternsToInclude?](./package-extractor.iextractorprojectconfiguration.patternstoinclude.md) |  | string\[\] | _(Optional)_ A list of glob patterns to include when extracting this project. If a path is matched by both "patternsToInclude" and "patternsToExclude", the path will be excluded. If undefined, all paths will be included. |
-|  [projectFolder](./package-extractor.iextractorprojectconfiguration.projectfolder.md) |  | string | The absolute path to the project. |
-|  [projectName](./package-extractor.iextractorprojectconfiguration.projectname.md) |  | string | The name of the project. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[additionalDependenciesToInclude?](./package-extractor.iextractorprojectconfiguration.additionaldependenciestoinclude.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ The names of additional dependencies to include when extracting this project.
+
+
+</td></tr>
+<tr><td>
+
+[additionalProjectsToInclude?](./package-extractor.iextractorprojectconfiguration.additionalprojectstoinclude.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ The names of additional projects to include when extracting this project.
+
+
+</td></tr>
+<tr><td>
+
+[dependenciesToExclude?](./package-extractor.iextractorprojectconfiguration.dependenciestoexclude.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ The names of additional dependencies to exclude when extracting this project.
+
+
+</td></tr>
+<tr><td>
+
+[patternsToExclude?](./package-extractor.iextractorprojectconfiguration.patternstoexclude.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ A list of glob patterns to exclude when extracting this project. If a path is matched by both "patternsToInclude" and "patternsToExclude", the path will be excluded. If undefined, no paths will be excluded.
+
+
+</td></tr>
+<tr><td>
+
+[patternsToInclude?](./package-extractor.iextractorprojectconfiguration.patternstoinclude.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ A list of glob patterns to include when extracting this project. If a path is matched by both "patternsToInclude" and "patternsToExclude", the path will be excluded. If undefined, all paths will be included.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder](./package-extractor.iextractorprojectconfiguration.projectfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path to the project.
+
+
+</td></tr>
+<tr><td>
+
+[projectName](./package-extractor.iextractorprojectconfiguration.projectname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the project.
+
+
+</td></tr>
+</tbody></table>
 

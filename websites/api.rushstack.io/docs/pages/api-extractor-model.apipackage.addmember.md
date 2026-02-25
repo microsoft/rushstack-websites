@@ -20,9 +20,37 @@ addMember(member: ApiEntryPoint): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  member | [ApiEntryPoint](./api-extractor-model.apientrypoint.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+member
+
+
+</td><td>
+
+[ApiEntryPoint](./api-extractor-model.apientrypoint.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

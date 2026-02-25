@@ -20,9 +20,102 @@ export interface ICertificateGenerationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [subjectAltNames?](./debug-certificate-manager.icertificategenerationoptions.subjectaltnames.md) |  | ReadonlyArray&lt;string&gt; | _(Optional)_ The DNS Subject names to issue the certificate for. Defaults to \['localhost'\]. |
-|  [subjectIPAddresses?](./debug-certificate-manager.icertificategenerationoptions.subjectipaddresses.md) |  | ReadonlyArray&lt;string&gt; | _(Optional)_ The IP Address Subject names to issue the certificate for. Defaults to \['127.0.0.1'\]. |
-|  [validityInDays?](./debug-certificate-manager.icertificategenerationoptions.validityindays.md) |  | number | _(Optional)_ How many days the certificate should be valid for. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[skipCertificateTrust?](./debug-certificate-manager.icertificategenerationoptions.skipcertificatetrust.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Skip trusting a certificate. Defaults to false.
+
+
+</td></tr>
+<tr><td>
+
+[subjectAltNames?](./debug-certificate-manager.icertificategenerationoptions.subjectaltnames.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReadonlyArray&lt;string&gt;
+
+
+</td><td>
+
+_(Optional)_ The DNS Subject names to issue the certificate for. Defaults to \['localhost'\].
+
+
+</td></tr>
+<tr><td>
+
+[subjectIPAddresses?](./debug-certificate-manager.icertificategenerationoptions.subjectipaddresses.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReadonlyArray&lt;string&gt;
+
+
+</td><td>
+
+_(Optional)_ The IP Address Subject names to issue the certificate for. Defaults to \['127.0.0.1'\].
+
+
+</td></tr>
+<tr><td>
+
+[validityInDays?](./debug-certificate-manager.icertificategenerationoptions.validityindays.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ How many days the certificate should be valid for.
+
+
+</td></tr>
+</tbody></table>
 

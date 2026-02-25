@@ -20,15 +20,101 @@ export declare class TreePattern
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(pattern)](./tree-pattern.treepattern._constructor_.md) |  | Constructs a new instance of the <code>TreePattern</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(pattern)](./tree-pattern.treepattern._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TreePattern` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [match(root, captures)](./tree-pattern.treepattern.match.md) |  | Match an input tree. |
-|  [oneOf(possibleSubtrees)](./tree-pattern.treepattern.oneof.md) | <code>static</code> | Used to specify alternative possible subtrees in the search pattern. |
-|  [tag(tagName, subtree)](./tree-pattern.treepattern.tag.md) | <code>static</code> | Labels a subtree within the search pattern, so that the matching object can be retrieved. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[match(root, captures)](./tree-pattern.treepattern.match.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Match an input tree.
+
+
+</td></tr>
+<tr><td>
+
+[oneOf(possibleSubtrees)](./tree-pattern.treepattern.oneof.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Used to specify alternative possible subtrees in the search pattern.
+
+
+</td></tr>
+<tr><td>
+
+[tag(tagName, subtree)](./tree-pattern.treepattern.tag.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Labels a subtree within the search pattern, so that the matching object can be retrieved.
+
+
+</td></tr>
+</tbody></table>
 

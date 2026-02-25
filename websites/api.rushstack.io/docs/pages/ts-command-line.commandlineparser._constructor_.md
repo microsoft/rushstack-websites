@@ -20,7 +20,35 @@ constructor(options: ICommandLineParserOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ICommandLineParserOptions](./ts-command-line.icommandlineparseroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ICommandLineParserOptions](./ts-command-line.icommandlineparseroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

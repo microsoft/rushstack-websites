@@ -21,8 +21,64 @@ export interface ITerminalTransformOptions extends ITerminalWritableOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [destination](./terminal.iterminaltransformoptions.destination.md) |  | [TerminalWritable](./terminal.terminalwritable.md) | The target <code>TerminalWritable</code> that the <code>TerminalTransform</code> will write its output to. |
-|  [preventDestinationAutoclose?](./terminal.iterminaltransformoptions.preventdestinationautoclose.md) |  | boolean | _(Optional)_ Prevents the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) object from being closed automatically when the transform is closed. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[destination](./terminal.iterminaltransformoptions.destination.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+The target `TerminalWritable` that the `TerminalTransform` will write its output to.
+
+
+</td></tr>
+<tr><td>
+
+[preventDestinationAutoclose?](./terminal.iterminaltransformoptions.preventdestinationautoclose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Prevents the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) object from being closed automatically when the transform is closed.
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushVariantsFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("variants") under which named variant configurations for alternate dependency sets may be found. Example: `C:\MyRepo\common\config\rush\variants`
@@ -18,5 +18,5 @@ The folder name ("variants") under which named variant configurations for altern
 **Signature:**
 
 ```typescript
-static readonly rushVariantsFolderName: string;
+static readonly rushVariantsFolderName: 'variants';
 ```

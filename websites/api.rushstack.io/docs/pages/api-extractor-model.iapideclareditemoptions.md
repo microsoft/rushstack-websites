@@ -21,8 +21,62 @@ export interface IApiDeclaredItemOptions extends IApiDocumentedItemOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [excerptTokens](./api-extractor-model.iapideclareditemoptions.excerpttokens.md) |  | [IExcerptToken](./api-extractor-model.iexcerpttoken.md)<></>\[\] |  |
-|  [fileUrlPath?](./api-extractor-model.iapideclareditemoptions.fileurlpath.md) |  | string | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[excerptTokens](./api-extractor-model.iapideclareditemoptions.excerpttokens.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExcerptToken](./api-extractor-model.iexcerpttoken.md)<></>\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[fileUrlPath?](./api-extractor-model.iapideclareditemoptions.fileurlpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

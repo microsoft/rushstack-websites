@@ -10,7 +10,7 @@ pagination_next: null
 
 ## FileSystemBuildCacheProvider.tryGetCacheEntryPathByIdAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Validates that the specified cache id exists on disk, and returns the path if it does.
@@ -23,10 +23,51 @@ tryGetCacheEntryPathByIdAsync(terminal: ITerminal, cacheId: string): Promise<str
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
-|  cacheId | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+terminal
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+cacheId
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

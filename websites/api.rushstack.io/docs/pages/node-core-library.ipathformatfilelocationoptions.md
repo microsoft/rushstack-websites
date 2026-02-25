@@ -20,12 +20,140 @@ export interface IPathFormatFileLocationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [baseFolder?](./node-core-library.ipathformatfilelocationoptions.basefolder.md) |  | string | _(Optional)_ The base path to use when converting <code>pathToFormat</code> to a relative path. If not specified, <code>pathToFormat</code> will be used as-is. |
-|  [column?](./node-core-library.ipathformatfilelocationoptions.column.md) |  | number | _(Optional)_ The optional column number. If not specified, the column number will not be included in the formatted string. |
-|  [format](./node-core-library.ipathformatfilelocationoptions.format.md) |  | [FileLocationStyle](./node-core-library.filelocationstyle.md) | The style of file location formatting to use. |
-|  [line?](./node-core-library.ipathformatfilelocationoptions.line.md) |  | number | _(Optional)_ The optional line number. If not specified, the line number will not be included in the formatted string. |
-|  [message](./node-core-library.ipathformatfilelocationoptions.message.md) |  | string | The message related to the file location. |
-|  [pathToFormat](./node-core-library.ipathformatfilelocationoptions.pathtoformat.md) |  | string | The path that will be used to specify the file location. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[baseFolder?](./node-core-library.ipathformatfilelocationoptions.basefolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The base path to use when converting `pathToFormat` to a relative path. If not specified, `pathToFormat` will be used as-is.
+
+
+</td></tr>
+<tr><td>
+
+[column?](./node-core-library.ipathformatfilelocationoptions.column.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The optional column number. If not specified, the column number will not be included in the formatted string.
+
+
+</td></tr>
+<tr><td>
+
+[format](./node-core-library.ipathformatfilelocationoptions.format.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[FileLocationStyle](./node-core-library.filelocationstyle.md)
+
+
+</td><td>
+
+The style of file location formatting to use.
+
+
+</td></tr>
+<tr><td>
+
+[line?](./node-core-library.ipathformatfilelocationoptions.line.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The optional line number. If not specified, the line number will not be included in the formatted string.
+
+
+</td></tr>
+<tr><td>
+
+[message](./node-core-library.ipathformatfilelocationoptions.message.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The message related to the file location.
+
+
+</td></tr>
+<tr><td>
+
+[pathToFormat](./node-core-library.ipathformatfilelocationoptions.pathtoformat.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path that will be used to specify the file location.
+
+
+</td></tr>
+</tbody></table>
 

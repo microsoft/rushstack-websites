@@ -20,10 +20,102 @@ export interface ICertificate
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pemCaCertificate](./debug-certificate-manager.icertificate.pemcacertificate.md) |  | string \| undefined | Generated pem Certificate Authority certificate contents |
-|  [pemCertificate](./debug-certificate-manager.icertificate.pemcertificate.md) |  | string \| undefined | Generated pem TLS Server certificate contents |
-|  [pemKey](./debug-certificate-manager.icertificate.pemkey.md) |  | string \| undefined | Private key for the TLS server certificate, used to sign TLS communications |
-|  [subjectAltNames](./debug-certificate-manager.icertificate.subjectaltnames.md) |  | readonly string\[\] \| undefined | The subject names the TLS server certificate is valid for |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pemCaCertificate](./debug-certificate-manager.icertificate.pemcacertificate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Generated pem Certificate Authority certificate contents
+
+
+</td></tr>
+<tr><td>
+
+[pemCertificate](./debug-certificate-manager.icertificate.pemcertificate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Generated pem TLS Server certificate contents
+
+
+</td></tr>
+<tr><td>
+
+[pemKey](./debug-certificate-manager.icertificate.pemkey.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Private key for the TLS server certificate, used to sign TLS communications
+
+
+</td></tr>
+<tr><td>
+
+[subjectAltNames](./debug-certificate-manager.icertificate.subjectaltnames.md)
+
+
+</td><td>
+
+
+</td><td>
+
+readonly string\[\] \| undefined
+
+
+</td><td>
+
+The subject names the TLS server certificate is valid for
+
+
+</td></tr>
+</tbody></table>
 

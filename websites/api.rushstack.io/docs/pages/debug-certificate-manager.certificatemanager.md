@@ -20,14 +20,143 @@ export declare class CertificateManager
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./debug-certificate-manager.certificatemanager._constructor_.md) |  | Constructs a new instance of the <code>CertificateManager</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./debug-certificate-manager.certificatemanager._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `CertificateManager` class
+
+
+</td></tr>
+</tbody></table>
+
+## Properties
+
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[certificateStore](./debug-certificate-manager.certificatemanager.certificatestore.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CertificateStore](./debug-certificate-manager.certificatestore.md)
+
+
+</td><td>
+
+Get the certificate store used by this manager.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [ensureCertificateAsync(canGenerateNewCertificate, terminal, generationOptions)](./debug-certificate-manager.certificatemanager.ensurecertificateasync.md) |  | Get a development certificate from the store, or optionally, generate a new one and trust it if one doesn't exist in the store. |
-|  [untrustCertificateAsync(terminal)](./debug-certificate-manager.certificatemanager.untrustcertificateasync.md) |  | Attempt to locate a previously generated debug certificate and untrust it. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureCertificateAsync(canGenerateNewCertificate, terminal, options)](./debug-certificate-manager.certificatemanager.ensurecertificateasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get a development certificate from the store, or optionally, generate a new one and trust it if one doesn't exist in the store.
+
+
+</td></tr>
+<tr><td>
+
+[untrustCertificateAsync(terminal)](./debug-certificate-manager.certificatemanager.untrustcertificateasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Attempt to locate a previously generated debug certificate and untrust it.
+
+
+</td></tr>
+<tr><td>
+
+[validateCertificateAsync(terminal, options)](./debug-certificate-manager.certificatemanager.validatecertificateasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Validate existing certificates to check if they are usable.
+
+
+</td></tr>
+</tbody></table>
 

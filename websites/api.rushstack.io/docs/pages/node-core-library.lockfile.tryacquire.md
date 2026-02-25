@@ -20,10 +20,55 @@ static tryAcquire(resourceFolder: string, resourceName: string): LockFile | unde
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resourceFolder | string | The folder where the lock file will be created |
-|  resourceName | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resourceFolder
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder where the lock file will be created
+
+
+</td></tr>
+<tr><td>
+
+resourceName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

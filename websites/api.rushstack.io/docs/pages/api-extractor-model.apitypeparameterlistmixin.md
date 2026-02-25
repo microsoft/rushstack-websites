@@ -20,7 +20,27 @@ export declare namespace ApiTypeParameterListMixin
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [isBaseClassOf(apiItem)](./api-extractor-model.apitypeparameterlistmixin.isbaseclassof.md) | A type guard that tests whether the specified <code>ApiItem</code> subclass extends the <code>ApiParameterListMixin</code> mixin. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isBaseClassOf(apiItem)](./api-extractor-model.apitypeparameterlistmixin.isbaseclassof.md)
+
+
+</td><td>
+
+A type guard that tests whether the specified `ApiItem` subclass extends the `ApiParameterListMixin` mixin.
+
+
+</td></tr>
+</tbody></table>
 

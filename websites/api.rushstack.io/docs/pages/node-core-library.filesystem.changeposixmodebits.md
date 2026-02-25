@@ -15,15 +15,60 @@ Changes the permissions (i.e. file mode bits) for a filesystem object. Behind th
 **Signature:**
 
 ```typescript
-static changePosixModeBits(path: string, mode: PosixModeBits): void;
+static changePosixModeBits(path: string, modeBits: PosixModeBits): void;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | The absolute or relative path to the object that should be updated. |
-|  mode | [PosixModeBits](./node-core-library.posixmodebits.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path to the object that should be updated.
+
+
+</td></tr>
+<tr><td>
+
+modeBits
+
+
+</td><td>
+
+[PosixModeBits](./node-core-library.posixmodebits.md)
+
+
+</td><td>
+
+POSIX-style file mode bits specified using the [PosixModeBits](./node-core-library.posixmodebits.md) enum
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

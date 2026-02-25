@@ -18,11 +18,65 @@ addOrUpdateDependency(packageName: string, newVersion: string, dependencyType: D
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packageName | string |  |
-|  newVersion | string |  |
-|  dependencyType | [DependencyType](./rush-lib.dependencytype.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+packageName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+newVersion
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+dependencyType
+
+
+</td><td>
+
+[DependencyType](./rush-lib.dependencytype.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

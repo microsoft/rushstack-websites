@@ -20,10 +20,85 @@ export declare enum FindApiItemsMessageId
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  DeclarationResolutionFailed | <code>&quot;declaration-resolution-failed&quot;</code> | "Unable to resolve declaration reference within API item \_\_\_: \_\_\_" |
-|  ExtendsClauseMissingReference | <code>&quot;extends-clause-missing-reference&quot;</code> | "Unable to analyze extends clause \_\_\_ of API item \_\_\_ because no canonical reference was found." |
-|  NoAssociatedApiModel | <code>&quot;no-associated-api-model&quot;</code> | "Unable to analyze references of API item \_\_\_ because it is not associated with an ApiModel" |
-|  UnsupportedKind | <code>&quot;unsupported-kind&quot;</code> | "Unable to analyze references of API item \_\_\_ because it is of unsupported kind \_\_\_" |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+DeclarationResolutionFailed
+
+
+</td><td>
+
+`"declaration-resolution-failed"`
+
+
+</td><td>
+
+"Unable to resolve declaration reference within API item \_\_\_: \_\_\_"
+
+
+</td></tr>
+<tr><td>
+
+ExtendsClauseMissingReference
+
+
+</td><td>
+
+`"extends-clause-missing-reference"`
+
+
+</td><td>
+
+"Unable to analyze extends clause \_\_\_ of API item \_\_\_ because no canonical reference was found."
+
+
+</td></tr>
+<tr><td>
+
+NoAssociatedApiModel
+
+
+</td><td>
+
+`"no-associated-api-model"`
+
+
+</td><td>
+
+"Unable to analyze references of API item \_\_\_ because it is not associated with an ApiModel"
+
+
+</td></tr>
+<tr><td>
+
+UnsupportedKind
+
+
+</td><td>
+
+`"unsupported-kind"`
+
+
+</td><td>
+
+"Unable to analyze references of API item \_\_\_ because it is of unsupported kind \_\_\_"
+
+
+</td></tr>
+</tbody></table>
 

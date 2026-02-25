@@ -10,10 +10,10 @@ pagination_next: null
 
 ## ICustomPropertyInheritance.inheritanceFunction property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Provides a custom inheritance function. This function takes two arguments: the first is the child file's object, and the second is the parent file's object. The function should return the resulting combined object.
+Provides a custom inheritance function. This function takes two arguments: the first is the child file's object, and the second is the parent file's object. The function should return the resulting combined object. This function will not be invoked if the current value is `null`<></>, the property will simply be deleted.
 
 **Signature:**
 

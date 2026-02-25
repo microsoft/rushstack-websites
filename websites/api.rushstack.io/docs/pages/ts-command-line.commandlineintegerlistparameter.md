@@ -25,14 +25,102 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kind](./ts-command-line.commandlineintegerlistparameter.kind.md) | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [values](./ts-command-line.commandlineintegerlistparameter.values.md) | <code>readonly</code> | ReadonlyArray&lt;number&gt; | Returns the integer arguments for an integer list parameter that was parsed from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kind](./ts-command-line.commandlineintegerlistparameter.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineParameterKind.IntegerList](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Indicates the type of parameter.
+
+
+</td></tr>
+<tr><td>
+
+[values](./ts-command-line.commandlineintegerlistparameter.values.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;number&gt;
+
+
+</td><td>
+
+Returns the integer arguments for an integer list parameter that was parsed from the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlineintegerlistparameter.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlineintegerlistparameter.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

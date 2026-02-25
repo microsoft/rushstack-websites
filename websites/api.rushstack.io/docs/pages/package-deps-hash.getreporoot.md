@@ -10,7 +10,7 @@ pagination_next: null
 
 ## getRepoRoot() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Finds the root of the current Git repository
@@ -23,10 +23,55 @@ export declare function getRepoRoot(currentWorkingDirectory: string, gitPath?: s
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  currentWorkingDirectory | string | The working directory for which to locate the repository |
-|  gitPath | string | _(Optional)_ The path to the Git executable |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+currentWorkingDirectory
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The working directory for which to locate the repository
+
+
+</td></tr>
+<tr><td>
+
+gitPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the Git executable
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

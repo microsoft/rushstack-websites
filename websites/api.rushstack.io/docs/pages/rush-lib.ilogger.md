@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ILogger interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,14 +22,84 @@ export interface ILogger
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [terminal](./rush-lib.ilogger.terminal.md) | <code>readonly</code> | [Terminal](./node-core-library.terminal.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[terminal](./rush-lib.ilogger.terminal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Terminal](./terminal.terminal.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [emitError(error)](./rush-lib.ilogger.emiterror.md) | **_(BETA)_** Call this function to emit an error to the Rush runtime. |
-|  [emitWarning(warning)](./rush-lib.ilogger.emitwarning.md) | **_(BETA)_** Call this function to emit a warning to the Rush runtime. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[emitError(error)](./rush-lib.ilogger.emiterror.md)
+
+
+</td><td>
+
+**_(BETA)_** Call this function to emit an error to the Rush runtime.
+
+
+</td></tr>
+<tr><td>
+
+[emitWarning(warning)](./rush-lib.ilogger.emitwarning.md)
+
+
+</td><td>
+
+**_(BETA)_** Call this function to emit a warning to the Rush runtime.
+
+
+</td></tr>
+</tbody></table>
 

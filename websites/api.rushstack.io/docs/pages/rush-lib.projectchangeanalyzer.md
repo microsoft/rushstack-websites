@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ProjectChangeAnalyzer class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,14 +22,85 @@ export declare class ProjectChangeAnalyzer
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(rushConfiguration)](./rush-lib.projectchangeanalyzer._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>ProjectChangeAnalyzer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(rushConfiguration)](./rush-lib.projectchangeanalyzer._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `ProjectChangeAnalyzer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_filterProjectDataAsync(project, unfilteredProjectData, rootDir, terminal)](./rush-lib.projectchangeanalyzer._filterprojectdataasync.md) |  | **_(BETA)_** |
-|  [getChangedProjectsAsync(options)](./rush-lib.projectchangeanalyzer.getchangedprojectsasync.md) |  | **_(BETA)_** Gets a list of projects that have changed in the current state of the repo when compared to the specified branch, optionally taking the shrinkwrap and settings in the rush-project.json file into consideration. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getChangedProjectsAsync(options)](./rush-lib.projectchangeanalyzer.getchangedprojectsasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Gets a list of projects that have changed in the current state of the repo when compared to the specified branch, optionally taking the shrinkwrap and settings in the rush-project.json file into consideration.
+
+
+</td></tr>
+<tr><td>
+
+[getChangesByProject(lookup, changedFiles)](./rush-lib.projectchangeanalyzer.getchangesbyproject.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

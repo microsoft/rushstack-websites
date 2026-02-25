@@ -10,9 +10,6 @@ pagination_next: null
 
 ## IAsyncParallelismOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Options for controlling the parallelism of asynchronous operations.
 
 **Signature:**
@@ -23,11 +20,87 @@ export interface IAsyncParallelismOptions
 
 ## Remarks
 
-Used with [Async.mapAsync()](./node-core-library.async.mapasync.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md)<></>.
+Used with [Async.mapAsync()](./node-core-library.async.mapasync.md)<></>, [Async.mapAsync()](./node-core-library.async.mapasync_1.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md)<></>, and [Async.forEachAsync()](./node-core-library.async.foreachasync_1.md)<></>.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [concurrency?](./node-core-library.iasyncparallelismoptions.concurrency.md) |  | number | **_(BETA)_** _(Optional)_ Optionally used with the [Async.mapAsync()](./node-core-library.async.mapasync.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md) to limit the maximum number of concurrent promises to the specified number. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowOversubscription?](./node-core-library.iasyncparallelismoptions.allowoversubscription.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ This option affects the handling of task weights, applying a softer policy that favors maximizing parallelism instead of avoiding overload.
+
+
+</td></tr>
+<tr><td>
+
+[concurrency?](./node-core-library.iasyncparallelismoptions.concurrency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Optionally used with the [Async.mapAsync()](./node-core-library.async.mapasync.md)<></>, [Async.mapAsync()](./node-core-library.async.mapasync_1.md) and [Async.forEachAsync()](./node-core-library.async.foreachasync.md)<></>, and [Async.forEachAsync()](./node-core-library.async.foreachasync_1.md) to limit the maximum number of concurrent promises to the specified number.
+
+
+</td></tr>
+<tr><td>
+
+[weighted?](./node-core-library.iasyncparallelismoptions.weighted.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Optionally used with the [Async.forEachAsync()](./node-core-library.async.foreachasync_1.md) to enable weighted operations where an operation can take up more or less than one concurrency unit.
+
+
+</td></tr>
+</tbody></table>
 

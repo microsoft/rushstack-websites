@@ -10,6 +10,11 @@ pagination_next: null
 
 ## LocalMinifier.connect() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [LocalMinifier.connectAsync()](./module-minifier.localminifier.connectasync.md) instead.
+> 
+
 **Signature:**
 
 ```typescript

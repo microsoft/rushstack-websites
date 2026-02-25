@@ -20,13 +20,133 @@ export declare enum CommandLineParameterKind
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Choice | <code>0</code> | Indicates a CommandLineChoiceParameter |
-|  ChoiceList | <code>5</code> | Indicates a CommandLineChoiceListParameter |
-|  Flag | <code>1</code> | Indicates a CommandLineFlagParameter |
-|  Integer | <code>2</code> | Indicates a CommandLineIntegerParameter |
-|  IntegerList | <code>6</code> | Indicates a CommandLineIntegerListParameter |
-|  String | <code>3</code> | Indicates a CommandLineStringParameter |
-|  StringList | <code>4</code> | Indicates a CommandLineStringListParameter |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Choice
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+Indicates a CommandLineChoiceParameter
+
+
+</td></tr>
+<tr><td>
+
+ChoiceList
+
+
+</td><td>
+
+`5`
+
+
+</td><td>
+
+Indicates a CommandLineChoiceListParameter
+
+
+</td></tr>
+<tr><td>
+
+Flag
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+Indicates a CommandLineFlagParameter
+
+
+</td></tr>
+<tr><td>
+
+Integer
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+Indicates a CommandLineIntegerParameter
+
+
+</td></tr>
+<tr><td>
+
+IntegerList
+
+
+</td><td>
+
+`6`
+
+
+</td><td>
+
+Indicates a CommandLineIntegerListParameter
+
+
+</td></tr>
+<tr><td>
+
+String
+
+
+</td><td>
+
+`3`
+
+
+</td><td>
+
+Indicates a CommandLineStringParameter
+
+
+</td></tr>
+<tr><td>
+
+StringList
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+Indicates a CommandLineStringListParameter
+
+
+</td></tr>
+</tbody></table>
 

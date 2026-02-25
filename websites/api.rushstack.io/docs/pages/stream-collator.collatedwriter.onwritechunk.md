@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedWriter.onWriteChunk() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Subclasses should implement this `abstract` method to process the chunk.
@@ -23,9 +23,37 @@ onWriteChunk(chunk: ITerminalChunk): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  chunk | [ITerminalChunk](./terminal.iterminalchunk.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+chunk
+
+
+</td><td>
+
+[ITerminalChunk](./terminal.iterminalchunk.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

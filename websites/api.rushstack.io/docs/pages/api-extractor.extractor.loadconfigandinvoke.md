@@ -20,10 +20,53 @@ static loadConfigAndInvoke(configFilePath: string, options?: IExtractorInvokeOpt
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  configFilePath | string |  |
-|  options | [IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+configFilePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

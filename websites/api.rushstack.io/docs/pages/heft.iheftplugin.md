@@ -20,13 +20,73 @@ export interface IHeftPlugin<TSession extends IHeftLifecycleSession | IHeftTaskS
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [accessor?](./heft.iheftplugin.accessor.md) | <code>readonly</code> | object | _(Optional)_ The accessor provided by the plugin. This accessor can be obtained by other plugins within the same phase by calling <code>session.requestAccessToPlugin(...)</code>, and is used by other plugins to interact with hooks or properties provided by the host plugin. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[accessor?](./heft.iheftplugin.accessor.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+_(Optional)_ The accessor provided by the plugin. This accessor can be obtained by other plugins within the same phase by calling `session.requestAccessToPlugin(...)`<></>, and is used by other plugins to interact with hooks or properties provided by the host plugin.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [apply(session, heftConfiguration, pluginOptions)](./heft.iheftplugin.apply.md) | Apply the plugin to the session. Plugins are expected to hook into session hooks to provide plugin implementation. The <code>apply(...)</code> method is called once per phase. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apply(session, heftConfiguration, pluginOptions)](./heft.iheftplugin.apply.md)
+
+
+</td><td>
+
+Apply the plugin to the session. Plugins are expected to hook into session hooks to provide plugin implementation. The `apply(...)` method is called once per phase.
+
+
+</td></tr>
+</tbody></table>
 

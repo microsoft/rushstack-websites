@@ -20,10 +20,55 @@ abstract validate(versionString: string, packageName: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  versionString | string | version string |
-|  packageName | string | package name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+versionString
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+version string
+
+
+</td></tr>
+<tr><td>
+
+packageName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+package name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

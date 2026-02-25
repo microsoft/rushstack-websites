@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.changeFilesFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("changes") where change files will be stored.
@@ -18,5 +18,5 @@ The folder name ("changes") where change files will be stored.
 **Signature:**
 
 ```typescript
-static readonly changeFilesFolderName: string;
+static readonly changeFilesFolderName: 'changes';
 ```

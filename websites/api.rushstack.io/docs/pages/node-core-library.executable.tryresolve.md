@@ -22,10 +22,55 @@ static tryResolve(filename: string, options?: IExecutableResolveOptions): string
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filename | string | The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched. |
-|  options | [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md) | _(Optional)_ optional other parameters |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filename
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the executable file. This string must not contain any command-line arguments. If the name contains any path delimiters, then the shell's default PATH will not be searched.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md)
+
+
+</td><td>
+
+_(Optional)_ optional other parameters
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

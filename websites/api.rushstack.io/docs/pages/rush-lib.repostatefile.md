@@ -20,17 +20,202 @@ export declare class RepoStateFile
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [filePath](./rush-lib.repostatefile.filepath.md) | <code>readonly</code> | string | Get the absolute file path of the repo-state.json file. |
-|  [isValid](./rush-lib.repostatefile.isvalid.md) | <code>readonly</code> | boolean | If false, the repo-state.json file is not valid and its values cannot be relied upon |
-|  [pnpmShrinkwrapHash](./rush-lib.repostatefile.pnpmshrinkwraphash.md) | <code>readonly</code> | string \| undefined | The hash of the pnpm shrinkwrap file at the end of the last update. |
-|  [preferredVersionsHash](./rush-lib.repostatefile.preferredversionshash.md) | <code>readonly</code> | string \| undefined | The hash of all preferred versions at the end of the last update. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[filePath](./rush-lib.repostatefile.filepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Get the absolute file path of the repo-state.json file.
+
+
+</td></tr>
+<tr><td>
+
+[isValid](./rush-lib.repostatefile.isvalid.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If false, the repo-state.json file is not valid and its values cannot be relied upon
+
+
+</td></tr>
+<tr><td>
+
+[packageJsonInjectedDependenciesHash](./rush-lib.repostatefile.packagejsoninjecteddependencieshash.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The hash of all preferred versions at the end of the last update.
+
+
+</td></tr>
+<tr><td>
+
+[pnpmCatalogsHash](./rush-lib.repostatefile.pnpmcatalogshash.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The hash of the PNPM catalog definitions at the end of the last update.
+
+
+</td></tr>
+<tr><td>
+
+[pnpmShrinkwrapHash](./rush-lib.repostatefile.pnpmshrinkwraphash.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The hash of the pnpm shrinkwrap file at the end of the last update.
+
+
+</td></tr>
+<tr><td>
+
+[preferredVersionsHash](./rush-lib.repostatefile.preferredversionshash.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The hash of all preferred versions at the end of the last update.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [loadFromFile(jsonFilename, variant)](./rush-lib.repostatefile.loadfromfile.md) | <code>static</code> | Loads the repo-state.json data from the specified file path. If the file has not been created yet, then an empty object is returned. |
-|  [refreshState(rushConfiguration)](./rush-lib.repostatefile.refreshstate.md) |  | Refresh the data contained in repo-state.json using the current state of the Rush repo, and save the file if changes were made. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[loadFromFile(jsonFilename)](./rush-lib.repostatefile.loadfromfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads the repo-state.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
+
+
+</td></tr>
+<tr><td>
+
+[refreshState(rushConfiguration, subspace, variant)](./rush-lib.repostatefile.refreshstate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Refresh the data contained in repo-state.json using the current state of the Rush repo, and save the file if changes were made.
+
+
+</td></tr>
+</tbody></table>
 

@@ -21,10 +21,102 @@ export interface ITextRewriterTransformOptions extends ITerminalTransformOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ensureNewlineAtEnd?](./terminal.itextrewritertransformoptions.ensurenewlineatend.md) |  | boolean | _(Optional)_ If <code>normalizeNewlines</code> or <code>ensureNewlineAtEnd</code> is specified, a [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) will be appended to the list of rewriters with the specified settings. |
-|  [normalizeNewlines?](./terminal.itextrewritertransformoptions.normalizenewlines.md) |  | [NewlineKind](./node-core-library.newlinekind.md) | _(Optional)_ If <code>normalizeNewlines</code> or <code>ensureNewlineAtEnd</code> is specified, a [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) will be appended to the list of rewriters with the specified settings. |
-|  [removeColors?](./terminal.itextrewritertransformoptions.removecolors.md) |  | boolean | _(Optional)_ If specified, a [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md) will be appended to the list of rewriters. |
-|  [textRewriters?](./terminal.itextrewritertransformoptions.textrewriters.md) |  | [TextRewriter](./terminal.textrewriter.md)<></>\[\] | _(Optional)_ A list of rewriters to be applied. More items may be appended to the list, for example if [ITextRewriterTransformOptions.removeColors](./terminal.itextrewritertransformoptions.removecolors.md) is specified. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ensureNewlineAtEnd?](./terminal.itextrewritertransformoptions.ensurenewlineatend.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If `normalizeNewlines` or `ensureNewlineAtEnd` is specified, a [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) will be appended to the list of rewriters with the specified settings.
+
+
+</td></tr>
+<tr><td>
+
+[normalizeNewlines?](./terminal.itextrewritertransformoptions.normalizenewlines.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+_(Optional)_ If `normalizeNewlines` or `ensureNewlineAtEnd` is specified, a [NormalizeNewlinesTextRewriter](./terminal.normalizenewlinestextrewriter.md) will be appended to the list of rewriters with the specified settings.
+
+
+</td></tr>
+<tr><td>
+
+[removeColors?](./terminal.itextrewritertransformoptions.removecolors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If specified, a [RemoveColorsTextRewriter](./terminal.removecolorstextrewriter.md) will be appended to the list of rewriters.
+
+
+</td></tr>
+<tr><td>
+
+[textRewriters?](./terminal.itextrewritertransformoptions.textrewriters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[TextRewriter](./terminal.textrewriter.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_ A list of rewriters to be applied. More items may be appended to the list, for example if [ITextRewriterTransformOptions.removeColors](./terminal.itextrewritertransformoptions.removecolors.md) is specified.
+
+
+</td></tr>
+</tbody></table>
 

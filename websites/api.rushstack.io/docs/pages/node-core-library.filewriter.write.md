@@ -20,9 +20,39 @@ write(text: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  text | string | The text to write to the file. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+text
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The text to write to the file.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

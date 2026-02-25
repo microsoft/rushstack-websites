@@ -24,14 +24,102 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [description](./ts-command-line.commandlineremainder.description.md) | <code>readonly</code> | string | Documentation for the parameter that will be shown when invoking the tool with "--help" |
-|  [values](./ts-command-line.commandlineremainder.values.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt; | Returns any remaining command line arguments after the recognized portion that was parsed from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[description](./ts-command-line.commandlineremainder.description.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Documentation for the parameter that will be shown when invoking the tool with "--help"
+
+
+</td></tr>
+<tr><td>
+
+[values](./ts-command-line.commandlineremainder.values.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;string&gt;
+
+
+</td><td>
+
+Returns any remaining command line arguments after the recognized portion that was parsed from the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlineremainder.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlineremainder.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

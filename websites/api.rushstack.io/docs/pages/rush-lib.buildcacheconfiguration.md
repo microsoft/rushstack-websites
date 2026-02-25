@@ -10,7 +10,7 @@ pagination_next: null
 
 ## BuildCacheConfiguration class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Use this class to load and save the "common/config/rush/build-cache.json" config file. This file provides configuration options for cached project build output.
@@ -23,19 +23,218 @@ export declare class BuildCacheConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [buildCacheEnabled](./rush-lib.buildcacheconfiguration.buildcacheenabled.md) | <code>readonly</code> | boolean | **_(BETA)_** Indicates whether the build cache feature is enabled. Typically it is enabled in the build-cache.json config file. |
-|  [cacheWriteEnabled](./rush-lib.buildcacheconfiguration.cachewriteenabled.md) |  | boolean | **_(BETA)_** Indicates whether or not writing to the cache is enabled. |
-|  [cloudCacheProvider](./rush-lib.buildcacheconfiguration.cloudcacheprovider.md) | <code>readonly</code> | [ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md) \| undefined | **_(BETA)_** The provider for interacting with the cloud build cache, if configured. |
-|  [getCacheEntryId](./rush-lib.buildcacheconfiguration.getcacheentryid.md) | <code>readonly</code> | [GetCacheEntryIdFunction](./rush-lib.getcacheentryidfunction.md) | **_(BETA)_** Method to calculate the cache entry id for a project, phase, and project state. |
-|  [localCacheProvider](./rush-lib.buildcacheconfiguration.localcacheprovider.md) | <code>readonly</code> | [FileSystemBuildCacheProvider](./rush-lib.filesystembuildcacheprovider.md) | **_(BETA)_** The provider for interacting with the local build cache. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCacheEnabled](./rush-lib.buildcacheconfiguration.buildcacheenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicates whether the build cache feature is enabled. Typically it is enabled in the build-cache.json config file.
+
+
+</td></tr>
+<tr><td>
+
+[cacheHashSalt](./rush-lib.buildcacheconfiguration.cachehashsalt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** An optional salt to inject during calculation of the cache key. This can be used to invalidate the cache for all projects when the salt changes.
+
+
+</td></tr>
+<tr><td>
+
+[cacheWriteEnabled](./rush-lib.buildcacheconfiguration.cachewriteenabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicates whether or not writing to the cache is enabled.
+
+
+</td></tr>
+<tr><td>
+
+[cloudCacheProvider](./rush-lib.buildcacheconfiguration.cloudcacheprovider.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ICloudBuildCacheProvider](./rush-lib.icloudbuildcacheprovider.md) \| undefined
+
+
+</td><td>
+
+**_(BETA)_** The provider for interacting with the cloud build cache, if configured.
+
+
+</td></tr>
+<tr><td>
+
+[getCacheEntryId](./rush-lib.buildcacheconfiguration.getcacheentryid.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[GetCacheEntryIdFunction](./rush-lib.getcacheentryidfunction.md)
+
+
+</td><td>
+
+**_(BETA)_** Method to calculate the cache entry id for a project, phase, and project state.
+
+
+</td></tr>
+<tr><td>
+
+[localCacheProvider](./rush-lib.buildcacheconfiguration.localcacheprovider.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[FileSystemBuildCacheProvider](./rush-lib.filesystembuildcacheprovider.md)
+
+
+</td><td>
+
+**_(BETA)_** The provider for interacting with the local build cache.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getBuildCacheConfigFilePath(rushConfiguration)](./rush-lib.buildcacheconfiguration.getbuildcacheconfigfilepath.md) | <code>static</code> | **_(BETA)_** Gets the absolute path to the build-cache.json file in the specified rush workspace. |
-|  [loadAndRequireEnabledAsync(terminal, rushConfiguration, rushSession)](./rush-lib.buildcacheconfiguration.loadandrequireenabledasync.md) | <code>static</code> | **_(BETA)_** Loads the build-cache.json data from the standard file path <code>common/config/rush/build-cache.json</code>. If the file has not been created yet, or if the feature is not enabled, then an error is reported. |
-|  [tryLoadAsync(terminal, rushConfiguration, rushSession)](./rush-lib.buildcacheconfiguration.tryloadasync.md) | <code>static</code> | **_(BETA)_** Attempts to load the build-cache.json data from the standard file path <code>common/config/rush/build-cache.json</code>. If the file has not been created yet, then undefined is returned. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getBuildCacheConfigFilePath(rushConfiguration)](./rush-lib.buildcacheconfiguration.getbuildcacheconfigfilepath.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Gets the absolute path to the build-cache.json file in the specified rush workspace.
+
+
+</td></tr>
+<tr><td>
+
+[loadAndRequireEnabledAsync(terminal, rushConfiguration, rushSession)](./rush-lib.buildcacheconfiguration.loadandrequireenabledasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Loads the build-cache.json data from the standard file path `common/config/rush/build-cache.json`<></>. If the file has not been created yet, or if the feature is not enabled, then an error is reported.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadAsync(terminal, rushConfiguration, rushSession)](./rush-lib.buildcacheconfiguration.tryloadasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Attempts to load the build-cache.json data from the standard file path `common/config/rush/build-cache.json`<></>. If the file has not been created yet, then undefined is returned.
+
+
+</td></tr>
+</tbody></table>
 

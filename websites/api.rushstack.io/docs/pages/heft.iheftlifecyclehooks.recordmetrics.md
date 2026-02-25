@@ -10,6 +10,8 @@ pagination_next: null
 
 ## IHeftLifecycleHooks.recordMetrics property
 
+The `recordMetrics` hook is called at the end of every Heft execution pass. It is called after all phases have completed execution (or been canceled). In a watch run, it will be called several times in between `toolStart` and (if the session is gracefully interrupted via Ctrl+C), `toolFinish`<></>. In a non-watch run, it will be invoked exactly once between `toolStart` and `toolFinish`<></>. To use it, call `recordMetrics.tapPromise(<pluginName>, <callback>)`<></>.
+
 **Signature:**
 
 ```typescript

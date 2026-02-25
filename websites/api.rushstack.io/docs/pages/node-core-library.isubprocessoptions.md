@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ISubprocessOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Details about how the `child_process.ChildProcess` was created.
@@ -23,7 +23,45 @@ export interface ISubprocessOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [detached](./node-core-library.isubprocessoptions.detached.md) |  | boolean | **_(BETA)_** Whether or not the child process was started in detached mode. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[detached](./node-core-library.isubprocessoptions.detached.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Whether or not the child process was started in detached mode.
+
+
+</td></tr>
+</tbody></table>
 

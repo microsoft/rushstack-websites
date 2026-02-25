@@ -15,5 +15,5 @@ Terminal provider for the provided terminal.
 **Signature:**
 
 ```typescript
-get terminalProvider(): ITerminalProvider;
+readonly terminalProvider: ITerminalProvider;
 ```

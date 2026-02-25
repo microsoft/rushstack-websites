@@ -20,9 +20,69 @@ export declare enum JsonSyntax
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Json5 | <code>&quot;json5&quot;</code> | JSON5 is a project that proposes a JSON-like format supplemented with ECMAScript 5.1 notations for objects, numbers, comments, and more. |
-|  JsonWithComments | <code>&quot;jsonWithComments&quot;</code> | <code>JsonSyntax.JsonWithComments</code> is the recommended format for human-authored config files. It is a minimal extension to <code>JsonSyntax.Strict</code> adding support for code comments using <code>//</code> and <code>/*</code>. |
-|  Strict | <code>&quot;strict&quot;</code> | Specifies the exact RFC 8259 format as implemented by the <code>JSON.parse()</code> system API. This format was designed for machine generated inputs such as an HTTP payload. It is not a recommend choice for human-authored files, because it does not support code comments. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Json5
+
+
+</td><td>
+
+`"json5"`
+
+
+</td><td>
+
+JSON5 is a project that proposes a JSON-like format supplemented with ECMAScript 5.1 notations for objects, numbers, comments, and more.
+
+
+</td></tr>
+<tr><td>
+
+JsonWithComments
+
+
+</td><td>
+
+`"jsonWithComments"`
+
+
+</td><td>
+
+`JsonSyntax.JsonWithComments` is the recommended format for human-authored config files. It is a minimal extension to `JsonSyntax.Strict` adding support for code comments using `//` and `/*`<></>.
+
+
+</td></tr>
+<tr><td>
+
+Strict
+
+
+</td><td>
+
+`"strict"`
+
+
+</td><td>
+
+Specifies the exact RFC 8259 format as implemented by the `JSON.parse()` system API. This format was designed for machine generated inputs such as an HTTP payload. It is not a recommend choice for human-authored files, because it does not support code comments.
+
+
+</td></tr>
+</tbody></table>
 

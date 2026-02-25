@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStdioSummarizerOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructor options for [StdioSummarizer](./terminal.stdiosummarizer.md)<></>.
@@ -18,13 +18,70 @@ Constructor options for [StdioSummarizer](./terminal.stdiosummarizer.md)<></>.
 **Signature:**
 
 ```typescript
-export interface IStdioSummarizerOptions 
+export interface IStdioSummarizerOptions extends ITerminalWritableOptions 
 ```
+**Extends:** [ITerminalWritableOptions](./terminal.iterminalwritableoptions.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [leadingLines?](./terminal.istdiosummarizeroptions.leadinglines.md) |  | number | **_(BETA)_** _(Optional)_ Specifies the maximum number of leading lines to include in the summary. |
-|  [trailingLines?](./terminal.istdiosummarizeroptions.trailinglines.md) |  | number | **_(BETA)_** _(Optional)_ Specifies the maximum number of trailing lines to include in the summary. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[leadingLines?](./terminal.istdiosummarizeroptions.leadinglines.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Specifies the maximum number of leading lines to include in the summary.
+
+
+</td></tr>
+<tr><td>
+
+[trailingLines?](./terminal.istdiosummarizeroptions.trailinglines.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Specifies the maximum number of trailing lines to include in the summary.
+
+
+</td></tr>
+</tbody></table>
 

@@ -24,21 +24,134 @@ This package provides the following utilities:
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CertificateManager](./debug-certificate-manager.certificatemanager.md) | A utility class to handle generating, trusting, and untrustring a debug certificate. Contains two public methods to <code>ensureCertificate</code> and <code>untrustCertificate</code>. |
-|  [CertificateStore](./debug-certificate-manager.certificatestore.md) | Store to retrieve and save debug certificate data. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CertificateManager](./debug-certificate-manager.certificatemanager.md)
+
+
+</td><td>
+
+A utility class to handle generating, trusting, and untrustring a debug certificate. Contains two public methods to `ensureCertificate` and `untrustCertificate`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[CertificateStore](./debug-certificate-manager.certificatestore.md)
+
+
+</td><td>
+
+Store to retrieve and save debug certificate data.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ICertificate](./debug-certificate-manager.icertificate.md) | The interface for a debug certificate instance |
-|  [ICertificateGenerationOptions](./debug-certificate-manager.icertificategenerationoptions.md) | Options to use if needing to generate a new certificate |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ICertificate](./debug-certificate-manager.icertificate.md)
+
+
+</td><td>
+
+The interface for a debug certificate instance
+
+
+</td></tr>
+<tr><td>
+
+[ICertificateGenerationOptions](./debug-certificate-manager.icertificategenerationoptions.md)
+
+
+</td><td>
+
+Options to use if needing to generate a new certificate
+
+
+</td></tr>
+<tr><td>
+
+[ICertificateManagerOptions](./debug-certificate-manager.icertificatemanageroptions.md)
+
+
+</td><td>
+
+Options for configuring the `CertificateManager`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ICertificateStoreOptions](./debug-certificate-manager.icertificatestoreoptions.md)
+
+
+</td><td>
+
+Options for configuring paths and filenames used by the `CertificateStore`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ICertificateValidationResult](./debug-certificate-manager.icertificatevalidationresult.md)
+
+
+</td><td>
+
+Information about certificate validation results
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_CERTIFICATE\_SUBJECT\_NAMES](./debug-certificate-manager.default_certificate_subject_names.md) | The set of names the certificate should be generated for, by default. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_CERTIFICATE\_SUBJECT\_NAMES](./debug-certificate-manager.default_certificate_subject_names.md)
+
+
+</td><td>
+
+The set of names the certificate should be generated for, by default.
+
+
+</td></tr>
+</tbody></table>
 

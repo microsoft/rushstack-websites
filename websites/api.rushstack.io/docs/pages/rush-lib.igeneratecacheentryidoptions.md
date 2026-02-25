@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IGenerateCacheEntryIdOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Options for generating the cache id for an operation.
@@ -23,9 +23,83 @@ export interface IGenerateCacheEntryIdOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [phaseName](./rush-lib.igeneratecacheentryidoptions.phasename.md) |  | string | **_(BETA)_** The name of the phase |
-|  [projectName](./rush-lib.igeneratecacheentryidoptions.projectname.md) |  | string | **_(BETA)_** The name of the project |
-|  [projectStateHash](./rush-lib.igeneratecacheentryidoptions.projectstatehash.md) |  | string | **_(BETA)_** A hash of the input files |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[phaseName](./rush-lib.igeneratecacheentryidoptions.phasename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The name of the phase
+
+
+</td></tr>
+<tr><td>
+
+[projectName](./rush-lib.igeneratecacheentryidoptions.projectname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The name of the project
+
+
+</td></tr>
+<tr><td>
+
+[projectStateHash](./rush-lib.igeneratecacheentryidoptions.projectstatehash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** A hash of the input files
+
+
+</td></tr>
+</tbody></table>
 

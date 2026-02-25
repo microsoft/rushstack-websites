@@ -15,12 +15,40 @@ Constructs a new instance of the `StringValuesTypingsGenerator` class
 **Signature:**
 
 ```typescript
-constructor(options: IStringValuesTypingsGeneratorOptions);
+constructor(options: TFileContents extends string ? IStringValuesTypingsGeneratorOptions<TFileContents> : never);
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IStringValuesTypingsGeneratorOptions](./typings-generator.istringvaluestypingsgeneratoroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+TFileContents extends string ? [IStringValuesTypingsGeneratorOptions](./typings-generator.istringvaluestypingsgeneratoroptions.md)<></>&lt;TFileContents&gt; : never
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

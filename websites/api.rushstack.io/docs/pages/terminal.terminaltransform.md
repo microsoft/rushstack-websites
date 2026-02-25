@@ -29,21 +29,153 @@ The main feature of the `TerminalTransform` class is its [TerminalTransform.dest
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.terminaltransform._constructor_.md) |  | Constructs a new instance of the <code>TerminalTransform</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.terminaltransform._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TerminalTransform` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [destination](./terminal.terminaltransform.destination.md) | <code>readonly</code> | [TerminalWritable](./terminal.terminalwritable.md) | The target <code>TerminalWritable</code> that the <code>TerminalTransform</code> will write its output to. |
-|  [preventDestinationAutoclose](./terminal.terminaltransform.preventdestinationautoclose.md) | <code>readonly</code> | boolean | Prevents the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) object from being closed automatically when the transform is closed. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[destination](./terminal.terminaltransform.destination.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+The target `TerminalWritable` that the `TerminalTransform` will write its output to.
+
+
+</td></tr>
+<tr><td>
+
+[preventDestinationAutoclose](./terminal.terminaltransform.preventdestinationautoclose.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Prevents the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) object from being closed automatically when the transform is closed.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [autocloseDestination()](./terminal.terminaltransform.autoclosedestination.md) | <code>protected</code> | The default implementation of [TerminalTransform.onClose()](./terminal.terminaltransform.onclose.md) calls this method, which closes the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) if appropriate. |
-|  [onClose()](./terminal.terminaltransform.onclose.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[autocloseDestination()](./terminal.terminaltransform.autoclosedestination.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+The default implementation of [TerminalTransform.onClose()](./terminal.terminaltransform.onclose.md) calls this method, which closes the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) if appropriate.
+
+
+</td></tr>
+<tr><td>
+
+[onClose()](./terminal.terminaltransform.onclose.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

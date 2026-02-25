@@ -19,21 +19,149 @@ export declare class PackageJsonDependency
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(name, version, type, onChange)](./rush-lib.packagejsondependency._constructor_.md) |  | Constructs a new instance of the <code>PackageJsonDependency</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(name, version, type, onChange)](./rush-lib.packagejsondependency._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `PackageJsonDependency` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dependencyType](./rush-lib.packagejsondependency.dependencytype.md) | <code>readonly</code> | [DependencyType](./rush-lib.dependencytype.md) |  |
-|  [name](./rush-lib.packagejsondependency.name.md) | <code>readonly</code> | string |  |
-|  [version](./rush-lib.packagejsondependency.version.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dependencyType](./rush-lib.packagejsondependency.dependencytype.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[DependencyType](./rush-lib.dependencytype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[name](./rush-lib.packagejsondependency.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[version](./rush-lib.packagejsondependency.version.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [setVersion(newVersion)](./rush-lib.packagejsondependency.setversion.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[setVersion(newVersion)](./rush-lib.packagejsondependency.setversion.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

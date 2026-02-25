@@ -24,8 +24,38 @@ export interface IStringBuilder
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [append(text)](./node-core-library.istringbuilder.append.md) | Append the specified text to the buffer. |
-|  [toString()](./node-core-library.istringbuilder.tostring.md) | Returns a single string containing all the text that was appended to the buffer so far. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[append(text)](./node-core-library.istringbuilder.append.md)
+
+
+</td><td>
+
+Append the specified text to the buffer.
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./node-core-library.istringbuilder.tostring.md)
+
+
+</td><td>
+
+Returns a single string containing all the text that was appended to the buffer so far.
+
+
+</td></tr>
+</tbody></table>
 

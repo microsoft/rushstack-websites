@@ -20,11 +20,67 @@ static appendToFileAsync(filePath: string, contents: string | Buffer, options?: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filePath | string |  |
-|  contents | string \| Buffer |  |
-|  options | [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+contents
+
+
+</td><td>
+
+string \| Buffer
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

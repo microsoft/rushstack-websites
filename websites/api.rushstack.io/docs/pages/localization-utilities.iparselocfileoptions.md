@@ -20,7 +20,45 @@ export interface IParseLocFileOptions extends IParseFileOptions, IParseResxOptio
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parser?](./localization-utilities.iparselocfileoptions.parser.md) |  | [ParserKind](./localization-utilities.parserkind.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parser?](./localization-utilities.iparselocfileoptions.parser.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ParserKind](./localization-utilities.parserkind.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

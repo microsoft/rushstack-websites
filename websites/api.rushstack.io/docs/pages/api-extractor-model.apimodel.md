@@ -47,25 +47,204 @@ Normally, API Extractor writes an .api.json file to disk for each project that i
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./api-extractor-model.apimodel._constructor_.md) |  | Constructs a new instance of the <code>ApiModel</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./api-extractor-model.apimodel._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiModel` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apimodel.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apimodel.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
-|  [packages](./api-extractor-model.apimodel.packages.md) | <code>readonly</code> | ReadonlyArray&lt;[ApiPackage](./api-extractor-model.apipackage.md)<></>&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apimodel.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apimodel.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[packages](./api-extractor-model.apimodel.packages.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ApiPackage](./api-extractor-model.apipackage.md)<></>&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addMember(member)](./api-extractor-model.apimodel.addmember.md) |  |  |
-|  [buildCanonicalReference()](./api-extractor-model.apimodel.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [loadPackage(apiJsonFilename)](./api-extractor-model.apimodel.loadpackage.md) |  |  |
-|  [resolveDeclarationReference(declarationReference, contextApiItem)](./api-extractor-model.apimodel.resolvedeclarationreference.md) |  |  |
-|  [tryGetPackageByName(packageName)](./api-extractor-model.apimodel.trygetpackagebyname.md) |  | Efficiently finds a package by the NPM package name. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addMember(member)](./api-extractor-model.apimodel.addmember.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apimodel.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[loadPackage(apiJsonFilename)](./api-extractor-model.apimodel.loadpackage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[resolveDeclarationReference(declarationReference, contextApiItem)](./api-extractor-model.apimodel.resolvedeclarationreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[tryGetPackageByName(packageName)](./api-extractor-model.apimodel.trygetpackagebyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Efficiently finds a package by the NPM package name.
+
+
+</td></tr>
+</tbody></table>
 

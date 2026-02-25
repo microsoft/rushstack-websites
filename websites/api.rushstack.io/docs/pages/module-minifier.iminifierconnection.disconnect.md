@@ -10,7 +10,10 @@ pagination_next: null
 
 ## IMinifierConnection.disconnect() method
 
-Callback to be invoked when done with the minifier
+> Warning: This API is now obsolete.
+> 
+> Use [IMinifierConnection.disconnectAsync()](./module-minifier.iminifierconnection.disconnectasync.md) instead.
+> 
 
 **Signature:**
 

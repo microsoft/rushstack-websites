@@ -40,17 +40,161 @@ class Book<TIdentifier extends IIdentifier = BarCode> {
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.typeparameter._constructor_.md) |  | Constructs a new instance of the <code>TypeParameter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.typeparameter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TypeParameter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [constraintExcerpt](./api-extractor-model.typeparameter.constraintexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the base constraint of the type parameter. |
-|  [defaultTypeExcerpt](./api-extractor-model.typeparameter.defaulttypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the default type of the type parameter. |
-|  [isOptional](./api-extractor-model.typeparameter.isoptional.md) |  | boolean | Whether the type parameter is optional. True IFF there exists a <code>defaultTypeExcerpt</code>. |
-|  [name](./api-extractor-model.typeparameter.name.md) |  | string | The parameter name. |
-|  [tsdocTypeParamBlock](./api-extractor-model.typeparameter.tsdoctypeparamblock.md) | <code>readonly</code> | tsdoc.DocParamBlock \| undefined | Returns the <code>@typeParam</code> documentation for this parameter, if present. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[constraintExcerpt](./api-extractor-model.typeparameter.constraintexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the base constraint of the type parameter.
+
+
+</td></tr>
+<tr><td>
+
+[defaultTypeExcerpt](./api-extractor-model.typeparameter.defaulttypeexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the default type of the type parameter.
+
+
+</td></tr>
+<tr><td>
+
+[isOptional](./api-extractor-model.typeparameter.isoptional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether the type parameter is optional. True IFF there exists a `defaultTypeExcerpt`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[name](./api-extractor-model.typeparameter.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The parameter name.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocTypeParamBlock](./api-extractor-model.typeparameter.tsdoctypeparamblock.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+tsdoc.DocParamBlock \| undefined
+
+
+</td><td>
+
+Returns the `@typeParam` documentation for this parameter, if present.
+
+
+</td></tr>
+</tbody></table>
 

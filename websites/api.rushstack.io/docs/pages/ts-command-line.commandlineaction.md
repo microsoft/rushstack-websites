@@ -23,21 +23,161 @@ export declare abstract class CommandLineAction extends CommandLineParameterProv
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./ts-command-line.commandlineaction._constructor_.md) |  | Constructs a new instance of the <code>CommandLineAction</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./ts-command-line.commandlineaction._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `CommandLineAction` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [actionName](./ts-command-line.commandlineaction.actionname.md) | <code>readonly</code> | string | The name of the action. For example, if the tool is called "example", then the "build" action might be invoked as: "example build -q --some-other-option" |
-|  [documentation](./ts-command-line.commandlineaction.documentation.md) | <code>readonly</code> | string | A detailed description that is shown on the action help page, which is displayed by the command "example build --help", e.g. for actionName="build". |
-|  [summary](./ts-command-line.commandlineaction.summary.md) | <code>readonly</code> | string | A quick summary that is shown on the main help page, which is displayed by the command "example --help" |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[actionName](./ts-command-line.commandlineaction.actionname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the action. For example, if the tool is called "example", then the "build" action might be invoked as: "example build -q --some-other-option"
+
+
+</td></tr>
+<tr><td>
+
+[documentation](./ts-command-line.commandlineaction.documentation.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A detailed description that is shown on the action help page, which is displayed by the command "example build --help", e.g. for actionName="build".
+
+
+</td></tr>
+<tr><td>
+
+[summary](./ts-command-line.commandlineaction.summary.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A quick summary that is shown on the main help page, which is displayed by the command "example --help"
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onExecute()](./ts-command-line.commandlineaction.onexecute.md) | <p><code>protected</code></p><p><code>abstract</code></p> | Your subclass should implement this hook to perform the operation. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onExecuteAsync()](./ts-command-line.commandlineaction.onexecuteasync.md)
+
+
+</td><td>
+
+`protected`
+
+`abstract`
+
+
+</td><td>
+
+Your subclass should implement this hook to perform the operation.
+
+
+</td></tr>
+</tbody></table>
 

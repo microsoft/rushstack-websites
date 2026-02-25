@@ -20,8 +20,64 @@ export interface IParsedPackageName
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [scope](./node-core-library.iparsedpackagename.scope.md) |  | string | The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign. |
-|  [unscopedName](./node-core-library.iparsedpackagename.unscopedname.md) |  | string | The parsed NPM package name without the scope. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[scope](./node-core-library.iparsedpackagename.scope.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign.
+
+
+</td></tr>
+<tr><td>
+
+[unscopedName](./node-core-library.iparsedpackagename.unscopedname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The parsed NPM package name without the scope.
+
+
+</td></tr>
+</tbody></table>
 
