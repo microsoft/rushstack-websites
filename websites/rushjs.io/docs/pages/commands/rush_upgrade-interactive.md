@@ -13,7 +13,7 @@ ensureConsistentVersions policy, upgrade-interactive will update all packages
 which use the dependencies that you are upgrading and match their SemVer
 range if provided. If ensureConsistentVersions is not enabled,
 upgrade-interactive will only update the dependency in the package you
-specify. This can be overriden by using the --make-consistent flag.
+specify. This can be overridden by using the --make-consistent flag.
 
 Optional arguments:
   -h, --help         Show this help message and exit.
