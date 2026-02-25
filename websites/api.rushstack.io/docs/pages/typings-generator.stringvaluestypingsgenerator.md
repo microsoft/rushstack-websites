@@ -15,13 +15,55 @@ This is a simple tool that generates .d.ts files for non-TS files that can be re
 **Signature:**
 
 ```typescript
-export declare class StringValuesTypingsGenerator extends TypingsGenerator 
+export declare class StringValuesTypingsGenerator<TFileContents = string> extends TypingsGenerator<TFileContents> 
 ```
-**Extends:** [TypingsGenerator](./typings-generator.typingsgenerator.md)
+**Extends:** [TypingsGenerator](./typings-generator.typingsgenerator.md)<></>&lt;TFileContents&gt;
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./typings-generator.stringvaluestypingsgenerator._constructor_.md) |  | Constructs a new instance of the <code>StringValuesTypingsGenerator</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./typings-generator.stringvaluestypingsgenerator._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `StringValuesTypingsGenerator` class
+
+
+</td></tr>
+<tr><td>
+
+[(constructor)(options)](./typings-generator.stringvaluestypingsgenerator._constructor__1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `StringValuesTypingsGenerator` class
+
+
+</td></tr>
+</tbody></table>
 

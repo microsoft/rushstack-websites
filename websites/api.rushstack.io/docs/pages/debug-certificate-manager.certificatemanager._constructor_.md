@@ -15,5 +15,42 @@ Constructs a new instance of the `CertificateManager` class
 **Signature:**
 
 ```typescript
-constructor();
+constructor(options?: ICertificateManagerOptions);
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ICertificateManagerOptions](./debug-certificate-manager.icertificatemanageroptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
+

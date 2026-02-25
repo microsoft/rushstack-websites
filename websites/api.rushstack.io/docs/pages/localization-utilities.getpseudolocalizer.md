@@ -20,9 +20,37 @@ export declare function getPseudolocalizer(options: IPseudolocaleOptions): (str:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IPseudolocaleOptions](./localization-utilities.ipseudolocaleoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IPseudolocaleOptions](./localization-utilities.ipseudolocaleoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

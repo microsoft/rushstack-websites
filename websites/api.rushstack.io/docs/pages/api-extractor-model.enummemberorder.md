@@ -20,8 +20,55 @@ export declare enum EnumMemberOrder
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ByName | <code>&quot;by-name&quot;</code> | <p><code>ApiEnumMember</code> items are sorted according to their [ApiItem.getSortKey()](./api-extractor-model.apiitem.getsortkey.md)<></>. The order is basically alphabetical by identifier name, but otherwise unspecified to allow for cosmetic improvements.</p><p>This is the default behavior.</p> |
-|  Preserve | <code>&quot;preserve&quot;</code> | <code>ApiEnumMember</code> items preserve the original order of the declarations in the source file. (This disables the automatic sorting that is normally applied based on [ApiItem.getSortKey()](./api-extractor-model.apiitem.getsortkey.md)<></>.) |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ByName
+
+
+</td><td>
+
+`"by-name"`
+
+
+</td><td>
+
+`ApiEnumMember` items are sorted according to their [ApiItem.getSortKey()](./api-extractor-model.apiitem.getsortkey.md)<></>. The order is basically alphabetical by identifier name, but otherwise unspecified to allow for cosmetic improvements.
+
+This is the default behavior.
+
+
+</td></tr>
+<tr><td>
+
+Preserve
+
+
+</td><td>
+
+`"preserve"`
+
+
+</td><td>
+
+`ApiEnumMember` items preserve the original order of the declarations in the source file. (This disables the automatic sorting that is normally applied based on [ApiItem.getSortKey()](./api-extractor-model.apiitem.getsortkey.md)<></>.)
+
+
+</td></tr>
+</tbody></table>
 

@@ -19,9 +19,37 @@ export declare function parseResx(options: IParseResxOptions): ILocalizationFile
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IParseResxOptions](./localization-utilities.iparseresxoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IParseResxOptions](./localization-utilities.iparseresxoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

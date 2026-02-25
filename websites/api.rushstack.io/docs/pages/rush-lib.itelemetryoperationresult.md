@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ITelemetryOperationResult interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,11 +22,140 @@ export interface ITelemetryOperationResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dependencies](./rush-lib.itelemetryoperationresult.dependencies.md) |  | string\[\] | **_(BETA)_** The names of operations that this operation depends on. |
-|  [endTimestampMs?](./rush-lib.itelemetryoperationresult.endtimestampms.md) |  | number | **_(BETA)_** _(Optional)_ A timestamp in milliseconds (from <code>performance.now()</code>) when the operation finished. If the operation was blocked, will be <code>undefined</code>. |
-|  [nonCachedDurationMs?](./rush-lib.itelemetryoperationresult.noncacheddurationms.md) |  | number | **_(BETA)_** _(Optional)_ Duration in milliseconds when the operation does not hit cache |
-|  [result](./rush-lib.itelemetryoperationresult.result.md) |  | string | **_(BETA)_** The status code for the operation. |
-|  [startTimestampMs?](./rush-lib.itelemetryoperationresult.starttimestampms.md) |  | number | **_(BETA)_** _(Optional)_ A timestamp in milliseconds (from <code>performance.now()</code>) when the operation started. If the operation was blocked, will be <code>undefined</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dependencies](./rush-lib.itelemetryoperationresult.dependencies.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+**_(BETA)_** The names of operations that this operation depends on.
+
+
+</td></tr>
+<tr><td>
+
+[endTimestampMs?](./rush-lib.itelemetryoperationresult.endtimestampms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ A timestamp in milliseconds (from `performance.now()`<></>) when the operation finished. If the operation was blocked, will be `undefined`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[nonCachedDurationMs?](./rush-lib.itelemetryoperationresult.noncacheddurationms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Duration in milliseconds when the operation does not hit cache
+
+
+</td></tr>
+<tr><td>
+
+[result](./rush-lib.itelemetryoperationresult.result.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The status code for the operation.
+
+
+</td></tr>
+<tr><td>
+
+[startTimestampMs?](./rush-lib.itelemetryoperationresult.starttimestampms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ A timestamp in milliseconds (from `performance.now()`<></>) when the operation started. If the operation was blocked, will be `undefined`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[wasExecutedOnThisMachine?](./rush-lib.itelemetryoperationresult.wasexecutedonthismachine.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Was this operation built on this machine? If so, the duration can be calculated from `startTimestampMs` and `endTimestampMs`<></>. If not, you should use the metrics from the machine that built it.
+
+
+</td></tr>
+</tbody></table>
 

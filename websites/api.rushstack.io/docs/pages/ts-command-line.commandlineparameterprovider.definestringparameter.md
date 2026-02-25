@@ -15,14 +15,45 @@ Defines a command-line parameter whose argument is a single text string.
 **Signature:**
 
 ```typescript
-defineStringParameter(definition: ICommandLineStringDefinition): CommandLineStringParameter;
+defineStringParameter(definition: ICommandLineStringDefinition & {
+        required: false | undefined;
+        defaultValue: undefined;
+    }): CommandLineStringParameter;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineStringDefinition](./ts-command-line.icommandlinestringdefinition.md) &amp; { required: false \| undefined; defaultValue: undefined; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

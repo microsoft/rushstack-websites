@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushPluginManifestFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Rush plugin manifest file name.
@@ -18,5 +18,5 @@ Rush plugin manifest file name.
 **Signature:**
 
 ```typescript
-static readonly rushPluginManifestFilename: string;
+static readonly rushPluginManifestFilename: 'rush-plugin-manifest.json';
 ```

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## MockWritable class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 A [TerminalWritable](./terminal.terminalwritable.md) subclass for use by unit tests.
@@ -24,16 +24,125 @@ export declare class MockWritable extends TerminalWritable
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [chunks](./terminal.mockwritable.chunks.md) | <code>readonly</code> | [ITerminalChunk](./terminal.iterminalchunk.md)<></>\[\] | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[chunks](./terminal.mockwritable.chunks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITerminalChunk](./terminal.iterminalchunk.md)<></>\[\]
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getAllOutput()](./terminal.mockwritable.getalloutput.md) |  | **_(BETA)_** |
-|  [getFormattedChunks()](./terminal.mockwritable.getformattedchunks.md) |  | **_(BETA)_** |
-|  [onWriteChunk(chunk)](./terminal.mockwritable.onwritechunk.md) | <code>protected</code> | **_(BETA)_** |
-|  [reset()](./terminal.mockwritable.reset.md) |  | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getAllOutput()](./terminal.mockwritable.getalloutput.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getFormattedChunks()](./terminal.mockwritable.getformattedchunks.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./terminal.mockwritable.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[reset()](./terminal.mockwritable.reset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

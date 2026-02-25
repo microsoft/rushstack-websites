@@ -21,7 +21,35 @@ export declare class TypingsGenerator extends StringValuesTypingsGenerator
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./localization-utilities.typingsgenerator._constructor_.md) |  | Constructs a new instance of the <code>TypingsGenerator</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./localization-utilities.typingsgenerator._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TypingsGenerator` class
+
+
+</td></tr>
+</tbody></table>
 

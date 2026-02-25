@@ -10,7 +10,7 @@ pagination_next: null
 
 ## BuildCacheConfiguration.buildCacheEnabled property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Indicates whether the build cache feature is enabled. Typically it is enabled in the build-cache.json config file.

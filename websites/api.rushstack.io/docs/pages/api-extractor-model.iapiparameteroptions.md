@@ -20,9 +20,77 @@ export interface IApiParameterOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [isOptional](./api-extractor-model.iapiparameteroptions.isoptional.md) |  | boolean |  |
-|  [parameterName](./api-extractor-model.iapiparameteroptions.parametername.md) |  | string |  |
-|  [parameterTypeTokenRange](./api-extractor-model.iapiparameteroptions.parametertypetokenrange.md) |  | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isOptional](./api-extractor-model.iapiparameteroptions.isoptional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parameterName](./api-extractor-model.iapiparameteroptions.parametername.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parameterTypeTokenRange](./api-extractor-model.iapiparameteroptions.parametertypetokenrange.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,10 +20,51 @@ static updateTimesAsync(path: string, times: IFileSystemUpdateTimeParameters): P
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string |  |
-|  times | [IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+times
+
+
+</td><td>
+
+[IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

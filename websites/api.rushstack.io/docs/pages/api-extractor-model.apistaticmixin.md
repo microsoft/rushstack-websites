@@ -20,7 +20,27 @@ export declare namespace ApiStaticMixin
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [isBaseClassOf(apiItem)](./api-extractor-model.apistaticmixin.isbaseclassof.md) | A type guard that tests whether the specified <code>ApiItem</code> subclass extends the <code>ApiStaticMixin</code> mixin. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isBaseClassOf(apiItem)](./api-extractor-model.apistaticmixin.isbaseclassof.md)
+
+
+</td><td>
+
+A type guard that tests whether the specified `ApiItem` subclass extends the `ApiStaticMixin` mixin.
+
+
+</td></tr>
+</tbody></table>
 

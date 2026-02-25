@@ -20,9 +20,37 @@ static resolvePackageAsync(options: IImportResolvePackageAsyncOptions): Promise<
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

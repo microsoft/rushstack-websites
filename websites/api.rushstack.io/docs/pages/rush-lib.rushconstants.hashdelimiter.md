@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.hashDelimiter property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 When a hash generated that contains multiple input segments, this character may be used to separate them to avoid issues like crypto.createHash('sha1').update('a').update('bc').digest('hex') === crypto.createHash('sha1').update('ab').update('c').digest('hex')
@@ -18,5 +18,5 @@ When a hash generated that contains multiple input segments, this character may 
 **Signature:**
 
 ```typescript
-static readonly hashDelimiter: string;
+static readonly hashDelimiter: '|';
 ```

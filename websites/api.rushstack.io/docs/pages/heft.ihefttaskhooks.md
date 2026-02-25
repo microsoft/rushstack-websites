@@ -20,9 +20,89 @@ export interface IHeftTaskHooks
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [registerFileOperations](./heft.ihefttaskhooks.registerfileoperations.md) | <code>readonly</code> | AsyncSeriesWaterfallHook&lt;[IHeftTaskFileOperations](./heft.ihefttaskfileoperations.md)<></>&gt; | If provided, the <code>registerFileOperations</code> hook is called exactly once before the first time either <code>run</code> or <code>runIncremental</code> would be invoked to provide the plugin an opportunity to request dynamic file copy or deletion operations. |
-|  [run](./heft.ihefttaskhooks.run.md) | <code>readonly</code> | AsyncParallelHook&lt;[IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md)<></>&gt; | The <code>run</code> hook is called after all dependency task executions have completed during a normal run, or during a watch mode run when no <code>runIncremental</code> hook is provided. It is where the plugin can perform its work. To use it, call <code>run.tapPromise(&lt;pluginName&gt;, &lt;callback&gt;)</code>. |
-|  [runIncremental](./heft.ihefttaskhooks.runincremental.md) | <code>readonly</code> | AsyncParallelHook&lt;[IHeftTaskRunIncrementalHookOptions](./heft.ihefttaskrunincrementalhookoptions.md)<></>&gt; | If provided, the <code>runIncremental</code> hook is called after all dependency task executions have completed during a watch mode run. It is where the plugin can perform incremental work. To use it, call <code>run.tapPromise(&lt;pluginName&gt;, &lt;callback&gt;)</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[registerFileOperations](./heft.ihefttaskhooks.registerfileoperations.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncSeriesWaterfallHook&lt;[IHeftTaskFileOperations](./heft.ihefttaskfileoperations.md)<></>&gt;
+
+
+</td><td>
+
+If provided, the `registerFileOperations` hook is called exactly once before the first time either `run` or `runIncremental` would be invoked to provide the plugin an opportunity to request dynamic file copy or deletion operations.
+
+
+</td></tr>
+<tr><td>
+
+[run](./heft.ihefttaskhooks.run.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+The `run` hook is called after all dependency task executions have completed during a normal run, or during a watch mode run when no `runIncremental` hook is provided. It is where the plugin can perform its work. To use it, call `run.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[runIncremental](./heft.ihefttaskhooks.runincremental.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+AsyncParallelHook&lt;[IHeftTaskRunIncrementalHookOptions](./heft.ihefttaskrunincrementalhookoptions.md)<></>&gt;
+
+
+</td><td>
+
+If provided, the `runIncremental` hook is called after all dependency task executions have completed during a watch mode run. It is where the plugin can perform incremental work. To use it, call `run.tapPromise(<pluginName>, <callback>)`<></>.
+
+
+</td></tr>
+</tbody></table>
 

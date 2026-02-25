@@ -20,9 +20,39 @@ push(item: T): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  item | T | The item to push into the queue. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+item
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+The item to push into the queue.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

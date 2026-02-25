@@ -25,15 +25,123 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultValue](./ts-command-line.commandlinestringparameter.defaultvalue.md) | <code>readonly</code> | string \| undefined | The default value which will be used if the parameter is omitted from the command line. |
-|  [kind](./ts-command-line.commandlinestringparameter.kind.md) | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [value](./ts-command-line.commandlinestringparameter.value.md) | <code>readonly</code> | string \| undefined | Returns the argument value for a string parameter that was parsed from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultValue](./ts-command-line.commandlinestringparameter.defaultvalue.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The default value which will be used if the parameter is omitted from the command line.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./ts-command-line.commandlinestringparameter.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineParameterKind.String](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Indicates the type of parameter.
+
+
+</td></tr>
+<tr><td>
+
+[value](./ts-command-line.commandlinestringparameter.value.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Returns the argument value for a string parameter that was parsed from the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlinestringparameter.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlinestringparameter.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

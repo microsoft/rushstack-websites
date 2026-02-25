@@ -24,9 +24,89 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiModel](./api-documenter.markdowndocumenterfeaturecontext.apimodel.md) | <code>readonly</code> | [ApiModel](./api-extractor-model.apimodel.md) | Provides access to the <code>ApiModel</code> for the documentation being generated. |
-|  [documenter](./api-documenter.markdowndocumenterfeaturecontext.documenter.md) | <code>readonly</code> | [MarkdownDocumenterAccessor](./api-documenter.markdowndocumenteraccessor.md) | Exposes functionality of the documenter. |
-|  [outputFolder](./api-documenter.markdowndocumenterfeaturecontext.outputfolder.md) | <code>readonly</code> | string | The full path to the output folder. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiModel](./api-documenter.markdowndocumenterfeaturecontext.apimodel.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiModel](./api-extractor-model.apimodel.md)
+
+
+</td><td>
+
+Provides access to the `ApiModel` for the documentation being generated.
+
+
+</td></tr>
+<tr><td>
+
+[documenter](./api-documenter.markdowndocumenterfeaturecontext.documenter.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[MarkdownDocumenterAccessor](./api-documenter.markdowndocumenteraccessor.md)
+
+
+</td><td>
+
+Exposes functionality of the documenter.
+
+
+</td></tr>
+<tr><td>
+
+[outputFolder](./api-documenter.markdowndocumenterfeaturecontext.outputfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The full path to the output folder.
+
+
+</td></tr>
+</tbody></table>
 

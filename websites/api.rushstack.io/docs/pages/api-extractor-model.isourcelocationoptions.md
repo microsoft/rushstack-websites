@@ -20,8 +20,64 @@ export interface ISourceLocationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [fileUrlPath?](./api-extractor-model.isourcelocationoptions.fileurlpath.md) |  | string | _(Optional)_ The file URL path relative to the <code>projectFolder</code> and <code>projectFolderURL</code> fields as defined in the <code>api-extractor.json</code> config. |
-|  [projectFolderUrl?](./api-extractor-model.isourcelocationoptions.projectfolderurl.md) |  | string | _(Optional)_ The project folder URL as defined by the <code>api-extractor.json</code> config <code>projectFolderUrl</code> setting. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[fileUrlPath?](./api-extractor-model.isourcelocationoptions.fileurlpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The file URL path relative to the `projectFolder` and `projectFolderURL` fields as defined in the `api-extractor.json` config.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderUrl?](./api-extractor-model.isourcelocationoptions.projectfolderurl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The project folder URL as defined by the `api-extractor.json` config `projectFolderUrl` setting.
+
+
+</td></tr>
+</tbody></table>
 

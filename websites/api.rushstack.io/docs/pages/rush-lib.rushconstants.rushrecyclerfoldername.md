@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushRecyclerFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("rush-recycler") where Rush moves large folder trees before asynchronously deleting them.
@@ -18,5 +18,5 @@ The folder name ("rush-recycler") where Rush moves large folder trees before asy
 **Signature:**
 
 ```typescript
-static readonly rushRecyclerFolderName: string;
+static readonly rushRecyclerFolderName: 'rush-recycler';
 ```

@@ -10,6 +10,8 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.ignoreString property
 
+Optionally, provide a function that will be called for each string. If the function returns `true` the string will not be included.
+
 **Signature:**
 
 ```typescript

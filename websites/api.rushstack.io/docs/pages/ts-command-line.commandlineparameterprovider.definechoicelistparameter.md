@@ -15,18 +15,46 @@ Defines a command-line parameter whose value must be a string from a fixed set o
 **Signature:**
 
 ```typescript
-defineChoiceListParameter(definition: ICommandLineChoiceListDefinition): CommandLineChoiceListParameter;
+defineChoiceListParameter<TChoice extends string = string>(definition: ICommandLineChoiceListDefinition<TChoice>): CommandLineChoiceListParameter<TChoice>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineChoiceListDefinition](./ts-command-line.icommandlinechoicelistdefinition.md)<></>&lt;TChoice&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
-[CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md)
+[CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md)<></>&lt;TChoice&gt;
 
 ## Remarks
 

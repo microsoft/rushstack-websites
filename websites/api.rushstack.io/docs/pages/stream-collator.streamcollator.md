@@ -10,7 +10,7 @@ pagination_next: null
 
 ## StreamCollator class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 A static class which manages the output of multiple threads.
@@ -23,23 +23,199 @@ export declare class StreamCollator
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./stream-collator.streamcollator._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>StreamCollator</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./stream-collator.streamcollator._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `StreamCollator` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [activeTaskName](./stream-collator.streamcollator.activetaskname.md) | <code>readonly</code> | string | **_(BETA)_** For diagnostic purposes, returns the [CollatedWriter.taskName](./stream-collator.collatedwriter.taskname.md) for the currently active writer, or an empty string if no writer is active. |
-|  [activeWriter](./stream-collator.streamcollator.activewriter.md) | <code>readonly</code> | [CollatedWriter](./stream-collator.collatedwriter.md) \| undefined | **_(BETA)_** Returns the currently active <code>CollatedWriter</code>, or <code>undefined</code> if no writer is active yet. |
-|  [destination](./stream-collator.streamcollator.destination.md) | <code>readonly</code> | [TerminalWritable](./terminal.terminalwritable.md) | **_(BETA)_** |
-|  [terminal](./stream-collator.streamcollator.terminal.md) | <code>readonly</code> | [CollatedTerminal](./stream-collator.collatedterminal.md) | **_(BETA)_** |
-|  [writers](./stream-collator.streamcollator.writers.md) | <code>readonly</code> | ReadonlySet&lt;[CollatedWriter](./stream-collator.collatedwriter.md)<></>&gt; | **_(BETA)_** The list of writers that have been registered by calling [StreamCollator.registerTask()](./stream-collator.streamcollator.registertask.md)<></>, in the order that they were registered. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[activeTaskName](./stream-collator.streamcollator.activetaskname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** For diagnostic purposes, returns the [CollatedWriter.taskName](./stream-collator.collatedwriter.taskname.md) for the currently active writer, or an empty string if no writer is active.
+
+
+</td></tr>
+<tr><td>
+
+[activeWriter](./stream-collator.streamcollator.activewriter.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CollatedWriter](./stream-collator.collatedwriter.md) \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Returns the currently active `CollatedWriter`<></>, or `undefined` if no writer is active yet.
+
+
+</td></tr>
+<tr><td>
+
+[destination](./stream-collator.streamcollator.destination.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./stream-collator.streamcollator.terminal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CollatedTerminal](./stream-collator.collatedterminal.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[writers](./stream-collator.streamcollator.writers.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;[CollatedWriter](./stream-collator.collatedwriter.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** The list of writers that have been registered by calling [StreamCollator.registerTask()](./stream-collator.streamcollator.registertask.md)<></>, in the order that they were registered.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [registerTask(taskName)](./stream-collator.streamcollator.registertask.md) |  | **_(BETA)_** Registers a new task to be collated, and constructs a [CollatedWriter](./stream-collator.collatedwriter.md) object to receive its input. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[registerTask(taskName)](./stream-collator.streamcollator.registertask.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Registers a new task to be collated, and constructs a [CollatedWriter](./stream-collator.collatedwriter.md) object to receive its input.
+
+
+</td></tr>
+</tbody></table>
 

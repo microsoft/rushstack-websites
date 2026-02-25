@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedWriter.onClose() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Subclasses can override this empty method to perform additional operations such as closing a file handle.

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## getRepoStateAsync() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Gets the object hashes for all files in the Git repo, combining the current commit with working tree state. Uses async operations and runs all primary Git calls in parallel.
@@ -18,16 +18,92 @@ Gets the object hashes for all files in the Git repo, combining the current comm
 **Signature:**
 
 ```typescript
-export declare function getRepoStateAsync(rootDirectory: string, additionalRelativePathsToHash?: string[], gitPath?: string): Promise<Map<string, string>>;
+export declare function getRepoStateAsync(rootDirectory: string, additionalRelativePathsToHash?: string[], gitPath?: string, filterPath?: string[]): Promise<Map<string, string>>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rootDirectory | string | The root directory of the Git repository |
-|  additionalRelativePathsToHash | string\[\] | _(Optional)_ Root-relative file paths to have Git hash and include in the results |
-|  gitPath | string | _(Optional)_ The path to the Git executable |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rootDirectory
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The root directory of the Git repository
+
+
+</td></tr>
+<tr><td>
+
+additionalRelativePathsToHash
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Root-relative file paths to have Git hash and include in the results
+
+
+</td></tr>
+<tr><td>
+
+gitPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the Git executable
+
+
+</td></tr>
+<tr><td>
+
+filterPath
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

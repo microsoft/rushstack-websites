@@ -20,9 +20,37 @@ defineStringListParameter(definition: ICommandLineStringListDefinition): Command
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineStringListDefinition](./ts-command-line.icommandlinestringlistdefinition.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

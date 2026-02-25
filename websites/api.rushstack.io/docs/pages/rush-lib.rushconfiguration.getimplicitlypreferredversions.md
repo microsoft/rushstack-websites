@@ -15,14 +15,60 @@ Returns a map of all direct dependencies that only have a single semantic versio
 **Signature:**
 
 ```typescript
-getImplicitlyPreferredVersions(variant?: string | undefined): Map<string, string>;
+getImplicitlyPreferredVersions(subspace?: Subspace, variant?: string): Map<string, string>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_ The subspace to use
+
+
+</td></tr>
+<tr><td>
+
+variant
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The name of the current variant in use by the active command.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

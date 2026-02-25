@@ -20,7 +20,45 @@ export interface IWatchedFileState
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [changed](./heft.iwatchedfilestate.changed.md) |  | boolean | If the file has changed since the last invocation. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[changed](./heft.iwatchedfilestate.changed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If the file has changed since the last invocation.
+
+
+</td></tr>
+</tbody></table>
 

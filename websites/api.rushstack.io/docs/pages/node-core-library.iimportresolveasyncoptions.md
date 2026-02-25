@@ -21,7 +21,45 @@ export interface IImportResolveAsyncOptions extends IImportResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [getRealPathAsync?](./node-core-library.iimportresolveasyncoptions.getrealpathasync.md) |  | (filePath: string) =&gt; Promise&lt;string&gt; | _(Optional)_ A function used to resolve the realpath of a provided file path. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getRealPathAsync?](./node-core-library.iimportresolveasyncoptions.getrealpathasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(filePath: string) =&gt; Promise&lt;string&gt;
+
+
+</td><td>
+
+_(Optional)_ A function used to resolve the realpath of a provided file path.
+
+
+</td></tr>
+</tbody></table>
 

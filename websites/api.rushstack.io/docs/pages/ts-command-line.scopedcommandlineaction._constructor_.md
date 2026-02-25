@@ -20,7 +20,35 @@ constructor(options: ICommandLineActionOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ICommandLineActionOptions](./ts-command-line.icommandlineactionoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ICommandLineActionOptions](./ts-command-line.icommandlineactionoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

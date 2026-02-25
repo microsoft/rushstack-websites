@@ -20,11 +20,71 @@ static replaceAll(input: string, searchValue: string, replaceValue: string): str
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | string | The string to be modified |
-|  searchValue | string | The value to search for |
-|  replaceValue | string | The replacement text |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The string to be modified
+
+
+</td></tr>
+<tr><td>
+
+searchValue
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The value to search for
+
+
+</td></tr>
+<tr><td>
+
+replaceValue
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The replacement text
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

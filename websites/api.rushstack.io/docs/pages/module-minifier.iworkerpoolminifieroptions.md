@@ -20,9 +20,102 @@ export interface IWorkerPoolMinifierOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [maxThreads?](./module-minifier.iworkerpoolminifieroptions.maxthreads.md) |  | number | _(Optional)_ Maximum number of worker threads to use. Will never use more than there are modules to process. Defaults to os.cpus().length |
-|  [terserOptions?](./module-minifier.iworkerpoolminifieroptions.terseroptions.md) |  | MinifyOptions | _(Optional)_ The options to forward to Terser. <code>output.comments</code> is currently not configurable and will always extract license comments to a separate file. |
-|  [verbose?](./module-minifier.iworkerpoolminifieroptions.verbose.md) |  | boolean | _(Optional)_ If true, log to the console about the minification results. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[maxThreads?](./module-minifier.iworkerpoolminifieroptions.maxthreads.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Maximum number of worker threads to use. Will never use more than there are modules to process. Defaults to os.availableParallelism()
+
+
+</td></tr>
+<tr><td>
+
+[terserOptions?](./module-minifier.iworkerpoolminifieroptions.terseroptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+MinifyOptions
+
+
+</td><td>
+
+_(Optional)_ The options to forward to Terser. `output.comments` is currently not configurable and will always extract license comments to a separate file.
+
+
+</td></tr>
+<tr><td>
+
+[verbose?](./module-minifier.iworkerpoolminifieroptions.verbose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, log to the console about the minification results.
+
+
+</td></tr>
+<tr><td>
+
+[workerResourceLimits?](./module-minifier.iworkerpoolminifieroptions.workerresourcelimits.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ResourceLimits
+
+
+</td><td>
+
+_(Optional)_ Optional resource limits for the workers.
+
+
+</td></tr>
+</tbody></table>
 

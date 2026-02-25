@@ -20,9 +20,83 @@ export interface IFindApiItemsResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [items](./api-extractor-model.ifindapiitemsresult.items.md) |  | [ApiItem](./api-extractor-model.apiitem.md)<></>\[\] | The API items that were found. Not guaranteed to be complete, see <code>maybeIncompleteResult</code>. |
-|  [maybeIncompleteResult](./api-extractor-model.ifindapiitemsresult.maybeincompleteresult.md) |  | boolean | Indicates whether the result is potentially incomplete due to errors during the find operation. If true, the <code>messages</code> explain the errors in more detail. |
-|  [messages](./api-extractor-model.ifindapiitemsresult.messages.md) |  | [IFindApiItemsMessage](./api-extractor-model.ifindapiitemsmessage.md)<></>\[\] | Diagnostic messages regarding the find operation. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[items](./api-extractor-model.ifindapiitemsresult.items.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md)<></>\[\]
+
+
+</td><td>
+
+The API items that were found. Not guaranteed to be complete, see `maybeIncompleteResult`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[maybeIncompleteResult](./api-extractor-model.ifindapiitemsresult.maybeincompleteresult.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Indicates whether the result is potentially incomplete due to errors during the find operation. If true, the `messages` explain the errors in more detail.
+
+
+</td></tr>
+<tr><td>
+
+[messages](./api-extractor-model.ifindapiitemsresult.messages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IFindApiItemsMessage](./api-extractor-model.ifindapiitemsmessage.md)<></>\[\]
+
+
+</td><td>
+
+Diagnostic messages regarding the find operation.
+
+
+</td></tr>
+</tbody></table>
 

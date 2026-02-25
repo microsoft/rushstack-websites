@@ -20,10 +20,53 @@ static readFolderItemNamesAsync(folderPath: string, options?: IFileSystemReadFol
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  folderPath | string |  |
-|  options | [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+folderPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

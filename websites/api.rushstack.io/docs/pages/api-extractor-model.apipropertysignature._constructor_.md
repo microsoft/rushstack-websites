@@ -20,7 +20,35 @@ constructor(options: IApiPropertySignatureOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiPropertySignatureOptions](./api-extractor-model.iapipropertysignatureoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiPropertySignatureOptions](./api-extractor-model.iapipropertysignatureoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

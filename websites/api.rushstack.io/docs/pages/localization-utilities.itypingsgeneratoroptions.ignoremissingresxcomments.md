@@ -10,6 +10,8 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.ignoreMissingResxComments property
 
+If true, .resx files will not throw errors if comments are missing.
+
 **Signature:**
 
 ```typescript

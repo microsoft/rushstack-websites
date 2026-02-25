@@ -21,9 +21,37 @@ onFinished(eventArgs: IMarkdownDocumenterFeatureOnFinishedArgs): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventArgs | [IMarkdownDocumenterFeatureOnFinishedArgs](./api-documenter.imarkdowndocumenterfeatureonfinishedargs.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventArgs
+
+
+</td><td>
+
+[IMarkdownDocumenterFeatureOnFinishedArgs](./api-documenter.imarkdowndocumenterfeatureonfinishedargs.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

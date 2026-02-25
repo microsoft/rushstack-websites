@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStreamCollatorOptions.onWriterActive property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 An event handler that is called when a [CollatedWriter](./stream-collator.collatedwriter.md) becomes output, before any of its chunks have been written to the destination.

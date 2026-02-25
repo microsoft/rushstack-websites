@@ -20,7 +20,35 @@ constructor(options: IApiDocumentedItemOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiDocumentedItemOptions](./api-extractor-model.iapidocumenteditemoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

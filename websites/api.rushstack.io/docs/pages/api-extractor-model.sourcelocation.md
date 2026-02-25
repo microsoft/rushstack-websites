@@ -24,13 +24,81 @@ The source location points to the `.ts` source file where the API item was origi
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.sourcelocation._constructor_.md) |  | Constructs a new instance of the <code>SourceLocation</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.sourcelocation._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SourceLocation` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [fileUrl](./api-extractor-model.sourcelocation.fileurl.md) | <code>readonly</code> | string \| undefined | Returns the file URL to the given source location. Returns <code>undefined</code> if the file URL cannot be determined. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[fileUrl](./api-extractor-model.sourcelocation.fileurl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Returns the file URL to the given source location. Returns `undefined` if the file URL cannot be determined.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,8 +20,64 @@ export interface IFileSystemUpdateTimeParameters
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [accessedTime](./node-core-library.ifilesystemupdatetimeparameters.accessedtime.md) |  | number \| Date | The POSIX epoch time or Date when this was last accessed. |
-|  [modifiedTime](./node-core-library.ifilesystemupdatetimeparameters.modifiedtime.md) |  | number \| Date | The POSIX epoch time or Date when this was last modified |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[accessedTime](./node-core-library.ifilesystemupdatetimeparameters.accessedtime.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number \| Date
+
+
+</td><td>
+
+The POSIX epoch time or Date when this was last accessed.
+
+
+</td></tr>
+<tr><td>
+
+[modifiedTime](./node-core-library.ifilesystemupdatetimeparameters.modifiedtime.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number \| Date
+
+
+</td><td>
+
+The POSIX epoch time or Date when this was last modified
+
+
+</td></tr>
+</tbody></table>
 

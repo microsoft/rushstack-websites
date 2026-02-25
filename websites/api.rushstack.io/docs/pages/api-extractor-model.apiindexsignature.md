@@ -37,21 +37,148 @@ export interface INumberTable {
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apiindexsignature._constructor_.md) |  | Constructs a new instance of the <code>ApiIndexSignature</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apiindexsignature._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiIndexSignature` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apiindexsignature.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apiindexsignature.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apiindexsignature.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apiindexsignature.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apiindexsignature.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(overloadIndex)](./api-extractor-model.apiindexsignature.getcontainerkey.md) | <code>static</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apiindexsignature.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(overloadIndex)](./api-extractor-model.apiindexsignature.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStopwatchResult interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Represents a readonly view of a `Stopwatch`<></>.
@@ -23,7 +23,27 @@ export interface IStopwatchResult
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [toString()](./rush-lib.istopwatchresult.tostring.md) | **_(BETA)_** Displays how long the stopwatch has been executing in a human readable format. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[toString()](./rush-lib.istopwatchresult.tostring.md)
+
+
+</td><td>
+
+**_(BETA)_** Displays how long the stopwatch has been executing in a human readable format.
+
+
+</td></tr>
+</tbody></table>
 

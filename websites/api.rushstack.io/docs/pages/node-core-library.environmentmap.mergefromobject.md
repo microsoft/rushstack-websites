@@ -20,9 +20,39 @@ mergeFromObject(environmentObject?: Record<string, string | undefined>): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  environmentObject | Record&lt;string, string \| undefined&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+environmentObject
+
+
+</td><td>
+
+Record&lt;string, string \| undefined&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

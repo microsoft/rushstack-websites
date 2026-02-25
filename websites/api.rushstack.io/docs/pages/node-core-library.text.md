@@ -24,16 +24,275 @@ The utilities provided by this class are intended to be simple, small, and very 
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [convertTo(input, newlineKind)](./node-core-library.text.convertto.md) | <code>static</code> | Converts all newlines in the provided string to use the specified newline type. |
-|  [convertToCrLf(input)](./node-core-library.text.converttocrlf.md) | <code>static</code> | Converts all newlines in the provided string to use Windows-style CRLF end of line characters. |
-|  [convertToLf(input)](./node-core-library.text.converttolf.md) | <code>static</code> | <p>Converts all newlines in the provided string to use POSIX-style LF end of line characters.</p><p>POSIX is a registered trademark of the Institute of Electrical and Electronic Engineers, Inc.</p> |
-|  [ensureTrailingNewline(s, newlineKind)](./node-core-library.text.ensuretrailingnewline.md) | <code>static</code> | Returns the input string with a trailing <code>\n</code> character appended, if not already present. |
-|  [escapeRegExp(literal)](./node-core-library.text.escaperegexp.md) | <code>static</code> | Escapes a string so that it can be treated as a literal string when used in a regular expression. |
-|  [getNewline(newlineKind)](./node-core-library.text.getnewline.md) | <code>static</code> | Returns the newline character sequence for the specified <code>NewlineKind</code>. |
-|  [padEnd(s, minimumLength, paddingCharacter)](./node-core-library.text.padend.md) | <code>static</code> | Append characters to the end of a string to ensure the result has a minimum length. |
-|  [padStart(s, minimumLength, paddingCharacter)](./node-core-library.text.padstart.md) | <code>static</code> | Append characters to the start of a string to ensure the result has a minimum length. |
-|  [replaceAll(input, searchValue, replaceValue)](./node-core-library.text.replaceall.md) | <code>static</code> | Returns the same thing as targetString.replace(searchValue, replaceValue), except that all matches are replaced, rather than just the first match. |
-|  [truncateWithEllipsis(s, maximumLength)](./node-core-library.text.truncatewithellipsis.md) | <code>static</code> | If the string is longer than maximumLength characters, truncate it to that length using "..." to indicate the truncation. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertTo(input, newlineKind)](./node-core-library.text.convertto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Converts all newlines in the provided string to use the specified newline type.
+
+
+</td></tr>
+<tr><td>
+
+[convertToCrLf(input)](./node-core-library.text.converttocrlf.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Converts all newlines in the provided string to use Windows-style CRLF end of line characters.
+
+
+</td></tr>
+<tr><td>
+
+[convertToLf(input)](./node-core-library.text.converttolf.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Converts all newlines in the provided string to use POSIX-style LF end of line characters.
+
+POSIX is a registered trademark of the Institute of Electrical and Electronic Engineers, Inc.
+
+
+</td></tr>
+<tr><td>
+
+[ensureTrailingNewline(s, newlineKind)](./node-core-library.text.ensuretrailingnewline.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns the input string with a trailing `\n` character appended, if not already present.
+
+
+</td></tr>
+<tr><td>
+
+[escapeRegExp(literal)](./node-core-library.text.escaperegexp.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Escapes a string so that it can be treated as a literal string when used in a regular expression.
+
+
+</td></tr>
+<tr><td>
+
+[getNewline(newlineKind)](./node-core-library.text.getnewline.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns the newline character sequence for the specified `NewlineKind`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[padEnd(s, minimumLength, paddingCharacter)](./node-core-library.text.padend.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Append characters to the end of a string to ensure the result has a minimum length.
+
+
+</td></tr>
+<tr><td>
+
+[padStart(s, minimumLength, paddingCharacter)](./node-core-library.text.padstart.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Append characters to the start of a string to ensure the result has a minimum length.
+
+
+</td></tr>
+<tr><td>
+
+[readLinesFromIterable(iterable, options)](./node-core-library.text.readlinesfromiterable.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Read lines from an iterable object that returns strings or buffers, and return a generator that produces the lines as strings. The lines will not include the newline characters.
+
+
+</td></tr>
+<tr><td>
+
+[readLinesFromIterableAsync(iterable, options)](./node-core-library.text.readlinesfromiterableasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Read lines from an iterable object that returns strings or buffers, and return a generator that produces the lines as strings. The lines will not include the newline characters.
+
+
+</td></tr>
+<tr><td>
+
+[replaceAll(input, searchValue, replaceValue)](./node-core-library.text.replaceall.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns the same thing as targetString.replace(searchValue, replaceValue), except that all matches are replaced, rather than just the first match.
+
+
+</td></tr>
+<tr><td>
+
+[reverse(s)](./node-core-library.text.reverse.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns a new string that is the input string with the order of characters reversed.
+
+
+</td></tr>
+<tr><td>
+
+[splitByNewLines(s)](./node-core-library.text.splitbynewlines.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Splits the provided string by newlines. Note that leading and trailing newlines will produce leading or trailing empty string array entries.
+
+
+</td></tr>
+<tr><td>
+
+[splitByNewLines(s)](./node-core-library.text.splitbynewlines_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[splitByNewLines(s)](./node-core-library.text.splitbynewlines_2.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[truncateWithEllipsis(s, maximumLength)](./node-core-library.text.truncatewithellipsis.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+If the string is longer than maximumLength characters, truncate it to that length using "..." to indicate the truncation.
+
+
+</td></tr>
+</tbody></table>
 

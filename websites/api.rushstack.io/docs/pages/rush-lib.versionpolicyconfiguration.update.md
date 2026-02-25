@@ -20,11 +20,71 @@ update(versionPolicyName: string, newVersion: string, shouldCommit?: boolean): v
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  versionPolicyName | string | version policy name |
-|  newVersion | string | new version |
-|  shouldCommit | boolean | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+versionPolicyName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+version policy name
+
+
+</td></tr>
+<tr><td>
+
+newVersion
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+new version
+
+
+</td></tr>
+<tr><td>
+
+shouldCommit
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

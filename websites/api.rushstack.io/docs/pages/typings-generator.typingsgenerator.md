@@ -15,30 +15,256 @@ This is a simple tool that generates .d.ts files for non-TS files.
 **Signature:**
 
 ```typescript
-export declare class TypingsGenerator 
+export declare class TypingsGenerator<TFileContents = string> 
 ```
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./typings-generator.typingsgenerator._constructor_.md) |  | Constructs a new instance of the <code>TypingsGenerator</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./typings-generator.typingsgenerator._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TypingsGenerator` class
+
+
+</td></tr>
+<tr><td>
+
+[(constructor)(options)](./typings-generator.typingsgenerator._constructor__1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TypingsGenerator` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_options](./typings-generator.typingsgenerator._options.md) | <code>protected</code> | [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md) |  |
-|  [ignoredFileGlobs](./typings-generator.typingsgenerator.ignoredfileglobs.md) | <code>readonly</code> | readonly string\[\] | The glob patterns that should be ignored when finding input files to process. |
-|  [inputFileGlob](./typings-generator.typingsgenerator.inputfileglob.md) | <code>readonly</code> | string | The glob pattern used to find input files to process. |
-|  [sourceFolderPath](./typings-generator.typingsgenerator.sourcefolderpath.md) | <code>readonly</code> | string | The folder path that contains all input source files. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_options](./typings-generator.typingsgenerator._options.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[ITypingsGeneratorOptionsWithCustomReadFile](./typings-generator.itypingsgeneratoroptionswithcustomreadfile.md)<></>&lt;string \| undefined, TFileContents&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ignoredFileGlobs](./typings-generator.typingsgenerator.ignoredfileglobs.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+readonly string\[\]
+
+
+</td><td>
+
+The glob patterns that should be ignored when finding input files to process.
+
+
+</td></tr>
+<tr><td>
+
+[inputFileGlob](./typings-generator.typingsgenerator.inputfileglob.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The glob pattern used to find input files to process.
+
+
+</td></tr>
+<tr><td>
+
+[sourceFolderPath](./typings-generator.typingsgenerator.sourcefolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder path that contains all input source files.
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./typings-generator.typingsgenerator.terminal.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [generateTypingsAsync(relativeFilePaths)](./typings-generator.typingsgenerator.generatetypingsasync.md) |  | Generate typings for the provided input files. |
-|  [getOutputFilePaths(relativePath)](./typings-generator.typingsgenerator.getoutputfilepaths.md) |  |  |
-|  [registerDependency(consumer, rawDependency)](./typings-generator.typingsgenerator.registerdependency.md) |  | Register file dependencies that may effect the typings of a consumer file. Note: This feature is only useful in watch mode. The registerDependency method must be called in the body of parseAndGenerateTypings every time because the registry for a file is cleared at the beginning of processing. |
-|  [runWatcherAsync()](./typings-generator.typingsgenerator.runwatcherasync.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[generateTypingsAsync(relativeFilePaths)](./typings-generator.typingsgenerator.generatetypingsasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generate typings for the provided input files.
+
+
+</td></tr>
+<tr><td>
+
+[getOutputFilePaths(relativePath)](./typings-generator.typingsgenerator.getoutputfilepaths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[registerDependency(consumer, rawDependency)](./typings-generator.typingsgenerator.registerdependency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register file dependencies that may effect the typings of a consumer file. Note: This feature is only useful in watch mode. The registerDependency method must be called in the body of parseAndGenerateTypings every time because the registry for a file is cleared at the beginning of processing.
+
+
+</td></tr>
+<tr><td>
+
+[runWatcherAsync()](./typings-generator.typingsgenerator.runwatcherasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,5 +15,5 @@ The type of bump for next bump.
 **Signature:**
 
 ```typescript
-readonly nextBump: BumpType | undefined;
+get nextBump(): BumpType | undefined;
 ```

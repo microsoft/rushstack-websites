@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStdioSummarizerOptions.trailingLines property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Specifies the maximum number of trailing lines to include in the summary.

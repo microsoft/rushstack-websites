@@ -21,13 +21,93 @@ export interface IHeftParameters extends IHeftDefaultParameters
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [getChoiceListParameter(parameterLongName)](./heft.iheftparameters.getchoicelistparameter.md) | Get a choice list parameter that has been defined in heft-plugin.json. |
-|  [getChoiceParameter(parameterLongName)](./heft.iheftparameters.getchoiceparameter.md) | Get a choice parameter that has been defined in heft-plugin.json. |
-|  [getFlagParameter(parameterLongName)](./heft.iheftparameters.getflagparameter.md) | Get a flag parameter that has been defined in heft-plugin.json. |
-|  [getIntegerListParameter(parameterLongName)](./heft.iheftparameters.getintegerlistparameter.md) | Get an integer list parameter that has been defined in heft-plugin.json. |
-|  [getIntegerParameter(parameterLongName)](./heft.iheftparameters.getintegerparameter.md) | Get an integer parameter that has been defined in heft-plugin.json. |
-|  [getStringListParameter(parameterLongName)](./heft.iheftparameters.getstringlistparameter.md) | Get a string list parameter that has been defined in heft-plugin.json. |
-|  [getStringParameter(parameterLongName)](./heft.iheftparameters.getstringparameter.md) | Get a string parameter that has been defined in heft-plugin.json. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getChoiceListParameter(parameterLongName)](./heft.iheftparameters.getchoicelistparameter.md)
+
+
+</td><td>
+
+Get a choice list parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getChoiceParameter(parameterLongName)](./heft.iheftparameters.getchoiceparameter.md)
+
+
+</td><td>
+
+Get a choice parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getFlagParameter(parameterLongName)](./heft.iheftparameters.getflagparameter.md)
+
+
+</td><td>
+
+Get a flag parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getIntegerListParameter(parameterLongName)](./heft.iheftparameters.getintegerlistparameter.md)
+
+
+</td><td>
+
+Get an integer list parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getIntegerParameter(parameterLongName)](./heft.iheftparameters.getintegerparameter.md)
+
+
+</td><td>
+
+Get an integer parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getStringListParameter(parameterLongName)](./heft.iheftparameters.getstringlistparameter.md)
+
+
+</td><td>
+
+Get a string list parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+<tr><td>
+
+[getStringParameter(parameterLongName)](./heft.iheftparameters.getstringparameter.md)
+
+
+</td><td>
+
+Get a string parameter that has been defined in heft-plugin.json.
+
+
+</td></tr>
+</tbody></table>
 

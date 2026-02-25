@@ -18,9 +18,37 @@ close(unknownState: TextRewriterState): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  unknownState | [TextRewriterState](./terminal.textrewriterstate.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+unknownState
+
+
+</td><td>
+
+[TextRewriterState](./terminal.textrewriterstate.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -25,14 +25,102 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kind](./ts-command-line.commandlinestringlistparameter.kind.md) | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [values](./ts-command-line.commandlinestringlistparameter.values.md) | <code>readonly</code> | ReadonlyArray&lt;string&gt; | Returns the string arguments for a string list parameter that was parsed from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kind](./ts-command-line.commandlinestringlistparameter.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineParameterKind.StringList](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Indicates the type of parameter.
+
+
+</td></tr>
+<tr><td>
+
+[values](./ts-command-line.commandlinestringlistparameter.values.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;string&gt;
+
+
+</td><td>
+
+Returns the string arguments for a string list parameter that was parsed from the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlinestringlistparameter.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlinestringlistparameter.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

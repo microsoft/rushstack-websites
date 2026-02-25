@@ -10,7 +10,7 @@ pagination_next: null
 
 ## FileSystemBuildCacheProvider.trySetCacheEntryBufferAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Writes the specified buffer to the corresponding file system path for the cache id.
@@ -23,11 +23,65 @@ trySetCacheEntryBufferAsync(terminal: ITerminal, cacheId: string, entryBuffer: B
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  terminal | [ITerminal](./node-core-library.iterminal.md) |  |
-|  cacheId | string |  |
-|  entryBuffer | Buffer |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+terminal
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+cacheId
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+entryBuffer
+
+
+</td><td>
+
+Buffer
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

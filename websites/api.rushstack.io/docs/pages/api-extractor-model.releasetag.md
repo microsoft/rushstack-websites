@@ -20,8 +20,38 @@ export declare namespace ReleaseTag
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [compare(a, b)](./api-extractor-model.releasetag.compare.md) | Compares two <code>ReleaseTag</code> values. Their values must not be <code>ReleaseTag.None</code>. |
-|  [getTagName(releaseTag)](./api-extractor-model.releasetag.gettagname.md) | Returns the TSDoc tag name for a <code>ReleaseTag</code> value. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[compare(a, b)](./api-extractor-model.releasetag.compare.md)
+
+
+</td><td>
+
+Compares two `ReleaseTag` values. Their values must not be `ReleaseTag.None`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getTagName(releaseTag)](./api-extractor-model.releasetag.gettagname.md)
+
+
+</td><td>
+
+Returns the TSDoc tag name for a `ReleaseTag` value.
+
+
+</td></tr>
+</tbody></table>
 

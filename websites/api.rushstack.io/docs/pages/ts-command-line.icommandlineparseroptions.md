@@ -20,10 +20,102 @@ export interface ICommandLineParserOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [enableTabCompletionAction?](./ts-command-line.icommandlineparseroptions.enabletabcompletionaction.md) |  | boolean | _(Optional)_ Set to true to auto-define a tab completion action. False by default. |
-|  [toolDescription](./ts-command-line.icommandlineparseroptions.tooldescription.md) |  | string | General documentation that is included in the "--help" main page |
-|  [toolEpilog?](./ts-command-line.icommandlineparseroptions.toolepilog.md) |  | string | _(Optional)_ An optional string to append at the end of the "--help" main page. If not provided, an epilog will be automatically generated based on the toolFilename. |
-|  [toolFilename](./ts-command-line.icommandlineparseroptions.toolfilename.md) |  | string | The name of your tool when invoked from the command line |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[enableTabCompletionAction?](./ts-command-line.icommandlineparseroptions.enabletabcompletionaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Set to true to auto-define a tab completion action. False by default.
+
+
+</td></tr>
+<tr><td>
+
+[toolDescription](./ts-command-line.icommandlineparseroptions.tooldescription.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+General documentation that is included in the "--help" main page
+
+
+</td></tr>
+<tr><td>
+
+[toolEpilog?](./ts-command-line.icommandlineparseroptions.toolepilog.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ An optional string to append at the end of the "--help" main page. If not provided, an epilog will be automatically generated based on the toolFilename.
+
+
+</td></tr>
+<tr><td>
+
+[toolFilename](./ts-command-line.icommandlineparseroptions.toolfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of your tool when invoked from the command line
+
+
+</td></tr>
+</tbody></table>
 

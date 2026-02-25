@@ -20,11 +20,140 @@ export interface ITypingsGeneratorOptions extends ITypingsGeneratorBaseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [exportAsDefault?](./localization-utilities.itypingsgeneratoroptions.exportasdefault.md) |  | boolean | _(Optional)_ |
-|  [ignoreMissingResxComments?](./localization-utilities.itypingsgeneratoroptions.ignoremissingresxcomments.md) |  | boolean \| undefined | _(Optional)_ |
-|  [ignoreString?](./localization-utilities.itypingsgeneratoroptions.ignorestring.md) |  | [IgnoreStringFunction](./localization-utilities.ignorestringfunction.md) | _(Optional)_ |
-|  [processComment?](./localization-utilities.itypingsgeneratoroptions.processcomment.md) |  | (comment: string \| undefined, resxFilePath: string, stringName: string) =&gt; string \| undefined | _(Optional)_ |
-|  [resxNewlineNormalization?](./localization-utilities.itypingsgeneratoroptions.resxnewlinenormalization.md) |  | [NewlineKind](./node-core-library.newlinekind.md) \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[exportAsDefault?](./localization-utilities.itypingsgeneratoroptions.exportasdefault.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| [IExportAsDefaultOptions](./typings-generator.iexportasdefaultoptions.md) \| [IInferInterfaceNameExportAsDefaultOptions](./localization-utilities.iinferinterfacenameexportasdefaultoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for configuring the default export.
+
+
+</td></tr>
+<tr><td>
+
+[ignoreMissingResxComments?](./localization-utilities.itypingsgeneratoroptions.ignoremissingresxcomments.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+_(Optional)_ If true, .resx files will not throw errors if comments are missing.
+
+
+</td></tr>
+<tr><td>
+
+[ignoreString?](./localization-utilities.itypingsgeneratoroptions.ignorestring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IgnoreStringFunction](./localization-utilities.ignorestringfunction.md)
+
+
+</td><td>
+
+_(Optional)_ Optionally, provide a function that will be called for each string. If the function returns `true` the string will not be included.
+
+
+</td></tr>
+<tr><td>
+
+[processComment?](./localization-utilities.itypingsgeneratoroptions.processcomment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(comment: string \| undefined, relativeFilePath: string, stringName: string) =&gt; string \| undefined
+
+
+</td><td>
+
+_(Optional)_ Processes the raw text of a comment.
+
+
+</td></tr>
+<tr><td>
+
+[resxNewlineNormalization?](./localization-utilities.itypingsgeneratoroptions.resxnewlinenormalization.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_ Normalizes the line endings in .resx files to the specified kind.
+
+
+</td></tr>
+<tr><td>
+
+[trimmedJsonOutputFolders?](./localization-utilities.itypingsgeneratoroptions.trimmedjsonoutputfolders.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\] \| undefined
+
+
+</td><td>
+
+_(Optional)_ If specified, the generator will write trimmed .json files to the specified folders. The .json files will be written to the same relative path as the source file. For example, if the source file is "&amp;lt;root&amp;gt;/foo/bar.resx", and the output folder is "dist", the trimmed .json file will be written to "dist/foo/bar.resx.json".
+
+
+</td></tr>
+</tbody></table>
 

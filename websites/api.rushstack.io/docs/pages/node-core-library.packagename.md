@@ -24,13 +24,133 @@ This is the default implementation of [PackageNameParser](./node-core-library.pa
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [combineParts(scope, unscopedName)](./node-core-library.packagename.combineparts.md) | <code>static</code> | Combines an optional package scope with an unscoped root name. |
-|  [getScope(packageName)](./node-core-library.packagename.getscope.md) | <code>static</code> | The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign. |
-|  [getUnscopedName(packageName)](./node-core-library.packagename.getunscopedname.md) | <code>static</code> | The parsed NPM package name without the scope. |
-|  [isValidName(packageName)](./node-core-library.packagename.isvalidname.md) | <code>static</code> | Returns true if the specified package name is valid, or false otherwise. |
-|  [parse(packageName)](./node-core-library.packagename.parse.md) | <code>static</code> | Same as [PackageName.tryParse()](./node-core-library.packagename.tryparse.md)<></>, except this throws an exception if the input cannot be parsed. |
-|  [tryParse(packageName)](./node-core-library.packagename.tryparse.md) | <code>static</code> | This attempts to parse a package name that may include a scope component. The packageName must not be an empty string. |
-|  [validate(packageName)](./node-core-library.packagename.validate.md) | <code>static</code> | Throws an exception if the specified name is not a valid package name. The packageName must not be an empty string. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[combineParts(scope, unscopedName)](./node-core-library.packagename.combineparts.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Combines an optional package scope with an unscoped root name.
+
+
+</td></tr>
+<tr><td>
+
+[getScope(packageName)](./node-core-library.packagename.getscope.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+The parsed NPM scope, or an empty string if there was no scope. The scope value will always include the at-sign.
+
+
+</td></tr>
+<tr><td>
+
+[getUnscopedName(packageName)](./node-core-library.packagename.getunscopedname.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+The parsed NPM package name without the scope.
+
+
+</td></tr>
+<tr><td>
+
+[isValidName(packageName)](./node-core-library.packagename.isvalidname.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the specified package name is valid, or false otherwise.
+
+
+</td></tr>
+<tr><td>
+
+[parse(packageName)](./node-core-library.packagename.parse.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Same as [PackageName.tryParse()](./node-core-library.packagename.tryparse.md)<></>, except this throws an exception if the input cannot be parsed.
+
+
+</td></tr>
+<tr><td>
+
+[tryParse(packageName)](./node-core-library.packagename.tryparse.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This attempts to parse a package name that may include a scope component. The packageName must not be an empty string.
+
+
+</td></tr>
+<tr><td>
+
+[validate(packageName)](./node-core-library.packagename.validate.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Throws an exception if the specified name is not a valid package name. The packageName must not be an empty string.
+
+
+</td></tr>
+</tbody></table>
 

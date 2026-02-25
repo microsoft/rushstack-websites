@@ -10,7 +10,7 @@ pagination_next: null
 
 ## OperationStatus enum
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Enumeration defining potential states of an operation
@@ -23,15 +23,213 @@ export declare enum OperationStatus
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Blocked | <code>&quot;BLOCKED&quot;</code> | **_(BETA)_** The Operation could not be executed because one or more of its dependencies failed |
-|  Executing | <code>&quot;EXECUTING&quot;</code> | **_(BETA)_** The Operation is currently executing |
-|  Failure | <code>&quot;FAILURE&quot;</code> | **_(BETA)_** The Operation failed |
-|  FromCache | <code>&quot;FROM CACHE&quot;</code> | **_(BETA)_** The Operation had its outputs restored from the build cache |
-|  NoOp | <code>&quot;NO OP&quot;</code> | **_(BETA)_** The Operation was a no-op (for example, it had an empty script) |
-|  Ready | <code>&quot;READY&quot;</code> | **_(BETA)_** The Operation is on the queue, ready to execute (but may be waiting for dependencies) |
-|  Skipped | <code>&quot;SKIPPED&quot;</code> | **_(BETA)_** The Operation was skipped via the legacy incremental build logic |
-|  Success | <code>&quot;SUCCESS&quot;</code> | **_(BETA)_** The Operation completed successfully and did not write to standard output |
-|  SuccessWithWarning | <code>&quot;SUCCESS WITH WARNINGS&quot;</code> | **_(BETA)_** The Operation completed successfully, but wrote to standard output |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Aborted
+
+
+</td><td>
+
+`"ABORTED"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation was aborted before it could execute.
+
+
+</td></tr>
+<tr><td>
+
+Blocked
+
+
+</td><td>
+
+`"BLOCKED"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation could not be executed because one or more of its dependencies failed
+
+
+</td></tr>
+<tr><td>
+
+Executing
+
+
+</td><td>
+
+`"EXECUTING"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation is currently executing
+
+
+</td></tr>
+<tr><td>
+
+Failure
+
+
+</td><td>
+
+`"FAILURE"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation failed
+
+
+</td></tr>
+<tr><td>
+
+FromCache
+
+
+</td><td>
+
+`"FROM CACHE"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation had its outputs restored from the build cache
+
+
+</td></tr>
+<tr><td>
+
+NoOp
+
+
+</td><td>
+
+`"NO OP"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation was a no-op (for example, it had an empty script)
+
+
+</td></tr>
+<tr><td>
+
+Queued
+
+
+</td><td>
+
+`"QUEUED"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation is Queued
+
+
+</td></tr>
+<tr><td>
+
+Ready
+
+
+</td><td>
+
+`"READY"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation is ready to execute. All its dependencies have succeeded.
+
+
+</td></tr>
+<tr><td>
+
+Skipped
+
+
+</td><td>
+
+`"SKIPPED"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation was skipped via the legacy incremental build logic
+
+
+</td></tr>
+<tr><td>
+
+Success
+
+
+</td><td>
+
+`"SUCCESS"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation completed successfully and did not write to standard output
+
+
+</td></tr>
+<tr><td>
+
+SuccessWithWarning
+
+
+</td><td>
+
+`"SUCCESS WITH WARNINGS"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation completed successfully, but wrote to standard output
+
+
+</td></tr>
+<tr><td>
+
+Waiting
+
+
+</td><td>
+
+`"WAITING"`
+
+
+</td><td>
+
+**_(BETA)_** The Operation is waiting for one or more dependencies to complete.
+
+
+</td></tr>
+</tbody></table>
 

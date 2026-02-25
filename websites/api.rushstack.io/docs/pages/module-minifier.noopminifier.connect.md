@@ -10,6 +10,11 @@ pagination_next: null
 
 ## NoopMinifier.connect() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [NoopMinifier.connectAsync()](./module-minifier.noopminifier.connectasync.md) instead
+> 
+
 **Signature:**
 
 ```typescript

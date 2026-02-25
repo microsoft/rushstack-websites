@@ -25,9 +25,57 @@ The implementation also removes other ANSI escape codes such as cursor positioni
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close(unknownState)](./terminal.removecolorstextrewriter.close.md) |  |  |
-|  [initialize()](./terminal.removecolorstextrewriter.initialize.md) |  |  |
-|  [process(unknownState, text)](./terminal.removecolorstextrewriter.process.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close(unknownState)](./terminal.removecolorstextrewriter.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[initialize()](./terminal.removecolorstextrewriter.initialize.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[process(unknownState, text)](./terminal.removecolorstextrewriter.process.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

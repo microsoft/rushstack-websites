@@ -19,8 +19,62 @@ export interface IStringValueTyping
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [comment?](./typings-generator.istringvaluetyping.comment.md) |  | string | _(Optional)_ |
-|  [exportName](./typings-generator.istringvaluetyping.exportname.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[comment?](./typings-generator.istringvaluetyping.comment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[exportName](./typings-generator.istringvaluetyping.exportname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

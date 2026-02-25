@@ -20,11 +20,71 @@ export declare function getPackageDeps(packagePath?: string, excludedPaths?: str
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packagePath | string | _(Optional)_ The folder path to derive the package dependencies from. This is typically the folder containing package.json. If omitted, the default value is the current working directory. |
-|  excludedPaths | string\[\] | _(Optional)_ An optional array of file path exclusions. If a file should be omitted from the list of dependencies, use this to exclude it. |
-|  gitPath | string | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+packagePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The folder path to derive the package dependencies from. This is typically the folder containing package.json. If omitted, the default value is the current working directory.
+
+
+</td></tr>
+<tr><td>
+
+excludedPaths
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ An optional array of file path exclusions. If a file should be omitted from the list of dependencies, use this to exclude it.
+
+
+</td></tr>
+<tr><td>
+
+gitPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

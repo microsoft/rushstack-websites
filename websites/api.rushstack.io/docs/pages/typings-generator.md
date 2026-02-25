@@ -14,18 +14,179 @@ An engine for generating TypeScript .d.ts files that provide type signatures for
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [StringValuesTypingsGenerator](./typings-generator.stringvaluestypingsgenerator.md) | This is a simple tool that generates .d.ts files for non-TS files that can be represented as a simple set of named string exports. |
-|  [TypingsGenerator](./typings-generator.typingsgenerator.md) | This is a simple tool that generates .d.ts files for non-TS files. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[StringValuesTypingsGenerator](./typings-generator.stringvaluestypingsgenerator.md)
+
+
+</td><td>
+
+This is a simple tool that generates .d.ts files for non-TS files that can be represented as a simple set of named string exports.
+
+
+</td></tr>
+<tr><td>
+
+[TypingsGenerator](./typings-generator.typingsgenerator.md)
+
+
+</td><td>
+
+This is a simple tool that generates .d.ts files for non-TS files.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IStringValuesTypingsGeneratorOptions](./typings-generator.istringvaluestypingsgeneratoroptions.md) |  |
-|  [IStringValueTyping](./typings-generator.istringvaluetyping.md) |  |
-|  [IStringValueTypings](./typings-generator.istringvaluetypings.md) |  |
-|  [ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md) |  |
-|  [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IExportAsDefaultOptions](./typings-generator.iexportasdefaultoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IStringValuesTypingsGeneratorBaseOptions](./typings-generator.istringvaluestypingsgeneratorbaseoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IStringValuesTypingsGeneratorOptions](./typings-generator.istringvaluestypingsgeneratoroptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IStringValuesTypingsGeneratorOptionsWithCustomReadFile](./typings-generator.istringvaluestypingsgeneratoroptionswithcustomreadfile.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IStringValueTyping](./typings-generator.istringvaluetyping.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IStringValueTypings](./typings-generator.istringvaluetypings.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ITypingsGeneratorOptionsWithCustomReadFile](./typings-generator.itypingsgeneratoroptionswithcustomreadfile.md)
+
+
+</td><td>
+
+Options for a TypingsGenerator that needs to customize how files are read.
+
+
+</td></tr>
+<tr><td>
+
+[ITypingsGeneratorOptionsWithoutReadFile](./typings-generator.itypingsgeneratoroptionswithoutreadfile.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ReadFile](./typings-generator.readfile.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,7 @@ environmentVariable?: string;
 
 ## Remarks
 
-The environment variable name must consist only of upper-case letters, numbers, and underscores. It may not start with a number.
-
-This feature cannot be used when [IBaseCommandLineDefinition.required](./ts-command-line.ibasecommandlinedefinition.required.md) is true, because in that case the environmentVariable would never be used.
+The environment variable name must consist only of upper-case letters, numbers, and underscores. It may not start with a number. To disable this validation, set `{@link IBaseCommandLineDefinition.allowNonStandardEnvironmentVariableNames}` to `true`<></>.
 
 Syntax notes for environment variable values:
 

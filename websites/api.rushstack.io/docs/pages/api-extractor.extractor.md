@@ -20,15 +20,124 @@ export declare class Extractor
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [packageName](./api-extractor.extractor.packagename.md) | <p><code>static</code></p><p><code>readonly</code></p> | string | Returns the package name of the API Extractor NPM package. |
-|  [version](./api-extractor.extractor.version.md) | <p><code>static</code></p><p><code>readonly</code></p> | string | Returns the version number of the API Extractor NPM package. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packageName](./api-extractor.extractor.packagename.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns the package name of the API Extractor NPM package.
+
+
+</td></tr>
+<tr><td>
+
+[version](./api-extractor.extractor.version.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns the version number of the API Extractor NPM package.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [invoke(extractorConfig, options)](./api-extractor.extractor.invoke.md) | <code>static</code> | Invoke API Extractor using an already prepared <code>ExtractorConfig</code> object. |
-|  [loadConfigAndInvoke(configFilePath, options)](./api-extractor.extractor.loadconfigandinvoke.md) | <code>static</code> | Load the api-extractor.json config file from the specified path, and then invoke API Extractor. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[invoke(extractorConfig, options)](./api-extractor.extractor.invoke.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Invoke API Extractor using an already prepared `ExtractorConfig` object.
+
+
+</td></tr>
+<tr><td>
+
+[loadConfigAndInvoke(configFilePath, options)](./api-extractor.extractor.loadconfigandinvoke.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Load the api-extractor.json config file from the specified path, and then invoke API Extractor.
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks.runAnyPhasedCommand property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The hook to run before executing any phased Rush CLI Command (defined in command-line.json, or the default "build" or "rebuild").
@@ -18,5 +18,5 @@ The hook to run before executing any phased Rush CLI Command (defined in command
 **Signature:**
 
 ```typescript
-runAnyPhasedCommand: AsyncSeriesHook<IPhasedCommand>;
+readonly runAnyPhasedCommand: AsyncSeriesHook<IPhasedCommand>;
 ```

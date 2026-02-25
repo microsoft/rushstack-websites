@@ -20,13 +20,80 @@ export interface IMinifierConnection
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [configHash](./module-minifier.iminifierconnection.confighash.md) |  | string | Hash of the configuration of this minifier, for cache busting. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[configHash](./module-minifier.iminifierconnection.confighash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Hash of the configuration of this minifier, for cache busting.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [disconnect()](./module-minifier.iminifierconnection.disconnect.md) | Callback to be invoked when done with the minifier |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[disconnect()](./module-minifier.iminifierconnection.disconnect.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[disconnectAsync()](./module-minifier.iminifierconnection.disconnectasync.md)
+
+
+</td><td>
+
+Callback to be invoked when done with the minifier
+
+
+</td></tr>
+</tbody></table>
 

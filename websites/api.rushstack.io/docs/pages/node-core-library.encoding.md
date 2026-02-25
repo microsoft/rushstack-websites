@@ -20,7 +20,35 @@ export declare enum Encoding
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Utf8 | <code>&quot;utf8&quot;</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Utf8
+
+
+</td><td>
+
+`"utf8"`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

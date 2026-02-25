@@ -24,7 +24,25 @@ For more information on rig resolution, see https://rushstack.io/pages/heft/rig\
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [resolvePackageAsync(packageName, terminal)](./heft.irigpackageresolver.resolvepackageasync.md) |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[resolvePackageAsync(packageName, terminal)](./heft.irigpackageresolver.resolvepackageasync.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

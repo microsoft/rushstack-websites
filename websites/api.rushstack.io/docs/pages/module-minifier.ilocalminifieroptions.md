@@ -20,7 +20,45 @@ export interface ILocalMinifierOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [terserOptions?](./module-minifier.ilocalminifieroptions.terseroptions.md) |  | MinifyOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[terserOptions?](./module-minifier.ilocalminifieroptions.terseroptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+MinifyOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

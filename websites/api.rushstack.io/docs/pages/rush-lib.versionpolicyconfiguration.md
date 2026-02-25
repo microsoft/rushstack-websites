@@ -24,16 +24,123 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [versionPolicies](./rush-lib.versionpolicyconfiguration.versionpolicies.md) | <code>readonly</code> | Map&lt;string, [VersionPolicy](./rush-lib.versionpolicy.md)<></>&gt; | Gets all the version policies |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[versionPolicies](./rush-lib.versionpolicyconfiguration.versionpolicies.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;string, [VersionPolicy](./rush-lib.versionpolicy.md)<></>&gt;
+
+
+</td><td>
+
+Gets all the version policies
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [bump(versionPolicyName, bumpType, identifier, shouldCommit)](./rush-lib.versionpolicyconfiguration.bump.md) |  | Bumps up versions for the specified version policy or all version policies |
-|  [getVersionPolicy(policyName)](./rush-lib.versionpolicyconfiguration.getversionpolicy.md) |  | Gets the version policy by its name. Throws error if the version policy is not found. |
-|  [update(versionPolicyName, newVersion, shouldCommit)](./rush-lib.versionpolicyconfiguration.update.md) |  | Updates the version directly for the specified version policy |
-|  [validate(projectsByName)](./rush-lib.versionpolicyconfiguration.validate.md) |  | Validate the version policy configuration against the rush config |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bump(versionPolicyName, bumpType, identifier, shouldCommit)](./rush-lib.versionpolicyconfiguration.bump.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bumps up versions for the specified version policy or all version policies
+
+
+</td></tr>
+<tr><td>
+
+[getVersionPolicy(policyName)](./rush-lib.versionpolicyconfiguration.getversionpolicy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Gets the version policy by its name. Throws error if the version policy is not found.
+
+
+</td></tr>
+<tr><td>
+
+[update(versionPolicyName, newVersion, shouldCommit)](./rush-lib.versionpolicyconfiguration.update.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Updates the version directly for the specified version policy
+
+
+</td></tr>
+<tr><td>
+
+[validate(projectsByName)](./rush-lib.versionpolicyconfiguration.validate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Validate the version policy configuration against the rush config
+
+
+</td></tr>
+</tbody></table>
 

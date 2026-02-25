@@ -15,18 +15,49 @@ Defines a command-line parameter whose value must be a string from a fixed set o
 **Signature:**
 
 ```typescript
-defineChoiceParameter(definition: ICommandLineChoiceDefinition): CommandLineChoiceParameter;
+defineChoiceParameter<TChoice extends string = string>(definition: ICommandLineChoiceDefinition<TChoice> & {
+        required: false | undefined;
+        defaultValue: undefined;
+    }): CommandLineChoiceParameter<TChoice>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineChoiceDefinition](./ts-command-line.icommandlinechoicedefinition.md)<></>&lt;TChoice&gt; &amp; { required: false \| undefined; defaultValue: undefined; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
-[CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md)
+[CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md)<></>&lt;TChoice&gt;
 
 ## Remarks
 

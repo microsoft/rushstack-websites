@@ -10,8 +10,10 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.exportAsDefault property
 
+Options for configuring the default export.
+
 **Signature:**
 
 ```typescript
-exportAsDefault?: boolean;
+exportAsDefault?: boolean | IExportAsDefaultOptions | IInferInterfaceNameExportAsDefaultOptions;
 ```

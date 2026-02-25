@@ -10,8 +10,10 @@ pagination_next: null
 
 ## ITypingsGeneratorOptions.processComment property
 
+Processes the raw text of a comment.
+
 **Signature:**
 
 ```typescript
-processComment?: (comment: string | undefined, resxFilePath: string, stringName: string) => string | undefined;
+processComment?: (comment: string | undefined, relativeFilePath: string, stringName: string) => string | undefined;
 ```

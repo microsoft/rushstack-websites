@@ -20,8 +20,53 @@ constructor(message: string, options: IFileErrorOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  message | string | A message describing the error. |
-|  options | [IFileErrorOptions](./node-core-library.ifileerroroptions.md) | Options for the error. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+message
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A message describing the error.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IFileErrorOptions](./node-core-library.ifileerroroptions.md)
+
+
+</td><td>
+
+Options for the error.
+
+
+</td></tr>
+</tbody></table>
 

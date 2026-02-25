@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRushPlugin.apply() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 **Signature:**
@@ -21,10 +21,51 @@ apply(rushSession: RushSession, rushConfiguration: RushConfiguration): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rushSession | [RushSession](./rush-lib.rushsession.md) |  |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rushSession
+
+
+</td><td>
+
+[RushSession](./rush-lib.rushsession.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

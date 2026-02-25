@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IPropertyInheritanceDefaults interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,8 +22,64 @@ export interface IPropertyInheritanceDefaults
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [array?](./heft-config-file.ipropertyinheritancedefaults.array.md) |  | [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.append](./heft-config-file.inheritancetype.md) \| [InheritanceType.replace](./heft-config-file.inheritancetype.md)<></>&gt; | **_(BETA)_** _(Optional)_ |
-|  [object?](./heft-config-file.ipropertyinheritancedefaults.object.md) |  | [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.merge](./heft-config-file.inheritancetype.md) \| [InheritanceType.replace](./heft-config-file.inheritancetype.md)<></>&gt; | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[array?](./heft-config-file.ipropertyinheritancedefaults.array.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.append](./heft-config-file.inheritancetype.append.md) \| [InheritanceType.replace](./heft-config-file.inheritancetype.replace.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[object?](./heft-config-file.ipropertyinheritancedefaults.object.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>&lt;[InheritanceType.merge](./heft-config-file.inheritancetype.merge.md) \| [InheritanceType.replace](./heft-config-file.inheritancetype.replace.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

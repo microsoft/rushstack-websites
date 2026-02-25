@@ -21,8 +21,91 @@ export interface IHeftTaskRunIncrementalHookOptions extends IHeftTaskRunHookOpti
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [requestRun](./heft.ihefttaskrunincrementalhookoptions.requestrun.md) | <code>readonly</code> | () =&gt; void | A callback that can be invoked to tell the Heft runtime to schedule an incremental run of this task. If a run is already pending, does nothing. |
-|  [watchGlobAsync](./heft.ihefttaskrunincrementalhookoptions.watchglobasync.md) | <code>readonly</code> | [WatchGlobFn](./heft.watchglobfn.md) | <p>Reads the specified globs and returns the result, filtering out files that have not changed since the last execution. All file system calls while reading the glob are tracked and will be watched for changes.</p><p>If a change to the monitored files is detected, the task will be scheduled for re-execution.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[requestRun](./heft.ihefttaskrunincrementalhookoptions.requestrun.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+A callback that can be invoked to tell the Heft runtime to schedule an incremental run of this task. If a run is already pending, does nothing.
+
+
+</td></tr>
+<tr><td>
+
+[watchFs](./heft.ihefttaskrunincrementalhookoptions.watchfs.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IWatchFileSystem](./heft.iwatchfilesystem.md)
+
+
+</td><td>
+
+Access to the file system view that powers `watchGlobAsync`<></>. This is useful for plugins that do their own file system operations but still want to leverage Heft for watching.
+
+
+</td></tr>
+<tr><td>
+
+[watchGlobAsync](./heft.ihefttaskrunincrementalhookoptions.watchglobasync.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[WatchGlobFn](./heft.watchglobfn.md)
+
+
+</td><td>
+
+Reads the specified globs and returns the result, filtering out files that have not changed since the last execution. All file system calls while reading the glob are tracked and will be watched for changes.
+
+If a change to the monitored files is detected, the task will be scheduled for re-execution.
+
+
+</td></tr>
+</tbody></table>
 

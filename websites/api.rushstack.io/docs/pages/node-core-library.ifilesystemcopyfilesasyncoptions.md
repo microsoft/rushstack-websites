@@ -20,12 +20,140 @@ export interface IFileSystemCopyFilesAsyncOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilesasyncoptions.alreadyexistsbehavior.md) |  | [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | _(Optional)_ Specifies what to do if a destination path already exists. |
-|  [dereferenceSymlinks?](./node-core-library.ifilesystemcopyfilesasyncoptions.dereferencesymlinks.md) |  | boolean | _(Optional)_ If true, then when copying symlinks, copy the target object instead of copying the link. |
-|  [destinationPath](./node-core-library.ifilesystemcopyfilesasyncoptions.destinationpath.md) |  | string | The path that the files will be copied to. The path may be absolute or relative. |
-|  [filter?](./node-core-library.ifilesystemcopyfilesasyncoptions.filter.md) |  | [FileSystemCopyFilesAsyncFilter](./node-core-library.filesystemcopyfilesasyncfilter.md) \| [FileSystemCopyFilesFilter](./node-core-library.filesystemcopyfilesfilter.md) | _(Optional)_ A callback that will be invoked for each path that is copied. The callback can return <code>false</code> to cause the object to be excluded from the operation. |
-|  [preserveTimestamps?](./node-core-library.ifilesystemcopyfilesasyncoptions.preservetimestamps.md) |  | boolean | _(Optional)_ If true, then the target object will be assigned "last modification" and "last access" timestamps that are the same as the source. Otherwise, the OS default timestamps are assigned. |
-|  [sourcePath](./node-core-library.ifilesystemcopyfilesasyncoptions.sourcepath.md) |  | string | The starting path of the file or folder to be copied. The path may be absolute or relative. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilesasyncoptions.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+_(Optional)_ Specifies what to do if a destination path already exists.
+
+
+</td></tr>
+<tr><td>
+
+[dereferenceSymlinks?](./node-core-library.ifilesystemcopyfilesasyncoptions.dereferencesymlinks.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then when copying symlinks, copy the target object instead of copying the link.
+
+
+</td></tr>
+<tr><td>
+
+[destinationPath](./node-core-library.ifilesystemcopyfilesasyncoptions.destinationpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path that the files will be copied to. The path may be absolute or relative.
+
+
+</td></tr>
+<tr><td>
+
+[filter?](./node-core-library.ifilesystemcopyfilesasyncoptions.filter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[FileSystemCopyFilesAsyncFilter](./node-core-library.filesystemcopyfilesasyncfilter.md) \| [FileSystemCopyFilesFilter](./node-core-library.filesystemcopyfilesfilter.md)
+
+
+</td><td>
+
+_(Optional)_ A callback that will be invoked for each path that is copied. The callback can return `false` to cause the object to be excluded from the operation.
+
+
+</td></tr>
+<tr><td>
+
+[preserveTimestamps?](./node-core-library.ifilesystemcopyfilesasyncoptions.preservetimestamps.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then the target object will be assigned "last modification" and "last access" timestamps that are the same as the source. Otherwise, the OS default timestamps are assigned.
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath](./node-core-library.ifilesystemcopyfilesasyncoptions.sourcepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The starting path of the file or folder to be copied. The path may be absolute or relative.
+
+
+</td></tr>
+</tbody></table>
 

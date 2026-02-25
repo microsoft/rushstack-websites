@@ -20,10 +20,102 @@ export interface IFileSelectionSpecifier
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [excludeGlobs?](./heft.ifileselectionspecifier.excludeglobs.md) |  | string\[\] | _(Optional)_ Globs that should be explicitly excluded. This takes precedence over globs listed in "includeGlobs" and files that match the file extensions provided in "fileExtensions". Only supported when the sourcePath is a folder. |
-|  [fileExtensions?](./heft.ifileselectionspecifier.fileextensions.md) |  | string\[\] | _(Optional)_ File extensions that should be included from the source folder. Only supported when the sourcePath is a folder. |
-|  [includeGlobs?](./heft.ifileselectionspecifier.includeglobs.md) |  | string\[\] | _(Optional)_ Globs that should be explicitly included. Only supported when the sourcePath is a folder. |
-|  [sourcePath](./heft.ifileselectionspecifier.sourcepath.md) |  | string | Absolute path to the target. The provided sourcePath can be to a file or a folder. If fileExtensions, excludeGlobs, or includeGlobs are specified, the sourcePath is assumed to be a folder. If it is not a folder, an error will be thrown. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[excludeGlobs?](./heft.ifileselectionspecifier.excludeglobs.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Globs that should be explicitly excluded. This takes precedence over globs listed in "includeGlobs" and files that match the file extensions provided in "fileExtensions". Only supported when the sourcePath is a folder.
+
+
+</td></tr>
+<tr><td>
+
+[fileExtensions?](./heft.ifileselectionspecifier.fileextensions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ File extensions that should be included from the source folder. Only supported when the sourcePath is a folder.
+
+
+</td></tr>
+<tr><td>
+
+[includeGlobs?](./heft.ifileselectionspecifier.includeglobs.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Globs that should be explicitly included. Only supported when the sourcePath is a folder.
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath?](./heft.ifileselectionspecifier.sourcepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Absolute path to the target. The provided sourcePath can be to a file or a folder. If fileExtensions, excludeGlobs, or includeGlobs are specified, the sourcePath is assumed to be a folder. If it is not a folder, an error will be thrown.
+
+
+</td></tr>
+</tbody></table>
 

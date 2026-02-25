@@ -20,9 +20,39 @@ static getRealPath(linkPath: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  linkPath | string | The path to the link. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+linkPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to the link.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

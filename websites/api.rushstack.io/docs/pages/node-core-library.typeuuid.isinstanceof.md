@@ -20,10 +20,51 @@ static isInstanceOf(targetObject: unknown, typeUuid: string): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  targetObject | unknown |  |
-|  typeUuid | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+targetObject
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+typeUuid
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

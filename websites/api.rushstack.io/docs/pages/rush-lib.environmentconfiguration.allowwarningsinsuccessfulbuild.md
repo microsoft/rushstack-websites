@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentConfiguration.allowWarningsInSuccessfulBuild property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Setting this environment variable overrides the value of `allowWarningsInSuccessfulBuild` in the `command-line.json` configuration file. Specify `1` to allow warnings in a successful build, or `0` to disallow them. (See the comments in the command-line.json file for more information).

@@ -27,7 +27,49 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ignoreEngines](./rush-lib.yarnoptionsconfiguration.ignoreengines.md) | <code>readonly</code> | boolean | <p>If true, then Rush will add the "--ignore-engines" option when invoking Yarn. This allows "rush install" to succeed if there are dependencies with engines defined in package.json which do not match the current environment.</p><p>The default value is false.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ignoreEngines](./rush-lib.yarnoptionsconfiguration.ignoreengines.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, then Rush will add the "--ignore-engines" option when invoking Yarn. This allows "rush install" to succeed if there are dependencies with engines defined in package.json which do not match the current environment.
+
+The default value is false.
+
+
+</td></tr>
+</tbody></table>
 

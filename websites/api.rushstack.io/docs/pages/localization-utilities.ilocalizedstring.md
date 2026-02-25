@@ -19,8 +19,62 @@ export interface ILocalizedString
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [comment?](./localization-utilities.ilocalizedstring.comment.md) |  | string | _(Optional)_ |
-|  [value](./localization-utilities.ilocalizedstring.value.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[comment?](./localization-utilities.ilocalizedstring.comment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[value](./localization-utilities.ilocalizedstring.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

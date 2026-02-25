@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IHeftLifecycleHooks.toolFinish property
 
-The `toolFinish` hook is called at the end of Heft execution. It is called after all phases have completed execution. To use it, call `toolFinish.tapPromise(<pluginName>, <callback>)`<></>.
+The `toolFinish` hook is called at the end of Heft execution. It is called after all phases have completed execution. Plugins that tap this hook are resposible for handling the scenario in which `toolStart` threw an error, since this hook is used to clean up any resources allocated earlier in the lifecycle and therefore runs even in error conditions. To use it, call `toolFinish.tapPromise(<pluginName>, <callback>)`<></>.
 
 **Signature:**
 

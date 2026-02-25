@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedTerminal class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 > Warning: This API is now obsolete.
@@ -28,15 +28,97 @@ export declare class CollatedTerminal
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(destination)](./stream-collator.collatedterminal._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>CollatedTerminal</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(destination)](./stream-collator.collatedterminal._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `CollatedTerminal` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [writeChunk(chunk)](./stream-collator.collatedterminal.writechunk.md) |  | **_(BETA)_** |
-|  [writeStderrLine(message)](./stream-collator.collatedterminal.writestderrline.md) |  | **_(BETA)_** |
-|  [writeStdoutLine(message)](./stream-collator.collatedterminal.writestdoutline.md) |  | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[writeChunk(chunk)](./stream-collator.collatedterminal.writechunk.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[writeStderrLine(message)](./stream-collator.collatedterminal.writestderrline.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[writeStdoutLine(message)](./stream-collator.collatedterminal.writestdoutline.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

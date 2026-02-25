@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IJsonPathMetadataResolverOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Options provided to the custom resolver specified in [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)<></>.
@@ -23,10 +23,121 @@ export interface IJsonPathMetadataResolverOptions<TConfigurationFile>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [configurationFile](./heft-config-file.ijsonpathmetadataresolveroptions.configurationfile.md) |  | Partial&lt;TConfigurationFile&gt; | **_(BETA)_** The configuration file the property was obtained from. |
-|  [configurationFilePath](./heft-config-file.ijsonpathmetadataresolveroptions.configurationfilepath.md) |  | string | **_(BETA)_** The path to the configuration file the property was obtained from. |
-|  [propertyName](./heft-config-file.ijsonpathmetadataresolveroptions.propertyname.md) |  | string | **_(BETA)_** The name of the property being resolved. |
-|  [propertyValue](./heft-config-file.ijsonpathmetadataresolveroptions.propertyvalue.md) |  | string | **_(BETA)_** The value of the path property being resolved. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[configurationFile](./heft-config-file.ijsonpathmetadataresolveroptions.configurationfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Partial&lt;TConfigurationFile&gt;
+
+
+</td><td>
+
+**_(BETA)_** The configuration file the property was obtained from.
+
+
+</td></tr>
+<tr><td>
+
+[configurationFilePath](./heft-config-file.ijsonpathmetadataresolveroptions.configurationfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The path to the configuration file the property was obtained from.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderPath?](./heft-config-file.ijsonpathmetadataresolveroptions.projectfolderpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If this is a project configuration file, the root folder of the project.
+
+
+</td></tr>
+<tr><td>
+
+[propertyName](./heft-config-file.ijsonpathmetadataresolveroptions.propertyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The name of the property being resolved.
+
+
+</td></tr>
+<tr><td>
+
+[propertyValue](./heft-config-file.ijsonpathmetadataresolveroptions.propertyvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The value of the path property being resolved.
+
+
+</td></tr>
+</tbody></table>
 

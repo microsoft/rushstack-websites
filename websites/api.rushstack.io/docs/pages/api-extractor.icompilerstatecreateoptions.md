@@ -20,8 +20,64 @@ export interface ICompilerStateCreateOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [additionalEntryPoints?](./api-extractor.icompilerstatecreateoptions.additionalentrypoints.md) |  | string\[\] | _(Optional)_ Additional .d.ts files to include in the analysis. |
-|  [typescriptCompilerFolder?](./api-extractor.icompilerstatecreateoptions.typescriptcompilerfolder.md) |  | string | _(Optional)_ Specifies an alternate folder path to be used when loading the TypeScript system typings. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[additionalEntryPoints?](./api-extractor.icompilerstatecreateoptions.additionalentrypoints.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Additional .d.ts files to include in the analysis.
+
+
+</td></tr>
+<tr><td>
+
+[typescriptCompilerFolder?](./api-extractor.icompilerstatecreateoptions.typescriptcompilerfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies an alternate folder path to be used when loading the TypeScript system typings.
+
+
+</td></tr>
+</tbody></table>
 

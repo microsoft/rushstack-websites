@@ -20,9 +20,83 @@ export interface IProtectableMapParameters<K, V>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [onClear?](./node-core-library.iprotectablemapparameters.onclear.md) |  | (source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;) =&gt; void | _(Optional)_ An optional hook that will be invoked before Map.clear() is performed. |
-|  [onDelete?](./node-core-library.iprotectablemapparameters.ondelete.md) |  | (source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;, key: K) =&gt; void | _(Optional)_ An optional hook that will be invoked before Map.delete() is performed. |
-|  [onSet?](./node-core-library.iprotectablemapparameters.onset.md) |  | (source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;, key: K, value: V) =&gt; V | _(Optional)_ An optional hook that will be invoked before Map.set() is performed. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onClear?](./node-core-library.iprotectablemapparameters.onclear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;) =&gt; void
+
+
+</td><td>
+
+_(Optional)_ An optional hook that will be invoked before Map.clear() is performed.
+
+
+</td></tr>
+<tr><td>
+
+[onDelete?](./node-core-library.iprotectablemapparameters.ondelete.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;, key: K) =&gt; void
+
+
+</td><td>
+
+_(Optional)_ An optional hook that will be invoked before Map.delete() is performed.
+
+
+</td></tr>
+<tr><td>
+
+[onSet?](./node-core-library.iprotectablemapparameters.onset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(source: [ProtectableMap](./node-core-library.protectablemap.md)<></>&lt;K, V&gt;, key: K, value: V) =&gt; V
+
+
+</td><td>
+
+_(Optional)_ An optional hook that will be invoked before Map.set() is performed.
+
+
+</td></tr>
+</tbody></table>
 

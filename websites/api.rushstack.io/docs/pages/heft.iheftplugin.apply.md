@@ -20,11 +20,71 @@ apply(session: TSession, heftConfiguration: HeftConfiguration, pluginOptions?: T
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  session | TSession | The session to apply the plugin to. |
-|  heftConfiguration | [HeftConfiguration](./heft.heftconfiguration.md) | The Heft configuration. |
-|  pluginOptions | TOptions | _(Optional)_ Options for the plugin, specified in heft.json. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+session
+
+
+</td><td>
+
+TSession
+
+
+</td><td>
+
+The session to apply the plugin to.
+
+
+</td></tr>
+<tr><td>
+
+heftConfiguration
+
+
+</td><td>
+
+[HeftConfiguration](./heft.heftconfiguration.md)
+
+
+</td><td>
+
+The Heft configuration.
+
+
+</td></tr>
+<tr><td>
+
+pluginOptions
+
+
+</td><td>
+
+TOptions
+
+
+</td><td>
+
+_(Optional)_ Options for the plugin, specified in heft.json.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

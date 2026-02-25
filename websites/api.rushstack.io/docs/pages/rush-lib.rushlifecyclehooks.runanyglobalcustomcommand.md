@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks.runAnyGlobalCustomCommand property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The hook to run before executing any global Rush CLI Command (defined in command-line.json).
@@ -18,5 +18,5 @@ The hook to run before executing any global Rush CLI Command (defined in command
 **Signature:**
 
 ```typescript
-runAnyGlobalCustomCommand: AsyncSeriesHook<IGlobalCommand>;
+readonly runAnyGlobalCustomCommand: AsyncSeriesHook<IGlobalCommand>;
 ```

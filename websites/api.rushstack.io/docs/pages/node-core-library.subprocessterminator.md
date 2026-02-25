@@ -10,7 +10,7 @@ pagination_next: null
 
 ## SubprocessTerminator class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 When a child process is created, registering it with the SubprocessTerminator will ensure that the child gets terminated when the current process terminates.
@@ -29,14 +29,101 @@ SubprocessTerminator doesn't do anything on Windows, since by default Windows au
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [RECOMMENDED\_OPTIONS](./node-core-library.subprocessterminator.recommended_options.md) | <p><code>static</code></p><p><code>readonly</code></p> | [ISubprocessOptions](./node-core-library.isubprocessoptions.md) | **_(BETA)_** The recommended options when creating a child process. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RECOMMENDED\_OPTIONS](./node-core-library.subprocessterminator.recommended_options.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+[ISubprocessOptions](./node-core-library.isubprocessoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** The recommended options when creating a child process.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [killProcessTree(subprocess, subprocessOptions)](./node-core-library.subprocessterminator.killprocesstree.md) | <code>static</code> | **_(BETA)_** Terminate the child process and all of its children. |
-|  [killProcessTreeOnExit(subprocess, subprocessOptions)](./node-core-library.subprocessterminator.killprocesstreeonexit.md) | <code>static</code> | **_(BETA)_** Registers a child process so that it will be terminated automatically if the current process is terminated. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[killProcessTree(subprocess, subprocessOptions)](./node-core-library.subprocessterminator.killprocesstree.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Terminate the child process and all of its children.
+
+
+</td></tr>
+<tr><td>
+
+[killProcessTreeOnExit(subprocess, subprocessOptions)](./node-core-library.subprocessterminator.killprocesstreeonexit.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Registers a child process so that it will be terminated automatically if the current process is terminated.
+
+
+</td></tr>
+</tbody></table>
 

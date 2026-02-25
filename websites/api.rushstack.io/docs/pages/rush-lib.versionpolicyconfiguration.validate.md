@@ -15,14 +15,42 @@ Validate the version policy configuration against the rush config
 **Signature:**
 
 ```typescript
-validate(projectsByName: Map<string, RushConfigurationProject>): void;
+validate(projectsByName: ReadonlyMap<string, RushConfigurationProject>): void;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  projectsByName | Map&lt;string, [RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+projectsByName
+
+
+</td><td>
+
+ReadonlyMap&lt;string, [RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

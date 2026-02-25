@@ -20,9 +20,83 @@ export interface IExecutableResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [currentWorkingDirectory?](./node-core-library.iexecutableresolveoptions.currentworkingdirectory.md) |  | string | _(Optional)_ The current working directory. If omitted, process.cwd() will be used. |
-|  [environment?](./node-core-library.iexecutableresolveoptions.environment.md) |  | NodeJS.ProcessEnv | _(Optional)_ The environment variables for the child process. |
-|  [environmentMap?](./node-core-library.iexecutableresolveoptions.environmentmap.md) |  | [EnvironmentMap](./node-core-library.environmentmap.md) | _(Optional)_ The environment variables for the child process. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[currentWorkingDirectory?](./node-core-library.iexecutableresolveoptions.currentworkingdirectory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The current working directory. If omitted, process.cwd() will be used.
+
+
+</td></tr>
+<tr><td>
+
+[environment?](./node-core-library.iexecutableresolveoptions.environment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+NodeJS.ProcessEnv
+
+
+</td><td>
+
+_(Optional)_ The environment variables for the child process.
+
+
+</td></tr>
+<tr><td>
+
+[environmentMap?](./node-core-library.iexecutableresolveoptions.environmentmap.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[EnvironmentMap](./node-core-library.environmentmap.md)
+
+
+</td><td>
+
+_(Optional)_ The environment variables for the child process.
+
+
+</td></tr>
+</tbody></table>
 

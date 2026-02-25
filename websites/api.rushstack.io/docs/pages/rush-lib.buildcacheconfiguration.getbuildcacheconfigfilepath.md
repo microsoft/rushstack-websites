@@ -10,7 +10,7 @@ pagination_next: null
 
 ## BuildCacheConfiguration.getBuildCacheConfigFilePath() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Gets the absolute path to the build-cache.json file in the specified rush workspace.
@@ -23,9 +23,37 @@ static getBuildCacheConfigFilePath(rushConfiguration: RushConfiguration): string
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

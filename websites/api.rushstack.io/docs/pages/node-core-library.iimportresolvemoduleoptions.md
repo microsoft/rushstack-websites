@@ -21,7 +21,45 @@ export interface IImportResolveModuleOptions extends IImportResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md) |  | string | The module identifier to resolve. For example "<></>@<></>rushstack/node-core-library" or "<></>@<></>rushstack/node-core-library/lib/index.js" |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[modulePath](./node-core-library.iimportresolvemoduleoptions.modulepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The module identifier to resolve. For example "<></>@<></>rushstack/node-core-library" or "<></>@<></>rushstack/node-core-library/lib/index.js"
+
+
+</td></tr>
+</tbody></table>
 

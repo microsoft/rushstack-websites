@@ -25,20 +25,155 @@ Splitting streams complicates the pipeline topology and can make debugging more 
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./terminal.splittertransform._constructor_.md) |  | Constructs a new instance of the <code>SplitterTransform</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./terminal.splittertransform._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SplitterTransform` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [destinations](./terminal.splittertransform.destinations.md) | <code>readonly</code> | ReadonlyArray&lt;[TerminalWritable](./terminal.terminalwritable.md)<></>&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[destinations](./terminal.splittertransform.destinations.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;[TerminalWritable](./terminal.terminalwritable.md)<></>&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onClose()](./terminal.splittertransform.onclose.md) | <code>protected</code> |  |
-|  [onWriteChunk(chunk)](./terminal.splittertransform.onwritechunk.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addDestination(destination)](./terminal.splittertransform.adddestination.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Adds a destination to the set of destinations. Duplicates are ignored. Only new chunks received after the destination is added will be sent to it.
+
+
+</td></tr>
+<tr><td>
+
+[onClose()](./terminal.splittertransform.onclose.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./terminal.splittertransform.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[removeDestination(destination, close)](./terminal.splittertransform.removedestination.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Removes a destination from the set of destinations. It will no longer receive chunks, and will be closed, unless `destination.preventAutoclose` is set to `true`<></>.
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushSession class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,22 +22,192 @@ export declare class RushSession
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./rush-lib.rushsession._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>RushSession</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./rush-lib.rushsession._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `RushSession` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [hooks](./rush-lib.rushsession.hooks.md) | <code>readonly</code> | [RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md) | **_(BETA)_** |
-|  [terminalProvider](./rush-lib.rushsession.terminalprovider.md) | <code>readonly</code> | [ITerminalProvider](./node-core-library.iterminalprovider.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hooks](./rush-lib.rushsession.hooks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RushLifecycleHooks](./rush-lib.rushlifecyclehooks.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[terminalProvider](./rush-lib.rushsession.terminalprovider.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITerminalProvider](./terminal.iterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getCloudBuildCacheProviderFactory(cacheProviderName)](./rush-lib.rushsession.getcloudbuildcacheproviderfactory.md) |  | **_(BETA)_** |
-|  [getLogger(name)](./rush-lib.rushsession.getlogger.md) |  | **_(BETA)_** |
-|  [registerCloudBuildCacheProviderFactory(cacheProviderName, factory)](./rush-lib.rushsession.registercloudbuildcacheproviderfactory.md) |  | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getCloudBuildCacheProviderFactory(cacheProviderName)](./rush-lib.rushsession.getcloudbuildcacheproviderfactory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getCobuildLockProviderFactory(cobuildLockProviderName)](./rush-lib.rushsession.getcobuildlockproviderfactory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getLogger(name)](./rush-lib.rushsession.getlogger.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[registerCloudBuildCacheProviderFactory(cacheProviderName, factory)](./rush-lib.rushsession.registercloudbuildcacheproviderfactory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[registerCobuildLockProviderFactory(cobuildLockProviderName, factory)](./rush-lib.rushsession.registercobuildlockproviderfactory.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

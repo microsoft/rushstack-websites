@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ITelemetryData interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,15 +22,236 @@ export interface ITelemetryData
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [durationInSeconds](./rush-lib.itelemetrydata.durationinseconds.md) | <code>readonly</code> | number | **_(BETA)_** Duration in seconds |
-|  [extraData?](./rush-lib.itelemetrydata.extradata.md) | <code>readonly</code> | { \[key: string\]: string \| number \| boolean; } | **_(BETA)_** _(Optional)_ |
-|  [machineInfo?](./rush-lib.itelemetrydata.machineinfo.md) | <code>readonly</code> | [ITelemetryMachineInfo](./rush-lib.itelemetrymachineinfo.md) | **_(BETA)_** _(Optional)_ Detailed information about the host machine. |
-|  [name](./rush-lib.itelemetrydata.name.md) | <code>readonly</code> | string | **_(BETA)_** Command name |
-|  [operationResults?](./rush-lib.itelemetrydata.operationresults.md) | <code>readonly</code> | Record&lt;string, [ITelemetryOperationResult](./rush-lib.itelemetryoperationresult.md)<></>&gt; | **_(BETA)_** _(Optional)_ Only applicable to phased commands. Provides detailed results by operation. Keys are operation names, values contain result, timing information, and dependencies. |
-|  [platform?](./rush-lib.itelemetrydata.platform.md) | <code>readonly</code> | string | **_(BETA)_** _(Optional)_ The platform the command was executed on, based on the Node.js <code>process.platform()</code> API |
-|  [result](./rush-lib.itelemetrydata.result.md) | <code>readonly</code> | 'Succeeded' \| 'Failed' | **_(BETA)_** The result of the command |
-|  [rushVersion?](./rush-lib.itelemetrydata.rushversion.md) | <code>readonly</code> | string | **_(BETA)_** _(Optional)_ The Rush version |
-|  [timestampMs?](./rush-lib.itelemetrydata.timestampms.md) | <code>readonly</code> | number | **_(BETA)_** _(Optional)_ The millisecond-resolution timestamp of the telemetry logging |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[durationInSeconds](./rush-lib.itelemetrydata.durationinseconds.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** Duration in seconds
+
+
+</td></tr>
+<tr><td>
+
+[extraData?](./rush-lib.itelemetrydata.extradata.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+{ \[key: string\]: string \| number \| boolean; }
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[machineInfo?](./rush-lib.itelemetrydata.machineinfo.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITelemetryMachineInfo](./rush-lib.itelemetrymachineinfo.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Detailed information about the host machine.
+
+
+</td></tr>
+<tr><td>
+
+[name](./rush-lib.itelemetrydata.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** Command name
+
+
+</td></tr>
+<tr><td>
+
+[operationResults?](./rush-lib.itelemetrydata.operationresults.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Record&lt;string, [ITelemetryOperationResult](./rush-lib.itelemetryoperationresult.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Only applicable to phased commands. Provides detailed results by operation. Keys are operation names, values contain result, timing information, and dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[performanceEntries?](./rush-lib.itelemetrydata.performanceentries.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+readonly PerformanceEntry\[\]
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Performance marks and measures collected during the execution of this command. This is an array of `PerformanceEntry` objects, which can include marks, measures, and function timings.
+
+
+</td></tr>
+<tr><td>
+
+[platform?](./rush-lib.itelemetrydata.platform.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The platform the command was executed on, based on the Node.js `process.platform()` API
+
+
+</td></tr>
+<tr><td>
+
+[result](./rush-lib.itelemetrydata.result.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+'Succeeded' \| 'Failed'
+
+
+</td><td>
+
+**_(BETA)_** The result of the command
+
+
+</td></tr>
+<tr><td>
+
+[rushVersion?](./rush-lib.itelemetrydata.rushversion.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The Rush version
+
+
+</td></tr>
+<tr><td>
+
+[timestampMs?](./rush-lib.itelemetrydata.timestampms.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The millisecond-resolution timestamp of the telemetry logging
+
+
+</td></tr>
+</tbody></table>
 

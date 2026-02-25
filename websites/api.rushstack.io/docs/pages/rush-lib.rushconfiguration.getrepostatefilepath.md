@@ -10,19 +10,52 @@ pagination_next: null
 
 ## RushConfiguration.getRepoStateFilePath() method
 
-Gets the path to the repo-state.json file for a specific variant.
+> Warning: This API is now obsolete.
+> 
+> Use [Subspace.getRepoStateFilePath()](./rush-lib.subspace.getrepostatefilepath.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-getRepoStateFilePath(variant?: string | undefined): string;
+getRepoStateFilePath(subspace?: Subspace): string;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

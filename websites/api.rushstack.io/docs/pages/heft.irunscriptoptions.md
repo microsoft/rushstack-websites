@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRunScriptOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Options provided to scripts that are run using the RunScriptPlugin.
@@ -23,10 +23,102 @@ export interface IRunScriptOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [heftConfiguration](./heft.irunscriptoptions.heftconfiguration.md) |  | [HeftConfiguration](./heft.heftconfiguration.md) | **_(BETA)_** |
-|  [heftTaskSession](./heft.irunscriptoptions.hefttasksession.md) |  | [IHeftTaskSession](./heft.ihefttasksession.md) | **_(BETA)_** |
-|  [runOptions](./heft.irunscriptoptions.runoptions.md) |  | [IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md) | **_(BETA)_** |
-|  [scriptOptions](./heft.irunscriptoptions.scriptoptions.md) |  | Record&lt;string, unknown&gt; | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[heftConfiguration](./heft.irunscriptoptions.heftconfiguration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[HeftConfiguration](./heft.heftconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[heftTaskSession](./heft.irunscriptoptions.hefttasksession.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IHeftTaskSession](./heft.ihefttasksession.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[runOptions](./heft.irunscriptoptions.runoptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IHeftTaskRunHookOptions](./heft.ihefttaskrunhookoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[scriptOptions](./heft.irunscriptoptions.scriptoptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, unknown&gt;
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

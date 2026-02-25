@@ -20,26 +20,217 @@ export declare class PackageJsonLookup
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parameters)](./node-core-library.packagejsonlookup._constructor_.md) |  | Constructs a new instance of the <code>PackageJsonLookup</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parameters)](./node-core-library.packagejsonlookup._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `PackageJsonLookup` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [instance](./node-core-library.packagejsonlookup.instance.md) | <p><code>static</code></p><p><code>readonly</code></p> | [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | A singleton instance of <code>PackageJsonLookup</code>, which is useful for short-lived processes that can reasonably assume that the file system will not be modified after the cache is populated. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[instance](./node-core-library.packagejsonlookup.instance.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+[PackageJsonLookup](./node-core-library.packagejsonlookup.md)
+
+
+</td><td>
+
+A singleton instance of `PackageJsonLookup`<></>, which is useful for short-lived processes that can reasonably assume that the file system will not be modified after the cache is populated.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [clearCache()](./node-core-library.packagejsonlookup.clearcache.md) |  | Clears the internal file cache. |
-|  [loadNodePackageJson(jsonFilename)](./node-core-library.packagejsonlookup.loadnodepackagejson.md) |  | This function is similar to [PackageJsonLookup.loadPackageJson()](./node-core-library.packagejsonlookup.loadpackagejson.md)<></>, except that it does not report an error if the <code>version</code> field is missing from the package.json file. |
-|  [loadOwnPackageJson(dirnameOfCaller)](./node-core-library.packagejsonlookup.loadownpackagejson.md) | <code>static</code> | A helper for loading the caller's own package.json file. |
-|  [loadPackageJson(jsonFilename)](./node-core-library.packagejsonlookup.loadpackagejson.md) |  | Loads the specified package.json file, if it is not already present in the cache. |
-|  [tryGetPackageFolderFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.trygetpackagefolderfor.md) |  | Returns the absolute path of a folder containing a package.json file, by looking upwards from the specified fileOrFolderPath. If no package.json can be found, undefined is returned. |
-|  [tryGetPackageJsonFilePathFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.trygetpackagejsonfilepathfor.md) |  | If the specified file or folder is part of a package, this returns the absolute path to the associated package.json file. |
-|  [tryLoadNodePackageJsonFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.tryloadnodepackagejsonfor.md) |  | This function is similar to [PackageJsonLookup.tryLoadPackageJsonFor()](./node-core-library.packagejsonlookup.tryloadpackagejsonfor.md)<></>, except that it does not report an error if the <code>version</code> field is missing from the package.json file. |
-|  [tryLoadPackageJsonFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.tryloadpackagejsonfor.md) |  | If the specified file or folder is part of a package, this loads and returns the associated package.json file. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[clearCache()](./node-core-library.packagejsonlookup.clearcache.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Clears the internal file cache.
+
+
+</td></tr>
+<tr><td>
+
+[loadNodePackageJson(jsonFilename)](./node-core-library.packagejsonlookup.loadnodepackagejson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This function is similar to [PackageJsonLookup.loadPackageJson()](./node-core-library.packagejsonlookup.loadpackagejson.md)<></>, except that it does not report an error if the `version` field is missing from the package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[loadOwnPackageJson(dirnameOfCaller)](./node-core-library.packagejsonlookup.loadownpackagejson.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+A helper for loading the caller's own package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[loadPackageJson(jsonFilename)](./node-core-library.packagejsonlookup.loadpackagejson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Loads the specified package.json file, if it is not already present in the cache.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetPackageFolderFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.trygetpackagefolderfor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the absolute path of a folder containing a package.json file, by looking upwards from the specified fileOrFolderPath. If no package.json can be found, undefined is returned.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetPackageJsonFilePathFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.trygetpackagejsonfilepathfor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If the specified file or folder is part of a package, this returns the absolute path to the associated package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadNodePackageJsonFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.tryloadnodepackagejsonfor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This function is similar to [PackageJsonLookup.tryLoadPackageJsonFor()](./node-core-library.packagejsonlookup.tryloadpackagejsonfor.md)<></>, except that it does not report an error if the `version` field is missing from the package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadPackageJsonFor(fileOrFolderPath)](./node-core-library.packagejsonlookup.tryloadpackagejsonfor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If the specified file or folder is part of a package, this loads and returns the associated package.json file.
+
+
+</td></tr>
+</tbody></table>
 

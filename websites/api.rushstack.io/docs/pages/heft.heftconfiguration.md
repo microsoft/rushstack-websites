@@ -19,15 +19,305 @@ export declare class HeftConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [buildFolderPath](./heft.heftconfiguration.buildfolderpath.md) | <code>readonly</code> | string | Project build folder path. This is the folder containing the project's package.json file. |
-|  [globalTerminal](./heft.heftconfiguration.globalterminal.md) | <code>readonly</code> | [ITerminal](./node-core-library.iterminal.md) | Terminal instance to facilitate logging. |
-|  [heftPackageJson](./heft.heftconfiguration.heftpackagejson.md) | <code>readonly</code> | [IPackageJson](./node-core-library.ipackagejson.md) | The Heft tool's package.json |
-|  [projectConfigFolderPath](./heft.heftconfiguration.projectconfigfolderpath.md) | <code>readonly</code> | string | The path to the project's "config" folder. |
-|  [projectPackageJson](./heft.heftconfiguration.projectpackagejson.md) | <code>readonly</code> | [IPackageJson](./node-core-library.ipackagejson.md) | The package.json of the project being built |
-|  [rigConfig](./heft.heftconfiguration.rigconfig.md) | <code>readonly</code> | [IRigConfig](./rig-package.irigconfig.md) | The rig.json configuration for this project, if present. |
-|  [rigPackageResolver](./heft.heftconfiguration.rigpackageresolver.md) | <code>readonly</code> | [IRigPackageResolver](./heft.irigpackageresolver.md) | The rig package resolver, which can be used to rig-resolve a requested package. |
-|  [tempFolderPath](./heft.heftconfiguration.tempfolderpath.md) | <code>readonly</code> | string | The project's temporary folder. |
-|  [terminalProvider](./heft.heftconfiguration.terminalprovider.md) | <code>readonly</code> | [ITerminalProvider](./node-core-library.iterminalprovider.md) | Terminal provider for the provided terminal. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildFolderPath](./heft.heftconfiguration.buildfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Project build folder path. This is the folder containing the project's package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[globalTerminal](./heft.heftconfiguration.globalterminal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+Terminal instance to facilitate logging.
+
+
+</td></tr>
+<tr><td>
+
+[heftPackageJson](./heft.heftconfiguration.heftpackagejson.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+The Heft tool's package.json
+
+
+</td></tr>
+<tr><td>
+
+[numberOfCores](./heft.heftconfiguration.numberofcores.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number of CPU cores available to the process. This can be used to determine how many tasks can be run in parallel.
+
+
+</td></tr>
+<tr><td>
+
+[projectConfigFolderPath](./heft.heftconfiguration.projectconfigfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path to the project's "config" folder.
+
+
+</td></tr>
+<tr><td>
+
+[projectPackageJson](./heft.heftconfiguration.projectpackagejson.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+The package.json of the project being built
+
+
+</td></tr>
+<tr><td>
+
+[rigConfig](./heft.heftconfiguration.rigconfig.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IRigConfig](./rig-package.irigconfig.md)
+
+
+</td><td>
+
+The rig.json configuration for this project, if present.
+
+
+</td></tr>
+<tr><td>
+
+[rigPackageResolver](./heft.heftconfiguration.rigpackageresolver.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IRigPackageResolver](./heft.irigpackageresolver.md)
+
+
+</td><td>
+
+The rig package resolver, which can be used to rig-resolve a requested package.
+
+
+</td></tr>
+<tr><td>
+
+[slashNormalizedBuildFolderPath](./heft.heftconfiguration.slashnormalizedbuildfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+[HeftConfiguration.buildFolderPath](./heft.heftconfiguration.buildfolderpath.md) with all path separators converted to forward slashes.
+
+
+</td></tr>
+<tr><td>
+
+[tempFolderPath](./heft.heftconfiguration.tempfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The project's temporary folder.
+
+
+</td></tr>
+<tr><td>
+
+[terminalProvider](./heft.heftconfiguration.terminalprovider.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ITerminalProvider](./terminal.iterminalprovider.md)
+
+
+</td><td>
+
+Terminal provider for the provided terminal.
+
+
+</td></tr>
+</tbody></table>
+
+## Methods
+
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[tryLoadProjectConfigurationFile(options, terminal)](./heft.heftconfiguration.tryloadprojectconfigurationfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Attempts to load a riggable project configuration file using blocking, synchronous I/O.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadProjectConfigurationFileAsync(options, terminal)](./heft.heftconfiguration.tryloadprojectconfigurationfileasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Attempts to load a riggable project configuration file using asynchronous I/O.
+
+
+</td></tr>
+</tbody></table>
 

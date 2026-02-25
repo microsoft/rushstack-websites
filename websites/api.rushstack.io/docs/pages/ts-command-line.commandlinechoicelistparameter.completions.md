@@ -15,7 +15,7 @@ An optional callback that provides a list of custom choices for tab completion.
 **Signature:**
 
 ```typescript
-readonly completions: (() => Promise<string[]>) | undefined;
+readonly completions: (() => Promise<ReadonlyArray<TChoice> | ReadonlySet<TChoice>>) | undefined;
 ```
 
 ## Remarks

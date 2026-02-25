@@ -31,13 +31,81 @@ The heritage types are `Controls.WidgetBase`<></>, `Controls.IWidget`<></>, and 
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(excerpt)](./api-extractor-model.heritagetype._constructor_.md) |  | Constructs a new instance of the <code>HeritageType</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(excerpt)](./api-extractor-model.heritagetype._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `HeritageType` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [excerpt](./api-extractor-model.heritagetype.excerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An excerpt corresponding to the referenced type. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[excerpt](./api-extractor-model.heritagetype.excerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An excerpt corresponding to the referenced type.
+
+
+</td></tr>
+</tbody></table>
 

@@ -8,23 +8,19 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/heft-config-file](./heft-config-file.md) &gt; [IConfigurationFileOptionsWithJsonSchemaFilePath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.md)
 
-## IConfigurationFileOptionsWithJsonSchemaFilePath interface
+## IConfigurationFileOptionsWithJsonSchemaFilePath type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
 **Signature:**
 
 ```typescript
-export interface IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile> extends IConfigurationFileOptionsBase<TConfigurationFile> 
+export type IConfigurationFileOptionsWithJsonSchemaFilePath<TConfigurationFile, TExtraOptions extends {}> = IConfigurationFileOptionsBase<TConfigurationFile> & TExtraOptions & {
+    jsonSchemaPath: string;
+    jsonSchemaObject?: never;
+};
 ```
-**Extends:** [IConfigurationFileOptionsBase](./heft-config-file.iconfigurationfileoptionsbase.md)<></>&lt;TConfigurationFile&gt;
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [jsonSchemaObject?](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.jsonschemaobject.md) |  | never | **_(BETA)_** _(Optional)_ |
-|  [jsonSchemaPath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.jsonschemapath.md) |  | string | **_(BETA)_** The path to the schema for the configuration file. |
+**References:** [IConfigurationFileOptionsBase](./heft-config-file.iconfigurationfileoptionsbase.md)
 

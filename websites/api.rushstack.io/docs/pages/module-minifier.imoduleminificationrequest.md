@@ -20,10 +20,102 @@ export interface IModuleMinificationRequest
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [code](./module-minifier.imoduleminificationrequest.code.md) |  | string | The raw code fragment |
-|  [externals](./module-minifier.imoduleminificationrequest.externals.md) |  | string\[\] \| undefined | Reserved variable names, e.g. \_\_WEBPACK\_EXTERNAL\_MODULE\_1\_\_ |
-|  [hash](./module-minifier.imoduleminificationrequest.hash.md) |  | string | Identity of the request. Will be included in the response. |
-|  [nameForMap](./module-minifier.imoduleminificationrequest.nameformap.md) |  | string \| undefined | File name to show for the source code in the source map |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[code](./module-minifier.imoduleminificationrequest.code.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The raw code fragment
+
+
+</td></tr>
+<tr><td>
+
+[externals](./module-minifier.imoduleminificationrequest.externals.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\] \| undefined
+
+
+</td><td>
+
+Reserved variable names, e.g. \_\_WEBPACK\_EXTERNAL\_MODULE\_1\_\_
+
+
+</td></tr>
+<tr><td>
+
+[hash](./module-minifier.imoduleminificationrequest.hash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Identity of the request. Will be included in the response.
+
+
+</td></tr>
+<tr><td>
+
+[nameForMap](./module-minifier.imoduleminificationrequest.nameformap.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+File name to show for the source code in the source map
+
+
+</td></tr>
+</tbody></table>
 

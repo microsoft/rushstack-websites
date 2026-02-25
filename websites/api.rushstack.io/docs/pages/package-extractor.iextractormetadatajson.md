@@ -20,9 +20,102 @@ export interface IExtractorMetadataJson
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [links](./package-extractor.iextractormetadatajson.links.md) |  | [ILinkInfo](./package-extractor.ilinkinfo.md)<></>\[\] | A list of all links that are part of the extracted project. |
-|  [mainProjectName](./package-extractor.iextractormetadatajson.mainprojectname.md) |  | string | The name of the main project the extraction was performed for. |
-|  [projects](./package-extractor.iextractormetadatajson.projects.md) |  | [IProjectInfoJson](./package-extractor.iprojectinfojson.md)<></>\[\] | A list of all projects that were extracted. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[files](./package-extractor.iextractormetadatajson.files.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+A list of all files that are part of the extracted project.
+
+
+</td></tr>
+<tr><td>
+
+[links](./package-extractor.iextractormetadatajson.links.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ILinkInfo](./package-extractor.ilinkinfo.md)<></>\[\]
+
+
+</td><td>
+
+A list of all links that are part of the extracted project.
+
+
+</td></tr>
+<tr><td>
+
+[mainProjectName](./package-extractor.iextractormetadatajson.mainprojectname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the main project the extraction was performed for.
+
+
+</td></tr>
+<tr><td>
+
+[projects](./package-extractor.iextractormetadatajson.projects.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IProjectInfoJson](./package-extractor.iprojectinfojson.md)<></>\[\]
+
+
+</td><td>
+
+A list of all projects that were extracted.
+
+
+</td></tr>
+</tbody></table>
 

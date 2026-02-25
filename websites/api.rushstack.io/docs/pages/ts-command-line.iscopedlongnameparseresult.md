@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IScopedLongNameParseResult interface
 
-The result containing the parsed paramter long name and scope. Returned when calling [CommandLineParameterProvider.parseScopedLongName()](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md)<></>.
+The result containing the parsed parameter long name and scope. Returned when calling [CommandLineParameterProvider.parseScopedLongName()](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md)<></>.
 
 **Signature:**
 
@@ -20,8 +20,64 @@ export interface IScopedLongNameParseResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [longName](./ts-command-line.iscopedlongnameparseresult.longname.md) |  | string | The long name parsed from the scoped long name, e.g. "--my-scope:my-parameter" -<></>&gt; "--my-parameter" |
-|  [scope](./ts-command-line.iscopedlongnameparseresult.scope.md) |  | string \| undefined | The scope parsed from the scoped long name or undefined if no scope was found, e.g. "--my-scope:my-parameter" -<></>&gt; "my-scope" |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[longName](./ts-command-line.iscopedlongnameparseresult.longname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The long name parsed from the scoped long name, e.g. "--my-scope:my-parameter" -<></>&gt; "--my-parameter"
+
+
+</td></tr>
+<tr><td>
+
+[scope](./ts-command-line.iscopedlongnameparseresult.scope.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The scope parsed from the scoped long name or undefined if no scope was found, e.g. "--my-scope:my-parameter" -<></>&gt; "my-scope"
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ITelemetryMachineInfo interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,11 +22,121 @@ export interface ITelemetryMachineInfo
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [machineArchitecture](./rush-lib.itelemetrymachineinfo.machinearchitecture.md) |  | string | **_(BETA)_** The CPU architecture |
-|  [machineCores](./rush-lib.itelemetrymachineinfo.machinecores.md) |  | number | **_(BETA)_** The number of logical CPU cores. |
-|  [machineCpu](./rush-lib.itelemetrymachineinfo.machinecpu.md) |  | string | **_(BETA)_** The CPU model \* |
-|  [machineFreeMemoryMiB](./rush-lib.itelemetrymachineinfo.machinefreememorymib.md) |  | number | **_(BETA)_** The amount of free RAM on the machine at the end of execution, in MiB. |
-|  [machineTotalMemoryMiB](./rush-lib.itelemetrymachineinfo.machinetotalmemorymib.md) |  | number | **_(BETA)_** The total amount of RAM on the machine, in MiB. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[machineArchitecture](./rush-lib.itelemetrymachineinfo.machinearchitecture.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The CPU architecture
+
+
+</td></tr>
+<tr><td>
+
+[machineCores](./rush-lib.itelemetrymachineinfo.machinecores.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** The number of logical CPU cores.
+
+
+</td></tr>
+<tr><td>
+
+[machineCpu](./rush-lib.itelemetrymachineinfo.machinecpu.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The CPU model \*
+
+
+</td></tr>
+<tr><td>
+
+[machineFreeMemoryMiB](./rush-lib.itelemetrymachineinfo.machinefreememorymib.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** The amount of free RAM on the machine at the end of execution, in MiB.
+
+
+</td></tr>
+<tr><td>
+
+[machineTotalMemoryMiB](./rush-lib.itelemetrymachineinfo.machinetotalmemorymib.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+**_(BETA)_** The total amount of RAM on the machine, in MiB.
+
+
+</td></tr>
+</tbody></table>
 

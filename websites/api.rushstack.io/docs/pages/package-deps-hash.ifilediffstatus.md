@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IFileDiffStatus interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Information about the changes to a file.
@@ -23,10 +23,102 @@ export interface IFileDiffStatus
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [mode](./package-deps-hash.ifilediffstatus.mode.md) |  | string | **_(BETA)_** |
-|  [newhash](./package-deps-hash.ifilediffstatus.newhash.md) |  | string | **_(BETA)_** |
-|  [oldhash](./package-deps-hash.ifilediffstatus.oldhash.md) |  | string | **_(BETA)_** |
-|  [status](./package-deps-hash.ifilediffstatus.status.md) |  | 'A' \| 'D' \| 'M' | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[mode](./package-deps-hash.ifilediffstatus.mode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[newhash](./package-deps-hash.ifilediffstatus.newhash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[oldhash](./package-deps-hash.ifilediffstatus.oldhash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[status](./package-deps-hash.ifilediffstatus.status.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'A' \| 'D' \| 'M'
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

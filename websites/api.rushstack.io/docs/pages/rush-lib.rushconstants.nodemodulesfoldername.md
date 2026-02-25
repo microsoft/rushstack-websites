@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.nodeModulesFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("node\_modules") where NPM installs its packages.
@@ -18,5 +18,5 @@ The folder name ("node\_modules") where NPM installs its packages.
 **Signature:**
 
 ```typescript
-static readonly nodeModulesFolderName: string;
+static readonly nodeModulesFolderName: 'node_modules';
 ```

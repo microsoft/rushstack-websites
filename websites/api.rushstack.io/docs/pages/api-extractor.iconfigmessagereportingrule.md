@@ -24,8 +24,64 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [addToApiReportFile?](./api-extractor.iconfigmessagereportingrule.addtoapireportfile.md) |  | boolean | _(Optional)_ When <code>addToApiReportFile</code> is true: If API Extractor is configured to write an API report file (.api.md), then the message will be written inside that file; otherwise, the message is instead logged according to the <code>logLevel</code> option. |
-|  [logLevel](./api-extractor.iconfigmessagereportingrule.loglevel.md) |  | [ExtractorLogLevel](./api-extractor.extractorloglevel.md) | Specifies whether the message should be written to the the tool's output log. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addToApiReportFile?](./api-extractor.iconfigmessagereportingrule.addtoapireportfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ When `addToApiReportFile` is true: If API Extractor is configured to write an API report file (.api.md), then the message will be written inside that file; otherwise, the message is instead logged according to the `logLevel` option.
+
+
+</td></tr>
+<tr><td>
+
+[logLevel](./api-extractor.iconfigmessagereportingrule.loglevel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ExtractorLogLevel](./api-extractor.extractorloglevel.md)
+
+
+</td><td>
+
+Specifies whether the message should be written to the the tool's output log.
+
+
+</td></tr>
+</tbody></table>
 

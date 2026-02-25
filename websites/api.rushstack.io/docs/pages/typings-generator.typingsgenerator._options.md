@@ -13,5 +13,5 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-protected _options: ITypingsGeneratorOptions;
+protected readonly _options: ITypingsGeneratorOptionsWithCustomReadFile<string | undefined, TFileContents>;
 ```

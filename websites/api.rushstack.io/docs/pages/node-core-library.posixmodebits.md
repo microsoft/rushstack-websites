@@ -20,21 +20,231 @@ export declare enum PosixModeBits
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  AllExecute | <code>73</code> | An alias combining OthersExecute, GroupExecute, and UserExecute permission bits. |
-|  AllRead | <code>292</code> | An alias combining OthersRead, GroupRead, and UserRead permission bits. |
-|  AllWrite | <code>146</code> | An alias combining OthersWrite, GroupWrite, and UserWrite permission bits. |
-|  GroupExecute | <code>8</code> | Indicates that users belonging to the item's group can execute the item (if it is a file) or search the item (if it is a directory). |
-|  GroupRead | <code>32</code> | Indicates that users belonging to the item's group can read the item. |
-|  GroupWrite | <code>16</code> | Indicates that users belonging to the item's group can modify the item. |
-|  None | <code>0</code> | A zero value where no permissions bits are set. |
-|  OthersExecute | <code>1</code> | Indicates that other users (besides the item's owner user or group) can execute the item (if it is a file) or search the item (if it is a directory). |
-|  OthersRead | <code>4</code> | Indicates that other users (besides the item's owner user or group) can read the item. |
-|  OthersWrite | <code>2</code> | Indicates that other users (besides the item's owner user or group) can modify the item. |
-|  UserExecute | <code>64</code> | Indicates that the item's owner can execute the item (if it is a file) or search the item (if it is a directory). |
-|  UserRead | <code>256</code> | Indicates that the item's owner can read the item. |
-|  UserWrite | <code>128</code> | Indicates that the item's owner can modify the item. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+AllExecute
+
+
+</td><td>
+
+`73`
+
+
+</td><td>
+
+An alias combining OthersExecute, GroupExecute, and UserExecute permission bits.
+
+
+</td></tr>
+<tr><td>
+
+AllRead
+
+
+</td><td>
+
+`292`
+
+
+</td><td>
+
+An alias combining OthersRead, GroupRead, and UserRead permission bits.
+
+
+</td></tr>
+<tr><td>
+
+AllWrite
+
+
+</td><td>
+
+`146`
+
+
+</td><td>
+
+An alias combining OthersWrite, GroupWrite, and UserWrite permission bits.
+
+
+</td></tr>
+<tr><td>
+
+GroupExecute
+
+
+</td><td>
+
+`8`
+
+
+</td><td>
+
+Indicates that users belonging to the item's group can execute the item (if it is a file) or search the item (if it is a directory).
+
+
+</td></tr>
+<tr><td>
+
+GroupRead
+
+
+</td><td>
+
+`32`
+
+
+</td><td>
+
+Indicates that users belonging to the item's group can read the item.
+
+
+</td></tr>
+<tr><td>
+
+GroupWrite
+
+
+</td><td>
+
+`16`
+
+
+</td><td>
+
+Indicates that users belonging to the item's group can modify the item.
+
+
+</td></tr>
+<tr><td>
+
+None
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+A zero value where no permissions bits are set.
+
+
+</td></tr>
+<tr><td>
+
+OthersExecute
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+Indicates that other users (besides the item's owner user or group) can execute the item (if it is a file) or search the item (if it is a directory).
+
+
+</td></tr>
+<tr><td>
+
+OthersRead
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+Indicates that other users (besides the item's owner user or group) can read the item.
+
+
+</td></tr>
+<tr><td>
+
+OthersWrite
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+Indicates that other users (besides the item's owner user or group) can modify the item.
+
+
+</td></tr>
+<tr><td>
+
+UserExecute
+
+
+</td><td>
+
+`64`
+
+
+</td><td>
+
+Indicates that the item's owner can execute the item (if it is a file) or search the item (if it is a directory).
+
+
+</td></tr>
+<tr><td>
+
+UserRead
+
+
+</td><td>
+
+`256`
+
+
+</td><td>
+
+Indicates that the item's owner can read the item.
+
+
+</td></tr>
+<tr><td>
+
+UserWrite
+
+
+</td><td>
+
+`128`
+
+
+</td><td>
+
+Indicates that the item's owner can modify the item.
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

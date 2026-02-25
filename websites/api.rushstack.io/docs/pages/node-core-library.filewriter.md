@@ -20,15 +20,125 @@ export declare class FileWriter
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [filePath](./node-core-library.filewriter.filepath.md) | <code>readonly</code> | string | The <code>filePath</code> that was passed to [FileWriter.open()](./node-core-library.filewriter.open.md)<></>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[filePath](./node-core-library.filewriter.filepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The `filePath` that was passed to [FileWriter.open()](./node-core-library.filewriter.open.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close()](./node-core-library.filewriter.close.md) |  | Closes the file handle permanently. No operations can be made on this file handle after calling this. Behind the scenes it uses <code>fs.closeSync()</code> and releases the file descriptor to be re-used. |
-|  [open(filePath, flags)](./node-core-library.filewriter.open.md) | <code>static</code> | Opens a new file handle to the file at the specified path and given mode. Behind the scenes it uses <code>fs.openSync()</code>. The behaviour of this function is platform specific. See: https://nodejs.org/docs/latest-v8.x/api/fs.html\#fs\_fs\_open\_path\_flags\_mode\_callback |
-|  [write(text)](./node-core-library.filewriter.write.md) |  | Writes some text to the given file handle. Throws if the file handle has been closed. Behind the scenes it uses <code>fs.writeSync()</code>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close()](./node-core-library.filewriter.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Closes the file handle permanently. No operations can be made on this file handle after calling this. Behind the scenes it uses `fs.closeSync()` and releases the file descriptor to be re-used.
+
+
+</td></tr>
+<tr><td>
+
+[getStatistics()](./node-core-library.filewriter.getstatistics.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Gets the statistics for the given file handle. Throws if the file handle has been closed. Behind the scenes it uses `fs.statSync()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[open(filePath, flags)](./node-core-library.filewriter.open.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Opens a new file handle to the file at the specified path and given mode. Behind the scenes it uses `fs.openSync()`<></>. The behaviour of this function is platform specific. See: https://nodejs.org/docs/latest-v8.x/api/fs.html\#fs\_fs\_open\_path\_flags\_mode\_callback
+
+
+</td></tr>
+<tr><td>
+
+[write(text)](./node-core-library.filewriter.write.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Writes some text to the given file handle. Throws if the file handle has been closed. Behind the scenes it uses `fs.writeSync()`<></>.
+
+
+</td></tr>
+</tbody></table>
 

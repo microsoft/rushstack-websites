@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EnvironmentConfiguration.validate() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Reads and validates environment variables. If any are invalid, this function will throw.
@@ -23,9 +23,39 @@ static validate(options?: IEnvironmentConfigurationInitializeOptions): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IEnvironmentConfigurationInitializeOptions](./rush-lib.ienvironmentconfigurationinitializeoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

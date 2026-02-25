@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushLifecycleHooks.runGlobalCustomCommand property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 A hook map to allow plugins to hook specific named global commands (defined in command-line.json) before execution.
@@ -18,5 +18,5 @@ A hook map to allow plugins to hook specific named global commands (defined in c
 **Signature:**
 
 ```typescript
-runGlobalCustomCommand: HookMap<AsyncSeriesHook<IGlobalCommand>>;
+readonly runGlobalCustomCommand: HookMap<AsyncSeriesHook<IGlobalCommand>>;
 ```

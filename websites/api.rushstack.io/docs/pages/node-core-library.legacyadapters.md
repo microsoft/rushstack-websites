@@ -20,13 +20,109 @@ export declare class LegacyAdapters
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [convertCallbackToPromise(fn)](./node-core-library.legacyadapters.convertcallbacktopromise.md) | <code>static</code> | This function wraps a function with a callback in a promise. |
-|  [convertCallbackToPromise(fn, arg1)](./node-core-library.legacyadapters.convertcallbacktopromise_1.md) | <code>static</code> |  |
-|  [convertCallbackToPromise(fn, arg1, arg2)](./node-core-library.legacyadapters.convertcallbacktopromise_2.md) | <code>static</code> |  |
-|  [convertCallbackToPromise(fn, arg1, arg2, arg3)](./node-core-library.legacyadapters.convertcallbacktopromise_3.md) | <code>static</code> |  |
-|  [convertCallbackToPromise(fn, arg1, arg2, arg3, arg4)](./node-core-library.legacyadapters.convertcallbacktopromise_4.md) | <code>static</code> |  |
-|  [scrubError(error)](./node-core-library.legacyadapters.scruberror.md) | <code>static</code> | Normalizes an object into an <code>Error</code> object. |
-|  [sortStable(array, compare)](./node-core-library.legacyadapters.sortstable.md) | <code>static</code> | Prior to Node 11.x, the <code>Array.sort()</code> algorithm is not guaranteed to be stable. If you need a stable sort, you can use <code>sortStable()</code> as a workaround. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertCallbackToPromise(fn)](./node-core-library.legacyadapters.convertcallbacktopromise.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This function wraps a function with a callback in a promise.
+
+
+</td></tr>
+<tr><td>
+
+[convertCallbackToPromise(fn, arg1)](./node-core-library.legacyadapters.convertcallbacktopromise_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[convertCallbackToPromise(fn, arg1, arg2)](./node-core-library.legacyadapters.convertcallbacktopromise_2.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[convertCallbackToPromise(fn, arg1, arg2, arg3)](./node-core-library.legacyadapters.convertcallbacktopromise_3.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[convertCallbackToPromise(fn, arg1, arg2, arg3, arg4)](./node-core-library.legacyadapters.convertcallbacktopromise_4.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[scrubError(error)](./node-core-library.legacyadapters.scruberror.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Normalizes an object into an `Error` object.
+
+
+</td></tr>
+</tbody></table>
 

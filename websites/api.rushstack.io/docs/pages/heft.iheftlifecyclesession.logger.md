@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IHeftLifecycleSession.logger property
 
-The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format `[lifecycle:<pluginName>]`. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message.
+The scoped logger for the lifecycle plugin. Messages logged with this logger will be prefixed with the plugin name, in the format `[lifecycle:<pluginName>]`<></>. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message.
 
 **Signature:**
 

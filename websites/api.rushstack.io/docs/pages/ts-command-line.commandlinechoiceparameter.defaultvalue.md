@@ -15,7 +15,7 @@ The default value which will be used if the parameter is omitted from the comman
 **Signature:**
 
 ```typescript
-readonly defaultValue: string | undefined;
+readonly defaultValue: TChoice | undefined;
 ```
 
 ## Remarks

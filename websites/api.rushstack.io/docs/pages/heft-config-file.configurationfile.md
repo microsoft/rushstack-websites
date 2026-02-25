@@ -8,36 +8,18 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/heft-config-file](./heft-config-file.md) &gt; [ConfigurationFile](./heft-config-file.configurationfile.md)
 
-## ConfigurationFile class
+## ConfigurationFile variable
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
+> Warning: This API is now obsolete.
+> 
+> Use [ProjectConfigurationFile](./heft-config-file.projectconfigurationfile.md) instead.
+> 
 
 **Signature:**
 
 ```typescript
-export declare class ConfigurationFile<TConfigurationFile> 
+ConfigurationFile: typeof ProjectConfigurationFile
 ```
-
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./heft-config-file.configurationfile._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>ConfigurationFile</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [projectRelativeFilePath](./heft-config-file.configurationfile.projectrelativefilepath.md) | <code>readonly</code> | string | **_(BETA)_** A project root-relative path to the configuration file that should be loaded. |
-
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getObjectSourceFilePath(obj)](./heft-config-file.configurationfile.getobjectsourcefilepath.md) |  | **_(BETA)_** Get the path to the source file that the referenced property was originally loaded from. |
-|  [getPropertyOriginalValue(options)](./heft-config-file.configurationfile.getpropertyoriginalvalue.md) |  | **_(BETA)_** Get the value of the specified property on the specified object that was originally loaded from a configuration file. |
-|  [loadConfigurationFileForProjectAsync(terminal, projectPath, rigConfig)](./heft-config-file.configurationfile.loadconfigurationfileforprojectasync.md) |  | **_(BETA)_** Find and return a configuration file for the specified project, automatically resolving <code>extends</code> properties and handling rigged configuration files. Will throw an error if a configuration file cannot be found in the rig or project config folder. |
-|  [tryLoadConfigurationFileForProjectAsync(terminal, projectPath, rigConfig)](./heft-config-file.configurationfile.tryloadconfigurationfileforprojectasync.md) |  | **_(BETA)_** This function is identical to [ConfigurationFile.loadConfigurationFileForProjectAsync()](./heft-config-file.configurationfile.loadconfigurationfileforprojectasync.md)<></>, except that it returns <code>undefined</code> instead of throwing an error if the configuration file cannot be found. |
-

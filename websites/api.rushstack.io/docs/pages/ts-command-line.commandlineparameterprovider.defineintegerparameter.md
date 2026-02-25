@@ -15,14 +15,45 @@ Defines a command-line parameter whose argument is an integer.
 **Signature:**
 
 ```typescript
-defineIntegerParameter(definition: ICommandLineIntegerDefinition): CommandLineIntegerParameter;
+defineIntegerParameter(definition: ICommandLineIntegerDefinition & {
+        required: false | undefined;
+        defaultValue: undefined;
+    }): CommandLineIntegerParameter;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineIntegerDefinition](./ts-command-line.icommandlineintegerdefinition.md) &amp; { required: false \| undefined; defaultValue: undefined; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

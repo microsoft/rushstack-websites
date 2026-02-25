@@ -23,10 +23,51 @@ static tryGetValueByKey<TEnumValue>(enumObject: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  enumObject | { \[key: string\]: TEnumValue \| string; \[key: number\]: TEnumValue \| string; } |  |
-|  key | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+enumObject
+
+
+</td><td>
+
+{ \[key: string\]: TEnumValue \| string; \[key: number\]: TEnumValue \| string; }
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+key
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

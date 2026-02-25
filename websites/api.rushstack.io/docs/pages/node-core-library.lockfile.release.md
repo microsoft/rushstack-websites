@@ -20,9 +20,39 @@ release(deleteFile?: boolean): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  deleteFile | boolean | _(Optional)_ Whether to delete the lockfile from disk. Defaults to true. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+deleteFile
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether to delete the lockfile from disk. Defaults to true.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

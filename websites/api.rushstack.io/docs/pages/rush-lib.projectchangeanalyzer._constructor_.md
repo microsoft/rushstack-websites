@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ProjectChangeAnalyzer.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructs a new instance of the `ProjectChangeAnalyzer` class
@@ -23,7 +23,35 @@ constructor(rushConfiguration: RushConfiguration);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

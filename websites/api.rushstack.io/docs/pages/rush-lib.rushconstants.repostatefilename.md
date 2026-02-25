@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.repoStateFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The filename ("repo-state.json") for a file used by Rush to store the state of various features as they stand in the repo.
@@ -18,5 +18,5 @@ The filename ("repo-state.json") for a file used by Rush to store the state of v
 **Signature:**
 
 ```typescript
-static readonly repoStateFilename: string;
+static readonly repoStateFilename: 'repo-state.json';
 ```

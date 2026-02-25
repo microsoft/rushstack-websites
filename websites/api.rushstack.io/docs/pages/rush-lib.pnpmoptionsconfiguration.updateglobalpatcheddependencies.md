@@ -20,9 +20,37 @@ updateGlobalPatchedDependencies(patchedDependencies: Record<string, string> | un
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  patchedDependencies | Record&lt;string, string&gt; \| undefined |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+patchedDependencies
+
+
+</td><td>
+
+Record&lt;string, string&gt; \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

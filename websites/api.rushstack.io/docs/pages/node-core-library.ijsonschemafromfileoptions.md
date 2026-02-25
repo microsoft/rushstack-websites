@@ -8,19 +8,14 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/node-core-library](./node-core-library.md) &gt; [IJsonSchemaFromFileOptions](./node-core-library.ijsonschemafromfileoptions.md)
 
-## IJsonSchemaFromFileOptions interface
+## IJsonSchemaFromFileOptions type
 
-Options for JsonSchema.fromFile()
+Options for [JsonSchema.fromFile()](./node-core-library.jsonschema.fromfile.md)
 
 **Signature:**
 
 ```typescript
-export interface IJsonSchemaFromFileOptions 
+export type IJsonSchemaFromFileOptions = IJsonSchemaLoadOptions;
 ```
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dependentSchemas?](./node-core-library.ijsonschemafromfileoptions.dependentschemas.md) |  | [JsonSchema](./node-core-library.jsonschema.md)<></>\[\] | _(Optional)_ Other schemas that this schema references, e.g. via the "$ref" directive. |
+**References:** [IJsonSchemaLoadOptions](./node-core-library.ijsonschemaloadoptions.md)
 

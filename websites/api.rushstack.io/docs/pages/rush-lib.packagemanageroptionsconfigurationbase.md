@@ -25,7 +25,47 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [environmentVariables?](./rush-lib.packagemanageroptionsconfigurationbase.environmentvariables.md) | <code>readonly</code> | [IConfigurationEnvironment](./rush-lib.iconfigurationenvironment.md) | _(Optional)_ Environment variables for the package manager |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[environmentVariables?](./rush-lib.packagemanageroptionsconfigurationbase.environmentvariables.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IConfigurationEnvironment](./rush-lib.iconfigurationenvironment.md)
+
+
+</td><td>
+
+_(Optional)_ Environment variables for the package manager
+
+
+</td></tr>
+</tbody></table>
 

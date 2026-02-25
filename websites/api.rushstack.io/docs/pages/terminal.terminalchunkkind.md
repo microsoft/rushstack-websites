@@ -15,13 +15,58 @@ Specifies the kind of data represented by a [ITerminalChunk](./terminal.itermina
 **Signature:**
 
 ```typescript
-export declare const enum TerminalChunkKind 
+export declare enum TerminalChunkKind 
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Stderr | <code>&quot;E&quot;</code> | Indicates a <code>ITerminalChunk</code> object representing <code>stderr</code> console output. |
-|  Stdout | <code>&quot;O&quot;</code> | Indicates a <code>ITerminalChunk</code> object representing <code>stdout</code> console output. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Stderr
+
+
+</td><td>
+
+`"E"`
+
+
+</td><td>
+
+Indicates a `ITerminalChunk` object representing `stderr` console output.
+
+
+</td></tr>
+<tr><td>
+
+Stdout
+
+
+</td><td>
+
+`"O"`
+
+
+</td><td>
+
+Indicates a `ITerminalChunk` object representing `stdout` console output.
+
+
+</td></tr>
+</tbody></table>
 

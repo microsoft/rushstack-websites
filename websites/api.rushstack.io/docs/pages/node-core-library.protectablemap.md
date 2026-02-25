@@ -26,25 +26,206 @@ For example, suppose you want to share your `Map<string, number>` data structure
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parameters)](./node-core-library.protectablemap._constructor_.md) |  | Constructs a new instance of the <code>ProtectableMap</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parameters)](./node-core-library.protectablemap._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ProtectableMap` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [protectedView](./node-core-library.protectablemap.protectedview.md) | <code>readonly</code> | Map&lt;K, V&gt; | The owner of the protectable map should return this object via its public API. |
-|  [size](./node-core-library.protectablemap.size.md) | <code>readonly</code> | number | Returns the number of (key, value) entries in the map. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[protectedView](./node-core-library.protectablemap.protectedview.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;K, V&gt;
+
+
+</td><td>
+
+The owner of the protectable map should return this object via its public API.
+
+
+</td></tr>
+<tr><td>
+
+[size](./node-core-library.protectablemap.size.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Returns the number of (key, value) entries in the map.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [clear()](./node-core-library.protectablemap.clear.md) |  | Removes all entries from the map. This operation does NOT invoke the ProtectableMap onClear() hook. |
-|  [delete(key)](./node-core-library.protectablemap.delete.md) |  | Removes the specified key from the map. This operation does NOT invoke the ProtectableMap onDelete() hook. |
-|  [forEach(callbackfn, thisArg)](./node-core-library.protectablemap.foreach.md) |  | Performs an operation for each (key, value) entries in the map. |
-|  [get(key)](./node-core-library.protectablemap.get.md) |  | Retrieves the value for the specified key. |
-|  [has(key)](./node-core-library.protectablemap.has.md) |  | Returns true if the specified key belongs to the map. |
-|  [set(key, value)](./node-core-library.protectablemap.set.md) |  | Sets a value for the specified key. This operation does NOT invoke the ProtectableMap onSet() hook. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[clear()](./node-core-library.protectablemap.clear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Removes all entries from the map. This operation does NOT invoke the ProtectableMap onClear() hook.
+
+
+</td></tr>
+<tr><td>
+
+[delete(key)](./node-core-library.protectablemap.delete.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Removes the specified key from the map. This operation does NOT invoke the ProtectableMap onDelete() hook.
+
+
+</td></tr>
+<tr><td>
+
+[forEach(callbackfn, thisArg)](./node-core-library.protectablemap.foreach.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Performs an operation for each (key, value) entries in the map.
+
+
+</td></tr>
+<tr><td>
+
+[get(key)](./node-core-library.protectablemap.get.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Retrieves the value for the specified key.
+
+
+</td></tr>
+<tr><td>
+
+[has(key)](./node-core-library.protectablemap.has.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns true if the specified key belongs to the map.
+
+
+</td></tr>
+<tr><td>
+
+[set(key, value)](./node-core-library.protectablemap.set.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Sets a value for the specified key. This operation does NOT invoke the ProtectableMap onSet() hook.
+
+
+</td></tr>
+</tbody></table>
 

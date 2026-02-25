@@ -15,5 +15,5 @@ The link creation mode to use. "default": Create the links while copying the fil
 **Signature:**
 
 ```typescript
-linkCreation?: 'default' | 'script' | 'none';
+linkCreation?: LinkCreationMode;
 ```

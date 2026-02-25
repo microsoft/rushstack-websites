@@ -25,24 +25,222 @@ The file path provided to the FileError constructor is expected to exist on disk
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(message, options)](./node-core-library.fileerror._constructor_.md) |  | Constructs a new instance of the [FileError](./node-core-library.fileerror.md) class. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(message, options)](./node-core-library.fileerror._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the [FileError](./node-core-library.fileerror.md) class.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [absolutePath](./node-core-library.fileerror.absolutepath.md) | <code>readonly</code> | string | The absolute path to the file that contains the error. |
-|  [column](./node-core-library.fileerror.column.md) | <code>readonly</code> | number \| undefined | The column number of the error in the target file. Minimum value is 1. |
-|  [line](./node-core-library.fileerror.line.md) | <code>readonly</code> | number \| undefined | The line number of the error in the target file. Minimum value is 1. |
-|  [projectFolder](./node-core-library.fileerror.projectfolder.md) | <code>readonly</code> | string | The root folder for the project that the error is in relation to. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[absolutePath](./node-core-library.fileerror.absolutepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path to the file that contains the error.
+
+
+</td></tr>
+<tr><td>
+
+[column](./node-core-library.fileerror.column.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The column number of the error in the target file. Minimum value is 1.
+
+
+</td></tr>
+<tr><td>
+
+[line](./node-core-library.fileerror.line.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The line number of the error in the target file. Minimum value is 1.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder](./node-core-library.fileerror.projectfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The root folder for the project that the error is in relation to.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\[Symbol.hasInstance\](instance)](./node-core-library.fileerror._symbol.hasinstance_.md) | <code>static</code> |  |
-|  [getFormattedErrorMessage(options)](./node-core-library.fileerror.getformattederrormessage.md) |  | Get the formatted error message. |
-|  [toString()](./node-core-library.fileerror.tostring.md) |  | Get the Unix-formatted the error message. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[Symbol.hasInstance\](instance)](./node-core-library.fileerror._symbol.hasinstance_.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getFormattedErrorMessage(options)](./node-core-library.fileerror.getformattederrormessage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the formatted error message.
+
+
+</td></tr>
+<tr><td>
+
+[getProblemMatcher(options)](./node-core-library.fileerror.getproblemmatcher.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the problem matcher pattern for parsing error messages.
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./node-core-library.fileerror.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the Unix-formatted the error message.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,37 @@ protected abstract onDefineScopedParameters(scopedParameterProvider: CommandLine
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  scopedParameterProvider | [CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+scopedParameterProvider
+
+
+</td><td>
+
+[CommandLineParameterProvider](./ts-command-line.commandlineparameterprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

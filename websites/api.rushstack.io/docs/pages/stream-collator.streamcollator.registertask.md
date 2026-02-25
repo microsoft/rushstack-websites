@@ -10,7 +10,7 @@ pagination_next: null
 
 ## StreamCollator.registerTask() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Registers a new task to be collated, and constructs a [CollatedWriter](./stream-collator.collatedwriter.md) object to receive its input.
@@ -23,9 +23,37 @@ registerTask(taskName: string): CollatedWriter;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  taskName | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+taskName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

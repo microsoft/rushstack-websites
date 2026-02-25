@@ -17,3 +17,8 @@ The folder where the PNPM "node\_modules" folder is located. This is used to res
 ```typescript
 pnpmInstallFolder?: string;
 ```
+
+## Remarks
+
+When Rush subspaces are enabled, this setting applies to `default` subspace only. To configure each subspace, use the [IExtractorOptions.subspaces](./package-extractor.iextractoroptions.subspaces.md) array instead. The two approaches cannot be combined.
+

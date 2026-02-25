@@ -10,11 +10,10 @@ pagination_next: null
 
 ## IRunWithRetriesOptions.action property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
+The action to be performed. The action is repeatedly executed until it completes without throwing or the maximum number of retries is reached.
 
 **Signature:**
 
 ```typescript
-action: () => Promise<TResult> | TResult;
+action: (retryCount: number) => Promise<TResult> | TResult;
 ```

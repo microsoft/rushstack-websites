@@ -20,9 +20,37 @@ defineCommandLineRemainder(definition: ICommandLineRemainderDefinition): Command
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineRemainderDefinition](./ts-command-line.icommandlineremainderdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineRemainderDefinition](./ts-command-line.icommandlineremainderdefinition.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

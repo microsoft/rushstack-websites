@@ -14,134 +14,1356 @@ Core libraries that every NodeJS toolchain project should use.
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [AlreadyReportedError](./node-core-library.alreadyreportederror.md) | This exception can be thrown to indicate that an operation failed and an error message has already been reported appropriately. Thus, the catch handler does not have responsibility for reporting the error. |
-|  [AnsiEscape](./node-core-library.ansiescape.md) | Operations for working with text strings that contain [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)<></>. The most commonly used escape codes set the foreground/background color for console output. |
-|  [Async](./node-core-library.async.md) | **_(BETA)_** Utilities for parallel asynchronous operations, for use with the system <code>Promise</code> APIs. |
-|  [AsyncQueue](./node-core-library.asyncqueue.md) | A queue that allows for asynchronous iteration. During iteration, the queue will wait until the next item is pushed into the queue before yielding. If instead all queue items are consumed and all callbacks have been called, the queue will return. |
-|  [Colors](./node-core-library.colors.md) | **_(BETA)_** The static functions on this class are used to produce colored text for use with the node-core-library terminal. |
-|  [ConsoleTerminalProvider](./node-core-library.consoleterminalprovider.md) | **_(BETA)_** Terminal provider that prints to STDOUT (for log- and verbose-level messages) and STDERR (for warning- and error-level messsages). |
-|  [Enum](./node-core-library.enum.md) | A helper for looking up TypeScript <code>enum</code> keys/values. |
-|  [EnvironmentMap](./node-core-library.environmentmap.md) | A map data structure that stores process environment variables. On Windows operating system, the variable names are case-insensitive. |
-|  [Executable](./node-core-library.executable.md) | The Executable class provides a safe, portable, recommended solution for tools that need to launch child processes. |
-|  [FileError](./node-core-library.fileerror.md) | An <code>Error</code> subclass that should be thrown to report an unexpected state that specifically references a location in a file. |
-|  [FileSystem](./node-core-library.filesystem.md) | The FileSystem API provides a complete set of recommended operations for interacting with the file system. |
-|  [FileWriter](./node-core-library.filewriter.md) | API for interacting with file handles. |
-|  [Import](./node-core-library.import.md) | Helpers for resolving and importing Node.js modules. |
-|  [InternalError](./node-core-library.internalerror.md) | An <code>Error</code> subclass that should be thrown to report an unexpected state that may indicate a software defect. An application may handle this error by instructing the end user to report an issue to the application maintainers. |
-|  [JsonFile](./node-core-library.jsonfile.md) | Utilities for reading/writing JSON files. |
-|  [JsonSchema](./node-core-library.jsonschema.md) | Represents a JSON schema that can be used to validate JSON data files loaded by the JsonFile class. |
-|  [LegacyAdapters](./node-core-library.legacyadapters.md) | Helper functions used when interacting with APIs that do not follow modern coding practices. |
-|  [LockFile](./node-core-library.lockfile.md) | The <code>LockFile</code> implements a file-based mutex for synchronizing access to a shared resource between multiple Node.js processes. It is not recommended for synchronization solely within a single Node.js process. |
-|  [MapExtensions](./node-core-library.mapextensions.md) | Helper functions for working with the <code>Map&lt;K, V&gt;</code> data type. |
-|  [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | This class provides methods for finding the nearest "package.json" for a folder and retrieving the name of the package. The results are cached. |
-|  [PackageName](./node-core-library.packagename.md) | Provides basic operations for validating and manipulating NPM package names such as <code>my-package</code> or <code>@scope/my-package</code>. |
-|  [PackageNameParser](./node-core-library.packagenameparser.md) | A configurable parser for validating and manipulating NPM package names such as <code>my-package</code> or <code>@scope/my-package</code>. |
-|  [Path](./node-core-library.path.md) | Common operations for manipulating file and directory paths. |
-|  [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md) | **_(BETA)_** Wraps an existing [ITerminalProvider](./node-core-library.iterminalprovider.md) that prefixes each line of output with a specified prefix string. |
-|  [ProtectableMap](./node-core-library.protectablemap.md) | The ProtectableMap provides an easy way for an API to expose a <code>Map&lt;K, V&gt;</code> property while intercepting and validating any write operations that are performed by consumers of the API. |
-|  [Sort](./node-core-library.sort.md) | Operations for sorting collections. |
-|  [StringBufferTerminalProvider](./node-core-library.stringbufferterminalprovider.md) | **_(BETA)_** Terminal provider that stores written data in buffers separated by severity. This terminal provider is designed to be used when code that prints to a terminal is being unit tested. |
-|  [StringBuilder](./node-core-library.stringbuilder.md) | This class allows a large text string to be constructed incrementally by appending small chunks. The final string can be obtained by calling StringBuilder.toString(). |
-|  [SubprocessTerminator](./node-core-library.subprocessterminator.md) | **_(BETA)_** When a child process is created, registering it with the SubprocessTerminator will ensure that the child gets terminated when the current process terminates. |
-|  [Terminal](./node-core-library.terminal.md) | **_(BETA)_** This class facilitates writing to a console. |
-|  [TerminalWritable](./node-core-library.terminalwritable.md) | **_(BETA)_** A adapter to allow writing to a provided terminal using Writable streams. |
-|  [Text](./node-core-library.text.md) | Operations for working with strings that contain text. |
-|  [TypeUuid](./node-core-library.typeuuid.md) | Provides a version-independent implementation of the JavaScript <code>instanceof</code> operator. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AlreadyReportedError](./node-core-library.alreadyreportederror.md)
+
+
+</td><td>
+
+This exception can be thrown to indicate that an operation failed and an error message has already been reported appropriately. Thus, the catch handler does not have responsibility for reporting the error.
+
+
+</td></tr>
+<tr><td>
+
+[Async](./node-core-library.async.md)
+
+
+</td><td>
+
+Utilities for parallel asynchronous operations, for use with the system `Promise` APIs.
+
+
+</td></tr>
+<tr><td>
+
+[AsyncQueue](./node-core-library.asyncqueue.md)
+
+
+</td><td>
+
+A queue that allows for asynchronous iteration. During iteration, the queue will wait until the next item is pushed into the queue before yielding. If instead all queue items are consumed and all callbacks have been called, the queue will return.
+
+
+</td></tr>
+<tr><td>
+
+[Enum](./node-core-library.enum.md)
+
+
+</td><td>
+
+A helper for looking up TypeScript `enum` keys/values.
+
+
+</td></tr>
+<tr><td>
+
+[EnvironmentMap](./node-core-library.environmentmap.md)
+
+
+</td><td>
+
+A map data structure that stores process environment variables. On Windows operating system, the variable names are case-insensitive.
+
+
+</td></tr>
+<tr><td>
+
+[Executable](./node-core-library.executable.md)
+
+
+</td><td>
+
+The Executable class provides a safe, portable, recommended solution for tools that need to launch child processes.
+
+
+</td></tr>
+<tr><td>
+
+[FileError](./node-core-library.fileerror.md)
+
+
+</td><td>
+
+An `Error` subclass that should be thrown to report an unexpected state that specifically references a location in a file.
+
+
+</td></tr>
+<tr><td>
+
+[FileSystem](./node-core-library.filesystem.md)
+
+
+</td><td>
+
+The FileSystem API provides a complete set of recommended operations for interacting with the file system.
+
+
+</td></tr>
+<tr><td>
+
+[FileWriter](./node-core-library.filewriter.md)
+
+
+</td><td>
+
+API for interacting with file handles.
+
+
+</td></tr>
+<tr><td>
+
+[Import](./node-core-library.import.md)
+
+
+</td><td>
+
+Helpers for resolving and importing Node.js modules.
+
+
+</td></tr>
+<tr><td>
+
+[InternalError](./node-core-library.internalerror.md)
+
+
+</td><td>
+
+An `Error` subclass that should be thrown to report an unexpected state that may indicate a software defect. An application may handle this error by instructing the end user to report an issue to the application maintainers.
+
+
+</td></tr>
+<tr><td>
+
+[JsonFile](./node-core-library.jsonfile.md)
+
+
+</td><td>
+
+Utilities for reading/writing JSON files.
+
+
+</td></tr>
+<tr><td>
+
+[JsonSchema](./node-core-library.jsonschema.md)
+
+
+</td><td>
+
+Represents a JSON schema that can be used to validate JSON data files loaded by the JsonFile class.
+
+
+</td></tr>
+<tr><td>
+
+[LegacyAdapters](./node-core-library.legacyadapters.md)
+
+
+</td><td>
+
+Helper functions used when interacting with APIs that do not follow modern coding practices.
+
+
+</td></tr>
+<tr><td>
+
+[LockFile](./node-core-library.lockfile.md)
+
+
+</td><td>
+
+The `LockFile` implements a file-based mutex for synchronizing access to a shared resource between multiple Node.js processes. It is not recommended for synchronization solely within a single Node.js process.
+
+
+</td></tr>
+<tr><td>
+
+[MapExtensions](./node-core-library.mapextensions.md)
+
+
+</td><td>
+
+Helper functions for working with the `Map<K, V>` data type.
+
+
+</td></tr>
+<tr><td>
+
+[MinimumHeap](./node-core-library.minimumheap.md)
+
+
+</td><td>
+
+Implements a standard heap data structure for items of type T and a custom comparator. The root will always be the minimum value as determined by the comparator.
+
+
+</td></tr>
+<tr><td>
+
+[PackageJsonLookup](./node-core-library.packagejsonlookup.md)
+
+
+</td><td>
+
+This class provides methods for finding the nearest "package.json" for a folder and retrieving the name of the package. The results are cached.
+
+
+</td></tr>
+<tr><td>
+
+[PackageName](./node-core-library.packagename.md)
+
+
+</td><td>
+
+Provides basic operations for validating and manipulating NPM package names such as `my-package` or `@scope/my-package`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[PackageNameParser](./node-core-library.packagenameparser.md)
+
+
+</td><td>
+
+A configurable parser for validating and manipulating NPM package names such as `my-package` or `@scope/my-package`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[Path](./node-core-library.path.md)
+
+
+</td><td>
+
+Common operations for manipulating file and directory paths.
+
+
+</td></tr>
+<tr><td>
+
+[ProtectableMap](./node-core-library.protectablemap.md)
+
+
+</td><td>
+
+The ProtectableMap provides an easy way for an API to expose a `Map<K, V>` property while intercepting and validating any write operations that are performed by consumers of the API.
+
+
+</td></tr>
+<tr><td>
+
+[RealNodeModulePathResolver](./node-core-library.realnodemodulepathresolver.md)
+
+
+</td><td>
+
+This class encapsulates a caching resolver for symlinks in node\_modules directories. It assumes that the only symlinks that exist in input paths are those that correspond to npm packages.
+
+
+</td></tr>
+<tr><td>
+
+[Sort](./node-core-library.sort.md)
+
+
+</td><td>
+
+Operations for sorting collections.
+
+
+</td></tr>
+<tr><td>
+
+[StringBuilder](./node-core-library.stringbuilder.md)
+
+
+</td><td>
+
+This class allows a large text string to be constructed incrementally by appending small chunks. The final string can be obtained by calling StringBuilder.toString().
+
+
+</td></tr>
+<tr><td>
+
+[SubprocessTerminator](./node-core-library.subprocessterminator.md)
+
+
+</td><td>
+
+**_(BETA)_** When a child process is created, registering it with the SubprocessTerminator will ensure that the child gets terminated when the current process terminates.
+
+
+</td></tr>
+<tr><td>
+
+[Text](./node-core-library.text.md)
+
+
+</td><td>
+
+Operations for working with strings that contain text.
+
+
+</td></tr>
+<tr><td>
+
+[TypeUuid](./node-core-library.typeuuid.md)
+
+
+</td><td>
+
+Provides a version-independent implementation of the JavaScript `instanceof` operator.
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | Specifies the behavior of APIs such as [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md) or [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md) when the output file path already exists. |
-|  [ColorValue](./node-core-library.colorvalue.md) | **_(BETA)_** Colors used with [IColorableSequence](./node-core-library.icolorablesequence.md)<></>. |
-|  [Encoding](./node-core-library.encoding.md) | The allowed types of encodings, as supported by Node.js |
-|  [FileConstants](./node-core-library.fileconstants.md) | String constants for common filenames and parts of filenames. |
-|  [FolderConstants](./node-core-library.folderconstants.md) | String constants for common folder names. |
-|  [JsonSyntax](./node-core-library.jsonsyntax.md) | Specifies the variant of JSON syntax to be used. |
-|  [NewlineKind](./node-core-library.newlinekind.md) | Enumeration controlling conversion of newline characters. |
-|  [PosixModeBits](./node-core-library.posixmodebits.md) | An integer value used to specify file permissions for POSIX-like operating systems. |
-|  [TerminalProviderSeverity](./node-core-library.terminalproviderseverity.md) | <p>**_(BETA)_** Similar to many popular logging packages, terminal providers support a range of message severities. These severities have built-in formatting defaults in the Terminal object (warnings are yellow, errors are red, etc.).</p><p>Terminal providers may choose to suppress certain messages based on their severity, or to route some messages to other providers or not based on severity.</p><p>Severity \| Purpose \-\-\-\-\-\-\-\-\- \| \-\-\-\-\-\-- error \| Build errors and fatal issues warning \| Not necessarily fatal, but indicate a problem the user should fix log \| Informational messages verbose \| Additional information that may not always be necessary debug \| Highest detail level, best used for troubleshooting information</p> |
-|  [TextAttribute](./node-core-library.textattribute.md) | **_(BETA)_** Text styles used with [IColorableSequence](./node-core-library.icolorablesequence.md)<></>. |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+Specifies the behavior of APIs such as [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md) or [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md) when the output file path already exists.
+
+
+</td></tr>
+<tr><td>
+
+[Encoding](./node-core-library.encoding.md)
+
+
+</td><td>
+
+The allowed types of encodings, as supported by Node.js
+
+
+</td></tr>
+<tr><td>
+
+[JsonSyntax](./node-core-library.jsonsyntax.md)
+
+
+</td><td>
+
+Specifies the variant of JSON syntax to be used.
+
+
+</td></tr>
+<tr><td>
+
+[NewlineKind](./node-core-library.newlinekind.md)
+
+
+</td><td>
+
+Enumeration controlling conversion of newline characters.
+
+
+</td></tr>
+<tr><td>
+
+[PosixModeBits](./node-core-library.posixmodebits.md)
+
+
+</td><td>
+
+An integer value used to specify file permissions for POSIX-like operating systems.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IAnsiEscapeConvertForTestsOptions](./node-core-library.iansiescapeconvertfortestsoptions.md) | Options for [AnsiEscape.formatForTests()](./node-core-library.ansiescape.formatfortests.md)<></>. |
-|  [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) | **_(BETA)_** Options for controlling the parallelism of asynchronous operations. |
-|  [IColorableSequence](./node-core-library.icolorablesequence.md) | **_(BETA)_** |
-|  [IConsoleTerminalProviderOptions](./node-core-library.iconsoleterminalprovideroptions.md) | **_(BETA)_** Options to be provided to a [ConsoleTerminalProvider](./node-core-library.consoleterminalprovider.md) |
-|  [IDynamicPrefixProxyTerminalProviderOptions](./node-core-library.idynamicprefixproxyterminalprovideroptions.md) | **_(BETA)_** Options for [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md)<></>. |
-|  [IEnvironmentEntry](./node-core-library.ienvironmententry.md) | A process environment variable name and its value. Used by [EnvironmentMap](./node-core-library.environmentmap.md)<></>. |
-|  [IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md) | Options for Executable.tryResolve(). |
-|  [IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md) | Options for [Executable.spawn()](./node-core-library.executable.spawn.md) |
-|  [IExecutableSpawnSyncOptions](./node-core-library.iexecutablespawnsyncoptions.md) | Options for [Executable.spawnSync()](./node-core-library.executable.spawnsync.md) |
-|  [IFileErrorFormattingOptions](./node-core-library.ifileerrorformattingoptions.md) | Provides options for the output message of a file error. |
-|  [IFileErrorOptions](./node-core-library.ifileerroroptions.md) | Provides options for the creation of a FileError. |
-|  [IFileSystemCopyFileBaseOptions](./node-core-library.ifilesystemcopyfilebaseoptions.md) |  |
-|  [IFileSystemCopyFileOptions](./node-core-library.ifilesystemcopyfileoptions.md) | The options for [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md) |
-|  [IFileSystemCopyFilesAsyncOptions](./node-core-library.ifilesystemcopyfilesasyncoptions.md) | The options for [FileSystem.copyFilesAsync()](./node-core-library.filesystem.copyfilesasync.md) |
-|  [IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md) | The options for [FileSystem.copyFiles()](./node-core-library.filesystem.copyfiles.md) |
-|  [IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md) | The options for [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md)<></>, [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md)<></>, [FileSystem.createSymbolicLinkFolder()](./node-core-library.filesystem.createsymboliclinkfolder.md)<></>, and [FileSystem.createHardLink()](./node-core-library.filesystem.createhardlink.md)<></>. |
-|  [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md) | The options for [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md) |
-|  [IFileSystemMoveOptions](./node-core-library.ifilesystemmoveoptions.md) | The options for [FileSystem.move()](./node-core-library.filesystem.move.md) |
-|  [IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md) | The options for [FileSystem.readFile()](./node-core-library.filesystem.readfile.md) |
-|  [IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md) | The options for [FileSystem.readFolder()](./node-core-library.filesystem.readfolder.md) |
-|  [IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md) | The options for [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md) Both times must be specified. |
-|  [IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md) | The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md) |
-|  [IFileWriterFlags](./node-core-library.ifilewriterflags.md) | Interface which represents the flags about which mode the file should be opened in. |
-|  [IImportResolveAsyncOptions](./node-core-library.iimportresolveasyncoptions.md) | Common options shared by [IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md) and [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md) |
-|  [IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md) | Options for [Import.resolveModuleAsync()](./node-core-library.import.resolvemoduleasync.md) |
-|  [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) | Options for [Import.resolveModule()](./node-core-library.import.resolvemodule.md) |
-|  [IImportResolveOptions](./node-core-library.iimportresolveoptions.md) | Common options shared by [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) and [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md) |
-|  [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md) | Options for [Import.resolvePackageAsync()](./node-core-library.import.resolvepackageasync.md) |
-|  [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md) | Options for [Import.resolvePackage()](./node-core-library.import.resolvepackage.md) |
-|  [IJsonFileLoadAndValidateOptions](./node-core-library.ijsonfileloadandvalidateoptions.md) | Options for [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md) and [JsonFile.loadAndValidateAsync()](./node-core-library.jsonfile.loadandvalidateasync.md) |
-|  [IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md) | Options for [JsonFile.parseString()](./node-core-library.jsonfile.parsestring.md)<></>, [JsonFile.load()](./node-core-library.jsonfile.load.md)<></>, and [JsonFile.loadAsync()](./node-core-library.jsonfile.loadasync.md)<></>. |
-|  [IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md) | Options for [JsonFile.save()](./node-core-library.jsonfile.save.md) and [JsonFile.saveAsync()](./node-core-library.jsonfile.saveasync.md)<></>. |
-|  [IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md) | Options for [JsonFile.stringify()](./node-core-library.jsonfile.stringify.md) |
-|  [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md) | Callback function arguments for JsonSchema.validateObjectWithCallback(); |
-|  [IJsonSchemaFromFileOptions](./node-core-library.ijsonschemafromfileoptions.md) | Options for JsonSchema.fromFile() |
-|  [IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md) | Options for JsonSchema.validateObject() |
-|  [INodePackageJson](./node-core-library.inodepackagejson.md) | An interface for accessing common fields from a package.json file whose version field may be missing. |
-|  [IPackageJson](./node-core-library.ipackagejson.md) | An interface for accessing common fields from a package.json file. |
-|  [IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "dependencies", "optionalDependencies", and "devDependencies" fields. |
-|  [IPackageJsonLookupParameters](./node-core-library.ipackagejsonlookupparameters.md) | Constructor parameters for [PackageJsonLookup](./node-core-library.packagejsonlookup.md) |
-|  [IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "repository" field. |
-|  [IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "scripts" field. |
-|  [IPackageNameParserOptions](./node-core-library.ipackagenameparseroptions.md) | Options that configure the validation rules used by a [PackageNameParser](./node-core-library.packagenameparser.md) instance. |
-|  [IParsedPackageName](./node-core-library.iparsedpackagename.md) | A package name that has been separated into its scope and unscoped name. |
-|  [IParsedPackageNameOrError](./node-core-library.iparsedpackagenameorerror.md) | Result object returned by [PackageName.tryParse()](./node-core-library.packagename.tryparse.md) |
-|  [IPathFormatConciselyOptions](./node-core-library.ipathformatconciselyoptions.md) | Options for [Path.formatConcisely()](./node-core-library.path.formatconcisely.md)<></>. |
-|  [IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md) | Options for [Path.formatFileLocation()](./node-core-library.path.formatfilelocation.md)<></>. |
-|  [IPeerDependenciesMetaTable](./node-core-library.ipeerdependenciesmetatable.md) | This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "peerDependenciesMeta" field. |
-|  [IPrefixProxyTerminalProviderOptionsBase](./node-core-library.iprefixproxyterminalprovideroptionsbase.md) | **_(BETA)_** |
-|  [IProtectableMapParameters](./node-core-library.iprotectablemapparameters.md) | Constructor parameters for [ProtectableMap](./node-core-library.protectablemap.md) |
-|  [IRunWithRetriesOptions](./node-core-library.irunwithretriesoptions.md) | **_(BETA)_** |
-|  [IStaticPrefixProxyTerminalProviderOptions](./node-core-library.istaticprefixproxyterminalprovideroptions.md) | **_(BETA)_** Options for [PrefixProxyTerminalProvider](./node-core-library.prefixproxyterminalprovider.md)<></>, with a static prefix. |
-|  [IStringBufferOutputOptions](./node-core-library.istringbufferoutputoptions.md) | **_(BETA)_** |
-|  [IStringBuilder](./node-core-library.istringbuilder.md) | An interface for a builder object that allows a large text string to be constructed incrementally by appending small chunks. |
-|  [ISubprocessOptions](./node-core-library.isubprocessoptions.md) | **_(BETA)_** Details about how the <code>child_process.ChildProcess</code> was created. |
-|  [ITerminal](./node-core-library.iterminal.md) | **_(BETA)_** |
-|  [ITerminalProvider](./node-core-library.iterminalprovider.md) | **_(BETA)_** Implement the interface to create a terminal provider. Terminal providers can be registered to a [Terminal](./node-core-library.terminal.md) instance to receive messages. |
-|  [ITerminalWritableOptions](./node-core-library.iterminalwritableoptions.md) | **_(BETA)_** Options for [TerminalWritable](./node-core-library.terminalwritable.md)<></>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md)
+
+
+</td><td>
+
+Options for controlling the parallelism of asynchronous operations.
+
+
+</td></tr>
+<tr><td>
+
+[IDependenciesMetaTable](./node-core-library.idependenciesmetatable.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "dependenciesMeta" field.
+
+
+</td></tr>
+<tr><td>
+
+[IEnvironmentEntry](./node-core-library.ienvironmententry.md)
+
+
+</td><td>
+
+A process environment variable name and its value. Used by [EnvironmentMap](./node-core-library.environmentmap.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IExecutableResolveOptions](./node-core-library.iexecutableresolveoptions.md)
+
+
+</td><td>
+
+Options for Executable.tryResolve().
+
+
+</td></tr>
+<tr><td>
+
+[IExecutableSpawnOptions](./node-core-library.iexecutablespawnoptions.md)
+
+
+</td><td>
+
+Options for [Executable.spawn()](./node-core-library.executable.spawn.md)
+
+
+</td></tr>
+<tr><td>
+
+[IExecutableSpawnSyncOptions](./node-core-library.iexecutablespawnsyncoptions.md)
+
+
+</td><td>
+
+Options for [Executable.spawnSync()](./node-core-library.executable.spawnsync.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileErrorFormattingOptions](./node-core-library.ifileerrorformattingoptions.md)
+
+
+</td><td>
+
+Provides options for the output message of a file error.
+
+
+</td></tr>
+<tr><td>
+
+[IFileErrorOptions](./node-core-library.ifileerroroptions.md)
+
+
+</td><td>
+
+Provides options for the creation of a FileError.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemCopyFileBaseOptions](./node-core-library.ifilesystemcopyfilebaseoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemCopyFileOptions](./node-core-library.ifilesystemcopyfileoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.copyFile()](./node-core-library.filesystem.copyfile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemCopyFilesAsyncOptions](./node-core-library.ifilesystemcopyfilesasyncoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.copyFilesAsync()](./node-core-library.filesystem.copyfilesasync.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemCopyFilesOptions](./node-core-library.ifilesystemcopyfilesoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.copyFiles()](./node-core-library.filesystem.copyfiles.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemCreateLinkOptions](./node-core-library.ifilesystemcreatelinkoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md)<></>, [FileSystem.createSymbolicLinkFile()](./node-core-library.filesystem.createsymboliclinkfile.md)<></>, [FileSystem.createSymbolicLinkFolder()](./node-core-library.filesystem.createsymboliclinkfolder.md)<></>, and [FileSystem.createHardLink()](./node-core-library.filesystem.createhardlink.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.deleteFile()](./node-core-library.filesystem.deletefile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemMoveOptions](./node-core-library.ifilesystemmoveoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.move()](./node-core-library.filesystem.move.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemReadFileOptions](./node-core-library.ifilesystemreadfileoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.readFile()](./node-core-library.filesystem.readfile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemReadFolderOptions](./node-core-library.ifilesystemreadfolderoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.readFolderItems()](./node-core-library.filesystem.readfolderitems.md) and [FileSystem.readFolderItemNames()](./node-core-library.filesystem.readfolderitemnames.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemUpdateTimeParameters](./node-core-library.ifilesystemupdatetimeparameters.md)
+
+
+</td><td>
+
+The options for [FileSystem.updateTimes()](./node-core-library.filesystem.updatetimes.md) Both times must be specified.
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemWriteBinaryFileOptions](./node-core-library.ifilesystemwritebinaryfileoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.writeBuffersToFile()](./node-core-library.filesystem.writebufferstofile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemWriteFileOptions](./node-core-library.ifilesystemwritefileoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileWriterFlags](./node-core-library.ifilewriterflags.md)
+
+
+</td><td>
+
+Interface which represents the flags about which mode the file should be opened in.
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolveAsyncOptions](./node-core-library.iimportresolveasyncoptions.md)
+
+
+</td><td>
+
+Common options shared by [IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md) and [IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md)
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolveModuleAsyncOptions](./node-core-library.iimportresolvemoduleasyncoptions.md)
+
+
+</td><td>
+
+Options for [Import.resolveModuleAsync()](./node-core-library.import.resolvemoduleasync.md)
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md)
+
+
+</td><td>
+
+Options for [Import.resolveModule()](./node-core-library.import.resolvemodule.md)
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolveOptions](./node-core-library.iimportresolveoptions.md)
+
+
+</td><td>
+
+Common options shared by [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) and [IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md)
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolvePackageAsyncOptions](./node-core-library.iimportresolvepackageasyncoptions.md)
+
+
+</td><td>
+
+Options for [Import.resolvePackageAsync()](./node-core-library.import.resolvepackageasync.md)
+
+
+</td></tr>
+<tr><td>
+
+[IImportResolvePackageOptions](./node-core-library.iimportresolvepackageoptions.md)
+
+
+</td><td>
+
+Options for [Import.resolvePackage()](./node-core-library.import.resolvepackage.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonFileLoadAndValidateOptions](./node-core-library.ijsonfileloadandvalidateoptions.md)
+
+
+</td><td>
+
+Options for [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md) and [JsonFile.loadAndValidateAsync()](./node-core-library.jsonfile.loadandvalidateasync.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md)
+
+
+</td><td>
+
+Options for [JsonFile.parseString()](./node-core-library.jsonfile.parsestring.md)<></>, [JsonFile.load()](./node-core-library.jsonfile.load.md)<></>, and [JsonFile.loadAsync()](./node-core-library.jsonfile.loadasync.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IJsonFileSaveOptions](./node-core-library.ijsonfilesaveoptions.md)
+
+
+</td><td>
+
+Options for [JsonFile.save()](./node-core-library.jsonfile.save.md) and [JsonFile.saveAsync()](./node-core-library.jsonfile.saveasync.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IJsonFileStringifyOptions](./node-core-library.ijsonfilestringifyoptions.md)
+
+
+</td><td>
+
+Options for [JsonFile.stringify()](./node-core-library.jsonfile.stringify.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaCustomFormat](./node-core-library.ijsonschemacustomformat.md)
+
+
+</td><td>
+
+A definition for a custom format to consider during validation.
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md)
+
+
+</td><td>
+
+Callback function arguments for [JsonSchema.validateObjectWithCallback()](./node-core-library.jsonschema.validateobjectwithcallback.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaLoadOptions](./node-core-library.ijsonschemaloadoptions.md)
+
+
+</td><td>
+
+Options for [JsonSchema.fromFile()](./node-core-library.jsonschema.fromfile.md) and [JsonSchema.fromLoadedObject()](./node-core-library.jsonschema.fromloadedobject.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaValidateObjectWithOptions](./node-core-library.ijsonschemavalidateobjectwithoptions.md)
+
+
+</td><td>
+
+Options for [JsonSchema.validateObjectWithCallback()](./node-core-library.jsonschema.validateobjectwithcallback.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaValidateOptions](./node-core-library.ijsonschemavalidateoptions.md)
+
+
+</td><td>
+
+Options for [JsonSchema.validateObject()](./node-core-library.jsonschema.validateobject.md)
+
+
+</td></tr>
+<tr><td>
+
+[INodePackageJson](./node-core-library.inodepackagejson.md)
+
+
+</td><td>
+
+An interface for accessing common fields from a package.json file whose version field may be missing.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+An interface for accessing common fields from a package.json file.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJsonDependencyTable](./node-core-library.ipackagejsondependencytable.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "dependencies", "optionalDependencies", and "devDependencies" fields.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJsonExports](./node-core-library.ipackagejsonexports.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the values of the "exports" field.
+
+See [Node.js documentation on Conditional Exports](https://nodejs.org/api/packages.html#conditional-exports) and [Node.js documentation on Community Conditional Exports](https://nodejs.org/api/packages.html#community-conditions-definitions)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJsonLookupParameters](./node-core-library.ipackagejsonlookupparameters.md)
+
+
+</td><td>
+
+Constructor parameters for [PackageJsonLookup](./node-core-library.packagejsonlookup.md)
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJsonRepository](./node-core-library.ipackagejsonrepository.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "repository" field.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageJsonScriptTable](./node-core-library.ipackagejsonscripttable.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "scripts" field.
+
+
+</td></tr>
+<tr><td>
+
+[IPackageNameParserOptions](./node-core-library.ipackagenameparseroptions.md)
+
+
+</td><td>
+
+Options that configure the validation rules used by a [PackageNameParser](./node-core-library.packagenameparser.md) instance.
+
+
+</td></tr>
+<tr><td>
+
+[IParsedPackageName](./node-core-library.iparsedpackagename.md)
+
+
+</td><td>
+
+A package name that has been separated into its scope and unscoped name.
+
+
+</td></tr>
+<tr><td>
+
+[IParsedPackageNameOrError](./node-core-library.iparsedpackagenameorerror.md)
+
+
+</td><td>
+
+Result object returned by [PackageName.tryParse()](./node-core-library.packagename.tryparse.md)
+
+
+</td></tr>
+<tr><td>
+
+[IPathFormatConciselyOptions](./node-core-library.ipathformatconciselyoptions.md)
+
+
+</td><td>
+
+Options for [Path.formatConcisely()](./node-core-library.path.formatconcisely.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md)
+
+
+</td><td>
+
+Options for [Path.formatFileLocation()](./node-core-library.path.formatfilelocation.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IPeerDependenciesMetaTable](./node-core-library.ipeerdependenciesmetatable.md)
+
+
+</td><td>
+
+This interface is part of the [IPackageJson](./node-core-library.ipackagejson.md) file format. It is used for the "peerDependenciesMeta" field.
+
+
+</td></tr>
+<tr><td>
+
+[IProblemPattern](./node-core-library.iproblempattern.md)
+
+
+</td><td>
+
+VS Code style problem matcher pattern definition.
+
+
+</td></tr>
+<tr><td>
+
+[IProcessInfo](./node-core-library.iprocessinfo.md)
+
+
+</td><td>
+
+Process information sourced from the system. This process info is sourced differently depending on the operating system: - On Windows, this uses `powershell.exe` and a scriptlet to retrieve process information. The wmic utility that was previously used is no longer present on the latest Windows versions. - On Unix, this uses the `ps` utility.
+
+
+</td></tr>
+<tr><td>
+
+[IProtectableMapParameters](./node-core-library.iprotectablemapparameters.md)
+
+
+</td><td>
+
+Constructor parameters for [ProtectableMap](./node-core-library.protectablemap.md)
+
+
+</td></tr>
+<tr><td>
+
+[IReadLinesFromIterableOptions](./node-core-library.ireadlinesfromiterableoptions.md)
+
+
+</td><td>
+
+Options used when calling the [Text.readLinesFromIterable()](./node-core-library.text.readlinesfromiterable.md) or [Text.readLinesFromIterableAsync()](./node-core-library.text.readlinesfromiterableasync.md) methods.
+
+
+</td></tr>
+<tr><td>
+
+[IRealNodeModulePathResolverOptions](./node-core-library.irealnodemodulepathresolveroptions.md)
+
+
+</td><td>
+
+Arguments used to create a function that resolves symlinked node\_modules in a path
+
+
+</td></tr>
+<tr><td>
+
+[IRunWithRetriesOptions](./node-core-library.irunwithretriesoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[IRunWithTimeoutOptions](./node-core-library.irunwithtimeoutoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[IStringBuilder](./node-core-library.istringbuilder.md)
+
+
+</td><td>
+
+An interface for a builder object that allows a large text string to be constructed incrementally by appending small chunks.
+
+
+</td></tr>
+<tr><td>
+
+[ISubprocessOptions](./node-core-library.isubprocessoptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Details about how the `child_process.ChildProcess` was created.
+
+
+</td></tr>
+<tr><td>
+
+[IWaitForExitOptions](./node-core-library.iwaitforexitoptions.md)
+
+
+</td><td>
+
+The options for running a process to completion using [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync_2.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IWaitForExitResult](./node-core-library.iwaitforexitresult.md)
+
+
+</td><td>
+
+The result of running a process to completion using [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync.md)<></>, or [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync_1.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IWaitForExitResultWithoutOutput](./node-core-library.iwaitforexitresultwithoutoutput.md)
+
+
+</td><td>
+
+The result of running a process to completion using [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync_2.md)<></>. This interface does not include stdout or stderr output because an [IWaitForExitOptions.encoding](./node-core-library.iwaitforexitoptions.encoding.md) was not specified.
+
+
+</td></tr>
+<tr><td>
+
+[IWaitForExitWithBufferOptions](./node-core-library.iwaitforexitwithbufferoptions.md)
+
+
+</td><td>
+
+The options for running a process to completion using [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync_2.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IWaitForExitWithStringOptions](./node-core-library.iwaitforexitwithstringoptions.md)
+
+
+</td><td>
+
+The options for running a process to completion using [Executable.waitForExitAsync()](./node-core-library.executable.waitforexitasync_2.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IWeighted](./node-core-library.iweighted.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+## Namespaces
+
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Disposables](./node-core-library.disposables.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Objects](./node-core-library.objects.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[User](./node-core-library.user.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+## Variables
+
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[FileConstants](./node-core-library.fileconstants.md)
+
+
+</td><td>
+
+String constants for common filenames and parts of filenames.
+
+
+</td></tr>
+<tr><td>
+
+[FolderConstants](./node-core-library.folderconstants.md)
+
+
+</td><td>
+
+String constants for common folder names.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Brand](./node-core-library.brand.md) | A "branded type" is a primitive type with a compile-type key that makes it incompatible with other aliases for the primitive type. |
-|  [ExecutableStdioMapping](./node-core-library.executablestdiomapping.md) | Types for [IExecutableSpawnSyncOptions.stdio](./node-core-library.iexecutablespawnsyncoptions.stdio.md) and [IExecutableSpawnOptions.stdio](./node-core-library.iexecutablespawnoptions.stdio.md) |
-|  [ExecutableStdioStreamMapping](./node-core-library.executablestdiostreammapping.md) | Typings for one of the streams inside IExecutableSpawnSyncOptions.stdio. |
-|  [FileLocationStyle](./node-core-library.filelocationstyle.md) | The format that the FileError message should conform to. The supported formats are: - Unix: <code>&lt;path&gt;:&lt;line&gt;:&lt;column&gt; - &lt;message&gt;</code> - VisualStudio: <code>&lt;path&gt;(&lt;line&gt;,&lt;column&gt;) - &lt;message&gt;</code> |
-|  [FileSystemCopyFilesAsyncFilter](./node-core-library.filesystemcopyfilesasyncfilter.md) | Callback function type for [IFileSystemCopyFilesAsyncOptions.filter](./node-core-library.ifilesystemcopyfilesasyncoptions.filter.md) |
-|  [FileSystemCopyFilesFilter](./node-core-library.filesystemcopyfilesfilter.md) | Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-library.ifilesystemcopyfilesoptions.filter.md) |
-|  [FileSystemStats](./node-core-library.filesystemstats.md) | An alias for the Node.js <code>fs.Stats</code> object. |
-|  [FolderItem](./node-core-library.folderitem.md) | An alias for the Node.js <code>fs.Dirent</code> object. |
-|  [IPrefixProxyTerminalProviderOptions](./node-core-library.iprefixproxyterminalprovideroptions.md) | **_(BETA)_** |
-|  [JsonNull](./node-core-library.jsonnull.md) | The Rush Stack lint rules discourage usage of <code>null</code>. However, JSON parsers always return JavaScript's <code>null</code> to keep the two syntaxes consistent. When creating interfaces that describe JSON structures, use <code>JsonNull</code> to avoid triggering the lint rule. Do not use <code>JsonNull</code> for any other purpose. |
-|  [JsonObject](./node-core-library.jsonobject.md) | Represents a JSON-serializable object whose type has not been determined yet. |
-|  [LegacyCallback](./node-core-library.legacycallback.md) | Callback used by [LegacyAdapters](./node-core-library.legacyadapters.md)<></>. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Brand](./node-core-library.brand.md)
+
+
+</td><td>
+
+A "branded type" is a primitive type with a compile-type key that makes it incompatible with other aliases for the primitive type.
+
+
+</td></tr>
+<tr><td>
+
+[ExecutableStdioMapping](./node-core-library.executablestdiomapping.md)
+
+
+</td><td>
+
+Types for [IExecutableSpawnSyncOptions.stdio](./node-core-library.iexecutablespawnsyncoptions.stdio.md) and [IExecutableSpawnOptions.stdio](./node-core-library.iexecutablespawnoptions.stdio.md)
+
+
+</td></tr>
+<tr><td>
+
+[ExecutableStdioStreamMapping](./node-core-library.executablestdiostreammapping.md)
+
+
+</td><td>
+
+Typings for one of the streams inside IExecutableSpawnSyncOptions.stdio.
+
+
+</td></tr>
+<tr><td>
+
+[FileLocationStyle](./node-core-library.filelocationstyle.md)
+
+
+</td><td>
+
+The format that the FileError message should conform to. The supported formats are: - Unix: `<path>:<line>:<column> - <message>` - VisualStudio: `<path>(<line>,<column>) - <message>`
+
+
+</td></tr>
+<tr><td>
+
+[FileSystemCopyFilesAsyncFilter](./node-core-library.filesystemcopyfilesasyncfilter.md)
+
+
+</td><td>
+
+Callback function type for [IFileSystemCopyFilesAsyncOptions.filter](./node-core-library.ifilesystemcopyfilesasyncoptions.filter.md)
+
+
+</td></tr>
+<tr><td>
+
+[FileSystemCopyFilesFilter](./node-core-library.filesystemcopyfilesfilter.md)
+
+
+</td><td>
+
+Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-library.ifilesystemcopyfilesoptions.filter.md)
+
+
+</td></tr>
+<tr><td>
+
+[FileSystemStats](./node-core-library.filesystemstats.md)
+
+
+</td><td>
+
+An alias for the Node.js `fs.Stats` object.
+
+
+</td></tr>
+<tr><td>
+
+[FolderItem](./node-core-library.folderitem.md)
+
+
+</td><td>
+
+An alias for the Node.js `fs.Dirent` object.
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaFromFileOptions](./node-core-library.ijsonschemafromfileoptions.md)
+
+
+</td><td>
+
+Options for [JsonSchema.fromFile()](./node-core-library.jsonschema.fromfile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IJsonSchemaFromObjectOptions](./node-core-library.ijsonschemafromobjectoptions.md)
+
+
+</td><td>
+
+Options for [JsonSchema.fromLoadedObject()](./node-core-library.jsonschema.fromloadedobject.md)
+
+
+</td></tr>
+<tr><td>
+
+[JsonNull](./node-core-library.jsonnull.md)
+
+
+</td><td>
+
+The Rush Stack lint rules discourage usage of `null`<></>. However, JSON parsers always return JavaScript's `null` to keep the two syntaxes consistent. When creating interfaces that describe JSON structures, use `JsonNull` to avoid triggering the lint rule. Do not use `JsonNull` for any other purpose.
+
+
+</td></tr>
+<tr><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+Represents a JSON-serializable object whose type has not been determined yet.
+
+
+</td></tr>
+<tr><td>
+
+[JsonSchemaVersion](./node-core-library.jsonschemaversion.md)
+
+
+</td><td>
+
+Specifies the version of json-schema to be validated against. https://json-schema.org/specification
+
+
+</td></tr>
+<tr><td>
+
+[LegacyCallback](./node-core-library.legacycallback.md)
+
+
+</td><td>
+
+Callback used by [LegacyAdapters](./node-core-library.legacyadapters.md)<></>.
+
+
+</td></tr>
+</tbody></table>
 

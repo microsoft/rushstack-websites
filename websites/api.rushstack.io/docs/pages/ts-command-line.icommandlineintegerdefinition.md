@@ -10,7 +10,7 @@ pagination_next: null
 
 ## ICommandLineIntegerDefinition interface
 
-For use with [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>, this interface defines a command line parameter whose argument is an integer value.
+For use with [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)<></>, [CommandLineParameterProvider.defineIntegerParameter()](./ts-command-line.commandlineparameterprovider.defineintegerparameter_1.md)<></>, this interface defines a command line parameter whose argument is an integer value.
 
 **Signature:**
 
@@ -21,7 +21,45 @@ export interface ICommandLineIntegerDefinition extends IBaseCommandLineDefinitio
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultValue?](./ts-command-line.icommandlineintegerdefinition.defaultvalue.md) |  | number | _(Optional)_ The default value which will be used if the parameter is omitted from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultValue?](./ts-command-line.icommandlineintegerdefinition.defaultvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The default value which will be used if the parameter is omitted from the command line.
+
+
+</td></tr>
+</tbody></table>
 

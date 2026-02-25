@@ -19,8 +19,64 @@ export interface IFileSystemCopyFileBaseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilebaseoptions.alreadyexistsbehavior.md) |  | [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | _(Optional)_ Specifies what to do if the destination path already exists. |
-|  [sourcePath](./node-core-library.ifilesystemcopyfilebaseoptions.sourcepath.md) |  | string | The path of the existing object to be copied. The path may be absolute or relative. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alreadyExistsBehavior?](./node-core-library.ifilesystemcopyfilebaseoptions.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+_(Optional)_ Specifies what to do if the destination path already exists.
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath](./node-core-library.ifilesystemcopyfilebaseoptions.sourcepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path of the existing object to be copied. The path may be absolute or relative.
+
+
+</td></tr>
+</tbody></table>
 

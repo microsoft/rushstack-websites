@@ -20,7 +20,45 @@ export interface IFileErrorFormattingOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [format?](./node-core-library.ifileerrorformattingoptions.format.md) |  | [FileLocationStyle](./node-core-library.filelocationstyle.md) | _(Optional)_ The format for the error message. If no format is provided, format 'Unix' is used by default. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[format?](./node-core-library.ifileerrorformattingoptions.format.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[FileLocationStyle](./node-core-library.filelocationstyle.md)
+
+
+</td><td>
+
+_(Optional)_ The format for the error message. If no format is provided, format 'Unix' is used by default.
+
+
+</td></tr>
+</tbody></table>
 

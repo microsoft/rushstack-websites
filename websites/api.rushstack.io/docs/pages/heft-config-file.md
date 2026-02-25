@@ -14,39 +14,430 @@ A library for loading config files for use with the [Heft](https://rushstack.io/
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ConfigurationFile](./heft-config-file.configurationfile.md) | **_(BETA)_** |
+<table><thead><tr><th>
 
-## Enumerations
+Class
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [InheritanceType](./heft-config-file.inheritancetype.md) | **_(BETA)_** |
-|  [PathResolutionMethod](./heft-config-file.pathresolutionmethod.md) | **_(BETA)_** |
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[NonProjectConfigurationFile](./heft-config-file.nonprojectconfigurationfile.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ProjectConfigurationFile](./heft-config-file.projectconfigurationfile.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
+
+## Abstract Classes
+
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ConfigurationFileBase](./heft-config-file.configurationfilebase.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IConfigurationFileOptionsBase](./heft-config-file.iconfigurationfileoptionsbase.md) | **_(BETA)_** |
-|  [IConfigurationFileOptionsWithJsonSchemaFilePath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.md) | **_(BETA)_** |
-|  [IConfigurationFileOptionsWithJsonSchemaObject](./heft-config-file.iconfigurationfileoptionswithjsonschemaobject.md) | **_(BETA)_** |
-|  [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md) | **_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded. |
-|  [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md) | **_(BETA)_** |
-|  [IJsonPathMetadataResolverOptions](./heft-config-file.ijsonpathmetadataresolveroptions.md) | **_(BETA)_** Options provided to the custom resolver specified in [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)<></>. |
-|  [IJsonPathsMetadata](./heft-config-file.ijsonpathsmetadata.md) | **_(BETA)_** Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/)<></>, and values are objects that describe how node(s) selected by the JSONPath are processed after loading. |
-|  [INonCustomJsonPathMetadata](./heft-config-file.inoncustomjsonpathmetadata.md) | **_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded. |
-|  [IOriginalValueOptions](./heft-config-file.ioriginalvalueoptions.md) | **_(BETA)_** |
-|  [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md) | **_(BETA)_** |
-|  [IPropertyInheritanceDefaults](./heft-config-file.ipropertyinheritancedefaults.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IConfigurationFileOptionsBase](./heft-config-file.iconfigurationfileoptionsbase.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)
+
+
+</td><td>
+
+**_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded.
+
+
+</td></tr>
+<tr><td>
+
+[ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IJsonPathMetadataResolverOptions](./heft-config-file.ijsonpathmetadataresolveroptions.md)
+
+
+</td><td>
+
+**_(BETA)_** Options provided to the custom resolver specified in [ICustomJsonPathMetadata](./heft-config-file.icustomjsonpathmetadata.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IJsonPathsMetadata](./heft-config-file.ijsonpathsmetadata.md)
+
+
+</td><td>
+
+**_(BETA)_** Keys in this object are JSONPaths [https://jsonpath.com/](https://jsonpath.com/)<></>, and values are objects that describe how node(s) selected by the JSONPath are processed after loading.
+
+
+</td></tr>
+<tr><td>
+
+[INonCustomJsonPathMetadata](./heft-config-file.inoncustomjsonpathmetadata.md)
+
+
+</td><td>
+
+**_(BETA)_** Used to specify how node(s) in a JSON object should be processed after being loaded.
+
+
+</td></tr>
+<tr><td>
+
+[IOriginalValueOptions](./heft-config-file.ioriginalvalueoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IProjectConfigurationFileOptions](./heft-config-file.iprojectconfigurationfileoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IPropertyInheritanceDefaults](./heft-config-file.ipropertyinheritancedefaults.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
+
+## Namespaces
+
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[InheritanceType](./heft-config-file.inheritancetype.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[PathResolutionMethod](./heft-config-file.pathresolutionmethod.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[TestUtilities](./heft-config-file.testutilities.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+## Variables
+
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ConfigurationFile](./heft-config-file.configurationfile.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[InheritanceType](./heft-config-file.inheritancetype.md)
+
+
+</td><td>
+
+**_(BETA)_** The set of possible mechanisms for merging properties from parent configuration files. If a child configuration file sets a property value to `null`<></>, that will always delete the value specified in the parent configuration file, regardless of the inheritance type.
+
+
+</td></tr>
+<tr><td>
+
+[PathResolutionMethod](./heft-config-file.pathresolutionmethod.md)
+
+
+</td><td>
+
+**_(BETA)_** The set of possible resolution methods for fields that refer to paths.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [IConfigurationFileOptions](./heft-config-file.iconfigurationfileoptions.md) | **_(BETA)_** |
-|  [IJsonPathMetadata](./heft-config-file.ijsonpathmetadata.md) | **_(BETA)_** |
-|  [IPropertiesInheritance](./heft-config-file.ipropertiesinheritance.md) | **_(BETA)_** |
-|  [PropertyInheritanceCustomFunction](./heft-config-file.propertyinheritancecustomfunction.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ConfigurationFile](./heft-config-file.configurationfile.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[CustomValidationFunction](./heft-config-file.customvalidationfunction.md)
+
+
+</td><td>
+
+**_(BETA)_** A function to invoke after schema validation to validate the configuration file. If this function returns any value other than `true`<></>, the configuration file API will throw an error indicating that custom validation failed. If the function wishes to provide its own error message, it may use any combination of the terminal and throwing its own error.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigurationFileOptions](./heft-config-file.iconfigurationfileoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IConfigurationFileOptionsWithJsonSchemaFilePath](./heft-config-file.iconfigurationfileoptionswithjsonschemafilepath.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IConfigurationFileOptionsWithJsonSchemaObject](./heft-config-file.iconfigurationfileoptionswithjsonschemaobject.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IJsonPathMetadata](./heft-config-file.ijsonpathmetadata.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[InheritanceType](./heft-config-file.inheritancetype.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[IOnConfigurationFileNotFoundCallback](./heft-config-file.ionconfigurationfilenotfoundcallback.md)
+
+
+</td><td>
+
+**_(BETA)_** Callback that returns a fallback configuration file path if the original configuration file was not found.
+
+
+</td></tr>
+<tr><td>
+
+[IProjectConfigurationFileSpecification](./heft-config-file.iprojectconfigurationfilespecification.md)
+
+
+</td><td>
+
+**_(BETA)_** Alias for the constructor type for [ProjectConfigurationFile](./heft-config-file.projectconfigurationfile.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IPropertiesInheritance](./heft-config-file.ipropertiesinheritance.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[PathResolutionMethod](./heft-config-file.pathresolutionmethod.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[PropertyInheritanceCustomFunction](./heft-config-file.propertyinheritancecustomfunction.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

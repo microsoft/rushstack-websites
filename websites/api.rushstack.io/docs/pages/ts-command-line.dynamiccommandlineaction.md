@@ -20,7 +20,35 @@ export declare class DynamicCommandLineAction extends CommandLineAction
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onExecute()](./ts-command-line.dynamiccommandlineaction.onexecute.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onExecuteAsync()](./ts-command-line.dynamiccommandlineaction.onexecuteasync.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

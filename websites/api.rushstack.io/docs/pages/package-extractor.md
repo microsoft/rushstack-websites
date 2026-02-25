@@ -12,17 +12,145 @@ pagination_next: null
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [PackageExtractor](./package-extractor.packageextractor.md) | Manages the business logic for the "rush deploy" command. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PackageExtractor](./package-extractor.packageextractor.md)
+
+
+</td><td>
+
+Manages the business logic for the "rush deploy" command.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [IExtractorMetadataJson](./package-extractor.iextractormetadatajson.md) | The extractor-metadata.json file format. |
-|  [IExtractorOptions](./package-extractor.iextractoroptions.md) | Options that can be provided to the extractor. |
-|  [IExtractorProjectConfiguration](./package-extractor.iextractorprojectconfiguration.md) | The extractor configuration for individual projects. |
-|  [ILinkInfo](./package-extractor.ilinkinfo.md) | Represents a symbolic link. |
-|  [IProjectInfoJson](./package-extractor.iprojectinfojson.md) | Part of the extractor-matadata.json file format. Represents an extracted project. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IExtractorDependencyConfiguration](./package-extractor.iextractordependencyconfiguration.md)
+
+
+</td><td>
+
+The extractor configuration for individual dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorMetadataJson](./package-extractor.iextractormetadatajson.md)
+
+
+</td><td>
+
+The extractor-metadata.json file format.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorOptions](./package-extractor.iextractoroptions.md)
+
+
+</td><td>
+
+Options that can be provided to the extractor.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorProjectConfiguration](./package-extractor.iextractorprojectconfiguration.md)
+
+
+</td><td>
+
+The extractor configuration for individual projects.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorSubspace](./package-extractor.iextractorsubspace.md)
+
+
+</td><td>
+
+The extractor subspace configurations
+
+
+</td></tr>
+<tr><td>
+
+[ILinkInfo](./package-extractor.ilinkinfo.md)
+
+
+</td><td>
+
+Represents a symbolic link.
+
+
+</td></tr>
+<tr><td>
+
+[IProjectInfoJson](./package-extractor.iprojectinfojson.md)
+
+
+</td><td>
+
+Part of the extractor-matadata.json file format. Represents an extracted project.
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LinkCreationMode](./package-extractor.linkcreationmode.md)
+
+
+</td><td>
+
+The mode to use for link creation.
+
+
+</td></tr>
+</tbody></table>
 

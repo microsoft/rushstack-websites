@@ -20,13 +20,80 @@ export interface IModuleMinifier
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [minify](./module-minifier.imoduleminifier.minify.md) |  | [IModuleMinifierFunction](./module-minifier.imoduleminifierfunction.md) | Asynchronously minify a module |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[minify](./module-minifier.imoduleminifier.minify.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IModuleMinifierFunction](./module-minifier.imoduleminifierfunction.md)
+
+
+</td><td>
+
+Asynchronously minify a module
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [connect()](./module-minifier.imoduleminifier.connect.md) | Prevents the minifier from shutting down until the returned <code>disconnect()</code> callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./module-minifier.imoduleminifier.connect.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[connectAsync()](./module-minifier.imoduleminifier.connectasync.md)
+
+
+</td><td>
+
+Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+
+
+</td></tr>
+</tbody></table>
 

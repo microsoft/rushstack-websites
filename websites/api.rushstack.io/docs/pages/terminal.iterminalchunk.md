@@ -26,8 +26,64 @@ The `ITerminalChunk` object should be considered to be immutable once it is crea
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kind](./terminal.iterminalchunk.kind.md) |  | [TerminalChunkKind](./terminal.terminalchunkkind.md) | Indicates the kind of information stored in this chunk. |
-|  [text](./terminal.iterminalchunk.text.md) |  | string | The next chunk of text from the <code>stderr</code> or <code>stdout</code> stream. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kind](./terminal.iterminalchunk.kind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[TerminalChunkKind](./terminal.terminalchunkkind.md)
+
+
+</td><td>
+
+Indicates the kind of information stored in this chunk.
+
+
+</td></tr>
+<tr><td>
+
+[text](./terminal.iterminalchunk.text.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The next chunk of text from the `stderr` or `stdout` stream.
+
+
+</td></tr>
+</tbody></table>
 

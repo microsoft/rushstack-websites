@@ -45,8 +45,53 @@ console.log(widget instanceof Widget1); // prints true
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [isInstanceOf(targetObject, typeUuid)](./node-core-library.typeuuid.isinstanceof.md) | <code>static</code> | Returns true if the <code>targetObject</code> is an instance of a JavaScript class that was previously registered using the specified <code>typeUuid</code>. Base classes are also considered. |
-|  [registerClass(targetClass, typeUuid)](./node-core-library.typeuuid.registerclass.md) | <code>static</code> | Registers a JavaScript class as having a type identified by the specified UUID. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isInstanceOf(targetObject, typeUuid)](./node-core-library.typeuuid.isinstanceof.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the `targetObject` is an instance of a JavaScript class that was previously registered using the specified `typeUuid`<></>. Base classes are also considered.
+
+
+</td></tr>
+<tr><td>
+
+[registerClass(targetClass, typeUuid)](./node-core-library.typeuuid.registerclass.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Registers a JavaScript class as having a type identified by the specified UUID.
+
+
+</td></tr>
+</tbody></table>
 

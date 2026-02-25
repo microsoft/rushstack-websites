@@ -20,10 +20,9 @@ readonly bundledPackages: string[];
 
 ## Remarks
 
-For example, suppose that Webpack is used to generate a distributed bundle for the project `library1`<></>, and another NPM package `library2` is embedded in this bundle. Some types from `library2` may become part of the exported API for `library1`<></>, but by default API Extractor would generate a .d.ts rollup that explicitly imports `library2`<></>. To avoid this, we can specify:
+Also supports glob patterns. Note: glob patterns will \*\*only\*\* be resolved against dependencies listed in the project's package.json file.
 
-```js
-  "bundledPackages": [ "library2" ],
-```
-This would direct API Extractor to embed those types directly in the .d.ts rollup, as if they had been local files for `library1`<></>.
+\* This is both a safety and a performance precaution.
+
+Exact package names will be applied against any dependency encountered while walking the type graph, regardless of dependencies listed in the package.json.
 

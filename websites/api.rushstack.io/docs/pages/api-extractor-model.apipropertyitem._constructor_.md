@@ -20,7 +20,35 @@ constructor(options: IApiPropertyItemOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiPropertyItemOptions](./api-extractor-model.iapipropertyitemoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiPropertyItemOptions](./api-extractor-model.iapipropertyitemoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

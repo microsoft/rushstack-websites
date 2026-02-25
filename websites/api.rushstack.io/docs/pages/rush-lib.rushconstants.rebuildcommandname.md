@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rebuildCommandName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the non-incremental build command.
@@ -18,5 +18,5 @@ The name of the non-incremental build command.
 **Signature:**
 
 ```typescript
-static readonly rebuildCommandName: string;
+static readonly rebuildCommandName: 'rebuild';
 ```

@@ -35,21 +35,148 @@ Compare with [ApiProperty](./api-extractor-model.apiproperty.md)<></>, which rep
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apipropertysignature._constructor_.md) |  | Constructs a new instance of the <code>ApiPropertySignature</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apipropertysignature._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiPropertySignature` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apipropertysignature.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apipropertysignature.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apipropertysignature.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apipropertysignature.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apipropertysignature.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apipropertysignature.getcontainerkey.md) | <code>static</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apipropertysignature.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apipropertysignature.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

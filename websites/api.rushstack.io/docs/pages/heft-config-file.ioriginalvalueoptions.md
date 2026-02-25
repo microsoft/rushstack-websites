@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IOriginalValueOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,8 +22,64 @@ export interface IOriginalValueOptions<TParentProperty>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parentObject](./heft-config-file.ioriginalvalueoptions.parentobject.md) |  | Partial&lt;TParentProperty&gt; | **_(BETA)_** |
-|  [propertyName](./heft-config-file.ioriginalvalueoptions.propertyname.md) |  | keyof TParentProperty | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parentObject](./heft-config-file.ioriginalvalueoptions.parentobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Partial&lt;TParentProperty&gt;
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[propertyName](./heft-config-file.ioriginalvalueoptions.propertyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+keyof TParentProperty
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

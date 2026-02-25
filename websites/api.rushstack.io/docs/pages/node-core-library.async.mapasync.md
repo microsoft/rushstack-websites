@@ -10,24 +10,83 @@ pagination_next: null
 
 ## Async.mapAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Given an input array and a `callback` function, invoke the callback to start a promise for each element in the array. Returns an array containing the results.
 
 **Signature:**
 
 ```typescript
-static mapAsync<TEntry, TRetVal>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, callback: (entry: TEntry, arrayIndex: number) => Promise<TRetVal>, options?: IAsyncParallelismOptions | undefined): Promise<TRetVal[]>;
+static mapAsync<TEntry, TRetVal>(iterable: Iterable<TEntry> | AsyncIterable<TEntry>, callback: (entry: TEntry, arrayIndex: number) => Promise<TRetVal>, options?: (IAsyncParallelismOptions & {
+        weighted?: false;
+    }) | undefined): Promise<TRetVal[]>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  iterable | Iterable&lt;TEntry&gt; \| AsyncIterable&lt;TEntry&gt; | the array of inputs for the callback function |
-|  callback | (entry: TEntry, arrayIndex: number) =&gt; Promise&lt;TRetVal&gt; | a function that starts an asynchronous promise for an element from the array |
-|  options | [IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) \| undefined | _(Optional)_ options for customizing the control flow |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+iterable
+
+
+</td><td>
+
+Iterable&lt;TEntry&gt; \| AsyncIterable&lt;TEntry&gt;
+
+
+</td><td>
+
+the array of inputs for the callback function
+
+
+</td></tr>
+<tr><td>
+
+callback
+
+
+</td><td>
+
+(entry: TEntry, arrayIndex: number) =&gt; Promise&lt;TRetVal&gt;
+
+
+</td><td>
+
+a function that starts an asynchronous promise for an element from the array
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+([IAsyncParallelismOptions](./node-core-library.iasyncparallelismoptions.md) &amp; { weighted?: false; }) \| undefined
+
+
+</td><td>
+
+_(Optional)_ options for customizing the control flow
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

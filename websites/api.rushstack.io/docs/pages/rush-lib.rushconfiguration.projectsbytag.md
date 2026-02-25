@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConfiguration.projectsByTag property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Obtains the mapping from custom tags to projects.

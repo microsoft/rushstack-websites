@@ -24,22 +24,257 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [category](./api-extractor.extractormessage.category.md) | <code>readonly</code> | [ExtractorMessageCategory](./api-extractor.extractormessagecategory.md) | The category of issue. |
-|  [handled](./api-extractor.extractormessage.handled.md) |  | boolean | If the [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md) sets this property to true, it will prevent the message from being displayed by API Extractor. |
-|  [logLevel](./api-extractor.extractormessage.loglevel.md) |  | [ExtractorLogLevel](./api-extractor.extractorloglevel.md) | Specifies how the message should be reported. |
-|  [messageId](./api-extractor.extractormessage.messageid.md) | <code>readonly</code> | tsdoc.TSDocMessageId \| [ExtractorMessageId](./api-extractor.extractormessageid.md) \| [ConsoleMessageId](./api-extractor.consolemessageid.md) \| string | A text string that uniquely identifies the issue type. This identifier can be used to suppress or configure the reporting of issues, and also to search for help about an issue. |
-|  [properties](./api-extractor.extractormessage.properties.md) | <code>readonly</code> | [IExtractorMessageProperties](./api-extractor.iextractormessageproperties.md) | Additional contextual information about the message that may be useful when reporting errors. All properties are optional. |
-|  [sourceFileColumn](./api-extractor.extractormessage.sourcefilecolumn.md) | <code>readonly</code> | number \| undefined | The column number where the issue occurred in the input source file. This is not used if <code>sourceFilePath</code> is undefined. The first column number is 1. |
-|  [sourceFileLine](./api-extractor.extractormessage.sourcefileline.md) | <code>readonly</code> | number \| undefined | The line number where the issue occurred in the input source file. This is not used if <code>sourceFilePath</code> is undefined. The first line number is 1. |
-|  [sourceFilePath](./api-extractor.extractormessage.sourcefilepath.md) | <code>readonly</code> | string \| undefined | The absolute path to the affected input source file, if there is one. |
-|  [text](./api-extractor.extractormessage.text.md) | <code>readonly</code> | string | The text description of this issue. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[category](./api-extractor.extractormessage.category.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ExtractorMessageCategory](./api-extractor.extractormessagecategory.md)
+
+
+</td><td>
+
+The category of issue.
+
+
+</td></tr>
+<tr><td>
+
+[handled](./api-extractor.extractormessage.handled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If the [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md) sets this property to true, it will prevent the message from being displayed by API Extractor.
+
+
+</td></tr>
+<tr><td>
+
+[logLevel](./api-extractor.extractormessage.loglevel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ExtractorLogLevel](./api-extractor.extractorloglevel.md)
+
+
+</td><td>
+
+Specifies how the message should be reported.
+
+
+</td></tr>
+<tr><td>
+
+[messageId](./api-extractor.extractormessage.messageid.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+tsdoc.TSDocMessageId \| [ExtractorMessageId](./api-extractor.extractormessageid.md) \| [ConsoleMessageId](./api-extractor.consolemessageid.md) \| string
+
+
+</td><td>
+
+A text string that uniquely identifies the issue type. This identifier can be used to suppress or configure the reporting of issues, and also to search for help about an issue.
+
+
+</td></tr>
+<tr><td>
+
+[properties](./api-extractor.extractormessage.properties.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IExtractorMessageProperties](./api-extractor.iextractormessageproperties.md)
+
+
+</td><td>
+
+Additional contextual information about the message that may be useful when reporting errors. All properties are optional.
+
+
+</td></tr>
+<tr><td>
+
+[sourceFileColumn](./api-extractor.extractormessage.sourcefilecolumn.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The column number where the issue occurred in the input source file. This is not used if `sourceFilePath` is undefined. The first column number is 1.
+
+
+</td></tr>
+<tr><td>
+
+[sourceFileLine](./api-extractor.extractormessage.sourcefileline.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The line number where the issue occurred in the input source file. This is not used if `sourceFilePath` is undefined. The first line number is 1.
+
+
+</td></tr>
+<tr><td>
+
+[sourceFilePath](./api-extractor.extractormessage.sourcefilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The absolute path to the affected input source file, if there is one.
+
+
+</td></tr>
+<tr><td>
+
+[text](./api-extractor.extractormessage.text.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The text description of this issue.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [formatMessageWithLocation(workingPackageFolderPath)](./api-extractor.extractormessage.formatmessagewithlocation.md) |  | Returns the message formatted with its identifier and file position. |
-|  [formatMessageWithoutLocation()](./api-extractor.extractormessage.formatmessagewithoutlocation.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[formatMessageWithLocation(workingPackageFolderPath)](./api-extractor.extractormessage.formatmessagewithlocation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the message formatted with its identifier and file position.
+
+
+</td></tr>
+<tr><td>
+
+[formatMessageWithoutLocation()](./api-extractor.extractormessage.formatmessagewithoutlocation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

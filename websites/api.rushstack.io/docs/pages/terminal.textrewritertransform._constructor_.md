@@ -20,7 +20,35 @@ constructor(options: ITextRewriterTransformOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ITextRewriterTransformOptions](./terminal.itextrewritertransformoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ITextRewriterTransformOptions](./terminal.itextrewritertransformoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

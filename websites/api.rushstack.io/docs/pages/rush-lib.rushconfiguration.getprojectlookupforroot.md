@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConfiguration.getProjectLookupForRoot() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 **Signature:**
@@ -21,13 +21,41 @@ getProjectLookupForRoot(rootPath: string): LookupByPath<RushConfigurationProject
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rootPath | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rootPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
-[LookupByPath](./rush-lib.lookupbypath.md)<></>&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+[LookupByPath](./lookup-by-path.lookupbypath.md)<></>&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
 
 An optimized lookup engine to find a project by its path relative to the specified root.
 

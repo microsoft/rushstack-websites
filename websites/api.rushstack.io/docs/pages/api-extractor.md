@@ -14,39 +14,358 @@ API Extractor helps with validation, documentation, and reviewing of the exporte
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CompilerState](./api-extractor.compilerstate.md) | This class represents the TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis. |
-|  [Extractor](./api-extractor.extractor.md) | The starting point for invoking the API Extractor tool. |
-|  [ExtractorConfig](./api-extractor.extractorconfig.md) | The <code>ExtractorConfig</code> class loads, validates, interprets, and represents the api-extractor.json config file. |
-|  [ExtractorMessage](./api-extractor.extractormessage.md) | This object is used to report an error or warning that occurred during API Extractor's analysis. |
-|  [ExtractorResult](./api-extractor.extractorresult.md) | This object represents the outcome of an invocation of API Extractor. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CompilerState](./api-extractor.compilerstate.md)
+
+
+</td><td>
+
+This class represents the TypeScript compiler state. This allows an optimization where multiple invocations of API Extractor can reuse the same TypeScript compiler analysis.
+
+
+</td></tr>
+<tr><td>
+
+[Extractor](./api-extractor.extractor.md)
+
+
+</td><td>
+
+The starting point for invoking the API Extractor tool.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorConfig](./api-extractor.extractorconfig.md)
+
+
+</td><td>
+
+The `ExtractorConfig` class loads, validates, interprets, and represents the api-extractor.json config file.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorMessage](./api-extractor.extractormessage.md)
+
+
+</td><td>
+
+This object is used to report an error or warning that occurred during API Extractor's analysis.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorResult](./api-extractor.extractorresult.md)
+
+
+</td><td>
+
+This object represents the outcome of an invocation of API Extractor.
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [ConsoleMessageId](./api-extractor.consolemessageid.md) | Unique identifiers for console messages reported by API Extractor. |
-|  [ExtractorLogLevel](./api-extractor.extractorloglevel.md) | Used with [IConfigMessageReportingRule.logLevel](./api-extractor.iconfigmessagereportingrule.loglevel.md) and [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md)<></>. |
-|  [ExtractorMessageCategory](./api-extractor.extractormessagecategory.md) | Specifies a category of messages for use with [ExtractorMessage](./api-extractor.extractormessage.md)<></>. |
-|  [ExtractorMessageId](./api-extractor.extractormessageid.md) | Unique identifiers for messages reported by API Extractor during its analysis. |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ConsoleMessageId](./api-extractor.consolemessageid.md)
+
+
+</td><td>
+
+Unique identifiers for console messages reported by API Extractor.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorLogLevel](./api-extractor.extractorloglevel.md)
+
+
+</td><td>
+
+Used with [IConfigMessageReportingRule.logLevel](./api-extractor.iconfigmessagereportingrule.loglevel.md) and [IExtractorInvokeOptions.messageCallback](./api-extractor.iextractorinvokeoptions.messagecallback.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorMessageCategory](./api-extractor.extractormessagecategory.md)
+
+
+</td><td>
+
+Specifies a category of messages for use with [ExtractorMessage](./api-extractor.extractormessage.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[ExtractorMessageId](./api-extractor.extractormessageid.md)
+
+
+</td><td>
+
+Unique identifiers for messages reported by API Extractor during its analysis.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ICompilerStateCreateOptions](./api-extractor.icompilerstatecreateoptions.md) | Options for [CompilerState.create()](./api-extractor.compilerstate.create.md) |
-|  [IConfigApiReport](./api-extractor.iconfigapireport.md) | Configures how the API report files (\*.api.md) will be generated. |
-|  [IConfigCompiler](./api-extractor.iconfigcompiler.md) | Determines how the TypeScript compiler engine will be invoked by API Extractor. |
-|  [IConfigDocModel](./api-extractor.iconfigdocmodel.md) | Configures how the doc model file (\*.api.json) will be generated. |
-|  [IConfigDtsRollup](./api-extractor.iconfigdtsrollup.md) | Configures how the .d.ts rollup file will be generated. |
-|  [IConfigFile](./api-extractor.iconfigfile.md) | Configuration options for the API Extractor tool. These options can be constructed programmatically or loaded from the api-extractor.json config file using the [ExtractorConfig](./api-extractor.extractorconfig.md) class. |
-|  [IConfigMessageReportingRule](./api-extractor.iconfigmessagereportingrule.md) | Configures reporting for a given message identifier. |
-|  [IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md) | Specifies a table of reporting rules for different message identifiers, and also the default rule used for identifiers that do not appear in the table. |
-|  [IConfigTsdocMetadata](./api-extractor.iconfigtsdocmetadata.md) | Configures how the tsdoc-metadata.json file will be generated. |
-|  [IExtractorConfigLoadForFolderOptions](./api-extractor.iextractorconfigloadforfolderoptions.md) | Options for [ExtractorConfig.tryLoadForFolder()](./api-extractor.extractorconfig.tryloadforfolder.md)<></>. |
-|  [IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md) | Options for [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md)<></>. |
-|  [IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md) | Runtime options for Extractor. |
-|  [IExtractorMessageProperties](./api-extractor.iextractormessageproperties.md) | Used by [ExtractorMessage.properties](./api-extractor.extractormessage.properties.md)<></>. |
-|  [IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md) | Configures how API Extractor reports error and warning messages produced during analysis. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IApiModelGenerationOptions](./api-extractor.iapimodelgenerationoptions.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ICompilerStateCreateOptions](./api-extractor.icompilerstatecreateoptions.md)
+
+
+</td><td>
+
+Options for [CompilerState.create()](./api-extractor.compilerstate.create.md)
+
+
+</td></tr>
+<tr><td>
+
+[IConfigApiReport](./api-extractor.iconfigapireport.md)
+
+
+</td><td>
+
+Configures how the API report files (\*.api.md) will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigCompiler](./api-extractor.iconfigcompiler.md)
+
+
+</td><td>
+
+Determines how the TypeScript compiler engine will be invoked by API Extractor.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigDocModel](./api-extractor.iconfigdocmodel.md)
+
+
+</td><td>
+
+Configures how the doc model file (\*.api.json) will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigDtsRollup](./api-extractor.iconfigdtsrollup.md)
+
+
+</td><td>
+
+Configures how the .d.ts rollup file will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigFile](./api-extractor.iconfigfile.md)
+
+
+</td><td>
+
+Configuration options for the API Extractor tool. These options can be constructed programmatically or loaded from the api-extractor.json config file using the [ExtractorConfig](./api-extractor.extractorconfig.md) class.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigMessageReportingRule](./api-extractor.iconfigmessagereportingrule.md)
+
+
+</td><td>
+
+Configures reporting for a given message identifier.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigMessageReportingTable](./api-extractor.iconfigmessagereportingtable.md)
+
+
+</td><td>
+
+Specifies a table of reporting rules for different message identifiers, and also the default rule used for identifiers that do not appear in the table.
+
+
+</td></tr>
+<tr><td>
+
+[IConfigTsdocMetadata](./api-extractor.iconfigtsdocmetadata.md)
+
+
+</td><td>
+
+Configures how the tsdoc-metadata.json file will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorConfigApiReport](./api-extractor.iextractorconfigapireport.md)
+
+
+</td><td>
+
+Configuration for a single API report, including its [IExtractorConfigApiReport.variant](./api-extractor.iextractorconfigapireport.variant.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorConfigLoadForFolderOptions](./api-extractor.iextractorconfigloadforfolderoptions.md)
+
+
+</td><td>
+
+Options for [ExtractorConfig.tryLoadForFolder()](./api-extractor.extractorconfig.tryloadforfolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorConfigPrepareOptions](./api-extractor.iextractorconfigprepareoptions.md)
+
+
+</td><td>
+
+Options for [ExtractorConfig.prepare()](./api-extractor.extractorconfig.prepare.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorInvokeOptions](./api-extractor.iextractorinvokeoptions.md)
+
+
+</td><td>
+
+Runtime options for Extractor.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorMessageProperties](./api-extractor.iextractormessageproperties.md)
+
+
+</td><td>
+
+Used by [ExtractorMessage.properties](./api-extractor.extractormessage.properties.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md)
+
+
+</td><td>
+
+Configures how API Extractor reports error and warning messages produced during analysis.
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApiReportVariant](./api-extractor.apireportvariant.md)
+
+
+</td><td>
+
+The allowed variations of API reports.
+
+
+</td></tr>
+<tr><td>
+
+[ReleaseTagForTrim](./api-extractor.releasetagfortrim.md)
+
+
+</td><td>
+
+The allowed release tags that can be used to mark API items.
+
+
+</td></tr>
+</tbody></table>
 

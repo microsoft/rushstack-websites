@@ -20,7 +20,35 @@ constructor(options: IAliasCommandLineActionOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IAliasCommandLineActionOptions](./ts-command-line.ialiascommandlineactionoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IAliasCommandLineActionOptions](./ts-command-line.ialiascommandlineactionoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

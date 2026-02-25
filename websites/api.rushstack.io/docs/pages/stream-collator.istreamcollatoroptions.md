@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IStreamCollatorOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructor options for [StreamCollator](./stream-collator.streamcollator.md)<></>.
@@ -23,8 +23,64 @@ export interface IStreamCollatorOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [destination](./stream-collator.istreamcollatoroptions.destination.md) |  | [TerminalWritable](./terminal.terminalwritable.md) | **_(BETA)_** The target [TerminalWritable](./terminal.terminalwritable.md) object that the [StreamCollator](./stream-collator.streamcollator.md) will write its output to. |
-|  [onWriterActive?](./stream-collator.istreamcollatoroptions.onwriteractive.md) |  | (writer: [CollatedWriter](./stream-collator.collatedwriter.md)<></>) =&gt; void | **_(BETA)_** _(Optional)_ An event handler that is called when a [CollatedWriter](./stream-collator.collatedwriter.md) becomes output, before any of its chunks have been written to the destination. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[destination](./stream-collator.istreamcollatoroptions.destination.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[TerminalWritable](./terminal.terminalwritable.md)
+
+
+</td><td>
+
+**_(BETA)_** The target [TerminalWritable](./terminal.terminalwritable.md) object that the [StreamCollator](./stream-collator.streamcollator.md) will write its output to.
+
+
+</td></tr>
+<tr><td>
+
+[onWriterActive?](./stream-collator.istreamcollatoroptions.onwriteractive.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(writer: [CollatedWriter](./stream-collator.collatedwriter.md)<></>) =&gt; void
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ An event handler that is called when a [CollatedWriter](./stream-collator.collatedwriter.md) becomes output, before any of its chunks have been written to the destination.
+
+
+</td></tr>
+</tbody></table>
 

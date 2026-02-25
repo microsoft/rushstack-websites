@@ -10,12 +10,17 @@ pagination_next: null
 
 ## RushConfiguration.tempShrinkwrapFilename property
 
+> Warning: This API is now obsolete.
+> 
+> Introduced with subspaces is subspace specific tempShrinkwrapFilename accessible from the Subspace class.
+> 
+
 The full path of the temporary shrinkwrap file that is used during "rush install". This file may get rewritten by the package manager during installation.
 
 **Signature:**
 
 ```typescript
-readonly tempShrinkwrapFilename: string;
+get tempShrinkwrapFilename(): string;
 ```
 
 ## Remarks

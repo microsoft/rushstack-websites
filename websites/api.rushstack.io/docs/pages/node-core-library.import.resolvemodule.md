@@ -20,9 +20,37 @@ static resolveModule(options: IImportResolveModuleOptions): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IImportResolveModuleOptions](./node-core-library.iimportresolvemoduleoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

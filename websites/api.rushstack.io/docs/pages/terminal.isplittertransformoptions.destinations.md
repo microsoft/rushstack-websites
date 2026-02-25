@@ -10,10 +10,10 @@ pagination_next: null
 
 ## ISplitterTransformOptions.destinations property
 
-Each input chunk will be passed to each destination in the array.
+Each input chunk will be passed to each destination in the iterable.
 
 **Signature:**
 
 ```typescript
-destinations: TerminalWritable[];
+destinations: Iterable<TerminalWritable>;
 ```

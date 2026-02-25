@@ -20,8 +20,49 @@ export declare enum VersionPolicyDefinitionName
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  individualVersion | <code>1</code> |  |
-|  lockStepVersion | <code>0</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+individualVersion
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+lockStepVersion
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

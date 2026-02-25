@@ -24,34 +24,515 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parameters](./ts-command-line.commandlineparameterprovider.parameters.md) | <code>readonly</code> | ReadonlyArray&lt;[CommandLineParameter](./ts-command-line.commandlineparameter.md)<></>&gt; | Returns a collection of the parameters that were defined for this object. |
-|  [parametersProcessed](./ts-command-line.commandlineparameterprovider.parametersprocessed.md) | <code>readonly</code> | boolean | Informs the caller if the argparse data has been processed into parameters. |
-|  [remainder](./ts-command-line.commandlineparameterprovider.remainder.md) | <code>readonly</code> | [CommandLineRemainder](./ts-command-line.commandlineremainder.md) \| undefined | If [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md) was called, this object captures any remaining command line arguments after the recognized portion. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parameters](./ts-command-line.commandlineparameterprovider.parameters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[CommandLineParameter](./ts-command-line.commandlineparameter.md)<></>&gt;
+
+
+</td><td>
+
+Returns a collection of the parameters that were defined for this object.
+
+
+</td></tr>
+<tr><td>
+
+[parametersProcessed](./ts-command-line.commandlineparameterprovider.parametersprocessed.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Informs the caller if the argparse data has been processed into parameters.
+
+
+</td></tr>
+<tr><td>
+
+[remainder](./ts-command-line.commandlineparameterprovider.remainder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineRemainder](./ts-command-line.commandlineremainder.md) \| undefined
+
+
+</td><td>
+
+If [CommandLineParameterProvider.defineCommandLineRemainder()](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md) was called, this object captures any remaining command line arguments after the recognized portion.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [defineChoiceListParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md) |  | Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum). The parameter can be specified multiple times to build a list. |
-|  [defineChoiceParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md) |  | Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum). |
-|  [defineCommandLineRemainder(definition)](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md) |  | Defines a rule that captures any remaining command line arguments after the recognized portion. |
-|  [defineFlagParameter(definition)](./ts-command-line.commandlineparameterprovider.defineflagparameter.md) |  | Defines a command-line switch whose boolean value is true if the switch is provided, and false otherwise. |
-|  [defineIntegerListParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md) |  | Defines a command-line parameter whose argument is an integer. The parameter can be specified multiple times to build a list. |
-|  [defineIntegerParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md) |  | Defines a command-line parameter whose argument is an integer. |
-|  [defineStringListParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md) |  | Defines a command-line parameter whose argument is a single text string. The parameter can be specified multiple times to build a list. |
-|  [defineStringParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringparameter.md) |  | Defines a command-line parameter whose argument is a single text string. |
-|  [getChoiceListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getchoicelistparameter.md) |  | Returns the CommandLineChoiceListParameter with the specified long name. |
-|  [getChoiceParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getchoiceparameter.md) |  | Returns the CommandLineChoiceParameter with the specified long name. |
-|  [getFlagParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getflagparameter.md) |  | Returns the CommandLineFlagParameter with the specified long name. |
-|  [getIntegerListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getintegerlistparameter.md) |  | Returns the CommandLineIntegerParameter with the specified long name. |
-|  [getIntegerParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getintegerparameter.md) |  | Returns the CommandLineIntegerParameter with the specified long name. |
-|  [getParameterStringMap()](./ts-command-line.commandlineparameterprovider.getparameterstringmap.md) |  | Returns a object which maps the long name of each parameter in this.parameters to the stringified form of its value. This is useful for logging telemetry, but it is not the proper way of accessing parameters or their values. |
-|  [getStringListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getstringlistparameter.md) |  | Returns the CommandLineStringListParameter with the specified long name. |
-|  [getStringParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getstringparameter.md) |  | Returns the CommandLineStringParameter with the specified long name. |
-|  [onDefineParameters()?](./ts-command-line.commandlineparameterprovider.ondefineparameters.md) | <code>protected</code> | _(Optional)_ The child class should implement this hook to define its command-line parameters, e.g. by calling defineFlagParameter(). |
-|  [parseScopedLongName(scopedLongName)](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md) |  | Returns an object with the parsed scope (if present) and the long name of the parameter. |
-|  [renderHelpText()](./ts-command-line.commandlineparameterprovider.renderhelptext.md) |  | Generates the command-line help text. |
-|  [renderUsageText()](./ts-command-line.commandlineparameterprovider.renderusagetext.md) |  | Generates the command-line usage text. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_registerAmbiguousParameter(name, parserKey)](./ts-command-line.commandlineparameterprovider._registerambiguousparameter.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[defineChoiceListParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoicelistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum). The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[defineChoiceParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum).
+
+
+</td></tr>
+<tr><td>
+
+[defineChoiceParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoiceparameter_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum).
+
+
+</td></tr>
+<tr><td>
+
+[defineChoiceParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoiceparameter_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum).
+
+
+</td></tr>
+<tr><td>
+
+[defineChoiceParameter(definition)](./ts-command-line.commandlineparameterprovider.definechoiceparameter_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose value must be a string from a fixed set of allowable choices (similar to an enum).
+
+
+</td></tr>
+<tr><td>
+
+[defineCommandLineRemainder(definition)](./ts-command-line.commandlineparameterprovider.definecommandlineremainder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a rule that captures any remaining command line arguments after the recognized portion.
+
+
+</td></tr>
+<tr><td>
+
+[defineFlagParameter(definition)](./ts-command-line.commandlineparameterprovider.defineflagparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line switch whose boolean value is true if the switch is provided, and false otherwise.
+
+
+</td></tr>
+<tr><td>
+
+[defineIntegerListParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerlistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is an integer. The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[defineIntegerParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is an integer.
+
+
+</td></tr>
+<tr><td>
+
+[defineIntegerParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerparameter_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is an integer.
+
+
+</td></tr>
+<tr><td>
+
+[defineIntegerParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerparameter_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is an integer.
+
+
+</td></tr>
+<tr><td>
+
+[defineIntegerParameter(definition)](./ts-command-line.commandlineparameterprovider.defineintegerparameter_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is an integer.
+
+
+</td></tr>
+<tr><td>
+
+[defineStringListParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringlistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is a single text string. The parameter can be specified multiple times to build a list.
+
+
+</td></tr>
+<tr><td>
+
+[defineStringParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is a single text string.
+
+
+</td></tr>
+<tr><td>
+
+[defineStringParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringparameter_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is a single text string.
+
+
+</td></tr>
+<tr><td>
+
+[defineStringParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringparameter_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is a single text string.
+
+
+</td></tr>
+<tr><td>
+
+[defineStringParameter(definition)](./ts-command-line.commandlineparameterprovider.definestringparameter_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Defines a command-line parameter whose argument is a single text string.
+
+
+</td></tr>
+<tr><td>
+
+[getChoiceListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getchoicelistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineChoiceListParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getChoiceParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getchoiceparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineChoiceParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getFlagParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getflagparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineFlagParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getIntegerListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getintegerlistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineIntegerParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getIntegerParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getintegerparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineIntegerParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getParameterStringMap()](./ts-command-line.commandlineparameterprovider.getparameterstringmap.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns a object which maps the long name of each parameter in this.parameters to the stringified form of its value. This is useful for logging telemetry, but it is not the proper way of accessing parameters or their values.
+
+
+</td></tr>
+<tr><td>
+
+[getStringListParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getstringlistparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineStringListParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[getStringParameter(parameterLongName, parameterScope)](./ts-command-line.commandlineparameterprovider.getstringparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the CommandLineStringParameter with the specified long name.
+
+
+</td></tr>
+<tr><td>
+
+[parseScopedLongName(scopedLongName)](./ts-command-line.commandlineparameterprovider.parsescopedlongname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns an object with the parsed scope (if present) and the long name of the parameter.
+
+
+</td></tr>
+<tr><td>
+
+[renderHelpText()](./ts-command-line.commandlineparameterprovider.renderhelptext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generates the command-line help text.
+
+
+</td></tr>
+<tr><td>
+
+[renderUsageText()](./ts-command-line.commandlineparameterprovider.renderusagetext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generates the command-line usage text.
+
+
+</td></tr>
+</tbody></table>
 

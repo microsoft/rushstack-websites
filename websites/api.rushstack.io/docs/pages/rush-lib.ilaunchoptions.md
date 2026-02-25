@@ -20,9 +20,83 @@ export interface ILaunchOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alreadyReportedNodeTooNewError?](./rush-lib.ilaunchoptions.alreadyreportednodetoonewerror.md) |  | boolean | _(Optional)_ If true, the wrapper process already printed a warning that the version of Node.js hasn't been tested with this version of Rush, so we shouldn't print a similar error. |
-|  [isManaged](./rush-lib.ilaunchoptions.ismanaged.md) |  | boolean | True if the tool was invoked from within a project with a rush.json file, otherwise false. We consider a project without a rush.json to be "unmanaged" and we'll print that to the command line when the tool is executed. This is mainly used for debugging purposes. |
-|  [terminalProvider?](./rush-lib.ilaunchoptions.terminalprovider.md) |  | [ITerminalProvider](./node-core-library.iterminalprovider.md) | _(Optional)_ Used to specify terminal how to write a message |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alreadyReportedNodeTooNewError?](./rush-lib.ilaunchoptions.alreadyreportednodetoonewerror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, the wrapper process already printed a warning that the version of Node.js hasn't been tested with this version of Rush, so we shouldn't print a similar error.
+
+
+</td></tr>
+<tr><td>
+
+[isManaged](./rush-lib.ilaunchoptions.ismanaged.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+True if the tool was invoked from within a project with a rush.json file, otherwise false. We consider a project without a rush.json to be "unmanaged" and we'll print that to the command line when the tool is executed. This is mainly used for debugging purposes.
+
+
+</td></tr>
+<tr><td>
+
+[terminalProvider?](./rush-lib.ilaunchoptions.terminalprovider.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminalProvider](./terminal.iterminalprovider.md)
+
+
+</td><td>
+
+_(Optional)_ Pass along the terminal provider from the CLI version selector.
+
+
+</td></tr>
+</tbody></table>
 

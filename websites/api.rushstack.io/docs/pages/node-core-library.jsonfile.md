@@ -20,18 +20,213 @@ export declare class JsonFile
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [load(jsonFilename, options)](./node-core-library.jsonfile.load.md) | <code>static</code> | Loads a JSON file. |
-|  [loadAndValidate(jsonFilename, jsonSchema, options)](./node-core-library.jsonfile.loadandvalidate.md) | <code>static</code> | Loads a JSON file and validate its schema. |
-|  [loadAndValidateAsync(jsonFilename, jsonSchema, options)](./node-core-library.jsonfile.loadandvalidateasync.md) | <code>static</code> | An async version of [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md)<></>. |
-|  [loadAndValidateWithCallback(jsonFilename, jsonSchema, errorCallback, options)](./node-core-library.jsonfile.loadandvalidatewithcallback.md) | <code>static</code> | Loads a JSON file and validate its schema, reporting errors using a callback |
-|  [loadAndValidateWithCallbackAsync(jsonFilename, jsonSchema, errorCallback, options)](./node-core-library.jsonfile.loadandvalidatewithcallbackasync.md) | <code>static</code> | An async version of [JsonFile.loadAndValidateWithCallback()](./node-core-library.jsonfile.loadandvalidatewithcallback.md)<></>. |
-|  [loadAsync(jsonFilename, options)](./node-core-library.jsonfile.loadasync.md) | <code>static</code> | An async version of [JsonFile.load()](./node-core-library.jsonfile.load.md)<></>. |
-|  [parseString(jsonContents, options)](./node-core-library.jsonfile.parsestring.md) | <code>static</code> | Parses a JSON file's contents. |
-|  [save(jsonObject, jsonFilename, options)](./node-core-library.jsonfile.save.md) | <code>static</code> | Saves the file to disk. Returns false if nothing was written due to options.onlyIfChanged. |
-|  [saveAsync(jsonObject, jsonFilename, options)](./node-core-library.jsonfile.saveasync.md) | <code>static</code> | An async version of [JsonFile.save()](./node-core-library.jsonfile.save.md)<></>. |
-|  [stringify(jsonObject, options)](./node-core-library.jsonfile.stringify.md) | <code>static</code> | Serializes the specified JSON object to a string buffer. |
-|  [updateString(previousJson, newJsonObject, options)](./node-core-library.jsonfile.updatestring.md) | <code>static</code> | Serializes the specified JSON object to a string buffer. |
-|  [validateNoUndefinedMembers(jsonObject)](./node-core-library.jsonfile.validatenoundefinedmembers.md) | <code>static</code> | Used to validate a data structure before writing. Reports an error if there are any undefined members. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[load(jsonFilename, options)](./node-core-library.jsonfile.load.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads a JSON file.
+
+
+</td></tr>
+<tr><td>
+
+[loadAndValidate(jsonFilename, jsonSchema, options)](./node-core-library.jsonfile.loadandvalidate.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads a JSON file and validate its schema.
+
+
+</td></tr>
+<tr><td>
+
+[loadAndValidateAsync(jsonFilename, jsonSchema, options)](./node-core-library.jsonfile.loadandvalidateasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [JsonFile.loadAndValidate()](./node-core-library.jsonfile.loadandvalidate.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[loadAndValidateWithCallback(jsonFilename, jsonSchema, errorCallback, options)](./node-core-library.jsonfile.loadandvalidatewithcallback.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads a JSON file and validate its schema, reporting errors using a callback
+
+
+</td></tr>
+<tr><td>
+
+[loadAndValidateWithCallbackAsync(jsonFilename, jsonSchema, errorCallback, options)](./node-core-library.jsonfile.loadandvalidatewithcallbackasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [JsonFile.loadAndValidateWithCallback()](./node-core-library.jsonfile.loadandvalidatewithcallback.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[loadAsync(jsonFilename, options)](./node-core-library.jsonfile.loadasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [JsonFile.load()](./node-core-library.jsonfile.load.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[parseString(jsonContents, options)](./node-core-library.jsonfile.parsestring.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Parses a JSON file's contents.
+
+
+</td></tr>
+<tr><td>
+
+[save(jsonObject, jsonFilename, options)](./node-core-library.jsonfile.save.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Saves the file to disk. Returns false if nothing was written due to options.onlyIfChanged.
+
+
+</td></tr>
+<tr><td>
+
+[saveAsync(jsonObject, jsonFilename, options)](./node-core-library.jsonfile.saveasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [JsonFile.save()](./node-core-library.jsonfile.save.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[stringify(jsonObject, options)](./node-core-library.jsonfile.stringify.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Serializes the specified JSON object to a string buffer.
+
+
+</td></tr>
+<tr><td>
+
+[updateString(previousJson, newJsonObject, options)](./node-core-library.jsonfile.updatestring.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Serializes the specified JSON object to a string buffer.
+
+
+</td></tr>
+<tr><td>
+
+[validateNoUndefinedMembers(jsonObject)](./node-core-library.jsonfile.validatenoundefinedmembers.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Used to validate a data structure before writing. Reports an error if there are any undefined members.
+
+
+</td></tr>
+</tbody></table>
 

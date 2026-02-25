@@ -20,10 +20,51 @@ abstract process(state: TextRewriterState, input: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  state | [TextRewriterState](./terminal.textrewriterstate.md) |  |
-|  input | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+state
+
+
+</td><td>
+
+[TextRewriterState](./terminal.textrewriterstate.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+input
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

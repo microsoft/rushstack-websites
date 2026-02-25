@@ -10,7 +10,7 @@ pagination_next: null
 
 ## EventHooks.get() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Return all the scripts associated with the specified event.
@@ -23,9 +23,39 @@ get(event: Event): string[];
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  event | [Event](./rush-lib.event.md) | Rush event |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+event
+
+
+</td><td>
+
+[Event](./rush-lib.event_2.md)
+
+
+</td><td>
+
+Rush event
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

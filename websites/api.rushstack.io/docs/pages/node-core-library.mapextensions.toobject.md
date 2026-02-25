@@ -22,9 +22,39 @@ static toObject<TValue>(map: Map<string, TValue>): {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  map | Map&lt;string, TValue&gt; | The map that the object properties will be sourced from |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+map
+
+
+</td><td>
+
+Map&lt;string, TValue&gt;
+
+
+</td><td>
+
+The map that the object properties will be sourced from
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedWriter class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 An writable interface for managing output of simultaneous processes.
@@ -24,23 +24,192 @@ export declare class CollatedWriter extends TerminalWritable
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(taskName, collator)](./stream-collator.collatedwriter._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>CollatedWriter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(taskName, collator)](./stream-collator.collatedwriter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `CollatedWriter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bufferedChunks](./stream-collator.collatedwriter.bufferedchunks.md) | <code>readonly</code> | ReadonlyArray&lt;[ITerminalChunk](./terminal.iterminalchunk.md)<></>&gt; | **_(BETA)_** For diagnostic purposes, if the writer is buffering chunks because it has not become active yet, they can be inspected via this property. |
-|  [isActive](./stream-collator.collatedwriter.isactive.md) | <code>readonly</code> | boolean | **_(BETA)_** Returns true if this is the active writer for its associated [StreamCollator](./stream-collator.streamcollator.md)<></>. |
-|  [taskName](./stream-collator.collatedwriter.taskname.md) | <code>readonly</code> | string | **_(BETA)_** |
-|  [terminal](./stream-collator.collatedwriter.terminal.md) | <code>readonly</code> | [CollatedTerminal](./stream-collator.collatedterminal.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bufferedChunks](./stream-collator.collatedwriter.bufferedchunks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ITerminalChunk](./terminal.iterminalchunk.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_** For diagnostic purposes, if the writer is buffering chunks because it has not become active yet, they can be inspected via this property.
+
+
+</td></tr>
+<tr><td>
+
+[isActive](./stream-collator.collatedwriter.isactive.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Returns true if this is the active writer for its associated [StreamCollator](./stream-collator.streamcollator.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[taskName](./stream-collator.collatedwriter.taskname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./stream-collator.collatedwriter.terminal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CollatedTerminal](./stream-collator.collatedterminal.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onClose()](./stream-collator.collatedwriter.onclose.md) |  | **_(BETA)_** Subclasses can override this empty method to perform additional operations such as closing a file handle. |
-|  [onWriteChunk(chunk)](./stream-collator.collatedwriter.onwritechunk.md) |  | **_(BETA)_** Subclasses should implement this <code>abstract</code> method to process the chunk. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onClose()](./stream-collator.collatedwriter.onclose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Subclasses can override this empty method to perform additional operations such as closing a file handle.
+
+
+</td></tr>
+<tr><td>
+
+[onWriteChunk(chunk)](./stream-collator.collatedwriter.onwritechunk.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Subclasses should implement this `abstract` method to process the chunk.
+
+
+</td></tr>
+</tbody></table>
 

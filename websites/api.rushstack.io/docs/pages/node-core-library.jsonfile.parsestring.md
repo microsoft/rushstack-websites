@@ -20,10 +20,53 @@ static parseString(jsonContents: string, options?: IJsonFileParseOptions): JsonO
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonContents | string |  |
-|  options | [IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonContents
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IJsonFileParseOptions](./node-core-library.ijsonfileparseoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

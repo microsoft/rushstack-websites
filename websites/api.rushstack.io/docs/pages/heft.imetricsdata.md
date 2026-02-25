@@ -19,15 +19,235 @@ export interface IMetricsData
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [command](./heft.imetricsdata.command.md) |  | string | The command that was executed. |
-|  [commandParameters](./heft.imetricsdata.commandparameters.md) |  | Record&lt;string, string&gt; | A map of commandline parameter names to their effective values |
-|  [encounteredError?](./heft.imetricsdata.encounterederror.md) |  | boolean | _(Optional)_ Whether or not the command ran into errors |
-|  [machineArch](./heft.imetricsdata.machinearch.md) |  | string | The processor's architecture. |
-|  [machineCores](./heft.imetricsdata.machinecores.md) |  | number | The number of processor cores. |
-|  [machineOs](./heft.imetricsdata.machineos.md) |  | string | The name of the operating system provided by NodeJS. |
-|  [machineProcessor](./heft.imetricsdata.machineprocessor.md) |  | string | The processor's model name. |
-|  [machineTotalMemoryMB](./heft.imetricsdata.machinetotalmemorymb.md) |  | number | The total amount of memory the machine has, in megabytes. |
-|  [taskTotalExecutionMs](./heft.imetricsdata.tasktotalexecutionms.md) |  | number | The amount of time the command took to execute, in milliseconds. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bootDurationMs](./heft.imetricsdata.bootdurationms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The total duration before Heft started executing user-defined tasks, in milliseconds. This metric is for tracking the contribution of Heft itself to total build duration.
+
+
+</td></tr>
+<tr><td>
+
+[command](./heft.imetricsdata.command.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The command that was executed.
+
+
+</td></tr>
+<tr><td>
+
+[commandParameters](./heft.imetricsdata.commandparameters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, string&gt;
+
+
+</td><td>
+
+A map of commandline parameter names to their effective values
+
+
+</td></tr>
+<tr><td>
+
+[encounteredError?](./heft.imetricsdata.encounterederror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether or not the command ran into errors
+
+
+</td></tr>
+<tr><td>
+
+[machineArch](./heft.imetricsdata.machinearch.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The processor's architecture.
+
+
+</td></tr>
+<tr><td>
+
+[machineCores](./heft.imetricsdata.machinecores.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number of processor cores.
+
+
+</td></tr>
+<tr><td>
+
+[machineOs](./heft.imetricsdata.machineos.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the operating system provided by NodeJS.
+
+
+</td></tr>
+<tr><td>
+
+[machineProcessor](./heft.imetricsdata.machineprocessor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The processor's model name.
+
+
+</td></tr>
+<tr><td>
+
+[machineTotalMemoryMB](./heft.imetricsdata.machinetotalmemorymb.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The total amount of memory the machine has, in megabytes.
+
+
+</td></tr>
+<tr><td>
+
+[taskTotalExecutionMs](./heft.imetricsdata.tasktotalexecutionms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The total execution duration of all user-defined tasks from `heft.json`<></>, in milliseconds. This metric is for measuring the cumulative time spent on the underlying build steps for a project. If running in watch mode, this will be the duration of the most recent incremental build.
+
+
+</td></tr>
+<tr><td>
+
+[totalUptimeMs](./heft.imetricsdata.totaluptimems.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+How long the process has been alive, in milliseconds. This metric is for watch mode, to analyze how long developers leave individual Heft sessions running.
+
+
+</td></tr>
+</tbody></table>
 

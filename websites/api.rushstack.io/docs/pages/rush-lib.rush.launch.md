@@ -15,15 +15,56 @@ This API is used by the `@microsoft/rush` front end to launch the "rush" command
 **Signature:**
 
 ```typescript
-static launch(launcherVersion: string, arg: ILaunchOptions): void;
+static launch(launcherVersion: string, options: ILaunchOptions): void;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  launcherVersion | string |  |
-|  arg | [ILaunchOptions](./rush-lib.ilaunchoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+launcherVersion
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ILaunchOptions](./rush-lib.ilaunchoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

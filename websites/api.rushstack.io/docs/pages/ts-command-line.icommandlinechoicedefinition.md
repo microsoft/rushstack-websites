@@ -10,20 +10,94 @@ pagination_next: null
 
 ## ICommandLineChoiceDefinition interface
 
-For use with [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options.
+For use with [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter.md) and [CommandLineParameterProvider.defineChoiceParameter()](./ts-command-line.commandlineparameterprovider.definechoiceparameter_1.md)<></>, this interface defines a command line parameter which is constrained to a list of possible options.
 
 **Signature:**
 
 ```typescript
-export interface ICommandLineChoiceDefinition extends IBaseCommandLineDefinition 
+export interface ICommandLineChoiceDefinition<TChoice extends string = string> extends IBaseCommandLineDefinition 
 ```
 **Extends:** [IBaseCommandLineDefinition](./ts-command-line.ibasecommandlinedefinition.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alternatives](./ts-command-line.icommandlinechoicedefinition.alternatives.md) |  | string\[\] | A list of strings (which contain no spaces), of possible options which can be selected |
-|  [completions?](./ts-command-line.icommandlinechoicedefinition.completions.md) |  | () =&gt; Promise&lt;string\[\]&gt; | _(Optional)_ An optional callback that provides a list of custom choices for tab completion. |
-|  [defaultValue?](./ts-command-line.icommandlinechoicedefinition.defaultvalue.md) |  | string | _(Optional)_ The default value which will be used if the parameter is omitted from the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alternatives](./ts-command-line.icommandlinechoicedefinition.alternatives.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ReadonlyArray&lt;TChoice&gt; \| ReadonlySet&lt;TChoice&gt;
+
+
+</td><td>
+
+A list of strings (which contain no spaces), of possible options which can be selected
+
+
+</td></tr>
+<tr><td>
+
+[completions?](./ts-command-line.icommandlinechoicedefinition.completions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+() =&gt; Promise&lt;ReadonlyArray&lt;TChoice&gt; \| ReadonlySet&lt;TChoice&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ An optional callback that provides a list of custom choices for tab completion.
+
+
+</td></tr>
+<tr><td>
+
+[defaultValue?](./ts-command-line.icommandlinechoicedefinition.defaultvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+TChoice
+
+
+</td><td>
+
+_(Optional)_ The default value which will be used if the parameter is omitted from the command line.
+
+
+</td></tr>
+</tbody></table>
 

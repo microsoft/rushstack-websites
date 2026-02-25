@@ -21,7 +21,45 @@ export interface IApiInitializerMixinOptions extends IApiItemOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [initializerTokenRange?](./api-extractor-model.iapiinitializermixinoptions.initializertokenrange.md) |  | [IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[initializerTokenRange?](./api-extractor-model.iapiinitializermixinoptions.initializertokenrange.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExcerptTokenRange](./api-extractor-model.iexcerpttokenrange.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

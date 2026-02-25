@@ -10,7 +10,7 @@ pagination_next: null
 
 ## CollatedWriter.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Constructs a new instance of the `CollatedWriter` class
@@ -23,8 +23,49 @@ constructor(taskName: string, collator: StreamCollator);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  taskName | string |  |
-|  collator | [StreamCollator](./stream-collator.streamcollator.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+taskName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+collator
+
+
+</td><td>
+
+[StreamCollator](./stream-collator.streamcollator.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,9 +20,83 @@ export interface IExtractorConfigLoadForFolderOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [packageJsonLookup?](./api-extractor.iextractorconfigloadforfolderoptions.packagejsonlookup.md) |  | [PackageJsonLookup](./node-core-library.packagejsonlookup.md) | _(Optional)_ An already constructed <code>PackageJsonLookup</code> cache object to use. If omitted, a temporary one will be constructed. |
-|  [rigConfig?](./api-extractor.iextractorconfigloadforfolderoptions.rigconfig.md) |  | [IRigConfig](./rig-package.irigconfig.md) | _(Optional)_ An already constructed <code>RigConfig</code> object. If omitted, then a new <code>RigConfig</code> object will be constructed. |
-|  [startingFolder](./api-extractor.iextractorconfigloadforfolderoptions.startingfolder.md) |  | string | The folder path to start from when searching for api-extractor.json. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packageJsonLookup?](./api-extractor.iextractorconfigloadforfolderoptions.packagejsonlookup.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[PackageJsonLookup](./node-core-library.packagejsonlookup.md)
+
+
+</td><td>
+
+_(Optional)_ An already constructed `PackageJsonLookup` cache object to use. If omitted, a temporary one will be constructed.
+
+
+</td></tr>
+<tr><td>
+
+[rigConfig?](./api-extractor.iextractorconfigloadforfolderoptions.rigconfig.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IRigConfig](./rig-package.irigconfig.md)
+
+
+</td><td>
+
+_(Optional)_ An already constructed `RigConfig` object. If omitted, then a new `RigConfig` object will be constructed.
+
+
+</td></tr>
+<tr><td>
+
+[startingFolder](./api-extractor.iextractorconfigloadforfolderoptions.startingfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder path to start from when searching for api-extractor.json.
+
+
+</td></tr>
+</tbody></table>
 

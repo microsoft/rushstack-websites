@@ -18,13 +18,93 @@ static convertCallbackToPromise<TResult, TError, TArg1, TArg2, TArg3, TArg4>(fn:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fn | (arg1: TArg1, arg2: TArg2, arg3: TArg3, arg4: TArg4, cb: [LegacyCallback](./node-core-library.legacycallback.md)<></>&lt;TResult, TError&gt;) =&gt; void |  |
-|  arg1 | TArg1 |  |
-|  arg2 | TArg2 |  |
-|  arg3 | TArg3 |  |
-|  arg4 | TArg4 |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+fn
+
+
+</td><td>
+
+(arg1: TArg1, arg2: TArg2, arg3: TArg3, arg4: TArg4, cb: [LegacyCallback](./node-core-library.legacycallback.md)<></>&lt;TResult, TError&gt;) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+arg1
+
+
+</td><td>
+
+TArg1
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+arg2
+
+
+</td><td>
+
+TArg2
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+arg3
+
+
+</td><td>
+
+TArg3
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+arg4
+
+
+</td><td>
+
+TArg4
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -35,23 +35,181 @@ export enum FontSizes {
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apienum._constructor_.md) |  | Constructs a new instance of the <code>ApiEnum</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apienum._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiEnum` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apienum.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apienum.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
-|  [members](./api-extractor-model.apienum.members.md) | <code>readonly</code> | ReadonlyArray&lt;[ApiEnumMember](./api-extractor-model.apienummember.md)<></>&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apienum.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apienum.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[members](./api-extractor-model.apienum.members.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ApiEnumMember](./api-extractor-model.apienummember.md)<></>&gt;
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addMember(member)](./api-extractor-model.apienum.addmember.md) |  |  |
-|  [buildCanonicalReference()](./api-extractor-model.apienum.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apienum.getcontainerkey.md) | <code>static</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addMember(member)](./api-extractor-model.apienum.addmember.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apienum.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apienum.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

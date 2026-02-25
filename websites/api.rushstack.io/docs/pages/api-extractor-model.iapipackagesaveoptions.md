@@ -21,9 +21,83 @@ export interface IApiPackageSaveOptions extends IJsonFileSaveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [testMode?](./api-extractor-model.iapipackagesaveoptions.testmode.md) |  | boolean | _(Optional)_ Set to true only when invoking API Extractor's test harness. |
-|  [toolPackage?](./api-extractor-model.iapipackagesaveoptions.toolpackage.md) |  | string | _(Optional)_ Optionally specifies a value for the "toolPackage" field in the output .api.json data file; otherwise, the value will be "api-extractor-model". |
-|  [toolVersion?](./api-extractor-model.iapipackagesaveoptions.toolversion.md) |  | string | _(Optional)_ Optionally specifies a value for the "toolVersion" field in the output .api.json data file; otherwise, the value will be the current version of the api-extractor-model package. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[testMode?](./api-extractor-model.iapipackagesaveoptions.testmode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Set to true only when invoking API Extractor's test harness.
+
+
+</td></tr>
+<tr><td>
+
+[toolPackage?](./api-extractor-model.iapipackagesaveoptions.toolpackage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optionally specifies a value for the "toolPackage" field in the output .api.json data file; otherwise, the value will be "api-extractor-model".
+
+
+</td></tr>
+<tr><td>
+
+[toolVersion?](./api-extractor-model.iapipackagesaveoptions.toolversion.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optionally specifies a value for the "toolVersion" field in the output .api.json data file; otherwise, the value will be the current version of the api-extractor-model package.
+
+
+</td></tr>
+</tbody></table>
 

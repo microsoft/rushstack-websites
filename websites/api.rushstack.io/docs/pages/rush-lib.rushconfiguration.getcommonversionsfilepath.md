@@ -10,19 +10,68 @@ pagination_next: null
 
 ## RushConfiguration.getCommonVersionsFilePath() method
 
-Gets the path to the common-versions.json config file for a specific variant.
+> Warning: This API is now obsolete.
+> 
+> Use [Subspace.getCommonVersionsFilePath()](./rush-lib.subspace.getcommonversionsfilepath.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-getCommonVersionsFilePath(variant?: string | undefined): string;
+getCommonVersionsFilePath(subspace?: Subspace, variant?: string): string;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+variant
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

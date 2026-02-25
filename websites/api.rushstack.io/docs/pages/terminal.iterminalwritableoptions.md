@@ -20,7 +20,45 @@ export interface ITerminalWritableOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [preventAutoclose?](./terminal.iterminalwritableoptions.preventautoclose.md) |  | boolean | _(Optional)_ When this object is the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) for a transform, the transform will automatically close this object. Set <code>preventAutoclose</code> to <code>true</code> to prevent that behavior. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[preventAutoclose?](./terminal.iterminalwritableoptions.preventautoclose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ When this object is the [TerminalTransform.destination](./terminal.terminaltransform.destination.md) for a transform, the transform will automatically close this object. Set `preventAutoclose` to `true` to prevent that behavior.
+
+
+</td></tr>
+</tbody></table>
 

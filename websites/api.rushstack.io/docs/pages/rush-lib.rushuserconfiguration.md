@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushUserConfiguration class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Rush per-user configuration data.
@@ -23,14 +23,99 @@ export declare class RushUserConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [buildCacheFolder](./rush-lib.rushuserconfiguration.buildcachefolder.md) | <code>readonly</code> | string \| undefined | **_(BETA)_** If provided, store build cache in the specified folder. Must be an absolute path. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCacheFolder](./rush-lib.rushuserconfiguration.buildcachefolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** If provided, store build cache in the specified folder. Must be an absolute path.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getRushUserFolderPath()](./rush-lib.rushuserconfiguration.getrushuserfolderpath.md) | <code>static</code> | **_(BETA)_** |
-|  [initializeAsync()](./rush-lib.rushuserconfiguration.initializeasync.md) | <code>static</code> | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getRushUserFolderPath()](./rush-lib.rushuserconfiguration.getrushuserfolderpath.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[initializeAsync()](./rush-lib.rushuserconfiguration.initializeasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

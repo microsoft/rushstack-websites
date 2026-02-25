@@ -15,5 +15,5 @@ Version policy name
 **Signature:**
 
 ```typescript
-readonly policyName: string;
+get policyName(): string;
 ```

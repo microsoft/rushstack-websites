@@ -18,15 +18,75 @@ The `config/rig.json` file is a system that Node.js build tools can support, in 
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [RigConfig](./rig-package.rigconfig.md) | This is the main API for loading the <code>config/rig.json</code> file format. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RigConfig](./rig-package.rigconfig.md)
+
+
+</td><td>
+
+This is the main API for loading the `config/rig.json` file format.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ILoadForProjectFolderOptions](./rig-package.iloadforprojectfolderoptions.md) | Options for [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md)<></>. |
-|  [IRigConfig](./rig-package.irigconfig.md) | This is the main API for loading the <code>config/rig.json</code> file format. |
-|  [IRigConfigJson](./rig-package.irigconfigjson.md) | Represents the literal contents of the <code>config/rig.json</code> file. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ILoadForProjectFolderOptions](./rig-package.iloadforprojectfolderoptions.md)
+
+
+</td><td>
+
+Options for [RigConfig.loadForProjectFolder()](./rig-package.rigconfig.loadforprojectfolder.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[IRigConfig](./rig-package.irigconfig.md)
+
+
+</td><td>
+
+This is the main API for loading the `config/rig.json` file format.
+
+
+</td></tr>
+<tr><td>
+
+[IRigConfigJson](./rig-package.irigconfigjson.md)
+
+
+</td><td>
+
+Represents the literal contents of the `config/rig.json` file.
+
+
+</td></tr>
+</tbody></table>
 

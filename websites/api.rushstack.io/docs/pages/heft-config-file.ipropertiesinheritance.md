@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IPropertiesInheritance type
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -21,5 +21,5 @@ export type IPropertiesInheritance<TConfigurationFile> = {
     [propertyName in keyof TConfigurationFile]?: IPropertyInheritance<InheritanceType.append | InheritanceType.merge | InheritanceType.replace> | ICustomPropertyInheritance<TConfigurationFile[propertyName]>;
 };
 ```
-**References:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>, [InheritanceType.append](./heft-config-file.inheritancetype.md)<></>, [InheritanceType.merge](./heft-config-file.inheritancetype.md)<></>, [InheritanceType.replace](./heft-config-file.inheritancetype.md)<></>, [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md)
+**References:** [IPropertyInheritance](./heft-config-file.ipropertyinheritance.md)<></>, [InheritanceType.append](./heft-config-file.inheritancetype.append.md)<></>, [InheritanceType.merge](./heft-config-file.inheritancetype.merge.md)<></>, [InheritanceType.replace](./heft-config-file.inheritancetype.replace.md)<></>, [ICustomPropertyInheritance](./heft-config-file.icustompropertyinheritance.md)
 

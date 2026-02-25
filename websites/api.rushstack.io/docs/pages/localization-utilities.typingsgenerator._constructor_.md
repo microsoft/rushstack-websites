@@ -20,7 +20,35 @@ constructor(options: ITypingsGeneratorOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ITypingsGeneratorOptions](./localization-utilities.itypingsgeneratoroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ITypingsGeneratorOptions](./localization-utilities.itypingsgeneratoroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

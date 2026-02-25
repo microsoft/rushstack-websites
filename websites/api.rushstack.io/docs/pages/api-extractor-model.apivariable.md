@@ -35,24 +35,197 @@ export const canvas: IWidget = createCanvas();
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apivariable._constructor_.md) |  | Constructs a new instance of the <code>ApiVariable</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apivariable._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiVariable` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apivariable.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apivariable.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
-|  [variableTypeExcerpt](./api-extractor-model.apivariable.variabletypeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the variable. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apivariable.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apivariable.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[variableTypeExcerpt](./api-extractor-model.apivariable.variabletypeexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the variable.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apivariable.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apivariable.getcontainerkey.md) | <code>static</code> |  |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apivariable.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apivariable.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apivariable.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apivariable.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apivariable.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apivariable.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

@@ -15,12 +15,40 @@ Constructs a new instance of the `TypingsGenerator` class
 **Signature:**
 
 ```typescript
-constructor(options: ITypingsGeneratorOptions);
+constructor(options: TFileContents extends string ? ITypingsGeneratorOptions<string | undefined, TFileContents> : never);
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+TFileContents extends string ? [ITypingsGeneratorOptions](./typings-generator.itypingsgeneratoroptions.md)<></>&lt;string \| undefined, TFileContents&gt; : never
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

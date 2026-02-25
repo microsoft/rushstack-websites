@@ -20,10 +20,102 @@ export interface IModuleMinificationErrorResult
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [code?](./module-minifier.imoduleminificationerrorresult.code.md) |  | undefined | _(Optional)_ Marker property to always return the same result shape. |
-|  [error](./module-minifier.imoduleminificationerrorresult.error.md) |  | Error | The error encountered, to be added to the current compilation's error collection. |
-|  [hash](./module-minifier.imoduleminificationerrorresult.hash.md) |  | string | Identity of the request |
-|  [map?](./module-minifier.imoduleminificationerrorresult.map.md) |  | undefined | _(Optional)_ Marker property to always return the same result shape. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[code?](./module-minifier.imoduleminificationerrorresult.code.md)
+
+
+</td><td>
+
+
+</td><td>
+
+undefined
+
+
+</td><td>
+
+_(Optional)_ Marker property to always return the same result shape.
+
+
+</td></tr>
+<tr><td>
+
+[error](./module-minifier.imoduleminificationerrorresult.error.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Error
+
+
+</td><td>
+
+The error encountered, to be added to the current compilation's error collection.
+
+
+</td></tr>
+<tr><td>
+
+[hash](./module-minifier.imoduleminificationerrorresult.hash.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Identity of the request
+
+
+</td></tr>
+<tr><td>
+
+[map?](./module-minifier.imoduleminificationerrorresult.map.md)
+
+
+</td><td>
+
+
+</td><td>
+
+undefined
+
+
+</td><td>
+
+_(Optional)_ Marker property to always return the same result shape.
+
+
+</td></tr>
+</tbody></table>
 

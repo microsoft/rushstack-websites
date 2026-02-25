@@ -52,10 +52,85 @@ function f(s: string): Colors | undefined {
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getKeyByNumber(enumObject, value)](./node-core-library.enum.getkeybynumber.md) | <code>static</code> | This API is similar to [Enum.tryGetKeyByNumber()](./node-core-library.enum.trygetkeybynumber.md)<></>, except that it throws an exception if the key is undefined. |
-|  [getValueByKey(enumObject, key)](./node-core-library.enum.getvaluebykey.md) | <code>static</code> | This API is similar to [Enum.tryGetValueByKey()](./node-core-library.enum.trygetvaluebykey.md)<></>, except that it throws an exception if the key is undefined. |
-|  [tryGetKeyByNumber(enumObject, value)](./node-core-library.enum.trygetkeybynumber.md) | <code>static</code> | Returns an enum string key, given its numeric value. Returns <code>undefined</code> if no matching value is found. |
-|  [tryGetValueByKey(enumObject, key)](./node-core-library.enum.trygetvaluebykey.md) | <code>static</code> | Returns an enum value, given its key. Returns <code>undefined</code> if no matching key is found. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getKeyByNumber(enumObject, value)](./node-core-library.enum.getkeybynumber.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This API is similar to [Enum.tryGetKeyByNumber()](./node-core-library.enum.trygetkeybynumber.md)<></>, except that it throws an exception if the key is undefined.
+
+
+</td></tr>
+<tr><td>
+
+[getValueByKey(enumObject, key)](./node-core-library.enum.getvaluebykey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+This API is similar to [Enum.tryGetValueByKey()](./node-core-library.enum.trygetvaluebykey.md)<></>, except that it throws an exception if the key is undefined.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetKeyByNumber(enumObject, value)](./node-core-library.enum.trygetkeybynumber.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns an enum string key, given its numeric value. Returns `undefined` if no matching value is found.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetValueByKey(enumObject, key)](./node-core-library.enum.trygetvaluebykey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns an enum value, given its key. Returns `undefined` if no matching key is found.
+
+
+</td></tr>
+</tbody></table>
 

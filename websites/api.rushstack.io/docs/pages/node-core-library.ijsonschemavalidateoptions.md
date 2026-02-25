@@ -10,17 +10,56 @@ pagination_next: null
 
 ## IJsonSchemaValidateOptions interface
 
-Options for JsonSchema.validateObject()
+Options for [JsonSchema.validateObject()](./node-core-library.jsonschema.validateobject.md)
 
 **Signature:**
 
 ```typescript
-export interface IJsonSchemaValidateOptions 
+export interface IJsonSchemaValidateOptions extends IJsonSchemaValidateObjectWithOptions 
 ```
+**Extends:** [IJsonSchemaValidateObjectWithOptions](./node-core-library.ijsonschemavalidateobjectwithoptions.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [customErrorHeader?](./node-core-library.ijsonschemavalidateoptions.customerrorheader.md) |  | string | _(Optional)_ A custom header that will be used to report schema errors. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[customErrorHeader?](./node-core-library.ijsonschemavalidateoptions.customerrorheader.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ A custom header that will be used to report schema errors.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,27 +20,227 @@ export declare class EnvironmentMap
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(environmentObject)](./node-core-library.environmentmap._constructor_.md) |  | Constructs a new instance of the <code>EnvironmentMap</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(environmentObject)](./node-core-library.environmentmap._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `EnvironmentMap` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [caseSensitive](./node-core-library.environmentmap.casesensitive.md) | <code>readonly</code> | boolean | Whether the environment variable names are case-sensitive. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[caseSensitive](./node-core-library.environmentmap.casesensitive.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether the environment variable names are case-sensitive.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [clear()](./node-core-library.environmentmap.clear.md) |  | Clears all entries, resulting in an empty map. |
-|  [entries()](./node-core-library.environmentmap.entries.md) |  | Returns the map entries. |
-|  [get(name)](./node-core-library.environmentmap.get.md) |  | Returns the value of the specified variable, or <code>undefined</code> if the map does not contain that name. |
-|  [mergeFrom(environmentMap)](./node-core-library.environmentmap.mergefrom.md) |  | Adds each entry from <code>environmentMap</code> to this map. |
-|  [mergeFromObject(environmentObject)](./node-core-library.environmentmap.mergefromobject.md) |  | Merges entries from a plain JavaScript object, such as would be used with the <code>process.env</code> API. |
-|  [names()](./node-core-library.environmentmap.names.md) |  | Returns the map keys, which are environment variable names. |
-|  [set(name, value)](./node-core-library.environmentmap.set.md) |  | Assigns the variable to the specified value. A previous value will be overwritten. |
-|  [toObject()](./node-core-library.environmentmap.toobject.md) |  | Returns the keys as a plain JavaScript object similar to the object returned by the <code>process.env</code> API. |
-|  [unset(name)](./node-core-library.environmentmap.unset.md) |  | Removes the key from the map, if present. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[clear()](./node-core-library.environmentmap.clear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Clears all entries, resulting in an empty map.
+
+
+</td></tr>
+<tr><td>
+
+[entries()](./node-core-library.environmentmap.entries.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the map entries.
+
+
+</td></tr>
+<tr><td>
+
+[get(name)](./node-core-library.environmentmap.get.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the value of the specified variable, or `undefined` if the map does not contain that name.
+
+
+</td></tr>
+<tr><td>
+
+[mergeFrom(environmentMap)](./node-core-library.environmentmap.mergefrom.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Adds each entry from `environmentMap` to this map.
+
+
+</td></tr>
+<tr><td>
+
+[mergeFromObject(environmentObject)](./node-core-library.environmentmap.mergefromobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Merges entries from a plain JavaScript object, such as would be used with the `process.env` API.
+
+
+</td></tr>
+<tr><td>
+
+[names()](./node-core-library.environmentmap.names.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the map keys, which are environment variable names.
+
+
+</td></tr>
+<tr><td>
+
+[set(name, value)](./node-core-library.environmentmap.set.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Assigns the variable to the specified value. A previous value will be overwritten.
+
+
+</td></tr>
+<tr><td>
+
+[toObject()](./node-core-library.environmentmap.toobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the keys as a plain JavaScript object similar to the object returned by the `process.env` API.
+
+
+</td></tr>
+<tr><td>
+
+[unset(name)](./node-core-library.environmentmap.unset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Removes the key from the map, if present.
+
+
+</td></tr>
+</tbody></table>
 

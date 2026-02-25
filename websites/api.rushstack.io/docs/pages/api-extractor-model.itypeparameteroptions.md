@@ -20,11 +20,111 @@ export interface ITypeParameterOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [constraintExcerpt](./api-extractor-model.itypeparameteroptions.constraintexcerpt.md) |  | [Excerpt](./api-extractor-model.excerpt.md) |  |
-|  [defaultTypeExcerpt](./api-extractor-model.itypeparameteroptions.defaulttypeexcerpt.md) |  | [Excerpt](./api-extractor-model.excerpt.md) |  |
-|  [isOptional](./api-extractor-model.itypeparameteroptions.isoptional.md) |  | boolean |  |
-|  [name](./api-extractor-model.itypeparameteroptions.name.md) |  | string |  |
-|  [parent](./api-extractor-model.itypeparameteroptions.parent.md) |  | ApiTypeParameterListMixin |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[constraintExcerpt](./api-extractor-model.itypeparameteroptions.constraintexcerpt.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[defaultTypeExcerpt](./api-extractor-model.itypeparameteroptions.defaulttypeexcerpt.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[isOptional](./api-extractor-model.itypeparameteroptions.isoptional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[name](./api-extractor-model.itypeparameteroptions.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parent](./api-extractor-model.itypeparameteroptions.parent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ApiTypeParameterListMixin
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

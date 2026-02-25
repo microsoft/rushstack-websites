@@ -20,9 +20,37 @@ static formatFileLocation(options: IPathFormatFileLocationOptions): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IPathFormatFileLocationOptions](./node-core-library.ipathformatfilelocationoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

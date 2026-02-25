@@ -20,9 +20,149 @@ export declare class PrintUtilities
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getConsoleWidth()](./terminal.printutilities.getconsolewidth.md) | <code>static</code> | Returns the width of the console, measured in columns |
-|  [printMessageInBox(message, terminal, boxWidth)](./terminal.printutilities.printmessageinbox.md) | <code>static</code> | Displays a message in the console wrapped in a box UI. |
-|  [wrapWords(text, maxLineLength, indent)](./terminal.printutilities.wrapwords.md) | <code>static</code> | Applies word wrapping. If maxLineLength is unspecified, then it defaults to the console width. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getConsoleWidth()](./terminal.printutilities.getconsolewidth.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns the width of the console, measured in columns
+
+
+</td></tr>
+<tr><td>
+
+[printMessageInBox(message, terminal, boxWidth)](./terminal.printutilities.printmessageinbox.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Displays a message in the console wrapped in a box UI.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWords(text, maxLineLength, indent)](./terminal.printutilities.wrapwords.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWords(text, maxLineLength, linePrefix)](./terminal.printutilities.wrapwords_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWords(text, maxLineLength, indentOrLinePrefix)](./terminal.printutilities.wrapwords_2.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWordsToLines(text, maxLineLength, indent)](./terminal.printutilities.wrapwordstolines.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping and returns an array of lines.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWordsToLines(text, maxLineLength, linePrefix)](./terminal.printutilities.wrapwordstolines_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping and returns an array of lines.
+
+
+</td></tr>
+<tr><td>
+
+[wrapWordsToLines(text, maxLineLength, indentOrLinePrefix)](./terminal.printutilities.wrapwordstolines_2.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Applies word wrapping and returns an array of lines.
+
+
+</td></tr>
+</tbody></table>
 

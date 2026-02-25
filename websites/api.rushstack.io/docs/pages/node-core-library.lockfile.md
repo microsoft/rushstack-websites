@@ -24,18 +24,185 @@ The implementation works on Windows, Mac, and Linux without requiring any native
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dirtyWhenAcquired](./node-core-library.lockfile.dirtywhenacquired.md) | <code>readonly</code> | boolean | Returns the initial state of the lock. This can be used to detect if the previous process was terminated before releasing the resource. |
-|  [filePath](./node-core-library.lockfile.filepath.md) | <code>readonly</code> | string | Returns the absolute path to the lockfile |
-|  [isReleased](./node-core-library.lockfile.isreleased.md) | <code>readonly</code> | boolean | Returns true if this lock is currently being held. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dirtyWhenAcquired](./node-core-library.lockfile.dirtywhenacquired.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns the initial state of the lock. This can be used to detect if the previous process was terminated before releasing the resource.
+
+
+</td></tr>
+<tr><td>
+
+[filePath](./node-core-library.lockfile.filepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns the absolute path to the lockfile
+
+
+</td></tr>
+<tr><td>
+
+[isReleased](./node-core-library.lockfile.isreleased.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns true if this lock is currently being held.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [acquire(resourceFolder, resourceName, maxWaitMs)](./node-core-library.lockfile.acquire.md) | <code>static</code> | Attempts to create the lockfile. Will continue to loop at every 100ms until the lock becomes available or the maxWaitMs is surpassed. |
-|  [getLockFilePath(resourceFolder, resourceName, pid)](./node-core-library.lockfile.getlockfilepath.md) | <code>static</code> | Returns the path of the lockfile that will be created when a lock is successfully acquired. |
-|  [release(deleteFile)](./node-core-library.lockfile.release.md) |  | Unlocks a file and optionally removes it from disk. This can only be called once. |
-|  [tryAcquire(resourceFolder, resourceName)](./node-core-library.lockfile.tryacquire.md) | <code>static</code> | Attempts to create a lockfile with the given filePath. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[acquire(resourceFolder, resourceName, maxWaitMs)](./node-core-library.lockfile.acquire.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[acquireAsync(resourceFolder, resourceName, maxWaitMs)](./node-core-library.lockfile.acquireasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Attempts to create the lockfile. Will continue to loop at every 100ms until the lock becomes available or the maxWaitMs is surpassed.
+
+
+</td></tr>
+<tr><td>
+
+[getLockFilePath(resourceFolder, resourceName, pid)](./node-core-library.lockfile.getlockfilepath.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns the path of the lockfile that will be created when a lock is successfully acquired.
+
+
+</td></tr>
+<tr><td>
+
+[release(deleteFile)](./node-core-library.lockfile.release.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Unlocks a file and optionally removes it from disk. This can only be called once.
+
+
+</td></tr>
+<tr><td>
+
+[tryAcquire(resourceFolder, resourceName)](./node-core-library.lockfile.tryacquire.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Attempts to create a lockfile with the given filePath.
+
+
+</td></tr>
+</tbody></table>
 

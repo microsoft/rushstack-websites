@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRushSessionOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,8 +22,64 @@ export interface IRushSessionOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [getIsDebugMode](./rush-lib.irushsessionoptions.getisdebugmode.md) |  | () =&gt; boolean | **_(BETA)_** |
-|  [terminalProvider](./rush-lib.irushsessionoptions.terminalprovider.md) |  | [ITerminalProvider](./node-core-library.iterminalprovider.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getIsDebugMode](./rush-lib.irushsessionoptions.getisdebugmode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+() =&gt; boolean
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[terminalProvider](./rush-lib.irushsessionoptions.terminalprovider.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminalProvider](./terminal.iterminalprovider.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

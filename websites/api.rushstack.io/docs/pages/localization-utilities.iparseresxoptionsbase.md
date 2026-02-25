@@ -19,9 +19,77 @@ export interface IParseResxOptionsBase
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ignoreMissingResxComments](./localization-utilities.iparseresxoptionsbase.ignoremissingresxcomments.md) |  | boolean \| undefined |  |
-|  [resxNewlineNormalization](./localization-utilities.iparseresxoptionsbase.resxnewlinenormalization.md) |  | [NewlineKind](./node-core-library.newlinekind.md) \| undefined |  |
-|  [terminal](./localization-utilities.iparseresxoptionsbase.terminal.md) |  | [ITerminal](./node-core-library.iterminal.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ignoreMissingResxComments](./localization-utilities.iparseresxoptionsbase.ignoremissingresxcomments.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[resxNewlineNormalization](./localization-utilities.iparseresxoptionsbase.resxnewlinenormalization.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[NewlineKind](./node-core-library.newlinekind.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[terminal](./localization-utilities.iparseresxoptionsbase.terminal.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ITerminal](./terminal.iterminal.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

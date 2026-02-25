@@ -20,9 +20,83 @@ export interface IFileSystemCreateLinkOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alreadyExistsBehavior?](./node-core-library.ifilesystemcreatelinkoptions.alreadyexistsbehavior.md) |  | [AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md) | _(Optional)_ Specifies what to do if the path to create already exists. The default is <code>AlreadyExistsBehavior.Error</code>. |
-|  [linkTargetPath](./node-core-library.ifilesystemcreatelinkoptions.linktargetpath.md) |  | string | The newly created symbolic link will point to <code>linkTargetPath</code> as its target. |
-|  [newLinkPath](./node-core-library.ifilesystemcreatelinkoptions.newlinkpath.md) |  | string | The newly created symbolic link will have this path. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alreadyExistsBehavior?](./node-core-library.ifilesystemcreatelinkoptions.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AlreadyExistsBehavior](./node-core-library.alreadyexistsbehavior.md)
+
+
+</td><td>
+
+_(Optional)_ Specifies what to do if the path to create already exists. The default is `AlreadyExistsBehavior.Error`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[linkTargetPath](./node-core-library.ifilesystemcreatelinkoptions.linktargetpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The newly created symbolic link will point to `linkTargetPath` as its target.
+
+
+</td></tr>
+<tr><td>
+
+[newLinkPath](./node-core-library.ifilesystemcreatelinkoptions.newlinkpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The newly created symbolic link will have this path.
+
+
+</td></tr>
+</tbody></table>
 

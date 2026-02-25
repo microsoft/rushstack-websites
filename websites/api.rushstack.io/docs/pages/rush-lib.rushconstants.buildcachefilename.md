@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.buildCacheFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Build cache configuration file.
@@ -18,5 +18,5 @@ Build cache configuration file.
 **Signature:**
 
 ```typescript
-static readonly buildCacheFilename: string;
+static readonly buildCacheFilename: 'build-cache.json';
 ```

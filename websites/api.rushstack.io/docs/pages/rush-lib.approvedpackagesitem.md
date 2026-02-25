@@ -24,8 +24,64 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [allowedCategories](./rush-lib.approvedpackagesitem.allowedcategories.md) |  | Set&lt;string&gt; | The project categories that are allowed to use this package. |
-|  [packageName](./rush-lib.approvedpackagesitem.packagename.md) |  | string | The NPM package name |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowedCategories](./rush-lib.approvedpackagesitem.allowedcategories.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set&lt;string&gt;
+
+
+</td><td>
+
+The project categories that are allowed to use this package.
+
+
+</td></tr>
+<tr><td>
+
+[packageName](./rush-lib.approvedpackagesitem.packagename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The NPM package name
+
+
+</td></tr>
+</tbody></table>
 

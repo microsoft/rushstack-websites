@@ -20,10 +20,51 @@ setDependenciesBeforePublish(packageName: string, configuration: RushConfigurati
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  packageName | string |  |
-|  configuration | [RushConfiguration](./rush-lib.rushconfiguration.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+packageName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+configuration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

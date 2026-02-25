@@ -20,10 +20,55 @@ minify(request: IModuleMinificationRequest, callback: IModuleMinificationCallbac
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | [IModuleMinificationRequest](./module-minifier.imoduleminificationrequest.md) | The request to process |
-|  callback | [IModuleMinificationCallback](./module-minifier.imoduleminificationcallback.md) | The callback to invoke |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+[IModuleMinificationRequest](./module-minifier.imoduleminificationrequest.md)
+
+
+</td><td>
+
+The request to process
+
+
+</td></tr>
+<tr><td>
+
+callback
+
+
+</td><td>
+
+[IModuleMinificationCallback](./module-minifier.imoduleminificationcallback.md)
+
+
+</td><td>
+
+The callback to invoke
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

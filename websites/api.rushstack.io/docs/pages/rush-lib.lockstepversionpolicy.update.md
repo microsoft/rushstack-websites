@@ -20,9 +20,39 @@ update(newVersionString: string): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  newVersionString | string | New version |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+newVersionString
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+New version
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

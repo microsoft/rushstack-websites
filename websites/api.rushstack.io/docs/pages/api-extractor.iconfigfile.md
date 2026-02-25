@@ -20,19 +20,273 @@ export interface IConfigFile
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiReport?](./api-extractor.iconfigfile.apireport.md) |  | [IConfigApiReport](./api-extractor.iconfigapireport.md) | _(Optional)_ Configures how the API report files (\*.api.md) will be generated. |
-|  [bundledPackages?](./api-extractor.iconfigfile.bundledpackages.md) |  | string\[\] | _(Optional)_ A list of NPM package names whose exports should be treated as part of this package. |
-|  [compiler?](./api-extractor.iconfigfile.compiler.md) |  | [IConfigCompiler](./api-extractor.iconfigcompiler.md) | _(Optional)_ Determines how the TypeScript compiler engine will be invoked by API Extractor. |
-|  [docModel?](./api-extractor.iconfigfile.docmodel.md) |  | [IConfigDocModel](./api-extractor.iconfigdocmodel.md) | _(Optional)_ Configures how the doc model file (\*.api.json) will be generated. |
-|  [dtsRollup?](./api-extractor.iconfigfile.dtsrollup.md) |  | [IConfigDtsRollup](./api-extractor.iconfigdtsrollup.md) | **_(BETA)_** _(Optional)_ Configures how the .d.ts rollup file will be generated. |
-|  [enumMemberOrder?](./api-extractor.iconfigfile.enummemberorder.md) |  | [EnumMemberOrder](./api-extractor-model.enummemberorder.md) | _(Optional)_ Specifies how API Extractor sorts members of an enum when generating the .api.json file. |
-|  [extends?](./api-extractor.iconfigfile.extends.md) |  | string | _(Optional)_ Optionally specifies another JSON config file that this file extends from. This provides a way for standard settings to be shared across multiple projects. |
-|  [mainEntryPointFilePath](./api-extractor.iconfigfile.mainentrypointfilepath.md) |  | string | Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported by this module. |
-|  [messages?](./api-extractor.iconfigfile.messages.md) |  | [IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md) | _(Optional)_ Configures how API Extractor reports error and warning messages produced during analysis. |
-|  [newlineKind?](./api-extractor.iconfigfile.newlinekind.md) |  | 'crlf' \| 'lf' \| 'os' | _(Optional)_ Specifies what type of newlines API Extractor should use when writing output files. |
-|  [projectFolder?](./api-extractor.iconfigfile.projectfolder.md) |  | string | _(Optional)_ Determines the <code>&lt;projectFolder&gt;</code> token that can be used with other config file settings. The project folder typically contains the tsconfig.json and package.json config files, but the path is user-defined. |
-|  [testMode?](./api-extractor.iconfigfile.testmode.md) |  | boolean | _(Optional)_ Set to true when invoking API Extractor's test harness. |
-|  [tsdocMetadata?](./api-extractor.iconfigfile.tsdocmetadata.md) |  | [IConfigTsdocMetadata](./api-extractor.iconfigtsdocmetadata.md) | **_(BETA)_** _(Optional)_ Configures how the tsdoc-metadata.json file will be generated. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiReport?](./api-extractor.iconfigfile.apireport.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigApiReport](./api-extractor.iconfigapireport.md)
+
+
+</td><td>
+
+_(Optional)_ Configures how the API report files (\*.api.md) will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[bundledPackages?](./api-extractor.iconfigfile.bundledpackages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ A list of NPM package names whose exports should be treated as part of this package.
+
+
+</td></tr>
+<tr><td>
+
+[compiler?](./api-extractor.iconfigfile.compiler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigCompiler](./api-extractor.iconfigcompiler.md)
+
+
+</td><td>
+
+_(Optional)_ Determines how the TypeScript compiler engine will be invoked by API Extractor.
+
+
+</td></tr>
+<tr><td>
+
+[docModel?](./api-extractor.iconfigfile.docmodel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigDocModel](./api-extractor.iconfigdocmodel.md)
+
+
+</td><td>
+
+_(Optional)_ Configures how the doc model file (\*.api.json) will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[dtsRollup?](./api-extractor.iconfigfile.dtsrollup.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigDtsRollup](./api-extractor.iconfigdtsrollup.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Configures how the .d.ts rollup file will be generated.
+
+
+</td></tr>
+<tr><td>
+
+[enumMemberOrder?](./api-extractor.iconfigfile.enummemberorder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[EnumMemberOrder](./api-extractor-model.enummemberorder.md)
+
+
+</td><td>
+
+_(Optional)_ Specifies how API Extractor sorts members of an enum when generating the .api.json file.
+
+
+</td></tr>
+<tr><td>
+
+[extends?](./api-extractor.iconfigfile.extends.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optionally specifies another JSON config file that this file extends from. This provides a way for standard settings to be shared across multiple projects.
+
+
+</td></tr>
+<tr><td>
+
+[mainEntryPointFilePath](./api-extractor.iconfigfile.mainentrypointfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Specifies the .d.ts file to be used as the starting point for analysis. API Extractor analyzes the symbols exported by this module.
+
+
+</td></tr>
+<tr><td>
+
+[messages?](./api-extractor.iconfigfile.messages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IExtractorMessagesConfig](./api-extractor.iextractormessagesconfig.md)
+
+
+</td><td>
+
+_(Optional)_ Configures how API Extractor reports error and warning messages produced during analysis.
+
+
+</td></tr>
+<tr><td>
+
+[newlineKind?](./api-extractor.iconfigfile.newlinekind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'crlf' \| 'lf' \| 'os'
+
+
+</td><td>
+
+_(Optional)_ Specifies what type of newlines API Extractor should use when writing output files.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder?](./api-extractor.iconfigfile.projectfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Determines the `<projectFolder>` token that can be used with other config file settings. The project folder typically contains the tsconfig.json and package.json config files, but the path is user-defined.
+
+
+</td></tr>
+<tr><td>
+
+[testMode?](./api-extractor.iconfigfile.testmode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Set to true when invoking API Extractor's test harness.
+
+
+</td></tr>
+<tr><td>
+
+[tsdocMetadata?](./api-extractor.iconfigfile.tsdocmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[IConfigTsdocMetadata](./api-extractor.iconfigtsdocmetadata.md)
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Configures how the tsdoc-metadata.json file will be generated.
+
+
+</td></tr>
+</tbody></table>
 

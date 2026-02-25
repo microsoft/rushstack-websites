@@ -20,24 +20,177 @@ export declare class ApprovedPackagesConfiguration
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(jsonFilename)](./rush-lib.approvedpackagesconfiguration._constructor_.md) |  | Constructs a new instance of the <code>ApprovedPackagesConfiguration</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(jsonFilename)](./rush-lib.approvedpackagesconfiguration._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApprovedPackagesConfiguration` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [items](./rush-lib.approvedpackagesconfiguration.items.md) |  | [ApprovedPackagesItem](./rush-lib.approvedpackagesitem.md)<></>\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[items](./rush-lib.approvedpackagesconfiguration.items.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApprovedPackagesItem](./rush-lib.approvedpackagesitem.md)<></>\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addOrUpdatePackage(packageName, reviewCategory)](./rush-lib.approvedpackagesconfiguration.addorupdatepackage.md) |  |  |
-|  [clear()](./rush-lib.approvedpackagesconfiguration.clear.md) |  | Clears all the settings, returning to an empty state. |
-|  [getItemByName(packageName)](./rush-lib.approvedpackagesconfiguration.getitembyname.md) |  |  |
-|  [loadFromFile()](./rush-lib.approvedpackagesconfiguration.loadfromfile.md) |  | Loads the configuration data from the filename that was passed to the constructor. |
-|  [saveToFile()](./rush-lib.approvedpackagesconfiguration.savetofile.md) |  | Loads the configuration data to the filename that was passed to the constructor. |
-|  [tryLoadFromFile(approvedPackagesPolicyEnabled)](./rush-lib.approvedpackagesconfiguration.tryloadfromfile.md) |  | If the file exists, calls loadFromFile(). |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addOrUpdatePackage(packageName, reviewCategory)](./rush-lib.approvedpackagesconfiguration.addorupdatepackage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[clear()](./rush-lib.approvedpackagesconfiguration.clear.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Clears all the settings, returning to an empty state.
+
+
+</td></tr>
+<tr><td>
+
+[getItemByName(packageName)](./rush-lib.approvedpackagesconfiguration.getitembyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[loadFromFile()](./rush-lib.approvedpackagesconfiguration.loadfromfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Loads the configuration data from the filename that was passed to the constructor.
+
+
+</td></tr>
+<tr><td>
+
+[saveToFile()](./rush-lib.approvedpackagesconfiguration.savetofile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Loads the configuration data to the filename that was passed to the constructor.
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadFromFile(approvedPackagesPolicyEnabled)](./rush-lib.approvedpackagesconfiguration.tryloadfromfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If the file exists, calls loadFromFile().
+
+
+</td></tr>
+</tbody></table>
 

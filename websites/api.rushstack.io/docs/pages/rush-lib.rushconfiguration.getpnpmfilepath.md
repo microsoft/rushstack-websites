@@ -10,25 +10,70 @@ pagination_next: null
 
 ## RushConfiguration.getPnpmfilePath() method
 
-Gets the absolute path for "pnpmfile.js" for a specific variant.
+> Warning: This API is now obsolete.
+> 
+> Use [Subspace.getPnpmfilePath()](./rush-lib.subspace.getpnpmfilepath.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-getPnpmfilePath(variant?: string | undefined): string;
+getPnpmfilePath(subspace?: Subspace, variant?: string): string;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+variant
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
 string
-
-## Remarks
-
-The file path is returned even if PNPM is not configured as the package manager.
 

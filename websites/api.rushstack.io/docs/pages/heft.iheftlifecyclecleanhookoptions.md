@@ -20,7 +20,45 @@ export interface IHeftLifecycleCleanHookOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [addDeleteOperations](./heft.iheftlifecyclecleanhookoptions.adddeleteoperations.md) |  | (...deleteOperations: [IDeleteOperation](./heft.ideleteoperation.md)<></>\[\]) =&gt; void | Add delete operations, which will be performed at the beginning of Heft execution. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addDeleteOperations](./heft.iheftlifecyclecleanhookoptions.adddeleteoperations.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(...deleteOperations: [IDeleteOperation](./heft.ideleteoperation.md)<></>\[\]) =&gt; void
+
+
+</td><td>
+
+Add delete operations, which will be performed at the beginning of Heft execution.
+
+
+</td></tr>
+</tbody></table>
 

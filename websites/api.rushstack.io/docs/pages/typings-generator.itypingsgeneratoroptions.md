@@ -14,16 +14,51 @@ pagination_next: null
 **Signature:**
 
 ```typescript
-export interface ITypingsGeneratorOptions<TTypingsResult = string | undefined> extends ITypingsGeneratorBaseOptions 
+export interface ITypingsGeneratorOptions<TTypingsResult = string | undefined, TFileContents extends string = string> extends ITypingsGeneratorOptionsWithoutReadFile<TTypingsResult, TFileContents> 
 ```
-**Extends:** [ITypingsGeneratorBaseOptions](./typings-generator.itypingsgeneratorbaseoptions.md)
+**Extends:** [ITypingsGeneratorOptionsWithoutReadFile](./typings-generator.itypingsgeneratoroptionswithoutreadfile.md)<></>&lt;TTypingsResult, TFileContents&gt;
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [fileExtensions](./typings-generator.itypingsgeneratoroptions.fileextensions.md) |  | string\[\] |  |
-|  [filesToIgnore?](./typings-generator.itypingsgeneratoroptions.filestoignore.md) |  | string\[\] | _(Optional)_ |
-|  [getAdditionalOutputFiles?](./typings-generator.itypingsgeneratoroptions.getadditionaloutputfiles.md) |  | (relativePath: string) =&gt; string\[\] | _(Optional)_ |
-|  [parseAndGenerateTypings](./typings-generator.itypingsgeneratoroptions.parseandgeneratetypings.md) |  | (fileContents: string, filePath: string, relativePath: string) =&gt; TTypingsResult \| Promise&lt;TTypingsResult&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[readFile?](./typings-generator.itypingsgeneratoroptions.readfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ReadFile](./typings-generator.readfile.md)<></>&lt;TFileContents&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 

@@ -24,9 +24,89 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [packageManager](./rush-lib.packagemanager.packagemanager.md) | <code>readonly</code> | [PackageManagerName](./rush-lib.packagemanagername.md) | The package manager. |
-|  [shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md) | <code>readonly</code> | string | The filename of the shrinkwrap file that is used by the package manager. |
-|  [version](./rush-lib.packagemanager.version.md) | <code>readonly</code> | string | The SemVer version of the package manager. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packageManager](./rush-lib.packagemanager.packagemanager.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageManagerName](./rush-lib.packagemanagername.md)
+
+
+</td><td>
+
+The package manager.
+
+
+</td></tr>
+<tr><td>
+
+[shrinkwrapFilename](./rush-lib.packagemanager.shrinkwrapfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename of the shrinkwrap file that is used by the package manager.
+
+
+</td></tr>
+<tr><td>
+
+[version](./rush-lib.packagemanager.version.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The SemVer version of the package manager.
+
+
+</td></tr>
+</tbody></table>
 

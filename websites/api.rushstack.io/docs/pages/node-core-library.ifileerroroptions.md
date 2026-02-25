@@ -20,10 +20,102 @@ export interface IFileErrorOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [absolutePath](./node-core-library.ifileerroroptions.absolutepath.md) |  | string | The absolute path to the file that contains the error. |
-|  [column?](./node-core-library.ifileerroroptions.column.md) |  | number | _(Optional)_ The column number of the error in the target file. Minimum value is 1. |
-|  [line?](./node-core-library.ifileerroroptions.line.md) |  | number | _(Optional)_ The line number of the error in the target file. Minimum value is 1. |
-|  [projectFolder](./node-core-library.ifileerroroptions.projectfolder.md) |  | string | The root folder for the project that the error is in relation to. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[absolutePath](./node-core-library.ifileerroroptions.absolutepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path to the file that contains the error.
+
+
+</td></tr>
+<tr><td>
+
+[column?](./node-core-library.ifileerroroptions.column.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The column number of the error in the target file. Minimum value is 1.
+
+
+</td></tr>
+<tr><td>
+
+[line?](./node-core-library.ifileerroroptions.line.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The line number of the error in the target file. Minimum value is 1.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder](./node-core-library.ifileerroroptions.projectfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The root folder for the project that the error is in relation to.
+
+
+</td></tr>
+</tbody></table>
 

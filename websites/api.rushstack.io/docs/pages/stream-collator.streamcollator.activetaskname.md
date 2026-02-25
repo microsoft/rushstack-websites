@@ -10,7 +10,7 @@ pagination_next: null
 
 ## StreamCollator.activeTaskName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 For diagnostic purposes, returns the [CollatedWriter.taskName](./stream-collator.collatedwriter.taskname.md) for the currently active writer, or an empty string if no writer is active.

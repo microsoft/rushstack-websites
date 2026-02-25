@@ -20,7 +20,35 @@ constructor(options: IApiTypeAliasOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiTypeAliasOptions](./api-extractor-model.iapitypealiasoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiTypeAliasOptions](./api-extractor-model.iapitypealiasoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,82 +20,1613 @@ export declare class RushConfiguration
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [allowMostlyStandardPackageNames](./rush-lib.rushconfiguration.allowmostlystandardpackagenames.md) | <code>readonly</code> | boolean | <p>Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early days there was no standard and hardly any enforcement. A few large legacy projects are still using nonstandard package names, and private registries sometimes allow it. Set "allowMostlyStandardPackageNames" to true to relax Rush's enforcement of package names. This allows upper case letters and in the future may relax other rules, however we want to minimize these exceptions. Many popular tools use certain punctuation characters as delimiters, based on the assumption that they will never appear in a package name; thus if we relax the rules too much it is likely to cause very confusing malfunctions.</p><p>The default value is false.</p> |
-|  [approvedPackagesPolicy](./rush-lib.rushconfiguration.approvedpackagespolicy.md) | <code>readonly</code> | [ApprovedPackagesPolicy](./rush-lib.approvedpackagespolicy.md) | The "approvedPackagesPolicy" settings. |
-|  [changesFolder](./rush-lib.rushconfiguration.changesfolder.md) | <code>readonly</code> | string | The folder that contains all change files. |
-|  [committedShrinkwrapFilename](./rush-lib.rushconfiguration.committedshrinkwrapfilename.md) | <code>readonly</code> | string | The full path of the shrinkwrap file that is tracked by Git. (The "rush install" command uses a temporary copy, whose path is tempShrinkwrapFilename.) |
-|  [commonAutoinstallersFolder](./rush-lib.rushconfiguration.commonautoinstallersfolder.md) | <code>readonly</code> | string | The fully resolved path for the "autoinstallers" folder. Example: <code>C:\MyRepo\common\autoinstallers</code> |
-|  [commonFolder](./rush-lib.rushconfiguration.commonfolder.md) | <code>readonly</code> | string | The fully resolved path for the "common" folder where Rush will store settings that affect all Rush projects. This is always a subfolder of the folder containing "rush.json". Example: <code>C:\MyRepo\common</code> |
-|  [commonRushConfigFolder](./rush-lib.rushconfiguration.commonrushconfigfolder.md) | <code>readonly</code> | string | <p>The folder where Rush's additional config files are stored. This folder is always a subfolder called <code>config\rush</code> inside the common folder. (The <code>common\config</code> folder is reserved for configuration files used by other tools.) To avoid confusion or mistakes, Rush will report an error if this this folder contains any unrecognized files.</p><p>Example: <code>C:\MyRepo\common\config\rush</code></p> |
-|  [commonScriptsFolder](./rush-lib.rushconfiguration.commonscriptsfolder.md) | <code>readonly</code> | string | The folder where automation scripts are stored. This is always a subfolder called "scripts" under the common folder. Example: <code>C:\MyRepo\common\scripts</code> |
-|  [commonTempFolder](./rush-lib.rushconfiguration.commontempfolder.md) | <code>readonly</code> | string | The folder where temporary files will be stored. This is always a subfolder called "temp" under the common folder. Example: <code>C:\MyRepo\common\temp</code> |
-|  [commonVersions](./rush-lib.rushconfiguration.commonversions.md) | <code>readonly</code> | [CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md) | Settings from the common-versions.json config file. |
-|  [currentInstalledVariant](./rush-lib.rushconfiguration.currentinstalledvariant.md) | <code>readonly</code> | string \| undefined | Gets the currently-installed variant, if an installation has occurred. For Rush operations which do not take a --variant parameter, this method determines which variant, if any, was last specified when performing "rush install" or "rush update". |
-|  [currentVariantJsonFilename](./rush-lib.rushconfiguration.currentvariantjsonfilename.md) | <code>readonly</code> | string | <p>The filename of the variant dependency data file. By default this is called 'current-variant.json' resides in the Rush common folder. Its data structure is defined by ICurrentVariantJson.</p><p>Example: <code>C:\MyRepo\common\temp\current-variant.json</code></p> |
-|  [ensureConsistentVersions](./rush-lib.rushconfiguration.ensureconsistentversions.md) | <code>readonly</code> | boolean | If true, then consistent version specifiers for dependencies will be enforced. I.e. "rush check" is run before some commands. |
-|  [eventHooks](./rush-lib.rushconfiguration.eventhooks.md) | <code>readonly</code> | [EventHooks](./rush-lib.eventhooks.md) | **_(BETA)_** The rush hooks. It allows customized scripts to run at the specified point. |
-|  [experimentsConfiguration](./rush-lib.rushconfiguration.experimentsconfiguration.md) | <code>readonly</code> | [ExperimentsConfiguration](./rush-lib.experimentsconfiguration.md) | **_(BETA)_** This configuration object contains settings repo maintainers have specified to enable and disable experimental Rush features. |
-|  [gitAllowedEmailRegExps](./rush-lib.rushconfiguration.gitallowedemailregexps.md) | <code>readonly</code> | string\[\] | \[Part of the "gitPolicy" feature.\] A list of regular expressions describing allowable email patterns for Git commits. They are case-insensitive anchored JavaScript RegExps. Example: <code>&quot;.*@example\.com&quot;</code> This array will never be undefined. |
-|  [gitChangefilesCommitMessage](./rush-lib.rushconfiguration.gitchangefilescommitmessage.md) | <code>readonly</code> | string \| undefined | \[Part of the "gitPolicy" feature.\] The commit message to use when committing change log files 'rush version' |
-|  [gitChangeLogUpdateCommitMessage](./rush-lib.rushconfiguration.gitchangelogupdatecommitmessage.md) | <code>readonly</code> | string \| undefined | \[Part of the "gitPolicy" feature.\] The commit message to use when committing change log files 'rush version' |
-|  [gitSampleEmail](./rush-lib.rushconfiguration.gitsampleemail.md) | <code>readonly</code> | string | \[Part of the "gitPolicy" feature.\] An example valid email address that conforms to one of the allowedEmailRegExps. Example: <code>&quot;foxtrot@example\.com&quot;</code> This will never be undefined, and will always be nonempty if gitAllowedEmailRegExps is used. |
-|  [gitTagSeparator](./rush-lib.rushconfiguration.gittagseparator.md) | <code>readonly</code> | string \| undefined | \[Part of the "gitPolicy" feature.\] The separator between package name and version in git tag. |
-|  [gitVersionBumpCommitMessage](./rush-lib.rushconfiguration.gitversionbumpcommitmessage.md) | <code>readonly</code> | string \| undefined | \[Part of the "gitPolicy" feature.\] The commit message to use when committing changes during 'rush publish' |
-|  [hotfixChangeEnabled](./rush-lib.rushconfiguration.hotfixchangeenabled.md) | <code>readonly</code> | boolean | \[Part of the "hotfixChange" feature.\] Enables creating hotfix changes |
-|  [npmCacheFolder](./rush-lib.rushconfiguration.npmcachefolder.md) | <code>readonly</code> | string | <p>The local folder that will store the NPM package cache. Rush does not rely on the npm's default global cache folder, because npm's caching implementation does not reliably handle multiple processes. (For example, if a build box is running "rush install" simultaneously for two different working folders, it may fail randomly.)</p><p>Example: <code>C:\MyRepo\common\temp\npm-cache</code></p> |
-|  [npmOptions](./rush-lib.rushconfiguration.npmoptions.md) | <code>readonly</code> | [NpmOptionsConfiguration](./rush-lib.npmoptionsconfiguration.md) | Options that are only used when the NPM package manager is selected. |
-|  [npmTmpFolder](./rush-lib.rushconfiguration.npmtmpfolder.md) | <code>readonly</code> | string | <p>The local folder where npm's temporary files will be written during installation. Rush does not rely on the global default folder, because it may be on a different hard disk.</p><p>Example: <code>C:\MyRepo\common\temp\npm-tmp</code></p> |
-|  [packageManager](./rush-lib.rushconfiguration.packagemanager.md) | <code>readonly</code> | [PackageManagerName](./rush-lib.packagemanagername.md) | The name of the package manager being used to install dependencies |
-|  [packageManagerOptions](./rush-lib.rushconfiguration.packagemanageroptions.md) | <code>readonly</code> | [PackageManagerOptionsConfigurationBase](./rush-lib.packagemanageroptionsconfigurationbase.md) | The configuration options used by the current package manager. |
-|  [packageManagerToolFilename](./rush-lib.rushconfiguration.packagemanagertoolfilename.md) | <code>readonly</code> | string | The absolute path to the locally installed NPM tool. If "rush install" has not been run, then this file may not exist yet. Example: <code>C:\MyRepo\common\temp\npm-local\node_modules\.bin\npm</code> |
-|  [packageManagerToolVersion](./rush-lib.rushconfiguration.packagemanagertoolversion.md) | <code>readonly</code> | string | The version of the locally installed NPM tool. (Example: "1.2.3") |
-|  [packageManagerWrapper](./rush-lib.rushconfiguration.packagemanagerwrapper.md) | <code>readonly</code> | [PackageManager](./rush-lib.packagemanager.md) | **_(BETA)_** An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn. |
-|  [packageNameParser](./rush-lib.rushconfiguration.packagenameparser.md) | <code>readonly</code> | [PackageNameParser](./node-core-library.packagenameparser.md) | The rush hooks. It allows customized scripts to run at the specified point. |
-|  [pnpmOptions](./rush-lib.rushconfiguration.pnpmoptions.md) | <code>readonly</code> | [PnpmOptionsConfiguration](./rush-lib.pnpmoptionsconfiguration.md) | Options that are only used when the PNPM package manager is selected. Use this class to load "common/config/rush/pnpm-config.json" file, or, load json from "pnpmOptions" field in "rush.json" for legacy support. |
-|  [projectFolderMaxDepth](./rush-lib.rushconfiguration.projectfoldermaxdepth.md) | <code>readonly</code> | number | The maximum allowable folder depth for the projectFolder field in the rush.json file. This setting provides a way for repository maintainers to discourage nesting of project folders that makes the directory tree more difficult to navigate. The default value is 2, which implements on a standard convention of <code>&lt;categoryFolder&gt;/&lt;projectFolder&gt;/package.json</code>. |
-|  [projectFolderMinDepth](./rush-lib.rushconfiguration.projectfoldermindepth.md) | <code>readonly</code> | number | The minimum allowable folder depth for the projectFolder field in the rush.json file. This setting provides a way for repository maintainers to discourage nesting of project folders that makes the directory tree more difficult to navigate. The default value is 2, which implements a standard 2-level hierarchy of <code>&lt;categoryFolder&gt;/&lt;projectFolder&gt;/package.json</code>. |
-|  [projects](./rush-lib.rushconfiguration.projects.md) | <code>readonly</code> | [RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>\[\] |  |
-|  [projectsByName](./rush-lib.rushconfiguration.projectsbyname.md) | <code>readonly</code> | Map&lt;string, [RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt; |  |
-|  [projectsByTag](./rush-lib.rushconfiguration.projectsbytag.md) | <code>readonly</code> | ReadonlyMap&lt;string, ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;&gt; | **_(BETA)_** Obtains the mapping from custom tags to projects. |
-|  [repositoryDefaultBranch](./rush-lib.rushconfiguration.repositorydefaultbranch.md) | <code>readonly</code> | string | The default branch name. This tells "rush change" which remote branch to compare against. |
-|  [repositoryDefaultFullyQualifiedRemoteBranch](./rush-lib.rushconfiguration.repositorydefaultfullyqualifiedremotebranch.md) | <code>readonly</code> | string | The default fully-qualified git remote branch of the repository. This helps "rush change" find the right branch to compare against. |
-|  [repositoryDefaultRemote](./rush-lib.rushconfiguration.repositorydefaultremote.md) | <code>readonly</code> | string | The default remote. This tells "rush change" which remote to compare against if the remote URL is not set or if a remote matching the provided remote URL is not found. |
-|  [repositoryUrls](./rush-lib.rushconfiguration.repositoryurls.md) | <code>readonly</code> | string\[\] | Remote URL(s) of the repository. If a value is provided, "<></>rush change<></>" will use one of these to find the right remote to compare against. Specifying multiple URLs is useful if a GitHub repository is renamed or for <code>&lt;projectName&gt;.visualstudio.com</code> versus <code>dev.azure.com/&lt;projectName&gt;</code> URLs. |
-|  [rushJsonFile](./rush-lib.rushconfiguration.rushjsonfile.md) | <code>readonly</code> | string | The absolute path to the "rush.json" configuration file that was loaded to construct this object. |
-|  [rushJsonFolder](./rush-lib.rushconfiguration.rushjsonfolder.md) | <code>readonly</code> | string | The absolute path of the folder that contains rush.json for this project. |
-|  [rushLinkJsonFilename](./rush-lib.rushconfiguration.rushlinkjsonfilename.md) | <code>readonly</code> | string | <p>The filename of the build dependency data file. By default this is called 'rush-link.json' resides in the Rush common folder. Its data structure is defined by IRushLinkJson.</p><p>Example: <code>C:\MyRepo\common\temp\rush-link.json</code></p> |
-|  [rushPluginOptionsFolder](./rush-lib.rushconfiguration.rushpluginoptionsfolder.md) | <code>readonly</code> | string | The folder where rush-plugin options json files are stored. Example: <code>C:\MyRepo\common\config\rush-plugins</code> |
-|  [shrinkwrapFilename](./rush-lib.rushconfiguration.shrinkwrapfilename.md) | <code>readonly</code> | string | The filename (without any path) of the shrinkwrap file that is used by the package manager. |
-|  [shrinkwrapFilePhrase](./rush-lib.rushconfiguration.shrinkwrapfilephrase.md) | <code>readonly</code> | string | Returns an English phrase such as "shrinkwrap file" that can be used in logging messages to refer to the shrinkwrap file using appropriate terminology for the currently selected package manager. |
-|  [suppressNodeLtsWarning](./rush-lib.rushconfiguration.suppressnodeltswarning.md) | <code>readonly</code> | boolean | <p>Odd-numbered major versions of Node.js are experimental. Even-numbered releases spend six months in a stabilization period before the first Long Term Support (LTS) version. For example, 8.9.0 was the first LTS version of Node.js 8. Pre-LTS versions are not recommended for production usage because they frequently have bugs. They may cause Rush itself to malfunction.</p><p>Rush normally prints a warning if it detects a pre-LTS Node.js version. If you are testing pre-LTS versions in preparation for supporting the first LTS version, you can use this setting to disable Rush's warning.</p> |
-|  [telemetryEnabled](./rush-lib.rushconfiguration.telemetryenabled.md) | <code>readonly</code> | boolean | **_(BETA)_** Indicates whether telemetry collection is enabled for Rush runs. |
-|  [tempShrinkwrapFilename](./rush-lib.rushconfiguration.tempshrinkwrapfilename.md) | <code>readonly</code> | string | The full path of the temporary shrinkwrap file that is used during "rush install". This file may get rewritten by the package manager during installation. |
-|  [tempShrinkwrapPreinstallFilename](./rush-lib.rushconfiguration.tempshrinkwrappreinstallfilename.md) | <code>readonly</code> | string | The full path of a backup copy of tempShrinkwrapFilename. This backup copy is made before installation begins, and can be compared to determine how the package manager modified tempShrinkwrapFilename. |
-|  [versionPolicyConfiguration](./rush-lib.rushconfiguration.versionpolicyconfiguration.md) | <code>readonly</code> | [VersionPolicyConfiguration](./rush-lib.versionpolicyconfiguration.md) | **_(BETA)_** |
-|  [versionPolicyConfigurationFilePath](./rush-lib.rushconfiguration.versionpolicyconfigurationfilepath.md) | <code>readonly</code> | string | **_(BETA)_** |
-|  [yarnCacheFolder](./rush-lib.rushconfiguration.yarncachefolder.md) | <code>readonly</code> | string | <p>The local folder that will store the Yarn package cache.</p><p>Example: <code>C:\MyRepo\common\temp\yarn-cache</code></p> |
-|  [yarnOptions](./rush-lib.rushconfiguration.yarnoptions.md) | <code>readonly</code> | [YarnOptionsConfiguration](./rush-lib.yarnoptionsconfiguration.md) | Options that are only used when the yarn package manager is selected. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowMostlyStandardPackageNames](./rush-lib.rushconfiguration.allowmostlystandardpackagenames.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early days there was no standard and hardly any enforcement. A few large legacy projects are still using nonstandard package names, and private registries sometimes allow it. Set "allowMostlyStandardPackageNames" to true to relax Rush's enforcement of package names. This allows upper case letters and in the future may relax other rules, however we want to minimize these exceptions. Many popular tools use certain punctuation characters as delimiters, based on the assumption that they will never appear in a package name; thus if we relax the rules too much it is likely to cause very confusing malfunctions.
+
+The default value is false.
+
+
+</td></tr>
+<tr><td>
+
+[approvedPackagesPolicy](./rush-lib.rushconfiguration.approvedpackagespolicy.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApprovedPackagesPolicy](./rush-lib.approvedpackagespolicy.md)
+
+
+</td><td>
+
+The "approvedPackagesPolicy" settings.
+
+
+</td></tr>
+<tr><td>
+
+[changesFolder](./rush-lib.rushconfiguration.changesfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder that contains all change files.
+
+
+</td></tr>
+<tr><td>
+
+[commonAutoinstallersFolder](./rush-lib.rushconfiguration.commonautoinstallersfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The fully resolved path for the "autoinstallers" folder. Example: `C:\MyRepo\common\autoinstallers`
+
+
+</td></tr>
+<tr><td>
+
+[commonFolder](./rush-lib.rushconfiguration.commonfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The fully resolved path for the "common" folder where Rush will store settings that affect all Rush projects. This is always a subfolder of the folder containing "rush.json". Example: `C:\MyRepo\common`
+
+
+</td></tr>
+<tr><td>
+
+[commonRushConfigFolder](./rush-lib.rushconfiguration.commonrushconfigfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder where Rush's additional config files are stored. This folder is always a subfolder called `config\rush` inside the common folder. (The `common\config` folder is reserved for configuration files used by other tools.) To avoid confusion or mistakes, Rush will report an error if this this folder contains any unrecognized files.
+
+Example: `C:\MyRepo\common\config\rush`
+
+
+</td></tr>
+<tr><td>
+
+[commonScriptsFolder](./rush-lib.rushconfiguration.commonscriptsfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder where automation scripts are stored. This is always a subfolder called "scripts" under the common folder. Example: `C:\MyRepo\common\scripts`
+
+
+</td></tr>
+<tr><td>
+
+[commonTempFolder](./rush-lib.rushconfiguration.commontempfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder where temporary files will be stored. This is always a subfolder called "temp" under the common folder. Example: `C:\MyRepo\common\temp`
+
+
+</td></tr>
+<tr><td>
+
+[commonVersions](./rush-lib.rushconfiguration.commonversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommonVersionsConfiguration](./rush-lib.commonversionsconfiguration.md)
+
+
+</td><td>
+
+Settings from the common-versions.json config file.
+
+
+</td></tr>
+<tr><td>
+
+[currentVariantJsonFilePath](./rush-lib.rushconfiguration.currentvariantjsonfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename of the variant dependency data file. By default this is called 'current-variant.json' and resides in the Rush common folder. Its data structure is defined by ICurrentVariantJson.
+
+Example: `C:\MyRepo\common\temp\current-variant.json`
+
+
+</td></tr>
+<tr><td>
+
+[customTipsConfiguration](./rush-lib.rushconfiguration.customtipsconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CustomTipsConfiguration](./rush-lib.customtipsconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** Accesses the custom-tips.json configuration.
+
+
+</td></tr>
+<tr><td>
+
+[customTipsConfigurationFilePath](./rush-lib.rushconfiguration.customtipsconfigurationfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_** The absolute path to the custom tips configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[defaultSubspace](./rush-lib.rushconfiguration.defaultsubspace.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[ensureConsistentVersions](./rush-lib.rushconfiguration.ensureconsistentversions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, then consistent version specifiers for dependencies will be enforced. I.e. "rush check" is run before some commands.
+
+
+</td></tr>
+<tr><td>
+
+[eventHooks](./rush-lib.rushconfiguration.eventhooks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[EventHooks](./rush-lib.eventhooks.md)
+
+
+</td><td>
+
+**_(BETA)_** The rush hooks. It allows customized scripts to run at the specified point.
+
+
+</td></tr>
+<tr><td>
+
+[experimentsConfiguration](./rush-lib.rushconfiguration.experimentsconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ExperimentsConfiguration](./rush-lib.experimentsconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** This configuration object contains settings repo maintainers have specified to enable and disable experimental Rush features.
+
+
+</td></tr>
+<tr><td>
+
+[gitAllowedEmailRegExps](./rush-lib.rushconfiguration.gitallowedemailregexps.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] A list of regular expressions describing allowable email patterns for Git commits. They are case-insensitive anchored JavaScript RegExps. Example: `".*@example\.com"` This array will never be undefined.
+
+
+</td></tr>
+<tr><td>
+
+[gitChangefilesCommitMessage](./rush-lib.rushconfiguration.gitchangefilescommitmessage.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] The commit message to use when committing change log files 'rush version'
+
+
+</td></tr>
+<tr><td>
+
+[gitChangeLogUpdateCommitMessage](./rush-lib.rushconfiguration.gitchangelogupdatecommitmessage.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] The commit message to use when committing change log files 'rush version'
+
+
+</td></tr>
+<tr><td>
+
+[gitSampleEmail](./rush-lib.rushconfiguration.gitsampleemail.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] An example valid email address that conforms to one of the allowedEmailRegExps. Example: `"foxtrot@example\.com"` This will never be undefined, and will always be nonempty if gitAllowedEmailRegExps is used.
+
+
+</td></tr>
+<tr><td>
+
+[gitTagSeparator](./rush-lib.rushconfiguration.gittagseparator.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] The separator between package name and version in git tag.
+
+
+</td></tr>
+<tr><td>
+
+[gitVersionBumpCommitMessage](./rush-lib.rushconfiguration.gitversionbumpcommitmessage.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+\[Part of the "gitPolicy" feature.\] The commit message to use when committing changes during 'rush publish'
+
+
+</td></tr>
+<tr><td>
+
+[hotfixChangeEnabled](./rush-lib.rushconfiguration.hotfixchangeenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+\[Part of the "hotfixChange" feature.\] Enables creating hotfix changes
+
+
+</td></tr>
+<tr><td>
+
+[isPnpm](./rush-lib.rushconfiguration.ispnpm.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, the repository is using PNPM as its package manager.
+
+
+</td></tr>
+<tr><td>
+
+[npmCacheFolder](./rush-lib.rushconfiguration.npmcachefolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The local folder that will store the NPM package cache. Rush does not rely on the npm's default global cache folder, because npm's caching implementation does not reliably handle multiple processes. (For example, if a build box is running "rush install" simultaneously for two different working folders, it may fail randomly.)
+
+Example: `C:\MyRepo\common\temp\npm-cache`
+
+
+</td></tr>
+<tr><td>
+
+[npmOptions](./rush-lib.rushconfiguration.npmoptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[NpmOptionsConfiguration](./rush-lib.npmoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the NPM package manager is selected.
+
+
+</td></tr>
+<tr><td>
+
+[npmTmpFolder](./rush-lib.rushconfiguration.npmtmpfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The local folder where npm's temporary files will be written during installation. Rush does not rely on the global default folder, because it may be on a different hard disk.
+
+Example: `C:\MyRepo\common\temp\npm-tmp`
+
+
+</td></tr>
+<tr><td>
+
+[packageManager](./rush-lib.rushconfiguration.packagemanager.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageManagerName](./rush-lib.packagemanagername.md)
+
+
+</td><td>
+
+The name of the package manager being used to install dependencies
+
+
+</td></tr>
+<tr><td>
+
+[packageManagerOptions](./rush-lib.rushconfiguration.packagemanageroptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageManagerOptionsConfigurationBase](./rush-lib.packagemanageroptionsconfigurationbase.md)
+
+
+</td><td>
+
+The configuration options used by the current package manager.
+
+
+</td></tr>
+<tr><td>
+
+[packageManagerToolFilename](./rush-lib.rushconfiguration.packagemanagertoolfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path to the locally package manager tool. If "rush install" has not been run, then this file may not exist yet. Example: `C:\MyRepo\common\temp\npm-local\node_modules\.bin\npm`
+
+
+</td></tr>
+<tr><td>
+
+[packageManagerToolVersion](./rush-lib.rushconfiguration.packagemanagertoolversion.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The version of the locally package manager tool. (Example: "1.2.3")
+
+
+</td></tr>
+<tr><td>
+
+[packageManagerWrapper](./rush-lib.rushconfiguration.packagemanagerwrapper.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageManager](./rush-lib.packagemanager.md)
+
+
+</td><td>
+
+**_(BETA)_** An abstraction for controlling the supported package managers: PNPM, NPM, and Yarn.
+
+
+</td></tr>
+<tr><td>
+
+[packageNameParser](./rush-lib.rushconfiguration.packagenameparser.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageNameParser](./node-core-library.packagenameparser.md)
+
+
+</td><td>
+
+The rush hooks. It allows customized scripts to run at the specified point.
+
+
+</td></tr>
+<tr><td>
+
+[pnpmOptions](./rush-lib.rushconfiguration.pnpmoptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PnpmOptionsConfiguration](./rush-lib.pnpmoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the PNPM package manager is selected. Use this class to load "common/config/rush/pnpm-config.json" file, or, load json from "pnpmOptions" field in "rush.json" for legacy support.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderMaxDepth](./rush-lib.rushconfiguration.projectfoldermaxdepth.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The maximum allowable folder depth for the projectFolder field in the rush.json file. This setting provides a way for repository maintainers to discourage nesting of project folders that makes the directory tree more difficult to navigate. The default value is 2, which implements on a standard convention of `<categoryFolder>/<projectFolder>/package.json`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[projectFolderMinDepth](./rush-lib.rushconfiguration.projectfoldermindepth.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The minimum allowable folder depth for the projectFolder field in the rush.json file. This setting provides a way for repository maintainers to discourage nesting of project folders that makes the directory tree more difficult to navigate. The default value is 2, which implements a standard 2-level hierarchy of `<categoryFolder>/<projectFolder>/package.json`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[projects](./rush-lib.rushconfiguration.projects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[projectsByName](./rush-lib.rushconfiguration.projectsbyname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyMap&lt;string, [RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[projectsByTag](./rush-lib.rushconfiguration.projectsbytag.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyMap&lt;string, ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;&gt;
+
+
+</td><td>
+
+**_(BETA)_** Obtains the mapping from custom tags to projects.
+
+
+</td></tr>
+<tr><td>
+
+[repositoryDefaultBranch](./rush-lib.rushconfiguration.repositorydefaultbranch.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The default branch name. This tells "rush change" which remote branch to compare against.
+
+
+</td></tr>
+<tr><td>
+
+[repositoryDefaultFullyQualifiedRemoteBranch](./rush-lib.rushconfiguration.repositorydefaultfullyqualifiedremotebranch.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The default fully-qualified git remote branch of the repository. This helps "rush change" find the right branch to compare against.
+
+
+</td></tr>
+<tr><td>
+
+[repositoryDefaultRemote](./rush-lib.rushconfiguration.repositorydefaultremote.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The default remote. This tells "rush change" which remote to compare against if the remote URL is not set or if a remote matching the provided remote URL is not found.
+
+
+</td></tr>
+<tr><td>
+
+[repositoryUrls](./rush-lib.rushconfiguration.repositoryurls.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+Remote URL(s) of the repository. If a value is provided, "<></>rush change<></>" will use one of these to find the right remote to compare against. Specifying multiple URLs is useful if a GitHub repository is renamed or for `<projectName>.visualstudio.com` versus `dev.azure.com/<projectName>` URLs.
+
+
+</td></tr>
+<tr><td>
+
+[rushJsonFile](./rush-lib.rushconfiguration.rushjsonfile.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path to the "rush.json" configuration file that was loaded to construct this object.
+
+
+</td></tr>
+<tr><td>
+
+[rushJsonFolder](./rush-lib.rushconfiguration.rushjsonfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute path of the folder that contains rush.json for this project.
+
+
+</td></tr>
+<tr><td>
+
+[rushLinkJsonFilename](./rush-lib.rushconfiguration.rushlinkjsonfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename of the build dependency data file. By default this is called 'rush-link.json' resides in the Rush common folder. Its data structure is defined by IRushLinkJson.
+
+Example: `C:\MyRepo\common\temp\rush-link.json`
+
+
+</td></tr>
+<tr><td>
+
+[rushPluginOptionsFolder](./rush-lib.rushconfiguration.rushpluginoptionsfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The folder where rush-plugin options json files are stored. Example: `C:\MyRepo\common\config\rush-plugins`
+
+
+</td></tr>
+<tr><td>
+
+[shrinkwrapFilename](./rush-lib.rushconfiguration.shrinkwrapfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The filename (without any path) of the shrinkwrap file that is used by the package manager.
+
+
+</td></tr>
+<tr><td>
+
+[shrinkwrapFilePhrase](./rush-lib.rushconfiguration.shrinkwrapfilephrase.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns an English phrase such as "shrinkwrap file" that can be used in logging messages to refer to the shrinkwrap file using appropriate terminology for the currently selected package manager.
+
+
+</td></tr>
+<tr><td>
+
+[subspaces](./rush-lib.rushconfiguration.subspaces.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+readonly [Subspace](./rush-lib.subspace.md)<></>\[\]
+
+
+</td><td>
+
+**_(BETA)_** A list of all the available subspaces in this workspace.
+
+
+</td></tr>
+<tr><td>
+
+[subspacesConfiguration](./rush-lib.rushconfiguration.subspacesconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[SubspacesConfiguration](./rush-lib.subspacesconfiguration.md) \| undefined
+
+
+</td><td>
+
+**_(BETA)_** The object that specifies subspace configurations if they are provided in the rush workspace.
+
+
+</td></tr>
+<tr><td>
+
+[subspacesFeatureEnabled](./rush-lib.rushconfiguration.subspacesfeatureenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns true if subspaces.json is present with "subspacesEnabled=true".
+
+
+</td></tr>
+<tr><td>
+
+[suppressNodeLtsWarning](./rush-lib.rushconfiguration.suppressnodeltswarning.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Odd-numbered major versions of Node.js are experimental. Even-numbered releases spend six months in a stabilization period before the first Long Term Support (LTS) version. For example, 8.9.0 was the first LTS version of Node.js 8. Pre-LTS versions are not recommended for production usage because they frequently have bugs. They may cause Rush itself to malfunction.
+
+Rush normally prints a warning if it detects a pre-LTS Node.js version. If you are testing pre-LTS versions in preparation for supporting the first LTS version, you can use this setting to disable Rush's warning.
+
+
+</td></tr>
+<tr><td>
+
+[telemetryEnabled](./rush-lib.rushconfiguration.telemetryenabled.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicates whether telemetry collection is enabled for Rush runs.
+
+
+</td></tr>
+<tr><td>
+
+[tempShrinkwrapFilename](./rush-lib.rushconfiguration.tempshrinkwrapfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The full path of the temporary shrinkwrap file that is used during "rush install". This file may get rewritten by the package manager during installation.
+
+
+</td></tr>
+<tr><td>
+
+[tempShrinkwrapPreinstallFilename](./rush-lib.rushconfiguration.tempshrinkwrappreinstallfilename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The full path of a backup copy of tempShrinkwrapFilename. This backup copy is made before installation begins, and can be compared to determine how the package manager modified tempShrinkwrapFilename.
+
+
+</td></tr>
+<tr><td>
+
+[variants](./rush-lib.rushconfiguration.variants.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;string&gt;
+
+
+</td><td>
+
+**_(BETA)_** The variants specified in the rush.json configuration file.
+
+
+</td></tr>
+<tr><td>
+
+[versionPolicyConfiguration](./rush-lib.rushconfiguration.versionpolicyconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[VersionPolicyConfiguration](./rush-lib.versionpolicyconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[versionPolicyConfigurationFilePath](./rush-lib.rushconfiguration.versionpolicyconfigurationfilepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[yarnCacheFolder](./rush-lib.rushconfiguration.yarncachefolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The local folder that will store the Yarn package cache.
+
+Example: `C:\MyRepo\common\temp\yarn-cache`
+
+
+</td></tr>
+<tr><td>
+
+[yarnOptions](./rush-lib.rushconfiguration.yarnoptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[YarnOptionsConfiguration](./rush-lib.yarnoptionsconfiguration.md)
+
+
+</td><td>
+
+Options that are only used when the yarn package manager is selected.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [findProjectByShorthandName(shorthandProjectName)](./rush-lib.rushconfiguration.findprojectbyshorthandname.md) |  | This is used e.g. by command-line interfaces such as "rush build --to example". If "example" is not a project name, then it also looks for a scoped name like <code>@something/example</code>. If exactly one project matches this heuristic, it is returned. Otherwise, undefined is returned. |
-|  [findProjectByTempName(tempProjectName)](./rush-lib.rushconfiguration.findprojectbytempname.md) |  | Looks up a project by its RushConfigurationProject.tempProjectName field. |
-|  [getCommittedShrinkwrapFilename(variant)](./rush-lib.rushconfiguration.getcommittedshrinkwrapfilename.md) |  | Gets the committed shrinkwrap file name for a specific variant. |
-|  [getCommonVersions(variant)](./rush-lib.rushconfiguration.getcommonversions.md) |  | Gets the settings from the common-versions.json config file for a specific variant. |
-|  [getCommonVersionsFilePath(variant)](./rush-lib.rushconfiguration.getcommonversionsfilepath.md) |  | Gets the path to the common-versions.json config file for a specific variant. |
-|  [getImplicitlyPreferredVersions(variant)](./rush-lib.rushconfiguration.getimplicitlypreferredversions.md) |  | Returns a map of all direct dependencies that only have a single semantic version specifier. |
-|  [getPnpmfilePath(variant)](./rush-lib.rushconfiguration.getpnpmfilepath.md) |  | Gets the absolute path for "pnpmfile.js" for a specific variant. |
-|  [getProjectByName(projectName)](./rush-lib.rushconfiguration.getprojectbyname.md) |  | Looks up a project in the projectsByName map. If the project is not found, then undefined is returned. |
-|  [getProjectLookupForRoot(rootPath)](./rush-lib.rushconfiguration.getprojectlookupforroot.md) |  | **_(BETA)_** |
-|  [getRepoState(variant)](./rush-lib.rushconfiguration.getrepostate.md) |  | Gets the contents from the repo-state.json file for a specific variant. |
-|  [getRepoStateFilePath(variant)](./rush-lib.rushconfiguration.getrepostatefilepath.md) |  | Gets the path to the repo-state.json file for a specific variant. |
-|  [loadFromConfigurationFile(rushJsonFilename)](./rush-lib.rushconfiguration.loadfromconfigurationfile.md) | <code>static</code> | Loads the configuration data from an Rush.json configuration file and returns an RushConfiguration object. |
-|  [loadFromDefaultLocation(options)](./rush-lib.rushconfiguration.loadfromdefaultlocation.md) | <code>static</code> |  |
-|  [tryFindRushJsonLocation(options)](./rush-lib.rushconfiguration.tryfindrushjsonlocation.md) | <code>static</code> | Find the rush.json location and return the path, or undefined if a rush.json can't be found. |
-|  [tryGetProjectForPath(currentFolderPath)](./rush-lib.rushconfiguration.trygetprojectforpath.md) |  | Returns the project for which the specified path is underneath that project's folder. If the path is not under any project's folder, returns undefined. |
-|  [tryLoadFromDefaultLocation(options)](./rush-lib.rushconfiguration.tryloadfromdefaultlocation.md) | <code>static</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[findProjectByShorthandName(shorthandProjectName)](./rush-lib.rushconfiguration.findprojectbyshorthandname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This is used e.g. by command-line interfaces such as "rush build --to example". If "example" is not a project name, then it also looks for a scoped name like `@something/example`<></>. If exactly one project matches this heuristic, it is returned. Otherwise, undefined is returned.
+
+
+</td></tr>
+<tr><td>
+
+[findProjectByTempName(tempProjectName)](./rush-lib.rushconfiguration.findprojectbytempname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Looks up a project by its RushConfigurationProject.tempProjectName field.
+
+
+</td></tr>
+<tr><td>
+
+[getCommittedShrinkwrapFilename(subspace, variant)](./rush-lib.rushconfiguration.getcommittedshrinkwrapfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getCommonVersions(subspace, variant)](./rush-lib.rushconfiguration.getcommonversions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getCommonVersionsFilePath(subspace, variant)](./rush-lib.rushconfiguration.getcommonversionsfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getCurrentlyInstalledVariantAsync()](./rush-lib.rushconfiguration.getcurrentlyinstalledvariantasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Gets the currently-installed variant, if an installation has occurred. For Rush operations which do not take a --variant parameter, this method determines which variant, if any, was last specified when performing "rush install" or "rush update".
+
+
+</td></tr>
+<tr><td>
+
+[getImplicitlyPreferredVersions(subspace, variant)](./rush-lib.rushconfiguration.getimplicitlypreferredversions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns a map of all direct dependencies that only have a single semantic version specifier.
+
+
+</td></tr>
+<tr><td>
+
+[getPnpmfilePath(subspace, variant)](./rush-lib.rushconfiguration.getpnpmfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getProjectByName(projectName)](./rush-lib.rushconfiguration.getprojectbyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Looks up a project in the projectsByName map. If the project is not found, then undefined is returned.
+
+
+</td></tr>
+<tr><td>
+
+[getProjectLookupForRoot(rootPath)](./rush-lib.rushconfiguration.getprojectlookupforroot.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getRepoState(subspace)](./rush-lib.rushconfiguration.getrepostate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getRepoStateFilePath(subspace)](./rush-lib.rushconfiguration.getrepostatefilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getSubspace(subspaceName)](./rush-lib.rushconfiguration.getsubspace.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getSubspacesForProjects(projects)](./rush-lib.rushconfiguration.getsubspacesforprojects.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Returns the set of subspaces that the given projects belong to
+
+
+</td></tr>
+<tr><td>
+
+[loadFromConfigurationFile(rushJsonFilename)](./rush-lib.rushconfiguration.loadfromconfigurationfile.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Loads the configuration data from an Rush.json configuration file and returns an RushConfiguration object.
+
+
+</td></tr>
+<tr><td>
+
+[loadFromDefaultLocation(options)](./rush-lib.rushconfiguration.loadfromdefaultlocation.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[tryFindRushJsonLocation(options)](./rush-lib.rushconfiguration.tryfindrushjsonlocation.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Find the rush.json location and return the path, or undefined if a rush.json can't be found.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetProjectForPath(currentFolderPath)](./rush-lib.rushconfiguration.trygetprojectforpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the project for which the specified path is underneath that project's folder. If the path is not under any project's folder, returns undefined.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetSubspace(subspaceName)](./rush-lib.rushconfiguration.trygetsubspace.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[tryLoadFromDefaultLocation(options)](./rush-lib.rushconfiguration.tryloadfromdefaultlocation.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

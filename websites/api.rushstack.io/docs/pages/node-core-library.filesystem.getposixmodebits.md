@@ -20,9 +20,39 @@ static getPosixModeBits(path: string): PosixModeBits;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | The absolute or relative path to the object that should be updated. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The absolute or relative path to the object that should be updated.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -10,9 +10,6 @@ pagination_next: null
 
 ## IRunWithRetriesOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 **Signature:**
 
 ```typescript
@@ -25,9 +22,83 @@ Used with [Async.runWithRetriesAsync()](./node-core-library.async.runwithretries
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [action](./node-core-library.irunwithretriesoptions.action.md) |  | () =&gt; Promise&lt;TResult&gt; \| TResult | **_(BETA)_** |
-|  [maxRetries](./node-core-library.irunwithretriesoptions.maxretries.md) |  | number | **_(BETA)_** |
-|  [retryDelayMs?](./node-core-library.irunwithretriesoptions.retrydelayms.md) |  | number | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action](./node-core-library.irunwithretriesoptions.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(retryCount: number) =&gt; Promise&lt;TResult&gt; \| TResult
+
+
+</td><td>
+
+The action to be performed. The action is repeatedly executed until it completes without throwing or the maximum number of retries is reached.
+
+
+</td></tr>
+<tr><td>
+
+[maxRetries](./node-core-library.irunwithretriesoptions.maxretries.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The maximum number of times the action should be retried.
+
+
+</td></tr>
+<tr><td>
+
+[retryDelayMs?](./node-core-library.irunwithretriesoptions.retrydelayms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The delay in milliseconds between retries.
+
+
+</td></tr>
+</tbody></table>
 

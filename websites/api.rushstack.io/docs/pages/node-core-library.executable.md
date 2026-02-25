@@ -34,9 +34,183 @@ If you need additional shell features such as wildcard globbing, environment var
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [spawn(filename, args, options)](./node-core-library.executable.spawn.md) | <code>static</code> | Start a child process. |
-|  [spawnSync(filename, args, options)](./node-core-library.executable.spawnsync.md) | <code>static</code> | Synchronously create a child process and optionally capture its output. |
-|  [tryResolve(filename, options)](./node-core-library.executable.tryresolve.md) | <code>static</code> | <p>Given a filename, this determines the absolute path of the executable file that would be executed by a shell:</p><p>- If the filename is missing a path, then the shell's default PATH will be searched. - If the filename is missing a file extension, then Windows default file extensions will be searched.</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getProcessInfoById()](./node-core-library.executable.getprocessinfobyid.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the list of processes currently running on the system, keyed by the process ID.
+
+
+</td></tr>
+<tr><td>
+
+[getProcessInfoByIdAsync()](./node-core-library.executable.getprocessinfobyidasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the list of processes currently running on the system, keyed by the process ID.
+
+
+</td></tr>
+<tr><td>
+
+[getProcessInfoByName()](./node-core-library.executable.getprocessinfobyname.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the list of processes currently running on the system, keyed by the process name. All processes with the same name will be grouped.
+
+
+</td></tr>
+<tr><td>
+
+[getProcessInfoByNameAsync()](./node-core-library.executable.getprocessinfobynameasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the list of processes currently running on the system, keyed by the process name. All processes with the same name will be grouped.
+
+
+</td></tr>
+<tr><td>
+
+[spawn(filename, args, options)](./node-core-library.executable.spawn.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Start a child process.
+
+
+</td></tr>
+<tr><td>
+
+[spawnSync(filename, args, options)](./node-core-library.executable.spawnsync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Synchronously create a child process and optionally capture its output.
+
+
+</td></tr>
+<tr><td>
+
+[tryResolve(filename, options)](./node-core-library.executable.tryresolve.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Given a filename, this determines the absolute path of the executable file that would be executed by a shell:
+
+- If the filename is missing a path, then the shell's default PATH will be searched. - If the filename is missing a file extension, then Windows default file extensions will be searched.
+
+
+</td></tr>
+<tr><td>
+
+[waitForExitAsync(childProcess, options)](./node-core-library.executable.waitforexitasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Wait for a child process to exit and return the result.
+
+
+</td></tr>
+<tr><td>
+
+[waitForExitAsync(childProcess, options)](./node-core-library.executable.waitforexitasync_1.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Wait for a child process to exit and return the result.
+
+
+</td></tr>
+<tr><td>
+
+[waitForExitAsync(childProcess, options)](./node-core-library.executable.waitforexitasync_2.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Wait for a child process to exit and return the result.
+
+
+</td></tr>
+</tbody></table>
 

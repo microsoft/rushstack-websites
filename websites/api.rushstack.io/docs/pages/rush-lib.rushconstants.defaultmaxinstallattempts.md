@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.defaultMaxInstallAttempts property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Number of installation attempts
@@ -18,5 +18,5 @@ Number of installation attempts
 **Signature:**
 
 ```typescript
-static readonly defaultMaxInstallAttempts: number;
+static readonly defaultMaxInstallAttempts: 1;
 ```

@@ -20,11 +20,105 @@ export declare enum BumpType
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  major | <code>5</code> |  |
-|  minor | <code>4</code> |  |
-|  none | <code>0</code> |  |
-|  patch | <code>2</code> |  |
-|  prerelease | <code>1</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+major
+
+
+</td><td>
+
+`5`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+minor
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+none
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+patch
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+preminor
+
+
+</td><td>
+
+`3`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+prerelease
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

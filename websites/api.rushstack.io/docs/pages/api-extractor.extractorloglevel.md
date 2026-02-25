@@ -15,18 +15,108 @@ Used with [IConfigMessageReportingRule.logLevel](./api-extractor.iconfigmessager
 **Signature:**
 
 ```typescript
-export declare const enum ExtractorLogLevel 
+export declare enum ExtractorLogLevel 
 ```
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Error | <code>&quot;error&quot;</code> | The message will be displayed as an error. |
-|  Info | <code>&quot;info&quot;</code> | The message will be displayed as an informational message. |
-|  None | <code>&quot;none&quot;</code> | The message will be discarded entirely. |
-|  Verbose | <code>&quot;verbose&quot;</code> | The message will be displayed only when "verbose" output is requested, e.g. using the <code>--verbose</code> command line option. |
-|  Warning | <code>&quot;warning&quot;</code> | The message will be displayed as an warning. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Error
+
+
+</td><td>
+
+`"error"`
+
+
+</td><td>
+
+The message will be displayed as an error.
+
+
+</td></tr>
+<tr><td>
+
+Info
+
+
+</td><td>
+
+`"info"`
+
+
+</td><td>
+
+The message will be displayed as an informational message.
+
+
+</td></tr>
+<tr><td>
+
+None
+
+
+</td><td>
+
+`"none"`
+
+
+</td><td>
+
+The message will be discarded entirely.
+
+
+</td></tr>
+<tr><td>
+
+Verbose
+
+
+</td><td>
+
+`"verbose"`
+
+
+</td><td>
+
+The message will be displayed only when "verbose" output is requested, e.g. using the `--verbose` command line option.
+
+
+</td></tr>
+<tr><td>
+
+Warning
+
+
+</td><td>
+
+`"warning"`
+
+
+</td><td>
+
+The message will be displayed as an warning.
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

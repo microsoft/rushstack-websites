@@ -20,9 +20,39 @@ getVersionPolicy(policyName: string): VersionPolicy;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  policyName | string | Name of the version policy |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+policyName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the version policy
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

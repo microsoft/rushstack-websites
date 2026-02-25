@@ -24,11 +24,159 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [enabled](./api-extractor.iconfigapireport.enabled.md) |  | boolean | Whether to generate an API report. |
-|  [includeForgottenExports?](./api-extractor.iconfigapireport.includeforgottenexports.md) |  | boolean | _(Optional)_ Whether "forgotten exports" should be included in the API report file. |
-|  [reportFileName?](./api-extractor.iconfigapireport.reportfilename.md) |  | string | _(Optional)_ The filename for the API report files. It will be combined with <code>reportFolder</code> or <code>reportTempFolder</code> to produce a full output filename. |
-|  [reportFolder?](./api-extractor.iconfigapireport.reportfolder.md) |  | string | _(Optional)_ Specifies the folder where the API report file is written. The file name portion is determined by the <code>reportFileName</code> setting. |
-|  [reportTempFolder?](./api-extractor.iconfigapireport.reporttempfolder.md) |  | string | _(Optional)_ Specifies the folder where the temporary report file is written. The file name portion is determined by the <code>reportFileName</code> setting. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[enabled](./api-extractor.iconfigapireport.enabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate an API report.
+
+
+</td></tr>
+<tr><td>
+
+[includeForgottenExports?](./api-extractor.iconfigapireport.includeforgottenexports.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether "forgotten exports" should be included in the API report file.
+
+
+</td></tr>
+<tr><td>
+
+[reportFileName?](./api-extractor.iconfigapireport.reportfilename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The base filename for the API report files, to be combined with [IConfigApiReport.reportFolder](./api-extractor.iconfigapireport.reportfolder.md) or [IConfigApiReport.reportTempFolder](./api-extractor.iconfigapireport.reporttempfolder.md) to produce the full file path.
+
+
+</td></tr>
+<tr><td>
+
+[reportFolder?](./api-extractor.iconfigapireport.reportfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the folder where the API report file is written. The file name portion is determined by the `reportFileName` setting.
+
+
+</td></tr>
+<tr><td>
+
+[reportTempFolder?](./api-extractor.iconfigapireport.reporttempfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the folder where the temporary report file is written. The file name portion is determined by the `reportFileName` setting.
+
+
+</td></tr>
+<tr><td>
+
+[reportVariants?](./api-extractor.iconfigapireport.reportvariants.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApiReportVariant](./api-extractor.apireportvariant.md)<></>\[\]
+
+
+</td><td>
+
+_(Optional)_ The set of report variants to generate.
+
+
+</td></tr>
+<tr><td>
+
+[tagsToReport?](./api-extractor.iconfigapireport.tagstoreport.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Readonly&lt;Record&lt;\`@${string}\`, boolean&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ Specifies a list of [TSDoc](https://tsdoc.org/) tags that should be reported in the API report file for items whose documentation contains them.
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.commonVersionsFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The filename ("common-versions.json") for an optional configuration file that stores dependency version information that affects all projects in the repo. This configuration file should go in the "common/config/rush" folder.
@@ -18,5 +18,5 @@ The filename ("common-versions.json") for an optional configuration file that st
 **Signature:**
 
 ```typescript
-static readonly commonVersionsFilename: string;
+static readonly commonVersionsFilename: 'common-versions.json';
 ```

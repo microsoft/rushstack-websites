@@ -15,9 +15,9 @@ The data type returned by [CommandLineParameterProvider.defineFlagParameter()](.
 **Signature:**
 
 ```typescript
-export declare class CommandLineFlagParameter extends CommandLineParameter 
+export declare class CommandLineFlagParameter extends CommandLineParameterBase 
 ```
-**Extends:** [CommandLineParameter](./ts-command-line.commandlineparameter.md)
+**Extends:** [CommandLineParameterBase](./ts-command-line.commandlineparameterbase.md)
 
 ## Remarks
 
@@ -25,14 +25,102 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [kind](./ts-command-line.commandlineflagparameter.kind.md) | <code>readonly</code> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [value](./ts-command-line.commandlineflagparameter.value.md) | <code>readonly</code> | boolean | Returns a boolean indicating whether the parameter was included in the command line. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kind](./ts-command-line.commandlineflagparameter.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[CommandLineParameterKind.Flag](./ts-command-line.commandlineparameterkind.md)
+
+
+</td><td>
+
+Indicates the type of parameter.
+
+
+</td></tr>
+<tr><td>
+
+[value](./ts-command-line.commandlineflagparameter.value.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Returns a boolean indicating whether the parameter was included in the command line.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlineflagparameter.appendtoarglist.md) |  | Append the parsed values to the provided string array. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[appendToArgList(argList)](./ts-command-line.commandlineflagparameter.appendtoarglist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Append the parsed values to the provided string array.
+
+
+</td></tr>
+</tbody></table>
 

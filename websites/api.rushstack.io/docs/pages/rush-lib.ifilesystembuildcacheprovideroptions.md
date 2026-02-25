@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IFileSystemBuildCacheProviderOptions interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Options for creating a file system build cache provider.
@@ -23,8 +23,64 @@ export interface IFileSystemBuildCacheProviderOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [rushConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushconfiguration.md) |  | [RushConfiguration](./rush-lib.rushconfiguration.md) | **_(BETA)_** The workspace Rush configuration |
-|  [rushUserConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushuserconfiguration.md) |  | [RushUserConfiguration](./rush-lib.rushuserconfiguration.md) | **_(BETA)_** The user Rush configuration |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[rushConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushconfiguration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** The workspace Rush configuration
+
+
+</td></tr>
+<tr><td>
+
+[rushUserConfiguration](./rush-lib.ifilesystembuildcacheprovideroptions.rushuserconfiguration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[RushUserConfiguration](./rush-lib.rushuserconfiguration.md)
+
+
+</td><td>
+
+**_(BETA)_** The user Rush configuration
+
+
+</td></tr>
+</tbody></table>
 

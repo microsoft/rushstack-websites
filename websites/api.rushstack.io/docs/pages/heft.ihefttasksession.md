@@ -15,23 +15,183 @@ The task session is responsible for providing session-specific information to He
 **Signature:**
 
 ```typescript
-export interface IHeftTaskSession
+export interface IHeftTaskSession 
 ```
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [hooks](./heft.ihefttasksession.hooks.md) | <code>readonly</code> | [IHeftTaskHooks](./heft.ihefttaskhooks.md) | The hooks available to the task plugin. |
-|  [logger](./heft.ihefttasksession.logger.md) | <code>readonly</code> | [IScopedLogger](./heft.iscopedlogger.md) | The scoped logger for the task. Messages logged with this logger will be prefixed with the phase and task name, in the format `[<phaseName>:<taskName>]`. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message. |
-|  [parameters](./heft.ihefttasksession.parameters.md) | <code>readonly</code> | [IHeftParameters](./heft.iheftparameters.md) | Contains default parameters provided by Heft, as well as CLI parameters requested by the task plugin. |
-|  [parsedCommandLine](./heft.ihefttasksession.parsedcommandline.md) | <code>readonly</code> | [IHeftParsedCommandLine](./heft.iheftparsedcommandline.md) | Exposes details about the command line that was used to invoke Heft. This value is initially <code>undefined</code> and later filled in after the command line has been parsed. |
-|  [taskName](./heft.ihefttasksession.taskname.md) | <code>readonly</code> | string | The name of the task. This is defined in "heft.json". |
-|  [tempFolderPath](./heft.ihefttasksession.tempfolderpath.md) | <code>readonly</code> | string | The temp folder for the task. This folder is unique for each task, and will be cleaned when Heft is run with <code>--clean</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hooks](./heft.ihefttasksession.hooks.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IHeftTaskHooks](./heft.ihefttaskhooks.md)
+
+
+</td><td>
+
+The hooks available to the task plugin.
+
+
+</td></tr>
+<tr><td>
+
+[logger](./heft.ihefttasksession.logger.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IScopedLogger](./heft.iscopedlogger.md)
+
+
+</td><td>
+
+The scoped logger for the task. Messages logged with this logger will be prefixed with the phase and task name, in the format `[<phaseName>:<taskName>]`<></>. It is highly recommended that writing to the console be performed via the logger, as it will ensure that logging messages are labeled with the source of the message.
+
+
+</td></tr>
+<tr><td>
+
+[parameters](./heft.ihefttasksession.parameters.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IHeftParameters](./heft.iheftparameters.md)
+
+
+</td><td>
+
+Contains default parameters provided by Heft, as well as CLI parameters requested by the task plugin.
+
+
+</td></tr>
+<tr><td>
+
+[parsedCommandLine](./heft.ihefttasksession.parsedcommandline.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IHeftParsedCommandLine](./heft.iheftparsedcommandline.md)
+
+
+</td><td>
+
+Exposes details about the command line that was used to invoke Heft. This value is initially `undefined` and later filled in after the command line has been parsed.
+
+
+</td></tr>
+<tr><td>
+
+[taskName](./heft.ihefttasksession.taskname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the task. This is defined in "heft.json".
+
+
+</td></tr>
+<tr><td>
+
+[tempFolderPath](./heft.ihefttasksession.tempfolderpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The temp folder for the task. This folder is unique for each task, and will be cleaned when Heft is run with `--clean`<></>.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [requestAccessToPluginByName(pluginToAccessPackage, pluginToAccessName, pluginApply)](./heft.ihefttasksession.requestaccesstopluginbyname.md) | Set a a callback which will be called if and after the specified plugin has been applied. This can be used to tap hooks on another plugin that exists within the same phase. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[requestAccessToPluginByName(pluginToAccessPackage, pluginToAccessName, pluginApply)](./heft.ihefttasksession.requestaccesstopluginbyname.md)
+
+
+</td><td>
+
+Set a a callback which will be called if and after the specified plugin has been applied. This can be used to tap hooks on another plugin that exists within the same phase.
+
+
+</td></tr>
+</tbody></table>
 

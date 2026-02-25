@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IOperationRunnerContext.quietMode property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Defaults to `true`<></>. Will be `false` if Rush was invoked with `--verbose`<></>.

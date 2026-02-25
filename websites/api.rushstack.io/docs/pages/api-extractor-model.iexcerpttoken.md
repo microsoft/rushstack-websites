@@ -19,9 +19,81 @@ export interface IExcerptToken
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [canonicalReference?](./api-extractor-model.iexcerpttoken.canonicalreference.md) |  | string | _(Optional)_ |
-|  [kind](./api-extractor-model.iexcerpttoken.kind.md) | <code>readonly</code> | [ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md) |  |
-|  [text](./api-extractor-model.iexcerpttoken.text.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[canonicalReference?](./api-extractor-model.iexcerpttoken.canonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.iexcerpttoken.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ExcerptTokenKind](./api-extractor-model.excerpttokenkind.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[text](./api-extractor-model.iexcerpttoken.text.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

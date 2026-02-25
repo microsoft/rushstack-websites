@@ -19,11 +19,91 @@ export declare enum DependencyType
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Dev | <code>&quot;devDependencies&quot;</code> |  |
-|  Optional | <code>&quot;optionalDependencies&quot;</code> |  |
-|  Peer | <code>&quot;peerDependencies&quot;</code> |  |
-|  Regular | <code>&quot;dependencies&quot;</code> |  |
-|  YarnResolutions | <code>&quot;resolutions&quot;</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Dev
+
+
+</td><td>
+
+`"devDependencies"`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+Optional
+
+
+</td><td>
+
+`"optionalDependencies"`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+Peer
+
+
+</td><td>
+
+`"peerDependencies"`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+Regular
+
+
+</td><td>
+
+`"dependencies"`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+YarnResolutions
+
+
+</td><td>
+
+`"resolutions"`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

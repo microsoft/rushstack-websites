@@ -20,10 +20,53 @@ static isSorted<T>(collection: Iterable<T>, comparer?: (x: any, y: any) => numbe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  collection | Iterable&lt;T&gt; |  |
-|  comparer | (x: any, y: any) =&gt; number | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+collection
+
+
+</td><td>
+
+Iterable&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+comparer
+
+
+</td><td>
+
+(x: any, y: any) =&gt; number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

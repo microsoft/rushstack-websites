@@ -24,15 +24,165 @@ This API is intended to eventually be a complete replacement for the NodeJS "pat
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [convertToBackslashes(inputPath)](./node-core-library.path.converttobackslashes.md) | <code>static</code> | Replaces POSIX-style slashes with Windows-style backslashes |
-|  [convertToPlatformDefault(inputPath)](./node-core-library.path.converttoplatformdefault.md) | <code>static</code> | Replaces slashes or backslashes with the appropriate slash for the current operating system. |
-|  [convertToSlashes(inputPath)](./node-core-library.path.converttoslashes.md) | <code>static</code> | Replaces Windows-style backslashes with POSIX-style slashes. |
-|  [formatConcisely(options)](./node-core-library.path.formatconcisely.md) | <code>static</code> | Formats a path to look nice for reporting purposes. |
-|  [formatFileLocation(options)](./node-core-library.path.formatfilelocation.md) | <code>static</code> | Formats a file location to look nice for reporting purposes. |
-|  [isDownwardRelative(inputPath)](./node-core-library.path.isdownwardrelative.md) | <code>static</code> | Returns true if the specified path is a relative path and does not use <code>..</code> to walk upwards. |
-|  [isEqual(path1, path2)](./node-core-library.path.isequal.md) | <code>static</code> | Returns true if <code>path1</code> and <code>path2</code> refer to the same underlying path. |
-|  [isUnder(childPath, parentFolderPath)](./node-core-library.path.isunder.md) | <code>static</code> | Returns true if "childPath" is located inside the "parentFolderPath" folder or one of its child folders. Note that "parentFolderPath" is not considered to be under itself. The "childPath" can refer to any type of file system object. |
-|  [isUnderOrEqual(childPath, parentFolderPath)](./node-core-library.path.isunderorequal.md) | <code>static</code> | Returns true if "childPath" is equal to "parentFolderPath", or if it is inside that folder or one of its children. The "childPath" can refer to any type of file system object. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertToBackslashes(inputPath)](./node-core-library.path.converttobackslashes.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Replaces POSIX-style slashes with Windows-style backslashes
+
+
+</td></tr>
+<tr><td>
+
+[convertToPlatformDefault(inputPath)](./node-core-library.path.converttoplatformdefault.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Replaces slashes or backslashes with the appropriate slash for the current operating system.
+
+
+</td></tr>
+<tr><td>
+
+[convertToSlashes(inputPath)](./node-core-library.path.converttoslashes.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Replaces Windows-style backslashes with POSIX-style slashes.
+
+
+</td></tr>
+<tr><td>
+
+[formatConcisely(options)](./node-core-library.path.formatconcisely.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Formats a path to look nice for reporting purposes.
+
+
+</td></tr>
+<tr><td>
+
+[formatFileLocation(options)](./node-core-library.path.formatfilelocation.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Formats a file location to look nice for reporting purposes.
+
+
+</td></tr>
+<tr><td>
+
+[isDownwardRelative(inputPath)](./node-core-library.path.isdownwardrelative.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if the specified path is a relative path and does not use `..` to walk upwards.
+
+
+</td></tr>
+<tr><td>
+
+[isEqual(path1, path2)](./node-core-library.path.isequal.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if `path1` and `path2` refer to the same underlying path.
+
+
+</td></tr>
+<tr><td>
+
+[isUnder(childPath, parentFolderPath)](./node-core-library.path.isunder.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if "childPath" is located inside the "parentFolderPath" folder or one of its child folders. Note that "parentFolderPath" is not considered to be under itself. The "childPath" can refer to any type of file system object.
+
+
+</td></tr>
+<tr><td>
+
+[isUnderOrEqual(childPath, parentFolderPath)](./node-core-library.path.isunderorequal.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Returns true if "childPath" is equal to "parentFolderPath", or if it is inside that folder or one of its children. The "childPath" can refer to any type of file system object.
+
+
+</td></tr>
+</tbody></table>
 

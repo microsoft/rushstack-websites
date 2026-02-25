@@ -39,21 +39,155 @@ In this example, the `ApiEntryPoint` would represent the TypeScript module for `
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apientrypoint._constructor_.md) |  | Constructs a new instance of the <code>ApiEntryPoint</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apientrypoint._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiEntryPoint` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apientrypoint.containerkey.md) | <code>readonly</code> | string |  |
-|  [importPath](./api-extractor-model.apientrypoint.importpath.md) | <code>readonly</code> | string | The module path for this entry point, relative to the parent <code>ApiPackage</code>. In the current implementation, this is always the empty string, indicating the default entry point. |
-|  [kind](./api-extractor-model.apientrypoint.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apientrypoint.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[importPath](./api-extractor-model.apientrypoint.importpath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The module path for this entry point, relative to the parent `ApiPackage`<></>. In the current implementation, this is always the empty string, indicating the default entry point.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apientrypoint.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apientrypoint.buildcanonicalreference.md) |  | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apientrypoint.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

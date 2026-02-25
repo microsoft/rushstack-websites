@@ -10,7 +10,7 @@ pagination_next: null
 
 ## getRepoChanges() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Find all changed files tracked by Git, their current hashes, and the nature of the change. Only useful if all changes are staged or committed.
@@ -23,11 +23,71 @@ export declare function getRepoChanges(currentWorkingDirectory: string, revision
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  currentWorkingDirectory | string | The working directory. Only used to find the repository root. |
-|  revision | string | _(Optional)_ The Git revision specifier to detect changes relative to. Defaults to HEAD (i.e. will compare staged vs. committed) If comparing against a different branch, call <code>git merge-base</code> first to find the target commit. |
-|  gitPath | string | _(Optional)_ The path to the Git executable |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+currentWorkingDirectory
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The working directory. Only used to find the repository root.
+
+
+</td></tr>
+<tr><td>
+
+revision
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The Git revision specifier to detect changes relative to. Defaults to HEAD (i.e. will compare staged vs. committed) If comparing against a different branch, call `git merge-base` first to find the target commit.
+
+
+</td></tr>
+<tr><td>
+
+gitPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The path to the Git executable
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

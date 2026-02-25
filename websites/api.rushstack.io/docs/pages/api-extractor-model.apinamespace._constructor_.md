@@ -20,7 +20,35 @@ constructor(options: IApiNamespaceOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiNamespaceOptions](./api-extractor-model.iapinamespaceoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiNamespaceOptions](./api-extractor-model.iapinamespaceoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

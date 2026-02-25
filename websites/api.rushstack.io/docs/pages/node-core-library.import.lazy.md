@@ -20,10 +20,51 @@ static lazy(moduleName: string, require: (id: string) => unknown): any;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  moduleName | string |  |
-|  require | (id: string) =&gt; unknown |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+moduleName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+require
+
+
+</td><td>
+
+(id: string) =&gt; unknown
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

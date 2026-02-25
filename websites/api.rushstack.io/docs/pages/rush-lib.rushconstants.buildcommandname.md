@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.buildCommandName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The name of the incremental build command.
@@ -18,5 +18,5 @@ The name of the incremental build command.
 **Signature:**
 
 ```typescript
-static readonly buildCommandName: string;
+static readonly buildCommandName: 'build';
 ```

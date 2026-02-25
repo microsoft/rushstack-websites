@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IGetChangedProjectsOptions.includeExternalDependencies property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 If set to `true`<></>, consider a project's external dependency installation layout as defined in the package manager lockfile when determining if it has changed.

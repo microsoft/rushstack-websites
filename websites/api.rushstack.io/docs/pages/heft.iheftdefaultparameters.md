@@ -20,12 +20,152 @@ export interface IHeftDefaultParameters
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [clean](./heft.iheftdefaultparameters.clean.md) | <code>readonly</code> | boolean | Whether or not the <code>--clean</code> flag was passed to Heft. |
-|  [debug](./heft.iheftdefaultparameters.debug.md) | <code>readonly</code> | boolean | Whether or not the <code>--debug</code> flag was passed to Heft. |
-|  [locales](./heft.iheftdefaultparameters.locales.md) | <code>readonly</code> | Iterable&lt;string&gt; | The locales provided to the Heft action via the <code>--locales</code> parameter. |
-|  [production](./heft.iheftdefaultparameters.production.md) | <code>readonly</code> | boolean | Whether or not the <code>--production</code> flag was passed to the Heft action. |
-|  [verbose](./heft.iheftdefaultparameters.verbose.md) | <code>readonly</code> | boolean | Whether or not the <code>--verbose</code> flag was passed to the Heft action. |
-|  [watch](./heft.iheftdefaultparameters.watch.md) | <code>readonly</code> | boolean | Whether or not the Heft action is running in watch mode. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[clean](./heft.iheftdefaultparameters.clean.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether or not the `--clean` flag was passed to Heft.
+
+
+</td></tr>
+<tr><td>
+
+[debug](./heft.iheftdefaultparameters.debug.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether or not the `--debug` flag was passed to Heft.
+
+
+</td></tr>
+<tr><td>
+
+[locales](./heft.iheftdefaultparameters.locales.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Iterable&lt;string&gt;
+
+
+</td><td>
+
+The locales provided to the Heft action via the `--locales` parameter.
+
+
+</td></tr>
+<tr><td>
+
+[production](./heft.iheftdefaultparameters.production.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether or not the `--production` flag was passed to the Heft action.
+
+
+</td></tr>
+<tr><td>
+
+[verbose](./heft.iheftdefaultparameters.verbose.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether or not the `--verbose` flag was passed to the Heft action.
+
+
+</td></tr>
+<tr><td>
+
+[watch](./heft.iheftdefaultparameters.watch.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether or not the Heft action is running in watch mode.
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,7 +20,35 @@ constructor(options: IApiCallSignatureOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiCallSignatureOptions](./api-extractor-model.iapicallsignatureoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiCallSignatureOptions](./api-extractor-model.iapicallsignatureoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

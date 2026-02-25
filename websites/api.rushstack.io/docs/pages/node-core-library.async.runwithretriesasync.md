@@ -10,22 +10,61 @@ pagination_next: null
 
 ## Async.runWithRetriesAsync() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Executes an async function and optionally retries it if it fails.
 
 **Signature:**
 
 ```typescript
-static runWithRetriesAsync<TResult>({ action, maxRetries, retryDelayMs }: IRunWithRetriesOptions<TResult>): Promise<TResult>;
+static runWithRetriesAsync<TResult>(input: IRunWithRetriesOptions<TResult>): Promise<TResult>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  { action, maxRetries, retryDelayMs } | [IRunWithRetriesOptions](./node-core-library.irunwithretriesoptions.md)<></>&lt;TResult&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ action, maxRetries, retryDelayMs }
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+input
+
+
+</td><td>
+
+[IRunWithRetriesOptions](./node-core-library.irunwithretriesoptions.md)<></>&lt;TResult&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

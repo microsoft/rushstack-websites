@@ -24,33 +24,348 @@ This is part of the [ApiModel](./api-extractor-model.apimodel.md) hierarchy of c
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apiitem._constructor_.md) |  | Constructs a new instance of the <code>ApiItem</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apiitem._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiItem` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [canonicalReference](./api-extractor-model.apiitem.canonicalreference.md) | <code>readonly</code> | DeclarationReference | **_(BETA)_** Warning: This API is used internally by API extractor but is not yet ready for general usage. |
-|  [containerKey](./api-extractor-model.apiitem.containerkey.md) | <code>readonly</code> | string | Returns a string key that can be used to efficiently retrieve an <code>ApiItem</code> from an <code>ApiItemContainerMixin</code>. The key is unique within the container. Its format is undocumented and may change at any time. |
-|  [displayName](./api-extractor-model.apiitem.displayname.md) | <code>readonly</code> | string | Returns a name for this object that can be used in diagnostic messages, for example. |
-|  [kind](./api-extractor-model.apiitem.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) | Identifies the subclass of the <code>ApiItem</code> base class. |
-|  [members](./api-extractor-model.apiitem.members.md) | <code>readonly</code> | ReadonlyArray&lt;[ApiItem](./api-extractor-model.apiitem.md)<></>&gt; | This property supports a visitor pattern for walking the tree. For items with ApiItemContainerMixin, it returns the contained items, sorted alphabetically. Otherwise it returns an empty array. |
-|  [parent](./api-extractor-model.apiitem.parent.md) | <code>readonly</code> | [ApiItem](./api-extractor-model.apiitem.md) \| undefined | If this item was added to a ApiItemContainerMixin item, then this returns the container item. If this is an Parameter that was added to a method or function, then this returns the function item. Otherwise, it returns undefined. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[canonicalReference](./api-extractor-model.apiitem.canonicalreference.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+DeclarationReference
+
+
+</td><td>
+
+**_(BETA)_** Warning: This API is used internally by API extractor but is not yet ready for general usage.
+
+
+</td></tr>
+<tr><td>
+
+[containerKey](./api-extractor-model.apiitem.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns a string key that can be used to efficiently retrieve an `ApiItem` from an `ApiItemContainerMixin`<></>. The key is unique within the container. Its format is undocumented and may change at any time.
+
+
+</td></tr>
+<tr><td>
+
+[displayName](./api-extractor-model.apiitem.displayname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Returns a name for this object that can be used in diagnostic messages, for example.
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apiitem.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+Identifies the subclass of the `ApiItem` base class.
+
+
+</td></tr>
+<tr><td>
+
+[members](./api-extractor-model.apiitem.members.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[ApiItem](./api-extractor-model.apiitem.md)<></>&gt;
+
+
+</td><td>
+
+This property supports a visitor pattern for walking the tree. For items with ApiItemContainerMixin, it returns the contained items, sorted alphabetically. Otherwise it returns an empty array.
+
+
+</td></tr>
+<tr><td>
+
+[parent](./api-extractor-model.apiitem.parent.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md) \| undefined
+
+
+</td><td>
+
+If this item was added to a ApiItemContainerMixin item, then this returns the container item. If this is an Parameter that was added to a method or function, then this returns the function item. Otherwise, it returns undefined.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apiitem.buildcanonicalreference.md) | <code>protected</code> | Builds the cached object used by the <code>canonicalReference</code> property. |
-|  [deserialize(jsonObject, context)](./api-extractor-model.apiitem.deserialize.md) | <code>static</code> |  |
-|  [getAssociatedModel()](./api-extractor-model.apiitem.getassociatedmodel.md) |  | If this item is an ApiModel or has an ApiModel as one of its parents, then that object is returned. Otherwise undefined is returned. |
-|  [getAssociatedPackage()](./api-extractor-model.apiitem.getassociatedpackage.md) |  | If this item is an ApiPackage or has an ApiPackage as one of its parents, then that object is returned. Otherwise undefined is returned. |
-|  [getHierarchy()](./api-extractor-model.apiitem.gethierarchy.md) |  | Returns the chain of ancestors, starting from the root of the tree, and ending with the this item. |
-|  [getMergedSiblings()](./api-extractor-model.apiitem.getmergedsiblings.md) |  | If this item has a name (i.e. extends <code>ApiNameMixin</code>), then return all items that have the same parent and the same name. Otherwise, return all items that have the same parent and the same <code>ApiItemKind</code>. |
-|  [getScopedNameWithinPackage()](./api-extractor-model.apiitem.getscopednamewithinpackage.md) |  | This returns a scoped name such as <code>&quot;Namespace1.Namespace2.MyClass.myMember()&quot;</code>. It does not include the package name or entry point. |
-|  [getSortKey()](./api-extractor-model.apiitem.getsortkey.md) |  | A text string whose value determines the sort order that is automatically applied by the [ApiItemContainerMixin](./api-extractor-model.apiitemcontainermixin.md) class. |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiitem.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apiitem.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apiitem.buildcanonicalreference.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Builds the cached object used by the `canonicalReference` property.
+
+
+</td></tr>
+<tr><td>
+
+[deserialize(jsonObject, context)](./api-extractor-model.apiitem.deserialize.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getAssociatedModel()](./api-extractor-model.apiitem.getassociatedmodel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If this item is an ApiModel or has an ApiModel as one of its parents, then that object is returned. Otherwise undefined is returned.
+
+
+</td></tr>
+<tr><td>
+
+[getAssociatedPackage()](./api-extractor-model.apiitem.getassociatedpackage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If this item is an ApiPackage or has an ApiPackage as one of its parents, then that object is returned. Otherwise undefined is returned.
+
+
+</td></tr>
+<tr><td>
+
+[getHierarchy()](./api-extractor-model.apiitem.gethierarchy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns the chain of ancestors, starting from the root of the tree, and ending with the this item.
+
+
+</td></tr>
+<tr><td>
+
+[getMergedSiblings()](./api-extractor-model.apiitem.getmergedsiblings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+If this item has a name (i.e. extends `ApiNameMixin`<></>), then return all items that have the same parent and the same name. Otherwise, return all items that have the same parent and the same `ApiItemKind`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[getScopedNameWithinPackage()](./api-extractor-model.apiitem.getscopednamewithinpackage.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This returns a scoped name such as `"Namespace1.Namespace2.MyClass.myMember()"`<></>. It does not include the package name or entry point.
+
+
+</td></tr>
+<tr><td>
+
+[getSortKey()](./api-extractor-model.apiitem.getsortkey.md)
+
+
+</td><td>
+
+
+</td><td>
+
+A text string whose value determines the sort order that is automatically applied by the [ApiItemContainerMixin](./api-extractor-model.apiitemcontainermixin.md) class.
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apiitem.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apiitem.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

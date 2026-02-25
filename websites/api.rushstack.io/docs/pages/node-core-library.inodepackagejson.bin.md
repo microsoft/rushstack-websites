@@ -15,5 +15,5 @@ The main entry point for the package.
 **Signature:**
 
 ```typescript
-bin?: string;
+bin?: string | Record<string, string>;
 ```

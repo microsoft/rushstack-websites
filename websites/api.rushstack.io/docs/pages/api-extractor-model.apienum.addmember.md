@@ -20,9 +20,37 @@ addMember(member: ApiEnumMember): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  member | [ApiEnumMember](./api-extractor-model.apienummember.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+member
+
+
+</td><td>
+
+[ApiEnumMember](./api-extractor-model.apienummember.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

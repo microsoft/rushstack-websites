@@ -20,11 +20,71 @@ export declare enum AlreadyExistsBehavior
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  Error | <code>&quot;error&quot;</code> | If the output file path already exists, the operation will fail, and an error will be reported. |
-|  Ignore | <code>&quot;ignore&quot;</code> | If the output file path already exists, skip this item, and continue the operation. |
-|  Overwrite | <code>&quot;overwrite&quot;</code> | If the output file path already exists, try to overwrite the existing object. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+Error
+
+
+</td><td>
+
+`"error"`
+
+
+</td><td>
+
+If the output file path already exists, the operation will fail, and an error will be reported.
+
+
+</td></tr>
+<tr><td>
+
+Ignore
+
+
+</td><td>
+
+`"ignore"`
+
+
+</td><td>
+
+If the output file path already exists, skip this item, and continue the operation.
+
+
+</td></tr>
+<tr><td>
+
+Overwrite
+
+
+</td><td>
+
+`"overwrite"`
+
+
+</td><td>
+
+If the output file path already exists, try to overwrite the existing object.
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

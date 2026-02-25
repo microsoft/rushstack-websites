@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IJsonFileStringifyOptions.ignoreUndefinedValues property
 
-By default, `JsonFile.stringify()` validates that the object does not contain any keys whose value is `undefined`<></>. To disable this validation, set `ignoreUndefinedValues=true` which causes such keys to be silently discarded, consistent with the system `JSON.stringify()`<></>.
+By default, [JsonFile.stringify()](./node-core-library.jsonfile.stringify.md) validates that the object does not contain any keys whose value is `undefined`<></>. To disable this validation, set [IJsonFileStringifyOptions.ignoreUndefinedValues](./node-core-library.ijsonfilestringifyoptions.ignoreundefinedvalues.md) to `true` which causes such keys to be silently discarded, consistent with the system `JSON.stringify()`<></>.
 
 **Signature:**
 
@@ -20,5 +20,5 @@ ignoreUndefinedValues?: boolean;
 
 ## Remarks
 
-The JSON file format can represent `null` values ([JsonNull](./node-core-library.jsonnull.md)<></>) but not `undefined` values. In ECMAScript code however, we generally avoid `null` and always represent empty states as `undefined`<></>, because it is the default value of missing/uninitialized variables. (In practice, distinguishing "null" versus "uninitialized" has more drawbacks than benefits.) This poses a problem when serializing ECMAScript objects that contain `undefined` members. As a safeguard, `JsonFile` will report an error if any `undefined` values are encountered during serialization. Set `ignoreUndefinedValues=true` to disable this safeguard.
+The JSON file format can represent `null` values ([JsonNull](./node-core-library.jsonnull.md)<></>) but not `undefined` values. In ECMAScript code however, we generally avoid `null` and always represent empty states as `undefined`<></>, because it is the default value of missing/uninitialized variables. (In practice, distinguishing "null" versus "uninitialized" has more drawbacks than benefits.) This poses a problem when serializing ECMAScript objects that contain `undefined` members. As a safeguard, [JsonFile](./node-core-library.jsonfile.md) will report an error if any `undefined` values are encountered during serialization. Set [IJsonFileStringifyOptions.ignoreUndefinedValues](./node-core-library.ijsonfilestringifyoptions.ignoreundefinedvalues.md) to `true` to disable this safeguard.
 

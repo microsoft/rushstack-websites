@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.rushTempFolderName property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The folder name ("temp") under the common folder, or under the .rush folder in each project's directory where temporary files will be stored. Example: `C:\MyRepo\common\temp`
@@ -18,5 +18,5 @@ The folder name ("temp") under the common folder, or under the .rush folder in e
 **Signature:**
 
 ```typescript
-static readonly rushTempFolderName: string;
+static readonly rushTempFolderName: 'temp';
 ```

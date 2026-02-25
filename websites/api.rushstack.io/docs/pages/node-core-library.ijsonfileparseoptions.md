@@ -20,7 +20,45 @@ export interface IJsonFileParseOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [jsonSyntax?](./node-core-library.ijsonfileparseoptions.jsonsyntax.md) |  | [JsonSyntax](./node-core-library.jsonsyntax.md) | _(Optional)_ Specifies the variant of JSON syntax to be used. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[jsonSyntax?](./node-core-library.ijsonfileparseoptions.jsonsyntax.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[JsonSyntax](./node-core-library.jsonsyntax.md)
+
+
+</td><td>
+
+_(Optional)_ Specifies the variant of JSON syntax to be used.
+
+
+</td></tr>
+</tbody></table>
 

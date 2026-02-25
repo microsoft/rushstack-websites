@@ -41,24 +41,197 @@ export type Boxed<T> = T extends any[] ? BoxedArray<T[number]> : BoxedValue<T>;
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./api-extractor-model.apitypealias._constructor_.md) |  | Constructs a new instance of the <code>ApiTypeAlias</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./api-extractor-model.apitypealias._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ApiTypeAlias` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [containerKey](./api-extractor-model.apitypealias.containerkey.md) | <code>readonly</code> | string |  |
-|  [kind](./api-extractor-model.apitypealias.kind.md) | <code>readonly</code> | [ApiItemKind](./api-extractor-model.apiitemkind.md) |  |
-|  [typeExcerpt](./api-extractor-model.apitypealias.typeexcerpt.md) | <code>readonly</code> | [Excerpt](./api-extractor-model.excerpt.md) | An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the alias. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[containerKey](./api-extractor-model.apitypealias.containerkey.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[kind](./api-extractor-model.apitypealias.kind.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApiItemKind](./api-extractor-model.apiitemkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[typeExcerpt](./api-extractor-model.apitypealias.typeexcerpt.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+An [Excerpt](./api-extractor-model.excerpt.md) that describes the type of the alias.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildCanonicalReference()](./api-extractor-model.apitypealias.buildcanonicalreference.md) |  | **_(BETA)_** |
-|  [getContainerKey(name)](./api-extractor-model.apitypealias.getcontainerkey.md) | <code>static</code> |  |
-|  [onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apitypealias.ondeserializeinto.md) | <code>static</code> |  |
-|  [serializeInto(jsonObject)](./api-extractor-model.apitypealias.serializeinto.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildCanonicalReference()](./api-extractor-model.apitypealias.buildcanonicalreference.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+<tr><td>
+
+[getContainerKey(name)](./api-extractor-model.apitypealias.getcontainerkey.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[onDeserializeInto(options, context, jsonObject)](./api-extractor-model.apitypealias.ondeserializeinto.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[serializeInto(jsonObject)](./api-extractor-model.apitypealias.serializeinto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

@@ -20,14 +20,197 @@ export interface IBaseCommandLineDefinition
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [description](./ts-command-line.ibasecommandlinedefinition.description.md) |  | string | Documentation for the parameter that will be shown when invoking the tool with "--help" |
-|  [environmentVariable?](./ts-command-line.ibasecommandlinedefinition.environmentvariable.md) |  | string | _(Optional)_ The name of an environment variable that the parameter value will be read from, if it was omitted from the command-line. An error will be reported if the environment value cannot be parsed. |
-|  [parameterGroup?](./ts-command-line.ibasecommandlinedefinition.parametergroup.md) |  | string \| typeof SCOPING\_PARAMETER\_GROUP | _(Optional)_ An optional parameter group name, shown when invoking the tool with "--help" |
-|  [parameterLongName](./ts-command-line.ibasecommandlinedefinition.parameterlongname.md) |  | string | The long name of the flag including double dashes, e.g. "--do-something" |
-|  [parameterScope?](./ts-command-line.ibasecommandlinedefinition.parameterscope.md) |  | string | _(Optional)_ An optional parameter scope name, used to add a scope-prefixed parameter synonym, e.g. "--scope:do-something". Scopes provide additional flexibility for parameters in conflict resolution since when a scope is specified, parameters that have conflicting long names will be defined using only the scope-prefixed name. |
-|  [parameterShortName?](./ts-command-line.ibasecommandlinedefinition.parametershortname.md) |  | string | _(Optional)_ An optional short name for the flag including the dash, e.g. "-d" |
-|  [required?](./ts-command-line.ibasecommandlinedefinition.required.md) |  | boolean | _(Optional)_ If true, then an error occurs if the parameter was not included on the command-line. |
-|  [undocumentedSynonyms?](./ts-command-line.ibasecommandlinedefinition.undocumentedsynonyms.md) |  | string\[\] | _(Optional)_ Specifies additional names for this parameter that are accepted but not displayed in the command line help. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowNonStandardEnvironmentVariableNames?](./ts-command-line.ibasecommandlinedefinition.allownonstandardenvironmentvariablenames.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Allows for the use of environment variable names that do not conform to the standard described by the Shell and Utilities volume of IEEE Std 1003.1-2001. This disables the validation that is performed on the provided [IBaseCommandLineDefinition.environmentVariable](./ts-command-line.ibasecommandlinedefinition.environmentvariable.md) value by default.
+
+
+</td></tr>
+<tr><td>
+
+[description](./ts-command-line.ibasecommandlinedefinition.description.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Documentation for the parameter that will be shown when invoking the tool with "--help"
+
+
+</td></tr>
+<tr><td>
+
+[environmentVariable?](./ts-command-line.ibasecommandlinedefinition.environmentvariable.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The name of an environment variable that the parameter value will be read from, if it was omitted from the command-line. An error will be reported if the environment value cannot be parsed.
+
+
+</td></tr>
+<tr><td>
+
+[parameterGroup?](./ts-command-line.ibasecommandlinedefinition.parametergroup.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| typeof SCOPING\_PARAMETER\_GROUP
+
+
+</td><td>
+
+_(Optional)_ An optional parameter group name, shown when invoking the tool with "--help"
+
+
+</td></tr>
+<tr><td>
+
+[parameterLongName](./ts-command-line.ibasecommandlinedefinition.parameterlongname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The long name of the flag including double dashes, e.g. "--do-something"
+
+
+</td></tr>
+<tr><td>
+
+[parameterScope?](./ts-command-line.ibasecommandlinedefinition.parameterscope.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ An optional parameter scope name, used to add a scope-prefixed parameter synonym, e.g. "--scope:do-something". Scopes provide additional flexibility for parameters in conflict resolution since when a scope is specified, parameters that have conflicting long names will be defined using only the scope-prefixed name.
+
+
+</td></tr>
+<tr><td>
+
+[parameterShortName?](./ts-command-line.ibasecommandlinedefinition.parametershortname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ An optional short name for the flag including the dash, e.g. "-d"
+
+
+</td></tr>
+<tr><td>
+
+[required?](./ts-command-line.ibasecommandlinedefinition.required.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, then an error occurs if the parameter was not included on the command-line.
+
+
+</td></tr>
+<tr><td>
+
+[undocumentedSynonyms?](./ts-command-line.ibasecommandlinedefinition.undocumentedsynonyms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Specifies additional names for this parameter that are accepted but not displayed in the command line help.
+
+
+</td></tr>
+</tbody></table>
 

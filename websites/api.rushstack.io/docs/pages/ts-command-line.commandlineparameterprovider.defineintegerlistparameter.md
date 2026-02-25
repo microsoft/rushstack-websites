@@ -20,9 +20,37 @@ defineIntegerListParameter(definition: ICommandLineIntegerListDefinition): Comma
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | [ICommandLineIntegerListDefinition](./ts-command-line.icommandlineintegerlistdefinition.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+[ICommandLineIntegerListDefinition](./ts-command-line.icommandlineintegerlistdefinition.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

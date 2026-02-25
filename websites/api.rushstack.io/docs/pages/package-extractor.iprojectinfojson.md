@@ -20,8 +20,64 @@ export interface IProjectInfoJson
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./package-extractor.iprojectinfojson.path.md) |  | string | This path is relative to the root of the extractor output folder |
-|  [projectName](./package-extractor.iprojectinfojson.projectname.md) |  | string | The name of the project as specified in its package.json file. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./package-extractor.iprojectinfojson.path.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+This path is relative to the root of the extractor output folder
+
+
+</td></tr>
+<tr><td>
+
+[projectName](./package-extractor.iprojectinfojson.projectname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the project as specified in its package.json file.
+
+
+</td></tr>
+</tbody></table>
 

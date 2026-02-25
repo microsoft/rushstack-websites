@@ -20,7 +20,51 @@ export declare class PackageExtractor
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [extractAsync(options)](./package-extractor.packageextractor.extractasync.md) |  | Extract a package using the provided options |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[extractAsync(options)](./package-extractor.packageextractor.extractasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Extract a package using the provided options
+
+
+</td></tr>
+<tr><td>
+
+[getPackageIncludedFilesAsync(packageRootPath)](./package-extractor.packageextractor.getpackageincludedfilesasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Get a list of files that would be included in a package created from the provided package root path.
+
+
+</td></tr>
+</tbody></table>
 

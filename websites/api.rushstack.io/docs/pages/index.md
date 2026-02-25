@@ -12,24 +12,386 @@ pagination_next: null
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@microsoft/api-documenter](./api-documenter.md) | API Documenter generates an API reference website from the .api.json files created by API Extractor. The <code>@microsoft/api-documenter</code> package provides the command-line tool. It also exposes a developer API that you can use to create plugins that customize how API Documenter generates documentation. |
-|  [@microsoft/api-extractor](./api-extractor.md) | API Extractor helps with validation, documentation, and reviewing of the exported API for a TypeScript library. The <code>@microsoft/api-extractor</code> package provides the command-line tool. It also exposes a developer API that you can use to invoke API Extractor programmatically. |
-|  [@microsoft/api-extractor-model](./api-extractor-model.md) | Use this library to read and write \*.api.json files as defined by the [API Extractor](https://api-extractor.com/) tool. These files are used to generate a documentation website for your TypeScript package. The files store the API signatures and doc comments that were extracted from your package. |
-|  [@microsoft/rush-lib](./rush-lib.md) | A library for writing scripts that interact with the [Rush](https://rushjs.io/) tool. |
-|  [@rushstack/debug-certificate-manager](./debug-certificate-manager.md) | <p>This package is used to manage debug certificates for development servers.</p><p>This package provides the following utilities:</p><p>- <code>CertificateStore</code> to handle retrieving and saving a debug certificate.</p><p>- <code>CertificateManager</code> is a utility class containing the following public methods:</p><p>- <code>ensureCertificate</code> will find or optionally create a debug certificate and trust it.</p><p>- <code>untrustCertificate</code> will untrust a debug certificate.</p> |
-|  [@rushstack/heft](./heft.md) | Heft is a config-driven toolchain that invokes other popular tools such as TypeScript, ESLint, Jest, Webpack, and API Extractor. You can use it to build web applications, Node.js services, command-line tools, libraries, and more. |
-|  [@rushstack/heft-config-file](./heft-config-file.md) | A library for loading config files for use with the [Heft](https://rushstack.io/pages/heft/overview/) build system. |
-|  [@rushstack/localization-utilities](./localization-utilities.md) | Some utilities for working with Rush Stack localization files. |
-|  [@rushstack/module-minifier](./module-minifier.md) | This library wraps terser in convenient handles for parallelization. It powers <code>@rushstack/webpack4-module-minifier-plugin</code> and <code>@rushstack/webpack5-module-minifier-plugin</code> but has no coupling with webpack. |
-|  [@rushstack/node-core-library](./node-core-library.md) | Core libraries that every NodeJS toolchain project should use. |
-|  [@rushstack/package-deps-hash](./package-deps-hash.md) | This package builds a JSON object containing the git hashes of all files used to produce a given NPM package. The [Rush](https://rushjs.io/) tool uses this library to implement incremental build detection. |
-|  [@rushstack/package-extractor](./package-extractor.md) |  |
-|  [@rushstack/rig-package](./rig-package.md) | A system for sharing tool configurations between projects without duplicating config files. |
-|  [@rushstack/stream-collator](./stream-collator.md) | This library enables a tool to display live console output from multiple concurrent processes, while ensuring that their output does not get jumbled together. |
-|  [@rushstack/terminal](./terminal.md) | This library implements a system for processing human readable text that will be output by console applications. |
-|  [@rushstack/tree-pattern](./tree-pattern.md) | A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST). |
-|  [@rushstack/ts-command-line](./ts-command-line.md) | An object-oriented command-line parser for TypeScript projects. |
-|  [@rushstack/typings-generator](./typings-generator.md) | An engine for generating TypeScript .d.ts files that provide type signatures for non-TypeScript modules such as generated JavaScript or CSS. It can operate in either a single-run mode or a watch mode. |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@microsoft/api-documenter](./api-documenter.md)
+
+
+</td><td>
+
+API Documenter generates an API reference website from the .api.json files created by API Extractor. The `@microsoft/api-documenter` package provides the command-line tool. It also exposes a developer API that you can use to create plugins that customize how API Documenter generates documentation.
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/api-extractor](./api-extractor.md)
+
+
+</td><td>
+
+API Extractor helps with validation, documentation, and reviewing of the exported API for a TypeScript library. The `@microsoft/api-extractor` package provides the command-line tool. It also exposes a developer API that you can use to invoke API Extractor programmatically.
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/api-extractor-model](./api-extractor-model.md)
+
+
+</td><td>
+
+Use this library to read and write \*.api.json files as defined by the [API Extractor](https://api-extractor.com/) tool. These files are used to generate a documentation website for your TypeScript package. The files store the API signatures and doc comments that were extracted from your package.
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/loader-load-themed-styles](./loader-load-themed-styles.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/rush-lib](./rush-lib.md)
+
+
+</td><td>
+
+A library for writing scripts that interact with the [Rush](https://rushjs.io/) tool.
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/rushell](./rushell.md)
+
+
+</td><td>
+
+Execute shell commands using a consistent syntax on every platform.
+
+
+</td></tr>
+<tr><td>
+
+[@microsoft/webpack5-load-themed-styles-loader](./webpack5-load-themed-styles-loader.md)
+
+
+</td><td>
+
+This simple loader wraps the loading of CSS in script equivalent to require("<></>@<></>microsoft/load-themed-styles").loadStyles('... css text ...').
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/credential-cache](./credential-cache.md)
+
+
+</td><td>
+
+This package is used to manage persistent, per-user cached credentials.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/debug-certificate-manager](./debug-certificate-manager.md)
+
+
+</td><td>
+
+This package is used to manage debug certificates for development servers.
+
+This package provides the following utilities:
+
+- `CertificateStore` to handle retrieving and saving a debug certificate.
+
+- `CertificateManager` is a utility class containing the following public methods:
+
+- `ensureCertificate` will find or optionally create a debug certificate and trust it.
+
+- `untrustCertificate` will untrust a debug certificate.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/heft](./heft.md)
+
+
+</td><td>
+
+Heft is a config-driven toolchain that invokes other popular tools such as TypeScript, ESLint, Jest, Webpack, and API Extractor. You can use it to build web applications, Node.js services, command-line tools, libraries, and more.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/heft-config-file](./heft-config-file.md)
+
+
+</td><td>
+
+A library for loading config files for use with the [Heft](https://rushstack.io/pages/heft/overview/) build system.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/localization-utilities](./localization-utilities.md)
+
+
+</td><td>
+
+Some utilities for working with Rush Stack localization files.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/lookup-by-path](./lookup-by-path.md)
+
+
+</td><td>
+
+Strongly typed trie data structure for path and URL-like strings.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/mcp-server](./mcp-server.md)
+
+
+</td><td>
+
+API for use by MCP plugins.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/module-minifier](./module-minifier.md)
+
+
+</td><td>
+
+This library wraps terser in convenient handles for parallelization. It powers `@rushstack/webpack4-module-minifier-plugin` and `@rushstack/webpack5-module-minifier-plugin` but has no coupling with webpack.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/node-core-library](./node-core-library.md)
+
+
+</td><td>
+
+Core libraries that every NodeJS toolchain project should use.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/operation-graph](./operation-graph.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/package-deps-hash](./package-deps-hash.md)
+
+
+</td><td>
+
+This package builds a JSON object containing the git hashes of all files used to produce a given NPM package. The [Rush](https://rushjs.io/) tool uses this library to implement incremental build detection.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/package-extractor](./package-extractor.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/playwright-browser-tunnel](./playwright-browser-tunnel.md)
+
+
+</td><td>
+
+Run a Playwright browser server in one environment and drive it from another environment by forwarding Playwright's WebSocket traffic through a tunnel.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/problem-matcher](./problem-matcher.md)
+
+
+</td><td>
+
+Parse VS Code style problem matcher definitions and use them to extract structured problem reports from strings.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/rig-package](./rig-package.md)
+
+
+</td><td>
+
+A system for sharing tool configurations between projects without duplicating config files.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/rush-pnpm-kit-v10](./rush-pnpm-kit-v10.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/rush-pnpm-kit-v8](./rush-pnpm-kit-v8.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/rush-pnpm-kit-v9](./rush-pnpm-kit-v9.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/set-webpack-public-path-plugin](./set-webpack-public-path-plugin.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/stream-collator](./stream-collator.md)
+
+
+</td><td>
+
+This library enables a tool to display live console output from multiple concurrent processes, while ensuring that their output does not get jumbled together.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/terminal](./terminal.md)
+
+
+</td><td>
+
+This library implements a system for processing human readable text that will be output by console applications.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/tree-pattern](./tree-pattern.md)
+
+
+</td><td>
+
+A fast, lightweight pattern matcher for tree structures such as an Abstract Syntax Tree (AST).
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/ts-command-line](./ts-command-line.md)
+
+
+</td><td>
+
+An object-oriented command-line parser for TypeScript projects.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/typings-generator](./typings-generator.md)
+
+
+</td><td>
+
+An engine for generating TypeScript .d.ts files that provide type signatures for non-TypeScript modules such as generated JavaScript or CSS. It can operate in either a single-run mode or a watch mode.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/webpack-embedded-dependencies-plugin](./webpack-embedded-dependencies-plugin.md)
+
+
+</td><td>
+
+A webpack plugin for generating a list of embedded dependencies. Embedded dependencies are third-party packages which are being bundled into your released code and are often times subject to license, security, and other legal requirements. This plugin aims to make it easier to generate a list of embedded dependencies and their associated metadata, so they can be analyzed by additional tools.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/webpack-plugin-utilities](./webpack-plugin-utilities.md)
+
+
+</td><td>
+
+Utility package which provides a set of tools for working in webpack plugins, loaders, and other integrations.
+
+
+</td></tr>
+<tr><td>
+
+[@rushstack/worker-pool](./worker-pool.md)
+
+
+</td><td>
+
+A lightweight worker pool implementation using the NodeJS `worker_threads` API.
+
+
+</td></tr>
+</tbody></table>
 

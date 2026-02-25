@@ -21,20 +21,139 @@ export declare class MessagePortMinifier implements IModuleMinifier
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(port)](./module-minifier.messageportminifier._constructor_.md) |  | Constructs a new instance of the <code>MessagePortMinifier</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(port)](./module-minifier.messageportminifier._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `MessagePortMinifier` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [port](./module-minifier.messageportminifier.port.md) | <code>readonly</code> | MessagePort |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[port](./module-minifier.messageportminifier.port.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+WorkerThreads.MessagePort
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [connect()](./module-minifier.messageportminifier.connect.md) |  |  |
-|  [minify(request, callback)](./module-minifier.messageportminifier.minify.md) |  | No-op code transform. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./module-minifier.messageportminifier.connect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[connectAsync()](./module-minifier.messageportminifier.connectasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Prevents the minifier from shutting down until the returned `disconnect()` callback is invoked. The callback may be used to surface errors encountered by the minifier that may not be relevant to a specific file. It should be called to allow the minifier to cleanup
+
+
+</td></tr>
+<tr><td>
+
+[minify(request, callback)](./module-minifier.messageportminifier.minify.md)
+
+
+</td><td>
+
+
+</td><td>
+
+No-op code transform.
+
+
+</td></tr>
+</tbody></table>
 

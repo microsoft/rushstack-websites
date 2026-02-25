@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IPropertyInheritance interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,7 +22,45 @@ export interface IPropertyInheritance<TInheritanceType extends InheritanceType>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [inheritanceType](./heft-config-file.ipropertyinheritance.inheritancetype.md) |  | TInheritanceType | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[inheritanceType](./heft-config-file.ipropertyinheritance.inheritancetype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+TInheritanceType
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,6 +10,11 @@ pagination_next: null
 
 ## RushConfiguration.ensureConsistentVersions property
 
+> Warning: This API is now obsolete.
+> 
+> This setting was moved from `rush.json` to `common-versions.json`<></>. Read it using [Subspace.shouldEnsureConsistentVersions()](./rush-lib.subspace.shouldensureconsistentversions.md) instead.
+> 
+
 If true, then consistent version specifiers for dependencies will be enforced. I.e. "rush check" is run before some commands.
 
 **Signature:**

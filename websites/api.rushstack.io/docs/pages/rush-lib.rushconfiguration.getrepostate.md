@@ -10,19 +10,52 @@ pagination_next: null
 
 ## RushConfiguration.getRepoState() method
 
-Gets the contents from the repo-state.json file for a specific variant.
+> Warning: This API is now obsolete.
+> 
+> Use [Subspace.getRepoState()](./rush-lib.subspace.getrepostate.md) instead
+> 
 
 **Signature:**
 
 ```typescript
-getRepoState(variant?: string | undefined): RepoStateFile;
+getRepoState(subspace?: Subspace): RepoStateFile;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  variant | string \| undefined | _(Optional)_ The name of the current variant in use by the active command. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+subspace
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

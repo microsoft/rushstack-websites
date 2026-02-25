@@ -20,7 +20,35 @@ constructor(options: IApiDeclaredItemOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[IApiDeclaredItemOptions](./api-extractor-model.iapideclareditemoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

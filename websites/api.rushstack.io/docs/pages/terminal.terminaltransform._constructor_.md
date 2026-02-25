@@ -20,7 +20,35 @@ constructor(options: ITerminalTransformOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ITerminalTransformOptions](./terminal.iterminaltransformoptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ITerminalTransformOptions](./terminal.iterminaltransformoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

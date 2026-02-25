@@ -24,30 +24,592 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [consumingProjects](./rush-lib.rushconfigurationproject.consumingprojects.md) | <code>readonly</code> | ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt; | The set of projects within the Rush configuration which declare this project as a dependency. Excludes those that declare this project as a <code>cyclicDependencyProject</code>. |
-|  [cyclicDependencyProjects](./rush-lib.rushconfigurationproject.cyclicdependencyprojects.md) | <code>readonly</code> | Set&lt;string&gt; | <p>A list of local projects that appear as devDependencies for this project, but cannot be locally linked because it would create a cyclic dependency; instead, the last published version will be installed in the Common folder.</p><p>These are package names that would be found by RushConfiguration.getProjectByName().</p> |
-|  [decoupledLocalDependencies](./rush-lib.rushconfigurationproject.decoupledlocaldependencies.md) | <code>readonly</code> | Set&lt;string&gt; | <p>A list of local projects that appear as devDependencies for this project, but cannot be locally linked because it would create a cyclic dependency; instead, the last published version will be installed in the Common folder.</p><p>These are package names that would be found by RushConfiguration.getProjectByName().</p> |
-|  [dependencyProjects](./rush-lib.rushconfigurationproject.dependencyprojects.md) | <code>readonly</code> | ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt; | The set of projects within the Rush configuration which this project declares as dependencies. |
-|  [downstreamDependencyProjects](./rush-lib.rushconfigurationproject.downstreamdependencyprojects.md) | <code>readonly</code> | string\[\] | An array of projects within the Rush configuration which directly depend on this package. |
-|  [isMainProject](./rush-lib.rushconfigurationproject.ismainproject.md) | <code>readonly</code> | boolean | <p>**_(BETA)_** Indicate whether this project is the main project for the related version policy.</p><p>False if the project is not for publishing. True if the project is individually versioned or if its lockstep version policy does not specify main project. False if the project is lockstepped and is not the main project for its version policy.</p> |
-|  [localDependencyProjects](./rush-lib.rushconfigurationproject.localdependencyprojects.md) | <code>readonly</code> | ReadonlyArray&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt; | An array of projects within the Rush configuration which this project declares as dependencies. |
-|  [packageJson](./rush-lib.rushconfigurationproject.packagejson.md) | <code>readonly</code> | [IPackageJson](./node-core-library.ipackagejson.md) | The parsed NPM "package.json" file from projectFolder. |
-|  [packageJsonEditor](./rush-lib.rushconfigurationproject.packagejsoneditor.md) | <code>readonly</code> | [PackageJsonEditor](./rush-lib.packagejsoneditor.md) | **_(BETA)_** A useful wrapper around the package.json file for making modifications |
-|  [packageName](./rush-lib.rushconfigurationproject.packagename.md) | <code>readonly</code> | string | <p>The name of the NPM package. An error is reported if this name is not identical to packageJson.name.</p><p>Example: <code>@scope/MyProject</code></p> |
-|  [projectFolder](./rush-lib.rushconfigurationproject.projectfolder.md) | <code>readonly</code> | string | <p>The full path of the folder that contains the project to be built by Rush.</p><p>Example: <code>C:\MyRepo\libraries\my-project</code></p> |
-|  [projectRelativeFolder](./rush-lib.rushconfigurationproject.projectrelativefolder.md) | <code>readonly</code> | string | <p>The relative path of the folder that contains the project to be built by Rush.</p><p>Example: <code>libraries/my-project</code></p> |
-|  [projectRushConfigFolder](./rush-lib.rushconfigurationproject.projectrushconfigfolder.md) | <code>readonly</code> | string | <p>The project-specific Rush configuration folder.</p><p>Example: <code>C:\MyRepo\libraries\my-project\config\rush</code></p> |
-|  [projectRushTempFolder](./rush-lib.rushconfigurationproject.projectrushtempfolder.md) | <code>readonly</code> | string | <p>The project-specific Rush temp folder. This folder is used to store Rush-specific temporary files.</p><p>Example: <code>C:\MyRepo\libraries\my-project\.rush\temp</code></p> |
-|  [publishFolder](./rush-lib.rushconfigurationproject.publishfolder.md) | <code>readonly</code> | string | The full path of the folder that will get published by Rush. |
-|  [reviewCategory](./rush-lib.rushconfigurationproject.reviewcategory.md) | <code>readonly</code> | string \| undefined | The review category name, or undefined if no category was assigned. This name must be one of the valid choices listed in RushConfiguration.reviewCategories. |
-|  [rushConfiguration](./rush-lib.rushconfigurationproject.rushconfiguration.md) | <code>readonly</code> | [RushConfiguration](./rush-lib.rushconfiguration.md) | The Rush configuration for the monorepo that the project belongs to. |
-|  [shouldPublish](./rush-lib.rushconfigurationproject.shouldpublish.md) | <code>readonly</code> | boolean | A flag which indicates whether changes to this project should be published. This controls whether or not the project would show up when running <code>rush change</code>, and whether or not it should be published during <code>rush publish</code>. |
-|  [skipRushCheck](./rush-lib.rushconfigurationproject.skiprushcheck.md) | <code>readonly</code> | boolean | If true, then this project will be ignored by the "rush check" command. The default value is false. |
-|  [tags](./rush-lib.rushconfigurationproject.tags.md) | <code>readonly</code> | ReadonlySet&lt;string&gt; | **_(BETA)_** An optional set of custom tags that can be used to select this project. |
-|  [tempProjectName](./rush-lib.rushconfigurationproject.tempprojectname.md) | <code>readonly</code> | string | <p>The unique name for the temporary project that will be generated in the Common folder. For example, if the project name is <code>@scope/MyProject</code>, the temporary project name might be <code>@rush-temp/MyProject-2</code>.</p><p>Example: <code>@rush-temp/MyProject-2</code></p> |
-|  [unscopedTempProjectName](./rush-lib.rushconfigurationproject.unscopedtempprojectname.md) | <code>readonly</code> | string | <p>The unscoped temporary project name</p><p>Example: <code>my-project-2</code></p> |
-|  [versionPolicy](./rush-lib.rushconfigurationproject.versionpolicy.md) | <code>readonly</code> | [VersionPolicy](./rush-lib.versionpolicy.md) \| undefined | **_(BETA)_** Version policy of the project |
-|  [versionPolicyName](./rush-lib.rushconfigurationproject.versionpolicyname.md) | <code>readonly</code> | string \| undefined | **_(BETA)_** Name of the version policy used by this project. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[configuredSubspaceName](./rush-lib.rushconfigurationproject.configuredsubspacename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Returns the subspace name specified in the `"subspaceName"` field in `rush.json`<></>. Note that this field may be undefined, if the `default` subspace is being used, and this field may be ignored if the subspaces feature is disabled.
+
+
+</td></tr>
+<tr><td>
+
+[consumingProjects](./rush-lib.rushconfigurationproject.consumingprojects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+
+
+</td><td>
+
+The set of projects within the Rush configuration which declare this project as a dependency. Excludes those that declare this project as a `cyclicDependencyProject`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[cyclicDependencyProjects](./rush-lib.rushconfigurationproject.cyclicdependencyprojects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Set&lt;string&gt;
+
+
+</td><td>
+
+A list of local projects that appear as devDependencies for this project, but cannot be locally linked because it would create a cyclic dependency; instead, the last published version will be installed in the Common folder.
+
+These are package names that would be found by RushConfiguration.getProjectByName().
+
+
+</td></tr>
+<tr><td>
+
+[decoupledLocalDependencies](./rush-lib.rushconfigurationproject.decoupledlocaldependencies.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Set&lt;string&gt;
+
+
+</td><td>
+
+A list of local projects that appear as devDependencies for this project, but cannot be locally linked because it would create a cyclic dependency; instead, the last published version will be installed in the Common folder.
+
+These are package names that would be found by RushConfiguration.getProjectByName().
+
+
+</td></tr>
+<tr><td>
+
+[dependencyProjects](./rush-lib.rushconfigurationproject.dependencyprojects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+
+
+</td><td>
+
+The set of projects within the Rush configuration which this project declares as dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[downstreamDependencyProjects](./rush-lib.rushconfigurationproject.downstreamdependencyprojects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+An array of projects within the Rush configuration which directly depend on this package.
+
+
+</td></tr>
+<tr><td>
+
+[isMainProject](./rush-lib.rushconfigurationproject.ismainproject.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** Indicate whether this project is the main project for the related version policy.
+
+False if the project is not for publishing. True if the project is individually versioned or if its lockstep version policy does not specify main project. False if the project is lockstepped and is not the main project for its version policy.
+
+
+</td></tr>
+<tr><td>
+
+[localDependencyProjects](./rush-lib.rushconfigurationproject.localdependencyprojects.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[RushConfigurationProject](./rush-lib.rushconfigurationproject.md)<></>&gt;
+
+
+</td><td>
+
+An array of projects within the Rush configuration which this project declares as dependencies.
+
+
+</td></tr>
+<tr><td>
+
+[packageJson](./rush-lib.rushconfigurationproject.packagejson.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[IPackageJson](./node-core-library.ipackagejson.md)
+
+
+</td><td>
+
+The parsed NPM "package.json" file from projectFolder.
+
+
+</td></tr>
+<tr><td>
+
+[packageJsonEditor](./rush-lib.rushconfigurationproject.packagejsoneditor.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PackageJsonEditor](./rush-lib.packagejsoneditor.md)
+
+
+</td><td>
+
+**_(BETA)_** A useful wrapper around the package.json file for making modifications
+
+
+</td></tr>
+<tr><td>
+
+[packageName](./rush-lib.rushconfigurationproject.packagename.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the NPM package. An error is reported if this name is not identical to packageJson.name.
+
+Example: `@scope/MyProject`
+
+
+</td></tr>
+<tr><td>
+
+[projectFolder](./rush-lib.rushconfigurationproject.projectfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The full path of the folder that contains the project to be built by Rush.
+
+Example: `C:\MyRepo\libraries\my-project`
+
+
+</td></tr>
+<tr><td>
+
+[projectRelativeFolder](./rush-lib.rushconfigurationproject.projectrelativefolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The relative path of the folder that contains the project to be built by Rush.
+
+Example: `libraries/my-project`
+
+
+</td></tr>
+<tr><td>
+
+[projectRushConfigFolder](./rush-lib.rushconfigurationproject.projectrushconfigfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The project-specific Rush configuration folder.
+
+Example: `C:\MyRepo\libraries\my-project\config\rush`
+
+
+</td></tr>
+<tr><td>
+
+[projectRushTempFolder](./rush-lib.rushconfigurationproject.projectrushtempfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The project-specific Rush temp folder. This folder is used to store Rush-specific temporary files.
+
+Example: `C:\MyRepo\libraries\my-project\.rush\temp`
+
+
+</td></tr>
+<tr><td>
+
+[publishFolder](./rush-lib.rushconfigurationproject.publishfolder.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The full path of the folder that will get published by Rush.
+
+
+</td></tr>
+<tr><td>
+
+[reviewCategory](./rush-lib.rushconfigurationproject.reviewcategory.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The review category name, or undefined if no category was assigned. This name must be one of the valid choices listed in RushConfiguration.reviewCategories.
+
+
+</td></tr>
+<tr><td>
+
+[rushConfiguration](./rush-lib.rushconfigurationproject.rushconfiguration.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+The Rush configuration for the monorepo that the project belongs to.
+
+
+</td></tr>
+<tr><td>
+
+[shouldPublish](./rush-lib.rushconfigurationproject.shouldpublish.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+A flag which indicates whether changes to this project should be published. This controls whether or not the project would show up when running `rush change`<></>, and whether or not it should be published during `rush publish`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[skipRushCheck](./rush-lib.rushconfigurationproject.skiprushcheck.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+If true, then this project will be ignored by the "rush check" command. The default value is false.
+
+
+</td></tr>
+<tr><td>
+
+[subspace](./rush-lib.rushconfigurationproject.subspace.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Subspace](./rush-lib.subspace.md)
+
+
+</td><td>
+
+Returns the subspace name that a project belongs to. If subspaces is not enabled, returns the default subspace.
+
+
+</td></tr>
+<tr><td>
+
+[tags](./rush-lib.rushconfigurationproject.tags.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlySet&lt;string&gt;
+
+
+</td><td>
+
+**_(BETA)_** An optional set of custom tags that can be used to select this project.
+
+
+</td></tr>
+<tr><td>
+
+[tempProjectName](./rush-lib.rushconfigurationproject.tempprojectname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The unique name for the temporary project that will be generated in the Common folder. For example, if the project name is `@scope/MyProject`<></>, the temporary project name might be `@rush-temp/MyProject-2`<></>.
+
+Example: `@rush-temp/MyProject-2`
+
+
+</td></tr>
+<tr><td>
+
+[unscopedTempProjectName](./rush-lib.rushconfigurationproject.unscopedtempprojectname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The unscoped temporary project name
+
+Example: `my-project-2`
+
+
+</td></tr>
+<tr><td>
+
+[versionPolicy](./rush-lib.rushconfigurationproject.versionpolicy.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[VersionPolicy](./rush-lib.versionpolicy.md) \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Version policy of the project
+
+
+</td></tr>
+<tr><td>
+
+[versionPolicyName](./rush-lib.rushconfigurationproject.versionpolicyname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+**_(BETA)_** Name of the version policy used by this project.
+
+
+</td></tr>
+</tbody></table>
 

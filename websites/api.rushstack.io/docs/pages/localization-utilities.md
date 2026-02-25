@@ -14,37 +14,234 @@ Some utilities for working with Rush Stack localization files.
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [TypingsGenerator](./localization-utilities.typingsgenerator.md) | This is a simple tool that generates .d.ts files for .loc.json, .resx.json, .resjson, and .resx files. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TypingsGenerator](./localization-utilities.typingsgenerator.md)
+
+
+</td><td>
+
+This is a simple tool that generates .d.ts files for .loc.json, .resx.json, .resjson, and .resx files.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [getPseudolocalizer(options)](./localization-utilities.getpseudolocalizer.md) | Get a function that pseudolocalizes a string. |
-|  [parseLocFile(options)](./localization-utilities.parselocfile.md) |  |
-|  [parseLocJson({ content, filePath, ignoreString })](./localization-utilities.parselocjson.md) |  |
-|  [parseResJson({ content, ignoreString, filePath })](./localization-utilities.parseresjson.md) |  |
-|  [parseResx(options)](./localization-utilities.parseresx.md) |  |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getPseudolocalizer(options)](./localization-utilities.getpseudolocalizer.md)
+
+
+</td><td>
+
+Get a function that pseudolocalizes a string.
+
+
+</td></tr>
+<tr><td>
+
+[parseLocFile(options)](./localization-utilities.parselocfile.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[parseLocJson({ content, filePath, ignoreString }, input)](./localization-utilities.parselocjson.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[parseResJson({ content, ignoreString, filePath }, input)](./localization-utilities.parseresjson.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[parseResx(options)](./localization-utilities.parseresx.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ILocalizationFile](./localization-utilities.ilocalizationfile.md) |  |
-|  [ILocalizedString](./localization-utilities.ilocalizedstring.md) |  |
-|  [IParseFileOptions](./localization-utilities.iparsefileoptions.md) |  |
-|  [IParseLocFileOptions](./localization-utilities.iparselocfileoptions.md) |  |
-|  [IParseResxOptions](./localization-utilities.iparseresxoptions.md) |  |
-|  [IParseResxOptionsBase](./localization-utilities.iparseresxoptionsbase.md) |  |
-|  [IPseudolocaleOptions](./localization-utilities.ipseudolocaleoptions.md) | Options for the pseudolocale library. |
-|  [ITypingsGeneratorOptions](./localization-utilities.itypingsgeneratoroptions.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IInferInterfaceNameExportAsDefaultOptions](./localization-utilities.iinferinterfacenameexportasdefaultoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ILocalizationFile](./localization-utilities.ilocalizationfile.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ILocalizedString](./localization-utilities.ilocalizedstring.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IParseFileOptions](./localization-utilities.iparsefileoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IParseLocFileOptions](./localization-utilities.iparselocfileoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IParseResxOptions](./localization-utilities.iparseresxoptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IParseResxOptionsBase](./localization-utilities.iparseresxoptionsbase.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[IPseudolocaleOptions](./localization-utilities.ipseudolocaleoptions.md)
+
+
+</td><td>
+
+Options for the pseudolocale library.
+
+
+</td></tr>
+<tr><td>
+
+[ITypingsGeneratorOptions](./localization-utilities.itypingsgeneratoroptions.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [IgnoreStringFunction](./localization-utilities.ignorestringfunction.md) |  |
-|  [ParserKind](./localization-utilities.parserkind.md) |  |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IgnoreStringFunction](./localization-utilities.ignorestringfunction.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+<tr><td>
+
+[ParserKind](./localization-utilities.parserkind.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## RushConstants.artifactoryFilename property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 The artifactory.json configuration file name.
@@ -18,5 +18,5 @@ The artifactory.json configuration file name.
 **Signature:**
 
 ```typescript
-static readonly artifactoryFilename: string;
+static readonly artifactoryFilename: 'artifactory.json';
 ```

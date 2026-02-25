@@ -15,5 +15,5 @@ Indicates the type of parameter.
 **Signature:**
 
 ```typescript
-get kind(): CommandLineParameterKind;
+readonly kind: CommandLineParameterKind.StringList;
 ```

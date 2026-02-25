@@ -20,7 +20,35 @@ constructor(excerpt: Excerpt);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  excerpt | [Excerpt](./api-extractor-model.excerpt.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+excerpt
+
+
+</td><td>
+
+[Excerpt](./api-extractor-model.excerpt.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRushPlugin interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 
@@ -22,7 +22,27 @@ export interface IRushPlugin
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [apply(rushSession, rushConfiguration)](./rush-lib.irushplugin.apply.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apply(rushSession, rushConfiguration)](./rush-lib.irushplugin.apply.md)
+
+
+</td><td>
+
+**_(BETA)_**
+
+
+</td></tr>
+</tbody></table>
 

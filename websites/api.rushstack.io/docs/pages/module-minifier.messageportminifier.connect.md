@@ -10,6 +10,11 @@ pagination_next: null
 
 ## MessagePortMinifier.connect() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [MessagePortMinifier.connectAsync()](./module-minifier.messageportminifier.connectasync.md) instead
+> 
+
 **Signature:**
 
 ```typescript

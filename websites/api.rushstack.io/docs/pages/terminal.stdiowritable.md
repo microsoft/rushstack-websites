@@ -25,13 +25,79 @@ This is the standard output target for a process. You normally do not need to co
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [instance](./terminal.stdiowritable.instance.md) | <code>static</code> | [StdioWritable](./terminal.stdiowritable.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[instance](./terminal.stdiowritable.instance.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+[StdioWritable](./terminal.stdiowritable.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onWriteChunk(chunk)](./terminal.stdiowritable.onwritechunk.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

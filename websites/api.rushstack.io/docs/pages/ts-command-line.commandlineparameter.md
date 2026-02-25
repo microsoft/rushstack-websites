@@ -8,40 +8,13 @@ pagination_next: null
 
 [Home](./index.md) &gt; [@rushstack/ts-command-line](./ts-command-line.md) &gt; [CommandLineParameter](./ts-command-line.commandlineparameter.md)
 
-## CommandLineParameter class
+## CommandLineParameter type
 
-The base class for the various command-line parameter types.
 
 **Signature:**
 
 ```typescript
-export declare abstract class CommandLineParameter 
+export type CommandLineParameter = CommandLineChoiceListParameter | CommandLineChoiceParameter | CommandLineFlagParameter | CommandLineIntegerListParameter | CommandLineIntegerParameter | CommandLineStringListParameter | CommandLineStringParameter;
 ```
-
-## Remarks
-
-The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `CommandLineParameter` class.
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [description](./ts-command-line.commandlineparameter.description.md) | <code>readonly</code> | string | Documentation for the parameter that will be shown when invoking the tool with "--help" |
-|  [environmentVariable](./ts-command-line.commandlineparameter.environmentvariable.md) | <code>readonly</code> | string \| undefined | The name of an environment variable that the parameter value will be read from, if it was omitted from the command-line. An error will be reported if the environment value cannot be parsed. |
-|  [kind](./ts-command-line.commandlineparameter.kind.md) | <p><code>abstract</code></p><p><code>readonly</code></p> | [CommandLineParameterKind](./ts-command-line.commandlineparameterkind.md) | Indicates the type of parameter. |
-|  [longName](./ts-command-line.commandlineparameter.longname.md) | <code>readonly</code> | string | The long name of the flag including double dashes, e.g. "--do-something" |
-|  [parameterGroup](./ts-command-line.commandlineparameter.parametergroup.md) | <code>readonly</code> | string \| typeof SCOPING\_PARAMETER\_GROUP \| undefined | An optional parameter group name, shown when invoking the tool with "--help" |
-|  [parameterScope](./ts-command-line.commandlineparameter.parameterscope.md) | <code>readonly</code> | string \| undefined | An optional parameter scope name, used to add a scope-prefixed parameter synonym, e.g. "--scope:do-something". Scopes provide additional flexibility for parameters in conflict resolution since when a scope is specified, parameters that have conflicting long names will be defined using only the scope-prefixed name. |
-|  [required](./ts-command-line.commandlineparameter.required.md) | <code>readonly</code> | boolean | If true, then an error occurs if the parameter was not included on the command-line. |
-|  [scopedLongName](./ts-command-line.commandlineparameter.scopedlongname.md) | <code>readonly</code> | string \| undefined | If a parameterScope is provided, returns the scope-prefixed long name of the flag, including double dashes, eg. "--scope:do-something". Otherwise undefined. |
-|  [shortName](./ts-command-line.commandlineparameter.shortname.md) | <code>readonly</code> | string \| undefined | An optional short name for the flag including the dash, e.g. "-d" |
-|  [undocumentedSynonyms](./ts-command-line.commandlineparameter.undocumentedsynonyms.md) | <code>readonly</code> | string\[\] \| undefined | Specifies additional names for this parameter that are accepted but not displayed in the command line help. |
-
-## Methods
-
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [appendToArgList(argList)](./ts-command-line.commandlineparameter.appendtoarglist.md) | <code>abstract</code> | Append the parsed values to the provided string array. |
-|  [reportInvalidData(data)](./ts-command-line.commandlineparameter.reportinvaliddata.md) | <code>protected</code> | Internal usage only. Used to report unexpected output from the argparse library. |
-|  [validateDefaultValue(hasDefaultValue)](./ts-command-line.commandlineparameter.validatedefaultvalue.md) | <code>protected</code> |  |
+**References:** [CommandLineChoiceListParameter](./ts-command-line.commandlinechoicelistparameter.md)<></>, [CommandLineChoiceParameter](./ts-command-line.commandlinechoiceparameter.md)<></>, [CommandLineFlagParameter](./ts-command-line.commandlineflagparameter.md)<></>, [CommandLineIntegerListParameter](./ts-command-line.commandlineintegerlistparameter.md)<></>, [CommandLineIntegerParameter](./ts-command-line.commandlineintegerparameter.md)<></>, [CommandLineStringListParameter](./ts-command-line.commandlinestringlistparameter.md)<></>, [CommandLineStringParameter](./ts-command-line.commandlinestringparameter.md)
 

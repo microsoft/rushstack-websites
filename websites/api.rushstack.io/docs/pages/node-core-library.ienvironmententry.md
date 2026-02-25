@@ -20,8 +20,64 @@ export interface IEnvironmentEntry
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./node-core-library.ienvironmententry.name.md) |  | string | The name of the environment variable. |
-|  [value](./node-core-library.ienvironmententry.value.md) |  | string | The value of the environment variable. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./node-core-library.ienvironmententry.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the environment variable.
+
+
+</td></tr>
+<tr><td>
+
+[value](./node-core-library.ienvironmententry.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The value of the environment variable.
+
+
+</td></tr>
+</tbody></table>
 

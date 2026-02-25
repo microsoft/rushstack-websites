@@ -15,7 +15,7 @@ The method used to resolve the store used by PNPM.
 **Signature:**
 
 ```typescript
-readonly pnpmStore: PnpmStoreOptions;
+readonly pnpmStore: PnpmStoreLocation;
 ```
 
 ## Remarks

@@ -21,7 +21,43 @@ export interface IApiDocumentedItemOptions extends IApiItemOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [docComment](./api-extractor-model.iapidocumenteditemoptions.doccomment.md) |  | tsdoc.DocComment \| undefined |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[docComment](./api-extractor-model.iapidocumenteditemoptions.doccomment.md)
+
+
+</td><td>
+
+
+</td><td>
+
+tsdoc.DocComment \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

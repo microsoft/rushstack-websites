@@ -10,6 +10,11 @@ pagination_next: null
 
 ## WorkerPoolMinifier.connect() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [WorkerPoolMinifier.connectAsync()](./module-minifier.workerpoolminifier.connectasync.md) instead
+> 
+
 **Signature:**
 
 ```typescript

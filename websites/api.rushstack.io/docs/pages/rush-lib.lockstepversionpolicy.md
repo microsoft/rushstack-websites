@@ -25,18 +25,167 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [mainProject](./rush-lib.lockstepversionpolicy.mainproject.md) | <code>readonly</code> | string \| undefined | <p>The main project for the version policy.</p><p>If the value is provided, change logs will only be generated in that project. If the value is not provided, change logs will be hosted in each project associated with the policy.</p> |
-|  [nextBump](./rush-lib.lockstepversionpolicy.nextbump.md) | <code>readonly</code> | [BumpType](./rush-lib.bumptype.md) \| undefined | The type of bump for next bump. |
-|  [version](./rush-lib.lockstepversionpolicy.version.md) | <code>readonly</code> | string | The value of the lockstep version |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[mainProject](./rush-lib.lockstepversionpolicy.mainproject.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The main project for the version policy.
+
+If the value is provided, change logs will only be generated in that project. If the value is not provided, change logs will be hosted in each project associated with the policy.
+
+
+</td></tr>
+<tr><td>
+
+[nextBump](./rush-lib.lockstepversionpolicy.nextbump.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[BumpType](./rush-lib.bumptype.md) \| undefined
+
+
+</td><td>
+
+The type of bump for next bump.
+
+
+</td></tr>
+<tr><td>
+
+[version](./rush-lib.lockstepversionpolicy.version.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The value of the lockstep version
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [bump(bumpType, identifier)](./rush-lib.lockstepversionpolicy.bump.md) |  | Bumps the version of the lockstep policy |
-|  [ensure(project, force)](./rush-lib.lockstepversionpolicy.ensure.md) |  | Returns an updated package json that satisfies the version policy. |
-|  [update(newVersionString)](./rush-lib.lockstepversionpolicy.update.md) |  | Updates the version of the policy directly with a new value |
-|  [validate(versionString, packageName)](./rush-lib.lockstepversionpolicy.validate.md) |  | Validates the specified version and throws if the version does not satisfy lockstep version. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bump(bumpType, identifier)](./rush-lib.lockstepversionpolicy.bump.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bumps the version of the lockstep policy
+
+
+</td></tr>
+<tr><td>
+
+[ensure(project, force)](./rush-lib.lockstepversionpolicy.ensure.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Returns an updated package json that satisfies the version policy.
+
+
+</td></tr>
+<tr><td>
+
+[update(newVersionString)](./rush-lib.lockstepversionpolicy.update.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Updates the version of the policy directly with a new value
+
+
+</td></tr>
+<tr><td>
+
+[validate(versionString, packageName)](./rush-lib.lockstepversionpolicy.validate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Validates the specified version and throws if the version does not satisfy lockstep version.
+
+
+</td></tr>
+</tbody></table>
 

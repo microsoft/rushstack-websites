@@ -10,7 +10,7 @@ pagination_next: null
 
 ## PrintUtilities.wrapWords() method
 
-Applies word wrapping. If maxLineLength is unspecified, then it defaults to the console width.
+Applies word wrapping.
 
 **Signature:**
 
@@ -20,11 +20,71 @@ static wrapWords(text: string, maxLineLength?: number, indent?: number): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  text | string |  |
-|  maxLineLength | number | _(Optional)_ |
-|  indent | number | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+text
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The text to wrap
+
+
+</td></tr>
+<tr><td>
+
+maxLineLength
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The maximum length of a line, defaults to the console width
+
+
+</td></tr>
+<tr><td>
+
+indent
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The number of spaces to indent the wrapped lines, defaults to 0
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

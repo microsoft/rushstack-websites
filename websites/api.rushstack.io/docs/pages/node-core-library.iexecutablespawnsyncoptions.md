@@ -21,10 +21,106 @@ export interface IExecutableSpawnSyncOptions extends IExecutableResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [input?](./node-core-library.iexecutablespawnsyncoptions.input.md) |  | string | <p>_(Optional)_ The content to be passed to the child process's stdin.</p><p>NOTE: If specified, this content replaces any IExecutableSpawnSyncOptions.stdio\[0\] mapping for stdin.</p> |
-|  [maxBuffer?](./node-core-library.iexecutablespawnsyncoptions.maxbuffer.md) |  | number | _(Optional)_ The largest amount of bytes allowed on stdout or stderr for this synchronous operation. If exceeded, the child process will be terminated. The default is 200 \* 1024. |
-|  [stdio?](./node-core-library.iexecutablespawnsyncoptions.stdio.md) |  | [ExecutableStdioMapping](./node-core-library.executablestdiomapping.md) | <p>_(Optional)_ The stdio mappings for the child process.</p><p>NOTE: If IExecutableSpawnSyncOptions.input is provided, it will take precedence over the stdin mapping (stdio\[0\]).</p> |
-|  [timeoutMs?](./node-core-library.iexecutablespawnsyncoptions.timeoutms.md) |  | number | _(Optional)_ The maximum time the process is allowed to run before it will be terminated. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[input?](./node-core-library.iexecutablespawnsyncoptions.input.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The content to be passed to the child process's stdin.
+
+NOTE: If specified, this content replaces any IExecutableSpawnSyncOptions.stdio\[0\] mapping for stdin.
+
+
+</td></tr>
+<tr><td>
+
+[maxBuffer?](./node-core-library.iexecutablespawnsyncoptions.maxbuffer.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The largest amount of bytes allowed on stdout or stderr for this synchronous operation. If exceeded, the child process will be terminated. The default is 200 \* 1024.
+
+
+</td></tr>
+<tr><td>
+
+[stdio?](./node-core-library.iexecutablespawnsyncoptions.stdio.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ExecutableStdioMapping](./node-core-library.executablestdiomapping.md)
+
+
+</td><td>
+
+_(Optional)_ The stdio mappings for the child process.
+
+NOTE: If IExecutableSpawnSyncOptions.input is provided, it will take precedence over the stdin mapping (stdio\[0\]).
+
+
+</td></tr>
+<tr><td>
+
+[timeoutMs?](./node-core-library.iexecutablespawnsyncoptions.timeoutms.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The maximum time the process is allowed to run before it will be terminated.
+
+
+</td></tr>
+</tbody></table>
 

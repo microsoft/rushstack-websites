@@ -24,12 +24,140 @@ This is part of the [IConfigFile](./api-extractor.iconfigfile.md) structure.
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [alphaTrimmedFilePath?](./api-extractor.iconfigdtsrollup.alphatrimmedfilepath.md) |  | string | _(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for an "alpha" release. |
-|  [betaTrimmedFilePath?](./api-extractor.iconfigdtsrollup.betatrimmedfilepath.md) |  | string | _(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for a "beta" release. |
-|  [enabled](./api-extractor.iconfigdtsrollup.enabled.md) |  | boolean | Whether to generate the .d.ts rollup file. |
-|  [omitTrimmingComments?](./api-extractor.iconfigdtsrollup.omittrimmingcomments.md) |  | boolean | _(Optional)_ When a declaration is trimmed, by default it will be replaced by a code comment such as "Excluded from this release type: exampleMember". Set "omitTrimmingComments" to true to remove the declaration completely. |
-|  [publicTrimmedFilePath?](./api-extractor.iconfigdtsrollup.publictrimmedfilepath.md) |  | string | _(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for a "public" release. |
-|  [untrimmedFilePath?](./api-extractor.iconfigdtsrollup.untrimmedfilepath.md) |  | string | _(Optional)_ Specifies the output path for a .d.ts rollup file to be generated without any trimming. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alphaTrimmedFilePath?](./api-extractor.iconfigdtsrollup.alphatrimmedfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for an "alpha" release.
+
+
+</td></tr>
+<tr><td>
+
+[betaTrimmedFilePath?](./api-extractor.iconfigdtsrollup.betatrimmedfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for a "beta" release.
+
+
+</td></tr>
+<tr><td>
+
+[enabled](./api-extractor.iconfigdtsrollup.enabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Whether to generate the .d.ts rollup file.
+
+
+</td></tr>
+<tr><td>
+
+[omitTrimmingComments?](./api-extractor.iconfigdtsrollup.omittrimmingcomments.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ When a declaration is trimmed, by default it will be replaced by a code comment such as "Excluded from this release type: exampleMember". Set "omitTrimmingComments" to true to remove the declaration completely.
+
+
+</td></tr>
+<tr><td>
+
+[publicTrimmedFilePath?](./api-extractor.iconfigdtsrollup.publictrimmedfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the output path for a .d.ts rollup file to be generated with trimming for a "public" release.
+
+
+</td></tr>
+<tr><td>
+
+[untrimmedFilePath?](./api-extractor.iconfigdtsrollup.untrimmedfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Specifies the output path for a .d.ts rollup file to be generated without any trimming.
+
+
+</td></tr>
+</tbody></table>
 

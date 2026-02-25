@@ -10,12 +10,17 @@ pagination_next: null
 
 ## RushConfiguration.tempShrinkwrapPreinstallFilename property
 
+> Warning: This API is now obsolete.
+> 
+> Introduced with subspaces is subspace specific tempShrinkwrapPreinstallFilename accessible from the Subspace class.
+> 
+
 The full path of a backup copy of tempShrinkwrapFilename. This backup copy is made before installation begins, and can be compared to determine how the package manager modified tempShrinkwrapFilename.
 
 **Signature:**
 
 ```typescript
-readonly tempShrinkwrapPreinstallFilename: string;
+get tempShrinkwrapPreinstallFilename(): string;
 ```
 
 ## Remarks

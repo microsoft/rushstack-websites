@@ -10,10 +10,15 @@ pagination_next: null
 
 ## IExtractorOptions.transformPackageJson property
 
-The pnpmfile configuration if using PNPM, otherwise undefined. The configuration will be used to transform the package.json prior to extraction.
+The pnpmfile configuration if using PNPM, otherwise `undefined`<></>. The configuration will be used to transform the package.json prior to extraction.
 
 **Signature:**
 
 ```typescript
-transformPackageJson?: (packageJson: IPackageJson) => IPackageJson | undefined;
+transformPackageJson?: (packageJson: IPackageJson) => IPackageJson;
 ```
+
+## Remarks
+
+When Rush subspaces are enabled, this setting applies to `default` subspace only. To configure each subspace, use the [IExtractorOptions.subspaces](./package-extractor.iextractoroptions.subspaces.md) array instead. The two approaches cannot be combined.
+

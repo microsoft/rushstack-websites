@@ -21,7 +21,47 @@ export interface IExecutableSpawnOptions extends IExecutableResolveOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [stdio?](./node-core-library.iexecutablespawnoptions.stdio.md) |  | [ExecutableStdioMapping](./node-core-library.executablestdiomapping.md) | <p>_(Optional)_ The stdio mappings for the child process.</p><p>NOTE: If IExecutableSpawnSyncOptions.input is provided, it will take precedence over the stdin mapping (stdio\[0\]).</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[stdio?](./node-core-library.iexecutablespawnoptions.stdio.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ExecutableStdioMapping](./node-core-library.executablestdiomapping.md)
+
+
+</td><td>
+
+_(Optional)_ The stdio mappings for the child process.
+
+NOTE: If IExecutableSpawnSyncOptions.input is provided, it will take precedence over the stdin mapping (stdio\[0\]).
+
+
+</td></tr>
+</tbody></table>
 

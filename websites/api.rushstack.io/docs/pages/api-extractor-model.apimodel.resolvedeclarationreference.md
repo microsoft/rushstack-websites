@@ -18,10 +18,51 @@ resolveDeclarationReference(declarationReference: DocDeclarationReference | Decl
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  declarationReference | DocDeclarationReference \| DeclarationReference |  |
-|  contextApiItem | [ApiItem](./api-extractor-model.apiitem.md) \| undefined |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+declarationReference
+
+
+</td><td>
+
+DocDeclarationReference \| DeclarationReference
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+contextApiItem
+
+
+</td><td>
+
+[ApiItem](./api-extractor-model.apiitem.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

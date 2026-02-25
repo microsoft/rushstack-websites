@@ -18,10 +18,51 @@ process(unknownState: TextRewriterState, text: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  unknownState | [TextRewriterState](./terminal.textrewriterstate.md) |  |
-|  text | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+unknownState
+
+
+</td><td>
+
+[TextRewriterState](./terminal.textrewriterstate.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+text
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

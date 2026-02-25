@@ -15,7 +15,7 @@ Returns the string arguments for a choice list parameter that was parsed from th
 **Signature:**
 
 ```typescript
-get values(): ReadonlyArray<string>;
+get values(): ReadonlyArray<TChoice>;
 ```
 
 ## Remarks

@@ -20,11 +20,71 @@ static createEmptyChangeFiles(rushConfiguration: RushConfiguration, projectName:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rushConfiguration | [RushConfiguration](./rush-lib.rushconfiguration.md) | The rush configuration we are working with |
-|  projectName | string | The name of the project for which to create a change file |
-|  emailAddress | string | The email address which should be associated with this change |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rushConfiguration
+
+
+</td><td>
+
+[RushConfiguration](./rush-lib.rushconfiguration.md)
+
+
+</td><td>
+
+The rush configuration we are working with
+
+
+</td></tr>
+<tr><td>
+
+projectName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the project for which to create a change file
+
+
+</td></tr>
+<tr><td>
+
+emailAddress
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The email address which should be associated with this change
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

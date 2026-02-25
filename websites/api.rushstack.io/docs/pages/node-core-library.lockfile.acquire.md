@@ -10,7 +10,10 @@ pagination_next: null
 
 ## LockFile.acquire() method
 
-Attempts to create the lockfile. Will continue to loop at every 100ms until the lock becomes available or the maxWaitMs is surpassed.
+> Warning: This API is now obsolete.
+> 
+> Use [LockFile.acquireAsync()](./node-core-library.lockfile.acquireasync.md) instead.
+> 
 
 **Signature:**
 
@@ -20,17 +23,69 @@ static acquire(resourceFolder: string, resourceName: string, maxWaitMs?: number)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resourceFolder | string | The folder where the lock file will be created |
-|  resourceName | string | An alphanumeric name that describes the resource being locked. This will become the filename of the temporary file created to manage the lock. |
-|  maxWaitMs | number | _(Optional)_ The maximum number of milliseconds to wait for the lock before reporting an error |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resourceFolder
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+resourceName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+maxWaitMs
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 
 Promise&lt;[LockFile](./node-core-library.lockfile.md)<></>&gt;
-
-## Remarks
-
-This function is subject to starvation, whereby it does not ensure that the process that has been waiting the longest to acquire the lock will get it first. This means that a process could theoretically wait for the lock forever, while other processes skipped it in line and acquired the lock first.
 

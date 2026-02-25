@@ -10,7 +10,7 @@ pagination_next: null
 
 ## IRunScript interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Interface used by scripts that are run by the RunScriptPlugin.
@@ -23,7 +23,45 @@ export interface IRunScript
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [runAsync](./heft.irunscript.runasync.md) |  | (options: [IRunScriptOptions](./heft.irunscriptoptions.md)<></>) =&gt; Promise&lt;void&gt; | **_(BETA)_** The method that is called by the RunScriptPlugin to run the script. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[runAsync](./heft.irunscript.runasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(options: [IRunScriptOptions](./heft.irunscriptoptions.md)<></>) =&gt; Promise&lt;void&gt;
+
+
+</td><td>
+
+**_(BETA)_** The method that is called by the RunScriptPlugin to run the script.
+
+
+</td></tr>
+</tbody></table>
 

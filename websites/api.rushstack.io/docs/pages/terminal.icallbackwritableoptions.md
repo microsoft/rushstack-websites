@@ -20,7 +20,43 @@ export interface ICallbackWritableOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [onWriteChunk](./terminal.icallbackwritableoptions.onwritechunk.md) |  | (chunk: [ITerminalChunk](./terminal.iterminalchunk.md)<></>) =&gt; void |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onWriteChunk](./terminal.icallbackwritableoptions.onwritechunk.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(chunk: [ITerminalChunk](./terminal.iterminalchunk.md)<></>) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 

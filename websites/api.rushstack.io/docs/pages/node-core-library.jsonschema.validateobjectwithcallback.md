@@ -15,15 +15,72 @@ Validates the specified JSON object against this JSON schema. If the validation 
 **Signature:**
 
 ```typescript
-validateObjectWithCallback(jsonObject: JsonObject, errorCallback: (errorInfo: IJsonSchemaErrorInfo) => void): void;
+validateObjectWithCallback(jsonObject: JsonObject, errorCallback: (errorInfo: IJsonSchemaErrorInfo) => void, options?: IJsonSchemaValidateObjectWithOptions): void;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonObject | [JsonObject](./node-core-library.jsonobject.md) |  |
-|  errorCallback | (errorInfo: [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md)<></>) =&gt; void |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonObject
+
+
+</td><td>
+
+[JsonObject](./node-core-library.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+errorCallback
+
+
+</td><td>
+
+(errorInfo: [IJsonSchemaErrorInfo](./node-core-library.ijsonschemaerrorinfo.md)<></>) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[IJsonSchemaValidateObjectWithOptions](./node-core-library.ijsonschemavalidateobjectwithoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -20,9 +20,37 @@ mergeFrom(environmentMap: EnvironmentMap): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  environmentMap | [EnvironmentMap](./node-core-library.environmentmap.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+environmentMap
+
+
+</td><td>
+
+[EnvironmentMap](./node-core-library.environmentmap.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

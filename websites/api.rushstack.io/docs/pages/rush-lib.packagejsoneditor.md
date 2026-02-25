@@ -22,25 +22,289 @@ The constructor for this class is marked as internal. Third-party code should no
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dependencyList](./rush-lib.packagejsoneditor.dependencylist.md) | <code>readonly</code> | ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt; | The list of dependencies of type DependencyType.Regular, DependencyType.Optional, or DependencyType.Peer. |
-|  [devDependencyList](./rush-lib.packagejsoneditor.devdependencylist.md) | <code>readonly</code> | ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt; | The list of dependencies of type DependencyType.Dev. |
-|  [filePath](./rush-lib.packagejsoneditor.filepath.md) | <code>readonly</code> | string |  |
-|  [name](./rush-lib.packagejsoneditor.name.md) | <code>readonly</code> | string |  |
-|  [resolutionsList](./rush-lib.packagejsoneditor.resolutionslist.md) | <code>readonly</code> | ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt; | This field is a Yarn-specific feature that allows overriding of package resolution. |
-|  [version](./rush-lib.packagejsoneditor.version.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dependencyList](./rush-lib.packagejsoneditor.dependencylist.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt;
+
+
+</td><td>
+
+The list of dependencies of type DependencyType.Regular, DependencyType.Optional, or DependencyType.Peer.
+
+
+</td></tr>
+<tr><td>
+
+[dependencyMetaList](./rush-lib.packagejsoneditor.dependencymetalist.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[PackageJsonDependencyMeta](./rush-lib.packagejsondependencymeta.md)<></>&gt;
+
+
+</td><td>
+
+The list of dependenciesMeta in package.json.
+
+
+</td></tr>
+<tr><td>
+
+[devDependencyList](./rush-lib.packagejsoneditor.devdependencylist.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt;
+
+
+</td><td>
+
+The list of dependencies of type DependencyType.Dev.
+
+
+</td></tr>
+<tr><td>
+
+[filePath](./rush-lib.packagejsoneditor.filepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[name](./rush-lib.packagejsoneditor.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[resolutionsList](./rush-lib.packagejsoneditor.resolutionslist.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ReadonlyArray&lt;[PackageJsonDependency](./rush-lib.packagejsondependency.md)<></>&gt;
+
+
+</td><td>
+
+This field is a Yarn-specific feature that allows overriding of package resolution.
+
+
+</td></tr>
+<tr><td>
+
+[version](./rush-lib.packagejsoneditor.version.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addOrUpdateDependency(packageName, newVersion, dependencyType)](./rush-lib.packagejsoneditor.addorupdatedependency.md) |  |  |
-|  [fromObject(object, filename)](./rush-lib.packagejsoneditor.fromobject.md) | <code>static</code> |  |
-|  [load(filePath)](./rush-lib.packagejsoneditor.load.md) | <code>static</code> |  |
-|  [removeDependency(packageName, dependencyType)](./rush-lib.packagejsoneditor.removedependency.md) |  |  |
-|  [saveIfModified()](./rush-lib.packagejsoneditor.saveifmodified.md) |  |  |
-|  [saveToObject()](./rush-lib.packagejsoneditor.savetoobject.md) |  | Get the normalized package.json that represents the current state of the PackageJsonEditor. This method does not save any changes that were made to the package.json, but instead returns the object representation of what would be saved if saveIfModified() is called. |
-|  [tryGetDependency(packageName)](./rush-lib.packagejsoneditor.trygetdependency.md) |  |  |
-|  [tryGetDevDependency(packageName)](./rush-lib.packagejsoneditor.trygetdevdependency.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addOrUpdateDependency(packageName, newVersion, dependencyType)](./rush-lib.packagejsoneditor.addorupdatedependency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[fromObject(object, filename)](./rush-lib.packagejsoneditor.fromobject.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[load(filePath)](./rush-lib.packagejsoneditor.load.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[removeDependency(packageName, dependencyType)](./rush-lib.packagejsoneditor.removedependency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[saveIfModified()](./rush-lib.packagejsoneditor.saveifmodified.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[saveToObject()](./rush-lib.packagejsoneditor.savetoobject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the normalized package.json that represents the current state of the PackageJsonEditor. This method does not save any changes that were made to the package.json, but instead returns the object representation of what would be saved if saveIfModified() is called.
+
+
+</td></tr>
+<tr><td>
+
+[tryGetDependency(packageName)](./rush-lib.packagejsoneditor.trygetdependency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[tryGetDevDependency(packageName)](./rush-lib.packagejsoneditor.trygetdevdependency.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
