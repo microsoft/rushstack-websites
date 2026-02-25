@@ -9,13 +9,13 @@
   },
   "homepage": "https://rushstack.io",
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "docusaurus": "node --max-old-space-size=8192 ./node_modules/.bin/docusaurus",
+    "start": "node --max-old-space-size=8192 ./node_modules/.bin/docusaurus start",
+    "build": "node --max-old-space-size=8192 ./node_modules/.bin/docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "node --max-old-space-size=8192 ./node_modules/.bin/docusaurus deploy",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
+    "serve": "node --max-old-space-size=8192 ./node_modules/.bin/docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "update-api-docs": "node scripts/update-api-docs.js"
