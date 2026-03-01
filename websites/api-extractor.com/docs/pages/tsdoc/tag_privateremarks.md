@@ -4,7 +4,7 @@ title: '@privateRemarks'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 The `@privateRemarks` tag designates additional documentation content that is not intended for a public audience.
 Being a block tag, `@privateRemarks` introduces a TSDoc section that contains all comment text up until the

@@ -1,5 +1,5 @@
 ---
-title: rush-plugin-manifest.json (experimental)
+title: rush-plugin-manifest.json
 ---
 
 This is the template for the **rush-plugin-manifest.json** file that is used when
