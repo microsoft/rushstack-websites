@@ -253,7 +253,7 @@ string\[\]
 
 </td><td>
 
-number
+number \| \`${number}%\`
 
 
 </td><td>
