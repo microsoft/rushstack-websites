@@ -18,5 +18,5 @@ How many concurrency units this operation should take up during execution. The m
 **Signature:**
 
 ```typescript
-weight?: number;
+weight?: number | `${number}%`;
 ```
