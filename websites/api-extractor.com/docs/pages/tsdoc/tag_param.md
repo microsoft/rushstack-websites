@@ -4,7 +4,7 @@ title: '@param'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 **Syntax:**
 
