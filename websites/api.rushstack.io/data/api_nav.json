@@ -4158,6 +4158,11 @@
             },
             {
               "type": "doc",
+              "label": "quietMode",
+              "id": "pages/rush-lib.environmentconfiguration.quietmode"
+            },
+            {
+              "type": "doc",
               "label": "reset",
               "id": "pages/rush-lib.environmentconfiguration.reset"
             },
