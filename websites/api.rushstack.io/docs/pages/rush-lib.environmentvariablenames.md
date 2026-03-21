@@ -44,5 +44,6 @@ EnvironmentVariableNames: {
     readonly _RUSH_LIB_PATH: "_RUSH_LIB_PATH";
     readonly RUSH_INVOKED_FOLDER: "RUSH_INVOKED_FOLDER";
     readonly RUSH_INVOKED_ARGS: "RUSH_INVOKED_ARGS";
+    readonly RUSH_QUIET_MODE: "RUSH_QUIET_MODE";
 }
 ```

@@ -397,6 +397,29 @@ boolean \| undefined
 </td></tr>
 <tr><td>
 
+[quietMode](./rush-lib.environmentconfiguration.quietmode.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** If `true`<></>, Rush will suppress informational startup messages, equivalent to passing `--quiet`<></>. See 
+
+
+</td></tr>
+<tr><td>
+
 [rushGlobalFolderOverride](./rush-lib.environmentconfiguration.rushglobalfolderoverride.md)
 
 
