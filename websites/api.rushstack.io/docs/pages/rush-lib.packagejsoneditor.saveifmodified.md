@@ -10,6 +10,11 @@ pagination_next: null
 
 ## PackageJsonEditor.saveIfModified() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [PackageJsonEditor.saveIfModifiedAsync()](./rush-lib.packagejsoneditor.saveifmodifiedasync.md) method instead.
+> 
+
 **Signature:**
 
 ```typescript

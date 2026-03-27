@@ -22,3 +22,40 @@ export interface IGlobalCommand extends IRushCommand
 ```
 **Extends:** [IRushCommand](./rush-lib.irushcommand.md)
 
+## Methods
+
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getCustomParametersByLongName(longName)](./rush-lib.iglobalcommand.getcustomparametersbylongname.md)
+
+
+</td><td>
+
+**_(BETA)_** Get a parameter by its long name (e.g. "--output-path") that was defined in command-line.json for this command. If the parameter was not defined or not provided on the command line, this will throw.
+
+
+</td></tr>
+<tr><td>
+
+[setHandled()](./rush-lib.iglobalcommand.sethandled.md)
+
+
+</td><td>
+
+**_(BETA)_** Call this from a plugin hook to indicate that the command has been fully handled by the plugin. When set, the default shell command execution will be skipped.
+
+
+</td></tr>
+</tbody></table>
+

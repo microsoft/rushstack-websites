@@ -4011,6 +4011,11 @@
             },
             {
               "type": "doc",
+              "label": "loadFromFileAsync",
+              "id": "pages/rush-lib.commonversionsconfiguration.loadfromfileasync"
+            },
+            {
+              "type": "doc",
               "label": "preferredVersions",
               "id": "pages/rush-lib.commonversionsconfiguration.preferredversions"
             },
@@ -4018,6 +4023,11 @@
               "type": "doc",
               "label": "save",
               "id": "pages/rush-lib.commonversionsconfiguration.save"
+            },
+            {
+              "type": "doc",
+              "label": "saveAsync",
+              "id": "pages/rush-lib.commonversionsconfiguration.saveasync"
             }
           ]
         },
@@ -4889,9 +4899,25 @@
           ]
         },
         {
-          "type": "doc",
+          "type": "category",
           "label": "IGlobalCommand",
-          "id": "pages/rush-lib.iglobalcommand"
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/rush-lib.iglobalcommand"
+            },
+            {
+              "type": "doc",
+              "label": "getCustomParametersByLongName",
+              "id": "pages/rush-lib.iglobalcommand.getcustomparametersbylongname"
+            },
+            {
+              "type": "doc",
+              "label": "setHandled",
+              "id": "pages/rush-lib.iglobalcommand.sethandled"
+            }
+          ]
         },
         {
           "type": "category",
@@ -6154,6 +6180,11 @@
             },
             {
               "type": "doc",
+              "label": "loadAsync",
+              "id": "pages/rush-lib.packagejsoneditor.loadasync"
+            },
+            {
+              "type": "doc",
               "label": "name",
               "id": "pages/rush-lib.packagejsoneditor.name"
             },
@@ -6171,6 +6202,11 @@
               "type": "doc",
               "label": "saveIfModified",
               "id": "pages/rush-lib.packagejsoneditor.saveifmodified"
+            },
+            {
+              "type": "doc",
+              "label": "saveIfModifiedAsync",
+              "id": "pages/rush-lib.packagejsoneditor.saveifmodifiedasync"
             },
             {
               "type": "doc",
@@ -7245,6 +7281,11 @@
             },
             {
               "type": "doc",
+              "label": "globalPluginCommandKind",
+              "id": "pages/rush-lib.rushconstants.globalplugincommandkind"
+            },
+            {
+              "type": "doc",
               "label": "hashDelimiter",
               "id": "pages/rush-lib.rushconstants.hashdelimiter"
             },
@@ -7852,8 +7893,18 @@
             },
             {
               "type": "doc",
+              "label": "setDependenciesBeforeCommitAsync",
+              "id": "pages/rush-lib.versionpolicy.setdependenciesbeforecommitasync"
+            },
+            {
+              "type": "doc",
               "label": "setDependenciesBeforePublish",
               "id": "pages/rush-lib.versionpolicy.setdependenciesbeforepublish"
+            },
+            {
+              "type": "doc",
+              "label": "setDependenciesBeforePublishAsync",
+              "id": "pages/rush-lib.versionpolicy.setdependenciesbeforepublishasync"
             },
             {
               "type": "doc",

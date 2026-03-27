@@ -487,6 +487,29 @@ Description
 </td></tr>
 <tr><td>
 
+[globalPluginCommandKind](./rush-lib.rushconstants.globalplugincommandkind.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+'globalPlugin'
+
+
+</td><td>
+
+**_(BETA)_** The value of the "commandKind" property for a plugin-only global command in command-line.json. This command kind can only be used in command-line.json files provided by Rush plugins.
+
+
+</td></tr>
+<tr><td>
+
 [hashDelimiter](./rush-lib.rushconstants.hashdelimiter.md)
 
 
