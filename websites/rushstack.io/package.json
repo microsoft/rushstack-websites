@@ -53,6 +53,6 @@
     "remark-cross-site-link-plugin": "workspace:*",
     "site-config": "workspace:*",
     "typescript": "~5.4.2",
-    "webpack": "~5.72.0"
+    "webpack": "~5.98.0"
   }
 }
