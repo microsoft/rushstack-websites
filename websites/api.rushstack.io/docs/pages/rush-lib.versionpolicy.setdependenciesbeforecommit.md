@@ -10,7 +10,10 @@ pagination_next: null
 
 ## VersionPolicy.setDependenciesBeforeCommit() method
 
-Tells the version policy to modify any dependencies in the target package to values used for checked-in source.
+> Warning: This API is now obsolete.
+> 
+> Use [VersionPolicy.setDependenciesBeforeCommitAsync()](./rush-lib.versionpolicy.setdependenciesbeforecommitasync.md) method instead.
+> 
 
 **Signature:**
 

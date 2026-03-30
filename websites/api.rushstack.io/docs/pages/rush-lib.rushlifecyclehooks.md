@@ -77,7 +77,7 @@ AsyncSeriesHook&lt;\[ command: [IRushCommand](./rush-lib.irushcommand.md)<></>, 
 
 </td><td>
 
-AsyncSeriesHook&lt;\[ command: [IGlobalCommand](./rush-lib.iglobalcommand.md)<></>, subspace: [Subspace](./rush-lib.subspace.md)<></>, variant: string \| undefined \]&gt;
+AsyncSeriesHook&lt;\[ command: [IRushCommand](./rush-lib.irushcommand.md)<></>, subspace: [Subspace](./rush-lib.subspace.md)<></>, variant: string \| undefined \]&gt;
 
 
 </td><td>

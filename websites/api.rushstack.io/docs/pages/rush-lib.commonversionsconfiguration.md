@@ -208,6 +208,20 @@ Get a sha1 hash of the preferred versions.
 
 </td><td>
 
+
+</td></tr>
+<tr><td>
+
+[loadFromFileAsync(jsonFilePath, rushConfiguration)](./rush-lib.commonversionsconfiguration.loadfromfileasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
 Loads the common-versions.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
 
 
@@ -215,6 +229,18 @@ Loads the common-versions.json data from the specified file path. If the file ha
 <tr><td>
 
 [save()](./rush-lib.commonversionsconfiguration.save.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[saveAsync()](./rush-lib.commonversionsconfiguration.saveasync.md)
 
 
 </td><td>

@@ -10,7 +10,10 @@ pagination_next: null
 
 ## CommonVersionsConfiguration.loadFromFile() method
 
-Loads the common-versions.json data from the specified file path. If the file has not been created yet, then an empty object is returned.
+> Warning: This API is now obsolete.
+> 
+> Use [CommonVersionsConfiguration.loadFromFileAsync()](./rush-lib.commonversionsconfiguration.loadfromfileasync.md) method instead.
+> 
 
 **Signature:**
 

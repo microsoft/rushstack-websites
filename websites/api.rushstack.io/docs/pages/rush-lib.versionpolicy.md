@@ -212,6 +212,18 @@ Returns an updated package json that satisfies the policy.
 
 </td><td>
 
+
+</td></tr>
+<tr><td>
+
+[setDependenciesBeforeCommitAsync(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforecommitasync.md)
+
+
+</td><td>
+
+
+</td><td>
+
 Tells the version policy to modify any dependencies in the target package to values used for checked-in source.
 
 
@@ -219,6 +231,18 @@ Tells the version policy to modify any dependencies in the target package to val
 <tr><td>
 
 [setDependenciesBeforePublish(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublish.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setDependenciesBeforePublishAsync(packageName, configuration)](./rush-lib.versionpolicy.setdependenciesbeforepublishasync.md)
 
 
 </td><td>

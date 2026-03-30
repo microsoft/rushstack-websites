@@ -10,7 +10,10 @@ pagination_next: null
 
 ## VersionPolicy.setDependenciesBeforePublish() method
 
-Tells the version policy to modify any dependencies in the target package to values used for publishing.
+> Warning: This API is now obsolete.
+> 
+> Use [VersionPolicy.setDependenciesBeforePublishAsync()](./rush-lib.versionpolicy.setdependenciesbeforepublishasync.md) method instead.
+> 
 
 **Signature:**
 

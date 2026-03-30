@@ -246,6 +246,20 @@ Description
 </td></tr>
 <tr><td>
 
+[loadAsync(filePath)](./rush-lib.packagejsoneditor.loadasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
 [removeDependency(packageName, dependencyType)](./rush-lib.packagejsoneditor.removedependency.md)
 
 
@@ -259,6 +273,18 @@ Description
 <tr><td>
 
 [saveIfModified()](./rush-lib.packagejsoneditor.saveifmodified.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[saveIfModifiedAsync()](./rush-lib.packagejsoneditor.saveifmodifiedasync.md)
 
 
 </td><td>

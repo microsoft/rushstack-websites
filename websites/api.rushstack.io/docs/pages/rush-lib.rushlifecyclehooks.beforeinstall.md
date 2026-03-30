@@ -19,7 +19,7 @@ The hook to run between preparing the common/temp folder and invoking the packag
 
 ```typescript
 readonly beforeInstall: AsyncSeriesHook<[
-        command: IGlobalCommand,
+        command: IRushCommand,
         subspace: Subspace,
         variant: string | undefined
     ]>;

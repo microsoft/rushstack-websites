@@ -10,6 +10,11 @@ pagination_next: null
 
 ## PackageJsonEditor.load() method
 
+> Warning: This API is now obsolete.
+> 
+> Use [PackageJsonEditor.loadAsync()](./rush-lib.packagejsoneditor.loadasync.md) method instead.
+> 
+
 **Signature:**
 
 ```typescript

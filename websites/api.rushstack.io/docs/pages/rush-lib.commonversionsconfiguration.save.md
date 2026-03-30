@@ -10,7 +10,10 @@ pagination_next: null
 
 ## CommonVersionsConfiguration.save() method
 
-Writes the "common-versions.json" file to disk, using the filename that was passed to loadFromFile().
+> Warning: This API is now obsolete.
+> 
+> Use [CommonVersionsConfiguration.saveAsync()](./rush-lib.commonversionsconfiguration.saveasync.md) method instead.
+> 
 
 **Signature:**
 
