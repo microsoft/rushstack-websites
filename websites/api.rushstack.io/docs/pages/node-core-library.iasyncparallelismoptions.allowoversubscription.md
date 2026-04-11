@@ -18,6 +18,10 @@ This option affects the handling of task weights, applying a softer policy that 
 allowOversubscription?: boolean;
 ```
 
+## Default Value
+
+false
+
 ## Remarks
 
 By default, a new task cannot start executing if doing so would push the total weight above the concurrency limit. Set `allowOversubscription` to true to relax this rule, allowing a new task to start as long as the current total weight is below the concurrency limit. Either way, a task cannot start if the total weight already equals the concurrency limit; therefore, `allowOversubscription` has no effect when all tasks have weight 1.

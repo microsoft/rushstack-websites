@@ -292,6 +292,22 @@ Description
 </td></tr>
 <tr><td>
 
+[fromJson(json, deserializeValue)](./lookup-by-path.lookupbypath.fromjson.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+**_(BETA)_** Deserializes a `LookupByPath` instance from a JSON representation previously created by [LookupByPath.toJson()](./lookup-by-path.lookupbypath.tojson.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
 [get(key, delimiter)](./lookup-by-path.lookupbypath.get.md)
 
 
@@ -387,6 +403,20 @@ Description
 </td><td>
 
 **_(BETA)_** Associates the value with the specified path. If a value is already associated, will overwrite.
+
+
+</td></tr>
+<tr><td>
+
+[toJson(serializeValue)](./lookup-by-path.lookupbypath.tojson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+**_(BETA)_** Serializes this `LookupByPath` instance to a JSON-compatible representation.
 
 
 </td></tr>

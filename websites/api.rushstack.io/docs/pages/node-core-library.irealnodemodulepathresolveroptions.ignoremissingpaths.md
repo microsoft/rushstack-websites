@@ -17,3 +17,8 @@ If set to true, the resolver will not throw if part of the path does not exist.
 ```typescript
 ignoreMissingPaths?: boolean;
 ```
+
+## Default Value
+
+false
+

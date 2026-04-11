@@ -134,5 +134,16 @@ Description
 
 
 </td></tr>
+<tr><td>
+
+[toJson(serializeValue)](./lookup-by-path.ireadonlylookupbypath.tojson.md)
+
+
+</td><td>
+
+**_(BETA)_** Serializes this `LookupByPath` instance to a JSON-compatible representation.
+
+
+</td></tr>
 </tbody></table>
 

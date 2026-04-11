@@ -20,3 +20,8 @@ The path prefix to the current node.
 ```typescript
 prefix?: string;
 ```
+
+## Default Value
+
+''
+

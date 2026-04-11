@@ -20,3 +20,8 @@ The format of the argument to pass to the command to indicate the shard index an
 ```typescript
 shardArgumentFormat?: string;
 ```
+
+## Default Value
+
+`--shard={shardIndex}/{shardCount}`
+

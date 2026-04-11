@@ -20,3 +20,8 @@ The delimiter used to join path segments.
 ```typescript
 delimiter?: string;
 ```
+
+## Default Value
+
+'/'
+

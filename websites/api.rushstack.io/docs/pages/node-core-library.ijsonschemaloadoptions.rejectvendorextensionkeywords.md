@@ -21,6 +21,10 @@ If true, the AJV validator will reject JSON Schema vendor extension keywords mat
 rejectVendorExtensionKeywords?: boolean;
 ```
 
+## Default Value
+
+false
+
 ## Remarks
 
 The JSON Schema specification allows vendor-specific extensions using the `x-` prefix. For example, `x-tsdoc-release-tag` is used by `@rushstack/heft-json-schema-typings-plugin`<></>. Other tools may define their own extensions such as `x-myvendor-html-description`<></>.

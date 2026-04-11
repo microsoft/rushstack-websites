@@ -18,6 +18,10 @@ Whether "forgotten exports" should be included in the doc model file.
 includeForgottenExports?: boolean;
 ```
 
+## Default Value
+
+`false`
+
 ## Remarks
 
 Forgotten exports are declarations flagged with `ae-forgotten-export` warnings. See https://api-extractor.com/pages/messages/ae-forgotten-export/ to learn more.

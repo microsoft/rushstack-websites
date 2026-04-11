@@ -1251,7 +1251,7 @@ Description
 
 **_(ALPHA)_** The granularity at which the Node.js version is included in the build cache hash.
 
-- `"major"` — includes only the major version (e.g. `18`<></>) - `"minor"` — includes the major and minor version (e.g. `18.17`<></>) - `"patch"` — includes the full version (e.g. `18.17.1`<></>)
+- `"major"` - includes only the major version (e.g. `18`<></>) - `"minor"` - includes the major and minor version (e.g. `18.17`<></>) - `"patch"` - includes the full version (e.g. `18.17.1`<></>)
 
 
 </td></tr>

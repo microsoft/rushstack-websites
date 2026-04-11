@@ -17,3 +17,8 @@ Specifies what to do if the destination path already exists.
 ```typescript
 alreadyExistsBehavior?: AlreadyExistsBehavior;
 ```
+
+## Default Value
+
+[AlreadyExistsBehavior.Overwrite](./node-core-library.alreadyexistsbehavior.md)
+

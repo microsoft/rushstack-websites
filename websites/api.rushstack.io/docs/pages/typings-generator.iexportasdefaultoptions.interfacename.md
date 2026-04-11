@@ -17,3 +17,8 @@ This setting overrides the the interface name for the default wrapped export.
 ```typescript
 interfaceName?: string;
 ```
+
+## Default Value
+
+"IExport"
+

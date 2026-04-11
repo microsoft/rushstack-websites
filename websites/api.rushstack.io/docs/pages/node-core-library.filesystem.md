@@ -204,6 +204,22 @@ An async version of [FileSystem.createHardLink()](./node-core-library.filesystem
 </td></tr>
 <tr><td>
 
+[createReadStream(filePath)](./node-core-library.filesystem.createreadstream.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates a readable stream for an existing file. Behind the scenes it uses `fs.createReadStream()`<></>.
+
+
+</td></tr>
+<tr><td>
+
 [createSymbolicLinkFile(options)](./node-core-library.filesystem.createsymboliclinkfile.md)
 
 
@@ -295,6 +311,38 @@ Creates an NTFS "directory junction" on Windows operating systems; for other ope
 </td><td>
 
 An async version of [FileSystem.createSymbolicLinkJunction()](./node-core-library.filesystem.createsymboliclinkjunction.md)<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createWriteStream(filePath, options)](./node-core-library.filesystem.createwritestream.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Creates a writable stream for writing to a file. Behind the scenes it uses `fs.createWriteStream()`<></>.
+
+
+</td></tr>
+<tr><td>
+
+[createWriteStreamAsync(filePath, options)](./node-core-library.filesystem.createwritestreamasync.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+An async version of [FileSystem.createWriteStream()](./node-core-library.filesystem.createwritestream.md)<></>.
 
 
 </td></tr>

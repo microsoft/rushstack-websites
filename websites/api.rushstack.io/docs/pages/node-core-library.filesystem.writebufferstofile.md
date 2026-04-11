@@ -94,5 +94,5 @@ void
 
 ## Remarks
 
-Throws an error if the folder doesn't exist, unless ensureFolder=true.
+Throws an error if the folder doesn't exist, unless [IFileSystemWriteFileOptionsBase.ensureFolderExists](./node-core-library.ifilesystemwritefileoptionsbase.ensurefolderexists.md) is set to `true`<></>.
 

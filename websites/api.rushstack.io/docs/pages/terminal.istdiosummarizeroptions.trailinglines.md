@@ -20,3 +20,8 @@ Specifies the maximum number of trailing lines to include in the summary.
 ```typescript
 trailingLines?: number;
 ```
+
+## Default Value
+
+`10`
+

@@ -17,3 +17,8 @@ If specified, will change the encoding of the file that will be written.
 ```typescript
 encoding?: Encoding;
 ```
+
+## Default Value
+
+Encoding.Utf8
+

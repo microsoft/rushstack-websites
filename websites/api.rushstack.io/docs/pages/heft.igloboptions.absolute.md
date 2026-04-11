@@ -17,3 +17,8 @@ Whether or not the returned file paths should be absolute.
 ```typescript
 absolute?: boolean;
 ```
+
+## Default Value
+
+false
+
