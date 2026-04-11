@@ -17,3 +17,8 @@ If true, will throw an exception if the file did not exist before `deleteFile()`
 ```typescript
 throwIfNotExists?: boolean;
 ```
+
+## Default Value
+
+false
+

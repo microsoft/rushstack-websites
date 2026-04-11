@@ -15,8 +15,9 @@ The options for [FileSystem.move()](./node-core-library.filesystem.move.md)
 **Signature:**
 
 ```typescript
-export interface IFileSystemMoveOptions 
+export interface IFileSystemMoveOptions extends IFileSystemWriteFileOptionsBase 
 ```
+**Extends:** [IFileSystemWriteFileOptionsBase](./node-core-library.ifilesystemwritefileoptionsbase.md)
 
 ## Properties
 
@@ -57,25 +58,6 @@ string
 </td><td>
 
 The new path for the object. The path may be absolute or relative.
-
-
-</td></tr>
-<tr><td>
-
-[ensureFolderExists?](./node-core-library.ifilesystemmoveoptions.ensurefolderexists.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_ If true, will ensure the folder is created before writing the file.
 
 
 </td></tr>

@@ -17,3 +17,8 @@ If specified, will normalize line endings to the specified style of newline.
 ```typescript
 convertLineEndings?: NewlineKind;
 ```
+
+## Default Value
+
+`undefined` which means no conversion will be performed
+

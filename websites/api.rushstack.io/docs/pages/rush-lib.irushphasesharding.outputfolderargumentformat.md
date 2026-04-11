@@ -20,3 +20,8 @@ An optional argument to pass to the command to indicate the output folder for th
 ```typescript
 outputFolderArgumentFormat?: string;
 ```
+
+## Default Value
+
+`--shard-output-folder=.rush/operations/{phaseName}/shards/{shardIndex}`<></>.
+

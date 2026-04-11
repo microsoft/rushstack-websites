@@ -18,6 +18,10 @@ Specifies a list of [TSDoc](https://tsdoc.org/) tags that should be reported in 
 tagsToReport?: Readonly<Record<`@${string}`, boolean>>;
 ```
 
+## Default Value
+
+`@sealed`<></>, `@virtual`<></>, `@override`<></>, `@eventProperty`<></>, and `@deprecated`
+
 ## Remarks
 
 Tag names must begin with `@`<></>.

@@ -18,6 +18,10 @@ Specifies how API Extractor sorts members of an enum when generating the .api.js
 enumMemberOrder?: EnumMemberOrder;
 ```
 
+## Default Value
+
+`by-name`
+
 ## Remarks
 
 By default, the output files will be sorted alphabetically, which is "by-name". To keep the ordering in the source code, specify "preserve".

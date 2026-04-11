@@ -18,6 +18,10 @@ The base filename for the API report files, to be combined with [IConfigApiRepor
 reportFileName?: string;
 ```
 
+## Default Value
+
+`<unscopedPackageName>`
+
 ## Remarks
 
 The `reportFileName` should not include any path separators such as `\` or `/`<></>. The `reportFileName` should not include a file extension, since API Extractor will automatically append an appropriate file extension such as `.api.md`<></>. If the [IConfigApiReport.reportVariants](./api-extractor.iconfigapireport.reportvariants.md) setting is used, then the file extension includes the variant name, for example `my-report.public.api.md` or `my-report.beta.api.md`<></>. The `complete` variant always uses the simple extension `my-report.api.md`<></>.

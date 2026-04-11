@@ -17,3 +17,8 @@ If true, returns the absolute paths of the files in the folder.
 ```typescript
 absolutePaths?: boolean;
 ```
+
+## Default Value
+
+false
+

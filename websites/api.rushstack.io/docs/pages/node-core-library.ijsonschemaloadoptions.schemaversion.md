@@ -18,6 +18,10 @@ The json-schema version to target for validation.
 schemaVersion?: JsonSchemaVersion;
 ```
 
+## Default Value
+
+draft-07
+
 ## Remarks
 
 If the a version is not explicitly set, the schema object's `$schema` property will be inspected to determine the version. If a `$schema` property is not found or does not match an expected URL, the default version will be used.

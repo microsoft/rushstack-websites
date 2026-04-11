@@ -10280,6 +10280,32 @@
         },
         {
           "type": "category",
+          "label": "ILookupByPathJson",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/lookup-by-path.ilookupbypathjson"
+            },
+            {
+              "type": "doc",
+              "label": "delimiter",
+              "id": "pages/lookup-by-path.ilookupbypathjson.delimiter"
+            },
+            {
+              "type": "doc",
+              "label": "tree",
+              "id": "pages/lookup-by-path.ilookupbypathjson.tree"
+            },
+            {
+              "type": "doc",
+              "label": "values",
+              "id": "pages/lookup-by-path.ilookupbypathjson.values"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "IPrefixMatch",
           "items": [
             {
@@ -10357,6 +10383,11 @@
               "type": "doc",
               "label": "has",
               "id": "pages/lookup-by-path.ireadonlylookupbypath.has"
+            },
+            {
+              "type": "doc",
+              "label": "toJson",
+              "id": "pages/lookup-by-path.ireadonlylookupbypath.tojson"
             }
           ]
         },
@@ -10378,6 +10409,27 @@
               "type": "doc",
               "label": "value",
               "id": "pages/lookup-by-path.ireadonlypathtrienode.value"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ISerializedPathTrieNode",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/lookup-by-path.iserializedpathtrienode"
+            },
+            {
+              "type": "doc",
+              "label": "children",
+              "id": "pages/lookup-by-path.iserializedpathtrienode.children"
+            },
+            {
+              "type": "doc",
+              "label": "valueIndex",
+              "id": "pages/lookup-by-path.iserializedpathtrienode.valueindex"
             }
           ]
         },
@@ -10442,6 +10494,11 @@
             },
             {
               "type": "doc",
+              "label": "fromJson",
+              "id": "pages/lookup-by-path.lookupbypath.fromjson"
+            },
+            {
+              "type": "doc",
               "label": "get",
               "id": "pages/lookup-by-path.lookupbypath.get"
             },
@@ -10479,6 +10536,11 @@
               "type": "doc",
               "label": "size",
               "id": "pages/lookup-by-path.lookupbypath.size"
+            },
+            {
+              "type": "doc",
+              "label": "toJson",
+              "id": "pages/lookup-by-path.lookupbypath.tojson"
             },
             {
               "type": "doc",
@@ -11379,6 +11441,11 @@
             },
             {
               "type": "doc",
+              "label": "createReadStream",
+              "id": "pages/node-core-library.filesystem.createreadstream"
+            },
+            {
+              "type": "doc",
               "label": "createSymbolicLinkFile",
               "id": "pages/node-core-library.filesystem.createsymboliclinkfile"
             },
@@ -11406,6 +11473,16 @@
               "type": "doc",
               "label": "createSymbolicLinkJunctionAsync",
               "id": "pages/node-core-library.filesystem.createsymboliclinkjunctionasync"
+            },
+            {
+              "type": "doc",
+              "label": "createWriteStream",
+              "id": "pages/node-core-library.filesystem.createwritestream"
+            },
+            {
+              "type": "doc",
+              "label": "createWriteStreamAsync",
+              "id": "pages/node-core-library.filesystem.createwritestreamasync"
             },
             {
               "type": "doc",
@@ -11646,8 +11723,18 @@
         },
         {
           "type": "doc",
+          "label": "FileSystemReadStream",
+          "id": "pages/node-core-library.filesystemreadstream"
+        },
+        {
+          "type": "doc",
           "label": "FileSystemStats",
           "id": "pages/node-core-library.filesystemstats"
+        },
+        {
+          "type": "doc",
+          "label": "FileSystemWriteStream",
+          "id": "pages/node-core-library.filesystemwritestream"
         },
         {
           "type": "category",
@@ -11988,6 +12075,11 @@
           ]
         },
         {
+          "type": "doc",
+          "label": "IFileSystemCreateWriteStreamOptions",
+          "id": "pages/node-core-library.ifilesystemcreatewritestreamoptions"
+        },
+        {
           "type": "category",
           "label": "IFileSystemDeleteFileOptions",
           "items": [
@@ -12016,11 +12108,6 @@
               "type": "doc",
               "label": "destinationPath",
               "id": "pages/node-core-library.ifilesystemmoveoptions.destinationpath"
-            },
-            {
-              "type": "doc",
-              "label": "ensureFolderExists",
-              "id": "pages/node-core-library.ifilesystemmoveoptions.ensurefolderexists"
             },
             {
               "type": "doc",
@@ -12093,20 +12180,9 @@
           ]
         },
         {
-          "type": "category",
+          "type": "doc",
           "label": "IFileSystemWriteBinaryFileOptions",
-          "items": [
-            {
-              "type": "doc",
-              "label": "(members)",
-              "id": "pages/node-core-library.ifilesystemwritebinaryfileoptions"
-            },
-            {
-              "type": "doc",
-              "label": "ensureFolderExists",
-              "id": "pages/node-core-library.ifilesystemwritebinaryfileoptions.ensurefolderexists"
-            }
-          ]
+          "id": "pages/node-core-library.ifilesystemwritebinaryfileoptions"
         },
         {
           "type": "category",
@@ -12126,6 +12202,22 @@
               "type": "doc",
               "label": "encoding",
               "id": "pages/node-core-library.ifilesystemwritefileoptions.encoding"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "IFileSystemWriteFileOptionsBase",
+          "items": [
+            {
+              "type": "doc",
+              "label": "(members)",
+              "id": "pages/node-core-library.ifilesystemwritefileoptionsbase"
+            },
+            {
+              "type": "doc",
+              "label": "ensureFolderExists",
+              "id": "pages/node-core-library.ifilesystemwritefileoptionsbase.ensurefolderexists"
             }
           ]
         },

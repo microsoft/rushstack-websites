@@ -17,3 +17,8 @@ Whether or not to throw when the process completes with a non-zero exit code. De
 ```typescript
 throwOnNonZeroExitCode?: boolean;
 ```
+
+## Default Value
+
+false
+

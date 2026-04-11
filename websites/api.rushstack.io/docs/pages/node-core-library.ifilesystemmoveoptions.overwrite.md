@@ -17,3 +17,8 @@ If true, will overwrite the file if it already exists.
 ```typescript
 overwrite?: boolean;
 ```
+
+## Default Value
+
+true
+

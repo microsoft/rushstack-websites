@@ -17,3 +17,10 @@ Specifies the variant of JSON syntax to be used.
 ```typescript
 jsonSyntax?: JsonSyntax;
 ```
+
+## Default Value
+
+[JsonSyntax.Json5](./node-core-library.jsonsyntax.md)
+
+NOTE: This default will be changed to `JsonSyntax.JsonWithComments` in a future release.
+

@@ -18,6 +18,10 @@ The set of report variants to generate.
 reportVariants?: ApiReportVariant[];
 ```
 
+## Default Value
+
+`[ "complete" ]`
+
 ## Remarks
 
 To support different approval requirements for different API levels, multiple "variants" of the API report can be generated. The `reportVariants` setting specifies a list of variants to be generated. If omitted, by default only the `complete` variant will be generated, which includes all `@internal`<></>, `@alpha`<></>, `@beta`<></>, and `@public` items. Other possible variants are `alpha` (`@alpha` + `@beta` + `@public`<></>), `beta` (`@beta` + `@public`<></>), and `public` (`@public only`<></>).

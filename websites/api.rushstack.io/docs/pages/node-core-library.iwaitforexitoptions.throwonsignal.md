@@ -17,3 +17,8 @@ Whether or not to throw when the process is terminated by a signal. Defaults to 
 ```typescript
 throwOnSignal?: boolean;
 ```
+
+## Default Value
+
+false
+

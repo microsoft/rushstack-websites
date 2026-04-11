@@ -17,3 +17,8 @@ Whether or not to include dot files when globbing.
 ```typescript
 dot?: boolean;
 ```
+
+## Default Value
+
+false
+

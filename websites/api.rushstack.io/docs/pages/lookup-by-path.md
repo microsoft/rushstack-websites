@@ -94,6 +94,17 @@ Description
 </td></tr>
 <tr><td>
 
+[ILookupByPathJson](./lookup-by-path.ilookupbypathjson.md)
+
+
+</td><td>
+
+**_(BETA)_** JSON-serializable representation of a [LookupByPath](./lookup-by-path.lookupbypath.md) instance.
+
+
+</td></tr>
+<tr><td>
+
 [IPrefixMatch](./lookup-by-path.iprefixmatch.md)
 
 
@@ -122,6 +133,17 @@ Description
 </td><td>
 
 **_(BETA)_** Readonly view of a node in the path trie used in LookupByPath
+
+
+</td></tr>
+<tr><td>
+
+[ISerializedPathTrieNode](./lookup-by-path.iserializedpathtrienode.md)
+
+
+</td><td>
+
+**_(BETA)_** JSON-serializable representation of a node in a [LookupByPath](./lookup-by-path.lookupbypath.md) trie.
 
 
 </td></tr>

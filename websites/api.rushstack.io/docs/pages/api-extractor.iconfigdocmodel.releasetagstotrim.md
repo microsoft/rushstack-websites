@@ -17,3 +17,8 @@ Specifies a list of release tags that will be trimmed from the doc model.
 ```typescript
 releaseTagsToTrim?: ReleaseTagForTrim[];
 ```
+
+## Default Value
+
+`["@internal"]`
+

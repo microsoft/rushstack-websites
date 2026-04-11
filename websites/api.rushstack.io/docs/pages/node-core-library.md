@@ -562,6 +562,17 @@ The options for [FileSystem.createSymbolicLinkJunction()](./node-core-library.fi
 </td></tr>
 <tr><td>
 
+[IFileSystemCreateWriteStreamOptions](./node-core-library.ifilesystemcreatewritestreamoptions.md)
+
+
+</td><td>
+
+The options for [FileSystem.createWriteStream()](./node-core-library.filesystem.createwritestream.md)
+
+
+</td></tr>
+<tr><td>
+
 [IFileSystemDeleteFileOptions](./node-core-library.ifilesystemdeletefileoptions.md)
 
 
@@ -634,6 +645,16 @@ The options for [FileSystem.writeBuffersToFile()](./node-core-library.filesystem
 </td><td>
 
 The options for [FileSystem.writeFile()](./node-core-library.filesystem.writefile.md)
+
+
+</td></tr>
+<tr><td>
+
+[IFileSystemWriteFileOptionsBase](./node-core-library.ifilesystemwritefileoptionsbase.md)
+
+
+</td><td>
+
 
 
 </td></tr>
@@ -1279,12 +1300,34 @@ Callback function type for [IFileSystemCopyFilesOptions.filter](./node-core-libr
 </td></tr>
 <tr><td>
 
+[FileSystemReadStream](./node-core-library.filesystemreadstream.md)
+
+
+</td><td>
+
+An alias for the Node.js `fs.ReadStream` object.
+
+
+</td></tr>
+<tr><td>
+
 [FileSystemStats](./node-core-library.filesystemstats.md)
 
 
 </td><td>
 
 An alias for the Node.js `fs.Stats` object.
+
+
+</td></tr>
+<tr><td>
+
+[FileSystemWriteStream](./node-core-library.filesystemwritestream.md)
+
+
+</td><td>
+
+An alias for the Node.js `fs.WriteStream` object.
 
 
 </td></tr>

@@ -15,7 +15,7 @@ pagination_next: null
 
 Specifies whether and at what granularity the Node.js version should be included in the hash used for the build cache. When enabled, changing the Node.js version at the specified granularity will invalidate cached outputs and cause the operation to be re-executed. This is useful for projects that produce Node.js-version-specific outputs, such as native module builds.
 
-Allowed values: - `true` — alias for `"patch"`<></>, includes the full version (e.g. `18.17.1`<></>) - `"major"` — includes only the major version (e.g. `18`<></>) - `"minor"` — includes the major and minor version (e.g. `18.17`<></>) - `"patch"` — includes the full version (e.g. `18.17.1`<></>)
+Allowed values: - `true` - alias for `"patch"`<></>, includes the full version (e.g. `18.17.1`<></>) - `"major"` - includes only the major version (e.g. `18`<></>) - `"minor"` - includes the major and minor version (e.g. `18.17`<></>) - `"patch"` - includes the full version (e.g. `18.17.1`<></>)
 
 **Signature:**
 

@@ -15,50 +15,7 @@ The options for [FileSystem.writeBuffersToFile()](./node-core-library.filesystem
 **Signature:**
 
 ```typescript
-export interface IFileSystemWriteBinaryFileOptions 
+export interface IFileSystemWriteBinaryFileOptions extends IFileSystemWriteFileOptionsBase 
 ```
-
-## Properties
-
-<table><thead><tr><th>
-
-Property
-
-
-</th><th>
-
-Modifiers
-
-
-</th><th>
-
-Type
-
-
-</th><th>
-
-Description
-
-
-</th></tr></thead>
-<tbody><tr><td>
-
-[ensureFolderExists?](./node-core-library.ifilesystemwritebinaryfileoptions.ensurefolderexists.md)
-
-
-</td><td>
-
-
-</td><td>
-
-boolean
-
-
-</td><td>
-
-_(Optional)_ If true, will ensure the folder is created before writing the file.
-
-
-</td></tr>
-</tbody></table>
+**Extends:** [IFileSystemWriteFileOptionsBase](./node-core-library.ifilesystemwritefileoptionsbase.md)
 
