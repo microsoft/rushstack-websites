@@ -313,7 +313,7 @@ code trace.log
 
 ## See also
 
-- [@<!---->rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import): Our command-line tool for troubleshooting how modules are resolved by `import` and `require()`
+- [@rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import): Our command-line tool for troubleshooting how modules are resolved by `import` and `require()`
 - [Node.js require()](https://nodejs.org/api/modules.html#all-together) specification and algorithm
 - [Node.js require.resolve()](https://nodejs.org/api/modules.html#requireresolverequest-options) API docs
 - [node-core-library Import](https://api.rushstack.io/pages/node-core-library.import/): the Rush Stack API

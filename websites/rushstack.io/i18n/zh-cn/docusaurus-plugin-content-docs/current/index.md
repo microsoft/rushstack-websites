@@ -24,10 +24,10 @@ hide_title: true
 - [API Documenter](@api-extractor/pages/setup/generating_docs): 生成你的 API 文档站。
 - [@rushstack/eslint-bulk](https://www.npmjs.com/package/@rushstack/eslint-bulk):
   使你能够在你的 monorepo 中推出新的 lint 规则，而无需在源文件中添加成千上万个机器生成的 `// eslint-ignore-next-line` 指令，从而避免混乱。
-- [@<!---->rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): 专门为大型 TypeScript monorepo 仓库设计的 ESLint 规则集。
+- [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): 专门为大型 TypeScript monorepo 仓库设计的 ESLint 规则集。
 - [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch):
   增强 ESLint 对大型 monorepo 的支持的补丁。
-- [@<!---->rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
+- [@rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
   “Packlets”可用于在单个项目内来组织代码文件，作为替代 NPM 发包的一个轻量级解决方案。
 - [Lockfile Explorer](https://lfx.rushstack.io/): 帮助你在使用 Rush monorepo 时调查和解决版本冲突问题。
 - [Rundown](https://www.npmjs.com/package/@rushstack/rundown): 用于优化 Node.js 启动时间的工具。

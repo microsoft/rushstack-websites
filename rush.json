@@ -337,10 +337,12 @@
       "packageName": "api-extractor.com",
       "projectFolder": "websites/api-extractor.com"
     },
-    {
-      "packageName": "api.rushstack.io",
-      "projectFolder": "websites/api.rushstack.io"
-    },
+    // NOTE: Temporarily disabled due to MDX incompatibility with TypeScript type syntax in .md files.
+    // This will be fixed by implementing a direct API -> MDX pipeline instead of API -> .md -> MDX.
+    // {
+    //   "packageName": "api.rushstack.io",
+    //   "projectFolder": "websites/api.rushstack.io"
+    // },
     {
       "packageName": "heft.rushstack.io",
       "projectFolder": "websites/heft.rushstack.io"
