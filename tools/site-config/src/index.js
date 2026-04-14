@@ -1,6 +1,7 @@
 const { spawnSync } = require('child_process');
-const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
-const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.vsLight;
+const darkCodeTheme = themes.vsDark;
 
 function getGitHubOrg() {
   const gitResult = spawnSync('git', ['remote', '-v'], { encoding: 'utf8' });
