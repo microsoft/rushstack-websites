@@ -50,7 +50,7 @@ Heft 阶段定义了在执行该阶段时将运行的一组任务。阶段充当
 
 ## 观察模式
 
-现在，观察模式已成为 Heft 中的一项一等公民特性。所有的 Heft 操作都创建了观察模式操作。例如，要在观察模式下运行`build`和`test`阶段，可以使用`heft test-watch`或`heft run-watch --to test`中的任一命令。在观察模式下运行时，Heft 更喜欢`runIncremental`钩子而非`run`钩子（参见[Heft 任务插件](#heft任务插件)）。
+现在，观察模式已成为 Heft 中的一项一等公民特性。所有的 Heft 操作都创建了观察模式操作。例如，要在观察模式下运行`build`和`test`阶段，可以使用`heft test-watch`或`heft run-watch --to test`中的任一命令。在观察模式下运行时，Heft 更喜欢`runIncremental`钩子而非`run`钩子（参见[任务插件](#任务插件)）。
 
 ## heft.json 结构
 

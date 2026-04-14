@@ -53,7 +53,7 @@ In addition, Heft will generate actions for each phase specified in the **heft.j
 
 ## Watch mode
 
-Watch mode is now a first-class feature in Heft. Watch mode actions are created for all Heft actions. For example, to run `build` and `test` phases in watch mode, either of the commands `heft test-watch` or `heft run-watch --to test`. When running in watch mode, Heft prefers the `runIncremental` hook to the `run` hook (see [Heft Task Plugins](#heft-task-plugins)).
+Watch mode is now a first-class feature in Heft. Watch mode actions are created for all Heft actions. For example, to run `build` and `test` phases in watch mode, either of the commands `heft test-watch` or `heft run-watch --to test`. When running in watch mode, Heft prefers the `runIncremental` hook to the `run` hook (see [Task Plugins](#task-plugins)).
 
 ## heft.json structure
 

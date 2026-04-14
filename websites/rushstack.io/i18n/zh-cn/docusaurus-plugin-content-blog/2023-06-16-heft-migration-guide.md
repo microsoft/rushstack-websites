@@ -352,7 +352,7 @@ Heft **0.51.0** 版本推出了一个带来了一些重大架构变化的"多阶
 - 回想一下，我们通过为自己的任务指定 `taskDependencies`（`"taskDependencies": ["typescript"]`）来实现了 `"post-compile-copy"`。
 - 相比之下，我们通过修改 rig 的 `"typescript"` 任务的 `taskDependencies`（`"taskDependencies": ["pre-compile-copy"]`）来实现 `"pre-compile-copy"`。
 - rig 已经有 `"taskDependencies": ["sass"]`。但我们不需要指定 `"taskDependencies": ["typescript", "sass"]`，因为 Heft 的配置解析器默认会通过追加而不是替换的方式合并数组。
-- 这种合并行为由 `@rushstack/heft-config-file` 实现，并且可以使用[属性继承指令](/blog/2023/06/15/heft-whats-new/#heftjson-property-inheritance-directives)进行自定义。
+- 这种合并行为由 `@rushstack/heft-config-file` 实现，并且可以使用[属性继承指令](/blog/2023/06/15/heft-whats-new/#heftjson-属性继承指令)进行自定义。
 
 ## 迁移命令行语法
 

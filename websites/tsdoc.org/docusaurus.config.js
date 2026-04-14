@@ -22,7 +22,12 @@ const config = {
   trailingSlash: true,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw'
+    }
+  },
 
   favicon: 'images/site/favicon.ico',
   organizationName: 'microsoft',
