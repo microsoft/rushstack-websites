@@ -35,7 +35,10 @@ function readPackage(packageJson, context) {
 
   if (packageJson.dependencies) {
     // The docusaurus-theme-search-typesense project does not keep up with latest Docusaurus releases.
-    if (packageJson.name === 'docusaurus-theme-search-typesense') {
+    if (
+      packageJson.name === 'docusaurus-theme-search-typesense' ||
+      packageJson.name === 'typesense-docsearch-react'
+    ) {
       const docusaurusPackageNames = [
         '@docusaurus/core',
         '@docusaurus/logger',
@@ -47,14 +50,25 @@ function readPackage(packageJson, context) {
       ];
       for (const docusaurusPackageName of docusaurusPackageNames) {
         if (packageJson.dependencies[docusaurusPackageName]) {
-          packageJson.dependencies[docusaurusPackageName] = '2.3.1';
+          packageJson.dependencies[docusaurusPackageName] = '3.10.0';
         }
         if (packageJson.peerDependencies[docusaurusPackageName]) {
-          packageJson.peerDependencies[docusaurusPackageName] = '2.3.1';
+          packageJson.peerDependencies[docusaurusPackageName] = '3.10.0';
         }
       }
-    }
 
+      const reactPackageNames = ['react', 'react-dom'];
+      for (const reactPackageName of reactPackageNames) {
+        if (packageJson.peerDependencies[reactPackageName]) {
+          packageJson.peerDependencies[reactPackageName] = '^19.2.5';
+        }
+      }
+
+      if (packageJson.peerDependencies['@types/react']) {
+        packageJson.peerDependencies['@types/react'] = '^19.2.14';
+      }
+    }
+    /*
     // This is a workaround for what a possible PNPM bug?  Because "@docusaurus/types" is an optional
     // peer dependency, we end up with side-by-side installs of "@docusaurus/theme-common" etc whose
     // only difference is whether "@docusaurus/types" was included.
@@ -67,6 +81,7 @@ function readPackage(packageJson, context) {
       // https://github.com/facebook/docusaurus/issues/7275
       packageJson.dependencies['trim'] = '^1.0.0';
     }
+     */
   }
 
   return packageJson;

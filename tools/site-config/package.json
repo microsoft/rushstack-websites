@@ -9,7 +9,7 @@
     "build": ""
   },
   "dependencies": {
-    "prism-react-renderer": "~1.3.5",
-    "react": "^17.0.2"
+    "prism-react-renderer": "~2.4.1",
+    "react": "^19.2.5"
   }
 }

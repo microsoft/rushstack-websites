@@ -10,17 +10,17 @@
     "build": "heft build --clean"
   },
   "dependencies": {
-    "@microsoft/api-documenter": "7.29.2",
-    "@microsoft/api-extractor-model": "7.33.1",
+    "@microsoft/api-documenter": "7.30.0",
+    "@microsoft/api-extractor-model": "7.33.6",
     "@microsoft/tsdoc": "0.16.0",
-    "@rushstack/node-core-library": "5.20.1"
+    "@rushstack/node-core-library": "5.22.0"
   },
   "devDependencies": {
-    "@types/node": "16.18.12",
-    "@rushstack/heft-node-rig": "2.11.22",
-    "@rushstack/heft": "1.2.2",
-    "@rushstack/eslint-config": "4.6.3",
-    "eslint": "~8.57.0",
-    "typescript": "~5.4.2"
+    "@types/node": "25.6.0",
+    "@rushstack/heft-node-rig": "2.11.33",
+    "@rushstack/heft": "1.2.12",
+    "@rushstack/eslint-config": "4.6.4",
+    "eslint": "^9.39.4",
+    "typescript": "~5.8.2"
   }
 }

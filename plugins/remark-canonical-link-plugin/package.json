@@ -9,14 +9,14 @@
     "build": "heft test --clean"
   },
   "dependencies": {
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "@rushstack/heft-node-rig": "2.11.22",
-    "@rushstack/heft": "1.2.2",
+    "@rushstack/heft-node-rig": "2.11.33",
+    "@rushstack/heft": "1.2.12",
     "@types/heft-jest": "~1.0.3",
-    "@types/node": "16.18.12",
-    "typescript": "~5.4.2",
-    "@types/unist": "~2.0.6"
+    "@types/node": "25.6.0",
+    "typescript": "~5.8.2",
+    "@types/unist": "~3.0.3"
   }
 }
