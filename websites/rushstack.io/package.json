@@ -35,7 +35,8 @@
     "react": "^19.2.5",
     "theme-rushstack-suite-nav": "workspace:*",
     "tslib": "^2.4.0",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "search-insights": "^2.17.0"
   },
   "devDependencies": {
     "@algolia/client-search": "~5.50.1",
@@ -49,7 +50,6 @@
     "@types/react": "^19.2.14",
     "algoliasearch": "~5.50.1",
     "rehype-headerless-table-plugin": "workspace:*",
-    "remark-canonical-link-plugin": "workspace:*",
     "remark-cross-site-link-plugin": "workspace:*",
     "site-config": "workspace:*",
     "typescript": "~5.8.2"

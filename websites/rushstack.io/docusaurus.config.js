@@ -4,7 +4,6 @@
 const { getSiteConfig, lightCodeTheme, darkCodeTheme } = require('site-config');
 const siteConfig = getSiteConfig(require('./package.json').name);
 
-const { plugin: remarkCanonicalLinkPlugin } = require('remark-canonical-link-plugin');
 const { plugin: remarkCrossSiteLinkPlugin } = require('remark-cross-site-link-plugin');
 const { plugin: rehypeHeaderlessTablePlugin } = require('rehype-headerless-table-plugin');
 
@@ -62,12 +61,6 @@ const config = {
               {
                 prefixes: siteConfig.sitePrefixes
               }
-            ],
-            [
-              remarkCanonicalLinkPlugin,
-              {
-                prefix: 'https://rushstack.io/'
-              }
             ]
           ],
           rehypePlugins: [rehypeHeaderlessTablePlugin]
@@ -84,12 +77,6 @@ const config = {
               remarkCrossSiteLinkPlugin,
               {
                 prefixes: siteConfig.sitePrefixes
-              }
-            ],
-            [
-              remarkCanonicalLinkPlugin,
-              {
-                prefix: 'https://rushstack.io/'
               }
             ]
           ]

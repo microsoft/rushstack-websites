@@ -371,21 +371,12 @@
       "tags": ["website-deps"]
     },
     {
-      "packageName": "deploy-fork",
-      "projectFolder": "tools/deploy-fork"
-    },
-    {
       "packageName": "site-config",
       "projectFolder": "tools/site-config",
       "tags": ["website-deps"]
     },
 
     // Plugins
-    {
-      "packageName": "remark-canonical-link-plugin",
-      "projectFolder": "plugins/remark-canonical-link-plugin",
-      "tags": ["website-deps"]
-    },
     {
       "packageName": "remark-cross-site-link-plugin",
       "projectFolder": "plugins/remark-cross-site-link-plugin",

@@ -38,31 +38,6 @@ importers:
         specifier: ~5.8.2
         version: 5.8.3
 
-  ../../plugins/remark-canonical-link-plugin:
-    dependencies:
-      unist-util-visit:
-        specifier: ^5.1.0
-        version: 5.1.0
-    devDependencies:
-      '@rushstack/heft':
-        specifier: 1.2.12
-        version: 1.2.12(@types/node@25.6.0)
-      '@rushstack/heft-node-rig':
-        specifier: 2.11.33
-        version: 2.11.33(@rushstack/heft@1.2.12(@types/node@25.6.0))(@types/node@25.6.0)(jest-environment-jsdom@30.3.0)(jiti@1.21.7)
-      '@types/heft-jest':
-        specifier: ~1.0.3
-        version: 1.0.6
-      '@types/node':
-        specifier: 25.6.0
-        version: 25.6.0
-      '@types/unist':
-        specifier: ~3.0.3
-        version: 3.0.3
-      typescript:
-        specifier: ~5.8.2
-        version: 5.8.3
-
   ../../plugins/remark-cross-site-link-plugin:
     dependencies:
       unist-util-visit:
@@ -171,49 +146,6 @@ importers:
         specifier: ~5.8.2
         version: 5.8.3
 
-  ../../tools/deploy-fork:
-    dependencies:
-      api-extractor.com:
-        specifier: workspace:*
-        version: link:../../websites/api-extractor.com
-      api.rushstack.io:
-        specifier: workspace:*
-        version: link:../../websites/api.rushstack.io
-      heft.rushstack.io:
-        specifier: workspace:*
-        version: link:../../websites/heft.rushstack.io
-      lfx.rushstack.io:
-        specifier: workspace:*
-        version: link:../../websites/lfx.rushstack.io
-      rushjs.io:
-        specifier: workspace:*
-        version: link:../../websites/rushjs.io
-      rushstack.io:
-        specifier: workspace:*
-        version: link:../../websites/rushstack.io
-      site-config:
-        specifier: workspace:*
-        version: link:../site-config
-      tsdoc.org:
-        specifier: workspace:*
-        version: link:../../websites/tsdoc.org
-    devDependencies:
-      '@docusaurus/core':
-        specifier: 3.10.0
-        version: 3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3)
-      '@rushstack/node-core-library':
-        specifier: 5.22.0
-        version: 5.22.0(@types/node@25.6.0)
-      react:
-        specifier: ^19.2.5
-        version: 19.2.5
-      react-dom:
-        specifier: ^19.2.5
-        version: 19.2.5(react@19.2.5)
-      typescript:
-        specifier: ~5.8.2
-        version: 5.8.3
-
   ../../tools/site-config:
     dependencies:
       prism-react-renderer:
@@ -261,6 +193,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -301,112 +236,9 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
-      site-config:
-        specifier: workspace:*
-        version: link:../../tools/site-config
-      typescript:
-        specifier: ~5.8.2
-        version: 5.8.3
-
-  ../../websites/api.rushstack.io:
-    dependencies:
-      '@docusaurus/core':
-        specifier: 3.10.0
-        version: 3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3)
-      '@docusaurus/preset-classic':
-        specifier: 3.10.0
-        version: 3.10.0(@algolia/client-search@5.50.2)(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(@types/react@19.2.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(search-insights@2.17.3)(typescript@5.8.3)
-      '@docusaurus/theme-common':
-        specifier: 3.10.0
-        version: 3.10.0(@docusaurus/plugin-content-docs@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@mdx-js/react':
-        specifier: ~3.1.1
-        version: 3.1.1(@types/react@19.2.14)(react@19.2.5)
-      '@svgr/webpack':
-        specifier: ~8.1.0
-        version: 8.1.0(typescript@5.8.3)
-      clsx:
-        specifier: ~2.1.1
-        version: 2.1.1
-      dayjs:
-        specifier: ~1.11.20
-        version: 1.11.20
-      docusaurus-theme-search-typesense:
-        specifier: ~0.26.0
-        version: 0.26.0(@algolia/client-search@5.50.2)(@babel/runtime@7.29.2)(@docusaurus/core@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3))(@docusaurus/theme-common@3.10.0(@docusaurus/plugin-content-docs@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3))(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(@types/react@19.2.14)(algoliasearch@5.50.2)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.8.3)
-      file-loader:
-        specifier: ^6.2.0
-        version: 6.2.0(webpack@5.98.0)
-      js-cookie:
-        specifier: ~3.0.1
-        version: 3.0.5
-      react:
-        specifier: ^19.2.5
-        version: 19.2.5
-      react-dom:
-        specifier: ^19.2.5
-        version: 19.2.5(react@19.2.5)
-      theme-rushstack-suite-nav:
-        specifier: workspace:*
-        version: link:../../plugins/theme-rushstack-suite-nav
-      url-loader:
-        specifier: ^4.1.1
-        version: 4.1.1(file-loader@6.2.0(webpack@5.98.0))(webpack@5.98.0)
-    devDependencies:
-      '@algolia/client-search':
-        specifier: ~5.50.1
-        version: 5.50.2
-      '@babel/core':
-        specifier: ~7.29.0
-        version: 7.29.0
-      '@babel/runtime':
-        specifier: ~7.29.2
-        version: 7.29.2
-      '@docusaurus/types':
-        specifier: 3.10.0
-        version: 3.10.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@microsoft/api-documenter':
-        specifier: 7.30.0
-        version: 7.30.0(@types/node@25.6.0)
-      '@rushstack/node-core-library':
-        specifier: 5.22.0
-        version: 5.22.0(@types/node@25.6.0)
-      '@types/js-cookie':
-        specifier: 3.0.6
-        version: 3.0.6
-      '@types/node':
-        specifier: 25.6.0
-        version: 25.6.0
-      '@types/react':
-        specifier: ^19.2.14
-        version: 19.2.14
-      '@types/react-dom':
-        specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.14)
-      algoliasearch:
-        specifier: ~5.50.1
-        version: 5.50.2
-      api-documenter-docusaurus-plugin:
-        specifier: workspace:*
-        version: link:../../tools/api-documenter-docusaurus-plugin
-      rehype-headerless-table-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
-      remark-cross-site-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-cross-site-link-plugin
-      search-insights:
-        specifier: ~2.17.3
-        version: 2.17.3
       site-config:
         specifier: workspace:*
         version: link:../../tools/site-config
@@ -452,6 +284,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -492,9 +327,6 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
@@ -543,6 +375,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -583,9 +418,6 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
@@ -634,6 +466,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -674,9 +509,6 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
@@ -725,6 +557,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -768,9 +603,6 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
@@ -819,6 +651,9 @@ importers:
       react-dom:
         specifier: ^19.2.5
         version: 19.2.5(react@19.2.5)
+      search-insights:
+        specifier: ^2.17.0
+        version: 2.17.3
       theme-rushstack-suite-nav:
         specifier: workspace:*
         version: link:../../plugins/theme-rushstack-suite-nav
@@ -859,9 +694,6 @@ importers:
       rehype-headerless-table-plugin:
         specifier: workspace:*
         version: link:../../plugins/rehype-headerless-table-plugin
-      remark-canonical-link-plugin:
-        specifier: workspace:*
-        version: link:../../plugins/remark-canonical-link-plugin
       remark-cross-site-link-plugin:
         specifier: workspace:*
         version: link:../../plugins/remark-cross-site-link-plugin
