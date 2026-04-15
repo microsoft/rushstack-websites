@@ -166,7 +166,7 @@ The `"extends"` field in **jest.config.json** is a Heft-specific enhancement tha
 command line is invoked without Heft. This setting replaces Jest's `"preset"` field which has limited module
 resolution capabilities and does not support rigs. Heft parses **jest.config.json** using
 the `@rushstack/heft-config-file` engine, with full support for
-[property inheritance directives](../advanced/heft-config-file.md#property-inheritance-directives).
+[property inheritance directives](../advanced/heft-config-file.md#属性继承指令).
 
 If for some reason your `jest.config.json` needs to be directly readable by Jest, the
 `disableConfigurationModuleResolution` plugin setting can be used to restore the standard behavior,

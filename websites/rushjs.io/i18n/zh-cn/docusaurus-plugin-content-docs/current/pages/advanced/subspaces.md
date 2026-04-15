@@ -67,7 +67,7 @@ title: Rush 子空间
 2. **大量子空间：** 如果安装所有子空间会消耗过多的时间和磁盘空间，那么你可以设置 `"preventSelectingAllSubspaces": true`。在此模式下，调用 `rush install` 或 `rush update` 等命令时，用户必须以某种方式过滤子空间，例如：
    - 使用 `rush install --to my-project` 只安装指定项目的依赖
    - 使用 `rush install --subspace my-subspace` 只安装特定子空间
-   - 使用 [项目选择器](../developer/selecting_subsets.md#subspace-members-subspace) 中的 `rush install --to subspace:my-subspace` 为属于某个子空间的项目安装
+   - 使用 [项目选择器](../developer/selecting_subsets.md#子空间成员subspace) 中的 `rush install --to subspace:my-subspace` 为属于某个子空间的项目安装
 
 ## 如何启用子空间
 
