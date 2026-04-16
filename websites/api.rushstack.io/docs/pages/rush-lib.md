@@ -1297,5 +1297,16 @@ This represents the available PNPM store options
 
 
 </td></tr>
+<tr><td>
+
+[PnpmTrustPolicy](./rush-lib.pnpmtrustpolicy.md)
+
+
+</td><td>
+
+Possible values for the `trustPolicy` setting in Rush's pnpm-config.json file.
+
+
+</td></tr>
 </tbody></table>
 

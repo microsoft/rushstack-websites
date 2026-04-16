@@ -6454,6 +6454,21 @@
             },
             {
               "type": "doc",
+              "label": "trustPolicy",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.trustpolicy"
+            },
+            {
+              "type": "doc",
+              "label": "trustPolicyExclude",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.trustpolicyexclude"
+            },
+            {
+              "type": "doc",
+              "label": "trustPolicyIgnoreAfterMinutes",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.trustpolicyignoreafterminutes"
+            },
+            {
+              "type": "doc",
               "label": "unsupportedPackageJsonSettings",
               "id": "pages/rush-lib.pnpmoptionsconfiguration.unsupportedpackagejsonsettings"
             },
@@ -6488,6 +6503,11 @@
           "type": "doc",
           "label": "PnpmStoreOptions",
           "id": "pages/rush-lib.pnpmstoreoptions"
+        },
+        {
+          "type": "doc",
+          "label": "PnpmTrustPolicy",
+          "id": "pages/rush-lib.pnpmtrustpolicy"
         },
         {
           "type": "category",
@@ -15286,6 +15306,11 @@
               "type": "doc",
               "label": "pnpmInstallFolder",
               "id": "pages/package-extractor.iextractorsubspace.pnpminstallfolder"
+            },
+            {
+              "type": "doc",
+              "label": "pnpmNodeModulesHoistingEnabled",
+              "id": "pages/package-extractor.iextractorsubspace.pnpmnodemoduleshoistingenabled"
             },
             {
               "type": "doc",

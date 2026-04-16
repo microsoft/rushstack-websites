@@ -525,6 +525,69 @@ If true, then Rush will add the "--strict-peer-dependencies" option when invokin
 </td></tr>
 <tr><td>
 
+[trustPolicy](./rush-lib.pnpmoptionsconfiguration.trustpolicy.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PnpmTrustPolicy](./rush-lib.pnpmtrustpolicy.md) \| undefined
+
+
+</td><td>
+
+The trust policy controls whether pnpm should block installation of package versions where the trust level has decreased (e.g., a package previously published with provenance is now published without it). Setting this to `"no-downgrade"` enables the protection.
+
+
+</td></tr>
+<tr><td>
+
+[trustPolicyExclude](./rush-lib.pnpmoptionsconfiguration.trustpolicyexclude.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string\[\] \| undefined
+
+
+</td><td>
+
+List of package names or patterns that are excluded from the trust policy check. These packages will be allowed to install even if their trust level has decreased.
+
+
+</td></tr>
+<tr><td>
+
+[trustPolicyIgnoreAfterMinutes](./rush-lib.pnpmoptionsconfiguration.trustpolicyignoreafterminutes.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The number of minutes after which pnpm will ignore trust level downgrades. Packages published longer ago than this threshold will not be blocked even if their trust level has decreased.
+
+
+</td></tr>
+<tr><td>
+
 [unsupportedPackageJsonSettings](./rush-lib.pnpmoptionsconfiguration.unsupportedpackagejsonsettings.md)
 
 
