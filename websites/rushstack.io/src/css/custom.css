@@ -119,6 +119,12 @@ main {
   line-height: 1.5;
 }
 
+.prism-code {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
+
 /*
  * Rush Stack -  People grid
  */
