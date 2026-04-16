@@ -62,6 +62,25 @@ _(Optional)_ The folder where the PNPM "node\_modules" folder is located. This i
 </td></tr>
 <tr><td>
 
+[pnpmNodeModulesHoistingEnabled?](./package-extractor.iextractorsubspace.pnpmnodemoduleshoistingenabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Whether PNPM hoisting is enabled for this subspace. When set to `false`<></>, the extractor will skip looking for hoisted packages in the PNPM virtual store, since no hoisting symlinks will exist. Default is `true`<></>.
+
+
+</td></tr>
+<tr><td>
+
 [subspaceName](./package-extractor.iextractorsubspace.subspacename.md)
 
 
