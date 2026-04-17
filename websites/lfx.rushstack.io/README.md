@@ -58,5 +58,5 @@ rushx deploy
 ```
 
 (Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials
-necessary to write to the https://github.com/microsoft/rushjs.io-website repo that serves as the
+necessary to write to the https://github.com/microsoft/lfx.rushstack.io-website repo that serves as the
 GitHub Pages deployment target.)
