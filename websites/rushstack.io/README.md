@@ -36,9 +36,6 @@ export GIT_USER=<Your GitHub username>
 # (Optional) Specify this if you use SSH instead of HTTPS authentication
 export USE_SSH=true
 
-# Specify the deployment target
-export TARGET=prod
-
 rushx deploy
 ```
 
