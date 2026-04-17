@@ -86,7 +86,7 @@ VS Code 默认会将 JSON 注释高亮为错误，但是它提供了一个 "[JSO
 "files.associations": { "*.json": "jsonc" }
 ```
 
-默认情况下，Github 以错误的形式高亮注释。为了修复此问题，你可以在 **.gitattributes** 文件中添加这行（为解决 Github 缓存问题，你也可能需要提交一个改变）：
+默认情况下，GitHub 以错误的形式高亮注释。为了修复此问题，你可以在 **.gitattributes** 文件中添加这行（为解决 GitHub 缓存问题，你也可能需要提交一个改变）：
 
 ```
 *.json  linguist-language=JSON-with-Comments

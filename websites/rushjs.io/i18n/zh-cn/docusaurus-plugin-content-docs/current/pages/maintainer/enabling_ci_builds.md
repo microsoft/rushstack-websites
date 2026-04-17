@@ -67,7 +67,7 @@ $ rush rebuild --ship --verbose
 
 ## "rush init" 中的 Travis 示例
 
-[Travis CI](https://travis-ci.com/) 是一个整合了 Github 的持续集成工具，它开源且免费，`rush init` 会创建一个便于使用的 **.travis.yml** 文件。注意，它使用 **install-run-rush.js** 来调用 Rush 工具。
+[Travis CI](https://travis-ci.com/) 是一个整合了 GitHub 的持续集成工具，它开源且免费，`rush init` 会创建一个便于使用的 **.travis.yml** 文件。注意，它使用 **install-run-rush.js** 来调用 Rush 工具。
 
 ```yaml
 language: node_js

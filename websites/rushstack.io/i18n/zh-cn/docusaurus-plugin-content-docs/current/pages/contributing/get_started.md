@@ -2,7 +2,7 @@
 title: 快速开始
 ---
 
-Rush Stack 项目都是在 Github 上的 **rushstack** 仓库中开发的：
+Rush Stack 项目都是在 GitHub 上的 **rushstack** 仓库中开发的：
 
 &nbsp;&nbsp;&nbsp;&nbsp; [https://github.com/microsoft/rushstack](https://github.com/microsoft/rushstack)
 

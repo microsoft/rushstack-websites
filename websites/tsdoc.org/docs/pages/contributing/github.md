@@ -18,6 +18,6 @@ Supplementary project folders are:
   the **@microsoft/tsdoc** library
 - [/playground](https://github.com/microsoft/tsdoc/tree/main/playground): the [TSDoc Playground](/play) web application
 
-The `tsdoc.org` website is hosted in this Github repo:
+The `tsdoc.org` website is hosted in this GitHub repo:
 
 [https://github.com/microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/tree/main/websites/tsdoc.org)

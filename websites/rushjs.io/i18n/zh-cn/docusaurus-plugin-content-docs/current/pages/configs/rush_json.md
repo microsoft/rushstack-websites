@@ -260,9 +260,9 @@ title: rush.json
      * 将会被排除在 diff 中（因为它们属于别的 PR）。为了做到这点，Rush
      * 知道如何在 PR 中到照基础分支。这个信息不能从 Git 中单独获取，因为
      * "pull request" 不是 Git 的概念。理想情况是 Rush 使用了特定的协议
-     * 来从诸如 Github, Azure DevOps 上获取这些信息。
+     * 来从诸如 GitHub, Azure DevOps 上获取这些信息。
      * 但为了简单，"rush change" 只是假设你的 PR 只是针对 rush.json 中的
-     * repository.url 的仓库的主分支。如果你从 Github 上 "fork" 了一个
+     * repository.url 的仓库的主分支。如果你从 GitHub 上 "fork" 了一个
      * 仓库，那么该设定就不同于你的 PR 分支的仓库 URL, 此时 "rush change"
      * 会自动掉哟过 "git fetch" 来检索远程主分支的最新活动。
      *

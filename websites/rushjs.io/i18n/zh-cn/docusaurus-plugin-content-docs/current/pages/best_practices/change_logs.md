@@ -44,7 +44,7 @@ title: 编写变更日志
 
 - 当描述版本升级时，表明旧版本和新版本，例如："Upgraded widget-library from `1.0.2` to `2.0.1`".
 
-- 当修复一个 Github issue 后，考虑在括号中添加 issue URL.
+- 当修复一个 GitHub issue 后，考虑在括号中添加 issue URL.
 
 - 不要在句尾添加句号，除非你有两个以上句子。
 

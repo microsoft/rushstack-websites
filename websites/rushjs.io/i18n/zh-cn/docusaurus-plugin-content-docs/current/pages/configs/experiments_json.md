@@ -17,7 +17,7 @@ title: experiments.json
   /**
    * Rush 5.14.0 改善了增量构建，它会忽略 pnpm-lock.json 文件中的一些虚假变化。
    * 该优化默认开启，如果你遇到了 "rush build" 忽略构建某些项目的问题，请开启一个
-   * Github issue, 临时的解决方法是取消这行的注释来恢复当 package.json 变化时的
+   * GitHub issue, 临时的解决方法是取消这行的注释来恢复当 package.json 变化时的
    * 旧行为。
    */
   /*[LINE "HYPOTHETICAL"]*/ "legacyIncrementalBuildDependencyDetection": true,
