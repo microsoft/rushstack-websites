@@ -293,6 +293,25 @@ boolean
 </td></tr>
 <tr><td>
 
+[strictChangefileValidation?](./rush-lib.iexperimentsjson.strictchangefilevalidation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If true, `rush change --verify` will perform additional validation of change files. Specifically, it will report errors if change files reference projects that do not exist in the Rush configuration, or if change files target a project that belongs to a lockstepped version policy but is not the policy's main project.
+
+
+</td></tr>
+<tr><td>
+
 [useIPCScriptsInWatchMode?](./rush-lib.iexperimentsjson.useipcscriptsinwatchmode.md)
 
 

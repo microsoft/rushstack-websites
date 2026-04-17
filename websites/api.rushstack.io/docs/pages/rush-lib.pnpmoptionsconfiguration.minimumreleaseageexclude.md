@@ -10,7 +10,7 @@ pagination_next: null
 
 ## PnpmOptionsConfiguration.minimumReleaseAgeExclude property
 
-List of package names or patterns that are excluded from the minimumReleaseAge check. These packages will always install the newest version immediately, even if minimumReleaseAge is set.
+List of package names or patterns that are excluded from the minimumReleaseAge check. These packages will always install the newest version immediately, even if minimumReleaseAgeMinutes is set.
 
 **Signature:**
 
