@@ -352,6 +352,10 @@
       "projectFolder": "websites/lfx.rushstack.io"
     },
     {
+      "packageName": "monodex.ai",
+      "projectFolder": "websites/monodex.ai"
+    },
+    {
       "packageName": "rushstack.io",
       "projectFolder": "websites/rushstack.io"
     },
