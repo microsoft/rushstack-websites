@@ -22,17 +22,17 @@ These major tools are developed under the **Rush Stack** umbrella:
 - [Heft](@heft/): an extensible build system that interfaces with Rush
 - [API Extractor](@api-extractor/): coordinates API reviews for library packages, and generates .d.ts rollups
 - [API Documenter](@api-extractor/pages/setup/generating_docs): generates your API documentation website
-- [@<!---->rushstack/eslint-bulk](https://www.npmjs.com/package/@rushstack/eslint-bulk):
+- [@rushstack/eslint-bulk](https://www.npmjs.com/package/@rushstack/eslint-bulk):
   enables you to roll out new lint rules in your monorepo without having to clutter up source files with thousands of machine-generated `// eslint-ignore-next-line` directives
-- [@<!---->rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): our standardized
+- [@rushstack/eslint-config](https://www.npmjs.com/package/@rushstack/eslint-config): our standardized
   ESLint rule set, specifically designed for large scale TypeScript monorepos
-- [@<!---->rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch):
+- [@rushstack/eslint-patch](https://www.npmjs.com/package/@rushstack/eslint-patch):
   a patch that enhances ESLint with better support for large scale monorepos
-- [@<!---->rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
+- [@rushstack/eslint-plugin-packlets](https://www.npmjs.com/package/@rushstack/eslint-plugin-packlets):
   "Packlets" are a lightweight alternative to NPM packages for organizing source files within a single project
 - [Lockfile Explorer](https://lfx.rushstack.io/): helps you investigate and solve version conflicts when working in a Rush monorepo
 - [Rundown](https://www.npmjs.com/package/@rushstack/rundown): a tool for optimizing Node.js process startup times
-- [@<!---->rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import): Our command-line tool for troubleshooting how modules are resolved by `import` and `require()`
+- [@rushstack/trace-import](https://www.npmjs.com/package/@rushstack/trace-import): Our command-line tool for troubleshooting how modules are resolved by `import` and `require()`
 
 The projects are built on a common framework of reusable library packages, which includes:
 

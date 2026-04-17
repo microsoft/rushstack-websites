@@ -35,7 +35,7 @@ Rush 的 **项目标签** 提供了一个很方便的办法来引用任意的 Ru
   . . .
 ```
 
-关于 `tag:my-custom-tag` 选择器语法的详细信息, 参考 [选择部分项目](../developer/selecting_subsets.md#selectors)。
+关于 `tag:my-custom-tag` 选择器语法的详细信息, 参考 [选择部分项目](../developer/selecting_subsets.md#选择器格式)。
 
 ## 标签语法
 

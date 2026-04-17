@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 
 // Docusaurus detects "external links" using an inaccurate test in isInternalUrl() with
 // no way to customize the logic.  Instead of trying to fix that, we hide the "IconExternalLink" component

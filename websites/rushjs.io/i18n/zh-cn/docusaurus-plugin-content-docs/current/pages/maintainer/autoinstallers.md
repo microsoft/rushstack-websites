@@ -30,7 +30,7 @@ there are several possible approaches to consider:
   [project selection parameters](../developer/selecting_subsets.md) such as
   `rush install --to example-project`.
 
-- **install-run.js**: The [install-run.js](../maintainer/enabling_ci_builds.md#install-runjs-for-other-commands) script enables
+- **install-run.js**: The [install-run.js](../maintainer/enabling_ci_builds.md#install-runjs-来执行其他命令) script enables
   you to install NPM packages outside of `rush install`. This is useful for commands that run in contexts
   where `rush install` is not invoked at all, or where `rush install` may be broken. For example, a Git commit
   hook script gets run on branches where `rush install` might fail: developers often commit work in progress,

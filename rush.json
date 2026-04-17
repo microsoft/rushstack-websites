@@ -337,10 +337,12 @@
       "packageName": "api-extractor.com",
       "projectFolder": "websites/api-extractor.com"
     },
-    {
-      "packageName": "api.rushstack.io",
-      "projectFolder": "websites/api.rushstack.io"
-    },
+    // NOTE: Temporarily disabled due to MDX incompatibility with TypeScript type syntax in .md files.
+    // This will be fixed by implementing a direct API -> MDX pipeline instead of API -> .md -> MDX.
+    // {
+    //   "packageName": "api.rushstack.io",
+    //   "projectFolder": "websites/api.rushstack.io"
+    // },
     {
       "packageName": "heft.rushstack.io",
       "projectFolder": "websites/heft.rushstack.io"
@@ -369,21 +371,12 @@
       "tags": ["website-deps"]
     },
     {
-      "packageName": "deploy-fork",
-      "projectFolder": "tools/deploy-fork"
-    },
-    {
       "packageName": "site-config",
       "projectFolder": "tools/site-config",
       "tags": ["website-deps"]
     },
 
     // Plugins
-    {
-      "packageName": "remark-canonical-link-plugin",
-      "projectFolder": "plugins/remark-canonical-link-plugin",
-      "tags": ["website-deps"]
-    },
     {
       "packageName": "remark-cross-site-link-plugin",
       "projectFolder": "plugins/remark-cross-site-link-plugin",

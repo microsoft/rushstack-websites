@@ -123,7 +123,7 @@ $ cd apps/D
 $ heft start # 或者用自己的 "npm run start"
 ```
 
-5. 在某些情况下，为了实现更快的监听，`--changed-projects-only` 命令可以与 `"watchForChanges"` 结合使用。[增量构建](../advanced/incremental_builds.md#building-changed-projects-only-unsafe)一文详细说明了他是如何工作的，以及它是否适合使用。
+5. 在某些情况下，为了实现更快的监听，`--changed-projects-only` 命令可以与 `"watchForChanges"` 结合使用。[增量构建](../advanced/incremental_builds.md#只构建发生变化的项目不安全)一文详细说明了他是如何工作的，以及它是否适合使用。
 
 > **“实验性”** `"watchForChanges"` 的功能还在其初期阶段。有意见或建议请联系我们！
 > GitHub issue [#1202](https://github.com/microsoft/rushstack/issues/1202)

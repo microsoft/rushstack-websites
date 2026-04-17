@@ -11,7 +11,7 @@ If you're diagnosing problems with the Heft build, there are a couple useful par
 - `--verbose`: For example, instead of `heft build`, you can run `heft build --verbose` to see more details about how the tasks are invoked.
 - `--debug`: For even more detail, you can run `heft --debug build` to see call stacks and additional trace information. Note that `--debug` is a global parameter, so it must precede the `build` action name.
 
-## Building with -<!---->-watch
+## Building with --watch
 
 If you run `heft build --watch`, the TypeScript compiler will continue running and wait for changes to source files. Whenever a file is changed, Heft will rebuild only the affected files, as a minimal incremental update that can be very fast.
 

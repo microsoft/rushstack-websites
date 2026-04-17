@@ -12,15 +12,6 @@
    */
   "commands": [
     {
-      "commandKind": "global",
-      "name": "deploy-fork",
-      "summary": "Deploy your local websites to GitHub Pages",
-      "description": "Deploy all local websites from your fork of rushstack-websites up to GitHub Pages for testing",
-      "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "cd tools/deploy-fork && rushx deploy"
-    },
-
-    {
       "name": "prettier",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",

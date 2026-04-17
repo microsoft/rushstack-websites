@@ -18,7 +18,7 @@ work for any bulk command.
 
 ## Selection parameters
 
-### -<!---->-to
+### --to
 
 **Possible scenario:** Suppose that you have just cloned your monorepo, and now you want to start working
 on project `B`. You need to build all the things that `B` depends on, and also `B` itself.
@@ -34,7 +34,7 @@ The projects selected by this command are `A`, `B`, and `E`:
 
 <img src="/images/docs/selection-to.svg" alt="rush build --to B" style={{ height: "150px" }} />
 
-### -<!---->-to-except
+### --to-except
 
 **Possible scenario:** In many cases we do not need `rush build` to process `B`, because our next step
 will be to invoke Webpack or Jest in "watch mode" for `B`. You can use `--to-except` instead
@@ -52,7 +52,7 @@ The projects selected by this command are `A` and `E`:
 
 <img src="/images/docs/selection-to-except.svg" alt="rush build --to-except B" style={{ height: "150px" }} />
 
-### -<!---->-from
+### --from
 
 **Possible scenario:** Now that we've finished making our changes to `B`, we want to build the downstream
 projects `C` and `D` to make sure their tests were not broken by our change. In order to build `D`,
@@ -73,7 +73,7 @@ This command selects everything except for `F`:
 > then `--from` will instead behave like `--impacted-by`. The meaning was changed in Rush 5.38.0 because
 > most users expected `--from` to include dependencies.
 
-### -<!---->-impacted-by (unsafe)
+### --impacted-by (unsafe)
 
 **Possible scenario:** Suppose that while working on `B` we made some changes to `E`. The `rush build`
 incremental analysis assumes that any change to `E` requires all its downstream dependents to be rebuilt,
@@ -93,7 +93,7 @@ The projects selected by this command are `B`, `C`, and `D`:
 
 <img src="/images/docs/selection-impact.svg" alt="rush build --impacted-by B" style={{ height: "150px" }} />
 
-### -<!---->-impacted-by-except (unsafe)
+### --impacted-by-except (unsafe)
 
 **Possible scenario:** This is the same as `--impacted-by` except that it does not include `B` itself. For example
 that might make sense if you already built `B` manually while implementing the thing that we now want to test.
@@ -107,7 +107,7 @@ The projects selected by this command are `C` and `D`:
 
 <img src="/images/docs/selection-impact-except.svg" alt="rush build --impacted-by-except B" style={{ height: "150px" }} />
 
-### -<!---->-only (unsafe)
+### --only (unsafe)
 
 **Possible scenario:** As its name implies, the `--only` parameter adds exactly one project to the selection,
 ignoring dependencies.
