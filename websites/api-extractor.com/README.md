@@ -1,6 +1,6 @@
 # api-extractor.com
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Local development
 
@@ -51,12 +51,9 @@ export GIT_USER=<Your GitHub username>
 # (Optional) Specify this if you use SSH instead of HTTPS authentication
 export USE_SSH=true
 
-# Specify the deployment target
-export TARGET=prod
-
 rushx deploy
 ```
 
 (Typically, this deployment will happen in a CI/CD pipeline, which will have the credentials
-necessary to write to the https://github.com/microsoft/rushjs.io-website repo that serves as the
+necessary to write to the https://github.com/microsoft/api-extractor.com-website repo that serves as the
 GitHub Pages deployment target.)

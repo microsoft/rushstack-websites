@@ -1,6 +1,6 @@
 # rushjs.io
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Local development
 
@@ -50,9 +50,6 @@ export GIT_USER=<Your GitHub username>
 
 # (Optional) Specify this if you use SSH instead of HTTPS authentication
 export USE_SSH=true
-
-# Specify the deployment target
-export TARGET=prod
 
 rushx deploy
 ```

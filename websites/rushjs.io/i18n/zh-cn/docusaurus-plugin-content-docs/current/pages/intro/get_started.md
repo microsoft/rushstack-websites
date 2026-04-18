@@ -27,7 +27,7 @@ $ git clone https://github.com/microsoft/rushstack
 $ cd rushstack
 
 # 安装 NPM 包：
-# (如果你没有配置 Github email, 那么加上 "--bypass-policy" 选项。)
+# (如果你没有配置 GitHub email, 那么加上 "--bypass-policy" 选项。)
 $ rush update
 
 # 增量安装：
