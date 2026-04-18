@@ -4,7 +4,7 @@ title: '@example'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 Indicates a documentation section that should be presented as an example
 illustrating how to use the API. It may include a code sample.
