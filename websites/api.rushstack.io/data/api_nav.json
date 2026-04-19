@@ -4780,6 +4780,11 @@
             },
             {
               "type": "doc",
+              "label": "strictChangefileValidation",
+              "id": "pages/rush-lib.iexperimentsjson.strictchangefilevalidation"
+            },
+            {
+              "type": "doc",
               "label": "useIPCScriptsInWatchMode",
               "id": "pages/rush-lib.iexperimentsjson.useipcscriptsinwatchmode"
             },
@@ -6421,6 +6426,11 @@
               "type": "doc",
               "label": "minimumReleaseAgeExclude",
               "id": "pages/rush-lib.pnpmoptionsconfiguration.minimumreleaseageexclude"
+            },
+            {
+              "type": "doc",
+              "label": "minimumReleaseAgeMinutes",
+              "id": "pages/rush-lib.pnpmoptionsconfiguration.minimumreleaseageminutes"
             },
             {
               "type": "doc",
@@ -13687,6 +13697,21 @@
               "type": "doc",
               "label": "areDeepEqual",
               "id": "pages/node-core-library.objects.aredeepequal"
+            },
+            {
+              "type": "doc",
+              "label": "isRecord",
+              "id": "pages/node-core-library.objects.isrecord"
+            },
+            {
+              "type": "doc",
+              "label": "mergeWith",
+              "id": "pages/node-core-library.objects.mergewith"
+            },
+            {
+              "type": "doc",
+              "label": "MergeWithCustomizer",
+              "id": "pages/node-core-library.objects.mergewithcustomizer"
             }
           ]
         },

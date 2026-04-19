@@ -370,8 +370,6 @@ number \| undefined
 
 </td><td>
 
-The minimum number of minutes that must pass after a version is published before pnpm will install it. This setting helps reduce the risk of installing compromised packages, as malicious releases are typically discovered and removed within a short time frame.
-
 
 </td></tr>
 <tr><td>
@@ -391,7 +389,28 @@ string\[\] \| undefined
 
 </td><td>
 
-List of package names or patterns that are excluded from the minimumReleaseAge check. These packages will always install the newest version immediately, even if minimumReleaseAge is set.
+List of package names or patterns that are excluded from the minimumReleaseAge check. These packages will always install the newest version immediately, even if minimumReleaseAgeMinutes is set.
+
+
+</td></tr>
+<tr><td>
+
+[minimumReleaseAgeMinutes](./rush-lib.pnpmoptionsconfiguration.minimumreleaseageminutes.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number \| undefined
+
+
+</td><td>
+
+The minimum number of minutes that must pass after a version is published before pnpm will install it. This setting helps reduce the risk of installing compromised packages, as malicious releases are typically discovered and removed within a short time frame.
 
 
 </td></tr>
