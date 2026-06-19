@@ -4,6 +4,25 @@ title: Environment variables
 
 The Rush tool's behavior can be customized using the shell environment variables described below:
 
+## INSTALL_RUN_LOCKFILE_PATH
+
+Specifies the path to a package lockfile (for example, a `package-lock.json`) to use
+when the `install-run.js` helper installs the requested package. When this variable
+is provided, the helper copies the lockfile into the package install folder and runs
+`npm ci` instead of `npm install`.
+
+This is useful in CI environments where installs need to be reproducible and pinned
+to a known-good dependency tree.
+
+## INSTALL_RUN_RUSH_LOCKFILE_PATH
+
+Specifies the path to a package lockfile (for example, a `package-lock.json`) to use
+when the `install-run-rush.js` helper installs Rush. This variable is similar to
+`INSTALL_RUN_LOCKFILE_PATH`, but is scoped specifically to `install-run-rush.js`.
+
+When this variable is provided, `install-run-rush.js` installs Rush using the
+specified lockfile and runs `npm ci` instead of `npm install`.
+
 ## RUSH_ABSOLUTE_SYMLINKS
 
 If this variable is set to `1`, Rush will create symlinks with absolute paths instead
