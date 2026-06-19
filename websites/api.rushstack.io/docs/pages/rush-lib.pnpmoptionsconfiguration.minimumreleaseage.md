@@ -10,19 +10,13 @@ pagination_next: null
 
 ## PnpmOptionsConfiguration.minimumReleaseAge property
 
-The minimum number of minutes that must pass after a version is published before pnpm will install it. This setting helps reduce the risk of installing compromised packages, as malicious releases are typically discovered and removed within a short time frame.
+> Warning: This API is now obsolete.
+> 
+> Use [PnpmOptionsConfiguration.minimumReleaseAgeMinutes](./rush-lib.pnpmoptionsconfiguration.minimumreleaseageminutes.md) instead.
+> 
 
 **Signature:**
 
 ```typescript
-readonly minimumReleaseAge: number | undefined;
+get minimumReleaseAge(): number | undefined;
 ```
-
-## Remarks
-
-(SUPPORTED ONLY IN PNPM 10.16.0 AND NEWER)
-
-PNPM documentation: https://pnpm.io/settings\#minimumreleaseage
-
-The default value is 0 (disabled).
-

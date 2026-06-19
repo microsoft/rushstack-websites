@@ -34,5 +34,53 @@ Determines if two objects are deeply equal.
 
 
 </td></tr>
+<tr><td>
+
+[isRecord(value)](./node-core-library.objects.isrecord.md)
+
+
+</td><td>
+
+Returns `true` if `value` is a non-null, non-array plain object (i.e. assignable to `Record<string, unknown>`<></>), narrowing the type accordingly.
+
+
+</td></tr>
+<tr><td>
+
+[mergeWith(target, source, customizer)](./node-core-library.objects.mergewith.md)
+
+
+</td><td>
+
+Recursively merges own enumerable string-keyed properties of `source` into `target`<></>, invoking `customizer` for each property. Mutates and returns `target`<></>.
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MergeWithCustomizer](./node-core-library.objects.mergewithcustomizer.md)
+
+
+</td><td>
+
+Customizer function for use with `mergeWith`<></>. Return `undefined` to fall back to the default deep-merge behavior for that property.
+
+
+</td></tr>
 </tbody></table>
 
