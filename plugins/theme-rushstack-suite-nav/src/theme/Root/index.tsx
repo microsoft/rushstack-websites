@@ -84,13 +84,14 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
 
     return (
       <>
-        <div className={styles.suiteNavBar}>
+        <nav className={styles.suiteNavBar}>
           <div
             role="button"
+            aria-label="Applications"
             className={[styles.waffle, styles.waffleInteraction].join(' ')}
             onClick={this._onOpenPopup}
           >
-            <img src={'/images/suitenav/rs-waffle.svg'} />
+            <img src={'/images/suitenav/rs-waffle.svg'} alt="" />
           </div>
           <div className={styles.waffleDivider} />
 
@@ -106,7 +107,7 @@ class Root extends React.Component<React.PropsWithChildren<{}>> {
           <a href="https://rushstack.io/community/events/" className={styles.suiteNavItem}>
             Events
           </a>
-        </div>
+        </nav>
 
         {popupPane}
 
