@@ -56,7 +56,8 @@ const sidebars = {
         'pages/maintainer/phased_builds',
         'pages/maintainer/cobuilds',
         'pages/maintainer/npm_registry_auth',
-        'pages/maintainer/custom_tips'
+        'pages/maintainer/custom_tips',
+        'pages/maintainer/compatibility_matrix'
       ]
     },
     {
