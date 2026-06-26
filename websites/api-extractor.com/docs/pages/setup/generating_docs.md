@@ -59,7 +59,7 @@ Here's a typical usage scenario:
 
 What do we do with these generated Markdown files? There are various options:
 
-- **GitHub**: If you're using GitHub, you can simply commit them to your master branch in
+- **GitHub**: If you're using GitHub, you can simply commit them to your main branch in
   a "docs" folder, and they will be rendered using GitHub's markdown previewer. Here's an example of how it looks:
   [node-core-library.md](https://github.com/microsoft/rushstack-websites/blob/main/websites/api.rushstack.io/docs/pages/node-core-library.md)
 

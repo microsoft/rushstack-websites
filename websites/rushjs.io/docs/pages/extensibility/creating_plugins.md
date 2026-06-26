@@ -1,5 +1,5 @@
 ---
-title: Creating Rush plugins (experimental)
+title: Creating Rush plugins
 ---
 
 Rush plugins enable repository maintainers to:
@@ -135,6 +135,51 @@ Example project for this scenario:
 > **Note:** If your code module is only used with certain Rush commands,
 > use the `"associatedCommands"` setting to improve performance by
 > avoiding loading the module when it is not needed.
+
+### Available lifecycle hooks
+
+The [RushSession.hooks](https://api.rushstack.io/pages/rush-lib.rushsession/) object exposes
+[lifecycle hooks](https://api.rushstack.io/pages/rush-lib.rushlifecyclehooks/) that your plugin can
+use to register its handlers. The hook system is based on the
+[tapable](https://www.npmjs.com/package/tapable) framework familiar from Webpack.
+
+| Hook | Type | Description |
+| :--- | :--- | :---------- |
+| `initialize` | `AsyncSeriesHook` | Called before executing any Rush CLI command. |
+| `runAnyGlobalCustomCommand` | `AsyncSeriesHook` | Called before executing any global custom command (defined in command-line.json). |
+| `runGlobalCustomCommand` | `HookMap` | A hook map to target specific named global commands before execution. |
+| `runAnyPhasedCommand` | `AsyncSeriesHook` | Called before executing any phased command (including the default `build` and `rebuild`). |
+| `runPhasedCommand` | `HookMap` | A hook map to target specific named phased commands before execution. |
+| `beforeInstall` | `AsyncSeriesHook` | Called between preparing the common/temp folder and invoking the package manager during `rush install` or `rush update`. |
+| `afterInstall` | `AsyncSeriesHook` | Called after a successful install. |
+| `flushTelemetry` | `AsyncParallelHook` | Allows plugins to process telemetry data. |
+
+For example, to tap a specific phased command:
+
+```ts
+public apply(rushSession: RushSession, rushConfiguration: RushConfiguration): void {
+  rushSession.hooks.runPhasedCommand.for('build').tapPromise(
+    this.pluginName,
+    async (command: IPhasedCommand) => {
+      const logger: ILogger = rushSession.getLogger(this.pluginName);
+      logger.terminal.writeLine('The "rush build" command is about to run!');
+    }
+  );
+}
+```
+
+### Registering service providers
+
+The `RushSession` object also provides methods for plugins that implement build cache or cobuild
+lock providers:
+
+| Method | Description |
+| :----- | :---------- |
+| `registerCloudBuildCacheProviderFactory(name, factory)` | Registers a factory that creates a cloud build cache provider for the given provider name. |
+| `registerCobuildLockProviderFactory(name, factory)` | Registers a factory that creates a cobuild lock provider for the given provider name. |
+
+These are used by plugins such as `@rushstack/rush-amazon-s3-build-cache-plugin` and
+`@rushstack/rush-redis-cobuild-plugin` to integrate with Rush's build cache and cobuild systems.
 
 ### Defining a config file for your plugin
 
