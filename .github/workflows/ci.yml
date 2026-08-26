@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_COLOR: 1
+      INSTALL_RUN_RUSH_LOCKFILE_PATH: ${{ github.workspace }}/common/config/validation/rush-package-lock.json
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:

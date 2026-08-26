@@ -16,11 +16,11 @@
 # for example if the machine loses power.  A safer practice is to pass the token via an
 # environment variable, which can be referenced from .npmrc using ${} expansion.  For example:
 #
-#   //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
+#   //packagefeedproxy.microsoft.io/npm/:_authToken=${NPM_AUTH_TOKEN}
 #
 
 # Explicitly specify the NPM registry that "rush publish" will use by default:
-registry=https://registry.npmjs.org/
+registry=https://packagefeedproxy.microsoft.io/npm/
 
 # Provide an authentication token for the above registry URL:
-# //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
+# //packagefeedproxy.microsoft.io/npm/:_authToken=${NPM_AUTH_TOKEN}

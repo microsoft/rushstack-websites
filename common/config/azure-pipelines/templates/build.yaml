@@ -12,11 +12,16 @@ steps:
     displayName: 'git config name'
   - script: 'node common/scripts/install-run-rush.js change --verify'
     displayName: 'Verify Change Logs'
+    env:
+      INSTALL_RUN_RUSH_LOCKFILE_PATH: $(Build.SourcesDirectory)/common/config/validation/rush-package-lock.json
   - script: 'node common/scripts/install-run-rush.js install'
     displayName: 'Rush Install'
+    env:
+      INSTALL_RUN_RUSH_LOCKFILE_PATH: $(Build.SourcesDirectory)/common/config/validation/rush-package-lock.json
   - script: 'node common/scripts/install-run-rush.js build --verbose'
     displayName: 'Rush Build'
     env:
+      INSTALL_RUN_RUSH_LOCKFILE_PATH: $(Build.SourcesDirectory)/common/config/validation/rush-package-lock.json
       # Prevent time-based browserslist update warning
       # See https://github.com/microsoft/rushstack/issues/2981
       BROWSERSLIST_IGNORE_OLD_DATA: 1

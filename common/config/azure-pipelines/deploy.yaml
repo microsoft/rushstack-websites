@@ -39,6 +39,7 @@ jobs:
             displayName: 'Deploy ${{ site }}'
             workingDirectory: 'websites/${{ site }}'
             env:
+              INSTALL_RUN_RUSH_LOCKFILE_PATH: $(Build.SourcesDirectory)/common/config/validation/rush-package-lock.json
               TARGET: prod
               GIT_USER: rushbot
               GIT_PASS: $(GIT_PASS)
