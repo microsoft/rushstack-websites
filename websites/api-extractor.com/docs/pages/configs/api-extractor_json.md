@@ -353,6 +353,52 @@ Example:
 Whether "forgotten exports" should be included in the API report file. Forgotten exports are declarations
 flagged with [ae-forgotten-export](../messages/ae-forgotten-export.md) warnings.
 
+### apiReport.tagsToReport
+
+Example:
+
+```js
+  "apiReport": {
+    . . .
+    "tagsToReport": {
+      "@sealed": true,
+      "@virtual": true,
+      "@override": true,
+      "@eventProperty": true,
+      "@deprecated": true,
+      "@myCustomTag": true
+    },
+    . . .
+  }
+```
+
+**Default value:**
+
+```js
+{
+  "@sealed": true,
+  "@virtual": true,
+  "@override": true,
+  "@eventProperty": true,
+  "@deprecated": true
+}
+```
+
+Specifies a list of TSDoc tags that should be reported in the API report file for items whose documentation
+contains them. This can be used to include standard TSDoc tags or custom ones. Specified tag names must
+begin with `@`.
+
+Tags will appear in the order they are specified in this list. Note that an item's release tag will
+always be reported; this behavior cannot be overridden.
+
+To disable a default tag, set its value to `false`:
+
+```js
+  "tagsToReport": {
+    "@sealed": false
+  }
+```
+
 ## Doc Model Section
 
 Configures how the doc model file (\*.api.json) will be generated.
@@ -432,6 +478,27 @@ item's file path is `api/ExtractorConfig.ts`, the full URL file path would be
 `https://github.com/microsoft/rushstack/tree/main/apps/api-extractor/api/ExtractorConfig.js`.
 
 This setting can be omitted if you don't need source code links in your API documentation reference.
+
+### docModel.releaseTagsToTrim
+
+Example:
+
+```js
+  "docModel": {
+    . . .
+    "releaseTagsToTrim": ["@internal", "@alpha"]
+  }
+```
+
+**Default value:** `["@internal"]`
+
+Specifies a list of release tags that will be trimmed from the doc model. Declarations with these
+release tags will be excluded from the generated `.api.json` file.
+
+The default value trims `@internal` declarations. You can extend this to also trim `@alpha` or `@beta`
+declarations by adding them to the list.
+
+**Possible values:** `"@internal"`, `"@alpha"`, `"@beta"`, `"@public"`
 
 ## .d.ts Rollup Section
 
@@ -746,6 +813,13 @@ for the complete up-to-date table.)_
         "logLevel": "warning",
         "addToApiReportFile": true
       },
+      "ae-internal-mixed-release-tag": {
+        "logLevel": "warning",
+        "addToApiReportFile": true
+      },
+      "ae-undocumented": {
+        "logLevel": "none"
+      },
       "ae-unresolved-inheritdoc-reference": {
         "logLevel": "warning",
         "addToApiReportFile": true
@@ -753,6 +827,9 @@ for the complete up-to-date table.)_
       "ae-unresolved-inheritdoc-base": {
         "logLevel": "warning",
         "addToApiReportFile": true
+      },
+      "ae-wrong-input-file-type": {
+        "logLevel": "error"
       }
     },
     . . .
