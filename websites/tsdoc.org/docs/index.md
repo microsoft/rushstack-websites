@@ -93,7 +93,7 @@ Contributing design input:
 - [API Extractor](https://api-extractor.com/) community
 - [DocFX](https://dotnet.github.io/docfx/) maintainers
 - [TypeDoc](http://typedoc.org) community
-- [SimplrJS](https://simplrjs.com/) developers, who maintain the [ts-docs-gen](https://github.com/SimplrJS/ts-docs-gen) tool
+- [SimplrJS](https://github.com/SimplrJS) ([QuatroDev](https://quatrodev.com/)) developers, who maintain the [ts-docs-gen](https://github.com/SimplrJS/ts-docs-gen) tool
 - [Tom Dale](https://github.com/tomdale), who's working on the documentation engine for [Ember.js](https://www.emberjs.com), [Glimmer.js](https://glimmerjs.com), and other projects
 - [Rob Eisenberg](https://github.com/EisenbergEffect), who's working on the documentation engine for [Aurelia](http://aurelia.io/).
 
