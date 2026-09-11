@@ -4,7 +4,7 @@ title: '@deprecated'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 The `@deprecated` tag indicates that an API item is no longer supported and may be removed in a future release.
 It should be followed by a sentence describing the recommended alternative. (This is optional in JSDoc,

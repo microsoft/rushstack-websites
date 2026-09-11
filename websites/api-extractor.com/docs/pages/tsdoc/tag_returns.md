@@ -4,7 +4,7 @@ title: '@returns'
 
 **Tag type:** block tag
 
-**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [core](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 The `@returns` tag is used to document the return value of a function or method parameter. Being a block tag,
 `@returns` introduces a TSDoc section that contains all comment text up until the next block tag.

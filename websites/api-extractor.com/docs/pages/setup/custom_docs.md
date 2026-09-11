@@ -25,7 +25,7 @@ you can simply fork it and modify the code. Here's the basic files you'd want to
 - [MarkdownDocumenter.ts](https://github.com/microsoft/rushstack/blob/main/apps/api-documenter/src/documenters/MarkdownDocumenter.ts) -
   This is the main documentation generator that you'd want to study. It illustrates how to traverse the tree of
   declarations and render each TypeScript construct. Since the
-  [TSDoc library](https://github.com/microsoft/tsdoc/tree/master/tsdoc) already provides a nice API for representing
+  [TSDoc library](https://github.com/microsoft/tsdoc/tree/main/tsdoc) already provides a nice API for representing
   a tree of rich text elements, the `MarkdownDocumenter` class takes the approach of producing a huge TSDoc "comment"
   representing each page on the web site. It's an unusual approach, but generating TSDoc output from TSDoc input
   avoids having to transform all the inner content.
@@ -56,7 +56,7 @@ and the individual classes such as `ApiClass`, `ApiEnum`, `ApiInterface` have pr
 
 One aspect that may not be entirely obvious is how to render TSDoc into some other format besides Markdown.
 For an example of rendering HTML using React, you might also want to look at
-[DocHtmlView.tsx](https://github.com/microsoft/tsdoc/blob/master/playground/src/DocHtmlView.tsx)
+[DocHtmlView.tsx](https://github.com/microsoft/tsdoc/blob/main/playground/src/DocHtmlView.tsx)
 which renders the "HTML" tab for the [TSDoc Playground](https://microsoft.github.io/tsdoc/).
 
 If you get stuck or have questions, the API Extractor developers are usually reachable

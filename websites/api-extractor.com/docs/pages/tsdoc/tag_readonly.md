@@ -4,7 +4,7 @@ title: '@readonly'
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 This modifier tag is used with a property of a class or interface. It indicates that the property should be
 documented as being read-only, even if the type signature indicates otherwise.

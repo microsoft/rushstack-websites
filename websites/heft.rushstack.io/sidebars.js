@@ -41,7 +41,7 @@ const sidebars = {
       type: 'category',
       label: 'Advanced topics',
       collapsible: false,
-      items: ['pages/advanced/heft-config-file']
+      items: ['pages/advanced/heft-config-file', 'pages/advanced/authoring-plugins']
     },
     {
       type: 'category',
@@ -85,8 +85,18 @@ const sidebars = {
         },
         {
           type: 'doc',
+          label: 'Isolated transpile (SWC)',
+          id: 'pages/plugins/isolated-transpile'
+        },
+        {
+          type: 'doc',
           label: 'Node.js service',
           id: 'pages/plugins/node-service'
+        },
+        {
+          type: 'doc',
+          label: 'Rspack',
+          id: 'pages/plugins/rspack'
         },
         {
           type: 'doc',

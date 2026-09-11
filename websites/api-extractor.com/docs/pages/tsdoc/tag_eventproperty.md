@@ -4,7 +4,7 @@ title: '@eventProperty'
 
 **Tag type:** modifier
 
-**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/master/tsdoc/src/details/Standardization.ts)
+**TSDoc standardization:** [extended](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/details/Standardization.ts)
 
 When applied to a class or interface property, this indicates that the property
 returns an event object that event handlers can be attached to. The event-handling
