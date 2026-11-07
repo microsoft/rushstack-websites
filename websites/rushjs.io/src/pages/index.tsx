@@ -22,7 +22,8 @@ const advocates: IAdvocate[] = [
   { image: 'simplrjs.png', title: 'SimplrJS react-forms', url: 'https://github.com/SimplrJS/react-forms' },
   { image: 'telia.png', title: 'Telia Company', url: 'https://www.telia.se/' },
   { image: 'welbi.png', title: 'Welbi', url: 'https://www.welbi.co/' },
-  { image: 'wix.png', title: 'Wix', url: 'https://www.wix.com/' }
+  { image: 'wix.png', title: 'Wix', url: 'https://www.wix.com/' },
+  { image: 'wordfully.svg', title: 'Wordfully', url: 'https://wordfully.ai/' }
 ];
 
 function AdvocateCard(props: { advocate: IAdvocate }): JSX.Element {
